@@ -80,6 +80,22 @@ test('Checkout accepts an omitted email, persists the order, and still notifies 
  }finally{globalThis.fetch=originalFetch}
 });
 
+test('A one-word neighborhood and governorate are enough for COD and manual CliQ orders',async()=>{
+ const originalFetch=globalThis.fetch;globalThis.fetch=async()=>Response.json({ok:true,ownerSent:true});
+ try{for(const [address,payment] of [['الياسمين','cod'],['حي','cliq']]){
+  const f=fixture();const response=await api('/api/orders',f.env,f.ctx,{...cart,email:'',address:'  '+address+'  ',payment,cliqAlias:'TEST-ALIAS'},{'x-idempotency-key':'short-address-'+payment+'-123456'});
+  assert.equal(response.status,201,await response.text());
+  const stored=f.DB.sql.prepare('SELECT address,governorate,email,payment_method FROM orders').get();
+  assert.equal(stored.address,address);assert.equal(stored.governorate,'عمّان');assert.equal(stored.email,null);assert.equal(stored.payment_method,payment);
+  await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'تم الإرسال');
+ }}finally{globalThis.fetch=originalFetch}
+});
+test('An empty or punctuation-only address still cannot create an undeliverable order',async()=>{
+ for(const address of ['', '   ', '---', '\u200b']){
+  const f=fixture();const response=await api('/api/orders',f.env,f.ctx,{...cart,address},{'x-idempotency-key':'empty-address-rejected-123456'});
+  assert.equal(response.status,400);assert.equal(f.DB.sql.prepare('SELECT count(*) AS n FROM orders').get().n,0);
+ }
+});
 test('Checkout still rejects an invalid nonempty email without saving an order',async()=>{
  const f=fixture();const response=await api('/api/orders',f.env,f.ctx,{...cart,email:'not-an-email'},{'x-idempotency-key':'invalid-optional-email-123456'});
  assert.equal(response.status,400);assert.equal(f.DB.sql.prepare('SELECT count(*) AS n FROM orders').get().n,0);

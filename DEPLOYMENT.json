@@ -1,13 +1,13 @@
 {
   "worker_name": "trend-shop-jo",
-  "url": "https://trend-shop-jo.trend-shop-jo.workers.dev/",
-  "deployed_at": "2026-10-25",
-  "deployment_id": "9ec2f5c4b0eb4f6fb938612a6874d999",
+  "url": "https://trendjo.pages.dev/",
+  "deployed_at": "2026-10-26",
+  "deployment_id": "9d4a2103e02f46e29c34a71cfb83a257",
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
   "database_id": "8005969e-e086-4adf-8e82-bf5b24117648",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
-  "version": "1.4.2",
+  "version": "1.5.0",
   "media_namespace_id": "53e37dea60dd4eed9c5274953cf0b8a7",
   "catalog_products": 173,
   "original_entries": 190,
@@ -22,7 +22,7 @@
   "initial_total_units": 4152,
   "mail_connected": true,
   "owner_admin_activated": true,
-  "automated_tests_passed": 44,
+  "automated_tests_passed": 51,
   "mail_setup_stage": "live_checkout_and_notifications_verified",
   "mail_google_authorized": true,
   "mail_owner_test_sent": true,
@@ -38,5 +38,25 @@
     "inventory_debit_verified": true,
     "qa_orders_removed": true,
     "qa_inventory_restored": true
-  }
+  },
+  "legacy_worker_url": "https://trend-shop-jo.trend-shop-jo.workers.dev/",
+  "pages_project": "trendjo",
+  "pages_service_binding": {
+    "name": "STORE",
+    "service": "trend-shop-jo"
+  },
+  "pages_deployment_id": "9b4d74fc-c858-44fb-ae84-472c1bbd7c79",
+  "previous_version_backup": {
+    "version": "1.4.2",
+    "branch": "backup/v1.4.2-before-store-refresh-2026-10-25",
+    "commit": "25cd9ab11c8f854c1b201cf180da5bfb308afb0c",
+    "worker_version": "9ec2f5c4-b0eb-4f6f-b938-612a6874d999"
+  },
+  "editorial_images": 3,
+  "additional_gallery_photos": 22,
+  "products_with_galleries": 14,
+  "threeui_component": "Community GradientPillButton (MIT), locally adapted",
+  "single_word_address_live_verified": true,
+  "short_url_order_verified": true,
+  "latest_qa_cleanup_preserved_existing_orders": true
 }

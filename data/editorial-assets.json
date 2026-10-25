@@ -1,0 +1,27 @@
+{
+  "created": "2026-10-25",
+  "method": "built-in image generation",
+  "assets": [
+    {
+      "path": "/images/editorial/beauty-hero-v2.webp",
+      "purpose": "Homepage editorial portrait",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide 3:2 editorial beauty photograph for an elegant friendly Arabic cosmetics shop in Jordan. Primary request: a warm, approachable adult Arab woman around 28 with olive skin, dark softly waved hair and natural refined makeup, smiling gently at the viewer; cream modest blouse, head and shoulders visible. Composition: subject occupies the left half of the photograph, unobtrusive warm ivory and powder rose interior wall across the right half, softly glowing window daylight, tactile authentic skin, luxe understated beauty campaign photographed on 85mm lens. Warm and welcoming, polished luxury without coldness. A real photographic feeling, no plastic skin, no heavy beauty retouching. No text, no logos, no watermark, no visible branded products. Landscape image.",
+      "productEndorsement": false,
+      "representsSoldProduct": false
+    },
+    {
+      "path": "/images/editorial/skincare-ritual.webp",
+      "purpose": "Skincare inspiration",
+      "prompt": "Use case: photorealistic-natural. Asset type: portrait editorial skincare lifestyle photo for an Arabic beauty shop. Primary request: a relaxed adult Arab woman around 30 with olive skin and dark hair loosely tied back, wearing a simple cream robe with covered neckline, applying a small amount of white moisturizer to her cheek with her fingertips beside a warm stone bathroom vanity. Gentle smile, authentic pores and subtle freckles, pale rose and ivory palette, soft natural window light, quiet luxurious friendly mood, editorial photography. Face and hand both anatomically natural. Crop from shoulders up with useful space around her face. No brands, no claims, no text, no watermark, no before and after. Portrait 4:5.",
+      "productEndorsement": false,
+      "representsSoldProduct": false
+    },
+    {
+      "path": "/images/editorial/makeup-moment.webp",
+      "purpose": "Makeup inspiration",
+      "prompt": "Use case: photorealistic-natural. Asset type: portrait makeup lifestyle photo for an Arabic beauty shop. Primary request: a smiling adult Arab woman around 27 with warm medium skin, dark soft curls, light rose satin blouse with modest neckline, delicately sweeping a clean soft blush brush along the apple of her cheek. Tasteful nude eye makeup and warm rose lips. Refined yet friendly beauty editorial, authentic skin, soft diffused daylight, minimal powder rose and champagne background, luxurious approachable mood. Show her hand and full brush with realistic grip. No product branding, no text, no watermark, no before and after, no exaggerated retouching. Portrait 4:5.",
+      "productEndorsement": false,
+      "representsSoldProduct": false
+    }
+  ]
+}

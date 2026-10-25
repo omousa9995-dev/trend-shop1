@@ -22,7 +22,7 @@ export const assets={async fetch(request){
  let path;try{path=decodeURIComponent(new URL(request.url).pathname)}catch{return new Response('Bad request',{status:400})}
  if(path==='/')path='/index.html';if(path==='/admin'||path==='/admin/')path='/admin.html';
  const file=files[path];if(!file)return new Response('Not found',{status:404,headers:{'content-type':'text/plain; charset=utf-8'}});
- const headers={'content-type':file[1],'x-robots-tag':'noindex, nofollow, noarchive','etag':'"'+file[3]+'"','cache-control':path.startsWith('/admin')||path.endsWith('.html')?'no-store':'public, max-age=300'};
+ const headers={'content-type':file[1],'etag':'"'+file[3]+'"','cache-control':path.startsWith('/admin')||path.endsWith('.html')?'no-store':'public, max-age=300'};
  if(request.headers.get('if-none-match')===headers.etag)return new Response(null,{status:304,headers});
  const body=request.method==='HEAD'?null:file[2]?Uint8Array.from(atob(file[0]),c=>c.charCodeAt(0)):file[0];
  return new Response(body,{headers});

@@ -1,0 +1,6 @@
+/* Adapted from ThreeUI Community GradientPillButton. MIT (c) 2026 Meng To.
+ * Source and complete license: /licenses/threeui.txt. No runtime dependency.
+ */
+.threeui-pill{position:relative;isolation:isolate;border-radius:9999px;background:linear-gradient(180deg,#765160,#513743);box-shadow:0 13px 28px rgba(82,55,67,.17),0 0 0 1px rgba(209,183,190,.25);overflow:hidden}
+.threeui-pill::before{content:"";position:absolute;inset:0;padding:1px;border-radius:inherit;background:linear-gradient(180deg,rgba(255,255,255,.8),rgba(0,0,0,.2),rgba(255,255,255,.5));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.threeui-pill:hover{background:linear-gradient(180deg,#896271,#624450);box-shadow:0 16px 32px rgba(82,55,67,.23)}
