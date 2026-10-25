@@ -1,0 +1,1051 @@
+{
+  "release_id": "owner-pricing-2026-10-25-v1",
+  "currency": "JOD",
+  "unit": "fils",
+  "minimum_price_fils": 500,
+  "maximum_price_fils": 20000,
+  "initial_stock_per_product": 24,
+  "authorization": "تسعير مفوّض من المالك بتاريخ 25 أكتوبر 2026 ضمن 0.500–20.000 دينار، وتسجيل 24 قطعة لكل منتج مختار.",
+  "basis": "أسعار بيع محددة لكل منتج بحسب الفئة والعبوة والعلامة ومراجع الكتالوج، مع سقف 19.950 دينار. ليست حساب هامش ربح أو تكلفة شراء.",
+  "discount_policy": "سعر نهائي مباشر دون نسب خصم أو أسعار سابقة غير مثبتة.",
+  "products": [
+    {
+      "id": "TS0001",
+      "price_fils": 2950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0002",
+      "price_fils": 1250,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0003",
+      "price_fils": 3950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0004",
+      "price_fils": 500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0005",
+      "price_fils": 3950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0006",
+      "price_fils": 1950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0007",
+      "price_fils": 1250,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0008",
+      "price_fils": 1500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0009",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0010",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0011",
+      "price_fils": 2950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0012",
+      "price_fils": 1950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0013",
+      "price_fils": 1950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0014",
+      "price_fils": 1950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0015",
+      "price_fils": 1950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0016",
+      "price_fils": 2500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0017",
+      "price_fils": 2500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0018",
+      "price_fils": 2250,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0019",
+      "price_fils": 2950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0020",
+      "price_fils": 6950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0021",
+      "price_fils": 6950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0022",
+      "price_fils": 3950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0023",
+      "price_fils": 1500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0024",
+      "price_fils": 1500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0025",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0026",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0027",
+      "price_fils": 7950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0028",
+      "price_fils": 7950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0029",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0030",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0031",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0032",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0033",
+      "price_fils": 2950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0034",
+      "price_fils": 3950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0035",
+      "price_fils": 2500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0036",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0037",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0038",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0039",
+      "price_fils": 2250,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0040",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0041",
+      "price_fils": 2950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0042",
+      "price_fils": 3950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0044",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0045",
+      "price_fils": 5950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0046",
+      "price_fils": 6950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0047",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0048",
+      "price_fils": 5950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0049",
+      "price_fils": 6950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0050",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0051",
+      "price_fils": 6950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0052",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0053",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0054",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0055",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0056",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0057",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0058",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0059",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0060",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0061",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0062",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0064",
+      "price_fils": 15950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0065",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0066",
+      "price_fils": 15950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0067",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0068",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0069",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0070",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0071",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0072",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0073",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0074",
+      "price_fils": 15950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0075",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0076",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0077",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0078",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0079",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0080",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0081",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0082",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0083",
+      "price_fils": 17950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0084",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0085",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0086",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0087",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0088",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0089",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0090",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0091",
+      "price_fils": 15950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0092",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0093",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0094",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0095",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0097",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0098",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0099",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0100",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0101",
+      "price_fils": 4950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0102",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0103",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0105",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0106",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0107",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0108",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0109",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0110",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0111",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0112",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0113",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0114",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0115",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0116",
+      "price_fils": 5950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0117",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0118",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0119",
+      "price_fils": 17950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0120",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0121",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0122",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0123",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0124",
+      "price_fils": 5950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0125",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0126",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0127",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0129",
+      "price_fils": 7950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0130",
+      "price_fils": 1950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0131",
+      "price_fils": 2500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0132",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0133",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0134",
+      "price_fils": 7950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0136",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0137",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0138",
+      "price_fils": 5950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0139",
+      "price_fils": 17950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0140",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0141",
+      "price_fils": 8950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0144",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0145",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0147",
+      "price_fils": 10950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0149",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0150",
+      "price_fils": 6950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0151",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0152",
+      "price_fils": 1500,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0154",
+      "price_fils": 6950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0155",
+      "price_fils": 11950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0156",
+      "price_fils": 15950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0157",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0158",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0161",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0162",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0163",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0164",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0165",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0166",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0168",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0169",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0171",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0172",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0173",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0174",
+      "price_fils": 13950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0175",
+      "price_fils": 9950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0176",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0177",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0178",
+      "price_fils": 12950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0179",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0180",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0182",
+      "price_fils": 15950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0183",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0184",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0185",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0186",
+      "price_fils": 19950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0187",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0188",
+      "price_fils": 16950,
+      "initial_stock": 24,
+      "approved": true
+    },
+    {
+      "id": "TS0190",
+      "price_fils": 14950,
+      "initial_stock": 24,
+      "approved": true
+    }
+  ]
+}

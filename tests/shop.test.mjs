@@ -59,11 +59,23 @@ test('Admin saves an uploaded photo with individual Arabic details, then hides i
  const after=f.DB.sql.prepare("SELECT * FROM products WHERE id='TSPHOTO1'").get();assert.equal(after.active,0);assert.deepEqual(JSON.parse(after.details_json),details);assert.equal(after.image_url,image);
 });
 
+test('Admin enforces the owner sale-price range including the exact 0.500 and 20.000 boundaries',async()=>{
+ const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env),headers={cookie,'x-trend-admin':'1'};
+ const product={id:'TSPRICECHECK',name:'Price Check',brand:'TEST',category:'البشرة',stock:24,approved:true,active:true,discount_percent:0};
+ for(const reference_price_fils of [499,20001]){
+  const response=await api('/api/admin/products',f.env,f.ctx,{...product,reference_price_fils},headers);assert.equal(response.status,400);
+ }
+ for(const reference_price_fils of [500,20000]){
+  const response=await api('/api/admin/products',f.env,f.ctx,{...product,reference_price_fils},headers);assert.equal(response.status,200,await response.text());
+  assert.equal(f.DB.sql.prepare("SELECT price_fils FROM products WHERE id='TSPRICECHECK'").get().price_fils,reference_price_fils);
+ }
+});
+
 test('The curated catalog preserves auditable reference prices and uses reviewed product photos',()=>{
  const c=JSON.parse(file('public/catalog.json'));
  assert.equal(c.length,173);assert.equal(new Set(c.map(p=>p.id)).size,173);
  const shops=new Set(c.map(p=>p.source));assert.ok(shops.has('LeoMarka'));assert.ok([...shops].some(s=>s.includes('Ksecret')));
- for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.ok(p.discount>=20&&p.discount<=50);assert.equal(p.priceFils,Math.round(p.reference*(100-p.discount)/100));assert.equal(p.approved,false);assert.equal(p.stock,0)}
+ for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.discount,0);assert.equal(p.priceFils,p.reference);assert.equal(p.approved,true);assert.equal(p.stock,24)}
  assert.ok(fs.existsSync(new URL('public/images/hero.webp',root)));
 });
 test('No actual sensitive customer data or forbidden card processors are bundled',()=>{

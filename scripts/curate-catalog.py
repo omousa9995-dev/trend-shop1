@@ -22,6 +22,9 @@ for line in (ROOT/'data/product-copy-ar.txt').read_text().splitlines():
  assert pid not in copy,pid
  copy[pid]={'nameAr':name,'tagline':tagline,'overview':overview,'benefits':benefits.split(';'),'howToUse':use,'notes':note}
 original=json.loads((ROOT/'data/catalog-original.json').read_text());images={p['id']:p for p in json.loads((ROOT/'data/image-provenance.json').read_text())}
+pricing_file=ROOT/'data/pricing-stock-policy.json'
+pricing_policy=json.loads(pricing_file.read_text()) if pricing_file.exists() else None
+prices={p['id']:p for p in pricing_policy['products']} if pricing_policy else {}
 curated=[];decisions=[]
 for original_product in original:
  p=dict(original_product);pid=p['id'];photo=images[pid]
@@ -36,11 +39,14 @@ for original_product in original:
  details['imageType']='photo';details['collection']='k-beauty' if p['brand'].lower() in kbeauty else 'beauty'
  details['featuredOrder']=featured.index(pid) if pid in featured else 100
  p.update({'image':photo['image'],'details':details,'active':1,'approved':False,'stock':0,'canonicalSources':[q['id'] for q in original if q['id']==pid or duplicates.get(q['id'])==pid]})
+ if pid in prices:
+  price=prices[pid];p['researchReferenceFils']=p['reference']
+  p.update(reference=price['price_fils'],priceFils=price['price_fils'],discount=0,approved=True,stock=price['initial_stock'])
  curated.append(p);decisions.append({'id':pid,'name':p['name'],'decision':'selected','canonical_id':pid,'reason':'هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.','image':p['image'],**({'correction':fixes[pid]} if pid in fixes else {})})
 assert len(curated)==len(copy),(len(curated),len(copy))
 assert len(set(p['description'] for p in curated))==len(curated)
 (ROOT/'public/catalog.json').write_text(json.dumps(curated,ensure_ascii=False,indent=2)+'\n')
-summary={'original_entries':len(original),'selected':len(curated),'duplicates':len(duplicates),'held_for_review':len(held),'photos_collected':sum(p['status']=='downloaded' for p in images.values()),'all_stock_and_prices_require_owner_approval':True,'decisions':decisions}
+summary={'original_entries':len(original),'selected':len(curated),'duplicates':len(duplicates),'held_for_review':len(held),'photos_collected':sum(p['status']=='downloaded' for p in images.values()),'all_stock_and_prices_require_owner_approval':not bool(pricing_policy),'pricing_release':pricing_policy['release_id'] if pricing_policy else None,'decisions':decisions}
 (ROOT/'data/catalog-decisions.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 with (ROOT/'data/catalog-decisions.csv').open('w',newline='',encoding='utf-8-sig') as f:
  writer=csv.writer(f);writer.writerow(['الرمز','المنتج','القرار','المنتج المعتمد عند التكرار','السبب'])
@@ -51,8 +57,19 @@ for p in curated:
  updates.append('UPDATE products SET name='+sql(p['name'])+',brand='+sql(p['brand'])+',description='+sql(p['description'])+',image_url='+sql(p['image'])+',details_json='+sql(json.dumps(p['details'],ensure_ascii=False))+",active=1,updated_at=datetime('now') WHERE id="+sql(p['id'])+';')
 for pid in [*duplicates,*held]:updates.append("UPDATE products SET active=0,image_url="+sql(images[pid]['image'])+",updated_at=datetime('now') WHERE id="+sql(pid)+';')
 (ROOT/'deployment-private/catalog-update.sql').write_text('\n'.join(updates))
+commercial=[]
+if pricing_policy:
+ release=sql(pricing_policy['release_id'])
+ commercial.append("CREATE TABLE IF NOT EXISTS catalog_releases (id TEXT PRIMARY KEY, applied_at TEXT NOT NULL DEFAULT (datetime('now')));")
+ for p in curated:
+  commercial.append(f"UPDATE products SET reference_price_fils={p['priceFils']},price_fils={p['priceFils']},discount_percent=0,stock={p['stock']},approved=1,updated_at=datetime('now') WHERE id={sql(p['id'])} AND active=1 AND NOT EXISTS (SELECT 1 FROM catalog_releases WHERE id={release});")
+ commercial.append(f'INSERT OR IGNORE INTO catalog_releases (id) VALUES ({release});')
+ (ROOT/'db/migrations/0003_initial_pricing_stock.sql').write_text('\n'.join(commercial)+'\n')
+ with (ROOT/'data/pricing-stock.csv').open('w',newline='',encoding='utf-8-sig') as f:
+  writer=csv.writer(f);writer.writerow(['الرمز','اسم المنتج','سعر البيع بالدينار','الرصيد الافتتاحي','الاعتماد'])
+  for p in curated:writer.writerow([p['id'],p['details']['nameAr'],f"{p['priceFils']/1000:.3f}",p['stock'],'بتفويض المالك'])
 seed=ROOT/'db/seed.sql'
 if seed.exists():
  original_seed=seed.read_text().split('-- BEGIN CURATED CATALOG')[0].rstrip()
- seed.write_text(original_seed+'\n\n-- BEGIN CURATED CATALOG\n'+'\n'.join(updates)+'\n')
+ seed.write_text(original_seed+'\n\n-- BEGIN CURATED CATALOG\n'+'\n'.join(updates)+'\n'+('\n-- INITIAL AUTHORIZED PRICING (ONCE)\n'+'\n'.join(commercial)+'\n' if commercial else ''))
 print(json.dumps({k:v for k,v in summary.items() if k!='decisions'},ensure_ascii=False))

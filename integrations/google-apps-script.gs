@@ -21,13 +21,21 @@ function doPost(e) {
     if (!token || token.length < 32) return jsonResult_({ok:false,reason:'not_configured'});
     const data = JSON.parse((e && e.postData && e.postData.contents) || '{}');
     if (data.token !== token) return jsonResult_({ok:false,reason:'unauthorized'});
+    const quota=MailApp.getRemainingDailyQuota();
+    if (data.action==='health') return jsonResult_({ok:true,service:'trend-shop-mail',ownerEmail:STORE_EMAIL,remainingRecipients:quota});
+    if (data.action==='test') {
+      if (quota<1) return jsonResult_({ok:false,reason:'quota_exhausted'});
+      MailApp.sendEmail({to:STORE_EMAIL,subject:'Trend Shop | اختبار ربط بريد الطلبات',body:'هذه رسالة اختبار لربط إشعارات Trend Shop. لا تمثل طلب شراء ولا تحتوي بيانات عميل.\n\nإبتسمي فلا جميلة إلا أنتِ ♡',name:'Trend Shop'});
+      return jsonResult_({ok:true,ownerSent:true,customerSent:false,test:true});
+    }
+    if (data.action && data.action!=='order') return jsonResult_({ok:false,reason:'invalid_action'});
     const o = data.order || {};
     if (!/^TR-[A-Z0-9-]{8,40}$/.test(o.id || '') ||
         (o.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(o.email))) {
       return jsonResult_({ok:false,reason:'invalid_order'});
     }
     // Owner always; customer only when an email is provided. Quotas can change.
-    if (MailApp.getRemainingDailyQuota() < (o.email ? 2 : 1)) return jsonResult_({ok:false,reason:'quota_exhausted'});
+    if (quota<1) return jsonResult_({ok:false,reason:'quota_exhausted'});
     const clientEmail = sanitized_(o.email,160);
     const id=sanitized_(o.id,45),name=sanitized_(o.name,95);
     const subtotal = (Number(o.subtotal_fils || 0) / 1000).toFixed(3) + ' د.أ';
@@ -59,8 +67,12 @@ function doPost(e) {
     ].filter(Boolean).join('\n\n');
     // Deliberately no product list, totals, or invoice in the customer message.
     MailApp.sendEmail({to:STORE_EMAIL,subject:'Trend Shop | طلب جديد '+id,body:ownerMessage,name:'Trend Shop'});
-    if (clientEmail) MailApp.sendEmail({to:clientEmail,subject:'Trend Shop | تأكيد استلام طلبك '+id,body:customerMessage,name:'Trend Shop'});
-    return jsonResult_({ok:true,ownerSent:true,customerSent:!!clientEmail});
+    let customerSent=false,customerError='';
+    if (clientEmail && quota>=2) {
+      try {MailApp.sendEmail({to:clientEmail,subject:'Trend Shop | تأكيد استلام طلبك '+id,body:customerMessage,name:'Trend Shop'});customerSent=true;}
+      catch (_) {customerError='customer_mail_error';}
+    } else if (clientEmail) customerError='customer_quota_exhausted';
+    return jsonResult_({ok:true,ownerSent:true,customerSent,customerError});
   } catch(err) {
     console.error('Trend Shop email bridge error (without customer data)');
     return jsonResult_({ok:false,reason:'mail_error'});

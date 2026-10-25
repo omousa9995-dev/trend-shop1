@@ -4,7 +4,8 @@
   "duplicates": 11,
   "held_for_review": 6,
   "photos_collected": 190,
-  "all_stock_and_prices_require_owner_approval": true,
+  "all_stock_and_prices_require_owner_approval": false,
+  "pricing_release": "owner-pricing-2026-10-25-v1",
   "decisions": [
     {
       "id": "TS0001",

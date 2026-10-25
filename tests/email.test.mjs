@@ -27,7 +27,16 @@ test('Only a valid server token allows two messages, no detailed invoice in cust
 });
 test('Invalid token and exhausted daily quota cannot send mail',()=>{
  assert.equal(testBridge({token:'invalid',order}).sent.length,0);
- assert.equal(testBridge({token,order},1).sent.length,0);
+ assert.equal(testBridge({token,order},0).sent.length,0);
+});
+test('The owner is notified when only one recipient slot remains, even if the customer provided email',()=>{
+ const {sent,response}=testBridge({token,order},1);assert.equal(sent.length,1);assert.equal(sent[0].to,'stpostpo470@gmail.com');assert.equal(response.ok,true);assert.equal(response.ownerSent,true);assert.equal(response.customerSent,false);
+});
+test('Authenticated health checks send nothing and connection tests only email the store',()=>{
+ const health=testBridge({token,action:'health'});assert.equal(health.response.ok,true);assert.equal(health.sent.length,0);
+ const check=testBridge({token,action:'test'});assert.equal(check.response.test,true);assert.equal(check.sent.length,1);assert.equal(check.sent[0].to,'stpostpo470@gmail.com');
+ assert.equal(testBridge({token:'wrong',action:'test'}).sent.length,0);
+ assert.equal(testBridge({token,action:'unsupported'}).response.ok,false);
 });
 test('An order without customer email sends only the owner notice, including with one recipient slot left',()=>{
  const {sent,response}=testBridge({token,order:{...order,email:''}},1);

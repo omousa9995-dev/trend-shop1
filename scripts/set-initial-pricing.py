@@ -1,0 +1,194 @@
+"""Record the owner's delegated initial prices and 24 units per selected product."""
+from pathlib import Path
+import json
+
+ROOT=Path(__file__).resolve().parents[1]
+prices='''
+TS0001 2.950
+TS0002 1.250
+TS0003 3.950
+TS0004 0.500
+TS0005 3.950
+TS0006 1.950
+TS0007 1.250
+TS0008 1.500
+TS0009 4.950
+TS0010 4.950
+TS0011 2.950
+TS0012 1.950
+TS0013 1.950
+TS0014 1.950
+TS0015 1.950
+TS0016 2.500
+TS0017 2.500
+TS0018 2.250
+TS0019 2.950
+TS0020 6.950
+TS0021 6.950
+TS0022 3.950
+TS0023 1.500
+TS0024 1.500
+TS0025 11.950
+TS0026 8.950
+TS0027 7.950
+TS0028 7.950
+TS0029 4.950
+TS0030 8.950
+TS0031 9.950
+TS0032 19.950
+TS0033 2.950
+TS0034 3.950
+TS0035 2.500
+TS0036 11.950
+TS0037 8.950
+TS0038 8.950
+TS0039 2.250
+TS0040 9.950
+TS0041 2.950
+TS0042 3.950
+TS0044 9.950
+TS0045 5.950
+TS0046 6.950
+TS0047 9.950
+TS0048 5.950
+TS0049 6.950
+TS0050 4.950
+TS0051 6.950
+TS0052 4.950
+TS0053 4.950
+TS0054 8.950
+TS0055 4.950
+TS0056 10.950
+TS0057 9.950
+TS0058 8.950
+TS0059 14.950
+TS0060 11.950
+TS0061 13.950
+TS0062 13.950
+TS0064 15.950
+TS0065 10.950
+TS0066 15.950
+TS0067 10.950
+TS0068 13.950
+TS0069 11.950
+TS0070 10.950
+TS0071 13.950
+TS0072 12.950
+TS0073 13.950
+TS0074 15.950
+TS0075 12.950
+TS0076 10.950
+TS0077 11.950
+TS0078 10.950
+TS0079 11.950
+TS0080 11.950
+TS0081 10.950
+TS0082 10.950
+TS0083 17.950
+TS0084 11.950
+TS0085 11.950
+TS0086 8.950
+TS0087 13.950
+TS0088 13.950
+TS0089 19.950
+TS0090 12.950
+TS0091 15.950
+TS0092 13.950
+TS0093 12.950
+TS0094 12.950
+TS0095 14.950
+TS0097 12.950
+TS0098 13.950
+TS0099 11.950
+TS0100 13.950
+TS0101 4.950
+TS0102 10.950
+TS0103 10.950
+TS0105 11.950
+TS0106 19.950
+TS0107 9.950
+TS0108 9.950
+TS0109 8.950
+TS0110 9.950
+TS0111 11.950
+TS0112 14.950
+TS0113 16.950
+TS0114 16.950
+TS0115 14.950
+TS0116 5.950
+TS0117 11.950
+TS0118 10.950
+TS0119 17.950
+TS0120 8.950
+TS0121 8.950
+TS0122 10.950
+TS0123 8.950
+TS0124 5.950
+TS0125 8.950
+TS0126 12.950
+TS0127 16.950
+TS0129 7.950
+TS0130 1.950
+TS0131 2.500
+TS0132 11.950
+TS0133 8.950
+TS0134 7.950
+TS0136 11.950
+TS0137 14.950
+TS0138 5.950
+TS0139 17.950
+TS0140 8.950
+TS0141 8.950
+TS0144 11.950
+TS0145 11.950
+TS0147 10.950
+TS0149 16.950
+TS0150 6.950
+TS0151 19.950
+TS0152 1.500
+TS0154 6.950
+TS0155 11.950
+TS0156 15.950
+TS0157 14.950
+TS0158 9.950
+TS0161 12.950
+TS0162 14.950
+TS0163 12.950
+TS0164 14.950
+TS0165 12.950
+TS0166 12.950
+TS0168 19.950
+TS0169 16.950
+TS0171 16.950
+TS0172 12.950
+TS0173 12.950
+TS0174 13.950
+TS0175 9.950
+TS0176 19.950
+TS0177 12.950
+TS0178 12.950
+TS0179 14.950
+TS0180 14.950
+TS0182 15.950
+TS0183 14.950
+TS0184 19.950
+TS0185 14.950
+TS0186 19.950
+TS0187 16.950
+TS0188 16.950
+TS0190 14.950
+'''
+rows={pid:round(float(value)*1000) for pid,value in (line.split() for line in prices.splitlines() if line.strip())}
+catalog=json.loads((ROOT/'public/catalog.json').read_text())
+assert set(rows)=={p['id'] for p in catalog}
+assert min(rows.values())==500 and max(rows.values())<20000
+policy={
+ 'release_id':'owner-pricing-2026-10-25-v1','currency':'JOD','unit':'fils',
+ 'minimum_price_fils':500,'maximum_price_fils':20000,'initial_stock_per_product':24,
+ 'authorization':'تسعير مفوّض من المالك بتاريخ 25 أكتوبر 2026 ضمن 0.500–20.000 دينار، وتسجيل 24 قطعة لكل منتج مختار.',
+ 'basis':'أسعار بيع محددة لكل منتج بحسب الفئة والعبوة والعلامة ومراجع الكتالوج، مع سقف 19.950 دينار. ليست حساب هامش ربح أو تكلفة شراء.',
+ 'discount_policy':'سعر نهائي مباشر دون نسب خصم أو أسعار سابقة غير مثبتة.',
+ 'products':[{'id':p['id'],'price_fils':rows[p['id']],'initial_stock':24,'approved':True} for p in catalog]
+}
+(ROOT/'data/pricing-stock-policy.json').write_text(json.dumps(policy,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({'products':len(rows),'min_fils':min(rows.values()),'max_fils':max(rows.values()),'initial_units':24*len(rows)}))
