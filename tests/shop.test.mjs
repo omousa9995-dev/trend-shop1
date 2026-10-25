@@ -28,6 +28,30 @@ function fixture(){const DB=mockDB();DB.sql.prepare(`INSERT INTO products(id,bra
 async function api(url,env,ctx,body,headers={}){const opts={method:body?'POST':'GET',headers:{...headers}};if(body){opts.headers['content-type']='application/json';opts.headers.origin='https://trend.test';opts.body=JSON.stringify(body)}return await worker.fetch(new Request('https://trend.test'+url,opts),env,ctx)}
 const cart={name:'سارة أحمد',phone:'0791234567',email:'sara@example.com',governorate:'عمّان',address:'شارع الجامعة، عمارة 25، الطابق الثاني',payment:'cod',items:[{id:'TS0001',qty:1}]};
 
+test('Mail health is available before owner activation and fails closed when mail is unconfigured',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;delete f.env.MAIL_WEBHOOK_TOKEN;delete f.env.ADMIN_PASSWORD_HASH;f.env.STORE_LIVE='false';
+ globalThis.fetch=async()=>{throw Error('must not contact an unconfigured endpoint')};
+ try{const response=await api('/api/mail-health',f.env,f.ctx);assert.equal(response.status,503);const data=await response.json();assert.equal(data.configured,false);assert.equal(data.reachable,false);assert.equal(data.canSend,false);assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,0);}finally{globalThis.fetch=originalFetch;}
+});
+
+test('Mail health authenticates a read-only upstream check, caches success, and invalidates cache on token changes',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;f.env.STORE_LIVE='false';delete f.env.ADMIN_PASSWORD_HASH;const cache=new Map();let calls=0;
+ f.env.MEDIA={async get(key){return cache.has(key)?JSON.parse(cache.get(key)):null},async put(key,value,options){assert.equal(options.expirationTtl,300);cache.set(key,value)}};
+ globalThis.fetch=async(url,options)=>{calls++;assert.equal(url,f.env.MAIL_WEBHOOK_URL);assert.deepEqual(JSON.parse(options.body),{token:f.env.MAIL_WEBHOOK_TOKEN,action:'health'});assert.ok(options.signal);return Response.json({ok:true,service:'trend-shop-mail',ownerEmail:calls===1?'stpostpo470@gmail.com':'wrong@example.org',remainingRecipients:99,extra:f.env.MAIL_WEBHOOK_TOKEN});};
+ try{
+  const first=await api('/api/mail-health',f.env,f.ctx);assert.equal(first.status,200);const data=await first.json();assert.equal(data.canSend,true);assert.equal(data.reachable,true);assert.deepEqual(Object.keys(data).sort(),['canSend','checkedAt','configured','reachable']);assert.ok(!JSON.stringify(data).includes(f.env.MAIL_WEBHOOK_TOKEN));
+  assert.equal((await api('/api/mail-health',f.env,f.ctx)).status,200);assert.equal(calls,1);
+  f.env.MAIL_WEBHOOK_TOKEN+='rotated';assert.equal((await api('/api/mail-health',f.env,f.ctx)).status,503);assert.equal(calls,2);
+  assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,0);
+ }finally{globalThis.fetch=originalFetch;}
+});
+
+test('Mail health reports exhausted quota and upstream failures without exposing credentials or sending mail',async()=>{
+ const originalFetch=globalThis.fetch;
+ try{for(const mode of ['quota','http','network']){const f=fixture();globalThis.fetch=async()=>{if(mode==='network')throw Error(f.env.MAIL_WEBHOOK_TOKEN);return Response.json({ok:true,service:'trend-shop-mail',ownerEmail:'stpostpo470@gmail.com',remainingRecipients:0,token:f.env.MAIL_WEBHOOK_TOKEN},{status:mode==='http'?500:200});};const response=await api('/api/mail-health',f.env,f.ctx);assert.equal(response.status,503);const data=await response.json();assert.equal(data.canSend,false);assert.equal(data.reachable,mode==='quota');assert.ok(!JSON.stringify(data).includes(f.env.MAIL_WEBHOOK_TOKEN));assert.ok(!JSON.stringify(data).includes(f.env.MAIL_WEBHOOK_URL));assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,0);}}
+ finally{globalThis.fetch=originalFetch;}
+});
+
 test('Checkout accepts an omitted email, persists the order, and still notifies the store',async()=>{
  const f=fixture(),originalFetch=globalThis.fetch;let notification;
  globalThis.fetch=async(_url,options)=>{notification=JSON.parse(options.body);return new Response('{"ok":true}',{status:200})};
