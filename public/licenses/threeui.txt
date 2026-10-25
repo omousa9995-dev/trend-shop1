@@ -1,9 +1,6 @@
-ThreeUI Community — GradientPillButton and Energy Orb
+ThreeUI Community — GradientPillButton
 Source: https://github.com/MengTo/threeui/blob/main/src/shaders/neuform-isolated/sources/gradient-pill-button.html
 Adapted for Trend Shop: local CSS, rose palette, accessible link, no Tailwind CDN or React runtime.
-
-Energy Orb source: https://github.com/MengTo/threeui/blob/main/src/shaders/energy-orb/energyOrbShaders.ts
-Adapted host: vanilla WebGL with pearl/rose colors, a 30 fps limit, visibility pause and disposal; no third-party runtime requests. Canonical shader source is retained in /vendor/threeui/energy-orb-shaders.js.
 
 MIT License
 
