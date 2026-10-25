@@ -22,5 +22,6 @@
   "initial_total_units": 4152,
   "mail_connected": false,
   "owner_admin_activated": false,
-  "automated_tests_passed": 37
+  "automated_tests_passed": 38,
+  "mail_setup_stage": "google_project_saved_awaiting_owner_authorization"
 }

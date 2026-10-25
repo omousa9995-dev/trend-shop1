@@ -47,3 +47,14 @@ test('An invalid nonempty customer email cannot reach the mail sender',()=>{
  const {sent,response}=testBridge({token,order:{...order,email:'invalid'}});
  assert.equal(response.ok,false);assert.equal(sent.length,0);
 });
+
+test('Owner initialization preserves an existing secret and logs no secret while sending the store test',()=>{
+ const properties=new Map(),sent=[],logs=[];let generated=0;
+ const ctx={PropertiesService:{getScriptProperties(){return {getProperty:k=>properties.get(k),setProperty(k,v){properties.set(k,v)}}}},Utilities:{getUuid(){generated++;return 'random-owner-uuid-0123456789-'+generated}},MailApp:{getRemainingDailyQuota(){return 99},sendEmail(x){sent.push(x)}},ContentService:{MimeType:{JSON:'application/json'},createTextOutput(s){return {getContent(){return s},setMimeType(){return this}}}},console:{log(s){logs.push(s)},error(){}},JSON,String,Number,Array,Error,RegExp};
+ vm.createContext(ctx);vm.runInContext(src,ctx);
+ assert.equal(JSON.parse(ctx.initializeMailBridge().getContent()).ok,true);
+ const created=properties.get('TREND_WEBHOOK_TOKEN');assert.ok(created.length>=32);assert.equal(generated,2);
+ assert.equal(JSON.parse(ctx.initializeMailBridge().getContent()).ok,true);assert.equal(generated,2);assert.equal(properties.get('TREND_WEBHOOK_TOKEN'),created);
+ assert.equal(JSON.parse(ctx.checkMailBridge().getContent()).ok,true);assert.equal(sent.length,2);assert.ok(sent.every(x=>x.to==='stpostpo470@gmail.com'));
+ assert.ok(logs.every(x=>!x.includes(created)));
+});

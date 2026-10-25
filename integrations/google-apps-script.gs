@@ -8,6 +8,27 @@
 const STORE_EMAIL = 'stpostpo470@gmail.com';
 const CLIQ_STORE_ALIAS = 'TRUSTTREND';
 
+/** Run once from the owner's editor. The secret never appears in code or logs. */
+function initializeMailBridge() {
+  const props = PropertiesService.getScriptProperties();
+  let token = props.getProperty('TREND_WEBHOOK_TOKEN');
+  if (!token) {
+    token = Utilities.getUuid() + Utilities.getUuid();
+    props.setProperty('TREND_WEBHOOK_TOKEN', token);
+  }
+  const result = doPost({postData:{contents:JSON.stringify({token,action:'test'})}});
+  console.log(result.getContent());
+  return result;
+}
+
+/** Owner-only editor check; no email and no secret in its output. */
+function checkMailBridge() {
+  const token = PropertiesService.getScriptProperties().getProperty('TREND_WEBHOOK_TOKEN');
+  const result = doPost({postData:{contents:JSON.stringify({token,action:'health'})}});
+  console.log(result.getContent());
+  return result;
+}
+
 function jsonResult_(value) {
   return ContentService.createTextOutput(JSON.stringify(value))
     .setMimeType(ContentService.MimeType.JSON);
