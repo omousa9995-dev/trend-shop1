@@ -1,0 +1,1534 @@
+{
+  "original_entries": 190,
+  "selected": 173,
+  "duplicates": 11,
+  "held_for_review": 6,
+  "photos_collected": 190,
+  "all_stock_and_prices_require_owner_approval": true,
+  "decisions": [
+    {
+      "id": "TS0001",
+      "name": "Nail Polish By ICE",
+      "decision": "selected",
+      "canonical_id": "TS0001",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0001-54e0b8e9482d.png"
+    },
+    {
+      "id": "TS0002",
+      "name": "Nude Contour & Eyeshadow Palette By Dodo Girl",
+      "decision": "selected",
+      "canonical_id": "TS0002",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0002-4f6b4132e536.png"
+    },
+    {
+      "id": "TS0003",
+      "name": "Jelly Lip Gloss Set By OLIBOLLA",
+      "decision": "selected",
+      "canonical_id": "TS0003",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0003-0f711204ecc2.png"
+    },
+    {
+      "id": "TS0004",
+      "name": "Lip Balm By Rimocoo",
+      "decision": "selected",
+      "canonical_id": "TS0004",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0004-358895a793e1.png"
+    },
+    {
+      "id": "TS0005",
+      "name": "Gel Color By bobo",
+      "decision": "selected",
+      "canonical_id": "TS0005",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0005-afa322d2d52c.jpg"
+    },
+    {
+      "id": "TS0006",
+      "name": "Ultimate Dream Eyeshadow Palette By Diamond Beauty",
+      "decision": "selected",
+      "canonical_id": "TS0006",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0006-daf240317120.png"
+    },
+    {
+      "id": "TS0007",
+      "name": "9 Color Eyeshadow Palette By MERRYCOLOR",
+      "decision": "selected",
+      "canonical_id": "TS0007",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0007-513d8ec6f9c3.png"
+    },
+    {
+      "id": "TS0008",
+      "name": "Color Shifter Highlighter Palette By Romantic Bright",
+      "decision": "selected",
+      "canonical_id": "TS0008",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0008-f9a58c303c2e.png"
+    },
+    {
+      "id": "TS0009",
+      "name": "Hair Care Oil Macadamia & Vitamin E By FREELOOK",
+      "decision": "selected",
+      "canonical_id": "TS0009",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0009-82df1eda5621.png"
+    },
+    {
+      "id": "TS0010",
+      "name": "Hair Care Oil With Keratin & Vitamin E By FREELOOK",
+      "decision": "selected",
+      "canonical_id": "TS0010",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0010-f45a7a45f7a3.png"
+    },
+    {
+      "id": "TS0011",
+      "name": "Floral Shimmer Fragrance Lotion By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0011",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0011-aa3f5f66e72e.png"
+    },
+    {
+      "id": "TS0012",
+      "name": "Argan Steam Hair Care Mask By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0012",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0012-f296cc27747b.png"
+    },
+    {
+      "id": "TS0013",
+      "name": "Vitamin C Anti-Spot & Sun Protection Hand Mask By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0013",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0013-985905f03e2d.png"
+    },
+    {
+      "id": "TS0014",
+      "name": "Clay and Hemp Oil Exfoliating Hand Mask By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0014",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0014-a33bdf5bc446.png"
+    },
+    {
+      "id": "TS0015",
+      "name": "Repairing and Nourishing Hand Mask By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0015",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0015-654447698ccb.png"
+    },
+    {
+      "id": "TS0016",
+      "name": "Vitamin C Peel-Off Foot Mask with Exfoliating Effect By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0016",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0016-e9e0f8aae53c.png"
+    },
+    {
+      "id": "TS0017",
+      "name": "Clay and Hemp Oil Exfoliating Foot Mask By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0017",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0017-3de9d4cb196d.png"
+    },
+    {
+      "id": "TS0018",
+      "name": "Intensive Moisturizing Foot Mask By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0018",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0018-36db4e16b3c6.png"
+    },
+    {
+      "id": "TS0019",
+      "name": "10% Urea Heel Crack Care & Moisturizing Foot Mask By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0019",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0019-95a043026017.png"
+    },
+    {
+      "id": "TS0020",
+      "name": "100% Natural Rose Water Revitalizing Renewing 3D Capsule Cream By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0020",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0020-af69ec49d2b1.png"
+    },
+    {
+      "id": "TS0021",
+      "name": "Rice Yeast Whitening Fluid Cream 30 SPF By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0021",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0021-3043f5e0bb7d.png"
+    },
+    {
+      "id": "TS0022",
+      "name": "Collagen moisturizer Stick By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0022",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0022-966640210b7a.png"
+    },
+    {
+      "id": "TS0023",
+      "name": "Tea Tree Oil Anti-Acne Facial Spray By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0023",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0023-fdb76aa06ff9.png"
+    },
+    {
+      "id": "TS0024",
+      "name": "Rice Yeast Whitening and Revitalizing Facial Spray By DERMOKIL",
+      "decision": "selected",
+      "canonical_id": "TS0024",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0024-fc1873db740c.png"
+    },
+    {
+      "id": "TS0025",
+      "name": "Natural Moisturizing Factors + HA for Scalp Hair Serum By THE ORDINARY",
+      "decision": "selected",
+      "canonical_id": "TS0025",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0025-8de6bb03287b.jpg"
+    },
+    {
+      "id": "TS0026",
+      "name": "سيروم الهيالورونيك أسيد The Ordinary Hyaluronic Acid 2%+B5",
+      "decision": "selected",
+      "canonical_id": "TS0026",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0026-65cf674a2df1.jpg"
+    },
+    {
+      "id": "TS0027",
+      "name": "سيروم الهالات السوداء The Ordinary Caffeine Solution 5% EGCG",
+      "decision": "selected",
+      "canonical_id": "TS0027",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0027-d234974bf298.jpg"
+    },
+    {
+      "id": "TS0028",
+      "name": "AHA 30%+BHA 2% Peeling Solution By The Ordinary",
+      "decision": "selected",
+      "canonical_id": "TS0028",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0028-cdfedf418b07.jpg"
+    },
+    {
+      "id": "TS0029",
+      "name": "واقي شمس Bioderma Photoderm Max SPF100",
+      "decision": "selected",
+      "canonical_id": "TS0029",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0029-eb49f74912e9.jpg"
+    },
+    {
+      "id": "TS0030",
+      "name": "Daily Hydration Lotion By Eucerin",
+      "decision": "selected",
+      "canonical_id": "TS0030",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0030-3a412304e269.jpg"
+    },
+    {
+      "id": "TS0031",
+      "name": "واقي شمس Eucerin Oil Control",
+      "decision": "selected",
+      "canonical_id": "TS0031",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0031-aadaa0387edb.jpg"
+    },
+    {
+      "id": "TS0032",
+      "name": "مجموعة كثافة الشعر والرموش والحواجب The Ordinary Hair,Lash&Brow Density Sit",
+      "decision": "selected",
+      "canonical_id": "TS0032",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0032-044d1e8b219d.jpg"
+    },
+    {
+      "id": "TS0033",
+      "name": "مثبت مكياج Dr.Rashel",
+      "decision": "selected",
+      "canonical_id": "TS0033",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0033-81da2d7c9704.jpg"
+    },
+    {
+      "id": "TS0034",
+      "name": "كريم فيتامين أي والريتينول لرفع العين ومكافحة الشيخوخة من Dr Rashel",
+      "decision": "selected",
+      "canonical_id": "TS0034",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0034-29fee2409fd6.jpg"
+    },
+    {
+      "id": "TS0035",
+      "name": "Black Whitening Cream By Dr Rashel",
+      "decision": "selected",
+      "canonical_id": "TS0035",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0035-2adea0595bac.jpg"
+    },
+    {
+      "id": "TS0036",
+      "name": "Salicylic Acid 0.5% Body Serum By The Ordinary",
+      "decision": "selected",
+      "canonical_id": "TS0036",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0036-656a649549ba.jpg"
+    },
+    {
+      "id": "TS0037",
+      "name": "Laboratoire Dermatologiqu Sebium Gel Moussant By BIODERMA",
+      "decision": "selected",
+      "canonical_id": "TS0037",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0037-a89335cc74b5.jpg"
+    },
+    {
+      "id": "TS0038",
+      "name": "Original Advanced Snail Peptide Eye Cream By Cosrx",
+      "decision": "selected",
+      "canonical_id": "TS0038",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0038-9c8d8ee36b70.jpg"
+    },
+    {
+      "id": "TS0039",
+      "name": "مزيل مكياج Dr.Rashel",
+      "decision": "selected",
+      "canonical_id": "TS0039",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0039-1ee346ac06be.jpg"
+    },
+    {
+      "id": "TS0040",
+      "name": "كريم مرطب حمض الهيالورونيك أسيد COSRX",
+      "decision": "selected",
+      "canonical_id": "TS0040",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0040-372e9cba2f3e.jpg"
+    },
+    {
+      "id": "TS0041",
+      "name": "Black Charcoal Deep Cleansing Nose Strips 6 Pieces By Dr Rashel",
+      "decision": "selected",
+      "canonical_id": "TS0041",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0041-deb1f391e4bd.png"
+    },
+    {
+      "id": "TS0042",
+      "name": "سكراب ومقشر بخلاصة الالوفيرا من Dr Rashel",
+      "decision": "selected",
+      "canonical_id": "TS0042",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0042-fd98ff72f9a1.jpg"
+    },
+    {
+      "id": "TS0043",
+      "name": "سيروم Dr.Rashel",
+      "decision": "review",
+      "reason": "اسم سيروم دكتور راشيل غير محدد بما يكفي لتحديد النسخة والمحتوى بدقة.",
+      "image": "/images/catalog/TS0043-ab4c11351623.jpg"
+    },
+    {
+      "id": "TS0044",
+      "name": "سيروم Cosrx Galactomyces95 Tone Balancing Essence",
+      "decision": "selected",
+      "canonical_id": "TS0044",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0044-4336d2d071f4.jpg"
+    },
+    {
+      "id": "TS0045",
+      "name": "NOTE INSTANT BI-PHASE MAKE UP REMOVER",
+      "decision": "selected",
+      "canonical_id": "TS0045",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0045-7ca145df3014.jpg"
+    },
+    {
+      "id": "TS0046",
+      "name": "NOTE PERFECTING PEN 01",
+      "decision": "selected",
+      "canonical_id": "TS0046",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0046-940cbd2a6181.jpg"
+    },
+    {
+      "id": "TS0047",
+      "name": "NOTE MATTIFYING EXTREME WEAR FOUNDATION",
+      "decision": "selected",
+      "canonical_id": "TS0047",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0047-0da340cd9298.jpg"
+    },
+    {
+      "id": "TS0048",
+      "name": "NOTE BROW ADDICT TINT & SHAPING GEL",
+      "decision": "selected",
+      "canonical_id": "TS0048",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0048-e0e804536a9b.jpg"
+    },
+    {
+      "id": "TS0049",
+      "name": "NOTE MOISTURIZING LASH & BROW OIL",
+      "decision": "selected",
+      "canonical_id": "TS0049",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0049-2ad0d1d587ce.jpg"
+    },
+    {
+      "id": "TS0050",
+      "name": "NOTE LUMINOUS SILK COMPACT BLUSHER",
+      "decision": "selected",
+      "canonical_id": "TS0050",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0050-c38be8d05206.jpg"
+    },
+    {
+      "id": "TS0051",
+      "name": "Hair Styling Spider Wax S1 By NISHMAN",
+      "decision": "selected",
+      "canonical_id": "TS0051",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0051-92d7c5993853.jpg"
+    },
+    {
+      "id": "TS0052",
+      "name": "Hair Stick Wax By NISHLADY",
+      "decision": "selected",
+      "canonical_id": "TS0052",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0052-fb32ce0b2301.png"
+    },
+    {
+      "id": "TS0053",
+      "name": "Dust Grain Volume and Texture Powder By NISHLADY",
+      "decision": "selected",
+      "canonical_id": "TS0053",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0053-eecabc446a1e.png"
+    },
+    {
+      "id": "TS0054",
+      "name": "Touch of Silver Bi-phase Conditioner for Blonde and Gray Hair By NISHLADY",
+      "decision": "selected",
+      "canonical_id": "TS0054",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0054-288ceb113d79.png"
+    },
+    {
+      "id": "TS0055",
+      "name": "Liquid Spray Hair Wax By NISHLADY",
+      "decision": "selected",
+      "canonical_id": "TS0055",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0055-9e8cb050dedf.jpg"
+    },
+    {
+      "id": "TS0056",
+      "name": "The Ordinary Retinol Serum 0.5% in Squalane 30ml. TO-19401",
+      "decision": "selected",
+      "canonical_id": "TS0056",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0056-c5c913469b65.jpg"
+    },
+    {
+      "id": "TS0057",
+      "name": "The Ordinary Lactic Acid 10% + HA Superficial Peeling Serum, 30ml",
+      "decision": "selected",
+      "canonical_id": "TS0057",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0057-8291a59fb33b.jpg"
+    },
+    {
+      "id": "TS0058",
+      "name": "The Ordinary Salicylic Acid 2% Solution, 30ml",
+      "decision": "selected",
+      "canonical_id": "TS0058",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0058-8f01419830e9.jpg"
+    },
+    {
+      "id": "TS0059",
+      "name": "Dr. Althea - 345 Relief Cream",
+      "decision": "selected",
+      "canonical_id": "TS0059",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0059-61795de6c32d.jpg"
+    },
+    {
+      "id": "TS0060",
+      "name": "Celimax – THE VITA-A Retinal Shot Tightening Booster",
+      "decision": "selected",
+      "canonical_id": "TS0060",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0060-ee8fb68a8af8.jpg"
+    },
+    {
+      "id": "TS0061",
+      "name": "EQQUALBERRY - Vitamin Illuminating Serum",
+      "decision": "selected",
+      "canonical_id": "TS0061",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0061-88f84b45d59b.jpg"
+    },
+    {
+      "id": "TS0062",
+      "name": "Anua - Niacinamide 10 TXA 4 Serum",
+      "decision": "selected",
+      "canonical_id": "TS0062",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0062-0f4dadb61a16.jpg"
+    },
+    {
+      "id": "TS0063",
+      "name": "PanOxyl - Acne Foaming Wash 10% Benzoyl Peroxide",
+      "decision": "review",
+      "reason": "غسول علاجي ببنزويل بيروكسيد 10%؛ يؤجل لمراجعة متخصصة قبل اعتماده ضمن التشكيلة.",
+      "image": "/images/catalog/TS0063-cbefd9a88968.jpg"
+    },
+    {
+      "id": "TS0064",
+      "name": "The Ordinary - Glycolic Acid 7% Exfoliating Toner",
+      "decision": "selected",
+      "canonical_id": "TS0064",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0064-3986c417dad3.jpg"
+    },
+    {
+      "id": "TS0065",
+      "name": "Beauty of Joseon – Relief Sun",
+      "decision": "selected",
+      "canonical_id": "TS0065",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0065-04d4acbe5053.jpg"
+    },
+    {
+      "id": "TS0066",
+      "name": "Biodance - Bio-Collagen Real Deep Mask Set",
+      "decision": "selected",
+      "canonical_id": "TS0066",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0066-a542ceee754e.jpg"
+    },
+    {
+      "id": "TS0067",
+      "name": "Axis-Y Dark Spot Correcting Glow Serum",
+      "decision": "selected",
+      "canonical_id": "TS0067",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0067-592055b9b030.jpg"
+    },
+    {
+      "id": "TS0068",
+      "name": "Abib - PDRN Retinal Eye Patch Glow Jelly",
+      "decision": "selected",
+      "canonical_id": "TS0068",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0068-317fbd1a7574.jpg"
+    },
+    {
+      "id": "TS0069",
+      "name": "Arencia - Vitamin C Booster Shot",
+      "decision": "selected",
+      "canonical_id": "TS0069",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0069-ee0530506b94.png"
+    },
+    {
+      "id": "TS0070",
+      "name": "Anua Heartleaf Quercetinol Pore Deep Cleansing Foam",
+      "decision": "selected",
+      "canonical_id": "TS0070",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0070-21dd0ed2414f.png"
+    },
+    {
+      "id": "TS0071",
+      "name": "Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+      "decision": "selected",
+      "canonical_id": "TS0071",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0071-1108121259ba.jpg"
+    },
+    {
+      "id": "TS0072",
+      "name": "P.CALM - Holy Basil Bubble Deep Mask",
+      "decision": "selected",
+      "canonical_id": "TS0072",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0072-bf27532c2a3f.jpg"
+    },
+    {
+      "id": "TS0073",
+      "name": "Medicube - Collagen Night Wrapping Mask",
+      "decision": "selected",
+      "canonical_id": "TS0073",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0073-05a996400080.jpg"
+    },
+    {
+      "id": "TS0074",
+      "name": "Dr. Althea - 147 Barrier Cream",
+      "decision": "selected",
+      "canonical_id": "TS0074",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0074-6afd2de78fd2.jpg"
+    },
+    {
+      "id": "TS0075",
+      "name": "Isntree - Hyaluronic Acid Moist Cream",
+      "decision": "selected",
+      "canonical_id": "TS0075",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0075-d7b1375fe52a.png"
+    },
+    {
+      "id": "TS0076",
+      "name": "Isntree - Hyaluronic Acid Watery Sun Gel",
+      "decision": "selected",
+      "canonical_id": "TS0076",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0076-e7ad8f4440fb.png"
+    },
+    {
+      "id": "TS0077",
+      "name": "Fino Premium Touch Hair Mask",
+      "decision": "selected",
+      "canonical_id": "TS0077",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0077-75afdc6d85cc.jpg"
+    },
+    {
+      "id": "TS0078",
+      "name": "SKIN1004 – Madagascar Centella Tone Brightening Capsule Ampoule (50ml)",
+      "decision": "selected",
+      "canonical_id": "TS0078",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0078-ccddeb9c39cd.jpg"
+    },
+    {
+      "id": "TS0079",
+      "name": "COSRX – Advanced Snail 96 Mucin Power Essence",
+      "decision": "selected",
+      "canonical_id": "TS0079",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0079-a9ee4ad7e0be.jpg"
+    },
+    {
+      "id": "TS0080",
+      "name": "COSRX – Advanced Snail 92 All In One Cream",
+      "decision": "selected",
+      "canonical_id": "TS0080",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0080-c6b96951c9c5.png"
+    },
+    {
+      "id": "TS0081",
+      "name": "Beauty of joseon - Relief Sun Aqua Fresh",
+      "decision": "selected",
+      "canonical_id": "TS0081",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0081-6d2d6b7dbd3c.jpg"
+    },
+    {
+      "id": "TS0082",
+      "name": "Mary & May – Tranexamic Acid + Glutathione Eye Cream",
+      "decision": "selected",
+      "canonical_id": "TS0082",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0082-2f5e89e9b11d.jpg"
+    },
+    {
+      "id": "TS0083",
+      "name": "medicube - Collagen Jelly Cream (110ml)",
+      "decision": "selected",
+      "canonical_id": "TS0083",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0083-db815bac5be6.jpg"
+    },
+    {
+      "id": "TS0084",
+      "name": "Axis-Y Vegan Collagen Eye Serum",
+      "decision": "selected",
+      "canonical_id": "TS0084",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0084-9f467a97cbe7.jpg"
+    },
+    {
+      "id": "TS0085",
+      "name": "SKIN1004 – Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
+      "decision": "selected",
+      "canonical_id": "TS0085",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0085-6f77dfeba7eb.jpg"
+    },
+    {
+      "id": "TS0086",
+      "name": "COSRX - Salicylic Acid Daily Gentle Cleanser",
+      "decision": "selected",
+      "canonical_id": "TS0086",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0086-85106e371957.jpg"
+    },
+    {
+      "id": "TS0087",
+      "name": "SKIN1004 – Madagascar Centella Light Cleansing Oil",
+      "decision": "selected",
+      "canonical_id": "TS0087",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0087-b2f1955e73ee.jpg"
+    },
+    {
+      "id": "TS0088",
+      "name": "EQQUALBERRY - Bakuchiol Plumping Serum",
+      "decision": "selected",
+      "canonical_id": "TS0088",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0088-7b03712f2547.jpg"
+    },
+    {
+      "id": "TS0089",
+      "name": "Anua - Double Cleansing Duo Set",
+      "decision": "selected",
+      "canonical_id": "TS0089",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0089-db01a10f4a96.jpg"
+    },
+    {
+      "id": "TS0090",
+      "name": "Anua - Heartleaf 77 Clear Pad",
+      "decision": "selected",
+      "canonical_id": "TS0090",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0090-a26250afa7b2.jpg"
+    },
+    {
+      "id": "TS0091",
+      "name": "Anua - Heartleaf 77% Soothing Toner",
+      "decision": "selected",
+      "canonical_id": "TS0091",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0091-f84e3c1c3bc1.png"
+    },
+    {
+      "id": "TS0092",
+      "name": "Anua - PDRN Hyaluronic Acid Capsule 100 Serum",
+      "decision": "selected",
+      "canonical_id": "TS0092",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0092-61620a04642b.jpg"
+    },
+    {
+      "id": "TS0093",
+      "name": "Anua - Peach 70 Niacin Serum",
+      "decision": "selected",
+      "canonical_id": "TS0093",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0093-a22a10e1c3c7.jpg"
+    },
+    {
+      "id": "TS0094",
+      "name": "Anua - Rice 70 Glow Milky Toner",
+      "decision": "selected",
+      "canonical_id": "TS0094",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0094-053f91048dba.jpg"
+    },
+    {
+      "id": "TS0095",
+      "name": "Anua Heartleaf Pore Control Cleansing Oil",
+      "decision": "selected",
+      "canonical_id": "TS0095",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0095-04dad38793b9.png"
+    },
+    {
+      "id": "TS0096",
+      "name": "APLB - Collagen Peptide Beauty Tablet",
+      "decision": "review",
+      "reason": "أقراص مكمل غذائي وليست مستحضر تجميل موضعيًا؛ خارج التشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0096-6e0619c6c493.jpg"
+    },
+    {
+      "id": "TS0097",
+      "name": "APRILSKIN - TXA Niacinamide Toning Shot 99 Serum",
+      "decision": "selected",
+      "canonical_id": "TS0097",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0097-eab18691f55a.jpg"
+    },
+    {
+      "id": "TS0098",
+      "name": "Arencia - Fresh Green Rice Mochi Cleanser",
+      "decision": "selected",
+      "canonical_id": "TS0098",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0098-ca6be2972b93.jpg"
+    },
+    {
+      "id": "TS0099",
+      "name": "Axis - Y - Complete No Stress Physical Sunscreen",
+      "decision": "selected",
+      "canonical_id": "TS0099",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0099-65736e5622ef.png"
+    },
+    {
+      "id": "TS0100",
+      "name": "Beauty of Joseon - Red Bean Refreshing Pore Mask",
+      "decision": "selected",
+      "canonical_id": "TS0100",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0100-4d24d71ad091.jpg"
+    },
+    {
+      "id": "TS0101",
+      "name": "Beauty of Joseon - Relief Sun Mini",
+      "decision": "selected",
+      "canonical_id": "TS0101",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0101-cdeffd530221.jpg"
+    },
+    {
+      "id": "TS0102",
+      "name": "Centella Poremizing Light Gel Cream",
+      "decision": "selected",
+      "canonical_id": "TS0102",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0102-6bf9bea8c712.jpg"
+    },
+    {
+      "id": "TS0103",
+      "name": "Centella Soothing Cream",
+      "decision": "selected",
+      "canonical_id": "TS0103",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0103-c0519551b6fb.png"
+    },
+    {
+      "id": "TS0104",
+      "name": "COSRX - Advanced Snail Peptide Eye Cream",
+      "decision": "duplicate",
+      "canonical_id": "TS0038",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0104-fa7cdf639f94.jpg"
+    },
+    {
+      "id": "TS0105",
+      "name": "COSRX - AHA/BHA Clarifying Treatment Toner",
+      "decision": "selected",
+      "canonical_id": "TS0105",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0105-efc401fc54a2.jpg"
+    },
+    {
+      "id": "TS0106",
+      "name": "COSRX - All About Snail Trial Kit",
+      "decision": "selected",
+      "canonical_id": "TS0106",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0106-056e6f6b8298.jpg"
+    },
+    {
+      "id": "TS0107",
+      "name": "COSRX - Balancium Ceramide Lip Butter Sleeping Mask",
+      "decision": "selected",
+      "canonical_id": "TS0107",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0107-7660a19c6edb.jpg"
+    },
+    {
+      "id": "TS0108",
+      "name": "COSRX - Full Fit Propolis Lip Sleeping Mask",
+      "decision": "selected",
+      "canonical_id": "TS0108",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0108-325fa8806ce2.jpg"
+    },
+    {
+      "id": "TS0109",
+      "name": "COSRX - Low pH Good Morning Gel Cleanser",
+      "decision": "selected",
+      "canonical_id": "TS0109",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0109-64acefe753be.jpg"
+    },
+    {
+      "id": "TS0110",
+      "name": "COSRX - Refresh AHA BHA Vitamin C Lip Plumper",
+      "decision": "selected",
+      "canonical_id": "TS0110",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0110-0d8805e07dca.jpg"
+    },
+    {
+      "id": "TS0111",
+      "name": "Dr. Althea - 345 Relief Cream Mist Mini",
+      "decision": "selected",
+      "canonical_id": "TS0111",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0111-4bf0cccbc8e0.jpg"
+    },
+    {
+      "id": "TS0112",
+      "name": "Dr. Althea - Pure Grinding Cleansing Balm",
+      "decision": "selected",
+      "canonical_id": "TS0112",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0112-5df166a18bd2.jpg"
+    },
+    {
+      "id": "TS0113",
+      "name": "Dr.Melaxin - Peel Shot Exfoliating Black Rice Ampoule",
+      "decision": "selected",
+      "canonical_id": "TS0113",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0113-62467be0eae6.png"
+    },
+    {
+      "id": "TS0114",
+      "name": "Dr.Melaxin - Peel Shot Exfoliating White Rice Ampoule",
+      "decision": "selected",
+      "canonical_id": "TS0114",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0114-97043b94fa7d.png"
+    },
+    {
+      "id": "TS0115",
+      "name": "EQQUALBERRY - NAD+ Peptide Boosting Serum",
+      "decision": "selected",
+      "canonical_id": "TS0115",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0115-d919265c013b.png"
+    },
+    {
+      "id": "TS0116",
+      "name": "ETUDE - My Lash Serum",
+      "decision": "selected",
+      "canonical_id": "TS0116",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0116-f9dd3c5833e6.jpg"
+    },
+    {
+      "id": "TS0117",
+      "name": "JUMISO - All Day Vitamin Brightening & Balancing Facial Serum",
+      "decision": "selected",
+      "canonical_id": "TS0117",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0117-da7b87115051.jpg"
+    },
+    {
+      "id": "TS0118",
+      "name": "KSECRET - SEOUL 1988 Eye Cream : Retinal Liposome 4% + Fermented Bean",
+      "decision": "selected",
+      "canonical_id": "TS0118",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0118-60ce70988c1a.jpg"
+    },
+    {
+      "id": "TS0119",
+      "name": "Huda Beauty Lip Contour Stain",
+      "decision": "selected",
+      "canonical_id": "TS0119",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0119-441dfb4491fc.webp"
+    },
+    {
+      "id": "TS0120",
+      "name": "Mavala Mascara Waterproof - Black",
+      "decision": "selected",
+      "canonical_id": "TS0120",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0120-f859c20039db.webp"
+    },
+    {
+      "id": "TS0121",
+      "name": "KIKO Magical Long Lasting Colour Lip Pencil",
+      "decision": "selected",
+      "canonical_id": "TS0121",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0121-8f71fc1ba0e7.webp"
+    },
+    {
+      "id": "TS0122",
+      "name": "SOME BY MI Retinol Intense Reactivating Serum",
+      "decision": "selected",
+      "canonical_id": "TS0122",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0122-b8163e8c4ce3.jpg"
+    },
+    {
+      "id": "TS0123",
+      "name": "Dr. Althea Purifying Green Tea Sunscreen",
+      "decision": "selected",
+      "canonical_id": "TS0123",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0123-3f59a126050c.jpg"
+    },
+    {
+      "id": "TS0124",
+      "name": "ACM Sébionex Dermatological Bar",
+      "decision": "selected",
+      "canonical_id": "TS0124",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0124-252ced7664d1.webp"
+    },
+    {
+      "id": "TS0125",
+      "name": "ACM Sébionex Cleansing Gel",
+      "decision": "selected",
+      "canonical_id": "TS0125",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0125-1903716b4915.webp"
+    },
+    {
+      "id": "TS0126",
+      "name": "ACM Dépiwhite Advanced",
+      "decision": "selected",
+      "canonical_id": "TS0126",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0126-02f2e590c753.webp"
+    },
+    {
+      "id": "TS0127",
+      "name": "Olaplex No. 3 Hair Perfector",
+      "decision": "selected",
+      "canonical_id": "TS0127",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0127-2dff11d8e11e.jpg"
+    },
+    {
+      "id": "TS0128",
+      "name": "Mary & May Tranexamic Acid",
+      "decision": "duplicate",
+      "canonical_id": "TS0082",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0128-b727aafc9f30.avif"
+    },
+    {
+      "id": "TS0129",
+      "name": "Secret Key Snow White Spot Gel",
+      "decision": "selected",
+      "canonical_id": "TS0129",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0129-aa1b115eced4.jpg"
+    },
+    {
+      "id": "TS0130",
+      "name": "Vaseline Lip Therapy Rosy Lips",
+      "decision": "selected",
+      "canonical_id": "TS0130",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0130-3fd8a6f68112.jpg"
+    },
+    {
+      "id": "TS0131",
+      "name": "Sebamed Lip Defense",
+      "decision": "selected",
+      "canonical_id": "TS0131",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0131-713300fda0d5.jpg"
+    },
+    {
+      "id": "TS0132",
+      "name": "AXIS-Y Artichoke Intensive Skin Barrier Ampoule",
+      "decision": "selected",
+      "canonical_id": "TS0132",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0132-95910c361b21.png"
+    },
+    {
+      "id": "TS0133",
+      "name": "Vaseline Intensive Care Vitamin B3 Body Oil",
+      "decision": "selected",
+      "canonical_id": "TS0133",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0133-ea5737909bff.jpg"
+    },
+    {
+      "id": "TS0134",
+      "name": "LANBENA Bamboo Charcoal Blackhead Mask",
+      "decision": "selected",
+      "canonical_id": "TS0134",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0134-8361f9f4e8ec.jpg"
+    },
+    {
+      "id": "TS0135",
+      "name": "Anua Heartleaf Quercetinol Pore Deep Cleansing Foam",
+      "decision": "duplicate",
+      "canonical_id": "TS0070",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0135-8a7ac5725ab0.jpg"
+    },
+    {
+      "id": "TS0136",
+      "name": "Medicube PDRN Lip Sleeping Mask",
+      "decision": "selected",
+      "canonical_id": "TS0136",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0136-6249bdeaef5c.jpg",
+      "correction": {
+        "name": "Medicube PDRN Lip Sleeping Mask"
+      }
+    },
+    {
+      "id": "TS0137",
+      "name": "rhode Peptide Lip Treatment Unscented 10 ml",
+      "decision": "selected",
+      "canonical_id": "TS0137",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0137-bad72eaa03a8.png",
+      "correction": {
+        "name": "rhode Peptide Lip Treatment Unscented 10 ml"
+      }
+    },
+    {
+      "id": "TS0138",
+      "name": "Marvis Whitening Mint",
+      "decision": "selected",
+      "canonical_id": "TS0138",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0138-68902cbfe571.jpg"
+    },
+    {
+      "id": "TS0139",
+      "name": "Mavala Scientifique Nail Hardener",
+      "decision": "selected",
+      "canonical_id": "TS0139",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0139-d55f0a2808d4.png"
+    },
+    {
+      "id": "TS0140",
+      "name": "Mavala Double-Lash",
+      "decision": "selected",
+      "canonical_id": "TS0140",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0140-cef211b8c599.jpg"
+    },
+    {
+      "id": "TS0141",
+      "name": "ACURE Brightening Cleansing Gel",
+      "decision": "selected",
+      "canonical_id": "TS0141",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0141-63aa3c9c6a86.webp"
+    },
+    {
+      "id": "TS0142",
+      "name": "St. Dalfour",
+      "decision": "review",
+      "reason": "ذُكر اسم العلامة فقط دون تحديد اسم الكريم ونسخته.",
+      "image": "/images/catalog/TS0142-bdf2cb6b95f4.webp"
+    },
+    {
+      "id": "TS0143",
+      "name": "Axis-Y Dark Spot Correcting Glow Serum",
+      "decision": "duplicate",
+      "canonical_id": "TS0067",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0143-daa5a53a32c7.webp"
+    },
+    {
+      "id": "TS0144",
+      "name": "Bioderma Pigmentbio Sensitive Areas",
+      "decision": "selected",
+      "canonical_id": "TS0144",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0144-03b186daf824.png"
+    },
+    {
+      "id": "TS0145",
+      "name": "CeraVe Facial Moisturising Lotion AM SPF 50",
+      "decision": "selected",
+      "canonical_id": "TS0145",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0145-f9277fa3e1c3.jpg"
+    },
+    {
+      "id": "TS0146",
+      "name": "Vitamin Illuminating Serum",
+      "decision": "duplicate",
+      "canonical_id": "TS0061",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0146-8cd0a0a3d2a0.avif"
+    },
+    {
+      "id": "TS0147",
+      "name": "Embryolisse Lait-Crème Concentré",
+      "decision": "selected",
+      "canonical_id": "TS0147",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0147-32907675f760.avif"
+    },
+    {
+      "id": "TS0148",
+      "name": "The Ordinary Glycolic Acid 7% Toning Solution",
+      "decision": "duplicate",
+      "canonical_id": "TS0064",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0148-f3d1de01190c.jpg"
+    },
+    {
+      "id": "TS0149",
+      "name": "VT Cosmetics Reedle Shot 100",
+      "decision": "selected",
+      "canonical_id": "TS0149",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0149-fbfad33d9289.jpg"
+    },
+    {
+      "id": "TS0150",
+      "name": "e.l.f. Power Grip Primer",
+      "decision": "selected",
+      "canonical_id": "TS0150",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0150-b256cda24417.jpg"
+    },
+    {
+      "id": "TS0151",
+      "name": "Huda Beauty Easy Bake Loose Baking & Setting Powder",
+      "decision": "selected",
+      "canonical_id": "TS0151",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0151-19a5f5a1c130.jpg"
+    },
+    {
+      "id": "TS0152",
+      "name": "Hemani Rose Oil",
+      "decision": "selected",
+      "canonical_id": "TS0152",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0152-1c1cb84dce4b.jpg"
+    },
+    {
+      "id": "TS0153",
+      "name": "One Step Hair Dryer & Volumizer Brush",
+      "decision": "review",
+      "reason": "أداة كهربائية دون علامة أو طراز محددين؛ يلزم تحديد المواصفات والضمان قبل إضافتها.",
+      "image": "/images/catalog/TS0153-065dc84b825a.avif"
+    },
+    {
+      "id": "TS0154",
+      "name": "Schwarzkopf Got2b Glued 4 Brows & Edges",
+      "decision": "selected",
+      "canonical_id": "TS0154",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0154-28b06f08e8bb.avif"
+    },
+    {
+      "id": "TS0155",
+      "name": "SEAPURI Scalpy Hair Serum 20 ml",
+      "decision": "selected",
+      "canonical_id": "TS0155",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0155-eb7b4264631f.webp",
+      "correction": {
+        "brand": "SEAPURI",
+        "name": "SEAPURI Scalpy Hair Serum 20 ml"
+      }
+    },
+    {
+      "id": "TS0156",
+      "name": "Olaplex No. 6 Bond Smoother",
+      "decision": "selected",
+      "canonical_id": "TS0156",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0156-0b4038771b9a.avif"
+    },
+    {
+      "id": "TS0157",
+      "name": "I'm from - Rice Cream",
+      "decision": "selected",
+      "canonical_id": "TS0157",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0157-21b193268eae.webp"
+    },
+    {
+      "id": "TS0158",
+      "name": "ETUDE - كريم سون جونج 2x باريير المكثف",
+      "decision": "selected",
+      "canonical_id": "TS0158",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0158-4cc9b8927b7a.webp"
+    },
+    {
+      "id": "TS0159",
+      "name": "COSRX - غسول يومي لطيف بحمض الساليسيليك 150 مل",
+      "decision": "duplicate",
+      "canonical_id": "TS0086",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0159-85106e371957.jpg"
+    },
+    {
+      "id": "TS0160",
+      "name": "Cosrx - منظف جل صباحي منخفض الحموضة 150 مل",
+      "decision": "duplicate",
+      "canonical_id": "TS0109",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0160-64acefe753be.jpg"
+    },
+    {
+      "id": "TS0161",
+      "name": "ROUND LAB - عصارة البتولا مرطب واقي من الشمس",
+      "decision": "selected",
+      "canonical_id": "TS0161",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0161-f8ee054fe119.jpg"
+    },
+    {
+      "id": "TS0162",
+      "name": "AXIS-Y - Dark Spot Correcting Glow Toner 125 ml",
+      "decision": "selected",
+      "canonical_id": "TS0162",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0162-94fb73c761c0.jpg"
+    },
+    {
+      "id": "TS0163",
+      "name": "Derma: B - Everyday Sun Block 200 ml",
+      "decision": "selected",
+      "canonical_id": "TS0163",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0163-b05920d1a52d.jpg"
+    },
+    {
+      "id": "TS0164",
+      "name": "AXIS-Y - TXA 2.5% Intensive Brightening Cream 50 ml",
+      "decision": "selected",
+      "canonical_id": "TS0164",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0164-48314fc83cea.jpg"
+    },
+    {
+      "id": "TS0165",
+      "name": "TIRTIR - Niacinamide 20% Serum",
+      "decision": "selected",
+      "canonical_id": "TS0165",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0165-d3e7ae7d9874.webp"
+    },
+    {
+      "id": "TS0166",
+      "name": "PURITO SEOUL - Wonder Releaf Centella Serum Unscented 60ml",
+      "decision": "selected",
+      "canonical_id": "TS0166",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0166-297f0f0987bb.webp"
+    },
+    {
+      "id": "TS0167",
+      "name": "CELIMAX - The Vita-A Retinal Shot Tightening Booster",
+      "decision": "duplicate",
+      "canonical_id": "TS0060",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0167-ee8fb68a8af8.jpg"
+    },
+    {
+      "id": "TS0168",
+      "name": "AXIS-Y - Glass Skin Duo Set",
+      "decision": "selected",
+      "canonical_id": "TS0168",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0168-f9a5f58188fa.jpg"
+    },
+    {
+      "id": "TS0169",
+      "name": "Arencia - Holy Hyssop Serum 30 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0169",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0169-0d4bc4be99d6.jpg"
+    },
+    {
+      "id": "TS0170",
+      "name": "Isntree - جل الشمس المائي بحمض الهيالورونيك",
+      "decision": "duplicate",
+      "canonical_id": "TS0076",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0170-e7ad8f4440fb.png"
+    },
+    {
+      "id": "TS0171",
+      "name": "medicube - One Day Exosome Shot Pore Ampoule 25000 13 ml",
+      "decision": "selected",
+      "canonical_id": "TS0171",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0171-e9a2add1cdf5.jpg"
+    },
+    {
+      "id": "TS0172",
+      "name": "VT - PDRN R5 Firming Ampoule 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0172",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0172-a26ca31802c3.jpg"
+    },
+    {
+      "id": "TS0173",
+      "name": "VT - Glutathione G2 Brightening Ampoule 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0173",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0173-0a7ccb95674b.jpg"
+    },
+    {
+      "id": "TS0174",
+      "name": "JUMISO - Niacinamide 5+ Overnight Cream 50 ml",
+      "decision": "selected",
+      "canonical_id": "TS0174",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0174-f8d3582f64e9.jpg"
+    },
+    {
+      "id": "TS0175",
+      "name": "Haruharu WONDER - كريم العين باكوتشيول من الأرز الأسود 20 مل",
+      "decision": "selected",
+      "canonical_id": "TS0175",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0175-60f46fe6f37c.webp"
+    },
+    {
+      "id": "TS0176",
+      "name": "medicube - PDRN Pink Collagen Exosome Shot Serum 7500 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0176",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0176-f3c2ebf06d5e.jpg"
+    },
+    {
+      "id": "TS0177",
+      "name": "APRILSKIN - TXA Niacinamide 99 Milky Toner 150 ml",
+      "decision": "selected",
+      "canonical_id": "TS0177",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0177-1521fede5d9a.jpg"
+    },
+    {
+      "id": "TS0178",
+      "name": "Dr. Althea - Aqua Glowing Sunscreen",
+      "decision": "selected",
+      "canonical_id": "TS0178",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0178-914b749f375d.jpg"
+    },
+    {
+      "id": "TS0179",
+      "name": "Centellian24 - Madeca Cream Time Reverse 50 ml",
+      "decision": "selected",
+      "canonical_id": "TS0179",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0179-eaa69d8f2bb8.jpg"
+    },
+    {
+      "id": "TS0180",
+      "name": "KSECRET - Collagen Boosting Secret Sleeping Mask 60 ml",
+      "decision": "selected",
+      "canonical_id": "TS0180",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0180-0b6f4397067d.png"
+    },
+    {
+      "id": "TS0181",
+      "name": "Isntree - Hyaluronic Acid Moist Cream",
+      "decision": "duplicate",
+      "canonical_id": "TS0075",
+      "reason": "نفس المنتج والنسخة؛ اختلاف المصدر أو صياغة الاسم فقط.",
+      "image": "/images/catalog/TS0181-d7b1375fe52a.png"
+    },
+    {
+      "id": "TS0182",
+      "name": "medicube Salmon DNA PDRN Pink Peptide Serum, Pink glow serum, Peptide",
+      "decision": "selected",
+      "canonical_id": "TS0182",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0182-ea6e3cc9c31c.webp"
+    },
+    {
+      "id": "TS0183",
+      "name": "Arencia - Retinal Booster Shot 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0183",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0183-e5b1240ef265.jpg"
+    },
+    {
+      "id": "TS0184",
+      "name": "numbuzin - No.9 NAD Bio Lifting-sil",
+      "decision": "selected",
+      "canonical_id": "TS0184",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0184-80ce733cdb64.png"
+    },
+    {
+      "id": "TS0185",
+      "name": "Anua - Retinol 0.1 Caffeine Revitalizing Eye Cream 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0185",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0185-517ef68a4986.png"
+    },
+    {
+      "id": "TS0186",
+      "name": "d'Alba - White Truffle First Spray Serum (أحجام مختلفة في الوصف)",
+      "decision": "selected",
+      "canonical_id": "TS0186",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0186-b8a8d7a7f6c3.jpg"
+    },
+    {
+      "id": "TS0187",
+      "name": "EQQUALBERRY - Hyaltoin Flooding Serum 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0187",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0187-af9ea50a2313.webp"
+    },
+    {
+      "id": "TS0188",
+      "name": "Dr. Althea - Aqua Marine Deep Serum 30 ml",
+      "decision": "selected",
+      "canonical_id": "TS0188",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0188-e00dc89f8f5b.jpg"
+    },
+    {
+      "id": "TS0189",
+      "name": "LION - Pair Acne Cream W 24 g",
+      "decision": "review",
+      "reason": "كريم علاجي موضعي؛ يؤجل لمراجعة متخصصة قبل اعتماده ضمن التشكيلة.",
+      "image": "/images/catalog/TS0189-82538b4322f3.jpg"
+    },
+    {
+      "id": "TS0190",
+      "name": "mixsoon - Bean Cleansing Oil Jumbo 195 ml",
+      "decision": "selected",
+      "canonical_id": "TS0190",
+      "reason": "هوية وصورة محددتان، وصف فردي، ومناسب للتشكيلة التجميلية الأولية.",
+      "image": "/images/catalog/TS0190-f5e4a9eb9ff5.jpg"
+    }
+  ]
+}

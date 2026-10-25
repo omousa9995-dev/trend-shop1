@@ -1,0 +1,35 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "trend-shop-jo",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-25",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*",
+      "/media/*"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "trend-shop-db",
+      "database_id": "8005969e-e086-4adf-8e82-bf5b24117648"
+    }
+  ],
+  "vars": {
+    "STORE_LIVE": "false"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  },
+  "kv_namespaces": [
+    {
+      "binding": "MEDIA",
+      "id": "53e37dea60dd4eed9c5274953cf0b8a7"
+    }
+  ]
+}

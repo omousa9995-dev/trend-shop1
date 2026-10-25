@@ -1,0 +1,131 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {pbkdf2Sync,randomBytes} from 'node:crypto';
+import {DatabaseSync} from 'node:sqlite';
+import worker,{_test} from '../src/worker.js';
+
+const root=new URL('../',import.meta.url);
+function file(f){return fs.readFileSync(new URL(f,root),'utf8')}
+function mockDB(){
+ const sql=new DatabaseSync(':memory:');sql.exec(file('db/schema.sql'));
+ const wrap=(query,params=[])=>({
+   bind(...x){return wrap(query,x)},
+   async all(){return {results:sql.prepare(query).all(...params)}},
+   async first(){return sql.prepare(query).get(...params)||null},
+   async run(){return sql.prepare(query).run(...params)},
+   _run(){return sql.prepare(query).run(...params)}
+ });
+ return {prepare(q){return wrap(q)},async batch(list){sql.exec('BEGIN');try{const r=list.map(q=>q._run());sql.exec('COMMIT');return r}catch(e){sql.exec('ROLLBACK');throw e}},sql};
+}
+const password='safe-unique-long-password-2026',salt=randomBytes(16),hash=`pbkdf2_sha256$100000$${salt.toString('base64url')}$${pbkdf2Sync(password,salt,100000,32,'sha256').toString('base64url')}`;
+function fixture(){const DB=mockDB();DB.sql.prepare(`INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,discount_percent,image_url,stock,approved,active) VALUES ('TS0001','TEST','Tester','البشرة',10000,8000,20,'/images/TS0001.svg',1,1,1)`).run();
+ const env={DB,SESSION_SECRET:'some-long-test-crypto-secret-that-should-never-ship',ADMIN_PASSWORD_HASH:hash,STORE_LIVE:'true',MAIL_WEBHOOK_URL:'https://mail.example.invalid',MAIL_WEBHOOK_TOKEN:'test-random-mail-token-longer-than-32-bytes'};
+ const pending=[];const ctx={waitUntil(p){pending.push(p)}};
+ return {DB,env,ctx,pending}
+}
+async function api(url,env,ctx,body,headers={}){const opts={method:body?'POST':'GET',headers:{...headers}};if(body){opts.headers['content-type']='application/json';opts.headers.origin='https://trend.test';opts.body=JSON.stringify(body)}return await worker.fetch(new Request('https://trend.test'+url,opts),env,ctx)}
+const cart={name:'سارة أحمد',phone:'0791234567',email:'sara@example.com',governorate:'عمّان',address:'شارع الجامعة، عمارة 25، الطابق الثاني',payment:'cod',items:[{id:'TS0001',qty:1}]};
+
+test('Checkout accepts an omitted email, persists the order, and still notifies the store',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;let notification;
+ globalThis.fetch=async(_url,options)=>{notification=JSON.parse(options.body);return new Response('{"ok":true}',{status:200})};
+ try{
+  const body={...cart};delete body.email;
+  const response=await api('/api/orders',f.env,f.ctx,body,{'x-idempotency-key':'optional-email-checkout-123456'});
+  assert.equal(response.status,201,await response.text());
+  assert.equal(f.DB.sql.prepare('SELECT email FROM orders').get().email,null);
+  await Promise.all(f.pending);assert.equal(notification.storeEmail,'stpostpo470@gmail.com');assert.equal(notification.order.email,'');
+  assert.equal(f.DB.sql.prepare('SELECT count(*) AS n FROM orders').get().n,1);
+ }finally{globalThis.fetch=originalFetch}
+});
+
+test('Checkout still rejects an invalid nonempty email without saving an order',async()=>{
+ const f=fixture();const response=await api('/api/orders',f.env,f.ctx,{...cart,email:'not-an-email'},{'x-idempotency-key':'invalid-optional-email-123456'});
+ assert.equal(response.status,400);assert.equal(f.DB.sql.prepare('SELECT count(*) AS n FROM orders').get().n,0);
+});
+
+test('Admin saves an uploaded photo with individual Arabic details, then hides it without losing the content',async()=>{
+ const f=fixture();const cookie='ts_admin='+await _test.makeSession(f.env);
+ const image='/media/uploads/2026-10/01234567-89ab-4cde-8fab-0123456789ab.jpg';
+ const details={nameAr:'كريم اختبار',tagline:'عناية خاصة',benefits:['ترطيب','نعومة','راحة'],howToUse:'على بشرة نظيفة',notes:'اختبار',collection:'k-beauty',featuredOrder:9,imageType:'photo'};
+ const body={id:'TSPHOTO1',name:'Photo Product',brand:'TEST',category:'البشرة',subcategory:'مرطب',description:'وصف فردي للاختبار',reference_price_fils:10000,discount_percent:20,stock:0,approved:false,active:true,image_url:image,details};
+ const headers={cookie,'x-trend-admin':'1'};
+ const response=await api('/api/admin/products',f.env,f.ctx,body,headers);assert.equal(response.status,200,await response.text());
+ const stored=f.DB.sql.prepare("SELECT * FROM products WHERE id='TSPHOTO1'").get();
+ assert.equal(stored.image_url,image);assert.deepEqual(JSON.parse(stored.details_json),details);
+ const hidden=await api('/api/admin/products',f.env,f.ctx,{...stored,active:false},headers);assert.equal(hidden.status,200);
+ const after=f.DB.sql.prepare("SELECT * FROM products WHERE id='TSPHOTO1'").get();assert.equal(after.active,0);assert.deepEqual(JSON.parse(after.details_json),details);assert.equal(after.image_url,image);
+});
+
+test('The curated catalog preserves auditable reference prices and uses reviewed product photos',()=>{
+ const c=JSON.parse(file('public/catalog.json'));
+ assert.equal(c.length,173);assert.equal(new Set(c.map(p=>p.id)).size,173);
+ const shops=new Set(c.map(p=>p.source));assert.ok(shops.has('LeoMarka'));assert.ok([...shops].some(s=>s.includes('Ksecret')));
+ for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.ok(p.discount>=20&&p.discount<=50);assert.equal(p.priceFils,Math.round(p.reference*(100-p.discount)/100));assert.equal(p.approved,false);assert.equal(p.stock,0)}
+ assert.ok(fs.existsSync(new URL('public/images/hero.webp',root)));
+});
+test('No actual sensitive customer data or forbidden card processors are bundled',()=>{
+ const publicFiles=['public/index.html','public/app.js','public/admin.html'];
+ for(const f of publicFiles){const s=file(f);assert.doesNotMatch(s,/(stripe\.com|paypal\.com|checkout\.com|paytabs|credit-card-number|card-number)/i)}
+ assert.doesNotMatch(file('src/worker.js'),/12345678/);
+});
+test('Session verification rejects tampered sessions and wrong password',async()=>{
+ const {env}=fixture();assert.equal(await _test.digestPassword(password,hash),true);assert.equal(await _test.digestPassword('12345678',hash),false);
+ const token=await _test.makeSession(env);
+ assert.equal(await _test.checkSession(new Request('https://trend.test/',{headers:{cookie:'ts_admin='+token}}),env),true);
+ assert.equal(await _test.checkSession(new Request('https://trend.test/',{headers:{cookie:'ts_admin='+token+'altered'}}),env),false);
+});
+test('Real orders are blocked until all free-service and security secrets are configured',async()=>{
+ const f=fixture();delete f.env.MAIL_WEBHOOK_TOKEN;assert.equal(_test.isProductionConfigured(f.env),false);
+ const r=await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'any-unique-value-123456'});assert.equal(r.status,503);
+});
+test('An order is server-priced, atomic, idempotent, and prevents overselling',async()=>{
+ const f=fixture();const originalFetch=globalThis.fetch;globalThis.fetch=async()=>new Response('{"ok":true}',{status:200,headers:{'content-type':'application/json'}});
+ try{
+  const key='test-valid-idempotency-key-12345';const r=await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':key});assert.equal(r.status,201,await r.text().catch(()=>''));
+  // Body must be read once; get order ID from DB.
+  const first=f.DB.sql.prepare('select * from orders').all();assert.equal(first.length,1);assert.equal(first[0].subtotal_fils,8000);
+  assert.equal(f.DB.sql.prepare("select stock from products where id='TS0001'").get().stock,0);
+  assert.equal(f.DB.sql.prepare('select count(*) as n from order_items').get().n,1);
+  const dup=await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':key});assert.equal(dup.status,200);assert.equal((await dup.json()).duplicate,true);
+  assert.equal(f.DB.sql.prepare('select count(*) as n from orders').get().n,1);
+  const r2=await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'another-idempotency-key-12345'});assert.equal(r2.status,409);
+  assert.equal(f.DB.sql.prepare('select count(*) as n from orders').get().n,1);
+  await Promise.all(f.pending);
+  assert.equal(f.DB.sql.prepare('select notification_status from orders').get().notification_status,'تم الإرسال');
+ }finally{globalThis.fetch=originalFetch}
+});
+test('Database trigger refuses invalid prices and rolls back the order entirely',async()=>{
+ const f=fixture();const sql=f.DB.sql;assert.throws(()=>{
+  sql.exec('BEGIN');try{
+   sql.prepare("INSERT INTO orders(id,idempotency_key,name,phone,governorate,address,payment_method,subtotal_fils) VALUES ('TR-1','KEY-1','Sara','0791234567','عمّان','Amman','cod',0)").run();
+   sql.prepare("INSERT INTO order_items(order_id,product_id,name_snapshot,qty,unit_price_fils) VALUES ('TR-1','TS0001','Test',1,10)").run();sql.exec('COMMIT')
+  }catch(e){sql.exec('ROLLBACK');throw e}
+ });assert.equal(sql.prepare('select count(*) as n from orders').get().n,0);assert.equal(sql.prepare('select stock from products').get().stock,1)
+});
+test('Login is origin protected and admin orders are never readable without a signed cookie',async()=>{
+ const f=fixture();const get=await api('/api/admin/orders',f.env,f.ctx);assert.equal(get.status,401);
+ const evil=await worker.fetch(new Request('https://trend.test/api/admin/login',{method:'POST',headers:{origin:'https://evil.test','content-type':'application/json'},body:JSON.stringify({password})}),f.env,f.ctx);assert.equal(evil.status,403);
+ const good=await api('/api/admin/login',f.env,f.ctx,{password});assert.equal(good.status,200);const cookie=good.headers.get('set-cookie').split(';')[0];assert.match(good.headers.get('set-cookie'),/HttpOnly; Secure; SameSite=Strict/);
+ const authed=await api('/api/admin/orders',f.env,f.ctx,null,{cookie});assert.equal(authed.status,200);
+});
+test('100 concurrent simulated distinct customers cannot corrupt order totals or inventory',async()=>{
+ const f=fixture();f.DB.sql.prepare("UPDATE products SET stock=100 WHERE id='TS0001'").run();
+ const originalFetch=globalThis.fetch;
+ globalThis.fetch=async()=>new Response('{"ok":true}',{status:200});
+ try{
+  const attempts=Array.from({length:100},(_,i)=>{
+   const req={...cart,name:'زبونة '+(i+1),email:`customer${i}@example.com`};
+   const headers={'x-idempotency-key':'customer-load-test-'+String(i).padStart(6,'0'), 'cf-connecting-ip':'203.0.113.'+i};
+   return api('/api/orders',f.env,f.ctx,req,headers);
+  });
+  const responses=await Promise.all(attempts);
+  assert.equal(responses.filter(r=>r.status===201).length,100,JSON.stringify(responses.map(x=>x.status)));
+  assert.equal(f.DB.sql.prepare('select count(*) as count from orders').get().count,100);
+  assert.equal(f.DB.sql.prepare('select stock from products').get().stock,0);
+  assert.equal(f.DB.sql.prepare('select sum(subtotal_fils) as total from orders').get().total,800000);
+  await Promise.all(f.pending);
+ } finally {globalThis.fetch=originalFetch}
+});

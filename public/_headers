@@ -1,0 +1,26 @@
+# Security headers for static content served directly by Cloudflare Workers Assets.
+# Without _headers, only Worker-generated API responses receive headers.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; img-src 'self' https: data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+
+/admin.html
+  Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/admin.js
+  X-Robots-Tag: noindex, nofollow
+
+/admin.css
+  X-Robots-Tag: noindex, nofollow
+
+/admin
+  Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/catalog.json
+  X-Robots-Tag: noindex, nofollow
