@@ -28,6 +28,21 @@ function fixture(){const DB=mockDB();DB.sql.prepare(`INSERT INTO products(id,bra
 async function api(url,env,ctx,body,headers={}){const opts={method:body?'POST':'GET',headers:{...headers}};if(body){opts.headers['content-type']='application/json';opts.headers.origin='https://trend.test';opts.body=JSON.stringify(body)}return await worker.fetch(new Request('https://trend.test'+url,opts),env,ctx)}
 const cart={name:'سارة أحمد',phone:'0791234567',email:'sara@example.com',governorate:'عمّان',address:'شارع الجامعة، عمارة 25، الطابق الثاني',payment:'cod',items:[{id:'TS0001',qty:1}]};
 
+test('Order notifications explicitly record successful owner and customer confirmations',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;globalThis.fetch=async()=>Response.json({ok:true,ownerSent:true,customerSent:true});
+ try{assert.equal((await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'mail-both-20261025'})).status,201);await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'تم الإرسال للمتجر والعميلة');}finally{globalThis.fetch=originalFetch;}
+});
+
+test('A customer confirmation failure is visible without losing the saved order or its owner notice',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;globalThis.fetch=async()=>Response.json({ok:true,ownerSent:true,customerSent:false,customerError:'customer_quota_exhausted'});
+ try{assert.equal((await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'mail-partial-20261025'})).status,201);await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,1);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'تم الإرسال للمتجر؛ تعذر إشعار العميلة');}finally{globalThis.fetch=originalFetch;}
+});
+
+test('The order notification cannot report success when its owner notice was explicitly refused',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;globalThis.fetch=async()=>Response.json({ok:true,ownerSent:false,customerSent:true});
+ try{assert.equal((await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'mail-owner-failed-20261025'})).status,201);await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'فشل الإرسال');}finally{globalThis.fetch=originalFetch;}
+});
+
 test('Mail health is available before owner activation and fails closed when mail is unconfigured',async()=>{
  const f=fixture(),originalFetch=globalThis.fetch;delete f.env.MAIL_WEBHOOK_TOKEN;delete f.env.ADMIN_PASSWORD_HASH;f.env.STORE_LIVE='false';
  globalThis.fetch=async()=>{throw Error('must not contact an unconfigured endpoint')};

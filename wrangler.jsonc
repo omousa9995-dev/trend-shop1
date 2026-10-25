@@ -20,7 +20,7 @@
     }
   ],
   "vars": {
-    "STORE_LIVE": "false"
+    "STORE_LIVE": "true"
   },
   "observability": {
     "enabled": true,
