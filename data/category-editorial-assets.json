@@ -1,0 +1,25 @@
+{
+  "created": "2026-10-26",
+  "method": "built-in image generation",
+  "purpose": "Category gateway imagery, not individual product packshots",
+  "assets": [
+    {
+      "path": "/images/editorial/hair-ritual.webp",
+      "category": "الشعر",
+      "prompt": "Use case: photorealistic-natural. Asset type: portrait category photograph for the Hair Care gateway of an elegant friendly Arabic cosmetics shop. Primary request: an adult Arab woman around 28 with long, glossy, healthy-looking dark brown waves, gently brushing a section of her hair with a simple wooden hair brush. Her hair is the clear focal point; show a natural hand holding the brush and part of her warm smile. Cream modest linen blouse, soft ivory and pale rose background, daylight from a nearby window. Understated luxurious beauty editorial, welcoming rather than distant, realistic skin and hair detail. Composition must remain clearly about hair care when cropped square as a small category tile. No brand, no labels, no words, no watermarks, no before-and-after. Portrait 4:5.",
+      "representsSoldProduct": false
+    },
+    {
+      "path": "/images/editorial/body-ritual.webp",
+      "category": "الجسم",
+      "prompt": "Use case: photorealistic-natural. Asset type: portrait category photograph for the Body Care gateway of an elegant friendly Arabic cosmetics shop. Primary request: a close, tasteful view of an adult woman's hands gently massaging a small amount of white body cream into her forearm. Her forearm, natural hands and the cream are the clear focal point, with a small unbranded ivory cream jar at the edge of a warm stone vanity. Soft cream linen sleeves, pale blush and warm ivory setting, diffused natural window light, authentic skin texture, refined spa-like yet approachable feeling. Carefully natural anatomy and fingers. Composition must communicate body care immediately when cropped square as a small category tile. No face necessary, no bare torso, no words, no labels, no brands, no watermark. Portrait 4:5.",
+      "representsSoldProduct": false
+    },
+    {
+      "path": "/images/editorial/fragrance-moment.webp",
+      "category": "العطور",
+      "prompt": "Use case: photorealistic-natural. Asset type: portrait category photograph for the Fragrance gateway of an elegant friendly Arabic cosmetics shop. Primary request: an adult Arab woman around 30 softly smiling as she brings her wrist close to appreciate a fragrance, with an elegant small unbranded clear faceted perfume bottle containing pale amber perfume prominently held in her other hand near the wrist. The bottle must be unmistakably a classic perfume bottle with a refined gold spray head, not a lotion or skincare bottle. Modest champagne blouse, soft ivory and pale rose dressing-table setting, warm diffused daylight, realistic hands and skin, luxurious and gentle approachable beauty editorial. Composition keeps the bottle and wrist prominent and readable in a small square crop. No product logo, no words, no labels, no watermark. Portrait 4:5.",
+      "representsSoldProduct": false
+    }
+  ]
+}

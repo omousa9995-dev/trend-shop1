@@ -2,12 +2,12 @@
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
   "deployed_at": "2026-10-26",
-  "deployment_id": "9d4a2103e02f46e29c34a71cfb83a257",
+  "deployment_id": "a9e67e313d164104be9fc5eeead463c8",
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
   "database_id": "8005969e-e086-4adf-8e82-bf5b24117648",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
-  "version": "1.5.0",
+  "version": "1.6.0",
   "media_namespace_id": "53e37dea60dd4eed9c5274953cf0b8a7",
   "catalog_products": 173,
   "original_entries": 190,
@@ -47,16 +47,36 @@
   },
   "pages_deployment_id": "9b4d74fc-c858-44fb-ae84-472c1bbd7c79",
   "previous_version_backup": {
-    "version": "1.4.2",
-    "branch": "backup/v1.4.2-before-store-refresh-2026-10-25",
-    "commit": "25cd9ab11c8f854c1b201cf180da5bfb308afb0c",
-    "worker_version": "9ec2f5c4-b0eb-4f6f-b938-612a6874d999"
+    "version": "1.5.0",
+    "branch": "backup/v1.5.0-before-welcome-categories-2026-10-26",
+    "commit": "0d2e66c256ef574a342638daee9ed12ec0ab669c",
+    "worker_version": "9d4a2103-e02f-46e2-9c34-a71cfb83a257"
   },
-  "editorial_images": 3,
+  "editorial_images": 6,
   "additional_gallery_photos": 22,
   "products_with_galleries": 14,
-  "threeui_component": "Community GradientPillButton (MIT), locally adapted",
+  "threeui_component": "Community GradientPillButton and Energy Orb (MIT), locally adapted",
   "single_word_address_live_verified": true,
   "short_url_order_verified": true,
-  "latest_qa_cleanup_preserved_existing_orders": true
+  "latest_qa_cleanup_preserved_existing_orders": true,
+  "earlier_version_backups": [
+    {
+      "version": "1.4.2",
+      "branch": "backup/v1.4.2-before-store-refresh-2026-10-25",
+      "commit": "25cd9ab11c8f854c1b201cf180da5bfb308afb0c",
+      "worker_version": "9ec2f5c4-b0eb-4f6f-b938-612a6874d999"
+    }
+  ],
+  "category_gateways": 5,
+  "category_images_updated": [
+    "الشعر",
+    "الجسم",
+    "العطور"
+  ],
+  "welcome_display": "first_home_visit_per_tab_session",
+  "welcome_close_verified": true,
+  "welcome_mobile_view_verified": true,
+  "welcome_css_fallback_verified": true,
+  "welcome_webgl_cloud_browser": "context unavailable",
+  "database_changed_in_release": false
 }
