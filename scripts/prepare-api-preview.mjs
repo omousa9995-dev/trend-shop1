@@ -31,6 +31,6 @@ const entry="import worker from './worker.js';\nimport {assets} from './preview-
 mkdirSync('deployment-private',{recursive:true});
 writeFileSync('deployment-private/preview-assets.js',adapter);
 writeFileSync('deployment-private/preview-entry.js',entry);
-const modules=[['preview-entry.js',entry],['preview-assets.js',adapter],['worker.js',readFileSync('src/worker.js','utf8').replace("'../public/commerce.js'","'./commerce.js'")],['commerce.js',readFileSync('public/commerce.js','utf8')],['admin-setup.js',readFileSync('src/admin-setup.js','utf8')],['media.js',readFileSync('src/media.js','utf8')]];
+const modules=[['preview-entry.js',entry],['preview-assets.js',adapter],['worker.js',readFileSync('src/worker.js','utf8').replace("'../public/commerce.js'","'./commerce.js'")],['commerce.js',readFileSync('public/commerce.js','utf8')],['promotions.js',readFileSync('src/promotions.js','utf8').replace("'../public/commerce.js'","'./commerce.js'")],['admin-setup.js',readFileSync('src/admin-setup.js','utf8')],['media.js',readFileSync('src/media.js','utf8')]];
 writeFileSync('deployment-private/modules.json',JSON.stringify(modules));
 console.log(JSON.stringify({files:Object.keys(entries).length,modules:modules.length,bytes:modules.reduce((n,[_,s])=>n+Buffer.byteLength(s),0)}));

@@ -30,13 +30,13 @@ test('Existing orders gain a nullable delivery snapshot without changing their h
 });
 test('Invoices use الزبونة, escape text, and honor the saved delivery promise rather than repricing old orders',()=>{
  const order={id:'TR-TEST',created_at:'2026-10-26 00:00:00',name:'<script>alert(1)</script>',phone:'0790000000',address:'العبدلي',governorate:'عمّان',payment_method:'cod',status:'جديد',subtotal_fils:20000,shipping_fee_fils:0,items:[{name_snapshot:'Product',qty:2,unit_price_fils:10000}]};
- const html=invoice(order);assert.match(html,/معلومات الزبونة/);assert.doesNotMatch(html,/العميلة|<script>/);assert.match(html,/&lt;script&gt;/);assert.match(html,/التوصيل: مجاني/);assert.match(html,/20\.000/);
- const legacy=invoice({...order,shipping_fee_fils:null});assert.doesNotMatch(legacy,/التوصيل: مجاني/);assert.match(legacy,/تُؤكّد قبل الشحن/);
+ const html=invoice(order);assert.match(html,/معلومات الزبونة/);assert.doesNotMatch(html,/العميلة|<script>/);assert.match(html,/&lt;script&gt;/);assert.match(html,/التوصيل: مجاني/);assert.match(html,/20\.00/);
+ const legacy=invoice({...order,shipping_fee_fils:null});assert.doesNotMatch(legacy,/التوصيل: مجاني/);assert.match(legacy,/تُؤكّد للطلب السابق/);
 });
 test('Compact card images retain originals and never override an admin replacement photo',()=>{
  const map=JSON.parse(read('public/catalog-thumbnails.json')),provenance=JSON.parse(read('data/thumbnail-provenance.json'));
  assert.equal(provenance.length,173);let before=0,after=0;
- for(const entry of provenance){assert.ok(fs.existsSync(new URL('../public'+entry.original,import.meta.url)));assert.ok(fs.existsSync(new URL('../public'+entry.thumbnail,import.meta.url)));before+=entry.original_bytes;after+=entry.thumbnail_bytes;assert.equal(thumbnailFor({id:entry.id,image_url:entry.original},map),entry.thumbnail);assert.equal(thumbnailFor({id:entry.id,image_url:'/media/new.jpg'},map),'/media/new.jpg')}
+ for(const entry of provenance){assert.ok(fs.existsSync(new URL('../public'+entry.original,import.meta.url)));assert.ok(fs.existsSync(new URL('../public'+entry.thumbnail,import.meta.url)));before+=entry.original_bytes;after+=entry.thumbnail_bytes;assert.equal(thumbnailFor({id:entry.id,image_url:entry.original},map),map[entry.id].thumbnail);assert.equal(thumbnailFor({id:entry.id,image_url:'/media/new.jpg'},map),'/media/new.jpg')}
  assert.ok(after<before*.15,`Thumbnails ${after}, originals ${before}`);
 });
 test('Streamed JSON is bounded by bytes without trusting Content-Length; normal Arabic remains valid',async()=>{

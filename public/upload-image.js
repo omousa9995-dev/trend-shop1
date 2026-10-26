@@ -7,10 +7,10 @@
   const originalUrl=URL.createObjectURL(file);
   try{
    const image=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(Error('تعذر فتح الصورة. جرّب اختيار JPEG أو PNG من ألبوم الصور.'));img.src=originalUrl});
-   const ratio=Math.min(1,1600/Math.max(image.naturalWidth,image.naturalHeight));
+   const ratio=Math.min(1,2400/Math.max(image.naturalWidth,image.naturalHeight));
    const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(image.naturalWidth*ratio));canvas.height=Math.max(1,Math.round(image.naturalHeight*ratio));
    const context=canvas.getContext('2d');context.fillStyle='#ffffff';context.fillRect(0,0,canvas.width,canvas.height);context.drawImage(image,0,0,canvas.width,canvas.height);
-   const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',0.86));
+   let blob;for(const quality of [0.94,0.90,0.86,0.80]){blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',quality));if(blob&&blob.size<=1536*1024)break}
    if(!blob||blob.size>1536*1024)throw Error('الصورة ما زالت كبيرة. اختر لقطة أصغر.');
    return blob;
   }finally{URL.revokeObjectURL(originalUrl)}

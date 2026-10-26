@@ -17,6 +17,8 @@ CREATE TABLE IF NOT EXISTS orders (
  payment_method TEXT NOT NULL CHECK(payment_method IN ('cod','cliq')),cliq_alias TEXT,
  status TEXT NOT NULL DEFAULT 'جديد' CHECK(status IN ('جديد','قيد التجهيز','تم')),
  subtotal_fils INTEGER NOT NULL CHECK(subtotal_fils>=0),
+ discount_fils INTEGER NOT NULL DEFAULT 0 CHECK(discount_fils>=0),
+ promotion_snapshot TEXT NOT NULL DEFAULT '[]',
  shipping_fee_fils INTEGER CHECK(shipping_fee_fils IS NULL OR shipping_fee_fils>=0),
  notification_status TEXT NOT NULL DEFAULT 'غير مفعّل',
  created_at TEXT NOT NULL DEFAULT (datetime('now'))
@@ -48,3 +50,11 @@ CREATE TABLE IF NOT EXISTS admin_credentials (
  password_hash TEXT NOT NULL,
  created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+
+CREATE TABLE IF NOT EXISTS promotions (
+ id TEXT PRIMARY KEY,kind TEXT NOT NULL CHECK(kind IN ('offer','combo')),
+ title TEXT NOT NULL,description TEXT NOT NULL DEFAULT '',config_json TEXT NOT NULL,
+ active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1)),
+ created_at TEXT NOT NULL DEFAULT(datetime('now')),updated_at TEXT NOT NULL DEFAULT(datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_promotions_active ON promotions(active);

@@ -31,14 +31,14 @@ const cart={name:'سارة أحمد',phone:'0791234567',email:'sara@example.com'
 test('Delivery is server-calculated after discounts, strictly above 19 JOD, saved and replayed unchanged',async()=>{
  const originalFetch=globalThis.fetch;let mailed;
  globalThis.fetch=async(_,options)=>{mailed=JSON.parse(options.body).order;return Response.json({ok:true,ownerSent:true})};
- try{for(const [subtotal,expected] of [[18999,null],[19000,null],[19001,0],[20000,0]]){
+ try{for(const [subtotal,expected] of [[18999,1000],[19000,1000],[19001,0],[20000,0]]){
   const f=fixture();f.DB.sql.prepare('UPDATE products SET price_fils=?,stock=3').run(subtotal);
   const key='delivery-boundary-'+subtotal;
   const payload={...cart,email:'',address:'العبدلي',expectedSubtotalFils:subtotal,shippingFeeFils:999999,items:[{id:'TS0001',qty:1}]};
   const response=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':key});
   assert.equal(response.status,201,await response.clone().text());assert.equal((await response.json()).shippingFeeFils,expected);
   const saved=f.DB.sql.prepare('SELECT * FROM orders').get();assert.equal(saved.shipping_fee_fils,expected);assert.equal(saved.email,null);
-  await Promise.all(f.pending);assert.equal(mailed.shipping_fee_fils,expected);assert.equal(mailed.subtotal_fils,subtotal);assert.match(mailed.notes,expected===0?/التوصيل: مجاني/:/تُؤكّد الرسوم/);
+  await Promise.all(f.pending);assert.equal(mailed.shipping_fee_fils,expected);assert.equal(mailed.subtotal_fils,subtotal);assert.match(mailed.notes,expected===0?/التوصيل: مجاني/:/1\.00 دينار/);
   f.DB.sql.prepare('UPDATE products SET price_fils=500').run();
   const repeated=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':key});const data=await repeated.json();
   assert.equal(data.duplicate,true);assert.equal(data.subtotalFils,subtotal);assert.equal(data.shippingFeeFils,expected);assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,2);
@@ -151,7 +151,7 @@ test('The curated catalog preserves auditable reference prices and uses reviewed
  const c=JSON.parse(file('public/catalog.json'));
  assert.equal(c.length,173);assert.equal(new Set(c.map(p=>p.id)).size,173);
  const shops=new Set(c.map(p=>p.source));assert.ok(shops.has('LeoMarka'));assert.ok([...shops].some(s=>s.includes('Ksecret')));
- for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.priceFils,p.reference*(100-p.discount)/100);assert.equal(p.approved,true);assert.equal(p.stock,24)}
+ for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.discount,Math.floor((p.reference-p.priceFils)*100/p.reference+1e-8));assert.equal(p.approved,true);assert.equal(p.stock,24)}
  assert.ok(fs.existsSync(new URL('public/images/hero.webp',root)));
 });
 test('No actual sensitive customer data or forbidden card processors are bundled',()=>{
@@ -216,4 +216,51 @@ test('100 concurrent simulated distinct customers cannot corrupt order totals or
   assert.equal(f.DB.sql.prepare('select sum(subtotal_fils) as total from orders').get().total,800000);
   await Promise.all(f.pending);
  } finally {globalThis.fetch=originalFetch}
+});
+
+test('Admin offers and bulk discounts require a signed session and same-origin writes',async()=>{
+ const f=fixture();
+ assert.equal((await api('/api/admin/promotions',f.env,f.ctx)).status,401);
+ assert.equal((await api('/api/admin/discounts',f.env,f.ctx,{ids:['TS0001'],percent:25})).status,401);
+ const cookie='ts_admin='+await _test.makeSession(f.env);
+ const bad=new Request('https://trend.test/api/admin/promotions',{method:'POST',headers:{cookie,origin:'https://evil.test','x-trend-admin':'1','content-type':'application/json'},body:JSON.stringify({})});
+ assert.equal((await worker.fetch(bad,f.env,f.ctx)).status,403);
+});
+test('An admin can create, edit, and deactivate a real combo without changing product inventory',async()=>{
+ const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env),headers={cookie,'x-trend-admin':'1'};
+ f.DB.sql.exec("INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,stock,approved,active) VALUES ('TS0002','TEST','Mascara','المكياج',2000,2000,5,1,1)");
+ const combo={kind:'combo',title:'إطلالة متكاملة',description:'منتجان معًا',items:[{id:'TS0001',qty:1},{id:'TS0002',qty:1}],priceFils:8990,active:true};
+ const response=await api('/api/admin/promotions',f.env,f.ctx,combo,headers);assert.equal(response.status,200,await response.clone().text());const {id}=await response.json();
+ const catalog=await (await api('/api/catalog',f.env,f.ctx)).json();assert.equal(catalog.promotions[0].id,id);assert.equal(catalog.promotions[0].priceFils,8990);
+ assert.equal(f.DB.sql.prepare("SELECT stock FROM products WHERE id='TS0001'").get().stock,1);
+ assert.equal((await api('/api/admin/promotions',f.env,f.ctx,{...combo,id,title:'اسم جديد',priceFils:8490},headers)).status,200);
+ assert.equal((await api('/api/admin/promotions',f.env,f.ctx,{action:'toggle',id,active:false},headers)).status,200);
+ assert.equal((await (await api('/api/catalog',f.env,f.ctx)).json()).promotions.length,0);
+ const all=await (await api('/api/admin/promotions',f.env,f.ctx,null,{cookie})).json();assert.equal(all.promotions[0].active,false);
+});
+test('Combo checkout stores the discount and final delivery, debits original products once and ignores forged totals',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;let mailed;globalThis.fetch=async(_,options)=>{mailed=JSON.parse(options.body).order;return Response.json({ok:true,ownerSent:true})};
+ f.DB.sql.exec("UPDATE products SET stock=3;INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,stock,approved,active) VALUES ('TS0002','TEST','Mascara','المكياج',2000,2000,5,1,1);INSERT INTO promotions(id,kind,title,config_json,active) VALUES ('PROMOTEST001','combo','إطلالة','{\"items\":[{\"id\":\"TS0001\",\"qty\":1},{\"id\":\"TS0002\",\"qty\":1}],\"priceFils\":8990}',1)");
+ try{
+  const payload={...cart,email:'',address:'العبدلي',items:[{id:'TS0001',qty:1},{id:'TS0002',qty:1}],expectedSubtotalFils:8990,expectedTotalFils:9990,discountFils:99999,shippingFeeFils:0};
+  const response=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':'combo-order-integration-001'});assert.equal(response.status,201,await response.clone().text());const receipt=await response.json();assert.equal(receipt.totalFils,9990);assert.equal(receipt.discountFils,1010);assert.equal(receipt.shippingFeeFils,1000);
+  const saved=f.DB.sql.prepare('SELECT * FROM orders').get();assert.equal(saved.subtotal_fils,8990);assert.equal(saved.discount_fils,1010);assert.equal(saved.shipping_fee_fils,1000);assert.equal(JSON.parse(saved.promotion_snapshot)[0].id,'PROMOTEST001');assert.equal(f.DB.sql.prepare('SELECT SUM(qty*unit_price_fils) value FROM order_items').get().value,10000);assert.equal(f.DB.sql.prepare("SELECT stock FROM products WHERE id='TS0001'").get().stock,2);
+  await Promise.all(f.pending);assert.match(mailed.notes,/9\.99/);assert.match(mailed.notes,/1\.01/);
+  f.DB.sql.exec('UPDATE promotions SET active=0');const replay=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':'combo-order-integration-001'});const repeated=await replay.json();assert.equal(repeated.duplicate,true);assert.equal(repeated.totalFils,9990);assert.equal(repeated.discountFils,1010);assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,1);
+ }finally{globalThis.fetch=originalFetch}
+});
+test('Bulk discount pricing preserves stock and historical orders, and an ordinary edit preserves the explicit retail price',async()=>{
+ const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env),headers={cookie,'x-trend-admin':'1'};
+ const response=await api('/api/admin/discounts',f.env,f.ctx,{ids:['TS0001'],percent:25},headers);assert.equal(response.status,200,await response.clone().text());
+ const p=f.DB.sql.prepare('SELECT * FROM products').get();assert.equal(p.stock,1);assert.equal(p.reference_price_fils,8000);assert.equal(p.price_fils,6000);
+ assert.equal((await api('/api/admin/products',f.env,f.ctx,{...p,approved:true,active:true,description:'Updated only',price_fils:5990,discount_percent:25},headers)).status,200);
+ assert.equal(f.DB.sql.prepare('SELECT price_fils FROM products').get().price_fils,5990);
+ assert.equal((await api('/api/admin/promotions',f.env,f.ctx,{kind:'combo',title:'Bad combo',items:[{id:'TS0001',qty:1},{id:'TS0001',qty:1}],priceFils:500},headers)).status,400);
+});
+
+test('Bulk discounts work for more than 100 products without exceeding D1 bound-parameter limits',async()=>{
+ const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env),ids=[];
+ for(let i=0;i<150;i++){const id='TSBULK'+String(i).padStart(4,'0');ids.push(id);f.DB.sql.prepare("INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,stock,approved,active) VALUES (?, 'TEST','Bulk product','البشرة',5000,5000,24,1,1)").run(id)}
+ const prepare=f.DB.prepare;f.DB.prepare=function(sql){const statement=prepare(sql),bind=statement.bind;statement.bind=(...args)=>{assert.ok(args.length<=100,'D1 permits at most 100 bound parameters');return bind(...args)};return statement};
+ const response=await api('/api/admin/discounts',f.env,f.ctx,{ids,percent:25},{cookie,'x-trend-admin':'1'});assert.equal(response.status,200,await response.clone().text());assert.equal((await response.json()).updated,150);assert.equal(f.DB.sql.prepare("SELECT SUM(stock) n FROM products WHERE id LIKE 'TSBULK%'").get().n,3600);
 });

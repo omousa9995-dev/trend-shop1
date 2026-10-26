@@ -1,0 +1,4410 @@
+[
+  {
+    "id": "TS0001",
+    "primary": "/images/catalog/TS0001-54e0b8e9482d.png",
+    "thumbnail": "/images/catalog/TS0001-8526852282a5.webp",
+    "highResolution": "/images/catalog/TS0001-3aa8624e47f5.webp",
+    "width": 1254,
+    "height": 1254,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/4_12bbf967-bb05-4f92-b2b3-75eb2a456f18.png?v=1788851215&width=2000",
+    "source_page": "https://leomarka.com/products/nail-polish-by-ice",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0001-3aa8624e47f5.webp",
+        "sha256": "3aa8624e47f5580fe006944b954fa9ce754e2ffa3990fca3de29c58f150d6d89",
+        "bytes": 77466,
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "image": "/images/catalog/TS0001-8526852282a5.webp",
+        "sha256": "8526852282a54c4d69f25c05fc25e92bcb55c616411f90f3104e4ddcc0d23186",
+        "bytes": 50622,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0002",
+    "primary": "/images/catalog/TS0002-4f6b4132e536.png",
+    "thumbnail": "/images/catalog/TS0002-35695b823c74.webp",
+    "highResolution": "/images/catalog/TS0002-e360b9fceb84.webp",
+    "width": 1254,
+    "height": 1254,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/ChatGPTImageSep5_2026_10_01_06AM.png?v=1788591857&width=2000",
+    "source_page": "https://leomarka.com/products/nude-contour-eyeshadow-palette-by-dodo-girl",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0002-e360b9fceb84.webp",
+        "sha256": "e360b9fceb845477e3d920b240cfb229d30905684478b916e9f341d9736c2f45",
+        "bytes": 168390,
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "image": "/images/catalog/TS0002-35695b823c74.webp",
+        "sha256": "35695b823c74e8b1ae89250a83b954d14479a5910cadb28e116cfa9014ec07cb",
+        "bytes": 114376,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0003",
+    "primary": "/images/catalog/TS0003-0f711204ecc2.png",
+    "thumbnail": "/images/catalog/TS0003-a7155f27cfd2.webp",
+    "highResolution": "/images/catalog/TS0003-b34a039b4256.webp",
+    "width": 1735,
+    "height": 1415,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-09-03162335.png?v=1788441912&width=2000",
+    "source_page": "https://leomarka.com/products/jelly-lip-gloss-set-by-olibolla",
+    "previous_width": 900,
+    "previous_height": 734,
+    "files": [
+      {
+        "image": "/images/catalog/TS0003-b34a039b4256.webp",
+        "sha256": "b34a039b42562811302fcd72541d8ddf4143b478bac69db12eb9b1236b93be89",
+        "bytes": 69238,
+        "width": 1735,
+        "height": 1415
+      },
+      {
+        "image": "/images/catalog/TS0003-a7155f27cfd2.webp",
+        "sha256": "a7155f27cfd2fe16135b06f9179ad6d8b69df827c3d02b341178c50de70c668f",
+        "bytes": 34772,
+        "width": 1100,
+        "height": 897
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0004",
+    "primary": "/images/catalog/TS0004-358895a793e1.png",
+    "thumbnail": "/images/catalog/TS0004-b367994a8e0d.webp",
+    "highResolution": "/images/catalog/TS0004-9311d3c22c01.webp",
+    "width": 1280,
+    "height": 1280,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-09-03155056.png?v=1788439954&width=2000",
+    "source_page": "https://leomarka.com/products/lip-balm-by-rimocoo",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0004-9311d3c22c01.webp",
+        "sha256": "9311d3c22c016089c9c094543b21ac35b62d299aae16d717175e793868c950b1",
+        "bytes": 56470,
+        "width": 1280,
+        "height": 1280
+      },
+      {
+        "image": "/images/catalog/TS0004-b367994a8e0d.webp",
+        "sha256": "b367994a8e0d1f7e1d1007d2c7149177e6621767c4413b0429fc6b30f7942215",
+        "bytes": 40248,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0005",
+    "primary": "/images/catalog/TS0005-afa322d2d52c.jpg",
+    "thumbnail": "/images/catalog/TS0005-e1d696d52fbc.webp",
+    "highResolution": "/images/catalog/TS0005-dd6e885b667b.webp",
+    "width": 1536,
+    "height": 1536,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/bobonailsgelcolor2.webp?v=1788428952&width=2000",
+    "source_page": "https://leomarka.com/products/gel-color-by-bobo",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0005-dd6e885b667b.webp",
+        "sha256": "dd6e885b667b29b33c08dce06e3846f10ca9ff10abd04d0b0a0efbcb783cd711",
+        "bytes": 60342,
+        "width": 1536,
+        "height": 1536
+      },
+      {
+        "image": "/images/catalog/TS0005-e1d696d52fbc.webp",
+        "sha256": "e1d696d52fbc38da6b1912b4dd48dbb940ad56a875793dfc9a4473d6b6877eb8",
+        "bytes": 37742,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0006",
+    "primary": "/images/catalog/TS0006-daf240317120.png",
+    "thumbnail": "/images/catalog/TS0006-5daeec47ee28.webp",
+    "highResolution": "/images/catalog/TS0006-4af7f8059a18.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/diamondbeautyeyeshadow.webp?v=1788429853&width=2000",
+    "source_page": "https://leomarka.com/products/ultimate-dream-eyeshadow-palette-by-diamond-beauty",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0006-4af7f8059a18.webp",
+        "sha256": "4af7f8059a1898100a699626bec4e8483d5cc5bed9be5fadacb1869469c2e82e",
+        "bytes": 130874,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0006-5daeec47ee28.webp",
+        "sha256": "5daeec47ee284bc8d218a0c7a68084cef0fabc6a5a904429b34c84585b66918d",
+        "bytes": 115194,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0007",
+    "primary": "/images/catalog/TS0007-513d8ec6f9c3.png",
+    "thumbnail": "/images/catalog/TS0007-ca02086a9b1d.webp",
+    "highResolution": "/images/catalog/TS0007-59c2e7978f58.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/merrycolor.webp?v=1788423230&width=2000",
+    "source_page": "https://leomarka.com/products/9-color-eyeshadow-palette-by-merrycolor",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0007-59c2e7978f58.webp",
+        "sha256": "59c2e7978f58334abcc9e9b3af3dfa644b6f7fb74ef0159212db99116d3b8283",
+        "bytes": 182542,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0007-ca02086a9b1d.webp",
+        "sha256": "ca02086a9b1dc26399284494ea376a93989738ca06dbe586d1809be2f004b917",
+        "bytes": 150282,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0008",
+    "primary": "/images/catalog/TS0008-f9a58c303c2e.png",
+    "thumbnail": "/images/catalog/TS0008-2668e103ec0c.webp",
+    "highResolution": "/images/catalog/TS0008-aaf20c88c419.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/romanticbrighthighlighter1.webp?v=1788422932&width=2000",
+    "source_page": "https://leomarka.com/products/color-shifter-highlighter-palette-by-romantic-bright",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0008-aaf20c88c419.webp",
+        "sha256": "aaf20c88c41966ef9ab1b12f5762c9ff0cbba95f83909513b02cb1bbce2c9169",
+        "bytes": 91140,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0008-2668e103ec0c.webp",
+        "sha256": "2668e103ec0cd13b5f4f0928e142d476ae7e80990e79cf114ada7ffae8fca24b",
+        "bytes": 80070,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0009",
+    "primary": "/images/catalog/TS0009-82df1eda5621.png",
+    "thumbnail": "/images/catalog/TS0009-77caf0d465d8.webp",
+    "highResolution": "/images/catalog/TS0009-7e5e7d05601f.webp",
+    "width": 1430,
+    "height": 1620,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-29113609.png?v=1787992620&width=2000",
+    "source_page": "https://leomarka.com/products/hair-care-oil-macadamia-vitamin-e-by-freelook",
+    "previous_width": 900,
+    "previous_height": 1020,
+    "files": [
+      {
+        "image": "/images/catalog/TS0009-7e5e7d05601f.webp",
+        "sha256": "7e5e7d05601f496a8850f0dafe88d2d419856f511d0eca2a8496204ef90f1a8b",
+        "bytes": 51330,
+        "width": 1430,
+        "height": 1620
+      },
+      {
+        "image": "/images/catalog/TS0009-77caf0d465d8.webp",
+        "sha256": "77caf0d465d8a942e4e4eb20156f948e5c596c1dd90ceb1d6ed269076b7e1d9b",
+        "bytes": 26948,
+        "width": 971,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0010",
+    "primary": "/images/catalog/TS0010-f45a7a45f7a3.png",
+    "thumbnail": "/images/catalog/TS0010-5893e5816939.webp",
+    "highResolution": "/images/catalog/TS0010-8a9089b47a57.webp",
+    "width": 1562,
+    "height": 1625,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-29113424.png?v=1787992510&width=2000",
+    "source_page": "https://leomarka.com/products/hair-care-oil-with-keratin-vitamin-e-by-freelook",
+    "previous_width": 900,
+    "previous_height": 936,
+    "files": [
+      {
+        "image": "/images/catalog/TS0010-8a9089b47a57.webp",
+        "sha256": "8a9089b47a57ad1406781768942666979cb9186122e241cbf5bb890b9a556718",
+        "bytes": 47842,
+        "width": 1562,
+        "height": 1625
+      },
+      {
+        "image": "/images/catalog/TS0010-5893e5816939.webp",
+        "sha256": "5893e5816939f50bfa25cc3dbfe7e2053b9346be0253024a8caf24bac4b9194b",
+        "bytes": 26344,
+        "width": 1057,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0011",
+    "primary": "/images/catalog/TS0011-aa3f5f66e72e.png",
+    "thumbnail": "/images/catalog/TS0011-72af0cfec0f0.webp",
+    "highResolution": "/images/catalog/TS0011-454615d26d26.webp",
+    "width": 1650,
+    "height": 1657,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27143710.png?v=1787830676&width=2000",
+    "source_page": "https://leomarka.com/products/floral-shimmer-fragrance-lotion-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 904,
+    "files": [
+      {
+        "image": "/images/catalog/TS0011-454615d26d26.webp",
+        "sha256": "454615d26d2671ebd5d1dc7f58c1cae35bd36d7eadb8a05e4c6d08d6fe13592c",
+        "bytes": 298980,
+        "width": 1650,
+        "height": 1657
+      },
+      {
+        "image": "/images/catalog/TS0011-72af0cfec0f0.webp",
+        "sha256": "72af0cfec0f01b803538cd6730cb36f4508db5766ea3be6f16de63e91a958020",
+        "bytes": 143766,
+        "width": 1095,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0012",
+    "primary": "/images/catalog/TS0012-f296cc27747b.png",
+    "thumbnail": "/images/catalog/TS0012-ab05ccf4a963.webp",
+    "highResolution": "/images/catalog/TS0012-f2cf16ef522c.webp",
+    "width": 1355,
+    "height": 1305,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27143540.png?v=1787830578&width=2000",
+    "source_page": "https://leomarka.com/products/argan-steam-hair-care-mask-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 867,
+    "files": [
+      {
+        "image": "/images/catalog/TS0012-f2cf16ef522c.webp",
+        "sha256": "f2cf16ef522ccb0c90b11fc2e61436df3ed7665b4522fa56093275e3b92490f1",
+        "bytes": 62808,
+        "width": 1355,
+        "height": 1305
+      },
+      {
+        "image": "/images/catalog/TS0012-ab05ccf4a963.webp",
+        "sha256": "ab05ccf4a963133f64823be669a7233b34152a2b572639a9b47b18e0fb239856",
+        "bytes": 39904,
+        "width": 1100,
+        "height": 1059
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0013",
+    "primary": "/images/catalog/TS0013-985905f03e2d.png",
+    "thumbnail": "/images/catalog/TS0013-f3ec2db28aa1.webp",
+    "highResolution": "/images/catalog/TS0013-c6a10b1d9361.webp",
+    "width": 1287,
+    "height": 1320,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27141624.png?v=1787829442&width=2000",
+    "source_page": "https://leomarka.com/products/vitamin-c-anti-spot-sun-protection-hand-mask-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 923,
+    "files": [
+      {
+        "image": "/images/catalog/TS0013-c6a10b1d9361.webp",
+        "sha256": "c6a10b1d9361b565a732347fd74161db75e757970ec3b590cefcfbb6cd0f8868",
+        "bytes": 73032,
+        "width": 1287,
+        "height": 1320
+      },
+      {
+        "image": "/images/catalog/TS0013-f3ec2db28aa1.webp",
+        "sha256": "f3ec2db28aa17b29302036fbe1c93415613dc75235cd84498bb68e4a6a0b0bd8",
+        "bytes": 51052,
+        "width": 1072,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0014",
+    "primary": "/images/catalog/TS0014-a33bdf5bc446.png",
+    "thumbnail": "/images/catalog/TS0014-db0b56d826eb.webp",
+    "highResolution": "/images/catalog/TS0014-19aba85cddc2.webp",
+    "width": 1600,
+    "height": 1495,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27141441.png?v=1787829321&width=2000",
+    "source_page": "https://leomarka.com/products/clay-and-hemp-oil-exfoliating-hand-mask-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 841,
+    "files": [
+      {
+        "image": "/images/catalog/TS0014-19aba85cddc2.webp",
+        "sha256": "19aba85cddc2e3bedcf530794a3f8804cb37de893be36429e51b09e513513e6b",
+        "bytes": 76146,
+        "width": 1600,
+        "height": 1495
+      },
+      {
+        "image": "/images/catalog/TS0014-db0b56d826eb.webp",
+        "sha256": "db0b56d826eb3db310fb45295a755b8c67cb29cff6ae3310ea5cedc8573a1f04",
+        "bytes": 43036,
+        "width": 1100,
+        "height": 1028
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0015",
+    "primary": "/images/catalog/TS0015-654447698ccb.png",
+    "thumbnail": "/images/catalog/TS0015-4371cb99f97a.webp",
+    "highResolution": "/images/catalog/TS0015-33115bea70a4.webp",
+    "width": 1560,
+    "height": 1487,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27141158.png?v=1787829171&width=2000",
+    "source_page": "https://leomarka.com/products/repairing-and-nourishing-hand-mask-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 858,
+    "files": [
+      {
+        "image": "/images/catalog/TS0015-33115bea70a4.webp",
+        "sha256": "33115bea70a424492b5cf80a7524c3736196d5ab5c8900c864c42c365be2646b",
+        "bytes": 108192,
+        "width": 1560,
+        "height": 1487
+      },
+      {
+        "image": "/images/catalog/TS0015-4371cb99f97a.webp",
+        "sha256": "4371cb99f97aed435434aaa696269b4448c5b311e0088eac9eace41a18828904",
+        "bytes": 59082,
+        "width": 1100,
+        "height": 1049
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0016",
+    "primary": "/images/catalog/TS0016-e9e0f8aae53c.png",
+    "thumbnail": "/images/catalog/TS0016-4af298e7c1e6.webp",
+    "highResolution": "/images/catalog/TS0016-ec75901190be.webp",
+    "width": 1835,
+    "height": 1650,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27141002.png?v=1787829044&width=2000",
+    "source_page": "https://leomarka.com/products/vitamin-c-peel-off-foot-mask-with-exfoliating-effect-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 809,
+    "files": [
+      {
+        "image": "/images/catalog/TS0016-ec75901190be.webp",
+        "sha256": "ec75901190be30404b2bc68d6256e1d7d1445faf9fe49b70414b458f3c335368",
+        "bytes": 291012,
+        "width": 1835,
+        "height": 1650
+      },
+      {
+        "image": "/images/catalog/TS0016-4af298e7c1e6.webp",
+        "sha256": "4af298e7c1e627661eb6588d2e516a38e72e1e014a0b4481e151e69a2e6fc77c",
+        "bytes": 122884,
+        "width": 1100,
+        "height": 989
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0017",
+    "primary": "/images/catalog/TS0017-3de9d4cb196d.png",
+    "thumbnail": "/images/catalog/TS0017-01c685b36b64.webp",
+    "highResolution": "/images/catalog/TS0017-5405b4d881be.webp",
+    "width": 1592,
+    "height": 1512,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27140756.png?v=1787828923&width=2000",
+    "source_page": "https://leomarka.com/products/clay-and-hemp-oil-exfoliating-foot-mask-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 855,
+    "files": [
+      {
+        "image": "/images/catalog/TS0017-5405b4d881be.webp",
+        "sha256": "5405b4d881bea2a45846ab494423fe1ab797532ec87fe631a1051f8f89fecfcb",
+        "bytes": 77382,
+        "width": 1592,
+        "height": 1512
+      },
+      {
+        "image": "/images/catalog/TS0017-01c685b36b64.webp",
+        "sha256": "01c685b36b64595ca60127d10a0c0f4601fbbddb54e4ab1de769b4cba34ea0c5",
+        "bytes": 44382,
+        "width": 1100,
+        "height": 1045
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0018",
+    "primary": "/images/catalog/TS0018-36db4e16b3c6.png",
+    "thumbnail": "/images/catalog/TS0018-5b44b659173a.webp",
+    "highResolution": "/images/catalog/TS0018-62d60f710c7f.webp",
+    "width": 1590,
+    "height": 1495,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27134030.png?v=1787827370&width=2000",
+    "source_page": "https://leomarka.com/products/intensive-moisturizing-foot-mask-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 846,
+    "files": [
+      {
+        "image": "/images/catalog/TS0018-62d60f710c7f.webp",
+        "sha256": "62d60f710c7f35099d31de9d9f47b89a7cb27a456ab589ec05bbab1f2f8fb937",
+        "bytes": 120948,
+        "width": 1590,
+        "height": 1495
+      },
+      {
+        "image": "/images/catalog/TS0018-5b44b659173a.webp",
+        "sha256": "5b44b659173a250cdbbc949e048b406493543462c6c8760467b9df6d50959690",
+        "bytes": 66714,
+        "width": 1100,
+        "height": 1034
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0019",
+    "primary": "/images/catalog/TS0019-95a043026017.png",
+    "thumbnail": "/images/catalog/TS0019-81486a7e7469.webp",
+    "highResolution": "/images/catalog/TS0019-2657cd00e60c.webp",
+    "width": 1505,
+    "height": 1460,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27133836.png?v=1787827192&width=2000",
+    "source_page": "https://leomarka.com/products/10-urea-heel-crack-care-moisturizing-foot-mask-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 873,
+    "files": [
+      {
+        "image": "/images/catalog/TS0019-2657cd00e60c.webp",
+        "sha256": "2657cd00e60c50c8ab02a7e3fbf1e62537ca1c2c46032c586a5bf2322ccb4c3f",
+        "bytes": 76000,
+        "width": 1505,
+        "height": 1460
+      },
+      {
+        "image": "/images/catalog/TS0019-81486a7e7469.webp",
+        "sha256": "81486a7e7469c066f8eb92954befbd2761448f5349c9af61f953ddf9efb6b9b2",
+        "bytes": 44844,
+        "width": 1100,
+        "height": 1067
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0020",
+    "primary": "/images/catalog/TS0020-af69ec49d2b1.png",
+    "thumbnail": "/images/catalog/TS0020-e09022dc8c8e.webp",
+    "highResolution": "/images/catalog/TS0020-86aba8256fc4.webp",
+    "width": 2000,
+    "height": 1578,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27133558.png?v=1787827014&width=2000",
+    "source_page": "https://leomarka.com/products/100-natural-rose-water-revitalizing-renewing-3d-capsule-cream-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 710,
+    "files": [
+      {
+        "image": "/images/catalog/TS0020-86aba8256fc4.webp",
+        "sha256": "86aba8256fc46b7d4b0cf45bd765e20213eb946403e6792c62f807722df8f2e3",
+        "bytes": 54778,
+        "width": 2000,
+        "height": 1578
+      },
+      {
+        "image": "/images/catalog/TS0020-e09022dc8c8e.webp",
+        "sha256": "e09022dc8c8ec0baeb788521fff18501d1c9af6bc4d2ca327d671f9c6d316396",
+        "bytes": 20568,
+        "width": 1100,
+        "height": 868
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0021",
+    "primary": "/images/catalog/TS0021-3043f5e0bb7d.png",
+    "thumbnail": "/images/catalog/TS0021-9ef3263cc615.webp",
+    "highResolution": "/images/catalog/TS0021-5bf548b76504.webp",
+    "width": 1732,
+    "height": 1627,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27133300.png?v=1787826833&width=2000",
+    "source_page": "https://leomarka.com/products/rice-yeast-whitening-fluid-cream-30-spf-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 845,
+    "files": [
+      {
+        "image": "/images/catalog/TS0021-5bf548b76504.webp",
+        "sha256": "5bf548b76504121d0aefced49d5a17da953272b406e72f6825334e517b538c56",
+        "bytes": 40966,
+        "width": 1732,
+        "height": 1627
+      },
+      {
+        "image": "/images/catalog/TS0021-9ef3263cc615.webp",
+        "sha256": "9ef3263cc61519f70448a5b65d788c8ce5b7b7eba39271cd837890b2ac266696",
+        "bytes": 21526,
+        "width": 1100,
+        "height": 1033
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0022",
+    "primary": "/images/catalog/TS0022-966640210b7a.png",
+    "thumbnail": "/images/catalog/TS0022-6a395336f8da.webp",
+    "highResolution": "/images/catalog/TS0022-1d1911881b50.webp",
+    "width": 1697,
+    "height": 1597,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27133014.png?v=1787826650&width=2000",
+    "source_page": "https://leomarka.com/products/collagen-moisturizer-stick-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 847,
+    "files": [
+      {
+        "image": "/images/catalog/TS0022-1d1911881b50.webp",
+        "sha256": "1d1911881b505c86f2df8b18ea200227bca6b835ec93432a8395f280ee6295f4",
+        "bytes": 77898,
+        "width": 1697,
+        "height": 1597
+      },
+      {
+        "image": "/images/catalog/TS0022-6a395336f8da.webp",
+        "sha256": "6a395336f8da083f300df10e375349a817a4ad6adfc4ce77960ed1a3009c33ae",
+        "bytes": 39840,
+        "width": 1100,
+        "height": 1035
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0023",
+    "primary": "/images/catalog/TS0023-fdb76aa06ff9.png",
+    "thumbnail": "/images/catalog/TS0023-9f92b2a53260.webp",
+    "highResolution": "/images/catalog/TS0023-e2b69810eceb.webp",
+    "width": 1467,
+    "height": 1595,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27132658.png?v=1787826540&width=2000",
+    "source_page": "https://leomarka.com/products/tea-tree-oil-anti-acne-facial-spray-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 979,
+    "files": [
+      {
+        "image": "/images/catalog/TS0023-e2b69810eceb.webp",
+        "sha256": "e2b69810eceb869e18b5516291739aed90913ce10dcff6ebeab5d6288e06fc45",
+        "bytes": 81306,
+        "width": 1467,
+        "height": 1595
+      },
+      {
+        "image": "/images/catalog/TS0023-9f92b2a53260.webp",
+        "sha256": "9f92b2a53260960580cfd631f8b03ff09b3ddd4fa6f5d83a1f3f8150c5fb0a12",
+        "bytes": 44300,
+        "width": 1012,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0024",
+    "primary": "/images/catalog/TS0024-fc1873db740c.png",
+    "thumbnail": "/images/catalog/TS0024-81a9caa65077.webp",
+    "highResolution": "/images/catalog/TS0024-e7a7f45ca4df.webp",
+    "width": 1525,
+    "height": 1610,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-08-27132455.png?v=1787826362&width=2000",
+    "source_page": "https://leomarka.com/products/rice-yeast-whitening-and-revitalizing-facial-spray-by-dermokil",
+    "previous_width": 900,
+    "previous_height": 950,
+    "files": [
+      {
+        "image": "/images/catalog/TS0024-e7a7f45ca4df.webp",
+        "sha256": "e7a7f45ca4df2c7097a077520092b1979f04eb354e8e2ef8b017632b59d5bff3",
+        "bytes": 59502,
+        "width": 1525,
+        "height": 1610
+      },
+      {
+        "image": "/images/catalog/TS0024-81a9caa65077.webp",
+        "sha256": "81a9caa650774606072af507a08445210c25d8849138a931f65de94e5739ae4d",
+        "bytes": 32034,
+        "width": 1042,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0025",
+    "primary": "/images/catalog/TS0025-8de6bb03287b.jpg",
+    "thumbnail": "/images/catalog/TS0025-c850d6ac9596.webp",
+    "highResolution": "/images/catalog/TS0025-8de6bb03287b.jpg",
+    "width": 669,
+    "height": 749,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot-_-__Store_Admin_-_Roxiit.jpg?v=1714828193&width=2000",
+    "source_page": "https://leomarka.com/products/سيروم-مقوي-شعر-من-اوردينري",
+    "previous_width": 669,
+    "previous_height": 749,
+    "files": [
+      {
+        "image": "/images/catalog/TS0025-c850d6ac9596.webp",
+        "sha256": "c850d6ac9596660f57ed24cbf312ddb0577fb97dbb29b2cf595f12dd52d42560",
+        "bytes": 22612,
+        "width": 669,
+        "height": 749
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0026",
+    "primary": "/images/catalog/TS0026-65cf674a2df1.jpg",
+    "thumbnail": "/images/catalog/TS0026-48262f2841a5.webp",
+    "highResolution": "/images/catalog/TS0026-c30859e69e59.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/IMG-20240316-WA0023.jpg?v=1710587328&width=2000",
+    "source_page": "https://leomarka.com/products/سيروم-الهيالورونيك-أسيد-the-ordinary-hyaluronic-acid-2-b5",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0026-c30859e69e59.webp",
+        "sha256": "c30859e69e5960853093afb61557df3e386e62b2813f576978e8f8bc0d3a8f89",
+        "bytes": 40326,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0026-48262f2841a5.webp",
+        "sha256": "48262f2841a5d128fb7e00c32a68939746f8cbb19d9d07a296d60926136d6156",
+        "bytes": 36482,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0027",
+    "primary": "/images/catalog/TS0027-d234974bf298.jpg",
+    "thumbnail": "/images/catalog/TS0027-9add247aa942.webp",
+    "highResolution": "/images/catalog/TS0027-79175da5f716.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/IMG-20240307-WA0029.jpg?v=1710585370&width=2000",
+    "source_page": "https://leomarka.com/products/سيروم-الهالات-السوداء-the-ordinary-caffeine-solution-5-egcg",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0027-79175da5f716.webp",
+        "sha256": "79175da5f7169f66c2c7119a8dbbd59360feba7bfc4cb365df3fe3078230b077",
+        "bytes": 45030,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0027-9add247aa942.webp",
+        "sha256": "9add247aa942fc90ac3f13a96e6bf7211d0364560b5510fc7337192139ba69bf",
+        "bytes": 40600,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0028",
+    "primary": "/images/catalog/TS0028-cdfedf418b07.jpg",
+    "thumbnail": "/images/catalog/TS0028-8b8961a28b1d.webp",
+    "highResolution": "/images/catalog/TS0028-d7d10ca5c8a5.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/IMG-20240316-WA0024.jpg?v=1710588063&width=2000",
+    "source_page": "https://leomarka.com/products/سيروم-التقشير-the-ordinary-aha-30-bha-2-peeling-solution",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0028-d7d10ca5c8a5.webp",
+        "sha256": "d7d10ca5c8a59b528f06314686e319914da0df049c2a87acfb532ed2621edcc7",
+        "bytes": 35032,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0028-8b8961a28b1d.webp",
+        "sha256": "8b8961a28b1d6a1b9110b74c6eb36621edbbfea46b4176f9e695e49b8bf62ae2",
+        "bytes": 31398,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0029",
+    "primary": "/images/catalog/TS0029-eb49f74912e9.jpg",
+    "thumbnail": "/images/catalog/TS0029-c3f23e2cecf6.webp",
+    "highResolution": "/images/catalog/TS0029-d7a8e5f0e4dc.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/IMG-20240317-WA0005.jpg?v=1710673780&width=2000",
+    "source_page": "https://leomarka.com/products/واقي-شمس-bioderma-photoderm-max-spf100-1",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0029-d7a8e5f0e4dc.webp",
+        "sha256": "d7a8e5f0e4dc8a7edfd4f6b422a1da14c4537a8083533a19cc74a8f49aecdc13",
+        "bytes": 94476,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0029-c3f23e2cecf6.webp",
+        "sha256": "c3f23e2cecf6cfbf7be72bc52e557de9209891f42b21ab1206c974a1a54e1af9",
+        "bytes": 79638,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0030",
+    "primary": "/images/catalog/TS0030-3a412304e269.jpg",
+    "thumbnail": "/images/catalog/TS0030-4175d2be466b.webp",
+    "highResolution": "/images/catalog/TS0030-4c598e496dc1.webp",
+    "width": 1500,
+    "height": 1500,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/eucerin-daly-hydration-lotion.jpg?v=1781960494&width=2000",
+    "source_page": "https://leomarka.com/products/daily-hydration-lotion-by-eucerin",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0030-4c598e496dc1.webp",
+        "sha256": "4c598e496dc1aadc36178c273f634f362222813eb429610653d4ba87f2dcadca",
+        "bytes": 55784,
+        "width": 1500,
+        "height": 1500
+      },
+      {
+        "image": "/images/catalog/TS0030-4175d2be466b.webp",
+        "sha256": "4175d2be466b044cab48dde781aa5741991a383ba2de3123f9db5e5cb4ef6ec5",
+        "bytes": 32144,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0031",
+    "primary": "/images/catalog/TS0031-aadaa0387edb.jpg",
+    "thumbnail": "/images/catalog/TS0031-c863db873265.webp",
+    "highResolution": "/images/catalog/TS0031-aadaa0387edb.jpg",
+    "width": 600,
+    "height": 600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/IMG-20240318-WA0046.jpg?v=1710847193&width=2000",
+    "source_page": "https://leomarka.com/products/واقي-شمس-eucerin-oil-control",
+    "previous_width": 600,
+    "previous_height": 600,
+    "files": [
+      {
+        "image": "/images/catalog/TS0031-c863db873265.webp",
+        "sha256": "c863db873265ee4d488b4c74abdde914badb42b1a06bfb6d9fde9eef5afa1c65",
+        "bytes": 13862,
+        "width": 600,
+        "height": 600
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0032",
+    "primary": "/images/catalog/TS0032-044d1e8b219d.jpg",
+    "thumbnail": "/images/catalog/TS0032-26a7fdb897ef.webp",
+    "highResolution": "/images/catalog/TS0032-726a25f9ea72.webp",
+    "width": 1500,
+    "height": 1500,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/IMG-20240307-WA0033.jpg?v=1710449491&width=2000",
+    "source_page": "https://leomarka.com/products/مجموعة-كثافة-الشعر-والرموش-والحواجب-the-ordinary-hair-lash-brow-density-sit",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0032-726a25f9ea72.webp",
+        "sha256": "726a25f9ea723073150b749ab83e80d52f5315dbb5aa5afd4ff41414331fecc3",
+        "bytes": 106754,
+        "width": 1500,
+        "height": 1500
+      },
+      {
+        "image": "/images/catalog/TS0032-26a7fdb897ef.webp",
+        "sha256": "26a7fdb897ef24cdb0b192b454bb92cc15b22f1723b02cafb793ab926ae70a67",
+        "bytes": 62162,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0033",
+    "primary": "/images/catalog/TS0033-81da2d7c9704.jpg",
+    "thumbnail": "/images/catalog/TS0033-814cc6a8d8e8.webp",
+    "highResolution": "/images/catalog/TS0033-d04a0238666d.webp",
+    "width": 1600,
+    "height": 1600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/E1B90AEF-69C9-41A6-A3C7-9635A89E1561.jpg?v=1732475640&width=2000",
+    "source_page": "https://leomarka.com/products/مثبت-مكياج-dr-rashel",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0033-d04a0238666d.webp",
+        "sha256": "d04a0238666d3d6dbbf0d082e84a0f2727f692daf0bc6ad2153169bf9cabe9d1",
+        "bytes": 120400,
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "image": "/images/catalog/TS0033-814cc6a8d8e8.webp",
+        "sha256": "814cc6a8d8e83fcc70738dce532772a2e12add3bab0d1c615b4a3b537be42063",
+        "bytes": 57980,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0034",
+    "primary": "/images/catalog/TS0034-29fee2409fd6.jpg",
+    "thumbnail": "/images/catalog/TS0034-305c63270934.webp",
+    "highResolution": "/images/catalog/TS0034-2207a0f226db.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/drrashel038.jpg?v=1735203612&width=2000",
+    "source_page": "https://leomarka.com/products/كريم-فيتامين-أي-والريتينول-لرفع-العين-ومكافحة-الشيخوخة-من-dr-rashel",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0034-2207a0f226db.webp",
+        "sha256": "2207a0f226db7f55a1660ea1f8e25f149c0bb00edcf6a952dd0e07ecff9a2031",
+        "bytes": 198428,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0034-305c63270934.webp",
+        "sha256": "305c6327093489c84db259857c430d5a912abebaec9be5f8391782ee7a0f5bbf",
+        "bytes": 61034,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0035",
+    "primary": "/images/catalog/TS0035-2adea0595bac.jpg",
+    "thumbnail": "/images/catalog/TS0035-77cf7a3a1d20.webp",
+    "highResolution": "/images/catalog/TS0035-2adea0595bac.jpg",
+    "width": 500,
+    "height": 500,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/2xq_500x_4cf3272d-ccdc-4f2a-b478-0f82149663f4.jpg?v=1771419118&width=2000",
+    "source_page": "https://leomarka.com/products/black-whitening-cream-by-dr-rashel",
+    "previous_width": 500,
+    "previous_height": 500,
+    "files": [
+      {
+        "image": "/images/catalog/TS0035-77cf7a3a1d20.webp",
+        "sha256": "77cf7a3a1d2031d992444a2baf9e03296783cdf004a8d3f201e2ede314edf969",
+        "bytes": 28064,
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0036",
+    "primary": "/images/catalog/TS0036-656a649549ba.jpg",
+    "thumbnail": "/images/catalog/TS0036-06d8c72960f9.webp",
+    "highResolution": "/images/catalog/TS0036-d2fb6cc3e713.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/the-ordinary-body-care.jpg?v=1752745285&width=2000",
+    "source_page": "https://leomarka.com/products/salicylic-acid-0-5-body-serum-by-the-ordinary",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0036-d2fb6cc3e713.webp",
+        "sha256": "d2fb6cc3e7135d133ec5ffd657ea986ec92c8eee76004601800ed8d79d04880a",
+        "bytes": 24346,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0036-06d8c72960f9.webp",
+        "sha256": "06d8c72960f958b43ceed70b09b8c57bf420849f9678b38cd5b8d84b5ead89d4",
+        "bytes": 22624,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0037",
+    "primary": "/images/catalog/TS0037-a89335cc74b5.jpg",
+    "thumbnail": "/images/catalog/TS0037-ce3aa07aa6e0.webp",
+    "highResolution": "/images/catalog/TS0037-a40e458e6729.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/bioderma-sebium-gel-moussant-200ml.jpg?v=1752664475&width=2000",
+    "source_page": "https://leomarka.com/products/laboratoire-dermatologiqu-sebium-gel-moussant-by-bioderma",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0037-a40e458e6729.webp",
+        "sha256": "a40e458e672950c257c23be00fb36f51fc57860d7b61de55de8d5e865b87077f",
+        "bytes": 29588,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0037-ce3aa07aa6e0.webp",
+        "sha256": "ce3aa07aa6e0332f6e34ac480c7d353925e31f7ee205720162493743f7718b02",
+        "bytes": 26982,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0038",
+    "primary": "/images/catalog/TS0038-9c8d8ee36b70.jpg",
+    "thumbnail": "/images/catalog/TS0038-ea47741fd124.webp",
+    "highResolution": "/images/catalog/TS0038-514a07736657.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/functioning-eye-cream.jpg?v=1747563199&width=2000",
+    "source_page": "https://leomarka.com/products/original-advanced-snail-peptide-eye-cream-by-cosrx",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0038-514a07736657.webp",
+        "sha256": "514a07736657da6544a1f9f9986d5b9d0352e181f140670261d8a665c18e7407",
+        "bytes": 26544,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0038-ea47741fd124.webp",
+        "sha256": "ea47741fd1240bb748f14f1ed03b6b251c2e2a838c3634b5cba8ec19f34f5ba1",
+        "bytes": 23928,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0039",
+    "primary": "/images/catalog/TS0039-1ee346ac06be.jpg",
+    "thumbnail": "/images/catalog/TS0039-255e11e27a9b.webp",
+    "highResolution": "/images/catalog/TS0039-b65736529bf2.webp",
+    "width": 1600,
+    "height": 1600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/E551CD49-6367-4DAE-A26F-E333DDDCBBE1.jpg?v=1733166472&width=2000",
+    "source_page": "https://leomarka.com/products/مزيل-مكياج-dr-rashel",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0039-b65736529bf2.webp",
+        "sha256": "b65736529bf22f84f74266c4125109f28df42ff340cf47315dfe24353864269e",
+        "bytes": 105174,
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "image": "/images/catalog/TS0039-255e11e27a9b.webp",
+        "sha256": "255e11e27a9b496cebaf2731c7974e9d198203f6638721cdb2fa1347de3e7684",
+        "bytes": 53308,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0040",
+    "primary": "/images/catalog/TS0040-372e9cba2f3e.jpg",
+    "thumbnail": "/images/catalog/TS0040-91846570980e.webp",
+    "highResolution": "/images/catalog/TS0040-b4b2cea94b00.webp",
+    "width": 1600,
+    "height": 1600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/IMG-20240311-WA0016.jpg?v=1710149360&width=2000",
+    "source_page": "https://leomarka.com/products/كريم-مرطب-حمض-الهيالورونيك-أسيد-cosrx",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0040-b4b2cea94b00.webp",
+        "sha256": "b4b2cea94b002360bd3e86324cf026913bd904290924e3de21420cc85948895c",
+        "bytes": 153432,
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "image": "/images/catalog/TS0040-91846570980e.webp",
+        "sha256": "91846570980e0258e8fe5482fdce56f17a4b3283f040d33b4bfc630f18aea987",
+        "bytes": 79014,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0041",
+    "primary": "/images/catalog/TS0041-deb1f391e4bd.png",
+    "thumbnail": "/images/catalog/TS0041-39e83a909081.webp",
+    "highResolution": "/images/catalog/TS0041-af900e4f5c31.webp",
+    "width": 1057,
+    "height": 1446,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Screenshot2026-02-18121312.png?v=1771418254&width=2000",
+    "source_page": "https://leomarka.com/products/black-charcoal-deep-cleansing-nose-strips-6-pieces-by-dr-rashel",
+    "previous_width": 900,
+    "previous_height": 1231,
+    "files": [
+      {
+        "image": "/images/catalog/TS0041-af900e4f5c31.webp",
+        "sha256": "af900e4f5c31351069ddde33b6cac435427103217921147b930b80aee10229b1",
+        "bytes": 76700,
+        "width": 1057,
+        "height": 1446
+      },
+      {
+        "image": "/images/catalog/TS0041-39e83a909081.webp",
+        "sha256": "39e83a9090819c3649681764b09786228daaf62a1b340896db8f2484f556149a",
+        "bytes": 47064,
+        "width": 804,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0042",
+    "primary": "/images/catalog/TS0042-fd98ff72f9a1.jpg",
+    "thumbnail": "/images/catalog/TS0042-143d5f2e89a2.webp",
+    "highResolution": "/images/catalog/TS0042-8952d99b1471.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/drrashel2.jpg?v=1735215313&width=2000",
+    "source_page": "https://leomarka.com/products/سكراب-ومقشر-بخلاصة-الالوفيرا-من-dr-rashel",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0042-8952d99b1471.webp",
+        "sha256": "8952d99b147127ed6cd74a734fbe534973e975e33af2e49b9e11c83816f94d8b",
+        "bytes": 154088,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0042-143d5f2e89a2.webp",
+        "sha256": "143d5f2e89a26e080ca6acac6d276f278da482496dc16070e6e795fa6d8082eb",
+        "bytes": 53870,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0044",
+    "primary": "/images/catalog/TS0044-4336d2d071f4.jpg",
+    "thumbnail": "/images/catalog/TS0044-97a109e2d1e4.webp",
+    "highResolution": "/images/catalog/TS0044-f3e97130519c.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Galactomyces-95_Tone_Balancing_Essence.jpg?v=1710417119&width=2000",
+    "source_page": "https://leomarka.com/products/سيروم-cosrx-galactomyces95-tone-balancing-essence",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0044-f3e97130519c.webp",
+        "sha256": "f3e97130519c41a953a8fcba2895f8d648847d6d86decb9fe71ba682296ed606",
+        "bytes": 28976,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0044-97a109e2d1e4.webp",
+        "sha256": "97a109e2d1e41338d2f732a55c4b45becc4cd2aa71c4a1bcf6c018ff6377e69a",
+        "bytes": 26264,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0045",
+    "primary": "/images/catalog/TS0045-7ca145df3014.jpg",
+    "thumbnail": "/images/catalog/TS0045-d5856ccb1286.webp",
+    "highResolution": "/images/catalog/TS0045-cf301e8194d8.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/1000px.webp?v=1737626056&width=2000",
+    "source_page": "https://leomarka.com/products/مزيل-مكياج-من-note",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0045-cf301e8194d8.webp",
+        "sha256": "cf301e8194d8d0875f1e1e3ed3483c70fb74c14ad606e94c67d29762910effd6",
+        "bytes": 65240,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0045-d5856ccb1286.webp",
+        "sha256": "d5856ccb128676873aa420b625bb7858af6aaf5d4e6f0a8b71b419b09e56b578",
+        "bytes": 57504,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0046",
+    "primary": "/images/catalog/TS0046-940cbd2a6181.jpg",
+    "thumbnail": "/images/catalog/TS0046-8f50c63ce44d.webp",
+    "highResolution": "/images/catalog/TS0046-5a969584bf20.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/0000000997.050.001-2.jpg?v=1737631159&width=2000",
+    "source_page": "https://leomarka.com/products/كونسيلر-قلم-وهاي-لايتر-من-note",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0046-5a969584bf20.webp",
+        "sha256": "5a969584bf207bae242a76eee7689071d62782b6f2bb84324532169bc3ef26ad",
+        "bytes": 38918,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0046-8f50c63ce44d.webp",
+        "sha256": "8f50c63ce44d3f05150d8f3a251c30210bc2ce77de94d1b2b7a3e599127a0c7b",
+        "bytes": 14962,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0047",
+    "primary": "/images/catalog/TS0047-0da340cd9298.jpg",
+    "thumbnail": "/images/catalog/TS0047-6e34ef3aa4db.webp",
+    "highResolution": "/images/catalog/TS0047-56f46a3fc885.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/0000997.001.002.001-1-1.jpg?v=1737467186&width=2000",
+    "source_page": "https://leomarka.com/products/فاونديشن-مات-لبشرة-مطفية-من-note",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0047-56f46a3fc885.webp",
+        "sha256": "56f46a3fc88553ab84f843a4b5a4f36dc4a629fd22e528274b3dbe5965cca809",
+        "bytes": 39170,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0047-6e34ef3aa4db.webp",
+        "sha256": "6e34ef3aa4db2b8483080a66155039f856a5ca3e9bdd45ac30a53f9b70e16bc3",
+        "bytes": 15528,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0048",
+    "primary": "/images/catalog/TS0048-e0e804536a9b.jpg",
+    "thumbnail": "/images/catalog/TS0048-ab4685afd7dd.webp",
+    "highResolution": "/images/catalog/TS0048-0cace3fff030.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/01_38dbb1fc-0623-4b04-96e1-4b18454cb4fd.jpg?v=1737798397&width=2000",
+    "source_page": "https://leomarka.com/products/مسكارة-حواجب-من-note",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0048-0cace3fff030.webp",
+        "sha256": "0cace3fff0303e78d04ae60029aeb05617ebbdd8c5579adaf4f825cccd6e4129",
+        "bytes": 61960,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0048-ab4685afd7dd.webp",
+        "sha256": "ab4685afd7dd0bbf843507e39323e6bfd1a436c2d0a9deed44d64ec3800787fe",
+        "bytes": 25718,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0049",
+    "primary": "/images/catalog/TS0049-2ad0d1d587ce.jpg",
+    "thumbnail": "/images/catalog/TS0049-154848b5e0dd.webp",
+    "highResolution": "/images/catalog/TS0049-84aed7817226.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/Moisturizing-Lash-brow-Oil_2.jpg?v=1737796936&width=2000",
+    "source_page": "https://leomarka.com/products/مقوي-الرموش-والحواجب-من-note",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0049-84aed7817226.webp",
+        "sha256": "84aed7817226e5cb0d3cda72dbcafdc8fef20e8ac86719fd6ed9eda550c929eb",
+        "bytes": 54092,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0049-154848b5e0dd.webp",
+        "sha256": "154848b5e0dd4e7eef1e162e782d351b15200364e87437397de33faa66d02f94",
+        "bytes": 21356,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0050",
+    "primary": "/images/catalog/TS0050-c38be8d05206.jpg",
+    "thumbnail": "/images/catalog/TS0050-80441875ed44.webp",
+    "highResolution": "/images/catalog/TS0050-5d58f2000b3e.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/G-0000000997.003.005-4.jpg?v=1737469570&width=2000",
+    "source_page": "https://leomarka.com/products/بلشر-مخملي-للخدود-من-note",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0050-5d58f2000b3e.webp",
+        "sha256": "5d58f2000b3e726222f4f10ce1b5140a776290e013a59fac49f0e065cc9bd332",
+        "bytes": 99622,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0050-80441875ed44.webp",
+        "sha256": "80441875ed44a6b9c3adc28e271559d9ca1634d2f4ce72e7f5b00463333b29d2",
+        "bytes": 37120,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0051",
+    "primary": "/images/catalog/TS0051-92d7c5993853.jpg",
+    "thumbnail": "/images/catalog/TS0051-c50db7593cf1.webp",
+    "highResolution": "/images/catalog/TS0051-92d7c5993853.jpg",
+    "width": 896,
+    "height": 896,
+    "source_image": "https://cdn.shopify.com/s/files/1/0493/0938/4868/files/aaa08a99a1161d89beff14d10e03b80a.jpg?v=1792151278&width=2000",
+    "source_page": "https://www.nishman.com.au/products/260212",
+    "previous_width": 896,
+    "previous_height": 896,
+    "files": [
+      {
+        "image": "/images/catalog/TS0051-c50db7593cf1.webp",
+        "sha256": "c50db7593cf1d32219471ca34c0959e098844e5957a904321b9b73d0f970ac5e",
+        "bytes": 73632,
+        "width": 896,
+        "height": 896
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0052",
+    "primary": "/images/catalog/TS0052-fb32ce0b2301.png",
+    "thumbnail": "/images/catalog/TS0052-3b7ca5523e74.webp",
+    "highResolution": "/images/catalog/TS0052-6b683f6b2a75.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/nishladyhairstickwax.png?v=1776857961&width=2000",
+    "source_page": "https://leomarka.com/products/hair-stick-wax-by-nishlady",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0052-6b683f6b2a75.webp",
+        "sha256": "6b683f6b2a75ab685dadbb49148545c3f28bb387afdb2a014df481467b747c71",
+        "bytes": 40254,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0052-3b7ca5523e74.webp",
+        "sha256": "3b7ca5523e74bf22a6a36ffb05544ce54a9c6eea2844eb22541618f14a79fd77",
+        "bytes": 36014,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0053",
+    "primary": "/images/catalog/TS0053-eecabc446a1e.png",
+    "thumbnail": "/images/catalog/TS0053-67595ee4e833.webp",
+    "highResolution": "/images/catalog/TS0053-96c3fdd0bb84.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/dustgrainsnishladypng.png?v=1776857586&width=2000",
+    "source_page": "https://leomarka.com/products/dust-grain-volume-and-texture-powder-by-nishlady",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0053-96c3fdd0bb84.webp",
+        "sha256": "96c3fdd0bb84b1fa044260ab8ffafc154f2f57e9b6bde2bd5cdb11973c860215",
+        "bytes": 36626,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0053-67595ee4e833.webp",
+        "sha256": "67595ee4e833542b2c862682cac553c6b37477ff263070c3f36cb9af73e13442",
+        "bytes": 32050,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0054",
+    "primary": "/images/catalog/TS0054-288ceb113d79.png",
+    "thumbnail": "/images/catalog/TS0054-c529fb95a3e4.webp",
+    "highResolution": "/images/catalog/TS0054-288ceb113d79.png",
+    "width": 900,
+    "height": 900,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/conditionerwepp.webp?v=1776856819&width=2000",
+    "source_page": "https://leomarka.com/products/touch-of-silver-bi-phase-conditioner-for-blonde-and-gray-hair-by-nishlady",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0054-c529fb95a3e4.webp",
+        "sha256": "c529fb95a3e42cd190ad8d609cdf7a47fa3112ffc302c0f7c918e4abe827faf5",
+        "bytes": 23426,
+        "width": 900,
+        "height": 900
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0055",
+    "primary": "/images/catalog/TS0055-9e8cb050dedf.jpg",
+    "thumbnail": "/images/catalog/TS0055-ea42ff66b8a9.webp",
+    "highResolution": "/images/catalog/TS0055-a57033b2d7a9.webp",
+    "width": 1000,
+    "height": 1200,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/nishlady_liquid-spray-wax.jpg?v=1776856724&width=2000",
+    "source_page": "https://leomarka.com/products/liquid-spray-hair-wax-by-nishlady",
+    "previous_width": 900,
+    "previous_height": 1080,
+    "files": [
+      {
+        "image": "/images/catalog/TS0055-a57033b2d7a9.webp",
+        "sha256": "a57033b2d7a90073b2a110bf885fac7e23dada5354ef68ff43a9757db59eb437",
+        "bytes": 31784,
+        "width": 1000,
+        "height": 1200
+      },
+      {
+        "image": "/images/catalog/TS0055-ea42ff66b8a9.webp",
+        "sha256": "ea42ff66b8a962bd64d5be626e48120899374f350ed0242ff40151345696e076",
+        "bytes": 25642,
+        "width": 917,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0056",
+    "primary": "/images/catalog/TS0056-c5c913469b65.jpg",
+    "thumbnail": "/images/catalog/TS0056-c673dc8b8a00.webp",
+    "highResolution": "/images/catalog/TS0056-2bae0d630334.webp",
+    "width": 1024,
+    "height": 1024,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/ok5vIUlerSCl2YnUt1XY4nGN6wvG0qVduLgR-vNwzTGFljOXtVYhbYCK4q03L2_7ZSfpl9NXzsTsC6pDoT7vQj9-b4dbNks7X0gcTu8ssWl5wZINo6Ynelp7AgQgAh5SXM9oMio5GesrTmHmx9NCLSilBqoMBcukqWUBkGg-qqg.jpg?v=1792842768&width=2000",
+    "source_page": "https://leomarka.com/products/the-ordinary-retinol-serum-0-5-in-squalane-30ml-to-19401",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0056-2bae0d630334.webp",
+        "sha256": "2bae0d630334b83bd548962de0d809b23fb99b2450f72ec7a8f3d0f4e7070c32",
+        "bytes": 64946,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "image": "/images/catalog/TS0056-c673dc8b8a00.webp",
+        "sha256": "c673dc8b8a00f3cf86c57537e8a4b1babcd4e3609a9dd33d88a6c2f116993e7d",
+        "bytes": 57708,
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0057",
+    "primary": "/images/catalog/TS0057-8291a59fb33b.jpg",
+    "thumbnail": "/images/catalog/TS0057-8f18d10943a6.webp",
+    "highResolution": "/images/catalog/TS0057-7040f5acdd2a.webp",
+    "width": 1024,
+    "height": 1024,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/6omziWl9dr1Ug-E3XAs4_PMs_XQfD7a8JOyVEr_cGiDPamxA96ccWFHwfbvTB773jWw8JOLQR08kXWlxB9aaI4sSPjCyomh3JfC9j1iIuJiZj73QbaI1xRy00t87gtHAgJUl2V6fN-eJZt7sw3Wxc3uWg7zzVDkgLMLNZoi69PA.jpg?v=1792842164&width=2000",
+    "source_page": "https://leomarka.com/products/the-ordinary-lactic-acid-10-ha-superficial-peeling-serum-30ml",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0057-7040f5acdd2a.webp",
+        "sha256": "7040f5acdd2adde7fde179d1fd7b7fd3a59e855b933d369b63a0a9fcf9e5940b",
+        "bytes": 50978,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "image": "/images/catalog/TS0057-8f18d10943a6.webp",
+        "sha256": "8f18d10943a6383606ec814d803811ee8c3a4941ccd2c24d0e80ad49655f2d05",
+        "bytes": 45558,
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0058",
+    "primary": "/images/catalog/TS0058-8f01419830e9.jpg",
+    "thumbnail": "/images/catalog/TS0058-1b65e02fa517.webp",
+    "highResolution": "/images/catalog/TS0058-0aef08ccff08.webp",
+    "width": 1024,
+    "height": 1024,
+    "source_image": "https://cdn.shopify.com/s/files/1/0681/6117/5842/files/3ULBhxM2p01Vyw13i8GNbRU9YsYYRIdggi1Yj_ucGN-IOIfE95Ac--SSEDbj9uu8PgX7N5jdxZFEQ8_u1WerSeq0bGC2Gt6ZeLXnU16V-3H4qcqVy6N3BrxyupnG0QuoP9RQQsDwrrHgsWYatOufR_WGCcsD2wdpgEw_aToeU2A.jpg?v=1792841401&width=2000",
+    "source_page": "https://leomarka.com/products/the-ordinary-salicylic-acid-2-solution-30ml",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0058-0aef08ccff08.webp",
+        "sha256": "0aef08ccff08a1f7df190efb069ce5b4135629710c97293372e418ead45994a6",
+        "bytes": 43192,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "image": "/images/catalog/TS0058-1b65e02fa517.webp",
+        "sha256": "1b65e02fa517b5aca88ced25825d28a6b9cb3cff980b295df8008688ffaaca13",
+        "bytes": 39480,
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0059",
+    "primary": "/images/catalog/TS0059-61795de6c32d.jpg",
+    "thumbnail": "/images/catalog/TS0059-881f426f6683.webp",
+    "highResolution": "/images/catalog/TS0059-61795de6c32d.jpg",
+    "width": 900,
+    "height": 900,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Dr.Althea-345ReliefCream.webp?v=1749308728&width=2000",
+    "source_page": "https://glowceryjo.com/products/dr-althea-345-relief-cream",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0059-881f426f6683.webp",
+        "sha256": "881f426f6683bfb4cdf30921d3fb9dd36464a058495a665b3a40b44df1c8a545",
+        "bytes": 29422,
+        "width": 900,
+        "height": 900
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0060",
+    "primary": "/images/catalog/TS0060-ee8fb68a8af8.jpg",
+    "thumbnail": "/images/catalog/TS0060-dff76342fdd9.webp",
+    "highResolution": "/images/catalog/TS0060-0bf78e2a450e.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Celimax_THEVITA-ARetinalShotTighteningBooster.webp?v=1750688070&width=2000",
+    "source_page": "https://glowceryjo.com/products/celimax-the-vita-a-retinal-shot-tightening-booster",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0060-0bf78e2a450e.webp",
+        "sha256": "0bf78e2a450ec660a499afdd64735c9d89a5d48735b4cb402d35b365bd559e23",
+        "bytes": 53602,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0060-dff76342fdd9.webp",
+        "sha256": "dff76342fdd936b39d8af7d288ffc43e79f552b059b08c8a3017f09f954139b2",
+        "bytes": 47628,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0061",
+    "primary": "/images/catalog/TS0061-88f84b45d59b.jpg",
+    "thumbnail": "/images/catalog/TS0061-fdc0fc79e75a.webp",
+    "highResolution": "/images/catalog/TS0061-531b8c1d8d33.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Vitamin-Illuminating-Serum-EQQUALBERRY.webp?v=1760703640&width=2000",
+    "source_page": "https://glowceryjo.com/products/eqqualberry-vitamin-illuminating-serum",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0061-531b8c1d8d33.webp",
+        "sha256": "531b8c1d8d33ea95bec5a1b68d46f45fc030e0bd5cfcebcc37ddcce993ac640d",
+        "bytes": 45576,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0061-fdc0fc79e75a.webp",
+        "sha256": "fdc0fc79e75aa7d42b72eb12e2ec739db20f235b3379a6f8b1120968bbec728d",
+        "bytes": 39774,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0062",
+    "primary": "/images/catalog/TS0062-0f4dadb61a16.jpg",
+    "thumbnail": "/images/catalog/TS0062-a3b2fa42418a.webp",
+    "highResolution": "/images/catalog/TS0062-fa288da47a60.webp",
+    "width": 905,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Anua-Niacinamide10TXA4Serum.jpg?v=1749226900&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-niacinamide-10-txa-4-serum",
+    "previous_width": 900,
+    "previous_height": 994,
+    "files": [
+      {
+        "image": "/images/catalog/TS0062-fa288da47a60.webp",
+        "sha256": "fa288da47a60721f55770eacb6639f3ea0a5865df43a4e904d79234a51211caa",
+        "bytes": 73966,
+        "width": 905,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0062-a3b2fa42418a.webp",
+        "sha256": "a3b2fa42418a96bf67e8b40778db2acc7a90f0d1601f92eea2f6ef3cc127b328",
+        "bytes": 63384,
+        "width": 905,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0064",
+    "primary": "/images/catalog/TS0064-3986c417dad3.jpg",
+    "thumbnail": "/images/catalog/TS0064-231cd2d29acf.webp",
+    "highResolution": "/images/catalog/TS0064-3986c417dad3.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/TheOrdinary-GlycolicAcid7_ExfoliatingToner.webp?v=1770740159&width=2000",
+    "source_page": "https://glowceryjo.com/products/the-ordinary-glycolic-acid-7-exfoliating-toner",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0064-231cd2d29acf.webp",
+        "sha256": "231cd2d29acf96bff818cdccd6619977d814d8de070b09a759b21a423b3152d1",
+        "bytes": 22666,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0065",
+    "primary": "/images/catalog/TS0065-04d4acbe5053.jpg",
+    "thumbnail": "/images/catalog/TS0065-27cc073a5796.webp",
+    "highResolution": "/images/catalog/TS0065-997e71d12f45.webp",
+    "width": 1200,
+    "height": 1200,
+    "source_image": "https://www.koreansecrets.fr/cdn/shop/files/IMG-9252.jpg?v=1761831263&width=2000",
+    "source_page": "https://www.koreansecrets.fr/products/beauty-of-joseon-relief-sun-rice-probiotics-spf-50-50-ml",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0065-997e71d12f45.webp",
+        "sha256": "997e71d12f45e6850886b626fbe6dea58af67c1a0166144627cbb9bb76d73704",
+        "bytes": 60746,
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "image": "/images/catalog/TS0065-27cc073a5796.webp",
+        "sha256": "27cc073a5796ee5fcb1d9b094e04040e46d299c9a3549d908f836c0b421c5b3b",
+        "bytes": 44724,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0066",
+    "primary": "/images/catalog/TS0066-a542ceee754e.jpg",
+    "thumbnail": "/images/catalog/TS0066-148ab99dd8e2.webp",
+    "highResolution": "/images/catalog/TS0066-caaf05ba833e.webp",
+    "width": 1600,
+    "height": 1600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0887/1067/6791/files/2510_4_388c8df8-fc8d-45eb-af91-a9d884fad801.jpg?v=1761116311&width=2000",
+    "source_page": "https://biodance.com/products/biodance-bio-collagen-real-deep-mask",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0066-caaf05ba833e.webp",
+        "sha256": "caaf05ba833e2bbc9761d1e7ab0ac4fcd61532aee4f0db71a5a153101a597853",
+        "bytes": 142858,
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "image": "/images/catalog/TS0066-148ab99dd8e2.webp",
+        "sha256": "148ab99dd8e2143d26456312af3c85a0ab67a1c4c44f52948c44f0fd4ae26d2a",
+        "bytes": 68498,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0067",
+    "primary": "/images/catalog/TS0067-592055b9b030.jpg",
+    "thumbnail": "/images/catalog/TS0067-b1fa460345d8.webp",
+    "highResolution": "/images/catalog/TS0067-592055b9b030.jpg",
+    "width": 533,
+    "height": 800,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Axis-YDarkSpotCorrectingGlowSerum.webp?v=1749228818&width=2000",
+    "source_page": "https://glowceryjo.com/products/axis-y-dark-spot-correcting-glow-serum",
+    "previous_width": 533,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0067-b1fa460345d8.webp",
+        "sha256": "b1fa460345d8b0f6ba522c0be070ee37aa69c9ce5e26930aa5c7a3f9b5c82ade",
+        "bytes": 45054,
+        "width": 533,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0068",
+    "primary": "/images/catalog/TS0068-317fbd1a7574.jpg",
+    "thumbnail": "/images/catalog/TS0068-43fa4e3beb61.webp",
+    "highResolution": "/images/catalog/TS0068-dcba3687513e.webp",
+    "width": 1500,
+    "height": 1500,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Abib-PDRNRetinalEyePatchGlowJelly.webp?v=1774806947&width=2000",
+    "source_page": "https://glowceryjo.com/products/abib-pdrn-retinal-eye-patch-glow-jelly",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0068-dcba3687513e.webp",
+        "sha256": "dcba3687513eafe6ad77eec0316d004a2a75443e59d0d2763d5f2ab51a878bfd",
+        "bytes": 150638,
+        "width": 1500,
+        "height": 1500
+      },
+      {
+        "image": "/images/catalog/TS0068-43fa4e3beb61.webp",
+        "sha256": "43fa4e3beb61140086f56d0f25a84aadaf3495789415b9e6c6caf3c21693adc3",
+        "bytes": 92664,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0069",
+    "primary": "/images/catalog/TS0069-ee0530506b94.png",
+    "thumbnail": "/images/catalog/TS0069-7d4eb305f462.webp",
+    "highResolution": "/images/catalog/TS0069-90baf2faca7a.webp",
+    "width": 1200,
+    "height": 1200,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Arencia-VitaminCBoosterShot.webp?v=1780773734&width=2000",
+    "source_page": "https://glowceryjo.com/products/arencia-vitamin-c-booster-shot",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0069-90baf2faca7a.webp",
+        "sha256": "90baf2faca7ad4fb08673dcfa840458e0fd43f06dc057b4e11121ea121717267",
+        "bytes": 99898,
+        "width": 1200,
+        "height": 1200
+      },
+      {
+        "image": "/images/catalog/TS0069-7d4eb305f462.webp",
+        "sha256": "7d4eb305f4622482f07715239f04228fcfcec4bfab1506904e509e70f0bdbd69",
+        "bytes": 98372,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0070",
+    "primary": "/images/catalog/TS0070-21dd0ed2414f.png",
+    "thumbnail": "/images/catalog/TS0070-bd5ccba7a3a5.webp",
+    "highResolution": "/images/catalog/TS0070-21dd0ed2414f.png",
+    "width": 666,
+    "height": 832,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/AnuaHeartleafQuercetinolPoreDeepCleansingFoam1.png?v=1749228223&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-heartleaf-quercetinol-pore-deep-cleansing-foam",
+    "previous_width": 666,
+    "previous_height": 832,
+    "files": [
+      {
+        "image": "/images/catalog/TS0070-bd5ccba7a3a5.webp",
+        "sha256": "bd5ccba7a3a5b5c7f56999a0b68819d738dd49c1a9adcfd6e7936868a86fa9c8",
+        "bytes": 20202,
+        "width": 666,
+        "height": 832
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0071",
+    "primary": "/images/catalog/TS0071-1108121259ba.jpg",
+    "thumbnail": "/images/catalog/TS0071-a860be592b4e.webp",
+    "highResolution": "/images/catalog/TS0071-79888138a2d1.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Anua-AzelaicAcid10HyaluronRednessSoothingSerum.jpg?v=1758038758&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-azelaic-acid-10-hyaluron-redness-soothing-serum",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0071-79888138a2d1.webp",
+        "sha256": "79888138a2d121891a80dcb0a8130791731d2e3947665e19a2668f2da69690d1",
+        "bytes": 54680,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0071-a860be592b4e.webp",
+        "sha256": "a860be592b4eba3c6d21d0d75364d9ffef7bf8d9ebfc18aadc14e60ad81d26d1",
+        "bytes": 47822,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0072",
+    "primary": "/images/catalog/TS0072-bf27532c2a3f.jpg",
+    "thumbnail": "/images/catalog/TS0072-113e0df503de.webp",
+    "highResolution": "/images/catalog/TS0072-bf27532c2a3f.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/P.CALM-HolyBasilBubbleDeepMask.webp?v=1774808575&width=2000",
+    "source_page": "https://glowceryjo.com/products/p-calm-holy-basil-bubble-deep-mask",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0072-113e0df503de.webp",
+        "sha256": "113e0df503de5210c09732d08e8f2ea894c475ab73c479db3c12211a9d9768a5",
+        "bytes": 12410,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0073",
+    "primary": "/images/catalog/TS0073-05a996400080.jpg",
+    "thumbnail": "/images/catalog/TS0073-87e2de06c011.webp",
+    "highResolution": "/images/catalog/TS0073-2e3e71c691ea.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0156/3905/2336/files/00_6d878aff-381d-4cd6-b9e1-d8b924225025.jpg?v=1766713832&width=2000",
+    "source_page": "https://medicube.us/products/collagen-night-wrapping-mask",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0073-2e3e71c691ea.webp",
+        "sha256": "2e3e71c691ea9a6e525ee5256f7d58f459512edd6f3181b7aeadb2117a9d7af7",
+        "bytes": 235160,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0073-87e2de06c011.webp",
+        "sha256": "87e2de06c0114384bf4428f6f2b34d7a3ef91ae2318e130333231655c5a3f0f2",
+        "bytes": 81720,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0074",
+    "primary": "/images/catalog/TS0074-6afd2de78fd2.jpg",
+    "thumbnail": "/images/catalog/TS0074-4e26d5adc58b.webp",
+    "highResolution": "/images/catalog/TS0074-45074ca91a22.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/147cream.webp?v=1760702128&width=2000",
+    "source_page": "https://glowceryjo.com/products/dr-althea-147-barrier-cream",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0074-45074ca91a22.webp",
+        "sha256": "45074ca91a22331f8bd684e4225018d1b8f9eea334ee4782b835f2d0f66762db",
+        "bytes": 98446,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0074-4e26d5adc58b.webp",
+        "sha256": "4e26d5adc58b86bb38965b4e2ba42531ad22b0fcccac19b64d36cc8d2b71e23d",
+        "bytes": 37434,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0075",
+    "primary": "/images/catalog/TS0075-d7b1375fe52a.png",
+    "thumbnail": "/images/catalog/TS0075-216afe42b5b0.webp",
+    "highResolution": "/images/catalog/TS0075-8a9fd004e72e.webp",
+    "width": 1024,
+    "height": 1024,
+    "source_image": "https://cdn.shopify.com/s/files/1/0685/1762/5926/files/Thum_Hyaluronic_Acid_Moist_Cream_1.png?v=1776406416&width=2000",
+    "source_page": "https://isntree-global.com/products/isntree-hyaluronic-acid-moist-cream-100ml",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0075-8a9fd004e72e.webp",
+        "sha256": "8a9fd004e72e54452b9e08039a4daed1c33c114b88ff8946e4925b83e88a2d7e",
+        "bytes": 55612,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "image": "/images/catalog/TS0075-216afe42b5b0.webp",
+        "sha256": "216afe42b5b07838f26b5cf7c3a1cf662435c45b9ca1653fcf4ef7754a45caae",
+        "bytes": 49006,
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0076",
+    "primary": "/images/catalog/TS0076-e7ad8f4440fb.png",
+    "thumbnail": "/images/catalog/TS0076-9fc03919c6fc.webp",
+    "highResolution": "/images/catalog/TS0076-f1d332806536.webp",
+    "width": 1024,
+    "height": 1024,
+    "source_image": "https://cdn.shopify.com/s/files/1/0685/1762/5926/files/Thum_Hyaluronic_Acid_Watery_Sun_Gel.png?v=1776406101&width=2000",
+    "source_page": "https://isntree-global.com/products/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0076-f1d332806536.webp",
+        "sha256": "f1d332806536586899d60c188c151b0bd29b66f9bb6235c7823dfa6abe19e0bf",
+        "bytes": 66200,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "image": "/images/catalog/TS0076-9fc03919c6fc.webp",
+        "sha256": "9fc03919c6fcedcf239520928f936abb4a415f5b595bf5f78c0b62a49517b096",
+        "bytes": 58776,
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0077",
+    "primary": "/images/catalog/TS0077-75afdc6d85cc.jpg",
+    "thumbnail": "/images/catalog/TS0077-dbc67fc18987.webp",
+    "highResolution": "/images/catalog/TS0077-d0536810b8c1.webp",
+    "width": 1500,
+    "height": 1500,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/FinoPremiumTouchHairMask.webp?v=1749234925&width=2000",
+    "source_page": "https://glowceryjo.com/products/fino-premium-touch-hair-mask",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0077-d0536810b8c1.webp",
+        "sha256": "d0536810b8c1da5998b2a9d75acbffab074061740f90ae86578a864ab14e87aa",
+        "bytes": 106954,
+        "width": 1500,
+        "height": 1500
+      },
+      {
+        "image": "/images/catalog/TS0077-dbc67fc18987.webp",
+        "sha256": "dbc67fc18987e66f20cfbc56e4c07e9cbce01e4c9860795caecf986707126c0a",
+        "bytes": 64274,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0078",
+    "primary": "/images/catalog/TS0078-ccddeb9c39cd.jpg",
+    "thumbnail": "/images/catalog/TS0078-b511c66ca4e1.webp",
+    "highResolution": "/images/catalog/TS0078-ad5691ccc69f.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/SKIN1004_MadagascarCentellaToneBrighteningCapsuleAmpoule_50ml.webp?v=1750689337&width=2000",
+    "source_page": "https://glowceryjo.com/products/skin1004-madagascar-centella-tone-brightening-capsule-ampoule-50ml",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0078-ad5691ccc69f.webp",
+        "sha256": "ad5691ccc69fbdfd6a1e81a0a621b619d2b1f8395aa3923fc05db7c8a4f787a8",
+        "bytes": 18920,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0078-b511c66ca4e1.webp",
+        "sha256": "b511c66ca4e1aeda2575300f358bd66a2336b0041ee23782820badabe20221ff",
+        "bytes": 16396,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0079",
+    "primary": "/images/catalog/TS0079-a9ee4ad7e0be.jpg",
+    "thumbnail": "/images/catalog/TS0079-59da65022512.webp",
+    "highResolution": "/images/catalog/TS0079-96206e9f6dad.webp",
+    "width": 1024,
+    "height": 1024,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRX_AdvancedSnail96MucinPowerEssence.webp?v=1750688799&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-advanced-snail-96-mucin-power-essence",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0079-96206e9f6dad.webp",
+        "sha256": "96206e9f6dad0cf6628b476078b9e669b67dce0201e7d3782542999f61bd091c",
+        "bytes": 37080,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "image": "/images/catalog/TS0079-59da65022512.webp",
+        "sha256": "59da65022512d3ebca44b3f0e306a2f579f545307448d1a35f139dc9d0fde4f5",
+        "bytes": 33076,
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0080",
+    "primary": "/images/catalog/TS0080-c6b96951c9c5.png",
+    "thumbnail": "/images/catalog/TS0080-eb87f1df4991.webp",
+    "highResolution": "/images/catalog/TS0080-c6b96951c9c5.png",
+    "width": 800,
+    "height": 1067,
+    "source_image": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/5_bc6986a1-1b85-42ce-b761-6bc4acbb07a3.png?v=1757571879&width=2000",
+    "source_page": "https://www.cosrx.com/products/advanced-snail-92-all-in-one-cream",
+    "previous_width": 800,
+    "previous_height": 1067,
+    "files": [
+      {
+        "image": "/images/catalog/TS0080-eb87f1df4991.webp",
+        "sha256": "eb87f1df4991b102812bd01507d5f1be2b27388483d029a1a333c2b65609d58f",
+        "bytes": 41708,
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0081",
+    "primary": "/images/catalog/TS0081-6d2d6b7dbd3c.jpg",
+    "thumbnail": "/images/catalog/TS0081-a4e2aaff218d.webp",
+    "highResolution": "/images/catalog/TS0081-b01c8145d3aa.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Beautyofjoseon-ReliefSunAquaFresh.webp?v=1749229404&width=2000",
+    "source_page": "https://glowceryjo.com/products/beauty-of-joseon-relief-sun-aqua-fresh",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0081-b01c8145d3aa.webp",
+        "sha256": "b01c8145d3aa7f880e599df672ae696bef0e0b1b1eb533ebbea8d1ebf58f353b",
+        "bytes": 19204,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0081-a4e2aaff218d.webp",
+        "sha256": "a4e2aaff218d96ab5b6a4de6b6a12b98b0e585c3eeacbb92b06f5faa1ec05a5c",
+        "bytes": 17400,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0082",
+    "primary": "/images/catalog/TS0082-2f5e89e9b11d.jpg",
+    "thumbnail": "/images/catalog/TS0082-4c4fc3030a0e.webp",
+    "highResolution": "/images/catalog/TS0082-2f5e89e9b11d.jpg",
+    "width": 700,
+    "height": 700,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Mary_May_TranexamicAcid_GlutathioneEyeCream.webp?v=1749235947&width=2000",
+    "source_page": "https://glowceryjo.com/products/mary-may-tranexamic-acid-glutathione-eye-cream",
+    "previous_width": 700,
+    "previous_height": 700,
+    "files": [
+      {
+        "image": "/images/catalog/TS0082-4c4fc3030a0e.webp",
+        "sha256": "4c4fc3030a0ee02ddb399d8a3a8dc66eaa7445d900bf6b79fbc1f888f61babef",
+        "bytes": 17976,
+        "width": 700,
+        "height": 700
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0083",
+    "primary": "/images/catalog/TS0083-db815bac5be6.jpg",
+    "thumbnail": "/images/catalog/TS0083-874d745148ee.webp",
+    "highResolution": "/images/catalog/TS0083-94b1bfd080eb.webp",
+    "width": 960,
+    "height": 812,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/medicube-CollagenJellyCream.jpg?v=1769019907&width=2000",
+    "source_page": "https://glowceryjo.com/products/medicube-collagen-jelly-cream-110ml",
+    "previous_width": 900,
+    "previous_height": 761,
+    "files": [
+      {
+        "image": "/images/catalog/TS0083-94b1bfd080eb.webp",
+        "sha256": "94b1bfd080ebe91fabb39f1d0547e763e0497539dfa666167c08a1ac3fa6efdf",
+        "bytes": 53076,
+        "width": 960,
+        "height": 812
+      },
+      {
+        "image": "/images/catalog/TS0083-874d745148ee.webp",
+        "sha256": "874d745148eeee5eae6555edc5445c9cb7a48cfe92462b18d6f1151472977a96",
+        "bytes": 45466,
+        "width": 960,
+        "height": 812
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0084",
+    "primary": "/images/catalog/TS0084-9f467a97cbe7.jpg",
+    "thumbnail": "/images/catalog/TS0084-5b0169ed473b.webp",
+    "highResolution": "/images/catalog/TS0084-b95df6c4c197.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Axis-YVeganCollagenEyeSerum.webp?v=1749229181&width=2000",
+    "source_page": "https://glowceryjo.com/products/axis-y-vegan-collagen-eye-serum",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0084-b95df6c4c197.webp",
+        "sha256": "b95df6c4c197039a06eef4a0236da94a6bdadcda86d17a0ed4a1f1006c965ab3",
+        "bytes": 31222,
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "image": "/images/catalog/TS0084-5b0169ed473b.webp",
+        "sha256": "5b0169ed473beb51883dd0fe8bf0fedb4175d924e2006e8f9b13aa62c640ed31",
+        "bytes": 28378,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0085",
+    "primary": "/images/catalog/TS0085-6f77dfeba7eb.jpg",
+    "thumbnail": "/images/catalog/TS0085-1eb1f3a073ab.webp",
+    "highResolution": "/images/catalog/TS0085-3ce6b146a3f2.webp",
+    "width": 1500,
+    "height": 1500,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/SKIN1004_MadagascarCentellaHyalu-CicaWater-FitSunSerum.webp?v=1749238451&width=2000",
+    "source_page": "https://glowceryjo.com/products/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0085-3ce6b146a3f2.webp",
+        "sha256": "3ce6b146a3f2c3a26d24933ff3517de53546549ec119b99eb66f004a2aa18e3b",
+        "bytes": 165558,
+        "width": 1500,
+        "height": 1500
+      },
+      {
+        "image": "/images/catalog/TS0085-1eb1f3a073ab.webp",
+        "sha256": "1eb1f3a073ab5e3ed3df865f86fd64233cdf1c3a2495225a4f7c00f012ee822e",
+        "bytes": 94450,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0086",
+    "primary": "/images/catalog/TS0086-85106e371957.jpg",
+    "thumbnail": "/images/catalog/TS0086-f1b392daf630.webp",
+    "highResolution": "/images/catalog/TS0086-85106e371957.jpg",
+    "width": 720,
+    "height": 960,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRXSalicylicAcidDailyGentleCleanser.webp?v=1750687489&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-salicylic-acid-daily-gentle-cleanser",
+    "previous_width": 720,
+    "previous_height": 960,
+    "files": [
+      {
+        "image": "/images/catalog/TS0086-f1b392daf630.webp",
+        "sha256": "f1b392daf6300e5772d99f124c834129b56c146a26de4354653823d90df016db",
+        "bytes": 22322,
+        "width": 720,
+        "height": 960
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0087",
+    "primary": "/images/catalog/TS0087-b2f1955e73ee.jpg",
+    "thumbnail": "/images/catalog/TS0087-0da2966fc54c.webp",
+    "highResolution": "/images/catalog/TS0087-b2f1955e73ee.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/SKIN1004_MadagascarCentellaLightCleansingOil.webp?v=1749238573&width=2000",
+    "source_page": "https://glowceryjo.com/products/skin1004-madagascar-centella-light-cleansing-oil",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0087-0da2966fc54c.webp",
+        "sha256": "0da2966fc54c9153cf3bc2237d9d026a8d46a23e105a23aa56c7983b154e88c9",
+        "bytes": 48460,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0088",
+    "primary": "/images/catalog/TS0088-7b03712f2547.jpg",
+    "thumbnail": "/images/catalog/TS0088-0d490415b960.webp",
+    "highResolution": "/images/catalog/TS0088-7b03712f2547.jpg",
+    "width": 600,
+    "height": 600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/IMG_4883.jpg?v=1760703923&width=2000",
+    "source_page": "https://glowceryjo.com/products/eqqualberry-bakuchiol-plumping-serum",
+    "previous_width": 600,
+    "previous_height": 600,
+    "files": [
+      {
+        "image": "/images/catalog/TS0088-0d490415b960.webp",
+        "sha256": "0d490415b96040fc3b26ba357a59f4718509163a13d7e645c87afe78aebb4f7d",
+        "bytes": 25800,
+        "width": 600,
+        "height": 600
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0089",
+    "primary": "/images/catalog/TS0089-db01a10f4a96.jpg",
+    "thumbnail": "/images/catalog/TS0089-f9e97209a545.webp",
+    "highResolution": "/images/catalog/TS0089-5ed266f4dc06.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Anua-DoubleCleansingDuoSet.webp?v=1769018427&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-double-cleansing-duo-set",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0089-5ed266f4dc06.webp",
+        "sha256": "5ed266f4dc067f272b5176899c6bf6b4537a802e86fd2933d5b7043f75b209df",
+        "bytes": 126050,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0089-f9e97209a545.webp",
+        "sha256": "f9e97209a54558c70efbcfeec46b81dae32e874644c383d2a05e50c324d094f0",
+        "bytes": 46158,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0090",
+    "primary": "/images/catalog/TS0090-a26250afa7b2.jpg",
+    "thumbnail": "/images/catalog/TS0090-c1f0cd29f2b6.webp",
+    "highResolution": "/images/catalog/TS0090-a26250afa7b2.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Anua-Heartleaf77ClearPad.webp?v=1769017075&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-heartleaf-77-clear-pad",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0090-c1f0cd29f2b6.webp",
+        "sha256": "c1f0cd29f2b685ef41c611e82e78606758c7e6e65e92bb847b41d74734c62a2c",
+        "bytes": 12726,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0091",
+    "primary": "/images/catalog/TS0091-f84e3c1c3bc1.png",
+    "thumbnail": "/images/catalog/TS0091-6e08d71ac6cb.webp",
+    "highResolution": "/images/catalog/TS0091-c2419d45f90a.webp",
+    "width": 1170,
+    "height": 1784,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/77.webp?v=1769016909&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-heartleaf-77-soothing-toner",
+    "previous_width": 900,
+    "previous_height": 1372,
+    "files": [
+      {
+        "image": "/images/catalog/TS0091-c2419d45f90a.webp",
+        "sha256": "c2419d45f90a241c5698877cb1998665ec1dfb646ab143386405e5b866618362",
+        "bytes": 37412,
+        "width": 1170,
+        "height": 1784
+      },
+      {
+        "image": "/images/catalog/TS0091-6e08d71ac6cb.webp",
+        "sha256": "6e08d71ac6cbc08a9441396cc1e6b8135a31a3b55ac397d1b161ae205c8674f6",
+        "bytes": 22828,
+        "width": 721,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0092",
+    "primary": "/images/catalog/TS0092-61620a04642b.jpg",
+    "thumbnail": "/images/catalog/TS0092-0e7df1293f8f.webp",
+    "highResolution": "/images/catalog/TS0092-0c990e5f168c.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Anua-PDRNHyaluronicAcidCapsule100Serum.webp?v=1769018028&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-pdrn-hyaluronic-acid-capsule-100-serum",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0092-0c990e5f168c.webp",
+        "sha256": "0c990e5f168c039b3a663465044e3c56d386368f90d1853b3bc8fa54a10d9502",
+        "bytes": 156454,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0092-0e7df1293f8f.webp",
+        "sha256": "0e7df1293f8f9a40ab641f1525368ef09ce1d0c9c9b5ef21faee274f1f01abca",
+        "bytes": 50962,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0093",
+    "primary": "/images/catalog/TS0093-a22a10e1c3c7.jpg",
+    "thumbnail": "/images/catalog/TS0093-ccfd1606181c.webp",
+    "highResolution": "/images/catalog/TS0093-a22a10e1c3c7.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Anua-Peach70NiacinSerum.avif?v=1769018205&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-peach-70-niacin-serum",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0093-ccfd1606181c.webp",
+        "sha256": "ccfd1606181c508e45f27bc08f9306b1c5668ccfe675779e075e803e864ce422",
+        "bytes": 25548,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0094",
+    "primary": "/images/catalog/TS0094-053f91048dba.jpg",
+    "thumbnail": "/images/catalog/TS0094-fae51d67ebc7.webp",
+    "highResolution": "/images/catalog/TS0094-053f91048dba.jpg",
+    "width": 600,
+    "height": 600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Anua-Rice70GlowMilkyToner.webp?v=1749227168&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-rice-70-glow-milky-toner",
+    "previous_width": 600,
+    "previous_height": 600,
+    "files": [
+      {
+        "image": "/images/catalog/TS0094-fae51d67ebc7.webp",
+        "sha256": "fae51d67ebc796df16ba77f1667e2bb654fd1b29ec51ee64afc7d00a1e646013",
+        "bytes": 15610,
+        "width": 600,
+        "height": 600
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0095",
+    "primary": "/images/catalog/TS0095-04dad38793b9.png",
+    "thumbnail": "/images/catalog/TS0095-dbb759639a99.webp",
+    "highResolution": "/images/catalog/TS0095-04dad38793b9.png",
+    "width": 681,
+    "height": 842,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/AnuaHeartleafPoreControlCleansingOil1.png?v=1749227403&width=2000",
+    "source_page": "https://glowceryjo.com/products/anua-heartleaf-pore-control-cleansing-oil",
+    "previous_width": 681,
+    "previous_height": 842,
+    "files": [
+      {
+        "image": "/images/catalog/TS0095-dbb759639a99.webp",
+        "sha256": "dbb759639a99338cbc4e228b8307a865f12c2bb04663813d84928da567da9302",
+        "bytes": 15756,
+        "width": 681,
+        "height": 842
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0097",
+    "primary": "/images/catalog/TS0097-eab18691f55a.jpg",
+    "thumbnail": "/images/catalog/TS0097-7dd568989b64.webp",
+    "highResolution": "/images/catalog/TS0097-eab18691f55a.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/APRILSKIN-TXANiacinamideToningShot99Serum.jpg?v=1769018854&width=2000",
+    "source_page": "https://glowceryjo.com/products/aprilskin-txa-niacinamide-toning-shot-99-serum",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0097-7dd568989b64.webp",
+        "sha256": "7dd568989b646c2794ede74d3ed46a2da9dd6806c55881fd55c3d6eb85d49433",
+        "bytes": 22640,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0098",
+    "primary": "/images/catalog/TS0098-ca6be2972b93.jpg",
+    "thumbnail": "/images/catalog/TS0098-e61a9baceded.webp",
+    "highResolution": "/images/catalog/TS0098-ca6be2972b93.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Arencia-FreshGreenRiceMochiCleanser.jpg?v=1780773973&width=2000",
+    "source_page": "https://glowceryjo.com/products/arencia-fresh-green-rice-mochi-cleanser",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0098-e61a9baceded.webp",
+        "sha256": "e61a9baceded7a8025ac25ab27fe7244abe46fb8aaeb324a7c9d05e4aff5e82d",
+        "bytes": 31232,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0099",
+    "primary": "/images/catalog/TS0099-65736e5622ef.png",
+    "thumbnail": "/images/catalog/TS0099-934dd6ae9813.webp",
+    "highResolution": "/images/catalog/TS0099-65736e5622ef.png",
+    "width": 750,
+    "height": 730,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Axis-Y-CompleteNoStressPhysicalSunscreen1.png?v=1749228468&width=2000",
+    "source_page": "https://glowceryjo.com/products/axis-y-complete-no-stress-physical-sunscreen",
+    "previous_width": 750,
+    "previous_height": 730,
+    "files": [
+      {
+        "image": "/images/catalog/TS0099-934dd6ae9813.webp",
+        "sha256": "934dd6ae9813bb0fad98d84b55069e26c9a79445e32fadfc4a573d7e934c08f0",
+        "bytes": 25256,
+        "width": 750,
+        "height": 730
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0100",
+    "primary": "/images/catalog/TS0100-4d24d71ad091.jpg",
+    "thumbnail": "/images/catalog/TS0100-e253f1da4857.webp",
+    "highResolution": "/images/catalog/TS0100-06d9af1040c1.webp",
+    "width": 1211,
+    "height": 939,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/BeautyofJoseon-RedBeanRefreshingPoreMask.jpg?v=1769019014&width=2000",
+    "source_page": "https://glowceryjo.com/products/beauty-of-joseon-red-bean-refreshing-pore-mask",
+    "previous_width": 900,
+    "previous_height": 698,
+    "files": [
+      {
+        "image": "/images/catalog/TS0100-06d9af1040c1.webp",
+        "sha256": "06d9af1040c1b9bd48b4f8f0019755ea40ad81975a6a9d3dda316565371d8260",
+        "bytes": 81192,
+        "width": 1211,
+        "height": 939
+      },
+      {
+        "image": "/images/catalog/TS0100-e253f1da4857.webp",
+        "sha256": "e253f1da4857c66b08fdf1e2010233bdea7797e83ac01f756206a6d73652e6c0",
+        "bytes": 68124,
+        "width": 1100,
+        "height": 853
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0101",
+    "primary": "/images/catalog/TS0101-cdeffd530221.jpg",
+    "thumbnail": "/images/catalog/TS0101-729cf597774f.webp",
+    "highResolution": "/images/catalog/TS0101-cdeffd530221.jpg",
+    "width": 430,
+    "height": 430,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/BeautyofJoseon-ReliefSunMini_6fb32053-62ca-4727-8309-cd343b9c3b60.jpg?v=1758039995&width=2000",
+    "source_page": "https://glowceryjo.com/products/beauty-of-joseon-relief-sun-mini",
+    "previous_width": 430,
+    "previous_height": 430,
+    "files": [
+      {
+        "image": "/images/catalog/TS0101-729cf597774f.webp",
+        "sha256": "729cf597774fa67f73afe980e7ba12b1c36af49a258972e53c2a243463e74e3d",
+        "bytes": 4400,
+        "width": 430,
+        "height": 430
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0102",
+    "primary": "/images/catalog/TS0102-6bf9bea8c712.jpg",
+    "thumbnail": "/images/catalog/TS0102-9ae029eff930.webp",
+    "highResolution": "/images/catalog/TS0102-c7733d9f03fe.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/SKIN1004_MadagascarCentellaPoremizingLightGelCream.webp?v=1749238719&width=2000",
+    "source_page": "https://glowceryjo.com/products/centella-poremizing-light-gel-cream",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0102-c7733d9f03fe.webp",
+        "sha256": "c7733d9f03fe13f19efd49a4058faea2bc078d79a891b649c6dd773afc39ff59",
+        "bytes": 77828,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0102-9ae029eff930.webp",
+        "sha256": "9ae029eff9300b15039102eaab6972bf7288a5d65e3d57f4ab8d5a44e68a9da3",
+        "bytes": 68646,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0103",
+    "primary": "/images/catalog/TS0103-c0519551b6fb.png",
+    "thumbnail": "/images/catalog/TS0103-3be7104cc839.webp",
+    "highResolution": "/images/catalog/TS0103-c0519551b6fb.png",
+    "width": 812,
+    "height": 802,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/CentellaSoothingCream3.png?v=1749233384&width=2000",
+    "source_page": "https://glowceryjo.com/products/centella-soothing-cream",
+    "previous_width": 812,
+    "previous_height": 802,
+    "files": [
+      {
+        "image": "/images/catalog/TS0103-3be7104cc839.webp",
+        "sha256": "3be7104cc839344f5686792436b3ce9239460b4cad7ea1eb1fdff4628ae27843",
+        "bytes": 45874,
+        "width": 812,
+        "height": 802
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0105",
+    "primary": "/images/catalog/TS0105-efc401fc54a2.jpg",
+    "thumbnail": "/images/catalog/TS0105-1021516ae22e.webp",
+    "highResolution": "/images/catalog/TS0105-efc401fc54a2.jpg",
+    "width": 800,
+    "height": 1067,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRXTreatmentToner1.jpg?v=1756046224&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-aha-bha-clarifying-treatment-toner",
+    "previous_width": 800,
+    "previous_height": 1067,
+    "files": [
+      {
+        "image": "/images/catalog/TS0105-1021516ae22e.webp",
+        "sha256": "1021516ae22e93c35a10ed30b364b476607566a93425619dc44098b28d7df2a6",
+        "bytes": 20318,
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0106",
+    "primary": "/images/catalog/TS0106-056e6f6b8298.jpg",
+    "thumbnail": "/images/catalog/TS0106-906d5d923970.webp",
+    "highResolution": "/images/catalog/TS0106-056e6f6b8298.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRX-AllAboutSnailTrialKit.jpg?v=1751843832&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-all-about-snail-trial-kit",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0106-906d5d923970.webp",
+        "sha256": "906d5d9239709cebbad9a3206dd215b0a6c5939e430800eb651c907cda5eb9a1",
+        "bytes": 25112,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0107",
+    "primary": "/images/catalog/TS0107-7660a19c6edb.jpg",
+    "thumbnail": "/images/catalog/TS0107-17cb7d74a134.webp",
+    "highResolution": "/images/catalog/TS0107-7660a19c6edb.jpg",
+    "width": 800,
+    "height": 1067,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRX-BalanciumCeramideLipButterSleepingMask.webp?v=1749234187&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-balancium-ceramide-lip-butter-sleeping-mask",
+    "previous_width": 800,
+    "previous_height": 1067,
+    "files": [
+      {
+        "image": "/images/catalog/TS0107-17cb7d74a134.webp",
+        "sha256": "17cb7d74a134793d1626011e90a48566275d3df1a371c07dc5d9cf43c22a5ead",
+        "bytes": 35718,
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0108",
+    "primary": "/images/catalog/TS0108-325fa8806ce2.jpg",
+    "thumbnail": "/images/catalog/TS0108-9cb9d18f08ea.webp",
+    "highResolution": "/images/catalog/TS0108-325fa8806ce2.jpg",
+    "width": 800,
+    "height": 1067,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRX-FullFitPropolisLipSleepingMask.webp?v=1749234374&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-full-fit-propolis-lip-sleeping-mask",
+    "previous_width": 800,
+    "previous_height": 1067,
+    "files": [
+      {
+        "image": "/images/catalog/TS0108-9cb9d18f08ea.webp",
+        "sha256": "9cb9d18f08eac8306643a707b669f341d51e39669c9836a0344cf0c9a08628a5",
+        "bytes": 35052,
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0109",
+    "primary": "/images/catalog/TS0109-64acefe753be.jpg",
+    "thumbnail": "/images/catalog/TS0109-27e9560ca950.webp",
+    "highResolution": "/images/catalog/TS0109-6b222e7e2e12.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRX-LowpHGoodMorningGelCleanser.webp?v=1749234632&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-low-ph-good-morning-gel-cleanser",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0109-6b222e7e2e12.webp",
+        "sha256": "6b222e7e2e12a40e89f393f166fbc2c52a564d362a2e913158a483b89247fdab",
+        "bytes": 34254,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0109-27e9560ca950.webp",
+        "sha256": "27e9560ca9508b4aa04b3967cd31cbf402030fe1e3c2303fbd3f73ff0dbfee05",
+        "bytes": 30134,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0110",
+    "primary": "/images/catalog/TS0110-0d8805e07dca.jpg",
+    "thumbnail": "/images/catalog/TS0110-61b17388678e.webp",
+    "highResolution": "/images/catalog/TS0110-0d8805e07dca.jpg",
+    "width": 800,
+    "height": 1067,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/COSRX-RefreshAHABHAVitaminCLipPlumper.webp?v=1749234495&width=2000",
+    "source_page": "https://glowceryjo.com/products/cosrx-refresh-aha-bha-vitamin-c-lip-plumper",
+    "previous_width": 800,
+    "previous_height": 1067,
+    "files": [
+      {
+        "image": "/images/catalog/TS0110-61b17388678e.webp",
+        "sha256": "61b17388678ed64fba877958e9cfe2ec59011d1fada5485c1e9d6b86c5b18159",
+        "bytes": 32446,
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0111",
+    "primary": "/images/catalog/TS0111-4bf0cccbc8e0.jpg",
+    "thumbnail": "/images/catalog/TS0111-0031a98ff7dd.webp",
+    "highResolution": "/images/catalog/TS0111-4bf0cccbc8e0.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/XXL_p0220872578.webp?v=1760700804&width=2000",
+    "source_page": "https://glowceryjo.com/products/dr-althea-345-relief-cream-mist-mini",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0111-0031a98ff7dd.webp",
+        "sha256": "0031a98ff7ddaecd0c48ee7d71e1f074c0c11a51886c407b15d94b718c7d4796",
+        "bytes": 8892,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0112",
+    "primary": "/images/catalog/TS0112-5df166a18bd2.jpg",
+    "thumbnail": "/images/catalog/TS0112-1bb639c241ec.webp",
+    "highResolution": "/images/catalog/TS0112-5df166a18bd2.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Dr.Althea-PureGrindingCleansingBalm.webp?v=1749234749&width=2000",
+    "source_page": "https://glowceryjo.com/products/dr-althea-pure-grinding-cleansing-balm",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0112-1bb639c241ec.webp",
+        "sha256": "1bb639c241ec6915232cfcc3783616c380581fabf266670aaf741c99893eb16b",
+        "bytes": 22028,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0113",
+    "primary": "/images/catalog/TS0113-62467be0eae6.png",
+    "thumbnail": "/images/catalog/TS0113-c4fa9b1bfb38.webp",
+    "highResolution": "/images/catalog/TS0113-ced725e665ea.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Dr.Melaxin-PeelShotExfoliatingBlackRiceAmpoule.webp?v=1768344334&width=2000",
+    "source_page": "https://glowceryjo.com/products/dr-melaxin-peel-shot-exfoliating-black-rice-ampoule",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0113-ced725e665ea.webp",
+        "sha256": "ced725e665eabfdc6c633a28aa5acf9cdc71894ad7af41e3b3ceb1b77758c9df",
+        "bytes": 46006,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0113-c4fa9b1bfb38.webp",
+        "sha256": "c4fa9b1bfb38f408c055584d044a864712dfd7953059964b75e40fa25c9a04d4",
+        "bytes": 42010,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0114",
+    "primary": "/images/catalog/TS0114-97043b94fa7d.png",
+    "thumbnail": "/images/catalog/TS0114-790d8b8ce668.webp",
+    "highResolution": "/images/catalog/TS0114-d985a3b95114.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/Dr.Melaxin-PeelShotExfoliatingWhiteRiceAmpoule.webp?v=1768343572&width=2000",
+    "source_page": "https://glowceryjo.com/products/dr-melaxin-peel-shot-exfoliating-white-rice-ampoule",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0114-d985a3b95114.webp",
+        "sha256": "d985a3b95114865365b2307beb7de1dca2d786242862a7c8b086258328cde5d4",
+        "bytes": 43352,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0114-790d8b8ce668.webp",
+        "sha256": "790d8b8ce668b56f7ee0d9c6a800a574a389540decb8ccfdcc7aa521a971a95f",
+        "bytes": 40014,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0115",
+    "primary": "/images/catalog/TS0115-d919265c013b.png",
+    "thumbnail": "/images/catalog/TS0115-c13f7678bbfc.webp",
+    "highResolution": "/images/catalog/TS0115-8c6242395692.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/EQQUALBERRY-NAD_PeptideBoostingSerum.webp?v=1769019315&width=2000",
+    "source_page": "https://glowceryjo.com/products/eqqualberry-nad-peptide-boosting-serum",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0115-8c6242395692.webp",
+        "sha256": "8c6242395692f69ad4caa130f3d506069b80184c83680e809476eddbefb76139",
+        "bytes": 91326,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0115-c13f7678bbfc.webp",
+        "sha256": "c13f7678bbfc1c6327556dc2659117d0a6e21f2692e2f564845680a2539c6da1",
+        "bytes": 38590,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0116",
+    "primary": "/images/catalog/TS0116-f9dd3c5833e6.jpg",
+    "thumbnail": "/images/catalog/TS0116-2715d10f09ac.webp",
+    "highResolution": "/images/catalog/TS0116-f9dd3c5833e6.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/ETUDE-MyLashSerum.webp?v=1769019454&width=2000",
+    "source_page": "https://glowceryjo.com/products/etude-my-lash-serum",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0116-2715d10f09ac.webp",
+        "sha256": "2715d10f09ac8411aa5b71155fc02f676e8879695565780926d91572db344ea2",
+        "bytes": 14138,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0117",
+    "primary": "/images/catalog/TS0117-da7b87115051.jpg",
+    "thumbnail": "/images/catalog/TS0117-25cd2365fa5f.webp",
+    "highResolution": "/images/catalog/TS0117-da7b87115051.jpg",
+    "width": 788,
+    "height": 1024,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/JUMISO-AllDayVitaminBrightening_BalancingFacialSerum.webp?v=1749235320&width=2000",
+    "source_page": "https://glowceryjo.com/products/jumiso-all-day-vitamin-brightening-balancing-facial-serum",
+    "previous_width": 788,
+    "previous_height": 1024,
+    "files": [
+      {
+        "image": "/images/catalog/TS0117-25cd2365fa5f.webp",
+        "sha256": "25cd2365fa5f79f1f6d273acf83eed7a712a9dc63e2df238cf3c784730a322cb",
+        "bytes": 45250,
+        "width": 788,
+        "height": 1024
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0118",
+    "primary": "/images/catalog/TS0118-60ce70988c1a.jpg",
+    "thumbnail": "/images/catalog/TS0118-1f58eba9c539.webp",
+    "highResolution": "/images/catalog/TS0118-56893c75ccc2.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/KSECRET-SEOUL1988EyeCream.jpg?v=1769019656&width=2000",
+    "source_page": "https://glowceryjo.com/products/ksecret-seoul-1988-eye-cream-retinal-liposome-4-fermented-bean",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0118-56893c75ccc2.webp",
+        "sha256": "56893c75ccc298eb92319d628d80438b9a7542c1401f9d0dacdd3067453b6ba3",
+        "bytes": 65720,
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "image": "/images/catalog/TS0118-1f58eba9c539.webp",
+        "sha256": "1f58eba9c539f66177d2a111bc34b28dda336e64b3bd446c78c01e2b577aa754",
+        "bytes": 55066,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0119",
+    "primary": "/images/catalog/TS0119-441dfb4491fc.webp",
+    "thumbnail": "/images/catalog/TS0119-b33c7e87fe76.webp",
+    "highResolution": "/images/catalog/TS0119-441dfb4491fc.webp",
+    "width": 1500,
+    "height": 1500,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776646907_img_1CE9C6CF-AD7D-4377-8C69-23FD44BC407A.webp",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 1500,
+    "previous_height": 1500,
+    "files": [
+      {
+        "image": "/images/catalog/TS0119-b33c7e87fe76.webp",
+        "sha256": "b33c7e87fe76ae7cd4bf2994756e6bee579012b361c18a6f8ca0f1312f409a84",
+        "bytes": 102618,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0120",
+    "primary": "/images/catalog/TS0120-f859c20039db.webp",
+    "thumbnail": "/images/catalog/TS0120-f8c1a7db3733.webp",
+    "highResolution": "/images/catalog/TS0120-f859c20039db.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776634019_img_60e2351c-4e3b-4ffb-b754-a1ccd9300773-1000x1000-G7NfWd6YBWvm9bWxnPgPzLrrDjMdwMhGyVlqt8Ks.webp",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 1000,
+    "previous_height": 1000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0120-f8c1a7db3733.webp",
+        "sha256": "f8c1a7db37332941d0cdca03a0123321bf18efc0554c5c0d7b9f448d754bf75f",
+        "bytes": 85752,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0121",
+    "primary": "/images/catalog/TS0121-8f71fc1ba0e7.webp",
+    "thumbnail": "/images/catalog/TS0121-d4063baf2af8.webp",
+    "highResolution": "/images/catalog/TS0121-8f71fc1ba0e7.webp",
+    "width": 1095,
+    "height": 1280,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776630998_img_%D9%84%D9%8A%D8%A8-%D8%B3%D8%AA%D9%8A%D9%83-%D9%83%D9%8A%D9%83%D9%88.webp",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 1095,
+    "previous_height": 1280,
+    "files": [
+      {
+        "image": "/images/catalog/TS0121-d4063baf2af8.webp",
+        "sha256": "d4063baf2af8bfc2d6ef22e5230e255545f3337f6bccae0359e1d5ddc6435ada",
+        "bytes": 321516,
+        "width": 941,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0122",
+    "primary": "/images/catalog/TS0122-b8163e8c4ce3.jpg",
+    "thumbnail": "/images/catalog/TS0122-85cfd00f91c2.webp",
+    "highResolution": "/images/catalog/TS0122-b8163e8c4ce3.jpg",
+    "width": 752,
+    "height": 1000,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776629631_img_61W4bFJpiiL._AC_UF1000%2C1000_QL80_.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 752,
+    "previous_height": 1000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0122-85cfd00f91c2.webp",
+        "sha256": "85cfd00f91c22f53a12b40968b430dc4c84aa70f6cf725b02cc08ffb33ad0c64",
+        "bytes": 47310,
+        "width": 752,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0123",
+    "primary": "/images/catalog/TS0123-3f59a126050c.jpg",
+    "thumbnail": "/images/catalog/TS0123-1a9cfeca5429.webp",
+    "highResolution": "/images/catalog/TS0123-3f59a126050c.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://bb-mania.kz/userfiles/shop/large/3/24287_purifying-green-tea-sunscreen-dralthea.jpg",
+    "source_page": "https://bb-mania.kz/catalog/krema/solntsezaschitnye/purifying-green-tea-sunscreen-dralthea/",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0123-1a9cfeca5429.webp",
+        "sha256": "1a9cfeca542972e2f6567ea1ae9eb974d103d6f78ae5cd81cdf73eaf8bbc7f1d",
+        "bytes": 47146,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0124",
+    "primary": "/images/catalog/TS0124-252ced7664d1.webp",
+    "thumbnail": "/images/catalog/TS0124-ca4f0e8844f6.webp",
+    "highResolution": "/images/catalog/TS0124-252ced7664d1.webp",
+    "width": 1080,
+    "height": 1080,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776628916_img_sabon-tnky-albshr-ay-sy-am-100ghram-acm-sebionex-purifying-dermatological-bar-7743669.webp",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 1080,
+    "previous_height": 1080,
+    "files": [
+      {
+        "image": "/images/catalog/TS0124-ca4f0e8844f6.webp",
+        "sha256": "ca4f0e8844f6858ba5d8b50d834f6bf1f710f1696bcf57be13c78d2876487eb6",
+        "bytes": 39002,
+        "width": 1080,
+        "height": 1080
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0125",
+    "primary": "/images/catalog/TS0125-1903716b4915.webp",
+    "thumbnail": "/images/catalog/TS0125-5940b43ddc45.webp",
+    "highResolution": "/images/catalog/TS0125-1903716b4915.webp",
+    "width": 600,
+    "height": 600,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776628764_img_ACMSEBIONEXCLEANSINGGEL200ML_ff32374e-4071-4df2-be6c-26b1f315e906.webp",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 600,
+    "previous_height": 600,
+    "files": [
+      {
+        "image": "/images/catalog/TS0125-5940b43ddc45.webp",
+        "sha256": "5940b43ddc4540a096a3f31af6bb4cdf82ec580a15e4f97551340f5f5d8c6aac",
+        "bytes": 15186,
+        "width": 600,
+        "height": 600
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0126",
+    "primary": "/images/catalog/TS0126-02f2e590c753.webp",
+    "thumbnail": "/images/catalog/TS0126-2cd625669b85.webp",
+    "highResolution": "/images/catalog/TS0126-02f2e590c753.webp",
+    "width": 1200,
+    "height": 1200,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776628692_img_Acm_Depiwhite_Advanced_Cream_40ml.webp",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 1200,
+    "previous_height": 1200,
+    "files": [
+      {
+        "image": "/images/catalog/TS0126-2cd625669b85.webp",
+        "sha256": "2cd625669b8585d0d7c765c5ede7bfdb790cde00ead7f7364a3946cf8b88eae5",
+        "bytes": 35430,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0127",
+    "primary": "/images/catalog/TS0127-2dff11d8e11e.jpg",
+    "thumbnail": "/images/catalog/TS0127-83b2f5993dea.webp",
+    "highResolution": "/images/catalog/TS0127-2dff11d8e11e.jpg",
+    "width": 1910,
+    "height": 1000,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776219415_img_61J1mJhNJfL.jpg_BO30%2C255%2C255%2C255_UF750%2C750_SR1910%2C1000%2C0%2CC_QL100_.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 1910,
+    "previous_height": 1000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0127-83b2f5993dea.webp",
+        "sha256": "83b2f5993dead1efbc8a523c5dfbbf930f21c5c6abf001de6e80c5f5862e000f",
+        "bytes": 18950,
+        "width": 1100,
+        "height": 576
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0129",
+    "primary": "/images/catalog/TS0129-aa1b115eced4.jpg",
+    "thumbnail": "/images/catalog/TS0129-c1bd13e45a64.webp",
+    "highResolution": "/images/catalog/TS0129-35d8ac51332e.webp",
+    "width": 1600,
+    "height": 1600,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/SecretKey-SnowWhiteSpotGel.avif?v=1769022745&width=2000",
+    "source_page": "https://glowceryjo.com/products/secret-key-snow-white-spot-gel",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0129-35d8ac51332e.webp",
+        "sha256": "35d8ac51332e3bb7c017b77fc9ce64d515ad7822c5bfe6e54c5be981fcada696",
+        "bytes": 89456,
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "image": "/images/catalog/TS0129-c1bd13e45a64.webp",
+        "sha256": "c1bd13e45a64ed1022b280f9900bc5974538dbcbc5bca49e523806dbb5b26b50",
+        "bytes": 47770,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0130",
+    "primary": "/images/catalog/TS0130-3fd8a6f68112.jpg",
+    "thumbnail": "/images/catalog/TS0130-15e88a99bbf9.webp",
+    "highResolution": "/images/catalog/TS0130-3fd8a6f68112.jpg",
+    "width": 990,
+    "height": 990,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776217462_img_829.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 990,
+    "previous_height": 990,
+    "files": [
+      {
+        "image": "/images/catalog/TS0130-15e88a99bbf9.webp",
+        "sha256": "15e88a99bbf92b695c05a486fa4883bce0200c67ba14815d5a3dabd161d30c30",
+        "bytes": 124286,
+        "width": 990,
+        "height": 990
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0131",
+    "primary": "/images/catalog/TS0131-713300fda0d5.jpg",
+    "thumbnail": "/images/catalog/TS0131-6dadfa0f1356.webp",
+    "highResolution": "/images/catalog/TS0131-6b3c16dfbb68.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0018/0263/3334/files/Sebamed_Lip_Defence_Balm_boxed.jpg?v=1755697990&width=2000",
+    "source_page": "https://www.sebamed.co.uk/products/lip-defence-balm-24g",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0131-6b3c16dfbb68.webp",
+        "sha256": "6b3c16dfbb68e4e955768776b4867167e6e5ff62b85ec994e2323abca278011b",
+        "bytes": 143744,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0131-6dadfa0f1356.webp",
+        "sha256": "6dadfa0f1356214521c2f86a16263cad0ec6ac103bd65a4e22a29d7f3301a5c0",
+        "bytes": 52426,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0132",
+    "primary": "/images/catalog/TS0132-95910c361b21.png",
+    "thumbnail": "/images/catalog/TS0132-9b1ccfa3cfa5.webp",
+    "highResolution": "/images/catalog/TS0132-95910c361b21.png",
+    "width": 724,
+    "height": 708,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776207254_img_01-08-2024_0559pm81e8ae2dcf27a3fcb5a4.png",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 724,
+    "previous_height": 708,
+    "files": [
+      {
+        "image": "/images/catalog/TS0132-9b1ccfa3cfa5.webp",
+        "sha256": "9b1ccfa3cfa50a4cf7c45437a5e70c1f379d472f56d59309b459cd09c678d4ea",
+        "bytes": 19658,
+        "width": 724,
+        "height": 708
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0133",
+    "primary": "/images/catalog/TS0133-ea5737909bff.jpg",
+    "thumbnail": "/images/catalog/TS0133-3ea83e88e42e.webp",
+    "highResolution": "/images/catalog/TS0133-ea5737909bff.jpg",
+    "width": 618,
+    "height": 746,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776207099_img_51y3OI-UFPL.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 618,
+    "previous_height": 746,
+    "files": [
+      {
+        "image": "/images/catalog/TS0133-3ea83e88e42e.webp",
+        "sha256": "3ea83e88e42e08bb9d86fb6719e7058e0619e05d672f4a2810e2d461b92b28e5",
+        "bytes": 69052,
+        "width": 618,
+        "height": 746
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0134",
+    "primary": "/images/catalog/TS0134-8361f9f4e8ec.jpg",
+    "thumbnail": "/images/catalog/TS0134-238905d6776c.webp",
+    "highResolution": "/images/catalog/TS0134-8361f9f4e8ec.jpg",
+    "width": 968,
+    "height": 1000,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776205905_img_61JOve92nUL._AC_UF1000%2C1000_QL80_.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 968,
+    "previous_height": 1000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0134-238905d6776c.webp",
+        "sha256": "238905d6776c1ec4f6cbff5d47b8c7edaec84e2cef4c61337d8d4db0cc679db6",
+        "bytes": 75272,
+        "width": 968,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0136",
+    "primary": "/images/catalog/TS0136-6249bdeaef5c.jpg",
+    "thumbnail": "/images/catalog/TS0136-d0f7e99d22de.webp",
+    "highResolution": "/images/catalog/TS0136-6249bdeaef5c.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776195112_img_08-20-2025_0902am67ca08d2414042c8ae3a.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0136-d0f7e99d22de.webp",
+        "sha256": "d0f7e99d22de42137dd9f69ce82f0a97c2f4a9d22cc3afb2247e4652c83d79ee",
+        "bytes": 16824,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0137",
+    "primary": "/images/catalog/TS0137-bad72eaa03a8.png",
+    "thumbnail": "/images/catalog/TS0137-5990dcefc160.webp",
+    "highResolution": "/images/catalog/TS0137-ca70ccabb277.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0606/5451/8510/files/main-png-2000x2000_unscented.png?v=1705598678&width=2000",
+    "source_page": "https://www.rhodeskin.com/products/peptide-lip-treatment",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0137-ca70ccabb277.webp",
+        "sha256": "ca70ccabb27770164504d9f4e64a02902dd7e7c775ffa1001e8915ea07cf7e76",
+        "bytes": 141948,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0137-5990dcefc160.webp",
+        "sha256": "5990dcefc160477d707beccad013026e94eb2e568716357df1e6726c49e8c483",
+        "bytes": 36816,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0138",
+    "primary": "/images/catalog/TS0138-68902cbfe571.jpg",
+    "thumbnail": "/images/catalog/TS0138-332dd7ea9062.webp",
+    "highResolution": "/images/catalog/TS0138-68902cbfe571.jpg",
+    "width": 1400,
+    "height": 1400,
+    "source_image": "https://s3.eu-central-2.wasabisys.com/healbahrain2026/cache/catalog/MARVIS-1400x1400.jpg",
+    "source_page": "https://www.healbahrain.com/index.php?product_id=1826&route=product%2Fproduct",
+    "previous_width": 1400,
+    "previous_height": 1400,
+    "files": [
+      {
+        "image": "/images/catalog/TS0138-332dd7ea9062.webp",
+        "sha256": "332dd7ea9062f300fabac5422b7a907cd2d1f36641549cf3b1f74abe4800bd96",
+        "bytes": 77274,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0139",
+    "primary": "/images/catalog/TS0139-d55f0a2808d4.png",
+    "thumbnail": "/images/catalog/TS0139-cc8bdbe02335.webp",
+    "highResolution": "/images/catalog/TS0139-c9f99b9ab58b.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://numberc.com/cdn/shop/files/Mavala-Scientifique-Penetrating-Nail-Hardener-U-5ML-7618900900097.png?v=1684413719&width=2000",
+    "source_page": "https://www.numberc.com/products/mavala-scientifique-penetrating-nail-hardener-unisex",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0139-c9f99b9ab58b.webp",
+        "sha256": "c9f99b9ab58b5feac8ffac11b593316177d785b2df503d6ee0395107ec76ea72",
+        "bytes": 213246,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0139-cc8bdbe02335.webp",
+        "sha256": "cc8bdbe0233519b103b6ac9b9e466ee80709bff748cbc1fac2fbab8c8329abbc",
+        "bytes": 93368,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0140",
+    "primary": "/images/catalog/TS0140-cef211b8c599.jpg",
+    "thumbnail": "/images/catalog/TS0140-b8e37d5d3539.webp",
+    "highResolution": "/images/catalog/TS0140-cef211b8c599.jpg",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776192808_img_37465.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0140-b8e37d5d3539.webp",
+        "sha256": "b8e37d5d35399b978172e907b2d2d6e4ebe0d5dad78b1590527aab532770d465",
+        "bytes": 78736,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0141",
+    "primary": "/images/catalog/TS0141-63aa3c9c6a86.webp",
+    "thumbnail": "/images/catalog/TS0141-de5fb17c42ad.webp",
+    "highResolution": "/images/catalog/TS0141-63aa3c9c6a86.webp",
+    "width": 900,
+    "height": 1200,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776192241_img_brightening_cleansing_gel.webp",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 900,
+    "previous_height": 1200,
+    "files": [
+      {
+        "image": "/images/catalog/TS0141-de5fb17c42ad.webp",
+        "sha256": "de5fb17c42adda2402f336cdb0f0efe8140a64dd07073ec3cf090d1c29da5be8",
+        "bytes": 50328,
+        "width": 825,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0144",
+    "primary": "/images/catalog/TS0144-03b186daf824.png",
+    "thumbnail": "/images/catalog/TS0144-1bc7cdc21cec.webp",
+    "highResolution": "/images/catalog/TS0144-03b186daf824.png",
+    "width": 488,
+    "height": 488,
+    "source_image": "https://www.farahglow.shop/uploads/products/1775940353_img_4.png",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 488,
+    "previous_height": 488,
+    "files": [
+      {
+        "image": "/images/catalog/TS0144-1bc7cdc21cec.webp",
+        "sha256": "1bc7cdc21cec8be43beb7dc8db02c6f369b39072e19823f5a53aa94075ff3471",
+        "bytes": 26240,
+        "width": 488,
+        "height": 488
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0145",
+    "primary": "/images/catalog/TS0145-f9277fa3e1c3.jpg",
+    "thumbnail": "/images/catalog/TS0145-8a67ee1a1450.webp",
+    "highResolution": "/images/catalog/TS0145-f9277fa3e1c3.jpg",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://www.farahglow.shop/uploads/products/1775938548_img_3.jpg",
+    "source_page": "https://www.farahglow.shop/category?id=3",
+    "previous_width": 2000,
+    "previous_height": 2000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0145-8a67ee1a1450.webp",
+        "sha256": "8a67ee1a14506b8a095760846f2901212a0c507b58303cd09a78c13231559511",
+        "bytes": 47666,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0147",
+    "primary": "/images/catalog/TS0147-32907675f760.avif",
+    "thumbnail": "/images/catalog/TS0147-09aaab835c4d.webp",
+    "highResolution": "/images/catalog/TS0147-32907675f760.avif",
+    "width": 2500,
+    "height": 2500,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776040783_img_1.avif",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 2500,
+    "previous_height": 2500,
+    "files": [
+      {
+        "image": "/images/catalog/TS0147-09aaab835c4d.webp",
+        "sha256": "09aaab835c4d838c55ff6e716347be9c46fabd6a8eba2827e5d573b2112c63d6",
+        "bytes": 55214,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0149",
+    "primary": "/images/catalog/TS0149-fbfad33d9289.jpg",
+    "thumbnail": "/images/catalog/TS0149-a772ae492467.webp",
+    "highResolution": "/images/catalog/TS0149-fbfad33d9289.jpg",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776633937_img_61CA3BD3XLL.jpg",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 2000,
+    "previous_height": 2000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0149-a772ae492467.webp",
+        "sha256": "a772ae492467776b60d0bb572b2d29dbbc35c0b403e830408a3963bfef95fff9",
+        "bytes": 32106,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0150",
+    "primary": "/images/catalog/TS0150-b256cda24417.jpg",
+    "thumbnail": "/images/catalog/TS0150-175ffc35499d.webp",
+    "highResolution": "/images/catalog/TS0150-b256cda24417.jpg",
+    "width": 1100,
+    "height": 1100,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776631808_img_88665270.jpeg",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 1100,
+    "previous_height": 1100,
+    "files": [
+      {
+        "image": "/images/catalog/TS0150-175ffc35499d.webp",
+        "sha256": "175ffc35499d396068b3ad14da1db86b4230ee8ddfae860e672bd3763ade84d5",
+        "bytes": 36648,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0151",
+    "primary": "/images/catalog/TS0151-19a5f5a1c130.jpg",
+    "thumbnail": "/images/catalog/TS0151-a2133e88c79c.webp",
+    "highResolution": "/images/catalog/TS0151-19a5f5a1c130.jpg",
+    "width": 1000,
+    "height": 925,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776631650_img_616Ift36nqL._AC_UF1000%2C1000_QL80_.jpg",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 1000,
+    "previous_height": 925,
+    "files": [
+      {
+        "image": "/images/catalog/TS0151-a2133e88c79c.webp",
+        "sha256": "a2133e88c79c8f7084834c53908a040c11c326118983c24ac809024e1e06487d",
+        "bytes": 72534,
+        "width": 1000,
+        "height": 925
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0152",
+    "primary": "/images/catalog/TS0152-1c1cb84dce4b.jpg",
+    "thumbnail": "/images/catalog/TS0152-a46f8d667091.webp",
+    "highResolution": "/images/catalog/TS0152-1c1cb84dce4b.jpg",
+    "width": 894,
+    "height": 851,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776631495_img_7196LSH3-oL._AC_UF894%2C1000_QL80_.jpg",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 894,
+    "previous_height": 851,
+    "files": [
+      {
+        "image": "/images/catalog/TS0152-a46f8d667091.webp",
+        "sha256": "a46f8d66709139f235868956259d0f16833270bfc45fb4f09df2ab250e84292d",
+        "bytes": 119024,
+        "width": 894,
+        "height": 851
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0154",
+    "primary": "/images/catalog/TS0154-28b06f08e8bb.avif",
+    "thumbnail": "/images/catalog/TS0154-457ef32dbed7.webp",
+    "highResolution": "/images/catalog/TS0154-28b06f08e8bb.avif",
+    "width": 368,
+    "height": 400,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776626305_img_10308194.avif",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 368,
+    "previous_height": 400,
+    "files": [
+      {
+        "image": "/images/catalog/TS0154-457ef32dbed7.webp",
+        "sha256": "457ef32dbed7fd45bcd1802a89e9d0d0e857e8b91724897d1e9e8aa318e55b1c",
+        "bytes": 13224,
+        "width": 368,
+        "height": 400
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0155",
+    "primary": "/images/catalog/TS0155-eb7b4264631f.webp",
+    "thumbnail": "/images/catalog/TS0155-e20b76b8ee20.webp",
+    "highResolution": "/images/catalog/TS0155-eb7b4264631f.webp",
+    "width": 949,
+    "height": 1000,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776625040_img_8c7918fc-602c-4d44-90dc-111b3f6e479e-949.webp",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 949,
+    "previous_height": 1000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0155-e20b76b8ee20.webp",
+        "sha256": "e20b76b8ee2095668661f7c1de70783bf24e5a501cd143a472cf7e87d2c41a93",
+        "bytes": 27500,
+        "width": 949,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0156",
+    "primary": "/images/catalog/TS0156-0b4038771b9a.avif",
+    "thumbnail": "/images/catalog/TS0156-f333938c80b6.webp",
+    "highResolution": "/images/catalog/TS0156-0b4038771b9a.avif",
+    "width": 1600,
+    "height": 1600,
+    "source_image": "https://www.farahglow.shop/uploads/products/1776218891_img_24.avif",
+    "source_page": "https://www.farahglow.shop/index.php",
+    "previous_width": 1600,
+    "previous_height": 1600,
+    "files": [
+      {
+        "image": "/images/catalog/TS0156-f333938c80b6.webp",
+        "sha256": "f333938c80b6c3e6edbaa1e2183ab221dd2cc547abf170a6d3d4ceffc331e165",
+        "bytes": 57302,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0157",
+    "primary": "/images/catalog/TS0157-21b193268eae.webp",
+    "thumbnail": "/images/catalog/TS0157-a8bd158f3bd0.webp",
+    "highResolution": "/images/catalog/TS0157-21b193268eae.webp",
+    "width": 894,
+    "height": 803,
+    "source_image": "https://files.easy-orders.net/1747996061888473793.webp",
+    "source_page": "https://ksecret.myeasyorders.com/products/Im-from-rice-cream",
+    "previous_width": 894,
+    "previous_height": 803,
+    "files": [
+      {
+        "image": "/images/catalog/TS0157-a8bd158f3bd0.webp",
+        "sha256": "a8bd158f3bd04997f1d8aacb6c277d3f1459eb76e33ebc48c456fc355a7e4357",
+        "bytes": 42640,
+        "width": 894,
+        "height": 803
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0158",
+    "primary": "/images/catalog/TS0158-4cc9b8927b7a.webp",
+    "thumbnail": "/images/catalog/TS0158-0eed6f9315bf.webp",
+    "highResolution": "/images/catalog/TS0158-4cc9b8927b7a.webp",
+    "width": 500,
+    "height": 500,
+    "source_image": "https://files.easy-orders.net/1724192526346300274.webp",
+    "source_page": "https://ksecret.myeasyorders.com/products/skincare-etude-cream",
+    "previous_width": 500,
+    "previous_height": 500,
+    "files": [
+      {
+        "image": "/images/catalog/TS0158-0eed6f9315bf.webp",
+        "sha256": "0eed6f9315bffd2be685687b8a322434b2d9e7751ca53ab474706d025ca9105d",
+        "bytes": 6222,
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0161",
+    "primary": "/images/catalog/TS0161-f8ee054fe119.jpg",
+    "thumbnail": "/images/catalog/TS0161-ab5b3bdb7149.webp",
+    "highResolution": "/images/catalog/TS0161-9c060cec5f9c.webp",
+    "width": 2000,
+    "height": 2000,
+    "source_image": "https://cdn.shopify.com/s/files/1/0759/5393/0495/files/round_lab_birch_juice_tube_2k.jpg?v=1792856927&width=2000",
+    "source_page": "https://glowceryjo.com/products/round-lab-birch-juice-moisturizing-sunscreen",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0161-9c060cec5f9c.webp",
+        "sha256": "9c060cec5f9c0c3870d52de42a9bfb1c586ce8c46d404ffd57a9062bdc610493",
+        "bytes": 57052,
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "image": "/images/catalog/TS0161-ab5b3bdb7149.webp",
+        "sha256": "ab5b3bdb7149a3bec4fae1719674b441ad5683f606bce878b1a6445128c4e8fa",
+        "bytes": 23200,
+        "width": 1100,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0162",
+    "primary": "/images/catalog/TS0162-94fb73c761c0.jpg",
+    "thumbnail": "/images/catalog/TS0162-a2cf6386f21d.webp",
+    "highResolution": "/images/catalog/TS0162-94fb73c761c0.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1753693078689095752.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Axisy-toner",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0162-a2cf6386f21d.webp",
+        "sha256": "a2cf6386f21de0f8fb26df7247edcab75c4e233bd37231312b083241f21099c5",
+        "bytes": 11828,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0163",
+    "primary": "/images/catalog/TS0163-b05920d1a52d.jpg",
+    "thumbnail": "/images/catalog/TS0163-fef1d951bcba.webp",
+    "highResolution": "/images/catalog/TS0163-b05920d1a52d.jpg",
+    "width": 600,
+    "height": 600,
+    "source_image": "https://sv5-cdn.stylevana.com/media/catalog/product/d/e/derma-b-everyday-sun-block-spf50-pa-200ml-562.jpg",
+    "source_page": "https://www.stylevana.com/en_CA/derma-b-everyday-sun-block-spf50-pa-200ml59396.html",
+    "previous_width": 600,
+    "previous_height": 600,
+    "files": [
+      {
+        "image": "/images/catalog/TS0163-fef1d951bcba.webp",
+        "sha256": "fef1d951bcbac19968067490c626362555cf3f9f46cfa4939c3aac5988c5d602",
+        "bytes": 16376,
+        "width": 600,
+        "height": 600
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0164",
+    "primary": "/images/catalog/TS0164-48314fc83cea.jpg",
+    "thumbnail": "/images/catalog/TS0164-9cbb7f6748e3.webp",
+    "highResolution": "/images/catalog/TS0164-48314fc83cea.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1765577524548112990.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Axisy-txa-cream",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0164-9cbb7f6748e3.webp",
+        "sha256": "9cbb7f6748e3a58d3e3883780f50460657855be58c78f18733be91faba076eb8",
+        "bytes": 8732,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0165",
+    "primary": "/images/catalog/TS0165-d3e7ae7d9874.webp",
+    "thumbnail": "/images/catalog/TS0165-f45c36c1073b.webp",
+    "highResolution": "/images/catalog/TS0165-d3e7ae7d9874.webp",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1740594660642889613.webp",
+    "source_page": "https://ksecret.myeasyorders.com/products/tirtir-nia",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0165-f45c36c1073b.webp",
+        "sha256": "f45c36c1073ba439f3704b7688c3a6ebb36e5a5c97ab6b5bd5dfe37248f59f7b",
+        "bytes": 6970,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0166",
+    "primary": "/images/catalog/TS0166-297f0f0987bb.webp",
+    "thumbnail": "/images/catalog/TS0166-6cb8a51034dc.webp",
+    "highResolution": "/images/catalog/TS0166-297f0f0987bb.webp",
+    "width": 800,
+    "height": 800,
+    "source_image": "https://files.easy-orders.net/1746572871399191996.webp",
+    "source_page": "https://ksecret.myeasyorders.com/products/Purito-serum",
+    "previous_width": 800,
+    "previous_height": 800,
+    "files": [
+      {
+        "image": "/images/catalog/TS0166-6cb8a51034dc.webp",
+        "sha256": "6cb8a51034dc09fb37d8ba3c65170e8b7bfa107221881c0de494944ae0f36c2c",
+        "bytes": 21024,
+        "width": 800,
+        "height": 800
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0168",
+    "primary": "/images/catalog/TS0168-f9a5f58188fa.jpg",
+    "thumbnail": "/images/catalog/TS0168-f8f5ef937856.webp",
+    "highResolution": "/images/catalog/TS0168-f9a5f58188fa.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1767551825846188228.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Axisy-glass-skin-due",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0168-f8f5ef937856.webp",
+        "sha256": "f8f5ef937856e233ad4532cdd83374284e042e38be71799e44b051c2526e3d57",
+        "bytes": 27848,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0169",
+    "primary": "/images/catalog/TS0169-0d4bc4be99d6.jpg",
+    "thumbnail": "/images/catalog/TS0169-e2c28993a233.webp",
+    "highResolution": "/images/catalog/TS0169-0d4bc4be99d6.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1767724628586448910.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Arencia-holy-hyssop-serum",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0169-e2c28993a233.webp",
+        "sha256": "e2c28993a233d900b8ced250600f02a91a9c04435b7de3885880d95270013c93",
+        "bytes": 26008,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0171",
+    "primary": "/images/catalog/TS0171-e9a2add1cdf5.jpg",
+    "thumbnail": "/images/catalog/TS0171-e52503ed8294.webp",
+    "highResolution": "/images/catalog/TS0171-e9a2add1cdf5.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1755811171247329707.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Medicube-exsosome-shot",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0171-e52503ed8294.webp",
+        "sha256": "e52503ed82944c5375d8e639ba90ff08cb338d16f219bde4553bec55ae5eb167",
+        "bytes": 16036,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0172",
+    "primary": "/images/catalog/TS0172-a26ca31802c3.jpg",
+    "thumbnail": "/images/catalog/TS0172-cf672a589119.webp",
+    "highResolution": "/images/catalog/TS0172-a26ca31802c3.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1767724269390552021.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Vt-r5-firming-ampoule",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0172-cf672a589119.webp",
+        "sha256": "cf672a589119a4291542c642af991c02b12eb16c460cc75934ca1bcf4a437635",
+        "bytes": 10612,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0173",
+    "primary": "/images/catalog/TS0173-0a7ccb95674b.jpg",
+    "thumbnail": "/images/catalog/TS0173-ef922bb9a43b.webp",
+    "highResolution": "/images/catalog/TS0173-0a7ccb95674b.jpg",
+    "width": 595,
+    "height": 595,
+    "source_image": "https://files.easy-orders.net/1755818871903875340.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Vt-glutatione",
+    "previous_width": 595,
+    "previous_height": 595,
+    "files": [
+      {
+        "image": "/images/catalog/TS0173-ef922bb9a43b.webp",
+        "sha256": "ef922bb9a43b1df74634273b538c70f0e57b33fdfd0ce39aa05b85a767ecd87b",
+        "bytes": 28332,
+        "width": 595,
+        "height": 595
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0174",
+    "primary": "/images/catalog/TS0174-f8d3582f64e9.jpg",
+    "thumbnail": "/images/catalog/TS0174-d8446e836ba4.webp",
+    "highResolution": "/images/catalog/TS0174-f8d3582f64e9.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1772229199995308692.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/JUMISO-overnight-cream",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0174-d8446e836ba4.webp",
+        "sha256": "d8446e836ba496bf8cb560b8c91e04f3ff7a4c47f0803e58b0b1e280b8f39e86",
+        "bytes": 16732,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0175",
+    "primary": "/images/catalog/TS0175-60f46fe6f37c.webp",
+    "thumbnail": "/images/catalog/TS0175-20d5c9e98817.webp",
+    "highResolution": "/images/catalog/TS0175-60f46fe6f37c.webp",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1724192103813053376.webp",
+    "source_page": "https://ksecret.myeasyorders.com/products/skincare-haruharu-eye-cream",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0175-20d5c9e98817.webp",
+        "sha256": "20d5c9e98817cea45fcd4088d988f5e90a0b57bc2c68df3257132f8f7b9269c1",
+        "bytes": 6444,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0176",
+    "primary": "/images/catalog/TS0176-f3c2ebf06d5e.jpg",
+    "thumbnail": "/images/catalog/TS0176-d4989dfe2e21.webp",
+    "highResolution": "/images/catalog/TS0176-f3c2ebf06d5e.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1755811413388505060.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Medicube-pdrn-shot",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0176-d4989dfe2e21.webp",
+        "sha256": "d4989dfe2e2165f42ea30b8352dfd5ec3be8897613666b91a72c876580ace9fa",
+        "bytes": 14212,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0177",
+    "primary": "/images/catalog/TS0177-1521fede5d9a.jpg",
+    "thumbnail": "/images/catalog/TS0177-eee4417dc4d4.webp",
+    "highResolution": "/images/catalog/TS0177-1521fede5d9a.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1764375873139828717.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/APRILSKIN-Niacinamide-milky-toner",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0177-eee4417dc4d4.webp",
+        "sha256": "eee4417dc4d4cb034934b727c50d6a3e3f72fd0c0898b4e4a4fda14ae9e55717",
+        "bytes": 11872,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0178",
+    "primary": "/images/catalog/TS0178-914b749f375d.jpg",
+    "thumbnail": "/images/catalog/TS0178-04c138bc7228.webp",
+    "highResolution": "/images/catalog/TS0178-914b749f375d.jpg",
+    "width": 860,
+    "height": 860,
+    "source_image": "https://files.easy-orders.net/1747901232497454839.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Dralthea-sunscreen",
+    "previous_width": 860,
+    "previous_height": 860,
+    "files": [
+      {
+        "image": "/images/catalog/TS0178-04c138bc7228.webp",
+        "sha256": "04c138bc7228fb9ad2253f4906d820a6e70585e2218eb56e5ed4da1d99028466",
+        "bytes": 19664,
+        "width": 860,
+        "height": 860
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0179",
+    "primary": "/images/catalog/TS0179-eaa69d8f2bb8.jpg",
+    "thumbnail": "/images/catalog/TS0179-e699bef2e5f7.webp",
+    "highResolution": "/images/catalog/TS0179-eaa69d8f2bb8.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1752669411481650644.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Madeca",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0179-e699bef2e5f7.webp",
+        "sha256": "e699bef2e5f7016cd5966ab27eca6a92f97841c35cb0865ce4671a27e77a8b4d",
+        "bytes": 13510,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0180",
+    "primary": "/images/catalog/TS0180-0b6f4397067d.png",
+    "thumbnail": "/images/catalog/TS0180-2357eeb1ec22.webp",
+    "highResolution": "/images/catalog/TS0180-0b6f4397067d.png",
+    "width": 900,
+    "height": 1350,
+    "source_image": "https://files.easy-orders.net/1751787903333342677.png",
+    "source_page": "https://ksecret.myeasyorders.com/products/Ksecret-sleeping-mask",
+    "previous_width": 900,
+    "previous_height": 1350,
+    "files": [
+      {
+        "image": "/images/catalog/TS0180-2357eeb1ec22.webp",
+        "sha256": "2357eeb1ec22e56ea0174264b8336f86e8c8d8787d8d7f91fb81210e33fffb00",
+        "bytes": 40918,
+        "width": 733,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0182",
+    "primary": "/images/catalog/TS0182-ea6e3cc9c31c.webp",
+    "thumbnail": "/images/catalog/TS0182-c0bd6641942f.webp",
+    "highResolution": "/images/catalog/TS0182-ea6e3cc9c31c.webp",
+    "width": 441,
+    "height": 480,
+    "source_image": "https://files.easy-orders.net/1740590682677499073.webp",
+    "source_page": "https://ksecret.myeasyorders.com/products/medicube-pdrn-serum",
+    "previous_width": 441,
+    "previous_height": 480,
+    "files": [
+      {
+        "image": "/images/catalog/TS0182-c0bd6641942f.webp",
+        "sha256": "c0bd6641942f5208a2dd36670225fee753a297b837c954b24d8e9e4fcc6b7def",
+        "bytes": 13190,
+        "width": 441,
+        "height": 480
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0183",
+    "primary": "/images/catalog/TS0183-e5b1240ef265.jpg",
+    "thumbnail": "/images/catalog/TS0183-05f2cc3d636e.webp",
+    "highResolution": "/images/catalog/TS0183-e5b1240ef265.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1769382662151008440.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Arencia-retinal-booster",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0183-05f2cc3d636e.webp",
+        "sha256": "05f2cc3d636e76d6db6e7bb5b56ea7cb6be170dca59527a1259154481283506f",
+        "bytes": 13366,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0184",
+    "primary": "/images/catalog/TS0184-80ce733cdb64.png",
+    "thumbnail": "/images/catalog/TS0184-1311e483d72b.webp",
+    "highResolution": "/images/catalog/TS0184-80ce733cdb64.png",
+    "width": 1000,
+    "height": 1250,
+    "source_image": "https://files.easy-orders.net/1758440907459825129.png",
+    "source_page": "https://ksecret.myeasyorders.com/products/Numbuzin-mask",
+    "previous_width": 1000,
+    "previous_height": 1250,
+    "files": [
+      {
+        "image": "/images/catalog/TS0184-1311e483d72b.webp",
+        "sha256": "1311e483d72bb85a24d420d10b5523fee0572995f5d565e68187e15336402ef8",
+        "bytes": 78008,
+        "width": 880,
+        "height": 1100
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0185",
+    "primary": "/images/catalog/TS0185-517ef68a4986.png",
+    "thumbnail": "/images/catalog/TS0185-621fa9e52f65.webp",
+    "highResolution": "/images/catalog/TS0185-517ef68a4986.png",
+    "width": 900,
+    "height": 900,
+    "source_image": "https://files.easy-orders.net/1769384701787919781.png",
+    "source_page": "https://ksecret.myeasyorders.com/products/Anua-retinol-eye-cream",
+    "previous_width": 900,
+    "previous_height": 900,
+    "files": [
+      {
+        "image": "/images/catalog/TS0185-621fa9e52f65.webp",
+        "sha256": "621fa9e52f6553468685627d4e6f3de4f608c5ef10ec2168022ad231a963ad60",
+        "bytes": 21564,
+        "width": 900,
+        "height": 900
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0186",
+    "primary": "/images/catalog/TS0186-b8a8d7a7f6c3.jpg",
+    "thumbnail": "/images/catalog/TS0186-b318f544b930.webp",
+    "highResolution": "/images/catalog/TS0186-b8a8d7a7f6c3.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1757025683093529854.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Dalba-serum",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0186-b318f544b930.webp",
+        "sha256": "b318f544b930fa1330b1370779609ce76ef21338e015b43ddb5086c112e32742",
+        "bytes": 20838,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0187",
+    "primary": "/images/catalog/TS0187-af9ea50a2313.webp",
+    "thumbnail": "/images/catalog/TS0187-f8e1efefee0c.webp",
+    "highResolution": "/images/catalog/TS0187-af9ea50a2313.webp",
+    "width": 1000,
+    "height": 1000,
+    "source_image": "https://files.easy-orders.net/1759883639547732778.webp",
+    "source_page": "https://ksecret.myeasyorders.com/products/Eqqualberry-hyaltoin-flooding-serum",
+    "previous_width": 1000,
+    "previous_height": 1000,
+    "files": [
+      {
+        "image": "/images/catalog/TS0187-f8e1efefee0c.webp",
+        "sha256": "f8e1efefee0cac429a29de647841414b31cb1cb2f3d88c140958b8d10db3d169",
+        "bytes": 57180,
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0188",
+    "primary": "/images/catalog/TS0188-e00dc89f8f5b.jpg",
+    "thumbnail": "/images/catalog/TS0188-7492ebdb9a77.webp",
+    "highResolution": "/images/catalog/TS0188-e00dc89f8f5b.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1759341577090784242.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Dralthea-aqua-marine-deep-serum",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0188-7492ebdb9a77.webp",
+        "sha256": "7492ebdb9a771884e3f9df0c86f558b8b2dc1d997906f6cdf43d19aca25bfaf8",
+        "bytes": 32222,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  },
+  {
+    "id": "TS0190",
+    "primary": "/images/catalog/TS0190-f5e4a9eb9ff5.jpg",
+    "thumbnail": "/images/catalog/TS0190-e3b43b7e8de8.webp",
+    "highResolution": "/images/catalog/TS0190-f5e4a9eb9ff5.jpg",
+    "width": 640,
+    "height": 640,
+    "source_image": "https://files.easy-orders.net/1750534608502993338.jpg",
+    "source_page": "https://ksecret.myeasyorders.com/products/Mixsoon-oil-cleanser",
+    "previous_width": 640,
+    "previous_height": 640,
+    "files": [
+      {
+        "image": "/images/catalog/TS0190-e3b43b7e8de8.webp",
+        "sha256": "e3b43b7e8de87e07c36f841a5809d6bfd2106f16f24aa4725ba60c5810f7f6ca",
+        "bytes": 6864,
+        "width": 640,
+        "height": 640
+      }
+    ],
+    "status": "ready"
+  }
+]
