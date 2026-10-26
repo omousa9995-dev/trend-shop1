@@ -1,6 +1,7 @@
 # Security headers for static content served directly by Cloudflare Workers Assets.
 # Without _headers, only Worker-generated API responses receive headers.
 /*
+  Strict-Transport-Security: max-age=31536000
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin

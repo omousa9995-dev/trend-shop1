@@ -1,0 +1,1045 @@
+{
+  "release": "launch-sale-2026-10-26-v1",
+  "basis": "Actual store prices before this promotion; no invented former prices.",
+  "minimum_fils": 500,
+  "offers": [
+    {
+      "id": "TS0001",
+      "previous_price_fils": 2950,
+      "price_fils": 1475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0002",
+      "previous_price_fils": 1250,
+      "price_fils": 1000,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0003",
+      "previous_price_fils": 3950,
+      "price_fils": 2370,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0004",
+      "previous_price_fils": 500,
+      "price_fils": 500,
+      "discount_percent": 0
+    },
+    {
+      "id": "TS0005",
+      "previous_price_fils": 3950,
+      "price_fils": 1975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0006",
+      "previous_price_fils": 1950,
+      "price_fils": 1560,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0007",
+      "previous_price_fils": 1250,
+      "price_fils": 750,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0008",
+      "previous_price_fils": 1500,
+      "price_fils": 1125,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0009",
+      "previous_price_fils": 4950,
+      "price_fils": 2475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0010",
+      "previous_price_fils": 4950,
+      "price_fils": 3960,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0011",
+      "previous_price_fils": 2950,
+      "price_fils": 1770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0012",
+      "previous_price_fils": 1950,
+      "price_fils": 1365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0013",
+      "previous_price_fils": 1950,
+      "price_fils": 975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0014",
+      "previous_price_fils": 1950,
+      "price_fils": 1560,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0015",
+      "previous_price_fils": 1950,
+      "price_fils": 1170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0016",
+      "previous_price_fils": 2500,
+      "price_fils": 1875,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0017",
+      "previous_price_fils": 2500,
+      "price_fils": 1875,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0018",
+      "previous_price_fils": 2250,
+      "price_fils": 1800,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0019",
+      "previous_price_fils": 2950,
+      "price_fils": 1770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0020",
+      "previous_price_fils": 6950,
+      "price_fils": 4865,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0021",
+      "previous_price_fils": 6950,
+      "price_fils": 3475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0022",
+      "previous_price_fils": 3950,
+      "price_fils": 3160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0023",
+      "previous_price_fils": 1500,
+      "price_fils": 1125,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0024",
+      "previous_price_fils": 1500,
+      "price_fils": 1125,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0025",
+      "previous_price_fils": 11950,
+      "price_fils": 5975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0026",
+      "previous_price_fils": 8950,
+      "price_fils": 7160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0027",
+      "previous_price_fils": 7950,
+      "price_fils": 4770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0028",
+      "previous_price_fils": 7950,
+      "price_fils": 5565,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0029",
+      "previous_price_fils": 4950,
+      "price_fils": 2475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0030",
+      "previous_price_fils": 8950,
+      "price_fils": 7160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0031",
+      "previous_price_fils": 9950,
+      "price_fils": 5970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0032",
+      "previous_price_fils": 19950,
+      "price_fils": 13965,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0033",
+      "previous_price_fils": 2950,
+      "price_fils": 1475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0034",
+      "previous_price_fils": 3950,
+      "price_fils": 3160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0035",
+      "previous_price_fils": 2500,
+      "price_fils": 1875,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0036",
+      "previous_price_fils": 11950,
+      "price_fils": 8365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0037",
+      "previous_price_fils": 8950,
+      "price_fils": 4475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0038",
+      "previous_price_fils": 8950,
+      "price_fils": 7160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0039",
+      "previous_price_fils": 2250,
+      "price_fils": 1350,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0040",
+      "previous_price_fils": 9950,
+      "price_fils": 6965,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0041",
+      "previous_price_fils": 2950,
+      "price_fils": 1475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0042",
+      "previous_price_fils": 3950,
+      "price_fils": 3160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0044",
+      "previous_price_fils": 9950,
+      "price_fils": 6965,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0045",
+      "previous_price_fils": 5950,
+      "price_fils": 2975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0046",
+      "previous_price_fils": 6950,
+      "price_fils": 5560,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0047",
+      "previous_price_fils": 9950,
+      "price_fils": 5970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0048",
+      "previous_price_fils": 5950,
+      "price_fils": 4165,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0049",
+      "previous_price_fils": 6950,
+      "price_fils": 3475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0050",
+      "previous_price_fils": 4950,
+      "price_fils": 3960,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0051",
+      "previous_price_fils": 6950,
+      "price_fils": 4170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0052",
+      "previous_price_fils": 4950,
+      "price_fils": 3465,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0053",
+      "previous_price_fils": 4950,
+      "price_fils": 2475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0054",
+      "previous_price_fils": 8950,
+      "price_fils": 7160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0055",
+      "previous_price_fils": 4950,
+      "price_fils": 2970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0056",
+      "previous_price_fils": 10950,
+      "price_fils": 7665,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0057",
+      "previous_price_fils": 9950,
+      "price_fils": 4975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0058",
+      "previous_price_fils": 8950,
+      "price_fils": 7160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0059",
+      "previous_price_fils": 14950,
+      "price_fils": 8970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0060",
+      "previous_price_fils": 11950,
+      "price_fils": 8365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0061",
+      "previous_price_fils": 13950,
+      "price_fils": 6975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0062",
+      "previous_price_fils": 13950,
+      "price_fils": 11160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0064",
+      "previous_price_fils": 15950,
+      "price_fils": 11165,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0065",
+      "previous_price_fils": 10950,
+      "price_fils": 5475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0066",
+      "previous_price_fils": 15950,
+      "price_fils": 12760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0067",
+      "previous_price_fils": 10950,
+      "price_fils": 6570,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0068",
+      "previous_price_fils": 13950,
+      "price_fils": 9765,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0069",
+      "previous_price_fils": 11950,
+      "price_fils": 5975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0070",
+      "previous_price_fils": 10950,
+      "price_fils": 8760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0071",
+      "previous_price_fils": 13950,
+      "price_fils": 8370,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0072",
+      "previous_price_fils": 12950,
+      "price_fils": 9065,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0073",
+      "previous_price_fils": 13950,
+      "price_fils": 6975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0074",
+      "previous_price_fils": 15950,
+      "price_fils": 12760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0075",
+      "previous_price_fils": 12950,
+      "price_fils": 7770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0076",
+      "previous_price_fils": 10950,
+      "price_fils": 7665,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0077",
+      "previous_price_fils": 11950,
+      "price_fils": 5975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0078",
+      "previous_price_fils": 10950,
+      "price_fils": 8760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0079",
+      "previous_price_fils": 11950,
+      "price_fils": 7170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0080",
+      "previous_price_fils": 11950,
+      "price_fils": 8365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0081",
+      "previous_price_fils": 10950,
+      "price_fils": 5475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0082",
+      "previous_price_fils": 10950,
+      "price_fils": 8760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0083",
+      "previous_price_fils": 17950,
+      "price_fils": 10770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0084",
+      "previous_price_fils": 11950,
+      "price_fils": 8365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0085",
+      "previous_price_fils": 11950,
+      "price_fils": 5975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0086",
+      "previous_price_fils": 8950,
+      "price_fils": 7160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0087",
+      "previous_price_fils": 13950,
+      "price_fils": 8370,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0088",
+      "previous_price_fils": 13950,
+      "price_fils": 9765,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0089",
+      "previous_price_fils": 19950,
+      "price_fils": 9975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0090",
+      "previous_price_fils": 12950,
+      "price_fils": 10360,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0091",
+      "previous_price_fils": 15950,
+      "price_fils": 9570,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0092",
+      "previous_price_fils": 13950,
+      "price_fils": 9765,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0093",
+      "previous_price_fils": 12950,
+      "price_fils": 6475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0094",
+      "previous_price_fils": 12950,
+      "price_fils": 10360,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0095",
+      "previous_price_fils": 14950,
+      "price_fils": 8970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0097",
+      "previous_price_fils": 12950,
+      "price_fils": 6475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0098",
+      "previous_price_fils": 13950,
+      "price_fils": 11160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0099",
+      "previous_price_fils": 11950,
+      "price_fils": 7170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0100",
+      "previous_price_fils": 13950,
+      "price_fils": 9765,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0101",
+      "previous_price_fils": 4950,
+      "price_fils": 2475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0102",
+      "previous_price_fils": 10950,
+      "price_fils": 8760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0103",
+      "previous_price_fils": 10950,
+      "price_fils": 6570,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0105",
+      "previous_price_fils": 11950,
+      "price_fils": 5975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0106",
+      "previous_price_fils": 19950,
+      "price_fils": 15960,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0107",
+      "previous_price_fils": 9950,
+      "price_fils": 5970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0108",
+      "previous_price_fils": 9950,
+      "price_fils": 6965,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0109",
+      "previous_price_fils": 8950,
+      "price_fils": 4475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0110",
+      "previous_price_fils": 9950,
+      "price_fils": 7960,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0111",
+      "previous_price_fils": 11950,
+      "price_fils": 7170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0112",
+      "previous_price_fils": 14950,
+      "price_fils": 10465,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0113",
+      "previous_price_fils": 16950,
+      "price_fils": 8475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0114",
+      "previous_price_fils": 16950,
+      "price_fils": 13560,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0115",
+      "previous_price_fils": 14950,
+      "price_fils": 8970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0116",
+      "previous_price_fils": 5950,
+      "price_fils": 4165,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0117",
+      "previous_price_fils": 11950,
+      "price_fils": 5975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0118",
+      "previous_price_fils": 10950,
+      "price_fils": 8760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0119",
+      "previous_price_fils": 17950,
+      "price_fils": 10770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0120",
+      "previous_price_fils": 8950,
+      "price_fils": 6265,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0121",
+      "previous_price_fils": 8950,
+      "price_fils": 4475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0122",
+      "previous_price_fils": 10950,
+      "price_fils": 8760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0123",
+      "previous_price_fils": 8950,
+      "price_fils": 5370,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0124",
+      "previous_price_fils": 5950,
+      "price_fils": 4165,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0125",
+      "previous_price_fils": 8950,
+      "price_fils": 4475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0126",
+      "previous_price_fils": 12950,
+      "price_fils": 10360,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0127",
+      "previous_price_fils": 16950,
+      "price_fils": 10170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0129",
+      "previous_price_fils": 7950,
+      "price_fils": 3975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0130",
+      "previous_price_fils": 1950,
+      "price_fils": 1560,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0131",
+      "previous_price_fils": 2500,
+      "price_fils": 1875,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0132",
+      "previous_price_fils": 11950,
+      "price_fils": 8365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0133",
+      "previous_price_fils": 8950,
+      "price_fils": 4475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0134",
+      "previous_price_fils": 7950,
+      "price_fils": 6360,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0136",
+      "previous_price_fils": 11950,
+      "price_fils": 8365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0137",
+      "previous_price_fils": 14950,
+      "price_fils": 7475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0138",
+      "previous_price_fils": 5950,
+      "price_fils": 4760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0139",
+      "previous_price_fils": 17950,
+      "price_fils": 10770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0140",
+      "previous_price_fils": 8950,
+      "price_fils": 6265,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0141",
+      "previous_price_fils": 8950,
+      "price_fils": 4475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0144",
+      "previous_price_fils": 11950,
+      "price_fils": 8365,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0145",
+      "previous_price_fils": 11950,
+      "price_fils": 5975,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0147",
+      "previous_price_fils": 10950,
+      "price_fils": 6570,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0149",
+      "previous_price_fils": 16950,
+      "price_fils": 8475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0150",
+      "previous_price_fils": 6950,
+      "price_fils": 5560,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0151",
+      "previous_price_fils": 19950,
+      "price_fils": 11970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0152",
+      "previous_price_fils": 1500,
+      "price_fils": 1125,
+      "discount_percent": 25
+    },
+    {
+      "id": "TS0154",
+      "previous_price_fils": 6950,
+      "price_fils": 5560,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0155",
+      "previous_price_fils": 11950,
+      "price_fils": 7170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0156",
+      "previous_price_fils": 15950,
+      "price_fils": 11165,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0157",
+      "previous_price_fils": 14950,
+      "price_fils": 7475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0158",
+      "previous_price_fils": 9950,
+      "price_fils": 7960,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0161",
+      "previous_price_fils": 12950,
+      "price_fils": 6475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0162",
+      "previous_price_fils": 14950,
+      "price_fils": 11960,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0163",
+      "previous_price_fils": 12950,
+      "price_fils": 7770,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0164",
+      "previous_price_fils": 14950,
+      "price_fils": 10465,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0165",
+      "previous_price_fils": 12950,
+      "price_fils": 6475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0166",
+      "previous_price_fils": 12950,
+      "price_fils": 10360,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0168",
+      "previous_price_fils": 19950,
+      "price_fils": 13965,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0169",
+      "previous_price_fils": 16950,
+      "price_fils": 8475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0171",
+      "previous_price_fils": 16950,
+      "price_fils": 10170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0172",
+      "previous_price_fils": 12950,
+      "price_fils": 9065,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0173",
+      "previous_price_fils": 12950,
+      "price_fils": 6475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0174",
+      "previous_price_fils": 13950,
+      "price_fils": 11160,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0175",
+      "previous_price_fils": 9950,
+      "price_fils": 5970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0176",
+      "previous_price_fils": 19950,
+      "price_fils": 13965,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0177",
+      "previous_price_fils": 12950,
+      "price_fils": 6475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0178",
+      "previous_price_fils": 12950,
+      "price_fils": 10360,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0179",
+      "previous_price_fils": 14950,
+      "price_fils": 8970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0180",
+      "previous_price_fils": 14950,
+      "price_fils": 10465,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0182",
+      "previous_price_fils": 15950,
+      "price_fils": 12760,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0183",
+      "previous_price_fils": 14950,
+      "price_fils": 8970,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0184",
+      "previous_price_fils": 19950,
+      "price_fils": 13965,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0185",
+      "previous_price_fils": 14950,
+      "price_fils": 7475,
+      "discount_percent": 50
+    },
+    {
+      "id": "TS0186",
+      "previous_price_fils": 19950,
+      "price_fils": 15960,
+      "discount_percent": 20
+    },
+    {
+      "id": "TS0187",
+      "previous_price_fils": 16950,
+      "price_fils": 10170,
+      "discount_percent": 40
+    },
+    {
+      "id": "TS0188",
+      "previous_price_fils": 16950,
+      "price_fils": 11865,
+      "discount_percent": 30
+    },
+    {
+      "id": "TS0190",
+      "previous_price_fils": 14950,
+      "price_fils": 11960,
+      "discount_percent": 20
+    }
+  ]
+}

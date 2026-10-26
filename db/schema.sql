@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS orders (
  payment_method TEXT NOT NULL CHECK(payment_method IN ('cod','cliq')),cliq_alias TEXT,
  status TEXT NOT NULL DEFAULT 'جديد' CHECK(status IN ('جديد','قيد التجهيز','تم')),
  subtotal_fils INTEGER NOT NULL CHECK(subtotal_fils>=0),
+ shipping_fee_fils INTEGER CHECK(shipping_fee_fils IS NULL OR shipping_fee_fils>=0),
  notification_status TEXT NOT NULL DEFAULT 'غير مفعّل',
  created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );

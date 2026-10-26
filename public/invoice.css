@@ -1,0 +1,8 @@
+.invoice{font-family:Tahoma,Arial,sans-serif;color:#242424;background:#fff}
+.invoice-header{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:2px solid #543e46;padding-bottom:20px}
+.invoice-logo{font:bold 29px Georgia,serif}.invoice-logo small{display:block;font:14px Tahoma,sans-serif;margin-top:5px}
+.invoice h2{font-size:18px;margin:22px 0 14px}.invoice-details{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;font-size:12px;line-height:1.8}.invoice-details span{overflow-wrap:anywhere}
+.invoice table{margin-top:20px;width:100%;border-collapse:collapse}.invoice th,.invoice td{border:1px solid #aaa;padding:10px;white-space:normal}.invoice tr{break-inside:avoid}.invoice thead{display:table-header-group}
+.invoice .mini{width:40px;height:44px;object-fit:contain;vertical-align:middle;margin-inline-end:6px}.invoice-total{margin-top:20px;text-align:left;font-size:18px;font-weight:bold}.invoice-footer{font-size:11px;color:#666;margin-top:30px;text-align:center}
+@page{size:A4;margin:12mm}
+@media print{.invoice{width:100%;max-width:none;margin:0;padding:0}.invoice-header{padding-bottom:10mm}}

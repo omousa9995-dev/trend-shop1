@@ -9,7 +9,8 @@
     "binding": "ASSETS",
     "run_worker_first": [
       "/api/*",
-      "/media/*"
+      "/media/*",
+      "/images/catalog/*"
     ]
   },
   "d1_databases": [

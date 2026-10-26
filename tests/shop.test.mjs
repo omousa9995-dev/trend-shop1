@@ -28,14 +28,35 @@ function fixture(){const DB=mockDB();DB.sql.prepare(`INSERT INTO products(id,bra
 async function api(url,env,ctx,body,headers={}){const opts={method:body?'POST':'GET',headers:{...headers}};if(body){opts.headers['content-type']='application/json';opts.headers.origin='https://trend.test';opts.body=JSON.stringify(body)}return await worker.fetch(new Request('https://trend.test'+url,opts),env,ctx)}
 const cart={name:'سارة أحمد',phone:'0791234567',email:'sara@example.com',governorate:'عمّان',address:'شارع الجامعة، عمارة 25، الطابق الثاني',payment:'cod',items:[{id:'TS0001',qty:1}]};
 
+test('Delivery is server-calculated after discounts, strictly above 19 JOD, saved and replayed unchanged',async()=>{
+ const originalFetch=globalThis.fetch;let mailed;
+ globalThis.fetch=async(_,options)=>{mailed=JSON.parse(options.body).order;return Response.json({ok:true,ownerSent:true})};
+ try{for(const [subtotal,expected] of [[18999,null],[19000,null],[19001,0],[20000,0]]){
+  const f=fixture();f.DB.sql.prepare('UPDATE products SET price_fils=?,stock=3').run(subtotal);
+  const key='delivery-boundary-'+subtotal;
+  const payload={...cart,email:'',address:'العبدلي',expectedSubtotalFils:subtotal,shippingFeeFils:999999,items:[{id:'TS0001',qty:1}]};
+  const response=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':key});
+  assert.equal(response.status,201,await response.clone().text());assert.equal((await response.json()).shippingFeeFils,expected);
+  const saved=f.DB.sql.prepare('SELECT * FROM orders').get();assert.equal(saved.shipping_fee_fils,expected);assert.equal(saved.email,null);
+  await Promise.all(f.pending);assert.equal(mailed.shipping_fee_fils,expected);assert.equal(mailed.subtotal_fils,subtotal);assert.match(mailed.notes,expected===0?/التوصيل: مجاني/:/تُؤكّد الرسوم/);
+  f.DB.sql.prepare('UPDATE products SET price_fils=500').run();
+  const repeated=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':key});const data=await repeated.json();
+  assert.equal(data.duplicate,true);assert.equal(data.subtotalFils,subtotal);assert.equal(data.shippingFeeFils,expected);assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,2);
+ }}finally{globalThis.fetch=originalFetch}
+});
+test('A stale cart cannot silently confirm a changed price or debit stock',async()=>{
+ const f=fixture();const response=await api('/api/orders',f.env,f.ctx,{...cart,expectedSubtotalFils:100}, {'x-idempotency-key':'stale-price-test-20261026'});
+ assert.equal(response.status,409);assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,0);assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,1);
+});
+
 test('Order notifications explicitly record successful owner and customer confirmations',async()=>{
  const f=fixture(),originalFetch=globalThis.fetch;globalThis.fetch=async()=>Response.json({ok:true,ownerSent:true,customerSent:true});
- try{assert.equal((await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'mail-both-20261025'})).status,201);await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'تم الإرسال للمتجر والعميلة');}finally{globalThis.fetch=originalFetch;}
+ try{assert.equal((await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'mail-both-20261025'})).status,201);await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'تم الإرسال للمتجر والزبونة');}finally{globalThis.fetch=originalFetch;}
 });
 
 test('A customer confirmation failure is visible without losing the saved order or its owner notice',async()=>{
  const f=fixture(),originalFetch=globalThis.fetch;globalThis.fetch=async()=>Response.json({ok:true,ownerSent:true,customerSent:false,customerError:'customer_quota_exhausted'});
- try{assert.equal((await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'mail-partial-20261025'})).status,201);await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,1);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'تم الإرسال للمتجر؛ تعذر إشعار العميلة');}finally{globalThis.fetch=originalFetch;}
+ try{assert.equal((await api('/api/orders',f.env,f.ctx,cart,{'x-idempotency-key':'mail-partial-20261025'})).status,201);await Promise.all(f.pending);assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,1);assert.equal(f.DB.sql.prepare('SELECT notification_status FROM orders').get().notification_status,'تم الإرسال للمتجر؛ تعذر إشعار الزبونة');}finally{globalThis.fetch=originalFetch;}
 });
 
 test('The order notification cannot report success when its owner notice was explicitly refused',async()=>{
@@ -130,7 +151,7 @@ test('The curated catalog preserves auditable reference prices and uses reviewed
  const c=JSON.parse(file('public/catalog.json'));
  assert.equal(c.length,173);assert.equal(new Set(c.map(p=>p.id)).size,173);
  const shops=new Set(c.map(p=>p.source));assert.ok(shops.has('LeoMarka'));assert.ok([...shops].some(s=>s.includes('Ksecret')));
- for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.discount,0);assert.equal(p.priceFils,p.reference);assert.equal(p.approved,true);assert.equal(p.stock,24)}
+ for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.priceFils,p.reference*(100-p.discount)/100);assert.equal(p.approved,true);assert.equal(p.stock,24)}
  assert.ok(fs.existsSync(new URL('public/images/hero.webp',root)));
 });
 test('No actual sensitive customer data or forbidden card processors are bundled',()=>{
