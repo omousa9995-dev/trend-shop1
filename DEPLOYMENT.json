@@ -7,7 +7,7 @@
   "database_id": "8005969e-e086-4adf-8e82-bf5b24117648",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
-  "version": "1.8.0",
+  "version": "1.8.1",
   "media_namespace_id": "53e37dea60dd4eed9c5274953cf0b8a7",
   "catalog_products": 173,
   "original_entries": 190,
@@ -22,7 +22,7 @@
   "initial_total_units": 4152,
   "mail_connected": true,
   "owner_admin_activated": true,
-  "automated_tests_passed": 73,
+  "automated_tests_passed": 87,
   "mail_setup_stage": "live_checkout_and_notifications_verified",
   "mail_google_authorized": true,
   "mail_owner_test_sent": true,
@@ -47,10 +47,10 @@
   },
   "pages_deployment_id": "9b4d74fc-c858-44fb-ae84-472c1bbd7c79",
   "previous_version_backup": {
-    "version": "1.7.0",
-    "branch": "backup/v1.7.0-before-commerce-upgrade-2026-10-26",
-    "commit": "fa800e40a0d65f487d1cab9f62862185b9c492ef",
-    "worker_version": "0289962c-bfeb-454c-a7fc-b7c0ff4ca3cc"
+    "version": "1.8.0",
+    "branch": "backup/v1.8.0-before-search-share-2026-10-26",
+    "commit": "e24cfb8b7e60c1581976be3d68161358bad969d9",
+    "worker_version": "f4476924-ec88-4aaf-bd91-5508d5307034"
   },
   "editorial_images": 6,
   "additional_gallery_photos": 22,
@@ -77,6 +77,12 @@
       "branch": "backup/v1.6.1-before-launch-sale-2026-10-26",
       "commit": "6c58ca5fb485f9bb2a9b4d49fe52ec6b8b0fb31d",
       "worker_version": "45ca290a-5dc8-44db-be67-7e1eb63b9447"
+    },
+    {
+      "version": "1.7.0",
+      "branch": "backup/v1.7.0-before-commerce-upgrade-2026-10-26",
+      "commit": "fa800e40a0d65f487d1cab9f62862185b9c492ef",
+      "worker_version": "0289962c-bfeb-454c-a7fc-b7c0ff4ca3cc"
     }
   ],
   "category_gateways": 5,
@@ -111,6 +117,10 @@
   "image_zoom_max_percent": 400,
   "search_suggestion_click_verified": true,
   "admin_promotion_ui_verified_in_isolated_demo": true,
-  "frontend_cache_revision": "1.8.0.1",
-  "image_viewer_fit_verified_live": true
+  "frontend_cache_revision": "1.8.1",
+  "image_viewer_fit_verified_live": true,
+  "product_share_supported": true,
+  "product_share_example": "https://trendjo.pages.dev/p/TS0064",
+  "product_share_metadata_server_rendered": true,
+  "search_touch_blur_regression_tested": true
 }

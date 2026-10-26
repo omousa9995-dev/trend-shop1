@@ -1,6 +1,6 @@
 {
   "name": "trend-shop-jo",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,6 +13,7 @@
     "catalog:curate": "python3 scripts/curate-catalog.py"
   },
   "devDependencies": {
+    "jsdom": "26.1.0",
     "wrangler": "^4.0.0"
   }
 }

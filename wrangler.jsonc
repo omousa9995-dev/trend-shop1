@@ -9,6 +9,7 @@
     "binding": "ASSETS",
     "run_worker_first": [
       "/api/*",
+      "/p/*",
       "/media/*",
       "/images/catalog/*"
     ]
