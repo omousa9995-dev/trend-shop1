@@ -1,8 +1,8 @@
 {
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
-  "deployed_at": "2026-10-26",
-  "deployment_id": "f4476924ec884aafbd915508d5307034",
+  "deployed_at": "2026-10-26T13:16:17.75452Z",
+  "deployment_id": "f4fcced3f6c34569b4c14a94bad1ae2d",
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
   "database_id": "8005969e-e086-4adf-8e82-bf5b24117648",
   "mode": "api-preview-embedded-assets",
@@ -122,5 +122,12 @@
   "product_share_supported": true,
   "product_share_example": "https://trendjo.pages.dev/p/TS0064",
   "product_share_metadata_server_rendered": true,
-  "search_touch_blur_regression_tested": true
+  "search_touch_blur_regression_tested": true,
+  "worker_version_id": "f4fcced3-f6c3-4569-b4c1-4a94bad1ae2d",
+  "product_share_live_verified": true,
+  "product_share_clipboard_verified": true,
+  "product_direct_url_live_verified": true,
+  "isolated_preview_disabled_after_qa": true,
+  "physical_iphone_tested": false,
+  "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/40329018501"
 }
