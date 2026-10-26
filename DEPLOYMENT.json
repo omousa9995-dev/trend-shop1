@@ -2,7 +2,7 @@
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
   "deployed_at": "2026-10-26",
-  "deployment_id": "a058c06f0c9f41d7ad10953a60606846",
+  "deployment_id": "f4476924ec884aafbd915508d5307034",
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
   "database_id": "8005969e-e086-4adf-8e82-bf5b24117648",
   "mode": "api-preview-embedded-assets",
@@ -110,5 +110,7 @@
   "additional_image_files": 259,
   "image_zoom_max_percent": 400,
   "search_suggestion_click_verified": true,
-  "admin_promotion_ui_verified_in_isolated_demo": true
+  "admin_promotion_ui_verified_in_isolated_demo": true,
+  "frontend_cache_revision": "1.8.0.1",
+  "image_viewer_fit_verified_live": true
 }

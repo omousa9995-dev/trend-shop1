@@ -1,5 +1,5 @@
 import {shippingFee, shippingMessage, thumbnailFor, largeImageFor, quoteCart, deliveryNudge, recommendations, promotionData, money} from './commerce.js?v=1.8.0';
-import {createImageZoom} from './image-zoom.js?v=1.8.0';
+import {createImageZoom} from './image-zoom.js?v=1.8.0.1';
 import {normalizeSearch, productDetails, searchProducts, nextQuantity, productGallery} from './shop-tools.js';
 /* Trend Shop: zero-dependency Arabic storefront, progressive enhancements, no third-party trackers. */
 (()=>{'use strict';
