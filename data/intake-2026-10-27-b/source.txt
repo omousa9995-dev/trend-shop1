@@ -2,9 +2,9 @@ NEW|0418|Beauty of Joseon|Revive Eye Serum Ginseng + Retinal|سيروم ريفا
 NEW|0418|AXIS-Y|Cera-Heart My Type Duo Cream|كريم سيرا هارت ماي تايب ديو من أكسيس واي|البشرة|moisturizer|60 ml|16000|11990|AXIS Y Cera Heart My Type Duo Cream 60ml
 NEW|0418|Balance Active Formula|The Mighty Three Serum Set|مجموعة ذا مايتي ثري من بالانس — 3 سيرومات|البشرة|serum|3 × 30 ml|20000|14990|Balance Active Formula The Mighty Three 3x30ml set
 NEW|0418|Maybelline|Super Stay Vinyl Ink Liquid Lipcolor|أحمر شفاه سوبر ستاي فينيل إنك من ميبيلين|المكياج|lips||10000|6990|Maybelline Super Stay Vinyl Ink liquid lipstick
-TS0138|0418|Marvis|Whitening Mint|معجون أسنان وايتننغ منت من مارفيس|الجسم|oral-care||||
-TS0077|0418|Fino|Premium Touch Hair Mask|ماسك بريميوم تاتش للشعر من فينو|الشعر|hair-mask||||
-TS0091|0418|Anua|Heartleaf 77% Soothing Toner|تونر هارت ليف 77% من أنوا|البشرة|toner||||
+EXISTING:TS0138|0418|Marvis|Whitening Mint|معجون أسنان وايتننغ منت من مارفيس|الجسم|oral-care||0|0|
+EXISTING:TS0077|0418|Fino|Premium Touch Hair Mask|ماسك بريميوم تاتش للشعر من فينو|الشعر|hair-mask||0|0|
+EXISTING:TS0091|0418|Anua|Heartleaf 77% Soothing Toner|تونر هارت ليف 77% من أنوا|البشرة|toner||0|0|
 NEW|0418|L'Oreal Paris|Telescopic Original Mascara 910 Blackest Black|ماسكارا تلسكوبيك أوريجينال من لوريال — 910 أسود|المكياج|mascara||10000|6990|Loreal Telescopic Original mascara 910 Blackest Black gold
 NEW|0418|L'Oreal Paris|Telescopic Waterproof Mascara Blue Tube|ماسكارا تلسكوبيك المقاومة للماء من لوريال — العبوة الزرقاء|المكياج|mascara||12000|8990|Loreal Telescopic Waterproof mascara blue tube
 NEW|0418|essence|I Love Extreme Crazy Volume Mascara|ماسكارا آي لاف إكستريم كريزي فوليوم من إيسنس — الوردية|المكياج|mascara||6000|3990|essence I love extreme crazy volume mascara pink
@@ -14,7 +14,7 @@ NEW|0418|NARS|Climax Mascara|ماسكارا كلايماكس من نارس|ال�
 NEW|0418|essence|I Love Extreme Volume Mascara|ماسكارا آي لاف إكستريم فوليوم من إيسنس — السوداء|المكياج|mascara||6000|3990|essence I love extreme volume mascara black pink
 NEW|0418|Dior|Diorshow Iconic Overcurl Mascara|ماسكارا ديورشو آيكونيك أوفركيرل من ديور|المكياج|mascara||20000|14990|Dior Diorshow Iconic Overcurl mascara silver
 NEW|0419|Rose Berry|Translucent Loose Setting Powder|بودرة التثبيت السائبة من روز بيري|المكياج|powder||6000|3990|Rose Berry translucent loose setting powder pink ball
-TS0109|0419|COSRX|Low pH Good Morning Gel Cleanser|غسول لو بي إتش غود مورنينغ من كوسركس|البشرة|cleanser||||
+EXISTING:TS0109|0419|COSRX|Low pH Good Morning Gel Cleanser|غسول لو بي إتش غود مورنينغ من كوسركس|البشرة|cleanser||0|0|
 NEW|0419|Flormar|Artliner Eyeliner Pen|قلم آرتلاينر لتحديد العيون من فلورمار|المكياج|eyeliner||6000|3990|Flormar Artliner eyeliner pen black
 NEW|0419|HiGeen|Roll-On Deodorant Collection|مزيل عرق رول أون من هايجين — اختاري نسختكِ|الجسم|deodorant||4000|2500|HiGeen roll on deodorant cotton comfort fruity fresh super sensitive
 NEW|0419|Lady Speed Stick|Deodorant Stick Collection|مزيل عرق ستيك من ليدي سبيد ستيك — اختاري العبوة|الجسم|deodorant||5000|3500|Lady Speed Stick fresh essence wild freesia teen spirit deodorant
@@ -27,7 +27,7 @@ NEW|0419|KIKO|Waterproof Eyeliner Pencil Collection|قلم تحديد عيون �
 NEW|0419|Flormar|Stylematic Eyeliner Pencil Collection|قلم ستايلماتيك لتحديد العيون من فلورمار|المكياج|eyeliner||5000|3500|Flormar Stylematic waterproof eyeliner pencil colored
 NEW|0419|CeraVe|Renewing SA Cleanser|غسول رينيوينغ SA من سيرافي|البشرة|cleanser|473 ml|18000|13500|CeraVe Renewing SA Cleanser 473ml
 NEW|0419|CeraVe|Hydrating Facial Cleanser Value Size|غسول هايدريتنغ المرطب من سيرافي — الحجم الكبير|البشرة|cleanser|562 ml|18000|13500|CeraVe Hydrating Facial Cleanser 562ml 19 fl oz
-TS0084|0419|AXIS-Y|Vegan Collagen Eye Serum|سيروم فيغن كولاجين للعين من أكسيس واي|البشرة|eye-care||||
+EXISTING:TS0084|0419|AXIS-Y|Vegan Collagen Eye Serum|سيروم فيغن كولاجين للعين من أكسيس واي|البشرة|eye-care||0|0|
 NEW|0420|SADOER|Grape Whipped Body Butter Cream|زبدة الجسم المخفوقة بالعنب من سادور|الجسم|body-care||6000|3990|Sadoer butter cream grape whipped body butter
 NEW|0420|CeraVe|Moisturising Cream|كريم الترطيب من سيرافي|الجسم|body-care|454 g|18000|13500|CeraVe Moisturising Cream 454g tub
 NEW|0420|QV|Cream|كريم كيو في لترطيب البشرة|الجسم|body-care|500 g|18000|13500|QV Cream 500g
@@ -36,34 +36,35 @@ NEW|0420|Kojie San|Skin Lightening Soap Classic|صابونة كوجي سان ا�
 NEW|0420|Elizavecca|Witch Piggy Hell-Pore Marine Collagen Ample|أمبول مارين كولاجين من إليزافيكا|البشرة|serum||10000|6990|Elizavecca Witch Piggy Hell Pore Marine Collagen Ample
 NEW|0420|SADOER|Strawberry Moisture Foot Mask|ماسك القدمين المرطب بالفراولة من سادور|الجسم|foot-care||3000|1490|Sadoer strawberry extract moisture soften exfoliation foot mask
 NEW|0420|SADOER|Collagen Face Cream|كريم كولاجين الوجه من سادور|البشرة|moisturizer||6000|3990|Sadoer collagen face cream gold jar
-NEW|0420|SADOER|Pink Salt Purifying Pore Scrub|مقشر الملح الوردي من سادور|الجسم|body-scrub|250 g|6000|3990|Sadoer Pink Salt purifying pore scrub 250g
+NEW|0420|SADOER|Pink Salt Purifying Foot Scrub|مقشر القدمين بالملح الوردي من سادور|الجسم|foot-care|250 g|6000|3990|Sadoer Pink Salt purifying pore scrub 250g
 NEW|0420|SADOER|Body Lotion Collection|لوشن الجسم من سادور — اختاري لمستكِ المفضلة|الجسم|body-care||5000|3500|Sadoer body lotion avocado strawberry niacinamide marshmallow blood orange
 NEW|0420|Johnson's|Baby Oil Pink Cap|زيت الأطفال من جونسون — العبوة الوردية|الجسم|body-oil||6000|3990|Johnsons baby oil pink cap
 NEW|0420|La Roche-Posay|Effaclar Duo+M|إيفاكلار ديو بلس إم من لاروش بوزيه|البشرة|moisturizer|40 ml|18000|13500|La Roche Posay Effaclar Duo M 40ml
 NEW|0420|Rare Beauty|Positive Light Liquid Luminizer|هايلايتر بوزيتيف لايت السائل من رير بيوتي|المكياج|highlighter||12000|8990|Rare Beauty Positive Light Liquid Luminizer
 NEW|0420|Hismile|V34 Colour Corrector Serum|سيروم تصحيح مظهر لون الأسنان V34 من هاي سمايل|الجسم|oral-care|30 ml|12000|7990|Hismile V34 Colour Corrector Serum 30ml
 NEW|0420|SADOER|Collagen Moisturizing Foot Mask|ماسك الكولاجين المرطب للقدمين من سادور|الجسم|foot-care||3000|1490|Sadoer collagen moisturizing foot mask gold
-NEW|0421|COIX CARE|Cool Intimate Wash Collection|غسول كول للعناية الخارجية من كويكس كير|الجسم|body-cleansing|215 ml|6000|3990|Coix Care Cool Intimate Wash Moroccan Formula Aker Fassi 215ml
-TS0061|0421|EQQUALBERRY|Vitamin Illuminating Serum|سيروم فيتامين إلومينيتنغ من إكوالبيري|البشرة|serum||||
-TS0088|0421|EQQUALBERRY|Bakuchiol Plumping Serum|سيروم باكوتشيول بلامبنغ من إكوالبيري|البشرة|serum||||
+NEW|0421|COVIX CARE|Cool Intimate Wash Collection|غسول كول للعناية الحميمة من كوفيكس كير|الجسم|body-cleansing|215 ml|6000|3990|Coix Care Cool Intimate Wash Moroccan Formula Aker Fassi 215ml
+EXISTING:TS0061|0421|EQQUALBERRY|Vitamin Illuminating Serum|سيروم فيتامين إلومينيتنغ من إكوالبيري|البشرة|serum||0|0|
+EXISTING:TS0088|0421|EQQUALBERRY|Bakuchiol Plumping Serum|سيروم باكوتشيول بلامبنغ من إكوالبيري|البشرة|serum||0|0|
 NEW|0421|Vaseline|Intensive Care Cocoa Radiant Body Oil|زيت كاكاو راديانت للجسم من فازلين|الجسم|body-oil|200 ml|7000|4990|Vaseline Intensive Care Cocoa Radiant Body Oil 200ml
-TS0133|0421|Vaseline|Intensive Care Vitamin B3 Body Oil|زيت فيتامين B3 للجسم من فازلين|الجسم|body-oil||||
+EXISTING:TS0133|0421|Vaseline|Intensive Care Vitamin B3 Body Oil|زيت فيتامين B3 للجسم من فازلين|الجسم|body-oil||0|0|
 NEW|0421|ACM|Novophane Reactional Anti-Hair Loss Lotion|لوشن نوفوفان رياكشنال للشعر من إيه سي إم|الشعر|hair-treatment|100 ml|20000|14990|ACM Novophane Reactional anti hair loss lotion 100ml
 NEW|0421|Medicube|Collagen Firming Sun Cream SPF50+|واقي الشمس كولاجين فيرمنغ من ميديكيوب SPF50+|البشرة|sunscreen|50 ml|16000|11990|Medicube Collagen Firming Sun Cream SPF50 50ml
 NEW|0421|Bioderma|Photoderm MAX SPF100 Tinted Cream|واقي فوتوديرم ماكس الملون من بيوديرما SPF100|البشرة|sunscreen|100 ml|18000|13500|Bioderma Photoderm MAX SPF100 tinted cream 100ml
 NEW|0421|Beauty Tools|Waist Training Corset|مشد الخصر القابل للضبط|الأدوات|shapewear||8000|5990|Waist training corset black waist belt
 NEW|0421|SHEGLAM|Complexion Pro Long Lasting Breathable Matte Foundation|كريم أساس كومبلكشن برو المات من شيغلام|المكياج|foundation||12000|8990|SHEGLAM Complexion Pro Long Lasting Breathable Matte Foundation
-TS0122|0421|SOME BY MI|Retinol Intense Reactivating Serum|سيروم ريتينول إنتنس من سوم باي مي|البشرة|serum||||
+EXISTING:TS0122|0421|SOME BY MI|Retinol Intense Reactivating Serum|سيروم ريتينول إنتنس من سوم باي مي|البشرة|serum||0|0|
 NEW|0421|La Roche-Posay|Retinol B3 Serum|سيروم ريتينول B3 من لاروش بوزيه|البشرة|serum|30 ml|20000|14990|La Roche Posay Retinol B3 Serum 30ml
 NEW|0421|La Roche-Posay|Pure Vitamin C10 Serum|سيروم بيور فيتامين C10 من لاروش بوزيه|البشرة|serum|30 ml|20000|14990|La Roche Posay Pure Vitamin C10 serum 30ml
 NEW|0421|La Roche-Posay|Effaclar Ultra Concentrated Serum|سيروم إيفاكلار ألترا كونسنتريتد من لاروش بوزيه|البشرة|serum|30 ml|20000|14990|La Roche Posay Effaclar Ultra Concentrated serum 30ml
-TS0078|0421|SKIN1004|Madagascar Centella Tone Brightening Capsule Ampoule|أمبول تون برايتننغ كبسول من سكين 1004|البشرة|serum||||
+EXISTING:TS0078|0421|SKIN1004|Madagascar Centella Tone Brightening Capsule Ampoule|أمبول تون برايتننغ كبسول من سكين 1004|البشرة|serum||0|0|
 NEW|0421|Garnier|SkinActive Micellar Cleansing Water|ماء ميسيلار سكين أكتيف من غارنييه|البشرة|cleanser|400 ml|7000|4990|Garnier SkinActive Micellar Cleansing Water 400ml pink
 NEW|0421|Garnier|Micellar Cleansing Rose Water|ماء ميسيلار الورد من غارنييه|البشرة|cleanser|400 ml|8000|5990|Garnier Micellar Cleansing Rose Water 400ml
-NEW|0421|Maybelline|The Falsies Surreal Extensions Mascara|ماسكارا ذا فولسيز سوريال إكستنشنز من ميبيلين|المكياج|mascara||12000|8990|Maybelline The Falsies Surreal Extensions mascara pink
-NEW|0422|حسب العبوة|Plump It Sponge Tip Click Applicator Lip Product|ليب بلامبر بفرشاة إسفنجية — العبوة الفضية|المكياج|lips||6000|3990|Plump It sponge tip click applicator silver lip plumper black box
+NEW|0421|Maybelline|Mascara Fuchsia Photographed Edition|ماسكارا ميبيلين — العبوة الوردية المصوّرة|المكياج|mascara||12000|8990|Maybelline The Falsies Surreal Extensions mascara pink
+NEW|0422|Plump it!|Volumising Lip Plumper Sponge Tip Click Applicator|ليب بلامبر بفرشاة إسفنجية من بلامب إت|المكياج|lips||6000|3990|Plump It sponge tip click applicator silver lip plumper black box
 NEW|0422|L'Oreal Paris|Infallible Full Wear Concealer|كونسيلر إنفاليبل فول وير من لوريال|المكياج|concealer||12000|8990|Loreal Infallible Full Wear concealer 10ml
 NEW|0422|Maybelline|Instant Age Rewind Eraser Concealer|كونسيلر إنستانت إيج ريوايند إيريزر من ميبيلين|المكياج|concealer||10000|6990|Maybelline Instant Age Rewind Eraser multi use concealer
 NEW|0422|PanOxyl|Acne Foaming Wash Benzoyl Peroxide 10%|غسول بان أوكسيل الرغوي بنزويل بيروكسيد 10%|البشرة|cleanser|156 g|14000|9990|PanOxyl Acne Foaming Wash 10 percent benzoyl peroxide 156g
-TS0129|0422|Secret Key|Snow White Spot Gel|جل سنو وايت سبوت من سيكريت كي|البشرة|moisturizer||||
+EXISTING:TS0129|0422|Secret Key|Snow White Spot Gel|جل سنو وايت سبوت من سيكريت كي|البشرة|moisturizer||0|0|
 NEW|0422|حسب العبوة|Cacumen Biotae Shampoo Brick|شامبو صلب بأوراق التويا — العبوة المثلثة|الشعر|shampoo||5000|2500|Cacumen Biotae shampoo brick triangle green
+NEW|0421|Bioderma|Photoderm SPF100 Invisible Body Sun Milk|حليب الشمس غير الملون للجسم من بيوديرما فوتوديرم|الجسم|body-sunscreen|100 ml|18000|13500|Bioderma Photoderm MAX SPF100 invisible texture face body 100ml white box

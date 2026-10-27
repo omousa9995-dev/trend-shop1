@@ -125,7 +125,7 @@ test('Checkout still rejects an invalid nonempty email without saving an order',
 test('Admin saves an uploaded photo with individual Arabic details, then hides it without losing the content',async()=>{
  const f=fixture();const cookie='ts_admin='+await _test.makeSession(f.env);
  const image='/media/uploads/2026-10/01234567-89ab-4cde-8fab-0123456789ab.jpg';
- const details={nameAr:'كريم اختبار',tagline:'عناية خاصة',benefits:['ترطيب','نعومة','راحة'],howToUse:'على بشرة نظيفة',notes:'اختبار',collection:'k-beauty',featuredOrder:9,imageType:'photo',productType:'moisturizer',size:'30 ml',shade:'',variantNote:'تأكيد النسخة',introductoryOffer:true,intakeBatch:'2026-10-27',imageEditedWithAI:false,imageNote:''};
+ const details={nameAr:'كريم اختبار',tagline:'عناية خاصة',benefits:['ترطيب','نعومة','راحة'],howToUse:'على بشرة نظيفة',notes:'اختبار',collection:'k-beauty',featuredOrder:9,imageType:'photo',productType:'moisturizer',size:'30 ml',shade:'',variantNote:'تأكيد النسخة',introductoryOffer:true,intakeBatch:'2026-10-27',imageEditedWithAI:false,imageNote:'',referenceShade:'',shadeCodes:{'tone-1':'','tone-2':'','tone-3':'','tone-4':''},optionLabel:'',options:[]};
  const body={id:'TSPHOTO1',name:'Photo Product',brand:'TEST',category:'البشرة',subcategory:'مرطب',description:'وصف فردي للاختبار',reference_price_fils:10000,discount_percent:20,stock:0,approved:false,active:true,image_url:image,details};
  const headers={cookie,'x-trend-admin':'1'};
  const response=await api('/api/admin/products',f.env,f.ctx,body,headers);assert.equal(response.status,200,await response.text());
@@ -155,7 +155,7 @@ test('Admin can create and edit a tools product while preserving its type and va
 
 test('The curated catalog preserves auditable reference prices and uses reviewed product photos',()=>{
  const c=JSON.parse(file('public/catalog.json'));
- assert.equal(c.length,258);assert.equal(new Set(c.map(p=>p.id)).size,c.length);
+ assert.equal(c.length,317);assert.equal(new Set(c.map(p=>p.id)).size,c.length);
  const shops=new Set(c.map(p=>p.source));assert.ok(shops.has('LeoMarka'));assert.ok([...shops].some(s=>s.includes('Ksecret')));
  for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.discount,Math.floor((p.reference-p.priceFils)*100/p.reference+1e-8));assert.equal(p.approved,true);assert.equal(p.stock,24)}
  assert.ok(fs.existsSync(new URL('public/images/hero.webp',root)));
@@ -269,4 +269,26 @@ test('Bulk discounts work for more than 100 products without exceeding D1 bound-
  for(let i=0;i<150;i++){const id='TSBULK'+String(i).padStart(4,'0');ids.push(id);f.DB.sql.prepare("INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,stock,approved,active) VALUES (?, 'TEST','Bulk product','البشرة',5000,5000,24,1,1)").run(id)}
  const prepare=f.DB.prepare;f.DB.prepare=function(sql){const statement=prepare(sql),bind=statement.bind;statement.bind=(...args)=>{assert.ok(args.length<=100,'D1 permits at most 100 bound parameters');return bind(...args)};return statement};
  const response=await api('/api/admin/discounts',f.env,f.ctx,{ids,percent:25},{cookie,'x-trend-admin':'1'});assert.equal(response.status,200,await response.clone().text());assert.equal((await response.json()).updated,150);assert.equal(f.DB.sql.prepare("SELECT SUM(stock) n FROM products WHERE id LIKE 'TSBULK%'").get().n,3600);
+});
+
+test('Two tones of one product save a frozen choice breakdown, debit shared stock once, and reach invoice and mail',async()=>{
+ const f=fixture(),originalFetch=globalThis.fetch;let mailed;globalThis.fetch=async(_,o)=>{mailed=JSON.parse(o.body).order;return Response.json({ok:true,ownerSent:true})};
+ f.DB.sql.prepare("UPDATE products SET category='المكياج',stock=24,details_json=?").run(JSON.stringify({productType:'foundation',shadeCodes:{'tone-2':'REAL-CODE'}}));
+ const payload={...cart,email:'',address:'العبدلي',items:[{id:'TS0001',qty:2,variant:'tone-1',label:'FORGED'},{id:'TS0001',qty:1,variant:'tone-2'}]};
+ try{
+  const response=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':'tone-multi-choice-integration'});assert.equal(response.status,201,await response.clone().text());const receipt=await response.json();assert.equal(receipt.subtotalFils,24000);assert.equal(receipt.shippingFeeFils,0);
+  const rows=f.DB.sql.prepare('SELECT * FROM order_items').all();assert.equal(rows.length,1);assert.equal(rows[0].qty,3);const options=JSON.parse(rows[0].options_snapshot);assert.deepEqual(options.map(x=>[x.id,x.qty]),[['tone-1',2],['tone-2',1]]);assert.match(options[1].label,/REAL-CODE/);assert.doesNotMatch(rows[0].options_snapshot,/FORGED/);assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,21);
+  await Promise.all(f.pending);assert.match(mailed.items[0].name,/فاتح × 2/);assert.match(mailed.items[0].name,/وسط فاتح.*× 1/);
+  f.DB.sql.exec("UPDATE products SET details_json='{}',category='البشرة',price_fils=500");const replay=await api('/api/orders',f.env,f.ctx,payload,{'x-idempotency-key':'tone-multi-choice-integration'});assert.equal((await replay.json()).duplicate,true);assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,21);assert.deepEqual(JSON.parse(f.DB.sql.prepare('SELECT options_snapshot FROM order_items').get().options_snapshot),options);
+  const {invoice}=await import('../public/invoice.js');const html=invoice({...f.DB.sql.prepare('SELECT * FROM orders').get(),items:rows});assert.match(html,/فاتح × 2/);assert.match(html,/REAL-CODE/);assert.doesNotMatch(html,/FORGED/);
+ }finally{globalThis.fetch=originalFetch;f.DB.sql.close()}
+});
+test('Missing, unknown, duplicated, over-cap or out-of-stock tone choices never save orders or reduce stock',async()=>{
+ const f=fixture();f.DB.sql.prepare("UPDATE products SET stock=4,category='المكياج',details_json=?").run(JSON.stringify({productType:'powder'}));
+ const cases=[[[{id:'TS0001',qty:1}],400],[[{id:'TS0001',qty:1,variant:'fake'}],400],[[{id:'TS0001',qty:1,variant:'tone-1'},{id:'TS0001',qty:1,variant:'tone-1'}],400],[[{id:'TS0001',qty:6,variant:'tone-1'},{id:'TS0001',qty:5,variant:'tone-2'}],400],[[{id:'TS0001',qty:3,variant:'tone-1'},{id:'TS0001',qty:2,variant:'tone-2'}],409]];
+ for(const [i,[items,status]] of cases.entries()){const r=await api('/api/orders',f.env,f.ctx,{...cart,items},{'x-idempotency-key':'bad-tone-choice-'+i});assert.equal(r.status,status,await r.clone().text());assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,4);assert.equal(f.DB.sql.prepare('SELECT count(*) n FROM orders').get().n,0)}
+ assert.equal(f.pending.length,0);f.DB.sql.close();
+});
+test('Admin can save real tone code mappings and scent options, stripping malformed metadata',async()=>{
+ const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env);const response=await api('/api/admin/products',f.env,f.ctx,{id:'TSVARIANTTEST',name:'Test powder',brand:'Test',category:'المكياج',description:'Test',reference_price_fils:6000,price_fils:3990,discount_percent:33,stock:24,image_url:'/images/TS0001.svg',approved:true,active:true,details:{productType:'powder',shadeCodes:{'tone-1':'ACTUAL-01','tone-2':'ACTUAL-02',fake:'ignored'},optionLabel:'النسخة',options:[{id:'avocado',label:'الأفوكادو'},{id:'<script>',label:'Bad'}]}},{cookie,'x-trend-admin':'1'});assert.equal(response.status,200,await response.clone().text());const d=JSON.parse(f.DB.sql.prepare("SELECT details_json FROM products WHERE id='TSVARIANTTEST'").get().details_json);assert.equal(d.shadeCodes['tone-1'],'ACTUAL-01');assert.equal(d.shadeCodes.fake,undefined);assert.equal(d.options.length,1);assert.equal(d.optionLabel,'النسخة');f.DB.sql.close();
 });

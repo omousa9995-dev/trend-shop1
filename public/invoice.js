@@ -1,5 +1,5 @@
 import {optionSummary} from './product-variants.js?v=2.0.0';
-import {money as regularMoney} from './commerce.js?v=1.8.0';
+import {money as regularMoney} from './commerce.js?v=2.0.0';
 // Preserve exact historical fils while new retail amounts use two decimals.
 const money=n=>Number(n)%10?`${(Number(n)/1000).toFixed(3)} د.أ`:regularMoney(n);
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

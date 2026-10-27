@@ -7,7 +7,7 @@ import {productType,matchesProductType} from '../public/product-types.js';
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const catalog=JSON.parse(read('public/catalog.json')),products=JSON.parse(read('data/intake-2026-10-27/products.json')),manifest=JSON.parse(read('data/intake-2026-10-27/manifest.json')),images=JSON.parse(read('data/intake-2026-10-27/images.json'));
 test('Every photographed item maps to one of 85 new SKUs or 9 existing SKUs, with distinct sizes and brands retained',()=>{
- assert.equal(manifest.length,94);assert.equal(manifest.filter(p=>p.existing).length,9);assert.equal(products.length,85);assert.equal(catalog.length,258);assert.equal(new Set(catalog.map(p=>p.id)).size,258);
+ assert.equal(manifest.length,94);assert.equal(manifest.filter(p=>p.existing).length,9);assert.equal(products.length,85);assert.equal(catalog.length,317);assert.equal(new Set(catalog.map(p=>p.id)).size,317);
  for(const r of manifest)assert.equal(catalog.filter(p=>p.id===r.id).length,1,r.id);
  assert.match(products.find(p=>p.id==='TS0215').details.size,/100/);assert.ok(catalog.some(p=>p.id==='TS0059'));
  for(const id of ['TS0202','TS0257','TS0258'])assert.equal(productType(catalog.find(p=>p.id===id)),'mascara');
@@ -51,10 +51,10 @@ test('Dedicated mascara page lists only mascara and keeps type, query and sortin
  const field=d.querySelector('#queryInput');field.value='ميس لارا';field.dispatchEvent(new w.Event('input',{bubbles:true}));await new Promise(r=>setTimeout(r,130));assert.equal(d.querySelector('#resultCount').textContent,'2 منتج');
  const sort=d.querySelector('#sortSelect');sort.value='price-asc';sort.dispatchEvent(new w.Event('change',{bubbles:true}));for(let i=0;i<40&&!w.location.hash.includes('sort=price-asc');i++)await pause();await pause();assert.match(w.location.hash,/type=mascara/);assert.equal(d.querySelector('#typeSelect').value,'mascara');assert.equal(d.querySelector('#queryInput').value,'ميس لارا');assert.equal(d.querySelector('#resultCount').textContent,'2 منتج');
 });
-test('New arrivals contain all 85 additions and new details expose shade, image origin, zoom and sharing',async t=>{
- const {w,d,sends}=await open(t,'#/shop?new=1');assert.equal(d.querySelector('#resultCount').textContent,'85 منتج');
- w.location.hash='#/product/TS0275';for(let i=0;i<40&&!d.querySelector('.detail-content');i++)await pause();assert.match(d.querySelector('.detail-specs').textContent,/200 Ivory/);assert.match(d.querySelector('.image-origin-note').textContent,/بالذكاء الاصطناعي/);assert.ok(d.querySelector('#shareProduct'));assert.ok(d.querySelector('#openImageZoom'));assert.match(d.querySelector('.intro-price-note').textContent,/السعر العادي/);assert.equal(d.querySelector('.old-price').getAttribute('aria-label'),'السعر العادي');assert.equal(sends(),0);
+test('New arrivals show the latest 59 additions; details offer tone choices without technical image captions',async t=>{
+ const {w,d,sends}=await open(t,'#/shop?new=1');assert.equal(d.querySelector('#resultCount').textContent,'59 منتج');
+ w.location.hash='#/product/TS0275';for(let i=0;i<40&&!d.querySelector('.detail-content');i++)await pause();assert.equal(d.querySelectorAll('.variant-picker input').length,4);assert.doesNotMatch(d.body.textContent,/بالذكاء الاصطناعي/);assert.ok(d.querySelector('#shareProduct'));assert.ok(d.querySelector('#openImageZoom'));assert.match(d.querySelector('.intro-price-note').textContent,/السعر العادي/);assert.equal(d.querySelector('.old-price').getAttribute('aria-label'),'السعر العادي');assert.equal(sends(),0);
 });
 test('Tools are available as their own category and cannot leak into the face powder section',async t=>{
- const {d}=await open(t,'#/shop?cat=الأدوات');assert.equal(d.querySelector('#resultCount').textContent,'3 منتج');for(const id of ['TS0260','TS0276','TS0277'])assert.equal(catalog.find(p=>p.id===id).category,'الأدوات');assert.equal(matchesProductType(catalog.find(p=>p.id==='TS0219'),'powder'),false);
+ const {d}=await open(t,'#/shop?cat=الأدوات');assert.equal(d.querySelector('#resultCount').textContent,'4 منتج');for(const id of ['TS0260','TS0276','TS0277'])assert.equal(catalog.find(p=>p.id===id).category,'الأدوات');assert.equal(matchesProductType(catalog.find(p=>p.id==='TS0219'),'powder'),false);
 });
