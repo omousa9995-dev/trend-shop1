@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS order_items (
  product_id TEXT NOT NULL REFERENCES products(id),
  name_snapshot TEXT NOT NULL,image_snapshot TEXT,qty INTEGER NOT NULL CHECK(qty BETWEEN 1 AND 10),
  unit_price_fils INTEGER NOT NULL CHECK(unit_price_fils>=0),
+ options_snapshot TEXT NOT NULL DEFAULT '[]',
  PRIMARY KEY(order_id,product_id)
 );
 CREATE TRIGGER IF NOT EXISTS enforce_stock_before_order_item BEFORE INSERT ON order_items

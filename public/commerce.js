@@ -33,7 +33,7 @@ export function promotionData(p) {
 }
 // One best eligible offer is applied automatically. Offers never stack or reuse units.
 export function quoteCart(cart, products, promotions = []) {
-  const byId=new Map(products.map(p=>[p.id,p])),available=new Map(cart.map(x=>[x.id,x.qty]));
+  const byId=new Map(products.map(p=>[p.id,p])),available=new Map();for(const item of cart)available.set(item.id,(available.get(item.id)||0)+item.qty);
   const itemsSubtotalFils=cart.reduce((n,x)=>n+productPrice(byId.get(x.id))*x.qty,0);
   let best=null,discountFils=0,bestTotal=itemsSubtotalFils+shippingFee(itemsSubtotalFils),bestShipping=shippingFee(itemsSubtotalFils);
   for(const raw of promotions){
