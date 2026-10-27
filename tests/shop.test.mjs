@@ -125,7 +125,7 @@ test('Checkout still rejects an invalid nonempty email without saving an order',
 test('Admin saves an uploaded photo with individual Arabic details, then hides it without losing the content',async()=>{
  const f=fixture();const cookie='ts_admin='+await _test.makeSession(f.env);
  const image='/media/uploads/2026-10/01234567-89ab-4cde-8fab-0123456789ab.jpg';
- const details={nameAr:'كريم اختبار',tagline:'عناية خاصة',benefits:['ترطيب','نعومة','راحة'],howToUse:'على بشرة نظيفة',notes:'اختبار',collection:'k-beauty',featuredOrder:9,imageType:'photo'};
+ const details={nameAr:'كريم اختبار',tagline:'عناية خاصة',benefits:['ترطيب','نعومة','راحة'],howToUse:'على بشرة نظيفة',notes:'اختبار',collection:'k-beauty',featuredOrder:9,imageType:'photo',productType:'moisturizer',size:'30 ml',shade:'',variantNote:'تأكيد النسخة',introductoryOffer:true,intakeBatch:'2026-10-27',imageEditedWithAI:false,imageNote:''};
  const body={id:'TSPHOTO1',name:'Photo Product',brand:'TEST',category:'البشرة',subcategory:'مرطب',description:'وصف فردي للاختبار',reference_price_fils:10000,discount_percent:20,stock:0,approved:false,active:true,image_url:image,details};
  const headers={cookie,'x-trend-admin':'1'};
  const response=await api('/api/admin/products',f.env,f.ctx,body,headers);assert.equal(response.status,200,await response.text());
@@ -147,9 +147,15 @@ test('Admin enforces the owner sale-price range including the exact 0.500 and 20
  }
 });
 
+test('Admin can create and edit a tools product while preserving its type and variant information',async()=>{
+ const f=fixture(),headers={cookie:'ts_admin='+await _test.makeSession(f.env),'x-trend-admin':'1'};
+ const body={id:'TSTOOLTEST',name:'Foot file',brand:'Test',category:'الأدوات',subcategory:'العناية بالقدمين',description:'أداة قدمين للاختبار',reference_price_fils:3000,price_fils:1500,discount_percent:50,stock:24,approved:true,active:true,image_url:'/images/test.webp',details:{productType:'foot-tools',size:'1 piece',shade:'yellow',variantNote:'Test variant',introductoryOffer:true,imageEditedWithAI:true,imageNote:'صورة محسنة'}};
+ const response=await api('/api/admin/products',f.env,f.ctx,body,headers);assert.equal(response.status,200,await response.text());const stored=f.DB.sql.prepare("SELECT * FROM products WHERE id='TSTOOLTEST'").get(),details=JSON.parse(stored.details_json);assert.equal(details.productType,'foot-tools');assert.equal(details.size,'1 piece');assert.equal(details.variantNote,'Test variant');assert.equal(details.introductoryOffer,true);assert.equal(details.imageEditedWithAI,true);
+});
+
 test('The curated catalog preserves auditable reference prices and uses reviewed product photos',()=>{
  const c=JSON.parse(file('public/catalog.json'));
- assert.equal(c.length,173);assert.equal(new Set(c.map(p=>p.id)).size,173);
+ assert.equal(c.length,258);assert.equal(new Set(c.map(p=>p.id)).size,c.length);
  const shops=new Set(c.map(p=>p.source));assert.ok(shops.has('LeoMarka'));assert.ok([...shops].some(s=>s.includes('Ksecret')));
  for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.discount,Math.floor((p.reference-p.priceFils)*100/p.reference+1e-8));assert.equal(p.approved,true);assert.equal(p.stock,24)}
  assert.ok(fs.existsSync(new URL('public/images/hero.webp',root)));
