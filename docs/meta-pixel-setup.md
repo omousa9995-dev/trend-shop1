@@ -1,6 +1,6 @@
 # Meta Pixel setup — prepared 2026-11-01
 
-Status: source prepared and tested; not deployed. No Pixel/dataset was created by this change. The Meta creation dialog is ready with the name `Trend Shop Website` in portfolio `trend_shop.jo` (`467583567928517`), with the portfolio-wide automatic Conversions API option unchecked. Creation includes acceptance of Meta Business Tools Terms and awaits the owner's action-time confirmation.
+Status: created and published after the owner confirmed acceptance of Meta Business Tools Terms. Pixel/dataset **2055983688451688**, named `Trend Shop Website`, belongs to portfolio `trend_shop.jo` (`467583567928517`) and is connected to Smart Shop (`1494709724216142`). The portfolio-wide automatic Conversions API option and automatic advanced matching remain off. Live event receipt has not yet been confirmed in Meta Test Events; do not treat source installation as proof of receipt.
 
 ## Behavior
 
@@ -13,17 +13,17 @@ Status: source prepared and tested; not deployed. No Pixel/dataset was created b
 - No customer name, phone, email, delivery address, Maps location, notes or CliQ alias is passed to the Pixel integration. Automatic configuration/form matching is disabled. Meta can still receive normal browser/cookie/URL/IP data once the visitor opts in, as disclosed in the consent notice and privacy text.
 - The CSP allows the official Meta script and event destinations on the storefront. Administrative pages retain their existing stricter policy.
 
-## Complete activation after confirmation
+## Deployment record and remaining verification
 
-1. Create the prepared dataset/Pixel once, record its ID, and connect the existing Smart Shop ad account (`1494709724216142`). Do not create another ad account or catalog.
-2. Set public `META_PIXEL_ID` in the existing Worker's deployment configuration and commit the same non-secret ID to `wrangler.jsonc` for later deploys. Preserve all existing bindings and secrets without reading their values.
-3. Recheck the current main branch and deployed version before publishing to avoid replacing concurrent site changes. The last observed deployed version is `712fb2da-ebd6-4d19-86ee-cd5c1d912388`, serving 100% of traffic. Pages `trendjo` forwards to that Worker through its existing `STORE` service binding.
-4. Publish the validated source/assets using the existing deployment adapter or normal Workers Assets path. No schema migration, seed, catalog update, stock mutation or secret rotation is required.
-5. Verify actual Meta Test Events for consent, product view, accepted cart increments and checkout. Validate order tracking with isolated synthetic orders, never by creating a production order or triggering an owner/customer notification. Do not claim live event receipt until Meta visibly confirms it.
-6. Save the final Pixel ID, connected asset and deployment version in this document. Campaign budgets and publishing remain a separate task.
+1. Creation succeeded and the connected-assets view explicitly lists Smart Shop. The numerical ID is also shown in Events Manager and its official installation snippet.
+2. `META_PIXEL_ID` is configured on the deployed Worker and in `wrangler.jsonc` for subsequent deploys. Existing binding types were preserved without reading any secret values. No schema migration, seed, catalog change, stock mutation or credential rotation was performed.
+3. The deployment was based on unchanged main commit `4e0044de08f9d8a22504971b470fc0cea185c8f1`. The previous live worker module and the SHA-256 hashes of `/app.js` and `/index.html` were checked against that source before applying the update. The existing asset map was retained, changing only those two files and adding `/meta-pixel.js` and `/meta-pixel.css` (234 → 236 assets; 14 modules retained).
+4. Worker version `41d8a9a9-e236-4d0c-b4bf-7ec569582ba6` serves 100% of traffic, in deployment `62f72c79-af1c-4c2c-a695-9ecc76ac7e14`. Recovery version: `712fb2da-ebd6-4d19-86ee-cd5c1d912388`. Pages `trendjo` continues forwarding through its existing `STORE` service binding.
+5. Browser QA verified that refusal leaves the store navigable with no Meta script element. Reopening preferences and accepting loads exactly one official Meta script element. Live product `TS0307` (3.99 JOD) was viewed, added to the cart, and checkout displayed 4.99 JOD including delivery. No customer fields were submitted and no real order or notification was created. Meta Test Events had not displayed those events at the time of the first check; live receipt remains pending.
+6. Validate actual `PageView`, `ViewContent`, `AddToCart`, `InitiateCheckout` receipt and values in Meta before using the data to optimize spending. `OrderPlaced` has passed local server-accepted/failed/retry tests but has not been tested as a real production order. Keep COD/manual CliQ orders distinct from collected revenue. Campaign budgets and publishing remain a separate task.
 
 ## Verification
 
 `npm test`: **132 passed, 0 failed**, including seven new behavioral checks for consent/revocation, blocked/preview/foreign hosts, SKU quantities and JOD amounts, successful/failed order submission, duplicate conversion suppression, absence of customer fields, analytics failure isolation and the administrative CSP. Existing stock, security, order, variant and notification tests also passed. `node --check` and `git diff --check` passed.
 
-Live Meta event testing and visual checks after publication remain pending activation. All current checkout tests use local synthetic data and no real notification destination.
+Live Meta receipt verification remains pending; browser storefront interaction was checked after publication. Order submission tests use local synthetic data and no real notification destination.
