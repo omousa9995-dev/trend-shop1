@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS products (
 CREATE INDEX IF NOT EXISTS idx_products_category ON products(category,active);
 CREATE TABLE IF NOT EXISTS orders (
  id TEXT PRIMARY KEY, idempotency_key TEXT NOT NULL UNIQUE,
- name TEXT NOT NULL,phone TEXT NOT NULL,email TEXT,governorate TEXT NOT NULL,address TEXT NOT NULL,notes TEXT,
+ name TEXT NOT NULL,phone TEXT NOT NULL,email TEXT,governorate TEXT NOT NULL,address TEXT NOT NULL,maps_url TEXT NOT NULL DEFAULT '',notes TEXT,
  payment_method TEXT NOT NULL CHECK(payment_method IN ('cod','cliq')),cliq_alias TEXT,
  status TEXT NOT NULL DEFAULT 'جديد' CHECK(status IN ('جديد','قيد التجهيز','تم')),
  subtotal_fils INTEGER NOT NULL CHECK(subtotal_fils>=0),
