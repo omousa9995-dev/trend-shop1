@@ -1,6 +1,6 @@
 {
   "name": "trend-shop-jo",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,10 +10,13 @@
     "deploy": "wrangler deploy",
     "db:local": "wrangler d1 execute trend-shop-db --local --file=db/schema.sql",
     "db:seed-local": "wrangler d1 execute trend-shop-db --local --file=db/seed.sql",
-    "catalog:curate": "python3 scripts/curate-catalog.py"
+    "catalog:curate": "python3 scripts/curate-catalog.py",
+    "build:phone": "node scripts/build-contact-phone.mjs"
   },
   "devDependencies": {
+    "esbuild": "0.28.2",
     "jsdom": "26.1.0",
+    "libphonenumber-js": "1.13.15",
     "wrangler": "^4.0.0"
   }
 }

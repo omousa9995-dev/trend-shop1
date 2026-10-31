@@ -1,3 +1,4 @@
+import {loadContactPhone} from '../public/checkout-phone.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -41,7 +42,7 @@ test('Additive migration can be repeated after sales and edits without restockin
  assert.deepEqual(db.prepare('SELECT * FROM products ORDER BY id').all(),saved);assert.deepEqual(db.prepare('SELECT * FROM orders').get(),order);assert.deepEqual(db.prepare('SELECT * FROM order_items').get(),item);assert.equal(db.prepare("SELECT stock FROM products WHERE id='TS0202'").get().stock,23);db.close();
 });
 const pause=()=>new Promise(r=>setTimeout(r,5));
-async function open(t,hash){const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e));const dom=new JSDOM(read('public/index.html'),{url:'https://trendjo.pages.dev/'+hash,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});t.after(()=>dom.window.close());const w=dom.window,d=w.document;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};let sends=0;
+async function open(t,hash){const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e));const dom=new JSDOM(read('public/index.html'),{url:'https://trendjo.pages.dev/'+hash,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});t.after(()=>dom.window.close());const w=dom.window,d=w.document;w.loadContactPhone=loadContactPhone;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};let sends=0;
  w.fetch=async url=>{const path=String(url).split('?')[0];if(path==='/api/orders'){sends++;throw Error('Tests must not send orders')};return{ok:true,json:async()=>path==='/api/catalog'?{products:catalog,promotions:[],storeLive:false}:path==='/catalog-thumbnails.json'?JSON.parse(read('public/catalog-thumbnails.json')):path==='/product-galleries.json'?JSON.parse(read('public/product-galleries.json')):catalog}};
  w.eval(['product-links.js','commerce.js','shop-tools.js','image-zoom.js','autocomplete.js','product-share.js','product-types.js','product-variants.js','app.js'].map(f=>read('public/'+f).replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'')).join('\n'));
  for(let i=0;i<60&&!d.querySelector('.product-card,.detail-content');i++)await pause();assert.deepEqual(errors.map(e=>e.message),[]);return{w,d,sends:()=>sends};

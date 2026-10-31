@@ -292,3 +292,13 @@ test('Missing, unknown, duplicated, over-cap or out-of-stock tone choices never 
 test('Admin can save real tone code mappings and scent options, stripping malformed metadata',async()=>{
  const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env);const response=await api('/api/admin/products',f.env,f.ctx,{id:'TSVARIANTTEST',name:'Test powder',brand:'Test',category:'المكياج',description:'Test',reference_price_fils:6000,price_fils:3990,discount_percent:33,stock:24,image_url:'/images/TS0001.svg',approved:true,active:true,details:{productType:'powder',shadeCodes:{'tone-1':'ACTUAL-01','tone-2':'ACTUAL-02',fake:'ignored'},optionLabel:'النسخة',options:[{id:'avocado',label:'الأفوكادو'},{id:'<script>',label:'Bad'}]}},{cookie,'x-trend-admin':'1'});assert.equal(response.status,200,await response.clone().text());const d=JSON.parse(f.DB.sql.prepare("SELECT details_json FROM products WHERE id='TSVARIANTTEST'").get().details_json);assert.equal(d.shadeCodes['tone-1'],'ACTUAL-01');assert.equal(d.shadeCodes.fake,undefined);assert.equal(d.options.length,1);assert.equal(d.optionLabel,'النسخة');f.DB.sql.close();
 });
+
+test('API accepts Arabic, Persian and international phone numbers and freezes the normalized contact in the order and email',async()=>{
+ const originalFetch=globalThis.fetch;let mailed;globalThis.fetch=async(_,o)=>{mailed=JSON.parse(o.body).order;return Response.json({ok:true,ownerSent:true})};
+ try{for(const [i,[input,expected]] of [['٠٧٩١٢٣٤٥٦٧','+962791234567'],['۰۷۹۱۲۳۴۵۶۷','+962791234567'],['+٩٧٠٥٩٩١٢٣٤٥٦','+970599123456'],['٠٠٩٦٦٥٠١٢٣٤٥٦٧','+966501234567'],['+4915123456789','+4915123456789']].entries()){
+  const f=fixture(),r=await api('/api/orders',f.env,f.ctx,{...cart,email:'',address:'العبدلي',phone:input},{'x-idempotency-key':'intl-contact-test-'+i});assert.equal(r.status,201,await r.clone().text());assert.equal(f.DB.sql.prepare('SELECT phone FROM orders').get().phone,expected);assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,0);await Promise.all(f.pending);assert.equal(mailed.phone,expected);f.DB.sql.close();
+ }}finally{globalThis.fetch=originalFetch}
+});
+test('Malformed phone data is rejected by the API without storing an order or reducing stock',async()=>{
+ for(const [i,phone] of ['١٢٣','+999123456789','0791234567 ext 2',962791234567,'+966501234567<script>','٠٧٦١٢٣٤٥٦٧'].entries()){const f=fixture(),r=await api('/api/orders',f.env,f.ctx,{...cart,phone},{'x-idempotency-key':'invalid-intl-contact-'+i});assert.equal(r.status,400,await r.clone().text());assert.equal(f.DB.sql.prepare('SELECT count(*) n FROM orders').get().n,0);assert.equal(f.DB.sql.prepare('SELECT stock FROM products').get().stock,1);assert.equal(f.pending.length,0);f.DB.sql.close()}
+});

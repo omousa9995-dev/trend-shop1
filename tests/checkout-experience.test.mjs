@@ -1,0 +1,53 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {JSDOM,VirtualConsole} from 'jsdom';
+import {normalizeContactPhone as normalizeSource} from '../src/contact-phone.js';
+import {normalizeContactPhone} from '../public/contact-phone.js';
+import {loadContactPhone} from '../public/checkout-phone.js';
+import {thumbnailFor} from '../public/commerce.js';
+const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8'),json=p=>JSON.parse(read(p));
+const catalog=json('public/catalog.json'),thumbnails=json('public/catalog-thumbnails.json');
+const pause=()=>new Promise(r=>setTimeout(r,5));
+test('Source and shipped phone validation normalize both Arabic digit sets and international contact numbers identically',()=>{
+ const cases=[['0791234567','+962791234567'],['٠٧٩١٢٣٤٥٦٧','+962791234567'],['۰۷۹۱۲۳۴۵۶۷','+962791234567'],['٧٩١٢٣٤٥٦٧','+962791234567'],['962791234567','+962791234567'],['+٩٦٢ (٧٩) ١٢٣-٤٥٦٧','+962791234567'],['\u200f+٩٧٠٥٩٩١٢٣٤٥٦\u200e','+970599123456'],['00966501234567','+966501234567'],['+۹۷۱۵۰۱۲۳۴۵۶۷','+971501234567'],['+4915123456789','+4915123456789'],['+442079460018','+442079460018'],['+12025550123','+12025550123']];
+ for(const [input,expected]of cases){assert.equal(normalizeContactPhone(input),expected,input);assert.equal(normalizeSource(input),expected,input)}
+ for(const bad of ['',null,791234567,'07912','0761234567','+96261234567','+999123456789','++966501234567','call +966501234567','+966501234567 ext 2','+970'+'1'.repeat(90),'<script>0791234567</script>']){assert.equal(normalizeContactPhone(bad),'',String(bad));assert.equal(normalizeSource(bad),'',String(bad))}
+});
+async function open(t,{hash='#/product/TS0064',cart=[],live=false,products=catalog}={}){
+ const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));const dom=new JSDOM(read('public/index.html'),{url:'https://trendjo.pages.dev/'+hash,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});t.after(()=>dom.window.close());const w=dom.window,d=w.document,sent=[];
+ const style=d.createElement('style');style.textContent=read('public/checkout-refresh.css');d.head.append(style);w.localStorage.setItem('trend-shop-cart-v1',JSON.stringify(cart));w.loadContactPhone=loadContactPhone;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};
+ let now=0,id=0;const jobs=new Map();w.setTimeout=(fn,ms=0,...args)=>{const key=++id;jobs.set(key,{fn:()=>fn(...args),at:now+Number(ms)});return key};w.clearTimeout=key=>jobs.delete(key);
+ function tick(ms){const target=now+ms;for(let i=0;i<100;i++){const next=[...jobs].sort((a,b)=>a[1].at-b[1].at).find(([,x])=>x.at<=target);if(!next)break;now=next[1].at;jobs.delete(next[0]);next[1].fn()}now=target}
+ w.fetch=async(u,options)=>{const path=String(u).split('?')[0];if(path==='/api/orders'){sent.push(JSON.parse(options.body));return{ok:true,json:async()=>({orderId:'TR-LOCAL-TEST',shippingFeeFils:1000,totalFils:12000})}};return{ok:true,json:async()=>path==='/api/catalog'?{products,promotions:[],storeLive:live}:path==='/catalog-thumbnails.json'?thumbnails:path==='/product-galleries.json'?json('public/product-galleries.json'):{}}};
+ w.eval(['product-links.js','commerce.js','shop-tools.js','image-zoom.js','autocomplete.js','product-share.js','product-types.js','product-variants.js','app.js'].map(f=>read('public/'+f).replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'')).join('\n'));
+ for(let i=0;i<50&&!d.querySelector('.detail-content,#checkoutForm');i++)await pause();assert.deepEqual(errors,[]);return{w,d,tick,sent,errors};
+}
+test('Add feedback is pink immediately; recommendations appear after exactly three quiet seconds and keep focus unchanged',async t=>{
+ const {w,d,tick}=await open(t);d.querySelector('.detail-content [data-add="TS0064"]').click();const active=d.activeElement;assert.equal(d.querySelector('#cartAssist').hidden,true);assert.match(d.querySelector('#toast').textContent,/تمت الإضافة إلى السلة/);assert.ok(d.querySelector('#toast.is-added .added-icon'));assert.equal(w.getComputedStyle(d.querySelector('#toast')).color,'var(--added-pink)');assert.equal(w.getComputedStyle(d.documentElement).getPropertyValue('--added-pink'),'#b34272');assert.ok(d.querySelector('.purchase-added .added-icon'));assert.ok(d.querySelector('#cartBtn.has-items'));
+ tick(2999);assert.equal(d.querySelector('#cartAssist').hidden,true);tick(1);assert.equal(d.querySelector('#cartAssist').hidden,false);assert.equal(d.activeElement,active);assert.ok(d.querySelector('#cartAssist a[href="#/checkout"]'));
+});
+test('Rapid additions restart the quiet period and show recommendations for the current cart',async t=>{
+ const {d,tick}=await open(t);const add=()=>d.querySelector('.detail-content [data-add="TS0064"]').click();add();tick(2000);add();tick(2999);assert.equal(d.querySelector('#cartAssist').hidden,true);tick(1);assert.equal(d.querySelector('#cartAssist').hidden,false);assert.equal(d.querySelector('#cartCount').textContent,'2');assert.match(d.querySelector('#cartAssist').textContent,/22.00/);
+});
+test('Pending recommendations are canceled on search, cart, share, zoom, empty cart or checkout navigation',async t=>{
+ for(const action of ['search','cart','share','zoom','empty','checkout']){const {w,d,tick}=await open(t);d.querySelector('.detail-content [data-add="TS0064"]').click();tick(1000);
+  if(action==='search')d.querySelector('#searchBtn').click();if(action==='cart')d.querySelector('#cartBtn').click();if(action==='share')d.querySelector('#shareProduct').click();if(action==='zoom')d.querySelector('#openImageZoom').click();if(action==='empty')d.querySelector('.detail-content [data-qty]').click();if(action==='checkout'){w.location.hash='#/checkout';for(let i=0;i<40&&!d.querySelector('#checkoutForm');i++)await pause()}
+  tick(10000);assert.equal(d.querySelector('#cartAssist').hidden,true,action);
+ }
+});
+test('Each checkout line shows the right product thumbnail, quantity and selectable tone, including admin replacement photos',async t=>{
+ const changed=catalog.map(p=>p.id==='TS0064'?{...p,image:'/media/uploads/admin-photo.webp'}:p),cart=[{id:'TS0313',qty:1,variant:'tone-1'},{id:'TS0313',qty:2,variant:'tone-4'},{id:'TS0064',qty:1}];const {w,d}=await open(t,{hash:'#/checkout',cart,products:changed});const rows=[...d.querySelectorAll('.checkout-product-row')];assert.equal(rows.length,3);
+ for(let i=0;i<cart.length;i++){const p=changed.find(p=>p.id===cart[i].id),im=rows[i].querySelector('img');assert.equal(im.getAttribute('src'),thumbnailFor(p,thumbnails));assert.match(im.alt,new RegExp(p.details.nameAr));assert.equal(rows[i].querySelector('a').getAttribute('href'),'#/product/'+p.id);assert.match(rows[i].querySelector('small').textContent,new RegExp(String(cart[i].qty)))}
+ const select=rows[0].querySelector('select');select.value='tone-4';select.dispatchEvent(new w.Event('change',{bubbles:true}));assert.equal(d.querySelectorAll('.checkout-product-row').length,2);assert.equal(d.querySelector('.checkout-product-row small').textContent,'الكمية: 3');assert.equal(d.querySelector('.checkout-product-row select').value,'tone-4');
+});
+test('Checkout accepts Arabic international digits with one-word Jordan address and sends only a normalized contact number',async t=>{
+ const {w,d,sent}=await open(t,{hash:'#/checkout',cart:[{id:'TS0064',qty:1}],live:true}),f=d.querySelector('#checkoutForm');d.querySelector('#customerName').value='تجربة محلية';d.querySelector('#customerPhone').value='٠٠٩٦٦٥٠١٢٣٤٥٦٧';d.querySelector('#governorate').value='عمّان';d.querySelector('#address').value='العبدلي';assert.equal(f.checkValidity(),true);f.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));for(let i=0;i<50&&!d.querySelector('.success-panel');i++)await pause();assert.equal(sent.length,1);assert.equal(sent[0].phone,'+966501234567');assert.equal(sent[0].email,'');assert.equal(sent[0].address,'العبدلي');assert.match(d.querySelector('.success-panel').textContent,/استلمنا طلبكِ/);
+});
+test('A bad number keeps the cart intact, focuses the field, and clears its error marker when edited',async t=>{
+ const {w,d,sent}=await open(t,{hash:'#/checkout',cart:[{id:'TS0064',qty:1}],live:true}),f=d.querySelector('#checkoutForm');d.querySelector('#customerName').value='تجربة محلية';const phone=d.querySelector('#customerPhone');phone.value='١٢٣';d.querySelector('#governorate').value='عمّان';d.querySelector('#address').value='العبدلي';f.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));for(let i=0;i<50&&!d.querySelector('#checkoutError').textContent;i++)await pause();assert.equal(sent.length,0);assert.equal(phone.getAttribute('aria-invalid'),'true');assert.equal(d.activeElement,phone);assert.equal(d.querySelector('#cartCount').textContent,'1');phone.value='+970599123456';phone.dispatchEvent(new w.Event('input',{bubbles:true}));assert.equal(phone.hasAttribute('aria-invalid'),false);
+});
+test('Search examples and both accessible social icons use the owner-provided pages in footer and mobile menu',async t=>{
+ const {d}=await open(t);assert.match(d.querySelector('#searchPanel p').textContent,/تونر.*واقي شمس/);assert.doesNotMatch(d.querySelector('#searchPanel p').textContent,/نود|كوسركس/);
+ const links=[...d.querySelectorAll('.footer .brand-socials a')];assert.equal(links.length,2);assert.equal(links[0].href,'https://www.instagram.com/trend_shop.jo?rpxt=ZjFlenBxaHEwajJ4&utm_source=qr');assert.equal(links[1].href,'https://www.facebook.com/share/1DSkLgzgVm/?mibextid=wwXIfr');for(const a of links){assert.ok(a.querySelector('svg'));assert.ok(a.getAttribute('aria-label'));assert.equal(a.target,'_blank');assert.match(a.rel,/noopener/)}d.querySelector('#menuBtn').click();assert.equal(d.querySelectorAll('#drawer .brand-socials a').length,2);
+});
