@@ -21,3 +21,13 @@ Backup source: `backup/v2.1.0-before-maps-brands-2026-10-31` at `a412f16ad743cb5
 3. Verify live brand browsing, phone/map fields and old stock/prices/order counts; disable the isolated review endpoint.
 
 Do not replay seeds or catalog migrations. A source/Worker rollback can safely retain the additive column; do not drop it or restore an older database over newer customer orders.
+
+## Published verification — 2026-10-31
+
+Implementation commit: `d246da2551d48c5d25555abdb2e032d7ff83b6ad`. GitHub validation succeeded (run `41208854090`). Worker version `712fb2da-ebd6-4d19-86ee-cd5c1d912388` serves 100% of traffic, deployed at 14:36 UTC.
+
+Desktop demo checkout completed with an ASCII Jordan mobile and no email/map, then with Arabic digits and a public Amman map link. The isolated admin displayed the saved synthetic map link. Brand navigation and the phone/map fields were also visually checked at 390px. Live COSRX navigation returned 12 products; the live form shows the exact placeholder and optional map field. No production order or notification was submitted. The temporary cart was cleared and the isolated preview disabled.
+
+The additive migration retained all 6 historical orders with an empty map link. Order/item counts remain 6/28. All 334 product records and their stock, prices, reference prices and publication flags match the pre-deployment fingerprint; total stock remains 7,574. No catalog seeds or stock mutations ran.
+
+Live checkout proof: [checkout-2.2.0.jpg](verification/checkout-2.2.0.jpg).
