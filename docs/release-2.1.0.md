@@ -18,3 +18,11 @@ The owner requested quieter recommendations, product photos at checkout, Arabic/
 No database or catalog migration is needed. Deploy all 13 packaged Worker modules and static assets with the existing DB, MEDIA and STORE_LIVE bindings and `keep_bindings: ["secret_text"]`. Preserve current product/price/stock/admin changes; do not replay seeds or catalog migrations. Disable the isolated preview after review.
 
 Source backup: `backup/v2.0.0-before-checkout-2026-10-31` at `70f06cdb21dcd1721b89eb1e42afcf97b2ea25f6`. Previous Worker version: `014ad218-3155-4da5-a5eb-eb3515fb457e`. A code rollback needs no database restoration; new phone values remain ordinary text.
+
+## Published verification — 2026-10-31
+
+- Implementation commit: `c94972b187e5c236113adc9f36f2baa3fc2b9767`; GitHub Actions run `41204961695` passed all 114 checks.
+- Production Worker: `73a5fec5-a84e-4109-a5a2-01c7768f063a`, with all existing secret bindings retained.
+- Pre/post fingerprints confirmed unchanged product inventory, prices, approval and publication flags. Existing order and item counts remained 6 and 28. No production test order was submitted.
+- Live browser checks verified the new search examples and working product suggestion, immediate pink confirmation while recommendations remain hidden, and two correctly loaded product thumbnails beside the checkout lines. Live ordering remains enabled. The isolated 390px review and Arabic international-number demo completed successfully.
+- The previous source version is retained on the backup branch. The isolated review endpoint was disabled after testing.
