@@ -63,7 +63,8 @@
   "TS0067": {
     "primary": "/images/catalog/TS0067-592055b9b030.jpg",
     "images": [
-      "/images/catalog/TS0143-daa5a53a32c7.webp"
+      "/images/catalog/TS0143-daa5a53a32c7.webp",
+      "/images/catalog/marketing/TS0067-scene-1daf7b451076.webp"
     ]
   },
   "TS0072": {
@@ -83,6 +84,72 @@
     "primary": "/images/catalog/TS0161-f8ee054fe119.jpg",
     "images": [
       "/images/catalog/TS0161-60b8bf59a343.webp"
+    ]
+  },
+  "TS0079": {
+    "primary": "/images/catalog/TS0079-a9ee4ad7e0be.jpg",
+    "images": [
+      "/images/catalog/marketing/TS0079-scene-38a3498d94ec.webp"
+    ]
+  },
+  "TS0065": {
+    "primary": "/images/catalog/TS0065-04d4acbe5053.jpg",
+    "images": [
+      "/images/catalog/marketing/TS0065-scene-a5d5779e7b61.webp"
+    ]
+  },
+  "TS0085": {
+    "primary": "/images/catalog/TS0085-6f77dfeba7eb.jpg",
+    "images": [
+      "/images/catalog/marketing/TS0085-scene-f291bb3881d5.webp"
+    ]
+  },
+  "TS0091": {
+    "primary": "/images/catalog/TS0091-f84e3c1c3bc1.png",
+    "images": [
+      "/images/catalog/marketing/TS0091-scene-a7588f7c7f15.webp"
+    ]
+  },
+  "TS0059": {
+    "primary": "/images/catalog/TS0059-61795de6c32d.jpg",
+    "images": [
+      "/images/catalog/marketing/TS0059-scene-262b4879a7c7.webp"
+    ]
+  },
+  "TS0347": {
+    "primary": "/images/catalog/TS0347-5bee95e54b0b.webp",
+    "images": [
+      "/images/catalog/marketing/TS0347-scene-cb0c7a33c266.webp"
+    ]
+  },
+  "TS0256": {
+    "primary": "/images/catalog/TS0256-188c3f0552bf.webp",
+    "images": [
+      "/images/catalog/marketing/TS0256-scene-7a3be69f1edf.webp"
+    ]
+  },
+  "TS0250": {
+    "primary": "/images/catalog/TS0250-6c6be54d9769.webp",
+    "images": [
+      "/images/catalog/marketing/TS0250-scene-e36430d59334.webp"
+    ]
+  },
+  "TS0309": {
+    "primary": "/images/catalog/TS0309-90f715add65c.webp",
+    "images": [
+      "/images/catalog/marketing/TS0309-scene-d2012baeb9fc.webp"
+    ]
+  },
+  "TS0307": {
+    "primary": "/images/catalog/TS0307-38757f24c801.webp",
+    "images": [
+      "/images/catalog/marketing/TS0307-scene-3b9d1e542d50.webp"
+    ]
+  },
+  "TS0257": {
+    "primary": "/images/catalog/TS0257-97b7c2859bee.webp",
+    "images": [
+      "/images/catalog/marketing/TS0257-scene-354292034107.webp"
     ]
   }
 }

@@ -218,5 +218,125 @@
     "image": "/images/catalog/TS0161-60b8bf59a343.webp",
     "sha256": "60b8bf59a3437435d5664a8dba474df84ace57a914ee7efd793d1a3b1a137724",
     "bytes": 40008
+  },
+  {
+    "product_id": "TS0079",
+    "image": "/images/catalog/marketing/TS0079-scene-38a3498d94ec.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0079",
+    "source_image": "/images/catalog/TS0079-a9ee4ad7e0be.jpg",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0065",
+    "image": "/images/catalog/marketing/TS0065-scene-a5d5779e7b61.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0065",
+    "source_image": "/images/catalog/TS0065-04d4acbe5053.jpg",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0085",
+    "image": "/images/catalog/marketing/TS0085-scene-f291bb3881d5.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0085",
+    "source_image": "/images/catalog/TS0085-6f77dfeba7eb.jpg",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0091",
+    "image": "/images/catalog/marketing/TS0091-scene-a7588f7c7f15.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0091",
+    "source_image": "/images/catalog/TS0091-f84e3c1c3bc1.png",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0059",
+    "image": "/images/catalog/marketing/TS0059-scene-262b4879a7c7.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0059",
+    "source_image": "/images/catalog/TS0059-61795de6c32d.jpg",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0067",
+    "image": "/images/catalog/marketing/TS0067-scene-1daf7b451076.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0067",
+    "source_image": "/images/catalog/TS0067-592055b9b030.jpg",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0347",
+    "image": "/images/catalog/marketing/TS0347-scene-cb0c7a33c266.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0347",
+    "source_image": "/images/catalog/TS0347-5bee95e54b0b.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0256",
+    "image": "/images/catalog/marketing/TS0256-scene-7a3be69f1edf.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0256",
+    "source_image": "/images/catalog/TS0256-188c3f0552bf.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0250",
+    "image": "/images/catalog/marketing/TS0250-scene-e36430d59334.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0250",
+    "source_image": "/images/catalog/TS0250-6c6be54d9769.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0309",
+    "image": "/images/catalog/marketing/TS0309-scene-d2012baeb9fc.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0309",
+    "source_image": "/images/catalog/TS0309-90f715add65c.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0307",
+    "image": "/images/catalog/marketing/TS0307-scene-3b9d1e542d50.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0307",
+    "source_image": "/images/catalog/TS0307-38757f24c801.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0257",
+    "image": "/images/catalog/marketing/TS0257-scene-354292034107.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0257",
+    "source_image": "/images/catalog/TS0257-97b7c2859bee.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-02.json"
   }
 ]

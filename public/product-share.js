@@ -1,3 +1,4 @@
+import {locale} from './i18n.js';
 import {productUrl} from './product-links.js?v=1.8.1';
 export function createProductShare(){
  const dialog=document.createElement('dialog');dialog.className='product-share';dialog.setAttribute('aria-labelledby','shareHeading');
@@ -8,5 +9,5 @@ export function createProductShare(){
  dialog.querySelector('[data-share="close"]').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()});
  dialog.addEventListener('close',()=>{document.body.style.overflow=oldOverflow;if(previousFocus?.isConnected)previousFocus.focus({preventScroll:true})});
- return {open(product,name){title=name;input.value=productUrl(product.id);dialog.querySelector('.share-name').textContent=name;status.textContent='يفتح الرابط هذا المنتج مباشرة، ويمكن استخدامه في إعلانكِ.';dialog.querySelector('[data-share="whatsapp"]').href='https://wa.me/?text='+encodeURIComponent(title+'\n'+input.value);dialog.querySelector('[data-share="native"]').hidden=typeof navigator.share!=='function';previousFocus=document.activeElement;oldOverflow=document.body.style.overflow;dialog.showModal();document.body.style.overflow='hidden';dialog.querySelector('[data-share="copy"]').focus()},close(){if(dialog.open)dialog.close()}};
+ return {open(product,name){title=name;input.value=productUrl(product.id,locale());dialog.querySelector('.share-name').textContent=name;status.textContent='يفتح الرابط هذا المنتج مباشرة، ويمكن استخدامه في إعلانكِ.';dialog.querySelector('[data-share="whatsapp"]').href='https://wa.me/?text='+encodeURIComponent(title+'\n'+input.value);dialog.querySelector('[data-share="native"]').hidden=typeof navigator.share!=='function';previousFocus=document.activeElement;oldOverflow=document.body.style.overflow;dialog.showModal();document.body.style.overflow='hidden';dialog.querySelector('[data-share="copy"]').focus()},close(){if(dialog.open)dialog.close()}};
 }

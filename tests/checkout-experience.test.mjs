@@ -1,3 +1,4 @@
+import {storefrontBundle} from './helpers/storefront-bundle.mjs';
 import {productType,PRODUCT_TYPES,matchesProductType} from '../public/product-types.js';
 import {isRetiredProduct} from '../public/catalog-policy.js';
 import test from 'node:test';
@@ -22,7 +23,7 @@ async function open(t,{hash='#/product/TS0064',cart=[],live=false,products=catal
  let now=0,id=0;const jobs=new Map();w.setTimeout=(fn,ms=0,...args)=>{const key=++id;jobs.set(key,{fn:()=>fn(...args),at:now+Number(ms)});return key};w.clearTimeout=key=>jobs.delete(key);
  function tick(ms){const target=now+ms;for(let i=0;i<100;i++){const next=[...jobs].sort((a,b)=>a[1].at-b[1].at).find(([,x])=>x.at<=target);if(!next)break;now=next[1].at;jobs.delete(next[0]);next[1].fn()}now=target}
  w.fetch=async(u,options)=>{const path=String(u).split('?')[0];if(path==='/api/orders'){sent.push(JSON.parse(options.body));return{ok:true,json:async()=>({orderId:'TR-LOCAL-TEST',shippingFeeFils:1000,totalFils:12000})}};return{ok:true,json:async()=>path==='/api/catalog'?{products,promotions:[],storeLive:live}:path==='/catalog-thumbnails.json'?thumbnails:path==='/product-galleries.json'?json('public/product-galleries.json'):{}}};
- w.eval(['product-links.js','commerce.js','shop-tools.js','image-zoom.js','autocomplete.js','product-share.js','product-types.js','product-variants.js','catalog-policy.js','brand-tools.js','whatsapp-checkout.js','app.js'].map(f=>read('public/'+f).replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'')).join('\n'));
+ w.eval(storefrontBundle);
  for(let i=0;i<50&&!d.querySelector('.detail-content,#checkoutForm');i++)await pause();assert.deepEqual(errors,[]);return{w,d,tick,sent,errors};
 }
 test('Add feedback is pink immediately; recommendations appear after exactly three quiet seconds and keep focus unchanged',async t=>{

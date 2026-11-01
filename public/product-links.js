@@ -1,7 +1,7 @@
 export const STORE_ORIGIN='https://trendjo.pages.dev';
 const validId=/^TS[A-Z0-9-]{4,64}$/;
 export function productPath(id){if(!validId.test(id))throw new Error('Invalid product');return '/p/'+encodeURIComponent(id)}
-export function productUrl(id){return STORE_ORIGIN+productPath(id)}
+export function productUrl(id,language='ar'){return STORE_ORIGIN+productPath(id)+(language==='en'?'?lang=en':'')}
 export function productIdFromPath(path){try{const match=decodeURIComponent(path).match(/^\/p\/(TS[A-Z0-9-]{4,64})\/?$/);return match?.[1]||null}catch{return null}}
 export function parseStoreRoute(location){
  const id=productIdFromPath(location.pathname||'/');

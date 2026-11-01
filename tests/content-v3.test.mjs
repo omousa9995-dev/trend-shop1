@@ -1,0 +1,17 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {DatabaseSync} from 'node:sqlite';
+const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
+test('Bilingual content migration protects concurrent edits, sold stock, hidden products, prices and historical orders, and is repeatable',()=>{
+ const db=new DatabaseSync(':memory:');db.exec(read('db/schema.sql'));const spec=JSON.parse(read('data/catalog-content-v3.json'));
+ for(const [i,row]of spec.products.entries()){const b=row.before;db.prepare('INSERT INTO products(id,name,brand,category,subcategory,description,details_json,reference_price_fils,price_fils,stock,approved,active) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)').run(row.id,b.name,'Test',b.category,b.subcategory,b.description,b.detailsJson,10000,2490,7,1,i===1?0:1)}
+ db.exec("INSERT INTO orders(id,idempotency_key,name,phone,governorate,address,payment_method,subtotal_fils,shipping_fee_fils) VALUES('TR-MIGRATION-TEST','fictional-test-idempotency-key','Test','+962791234567','عمّان','العبدلي','cod',2490,1000);INSERT INTO order_items(order_id,product_id,name_snapshot,qty,unit_price_fils) VALUES('TR-MIGRATION-TEST','TS0001','Historical snapshot',1,2490);UPDATE products SET description='A concurrent administrator edit' WHERE id='TS0079'");
+ const frozen=()=>JSON.stringify({products:db.prepare('SELECT id,name,brand,reference_price_fils,price_fils,stock,approved,active FROM products ORDER BY id').all(),orders:db.prepare('SELECT * FROM orders').all(),items:db.prepare('SELECT * FROM order_items').all()}),before=frozen();
+ db.exec(read('db/migrations/0015_product_copy_v3.sql'));assert.equal(frozen(),before);assert.equal(db.prepare("SELECT description FROM products WHERE id='TS0079'").get().description,'A concurrent administrator edit');assert.equal(db.prepare("SELECT count(*) n FROM products WHERE json_extract(details_json,'$.contentVersion')='3.0.0'").get().n,303);const changed=JSON.stringify(db.prepare('SELECT * FROM products ORDER BY id').all());db.exec(read('db/migrations/0015_product_copy_v3.sql'));assert.equal(JSON.stringify(db.prepare('SELECT * FROM products ORDER BY id').all()),changed);assert.equal(db.prepare('SELECT changes() n').get().n,0);db.close();
+});
+test('Sold-out legacy rows receive complete bilingual copy without changing their availability or price',()=>{
+ const db=new DatabaseSync(':memory:');db.exec(read('db/schema.sql'));const spec=JSON.parse(read('data/legacy-catalog-content-v3.json'));
+ for(const row of spec.products){const p=row.before;db.prepare('INSERT INTO products(id,name,brand,category,subcategory,description,details_json,reference_price_fils,price_fils,stock,approved,active) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)').run(p.id,p.name,p.brand,p.category,p.subcategory,p.description,p.details_json,p.reference_price_fils,p.price_fils,p.stock,p.approved,p.active)}
+ const protectedRows=()=>JSON.stringify(db.prepare('SELECT id,stock,price_fils,reference_price_fils,approved,active FROM products ORDER BY id').all()),before=protectedRows();db.exec(read('db/migrations/0016_legacy_copy_v3.sql'));assert.equal(protectedRows(),before);for(const row of db.prepare('SELECT details_json FROM products').all()){const d=JSON.parse(row.details_json);assert.ok(d.en.name&&d.en.description&&d.en.howToUse&&d.en.notes&&d.nameAr&&d.howToUse)}db.exec(read('db/migrations/0016_legacy_copy_v3.sql'));assert.equal(db.prepare('SELECT changes() n').get().n,0);db.close();
+});

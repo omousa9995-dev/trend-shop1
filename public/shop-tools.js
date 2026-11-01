@@ -14,7 +14,7 @@ export function searchProducts(products, query) {
   if (!words.length) return products.slice();
   return products.map((product, index) => {
     const details = productDetails(product);
-    const title = normalizeSearch(`${details.nameAr || ''} ${product.name}`);
+    const title = normalizeSearch(`${details.nameAr || ''} ${details.en?.name || ''} ${product.name}`);
     const text = normalizeSearch(`${title} ${product.brand} ${product.category} ${product.subcat || product.subcategory || ''}`);
     if (!words.every(word => text.includes(word))) return null;
     const score = words.reduce((sum, word) => sum + (title.startsWith(word) ? 12 : title.split(' ').some(part => part.startsWith(word)) ? 8 : title.includes(word) ? 4 : 1), 0);

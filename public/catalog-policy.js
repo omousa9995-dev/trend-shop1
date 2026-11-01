@@ -9,6 +9,7 @@ export function storefrontProduct(product){
  const p={...product};let details;try{details=typeof p.details==='object'&&p.details?{...p.details}:JSON.parse(p.details_json||'{}')}catch{details={}}
  for(const key of ['imageNote','imageEditedWithAI','introductoryOffer'])delete details[key];
  for(const key of ['nameAr','tagline','howToUse','notes','variantNote'])if(typeof details[key]==='string')details[key]=storeCopy(details[key]);
+ if(details.en&&typeof details.en==='object'){details.en={...details.en};for(const key of ['name','description','tagline','howToUse','notes','variantNote','shade'])if(typeof details.en[key]==='string')details.en[key]=storeCopy(details.en[key]);if(Array.isArray(details.en.benefits))details.en.benefits=details.en.benefits.map(storeCopy).filter(Boolean)}
  if(Array.isArray(details.benefits))details.benefits=details.benefits.map(storeCopy).filter(Boolean);
  for(const key of ['name','description','subcategory','subcat'])if(typeof p[key]==='string')p[key]=storeCopy(p[key]);
  if(p.details)p.details=details;if('details_json'in p)p.details_json=JSON.stringify(details);
