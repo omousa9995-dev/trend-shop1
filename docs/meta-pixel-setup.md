@@ -1,3 +1,7 @@
+# Disabled by the owner on 2026-11-01
+
+Release 2.3.0 removes the consent panel and Meta Pixel integration completely. The setup below is a historical record and is not active in the store. See `release-2.3.0.md` for the current behavior.
+
 # Meta Pixel setup — prepared 2026-11-01
 
 Status: created and published after the owner confirmed acceptance of Meta Business Tools Terms. Pixel/dataset **2055983688451688**, named `Trend Shop Website`, belongs to portfolio `trend_shop.jo` (`467583567928517`) and is connected to Smart Shop (`1494709724216142`). The portfolio-wide automatic Conversions API option and automatic advanced matching remain off. Live browser event receipt is now confirmed in Events Manager for 2026-11-01: PageView, ViewContent, AddToCart and InitiateCheckout are all active. OrderPlaced remains locally tested only; a submitted COD/manual CliQ order is not evidence of collected revenue.

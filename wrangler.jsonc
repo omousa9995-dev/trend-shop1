@@ -22,8 +22,7 @@
     }
   ],
   "vars": {
-    "STORE_LIVE": "true",
-    "META_PIXEL_ID": "2055983688451688"
+    "STORE_LIVE": "true"
   },
   "observability": {
     "enabled": true,

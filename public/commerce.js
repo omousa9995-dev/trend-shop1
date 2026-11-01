@@ -1,3 +1,5 @@
+import {productType} from './product-types.js';
+import {isRetiredProduct} from './catalog-policy.js';
 // Shared, deterministic rules used by the storefront and the order server.
 export const FREE_DELIVERY_ABOVE_FILS = 19000;
 export const DELIVERY_FILS = 1000;
@@ -51,23 +53,27 @@ export function quoteCart(cart, products, promotions = []) {
 export function deliveryNudge(quote) {
   return quote.shippingFeeFils>0&&quote.totalFils>15000 ? {remainingFils:FREE_DELIVERY_ABOVE_FILS+10-quote.subtotalFils} : null;
 }
-function traits(product) {
-  let d=product?.details;try{d ||= JSON.parse(product?.details_json||'{}')}catch{d={}}
-  const text=`${d?.nameAr||''} ${product?.name||''} ${product?.subcategory||product?.subcat||''}`.toLowerCase().replace(/[أإآ]/g,'ا');
-  if(product?.category==='الجسم')return 'bodycare';
-  if(product?.category==='الشعر'&&!/shampoo|شامبو|hair mask|ماسك.*شعر|قناع.*شعر/.test(text))return 'haircare';
-  const rules=[['foundation',/foundation|كريم\s+(?:ال)?اساس|فاونديشن/],['mascara',/mascara|مسكارا|ماسكارا/],['powder',/powder|بودرة|بودره/],['primer',/primer|برايمر/],['eyes',/eyeshadow|ظلال|باليت/],['lips',/lip|شفاه|شفايف|جلوس/],['sunscreen',/sunscreen|sun cream|sun serum|واقي.*شمس|ريليف صن/],['cleanser',/cleanser|cleansing|غسول/],['serum',/serum|سيروم/],['shampoo',/shampoo|شامبو/],['hairmask',/hair mask|ماسك.*شعر|قناع.*شعر/],['moisturizer',/moist|cream|مرطب|ترطيب|كريم/]];
-  return rules.find(([,r])=>r.test(text))?.[0]||product?.category||'';
-}
-const pairs={bodycare:['bodycare','العطور'],haircare:['hairmask','shampoo','haircare'],'العطور':['bodycare'],foundation:['mascara','powder','primer','lips'],mascara:['eyes','lips','foundation'],powder:['foundation','mascara','primer'],primer:['foundation','powder','mascara'],eyes:['mascara','lips','foundation'],lips:['mascara','eyes','foundation'],moisturizer:['sunscreen','cleanser','serum'],cleanser:['moisturizer','sunscreen','serum'],serum:['moisturizer','sunscreen','cleanser'],sunscreen:['cleanser','moisturizer','serum'],shampoo:['hairmask','moisturizer'],hairmask:['shampoo']};
+const pairs={
+ foundation:['concealer','mascara','powder','primer','blush'],concealer:['foundation','mascara','powder','blush'],powder:['concealer','foundation','mascara','primer'],primer:['foundation','concealer','powder','mascara'],
+ mascara:['eyeliner','lips','eyeshadow','concealer'],eyeliner:['mascara','eyeshadow','lips'],eyeshadow:['mascara','eyeliner','lips'],lips:['mascara','blush','brows'],blush:['highlighter','lips','mascara'],contour:['blush','highlighter','powder'],highlighter:['blush','lips','mascara'],brows:['mascara','concealer','eyeliner'],'bb-cc':['concealer','mascara','powder'],
+ sunscreen:['moisturizer','cleanser','lips'],cleanser:['moisturizer','sunscreen','toner'],toner:['moisturizer','sunscreen','cleanser'],serum:['moisturizer','sunscreen','cleanser'],essence:['moisturizer','sunscreen','cleanser'],moisturizer:['sunscreen','cleanser','toner'],exfoliant:['moisturizer','sunscreen','cleanser'],'eye-care':['moisturizer','sunscreen','cleanser'],'face-mask':['moisturizer','cleanser','sunscreen'],'face-oil':['moisturizer','cleanser','sunscreen'],mist:['moisturizer','sunscreen','cleanser'],
+ shampoo:['conditioner','hair-mask','hair-oil'],conditioner:['shampoo','hair-mask','hair-oil'],'hair-mask':['shampoo','conditioner','hair-oil'],'hair-oil':['shampoo','hair-mask','conditioner'],'hair-styling':['shampoo','hair-oil','conditioner'],'hair-treatment':['shampoo','hair-oil','conditioner'],
+ 'body-care':['body-cleansing','body-oil','body-sunscreen'],deodorant:['body-cleansing','body-care'],'body-oil':['body-care','body-cleansing'],'body-cleansing':['body-care','body-oil'],'body-sunscreen':['body-care','body-cleansing']
+};
+const reasons={concealer:'لتكميل تغطية الإطلالة',mascara:'لمسة للرموش تكمل المكياج',powder:'لمسة نهائية لإطلالتكِ',primer:'خطوة تسبق كريم الأساس',foundation:'قاعدة لإطلالتكِ',eyeliner:'تفاصيل تُبرز إطلالة العين',eyeshadow:'ألوان تنسجم مع مكياج العين',lips:'لمسة لون للشفاه',blush:'لمسة لون للخدود',highlighter:'لمسة إضاءة للمكياج',sunscreen:'خيار لروتين النهار',moisturizer:'خطوة ترطيب لروتينكِ',cleanser:'بداية روتين التنظيف',toner:'اختيار آخر لروتين العناية',shampoo:'لإكمال خطوات غسل الشعر',conditioner:'خطوة عناية بعد الشامبو','hair-mask':'لتفحّص عناية إضافية للشعر','hair-oil':'لمسة عناية لخصلاتكِ'};
 export function recommendations(products, cart, {promotions=[],anchorId,limit=3,deliveryGoal=false}={}) {
   const ids=new Set(cart.map(x=>x.id)),anchor=products.find(p=>p.id===anchorId)||products.find(p=>p.id===cart.at(-1)?.id);
-  const wanted=pairs[traits(anchor)]||[],quote=quoteCart(cart,products,promotions),nudge=deliveryNudge(quote);
-  return products.filter(p=>!ids.has(p.id)&&p.active!==0&&p.approved!==false&&p.approved!==0&&Number(p.stock)>0&&productPrice(p)>0).map(p=>{
-    const type=traits(p),rank=wanted.indexOf(type),next=quoteCart([...cart,{id:p.id,qty:1}],products,promotions);
-    const related=rank>=0?100-rank*12:p.category===anchor?.category?20:0;
+  if(!anchor||isRetiredProduct(anchor))return [];
+  const anchorType=productType(anchor),wanted=pairs[anchorType]||[],quote=quoteCart(cart,products,promotions),nudge=deliveryNudge(quote),steps=new Set(cart.map(x=>products.find(p=>p.id===x.id)).filter(Boolean).map(productType));
+  const candidates=products.filter(p=>!ids.has(p.id)&&!isRetiredProduct(p)&&p.active!==0&&p.active!==false&&p.approved!==false&&p.approved!==0&&Number(p.stock)>0&&productPrice(p)>0).map(p=>{
+    const type=productType(p),rank=wanted.indexOf(type),next=quoteCart([...cart,{id:p.id,qty:1}],products,promotions);
+    const related=rank>=0?160-rank*16:p.category===anchor.category?20:0;
     const unlocksFreeDelivery=!!nudge&&next.shippingFeeFils===0;
-    const fit=deliveryGoal&&nudge?(unlocksFreeDelivery?120-Math.min(80,Math.max(0,productPrice(p)-nudge.remainingFils)/150):Math.min(20,productPrice(p)/1000)):0;
-    return {product:p,unlocksFreeDelivery,totalFils:next.totalFils,score:related+fit};
-  }).sort((a,b)=>b.score-a.score||productPrice(a.product)-productPrice(b.product)||a.product.id.localeCompare(b.product.id)).slice(0,limit);
+    const fit=deliveryGoal&&nudge?(unlocksFreeDelivery?75-Math.min(45,Math.max(0,productPrice(p)-nudge.remainingFils)/150):Math.min(10,productPrice(p)/1000)):0;
+    const sameBrand=String(p.brand||'').toLowerCase()===String(anchor.brand||'').toLowerCase()&&p.brand?5:0;
+    return {product:p,type,unlocksFreeDelivery,totalFils:next.totalFils,reason:reasons[type]||'اختيار يكمل مجموعتكِ',score:related+fit+sameBrand-(steps.has(type)?90:0),related};
+  }).filter(x=>x.related>0).sort((a,b)=>b.score-a.score||productPrice(a.product)-productPrice(b.product)||a.product.id.localeCompare(b.product.id));
+  // Show different complementary steps before more products of the same type.
+  const result=[],types=new Set();for(const row of candidates){if(types.has(row.type))continue;types.add(row.type);result.push(row);if(result.length>=limit)return result}
+  for(const row of candidates){if(!result.includes(row))result.push(row);if(result.length>=limit)break}return result;
 }

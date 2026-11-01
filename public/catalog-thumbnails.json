@@ -153,20 +153,6 @@
     "width": 1697,
     "height": 1597
   },
-  "TS0023": {
-    "primary": "/images/catalog/TS0023-fdb76aa06ff9.png",
-    "thumbnail": "/images/catalog/TS0023-9f92b2a53260.webp",
-    "highResolution": "/images/catalog/TS0023-e2b69810eceb.webp",
-    "width": 1467,
-    "height": 1595
-  },
-  "TS0024": {
-    "primary": "/images/catalog/TS0024-fc1873db740c.png",
-    "thumbnail": "/images/catalog/TS0024-81a9caa65077.webp",
-    "highResolution": "/images/catalog/TS0024-e7a7f45ca4df.webp",
-    "width": 1525,
-    "height": 1610
-  },
   "TS0025": {
     "primary": "/images/catalog/TS0025-8de6bb03287b.jpg",
     "thumbnail": "/images/catalog/TS0025-c850d6ac9596.webp",
@@ -335,47 +321,12 @@
     "width": 2000,
     "height": 2000
   },
-  "TS0050": {
-    "primary": "/images/catalog/TS0050-c38be8d05206.jpg",
-    "thumbnail": "/images/catalog/TS0050-80441875ed44.webp",
-    "highResolution": "/images/catalog/TS0050-5d58f2000b3e.webp",
-    "width": 2000,
-    "height": 2000
-  },
-  "TS0051": {
-    "primary": "/images/catalog/TS0051-92d7c5993853.jpg",
-    "thumbnail": "/images/catalog/TS0051-c50db7593cf1.webp",
-    "highResolution": "/images/catalog/TS0051-92d7c5993853.jpg",
-    "width": 896,
-    "height": 896
-  },
-  "TS0052": {
-    "primary": "/images/catalog/TS0052-fb32ce0b2301.png",
-    "thumbnail": "/images/catalog/TS0052-3b7ca5523e74.webp",
-    "highResolution": "/images/catalog/TS0052-6b683f6b2a75.webp",
-    "width": 1080,
-    "height": 1080
-  },
-  "TS0053": {
-    "primary": "/images/catalog/TS0053-eecabc446a1e.png",
-    "thumbnail": "/images/catalog/TS0053-67595ee4e833.webp",
-    "highResolution": "/images/catalog/TS0053-96c3fdd0bb84.webp",
-    "width": 1080,
-    "height": 1080
-  },
   "TS0054": {
     "primary": "/images/catalog/TS0054-288ceb113d79.png",
     "thumbnail": "/images/catalog/TS0054-c529fb95a3e4.webp",
     "highResolution": "/images/catalog/TS0054-288ceb113d79.png",
     "width": 900,
     "height": 900
-  },
-  "TS0055": {
-    "primary": "/images/catalog/TS0055-9e8cb050dedf.jpg",
-    "thumbnail": "/images/catalog/TS0055-ea42ff66b8a9.webp",
-    "highResolution": "/images/catalog/TS0055-a57033b2d7a9.webp",
-    "width": 1000,
-    "height": 1200
   },
   "TS0056": {
     "primary": "/images/catalog/TS0056-c5c913469b65.jpg",
@@ -853,13 +804,6 @@
     "width": 1200,
     "height": 1200
   },
-  "TS0127": {
-    "primary": "/images/catalog/TS0127-2dff11d8e11e.jpg",
-    "thumbnail": "/images/catalog/TS0127-83b2f5993dea.webp",
-    "highResolution": "/images/catalog/TS0127-2dff11d8e11e.jpg",
-    "width": 1910,
-    "height": 1000
-  },
   "TS0129": {
     "primary": "/images/catalog/TS0129-aa1b115eced4.jpg",
     "thumbnail": "/images/catalog/TS0129-c1bd13e45a64.webp",
@@ -1006,20 +950,6 @@
     "highResolution": "/images/catalog/TS0155-eb7b4264631f.webp",
     "width": 949,
     "height": 1000
-  },
-  "TS0156": {
-    "primary": "/images/catalog/TS0156-0b4038771b9a.avif",
-    "thumbnail": "/images/catalog/TS0156-f333938c80b6.webp",
-    "highResolution": "/images/catalog/TS0156-0b4038771b9a.avif",
-    "width": 1600,
-    "height": 1600
-  },
-  "TS0157": {
-    "primary": "/images/catalog/TS0157-21b193268eae.webp",
-    "thumbnail": "/images/catalog/TS0157-a8bd158f3bd0.webp",
-    "highResolution": "/images/catalog/TS0157-21b193268eae.webp",
-    "width": 894,
-    "height": 803
   },
   "TS0158": {
     "primary": "/images/catalog/TS0158-4cc9b8927b7a.webp",
@@ -1174,20 +1104,6 @@
     "highResolution": "/images/catalog/TS0184-80ce733cdb64.png",
     "width": 1000,
     "height": 1250
-  },
-  "TS0185": {
-    "primary": "/images/catalog/TS0185-517ef68a4986.png",
-    "thumbnail": "/images/catalog/TS0185-621fa9e52f65.webp",
-    "highResolution": "/images/catalog/TS0185-517ef68a4986.png",
-    "width": 900,
-    "height": 900
-  },
-  "TS0186": {
-    "primary": "/images/catalog/TS0186-b8a8d7a7f6c3.jpg",
-    "thumbnail": "/images/catalog/TS0186-b318f544b930.webp",
-    "highResolution": "/images/catalog/TS0186-b8a8d7a7f6c3.jpg",
-    "width": 640,
-    "height": 640
   },
   "TS0187": {
     "primary": "/images/catalog/TS0187-af9ea50a2313.webp",
@@ -1426,13 +1342,6 @@
     "highResolution": "/images/catalog/TS0231-98345ec37bc4.webp",
     "width": 800,
     "height": 800
-  },
-  "TS0232": {
-    "primary": "/images/catalog/TS0232-c5b0ba33374d.webp",
-    "thumbnail": "/images/catalog/TS0232-8256295fe1b9.webp",
-    "highResolution": "/images/catalog/TS0232-c5b0ba33374d.webp",
-    "width": 1254,
-    "height": 1254
   },
   "TS0233": {
     "primary": "/images/catalog/TS0233-97d2f401f4c8.webp",

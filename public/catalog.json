@@ -793,78 +793,6 @@
   },
   {
     "source": "LeoMarka",
-    "brand": "DERMOKIL",
-    "name": "Tea Tree Oil Anti-Acne Facial Spray By DERMOKIL",
-    "subcat": "البشرة",
-    "reference": 1500,
-    "source_url": "https://leomarka.com/collections/ok",
-    "source_note": "شهر تقريبًا — تحقق قبل الاعتماد",
-    "id": "TS0023",
-    "category": "البشرة",
-    "description": "أضيفي خطوة منعشة للعناية بالبشرة التي يبدو عليها اللمعان أو الشوائب مع بخاخ ديرموكيل. يساعدك على توزيع المستحضر بخفة دون فرك، ويمكن إدخاله إلى الروتين بحسب تعليمات العبوة واحتياج بشرتك.",
-    "discount": 33,
-    "priceFils": 1000,
-    "image": "/images/catalog/TS0023-fdb76aa06ff9.png",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "بخاخ الوجه بشجرة الشاي من ديرموكيل",
-      "tagline": "انتعاش خفيف ضمن روتين البشرة.",
-      "benefits": [
-        "طريقة توزيع خفيفة",
-        "إحساس بالانتعاش",
-        "تكملة لروتين البشرة المعرضة للشوائب"
-      ],
-      "howToUse": "اتبعي مسافة الرش ومواعيد الاستخدام على العبوة، وأغلقي العينين عند الرش قرب الوجه.",
-      "notes": "لا يرش داخل العين أو على الجلد المتهيج.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0023"
-    ],
-    "researchReferenceFils": 1750
-  },
-  {
-    "source": "LeoMarka",
-    "brand": "DERMOKIL",
-    "name": "Rice Yeast Whitening and Revitalizing Facial Spray By DERMOKIL",
-    "subcat": "البشرة",
-    "reference": 1500,
-    "source_url": "https://leomarka.com/collections/ok",
-    "source_note": "شهر تقريبًا — تحقق قبل الاعتماد",
-    "id": "TS0024",
-    "category": "البشرة",
-    "description": "عندما تحتاج بشرتك إلى خطوة عناية خفيفة، يمنحك بخاخ رايس ييست توزيعًا ناعمًا وسهلًا. أضيفيه إلى روتينك لإحساس أكثر انتعاشًا ومظهر أقل جفافًا، دون تحميل البشرة طبقات كثيرة دفعة واحدة.",
-    "discount": 33,
-    "priceFils": 1000,
-    "image": "/images/catalog/TS0024-fc1873db740c.png",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "بخاخ رايس ييست للوجه من ديرموكيل",
-      "tagline": "جرعة انتعاش لملامح تبدو مرهقة.",
-      "benefits": [
-        "إحساس منعش",
-        "توزيع ناعم للمستحضر",
-        "خطوة خفيفة في روتين العناية"
-      ],
-      "howToUse": "رشي بحسب المسافة المحددة على العبوة مع إغلاق العينين، واتركيه يتوزع دون فرك قوي.",
-      "notes": "تجنبي الرش مباشرة نحو العين والفم.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0024"
-    ],
-    "researchReferenceFils": 1750
-  },
-  {
-    "source": "LeoMarka",
     "brand": "The Ordinary",
     "name": "Natural Moisturizing Factors + HA for Scalp Hair Serum By THE ORDINARY",
     "subcat": "الشعر",
@@ -1733,150 +1661,6 @@
   },
   {
     "source": "LeoMarka",
-    "brand": "NOTE",
-    "name": "NOTE LUMINOUS SILK COMPACT BLUSHER",
-    "subcat": "أحمر خدود",
-    "reference": 4950,
-    "source_url": "https://leomarka.com/collections/note",
-    "source_note": "صفحة مفهرسة حديثًا",
-    "id": "TS0050",
-    "category": "المكياج",
-    "description": "أضيفي دفئًا ناعمًا إلى الخدين مع بلاشر نوت المضغوط. يمكنك بناء اللون تدريجيًا ليبقى خفيفًا في النهار أو أكثر وضوحًا للمساء، وتنسيقه مع درجة الشفاه لإطلالة منسجمة.",
-    "discount": 19,
-    "priceFils": 3990,
-    "image": "/images/catalog/TS0050-c38be8d05206.jpg",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "بلاشر لومينوس سيلك المضغوط من نوت",
-      "tagline": "لون خدود يمنح الإطلالة حياة.",
-      "benefits": [
-        "إضفاء حيوية على الخدين",
-        "لون قابل للبناء",
-        "سهولة تنسيق المكياج"
-      ],
-      "howToUse": "مرري كمية قليلة بفرشاة بلاشر نظيفة على الخدين وادمجي الحواف جيدًا.",
-      "notes": "تُحدّد درجة اللون المتاحة قبل اعتماد المنتج.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0050"
-    ],
-    "researchReferenceFils": 5990
-  },
-  {
-    "source": "LeoMarka",
-    "brand": "NISHMAN",
-    "name": "Hair Styling Spider Wax S1 By NISHMAN",
-    "subcat": "الشعر",
-    "reference": 6950,
-    "source_url": "https://leomarka.com/",
-    "source_note": "الصفحة الرئيسية؛ قد تكون اللقطة قديمة",
-    "id": "TS0051",
-    "category": "الشعر",
-    "description": "امنحي التسريحة تحديدًا واضحًا مع شمع سبايدر S1 من نيشمان. قوامه الليفي يساعد على تشكيل الخصل وإبراز الملمس، ويتيح لك توزيع المنتج تدريجيًا للوصول إلى مستوى الثبات الذي يناسب التسريحة.",
-    "discount": 42,
-    "priceFils": 4000,
-    "image": "/images/catalog/TS0051-92d7c5993853.jpg",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "شمع الشعر سبايدر S1 من نيشمان",
-      "tagline": "تحديد مرن للتسريحة ولمسة مرتبة.",
-      "benefits": [
-        "تحديد للخصل",
-        "ملمس قابل للتشكيل",
-        "تحكم تدريجي في الثبات"
-      ],
-      "howToUse": "افركي كمية صغيرة بين الكفين ثم وزعيها على الشعر الجاف أو الرطب بحسب التسريحة المطلوبة.",
-      "notes": "ابدئي بالقليل لتجنب تراكم المستحضر على الشعر.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0051"
-    ],
-    "researchReferenceFils": 7990
-  },
-  {
-    "source": "LeoMarka",
-    "brand": "NISHLADY",
-    "name": "Hair Stick Wax By NISHLADY",
-    "subcat": "الشعر",
-    "reference": 4950,
-    "source_url": "https://leomarka.com/",
-    "source_note": "الصفحة الرئيسية؛ قد تكون اللقطة قديمة",
-    "id": "TS0052",
-    "category": "الشعر",
-    "description": "لإطلالة ذيل حصان أو كعكة أكثر ترتيبًا، يمنحك ستيك نيش ليدي تطبيقًا مباشرًا على الشعيرات المتطايرة. يساعدك على تنسيق خط الشعر وإتمام التسريحة دون الحاجة إلى توزيع الواكس على الأطوال كلها.",
-    "discount": 29,
-    "priceFils": 3490,
-    "image": "/images/catalog/TS0052-fb32ce0b2301.png",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "ستيك واكس للشعر من نيش ليدي",
-      "tagline": "ترتيب الشعيرات المتطايرة بسهولة.",
-      "benefits": [
-        "ترتيب الشعر المتطاير",
-        "تطبيق مباشر وسهل",
-        "لمسة نهائية للتسريحات المرفوعة"
-      ],
-      "howToUse": "مرري كمية خفيفة على الشعر المطلوب ترتيبه ثم مشطيه بلطف.",
-      "notes": "استخدمي كمية قليلة خاصة قرب فروة الرأس.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0052"
-    ],
-    "researchReferenceFils": 6490
-  },
-  {
-    "source": "LeoMarka",
-    "brand": "NISHLADY",
-    "name": "Dust Grain Volume and Texture Powder By NISHLADY",
-    "subcat": "الشعر",
-    "reference": 4950,
-    "source_url": "https://leomarka.com/",
-    "source_note": "الصفحة الرئيسية؛ قد تكون اللقطة قديمة",
-    "id": "TS0053",
-    "category": "الشعر",
-    "description": "عندما تبدو الجذور مسطحة، تضيف بودرة نيش ليدي ملمسًا يساعد على رفع التسريحة وإظهارها بحجم أكثر امتلاءً. يمكن توزيعها موضعيًا ثم تشكيل الشعر بالأصابع لتحديد الإطلالة التي تفضلينها.",
-    "discount": 49,
-    "priceFils": 2490,
-    "image": "/images/catalog/TS0053-eecabc446a1e.png",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "بودرة تكثيف وملمس الشعر من نيش ليدي",
-      "tagline": "حجم بصري ينعش التسريحة.",
-      "benefits": [
-        "زيادة الحجم البصري",
-        "إضافة ملمس للتصفيف",
-        "تحكم موضعي بالجذور"
-      ],
-      "howToUse": "انثري كمية قليلة على الشعر في المنطقة المحددة بالعبوة ثم شكلي بالأصابع.",
-      "notes": "تجنبي استنشاق البودرة أو وصولها إلى العينين.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0053"
-    ],
-    "researchReferenceFils": 5990
-  },
-  {
-    "source": "LeoMarka",
     "brand": "NISHLADY",
     "name": "Touch of Silver Bi-phase Conditioner for Blonde and Gray Hair By NISHLADY",
     "subcat": "الشعر",
@@ -1910,42 +1694,6 @@
       "TS0054"
     ],
     "researchReferenceFils": 9990
-  },
-  {
-    "source": "LeoMarka",
-    "brand": "NISHLADY",
-    "name": "Liquid Spray Hair Wax By NISHLADY",
-    "subcat": "الشعر",
-    "reference": 4950,
-    "source_url": "https://leomarka.com/",
-    "source_note": "الصفحة الرئيسية؛ قد تكون اللقطة قديمة",
-    "id": "TS0055",
-    "category": "الشعر",
-    "description": "امنحي تسريحتك مزيدًا من التحديد مع واكس سائل يوزع كرذاذ بدل الواكس التقليدي. يساعد على إبراز الخصل وإكمال اللمسة النهائية، مع إمكانية التحكم في كمية المنتج ومكان توزيعه.",
-    "discount": 39,
-    "priceFils": 2990,
-    "image": "/images/catalog/TS0055-9e8cb050dedf.jpg",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "واكس الشعر السائل البخاخ من نيش ليدي",
-      "tagline": "تشكيل أسهل بخطوة رش خفيفة.",
-      "benefits": [
-        "تحديد التسريحة",
-        "توزيع موضعي بالرذاذ",
-        "سهولة التحكم بالكمية"
-      ],
-      "howToUse": "رشي على الشعر بالمسافة المحددة على العبوة ثم شكلي الخصل حسب الرغبة.",
-      "notes": "لا يرش نحو الوجه أو العينين، واتركيه يجف قبل لمس الشعر بكثرة.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0055"
-    ],
-    "researchReferenceFils": 6490
   },
   {
     "source": "LeoMarka",
@@ -4407,42 +4155,6 @@
   },
   {
     "source": "Farah Glow",
-    "brand": "Olaplex",
-    "name": "Olaplex No. 3 Hair Perfector",
-    "subcat": "الشعر",
-    "reference": 16950,
-    "source_url": "https://www.farahglow.shop/category?id=3",
-    "source_note": "فهرسة قبل شهر؛ القسم: الصيدلية التجميلية",
-    "id": "TS0127",
-    "category": "الشعر",
-    "description": "امنحي الشعر المتضرر من التصفيف أو الصبغات خطوة عناية مخصصة مع أولابلكس رقم 3. يختلف عن البلسم اليومي؛ فهو جزء من روتين ما قبل الغسل، ويساعد على تحسين مظهر الشعر وملمسه عند استخدامه بالطريقة الصحيحة.",
-    "discount": 41,
-    "priceFils": 10000,
-    "image": "/images/catalog/TS0127-2dff11d8e11e.jpg",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "عناية الشعر رقم 3 من أولابلكس",
-      "tagline": "خطوة قبل الغسل للشعر الذي يحتاج اهتمامًا.",
-      "benefits": [
-        "عناية بمظهر الشعر المتضرر",
-        "خطوة قبل الغسل",
-        "تكميل روتين الشعر المصبوغ"
-      ],
-      "howToUse": "اتبعي طريقة تبليل الشعر ومدة ترك المستحضر على العبوة ثم اغسلي بالشامبو والبلسم.",
-      "notes": "لا يترك على الشعر كبديل لمنتج تصفيف، ولا يعيد وصل الأطراف المتقصفة.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0127"
-    ],
-    "researchReferenceFils": 18000
-  },
-  {
-    "source": "Farah Glow",
     "brand": "Secret Key",
     "name": "Secret Key Snow White Spot Gel",
     "subcat": "البشرة",
@@ -5199,78 +4911,6 @@
       "TS0155"
     ],
     "researchReferenceFils": 14000
-  },
-  {
-    "source": "Farah Glow",
-    "brand": "Olaplex",
-    "name": "Olaplex No. 6 Bond Smoother",
-    "subcat": "الشعر",
-    "reference": 15950,
-    "source_url": "https://www.farahglow.shop/index.php",
-    "source_note": "الواجهة الرئيسية مفهرسة قبل شهر",
-    "id": "TS0156",
-    "category": "الشعر",
-    "description": "أكملي التصفيف بكمية صغيرة من بوند سموذر رقم 6 للعناية بمظهر الهيشان ونعومة الشعر. يوزع على الأطوال والأطراف كخطوة تترك على الشعر بحسب تعليمات العبوة، ويختلف عن علاج رقم 3 المستخدم قبل الغسل.",
-    "discount": 31,
-    "priceFils": 11000,
-    "image": "/images/catalog/TS0156-0b4038771b9a.avif",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "كريم بوند سموذر رقم 6 من أولابلكس",
-      "tagline": "لمسة نهائية لأطوال أكثر ترتيبًا.",
-      "benefits": [
-        "تلطيف مظهر الهيشان",
-        "تنعيم الأطراف",
-        "تكملة للتصفيف"
-      ],
-      "howToUse": "وزعي كمية صغيرة على الأطوال والأطراف الرطبة أو الجافة وفق إرشادات العبوة.",
-      "notes": "ابدئي بالقليل لتجنب إثقال الشعر الناعم.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0156"
-    ],
-    "researchReferenceFils": 17000
-  },
-  {
-    "source": "Ksecret (فرعي، غير متحقق)",
-    "brand": "I'm from",
-    "name": "I'm from - Rice Cream",
-    "subcat": "مرطبات",
-    "reference": 14950,
-    "source_url": "https://ksecret.myeasyorders.com/products/Im-from-rice-cream",
-    "source_note": "أسبوعان",
-    "id": "TS0157",
-    "category": "البشرة",
-    "description": "امنحي البشرة الجافة كريمًا يضيف إلى الروتين إحساسًا بالاحتواء والنعومة. رايس كريم من آيم فروم يكمّل التونر والسيروم بطبقة ترطيب، ويناسب من تحب أن تبدو بشرتها أكثر نضارة وأقل شدًا بعد العناية.",
-    "discount": 49,
-    "priceFils": 7490,
-    "image": "/images/catalog/TS0157-21b193268eae.webp",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "رايس كريم من آيم فروم",
-      "tagline": "ترطيب يمنح البشرة إحساسًا ناعمًا ومريحًا.",
-      "benefits": [
-        "تلطيف مظهر الجفاف",
-        "إحساس ناعم",
-        "خطوة كريم مريحة"
-      ],
-      "howToUse": "وزعي كمية مناسبة على الوجه بعد السيروم وربتي حتى يتوزع.",
-      "notes": "عدلي الكمية على المناطق التي تميل إلى اللمعان بحسب حاجتها.",
-      "imageType": "photo",
-      "collection": "k-beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0157"
-    ],
-    "researchReferenceFils": 18000
   },
   {
     "source": "Ksecret (فرعي، غير متحقق)",
@@ -6066,78 +5706,6 @@
   },
   {
     "source": "Ksecret (فرعي، غير متحقق)",
-    "brand": "ANUA",
-    "name": "Anua - Retinol 0.1 Caffeine Revitalizing Eye Cream 30 ml",
-    "subcat": "العناية بالعين",
-    "reference": 14950,
-    "source_url": "https://ksecret.myeasyorders.com/products/Anua-retinol-eye-cream",
-    "source_note": "شهر",
-    "id": "TS0185",
-    "category": "البشرة",
-    "description": "أضيفي لمحيط العين عناية مركزة تجمع الاهتمام بمظهر التعب والنعومة. كريم أنوا لهذه المنطقة يحتاج كمية صغيرة وتدرجًا في الاستخدام، ليكمل روتينًا منظمًا بدل زيادة المستحضرات حول العين بصورة عشوائية.",
-    "discount": 49,
-    "priceFils": 7490,
-    "image": "/images/catalog/TS0185-517ef68a4986.png",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "كريم العين ريتينول 0.1 كافيين من أنوا",
-      "tagline": "اهتمام ليلي بمظهر التعب والخطوط.",
-      "benefits": [
-        "العناية بمظهر الخطوط الدقيقة",
-        "ترطيب محيط العين",
-        "اهتمام بمظهر التعب"
-      ],
-      "howToUse": "طبقي وفق تعليمات العبوة حول عظمة العين دون إدخاله إليها، وابدئي بتدرج مناسب.",
-      "notes": "يحتوي على ريتينول؛ لا يجمع مع مستحضر ريتينويد آخر في المنطقة نفسها.",
-      "imageType": "photo",
-      "collection": "k-beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0185"
-    ],
-    "researchReferenceFils": 18000
-  },
-  {
-    "source": "Ksecret (فرعي، غير متحقق)",
-    "brand": "d'Alba",
-    "name": "d'Alba - White Truffle First Spray Serum (أحجام مختلفة في الوصف)",
-    "subcat": "سيروم",
-    "reference": 19950,
-    "source_url": "https://ksecret.myeasyorders.com/products/Dalba-serum",
-    "source_note": "شهر",
-    "id": "TS0186",
-    "category": "البشرة",
-    "description": "امنحي بشرتك رذاذ عناية يضيف إحساسًا بالترطيب ولمسة ندية إلى الإطلالة. يليق بخطوة قبل المكياج أو خلال اليوم بحسب تعليمات العبوة، مع رج المستحضر عندما تتطلب تركيبته ذلك لتتوزع طبقاته جيدًا.",
-    "discount": 19,
-    "priceFils": 15990,
-    "image": "/images/catalog/TS0186-b8a8d7a7f6c3.jpg",
-    "approved": true,
-    "stock": 24,
-    "details": {
-      "nameAr": "بخاخ وايت ترافل فيرست سيروم من دالبا",
-      "tagline": "لمسة نضارة يمكن تجديدها بسهولة.",
-      "benefits": [
-        "توزيع بالرذاذ",
-        "إحساس بالترطيب",
-        "لمسة إطلالة ندية"
-      ],
-      "howToUse": "رجي العبوة إن نصت التعليمات ثم رشي بالمسافة المحددة مع إغلاق العينين.",
-      "notes": "تتوفر أحجام متعددة؛ يجب اختيار الحجم المتاح قبل اعتماد المنتج للبيع.",
-      "imageType": "photo",
-      "collection": "k-beauty",
-      "featuredOrder": 100
-    },
-    "active": 1,
-    "canonicalSources": [
-      "TS0186"
-    ],
-    "researchReferenceFils": 25000
-  },
-  {
-    "source": "Ksecret (فرعي، غير متحقق)",
     "brand": "EQQUALBERRY",
     "name": "EQQUALBERRY - Hyaltoin Flooding Serum 30 ml",
     "subcat": "سيروم",
@@ -6275,9 +5843,7 @@
       "size": "25 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.sayweee.com/en/product/Dr-Althea-To-Be-Youthful-Eye-Serum-25-ml/2920954"
@@ -6313,9 +5879,7 @@
       "size": "",
       "shade": "Very Black",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://daralmashaghel.com/en/KjVZWoq"
@@ -6351,9 +5915,7 @@
       "size": "20 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://allaboutskindoha.com/products/dr-althea-pdrn-reju-5000-cream-20g"
@@ -6389,10 +5951,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.ebay.com/itm/405294918584"
@@ -6428,9 +5987,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://livish.com/products/kenta-bebe-creme-de-soin-no-1"
@@ -6466,9 +6023,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.mikaela-beauty.com/products/some-by-mi-retinol-intense-advanced-triple-action-eye-cream"
@@ -6504,9 +6059,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://citypharmacy.ie/products/vichy-capital-soleil-uv-age-daily-spf50-40ml?srsltid=AfmBOorX6As2PDNkbXLTM99w6EbCHkI4i45OVJ1ERZql030wdZPBf8lX"
@@ -6542,10 +6095,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://item.rakuten.co.jp/cosmecomonline/1000197261/"
@@ -6581,9 +6131,7 @@
       "size": "150 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://de.iherb.com/pr/eucerin-advanced-hydration-lightweight-sunscreen-lotion-spf-50-fragrance-free-5-fl-oz-150-ml/113263"
@@ -6619,9 +6167,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.eucerin.se/produkter/dermatoclean/cleansing-gel"
@@ -6657,9 +6203,7 @@
       "size": "177 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://sensemakeupjo.com/product/cerave-sa/"
@@ -6695,9 +6239,7 @@
       "size": "200 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.notrepharma.com/protection-moyenne/10315-vichy-capital-soleil-eau-de-protection-solaire-hydratante-spf-30-spray-se-200-ml-3337875585187.html"
@@ -6733,9 +6275,7 @@
       "size": "44 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://sophies-jo.com/products/benefit-the-professional-face-primer-44ml"
@@ -6771,9 +6311,7 @@
       "size": "118 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.gosupps.com/paulas-choice-skin-perfecting-2-bha-liquid-salicylic-acid-exfoliant-daily-facial-exfoliator-for-blackheads-enlarged-pores-wrinkles-fine-lines-fragrance-free-paraben-free-full-size-118-ml-full-size-118ml.html"
@@ -6809,9 +6347,7 @@
       "size": "100 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0324.jpeg"
@@ -6847,9 +6383,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.amavita.ch/it/p/vichy-capital-soleil-spray-fluido-protezione-cellulare-spf50-spray-200-ml-7815158"
@@ -6885,9 +6419,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://aptekifenix.bg/euserin-dermatoclean-pochistvashto-mlyako-za-suha-koja-s-hialuron-200-ml.html"
@@ -6923,9 +6455,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.strawberrynet.com/zh-Hant-TW/beauty-of-joseon-glow-serum-propolis-niacinamide-30ml/362130"
@@ -6961,9 +6491,7 @@
       "size": "27.5 g",
       "shade": "Dark Brown — بني داكن",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.ubuy.ma/en/product/21NGZZFW-toppik-hair-building-fibers-dark-brown-0-97-oz?srsltid=AfmBOoquYrrhNr_T3IDIjP9mXljom0l-cDv39WYG-DNw9seHNa-BKpTT"
@@ -6999,9 +6527,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://murukali.com/products/cerave-skin-renewing-retinol-serum"
@@ -7037,9 +6563,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.pixibeauty.com/products/jasmine-oil-blend?srsltid=AfmBOopEJdLqcZ8SpSplAbK4ikuhbRUKGTaPf0BgWmuyLI9vLGOjqzBG"
@@ -7075,9 +6599,7 @@
       "size": "",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0325.jpeg"
@@ -7113,9 +6635,7 @@
       "size": "35 ml",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0325.jpeg"
@@ -7151,9 +6671,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.apotekhjartat.se/varumarken/eucerin/eucerin-anti-pigment-dual-serum-30-ml"
@@ -7189,9 +6707,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0325.jpeg"
@@ -7227,9 +6743,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://shopee.co.th/Farmstay-24K-Gold-Peptide-Solution-Prime-Ampoule-%28250ml%29-i.1494335589.24392565968"
@@ -7265,9 +6779,7 @@
       "size": "48 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://dermaver.com/products/cerave-skin-renewing-crema-de-noche-48g"
@@ -7303,10 +6815,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.strawberrynet.com/ja-JP/estee-lauder-double-wear-stay-in-place-makeup-spf-10-shell-1c0-30ml-1oz/248259"
@@ -7342,9 +6851,7 @@
       "size": "100 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0326.jpeg"
@@ -7380,9 +6887,7 @@
       "size": "170 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.daraz.com.bd/products/panoxyl-acne-creamy-wash-4-benzoyl-peroxide170g-i523160557.html"
@@ -7418,50 +6923,10 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://thebioaqua.com/products/bioaqua-bqy2751-6947790782751-review-milk-honey-paraffin-wax-hand-mask-hand-care-moisturizing-whitening-skin-care-exfoliating-calluses-hand-film-hand-cream"
-  },
-  {
-    "id": "TS0232",
-    "brand": "CHECK OUT",
-    "name": "Dark Spot Corrector Whitening Cream",
-    "category": "البشرة",
-    "subcat": "المرطبات والكريمات",
-    "description": "كريم تشيك آوت دارك سبوت كوريكتور بالعبوة الصغيرة المصوّرة للعناية بمظهر البقع وتفاوت اللون. استخدميه فقط وفق تعليمات العبوة وعلى مساحة اختبار أولًا، مع واقي الشمس في النهار.",
-    "reference": 4000,
-    "priceFils": 2500,
-    "discount": 37,
-    "image": "/images/catalog/TS0232-c5b0ba33374d.webp",
-    "approved": true,
-    "active": 1,
-    "stock": 24,
-    "details": {
-      "nameAr": "كريم تشيك آوت للعناية بمظهر البقع",
-      "tagline": "عناية موضعية بمظهر البشرة.",
-      "benefits": [
-        "عبوة كريم صغيرة",
-        "عناية موضعية",
-        "اختبار ملاءمة قبل الاستخدام"
-      ],
-      "howToUse": "وزعي كمية مناسبة على بشرة نظيفة بعد السيروم، ودلكي بلطف حتى الامتصاص وفق إرشادات العبوة.",
-      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
-      "imageType": "photo",
-      "collection": "beauty",
-      "featuredOrder": 100,
-      "productType": "moisturizer",
-      "size": "",
-      "shade": "",
-      "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
-    },
-    "source": "Owner intake 2026-10-27",
-    "source_url": "owner-supplied:IMG_0327.jpeg"
   },
   {
     "id": "TS0233",
@@ -7494,9 +6959,7 @@
       "size": "75 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://mohsenistore.com/products/cerave-hydrating-mineral-sunscreen-broad-spectrum-spf50-face-75ml"
@@ -7532,9 +6995,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://zmcosmetics.com/en/products/vichy-normaderm-acne-prone-skin"
@@ -7570,9 +7031,7 @@
       "size": "50 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.meagherspharmacy.ie/products/vichy-normaderm-correcting-anti-blemish-care-50ml"
@@ -7608,9 +7067,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://aptekifenix.bg/euserin-dermopure-obnovyavashta-grizha-za-litse-40-ml.html"
@@ -7646,9 +7103,7 @@
       "size": "50 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.gosupps.com/cetaphil-sun-regulating-multi-protection-fluid-spf-50-50ml-anti-aging-sun-protection-for-the-face-donates-moisture-up-to-8-hours-absorbs-quickly-and-is-ultra-light-not-comedogenic.html"
@@ -7684,9 +7139,7 @@
       "size": "50 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.regentsparkpharmacy.com.au/products/la-roche-posay-anthelios-invisible-fluid-face-spf50-50ml"
@@ -7722,9 +7175,7 @@
       "size": "40 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.notino.fr/la-roche-posay/hydreane-bb-creme-teintee-hydratante-spf-20/"
@@ -7760,9 +7211,7 @@
       "size": "40 ml",
       "shade": "Light — فاتح",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.zurrose-shop.ch/de/hydraphase-ha-bb-creme-light/dp/28J0NTR9"
@@ -7798,9 +7247,7 @@
       "size": "40 ml",
       "shade": "",
       "variantNote": "صيغة العبوة تحتاج تأكيدًا مع المتجر قبل الطلب؛ الوصف لا يفترض أنها بخاخ.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0328.jpeg"
@@ -7836,9 +7283,7 @@
       "size": "59 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.justmylook.com/products/mielle-rosemary-mint-scalp-hair-strengthening-oil-59ml"
@@ -7874,9 +7319,7 @@
       "size": "355 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.walmart.ca/en/ip/Mielle-Rosemary-Mint-Strengthening-Shampoo-Clarifying-Shampoo-that-Gently-Cleanses-Helps-Strengthen-Hair/4SM9ZX6777C9"
@@ -7912,9 +7355,7 @@
       "size": "355 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.tesco.com/groceries/en-GB/products/323433760"
@@ -7950,9 +7391,7 @@
       "size": "340 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.everyday.com.au/shop/product/mielle-rosemary-mint-scalp-amp-hair-strengthening-hair-masque-340g-13885814/13885814-1"
@@ -7988,9 +7427,7 @@
       "size": "",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
       "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true,
       "referenceShade": "52"
     },
     "source": "Owner intake 2026-10-27",
@@ -8027,9 +7464,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.centrepointstores.com/ae/en/buy-bourjois-healthy-mix-primer/p/160601751"
@@ -8065,10 +7500,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.farmasiet.no/catalog/ansiktspleie/kosmetikk/the-ordinary-serum-foundation8%2C5009777"
@@ -8104,9 +7536,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0330.jpeg"
@@ -8142,10 +7572,7 @@
       "size": "50 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://hogiesonline.co.uk/products/dior-backstage-face-body-foundation-6w-50ml"
@@ -8181,10 +7608,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://rozetka.com.ua/382267281/p382267281/"
@@ -8220,10 +7644,7 @@
       "size": "6.5 ml",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.ricardo.ch/de/a/kiko-3d-hydra-gloss-12-neu-1307901274/"
@@ -8259,9 +7680,7 @@
       "size": "45 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0330.jpeg"
@@ -8297,9 +7716,7 @@
       "size": "200 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.whites.sa/en-sa/bio-oil-skincare-oil-200ml/"
@@ -8335,10 +7752,7 @@
       "size": "",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.notino.co.uk/maybelline/dream-matte-mousse-foundation/"
@@ -8374,9 +7788,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0331.jpeg"
@@ -8412,9 +7824,7 @@
       "size": "16 ml",
       "shade": "",
       "variantNote": "لون الأخضر/الأزرق يصف العبوة فقط؛ أكدي لون تركيبة الماسكارا مع المتجر قبل الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0331.jpeg"
@@ -8450,9 +7860,7 @@
       "size": "16 ml",
       "shade": "",
       "variantNote": "لون الأخضر/الأزرق يصف العبوة فقط؛ أكدي لون تركيبة الماسكارا مع المتجر قبل الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0331.jpeg"
@@ -8488,9 +7896,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0331.jpeg"
@@ -8526,9 +7932,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0331.jpeg"
@@ -8564,9 +7968,7 @@
       "size": "12.5 ml",
       "shade": "Rose",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.ebay.com.au/shop/benetint?_nkw=benetint"
@@ -8602,9 +8004,7 @@
       "size": "",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0331.jpeg"
@@ -8640,9 +8040,7 @@
       "size": "50 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://review.soco.id/product/sunscreen/24092-mineral-uv-filters-with-antioxidants-spf-30"
@@ -8678,9 +8076,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0332.jpeg"
@@ -8716,10 +8112,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.marieclaire.co.uk/beauty/huda-beauty-black-friday-713495"
@@ -8755,9 +8148,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0333.jpeg"
@@ -8793,9 +8184,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0333.jpeg"
@@ -8831,10 +8220,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.plein.be/benefit-brow-contour-pro-4-in-1-pencil-2-light-4-gr"
@@ -8870,9 +8256,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.ace.co.uk/benefit-badgal-bang-volumising-mascara-771315"
@@ -8908,9 +8292,7 @@
       "size": "100 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.sephora.co.th/products/the-ordinary-saccharomyces-ferment-30-percent-milky-toner"
@@ -8946,9 +8328,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://leomarka.com/products/the-ordinary-niacinamide-10-zinc-1-30ml"
@@ -8984,9 +8364,7 @@
       "size": "",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
       "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
       "referenceShade": "120 Classic Ivory"
     },
     "source": "Owner intake 2026-10-27",
@@ -9023,9 +8401,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0335.jpeg"
@@ -9061,9 +8437,7 @@
       "size": "45 ml",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0335.jpeg"
@@ -9099,9 +8473,7 @@
       "size": "9 g",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
       "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true,
       "referenceShade": "200 Ivory"
     },
     "source": "Owner intake 2026-10-27",
@@ -9138,9 +8510,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0336.jpeg"
@@ -9176,9 +8546,7 @@
       "size": "3 pieces",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://ananinja.com/sa/ar/product/feather-flamingo-for-women-to-remove-facial-hair-consisting-of-3-blades-13991175"
@@ -9214,9 +8582,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.cosmeticary.com/en/products/black-tea-rice-mochi-cleanser"
@@ -9252,9 +8618,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.sephora.nz/products/arencia-fresh-royal-blue-hyssop-rice-mochi-cleanser"
@@ -9290,9 +8654,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.letu.ru/product/arencia-penka-dlya-umyvaniya-rice-mochi-s-ekstraktom-shipovnika/173800827"
@@ -9328,9 +8690,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://www.myaster.com/en/online-pharmacy/p/arencia-calendula-rice-mochi-cleanser-120g/1069184"
@@ -9366,9 +8726,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0339.jpeg"
@@ -9404,9 +8762,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://leomarka.com/products/panorama-volume-million-lashes-mascara-all-night-black-by-loreal"
@@ -9442,9 +8798,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "https://leomarka.com/products/panorama-volume-million-lashes-mascara-by-loreal"
@@ -9480,10 +8834,7 @@
       "size": "",
       "shade": "",
       "variantNote": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27",
-      "imageEditedWithAI": false,
-      "imageNote": "صورة توضيحية للمنتج؛ الدرجة أو تفاصيل الإصدار تُؤكّد مع المتجر."
+      "intakeBatch": "2026-10-27"
     },
     "source": "Owner intake 2026-10-27",
     "source_url": "owner-supplied:IMG_0342.jpeg"
@@ -9519,9 +8870,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://glowceryjo.com/products/beauty-of-joseon-revive-eye-serum"
@@ -9557,9 +8906,7 @@
       "size": "60 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.strawberrynet.com/id-ID/axis-y-cera-heart-my-type-duo-cream-60ml-2-02oz/322705?srsltid=AfmBOophhkj3Ap3v_P27d1bePodhu2lJYyoT-Jgy2ECAx2AEnXLQ0sYi"
@@ -9595,9 +8942,7 @@
       "size": "3 × 30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.onbuy.com/gb/p/balance-active-formula-the-mighty-three-breakthrough-active-ingredients-for-visible-results-three-targeted-serums-that-you-can-layer-together-or~p56069273/"
@@ -9633,9 +8978,7 @@
       "size": "",
       "shade": "",
       "variantNote": "أكدي لون الشفاه المتاح مع المتجر قبل تثبيت الطلب؛ الصورة توضيحية للمنتج.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://sophies-jo.com/products/maybelline-superstay-vinyl-ink-longwear-liquid-lipstick"
@@ -9671,9 +9014,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.iherb.com/pr/l-or-al-telescopic-original-mascara-910-blackest-black-0-27-fl-oz-8-ml/134652"
@@ -9709,9 +9050,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.sainsburys.co.uk/gol-ui/product/l-or-al-paris-telescopic-waterproof-mascara-dramatic-lash-length-smudge-resistant-black"
@@ -9747,9 +9086,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.parfumdreams.de/Essence/Augen/Mascara/I-Love-Extreme-Crazy-Volume-Mascara/index_64774.aspx"
@@ -9785,9 +9122,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.dolce.pl/maybelline/lash-sensational-mascara/43632.php5"
@@ -9823,9 +9158,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://kosmetista.ru/catalog/product/44122/"
@@ -9861,9 +9194,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.narscosmetics.com.br/nars-climax-mascara-6g-34107008/p"
@@ -9899,9 +9230,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://dreamshop.ma/product/essence-i-love-extreme-volume-mascara/"
@@ -9937,9 +9266,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.trendencias.com/belleza/estas-tres-ultimas-mascaras-pestanas-alta-gama-que-nos-han-conquistado-hemos-sumado-a-nuestro-maquillaje-diario"
@@ -9975,9 +9302,7 @@
       "size": "",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0419.jpeg"
@@ -10013,9 +9338,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.whites.sa/en-sa/flormar-liquid-eyeliner-pen-600-black/"
@@ -10051,9 +9374,7 @@
       "size": "",
       "shade": "",
       "variantNote": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح.",
-      "introductoryOffer": true,
       "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true,
       "optionLabel": "النسخة",
       "options": [
         {
@@ -10112,9 +9433,7 @@
       "size": "",
       "shade": "",
       "variantNote": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح.",
-      "introductoryOffer": true,
       "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true,
       "optionLabel": "النسخة",
       "options": [
         {
@@ -10165,9 +9484,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.beautybar.co.ke/products/vaseline-glutaglow-ultra-bright-deodorant-roll-on-ampoule-serum-underarm"
@@ -10203,9 +9520,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://danaidworld.com/products/essence-lash-princess-false-lash-effect-mascara"
@@ -10241,9 +9556,7 @@
       "size": "200 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0419.jpeg"
@@ -10279,9 +9592,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.rios.pk/products/wokali-150ml-wkl470-breast-firming-cream"
@@ -10317,9 +9628,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0419.jpeg"
@@ -10355,9 +9664,7 @@
       "size": "",
       "shade": "",
       "variantNote": "السعر لقلم واحد؛ أكدي اللون المتاح مع المتجر قبل تثبيت الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0419.jpeg"
@@ -10393,9 +9700,7 @@
       "size": "",
       "shade": "",
       "variantNote": "السعر لقلم واحد؛ الصورة توضح أحد الألوان، وأكدي اللون المتاح قبل الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.flormar.com.tr/stylematic-mat-bitisli-suya-dayanikli-asansorlu-goz-kalemi-mavi-8690604190522/"
@@ -10431,9 +9736,7 @@
       "size": "473 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://allegro.hu/termek/cerave-kisimito-arctisztito-hab-473-ml-pumpas-flakon-52722571-a584-4d72-be49-e4bfee979a2b"
@@ -10469,9 +9772,7 @@
       "size": "562 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.gosupps.com/cerave-hydrating-facial-cleanser-moisturizing-non-foaming-face-wash-with-hyaluronic-acid-ceramides-and-glycerin-fragrance-free-paraben-free-19-fluid-ounce-19-fl-oz-pack-of-1.html"
@@ -10507,9 +9808,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0420.jpeg"
@@ -10545,9 +9844,7 @@
       "size": "454 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://pharmacareonline.qa/products/cerave-moisturising-cream-454-gm"
@@ -10583,9 +9880,7 @@
       "size": "500 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.carrefourksa.com/mafsau/en/specialized-body-care/qv-moisturizing-cream-500g/p/SA9314839004452"
@@ -10621,9 +9916,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://mastersoutlet.com/%D8%AC%D9%88%D9%86%D8%B3%D9%88%D9%86-%D9%83%D8%B1%D9%8A%D9%85-%D9%85%D8%B1%D8%B7%D8%A8-%D9%85%D8%AA%D8%B9%D8%AF%D8%AF-%D8%A7%D9%84%D8%A7%D8%AD%D8%AC%D8%A7%D9%85-100-%D9%85%D9%84/p1834638705"
@@ -10659,9 +9952,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.pakcosmetics.com/brand/kojie-san/kojie-san/kojie-san-classic-soap.html"
@@ -10697,9 +9988,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0420.jpeg"
@@ -10735,9 +10024,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0420.jpeg"
@@ -10773,9 +10060,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.everythingkeratin.com/products/sadoer-collagen-anti-aging-face-cream-100ml"
@@ -10811,9 +10096,7 @@
       "size": "250 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.ebay.co.uk/itm/297283763745"
@@ -10849,9 +10132,7 @@
       "size": "",
       "shade": "",
       "variantNote": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح.",
-      "introductoryOffer": true,
       "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false,
       "optionLabel": "النسخة",
       "options": [
         {
@@ -10906,9 +10187,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://shop.coop.co.uk/product/johnsons-baby-oil-200ml--3d1d36de-64f5-4796-8e2f-7e7035a0e01b"
@@ -10944,9 +10223,7 @@
       "size": "40 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.sayweee.com/zh/product/La-Roche-Posay-Effaclar-Duo-M-40ml/2172533"
@@ -10982,9 +10259,7 @@
       "size": "",
       "shade": "",
       "variantNote": "أكدي لون الهايلايتر المتاح مع المتجر قبل تثبيت الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.kingscross.co.uk/shop/product/positive-light-liquid-luminizer-spacenk-789c6d"
@@ -11020,9 +10295,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0420.jpeg"
@@ -11058,9 +10331,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://bioaqua.com.pk/products/sadoer-collagen-anti-aging-hand-foot-mask-40ml"
@@ -11096,9 +10367,7 @@
       "size": "215 ml",
       "shade": "",
       "variantNote": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح.",
-      "introductoryOffer": true,
       "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false,
       "optionLabel": "النسخة",
       "options": [
         {
@@ -11145,9 +10414,7 @@
       "size": "200 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.afcosmetics.nl/nl/vaseline-intensive-care-cocoa-radiant-body-oil-200.html"
@@ -11183,9 +10450,7 @@
       "size": "100 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.boutiqaat.com/en-qa/men/acm-novophane-reactional-anti-hair-loss-lotion-100ml-hc-00004506-1/p/"
@@ -11221,9 +10486,7 @@
       "size": "50 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://international-cosmetic.com/products/medicube-collagen-firming-sun-cream-spf50-50ml"
@@ -11259,9 +10522,7 @@
       "size": "100 ml",
       "shade": "",
       "variantNote": "نسخة ملونة؛ أكدي ملاءمة اللون المتاح مع المتجر قبل الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0421.jpeg"
@@ -11297,9 +10558,7 @@
       "size": "",
       "shade": "",
       "variantNote": "المقاس غير محدد في الصور؛ تواصلي مع المتجر لتأكيد المقاس المتاح قبل تثبيت الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0421.jpeg"
@@ -11335,9 +10594,7 @@
       "size": "",
       "shade": "",
       "variantNote": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://perfectobd.com/product/sheglam-complexion-pro-long-lasting-breathable-matte-foundation-1050"
@@ -11373,9 +10630,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.sasa.com.hk/SalePage/index/407699?lang=en-US"
@@ -11411,9 +10666,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.my-origines.com/nl/pure-vitamin-c10-P0964007.html"
@@ -11449,9 +10702,7 @@
       "size": "30 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://skinvanity.com.mx/products/la-roche-posay-effaclar-serum-ultra-concentrated-peeling-anti-imperfecciones"
@@ -11487,9 +10738,7 @@
       "size": "400 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.rubyzcosmetics.com/products/garnier-micellar-water-cleanser-and-daily-make-up-remover-400-ml"
@@ -11525,9 +10774,7 @@
       "size": "400 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://alamerbeauty.com/ar/%D9%85%D8%B2%D9%8A%D9%84-%D9%85%D9%83%D9%8A%D8%A7%D8%AC-%D9%85%D9%86-%D9%85%D8%A7%D8%B1%D9%83%D8%A9-%D8%BA%D8%A7%D8%B1%D9%86%D9%8A%D9%8A%D9%87-%D9%85%D9%8A%D8%B3%D9%8A%D9%84%D8%A7%D8%B1-%D8%A8%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%88%D8%B1%D8%AF-400%D9%85%D9%84/p1935231291"
@@ -11563,9 +10810,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0421.jpeg"
@@ -11601,9 +10846,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.plump-it.com/collections/plump-it-volumising-lip-plumper"
@@ -11639,9 +10882,7 @@
       "size": "",
       "shade": "",
       "variantNote": "أكدي درجة الكونسيلر المتاحة مع المتجر قبل تثبيت الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.newu.in/products/loreal-paris-infallible-full-wear-more-than-concealer-309-10ml"
@@ -11677,9 +10918,7 @@
       "size": "",
       "shade": "",
       "variantNote": "أكدي درجة الكونسيلر المتاحة مع المتجر قبل تثبيت الطلب.",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.colorshow.pk/products/maybelline-instant-age-rewind-concealer"
@@ -11715,9 +10954,7 @@
       "size": "156 g",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://www.colorshow.pk/products/panoxyl-acne-foaming-wash-benzoyl-peroxide-10-maximum-strength"
@@ -11753,9 +10990,7 @@
       "size": "",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": false
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "https://om.beutista.com/products/nature-seven-green"
@@ -11791,9 +11026,7 @@
       "size": "100 ml",
       "shade": "",
       "variantNote": "",
-      "introductoryOffer": true,
-      "intakeBatch": "2026-10-27-b",
-      "imageEditedWithAI": true
+      "intakeBatch": "2026-10-27-b"
     },
     "source": "Owner intake 2026-10-27-b",
     "source_url": "owner-supplied:IMG_0421.jpeg"

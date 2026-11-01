@@ -4,12 +4,13 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
 import {JSDOM,VirtualConsole} from 'jsdom';
+import {isRetiredProduct} from '../public/catalog-policy.js';
 import {productType,matchesProductType} from '../public/product-types.js';
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const catalog=JSON.parse(read('public/catalog.json')),products=JSON.parse(read('data/intake-2026-10-27/products.json')),manifest=JSON.parse(read('data/intake-2026-10-27/manifest.json')),images=JSON.parse(read('data/intake-2026-10-27/images.json'));
 test('Every photographed item maps to one of 85 new SKUs or 9 existing SKUs, with distinct sizes and brands retained',()=>{
- assert.equal(manifest.length,94);assert.equal(manifest.filter(p=>p.existing).length,9);assert.equal(products.length,85);assert.equal(catalog.length,317);assert.equal(new Set(catalog.map(p=>p.id)).size,317);
- for(const r of manifest)assert.equal(catalog.filter(p=>p.id===r.id).length,1,r.id);
+ assert.equal(manifest.length,94);assert.equal(manifest.filter(p=>p.existing).length,9);assert.equal(products.length,85);assert.equal(catalog.length,304);assert.equal(new Set(catalog.map(p=>p.id)).size,304);
+ for(const r of manifest)assert.equal(catalog.filter(p=>p.id===r.id).length,isRetiredProduct(r.id)?0:1,r.id);
  assert.match(products.find(p=>p.id==='TS0215').details.size,/100/);assert.ok(catalog.some(p=>p.id==='TS0059'));
  for(const id of ['TS0202','TS0257','TS0258'])assert.equal(productType(catalog.find(p=>p.id===id)),'mascara');
  assert.notEqual(products.find(p=>p.id==='TS0202').brand,products.find(p=>p.id==='TS0257').brand);
@@ -26,7 +27,7 @@ test('All new products have individual copy, honest introductory comparisons, cl
 });
 test('Every new image has reviewed provenance, genuine WebP bytes, a compact thumbnail and a larger zoom image',()=>{
  assert.equal(images.length,85);const thumbs=JSON.parse(read('public/catalog-thumbnails.json'));
- for(const r of images){assert.equal(r.visuallyReviewed,true);assert.ok(r.sourcePage&&r.sourceImage&&r.sourcePhotoSha256);assert.ok(Math.min(r.width,r.height)>=500,r.id);assert.ok(r.thumbnailWidth<=600&&r.thumbnailHeight<=600);assert.equal(thumbs[r.id].primary,r.primary);
+ for(const r of images){assert.equal(r.visuallyReviewed,true);assert.ok(r.sourcePage&&r.sourceImage&&r.sourcePhotoSha256);assert.ok(Math.min(r.width,r.height)>=500,r.id);assert.ok(r.thumbnailWidth<=600&&r.thumbnailHeight<=600);if(!isRetiredProduct(r.id))assert.equal(thumbs[r.id].primary,r.primary);
   for(const path of [r.primary,r.thumbnail]){const b=fs.readFileSync(new URL('../public'+path,import.meta.url));assert.equal(b.subarray(0,4).toString(),'RIFF');assert.equal(b.subarray(8,12).toString(),'WEBP')}
   const p=products.find(p=>p.id===r.id);assert.equal(p.image,r.primary);assert.equal(p.details.imageEditedWithAI,r.aiEdited);if(r.aiEdited)assert.match(p.details.imageNote,/بالذكاء الاصطناعي/);
  }
@@ -44,7 +45,7 @@ test('Additive migration can be repeated after sales and edits without restockin
 const pause=()=>new Promise(r=>setTimeout(r,5));
 async function open(t,hash){const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e));const dom=new JSDOM(read('public/index.html'),{url:'https://trendjo.pages.dev/'+hash,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});t.after(()=>dom.window.close());const w=dom.window,d=w.document;w.loadContactPhone=loadContactPhone;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};let sends=0;
  w.fetch=async url=>{const path=String(url).split('?')[0];if(path==='/api/orders'){sends++;throw Error('Tests must not send orders')};return{ok:true,json:async()=>path==='/api/catalog'?{products:catalog,promotions:[],storeLive:false}:path==='/catalog-thumbnails.json'?JSON.parse(read('public/catalog-thumbnails.json')):path==='/product-galleries.json'?JSON.parse(read('public/product-galleries.json')):catalog}};
- w.eval(['product-links.js','commerce.js','shop-tools.js','image-zoom.js','autocomplete.js','product-share.js','product-types.js','product-variants.js','order-location.js','brand-tools.js','meta-pixel.js','app.js'].map(f=>read('public/'+f).replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'')).join('\n'));
+ w.eval(['product-links.js','commerce.js','shop-tools.js','image-zoom.js','autocomplete.js','product-share.js','product-types.js','product-variants.js','catalog-policy.js','brand-tools.js','whatsapp-checkout.js','app.js'].map(f=>read('public/'+f).replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'')).join('\n'));
  for(let i=0;i<60&&!d.querySelector('.product-card,.detail-content');i++)await pause();assert.deepEqual(errors.map(e=>e.message),[]);return{w,d,sends:()=>sends};
 }
 test('Dedicated mascara page lists only mascara and keeps type, query and sorting together',async t=>{
@@ -54,7 +55,7 @@ test('Dedicated mascara page lists only mascara and keeps type, query and sortin
 });
 test('New arrivals show the latest 59 additions; details offer tone choices without technical image captions',async t=>{
  const {w,d,sends}=await open(t,'#/shop?new=1');assert.equal(d.querySelector('#resultCount').textContent,'59 منتج');
- w.location.hash='#/product/TS0275';for(let i=0;i<40&&!d.querySelector('.detail-content');i++)await pause();assert.equal(d.querySelectorAll('.variant-picker input').length,4);assert.doesNotMatch(d.body.textContent,/بالذكاء الاصطناعي/);assert.ok(d.querySelector('#shareProduct'));assert.ok(d.querySelector('#openImageZoom'));assert.match(d.querySelector('.intro-price-note').textContent,/السعر العادي/);assert.equal(d.querySelector('.old-price').getAttribute('aria-label'),'السعر العادي');assert.equal(sends(),0);
+ w.location.hash='#/product/TS0275';for(let i=0;i<40&&!d.querySelector('.detail-content');i++)await pause();assert.equal(d.querySelectorAll('.variant-picker input').length,4);assert.doesNotMatch(d.body.textContent,/بالذكاء الاصطناعي/);assert.ok(d.querySelector('#shareProduct'));assert.ok(d.querySelector('#openImageZoom'));assert.equal(d.querySelector('.intro-price-note'),null);assert.equal(d.querySelector('.old-price').getAttribute('aria-label'),'السعر قبل الخصم');assert.equal(sends(),0);
 });
 test('Tools are available as their own category and cannot leak into the face powder section',async t=>{
  const {d}=await open(t,'#/shop?cat=الأدوات');assert.equal(d.querySelector('#resultCount').textContent,'4 منتج');for(const id of ['TS0260','TS0276','TS0277'])assert.equal(catalog.find(p=>p.id===id).category,'الأدوات');assert.equal(matchesProductType(catalog.find(p=>p.id==='TS0219'),'powder'),false);

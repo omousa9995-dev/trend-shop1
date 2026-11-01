@@ -1,8 +1,9 @@
+import {isRetiredProduct} from '../public/catalog-policy.js';
 import {retailPrice,actualDiscount,promotionData,productPrice} from '../public/commerce.js';
 const productId=/^TS[A-Z0-9-]{4,64}$/;
 export async function loadPromotions(env,all=false){
  const result=await env.DB.prepare(`SELECT id,kind,title,description,config_json,active FROM promotions ${all?'':'WHERE active=1'} ORDER BY created_at DESC,id LIMIT 200`).all();
- return (result.results||[]).map(promotionData).filter(Boolean);
+ return (result.results||[]).map(promotionData).filter(p=>p&&!p.items?.some(x=>isRetiredProduct(x.id)));
 }
 export async function adminPromotions(req,env,{json,error,sameOrigin,content}){
  if(req.method==='GET')return json({promotions:await loadPromotions(env,true)});
@@ -14,7 +15,7 @@ export async function adminPromotions(req,env,{json,error,sameOrigin,content}){
  }
  const id=b.id||'PROMO'+crypto.randomUUID().slice(0,12).toUpperCase(),title=typeof b.title==='string'?b.title.trim().slice(0,100):'',description=typeof b.description==='string'?b.description.trim().slice(0,300):'';
  if(!/^PROMO[A-Z0-9-]{6,64}$/.test(id)||!['offer','combo'].includes(b.kind)||title.length<3||!Array.isArray(b.items)||b.items.length<1||b.items.length>6||b.kind==='combo'&&b.items.length<2||!Number.isInteger(b.priceFils)||b.priceFils%10||b.priceFils<500||b.priceFils>200000)return error('راجعي اسم العرض والمنتجات والسعر النهائي');
- const items=[];for(const x of b.items){if(!productId.test(x.id||'')||!Number.isInteger(x.qty)||x.qty<1||x.qty>10||items.some(y=>y.id===x.id))return error('اختاري منتجات مختلفة وكميات من 1 إلى 10');items.push({id:x.id,qty:x.qty})}
+ const items=[];for(const x of b.items){if(isRetiredProduct(x.id)||!productId.test(x.id||'')||!Number.isInteger(x.qty)||x.qty<1||x.qty>10||items.some(y=>y.id===x.id))return error('اختاري منتجات مختلفة وكميات من 1 إلى 10');items.push({id:x.id,qty:x.qty})}
  const result=await env.DB.prepare(`SELECT id,name,price_fils,active,approved FROM products WHERE id IN (${items.map(()=>'?').join(',')})`).bind(...items.map(x=>x.id)).all();const byId=new Map((result.results||[]).map(x=>[x.id,x]));
  if(items.some(x=>!byId.has(x.id)||!byId.get(x.id).active||!byId.get(x.id).approved))return error('العروض تتطلب منتجات ظاهرة ومعتمدة');
  const price=retailPrice(b.priceFils,200000);

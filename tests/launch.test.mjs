@@ -1,3 +1,4 @@
+import {isRetiredProduct} from '../public/catalog-policy.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -36,7 +37,7 @@ test('Invoices use الزبونة, escape text, and honor the saved delivery pro
 test('Compact card images retain originals and never override an admin replacement photo',()=>{
  const map=JSON.parse(read('public/catalog-thumbnails.json')),provenance=JSON.parse(read('data/thumbnail-provenance.json'));
  assert.equal(provenance.length,173);let before=0,after=0;
- for(const entry of provenance){assert.ok(fs.existsSync(new URL('../public'+entry.original,import.meta.url)));assert.ok(fs.existsSync(new URL('../public'+entry.thumbnail,import.meta.url)));before+=entry.original_bytes;after+=entry.thumbnail_bytes;assert.equal(thumbnailFor({id:entry.id,image_url:entry.original},map),map[entry.id].thumbnail);assert.equal(thumbnailFor({id:entry.id,image_url:'/media/new.jpg'},map),'/media/new.jpg')}
+ for(const entry of provenance.filter(x=>!isRetiredProduct(x.id))){assert.ok(fs.existsSync(new URL('../public'+entry.original,import.meta.url)));assert.ok(fs.existsSync(new URL('../public'+entry.thumbnail,import.meta.url)));before+=entry.original_bytes;after+=entry.thumbnail_bytes;assert.equal(thumbnailFor({id:entry.id,image_url:entry.original},map),map[entry.id].thumbnail);assert.equal(thumbnailFor({id:entry.id,image_url:'/media/new.jpg'},map),'/media/new.jpg')}
  assert.ok(after<before*.15,`Thumbnails ${after}, originals ${before}`);
 });
 test('Streamed JSON is bounded by bytes without trusting Content-Length; normal Arabic remains valid',async()=>{
