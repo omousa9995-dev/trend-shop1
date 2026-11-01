@@ -23,3 +23,13 @@ Tests cover migration/history preservation and idempotent receipts, restored leg
 ## Pre-deployment verification
 
 All 136 tests pass locally. Desktop and 390px browser QA completed search-to-product navigation, L’Oreal type navigation, all 13 foundations and all 24 sunscreens (including body sunscreen), selected tone/quantity in WhatsApp URLs, complementary suggestions, 150% image zoom, and demo order completion with Arabic and ASCII Jordan mobile numbers. COD and manual CliQ form behavior were checked. No WhatsApp message, production order or customer email was sent.
+
+## Published verification
+
+Implementation commit `47318ae2124d868b6e69d59c9beff94b6f0947e5` passed GitHub validation run `41328403130`. Worker version `d11531fc-d298-4b9b-a385-94635a916295` serves 100% of traffic after deployment at 2026-11-01 16:52 UTC (19:52 Jordan/Saudi time).
+
+All 13 targeted rows were unreferenced by orders and were physically deleted. The remaining database contains 321 product rows, with 302 approved active products and 7,253 stock units. At verification, all 7 orders and 37 item snapshots remained unchanged, the fingerprint of every other product's stock/prices/reference prices/publication flags matched the pre-deployment snapshot, and `PRAGMA foreign_key_check` returned no violations. No seeds or repricing migrations ran.
+
+The live catalog API returned 302 products with `storeLive: true`, no retired IDs or Pixel configuration, and no image-production or launch-offer markers. Live browser checks confirmed the 13/3/24 foundation/concealer/sunscreen sections, product type links, the selected foundation tone and exact WhatsApp total, complementary concealer/mascara/powder cards, and a checkout page with WhatsApp assist and no Maps field or consent panel. The storefront meta CSP permits only same-origin scripts and connections. Its temporary test cart was cleared without sending an order. The isolated review endpoint was disabled.
+
+Live proof: [product-assist-2.3.0.jpg](verification/product-assist-2.3.0.jpg).
