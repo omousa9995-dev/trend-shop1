@@ -36,7 +36,10 @@ export async function uploadImage(request,env,{json,error,sameOrigin,throttle}){
 export async function serveImage(request,env,ctx,key){
   const headers={'x-content-type-options':'nosniff','content-security-policy':"default-src 'none'; frame-ancestors 'none'",'cross-origin-resource-policy':'same-origin'};
   if(!['GET','HEAD'].includes(request.method))return new Response(null,{status:405,headers:{...headers,allow:'GET, HEAD'}});
-  if(!/^(?:(?:uploads\/\d{4}-\d{2}\/[a-f0-9-]{36}|catalog\/TS[A-Z0-9-]{4,64}-[a-f0-9]{12})\.(?:jpg|jpeg|png|webp|avif)|catalog\/marketing\/TS[A-Z0-9-]{4,64}-(?:scene|thumb|motion)-[a-f0-9]{12}\.(?:webp|mp4))$/.test(key))return new Response('Not found',{status:404,headers});
+  const original=/^(?:uploads\/\d{4}-\d{2}\/[a-f0-9-]{36}|catalog\/TS[A-Z0-9-]{4,64}-[a-f0-9]{12})\.(?:jpg|jpeg|png|webp|avif)$/;
+  const existingCampaign=/^catalog\/marketing\/TS[A-Z0-9-]{4,64}-(?:scene|thumb|motion)-[a-f0-9]{12}\.(?:webp|mp4)$/;
+  const newCampaign=/^catalog\/marketing\/(?:TS[A-Z0-9-]{4,64}-ritual(?:-thumb)?|bundle-[1-5](?:-thumb)?|(?:beauty-tools|korean-care)-gateway)-nov3-[a-f0-9]{12}\.webp$/;
+  if(!original.test(key)&&!existingCampaign.test(key)&&!newCampaign.test(key))return new Response('Not found',{status:404,headers});
   if(!env.MEDIA)return new Response('Image storage unavailable',{status:503,headers:{...headers,'cache-control':'no-store'}});
   const cache=globalThis.caches?.default;
   const cacheKey=new Request(request.url,{method:'GET'});

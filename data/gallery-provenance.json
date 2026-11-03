@@ -338,5 +338,95 @@
     "reviewed": true,
     "not_customer_testimonial": true,
     "prompt_manifest": "data/marketing-assets-2026-11-02.json"
+  },
+  {
+    "product_id": "TS0263",
+    "image": "/images/catalog/marketing/TS0263-ritual-nov3-9194118bf217.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0263",
+    "source_image": "/images/catalog/TS0263-e52c41cef92e.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0064",
+    "image": "/images/catalog/marketing/TS0064-ritual-nov3-313740e369e1.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0064",
+    "source_image": "/images/catalog/TS0064-3986c417dad3.jpg",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0084",
+    "image": "/images/catalog/marketing/TS0084-ritual-nov3-fe19d4f6c042.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0084",
+    "source_image": "/images/catalog/TS0084-9f467a97cbe7.jpg",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0265",
+    "image": "/images/catalog/marketing/TS0265-ritual-nov3-a37438b8d0bd.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0265",
+    "source_image": "/images/catalog/TS0265-a378ff64209c.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0275",
+    "image": "/images/catalog/marketing/TS0275-ritual-nov3-f5b3d69767f4.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0275",
+    "source_image": "/images/catalog/TS0275-0c2559779012.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0228",
+    "image": "/images/catalog/marketing/TS0228-ritual-nov3-83612cc16358.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0228",
+    "source_image": "/images/catalog/TS0228-7b29ba00d3ca.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0202",
+    "image": "/images/catalog/marketing/TS0202-ritual-nov3-30203914d100.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0202",
+    "source_image": "/images/catalog/TS0202-f4c69f102aa4.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0305",
+    "image": "/images/catalog/marketing/TS0305-ritual-nov3-2203d56561ca.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0305",
+    "source_image": "/images/catalog/TS0305-bf081db940d2.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
+  },
+  {
+    "product_id": "TS0269",
+    "image": "/images/catalog/marketing/TS0269-ritual-nov3-4fe5e446ab8d.webp",
+    "source_page": "https://trendjo.pages.dev/p/TS0269",
+    "source_image": "/images/catalog/TS0269-8ffac00a4c8c.webp",
+    "source_kind": "fictional_promotional_model",
+    "reviewed": true,
+    "not_customer_testimonial": true,
+    "prompt_manifest": "data/marketing-assets-2026-11-03.json"
   }
 ]

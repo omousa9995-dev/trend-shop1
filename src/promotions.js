@@ -21,7 +21,14 @@ export async function adminPromotions(req,env,{json,error,sameOrigin,content}){
  const price=retailPrice(b.priceFils,200000);
  const original=items.reduce((n,x)=>n+productPrice(byId.get(x.id))*x.qty,0);
  if(price>=original||price<items.reduce((n,x)=>n+x.qty*500,0))return error('سعر العرض يجب أن يكون أقل من مجموع المنتجات وبحد نصف دينار لكل قطعة');
- await env.DB.prepare(`INSERT INTO promotions(id,kind,title,description,config_json,active) VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET kind=excluded.kind,title=excluded.title,description=excluded.description,config_json=excluded.config_json,active=excluded.active,updated_at=datetime('now')`).bind(id,b.kind,title,description,JSON.stringify({items,priceFils:price}),b.active===false?0:1).run();
+ const previous=b.id?await env.DB.prepare('SELECT config_json FROM promotions WHERE id=?').bind(id).first():null;
+ let old={};try{old=JSON.parse(previous?.config_json||'{}')}catch{}
+ const signature=rows=>JSON.stringify((Array.isArray(rows)?rows:[]).map(x=>({id:x.id,qty:x.qty})).sort((a,b)=>a.id.localeCompare(b.id)));
+ // Keep campaign imagery only while the bundle still contains those products.
+ const retained=signature(old.items)===signature(items)?{image:old.image,primaries:old.primaries,notes:old.notes,en:old.en}:{};
+ const enTitle=typeof b.enTitle==='string'?b.enTitle.trim().slice(0,100):retained.en?.title||'',enDescription=typeof b.enDescription==='string'?b.enDescription.trim().slice(0,300):retained.en?.description||'';
+ const config={...retained,items,priceFils:price,en:{...retained.en,title:enTitle,description:enDescription}};
+ await env.DB.prepare(`INSERT INTO promotions(id,kind,title,description,config_json,active) VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET kind=excluded.kind,title=excluded.title,description=excluded.description,config_json=excluded.config_json,active=excluded.active,updated_at=datetime('now')`).bind(id,b.kind,title,description,JSON.stringify(config),b.active===false?0:1).run();
  return json({ok:true,id});
 }
 export async function adminDiscounts(req,env,{json,error,sameOrigin,content}){

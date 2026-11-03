@@ -84,13 +84,21 @@ function doPost(e) {
       'سنبدأ بتجهيزه بكل حب ونتواصل معكِ إذا احتجنا إلى أي تفاصيل.',
       o.payment==='cliq'?'إذا اخترتِ الدفع عبر CliQ، استخدمي Alias المتجر: '+CLIQ_STORE_ALIAS+'؛ التحويل يدوي ويؤكد صاحب المتجر استلامه.':'',
       'إبتسمي فلا جميلة إلا أنتِ ♡',
-      'فريق Trend Shop'
+      'فريق Trend Shop',
+      '────────────────────────',
+      'Hello '+name+' ♡',
+      'Thank you for shopping with Trend Shop!',
+      'We have received your order. Order number: '+id,
+      'We will prepare it with care and contact you if we need any further details.',
+      o.payment==='cliq'?'For manual CliQ payments, use the store alias: '+CLIQ_STORE_ALIAS+'. The store will confirm receipt of your transfer.':'',
+      'With love,',
+      'The Trend Shop team'
     ].filter(Boolean).join('\n\n');
     // Deliberately no product list, totals, or invoice in the customer message.
     MailApp.sendEmail({to:STORE_EMAIL,subject:'Trend Shop | طلب جديد '+id,body:ownerMessage,name:'Trend Shop'});
     let customerSent=false,customerError='';
     if (clientEmail && quota>=2) {
-      try {MailApp.sendEmail({to:clientEmail,subject:'Trend Shop | تأكيد استلام طلبك '+id,body:customerMessage,name:'Trend Shop'});customerSent=true;}
+      try {MailApp.sendEmail({to:clientEmail,subject:'Trend Shop | تأكيد الطلب / Order received '+id,body:customerMessage,name:'Trend Shop'});customerSent=true;}
       catch (_) {customerError='customer_mail_error';}
     } else if (clientEmail) customerError='customer_quota_exhausted';
     return jsonResult_({ok:true,ownerSent:true,customerSent,customerError});

@@ -57,6 +57,7 @@
   "TS0064": {
     "primary": "/images/catalog/TS0064-3986c417dad3.jpg",
     "images": [
+      "/images/catalog/marketing/TS0064-ritual-nov3-313740e369e1.webp",
       "/images/catalog/TS0148-f3d1de01190c.jpg"
     ]
   },
@@ -150,6 +151,54 @@
     "primary": "/images/catalog/TS0257-97b7c2859bee.webp",
     "images": [
       "/images/catalog/marketing/TS0257-scene-354292034107.webp"
+    ]
+  },
+  "TS0263": {
+    "primary": "/images/catalog/TS0263-e52c41cef92e.webp",
+    "images": [
+      "/images/catalog/marketing/TS0263-ritual-nov3-9194118bf217.webp"
+    ]
+  },
+  "TS0084": {
+    "primary": "/images/catalog/TS0084-9f467a97cbe7.jpg",
+    "images": [
+      "/images/catalog/marketing/TS0084-ritual-nov3-fe19d4f6c042.webp"
+    ]
+  },
+  "TS0265": {
+    "primary": "/images/catalog/TS0265-a378ff64209c.webp",
+    "images": [
+      "/images/catalog/marketing/TS0265-ritual-nov3-a37438b8d0bd.webp"
+    ]
+  },
+  "TS0275": {
+    "primary": "/images/catalog/TS0275-0c2559779012.webp",
+    "images": [
+      "/images/catalog/marketing/TS0275-ritual-nov3-f5b3d69767f4.webp"
+    ]
+  },
+  "TS0228": {
+    "primary": "/images/catalog/TS0228-7b29ba00d3ca.webp",
+    "images": [
+      "/images/catalog/marketing/TS0228-ritual-nov3-83612cc16358.webp"
+    ]
+  },
+  "TS0202": {
+    "primary": "/images/catalog/TS0202-f4c69f102aa4.webp",
+    "images": [
+      "/images/catalog/marketing/TS0202-ritual-nov3-30203914d100.webp"
+    ]
+  },
+  "TS0305": {
+    "primary": "/images/catalog/TS0305-bf081db940d2.webp",
+    "images": [
+      "/images/catalog/marketing/TS0305-ritual-nov3-2203d56561ca.webp"
+    ]
+  },
+  "TS0269": {
+    "primary": "/images/catalog/TS0269-8ffac00a4c8c.webp",
+    "images": [
+      "/images/catalog/marketing/TS0269-ritual-nov3-4fe5e446ab8d.webp"
     ]
   }
 }

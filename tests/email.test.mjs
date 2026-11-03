@@ -29,6 +29,16 @@ test('Invalid token and exhausted daily quota cannot send mail',()=>{
  assert.equal(testBridge({token:'invalid',order}).sent.length,0);
  assert.equal(testBridge({token,order},0).sent.length,0);
 });
+test('Every provided customer email receives one bilingual confirmation regardless of shopping language',()=>{
+ for(const locale of ['ar','en',undefined]){
+  const {sent,response}=testBridge({token,order:{...order,locale}});
+  const customer=sent.filter(x=>x.to===order.email);assert.equal(response.customerSent,true);assert.equal(customer.length,1);
+  assert.match(customer[0].subject,/تأكيد الطلب \/ Order received/);
+  assert.match(customer[0].body,/استلمنا طلبكِ بنجاح/);assert.match(customer[0].body,/We have received your order/);
+  assert.match(customer[0].body,/TRUSTTREND/);assert.match(customer[0].body,/manual CliQ payments/);
+ }
+ const {sent}=testBridge({token,order:{...order,payment:'cod'}});assert.doesNotMatch(sent[1].body,/TRUSTTREND|manual CliQ/);
+});
 test('The owner is notified when only one recipient slot remains, even if the customer provided email',()=>{
  const {sent,response}=testBridge({token,order},1);assert.equal(sent.length,1);assert.equal(sent[0].to,'stpostpo470@gmail.com');assert.equal(response.ok,true);assert.equal(response.ownerSent,true);assert.equal(response.customerSent,false);
 });

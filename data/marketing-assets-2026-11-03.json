@@ -1,0 +1,364 @@
+{
+  "date": "2026-11-03",
+  "tool": "built-in image_gen",
+  "classification": "Promotional images of fictional adults, not customer reviews or clinical before/after results. Original packshots remain primary.",
+  "images": [
+    {
+      "product_id": "TS0263",
+      "final_prompt": "Use case: ads-marketing\nAsset type: premium ecommerce skincare campaign photograph, landscape 3:2 composition.\nPrimary request: A fictional adult woman in her early thirties, relaxed at an ivory vanity in warm daylight, gently touching a small dab of mineral sunscreen onto one cheek with two fingertips. Her other hand clearly presents the exact The Ordinary Mineral UV Filters SPF 30 with Antioxidants product shown in reference image 1, front label toward camera. This is a single moment during application, not a statement of dosage or efficacy.\nInput images: Image 1 is the sole product identity reference. Preserve that exact rose-beige 50 ml tube, white lower cap, rounded white label blocks, black The Ordinary branding, and SPF 30 variant. No substitute tube, no dropper, no SPF50, no invented package redesign. The original carton may sit beside her on the vanity matching the same reference.\nScene/backdrop: soft ivory plaster bathroom, blush ceramic tray, subtle plum textile accent.\nSubject: believable adult woman with natural skin texture, calm expression, dressed in a simple ivory sleeveless top. Face and product equally readable.\nStyle/medium: photorealistic luxury but approachable editorial beauty photography.\nComposition/framing: waist-up three-quarter portrait; face near center, correct pack held near lower cheek without blocking the application hand; uncluttered generous margins for website cropping.\nLighting/mood: warm indirect window daylight, soft realistic shadows, quiet morning ritual.\nColor palette: blush, warm ivory, soft taupe, a restrained plum accent.\nMaterials/textures: visible pores and fine facial hair, believable hands with natural nails, realistic cream dab, faithful matte tube material.\nConstraints: Preserve exact product shape, colors, label layout and package identity from the reference. Only original packaging print may be visible. No captions, no added text, no watermark, no testimonials, no stars, no before/after design, no skin transformation, no flawless airbrushed skin, no duplicate fingers.",
+      "reference_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0263-e52c41cef92e.webp",
+      "generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-08f07e9c-726e-4bcd-b31e-3122977694b0.png",
+      "final_copied_file": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-skin/TS0263-sunscreen-application.png",
+      "tool": "builtin image_gen.imagegen",
+      "mode": "reference-based promotional",
+      "dimensions": "1536x1024",
+      "inspection": "Reference viewed before generation; selected output viewed after copy. Fictional adult model, exact catalog package family and variant retained, no testimonials or efficacy claims.",
+      "productId": "TS0263",
+      "image": "/images/catalog/marketing/TS0263-ritual-nov3-9194118bf217.webp",
+      "thumbnail": "/images/catalog/marketing/TS0263-ritual-thumb-nov3-cc7592cb8d3a.webp",
+      "reference": "/images/catalog/TS0263-e52c41cef92e.webp",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "product_id": "TS0064",
+      "final_prompt": "Use case: ads-marketing\nAsset type: premium ecommerce skincare campaign photograph, landscape 3:2 composition.\nPrimary request: A fictional adult woman in her thirties seated comfortably on an upholstered ivory bathroom bench, dressed modestly in an ivory spa robe tied closed over matching mid-thigh spa shorts. She uses a small cotton pad gently on the OUTER SIDE of her upper thigh just above the knee, in an ordinary nonsexual body-care moment. She looks down toward her hand with a calm expression. The exact The Ordinary Glycolic Acid 7% Exfoliating Toner bottle from reference image 1 stands upright, large and readable on a low blush stone side table beside the bench.\nInput images: Image 1 is the sole product identity reference. Preserve the exact clear cylindrical bottle containing pale-yellow liquid, sloping rounded shoulders, tall pointed white nozzle cap, white printed label and horizontal silver-grey band, The Ordinary brand typography, and Glycolic Acid 7% Exfoliating Toner wording. Use no alternative cap or pump, no brown bottle, no invented product version.\nScene/backdrop: bright private spa bathroom with ivory plaster, a folded plum towel, and subtle blush accents.\nSubject: fictional adult woman, normal natural skin with visible texture, robe fully covering chest and hips. Her legs are positioned naturally side by side, with only a modest area of OUTER thigh exposed for the cotton pad. No private areas visible.\nStyle/medium: photorealistic luxury but approachable editorial beauty photography.\nComposition/framing: medium-wide seated portrait; head, robe, hands, cotton pad and exact toner bottle all clearly visible; bottle placed in foreground beside the body rather than obscuring it. Tasteful eye-level viewpoint; no emphasis on intimate areas.\nLighting/mood: warm indirect window daylight, soft shadows, quiet self-care.\nColor palette: warm ivory, blush, muted plum and pale yellow product liquid.\nMaterials/textures: skin pores and natural texture, believable fingers and cotton pad, robe cotton weave, accurate transparent bottle and real liquid meniscus.\nConstraints: This is cosmetic product use only with normal unchanged skin. Preserve exact reference package shape, colors, label layout and identity. No nudity, no underwear pose, no erotic framing, no skin problems, no result claim, no before/after, no retouching transformation, no added captions, no added text beyond original packaging print, no watermark, no stars, no testimonials.",
+      "reference_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0064-3986c417dad3.jpg",
+      "generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-735db695-380f-46bf-9a75-80ba82e01bb4.png",
+      "final_copied_file": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-skin/TS0064-toner-body-care.png",
+      "tool": "builtin image_gen.imagegen",
+      "mode": "reference-based promotional",
+      "dimensions": "1536x1024",
+      "inspection": "Reference viewed before generation; selected output viewed after copy. Fictional adult model, exact catalog package family and variant retained, no testimonials or efficacy claims.",
+      "productId": "TS0064",
+      "image": "/images/catalog/marketing/TS0064-ritual-nov3-313740e369e1.webp",
+      "thumbnail": "/images/catalog/marketing/TS0064-ritual-thumb-nov3-ee920b0cc317.webp",
+      "reference": "/images/catalog/TS0064-3986c417dad3.jpg",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "product_id": "TS0084",
+      "final_prompt": "Use case: ads-marketing\nAsset type: premium ecommerce eye-care campaign photograph, landscape 3:2 editorial composition.\nPrimary request: Create a tasteful two-moment photographic composition of the SAME fictional adult woman in her early thirties with the SAME normal unchanged skin. The dominant main photograph shows her gently applying the exact AXIS-Y Vegan Collagen Eye Serum roller from reference image 1 to skin just below her eye along the orbital bone, safely away from the eye itself. A small, clean rectangular second photographic inset occupying about one-quarter of the composition shows the same woman a moment earlier holding the same roller beside her cheek ready to apply, with a closer clear view of the actual product and metal roller. Both moments have matching normal skin texture; they demonstrate preparation and application only.\nInput images: Image 1 is the sole product identity reference. Preserve the exact pale cream slim 10 ml cylindrical package, green collar and pump neck, distinctive elongated white applicator head, shiny metal ball roller recessed in its angled oval white tip, pale green vertical label typography, AXIS-Y branding and Vegan Collagen Eye serum identity. The application device MUST remain attached to this exact bottle and match its proportions. No tube, no dropper, no generic skincare wand, no multi-ball applicator, no invented package variant.\nScene/backdrop: ivory vanity and softly blurred blush bathroom backdrop, restrained plum textile accent.\nSubject: fictional adult woman wearing an ivory top, relaxed calm expression, normal skin with pores and fine lines maintained equally in both photographic moments, realistic hands with natural nails.\nStyle/medium: photorealistic luxury but approachable editorial beauty photography, intimate careful eye-care ritual.\nComposition/framing: main close portrait shows face, her hand and the cream/green product clearly while the metal roller rests lightly beneath the eye; small secondary inset in the lower right shows the preparation moment and a clear detailed product head and label. Keep inset boundaries minimal and clean, with no captions or framing that suggests results. High-end balanced layout, generous margins for website cropping.\nLighting/mood: warm indirect daylight, gentle shadows, serene.\nColor palette: warm ivory, blush, muted plum, true-to-reference product cream and green.\nMaterials/textures: visible authentic pores, believable fingers, realistic steel roller reflections, correct white head and matte cream cylinder.\nConstraints: Preserve exact product geometry, green collar, distinctive single metal ball and label identity from reference. This is a routine demonstration only. The skin must be visually unchanged between moments, with no brightened or smoothed result. No before/after words or symbols, no outcome claims, no transformation, no skin problems, no split face, no retouching effect, no captions, no added typography beyond original package print, no watermark, no stars, no testimonials.",
+      "reference_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0084-9f467a97cbe7.jpg",
+      "generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-703d9f93-802f-436c-a42a-6b4df60181f7.png",
+      "final_copied_file": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-skin/TS0084-eye-serum-ritual.png",
+      "tool": "builtin image_gen.imagegen",
+      "mode": "reference-based promotional",
+      "dimensions": "1536x1024",
+      "inspection": "Reference viewed before generation; selected output viewed after copy. Fictional adult model, exact catalog package family and variant retained, no testimonials or efficacy claims.",
+      "productId": "TS0084",
+      "image": "/images/catalog/marketing/TS0084-ritual-nov3-fe19d4f6c042.webp",
+      "thumbnail": "/images/catalog/marketing/TS0084-ritual-thumb-nov3-9a44d4405734.webp",
+      "reference": "/images/catalog/TS0084-9f467a97cbe7.jpg",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "productID": "TS0265",
+      "referencePath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0265-a378ff64209c.webp",
+      "copiedPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-makeup/TS0265-eyeshadow-use.png",
+      "prompt": "Use case: ads-marketing. Asset type: premium beauty ecommerce website campaign portrait, aspect ratio 4:5. Create one photorealistic editorial photograph of a fictional adult woman in her early thirties using the exact Huda Beauty Naughty Nude burgundy eyeshadow palette in input image 1. Input image 1 is the PRODUCT IDENTITY reference, not a person reference: preserve the actual translucent rose case, burgundy lid, Naughty script and HUDA BEAUTY label, and the exact visible 18-pan arrangement, colors and textures in three rows of six. Show this open actual palette prominently in the lower foreground on a minimal ivory vanity, with the lid tilted as in reference so the palette identity and pans are visible; do not invent another palette or shade arrangement. The woman sits closely behind it, upper body and face clearly visible. She gently blends warm muted plum eyeshadow on one closed eyelid using one small eyeshadow brush held naturally in her right hand, other eye relaxed, calm confident approachable expression. Dark softly pulled-back hair, ivory blouse, normal lashes, natural pores and believable skin texture. Elegant warm daylight, soft ivory and blush background with a subtle plum accent. Composition balances the clear reference product and genuine application gesture, portrait 4:5, realistic product scale, premium candid beauty photography. Preserve packaging colors, proportions, branding and labels from the reference exactly. No added text, captions, prices, watermark, review stars, testimonials, before-and-after imagery or guaranteed-result claims. No airbrushing, plastic skin, exaggerated eyelashes, extra fingers, duplicated brushes, unrelated products or invented variants.",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-18ef742c-b367-4815-9be6-d9e08482ae50.png",
+      "mode": "built-in reference-based generation",
+      "tool": "image_gen.imagegen",
+      "qa": "Open 18-pan reference palette retained; brush at eyelid; natural texture and believable hands; no overlays.",
+      "productId": "TS0265",
+      "image": "/images/catalog/marketing/TS0265-ritual-nov3-a37438b8d0bd.webp",
+      "thumbnail": "/images/catalog/marketing/TS0265-ritual-thumb-nov3-8bbaa46f63f0.webp",
+      "reference": "/images/catalog/TS0265-a378ff64209c.webp",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "productID": "TS0275",
+      "referencePath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0275-0c2559779012.webp",
+      "copiedPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-makeup/TS0275-powder-use.png",
+      "prompt": "Use case: ads-marketing. Asset type: premium beauty ecommerce website campaign portrait, aspect ratio 4:5. Create one photorealistic editorial photograph of a fictional adult woman in her early thirties using the exact L'Oreal Paris Infallible 24H Fresh Wear Foundation in a Powder compact in input image 1. Input image 1 is the PRODUCT IDENTITY reference, not a person reference. Preserve the actual rounded-square compact, metallic red border with diagonal black details, clear center, beige powder, L'OREAL PARIS and INFALLIBLE / 24H FRESH WEAR labels, 9 g and exact shade label 200 IVORY. Do not change 200 into 20. She gently sweeps a fluffy powder brush onto her cheek with her right hand while holding this closed reference compact upright in her left hand just below her chin, front facing the camera and fully recognizable, fingers supporting only its outer lower edges. Clear product in lower foreground, realistic compact scale, woman face clearly visible with calm confident approachable expression. Medium brunette hair loosely tucked back, soft blush blouse. Natural pores and skin texture, normal lashes, believable hands and brush contact. Elegant warm daylight, minimal ivory dressing area with blush and subtle plum accents. Portrait 4:5, premium candid beauty photography, balanced product clarity and real use gesture. Preserve reference packaging geometry, red and black colors, all labels and brand identity; no invented variant. No added text, captions, prices, watermark, review stars, testimonials, before-and-after imagery or guaranteed-result claims. No plastic skin, excessive smoothing, exaggerated lashes, extra fingers, duplicated brushes or unrelated products.",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-0ffc7bdb-20c2-4c66-8ee1-5f45751a430c.png",
+      "mode": "built-in reference-based generation",
+      "tool": "image_gen.imagegen",
+      "qa": "Red/black 200 IVORY compact retained; fluffy brush at cheek; natural texture and believable hands; no overlays.",
+      "productId": "TS0275",
+      "image": "/images/catalog/marketing/TS0275-ritual-nov3-f5b3d69767f4.webp",
+      "thumbnail": "/images/catalog/marketing/TS0275-ritual-thumb-nov3-3122a723b3fa.webp",
+      "reference": "/images/catalog/TS0275-0c2559779012.webp",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "productID": "TS0228",
+      "referencePath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0228-7b29ba00d3ca.webp",
+      "copiedPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-makeup/TS0228-foundation-use.png",
+      "prompt": "Use case: ads-marketing. Asset type: premium beauty ecommerce website campaign portrait, aspect ratio 4:5. Create one photorealistic editorial photograph of a fictional adult woman in her early thirties using the exact Estee Lauder Double Wear Stay-in-Place Makeup SPF10 foundation from input image 1. Input image 1 is the PRODUCT IDENTITY reference, not a person reference. Preserve the reference's squat rectangular frosted-glass bottle with rounded shoulders, light beige liquid, cylindrical fully polished GOLD cap, Estee Lauder monogram and gold ESTEE LAUDER lettering, black Double Wear and Stay-in-Place Makeup / SPF 10 label. The actual reference has an all-gold cap: keep that exactly, do not substitute a black cap, pump or another version. The woman gently blends a small amount of foundation into her cheek with one soft foundation brush held naturally in her right hand; her left hand presents the capped reference bottle upright at upper-chest level, label facing camera clearly in the lower foreground. Product scale realistic and fingers keep labels visible. Calm confident approachable expression, dark brown softly tied-back hair, ivory blouse, natural skin pores and real skin texture with a small believable blending gesture, normal lashes, anatomically believable hands. Warm daylight in a minimal ivory and pale blush dressing area with one subtle plum accent. Portrait 4:5 premium editorial beauty photograph, product and face both clear. Show only the bottle and brush, omit the carton. Preserve exact packaging shape, colors, cap and branding without invented shade codes or variants. No added text, captions, prices, watermark, review stars, testimonials, before-and-after imagery or guaranteed-result claims. No plastic skin, excessive smoothing, exaggerated lashes, extra fingers, duplicated brushes or unrelated products.",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-43905acd-6098-4509-a5b5-083d65192293.png",
+      "mode": "built-in reference-based generation",
+      "tool": "image_gen.imagegen",
+      "qa": "Frosted rectangular bottle and actual all-gold cap retained; brush blending cheek; natural texture and believable hands; no overlays.",
+      "productId": "TS0228",
+      "image": "/images/catalog/marketing/TS0228-ritual-nov3-83612cc16358.webp",
+      "thumbnail": "/images/catalog/marketing/TS0228-ritual-thumb-nov3-759fbc738053.webp",
+      "reference": "/images/catalog/TS0228-7b29ba00d3ca.webp",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "product_id": "TS0202",
+      "name": "Maybelline Lash Sensational Sky High Very Black",
+      "reference_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0202-f4c69f102aa4.webp",
+      "generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-84490ea0-1e0a-4d07-8a75-180d44dab034.png",
+      "final_copied_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-mascara/TS0202-maybelline-sky-high-ritual.png",
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the current campaign portrait; image 2 is the authoritative actual Maybelline Sky High product packshot.\nChange only the mascara product parts and adjust the model's grip slightly if needed. Keep the adult woman's face, skin texture, hair, clothing, smile, lighting, background, 4:5 composition and realistic makeup ritual unchanged.\nCorrect product construction and exact packaging proportions: the current open body incorrectly shows the entire CLOSED tube including its cap shape. In the actual product, the rose pink cap is nearly HALF the assembled product length, with embossed HIGH on that cap. The open body in the lower foreground is the other HALF of the assembled tube, a compact slender straight pink cylinder, with embossed SKY only and the actual small MAYBELLINE and LASH SENSATIONAL labels exactly as image 2. There must be NO HIGH lettering on the open body. Give the wand hand the actual longer pink cap bearing HIGH, attached to thin black stem and narrow tapered brush. The brush stays just in front of the lashes outside the eye. Match metallic pink color, diameter, shape and all authentic product labels to image 2, natural physical dimensions. Tube body and cap should have similar overall lengths, with the body only modestly longer. Keep both parts clearly visible, foreground body upright held naturally.\nNo added text or overlays, no price, no before/after, no claims, no false lashes, no new objects. Do not change the brand or invent product markings.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in generation, then precise-object-edit to match product construction",
+      "inspection": "Reference and final image visually inspected via view_image. Corrected physical body/cap split and branding against actual packshot. Adult ritual, natural skin and lashes, believable hands and eyes, consistent 1122x1402 portrait, no overlay copy or claims.",
+      "initial_prompt": "Use case: ads-marketing.\nAsset type: premium beauty e-commerce campaign portrait, 4:5 aspect ratio.\nPrimary request: Photograph one fictional adult woman in her late twenties USING Maybelline Lash Sensational Sky High Very Black mascara during her own relaxed makeup ritual. Image 1 is the exact product reference. Match its real rose-pink metallic mascara tube, embossed outlined large vertical SKY HIGH lettering, small black MAYBELLINE and LASH SENSATIONAL labeling, correct cylindrical slender tube/cap proportions, and thin black stem with narrow tapered flexible mascara brush. Reproduce the actual product tube faithfully from Image 1, removed from retail blister packaging.\nScene/backdrop: tasteful intimate vanity corner, soft ivory wall and gently blurred blush textile with a hint of plum. No other cosmetics, no packaging, no mirror reflections.\nSubject and composition: elegant adult woman with dark brown hair swept away from her eyes and authentic natural skin texture, shoulders and face in close portrait. Slight warm confident smile. She holds the open pink product tube clearly visible, label toward camera, in her left hand in the lower foreground; her right hand holds its removed matching pink cap and attached mascara wand, raised horizontally just in front of the upper eyelashes of one eye as she carefully applies mascara. The brush is immediately outside the lashes and never touches the eye or waterline. Her gaze is slightly above camera. Believable fingers, hand positions, eyes, and natural defined eyelashes. No false lashes and no dramatic extension effect.\nStyle/medium: polished luxury editorial photography, human approachable beauty ritual, premium but believable.\nLighting/mood: soft window daylight, warm ivory/blush/plum palette, gentle shadows, crisp tube details and clearly visible eyes. 4:5 portrait composition.\nText constraints: no added text, headlines, price, badges, stars, testimonial, watermark, or logo overlays. Only exact existing physical product branding on the tube as in the reference.\nPreserve the Maybelline pink tube and its actual label; never substitute a different brand or MissLara. Avoid fake exaggerated lash results, before/after layout, touching the eyeball, extra fingers, extra tools, duplicated mascara, surreal anatomy.",
+      "initial_generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-24adf109-b5c3-4bea-9605-92f09b33f98a.png",
+      "referenced_image_paths": [
+        "/workspace/scratch/dbd3ae41ed74/generated_images/exec-24adf109-b5c3-4bea-9605-92f09b33f98a.png",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0202-f4c69f102aa4.webp"
+      ],
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "883e825e2ea7e65c883ad32b89aa9ce4017ea097b0da94cbb2c3cc1ad384b096",
+      "productId": "TS0202",
+      "image": "/images/catalog/marketing/TS0202-ritual-nov3-30203914d100.webp",
+      "thumbnail": "/images/catalog/marketing/TS0202-ritual-thumb-nov3-993c3d613b21.webp",
+      "reference": "/images/catalog/TS0202-f4c69f102aa4.webp",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "product_id": "TS0305",
+      "name": "L'Oreal Paris Telescopic Original Mascara 910 Blackest Black",
+      "reference_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0305-bf081db940d2.webp",
+      "generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-572c05ba-0e66-42cf-a208-37187c2b9679.png",
+      "final_copied_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-mascara/TS0305-loreal-telescopic-ritual.png",
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the current campaign portrait; image 2 is the authoritative actual gold L'Oreal Telescopic Original product packshot.\nChange only the mascara body and cap/wand to correct their proportions, with a slight grip adjustment if needed. Keep the adult woman's face, skin, hair, clothing, smile, light, background and 4:5 portrait unchanged.\nThe current open body in the lower foreground incorrectly resembles the full closed tube; correct this mechanical detail using image 2. In the actual assembled product, the smooth golden cap occupies approximately the UPPER HALF and the labeled gold body occupies the LOWER HALF. Give the upright open body only that actual lower-half shape: tapering slim champagne-gold cylinder, approximately finger-length, no extra bottom segment or cap seam, open black threaded neck at top, black L'OREAL PARIS branding above the exact vertical TELESCOPIC label. Match the original body's lower-half proportions to reference.\nThe wand hand must hold the actual LONG smooth gold cap, comparable in length to the open body, attached to the thin black wand stem with a slim precision brush. Keep the cap gold, no branding on the cap. Make the cap approximately twice as long as currently pictured, extending left underneath her grip naturally if needed. The brush remains safely immediately in front of lashes, outside the eye.\nMatch metallic gold color and exact packaging silhouette and labeling of image 2. No text overlays, no prices, no claims, no before/after, no new objects.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in generation, then precise-object-edit to match product construction",
+      "inspection": "Reference and final image visually inspected via view_image. Corrected physical body/cap split and branding against actual packshot. Adult ritual, natural skin and lashes, believable hands and eyes, consistent 1122x1402 portrait, no overlay copy or claims.",
+      "initial_prompt": "Use case: ads-marketing.\nAsset type: premium beauty e-commerce campaign portrait, 4:5 aspect ratio.\nPrimary request: Photograph one fictional adult woman in her early thirties USING L'Oreal Paris Telescopic Original Mascara 910 Blackest Black during her own relaxed makeup ritual. Image 1 is the exact product reference. Match its real elegant long metallic champagne-GOLD tube with subtly telescoped form, black vertical TELESCOPIC lettering, small L'OREAL PARIS label, correct slender tube/cap proportions, and thin black mascara stem with slim precise short-bristled brush. Reproduce the actual product tube faithfully from Image 1, removed from retail blister packaging.\nScene/backdrop: tasteful intimate vanity corner with ivory backdrop, softly blurred blush and muted plum textiles, no packaging, no other cosmetics and no mirror reflections.\nSubject and composition: adult woman with warm medium skin, dark brown eyes, dark hair softly pulled back from her eyes and authentic natural skin texture, face and shoulders close portrait. Slight warm confident smile. She holds the open gold mascara tube clearly visible and upright with label toward camera in one hand in the lower foreground, and her other hand holds its matching gold cap and black wand raised horizontally immediately in front of the upper lashes of one eye. She is carefully applying mascara, the brush just outside the eyelashes, never touching the eye or waterline. Her gaze is slightly above the camera. Believable natural fingers, eyes and defined lashes, no false lashes and no dramatic extension effect.\nStyle/medium: polished luxury editorial photography, human approachable beauty ritual, premium but believable.\nLighting/mood: soft window daylight, warm ivory/blush/plum palette, gentle shadows and crisp product details, 4:5 portrait composition.\nText constraints: no added text, headlines, price, badges, stars, testimonial, watermark, or logo overlays. Only exact existing physical product branding on the tube as in the reference: L'OREAL PARIS and TELESCOPIC.\nPreserve the L'Oreal gold Telescopic Original tube; no black or silver tube or substitute brand. Avoid fake exaggerated lash results, before/after layout, touching eyeball, extra fingers, extra tools, duplicated mascara, surreal anatomy.",
+      "initial_generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-91b69b26-87f3-4139-bc0e-3bca90e6f20c.png",
+      "referenced_image_paths": [
+        "/workspace/scratch/dbd3ae41ed74/generated_images/exec-91b69b26-87f3-4139-bc0e-3bca90e6f20c.png",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0305-bf081db940d2.webp"
+      ],
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "030ec0ff012a96ae216c6dafdffc4ff759fe35f2a926f7b8477f156dc83bf58c",
+      "productId": "TS0305",
+      "image": "/images/catalog/marketing/TS0305-ritual-nov3-2203d56561ca.webp",
+      "thumbnail": "/images/catalog/marketing/TS0305-ritual-thumb-nov3-560dae327813.webp",
+      "reference": "/images/catalog/TS0305-bf081db940d2.webp",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "product_id": "TS0269",
+      "name": "Benefit BADgal BANG Volumizing Mascara",
+      "reference_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0269-8ffac00a4c8c.webp",
+      "generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-9811349a-6aba-4bb3-bcec-b9bff4a1dc54.png",
+      "final_copied_path": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-mascara/TS0269-benefit-badgal-bang-ritual.png",
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the current Benefit mascara campaign portrait; image 2 is the authoritative actual Benefit BADgal BANG product reference.\nCorrect only the black mascara cap/wand and product proportions, retaining the exact adult woman, face, natural skin, hair, smile, clothing, hands as much as possible, window light, ivory/blush/plum setting and portrait composition.\nMatch the actual distinctive cap from image 2: matte-black elongated handle with raised pyramid stud rows, length about half of the upright open body, widening slightly at the wand connection and tapering down toward its characteristic pointed end at the far left. Lengthen the current cap by about one third toward the left, fitting naturally inside the wand hand's grip, and reproduce the pointed cap-end shape if visible. Keep the thin black wand and narrow tapered bristle brush, held safely immediately in front of the lashes, outside the eye.\nKeep the upright body in the lower foreground very faithful to image 2: slender tapered matte-black body, pink benefit near the neck, exact vertically arranged BADgal and large white/pink BANG! product branding. Preserve authentic label design; do not add claims or invented markings.\nNo other scene changes, no overlays, prices, testimonials, stars, before/after, false lashes, extra objects or exaggerated lash results.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in generation, then precise-object-edit to match product construction",
+      "inspection": "Reference and final image visually inspected via view_image. Corrected physical body/cap split and branding against actual packshot. Adult ritual, natural skin and lashes, believable hands and eyes, consistent 1122x1402 portrait, no overlay copy or claims.",
+      "initial_prompt": "Use case: ads-marketing.\nAsset type: premium beauty e-commerce campaign portrait, 4:5 aspect ratio.\nPrimary request: Photograph one fictional adult woman in her late twenties USING Benefit BADgal BANG Volumizing Mascara during her own relaxed makeup ritual. Image 1 is the exact product reference. Match its real matte-black tapered cylindrical tube, pink \"benefit\" and \"BADgal\" lettering and large stacked white/pink \"BANG!\" lettering, and distinctive black cap with rows of geometric pyramid studs and pointed tip. The cap is attached to a thin black mascara stem and long narrow tapered brush. Reproduce the actual product tube and cap faithfully from Image 1, removed from packaging. Product scale and proportions must remain authentic.\nScene/backdrop: tasteful intimate vanity corner, soft ivory wall and blurred blush textile with a muted plum accent, no retail packaging, no other cosmetics and no mirror reflections.\nSubject and composition: adult woman with warm medium skin, deep brown eyes and dark hair pulled softly away from her eyes, authentic skin texture, face and shoulders close portrait, slight warm confident smile. She holds the open black product tube clearly visible, upright and label toward camera in one hand in the lower foreground; her other hand holds the distinctive studded black cap and attached wand horizontally just in front of the upper lashes of one eye as she carefully applies mascara. The brush stays just outside her lashes and never touches the eye or waterline. Gaze slightly above the camera. Believable hands and fingers, natural eyes and naturally defined lashes. No false lashes or dramatic extension effect.\nStyle/medium: polished luxury editorial photography, approachable personal beauty ritual, premium but believable.\nLighting/mood: soft window daylight, warm ivory/blush/plum palette, gentle shadows, crisp product label and cap texture, 4:5 portrait composition.\nText constraints: no added text, headlines, price, badges, stars, testimonial, watermark, or logo overlays. Only exact physical product branding as seen in the reference: benefit, BADgal, BANG!.\nPreserve the Benefit BADgal BANG black-and-pink tube and distinctive studded cap. Avoid fake exaggerated lash results, before/after layout, touching eyeball, extra fingers, extra tools, duplicated mascara, surreal anatomy.",
+      "initial_generated_path": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-b98e1e0c-2f94-410a-a5b1-abca2f90894c.png",
+      "referenced_image_paths": [
+        "/workspace/scratch/dbd3ae41ed74/generated_images/exec-b98e1e0c-2f94-410a-a5b1-abca2f90894c.png",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0269-8ffac00a4c8c.webp"
+      ],
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "5c7100e60153eb1f7e154d119347bc150a6a212a30f143e8a57063e9666513e1",
+      "productId": "TS0269",
+      "image": "/images/catalog/marketing/TS0269-ritual-nov3-4fe5e446ab8d.webp",
+      "thumbnail": "/images/catalog/marketing/TS0269-ritual-thumb-nov3-6e336c526e51.webp",
+      "reference": "/images/catalog/TS0269-8ffac00a4c8c.webp",
+      "packshotRemainsPrimary": true
+    },
+    {
+      "bundle": "bundle-1",
+      "ids": [
+        "TS0263",
+        "TS0064"
+      ],
+      "referencePaths": [
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0263-e52c41cef92e.webp",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0064-3986c417dad3.jpg"
+      ],
+      "filename": "bundle-1-ordinary-sun-toner.png",
+      "prompt": "Use case: product-mockup.\nAsset type: a square premium beauty website bundle offer image, a photographic product-only editorial still life.\nPrimary request: photograph exactly TWO products from the two supplied reference images together: one The Ordinary Mineral UV Filters SPF 30 with Antioxidants 50 ml sunscreen tube from reference image 1, and one The Ordinary Glycolic Acid 7% Exfoliating Toner bottle from reference image 2.\nInput images: reference image 1 is the exact sunscreen identity and packaging; reference image 2 is the exact toner identity and packaging. Keep the exact products, brands, label typography, wording, proportions, caps, materials and colors. Use the primary tube and bottle only, omit the sunscreen cardboard carton.\nScene/backdrop: warm ivory seamless studio with champagne satin draped in gentle broad folds along the base, a restrained pale blush glow in the background. Both products rest naturally on the satin, upright with labels toward camera, close together with a small gap. The tall toner at back-right and shorter sunscreen at front-left; no obstruction of product names. Realistic relative size: the toner bottle is modestly taller and slightly wider than the 50 ml sunscreen tube, not a giant prop.\nStyle/medium: high-end realistic beauty still-life photography with physically accurate packaging and fine material detail. Soft warm window light from upper left, gentle dimensional contact shadows, refined editorial composition, understated luxury.\nComposition: square 1:1 frame, entire products visible with comfortable margins, products occupy about two-thirds of frame height, camera at label height, clear primary focus across both labels, no extreme perspective, no cropped tops or caps.\nPackaging invariants: sunscreen is the photographed peach-beige The Ordinary Suncare tube with white cap and white label panels, explicitly SPF 30, never SPF50 or an invented sun-care product. Toner is the photographed transparent pale-yellow-liquid bottle with ribbed white pointed dispensing cap, silver stripe and authentic The Ordinary Glycolic Acid 7% Exfoliating Toner label.\nConstraints: exactly one sunscreen tube and one toner bottle, all closed; no other cosmetics or extra cartons. Add no text outside authentic package labels, no price, discount, badge, stars, watermark, people, hands, face, endorsement, flowers or props.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in-reference-generation",
+      "finalPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-bundles/bundle-1-ordinary-sun-toner.png",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-e5586876-16f5-4e86-8a9c-18f8077cb44f.png",
+      "inspection": {
+        "status": "selected",
+        "notes": "Visually inspected: one SPF30 sunscreen tube and one Glycolic Acid 7% toner; correct peach/white and clear-bottle identities; no added text.",
+        "sourceReferencesViewed": true,
+        "outputViewedInline": true
+      },
+      "generatedAt": "2026-11-02",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGB"
+      },
+      "bytes": 2111592,
+      "sha256": "7c4a267c5abfe9a9808b41ff34a148a37c1dfd2306cbf52e0a575e1af495e1f7",
+      "image": "/images/catalog/marketing/bundle-1-nov3-1d09747db127.webp",
+      "thumbnail": "/images/catalog/marketing/bundle-1-thumb-nov3-9e02d54bbf8f.webp"
+    },
+    {
+      "bundle": "bundle-2",
+      "ids": [
+        "TS0064",
+        "TS0205"
+      ],
+      "referencePaths": [
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0064-3986c417dad3.jpg",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0205-f55f0a8b071e.webp"
+      ],
+      "filename": "bundle-2-ordinary-kenta.png",
+      "prompt": "Use case: product-mockup.\nAsset type: a square premium beauty website bundle offer image, photographic product-only editorial still life.\nPrimary request: photograph exactly TWO products together: one The Ordinary Glycolic Acid 7% Exfoliating Toner bottle from reference image 1 and one KENTA Bebe Creme de Soin No.1 blue tube from reference image 2.\nInput images: image 1 is the exact toner product reference; image 2 is the exact KENTA product reference. Preserve their actual packaging identity, labels, shapes, proportions, materials, brand spelling and colors. Use the primary toner bottle and KENTA tube only, omit the KENTA cardboard carton.\nScene/backdrop: soft warm ivory seamless studio and softly folded pale blush satin, clean refined product-only scene. The toner bottle stands at back-left, the shorter blue KENTA tube stands on its white cap at front-right, slightly turned toward camera so both labels are clearly visible, a natural small gap between products. Normal realistic relative scale, toner taller and wider than KENTA tube.\nStyle/medium: luxury editorial product photography, sharp photographic packaging detail, warm diffuse light and soft realistic contact shadows, subtle satin sheen. Square 1:1 composition, entire products and caps visible with generous uncluttered margins, products occupy about two-thirds of frame height.\nPackaging invariants: KENTA is the exact dark royal-blue tube shown in reference, with large white vertical Kenta wordmark, pale blue Bebe lower band, pink small No.1 oval and white ribbed screw cap. Do NOT substitute Kinta, another baby cream, a jar, a white tube or a modern redesigned package. Toner remains pale-yellow clear liquid in the exact clear bottle with white pointed ribbed dispensing cap and white/silver The Ordinary label.\nConstraints: exactly one toner bottle plus one KENTA tube, all closed, no spare tube or carton, no other products. No added text outside authentic labels, no price or discount, no badges or stars, no watermark, no people, hands, models, endorsement, flowers or decorative props.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in-reference-generation",
+      "finalPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-bundles/bundle-2-ordinary-kenta.png",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-f7481758-1f77-4f2d-a6b5-d4f4522c6b9e.png",
+      "inspection": {
+        "status": "selected",
+        "notes": "Visually inspected: one toner plus one blue Kenta Bebe Creme de Soin No.1 tube; Kenta spelling and No.1 retained; no substitute cream.",
+        "sourceReferencesViewed": true,
+        "outputViewedInline": true
+      },
+      "generatedAt": "2026-11-02",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGB"
+      },
+      "bytes": 1933685,
+      "sha256": "a56155c4ae3e00bfcb3f8b637815268323c35f3e6053796bba29164a3ae35e4a",
+      "image": "/images/catalog/marketing/bundle-2-nov3-47d1e849ee95.webp",
+      "thumbnail": "/images/catalog/marketing/bundle-2-thumb-nov3-62d436d282c5.webp"
+    },
+    {
+      "bundle": "bundle-3",
+      "ids": [
+        "TS0202",
+        "TS0202",
+        "TS0202"
+      ],
+      "referencePaths": [
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0202-f4c69f102aa4.webp"
+      ],
+      "filename": "bundle-3-sky-high-trio.png",
+      "prompt": "Use case: product-mockup.\nAsset type: square premium beauty website bundle offer image, photographic product-only editorial still life.\nPrimary request: photograph exactly THREE IDENTICAL closed Maybelline Lash Sensational Sky High Very Black mascara tubes from the supplied reference, each the metallic pink tube shown inside the retail card. Remove the cardboard and plastic retail packaging; photograph only the three actual tubes.\nInput image: the reference is the exact product identity and design; preserve the long metallic dusty-pink cylindrical tube with raised oversized SKY HIGH lettering, the actual cap seam, black small Maybelline and Lash Sensational markings, correct proportions, material and color. All three units must be the same identical pink-package Very Black Sky High mascara, not a pink formula, not mixed editions.\nScene/backdrop: warm ivory studio surface with champagne and pale blush satin forming broad low folds. Three tubes arranged in an elegant loose fan, lying naturally beside one another with small clear gaps; all three fully visible and separate. The center tube nearly vertical in the square composition, the left and right gently angled inwards; no overlap of the hero lettering, realistic ordinary retail scale.\nStyle/medium: premium photorealistic beauty editorial still life, metallic pink highlights, warm soft directional window light with subtle realistic contact shadows, fine satin texture, quiet luxury. Square 1:1 frame, products fill about two-thirds of the image, comfortable margins all around, camera at a gentle overhead angle, all three equally in focus.\nConstraints: exactly three identical complete closed tubes, no extra fourth product, no detached wand, no open caps, no carton, retail card, model, eye photograph, people or hands. Do not invent a different package or alter tube shape. No text outside authentic packaging, no price, discount, badges, stars, watermark or endorsement.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in-reference-generation",
+      "finalPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-bundles/bundle-3-sky-high-trio.png",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-5583f21b-58e7-47b9-b75f-889ebdd347f5.png",
+      "inspection": {
+        "status": "selected",
+        "notes": "Visually inspected: exactly three identical closed metallic pink Maybelline Sky High tubes; no retail cards or model imagery.",
+        "sourceReferencesViewed": true,
+        "outputViewedInline": true
+      },
+      "generatedAt": "2026-11-02",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGB"
+      },
+      "bytes": 3010545,
+      "sha256": "97440da66a824b6eaa501262ce9808dbc98640349985aa682250b0acc40b55d5",
+      "image": "/images/catalog/marketing/bundle-3-nov3-a97bfd0c5f7e.webp",
+      "thumbnail": "/images/catalog/marketing/bundle-3-thumb-nov3-140ea37a6dec.webp"
+    },
+    {
+      "bundle": "bundle-4",
+      "ids": [
+        "TS0202",
+        "TS0272",
+        "TS0304"
+      ],
+      "referencePaths": [
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0202-f4c69f102aa4.webp",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0272-4a6eff177f8c.webp",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0304-cb3d47b3b475.webp"
+      ],
+      "filename": "bundle-4-maybelline-trio.png",
+      "prompt": "Use case: product-mockup.\nAsset type: square premium beauty website bundle offer image, photographic product-only editorial still life.\nPrimary request: photograph a three-piece Maybelline bundle containing exactly ONE Lash Sensational Sky High Very Black metallic pink mascara tube from reference image 1, ONE Fit Me Luminous + Smooth liquid foundation bottle from reference image 2, and ONE Super Stay Vinyl Ink liquid lipcolor from reference image 3.\nInput images: these three images specify the exact products and packaging. Preserve all brand identities, labels, material, color and proportions. Remove the mascara retail card only and use its exact metallic pink closed tube. Foundation must match the shown rectangular clear glass bottle, light beige liquid, black square cap, lavender FIT me text, LUMINOUS + SMOOTH and 120 CLASSIC IVORY printed label. Lipcolor must be the exact coral-pink rectangular raised-letter VINYL / SUPER STAY VINYL INK package and corresponding applicator, not Lifter Gloss and never a gloss product.\nScene/backdrop: warm ivory seamless studio with pale blush satin and a restrained deep-plum satin fold at the bottom corner. Foundation upright at back-center, closed pink Sky High tube lying gently angled at front-left, exact coral Vinyl Ink liquid lipcolor bottle open at front-right with its single cap-applicator beside it as in its reference. Each item clear and fully visible, natural coherent beauty still-life scale: foundation bottle modestly taller than a closed lipcolor, mascara of ordinary retail length.\nStyle/medium: high-end photorealistic editorial product photograph, soft warm directional light, gentle shadows, accurate glass and plastic highlights, dimensional but quiet refined composition.\nComposition: square 1:1 image, all products and applicator fully within frame with generous margin, products centered as a cohesive trio and occupy about two-thirds of image height, labels face camera and remain unobstructed, normal perspective.\nConstraints: exactly 3 products, the one lipcolor may have its one detached cap-applicator only; no extra bottle or duplicate lipstick. Do not label this lipcolor as gloss. No cardboard retail packaging, no added words outside authentic product labels, no price, discount, stars, badge, watermark, people, eye photograph, models, hands, endorsement, decorative flowers or other props.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in-reference-generation",
+      "finalPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-bundles/bundle-4-maybelline-trio.png",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-b51a30d6-2761-422a-9770-9e56eb511995.png",
+      "inspection": {
+        "status": "selected",
+        "notes": "Visually inspected: one pink Sky High, one Fit Me Luminous + Smooth 120 bottle, one open coral Super Stay Vinyl Ink liquid lipcolor with its single cap-applicator; no Lifter Gloss substitution.",
+        "sourceReferencesViewed": true,
+        "outputViewedInline": true
+      },
+      "generatedAt": "2026-11-02",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGB"
+      },
+      "bytes": 2258758,
+      "sha256": "8651bcd7c624b36cee40b50ab378b792cc55b4e030aba5bcc49addd25923bc01",
+      "image": "/images/catalog/marketing/bundle-4-nov3-ffea35c77113.webp",
+      "thumbnail": "/images/catalog/marketing/bundle-4-thumb-nov3-3f3b2a62de9b.webp"
+    },
+    {
+      "bundle": "bundle-5",
+      "ids": [
+        "TS0275",
+        "TS0305"
+      ],
+      "referencePaths": [
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0275-0c2559779012.webp",
+        "/workspace/scratch/dbd3ae41ed74/trend-shop1/public/images/catalog/TS0305-bf081db940d2.webp"
+      ],
+      "filename": "bundle-5-loreal-powder-lashes.png",
+      "prompt": "Use case: product-mockup.\nAsset type: square premium beauty website bundle offer image, photographic product-only editorial still life.\nPrimary request: photograph exactly TWO products together: one L'Oreal Paris Infallible 24H Fresh Wear Foundation in a Powder compact in the exact 200 Ivory 9 g reference design from image 1, and one L'Oreal Paris Telescopic Original Mascara 910 Blackest Black in the exact gold tube shown within image 2.\nInput images: image 1 is the exact powder identity and packaging; image 2 is the exact gold Original Telescopic mascara tube identity, not its retail card. Preserve the products' real label typography, wording, shapes, proportions, materials and colors. Remove the mascara retail card and clear blister; include only the actual closed gold mascara tube.\nScene/backdrop: deep plum satin in broad elegant folds, with a warm ivory satin fold across the back corner. The powder compact closed, standing gently supported with the front facing the camera near back-left; the gold mascara lying diagonally at front-right with its label visible. No added supports visible. Normal relative retail scale, the mascara is longer and slimmer than the compact.\nStyle/medium: luxurious realistic editorial beauty photography, soft warm light from upper left, natural soft dimensional shadows, gentle warm gold reflections, red compact rendered accurately, refined jewel-like contrast against plum satin. Square 1:1 composition, both products fully visible with comfortable margins, products occupy roughly two-thirds frame, clean uncluttered presentation.\nPackaging invariants: powder compact is the reference red-and-black rounded square transparent-front case showing beige powder, large INFALLIBLE, red FRESH WEAR banner, 24H, FOUNDATION IN A POWDER, 9 g and 200 IVORY. Do not change to shade 20 or a circular compact. Mascara is the exact slender champagne-gold L'Oreal Telescopic ORIGINAL tube with gold cap and black Telescopic lettering, not black Carbon Black packaging or Lift edition.\nConstraints: exactly one powder compact and one closed gold mascara, no spare caps, wand or extra product. No extra cartons or retail card. No words outside authentic labels, no price, discount, stars, badges, watermark, people, hands, models, endorsement, flowers or props.",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in-reference-generation",
+      "finalPath": "/workspace/scratch/dbd3ae41ed74/trend-shop1/deployment-private/campaign-2026-11-03/assets-bundles/bundle-5-loreal-powder-lashes.png",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-971d6291-9e4c-4822-93d7-90fbbded2042.png",
+      "inspection": {
+        "status": "selected",
+        "notes": "Visually inspected: one red/black Infallible Fresh Wear 200 Ivory 9 g compact plus one unboxed gold Telescopic Original tube; no added offer text.",
+        "sourceReferencesViewed": true,
+        "outputViewedInline": true
+      },
+      "generatedAt": "2026-11-02",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGB"
+      },
+      "bytes": 2588273,
+      "sha256": "2f1094c4c3de26559bec7b3a45f29e227fa432b1e4a45c6c0205807f60f20818",
+      "image": "/images/catalog/marketing/bundle-5-nov3-01f8b1e08309.webp",
+      "thumbnail": "/images/catalog/marketing/bundle-5-thumb-nov3-8c687dd6b152.webp"
+    },
+    {
+      "key": "beauty-tools-gateway",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-27c99998-d1e0-457f-b6c4-996dc114b03f.png",
+      "tool": "built-in image_gen",
+      "mode": "new promotional category image",
+      "prompt": "Use case: ads-marketing. Asset type: premium cosmetics website category gateway photograph, landscape 4:3. Create an elegant still life for the BEAUTY TOOLS category of Trend Shop, a feminine approachable Jordanian beauty boutique with warm ivory, dusty blush and deep plum palette. Beautiful soft makeup brushes with ivory handles and rose-gold ferrules, a clean teardrop makeup sponge, a slim hand mirror and an eyelash curler arranged on creamy curved stone with a folded blush cotton towel. Soft morning window light, natural tactile materials, gentle shadows, exceptionally refined product photography. Balanced close composition that reads clearly at small category-card size; no people, no cosmetics claims, no packaging, no logos, no text, no prices, no watermark. Realistic objects with correct geometry. This is editorial category imagery, not a photograph of a purchasable kit.",
+      "image": "/images/catalog/marketing/beauty-tools-gateway-nov3-462930c88ef9.webp"
+    },
+    {
+      "key": "korean-care-gateway",
+      "generatedPath": "/workspace/scratch/dbd3ae41ed74/generated_images/exec-bf1e3d7c-e256-495b-ad59-fd358f68ccab.png",
+      "tool": "built-in image_gen",
+      "mode": "new promotional category image",
+      "prompt": "Use case: ads-marketing. Asset type: premium cosmetics website KOREAN CARE collection gateway photograph, landscape 4:3. Create a calm refined editorial still life of a minimalist skincare ritual: unlabeled translucent pale green toner bottle, small frosted serum dropper, a white cream jar and an ivory towel with two green leaves on warm ivory curved stone. Warm diffuse morning window light, dusty blush wall, delicate shadows, tiny clear water accents. Trend Shop brand feeling: feminine, friendly, luxurious, airy and soft. Composition instantly readable as skincare at small category tile size. No people, no labels, no brand names, no words, no claims, no flags, no prices, no stars or watermark. These unbranded decorative props are category imagery, not an advertised product set.",
+      "image": "/images/catalog/marketing/korean-care-gateway-nov3-af001fcc2cbb.webp"
+    }
+  ]
+}

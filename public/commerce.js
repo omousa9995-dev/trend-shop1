@@ -1,5 +1,6 @@
 import {productType} from './product-types.js';
 import {isRetiredProduct} from './catalog-policy.js';
+import {planPromotions} from './promotion-planner.js';
 // Shared, deterministic rules used by the storefront and the order server.
 export const FREE_DELIVERY_ABOVE_FILS = 19000;
 export const DELIVERY_FILS = 1000;
@@ -33,22 +34,22 @@ export function largeImageFor(product, image, thumbnails = {}) {
 export function promotionData(p) {
   try {const data=typeof p.config_json==='string'?JSON.parse(p.config_json):p;return {...data,id:p.id,kind:p.kind||data.kind,title:p.title||data.title,description:p.description||data.description||'',active:p.active!==0&&p.active!==false};} catch{return null;}
 }
-// One best eligible offer is applied automatically. Offers never stack or reuse units.
+// Compatible bundles combine automatically; the same units are never reused.
 export function quoteCart(cart, products, promotions = []) {
   const byId=new Map(products.map(p=>[p.id,p])),available=new Map();for(const item of cart)available.set(item.id,(available.get(item.id)||0)+item.qty);
   const itemsSubtotalFils=cart.reduce((n,x)=>n+productPrice(byId.get(x.id))*x.qty,0);
-  let best=null,discountFils=0,bestTotal=itemsSubtotalFils+shippingFee(itemsSubtotalFils),bestShipping=shippingFee(itemsSubtotalFils);
+  const eligible=[];
   for(const raw of promotions){
     const p=promotionData(raw);if(!p?.active||!Array.isArray(p.items)||!p.items.length||!Number.isInteger(p.priceFils))continue;
     if(new Set(p.items.map(x=>x.id)).size!==p.items.length||p.items.some(x=>!Number.isInteger(x.qty)||x.qty<1||!byId.has(x.id)))continue;
     const count=Math.min(...p.items.map(x=>Math.floor((available.get(x.id)||0)/x.qty)));
     const before=p.items.reduce((n,x)=>n+productPrice(byId.get(x.id))*x.qty,0);
     if(count<1||p.priceFils<500||p.priceFils>=before)continue;
-    for(let uses=1;uses<=count;uses++){const saving=(before-p.priceFils)*uses,subtotal=itemsSubtotalFils-saving,delivery=shippingFee(subtotal),total=subtotal+delivery;
-    if(total<bestTotal||total===bestTotal&&delivery<bestShipping||total===bestTotal&&delivery===bestShipping&&saving>discountFils){discountFils=saving;bestTotal=total;bestShipping=delivery;best={id:p.id,title:p.title,count:uses,savingFils:saving,priceFils:p.priceFils,items:p.items};}}
+    eligible.push({id:p.id,title:p.title,priceFils:p.priceFils,items:p.items,saving:before-p.priceFils});
   }
+  const {discountFils,promotions:applied}=planPromotions(available,eligible,itemsSubtotalFils,shippingFee);
   const subtotalFils=itemsSubtotalFils-discountFils,shippingFeeFils=shippingFee(subtotalFils);
-  return {itemsSubtotalFils,discountFils,subtotalFils,shippingFeeFils,totalFils:subtotalFils+shippingFeeFils,promotions:best?[best]:[]};
+  return {itemsSubtotalFils,discountFils,subtotalFils,shippingFeeFils,totalFils:subtotalFils+shippingFeeFils,promotions:applied};
 }
 export function deliveryNudge(quote) {
   return quote.shippingFeeFils>0&&quote.totalFils>15000 ? {remainingFils:FREE_DELIVERY_ABOVE_FILS+10-quote.subtotalFils} : null;

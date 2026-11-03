@@ -109,5 +109,86 @@
       "en": "Promotional scene"
     },
     "primary": "/images/catalog/TS0257-97b7c2859bee.webp"
+  },
+  "TS0263": {
+    "image": "/images/catalog/marketing/TS0263-ritual-nov3-9194118bf217.webp",
+    "thumbnail": "/images/catalog/marketing/TS0263-ritual-thumb-nov3-cc7592cb8d3a.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0263-e52c41cef92e.webp"
+  },
+  "TS0064": {
+    "image": "/images/catalog/marketing/TS0064-ritual-nov3-313740e369e1.webp",
+    "thumbnail": "/images/catalog/marketing/TS0064-ritual-thumb-nov3-ee920b0cc317.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0064-3986c417dad3.jpg"
+  },
+  "TS0084": {
+    "image": "/images/catalog/marketing/TS0084-ritual-nov3-fe19d4f6c042.webp",
+    "thumbnail": "/images/catalog/marketing/TS0084-ritual-thumb-nov3-9a44d4405734.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0084-9f467a97cbe7.jpg"
+  },
+  "TS0265": {
+    "image": "/images/catalog/marketing/TS0265-ritual-nov3-a37438b8d0bd.webp",
+    "thumbnail": "/images/catalog/marketing/TS0265-ritual-thumb-nov3-8bbaa46f63f0.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0265-a378ff64209c.webp"
+  },
+  "TS0275": {
+    "image": "/images/catalog/marketing/TS0275-ritual-nov3-f5b3d69767f4.webp",
+    "thumbnail": "/images/catalog/marketing/TS0275-ritual-thumb-nov3-3122a723b3fa.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0275-0c2559779012.webp"
+  },
+  "TS0228": {
+    "image": "/images/catalog/marketing/TS0228-ritual-nov3-83612cc16358.webp",
+    "thumbnail": "/images/catalog/marketing/TS0228-ritual-thumb-nov3-759fbc738053.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0228-7b29ba00d3ca.webp"
+  },
+  "TS0202": {
+    "image": "/images/catalog/marketing/TS0202-ritual-nov3-30203914d100.webp",
+    "thumbnail": "/images/catalog/marketing/TS0202-ritual-thumb-nov3-993c3d613b21.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0202-f4c69f102aa4.webp"
+  },
+  "TS0305": {
+    "image": "/images/catalog/marketing/TS0305-ritual-nov3-2203d56561ca.webp",
+    "thumbnail": "/images/catalog/marketing/TS0305-ritual-thumb-nov3-560dae327813.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0305-bf081db940d2.webp"
+  },
+  "TS0269": {
+    "image": "/images/catalog/marketing/TS0269-ritual-nov3-4fe5e446ab8d.webp",
+    "thumbnail": "/images/catalog/marketing/TS0269-ritual-thumb-nov3-6e336c526e51.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    },
+    "primary": "/images/catalog/TS0269-8ffac00a4c8c.webp"
   }
 }
