@@ -1,0 +1,118 @@
+{
+  "productId": "TS0098",
+  "date": "2026-11-04",
+  "sourceBase": "46a5eba8eafe442dea461af3674c45abe796a231",
+  "backupBranch": "backup/v3.1.0-before-arencia-2026-11-04",
+  "copy": {
+    "before": {
+      "description": "أغلقي يومكِ بلحظة انتعاش. امنحي روتين الغسل ملمسًا مختلفًا مع غسول الموتشي من أرينسيا. يركز على إزالة شوائب السطح وترك إحساس بالنظافة، ويليق بمن تحب تحويل التنظيف اليومي إلى لحظة عناية أكثر اهتمامًا بالتفاصيل.",
+      "details_json": "{\"nameAr\":\"غسول غرين رايس موتشي من أرينسيا\",\"tagline\":\"تنظيف بقوام يضيف متعة إلى العناية.\",\"benefits\":[\"تنظيف الشوائب اليومية\",\"قوام موتشي مميز\",\"تكملة لروتين النعومة\"],\"howToUse\":\"اتبعي طريقة أخذ الكمية وترطيب الوجه والتدليك ثم الشطف المدونة على العبوة.\",\"notes\":\"تجنبي الفرك القوي ومحيط العينين، وأكملي الترطيب بعد الغسل.\",\"imageType\":\"photo\",\"collection\":\"k-beauty\",\"featuredOrder\":100,\"productType\":\"cleanser\",\"en\":{\"name\":\"Arencia - Fresh Green Rice Mochi Cleanser\",\"tagline\":\"A fresh start, or a gentle end to your day.\",\"description\":\"Arencia - Fresh Green Rice Mochi Cleanser. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.\",\"benefits\":[\"A fresh start, or a gentle end to your day.\",\"A dedicated step to coordinate with your existing routine.\"],\"howToUse\":\"Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.\",\"notes\":\"Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.\",\"variantNote\":\"\"},\"contentVersion\":\"3.0.0\"}"
+    },
+    "after": {
+      "description": "اتركي زحمة اليوم، وابدئي بلحظة انتعاش. غسول أرينسيا بقوام الموتشي يتحوّل مع الماء إلى رغوة تساعد على إزالة الشوائب اليومية والزيوت الزائدة، ويترك البشرة بإحساس نظيف وناعم لتكملي روتينكِ براحة.",
+      "details_json": "{\"nameAr\":\"غسول أرينسيا غرين رايس موتشي\",\"tagline\":\"لحظة نقاء، على مهلكِ.\",\"benefits\":[\"يساعد على إزالة الشوائب والزيوت الزائدة\",\"قوام موتشي يتحوّل مع الماء إلى رغوة\",\"يترك البشرة بإحساس نظيف وناعم بعد الشطف\"],\"howToUse\":\"خذي كمية صغيرة وامزجيها بالماء بين يديكِ لتكوين رغوة. دلّكي البشرة الرطبة بلطف، ثم اشطفي جيدًا بماء فاتر وأكملي بالمرطّب المناسب لكِ.\",\"notes\":\"جرّبي على منطقة صغيرة أولًا، وتوقفي عند التهيّج. تجنبي العينين والجلد المجروح والفرك القوي. راجعي مكونات العبوة للحساسية؛ القوائم الرسمية تتضمن العطر ومكوّنًا مشتقًا من اللوز. اتبعي تعليمات عبوتكِ.\",\"imageType\":\"photo\",\"collection\":\"k-beauty\",\"featuredOrder\":100,\"productType\":\"cleanser\",\"en\":{\"name\":\"Arencia Fresh Green Rice Mochi Cleanser\",\"tagline\":\"A fresh start. A moment for you.\",\"description\":\"Let the day slow down with a fresh little ritual. Arencia’s mochi-like cleanser lathers with water to help wash away daily impurities and excess oil, leaving skin feeling clean and soft.\",\"benefits\":[\"Helps wash away daily impurities and excess oil\",\"Mochi-like paste that lathers with water\",\"Leaves skin feeling clean and soft after rinsing\"],\"howToUse\":\"Work a small amount with water into a lather. Massage gently onto damp skin, then rinse thoroughly with lukewarm water and follow with your preferred moisturiser.\",\"notes\":\"Patch test and stop if irritation occurs. Avoid eyes, broken skin and harsh rubbing. Check the jar for allergies; official lists include fragrance and an almond-derived ingredient. Follow your jar’s directions.\",\"variantNote\":\"\",\"size\":\"120 g\"},\"contentVersion\":\"3.2.0\",\"size\":\"120 غرام\"}"
+    }
+  },
+  "primary": "public/images/catalog/TS0098-ca6be2972b93.jpg",
+  "sources": [
+    {
+      "id": "us_product",
+      "url": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser",
+      "browser_ref": "turn83view0",
+      "identity": "Brand US storefront; contact page uses @arencia.com addresses.",
+      "retrieved_at": "2026-11-04",
+      "relevant_lines": "179–258",
+      "archive": "us-source.html"
+    },
+    {
+      "id": "kr_product",
+      "url": "https://arencia.com/product/프레시-그린-클렌저-떡솝-120g/78/category/72/display/1/",
+      "browser_ref": "turn82view1",
+      "identity": "Arencia corporate Korean storefront, product no. 78.",
+      "retrieved_at": "2026-11-04",
+      "relevant_lines": "232–278",
+      "archive": "kr-source.html"
+    },
+    {
+      "id": "corporate_identity",
+      "url": "https://arencia.com/shopinfo/company.html",
+      "browser_ref": "turn83view1",
+      "identity": "Lists Arencia Co., Ltd., company registration 797-81-00501 and official@arencia.com.",
+      "retrieved_at": "2026-11-04",
+      "relevant_lines": "93–102"
+    },
+    {
+      "id": "us_contact",
+      "url": "https://arencia.us/pages/contact-us",
+      "browser_ref": "turn84view0",
+      "identity": "US, Japan, and business contacts all use arencia.com email domain.",
+      "retrieved_at": "2026-11-04",
+      "relevant_lines": "114–145"
+    },
+    {
+      "id": "kr_faq",
+      "url": "https://arencia.co.kr/board/faq/list.html?board_no=3",
+      "browser_ref": "turn81search9",
+      "identity": "Same brand Korean domain cross-linked by arencia.com.",
+      "retrieved_at": "2026-11-04"
+    }
+  ],
+  "decisions": [
+    "Keep the exact existing 120 g pack as hero.",
+    "Key ingredients only: official regional lists differ. No definitive full INCI for this stock.",
+    "Use daily lather-and-rinse directions. Omit conflicting optional mask timings.",
+    "No copied testimonials, ratings, before/after or clinical claims.",
+    "Published review count/rating comes from the existing verified-order API.",
+    "Single price11 JOD unchanged; two jars19.99 JOD implemented in normal server promotions.",
+    "No price/stock/order fields are changed by the copy migration."
+  ],
+  "assets": [
+    {
+      "file": "/images/catalog/TS0098-137fa42970f7.webp",
+      "role": "Promotional application scene",
+      "origin": "Built-in image generation with actual catalog pack reference",
+      "prompt": "Adult Middle Eastern woman, modest ivory robe/headband, softly daylit sink, thin white lather on damp cheek; exact old-label 120g pale-green Arencia jar in foreground. Natural skin texture. Sage/cream palette. No reviews, results, claims or text overlays.",
+      "disclosure": "Promotional scene, not a real customer experience",
+      "bytes": 123646,
+      "sha256": "137fa42970f70e70c265bc9a7b1f35bd0cfa0d0a7ca547a598a002a2cd7ef3a5"
+    },
+    {
+      "file": "/images/catalog/TS0098-f2845e64e480.webp",
+      "role": "Real texture poster",
+      "origin": {
+        "src": "https://arencia.com/product/freshgreen%20%28renewal%29/1-2.gif",
+        "name": "kr-1-2.gif",
+        "kind": "official-korean-image",
+        "position": 2,
+        "path": "deployment-private/arencia-2026-11-04/research/assets/kr-1-2.gif",
+        "bytes": 4930744,
+        "sha256": "df7c576143617f01f3254d5f9b2081e7d86d672a348a545edd0cd0036d348590",
+        "content_type": "image/gif",
+        "modified": false,
+        "retrieved_at": "2026-11-04",
+        "source_page": "https://arencia.com/product/프레시-그린-클렌저-떡솝-120g/78/category/72/display/1/",
+        "license_status": "No explicit reuse license found; official brand website material. Original bytes saved for review.",
+        "selected": true,
+        "packaging_match": "No readable packaging or embedded text in four evenly spaced QA frames; green texture reference only.",
+        "role": "true_texture_animation",
+        "notes": "Official close-up: stretch, spread on hand, press and stretch again. Original animated GIF, 1000×650, 4.25 s / 85 frames. QA contact sheet is separate and is not a deliverable asset.",
+        "duration_seconds": 4.25,
+        "frames": 85,
+        "width": 1000,
+        "height": 650
+      },
+      "transformation": "First frame, WebP optimization",
+      "bytes": 54624,
+      "sha256": "f2845e64e4802ab074e5f19532628e17d9d33b9520301f87c4bbc9c0ec473a8b"
+    },
+    {
+      "file": "/images/catalog/marketing/TS0098-motion-de750e6cdc46.mp4",
+      "role": "Real texture clip",
+      "origin": "Manufacturer product gallery: arencia.com product78 / 1-2.gif",
+      "transformation": "4.25 second animation transcoded to800px H.264/MP4; no claims, text or packaging inserted",
+      "licenseNote": "Official brand product marketing source; no explicit redistribution licence found. Creator/community videos were excluded.",
+      "bytes": 662993,
+      "sha256": "de750e6cdc46c71915cae56f35207a6a552ac5007ab73a850bfd633027bf398c"
+    }
+  ]
+}
