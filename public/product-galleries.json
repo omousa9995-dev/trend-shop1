@@ -200,5 +200,29 @@
     "images": [
       "/images/catalog/marketing/TS0269-ritual-nov3-4fe5e446ab8d.webp"
     ]
+  },
+  "TS0252": {
+    "primary": "/images/catalog/TS0252-a0ddeac761ae.webp",
+    "images": [
+      "/images/catalog/marketing/TS0252-scene-879db90eb0a6.webp"
+    ]
+  },
+  "TS0285": {
+    "primary": "/images/catalog/TS0285-7040503e9060.webp",
+    "images": [
+      "/images/catalog/marketing/TS0285-scene-dfd4002ae575.webp"
+    ]
+  },
+  "TS0356": {
+    "primary": "/images/catalog/TS0356-6170bf5987a9.webp",
+    "images": [
+      "/images/catalog/marketing/TS0356-scene-70581a6fb7a4.webp"
+    ]
+  },
+  "TS0208": {
+    "primary": "/images/catalog/TS0208-23b5b549ecd6.webp",
+    "images": [
+      "/images/catalog/marketing/TS0208-scene-6c889f1edacf.webp"
+    ]
   }
 }

@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS orders (
  subtotal_fils INTEGER NOT NULL CHECK(subtotal_fils>=0),
  discount_fils INTEGER NOT NULL DEFAULT 0 CHECK(discount_fils>=0),
  promotion_snapshot TEXT NOT NULL DEFAULT '[]',
+ presentation_json TEXT NOT NULL DEFAULT '[]',
  shipping_fee_fils INTEGER CHECK(shipping_fee_fils IS NULL OR shipping_fee_fils>=0),
  notification_status TEXT NOT NULL DEFAULT 'غير مفعّل',
  created_at TEXT NOT NULL DEFAULT (datetime('now'))

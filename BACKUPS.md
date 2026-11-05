@@ -48,3 +48,7 @@
 
 Source: `backup/v3.2.0-before-korean-stories-2026-11-05`, commit `e2f39e8ef20ee5b15e5dcfec89d9da5f862bcbc0`. Previous live Worker version: `6111a7d6-9eb5-427f-91c4-381e5ffdfac3`.
 A full schema/data snapshot was privately retained before edits, with321product rows,13orders,71order-item snapshots and7,218stock units. No private customer or authentication data from that snapshot is committed here. Existing immutable image keys remain available. Consult the v4 release document before any content rollback; preserve later sales, owner edits and video uploads.
+
+## Before shopping experience v4.1.0 — 2026-11-05
+
+Source branch: `backup/v4.0.0-before-shopping-v41-2026-11-05`, commit `4f983568ef1e378866ae30cecefcf3093639a341`. Previous Worker: `56148ab5-fc19-4401-a734-b124b14477e3`. Customer copy is retained privately in an internal KV key; no customer or authentication records are in the source backup. The additive order-presentation column may remain during a UI rollback. Preserve all current orders, stock, later copy edits and owner video uploads.

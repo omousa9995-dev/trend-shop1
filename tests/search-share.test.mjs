@@ -1,3 +1,4 @@
+import {assertCatalogResults} from './helpers/catalog-results.mjs';
 import {storefrontBundle} from './helpers/storefront-bundle.mjs';
 import {loadContactPhone} from '../public/checkout-phone.js';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {JSDOM,VirtualConsole} from 'jsdom';
@@ -30,7 +31,7 @@ test('Canceled touch scrolling closes a blurred list without selecting a product
  const {w,d}=await app(t);d.querySelector('#searchBtn').click();const f=d.querySelector('#globalSearch');enter(w,f,'جلايكوليك');const el=d.querySelector('[role="option"]');pointer(w,el,'pointerdown');f.blur();pointer(w,el,'pointercancel');await pause();assert.equal(d.querySelector('#globalSuggestions').hidden,true);assert.equal(w.location.hash,'');
 });
 test('Suggestion URLs support native modified clicks, and Enter without a selected option searches',async t=>{
- const {w,d}=await app(t);d.querySelector('#searchBtn').click();const f=d.querySelector('#globalSearch');enter(w,f,'جلايكوليك');const el=d.querySelector('[role="option"]');assert.equal(el.getAttribute('href'),'/p/TS0064');el.addEventListener('click',e=>e.preventDefault(),{once:true});el.dispatchEvent(new w.MouseEvent('click',{ctrlKey:true,bubbles:true,cancelable:true}));assert.equal(d.querySelector('.detail-content'),null);enter(w,f,'اسم غير موجود');f.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Enter',bubbles:true,cancelable:true}));assert.equal(d.querySelector('#resultCount').textContent,'0 منتج');
+ const {w,d}=await app(t);d.querySelector('#searchBtn').click();const f=d.querySelector('#globalSearch');enter(w,f,'جلايكوليك');const el=d.querySelector('[role="option"]');assert.equal(el.getAttribute('href'),'/p/TS0064');el.addEventListener('click',e=>e.preventDefault(),{once:true});el.dispatchEvent(new w.MouseEvent('click',{ctrlKey:true,bubbles:true,cancelable:true}));assert.equal(d.querySelector('.detail-content'),null);enter(w,f,'اسم غير موجود');f.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Enter',bubbles:true,cancelable:true}));assertCatalogResults(d,'0 منتج');
 });
 test('Fresh links with ad tracking parameters or legacy hashes open the product; an explicit shop hash takes priority',async t=>{
  for(const url of [productUrl(toner.id),productUrl(toner.id)+'?utm_source=instagram',productUrl(toner.id)+'#/product/TS0064']){const {d}=await app(t,url);selected(d);assert.equal(d.querySelector('link[rel="canonical"]').href,productUrl(toner.id));assert.match(d.title,/جلايكوليك/)}const {d}=await app(t,productUrl(toner.id)+'#/shop');assert.ok(d.querySelector('#queryInput'));assert.equal(d.querySelector('.detail-content'),null);

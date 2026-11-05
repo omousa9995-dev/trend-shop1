@@ -190,5 +190,41 @@
       "en": "Promotional scene"
     },
     "primary": "/images/catalog/TS0269-8ffac00a4c8c.webp"
+  },
+  "TS0252": {
+    "image": "/images/catalog/marketing/TS0252-scene-879db90eb0a6.webp",
+    "thumbnail": "/images/catalog/marketing/TS0252-thumb-6c1ebb9f402b.webp",
+    "primary": "/images/catalog/TS0252-a0ddeac761ae.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    }
+  },
+  "TS0285": {
+    "image": "/images/catalog/marketing/TS0285-scene-dfd4002ae575.webp",
+    "thumbnail": "/images/catalog/marketing/TS0285-thumb-6f4e7a68f432.webp",
+    "primary": "/images/catalog/TS0285-7040503e9060.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    }
+  },
+  "TS0356": {
+    "image": "/images/catalog/marketing/TS0356-scene-70581a6fb7a4.webp",
+    "thumbnail": "/images/catalog/marketing/TS0356-thumb-c1e21c384d14.webp",
+    "primary": "/images/catalog/TS0356-6170bf5987a9.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    }
+  },
+  "TS0208": {
+    "image": "/images/catalog/marketing/TS0208-scene-6c889f1edacf.webp",
+    "thumbnail": "/images/catalog/marketing/TS0208-thumb-ee273bd48b82.webp",
+    "primary": "/images/catalog/TS0208-23b5b549ecd6.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    }
   }
 }

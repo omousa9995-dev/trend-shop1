@@ -10,6 +10,10 @@ export function createImageZoom() {
  dialog.addEventListener('click',e=>{const action=e.target.closest('[data-zoom]')?.dataset.zoom;if(action==='close')dialog.close();if(action==='in')resize(scale+.5);if(action==='out')resize(scale-.5);if(action==='reset')resize(1);if(action==='prev')show(index-1);if(action==='next')show(index+1);if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
  dialog.addEventListener('keydown',e=>{if(e.key==='ArrowRight'&&images.length>1){e.preventDefault();show(index+1)}if(e.key==='ArrowLeft'&&images.length>1){e.preventDefault();show(index-1)}});
  dialog.addEventListener('close',()=>{document.body.style.overflow=oldOverflow;image.removeAttribute('src');previousFocus?.focus({preventScroll:true})});
+ let swipe;
+ stage.addEventListener('pointerdown',e=>{if(scale===1&&e.isPrimary!==false&&e.button<=0)swipe={x:e.clientX,y:e.clientY,id:e.pointerId}});
+ stage.addEventListener('pointerup',e=>{if(!swipe||e.pointerId!==swipe.id)return;const dx=e.clientX-swipe.x,dy=e.clientY-swipe.y;swipe=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.35&&images.length>1)show(index+(dx<0?1:-1))});
+ stage.addEventListener('pointercancel',()=>{swipe=null});
  let drag;
  stage.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||scale===1||e.button!==0)return;drag={x:e.clientX,y:e.clientY,left:stage.scrollLeft,top:stage.scrollTop};stage.setPointerCapture(e.pointerId);stage.classList.add('dragging')});
  stage.addEventListener('pointermove',e=>{if(!drag)return;stage.scrollLeft=drag.left-(e.clientX-drag.x);stage.scrollTop=drag.top-(e.clientY-drag.y)});

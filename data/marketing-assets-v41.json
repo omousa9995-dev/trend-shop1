@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "id": "TS0252",
+      "image": "/images/catalog/marketing/TS0252-scene-879db90eb0a6.webp",
+      "thumbnail": "/images/catalog/marketing/TS0252-thumb-6c1ebb9f402b.webp",
+      "primary": "/images/catalog/TS0252-a0ddeac761ae.webp",
+      "prompt": "Create a tasteful commercial beauty photo for a cosmetics store product gallery, vertical 4:5. Reference image defines the exact KIKO MILANO 3D HYDRA LIPGLOSS packaging: rose shimmer in a rounded clear tube with reflective silver rounded cap and black KIKO lettering. Show a fully clothed adult woman aged 30 wearing a modest cream blouse, seated upright at her makeup table, smiling naturally and holding the closed lipgloss next to her face to present her makeup choice. Keep lips relaxed and closed, no lip close-up. A second view of the same product with original black box can rest on the table. Calm ordinary shopping/catalog atmosphere, soft window light, realistic skin texture and accurate hands. Preserve the reference product proportions and colour faithfully. No claims, no before/after, no overlay text, no watermark.",
+      "reference": "TS0252-a0ddeac761ae.webp",
+      "generator": "built-in image generation"
+    },
+    {
+      "id": "TS0285",
+      "image": "/images/catalog/marketing/TS0285-scene-dfd4002ae575.webp",
+      "thumbnail": "/images/catalog/marketing/TS0285-thumb-6f4e7a68f432.webp",
+      "primary": "/images/catalog/TS0285-7040503e9060.webp",
+      "prompt": "Use case: ads-marketing. Create an editorial natural beauty product-use portrait for Trend Shop, vertical 4:5. Reference image defines the exact tarte shape tape concealer packaging: clear beige tube, tarte and shape tape purple lettering, bold purple-and-gold zigzag cap, large doe-foot applicator. A smiling adult Middle Eastern woman aged 29 in a soft ivory blouse sits at a sunlit vanity and gently dots a tiny amount of concealer beneath one eye, looking toward a mirror just outside frame. Keep the open reference tube upright and visibly readable on the vanity, cap/applicator in her hand. Realistic skin pores and proportions, understated everyday makeup, quiet warm light, natural hands, comfortable candid mood, luxury but welcoming. No skin perfection claims, no before/after, no overlay copy, no watermarks. Preserve product identity and label geometry. Reference is the product, not a person.",
+      "reference": "TS0285-7040503e9060.webp",
+      "generator": "built-in image generation"
+    },
+    {
+      "id": "TS0356",
+      "image": "/images/catalog/marketing/TS0356-scene-70581a6fb7a4.webp",
+      "thumbnail": "/images/catalog/marketing/TS0356-thumb-c1e21c384d14.webp",
+      "primary": "/images/catalog/TS0356-6170bf5987a9.webp",
+      "prompt": "Use case: ads-marketing. Create a warm authentic beauty lifestyle photograph for a Trend Shop product page, vertical 4:5. Reference defines exact Maybelline Instant Age Rewind Eraser Multi-Use Concealer pack: narrow transparent beige tube, burgundy rotating collar, rounded soft sponge tip, black label block. An adult Arab woman aged 32 with medium olive skin and softly tied hair lightly touches the sponge applicator beneath her eye in a calm morning makeup moment. Hold the correct tube visibly with label towards camera. Natural skin texture and minimal makeup, soft side window light, warm ivory and muted burgundy bathroom details, comfortable smile, accurate fingers and anatomy. Product remains recognisable, no implausible retouching, no extra products or invented bottles, no writing overlay, no before/after, no watermark. It is a promotional scene, not a testimonial.",
+      "reference": "TS0356-6170bf5987a9.webp",
+      "generator": "built-in image generation"
+    },
+    {
+      "id": "TS0208",
+      "image": "/images/catalog/marketing/TS0208-scene-6c889f1edacf.webp",
+      "thumbnail": "/images/catalog/marketing/TS0208-thumb-ee273bd48b82.webp",
+      "primary": "/images/catalog/TS0208-23b5b549ecd6.webp",
+      "prompt": "Use case: ads-marketing. Create a beautiful realistic Trend Shop lifestyle beauty photograph, vertical 4:5. Input reference is a SHEGLAM COLOR BLOOM LIQUID BLUSH pale blush-pink carton, exact gold SHEGLAM lettering; preserve the visible carton faithfully on the vanity as the product identity anchor. Do not invent the unseen inner bottle. An adult Middle Eastern woman aged 26, natural textured skin and relaxed joyful expression, gently blends a touch of rosy blush onto her cheek with clean fingertips while seated by a softly lit vanity mirror. The pale pink SHEGLAM box is upright in the foreground, camera can recognise label and colour; face and hands elegant and believable. Warm cream, soft pink and daylight, editorial beauty photography with an intimate comfortable mood. No additional bottle, no fake review, no before/after, no overlay text, no watermark.",
+      "reference": "TS0208-23b5b549ecd6.webp",
+      "generator": "built-in image generation"
+    }
+  ]
+}

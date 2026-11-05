@@ -16,6 +16,7 @@ export function fieldMessage(code){const pair=checkoutMessages[code];return pair
 
 const strings={
  'الرئيسية':'Home','جميع المنتجات':'All products','العناية بالبشرة':'Skincare','المكياج':'Makeup','العناية بالشعر':'Haircare','العناية بالجسم':'Bodycare','العطور':'Fragrance','الأدوات':'Tools','البشرة':'Skincare','الشعر':'Haircare','الجسم':'Bodycare',
+ 'راجعي السلة':'Review bag','مراجعة سلة المشتريات':'Review shopping bag','سلة المشتريات':'Shopping bag',
  'العروض والكومبوهات':'Offers & bundles','المسكارا':'Mascara','فاونديشن كريم أساس':'Foundation','كريم الأساس':'Foundation','كونسيلر':'Concealer','البودرة':'Powder','الشفاه':'Lips','واقي شمس':'Sunscreen','أدوات الجمال':'Beauty tools','وصل حديثًا ✦':'New arrivals ✦','وصل حديثًا':'New arrivals',
  'البحث':'Search','سلة المشتريات':'Shopping bag','فتح القائمة':'Open menu','Trend Shop الرئيسية':'Trend Shop home','ابتسمي، فلا جميلة إلا أنتِ':'Your beauty. Your smile.','إبتسمي فلا جميلة الا أنت':'Your beauty. Your smile.','إبتسمي فلا جميلة الا أنتِ ♡':'Your beauty. Your smile. ♡',
  'عروض الجمال':'Beauty offers','التوصيل دينار لكل الأردن · ومجاني للطلبات فوق 19 دينارًا':'Delivery 1 JOD across Jordan · Free on orders over 19 JOD','ما الذي تبحثين عنه؟':'What are you looking for?','إغلاق البحث':'Close search','البحث عن المنتجات':'Search products','اقتراحات المنتجات':'Product suggestions','اكتبي أول حرف من اسم المنتج أو الماركة…':'Start typing a product or brand…','اقتراحات من أول حرف — جرّبي «تونر» أو «واقي شمس»':'Suggestions as you type — try “toner” or “sunscreen”',

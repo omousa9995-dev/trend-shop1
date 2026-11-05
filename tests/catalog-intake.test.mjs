@@ -1,3 +1,4 @@
+import {assertCatalogResults} from './helpers/catalog-results.mjs';
 import {storefrontBundle} from './helpers/storefront-bundle.mjs';
 import {loadContactPhone} from '../public/checkout-phone.js';
 import test from 'node:test';
@@ -50,14 +51,14 @@ async function open(t,hash){const errors=[],vc=new VirtualConsole();vc.on('jsdom
  for(let i=0;i<60&&!d.querySelector('.product-card,.detail-content');i++)await pause();assert.deepEqual(errors.map(e=>e.message),[]);return{w,d,sends:()=>sends};
 }
 test('Dedicated mascara page lists only mascara and keeps type, query and sorting together',async t=>{
- const {w,d}=await open(t,'#/shop?type=mascara');assert.equal(d.querySelector('h1').textContent,'المسكارا');assert.equal(d.querySelector('#typeSelect').value,'mascara');const expected=catalog.filter(p=>matchesProductType(p,'mascara'));assert.equal(d.querySelector('#resultCount').textContent,expected.length+' منتج');
- const field=d.querySelector('#queryInput');field.value='ميس لارا';field.dispatchEvent(new w.Event('input',{bubbles:true}));await new Promise(r=>setTimeout(r,130));assert.equal(d.querySelector('#resultCount').textContent,'2 منتج');
- const sort=d.querySelector('#sortSelect');sort.value='price-asc';sort.dispatchEvent(new w.Event('change',{bubbles:true}));for(let i=0;i<40&&!w.location.hash.includes('sort=price-asc');i++)await pause();await pause();assert.match(w.location.hash,/type=mascara/);assert.equal(d.querySelector('#typeSelect').value,'mascara');assert.equal(d.querySelector('#queryInput').value,'ميس لارا');assert.equal(d.querySelector('#resultCount').textContent,'2 منتج');
+ const {w,d}=await open(t,'#/shop?type=mascara');assert.equal(d.querySelector('h1').textContent,'المسكارا');assert.equal(d.querySelector('#typeSelect').value,'mascara');const expected=catalog.filter(p=>matchesProductType(p,'mascara'));assertCatalogResults(d,expected.length+' منتج');
+ const field=d.querySelector('#queryInput');field.value='ميس لارا';field.dispatchEvent(new w.Event('input',{bubbles:true}));await new Promise(r=>setTimeout(r,130));assertCatalogResults(d,'2 منتج');
+ const sort=d.querySelector('#sortSelect');sort.value='price-asc';sort.dispatchEvent(new w.Event('change',{bubbles:true}));for(let i=0;i<40&&!w.location.hash.includes('sort=price-asc');i++)await pause();await pause();assert.match(w.location.hash,/type=mascara/);assert.equal(d.querySelector('#typeSelect').value,'mascara');assert.equal(d.querySelector('#queryInput').value,'ميس لارا');assertCatalogResults(d,'2 منتج');
 });
 test('New arrivals show the latest 59 additions; details offer tone choices without technical image captions',async t=>{
- const {w,d,sends}=await open(t,'#/shop?new=1');assert.equal(d.querySelector('#resultCount').textContent,'59 منتج');
+ const {w,d,sends}=await open(t,'#/shop?new=1');assertCatalogResults(d,'59 منتج');
  w.location.hash='#/product/TS0275';for(let i=0;i<40&&!d.querySelector('.detail-content');i++)await pause();assert.equal(d.querySelectorAll('.variant-picker input').length,4);assert.doesNotMatch(d.body.textContent,/بالذكاء الاصطناعي/);assert.ok(d.querySelector('#shareProduct'));assert.ok(d.querySelector('#openImageZoom'));assert.equal(d.querySelector('.intro-price-note'),null);assert.equal(d.querySelector('.old-price').getAttribute('aria-label'),'السعر قبل الخصم');assert.equal(sends(),0);
 });
 test('Tools are available as their own category and cannot leak into the face powder section',async t=>{
- const {d}=await open(t,'#/shop?cat=الأدوات');assert.equal(d.querySelector('#resultCount').textContent,'4 منتج');for(const id of ['TS0260','TS0276','TS0277'])assert.equal(catalog.find(p=>p.id===id).category,'الأدوات');assert.equal(matchesProductType(catalog.find(p=>p.id==='TS0219'),'powder'),false);
+ const {d}=await open(t,'#/shop?cat=الأدوات');assertCatalogResults(d,'4 منتج');for(const id of ['TS0260','TS0276','TS0277'])assert.equal(catalog.find(p=>p.id===id).category,'الأدوات');assert.equal(matchesProductType(catalog.find(p=>p.id==='TS0219'),'powder'),false);
 });

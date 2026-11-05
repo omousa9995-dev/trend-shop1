@@ -34,10 +34,11 @@ test('An admin replacement photo takes precedence and galleries cannot repeat a 
 test('Every alternate product photo is reviewed, distinct, local, and belongs to a selected product',()=>{
  const galleries=JSON.parse(fs.readFileSync(new URL('../public/product-galleries.json',import.meta.url),'utf8'));
  const provenance=JSON.parse(fs.readFileSync(new URL('../data/gallery-provenance.json',import.meta.url),'utf8'));
+ const generated=JSON.parse(fs.readFileSync(new URL('../data/marketing-assets-v41.json',import.meta.url),'utf8')).images;
  assert.ok(Object.keys(galleries).length>=10);
  for(const [id,gallery] of Object.entries(galleries)){
   const product=catalog.find(p=>p.id===id);assert.ok(product);assert.equal(gallery.primary,product.image);
   assert.equal(new Set([gallery.primary,...gallery.images]).size,gallery.images.length+1);
-  for(const image of gallery.images){assert.ok(fs.existsSync(new URL('../public'+image,import.meta.url)));assert.ok(provenance.some(r=>r.product_id===id&&r.image===image&&r.source_page&&r.source_image));}
+  for(const image of gallery.images){assert.ok(fs.existsSync(new URL('../public'+image,import.meta.url)));assert.ok(provenance.some(r=>r.product_id===id&&r.image===image&&r.source_page&&r.source_image)||generated.some(r=>r.id===id&&r.image===image&&r.primary===gallery.primary&&r.reference&&r.prompt&&r.generator));}
  }
 });

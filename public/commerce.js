@@ -35,7 +35,7 @@ export function promotionData(p) {
   try {const data=typeof p.config_json==='string'?JSON.parse(p.config_json):p;return {...data,id:p.id,kind:p.kind||data.kind,title:p.title||data.title,description:p.description||data.description||'',active:p.active!==0&&p.active!==false};} catch{return null;}
 }
 // Compatible bundles combine automatically; the same units are never reused.
-export function quoteCart(cart, products, promotions = []) {
+export function quoteCart(cart, products, promotions = [], {fixedSubtotalFils=0}={}) {
   const byId=new Map(products.map(p=>[p.id,p])),available=new Map();for(const item of cart)available.set(item.id,(available.get(item.id)||0)+item.qty);
   const itemsSubtotalFils=cart.reduce((n,x)=>n+productPrice(byId.get(x.id))*x.qty,0);
   const eligible=[];
@@ -47,7 +47,7 @@ export function quoteCart(cart, products, promotions = []) {
     if(count<1||p.priceFils<500||p.priceFils>=before)continue;
     eligible.push({id:p.id,title:p.title,priceFils:p.priceFils,items:p.items,saving:before-p.priceFils});
   }
-  const {discountFils,promotions:applied}=planPromotions(available,eligible,itemsSubtotalFils,shippingFee);
+  const {discountFils,promotions:applied}=planPromotions(available,eligible,itemsSubtotalFils+fixedSubtotalFils,shippingFee);
   const subtotalFils=itemsSubtotalFils-discountFils,shippingFeeFils=shippingFee(subtotalFils);
   return {itemsSubtotalFils,discountFils,subtotalFils,shippingFeeFils,totalFils:subtotalFils+shippingFeeFils,promotions:applied};
 }
