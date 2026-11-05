@@ -1,0 +1,954 @@
+[
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - Niacinamide 10 TXA 4 Serum",
+    "subcat": "سيروم",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0062",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. لمن تلاحظ تفاوتًا في مظهر اللون أو آثارًا باقية بعد الشوائب، يمنحك سيروم أنوا خطوة مركزة تكمل الروتين. يركز على النضارة وتجانس المظهر، مع أهمية التدرج والاهتمام بالترطيب والحماية اليومية.",
+    "discount": 21,
+    "priceFils": 11000,
+    "image": "/images/catalog/TS0062-0f4dadb61a16.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم نياسيناميد 10 وTXA 4 من أنوا",
+      "tagline": "عناية بمظهر الآثار وتفاوت اللون.",
+      "benefits": [
+        "العناية بمظهر آثار الشوائب",
+        "إشراقة أكثر تجانسًا",
+        "قوام سيروم سهل التوزيع"
+      ],
+      "howToUse": "طبقي كمية قليلة على بشرة نظيفة وفق تواتر العبوة ثم أتبعيها بمرطب.",
+      "notes": "تركيبة مركزة؛ اختبريها موضعيًا وتجنبي جمع عدة مستحضرات قوية دفعة واحدة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "Anua - Niacinamide 10 TXA 4 Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Anua - Niacinamide 10 TXA 4 Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0062"
+    ],
+    "researchReferenceFils": 17000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "AXIS-Y",
+    "name": "Axis-Y Dark Spot Correcting Glow Serum",
+    "subcat": "سيروم",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0067",
+    "category": "البشرة",
+    "description": "اختاري وقتًا قصيرًا للعناية، بعيدًا عن استعجال اليوم. سيروم دارك سبوت كوريكتنغ غلو من أكسيس واي خطوة يمكن تنسيقها مع المرطب وواقي الشمس لروتين مدروس. ابدئي تدريجيًا، فالعناية المنتظمة ألطف من الوعود السريعة، وتجربة كل بشرة مختلفة.",
+    "discount": 40,
+    "priceFils": 6500,
+    "image": "/images/catalog/TS0067-592055b9b030.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم دارك سبوت غلو من أكسيس واي",
+      "tagline": "روتينكِ المنتظم يبدأ بخطوة تحبّينها.",
+      "benefits": [
+        "العناية بمظهر الآثار",
+        "إشراقة أكثر تجانسًا",
+        "إحساس بالترطيب"
+      ],
+      "howToUse": "وزعي كمية صغيرة على الوجه أو المناطق المطلوبة بعد التنظيف، ثم أكملي المرطب.",
+      "notes": "النتائج تختلف، والحماية من الشمس جزء من روتين العناية بالآثار.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 2,
+      "productType": "serum",
+      "en": {
+        "name": "Axis-Y Dark Spot Correcting Glow Serum",
+        "tagline": "A thoughtful little step, at your own pace.",
+        "description": "Make a little space for care beyond the rush of your day. AXIS-Y Dark Spot Correcting Glow Serum can sit alongside your moisturiser and daytime sunscreen in a considered routine. Introduce it gradually: every skin experience is different, and there are no instant-result promises.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0067",
+      "TS0143"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua Heartleaf Quercetinol Pore Deep Cleansing Foam",
+    "subcat": "غسول",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0070",
+    "category": "البشرة",
+    "description": "أغلقي يومكِ بلحظة انتعاش. ابدئي العناية بخطوة تنظيف رغوية تساعد على إزالة دهون السطح وبقايا اليوم. غسول هارتليف من أنوا مناسب لروتين يركز على نظافة البشرة ومظهر المسام، ويُستكمل بترطيب يحافظ على الإحساس بالراحة.",
+    "discount": 17,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0070-21dd0ed2414f.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "غسول هارتليف لتنظيف المسام من أنوا",
+      "tagline": "تنظيف منعش للبشرة التي تميل إلى اللمعان.",
+      "benefits": [
+        "تنظيف دهون السطح",
+        "إزالة الشوائب اليومية",
+        "تهيئة البشرة للعناية"
+      ],
+      "howToUse": "رغّي كمية صغيرة على بشرة مبللة ودلكي بلطف ثم اشطفي جيدًا.",
+      "notes": "خففي التكرار إذا شعرتِ بالشد، وتجنبي الإفراط في الفرك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "cleanser",
+      "en": {
+        "name": "Anua Heartleaf Quercetinol Pore Deep Cleansing Foam",
+        "tagline": "A fresh start, or a gentle end to your day.",
+        "description": "Anua Heartleaf Quercetinol Pore Deep Cleansing Foam. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+        "benefits": [
+          "A fresh start, or a gentle end to your day.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.",
+        "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0070",
+      "TS0135"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+    "subcat": "سيروم",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0071",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. عندما يبدو لون البشرة غير متجانس أو تظهر عليها علامات الانزعاج، يضيف هذا السيروم خطوة عناية موجهة مع إحساس بالترطيب. اختاري روتينًا بسيطًا حوله وأدخليه تدريجيًا لتراقبي ملاءمته لبشرتك.",
+    "discount": 39,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0071-1108121259ba.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم أزيليك هايالورون من أنوا",
+      "tagline": "عناية بمظهر الاحمرار والملمس.",
+      "benefits": [
+        "العناية بمظهر الاحمرار",
+        "إحساس بالترطيب",
+        "تحسين مظهر تفاوت الملمس"
+      ],
+      "howToUse": "وزعي كمية صغيرة على بشرة سليمة وفق إرشادات العبوة، ثم أتبعيها بمرطب.",
+      "notes": "لا يقدّم علاجًا لتشخيصات جلدية، وتوقفي عند استمرار التهيج.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0071"
+    ],
+    "researchReferenceFils": 17000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "AXIS-Y",
+    "name": "Axis-Y Vegan Collagen Eye Serum",
+    "subcat": "العين",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0084",
+    "category": "البشرة",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. إذا فضلتِ سيرومًا بدل الكريم الكثيف لمحيط العين، يمنحك هذا الاختيار من أكسيس واي خطوة عناية خفيفة. يركز على الترطيب ومظهر الخطوط المرتبطة بالجفاف، ليكمل روتينك بلمسة مريحة وسهلة.",
+    "discount": 28,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0084-9f467a97cbe7.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم العين فيغان كولاجين من أكسيس واي",
+      "tagline": "اهتمام خفيف بمظهر النعومة حول العين.",
+      "benefits": [
+        "قوام خفيف لمحيط العين",
+        "إحساس بالترطيب",
+        "العناية بمظهر الخطوط الجافة"
+      ],
+      "howToUse": "طبقي كمية صغيرة وربتي حول عظمة محيط العين بحسب إرشادات العبوة.",
+      "notes": "تجنبي ملامسة العين مباشرة وحافظي على نظافة أداة التوزيع.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "en": {
+        "name": "Axis-Y Vegan Collagen Eye Serum",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "Axis-Y Vegan Collagen Eye Serum. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0084"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - Double Cleansing Duo Set",
+    "subcat": "مجموعات",
+    "reference": 19950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0089",
+    "category": "البشرة",
+    "description": "أغلقي يومكِ بلحظة انتعاش. امنحي المكياج وواقي الشمس إزالة مخصصة ثم أكملي تنظيف السطح بالغسول. تجمع مجموعة أنوا فكرتي التنظيف الزيتي والمائي في روتين منظم، لتختاري طريقة تنظيف تناسب ما وضعتِه على بشرتك خلال اليوم.",
+    "discount": 49,
+    "priceFils": 9990,
+    "image": "/images/catalog/TS0089-db01a10f4a96.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "مجموعة التنظيف المزدوج من أنوا",
+      "tagline": "خطوتان مرتبتان لنهاية يومك.",
+      "benefits": [
+        "إزالة المكياج والواقي",
+        "تنظيف على مرحلتين",
+        "تنسيق القطع في مجموعة"
+      ],
+      "howToUse": "ابدئي بالزيت على وجه جاف، استحلبيه بالماء واشطفي، ثم استخدمي الغسول المائي.",
+      "notes": "تُراجع أسماء القطع وأحجامها الفعلية قبل اعتماد المجموعة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "cleanser",
+      "en": {
+        "name": "Anua - Double Cleansing Duo Set",
+        "tagline": "A fresh start, or a gentle end to your day.",
+        "description": "Anua - Double Cleansing Duo Set. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+        "benefits": [
+          "A fresh start, or a gentle end to your day.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.",
+        "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0089"
+    ],
+    "researchReferenceFils": 26000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - Heartleaf 77 Clear Pad",
+    "subcat": "تونر باد",
+    "reference": 12950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0090",
+    "category": "البشرة",
+    "description": "مساحة هادئة بين التنظيف والعناية. تسهّل بادز هارتليف إضافة خطوة تونر إلى الروتين دون تجهيز قطع قطن منفصلة. تمنح البشرة إحساسًا بالانتعاش والعناية بعد التنظيف، ويمكنك توزيع المستحضر بلمسات لطيفة تركز على المناطق التي تحتاج اهتمامًا.",
+    "discount": 18,
+    "priceFils": 10490,
+    "image": "/images/catalog/TS0090-a26250afa7b2.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "تونر باد هارتليف 77 من أنوا",
+      "tagline": "عناية جاهزة في قطعة قطن.",
+      "benefits": [
+        "سهولة استخدام التونر",
+        "إحساس منعش",
+        "توزيع موجه على البشرة"
+      ],
+      "howToUse": "مرري الباد برفق بحسب تعليمات العبوة وتجنبي منطقة العين، ثم أغلقي العبوة جيدًا.",
+      "notes": "لا تفركي الجلد بقوة ولا تعيدي الباد المستخدمة إلى العبوة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "toner",
+      "en": {
+        "name": "Anua - Heartleaf 77 Clear Pad",
+        "tagline": "A quiet little pause between cleansing and care.",
+        "description": "Anua - Heartleaf 77 Clear Pad. A quiet little pause between cleansing and care. Take a pause after cleansing before your next layer of care.",
+        "benefits": [
+          "A quiet little pause between cleansing and care.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser.",
+        "notes": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0090"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - Heartleaf 77% Soothing Toner",
+    "subcat": "تونر",
+    "reference": 15950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0091",
+    "category": "البشرة",
+    "description": "بعد التنظيف، خذي استراحة صغيرة مع تونر هارتليف 77 من أنوا. وزّعيه براحة اليد أو بقطنة بلطف، ثم أكملي بالسيروم أو المرطب الذي يناسبكِ. لحظة بسيطة تجعل روتينكِ أقرب لوقت تحبّينه لنفسكِ.",
+    "discount": 40,
+    "priceFils": 9500,
+    "image": "/images/catalog/TS0091-f84e3c1c3bc1.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "تونر هارتليف 77 من أنوا",
+      "tagline": "بداية هادئة لطبقات عنايتكِ.",
+      "benefits": [
+        "عناية خفيفة بعد التنظيف",
+        "إحساس بالترطيب",
+        "تهيئة البشرة للسيروم"
+      ],
+      "howToUse": "وزعيه براحة اليد أو بقطنة ناعمة وربتي بلطف، ثم أكملي خطوات العناية.",
+      "notes": "يمكن الاكتفاء بطبقة خفيفة؛ زيادة الطبقات ليست ضرورية للجميع.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 4,
+      "productType": "toner",
+      "en": {
+        "name": "Anua - Heartleaf 77% Soothing Toner",
+        "tagline": "A quiet start to your next layer of care.",
+        "description": "Take a small pause after cleansing with Anua Heartleaf 77% Soothing Toner. Apply gently with your palms or a cotton pad, then continue with your chosen serum or moisturiser. A simple moment to make your routine feel more like time for yourself.",
+        "benefits": [
+          "A quiet little pause between cleansing and care.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser.",
+        "notes": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0091"
+    ],
+    "researchReferenceFils": 19000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - PDRN Hyaluronic Acid Capsule 100 Serum",
+    "subcat": "سيروم",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0092",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أضيفي إلى الروتين سيرومًا يهتم بمظهر البشرة المرهقة والجافة. يساعد هذا الاختيار من أنوا على منح إحساس بالترطيب وتحسين مظهر الملمس، لتكملي العناية بطبقة خفيفة قبل الكريم.",
+    "discount": 28,
+    "priceFils": 9990,
+    "image": "/images/catalog/TS0092-61620a04642b.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم PDRN هايالورونيك كابسول 100 من أنوا",
+      "tagline": "ترطيب يركز على نضارة المظهر.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "مظهر أكثر حيوية",
+        "تكملة لروتين النضارة"
+      ],
+      "howToUse": "وزعي كمية مناسبة على بشرة نظيفة قبل المرطب بحسب تعليمات العبوة.",
+      "notes": "لا يقدّم نتيجة فورية مضمونة؛ اختاريه بحسب ملاءمته لبشرتك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "Anua - PDRN Hyaluronic Acid Capsule 100 Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Anua - PDRN Hyaluronic Acid Capsule 100 Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0092"
+    ],
+    "researchReferenceFils": 17000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - Peach 70 Niacin Serum",
+    "subcat": "سيروم",
+    "reference": 12950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0093",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. لمن تريد الاهتمام بمظهر البهتان وتفاوت اللون، يضيف سيروم بيتش من أنوا خطوة سهلة قبل المرطب. يساعد على تعزيز مظهر النضارة ويمنح البشرة إحساسًا بالعناية، لتبقى الإطلالة اليومية أكثر حيوية.",
+    "discount": 49,
+    "priceFils": 6490,
+    "image": "/images/catalog/TS0093-a22a10e1c3c7.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم بيتش 70 نياسين من أنوا",
+      "tagline": "إشراقة ناعمة لروتين يومي جميل.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "إشراقة متجانسة",
+        "خطوة سيروم قبل الكريم"
+      ],
+      "howToUse": "وزعي كمية صغيرة بعد التونر أو التنظيف ثم أكملي المرطب.",
+      "notes": "استخدمي واقي شمس في روتين النهار وراقبي ملاءمته لبشرتك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "Anua - Peach 70 Niacin Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Anua - Peach 70 Niacin Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0093"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua - Rice 70 Glow Milky Toner",
+    "subcat": "تونر",
+    "reference": 12950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0094",
+    "category": "البشرة",
+    "description": "مساحة هادئة بين التنظيف والعناية. إذا أحببتِ التونر الأكثر احتواءً من الماء الخفيف، يمنحك غلو ميلكي قوامًا حليبيًا يلطّف إحساس الجفاف. يساعد على تهيئة البشرة لخطوات العناية التالية، ويترك ملمسًا ناعمًا يناسب من تبحث عن مظهر ندي.",
+    "discount": 18,
+    "priceFils": 10490,
+    "image": "/images/catalog/TS0094-053f91048dba.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "تونر رايس 70 غلو ميلكي من أنوا",
+      "tagline": "ترطيب حليبي يضفي نعومة على الروتين.",
+      "benefits": [
+        "قوام حليبي",
+        "إحساس بالترطيب",
+        "تهيئة البشرة للسيروم"
+      ],
+      "howToUse": "وزعي كمية مناسبة براحة اليد وربتي بعد تنظيف الوجه، ثم أكملي روتينك.",
+      "notes": "ابدئي بطبقة واحدة وعدليها بحسب احتياج البشرة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "toner",
+      "en": {
+        "name": "Anua - Rice 70 Glow Milky Toner",
+        "tagline": "A quiet little pause between cleansing and care.",
+        "description": "Anua - Rice 70 Glow Milky Toner. A quiet little pause between cleansing and care. Take a pause after cleansing before your next layer of care.",
+        "benefits": [
+          "A quiet little pause between cleansing and care.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser.",
+        "notes": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0094"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Anua",
+    "name": "Anua Heartleaf Pore Control Cleansing Oil",
+    "subcat": "غسول زيتي",
+    "reference": 14950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0095",
+    "category": "البشرة",
+    "description": "أغلقي يومكِ بلحظة انتعاش. امنحي المكياج وواقي الشمس وقتًا ليتفككا قبل الغسول مع زيت هارتليف من أنوا. يوزع على الوجه الجاف ثم يستحلب بالماء، ليساعد على تنظيف السطح دون الحاجة إلى فرك مستمر أو شد الجلد.",
+    "discount": 39,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0095-04dad38793b9.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "زيت هارتليف لتنظيف المسام من أنوا",
+      "tagline": "إزالة بقايا اليوم بملمس انسيابي.",
+      "benefits": [
+        "تفكيك المكياج",
+        "إزالة بقايا الواقي",
+        "خطوة أولى للتنظيف المزدوج"
+      ],
+      "howToUse": "دلكي كمية مناسبة على الوجه الجاف ثم أضيفي الماء واشطفي، واتبعي بغسول عند الحاجة.",
+      "notes": "اشطفي جيدًا واتّبعي تعليمات العبوة حول منطقة العين.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "cleanser",
+      "en": {
+        "name": "Anua Heartleaf Pore Control Cleansing Oil",
+        "tagline": "A fresh start, or a gentle end to your day.",
+        "description": "Anua Heartleaf Pore Control Cleansing Oil. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+        "benefits": [
+          "A fresh start, or a gentle end to your day.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.",
+        "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0095"
+    ],
+    "researchReferenceFils": 18000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "AXIS-Y",
+    "name": "Axis - Y - Complete No Stress Physical Sunscreen",
+    "subcat": "واقي شمس",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0099",
+    "category": "البشرة",
+    "description": "خطوة نهارية تستحق مكانًا في روتينكِ. أكملي خطوات الصباح بواقي كومبليت نو سترس من أكسيس واي. يناسب من تفضل تجربة الواقيات المعدنية ضمن روتينها، مع مراعاة أن أثر اللون والقوام قد يختلف باختلاف البشرة والكمية المستخدمة.",
+    "discount": 41,
+    "priceFils": 7000,
+    "image": "/images/catalog/TS0099-65736e5622ef.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي كومبليت نو سترس من أكسيس واي",
+      "tagline": "حماية نهارية بتركيبة معدنية.",
+      "benefits": [
+        "حماية نهارية",
+        "خيار بمرشحات معدنية",
+        "سهولة تنسيقه مع الروتين"
+      ],
+      "howToUse": "وزعي كمية كافية حسب العبوة وجددي خلال التعرض للشمس وبعد التعرق أو السباحة.",
+      "notes": "قد يظهر أثر لوني على بعض ألوان البشرة؛ اختاريه بحسب تفضيلك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "sunscreen",
+      "en": {
+        "name": "AXIS-Y · Axis - Y - Complete No Stress Physical Sunscreen",
+        "tagline": "Make room for a daily sun-care ritual.",
+        "description": "AXIS-Y · Axis - Y - Complete No Stress Physical Sunscreen. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0099"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Farah Glow",
+    "brand": "AXIS-Y",
+    "name": "AXIS-Y Artichoke Intensive Skin Barrier Ampoule",
+    "subcat": "سيروم",
+    "reference": 11950,
+    "source_url": "https://www.farahglow.shop/category?id=3",
+    "source_note": "فهرسة قبل شهر؛ القسم: الصيدلية التجميلية",
+    "id": "TS0132",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي روتينك خطوة أمبول تهتم بحاجز الترطيب ومظهر البشرة المرهقة. هذا الاختيار من أكسيس واي يكمّل الكريم بإحساس بالعناية والنعومة، ويناسب من تريد ترتيب روتين بسيط يركز على راحة البشرة.",
+    "discount": 28,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0132-95910c361b21.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول أرتيشوك لحاجز البشرة من أكسيس واي",
+      "tagline": "عناية تركز على راحة الملمس.",
+      "benefits": [
+        "دعم حاجز الترطيب",
+        "إحساس أنعم",
+        "تكملة لروتين العناية البسيط"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد التنظيف والتونر إن استخدمته، ثم أتبعيها بمرطب.",
+      "notes": "اختبريه أولًا وتجنبي وضع مستحضرات جديدة عديدة في الوقت نفسه.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "AXIS-Y Artichoke Intensive Skin Barrier Ampoule",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "AXIS-Y Artichoke Intensive Skin Barrier Ampoule. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0132"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "AXIS-Y",
+    "name": "Axis-Y Dark Spot Correcting Glow Serum",
+    "subcat": "سيروم",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0143",
+    "category": "البشرة",
+    "description": "اختاري وقتًا قصيرًا للعناية، بعيدًا عن استعجال اليوم. سيروم دارك سبوت كوريكتنغ غلو من أكسيس واي خطوة يمكن تنسيقها مع المرطب وواقي الشمس لروتين مدروس. ابدئي تدريجيًا، فالعناية المنتظمة ألطف من الوعود السريعة، وتجربة كل بشرة مختلفة.",
+    "discount": 40,
+    "priceFils": 6500,
+    "image": "/images/catalog/TS0143-daa5a53a32c7.webp",
+    "approved": true,
+    "stock": 0,
+    "details": {
+      "nameAr": "سيروم دارك سبوت غلو من أكسيس واي",
+      "tagline": "روتينكِ المنتظم يبدأ بخطوة تحبّينها.",
+      "benefits": [
+        "العناية بمظهر الآثار",
+        "إشراقة أكثر تجانسًا",
+        "إحساس بالترطيب"
+      ],
+      "howToUse": "وزعي كمية صغيرة على الوجه أو المناطق المطلوبة بعد التنظيف، ثم أكملي المرطب.",
+      "notes": "النتائج تختلف، والحماية من الشمس جزء من روتين العناية بالآثار.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 2,
+      "productType": "serum",
+      "en": {
+        "name": "Axis-Y Dark Spot Correcting Glow Serum",
+        "tagline": "A thoughtful little step, at your own pace.",
+        "description": "Make a little space for care beyond the rush of your day. AXIS-Y Dark Spot Correcting Glow Serum can sit alongside your moisturiser and daytime sunscreen in a considered routine. Introduce it gradually: every skin experience is different, and there are no instant-result promises.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0067",
+      "TS0143"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "AXIS-Y",
+    "name": "AXIS-Y - Dark Spot Correcting Glow Toner 125 ml",
+    "subcat": "تونر",
+    "reference": 14950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Axisy-toner",
+    "source_note": "3 أسابيع",
+    "id": "TS0162",
+    "category": "البشرة",
+    "description": "مساحة هادئة بين التنظيف والعناية. أضيفي بعد التنظيف خطوة تونر تركز على مظهر البهتان وتفاوت اللون. يمنحك غلو تونر من أكسيس واي عناية سهلة التوزيع قبل السيروم والمرطب، لتتكامل خطوات روتين النضارة دون طبقات كثيفة.",
+    "discount": 19,
+    "priceFils": 11990,
+    "image": "/images/catalog/TS0162-94fb73c761c0.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "تونر دارك سبوت غلو من أكسيس واي",
+      "tagline": "بداية رقيقة لعناية أكثر إشراقًا.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "تهيئة البشرة للسيروم",
+        "إحساس خفيف بالترطيب"
+      ],
+      "howToUse": "وزعي براحة اليد أو قطنة ناعمة حسب إرشادات العبوة ثم أكملي العناية.",
+      "notes": "هذه نسخة التونر 125 مل، وتختلف عن سيروم دارك سبوت من المجموعة نفسها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "toner",
+      "en": {
+        "name": "AXIS-Y - Dark Spot Correcting Glow Toner 125 ml",
+        "tagline": "A quiet little pause between cleansing and care.",
+        "description": "AXIS-Y - Dark Spot Correcting Glow Toner 125 ml. A quiet little pause between cleansing and care. Take a pause after cleansing before your next layer of care.",
+        "benefits": [
+          "A quiet little pause between cleansing and care.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser.",
+        "notes": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0162"
+    ],
+    "researchReferenceFils": 18000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "AXIS-Y",
+    "name": "AXIS-Y - TXA 2.5% Intensive Brightening Cream 50 ml",
+    "subcat": "مرطبات",
+    "reference": 14950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Axisy-txa-cream",
+    "source_note": "شهر",
+    "id": "TS0164",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. أكملي روتين العناية بالآثار بخطوة كريم من أكسيس واي. يركز على مظهر النضارة وتجانس اللون مع الترطيب، ليكون خيارًا لمن تفضل كريمًا موجهًا بدل الاكتفاء بإضافة سيرومات متعددة.",
+    "discount": 29,
+    "priceFils": 10490,
+    "image": "/images/catalog/TS0164-48314fc83cea.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم TXA برايتننغ من أكسيس واي",
+      "tagline": "ترطيب وعناية بمظهر تفاوت اللون.",
+      "benefits": [
+        "العناية بمظهر الآثار",
+        "إحساس بالترطيب",
+        "خطوة كريم موجهة للنضارة"
+      ],
+      "howToUse": "طبقي كمية مناسبة على بشرة نظيفة بحسب تواتر العبوة.",
+      "notes": "أدخليه تدريجيًا واهتمي بواقي الشمس خلال النهار.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "AXIS-Y - TXA 2.5% Intensive Brightening Cream 50 ml",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "AXIS-Y - TXA 2.5% Intensive Brightening Cream 50 ml. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0164"
+    ],
+    "researchReferenceFils": 18000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "AXIS-Y",
+    "name": "AXIS-Y - Glass Skin Duo Set",
+    "subcat": "مجموعات",
+    "reference": 19950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Axisy-glass-skin-due",
+    "source_note": "أسبوعان",
+    "id": "TS0168",
+    "category": "البشرة",
+    "description": "اكتشفي روتينكِ، خطوة بخطوة. نسقي عناية النضارة مع مجموعة غلاس سكن ديو التي تجمع أمبول أرتيشوك وسيروم دارك سبوت وفق النسخة المرجعية. تساعدك المجموعة على ترتيب خطوة الترطيب والعناية بمظهر الآثار، لتختاري روتينًا واضحًا بدل تجميع مستحضرات عشوائيًا.",
+    "discount": 29,
+    "priceFils": 13990,
+    "image": "/images/catalog/TS0168-f9a5f58188fa.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "مجموعة غلاس سكن ديو من أكسيس واي",
+      "tagline": "خطوتان متكاملتان لإطلالة ندية.",
+      "benefits": [
+        "تنسيق خطوتين للعناية",
+        "اهتمام بالترطيب والنضارة",
+        "مجموعة لروتين مرتب"
+      ],
+      "howToUse": "اتبعي تعليمات كل قطعة وترتيب القوام الأخف ثم الأثقل، مع المرطب بعدها.",
+      "notes": "تُراجع قطع المجموعة وأحجامها قبل اعتمادها؛ سعر الباقة يحدد بصورة مستقلة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "skincare-set",
+      "en": {
+        "name": "AXIS-Y - Glass Skin Duo Set",
+        "tagline": "Explore your next ritual, one step at a time.",
+        "description": "AXIS-Y - Glass Skin Duo Set. Explore your next ritual, one step at a time. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "Explore your next ritual, one step at a time.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Check the directions for each item in the set and introduce new products gradually rather than all at once.",
+        "notes": "Set contents and sizes should be checked against the available pack. Patch test each new product.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0168"
+    ],
+    "researchReferenceFils": 28000
+  },
+  {
+    "id": "TS0302",
+    "brand": "AXIS-Y",
+    "name": "Cera-Heart My Type Duo Cream",
+    "category": "البشرة",
+    "subcat": "المرطبات والكريمات",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. لا تحتاج كل مناطق الوجه الإحساس نفسه؛ كريم سيرا هارت ديو من أكسيس واي يجمع قوامين في عبوة واحدة. اختاري لكل منطقة ما يلائمها، واستمتعي بطقس ترطيب مرن يترك بشرتكِ بملمس ناعم ومريح.",
+    "reference": 16000,
+    "priceFils": 11990,
+    "discount": 25,
+    "image": "/images/catalog/TS0302-d1b06ed7b971.webp",
+    "approved": true,
+    "active": 1,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم سيرا هارت ماي تايب ديو من أكسيس واي",
+      "tagline": "ترطيب على مقاس يومكِ وبشرتكِ.",
+      "benefits": [
+        "قوامان في عبوة واحدة",
+        "توزيع مختلف بحسب منطقة الوجه",
+        "حجم 60 مل"
+      ],
+      "howToUse": "وزعي كمية مناسبة على بشرة نظيفة بعد السيروم، ودلكي برفق. عدّلي الكمية بحسب احتياج بشرتكِ وإرشادات العبوة.",
+      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "size": "60 ml",
+      "shade": "",
+      "variantNote": "",
+      "intakeBatch": "2026-10-27-b",
+      "en": {
+        "name": "AXIS-Y · Cera-Heart My Type Duo Cream",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "AXIS-Y · Cera-Heart My Type Duo Cream. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "source": "Owner intake 2026-10-27-b",
+    "source_url": "https://www.strawberrynet.com/id-ID/axis-y-cera-heart-my-type-duo-cream-60ml-2-02oz/322705?srsltid=AfmBOophhkj3Ap3v_P27d1bePodhu2lJYyoT-Jgy2ECAx2AEnXLQ0sYi"
+  }
+]

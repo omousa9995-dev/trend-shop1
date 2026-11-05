@@ -1,0 +1,1691 @@
+[
+  {
+    "id": "TS0038",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/advanced-snail-peptide-eye-cream",
+        "title": "COSRX Advanced Snail Peptide Eye Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "f70f91253f71a19dd65e33a3fcd54f37da6631a5cda215616fae3ed5d4412b76"
+  },
+  {
+    "id": "TS0040",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/collections/all/products/hyaluronic-acid-intensive-cream",
+        "title": "COSRX Hyaluronic Acid Intensive Cream"
+      }
+    ],
+    "notes": [
+      "Inspected store pack: Hyaluronic Acid Intensive Cream 100g; do not confuse with Hydra Power Essence."
+    ],
+    "profileSha256": "ee5d9b4e8e5636faf35201d072f39aa19e6b4f26977edb0495cfe4eada2ac067"
+  },
+  {
+    "id": "TS0044",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://b2c.cosrx.com/collections/dullness/products/galactomyces-95-tone-balancing-essence",
+        "title": "COSRX Galactomyces 95 Tone Balancing Essence"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "6ff1cba6c64334c8d6ea53d5664a82e67db9a48a83825a3d83c71bb53b0d4d83"
+  },
+  {
+    "id": "TS0065",
+    "brand": "Beauty of Joseon",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/relief-sun-rice-probiotics?country=PH&currency=PHP",
+        "title": "Beauty of Joseon Relief Sun official product information"
+      }
+    ],
+    "notes": [
+      "Official global labeling refresh: original Rice + Probiotics now Rice + Niacinamide; preserve photographed catalog pack. Do not substitute US Daily Relief SPF40."
+    ],
+    "profileSha256": "64a8d3fdced22e4b9317909c43b749b4b4292d4e11b7eb49a5bebcffc748602e"
+  },
+  {
+    "id": "TS0079",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/advanced-snail-96-mucin-power-essence",
+        "title": "COSRX Advanced Snail 96 Mucin Power Essence"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "cb33eb561989c4d3b02e3c37326bad8108bfc94127fa732958c13cf4fe81c8f6"
+  },
+  {
+    "id": "TS0080",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/advanced-snail-92-all-in-one-cream",
+        "title": "COSRX Advanced Snail 92 All In One Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "cb92bf4bd2935f95f4fb7da5a66eb8caab129d46a4cc6a169dd96e780ba37380"
+  },
+  {
+    "id": "TS0081",
+    "brand": "Beauty of Joseon",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/pages/relief-sun-aqua-fresh?shpxid=557f0f50-365f-4341-a6bc-72db208119b3",
+        "title": "Beauty of Joseon Relief Sun Aqua-Fresh information"
+      },
+      {
+        "url": "https://beautyofjoseon.com/pages/relief-sun-aqua-fresh-cpnp-scpn-information",
+        "title": "Beauty of Joseon Aqua-Fresh directions"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "afa915c4c7a52ff8a75d1d80101d20c5c57377714d88d79bfd30f35afdc7ce13"
+  },
+  {
+    "id": "TS0086",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.co.kr/m/product.html?branduid=188",
+        "title": "COSRX Korea Salicylic Acid Daily Gentle Cleanser"
+      }
+    ],
+    "notes": [
+      "Official US product URL no longer resolves; official Korean page verifies exact identity, oily/combination positioning and INCI. No unverified salicylic percentage added."
+    ],
+    "profileSha256": "5411265b5d29a7de6428374524f082c61f908be4270f2b840b5529b4df80d09b"
+  },
+  {
+    "id": "TS0100",
+    "brand": "Beauty of Joseon",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/red-bean-refreshing-pore-mask",
+        "title": "Beauty of Joseon Red Bean Refreshing Pore Mask"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "9119a6f1308b95c93b1863f741481403a1f600d5aff96045e0c61aa8de0ca62a"
+  },
+  {
+    "id": "TS0101",
+    "brand": "Beauty of Joseon",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/relief-sun-rice-probiotics?country=PH&currency=PHP",
+        "title": "Beauty of Joseon Relief Sun official product information"
+      }
+    ],
+    "notes": [
+      "Inspected small original-label Relief Sun tube. Mini volume not legible enough to assert; formula family information reused, never substituted Aqua-Fresh or SPF40."
+    ],
+    "profileSha256": "c4a0865b6422283e11cb9659ba93c28f7ba941c42d14399435147c074947910b"
+  },
+  {
+    "id": "TS0105",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/collections/best/products/aha-bha-clarifying-treatment-toner",
+        "title": "COSRX AHA/BHA Clarifying Treatment Toner"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "300d7ce6f914ffcb559d6e75a1ffcc2ca5942ffaa0583280f459a6adc959830f"
+  },
+  {
+    "id": "TS0106",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/all-about-snail-kit-4-step",
+        "title": "COSRX All About Snail Kit 4-step"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "11a17b67b20bdbd90f232073f80b210cf7192bd009260fa85ca016f2886893a6"
+  },
+  {
+    "id": "TS0107",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/lip-sleep-balancium-ceramide-lip-butter-sleeping-mask",
+        "title": "COSRX Balancium Ceramide Lip Butter Sleeping Mask"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "9f172d6b0509499330e5a8ef7d4dc538cd821348780717cf52b04998ee35ec80"
+  },
+  {
+    "id": "TS0108",
+    "brand": "COSRX",
+    "status": "limited",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/lip-scrub-full-fit-propolis-honey-sugar-lip-scrub",
+        "title": "COSRX official lip-care page referencing Full Fit Propolis Lip Sleeping Mask"
+      }
+    ],
+    "notes": [
+      "Exact photographed pack inspected: Lip Sleep Propolis Lip Sleeping Mask 20g. Official current catalog no longer has an accessible dedicated product page; official Honey Sugar Scrub page names this mask. No Honey-6 complex, percentages, fragrance-free or clinical claims asserted. Public directions conservatively defer to pack."
+    ],
+    "profileSha256": "65b129c26c4975a0872e1592cfb61bd3255392e513443c7cff804c359fe2e726"
+  },
+  {
+    "id": "TS0109",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/low-ph-good-morning-gel-cleanser",
+        "title": "COSRX Low pH Good Morning Gel Cleanser"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "45177295eeaf9ad86375f66f9e776f67276fc6c595dda094c7a38bd77664bd43"
+  },
+  {
+    "id": "TS0110",
+    "brand": "COSRX",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/lip-plump-refresh-aha-bha-viamin-c-lip-plumper",
+        "title": "COSRX Refresh AHA BHA Vitamin C Lip Plumper"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "ba8a743956ebf6e9527da63e20d78344c085add094676ff7ba9436a3a73b4510"
+  },
+  {
+    "id": "TS0218",
+    "brand": "Beauty of Joseon",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/glow-serum-propolis-niacinamide?country=US&currency=USD&variant=51833681772916",
+        "title": "Beauty of Joseon Glow Serum official product page"
+      }
+    ],
+    "notes": [
+      "Current official INCI/listing differs from older concentration-led marketing; no 60% propolis or 2% niacinamide concentration asserted without exact-pack confirmation."
+    ],
+    "profileSha256": "aeb10ad60b56fded8f8e094fea981bdc26c1e246a4f7d654291145e3a042869b"
+  },
+  {
+    "id": "TS0301",
+    "brand": "Beauty of Joseon",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/revive-eye-serum-ginseng-retinal?variant=41689275367589",
+        "title": "Beauty of Joseon Revive Eye Serum official product page"
+      }
+    ],
+    "notes": [
+      "No concentration asserted; a liposome-complex percentage must never be presented as the percentage of pure retinal."
+    ],
+    "profileSha256": "01573e5ad9c43d87a54b3d6a31b8fffb859d55aab46fe4e1c7df24c1baaa9ef7"
+  },
+  {
+    "id": "TS0062",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/niacinamide-10-txa-4-serum-2",
+        "title": "ANUA — Niacinamide 10 TXA 4 Serum"
+      },
+      {
+        "url": "https://pages.anua.com/anua-serums/niacinamide-serum",
+        "title": "ANUA — Niacinamide Serum Guide"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "8fa6c251c81bfd694b686d40ad76f29e2c9fb53e6e8b713f42dfff9f8a9e9ad6"
+  },
+  {
+    "id": "TS0067",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/dark-spot-correcting-glow-serum",
+        "title": "AXIS-Y — Dark Spot Correcting Glow Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "b1272827fb9ba9b40e37e9ff841249790b258c8267c7a2d4d797bce94d4ddbdc"
+  },
+  {
+    "id": "TS0070",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/heartleaf-quercetinol-pore-deep-cleansing-foam",
+        "title": "ANUA — Heartleaf Quercetinol Pore Deep Cleansing Foam"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "1935e90ed41250d3282ba3235ca6833d91d75040e0737082c96c26ee296298d2"
+  },
+  {
+    "id": "TS0071",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/azelaic-acid-10-hyaluron-redness-soothing-serum",
+        "title": "ANUA — Azelaic Acid 10 Hyaluron Redness Soothing Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "c3636dab15a3f6598ae5d41998800ce9ef2762bd95619b00ba027ef22e2b7efe"
+  },
+  {
+    "id": "TS0084",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/vegan-collagen-eye-serum",
+        "title": "AXIS-Y — Vegan Collagen Eye Serum"
+      },
+      {
+        "url": "https://www.axis-y.com/pages/the-eye-serum-challenge",
+        "title": "AXIS-Y — Eye Serum Challenge / application directions"
+      }
+    ],
+    "notes": [
+      "The current product page has generic entire-face directions; the official Eye Serum Challenge provides specific pump / metal-tip / pat instructions used here."
+    ],
+    "profileSha256": "3745e0c71401a651ea4d528c0c3d03559253f191a01f636d0a5618f9760b18bf"
+  },
+  {
+    "id": "TS0089",
+    "brand": "Anua",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://anua.com/products/heartleaf-pore-control-cleansing-oil-200ml",
+        "title": "ANUA — Heartleaf Pore Control Cleansing Oil"
+      },
+      {
+        "url": "https://anua.com/products/heartleaf-quercetinol-pore-deep-cleansing-foam",
+        "title": "ANUA — Heartleaf Quercetinol Pore Deep Cleansing Foam"
+      }
+    ],
+    "notes": [
+      "Existing pack photo inspected: one 200 ml oil and one 150 ml foam. Current official holiday duo is a different multipack, so its free gifts/quantity are not copied."
+    ],
+    "profileSha256": "ce70dbee304b20283dc813be1e802700857b45024aefaf4758b16f1b54ff302d"
+  },
+  {
+    "id": "TS0090",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/heartleaf-77-toner-pad-160ml",
+        "title": "ANUA — Heartleaf 77 Clear Pad"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "666576ca0f7495b94ec33c9792b9af03fa7bb2f8f7bf444de217f386b53e6dbf"
+  },
+  {
+    "id": "TS0091",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/heartleaf-77-soothing-toner",
+        "title": "ANUA — Heartleaf 77 Soothing Toner"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "62fd81312537090e2cb45390f13effc3c0c08c39ea85e7236bec6434ac92d34d"
+  },
+  {
+    "id": "TS0092",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/pdrn-hyaluronic-acid-capsule-100-serum",
+        "title": "ANUA — PDRN Hyaluronic Acid Capsule 100 Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "480f4e4f7eaabab9b418cd46a7d5ccf2f0a231750e6ce4c0f76a3e3075c3760b"
+  },
+  {
+    "id": "TS0093",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/peach-70-niacinamide-serum-30ml",
+        "title": "ANUA — Peach 70% Niacinamide Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "1599398c68c70e4e1381fb7d57c729a629f36b0fbc0c73ad03b14507b60b927a"
+  },
+  {
+    "id": "TS0094",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/rice-70-glow-milky-toner",
+        "title": "ANUA — Rice 70 Glow Milky Toner"
+      }
+    ],
+    "notes": [
+      "Product is named Rice 70; current official INCI states rice bran water 71%. Do not convert the product name into an unsupported exact final-formula percentage."
+    ],
+    "profileSha256": "8b2e7f77a23d18ea5c54ae76defbe0f9431b0b0a74144c0b036285077dde0072"
+  },
+  {
+    "id": "TS0095",
+    "brand": "Anua",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://anua.com/products/heartleaf-pore-control-cleansing-oil-200ml",
+        "title": "ANUA — Heartleaf Pore Control Cleansing Oil"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "054d728a5b4073ac9c4ef6ecd46315cc32ae291b54ddf104345d4cf7b5af20e2"
+  },
+  {
+    "id": "TS0099",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/complete-no-stress-physical-sunscreen",
+        "title": "AXIS-Y — Complete No-Stress Physical Sunscreen V.3"
+      }
+    ],
+    "notes": [
+      "Existing pack inspected: Ver.3, SPF50+, PA++++ and 2% niacinamide are readable. Do not substitute another reformulation."
+    ],
+    "profileSha256": "7379e61bfbb35a71cfe78ca9ab8626dd62831e6faefa6f9dcdc51fc964cd1948"
+  },
+  {
+    "id": "TS0132",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/artichoke-intensive-skin-barrier-ampoule",
+        "title": "AXIS-Y — Artichoke Intensive Skin Barrier Ampoule"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "540fc708365b1532db35e522b7b15af97649ef7b5a77b33da02e825afdee8522"
+  },
+  {
+    "id": "TS0143",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/dark-spot-correcting-glow-serum",
+        "title": "AXIS-Y — Dark Spot Correcting Glow Serum"
+      }
+    ],
+    "notes": [
+      "Legacy duplicate Dark Spot serum, currently sold out. Preserve this ID and its exact pack image; no unverified size or stock is assigned."
+    ],
+    "profileSha256": "b83f02252455dd02291a86dd26dc57a2aad89a1a06386e2435783ea2a5b4a4c4"
+  },
+  {
+    "id": "TS0162",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/dark-spot-correcting-glow-toner",
+        "title": "AXIS-Y — Dark Spot Correcting Glow Toner Mist"
+      }
+    ],
+    "notes": [
+      "Official page advertises 98% purity of glutathione, not 98% finished-product glutathione concentration. This distinction is preserved."
+    ],
+    "profileSha256": "6ae65667b8f897a81a38a836fa2e1d8cd35f51bd12f1c2479c60699829e2bb7d"
+  },
+  {
+    "id": "TS0164",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/txa-2-5-intensive-brightening-cream",
+        "title": "AXIS-Y — TXA 2.5% Intensive Brightening Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "633ce9f96abb90846675fee8bd2689746cbc21378ca4791c59ce50c2e39eba59"
+  },
+  {
+    "id": "TS0168",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/collections/sets/products/glass-skin-duo-set",
+        "title": "AXIS-Y — Glass Skin Duo Set"
+      },
+      {
+        "url": "https://www.axis-y.com/products/dark-spot-correcting-glow-serum",
+        "title": "AXIS-Y — Dark Spot Correcting Glow Serum"
+      },
+      {
+        "url": "https://www.axis-y.com/pages/the-eye-serum-challenge",
+        "title": "AXIS-Y — Eye Serum application"
+      }
+    ],
+    "notes": [
+      "Pack photo inspected and matches official Dark Spot Serum + Vegan Collagen Eye Serum duo. No toner, gifts or extra pieces added."
+    ],
+    "profileSha256": "3e64a7239414b2d2d33374ece81fb28a1446d51a2c15edb27fa95037b8b89044"
+  },
+  {
+    "id": "TS0302",
+    "brand": "AXIS-Y",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.axis-y.com/products/cera-heart-my-type-duo-cream",
+        "title": "AXIS-Y — Cera-Heart My Type Duo Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "a8fc7064536d0ec923dc8a8039ec0fc4e8aeb86f03f7d9a9f4a63a6883023dbe"
+  },
+  {
+    "id": "TS0059",
+    "brand": "Dr. Althea",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/345-relief-cream",
+        "title": "Dr.Althea 345 Relief Cream"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/dual-cream-set-345-relief-cream-147-barrier-cream",
+        "title": "Dr.Althea Dual Cream Set"
+      }
+    ],
+    "notes": [
+      "Current official page describes Ver.2 50 ml; existing store packaging may be an older formula. Only cross-edition features used; no current-version clinical claims transferred."
+    ],
+    "profileSha256": "6b2daaab7c89e0c4eb62deab61ee10111e9363da9f9840bcf155892e5af53ec2"
+  },
+  {
+    "id": "TS0069",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/vitamin-c-booster-shot-pure-vitamin-c-glutathione-for-bright-healthy-skin",
+        "title": "Arencia Vitamin C Booster Shot"
+      }
+    ],
+    "notes": [
+      "Original store tube visually says VITAMIN C COMPLEX65% + GLUTATHIONE. Official INCI lists ethyl ascorbic acid50000ppm and ascorbic acid10ppm; did not misrepresent65% as purevitaminC."
+    ],
+    "profileSha256": "c8f62be5970418a58fb50db56963007a70c38e1c04f8e97950c96b2fca4b796a"
+  },
+  {
+    "id": "TS0074",
+    "brand": "Dr. Althea",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/dralthea-147_barrier_cream",
+        "title": "Dr.Althea 147 Barrier Cream"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/dual-cream-set-345-relief-cream-147-barrier-cream",
+        "title": "Dr.Althea Dual Cream Set"
+      }
+    ],
+    "notes": [
+      "Avoided claiming actual barrier repair treatment or guaranteed suitability; exact-pack formula should govern INCI."
+    ],
+    "profileSha256": "2828ed369853df0ad1b876937a8d92220465c48dfd2b3f11c7d978c1d849d14b"
+  },
+  {
+    "id": "TS0098",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser",
+        "title": "Arencia Fresh Green Rice Mochi Cleanser"
+      },
+      {
+        "url": "https://arencia.com/product/프레시-그린-클렌저-떡솝-120g/78/category/72/display/1/",
+        "title": "Arencia Korean Fresh Green Cleanser"
+      }
+    ],
+    "notes": [
+      "Actual store jar photo inspected;120g visible forTS0098. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "profileSha256": "ea44df8a18c71eed3fca84fca111df1e560114a40858f3e77ab5d86a87985f5d"
+  },
+  {
+    "id": "TS0111",
+    "brand": "Dr. Althea",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/345-relief-cream-mist",
+        "title": "Dr.Althea 345 Relief Cream Mist"
+      }
+    ],
+    "notes": [
+      "Store photo confirms 60 ml; Mini is a store naming convention. Manufacturer currently offers 60/100 ml."
+    ],
+    "profileSha256": "38d313178916111f427fbf0254b4e45a093f9ca772a95a3b6a98e013b9e914f6"
+  },
+  {
+    "id": "TS0112",
+    "brand": "Dr. Althea",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/pure-grinding-cleansing-balm",
+        "title": "Dr.Althea Pure Grinding Cleansing Balm"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "501beb71ed2f8c5ae82e84f4bc988e76fcf39e9470fbff69f65d7acb350dd0a3"
+  },
+  {
+    "id": "TS0123",
+    "brand": "Dr. Althea",
+    "status": "limited",
+    "sources": [
+      {
+        "url": "https://doctoralthea.co.kr/category/make-upsun-care/148/",
+        "title": "Dr.Althea official sun-care collection"
+      },
+      {
+        "url": "https://doctoralthea.co.kr/product/그린티-프레쉬-선-스크린/500/",
+        "title": "Dr.Althea official Korean sunscreen page"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology: sunscreen application"
+      }
+    ],
+    "notes": [
+      "Existing store pack visually inspected. Older PURIFYING GREEN TEA pack states SPF50+ PA++++ and lists Centella, green tea leaf water and panthenol. Official Korean page now named Green Tea Fresh; current Green Tea Calming US edition not substituted.",
+      "General reapplication guidance from AAD; exact directions, protection and water resistance are governed by actual pack."
+    ],
+    "profileSha256": "25236dfc8fc1c9d552c5848b0a34c6899492b6f69b658df75825c08e866494f4"
+  },
+  {
+    "id": "TS0169",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-holy-hyssop-serum-30-1-76-oz-copy",
+        "title": "Arencia Holy Hyssop Serum 30"
+      }
+    ],
+    "notes": [
+      "IMPORTANT: catalog name says30ml but actual existing photo explicitly50g/1.76oz. New public title omits incorrect30ml; parent informed. Did not change record price, stock or identity."
+    ],
+    "profileSha256": "ea77c5ff1c134776006b48a5fccb1558f7f57441bfaf1edec6d54d5fa27d5667"
+  },
+  {
+    "id": "TS0178",
+    "brand": "Dr. Althea",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://doctoralthea.co.kr/category/make-upsun-care/148/",
+        "title": "Dr.Althea official sun-care collection"
+      },
+      {
+        "url": "https://doctoralthea.co.kr/product/닥터엘시아-아쿠아-글로잉-선-스크린-50ml/499/",
+        "title": "Dr.Althea official Korean sunscreen page"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology: sunscreen application"
+      }
+    ],
+    "notes": [
+      "Existing store pack visually inspected. Store round AQUA GLOWING pack lists green caviar extract, ceramide NP, panthenol, bamboo water, niacinamide. Exact SPF not legible in stored front image, so no SPF number invented.",
+      "General reapplication guidance from AAD; exact directions, protection and water resistance are governed by actual pack."
+    ],
+    "profileSha256": "b8d5ccbeca08ba207af2b3c73c4667a0c770516ad2d4f8491c8188119fb28233"
+  },
+  {
+    "id": "TS0183",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/retinal-booster-shot-advanced-retinal-caffeine-formula",
+        "title": "Arencia Retinal Booster Shot"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "AAD pregnancy skin care"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol/",
+        "title": "AAD retinoid introduction"
+      }
+    ],
+    "notes": [
+      "Store tube RETINAL COMPLEX2% is not2%pure retinal. Official INCI says Retinal200ppm; no numeric concentration used publicly."
+    ],
+    "profileSha256": "ca90c11dc22be6b03d3ba6246c41e5bda3e5fc61810d031e0b200ecf0296d1b6"
+  },
+  {
+    "id": "TS0188",
+    "brand": "Dr. Althea",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/aqua-marine-deep-serum",
+        "title": "Dr.Althea Aqua Marine Deep Serum"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/aqua-deep-hydration-duo",
+        "title": "Dr.Althea Aqua Deep Hydration Duo"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "5c8d8dd5fb19b952e72a408117e1dde93016d3fe4dc8f4f7d546e568b33f6ef6"
+  },
+  {
+    "id": "TS0201",
+    "brand": "Dr. Althea",
+    "status": "limited",
+    "sources": [
+      {
+        "url": "https://en.doctoralthea.co.kr/",
+        "title": "Dr.Althea official online store"
+      }
+    ],
+    "notes": [
+      "Exact historical product page no longer found on official global store. Public copy limited to actual inspected box:25 ml, cooling non-sticky gel, hydrating/refreshed eye care. No retailer-only ingredient claims used. Ingredients field deliberately contains supported texture/properties rather than an invented INCI."
+    ],
+    "profileSha256": "b07f720d95637fe295dea1fb6d67d2d86f53c262f5e045edd6c56bad91628df9"
+  },
+  {
+    "id": "TS0203",
+    "brand": "Dr. Althea",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/pdrn-reju-5000-cream",
+        "title": "Dr.Althea PDRN Reju 5000 Cream"
+      }
+    ],
+    "notes": [
+      "20 g confirmed on store pack. No invasive/procedure equivalence or quantified outcomes."
+    ],
+    "profileSha256": "751ec749a4250bc30d9f867745dc7080dda7013132dfc65cb95f7e6865290151"
+  },
+  {
+    "id": "TS0215",
+    "brand": "Dr. Althea",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/345-relief-cream",
+        "title": "Dr.Althea 345 Relief Cream"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/dual-cream-set-345-relief-cream-147-barrier-cream",
+        "title": "Dr.Althea Dual Cream Set"
+      }
+    ],
+    "notes": [
+      "Current official page describes Ver.2 50 ml; existing store packaging may be an older formula. Only cross-edition features used; no current-version clinical claims transferred.",
+      "100 ml confirmed on actual store pack photo; official global page currently offers 50 ml sizes, so sourceStatus is family."
+    ],
+    "profileSha256": "7162383a9300e50657c9b4e9c6d37439b911fe751205e8fa432e4d6d38216e1a"
+  },
+  {
+    "id": "TS0278",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-black-tea-rice-mochi-cleanser",
+        "title": "Arencia Black Tea Rice Mochi Cleanser"
+      }
+    ],
+    "notes": [
+      "Actual store jar photo inspected;120g visible forTS0278. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "profileSha256": "c5c4259579a6fcae00221e34406edb3f1d1cab3552537dffea2dcd5eca6a16bd"
+  },
+  {
+    "id": "TS0279",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser",
+        "title": "Arencia Fresh Blue Hyssop Rice Mochi Cleanser"
+      }
+    ],
+    "notes": [
+      "Actual store jar photo inspected;120g visible forTS0279. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "profileSha256": "bb212a3066f8de3011b3e7b6b77d228eb9630ea153782c868257a57547b3642d"
+  },
+  {
+    "id": "TS0280",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-fresh-rosehip-mochi-cleanser",
+        "title": "Arencia Fresh Rosehip Rice Mochi Cleanser"
+      }
+    ],
+    "notes": [
+      "Actual store jar photo inspected;120g visible forTS0280. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "profileSha256": "57c8d4b04325da386b7267043b52737f4b0148a7b6e0035754f596746f5e834b"
+  },
+  {
+    "id": "TS0281",
+    "brand": "Arencia",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-calendula-rice-mochi-cleanser-gentle-exfoliating-foam-wash-for-sensitive-dry-rough-skin",
+        "title": "Arencia Calendula Rice Mochi Cleanser"
+      }
+    ],
+    "notes": [
+      "Actual store jar photo inspected;120g visible forTS0281. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "profileSha256": "13e4a61570295b096cd685cc191ef5c93252c1e5ebef9fb76cebf42c06f4574d"
+  },
+  {
+    "id": "TS0061",
+    "brand": "EQQUALBERRY",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://eqqualberry.com/product/vitamin-illuminating-serum/76/",
+        "title": "EQQUALBERRY Korean product and directions"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/vitamin-illuminating-serum",
+        "title": "EQQUALBERRY global Vitamin Illuminating Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "a917819f224c04769354cd31d0b5baac9c524150497eb5d29f79273a9e58c033"
+  },
+  {
+    "id": "TS0073",
+    "brand": "Medicube",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://medicube.us/products/subscr-collagen-night-wrapping-mask",
+        "title": "Medicube Collagen Night Wrapping Mask directions"
+      },
+      {
+        "url": "https://medicube.us/products/collagen-night-wrapping-mask",
+        "title": "Medicube Collagen Night Wrapping Mask"
+      }
+    ],
+    "notes": [
+      "The main manufacturer page currently contains an unrelated PDRN gel-mask overview. Directions and product identity cross-checked against the exact subscription SKU; no sheet-mask instructions transferred."
+    ],
+    "profileSha256": "89e662a0287846e488271e55154c1cd503ba85817fbbdd788d74cacca3c78488"
+  },
+  {
+    "id": "TS0083",
+    "brand": "Medicube",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://medicube.us/products/collagen-niacinamide-jelly-cream",
+        "title": "Medicube Collagen Niacinamide Jelly Cream"
+      },
+      {
+        "url": "https://medicube.us/products/deep-erasing-cream",
+        "title": "Medicube comparison of cream and jelly textures"
+      }
+    ],
+    "notes": [
+      "Catalog and original jar read Collagen Jelly Cream, 110 ml; official current title adds Niacinamide. Preserve original jar identity and no new concentration/size claim."
+    ],
+    "profileSha256": "e81de2558f2cec37498b2d9db298d095af86a7de7cb4c40e6ac53de0ee0fa253"
+  },
+  {
+    "id": "TS0088",
+    "brand": "EQQUALBERRY",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://eqqualberry.com/product/bakuchiol-plumping-serum/77/",
+        "title": "EQQUALBERRY Korean Bakuchiol serum"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/bakuchiol-plumping-serum",
+        "title": "EQQUALBERRY global Bakuchiol serum"
+      }
+    ],
+    "notes": [
+      "99% wording in global advertising refers to ingredient purity, not finished serum concentration. Korean/INCI list says 5000ppm bakuchiol; public copy avoids purity/concentration ambiguity."
+    ],
+    "profileSha256": "67a65ef747e4a949fd3c6458cab7c84621aaefe579e7b9d01bd1dfa56cd8860d"
+  },
+  {
+    "id": "TS0097",
+    "brand": "APRILSKIN",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://aprilskin.us/products/txa-niacinamide-toning-shot-99-spicule-serum",
+        "title": "APRILSKIN official Toning Shot 99"
+      },
+      {
+        "url": "https://aprilskin.us/products/txa-niacinamide-99-pink-milky-toner",
+        "title": "APRILSKIN routine ordering"
+      }
+    ],
+    "notes": [
+      "99 is branding/raw-material-purity context, not 99% TXA content in the finished product. Official page calls it STEP ZERO before the milky toner."
+    ],
+    "profileSha256": "a8dabc773927d499341007ea75bb974d5e75e93bdc30837bee28281fb3498859"
+  },
+  {
+    "id": "TS0115",
+    "brand": "EQQUALBERRY",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.eqqualberry.com/product/nad-peptide-boosting-serum/96/",
+        "title": "EQQUALBERRY NAD+ Korean product"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/nad-peptide-boosting-serum",
+        "title": "EQQUALBERRY NAD+ global product"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "4dbfd2b0d4d6e719367b0d264d56de6b71c0e5ecd090f11bf25eb8a36ed7faca"
+  },
+  {
+    "id": "TS0136",
+    "brand": "Medicube",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://medicube.us/products/pdrn-lip-sleeping-mask",
+        "title": "Medicube official PDRN Lip Sleeping Mask"
+      },
+      {
+        "url": "https://themedicube.com.sg/products/pdrn-lip-sleeping-mask",
+        "title": "Medicube Singapore PDRN Lip Sleeping Mask"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "893389f6d7e3f1eb3781235d3e074cf5af76b64530b70e30ce60572f6d3f4338"
+  },
+  {
+    "id": "TS0149",
+    "brand": "VT Cosmetics",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://globalvt-cosmetics.com/products/vt-reedle-shot-100",
+        "title": "VT official Reedle Shot 100"
+      },
+      {
+        "url": "https://m.vt-cosmetics.com/product/detail.html?cate_no=72&display_group=1&product_no=1936",
+        "title": "VT Korea Reedle Shot100 ingredient cross-check"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "cd76375abae5d2a27b25c73e16ecea3b5f6d9984e33b69776e6c0040530503ec"
+  },
+  {
+    "id": "TS0171",
+    "brand": "Medicube",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://m.themedicube.co.kr/product/detail.html?cate_no=1037&display_group=1&product_no=2019",
+        "title": "Medicube Korea exact 13 ml Zero One Day Exosome Shot25000, weekly directions"
+      },
+      {
+        "url": "https://medicube.us/products/exosome-shot",
+        "title": "Medicube official Zero Exosome Shot, including 25000 option"
+      }
+    ],
+    "notes": [
+      "Exact Korean13ml product page located. Its published instructions specify every 7 days in the evening as first step on bare cleansed face, avoiding eyes/lips; finish with moisturising formula. The page has inconsistent fl.oz conversion, so only catalog13ml is retained. No generic daily schedule or clinical percentages transferred from the US shared family page."
+    ],
+    "profileSha256": "0fbbf6af5ed677e0ccfa3f9c988e50ec1387de163079406f0dedad196154527c"
+  },
+  {
+    "id": "TS0172",
+    "brand": "VT",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://globalvt-cosmetics.com/products/pdrn-r5-firming-ampoule",
+        "title": "VT official PDRN R5 Firming Ampoule"
+      },
+      {
+        "url": "https://globalvt-cosmetics.com/products/pdrn-essence-100",
+        "title": "VT official PDRN Essence100 photographed-family cross-check"
+      }
+    ],
+    "notes": [
+      "Catalog says PDRN R5 Firming Ampoule 30 ml; existing bottle image says PDRN Essence / 3 IN 1. Current R5 page shows vegan PDRN/cica/ceramides and milky texture. Those precise formula/texture claims were deliberately not transferred to the ambiguous photographed version. Original product name/pack not replaced."
+    ],
+    "profileSha256": "82a28099b48ead8e3d2ba25e09c95f9c068c5552ea3ceb3420edb163a176dcc7"
+  },
+  {
+    "id": "TS0173",
+    "brand": "VT",
+    "status": "limited",
+    "sources": [
+      {
+        "url": "https://vt-cosmetics.com/product/detail.html?cate_no=26&display_group=1&product_no=1823",
+        "title": "VT official G2 Glutathione Brightening Ampoule"
+      }
+    ],
+    "notes": [
+      "Catalog names G2, while existing bottle image reads Glutathion Bright & Glow with a prominent 13 mark. No claim of 13% pure glutathione is made. Official G2 INCI verified glutathione/niacinamide/panthenol; actual version must be confirmed before stronger concentration claims."
+    ],
+    "profileSha256": "42165b760d002009965f6d932ebfac62ef571d114867e5e17f2d956ce1748e82"
+  },
+  {
+    "id": "TS0176",
+    "brand": "Medicube",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://medicube.us/products/pdrn-pink-collagen-exosome-shot",
+        "title": "Medicube official PDRN Pink Collagen Exosome Shot 2000/7500"
+      },
+      {
+        "url": "https://themedicube.com.sg/products/pdrn-pink-collagen-exosome-shot",
+        "title": "Medicube Singapore PDRN Pink Collagen Exosome Shot"
+      }
+    ],
+    "notes": [
+      "Manufacturer page combines 2000 and7500 options. Published common INCI lists retinol, so no pregnancy-safe or retinoid-free statement is made. No fixed daily/weekly usage frequency inferred for7500."
+    ],
+    "profileSha256": "228647a31a26010188f266b28fac9848d47a85009a2bbd36642d978a3bc197a2"
+  },
+  {
+    "id": "TS0177",
+    "brand": "APRILSKIN",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://aprilskin.us/products/txa-niacinamide-99-pink-milky-toner",
+        "title": "APRILSKIN official Pink Milky Toner"
+      },
+      {
+        "url": "https://aprilskin.com/product/detail.html?cate_no=42&display_group=1&product_no=1372",
+        "title": "APRILSKIN Korea TXA Niacinamide99 Milky Toner directions"
+      }
+    ],
+    "notes": [
+      "Official page states TXA3% and niacinamide5%, with99% referring to TXA purity. Public copy omits concentration claims rather than misreading99."
+    ],
+    "profileSha256": "9ef98e26266a49b6b7cffb6d7ae023cb8c14951863d5fa2106d885ed323d7c5d"
+  },
+  {
+    "id": "TS0182",
+    "brand": "Medicube",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://medicube.us/products/rose-pdrn-pink-peptide-serum",
+        "title": "Medicube official PDRN Pink Peptide Serum"
+      },
+      {
+        "url": "https://medicube.us/products/subscr-pdrn-pink-peptide-serum",
+        "title": "Medicube Pink Peptide Serum directions"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "1aa58d5420464679e23d98b6c2ae92de0416b7fac2c16bbf5ede4bb46b3fc418"
+  },
+  {
+    "id": "TS0187",
+    "brand": "EQQUALBERRY",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://eqqualberry.com/product/hyaltoin-flooding-serum/98/",
+        "title": "EQQUALBERRY Korean Hyaltoin serum"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/hyaltoin-flooding-serum",
+        "title": "EQQUALBERRY global Hyaltoin serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "1d8875a35dcabf10cdf7f90eea72cdc8ce5b3b484ffa27b5f98ed19310375402"
+  },
+  {
+    "id": "TS0344",
+    "brand": "Medicube",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://themedicube.com.sg/products/deep-collagen-firming-sun-cream",
+        "title": "Medicube Singapore Deep Collagen Firming Sunscreen"
+      },
+      {
+        "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+        "title": "FDA sunscreen application and reapplication guidance"
+      }
+    ],
+    "notes": [
+      "SPF50+ is legible on the original photographed tube. No unverified PA rating, water resistance, clinical percentages, exact INCI or no-white-cast promise was added. Current US No Cast Just Glow is a different product."
+    ],
+    "profileSha256": "3bf5a5b36cd3232a8684f95df8a0ffa7e666ae8607e4401a029bf212ef3374a3"
+  },
+  {
+    "id": "TS0060",
+    "brand": "Celimax",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://celimax.us/products/the-vita-a-retinal-shot-tightening-booster",
+        "title": "Celimax US — The Vita A Retinal Shot Tightening Booster"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "notes": [
+      "Official page states 0.1% retinal; no need to put strength in marketing copy."
+    ],
+    "profileSha256": "1a4db0f6840f362dbb11729bbd1763d69caca3d71a7f538b230c5fc3bc8f5d25"
+  },
+  {
+    "id": "TS0066",
+    "brand": "Biodance",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://biodance.com/products/biodance-bio-collagen-real-deep-mask",
+        "title": "Biodance — Bio Collagen-Real Deep Mask"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "1d1fe0558c0b10ef7e348e4333b196187aa1cd17c8dea99a866943f5c4fcc09a"
+  },
+  {
+    "id": "TS0068",
+    "brand": "Abib",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://en.abib.com/products/pdrn-retinal-eye-patch-glow-jelly",
+        "title": "Abib — PDRN retinal eye patch Glow jelly"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "61f54fda67ddbf572aae3258441e3934e30397f9b8b90c740a8bc60e2162a582"
+  },
+  {
+    "id": "TS0072",
+    "brand": "P.CALM",
+    "status": "limited",
+    "sources": [
+      {
+        "url": "https://www.pcalm.co.kr/product/detail.html?product_no=1216",
+        "title": "P.CALM Korea — Holy Basil Bubble Deep Mask"
+      },
+      {
+        "url": "https://pcalm.us/products/p-calm-holy-basil-sparking-bubble-13-mask",
+        "title": "P.CALM US indexed product"
+      }
+    ],
+    "notes": [
+      "Primary Korean page retrieved; image-heavy directions not fully readable. US indexed page now404. Exact timing deferred to pack rather than copying retailer timing."
+    ],
+    "profileSha256": "e63e73e1a9de497c21d96194cc5e61efb7d99ddecdc3e6a7232159ba5aafd416"
+  },
+  {
+    "id": "TS0075",
+    "brand": "Isntree",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://isntree-global.com/products/isntree-hyaluronic-acid-moist-cream-100ml",
+        "title": "Isntree — Hyaluronic Acid Moist Cream"
+      }
+    ],
+    "notes": [
+      "Brand currently describes renewed 10-HA family; no HA count or full INCI copied to prevent version mismatch."
+    ],
+    "profileSha256": "e173d1c1a421e0fe11e5b6641f97f2837c2a5d3bb19c97870ec9c73ec2b1c3c5"
+  },
+  {
+    "id": "TS0076",
+    "brand": "Isntree",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://isntree-global.com/products/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+        "title": "Isntree — Hyaluronic Acid Watery Sun Gel"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "notes": [
+      "Primary store explicitly distinguishes original Watery Sun Gel from US Daily alternative; no unsupported SPF reassignment."
+    ],
+    "profileSha256": "0cf18aede62493a2a22c79e3c57fdd24c65388a5e02416e41206b13c1136791f"
+  },
+  {
+    "id": "TS0078",
+    "brand": "SKIN1004",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/products/skin1004-madagascar-centella-tone-brightening-capsule-ampoule?variant=40788191314077",
+        "title": "SKIN1004 — Tone Brightening Capsule Ampoule"
+      }
+    ],
+    "notes": [
+      "Catalog identifies50ml; current manufacturer page also displays100ml/30ml images. Existing catalog pack remains authoritative."
+    ],
+    "profileSha256": "8118c3c5dd8ec69163829dede0e82f86bc127760ed2e0d41980e1e8a1fbdae3c"
+  },
+  {
+    "id": "TS0082",
+    "brand": "Mary & May",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://marynmay.com/products/mary-may-tranexamic-acid-glutathione-eye-cream-30g",
+        "title": "Mary&May — Tranexamic Acid + Glutathione Eye Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "3ae5f2002506f84b7460b5b0caf25c18157d497260512f2a18089ad7a6f36c5e"
+  },
+  {
+    "id": "TS0085",
+    "brand": "SKIN1004",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/products/hyalu-cica-water-fit-sun-serum-uv?variant=51261874995446",
+        "title": "SKIN1004 — Hyalu-Cica Water-Fit Sun Serum UV"
+      },
+      {
+        "url": "https://www.skin1004.com/pages/collection-series",
+        "title": "SKIN1004 — Collection Series"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "notes": [
+      "Current US product is reformulated SPF50; existing Korean catalog hero retained. No filters/PA/US drug claims transferred."
+    ],
+    "profileSha256": "6fb10c10bb490e685aceaceb33497cad8793042e22f7e6105b3c2f2dbad1b566"
+  },
+  {
+    "id": "TS0087",
+    "brand": "SKIN1004",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/collections/cleanser/products/skin1004-madagascar-centella-light-cleansing-oil",
+        "title": "SKIN1004 — Centella Light Cleansing Oil"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "17f15136d492f11ad38e66ae81279e4eafc471c40b50b2beaa0bfc658b69db6c"
+  },
+  {
+    "id": "TS0102",
+    "brand": "SKIN1004",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/products/poremizing-light-gel-cream",
+        "title": "SKIN1004 — Poremizing Light Gel Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "44e356ce72f8d8d273c0b0720f44f182a56963075048d9825474102cae63265b"
+  },
+  {
+    "id": "TS0103",
+    "brand": "SKIN1004",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/collections/cream/products/skin1004-madagascar-centella-soothing-cream",
+        "title": "SKIN1004 — Centella Soothing Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "89567d6f43971d037ecfb4e770d2b7ba51b9f366508826cee6e77aee9defee78"
+  },
+  {
+    "id": "TS0113",
+    "brand": "Dr.Melaxin",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://drmelaxin.us/products/peel-shot-glow-black-rice-ampoule",
+        "title": "Dr.Melaxin US — Peel Shot Glow Black Rice Ampoule"
+      }
+    ],
+    "notes": [
+      "Official brand501-linked US product verified. Rinse-off directions corroborated by original how-to infographic; no dramatic pore/blackhead claims copied."
+    ],
+    "profileSha256": "4a4b33ec1d4a0572fc72b1d410d4896a6c7af95fb580310d3b4c0bdce8b17756"
+  },
+  {
+    "id": "TS0114",
+    "brand": "Dr.Melaxin",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://drmelaxin.us/products/peel-shot-glow-white-rice-ampoule",
+        "title": "Dr.Melaxin US — Peel Shot Glow White Rice Ampoule"
+      }
+    ],
+    "notes": [
+      "Official brand501-linked US product verified. Rinse-off directions corroborated by original how-to infographic; no dramatic pore/blackhead claims copied."
+    ],
+    "profileSha256": "a76fb8fbdf92167d09869b948dc093e2baa7c1585af24954885c103e1e98bc7e"
+  },
+  {
+    "id": "TS0116",
+    "brand": "ETUDE",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://int.etude.com/shop/category/eye/my-lash-serum-9g/",
+        "title": "ETUDE Global — My Lash Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "759ca68b74abaaada12f525c217ce8230ba2a381d0016199931d0ac97d5a9d37"
+  },
+  {
+    "id": "TS0117",
+    "brand": "JUMISO",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://jumiso.us/products/all-day-vitamin-brightening-balancing-serum",
+        "title": "Jumiso US — All Day Vitamin Brightening & Balancing Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "d7b12907e06d0897ad8347b0066448f82cb987f4ab1fea3b0d5afb1fbd579018"
+  },
+  {
+    "id": "TS0118",
+    "brand": "KSECRET",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://www.ksecret.com/en/k-secret-seoul-1988-eye-cream-retinal-liposome-4-fermented-bean",
+        "title": "KSECRET — Seoul 1988 Eye Cream"
+      },
+      {
+        "url": "https://ksecretcosmetics.com/products/seoul-1988-eye-cream-retinal-liposome-4-fermented-bean",
+        "title": "KSECRET Cosmetics — Seoul1988 Eye Cream and directions"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "notes": [
+      "Exact manufacturer brand product retrieved; image-heavy instructions. No unverified pure-retinal concentration stated."
+    ],
+    "profileSha256": "63233c48428adceef1be14c7e6e63492fb5a3b0385b242d62129dc338b5749c8"
+  },
+  {
+    "id": "TS0122",
+    "brand": "SOME BY MI",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://en.somebymi.com/product/retinol-intense-reactivating-serum-30ml/303/category/380/display/1/",
+        "title": "SOME BY MI — Retinol Intense Reactivating Serum"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "notes": [
+      "Exact serum primary product retrieved; image-heavy ingredient details. No unverified active percentages included."
+    ],
+    "profileSha256": "a3a1fe9f5e3da807fcd432e2930c1fa6bf1123131f9d6e3b59b9b0eec3500196"
+  },
+  {
+    "id": "TS0129",
+    "brand": "Secret Key",
+    "status": "limited",
+    "sources": [
+      {
+        "url": "https://www.secretkey.co.kr/m/product.html?branduid=93",
+        "title": "Secret Key Korea — Snow White Spot Gel"
+      }
+    ],
+    "notes": [
+      "Exact primary product exists; ingredients and detailed use are image-only, not safely extracted. Public copy intentionally avoids invented actives, intimate-area instructions or unverified leave-on timing."
+    ],
+    "profileSha256": "d17f8b0bc180d7c82a2657e609891ce262fe27d5a91b618e000558c6b3a5aed3"
+  },
+  {
+    "id": "TS0155",
+    "brand": "SEAPURI",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://seapuri.us/products/scalpy-hair-serum",
+        "title": "SEAPURI US — Scalpy Hair Serum"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "d3b57f6e15c36426d4a56147cf841de1024a58bb4cfa5f92f9d2744f44fe5dae"
+  },
+  {
+    "id": "TS0158",
+    "brand": "ETUDE",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://int.etude.com/shop/category/skin-care/skin-care-all/soonjung-2x-barrier-intensive-cream-60ml/",
+        "title": "ETUDE — SoonJung 2x Barrier Intensive Cream"
+      },
+      {
+        "url": "https://int.etude.com/shop/category/skin-care/skin-care-all/soonjung-2x-barrier-intensive-cream-60ml-2/",
+        "title": "ETUDE — SoonJung updated cream"
+      }
+    ],
+    "notes": [
+      "Two primary versions with ingredient-list differences retrieved. No blanket hypoallergenic/allergen-free guarantee."
+    ],
+    "profileSha256": "660ad43715160b281d5423394ee06327b309ac4851cb128d060c2c2cce17a57b"
+  },
+  {
+    "id": "TS0161",
+    "brand": "ROUND LAB",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://roundlab.com/products/birch-moisturizing-uv-sunscreen",
+        "title": "ROUND LAB — Birch sunscreen product family"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "notes": [
+      "US primary page currently refers to regional UVLock formulation/rating, not necessarily the catalog Korean pack. Core birch/hydration/UV-use facts retained without guessed SPF/PA/filters."
+    ],
+    "profileSha256": "ae1d39b02f5a610962feb7236dde809b800c0340fe382dfe8fe7265c3aa2e5aa"
+  },
+  {
+    "id": "TS0163",
+    "brand": "Derma:B",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://www.neopharm.co.kr/en/brand-dermab.do",
+        "title": "NEOPHARM — Derma:B brand and Everyday Sunblock"
+      },
+      {
+        "url": "https://www.newswire.co.kr/newsRead.php?no=986070",
+        "title": "NEOPHARM product announcement — renewed Everyday Sun Block"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "notes": [
+      "Manufacturer official site links to dermab.co.kr but product site returned502. Manufacturer-issued release on Newswire retrieved. Public copy avoids blanket child-safety and waterproof claims."
+    ],
+    "profileSha256": "8d316b14a628cc9fe1a7f4cf127d1de973119999e96d47201b942f9d7497aaed"
+  },
+  {
+    "id": "TS0165",
+    "brand": "TIRTIR",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://tirtir.global/products/niacinamide-20-serum",
+        "title": "TIRTIR — Niacinamide 20% Serum"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "notes": [
+      "Retinol is present in official INCI despite niacinamide-led title. Avoid pregnancy-safe claims or framing solely as vitaminB3."
+    ],
+    "profileSha256": "b190b3d237783a1672fda8b0d6606116ff1342a726d92cd6bc452a7466875910"
+  },
+  {
+    "id": "TS0166",
+    "brand": "PURITO SEOUL",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://purito.com/product/wonder-releaf-centella-serum-unscented/?sort=best",
+        "title": "PURITO SEOUL — Wonder Releaf Centella Serum Unscented"
+      }
+    ],
+    "notes": [
+      "Official renewed serum includes changed centella content and extracellular vesicles. Avoid exact percentages and new-version-only claims for existing60ml stock."
+    ],
+    "profileSha256": "1515e1cb0057bc2ea6c45fc57163171c0dbaf6f79eef187cbf39137c3d3767ef"
+  },
+  {
+    "id": "TS0174",
+    "brand": "JUMISO",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://jumiso.us/collections/moisturizers/products/new-niacinamide-5-overnight-cream-50ml",
+        "title": "Jumiso — Niacinamide 5+ Overnight Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "0ca8bb830514817ab701d73301158bfb69e5ea9de59f3a53981af6d762039986"
+  },
+  {
+    "id": "TS0175",
+    "brand": "Haruharu Wonder",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-bakuchiol-eye-cream-20ml",
+        "title": "Haruharu Wonder — Black Rice Bakuchiol Eye Cream"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "e7e66edfeeabd371a5d36867db575e7c9fa969900fb4d51196ee60f2351c4fec"
+  },
+  {
+    "id": "TS0179",
+    "brand": "Centellian24",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://centellian24usa.com/products/centellian-24-madeca-cream-time-reverse-korean-skincare-centella-asiatica",
+        "title": "Centellian24 — Madeca Cream Time Reverse"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "notes": [
+      "Manufacturer current Time Reverse INCI includes retinol and fragrance/essential oils. No blanket sensitive-skin or pregnancy-safe claims."
+    ],
+    "profileSha256": "18c0e0ff07e96adfeec4309385d1ac64c4df53a722da8d254cd9dd69f4a1c83f"
+  },
+  {
+    "id": "TS0180",
+    "brand": "KSECRET",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://ksecretcosmetics.com/pages/ss23-collagen-sleeping-mask",
+        "title": "KSECRET Cosmetics — Collagen Sleeping Mask"
+      },
+      {
+        "url": "https://www.ksecret.com/en/ProductTab/ProductCustomTab/2274",
+        "title": "KSECRET — sleeping-mask directions"
+      }
+    ],
+    "notes": [
+      "No retinoid claim copied from retailers; official instruction tab retrieved for overnight use and morning rinse."
+    ],
+    "profileSha256": "6a9321d7b01af9945d6dee4d3171a2f4eb06843e74f627dc06ec43cd2afa7257"
+  },
+  {
+    "id": "TS0184",
+    "brand": "Numbuzin",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://us.numbuzin.com/products/no-9-nad-bio-lifting-sil-full-face-mask",
+        "title": "numbuzin US — No.9 NAD+ BIO Lifting-sil Full Face Mask"
+      }
+    ],
+    "notes": [
+      "Catalog pack visually inspected and confirmed full-face mask plus lifting band. Do not confuse No.9 essence or transfer clinical percentages."
+    ],
+    "profileSha256": "3f4adba47f79474934546e14dd56a44a24f1a271b4216cb9d9f2cab240daa72f"
+  },
+  {
+    "id": "TS0190",
+    "brand": "mixsoon",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://mixsoon.us/collections/cleansing-1/products/mixsoon-bean-cleansing-oil-195ml",
+        "title": "mixsoon US — Bean Cleansing Oil195ml"
+      }
+    ],
+    "notes": [],
+    "profileSha256": "62782f0c2295cb040671f0939ff627367e23d812df6bfc834cca2759f1e28a2a"
+  },
+  {
+    "id": "TS0206",
+    "brand": "SOME BY MI",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://somebymi.com/product/detail.html?product_no=265",
+        "title": "SOME BY MI Korea — Retinol Intense Advanced Triple Action Eye Cream"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "notes": [
+      "Primary Korean product text specifies evening use as final skincare step and lists retinol0.1%; no numeric claim needed publicly."
+    ],
+    "profileSha256": "418b68cd3c45381d59425982fef44be267cbf0704fe96103545112188c134772"
+  },
+  {
+    "id": "TS0226",
+    "brand": "Farmstay",
+    "status": "exact",
+    "sources": [
+      {
+        "url": "https://en.fscos.com/product/farmstay-24k-gold-peptide-solution-prime-ampoule/132/",
+        "title": "Farmstay — 24K Gold & Peptide Solution Prime Ampoule"
+      }
+    ],
+    "notes": [
+      "Manufacturer page confirms niacinamide and royal jelly; catalog size remains unchanged because not clearly recorded. No claims that gold creates medical or exceptional benefits."
+    ],
+    "profileSha256": "2c827667971db44fd9f661ec8df32677d53903e8a26b0f959698e69c3b8b0234"
+  },
+  {
+    "id": "TS0331",
+    "brand": "Elizavecca",
+    "status": "family",
+    "sources": [
+      {
+        "url": "https://elizavecca.com/goods/goods_view.php?goodsNo=955",
+        "title": "Elizavecca — Witch Piggy Hell-Pore Marine Collagen Ample"
+      }
+    ],
+    "notes": [
+      "Official current ingredient list states hydrolysed collagen9,500ppm, not95%. Retailer95% claims rejected. Product photo/version controls exact formulation.",
+      "Catalog pack visibly says95%, whereas current official INCI gives9,500ppm; this could be version/claim difference and was not resolved. Public copy therefore states no percentage, without contradicting visible pack or declaring authenticity."
+    ],
+    "profileSha256": "dbb1338ede98eb2170e78253680147eb55c00c9b756427d5791d3538e367d7d9"
+  }
+]

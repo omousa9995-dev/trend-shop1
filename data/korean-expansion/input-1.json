@@ -1,0 +1,903 @@
+[
+  {
+    "source": "LeoMarka",
+    "brand": "COSRX",
+    "name": "Original Advanced Snail Peptide Eye Cream By Cosrx",
+    "subcat": "العين",
+    "reference": 8950,
+    "source_url": "https://leomarka.com/collections/skin-care",
+    "source_note": "صفحة مفهرسة حديثًا — قد تختلف نسخة الصفحة",
+    "id": "TS0038",
+    "category": "البشرة",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. امنحي المنطقة الرقيقة حول العين عناية خفيفة من مجموعة سنيل. يركز كريم العين على الترطيب وتحسين مظهر الخطوط الناتجة عن الجفاف، ليساعد المكياج الخفيف حول العين على الظهور بشكل أكثر نعومة.",
+    "discount": 21,
+    "priceFils": 7000,
+    "image": "/images/catalog/TS0038-9c8d8ee36b70.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم العين سنيل بيبتايد من كوسركس",
+      "tagline": "محيط عين أكثر نعومة وانتعاشًا.",
+      "benefits": [
+        "ترطيب لمحيط العين",
+        "ملمس أنعم",
+        "تحسين مظهر الجفاف"
+      ],
+      "howToUse": "ربتي بكمية صغيرة حول عظمة العين بعد الخطوات الخفيفة، دون فرك أو ملامسة العين نفسها.",
+      "notes": "اختبريه أولًا عند الحساسية من مستحضرات الحلزون.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "en": {
+        "name": "COSRX · Original Advanced Snail Peptide Eye Cream",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "COSRX · Original Advanced Snail Peptide Eye Cream. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0038",
+      "TS0104"
+    ],
+    "researchReferenceFils": 9990
+  },
+  {
+    "source": "LeoMarka",
+    "brand": "COSRX",
+    "name": "كريم مرطب حمض الهيالورونيك أسيد COSRX",
+    "subcat": "مرطب",
+    "reference": 9950,
+    "source_url": "https://leomarka.com/collections/skin-care",
+    "source_note": "صفحة مفهرسة حديثًا — قد تختلف نسخة الصفحة",
+    "id": "TS0040",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. امنحي البشرة الجافة إحساسًا أكثر راحة مع كريم الهيالورونيك من كوسركس. يكمّل السيروم أو الإيسنس بطبقة ترطيب تساعد على تلطيف الإحساس بالشد، وتمنح مظهر البشرة نعومة أوضح ضمن روتينك.",
+    "discount": 29,
+    "priceFils": 6990,
+    "image": "/images/catalog/TS0040-372e9cba2f3e.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم الترطيب بالهيالورونيك من كوسركس",
+      "tagline": "ملمس غني للبشرة التي تحتاج ترطيبًا.",
+      "benefits": [
+        "ترطيب لمظهر أكثر راحة",
+        "تلطيف ملمس الجفاف",
+        "خطوة كريم بعد السيروم"
+      ],
+      "howToUse": "وزعي كمية مناسبة على الوجه بعد خطوات العناية الأخف، وعدلي الكمية بحسب احتياجك.",
+      "notes": "اختاري كمية أخف إذا كانت بشرتك تميل إلى اللمعان.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "COSRX Hyaluronic Acid Moisturising Cream",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "COSRX Hyaluronic Acid Moisturising Cream. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0040"
+    ],
+    "researchReferenceFils": 11990
+  },
+  {
+    "source": "LeoMarka",
+    "brand": "COSRX",
+    "name": "سيروم Cosrx Galactomyces95 Tone Balancing Essence",
+    "subcat": "سيروم",
+    "reference": 9950,
+    "source_url": "https://leomarka.com/collections/skin-care",
+    "source_note": "صفحة مفهرسة حديثًا — قد تختلف نسخة الصفحة",
+    "id": "TS0044",
+    "category": "البشرة",
+    "description": "طبقة عناية تجعل روتينكِ ألطف. إذا افتقدت بشرتك الحيوية رغم الترطيب، يمنحك إيسنس جالاكتومايسس خطوة عناية خفيفة بمظهر البهتان والملمس. يناسب من تحب طبقات العناية الكورية الرقيقة قبل الكريم، للحصول على إحساس أكثر نعومة ومظهر نضر.",
+    "discount": 29,
+    "priceFils": 6990,
+    "image": "/images/catalog/TS0044-4336d2d071f4.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "إيسنس جالاكتومايسس 95 من كوسركس",
+      "tagline": "إشراقة هادئة وملمس أكثر نعومة.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "ملمس أنعم",
+        "طبقة خفيفة قبل المرطب"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد التنظيف والتونر إن استخدمته، ثم أتبعيه بالمرطب.",
+      "notes": "اختبري المستحضر عند الحساسية من مستحضرات العناية المخمرة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "essence",
+      "en": {
+        "name": "COSRX Galactomyces 95 Tone Balancing Essence",
+        "tagline": "A little layer of care to look forward to.",
+        "description": "COSRX Galactomyces 95 Tone Balancing Essence. A little layer of care to look forward to. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little layer of care to look forward to.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Pat a small amount onto clean skin after toner and before moisturiser, following the pack directions.",
+        "notes": "Patch test before regular use and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0044"
+    ],
+    "researchReferenceFils": 11150
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Beauty of Joseon",
+    "name": "Beauty of Joseon – Relief Sun",
+    "subcat": "واقي شمس",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0065",
+    "category": "البشرة",
+    "description": "قبل قهوتكِ ومشاويركِ، اتركي مكانًا لخطوة الحماية من الشمس. ريليف صن من بيوتي أوف جوسون يرافق روتين النهار قبل المكياج أو بمفرده. استمتعي ببساطة الخطوة، مع كمية كافية وتجديد التطبيق بحسب تعليمات العبوة.",
+    "discount": 49,
+    "priceFils": 5490,
+    "image": "/images/catalog/TS0065-04d4acbe5053.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي ريليف صن من بيوتي أوف جوسون",
+      "tagline": "خطوة الصباح التي تأخذينها معكِ.",
+      "benefits": [
+        "حماية نهارية",
+        "قوام كريمي مريح",
+        "سهولة دمجه قبل المكياج"
+      ],
+      "howToUse": "طبقي كمية كافية وفق تعليمات العبوة وجددي أثناء التعرض للشمس وبعد السباحة أو التعرق.",
+      "notes": "هذه النسخة تختلف عن Aqua Fresh؛ اختاري القوام الذي يناسبك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 3,
+      "productType": "sunscreen",
+      "en": {
+        "name": "Beauty of Joseon – Relief Sun",
+        "tagline": "A morning step worth making time for.",
+        "description": "Before coffee, errands or makeup, make room for sun care. Beauty of Joseon Relief Sun belongs at the end of your morning skincare routine, with makeup or on its own. Use enough product and reapply according to your exact pack’s directions.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0065"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX – Advanced Snail 96 Mucin Power Essence",
+    "subcat": "إيسنس",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0079",
+    "category": "البشرة",
+    "description": "بين تنظيف بشرتكِ وترطيبها، امنحي نفسكِ لحظة هادئة مع إيسنس سنيل 96 من كوسركس. ضعي كمية صغيرة واربتي بلطف قبل الكريم؛ خطوة يسهل أن تصبح جزءًا من روتينكِ الصباحي أو المسائي، من دون تحويل العناية إلى مهمة طويلة.",
+    "discount": 41,
+    "priceFils": 7000,
+    "image": "/images/catalog/TS0079-a9ee4ad7e0be.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "إيسنس سنيل 96 من كوسركس",
+      "tagline": "طبقة ترطيب، ولحظة لكِ وحدكِ.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "ملمس أكثر نعومة",
+        "تهيئة البشرة للكريم"
+      ],
+      "howToUse": "وزعي كمية صغيرة بعد التنظيف والتونر إن استخدمته، ثم أتبعيها بمرطب.",
+      "notes": "اختبريه موضعيًا عند الحساسية من مستحضرات الحلزون.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 1,
+      "productType": "essence",
+      "en": {
+        "name": "COSRX – Advanced Snail 96 Mucin Power Essence",
+        "tagline": "A little layer of care, just for you.",
+        "description": "Make a quiet moment between cleansing and moisturising with COSRX Advanced Snail 96 Mucin Power Essence. Pat on a little after toner and before your cream. It is a simple way to give your skincare ritual a moment of its own, morning or evening.",
+        "benefits": [
+          "A little layer of care to look forward to.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Pat a small amount onto clean skin after toner and before moisturiser, following the pack directions.",
+        "notes": "Patch test before regular use and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0079"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX – Advanced Snail 92 All In One Cream",
+    "subcat": "مرطب",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0080",
+    "category": "البشرة",
+    "description": "أكملي طبقات عنايتكِ بكريم سنيل 92 أول إن ون من كوسركس. بعد التنظيف والسيروم، وزّعي كمية مناسبة بلطف وخذي لحظتكِ بعيدًا عن استعجال اليوم. خطوة ترطيب يمكنكِ تنسيقها مع إيسنس سنيل 96 أو روتينكِ المعتاد بحسب ما يلائم بشرتكِ.",
+    "discount": 28,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0080-c6b96951c9c5.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم سنيل 92 أول إن ون من كوسركس",
+      "tagline": "آخر طبقة عناية، وأجمل وقت لنفسكِ.",
+      "benefits": [
+        "تلطيف مظهر الجفاف",
+        "إحساس بالنعومة",
+        "خطوة كريم بعد السيروم"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد خطوات العناية الأخف، ثم ربتي بلطف حتى يتوزع.",
+      "notes": "يختلف عن إيسنس سنيل 96؛ أحدهما إيسنس والآخر كريم.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "COSRX – Advanced Snail 92 All In One Cream",
+        "tagline": "A final layer of care, a little time for you.",
+        "description": "Finish your skincare layers with COSRX Advanced Snail 92 All In One Cream. Apply a suitable amount gently after cleansing and serum. Pair it with Snail 96 Essence or your existing routine according to what suits your skin.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0080"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Beauty of Joseon",
+    "name": "Beauty of joseon - Relief Sun Aqua Fresh",
+    "subcat": "واقي شمس",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0081",
+    "category": "البشرة",
+    "description": "خطوة نهارية تستحق مكانًا في روتينكِ. إذا كنتِ تفضلين قوامًا أخف في روتين النهار، تعرفي إلى نسخة أكوا فريش من ريليف صن. تمنحك خطوة حماية سهلة التوزيع، ويمكن تنسيقها مع المرطب والمكياج دون إهمال الكمية والتجديد.",
+    "discount": 49,
+    "priceFils": 5490,
+    "image": "/images/catalog/TS0081-6d2d6b7dbd3c.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي ريليف صن أكوا فريش من بيوتي أوف جوسون",
+      "tagline": "حماية بخفة تناسب صباحك.",
+      "benefits": [
+        "حماية نهارية",
+        "قوام خفيف",
+        "سهولة تنسيقه مع روتين الصباح"
+      ],
+      "howToUse": "طبقي كمية كافية وفق العبوة وجددي أثناء التعرض للشمس.",
+      "notes": "نسخة Aqua Fresh مستقلة عن ريليف صن الأصلي وليست تكرارًا له.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "sunscreen",
+      "en": {
+        "name": "Beauty of joseon - Relief Sun Aqua Fresh",
+        "tagline": "Make room for a daily sun-care ritual.",
+        "description": "Beauty of joseon - Relief Sun Aqua Fresh. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0081"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX - Salicylic Acid Daily Gentle Cleanser",
+    "subcat": "غسول",
+    "reference": 8950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0086",
+    "category": "البشرة",
+    "description": "أغلقي يومكِ بلحظة انتعاش. امنحي روتين البشرة الدهنية خطوة تنظيف موجهة إلى الدهون والشوائب اليومية. يكوّن غسول كوسركس رغوة تنظف السطح وتكمل العناية بمظهر المسام، مع أهمية مراقبة الجفاف واستكمال مرطب مناسب.",
+    "discount": 21,
+    "priceFils": 7000,
+    "image": "/images/catalog/TS0086-85106e371957.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "غسول ساليسيليك ديلي جنتل من كوسركس",
+      "tagline": "تنظيف للبشرة المعرضة لانسداد المسام.",
+      "benefits": [
+        "تنظيف دهون السطح",
+        "عناية بمظهر المسام",
+        "خطوة رغوية قبل العناية"
+      ],
+      "howToUse": "رغّي كمية صغيرة على الوجه المبلل ثم اشطفي جيدًا دون فرك قوي.",
+      "notes": "يحتوي على مستحضر تقشيري؛ خففي التكرار إذا شعرتِ بالشد أو التهيج.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "cleanser",
+      "en": {
+        "name": "COSRX - Salicylic Acid Daily Gentle Cleanser",
+        "tagline": "A fresh start, or a gentle end to your day.",
+        "description": "COSRX - Salicylic Acid Daily Gentle Cleanser. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+        "benefits": [
+          "A fresh start, or a gentle end to your day.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.",
+        "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0086",
+      "TS0159"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Beauty of Joseon",
+    "name": "Beauty of Joseon - Red Bean Refreshing Pore Mask",
+    "subcat": "ماسك",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0100",
+    "category": "البشرة",
+    "description": "استراحة جمال على إيقاعكِ. أضيفي جلسة ماسك تهتم بمظهر دهون السطح والملمس غير المتجانس. ماسك ريد بين يكمّل الغسول والترطيب بخطوة متباعدة، ويمنحك إحساسًا بالنظافة عندما تريدين تدليل بشرتك دون روتين طويل.",
+    "discount": 28,
+    "priceFils": 9990,
+    "image": "/images/catalog/TS0100-4d24d71ad091.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك ريد بين للمسام من بيوتي أوف جوسون",
+      "tagline": "استراحة عناية لملمس يبدو أكثر نقاءً.",
+      "benefits": [
+        "العناية بدهون السطح",
+        "تحسين مظهر الملمس",
+        "جلسة ماسك منزلية"
+      ],
+      "howToUse": "وزعي على بشرة نظيفة بالطريقة والمدة المحددتين على العبوة ثم اشطفي بلطف.",
+      "notes": "لا تتركيه مدة أطول على أمل نتيجة أسرع، وتجنبي الجلد المتهيج.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "face-mask",
+      "en": {
+        "name": "Beauty of Joseon - Red Bean Refreshing Pore Mask",
+        "tagline": "A little beauty pause, at your own pace.",
+        "description": "Beauty of Joseon - Red Bean Refreshing Pore Mask. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little beauty pause, at your own pace.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask.",
+        "notes": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0100"
+    ],
+    "researchReferenceFils": 17000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Beauty of Joseon",
+    "name": "Beauty of Joseon - Relief Sun Mini",
+    "subcat": "واقي شمس",
+    "reference": 4950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0101",
+    "category": "البشرة",
+    "description": "خطوة نهارية تستحق مكانًا في روتينكِ. احملي خطوة الحماية المفضلة لديك بحجم أصغر، مناسب لتجربة قوام ريليف صن أو وضعه في حقيبة اليوم. تبقى طريقة الاستخدام والكمية الكافية مهمة كما في العبوة الكبيرة، حتى عند استخدام حجم السفر.",
+    "discount": 49,
+    "priceFils": 2490,
+    "image": "/images/catalog/TS0101-cdeffd530221.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي ريليف صن بالحجم المصغّر من بيوتي أوف جوسون",
+      "tagline": "رفيق صغير لتجربة روتينك وحقيبتك.",
+      "benefits": [
+        "عبوة صغيرة للحقيبة",
+        "تجربة قوام المنتج",
+        "سهولة اصطحاب الواقي"
+      ],
+      "howToUse": "وزعي كمية كافية وفق العبوة وجددي عند التعرض للشمس.",
+      "notes": "الحجم المصغر خيار مختلف عن العبوة الكبيرة ولا يعني استخدام كمية أقل لكل تطبيق.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "sunscreen",
+      "en": {
+        "name": "Beauty of Joseon - Relief Sun Mini",
+        "tagline": "Make room for a daily sun-care ritual.",
+        "description": "Beauty of Joseon - Relief Sun Mini. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0101"
+    ],
+    "researchReferenceFils": 6000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX - AHA/BHA Clarifying Treatment Toner",
+    "subcat": "تونر",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0105",
+    "category": "البشرة",
+    "description": "مساحة هادئة بين التنظيف والعناية. امنحي روتينك خطوة تونر موجهة إلى بهتان البشرة وتراكم شوائب السطح. يساعد هذا الاختيار من كوسركس على تحسين مظهر الملمس ضمن استخدام متدرج، مع الاحتفاظ بالترطيب جزءًا أساسيًا من العناية.",
+    "discount": 49,
+    "priceFils": 5990,
+    "image": "/images/catalog/TS0105-efc401fc54a2.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "تونر AHA/BHA كلاريفاينغ من كوسركس",
+      "tagline": "عناية خفيفة بمظهر السطح والمسام.",
+      "benefits": [
+        "العناية بمظهر الملمس",
+        "تحسين مظهر البهتان",
+        "خطوة تونر سهلة"
+      ],
+      "howToUse": "وزعي بالطريقة والتواتر المدونين على العبوة، بعيدًا عن العينين.",
+      "notes": "يحتوي على أحماض تقشير؛ لا تكثري المقشرات واستخدمي واقي شمس.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "toner",
+      "en": {
+        "name": "COSRX - AHA/BHA Clarifying Treatment Toner",
+        "tagline": "A quiet little pause between cleansing and care.",
+        "description": "COSRX - AHA/BHA Clarifying Treatment Toner. A quiet little pause between cleansing and care. Take a pause after cleansing before your next layer of care.",
+        "benefits": [
+          "A quiet little pause between cleansing and care.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser.",
+        "notes": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0105"
+    ],
+    "researchReferenceFils": 15000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX - All About Snail Trial Kit",
+    "subcat": "مجموعات",
+    "reference": 19950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0106",
+    "category": "البشرة",
+    "description": "اكتشفي روتينكِ، خطوة بخطوة. تعرفي إلى مجموعة سنيل من خلال أحجام تجريبية تساعدك على فهم القوام وترتيب خطوات العناية قبل اختيار عبوات أكبر. تتيح المجموعة تنسيق العناية بالوجه ومحيط العين بحسب القطع الفعلية الموجودة فيها.",
+    "discount": 19,
+    "priceFils": 15990,
+    "image": "/images/catalog/TS0106-056e6f6b8298.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "مجموعة سنيل التجريبية من كوسركس",
+      "tagline": "اكتشفي روتين سنيل بخطوات صغيرة.",
+      "benefits": [
+        "تجربة أكثر من قوام",
+        "أحجام عملية",
+        "تنسيق خطوات روتين سنيل"
+      ],
+      "howToUse": "اتبعي تعليمات كل قطعة وترتيب استخدامها المرفق بالمجموعة.",
+      "notes": "تُراجع محتويات المجموعة وأحجامها عند اعتماد العبوة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "skincare-set",
+      "en": {
+        "name": "COSRX - All About Snail Trial Kit",
+        "tagline": "Explore your next ritual, one step at a time.",
+        "description": "COSRX - All About Snail Trial Kit. Explore your next ritual, one step at a time. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "Explore your next ritual, one step at a time.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Check the directions for each item in the set and introduce new products gradually rather than all at once.",
+        "notes": "Set contents and sizes should be checked against the available pack. Patch test each new product.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0106"
+    ],
+    "researchReferenceFils": 24000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX - Balancium Ceramide Lip Butter Sleeping Mask",
+    "subcat": "شفاه",
+    "reference": 9950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0107",
+    "category": "المكياج",
+    "description": "لحظة لون أو عناية، لكِ وحدكِ. امنحي الشفاه عناية أعمق من لمسة بلسم سريعة مع ماسك ليب باتر. قوامه المريح يضيف طبقة عناية إلى روتين المساء، ليساعد على تلطيف مظهر الجفاف وتهيئة الشفاه لإطلالة أجمل في اليوم التالي.",
+    "discount": 39,
+    "priceFils": 5990,
+    "image": "/images/catalog/TS0107-7660a19c6edb.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك الشفاه الليلي بالسيراميد من كوسركس",
+      "tagline": "راحة ترطيب لشفاه تبدو أكثر نعومة.",
+      "benefits": [
+        "تلطيف مظهر الجفاف",
+        "إحساس مريح بالترطيب",
+        "خطوة عناية مسائية"
+      ],
+      "howToUse": "وزعي كمية مناسبة على شفاه نظيفة وفق تعليمات العبوة.",
+      "notes": "لا تضعيه داخل الفم، وتجنبي استخدامه فوق تهيج غير معروف السبب.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "lips",
+      "en": {
+        "name": "COSRX - Balancium Ceramide Lip Butter Sleeping Mask",
+        "tagline": "A little moment for your lips.",
+        "description": "COSRX - Balancium Ceramide Lip Butter Sleeping Mask. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+        "benefits": [
+          "A little moment for your lips.",
+          "Make the finish your own, one light layer at a time."
+        ],
+        "howToUse": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed.",
+        "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0107"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX - Full Fit Propolis Lip Sleeping Mask",
+    "subcat": "شفاه",
+    "reference": 9950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0108",
+    "category": "المكياج",
+    "description": "لحظة لون أو عناية، لكِ وحدكِ. أضيفي إلى المساء طبقة عناية تمنح شفاهك إحساسًا أكثر راحة. ماسك بروبوليس للشفاه يركز على مظهر الجفاف والنعومة، ويمكن أن يكون خطوة خاصة قبل النوم لمن تحتاج شفاهها اهتمامًا إضافيًا.",
+    "discount": 29,
+    "priceFils": 6990,
+    "image": "/images/catalog/TS0108-325fa8806ce2.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك الشفاه الليلي بالبروبوليس من كوسركس",
+      "tagline": "لحظة تدليل لنعومة الابتسامة.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "ملمس أنعم",
+        "عناية ضمن روتين الليل"
+      ],
+      "howToUse": "وزعي على شفاه نظيفة بالطريقة المحددة على العبوة.",
+      "notes": "اختبريه أولًا عند الحساسية من منتجات النحل.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "lips",
+      "en": {
+        "name": "COSRX - Full Fit Propolis Lip Sleeping Mask",
+        "tagline": "A little moment for your lips.",
+        "description": "COSRX - Full Fit Propolis Lip Sleeping Mask. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+        "benefits": [
+          "A little moment for your lips.",
+          "Make the finish your own, one light layer at a time."
+        ],
+        "howToUse": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed.",
+        "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0108"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX - Low pH Good Morning Gel Cleanser",
+    "subcat": "غسول",
+    "reference": 8950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0109",
+    "category": "البشرة",
+    "description": "أغلقي يومكِ بلحظة انتعاش. ابدئي يومك بغسول جل يركز على إزالة شوائب السطح وترك البشرة مهيأة للعناية. يمنحك غود مورنينغ خطوة تنظيف عملية لروتين بسيط، مع تعديل التكرار بحسب احتياج البشرة وإحساسها بعد الغسل.",
+    "discount": 49,
+    "priceFils": 4490,
+    "image": "/images/catalog/TS0109-64acefe753be.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "غسول لو بي إتش غود مورنينغ من كوسركس",
+      "tagline": "بداية تنظيف خفيفة ومنعشة.",
+      "benefits": [
+        "تنظيف شوائب السطح",
+        "قوام جل",
+        "تهيئة الوجه للمرطب"
+      ],
+      "howToUse": "رغّي كمية صغيرة على الوجه المبلل ثم اشطفي جيدًا دون فرك.",
+      "notes": "إذا سبب إحساسًا بالشد، قللي التكرار وأكملي بمرطب مناسب.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "cleanser",
+      "en": {
+        "name": "COSRX - Low pH Good Morning Gel Cleanser",
+        "tagline": "A fresh start, or a gentle end to your day.",
+        "description": "COSRX - Low pH Good Morning Gel Cleanser. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+        "benefits": [
+          "A fresh start, or a gentle end to your day.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.",
+        "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0109",
+      "TS0160"
+    ],
+    "researchReferenceFils": 12000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "COSRX",
+    "name": "COSRX - Refresh AHA BHA Vitamin C Lip Plumper",
+    "subcat": "شفاه",
+    "reference": 9950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0110",
+    "category": "المكياج",
+    "description": "لحظة لون أو عناية، لكِ وحدكِ. امنحي الشفاه لمسة لامعة تبرز شكلها وتكمل إطلالتك. هذا المستحضر من كوسركس مصمم لإحساس البلامبر ولمظهر أكثر امتلاءً بصريًا، ويحتاج تطبيقًا خفيفًا لأن تجربة الوخز تختلف من شخص لآخر.",
+    "discount": 19,
+    "priceFils": 7990,
+    "image": "/images/catalog/TS0110-0d8805e07dca.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "غلوس ليب بلامبر من كوسركس",
+      "tagline": "لمعة تضيف امتلاءً بصريًا للشفاه.",
+      "benefits": [
+        "لمعان للشفاه",
+        "امتلاء بصري للإطلالة",
+        "تكملة لمكياج الشفاه"
+      ],
+      "howToUse": "ضعي كمية قليلة على الشفاه فقط بحسب تعليمات العبوة.",
+      "notes": "قد يسبب وخزًا؛ لا يستخدم على شفاه متشققة أو متهيجة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "lips",
+      "en": {
+        "name": "COSRX - Refresh AHA BHA Vitamin C Lip Plumper",
+        "tagline": "A little moment for your lips.",
+        "description": "COSRX - Refresh AHA BHA Vitamin C Lip Plumper. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+        "benefits": [
+          "A little moment for your lips.",
+          "Make the finish your own, one light layer at a time."
+        ],
+        "howToUse": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed.",
+        "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0110"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "id": "TS0218",
+    "brand": "Beauty of Joseon",
+    "name": "Glow Serum Propolis Niacinamide",
+    "category": "البشرة",
+    "subcat": "السيروم",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. سيروم غلو من بيوتي أوف جوسون بالبروبوليس والنياسيناميد، حجم 30 مل. وزعي بضع قطرات قبل المرطب للعناية بمظهر البشرة وملمسها، مع اختبار الملاءمة إذا كانت لديك حساسية من منتجات النحل.",
+    "reference": 12000,
+    "priceFils": 8990,
+    "discount": 25,
+    "image": "/images/catalog/TS0218-d3e48547121d.webp",
+    "approved": true,
+    "active": 1,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم غلو بالبروبوليس والنياسيناميد من بيوتي أوف جوسون",
+      "tagline": "لمسة غلو في روتينكِ.",
+      "benefits": [
+        "بروبوليس ونياسيناميد",
+        "سيروم قبل المرطب",
+        "عبوة 30 مل"
+      ],
+      "howToUse": "وزعي بضع قطرات على بشرة نظيفة، ثم اتبعيها بالمرطب. التزمي بكمية ووتيرة الاستخدام على العبوة.",
+      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبيه عند التحسس من البروبوليس أو منتجات النحل.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "size": "30 ml",
+      "shade": "",
+      "variantNote": "",
+      "intakeBatch": "2026-10-27",
+      "en": {
+        "name": "Beauty of Joseon · Glow Serum Propolis Niacinamide",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Beauty of Joseon · Glow Serum Propolis Niacinamide. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "source": "Owner intake 2026-10-27",
+    "source_url": "https://www.strawberrynet.com/zh-Hant-TW/beauty-of-joseon-glow-serum-propolis-niacinamide-30ml/362130"
+  },
+  {
+    "id": "TS0301",
+    "brand": "Beauty of Joseon",
+    "name": "Revive Eye Serum Ginseng + Retinal",
+    "category": "البشرة",
+    "subcat": "العناية بالعين والرموش",
+    "description": "امنحي وقت العناية المسائية دقيقة إضافية مع سيروم ريفايف للعين بالجنسنغ والريتينال من بيوتي أوف جوسون. كمية صغيرة ولمسة لطيفة دون شدّ تكفي لتطبيقه بحسب العبوة. ابدئي تدريجيًا، وأكملي روتينكِ بمرطب، مع حماية من الشمس خلال النهار.",
+    "reference": 14000,
+    "priceFils": 9990,
+    "discount": 28,
+    "image": "/images/catalog/TS0301-9dca9c20ce4b.webp",
+    "approved": true,
+    "active": 1,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم ريفايف للعين من بيوتي أوف جوسون",
+      "tagline": "دقيقة هادئة قبل نهاية يومكِ.",
+      "benefits": [
+        "عناية لمحيط العين",
+        "تركيبة بالجنسنغ والريتينال",
+        "عبوة 30 مل"
+      ],
+      "howToUse": "ابدئي مساءً بكمية صغيرة وربتي بلطف حول عظمة محيط العين، بعيدًا عن العين وخط الرموش. أدخليه بالتدرج واتبعي تعليمات العبوة.",
+      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي على ريتينويد؛ يُتجنب أثناء الحمل والرضاعة، مع واقي شمس صباحًا واستشارة المختص عند الحاجة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "size": "30 ml",
+      "shade": "",
+      "variantNote": "",
+      "intakeBatch": "2026-10-27-b",
+      "en": {
+        "name": "Beauty of Joseon · Revive Eye Serum Ginseng + Retinal",
+        "tagline": "A quiet minute before your day ends.",
+        "description": "Give your evening ritual an extra minute with Beauty of Joseon Revive Eye Serum Ginseng + Retinal. Use a small amount and a gentle touch, following the pack directions without pulling the skin. Introduce gradually and keep daytime sun protection in your routine.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "source": "Owner intake 2026-10-27-b",
+    "source_url": "https://glowceryjo.com/products/beauty-of-joseon-revive-eye-serum"
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "id": "TS0062",
+    "prompt": "Use case: ads-marketing. Portrait 4:5 photoreal editorial beauty photograph for a Korean skincare product page. Reference image is the EXACT ANUA Niacinamide10 TXA4 30ml red serum bottle: frosted red glass, silver threaded dropper collar, white rubber bulb, Anua white brand and large white10+, white lower label. Preserve package shape, correct front label, proportions, real hand scale and colors exactly. Fictional adult woman age29 with natural olive skin, dark hair tied loosely, modest ivory blouse, seated at cream vanity, holding the closed exact red bottle beside her cheek, free fingers softly patting cheek after application. Serene warm daylight, subtle blush accents, natural skin pores, tasteful confident smile. No dropper touching skin, no overlaytext, no badge, beforeafter, testimonial, medicalresult, watermark or extra product. Promotional scene.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0062-0f4dadb61a16.jpg",
+    "image": "/images/catalog/marketing/TS0062-kcare-scene-3e0ec9c6723a.webp",
+    "thumbnail": "/images/catalog/marketing/TS0062-kcare-thumb-f6f7c4a4bdea.webp",
+    "captionAr": "مشهد دعائي — سيروم نياسيناميد 10 وTXA 4 من أنوا",
+    "captionEn": "Promotional scene — ANUA Niacinamide 10 TXA 4 Serum",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0062-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0067",
+    "image": "/images/catalog/marketing/TS0067-scene-1daf7b451076.webp",
+    "thumbnail": "/images/catalog/marketing/TS0067-thumb-3ee373f5591e.webp",
+    "captionAr": "مشهد دعائي — سيروم دارك سبوت كوريكتنغ غلو من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Dark Spot Correcting Glow Serum",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0067-592055b9b030.jpg",
+    "kind": "promotional",
+    "existing": true
+  },
+  {
+    "id": "TS0070",
+    "prompt": "Use case: ads-marketing. Portrait4:5 premium photoreal Korean skincare ritual photograph. Exact reference is ANUA Heartleaf Quercetinol Pore Deep Cleansing Foam150ml: green gradient squeeze tube, white ridged top seal, white/translucent flip cap at bottom, black Anua logo. Preserve packaging identity, typography, colors and proportions exactly; product normal hand-sized. Fictional adult woman age27 natural olive skin, modest cream blouse, cream bathroom vanity with sage accents; one hand holds exact closed tube at chest level front label visible while other hand gently massages a little already-lathered soft white foam on damp cheek away from eyes. Elegant morning daylight, real texture and droplets, relaxed face. No undiluted paste scrubbing, no added text/badges/beforeafter/testimonial/claims/watermark, no other products.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0070-21dd0ed2414f.png",
+    "image": "/images/catalog/marketing/TS0070-kcare-scene-8bc4130d2553.webp",
+    "thumbnail": "/images/catalog/marketing/TS0070-kcare-thumb-42edc6bea19e.webp",
+    "captionAr": "مشهد دعائي — غسول هارتليف كويرسيتينول من أنوا",
+    "captionEn": "Promotional scene — ANUA Heartleaf Quercetinol Pore Deep Cleansing Foam",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0070-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0071",
+    "prompt": "Use case: ads-marketing. Portrait4:5 photoreal premium skincare product page advertising photo. Preserve EXACT ANUA Azelaic Acid10 Hyaluron30ml serum reference: clear frosted pale-green bottle, green liquid, silver threaded collar white rubber dropper, white Anua and10+ text and white lower band label. Exact brand typography/shape/proportions/color, normal small hand-sized bottle. Fictional adult woman age30 light-medium olive skin with natural texture, dark hair loose, modest ivory linen shirt, holding closed bottle near cheek and softly resting free fingertips at cheek, no visible redness or medical conditions. Quiet cream vanity, sage-green background accent, soft windowlight, thoughtful serene mood. No beforeafter, exaggerated glow, clinicalresults, added overlaytext, badge, watermark or other product.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0071-1108121259ba.jpg",
+    "image": "/images/catalog/marketing/TS0071-kcare-scene-38a6496af6ca.webp",
+    "thumbnail": "/images/catalog/marketing/TS0071-kcare-thumb-74c30ababe83.webp",
+    "captionAr": "مشهد دعائي — سيروم أزيليك أسيد 10 هيالورون من أنوا",
+    "captionEn": "Promotional scene — ANUA Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0071-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0084",
+    "image": "/images/catalog/marketing/TS0084-ritual-nov3-fe19d4f6c042.webp",
+    "thumbnail": "/images/catalog/marketing/TS0084-ritual-thumb-nov3-9a44d4405734.webp",
+    "captionAr": "مشهد دعائي — سيروم العين فيغان كولاجين من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Vegan Collagen Eye Serum",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0084-9f467a97cbe7.jpg",
+    "kind": "promotional",
+    "existing": true
+  },
+  {
+    "id": "TS0089",
+    "prompt": "Use case: ads-marketing. Portrait4:5 photoreal editorial skincare duo advertisement. Reference contains EXACT two ANUA products: translucent pale-yellow Heartleaf Cleansing Oil200ml with tall white pump and white label, and green gradient Heartleaf+BHA Quercetinol Cleansing Foam150ml tube with bottom white cap. Preserve both packages, accurate shapes/colors/branding/proportions and relative sizes. Fictional adult woman age31 olive skin naturaltexture in modest cream blouse at elegant ivory vanity, gently presenting the two exact products upright together beside her face, hands anatomicallycorrect, front labels visible; no application necessary, no mixing. Warm daylight, pale sage and blush touches, calm confident small smile. Only these two products, no extra packs/gifts, no overlaytext,badges,testimonials,beforeafter,claims or watermark.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0089-db01a10f4a96.jpg",
+    "image": "/images/catalog/marketing/TS0089-kcare-scene-51d15b10ce8b.webp",
+    "thumbnail": "/images/catalog/marketing/TS0089-kcare-thumb-31f41fd59982.webp",
+    "captionAr": "مشهد دعائي — ثنائي التنظيف هارتليف من أنوا",
+    "captionEn": "Promotional scene — ANUA Heartleaf Double Cleansing Duo",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0089-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0090",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional scene. Portrait 4:5 photoreal premium editorial photograph, real natural skin texture, correct hands, natural package-to-hand scale, modest elegant blouse, serene ivory vanity, soft sage and blush accents, soft warm window light. Exact reference package identity, shape, brand lettering, proportions and color must be retained without redesign. One fictional adult woman, not a customer testimonial. No added overlay text, badge, before/after, results, watermark or extra products. Adult woman age29 with medium olive skin and soft dark curls in ivory shirt holds the exact closed deep sage green ANUA Heartleaf Clear Pad77%160ml squat jar, broad flat green lid and white frontprint visible at chest. Other hand gently wipes cheek away from eyes with a single round damp white cotton pad. Jar is green, not white. Uncluttered authentic ritual.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0090-a26250afa7b2.jpg",
+    "image": "/images/catalog/marketing/TS0090-kcare-scene-22a074a3a0ca.webp",
+    "thumbnail": "/images/catalog/marketing/TS0090-kcare-thumb-90c42a7f2ac9.webp",
+    "captionAr": "مشهد دعائي — وسادات هارتليف 77 كلير باد من أنوا",
+    "captionEn": "Promotional scene — ANUA Heartleaf 77 Clear Pad",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0090-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0091",
+    "image": "/images/catalog/marketing/TS0091-scene-a7588f7c7f15.webp",
+    "thumbnail": "/images/catalog/marketing/TS0091-thumb-93277f2d2db0.webp",
+    "captionAr": "مشهد دعائي — تونر هارتليف 77 سوزنغ من أنوا",
+    "captionEn": "Promotional scene — ANUA Heartleaf 77 Soothing Toner",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0091-f84e3c1c3bc1.png",
+    "kind": "promotional",
+    "existing": true
+  },
+  {
+    "id": "TS0092",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional scene. Portrait 4:5 photoreal premium editorial photograph, real natural skin texture, correct hands, natural package-to-hand scale, modest elegant blouse, serene ivory vanity, soft sage and blush accents, soft warm window light. Exact reference package identity, shape, brand lettering, proportions and color must be retained without redesign. One fictional adult woman, not a customer testimonial. No added overlay text, badge, before/after, results, watermark or extra products. Adult woman age30 warm olive skin and dark loose hair in ivory blouse holds exact small turquoise ANUA PDRN Hyaluronic Acid Capsule10030ml serum bottle, white dropper bulb and ribbed metallic silver screw collar, white Anua100+ frontprint and silver lower label clearly visible at chest. Free fingertips gently pat cheek. Keep bottle closed. No needles.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0092-61620a04642b.jpg",
+    "image": "/images/catalog/marketing/TS0092-kcare-scene-576730dcf239.webp",
+    "thumbnail": "/images/catalog/marketing/TS0092-kcare-thumb-3bba5ba34aa7.webp",
+    "captionAr": "مشهد دعائي — سيروم PDRN هيالورونيك أسيد كابسول 100 من أنوا",
+    "captionEn": "Promotional scene — ANUA PDRN Hyaluronic Acid Capsule 100 Serum",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0092-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0093",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional scene. Portrait 4:5 photoreal premium editorial photograph, real natural skin texture, correct hands, natural package-to-hand scale, modest elegant blouse, serene ivory vanity, soft sage and blush accents, soft warm window light. Exact reference package identity, shape, brand lettering, proportions and color must be retained without redesign. One fictional adult woman, not a customer testimonial. No added overlay text, badge, before/after, results, watermark or extra products. Adult woman age27 medium olive skin dark eyes short loose curls in blush ivory shirt holds exact small clear thick-base bottle of pink ANUA Peach70 Niacin Serum30ml, tall white dropper cap and white AnuaPEACH70NIACINSERUM70% frontprint. Bottle closed at chest, free fingertips gently pat cheek. Warm natural beauty portrait.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0093-a22a10e1c3c7.jpg",
+    "image": "/images/catalog/marketing/TS0093-kcare-scene-309e22bb0a6f.webp",
+    "thumbnail": "/images/catalog/marketing/TS0093-kcare-thumb-b06c6524b26c.webp",
+    "captionAr": "مشهد دعائي — سيروم بيتش 70 نياسيناميد من أنوا",
+    "captionEn": "Promotional scene — ANUA Peach 70% Niacinamide Serum",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0093-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0094",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional scene. Portrait 4:5 photoreal premium editorial photograph, real natural skin texture, correct hands, natural package-to-hand scale, modest elegant blouse, serene ivory vanity, soft sage and blush accents, soft warm window light. Exact reference package identity, shape, brand lettering, proportions and color must be retained without redesign. One fictional adult woman, not a customer testimonial. No added overlay text, badge, before/after, results, watermark or extra products. Adult woman age32 olive skin dark tied hair in modest sage blouse holds exact tall milky white ANUA Rice70 Glow Milky Toner250ml bottle with peach beige cap, black Anua70+ print and small lower label visible, closed at chest. Free hand lightly pats cheek. Gentle milky-toner routine, no foam, no dropper.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0094-053f91048dba.jpg",
+    "image": "/images/catalog/marketing/TS0094-kcare-scene-852b44511e2a.webp",
+    "thumbnail": "/images/catalog/marketing/TS0094-kcare-thumb-54466fcdcfe4.webp",
+    "captionAr": "مشهد دعائي — تونر رايس 70 غلو ميلكي من أنوا",
+    "captionEn": "Promotional scene — ANUA Rice 70 Glow Milky Toner",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0094-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0095",
+    "prompt": "Use case: ads-marketing. Asset: premium Korean skincare product-page promotional scene. Photoreal portrait4:5 photograph, natural skin texture and accurate anatomy, realistic product scale, elegant modest blouse, ivory stone vanity, restrained sage/blush detail and gentle window daylight. Keep EXACT reference package identity, brand text, colors, form, labels and proportions, no redesign. Single fictional adult woman, no testimonial or before/after, no added overlays, badges, medical claims, watermark, extra products. Adult woman age31 olive skin dark hair loosely tied back in soft cream blouse, waist-up at vanity. Holds exact transparent cylindrical ANUA Heartleaf Pore Control Cleansing Oil200ml bottle, clear pale yellow oil, large white front label with black Anua and dark green HEARTLEAF, tall WHITE pump, label fully visible at chest. Her free fingertips gently massage dry cheek with a subtle oil sheen. Face and hands dry, no foam or water. Relaxed focused gaze toward mirror off-camera.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0095-04dad38793b9.png",
+    "image": "/images/catalog/marketing/TS0095-kcare-scene-cb60813eb556.webp",
+    "thumbnail": "/images/catalog/marketing/TS0095-kcare-thumb-dfbbd76b506e.webp",
+    "captionAr": "مشهد دعائي — زيت هارتليف بور كنترول للتنظيف من أنوا",
+    "captionEn": "Promotional scene — ANUA Heartleaf Pore Control Cleansing Oil",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0095-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0099",
+    "prompt": "Use case: ads-marketing. Asset: premium Korean skincare product-page promotional scene. Photoreal portrait4:5 photograph, natural skin texture and accurate anatomy, realistic product scale, elegant modest blouse, ivory stone vanity, restrained sage/blush detail and gentle window daylight. Keep EXACT reference package identity, brand text, colors, form, labels and proportions, no redesign. Single fictional adult woman, no testimonial or before/after, no added overlays, badges, medical claims, watermark, extra products. Adult woman age29 medium olive skin dark shoulder-length hair in muted sage blouse near bright softly blurred window. She holds exact AXIS-Y Complete No-Stress Physical Sunscreen Ver.3 white50ml pump tube, transparent pump cap at bottom, green bands, black top product title, greenSPF50+PA++++Ver3mark, coral handwritten6+1+1 AdvancedFormula and AXIS-Y lower text. All front label retained. Free index and middle fingers gently blend a small white cream dab on lower cheek away from eyes. Bottle stays capped. No additional tubes.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0099-65736e5622ef.png",
+    "image": "/images/catalog/marketing/TS0099-kcare-scene-43246ca6c2fc.webp",
+    "thumbnail": "/images/catalog/marketing/TS0099-kcare-thumb-36b5a262edb2.webp",
+    "captionAr": "مشهد دعائي — واقي كومبليت نو سترس المعدني من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Complete No-Stress Physical Sunscreen V.3",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0099-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0132",
+    "prompt": "Use case: ads-marketing. Asset: premium Korean skincare product-page promotional scene. Photoreal portrait4:5 photograph, natural skin texture and accurate anatomy, realistic product scale, elegant modest blouse, ivory stone vanity, restrained sage/blush detail and gentle window daylight. Keep EXACT reference package identity, brand text, colors, form, labels and proportions, no redesign. Single fictional adult woman, no testimonial or before/after, no added overlays, badges, medical claims, watermark, extra products. Adult woman age34 medium olive skin dark soft curls in ivory blouse, close thoughtful relaxed portrait. At shoulder holds exact emerald green glass AXIS-Y Artichoke Intensive Skin Barrier Ampoule30ml dropper bottle with white cap and bulb, cream label with black two-line title, coral handwritten AdvancedFormula, circular green artichoke emblem, AXIS-Y along bottom. Closed bottle and readable front label. Other hand rests lightly on side of neck, not touching dropper to skin. Soft sage background accents.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0132-95910c361b21.png",
+    "image": "/images/catalog/marketing/TS0132-kcare-scene-c731cad3cd0e.webp",
+    "thumbnail": "/images/catalog/marketing/TS0132-kcare-thumb-73808ac25d94.webp",
+    "captionAr": "مشهد دعائي — أمبول أرتيشوك إنتنسف سكين باريير من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Artichoke Intensive Skin Barrier Ampoule",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0132-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0143",
+    "prompt": "Use case: ads-marketing. Asset: premium Korean skincare product-page promotional scene. Photoreal portrait4:5 photograph, natural skin texture and accurate anatomy, realistic product scale, elegant modest blouse, ivory stone vanity, restrained sage/blush detail and gentle window daylight. Keep EXACT reference package identity, brand text, colors, form, labels and proportions, no redesign. Single fictional adult woman, no testimonial or before/after, no added overlays, badges, medical claims, watermark, extra products. Adult woman age30 warm olive skin long dark hair and blush ivory blouse. Holds ONE exact AXIS-Y Dark Spot Correcting Glow Serum pump tube copied from reference: white elongated tube, deep green crimped top and green lower band, clear cap over white pump at bottom, black vertical product title, green brand/ingredient print and coral6+1+1AdvancedFormula. Use just one tube despite two in input photograph. Woman gently patting cheek with free hand, natural pores, no exaggerated shine. Front label and overall package fully visible.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0143-daa5a53a32c7.webp",
+    "image": "/images/catalog/marketing/TS0143-kcare-scene-ce08c1b1e8e4.webp",
+    "thumbnail": "/images/catalog/marketing/TS0143-kcare-thumb-49aa2aa89aa1.webp",
+    "captionAr": "مشهد دعائي — سيروم دارك سبوت كوريكتنغ غلو من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Dark Spot Correcting Glow Serum",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0143-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0162",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional photograph. Portrait4:5 editorial realism, adult natural skin texture, correct hands and realistic package scale, elegant modest blouse at ivory vanity, gentle warm window light, restrained blush/sage palette. EXACT supplied package brand, title, lettering, shape, proportions, colors and labels must remain, no redesign. One fictional adult woman, no testimonial, overlay text, badge, before/after, medical result, watermark or extra products. Adult woman age33 warm olive skin and dark hair in loose bun wearing cream blouse. She holds EXACT AXIS-Y Dark Spot Correcting Glow Toner125ml tall slim cylindrical pale green mist bottle: transparent straight cap over white sprayer, pale yellow-green label, black two-line DarkSpotCorrectingGlowToner title, coral6+1+1AdvancedFormula handwriting, green seal, AXIS-Y bottom. Closed capped bottle next to face, front label facing camera, free palm gently pats lower cheek. Do not spray, no mist cloud and no new nozzle.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0162-94fb73c761c0.jpg",
+    "image": "/images/catalog/marketing/TS0162-kcare-scene-e62852e951cb.webp",
+    "thumbnail": "/images/catalog/marketing/TS0162-kcare-thumb-9e284262c728.webp",
+    "captionAr": "مشهد دعائي — تونر دارك سبوت كوريكتنغ غلو ميست من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Dark Spot Correcting Glow Toner Mist",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0162-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0164",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional photograph. Portrait4:5 editorial realism, adult natural skin texture, correct hands and realistic package scale, elegant modest blouse at ivory vanity, gentle warm window light, restrained blush/sage palette. EXACT supplied package brand, title, lettering, shape, proportions, colors and labels must remain, no redesign. One fictional adult woman, no testimonial, overlay text, badge, before/after, medical result, watermark or extra products. Adult woman age31 medium olive skin short dark wavy hair wearing blush cream blouse. Holds EXACT pale buttery yellow AXIS-Y TXA2.5% Intensive Brightening Cream50ml tube with straight white ribbed screwcap at bottom, black vertical title and small green/coral print, AXIS-Y lower text. Tube capped and all package visible. Free fingers gently blend a small ivory cream dab along cheek away from eyes. Soft morning skincare mood.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0164-48314fc83cea.jpg",
+    "image": "/images/catalog/marketing/TS0164-kcare-scene-2741a0b1b7b8.webp",
+    "thumbnail": "/images/catalog/marketing/TS0164-kcare-thumb-af9b85137546.webp",
+    "captionAr": "مشهد دعائي — كريم TXA 2.5% إنتنسف برايتننغ من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y TXA 2.5% Intensive Brightening Cream",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0164-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0168",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional photograph. Portrait4:5 editorial realism, adult natural skin texture, correct hands and realistic package scale, elegant modest blouse at ivory vanity, gentle warm window light, restrained blush/sage palette. EXACT supplied package brand, title, lettering, shape, proportions, colors and labels must remain, no redesign. One fictional adult woman, no testimonial, overlay text, badge, before/after, medical result, watermark or extra products. Adult woman age28 warm olive skin dark loose hair wearing modest ivory blouse. She holds EXACT AXIS-Y GlassSkinDuo gift BOX only at upper chest, front facing camera. Cream rectangular carton with oval cut-out revealing the two actual items inside: white-green DarkSpotCorrectingGlowSerum tube and slender cream-green VeganCollagenEyeSerum cylinder. White satin bow across top, package red cursive Glass and TwoIconsOneRitual at bottom, brand retained. Do NOT add any external loose tubes or bottles; just the single closed box with two visible contents through window. Gentle welcoming expression, both hands supporting box, no application gesture.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0168-f9a5f58188fa.jpg",
+    "image": "/images/catalog/marketing/TS0168-kcare-scene-e398f8ad6e4b.webp",
+    "thumbnail": "/images/catalog/marketing/TS0168-kcare-thumb-4fcd3a6e1023.webp",
+    "captionAr": "مشهد دعائي — مجموعة غلاس سكن ديو من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Glass Skin Duo Set",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0168-original.png",
+    "kind": "promotional"
+  },
+  {
+    "id": "TS0302",
+    "prompt": "Use case: ads-marketing. Asset: Korean skincare product-page promotional photograph. Portrait4:5 editorial realism, adult natural skin texture, correct hands and realistic package scale, elegant modest blouse at ivory vanity, gentle warm window light, restrained blush/sage palette. EXACT supplied package brand, title, lettering, shape, proportions, colors and labels must remain, no redesign. One fictional adult woman, no testimonial, overlay text, badge, before/after, medical result, watermark or extra products. Adult woman age35 medium olive skin and dark softly curled shoulder-length hair wearing pale sage modest blouse. Holds EXACT AXIS-Y Cera-HeartMyTypeDuoCream60ml low wide turquoise transparent jar with broad white lid, white title and AXIS-Y across front plus coral6+1+1AdvancedFormula and small U/T marks. Jar closed, label front fully visible at chest. Free fingers lightly pat cheek with natural skin, no extreme shine. Do not invent interior compartments or change jar into a tube.",
+    "referencePath": "/workspace/scratch/e8e54b4a0999/trend-shop1/public/images/catalog/TS0302-d1b06ed7b971.webp",
+    "image": "/images/catalog/marketing/TS0302-kcare-scene-a9a470395a3f.webp",
+    "thumbnail": "/images/catalog/marketing/TS0302-kcare-thumb-4f3d9331b55d.webp",
+    "captionAr": "مشهد دعائي — كريم سيرا هارت ماي تايب ديو من أكسيس واي",
+    "captionEn": "Promotional scene — AXIS-Y Cera-Heart My Type Duo Cream",
+    "outputOriginalPath": "/workspace/scratch/e8e54b4a0999/trend-shop1/deployment-private/korean-originals-2/TS0302-original.png",
+    "kind": "promotional"
+  }
+]

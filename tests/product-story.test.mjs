@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
 import {JSDOM,VirtualConsole} from 'jsdom';
 import {storefrontBundle} from './helpers/storefront-bundle.mjs';
-import {hasProductStory,productStoryOffers,selectionQuote} from '../public/product-story.js';
+import {hasProductStory,productStoryOffers,selectionQuote,storyGallery} from '../public/product-story.js';
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const products=JSON.parse(read('public/catalog.json')),product=products.find(p=>p.id==='TS0098');
 const promotions=[...JSON.parse(read('public/campaign-offers.json')),...productStoryOffers];
@@ -17,8 +17,8 @@ async function open(t,{cart=[],language='ar',live=true,rows=products,offers=prom
 }
 function fill(d,{phone='٠٧٩١٢٣٤٥٦٧',name='مي',address='العبدلي'}={}){d.querySelector('#customerName').value=name;d.querySelector('#customerPhone').value=phone;d.querySelector('#governorate').value='عمّان';d.querySelector('#address').value=address;d.querySelector('#customerName').dispatchEvent(new d.defaultView.Event('input',{bubbles:true}))}
 function submit(w,d){d.querySelector('#checkoutForm').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}))}
-test('The pilot uses the reviewed identity and falls back when the administrator replaces the pack',()=>{
- assert.equal(hasProductStory(product),true);assert.equal(hasProductStory({...product,image:'/media/new-pack.jpg'}),false);assert.equal(hasProductStory({...product,id:'TS0064'}),false);assert.equal(hasProductStory({...product,brand:'Different'}),false);
+test('Korean products use the expanded story while administrator replacement images discard old promotional scenes',()=>{
+ assert.equal(hasProductStory(product),true);assert.equal(hasProductStory({...product,image:'/media/new-pack.jpg'}),true);assert.deepEqual(storyGallery({...product,image:'/media/new-pack.jpg'},{primary:product.image,images:[{url:'/images/old.webp',kind:'promotional'}]}).map(x=>x.url),['/media/new-pack.jpg']);assert.equal(hasProductStory({...product,brand:'Different'}),false);
  const one=selectionQuote(product,1,promotions),two=selectionQuote(product,2,promotions);assert.equal(one.totalFils,12000);assert.equal(two.subtotalFils,19990);assert.equal(two.discountFils,2010);assert.equal(two.shippingFeeFils,0);
 });
 test('An inactive offer cannot be advertised and actual stock limits the selector',async t=>{

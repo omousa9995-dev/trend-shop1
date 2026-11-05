@@ -1,0 +1,1694 @@
+[
+  {
+    "id": "TS0061",
+    "brand": "EQQUALBERRY",
+    "productName": "EQQUALBERRY - Vitamin Illuminating Serum",
+    "ar": {
+      "name": "سيروم فيتامين إيلومينيتينغ من إيكوالبيري",
+      "tagline": "إشراقة لطيفة، وخطوة تحبينها.",
+      "description": "سيروم يجمع ماء الأسيرولا والنياسيناميد مع مرطبات وسيراميدات، للعناية بمظهر البهتان وتفاوت اللون. امنحيه مكانًا بعد التونر وقبل الكريم، بطبقة خفيفة تناسب روتينكِ.",
+      "benefits": [
+        "العناية بمظهر تفاوت اللون",
+        "ترطيب ونعومة",
+        "دعم حاجز الرطوبة"
+      ],
+      "textureTitle": "طبقة مريحة تحت الكريم",
+      "textureText": "قوام سيروم يوزَّع بالتساوي، ثم يُربّت حتى الامتصاص.",
+      "fitText": "لمن تبحث عن إشراقة وترطيب في خطوة سيروم واحدة.",
+      "steps": [
+        {
+          "title": "بعد التنظيف",
+          "text": "استخدميه بعد التونر إن كان ضمن روتينكِ."
+        },
+        {
+          "title": "كمية معتدلة",
+          "text": "وزعيه على الوجه وربّتي بلطف."
+        },
+        {
+          "title": "أكملي العناية",
+          "text": "أتبعيه بالكريم وواقي الشمس نهارًا."
+        }
+      ],
+      "notes": "اختبري مساحة صغيرة، وتجنبي الجلد المتهيج والعينين.",
+      "ingredients": [
+        "ماء الأسيرولا",
+        "نياسيناميد",
+        "سيراميدات"
+      ],
+      "faq": [
+        {
+          "question": "هل هو مقشر؟",
+          "answer": "هو سيروم عناية باللون والترطيب؛ ليس بديلًا عن مقشر محدد."
+        },
+        {
+          "question": "متى أضعه؟",
+          "answer": "بعد التونر وقبل المرطب، صباحًا أو مساءً."
+        }
+      ]
+    },
+    "en": {
+      "name": "EQQUALBERRY Vitamin Illuminating Serum",
+      "tagline": "A little brightness in your routine.",
+      "description": "Acerola water and niacinamide meet moisturising ingredients and ceramides in this serum for dull, uneven-looking skin. Make it your light layer between toner and cream.",
+      "benefits": [
+        "Uneven-tone appearance care",
+        "Moisture and softness",
+        "Moisture-barrier support"
+      ],
+      "textureTitle": "A layer beneath your cream",
+      "textureText": "Spread evenly and gently pat until absorbed.",
+      "fitText": "For a serum step combining radiance and hydration.",
+      "steps": [
+        {
+          "title": "After cleansing",
+          "text": "Use after toner, if included."
+        },
+        {
+          "title": "A moderate amount",
+          "text": "Spread over the face and gently pat."
+        },
+        {
+          "title": "Finish your routine",
+          "text": "Follow with cream and daytime sunscreen."
+        }
+      ],
+      "notes": "Patch test. Avoid irritated skin and the eye area.",
+      "ingredients": [
+        "Acerola water",
+        "Niacinamide",
+        "Ceramides"
+      ],
+      "faq": [
+        {
+          "question": "Is it an exfoliator?",
+          "answer": "It targets tone and moisture; it does not replace a dedicated exfoliant."
+        },
+        {
+          "question": "When do I apply it?",
+          "answer": "After toner and before moisturiser, morning or evening."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://eqqualberry.com/product/vitamin-illuminating-serum/76/",
+        "title": "EQQUALBERRY Korean product and directions"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/vitamin-illuminating-serum",
+        "title": "EQQUALBERRY global Vitamin Illuminating Serum"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman pats a small amount of serum onto cheek; yellow original bottle visible, dropper held above palm without touching face. No before/after."
+  },
+  {
+    "id": "TS0073",
+    "brand": "Medicube",
+    "productName": "Medicube - Collagen Night Wrapping Mask",
+    "ar": {
+      "name": "ماسك الكولاجين الليلي من ميديكيوب",
+      "tagline": "آخر خطوة، ولحظة هدوء قبل النوم.",
+      "description": "ماسك يُفرد فوق روتين المساء ويجف إلى غشاء يمكن نزعه صباحًا. يجمع الكولاجين ومرطبات البشرة للعناية بالنعومة ومظهر الإشراقة خلال روتينكِ الليلي.",
+      "benefits": [
+        "غشاء ختامي لروتين المساء",
+        "العناية بالترطيب والنعومة",
+        "إزالة بالنزع اللطيف أو الشطف"
+      ],
+      "textureTitle": "من كريم إلى غشاء جاف",
+      "textureText": "اتركي الطبقة تجف نحو 15 دقيقة قبل النوم.",
+      "fitText": "لمن تحب خطوة ليلية إضافية بعد المرطب.",
+      "steps": [
+        {
+          "title": "أكملي روتينكِ",
+          "text": "ضعي التونر والسيروم والكريم أولًا."
+        },
+        {
+          "title": "طبقة متساوية",
+          "text": "تجنبي العينين والشفاه والحواجب وخط الشعر؛ اتركيه يجف."
+        },
+        {
+          "title": "في الصباح",
+          "text": "انزعيه من الأطراف بلطف أو اشطفيه بماء فاتر."
+        }
+      ],
+      "notes": "لا تنزعيه بقوة. توقفي عند التهيج؛ لا يُطبَّق على الجروح.",
+      "ingredients": [
+        "كولاجين",
+        "نياسيناميد",
+        "سيراميد NP"
+      ],
+      "faq": [
+        {
+          "question": "هل هو ماسك ورقي؟",
+          "answer": "لا، يُفرد من الأنبوب ويكوّن غشاءً عند الجفاف."
+        },
+        {
+          "question": "هل يُستخدم قبل الكريم؟",
+          "answer": "يوضع كآخر خطوة بعد امتصاص الكريم."
+        }
+      ]
+    },
+    "en": {
+      "name": "Medicube Collagen Night Wrapping Mask",
+      "tagline": "A quiet finishing touch before bed.",
+      "description": "An overnight mask applied over evening skincare. It dries into a film that gently peels away in the morning, bringing collagen and moisturising ingredients to your night routine.",
+      "benefits": [
+        "Finishes evening skincare",
+        "Hydration and softness care",
+        "Peel or rinse removal"
+      ],
+      "textureTitle": "A cream that becomes a film",
+      "textureText": "Allow approximately 15 minutes to dry before bed.",
+      "fitText": "For an additional overnight step after moisturiser.",
+      "steps": [
+        {
+          "title": "Complete skincare",
+          "text": "Apply toner, serum and cream first."
+        },
+        {
+          "title": "An even layer",
+          "text": "Avoid eyes, lips, eyebrows and hairline; let dry."
+        },
+        {
+          "title": "Next morning",
+          "text": "Gently peel from the edges or rinse with lukewarm water."
+        }
+      ],
+      "notes": "Never force peeling. Stop if irritated; avoid wounded skin.",
+      "ingredients": [
+        "Collagen",
+        "Niacinamide",
+        "Ceramide NP"
+      ],
+      "faq": [
+        {
+          "question": "Is this a sheet mask?",
+          "answer": "No. The tube formula forms a film as it dries."
+        },
+        {
+          "question": "Before or after cream?",
+          "answer": "Use last, after your cream has absorbed."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://medicube.us/products/subscr-collagen-night-wrapping-mask",
+        "title": "Medicube Collagen Night Wrapping Mask directions"
+      },
+      {
+        "url": "https://medicube.us/products/collagen-night-wrapping-mask",
+        "title": "Medicube Collagen Night Wrapping Mask"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "The main manufacturer page currently contains an unrelated PDRN gel-mask overview. Directions and product identity cross-checked against the exact subscription SKU; no sheet-mask instructions transferred."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman uses a clean cosmetic brush to spread a thin wrapping-mask layer on cheek, away from brows/lips/hairline. Original rose-gold tube visible. No peeling skin or results comparison."
+  },
+  {
+    "id": "TS0083",
+    "brand": "Medicube",
+    "productName": "medicube - Collagen Jelly Cream (110ml)",
+    "ar": {
+      "name": "كريم كولاجين جيلي من ميديكيوب",
+      "tagline": "قوام جيلي، ولمسة رطبة لإطلالتكِ.",
+      "description": "كريم بقوام جيلي مرن يجمع الكولاجين والنياسيناميد للعناية بالترطيب ومظهر النعومة والإشراقة. ضعيه بعد السيروم وامنحيه وقتًا للامتصاص قبل المكياج.",
+      "benefits": [
+        "ترطيب بملمس جيلي",
+        "العناية بمظهر النعومة",
+        "لمسة إشراقة رطبة"
+      ],
+      "textureTitle": "جيلي مرن سهل الفرد",
+      "textureText": "قوام مختلف عن الكريم الكثيف؛ عدّلي الكمية حسب بشرتكِ.",
+      "fitText": "لمن تفضل مرطبًا جيليًا ولمسة ندية بعد السيروم.",
+      "steps": [
+        {
+          "title": "بعد السيروم",
+          "text": "خذي كمية مناسبة بأداة أو يد نظيفة."
+        },
+        {
+          "title": "وزعي بلطف",
+          "text": "افرديه على الوجه، بعيدًا عن العينين والفم."
+        },
+        {
+          "title": "انتظري الامتصاص",
+          "text": "أضيفي واقي الشمس نهارًا، ثم المكياج إن رغبتِ."
+        }
+      ],
+      "notes": "راجعي المكونات عند الحساسية للعطر، وتجنبي الجمع مع خطوات شديدة التهييج.",
+      "ingredients": [
+        "كولاجين",
+        "نياسيناميد",
+        "مرطبات"
+      ],
+      "faq": [
+        {
+          "question": "هل يُشطف؟",
+          "answer": "لا، يُترك كخطوة ترطيب."
+        },
+        {
+          "question": "هل يمكن صباحًا؟",
+          "answer": "نعم؛ اتركيه يمتص ثم استخدمي واقي الشمس."
+        }
+      ]
+    },
+    "en": {
+      "name": "Medicube Collagen Jelly Cream",
+      "tagline": "Bouncy jelly, a dewy finishing touch.",
+      "description": "A bouncy gel moisturiser with collagen and niacinamide for hydration, softness and a radiant-looking finish. Apply after serum and allow absorption before makeup.",
+      "benefits": [
+        "Jelly-textured hydration",
+        "Softer-looking texture",
+        "A dewy finish"
+      ],
+      "textureTitle": "A bouncy, spreadable jelly",
+      "textureText": "Different from a dense cream; adjust the amount to your skin.",
+      "fitText": "For a jelly moisturiser after your serum.",
+      "steps": [
+        {
+          "title": "After serum",
+          "text": "Take an appropriate amount with clean hands or a tool."
+        },
+        {
+          "title": "Spread gently",
+          "text": "Apply over the face, avoiding eyes and mouth."
+        },
+        {
+          "title": "Allow absorption",
+          "text": "Follow with daytime sunscreen, then makeup if desired."
+        }
+      ],
+      "notes": "Check ingredients for fragrance sensitivity. Avoid highly irritating combinations.",
+      "ingredients": [
+        "Collagen",
+        "Niacinamide",
+        "Humectants"
+      ],
+      "faq": [
+        {
+          "question": "Do I rinse it off?",
+          "answer": "No. Leave on as a moisturiser."
+        },
+        {
+          "question": "Can I use it in the morning?",
+          "answer": "Yes; let it absorb, then apply sunscreen."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://medicube.us/products/collagen-niacinamide-jelly-cream",
+        "title": "Medicube Collagen Niacinamide Jelly Cream"
+      },
+      {
+        "url": "https://medicube.us/products/deep-erasing-cream",
+        "title": "Medicube comparison of cream and jelly textures"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Catalog and original jar read Collagen Jelly Cream, 110 ml; official current title adds Niacinamide. Preserve original jar identity and no new concentration/size claim."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman applies a tiny pink jelly cream dab to cheek with clean fingertip; original 110ml pink jar unchanged. No before/after or airbrushed skin."
+  },
+  {
+    "id": "TS0088",
+    "brand": "EQQUALBERRY",
+    "productName": "EQQUALBERRY - Bakuchiol Plumping Serum",
+    "ar": {
+      "name": "سيروم باكوتشيول بلامبينغ من إيكوالبيري",
+      "tagline": "نعومة وترطيب، على مهل.",
+      "description": "باكوتشيول مع نياسيناميد وسيراميدات في سيروم للعناية بمظهر المرونة وملمس البشرة. خطوة تناسب من تفضل تجربة الباكوتشيول ضمن روتين ترطيب متدرج.",
+      "benefits": [
+        "العناية بمظهر المرونة",
+        "دعم حاجز الرطوبة",
+        "ملمس أنعم"
+      ],
+      "textureTitle": "سيروم بطبقة مريحة",
+      "textureText": "يوزع بعد التونر، مع تربيت خفيف قبل الكريم.",
+      "fitText": "لمن تبحث عن باكوتشيول في خطوة سيروم؛ ليس ريتينولًا.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "ابدئي بكمية معتدلة على بشرة نظيفة."
+        },
+        {
+          "title": "وزعي وربّتي",
+          "text": "افرديه بلطف على الوجه حتى الامتصاص."
+        },
+        {
+          "title": "أتبعيه بالكريم",
+          "text": "استخدميه صباحًا أو مساءً حسب تقبّل بشرتكِ."
+        }
+      ],
+      "notes": "يحتوي زيوتًا عطرية؛ اختبريه أولًا وتوقفي عند التهيج.",
+      "ingredients": [
+        "باكوتشيول",
+        "نياسيناميد",
+        "سيراميدات"
+      ],
+      "faq": [
+        {
+          "question": "هل يحتوي ريتينول؟",
+          "answer": "المكون المميز هو الباكوتشيول؛ ليس هو الريتينول."
+        },
+        {
+          "question": "هل يضمن عدم التهيج؟",
+          "answer": "لا، يختلف تقبّل كل بشرة؛ الاختبار الموضعي مهم."
+        }
+      ]
+    },
+    "en": {
+      "name": "EQQUALBERRY Bakuchiol Plumping Serum",
+      "tagline": "Take your time with softness.",
+      "description": "Bakuchiol, niacinamide and ceramides combine in a serum for firmer-looking, softer-feeling skin. A measured way to introduce bakuchiol into a moisturising routine.",
+      "benefits": [
+        "Firmness-appearance care",
+        "Moisture-barrier support",
+        "A softer feel"
+      ],
+      "textureTitle": "A comfortable serum layer",
+      "textureText": "Smooth on after toner and gently pat before cream.",
+      "fitText": "For a bakuchiol serum step; bakuchiol is not retinol.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Start with a moderate amount on clean skin."
+        },
+        {
+          "title": "Spread and pat",
+          "text": "Gently distribute over the face until absorbed."
+        },
+        {
+          "title": "Follow with cream",
+          "text": "Use morning or evening as tolerated."
+        }
+      ],
+      "notes": "Contains fragrant oils. Patch test and stop if irritation develops.",
+      "ingredients": [
+        "Bakuchiol",
+        "Niacinamide",
+        "Ceramides"
+      ],
+      "faq": [
+        {
+          "question": "Is bakuchiol retinol?",
+          "answer": "No. Bakuchiol is the featured ingredient, not retinol."
+        },
+        {
+          "question": "Is irritation impossible?",
+          "answer": "No. Tolerance varies, so patch testing matters."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://eqqualberry.com/product/bakuchiol-plumping-serum/77/",
+        "title": "EQQUALBERRY Korean Bakuchiol serum"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/bakuchiol-plumping-serum",
+        "title": "EQQUALBERRY global Bakuchiol serum"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "99% wording in global advertising refers to ingredient purity, not finished serum concentration. Korean/INCI list says 5000ppm bakuchiol; public copy avoids purity/concentration ambiguity."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently pats serum on cheek; original purple dropper bottle visible, product dispensed to fingertips, no dropper touching face. No result comparison."
+  },
+  {
+    "id": "TS0097",
+    "brand": "APRILSKIN",
+    "productName": "APRILSKIN - TXA Niacinamide Toning Shot 99 Serum",
+    "ar": {
+      "name": "سيروم TXA تونينغ شوت 99 من أبريل سكين",
+      "tagline": "خطوة تمهيد مختلفة لروتينكِ.",
+      "description": "سيروم بوستر بسبكيولات دقيقة، مع TXA ونياسيناميد للعناية بمظهر تفاوت اللون وملمس البشرة. مكانه في بداية الروتين بعد التنظيف، بكمية تناسب تقبّل بشرتكِ.",
+      "benefits": [
+        "العناية بمظهر تفاوت اللون",
+        "خطوة بوستر قبل التونر",
+        "تركيبة تحتوي TXA ونياسيناميد"
+      ],
+      "textureTitle": "إحساس مختلف أثناء التطبيق",
+      "textureText": "قد تشعرين بوخز؛ لا تزيدي الكمية أو الضغط لملاحقته.",
+      "fitText": "لمن اعتادت منتجات السبكيولات؛ يحتاج البدء بحذر.",
+      "steps": [
+        {
+          "title": "على وجه نظيف",
+          "text": "اختبري موضعيًا قبل الاستخدام المنتظم."
+        },
+        {
+          "title": "كمية صغيرة",
+          "text": "وزعي بلطف بعيدًا عن العينين والشفاه."
+        },
+        {
+          "title": "أكملي الترطيب",
+          "text": "أتبعيه بالتونر ثم المرطب حسب روتينكِ."
+        }
+      ],
+      "notes": "للاستخدام الخارجي. توقفي عند التهيج الشديد؛ اتبعي تكرار العبوة.",
+      "ingredients": [
+        "TXA",
+        "نياسيناميد",
+        "سبكيولات"
+      ],
+      "faq": [
+        {
+          "question": "هل رقم 99 تركيز السيروم؟",
+          "answer": "لا يُقرأ كأن كامل السيروم 99% حمض؛ راجعي بيانات العبوة."
+        },
+        {
+          "question": "هل يُغسل بعده؟",
+          "answer": "هو بوستر يُترك قبل خطوات الترطيب."
+        }
+      ]
+    },
+    "en": {
+      "name": "APRILSKIN TXA Niacinamide Toning Shot 99 Serum",
+      "tagline": "A different first step for your routine.",
+      "description": "A spicule booster with TXA and niacinamide for uneven-looking tone and texture. Use at the beginning of skincare after cleansing, adjusting to your skin’s tolerance.",
+      "benefits": [
+        "Uneven-tone appearance care",
+        "A booster before toner",
+        "TXA and niacinamide formula"
+      ],
+      "textureTitle": "A distinctive application sensation",
+      "textureText": "Tingling may occur; do not chase it with extra product or pressure.",
+      "fitText": "For those familiar with spicules; introduce cautiously.",
+      "steps": [
+        {
+          "title": "On clean skin",
+          "text": "Patch test before regular use."
+        },
+        {
+          "title": "A small amount",
+          "text": "Spread gently away from eyes and lips."
+        },
+        {
+          "title": "Continue hydration",
+          "text": "Follow with toner and moisturiser as appropriate."
+        }
+      ],
+      "notes": "External use only. Stop with significant irritation; follow pack frequency.",
+      "ingredients": [
+        "TXA",
+        "Niacinamide",
+        "Spicules"
+      ],
+      "faq": [
+        {
+          "question": "Does 99 mean serum concentration?",
+          "answer": "Do not read it as 99% acid in the entire serum; check the label."
+        },
+        {
+          "question": "Do I rinse afterwards?",
+          "answer": "It is a leave-on booster before moisturising steps."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://aprilskin.us/products/txa-niacinamide-toning-shot-99-spicule-serum",
+        "title": "APRILSKIN official Toning Shot 99"
+      },
+      {
+        "url": "https://aprilskin.us/products/txa-niacinamide-99-pink-milky-toner",
+        "title": "APRILSKIN routine ordering"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "99 is branding/raw-material-purity context, not 99% TXA content in the finished product. Official page calls it STEP ZERO before the milky toner."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman applies a small amount from the original pink pump bottle with fingertips to cheek. No needles, injection gesture, beauty device, or before/after."
+  },
+  {
+    "id": "TS0115",
+    "brand": "EQQUALBERRY",
+    "productName": "EQQUALBERRY - NAD+ Peptide Boosting Serum",
+    "ar": {
+      "name": "سيروم NAD+ والببتيدات من إيكوالبيري",
+      "tagline": "طبقة عناية لملمس أكثر مرونة.",
+      "description": "سيروم يجمع NAD+ والببتيدات مع خمسة أنواع من السيراميد للعناية بمظهر المرونة وحاجز الرطوبة. ضعيه بين التونر والكريم، صباحًا أو مساءً.",
+      "benefits": [
+        "العناية بمظهر المرونة",
+        "ترطيب وحاجز رطوبة",
+        "طبقة خفيفة تحت الكريم"
+      ],
+      "textureTitle": "سريع الامتصاص وسهل التنسيق",
+      "textureText": "يفرد بطبقة خفيفة، دون الحاجة لتكثيف روتينكِ.",
+      "fitText": "لمن تريد عناية بالمرونة مع دعم الترطيب.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "ضعي كمية معتدلة على الوجه."
+        },
+        {
+          "title": "تربيت لطيف",
+          "text": "وزعي بالتساوي حتى الامتصاص."
+        },
+        {
+          "title": "أكملي بالمرطب",
+          "text": "استخدمي واقي الشمس في روتين النهار."
+        }
+      ],
+      "notes": "اختبريه موضعيًا، ولا يُستخدم على الجروح أو التهيج.",
+      "ingredients": [
+        "NAD+",
+        "ببتيدات",
+        "خمسة سيراميدات"
+      ],
+      "faq": [
+        {
+          "question": "هل هو حقن؟",
+          "answer": "لا، سيروم تجميلي موضعي للاستخدام الخارجي."
+        },
+        {
+          "question": "هل يغني عن الكريم؟",
+          "answer": "مكانه قبل الكريم؛ عدّلي الترطيب حسب بشرتكِ."
+        }
+      ]
+    },
+    "en": {
+      "name": "EQQUALBERRY NAD+ Peptide Boosting Serum",
+      "tagline": "A layer of care for resilient-looking skin.",
+      "description": "NAD+ and peptides meet five ceramides in a serum for firmness appearance and moisture-barrier care. Add it between toner and cream, morning or evening.",
+      "benefits": [
+        "Firmness-appearance care",
+        "Moisture-barrier support",
+        "A light layer under cream"
+      ],
+      "textureTitle": "Fast-absorbing and easy to layer",
+      "textureText": "Apply a light layer without complicating your routine.",
+      "fitText": "For firmness-focused care with moisturising support.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Apply a moderate amount to the face."
+        },
+        {
+          "title": "Gently pat",
+          "text": "Spread evenly until absorbed."
+        },
+        {
+          "title": "Finish with moisturiser",
+          "text": "Include sunscreen in daytime skincare."
+        }
+      ],
+      "notes": "Patch test. Avoid wounds and irritated areas.",
+      "ingredients": [
+        "NAD+",
+        "Peptides",
+        "Five ceramides"
+      ],
+      "faq": [
+        {
+          "question": "Is this an injectable?",
+          "answer": "No. It is a topical cosmetic serum for external use."
+        },
+        {
+          "question": "Does it replace cream?",
+          "answer": "Use before cream and adjust moisture to your skin."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.eqqualberry.com/product/nad-peptide-boosting-serum/96/",
+        "title": "EQQUALBERRY NAD+ Korean product"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/nad-peptide-boosting-serum",
+        "title": "EQQUALBERRY NAD+ global product"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman pats a light serum layer to cheek, exact pink EQQUALBERRY bottle visible. No injectable imagery, lifted-face comparison, or numerical results."
+  },
+  {
+    "id": "TS0136",
+    "brand": "Medicube",
+    "productName": "Medicube PDRN Lip Sleeping Mask",
+    "ar": {
+      "name": "ماسك الشفاه الليلي PDRN من ميديكيوب",
+      "tagline": "شفاه ناعمة، ولمعة تحبينها.",
+      "description": "ماسك شفاه بقوام يذوب ليغلفها بطبقة مرطبة ولمسة لامعة. استخدمي طبقة خفيفة خلال اليوم أو كمية أوفر قبل النوم للعناية بإحساس الجفاف.",
+      "benefits": [
+        "ترطيب الشفاه",
+        "إحساس أنعم",
+        "لمسة لامعة"
+      ],
+      "textureTitle": "قوام يذوب على الشفاه",
+      "textureText": "طبقة خفيفة نهارًا، وأوفر للعناية الليلية.",
+      "fitText": "للشفاه التي تحتاج ترطيبًا إضافيًا ولمسة لامعة.",
+      "steps": [
+        {
+          "title": "بأداة نظيفة",
+          "text": "خذي كمية مناسبة من العبوة."
+        },
+        {
+          "title": "اختاري طبقتكِ",
+          "text": "خفيفة نهارًا أو أوفر قبل النوم."
+        },
+        {
+          "title": "في الصباح",
+          "text": "امسحي الزائد بلطف إذا بقي."
+        }
+      ],
+      "notes": "للشفاه خارجيًا؛ لا يُوضع داخل الفم. راجعي المكونات عند حساسية السمك.",
+      "ingredients": [
+        "PDRN من السلمون",
+        "كولاجين",
+        "زبدة الشيا"
+      ],
+      "faq": [
+        {
+          "question": "هل هو لليل فقط؟",
+          "answer": "يمكن استخدام طبقة خفيفة نهارًا."
+        },
+        {
+          "question": "هل يجب غسله صباحًا؟",
+          "answer": "امسحي الزائد عند الحاجة؛ لا يلزم فرك الشفاه."
+        }
+      ]
+    },
+    "en": {
+      "name": "Medicube PDRN Lip Sleeping Mask",
+      "tagline": "Soft-feeling lips with a glossy touch.",
+      "description": "A melting lip mask that coats lips with moisture and shine. Use a light daytime layer or a more generous layer before bed when lips feel dry.",
+      "benefits": [
+        "Lip moisture",
+        "A softer feel",
+        "A glossy finish"
+      ],
+      "textureTitle": "A melting lip texture",
+      "textureText": "Light for daytime, more generous for overnight care.",
+      "fitText": "For lips needing extra moisture and gloss.",
+      "steps": [
+        {
+          "title": "A clean applicator",
+          "text": "Take an appropriate amount."
+        },
+        {
+          "title": "Choose your layer",
+          "text": "Apply lightly by day or generously before bed."
+        },
+        {
+          "title": "In the morning",
+          "text": "Gently wipe any remaining excess if needed."
+        }
+      ],
+      "notes": "External lips only; avoid inside the mouth. Check for fish-related ingredients if allergic.",
+      "ingredients": [
+        "Salmon-derived PDRN",
+        "Collagen",
+        "Shea butter"
+      ],
+      "faq": [
+        {
+          "question": "Only for nighttime?",
+          "answer": "A light layer can also be worn during the day."
+        },
+        {
+          "question": "Must I wash it off?",
+          "answer": "Wipe excess if needed; do not scrub lips."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://medicube.us/products/pdrn-lip-sleeping-mask",
+        "title": "Medicube official PDRN Lip Sleeping Mask"
+      },
+      {
+        "url": "https://themedicube.com.sg/products/pdrn-lip-sleeping-mask",
+        "title": "Medicube Singapore PDRN Lip Sleeping Mask"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Close natural portrait of adult woman applying a thin lip-mask layer with a clean spatula or fingertip; original pink jar visible. No exaggerated lip enlargement."
+  },
+  {
+    "id": "TS0149",
+    "brand": "VT Cosmetics",
+    "productName": "VT Cosmetics Reedle Shot 100",
+    "ar": {
+      "name": "ريدل شوت 100 من VT",
+      "tagline": "بداية مختلفة للعناية بملمس البشرة.",
+      "description": "بوستر سبكيولات CICA REEDLE للعناية بمظهر الملمس الخشن، مع السنتيلا والهيالورونيك والبروبوليس. يوضع مساءً أولًا بعد التنظيف، ثم تتبعه خطوات الترطيب.",
+      "benefits": [
+        "العناية بملمس البشرة",
+        "خطوة تمهيد قبل الترطيب",
+        "سنتيلا وهيالورونيك وبروبوليس"
+      ],
+      "textureTitle": "قد يمنح إحساسًا بالوخز",
+      "textureText": "وزعيه بلطف؛ زيادة الفرك لا تعني عناية أفضل.",
+      "fitText": "لمن تريد بدء روتين سبكيولات تدريجي بعد اختبار التقبّل.",
+      "steps": [
+        {
+          "title": "وجه نظيف مساءً",
+          "text": "ابدئي بكمية مناسبة بعيدًا عن العينين والشفاه."
+        },
+        {
+          "title": "وزعي بأصابعكِ",
+          "text": "طبقي بلطف حتى الامتصاص."
+        },
+        {
+          "title": "رطبي بعدها",
+          "text": "أكملي بمرطب، وواقي شمس في النهار."
+        }
+      ],
+      "notes": "لا يُستخدم مع أجهزة البشرة أو بعد الإجراءات الجلدية مباشرة، ولا على الجروح أو مع ريدل 300/700 في الروتين نفسه.",
+      "ingredients": [
+        "CICA REEDLE",
+        "سنتيلا",
+        "هيالورونيك وبروبوليس"
+      ],
+      "faq": [
+        {
+          "question": "هل يمكن مع جهاز البشرة؟",
+          "answer": "توصي VT بعدم استخدامه مع أجهزة البشرة."
+        },
+        {
+          "question": "هل أخلطه بقوة أعلى؟",
+          "answer": "لا تستخدمي 100 مع 300 أو 700 في الوقت نفسه."
+        }
+      ]
+    },
+    "en": {
+      "name": "VT Reedle Shot 100",
+      "tagline": "A different start for texture care.",
+      "description": "A CICA REEDLE spicule booster for rough-looking texture, with centella, hyaluronic acid and propolis. Use first after evening cleansing, then follow with moisture.",
+      "benefits": [
+        "Skin-texture appearance care",
+        "A step before moisturising",
+        "Centella, hyaluronic acid and propolis"
+      ],
+      "textureTitle": "A tingling sensation may occur",
+      "textureText": "Apply gently; extra rubbing is not better care.",
+      "fitText": "For gradual spicule introduction after testing tolerance.",
+      "steps": [
+        {
+          "title": "Clean skin at night",
+          "text": "Apply an appropriate amount away from eyes and lips."
+        },
+        {
+          "title": "Spread with fingertips",
+          "text": "Gently distribute until absorbed."
+        },
+        {
+          "title": "Moisturise afterwards",
+          "text": "Follow with moisturiser and daytime sunscreen."
+        }
+      ],
+      "notes": "Avoid beauty devices, immediate post-procedure use, wounds, and simultaneous Reedle Shot 300/700.",
+      "ingredients": [
+        "CICA REEDLE",
+        "Centella",
+        "Hyaluronic acid and propolis"
+      ],
+      "faq": [
+        {
+          "question": "Can I use a beauty device?",
+          "answer": "VT advises against combining it with beauty devices."
+        },
+        {
+          "question": "Can I combine strengths?",
+          "answer": "Do not use 100 with 300 or 700 simultaneously."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://globalvt-cosmetics.com/products/vt-reedle-shot-100",
+        "title": "VT official Reedle Shot 100"
+      },
+      {
+        "url": "https://m.vt-cosmetics.com/product/detail.html?cate_no=72&display_group=1&product_no=1936",
+        "title": "VT Korea Reedle Shot100 ingredient cross-check"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently presses a tiny amount onto clean cheek with fingertips, exact silver Reedle Shot 100 bottle visible. No beauty device, puncture, needle, or injection imagery."
+  },
+  {
+    "id": "TS0171",
+    "brand": "Medicube",
+    "productName": "medicube - One Day Exosome Shot Pore Ampoule 25000 13 ml",
+    "ar": {
+      "name": "أمبول إكسوسوم شوت 25000 من ميديكيوب",
+      "tagline": "خطوة مكثفة تحتاج روتينًا محسوبًا.",
+      "description": "إصدار 25000 من عائلة Zero Exosome Shot للعناية بملمس البشرة ومظهر المسام، بسبكيولات ومزيج أحماض. اتبعي تعليمات الإصدار الموجود على عبوتكِ بدقة قبل إدخاله في الروتين.",
+      "benefits": [
+        "العناية بمظهر الملمس",
+        "العناية بمظهر المسام",
+        "بوستر سبكيولات مكثف"
+      ],
+      "textureTitle": "إحساس وخز محتمل",
+      "textureText": "إصدار مكثف؛ لا تتعاملي معه كسيروم ترطيب يومي عادي.",
+      "fitText": "لمن اعتادت السبكيولات وتتحقق من تعليمات قوة 25000.",
+      "steps": [
+        {
+          "title": "مرة كل 7 أيام",
+          "text": "مساءً، بعد التنظيف كأول خطوة في الروتين."
+        },
+        {
+          "title": "بعد التنظيف",
+          "text": "طبقي بلطف بعيدًا عن العينين والشفاه."
+        },
+        {
+          "title": "رطبي بعدها",
+          "text": "أكملي بمرطب مائي، وواقي شمس نهارًا."
+        }
+      ],
+      "notes": "اختبار موضعي أولًا. يُستخدم كل 7 أيام حسب الإصدار الرسمي؛ لا يُطبّق على الجلد المتضرر، وتُقدَّم تعليمات عبوتكِ إن اختلفت.",
+      "ingredients": [
+        "سبكيولات",
+        "Lacto Exosome",
+        "AHA وBHA وPHA"
+      ],
+      "faq": [
+        {
+          "question": "هل هو حقنة؟",
+          "answer": "لا، مستحضر تجميلي موضعي وليس للحقن."
+        },
+        {
+          "question": "هل أستخدمه يوميًا؟",
+          "answer": "لا؛ التعليمات الرسمية لإصدار 13 مل مرة كل 7 أيام مساءً."
+        }
+      ]
+    },
+    "en": {
+      "name": "Medicube One Day Exosome Shot 25000",
+      "tagline": "An intensive step needs a considered routine.",
+      "description": "The intensive 25000 member of the Zero Exosome Shot family combines spicules and exfoliating acids for pore and texture appearance care. Check your exact pack instructions before introducing it.",
+      "benefits": [
+        "Texture-appearance care",
+        "Pore-appearance care",
+        "An intensive spicule booster"
+      ],
+      "textureTitle": "A possible tingling sensation",
+      "textureText": "An intensive version, not an ordinary daily hydrating serum.",
+      "fitText": "For experienced spicule users checking 25000-specific directions.",
+      "steps": [
+        {
+          "title": "Every 7 days",
+          "text": "Use at night as the first step after cleansing."
+        },
+        {
+          "title": "After cleansing",
+          "text": "Apply gently away from eyes and lips."
+        },
+        {
+          "title": "Moisturise afterwards",
+          "text": "Follow with water-based moisturiser and daytime sunscreen."
+        }
+      ],
+      "notes": "Patch test first. Official 13 ml directions specify every 7 days. Avoid damaged skin and follow your actual pack if different.",
+      "ingredients": [
+        "Spicules",
+        "Lacto Exosome",
+        "AHA, BHA and PHA"
+      ],
+      "faq": [
+        {
+          "question": "Is it an injection?",
+          "answer": "No. It is a topical cosmetic, never for injection."
+        },
+        {
+          "question": "Should I use it daily?",
+          "answer": "No. The official 13 ml directions specify every 7 days at night."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://m.themedicube.co.kr/product/detail.html?cate_no=1037&display_group=1&product_no=2019",
+        "title": "Medicube Korea exact 13 ml Zero One Day Exosome Shot25000, weekly directions"
+      },
+      {
+        "url": "https://medicube.us/products/exosome-shot",
+        "title": "Medicube official Zero Exosome Shot, including 25000 option"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Exact Korean13ml product page located. Its published instructions specify every 7 days in the evening as first step on bare cleansed face, avoiding eyes/lips; finish with moisturising formula. The page has inconsistent fl.oz conversion, so only catalog13ml is retained. No generic daily schedule or clinical percentages transferred from the US shared family page."
+    ],
+    "extraImages": [],
+    "usageBrief": "Exact slim blue13ml25000 pen, upright on vanity beside adult woman. Dispense to fingertip then gently press face, away from eyes/lips. Never injection or puncture. Official use every 7 days in evening, not daily."
+  },
+  {
+    "id": "TS0172",
+    "brand": "VT",
+    "productName": "VT - PDRN R5 Firming Ampoule 30 ml",
+    "ar": {
+      "name": "أمبول PDRN من VT",
+      "tagline": "طبقة عناية للترطيب ومظهر المرونة.",
+      "description": "أمبول من عائلة VT PDRN للعناية بإحساس الترطيب ومظهر المرونة. وزعي طبقة معتدلة على بشرة نظيفة، وراجعي ملصق العبوة للتأكد من مكونات إصداركِ.",
+      "benefits": [
+        "العناية بمظهر المرونة",
+        "دعم ترطيب البشرة",
+        "خطوة أمبول قبل الكريم"
+      ],
+      "textureTitle": "طبقة تُوزع بلطف",
+      "textureText": "ابدئي بكمية معتدلة واتركيها تمتص قبل الكريم.",
+      "fitText": "لمن تريد أمبول عناية بالترطيب ومظهر المرونة.",
+      "steps": [
+        {
+          "title": "بشرة نظيفة",
+          "text": "ضعي كمية مناسبة صباحًا أو مساءً."
+        },
+        {
+          "title": "توزيع متساوٍ",
+          "text": "دلكي بلطف على الوجه حتى الامتصاص."
+        },
+        {
+          "title": "أكملي الروتين",
+          "text": "أتبعيه بالمرطب وواقي الشمس نهارًا."
+        }
+      ],
+      "notes": "قد تختلف تركيبة PDRN بين الإصدارات؛ ملصق العبوة هو مرجع المكونات.",
+      "ingredients": [
+        "عائلة PDRN",
+        "مرطبات البشرة"
+      ],
+      "faq": [
+        {
+          "question": "هل كل إصدارات PDRN متطابقة؟",
+          "answer": "لا؛ راجعي اسم الإصدار والمكونات على العبوة."
+        },
+        {
+          "question": "أين مكانه في الروتين؟",
+          "answer": "على البشرة النظيفة وقبل كريم الترطيب."
+        }
+      ]
+    },
+    "en": {
+      "name": "VT PDRN Ampoule",
+      "tagline": "Moisture and firmness-appearance care.",
+      "description": "A VT PDRN-family ampoule for hydration and firmness appearance. Spread a moderate layer on clean skin and check the label for your version’s exact ingredients.",
+      "benefits": [
+        "Firmness-appearance care",
+        "Hydrating care",
+        "An ampoule before cream"
+      ],
+      "textureTitle": "A gently spread layer",
+      "textureText": "Start moderately and allow absorption before cream.",
+      "fitText": "For an ampoule step focused on moisture and firmness appearance.",
+      "steps": [
+        {
+          "title": "Clean skin",
+          "text": "Apply an appropriate amount morning or evening."
+        },
+        {
+          "title": "Spread evenly",
+          "text": "Gently massage over the face until absorbed."
+        },
+        {
+          "title": "Complete skincare",
+          "text": "Follow with moisturiser and daytime sunscreen."
+        }
+      ],
+      "notes": "PDRN formulas vary by version; the actual pack is the ingredient reference.",
+      "ingredients": [
+        "PDRN family",
+        "Moisturising ingredients"
+      ],
+      "faq": [
+        {
+          "question": "Are all PDRN versions identical?",
+          "answer": "No. Check the exact version and ingredient list."
+        },
+        {
+          "question": "Where does it fit?",
+          "answer": "On clean skin before moisturising cream."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://globalvt-cosmetics.com/products/pdrn-r5-firming-ampoule",
+        "title": "VT official PDRN R5 Firming Ampoule"
+      },
+      {
+        "url": "https://globalvt-cosmetics.com/products/pdrn-essence-100",
+        "title": "VT official PDRN Essence100 photographed-family cross-check"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Catalog says PDRN R5 Firming Ampoule 30 ml; existing bottle image says PDRN Essence / 3 IN 1. Current R5 page shows vegan PDRN/cica/ceramides and milky texture. Those precise formula/texture claims were deliberately not transferred to the ambiguous photographed version. Original product name/pack not replaced."
+    ],
+    "extraImages": [],
+    "usageBrief": "Use exact existing small green-label PDRN Essence 3-in-1 bottle as reference. Adult woman dispenses serum into palm then gently pats cheek. Do not swap to a newer R5 bottle or invent opaque texture."
+  },
+  {
+    "id": "TS0173",
+    "brand": "VT",
+    "productName": "VT - Glutathione G2 Brightening Ampoule 30 ml",
+    "ar": {
+      "name": "أمبول الغلوتاثيون من VT",
+      "tagline": "خطوة خفيفة لمظهر أكثر إشراقًا.",
+      "description": "أمبول للعناية بمظهر البهتان وتفاوت اللون. ضعي طبقة معتدلة قبل الكريم، مع مراجعة مكونات إصدار العبوة.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "دعم مظهر لون متجانس",
+        "ترطيب ضمن روتينكِ"
+      ],
+      "textureTitle": "طبقة أمبول سهلة التوزيع",
+      "textureText": "وزعيه بلطف حتى الامتصاص.",
+      "fitText": "للعناية بمظهر الإشراقة ضمن روتين الترطيب.",
+      "steps": [
+        {
+          "title": "بعد التنظيف",
+          "text": "خذي كمية معتدلة من الأمبول."
+        },
+        {
+          "title": "وزعي بلطف",
+          "text": "افرديه بالتساوي حتى الامتصاص."
+        },
+        {
+          "title": "أكملي بالمرطب",
+          "text": "أضيفي واقي الشمس في النهار."
+        }
+      ],
+      "notes": "راجعي الإصدار؛ الأرقام ليست بالضرورة نسبة الغلوتاثيون النقي.",
+      "ingredients": [
+        "غلوتاثيون",
+        "نياسيناميد",
+        "بانثينول بحسب الإصدار"
+      ],
+      "faq": [
+        {
+          "question": "هل يغيّر اللون الطبيعي؟",
+          "answer": "العناية هنا بمظهر البهتان والتفاوت."
+        },
+        {
+          "question": "هل يغني عن واقي الشمس؟",
+          "answer": "لا، استخدمي واقيًا مستقلًا نهارًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "VT Glutathione Brightening Ampoule",
+      "tagline": "A light step for a brighter-looking finish.",
+      "description": "An ampoule for dull and uneven-looking skin. Apply moderately before cream, checking the exact pack’s ingredients.",
+      "benefits": [
+        "Dullness-appearance care",
+        "More even-looking tone",
+        "Moisturising routine support"
+      ],
+      "textureTitle": "An easily spread ampoule layer",
+      "textureText": "Spread gently until absorbed.",
+      "fitText": "For radiance-appearance care within a moisturising routine.",
+      "steps": [
+        {
+          "title": "After cleansing",
+          "text": "Take a moderate amount."
+        },
+        {
+          "title": "Spread gently",
+          "text": "Apply evenly until absorbed."
+        },
+        {
+          "title": "Follow with moisturiser",
+          "text": "Add a separate sunscreen during the day."
+        }
+      ],
+      "notes": "Check the version; numbers do not necessarily indicate pure glutathione percentage.",
+      "ingredients": [
+        "Glutathione",
+        "Niacinamide",
+        "Panthenol, version-dependent"
+      ],
+      "faq": [
+        {
+          "question": "Does it change natural colour?",
+          "answer": "This care concerns dullness and uneven-tone appearance."
+        },
+        {
+          "question": "Does it replace sunscreen?",
+          "answer": "No. Use separate daytime sunscreen."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://vt-cosmetics.com/product/detail.html?cate_no=26&display_group=1&product_no=1823",
+        "title": "VT official G2 Glutathione Brightening Ampoule"
+      }
+    ],
+    "sourceStatus": "limited",
+    "researchNotes": [
+      "Catalog names G2, while existing bottle image reads Glutathion Bright & Glow with a prominent 13 mark. No claim of 13% pure glutathione is made. Official G2 INCI verified glutathione/niacinamide/panthenol; actual version must be confirmed before stronger concentration claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Exact original white/gold dropper bottle with Glutathion Bright & Glow label on vanity; adult woman gently pats serum. Do not invent a new G2 pack or a pure-glutathione concentration badge."
+  },
+  {
+    "id": "TS0176",
+    "brand": "Medicube",
+    "productName": "medicube - PDRN Pink Collagen Exosome Shot Serum 7500 30 ml",
+    "ar": {
+      "name": "سيروم PDRN بينك كولاجين إكسوسوم شوت 7500",
+      "tagline": "عناية مكثفة بلمسة وردية.",
+      "description": "إصدار 7500 من عائلة ميديكيوب للسبكيولات، مع PDRN وكولاجين للعناية بمظهر الملمس وتفاوت اللون. يسبق الترطيب، ويحتاج كمية وتكرارًا يراعيان تقبّل بشرتكِ.",
+      "benefits": [
+        "العناية بمظهر الملمس",
+        "العناية بمظهر تفاوت اللون",
+        "PDRN وكولاجين ضمن التركيبة"
+      ],
+      "textureTitle": "قد يصاحبه إحساس بالوخز",
+      "textureText": "ابدئي بكمية صغيرة، دون فرك شديد أو أجهزة.",
+      "fitText": "لمن اعتادت السبكيولات وتريد التحقق من ملاءمة قوة 7500.",
+      "steps": [
+        {
+          "title": "بعد التنظيف",
+          "text": "طبقي كمية مناسبة بعيدًا عن العينين والشفاه."
+        },
+        {
+          "title": "ضغط لطيف",
+          "text": "وزعي بأطراف الأصابع دون فرك قوي."
+        },
+        {
+          "title": "ترطيب بعدها",
+          "text": "أكملي بمرطب مائي واتّبعي تكرار العبوة."
+        }
+      ],
+      "notes": "اختبري موضعيًا. توقفي عند التهيج؛ راجعي المكونات إن كنتِ تتجنبين الريتينويدات.",
+      "ingredients": [
+        "PDRN من السلمون",
+        "كولاجين",
+        "سبكيولات"
+      ],
+      "faq": [
+        {
+          "question": "هل هو السيروم الوردي العادي؟",
+          "answer": "لا، هذا إصدار Exosome Shot بسبكيولات."
+        },
+        {
+          "question": "هل يُشطف؟",
+          "answer": "يُترك ثم تتبعه خطوات الترطيب."
+        }
+      ]
+    },
+    "en": {
+      "name": "Medicube PDRN Pink Collagen Exosome Shot 7500",
+      "tagline": "A considered pink-toned booster step.",
+      "description": "The 7500 spicule version pairs PDRN and collagen for texture and uneven-tone appearance care. Use before moisture, adjusting amount and frequency to your skin’s tolerance.",
+      "benefits": [
+        "Texture-appearance care",
+        "Uneven-tone appearance care",
+        "PDRN and collagen formula"
+      ],
+      "textureTitle": "Tingling may accompany application",
+      "textureText": "Start small, without harsh rubbing or devices.",
+      "fitText": "For experienced spicule users considering the 7500 strength.",
+      "steps": [
+        {
+          "title": "After cleansing",
+          "text": "Apply appropriately, avoiding eyes and lips."
+        },
+        {
+          "title": "Gentle pressure",
+          "text": "Spread with fingertips without harsh rubbing."
+        },
+        {
+          "title": "Follow with moisture",
+          "text": "Use water-based moisturiser and follow pack frequency."
+        }
+      ],
+      "notes": "Patch test. Stop if irritated; check ingredients if avoiding retinoids.",
+      "ingredients": [
+        "Salmon-derived PDRN",
+        "Collagen",
+        "Spicules"
+      ],
+      "faq": [
+        {
+          "question": "The ordinary pink serum?",
+          "answer": "No. This Exosome Shot version contains spicules."
+        },
+        {
+          "question": "Should I rinse it off?",
+          "answer": "Leave on, followed by moisturising skincare."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://medicube.us/products/pdrn-pink-collagen-exosome-shot",
+        "title": "Medicube official PDRN Pink Collagen Exosome Shot 2000/7500"
+      },
+      {
+        "url": "https://themedicube.com.sg/products/pdrn-pink-collagen-exosome-shot",
+        "title": "Medicube Singapore PDRN Pink Collagen Exosome Shot"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Manufacturer page combines 2000 and7500 options. Published common INCI lists retinol, so no pregnancy-safe or retinoid-free statement is made. No fixed daily/weekly usage frequency inferred for7500."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently presses a small amount from exact pink pump bottle onto cheek using fingertips. No needles, beauty device, injection, or skin-results comparison."
+  },
+  {
+    "id": "TS0177",
+    "brand": "APRILSKIN",
+    "productName": "APRILSKIN - TXA Niacinamide 99 Milky Toner 150 ml",
+    "ar": {
+      "name": "تونر TXA نياسيناميد 99 الحليبي من أبريل سكين",
+      "tagline": "لمسة حليبية، وإشراقة رطبة.",
+      "description": "تونر يجمع إحساس الكريم وخفة التونر في طبقة حليبية وردية، مع TXA ونياسيناميد. اختاريه لترطيب البشرة والعناية بمظهر البهتان قبل استكمال الروتين.",
+      "benefits": [
+        "ترطيب بلمسة حليبية",
+        "العناية بمظهر البهتان",
+        "ملمس ندي قبل الكريم"
+      ],
+      "textureTitle": "بين الكريم والتونر",
+      "textureText": "قوام حليبي يوزع باليدين ويُربّت بلطف.",
+      "fitText": "لمن تفضل تونرًا مرطبًا أغنى من التونر المائي.",
+      "steps": [
+        {
+          "title": "بعد التنظيف",
+          "text": "إذا استخدمتِ شوت 99، يوضع قبله حسب ترتيب العلامة."
+        },
+        {
+          "title": "طبقة مناسبة",
+          "text": "وزعي التونر براحتي اليدين وربّتي."
+        },
+        {
+          "title": "أكملي الترطيب",
+          "text": "اتبعيه بروتينكِ وواقي الشمس نهارًا."
+        }
+      ],
+      "notes": "اختبريه موضعيًا؛ رقم 99 ليس نسبة الحمض في التونر كله.",
+      "ingredients": [
+        "TXA",
+        "نياسيناميد",
+        "مرطبات"
+      ],
+      "faq": [
+        {
+          "question": "هل هو كريم أم تونر؟",
+          "answer": "تونر بقوام حليبي يجمع إحساس الخطوتين."
+        },
+        {
+          "question": "هل يجب شراء السيروم معه؟",
+          "answer": "يمكن تنسيقه مع روتينكِ؛ شراء الباكج ليس شرطًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "APRILSKIN TXA Niacinamide 99 Pink Milky Toner",
+      "tagline": "Milky moisture, a dewy touch.",
+      "description": "A pink milky toner combining a cream-like feel with toner ease, plus TXA and niacinamide. Choose it for hydration and dullness-appearance care before continuing skincare.",
+      "benefits": [
+        "Milky-feeling hydration",
+        "Dullness-appearance care",
+        "A dewy layer before cream"
+      ],
+      "textureTitle": "Between cream and toner",
+      "textureText": "Distribute with your hands and gently pat.",
+      "fitText": "For a moisturising toner richer than a watery texture.",
+      "steps": [
+        {
+          "title": "After cleansing",
+          "text": "If using Shot99, apply that first as directed."
+        },
+        {
+          "title": "An appropriate layer",
+          "text": "Smooth the toner with palms and gently pat."
+        },
+        {
+          "title": "Continue skincare",
+          "text": "Follow your routine and add daytime sunscreen."
+        }
+      ],
+      "notes": "Patch test; 99 does not mean the whole toner is 99% acid.",
+      "ingredients": [
+        "TXA",
+        "Niacinamide",
+        "Humectants"
+      ],
+      "faq": [
+        {
+          "question": "Cream or toner?",
+          "answer": "A toner with a milky, cream-like feel."
+        },
+        {
+          "question": "Must I buy the serum too?",
+          "answer": "No. Coordinate it with your own routine."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://aprilskin.us/products/txa-niacinamide-99-pink-milky-toner",
+        "title": "APRILSKIN official Pink Milky Toner"
+      },
+      {
+        "url": "https://aprilskin.com/product/detail.html?cate_no=42&display_group=1&product_no=1372",
+        "title": "APRILSKIN Korea TXA Niacinamide99 Milky Toner directions"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Official page states TXA3% and niacinamide5%, with99% referring to TXA purity. Public copy omits concentration claims rather than misreading99."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman pours a little pink milky toner from exact tall pink red-capped bottle into palm then gently pats cheek. No cotton abrasive rubbing or result comparison."
+  },
+  {
+    "id": "TS0182",
+    "brand": "Medicube",
+    "productName": "medicube Salmon DNA PDRN Pink Peptide Serum, Pink glow serum, Peptide",
+    "ar": {
+      "name": "سيروم PDRN بينك ببتايد من ميديكيوب",
+      "tagline": "لون وردي، وطبقة عناية يومية.",
+      "description": "سيروم يجمع PDRN والببتيدات مع مكونات مرطبة للعناية بمظهر النعومة والإشراقة. طبقة تناسب ما قبل الكريم صباحًا أو مساءً، مع لون وردي من فيتامين B12.",
+      "benefits": [
+        "ترطيب ونعومة",
+        "العناية بمظهر الإشراقة",
+        "PDRN وببتيدات"
+      ],
+      "textureTitle": "سيروم يُترك قبل الكريم",
+      "textureText": "وزعيه على الوجه والرقبة وربّتي حتى الامتصاص.",
+      "fitText": "لمن تريد سيروم PDRN مرطبًا ضمن الروتين اليومي.",
+      "steps": [
+        {
+          "title": "بشرة نظيفة",
+          "text": "ضعي كمية مناسبة على بشرة نظيفة وجافة."
+        },
+        {
+          "title": "توزيع وتربيت",
+          "text": "افرديه على الوجه والرقبة بلطف."
+        },
+        {
+          "title": "كريم ثم حماية",
+          "text": "أكملي بالمرطب وواقي الشمس نهارًا."
+        }
+      ],
+      "notes": "راجعي المكونات عند حساسية السمك، واختبريه قبل الانتظام.",
+      "ingredients": [
+        "PDRN من السلمون",
+        "ببتيدات",
+        "فيتامين B12"
+      ],
+      "faq": [
+        {
+          "question": "هل الوردي صبغة تلوّن الوجه؟",
+          "answer": "توضح العلامة أن اللون من B12 ولا يُقصد به صبغ البشرة."
+        },
+        {
+          "question": "هل هو إكسوسوم شوت؟",
+          "answer": "لا، هذا السيروم الوردي بالببتيدات؛ منتج مختلف."
+        }
+      ]
+    },
+    "en": {
+      "name": "Medicube PDRN Pink Peptide Serum",
+      "tagline": "Pink-toned care for your daily routine.",
+      "description": "PDRN and peptides meet moisturising ingredients for softness and radiance appearance care. Use before cream morning or evening; vitamin B12 gives its pink colour.",
+      "benefits": [
+        "Moisture and softness",
+        "Radiance-appearance care",
+        "PDRN and peptides"
+      ],
+      "textureTitle": "A leave-on layer before cream",
+      "textureText": "Spread over face and neck and gently pat until absorbed.",
+      "fitText": "For a moisturising PDRN serum in everyday skincare.",
+      "steps": [
+        {
+          "title": "Clean skin",
+          "text": "Apply an appropriate amount to clean, dry skin."
+        },
+        {
+          "title": "Spread and pat",
+          "text": "Gently distribute over face and neck."
+        },
+        {
+          "title": "Moisture then protection",
+          "text": "Follow with moisturiser and daytime sunscreen."
+        }
+      ],
+      "notes": "Check ingredients for fish sensitivity and patch test first.",
+      "ingredients": [
+        "Salmon-derived PDRN",
+        "Peptides",
+        "Vitamin B12"
+      ],
+      "faq": [
+        {
+          "question": "Will the pink stain my face?",
+          "answer": "The brand attributes the colour to B12, not a skin tint."
+        },
+        {
+          "question": "Is it Exosome Shot?",
+          "answer": "No. The pink peptide serum is a different product."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://medicube.us/products/rose-pdrn-pink-peptide-serum",
+        "title": "Medicube official PDRN Pink Peptide Serum"
+      },
+      {
+        "url": "https://medicube.us/products/subscr-pdrn-pink-peptide-serum",
+        "title": "Medicube Pink Peptide Serum directions"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman dispenses pink serum to fingertips from exact original white-pink dropper bottle, then pats cheek. No dropper touching eye/face, no before/after."
+  },
+  {
+    "id": "TS0187",
+    "brand": "EQQUALBERRY",
+    "productName": "EQQUALBERRY - Hyaltoin Flooding Serum 30 ml",
+    "ar": {
+      "name": "سيروم هيالتوين فلودينغ من إيكوالبيري",
+      "tagline": "جرعة انتعاش لروتين الترطيب.",
+      "description": "هيالورونيك وإكتوين مع سيراميدات في سيروم للعناية بالبشرة التي تشعر بالعطش. يمنح إحساسًا منعشًا وطبقة ترطيب سهلة قبل الكريم، صباحًا أو مساءً.",
+      "benefits": [
+        "تعزيز إحساس الترطيب",
+        "إحساس منعش",
+        "دعم حاجز الرطوبة"
+      ],
+      "textureTitle": "منعش وسريع الامتصاص",
+      "textureText": "طبقة سيروم سهلة الفرد دون الحاجة لفرك البشرة.",
+      "fitText": "للبشرة التي تحتاج ترطيبًا إضافيًا وراحة في الروتين.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "ضعي كمية معتدلة على الوجه."
+        },
+        {
+          "title": "تربيت خفيف",
+          "text": "وزعيه بالتساوي حتى الامتصاص."
+        },
+        {
+          "title": "أتبعيه بالكريم",
+          "text": "أكملي الترطيب وواقي الشمس نهارًا."
+        }
+      ],
+      "notes": "الإحساس المنعش لا يعني علاج التهيج؛ توقفي إذا لم ترتح بشرتكِ.",
+      "ingredients": [
+        "هيالورونيك",
+        "إكتوين",
+        "سيراميدات"
+      ],
+      "faq": [
+        {
+          "question": "هل يغني عن المرطب؟",
+          "answer": "استخدميه قبل الكريم وعدّلي الكمية حسب بشرتكِ."
+        },
+        {
+          "question": "هل يُستخدم صباحًا؟",
+          "answer": "نعم، صباحًا أو مساءً بعد التونر."
+        }
+      ]
+    },
+    "en": {
+      "name": "EQQUALBERRY Hyaltoin Flooding Serum",
+      "tagline": "A fresh moment in your moisture routine.",
+      "description": "Hyaluronic acid, ectoin and ceramides come together for thirsty-feeling skin. A refreshing, easy-to-layer serum before cream, morning or evening.",
+      "benefits": [
+        "Hydrating comfort",
+        "A refreshing feel",
+        "Moisture-barrier support"
+      ],
+      "textureTitle": "Fresh and fast-absorbing",
+      "textureText": "An easy serum layer without vigorous rubbing.",
+      "fitText": "For skin wanting extra hydration and routine comfort.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Apply a moderate amount to the face."
+        },
+        {
+          "title": "Gently pat",
+          "text": "Spread evenly until absorbed."
+        },
+        {
+          "title": "Follow with cream",
+          "text": "Complete moisture and daytime sunscreen."
+        }
+      ],
+      "notes": "A cooling feel is not a treatment for irritation; stop if uncomfortable.",
+      "ingredients": [
+        "Hyaluronic acid",
+        "Ectoin",
+        "Ceramides"
+      ],
+      "faq": [
+        {
+          "question": "Does it replace moisturiser?",
+          "answer": "Use before cream and adjust to your needs."
+        },
+        {
+          "question": "Can I use it in the morning?",
+          "answer": "Yes, morning or evening after toner."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://eqqualberry.com/product/hyaltoin-flooding-serum/98/",
+        "title": "EQQUALBERRY Korean Hyaltoin serum"
+      },
+      {
+        "url": "https://eqqualberryglobal.com/products/hyaltoin-flooding-serum",
+        "title": "EQQUALBERRY global Hyaltoin serum"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman pats a small clear serum layer to cheek; exact blue Hyaltoin bottle visible, refreshing natural daylight without ice directly on skin. No result comparison."
+  },
+  {
+    "id": "TS0344",
+    "brand": "Medicube",
+    "productName": "Collagen Firming Sun Cream SPF50+",
+    "ar": {
+      "name": "واقي الشمس كولاجين فيرمينغ SPF50+ من ميديكيوب",
+      "tagline": "آخر خطوة عناية قبل الخروج.",
+      "description": "كريم حماية من الشمس بلمسة إشراقة، مع مركب كولاجين ضمن التركيبة. ضعيه بكمية كافية كآخر خطوة صباحية، وأعيدي تطبيقه خلال التعرض للشمس.",
+      "benefits": [
+        "حماية SPF50+ حسب العبوة",
+        "لمسة إشراقة",
+        "كريم صباحي مع كولاجين"
+      ],
+      "textureTitle": "كريم بلمسة مضيئة",
+      "textureText": "افردي طبقة متساوية قبل المكياج واتركيها تستقر.",
+      "fitText": "لمن تفضل واقي شمس كريميًا مع لمسة إشراقة.",
+      "steps": [
+        {
+          "title": "آخر خطوة صباحية",
+          "text": "وزعي كمية كافية على الجلد المكشوف."
+        },
+        {
+          "title": "قبل الخروج",
+          "text": "طبقيه قبل التعرض للشمس بنحو 15 دقيقة."
+        },
+        {
+          "title": "جددي الحماية",
+          "text": "أعيديه كل ساعتين أثناء التعرض وبعد التعرق أو الغسل."
+        }
+      ],
+      "notes": "لا تفترضي مقاومة الماء؛ اتبعي الملصق واستخدمي الظل والملابس للحماية.",
+      "ingredients": [
+        "مركب كولاجين",
+        "مرشحات شمسية بحسب العبوة"
+      ],
+      "faq": [
+        {
+          "question": "هل تطبيق الصباح يكفي لليوم؟",
+          "answer": "أعيدي التطبيق أثناء التعرض؛ SPF لا يحدد ساعات حماية ثابتة."
+        },
+        {
+          "question": "هل هو نفسه واقي ميديكيوب الجديد؟",
+          "answer": "راجعي اسم العبوة؛ الإصدارات المختلفة قد تختلف في التركيبة."
+        }
+      ]
+    },
+    "en": {
+      "name": "Medicube Collagen Firming Sun Cream SPF50+",
+      "tagline": "Your last skincare step before heading out.",
+      "description": "A creamy sunscreen with a radiant finish and a collagen complex. Apply generously as your final morning step and renew protection during sun exposure.",
+      "benefits": [
+        "Labelled SPF50+ protection",
+        "A radiant finish",
+        "Morning cream with collagen"
+      ],
+      "textureTitle": "A creamy, luminous finish",
+      "textureText": "Spread evenly before makeup and allow it to settle.",
+      "fitText": "For a creamy sunscreen with a glow-focused finish.",
+      "steps": [
+        {
+          "title": "Last morning step",
+          "text": "Apply generously to exposed skin."
+        },
+        {
+          "title": "Before heading out",
+          "text": "Apply approximately 15 minutes before sun exposure."
+        },
+        {
+          "title": "Renew protection",
+          "text": "Reapply every two hours during exposure and after sweating or washing."
+        }
+      ],
+      "notes": "Do not assume water resistance. Follow the label and use shade and protective clothing.",
+      "ingredients": [
+        "Collagen complex",
+        "UV filters as labelled"
+      ],
+      "faq": [
+        {
+          "question": "Does one morning layer last all day?",
+          "answer": "Reapply during exposure; SPF is not a fixed number of hours."
+        },
+        {
+          "question": "The same as the newest Medicube sunscreen?",
+          "answer": "Check the pack name; different editions can have different formulas."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://themedicube.com.sg/products/deep-collagen-firming-sun-cream",
+        "title": "Medicube Singapore Deep Collagen Firming Sunscreen"
+      },
+      {
+        "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+        "title": "FDA sunscreen application and reapplication guidance"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "SPF50+ is legible on the original photographed tube. No unverified PA rating, water resistance, clinical percentages, exact INCI or no-white-cast promise was added. Current US No Cast Just Glow is a different product."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman spreads sunscreen on cheek with fingertips; exact rose-gold SPF50+ tube visible, natural sunlit indoor vanity, no outdoor unprotected model, no water-resistance badge or before/after."
+  }
+]

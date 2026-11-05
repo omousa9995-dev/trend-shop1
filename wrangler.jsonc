@@ -12,6 +12,7 @@
       "/p/*",
       "/media/*",
       "/review-media/*",
+      "/product-videos/*",
       "/images/catalog/*"
     ]
   },

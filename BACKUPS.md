@@ -43,3 +43,8 @@
 للرجوع إلى شكل الموقع وسلوكه السابق، أعِد نشر Worker المحفوظ، أو ابنِ المصدر من فرع النسخة المحفوظة، مع الاحتفاظ بأسرار البريد والجلسة وبربط DB وMEDIA وSTORE_LIVE=true. يعكس رابط Pages المختصر النسخة المنشورة من Worker تلقائيًا.
 
 **لا تسترجع قاعدة البيانات أو seed أو مخزون 24 عند الرجوع إلى التصميم.** تبقى الطلبات الحقيقية والمخزون الحالي كما هما. صور الإصدار القديم محفوظة في فرع GitHub وفي KV؛ الصور الجديدة تُضاف بأسماء مختلفة ولا تستبدلها.
+
+## Before Korean care stories v4.0.0 — 2026-11-05
+
+Source: `backup/v3.2.0-before-korean-stories-2026-11-05`, commit `e2f39e8ef20ee5b15e5dcfec89d9da5f862bcbc0`. Previous live Worker version: `6111a7d6-9eb5-427f-91c4-381e5ffdfac3`.
+A full schema/data snapshot was privately retained before edits, with321product rows,13orders,71order-item snapshots and7,218stock units. No private customer or authentication data from that snapshot is committed here. Existing immutable image keys remain available. Consult the v4 release document before any content rollback; preserve later sales, owner edits and video uploads.

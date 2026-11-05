@@ -1,0 +1,3523 @@
+[
+  {
+    "id": "TS0060",
+    "brand": "Celimax",
+    "productName": "Celimax – THE VITA-A Retinal Shot Tightening Booster",
+    "ar": {
+      "name": "بوستر الريتينال فيتا إيه من سيليماكس",
+      "tagline": "خطوة مسائية، بتدرّج يناسب بشرتكِ.",
+      "description": "بوستر الريتينال من سيليماكس بخاصية A-Shot هو خطوة موضعية للعناية بمظهر الخطوط والملمس غير المتجانس. تُوزّع منه كمية صغيرة على المناطق المطلوبة مساءً، ثم يأتي المرطب ليكمل روتينًا يُبنى بالتدرّج وفق تحمّل بشرتكِ.",
+      "benefits": [
+        "تحسين مظهر الملمس",
+        "عناية بمظهر الخطوط",
+        "تطبيق موضعي بكمية قليلة"
+      ],
+      "textureTitle": "بوستر مركّز للمساء",
+      "textureText": "يُوزّع بكمية صغيرة على المواضع المطلوبة، ثم يُتبع بالترطيب.",
+      "fitText": "لمن اعتادت الريتينويدات أو تستطيع إدخالها تدريجيًا؛ ليس خطوة لتكديس المقشرات.",
+      "steps": [
+        {
+          "title": "ابدئي بالتدرّج",
+          "text": "استخدميه ليلة بعد ليلة أول أسبوعين وفق التحمل."
+        },
+        {
+          "title": "كمية صغيرة",
+          "text": "وزّعي قليلًا على المناطق المستهدفة بعيدًا عن العين والشفاه."
+        },
+        {
+          "title": "ترطيب وحماية",
+          "text": "أتبعيه بمرطب، واستخدمي واقي الشمس صباحًا."
+        }
+      ],
+      "notes": "قد يسبب تهيجًا؛ خففي التكرار عند الحاجة. تُتجنب الريتينويدات أثناء الحمل والتخطيط له.",
+      "ingredients": [
+        "ريتينال",
+        "تركيبة A-Shot"
+      ],
+      "faq": [
+        {
+          "question": "هل يُستخدم صباحًا؟",
+          "answer": "اجعليه خطوة مسائية، مع حماية شمسية في النهار."
+        },
+        {
+          "question": "هل أبدأ يوميًا؟",
+          "answer": "ابدئي بالتدرّج قبل زيادة التكرار حسب التحمل."
+        }
+      ]
+    },
+    "en": {
+      "name": "Celimax The Vita-A Retinal Shot Tightening Booster",
+      "tagline": "An evening step, introduced slowly.",
+      "description": "Celimax pairs retinal with its A-Shot formulation in a targeted booster for fine-line and uneven-texture appearance care. Use a small amount on selected areas in the evening, then follow with moisturiser as you build your routine gradually.",
+      "benefits": [
+        "Smoother-looking texture",
+        "Fine-line appearance care",
+        "Small targeted application"
+      ],
+      "textureTitle": "A focused evening booster",
+      "textureText": "Spread a little over target areas, then add moisturiser.",
+      "fitText": "For gradual retinoid routines, rather than stacking several exfoliating steps.",
+      "steps": [
+        {
+          "title": "Introduce slowly",
+          "text": "Use on alternate nights for the first two weeks as tolerated."
+        },
+        {
+          "title": "Apply sparingly",
+          "text": "Keep a small amount away from eyes and lips."
+        },
+        {
+          "title": "Finish gently",
+          "text": "Follow with moisturiser and wear daytime sunscreen."
+        }
+      ],
+      "notes": "Reduce use if irritation develops. Avoid retinoids during pregnancy or when trying to conceive.",
+      "ingredients": [
+        "Retinal",
+        "A-Shot formulation"
+      ],
+      "faq": [
+        {
+          "question": "Morning or evening?",
+          "answer": "Use in the evening, with sun protection the next day."
+        },
+        {
+          "question": "Daily from day one?",
+          "answer": "Increase frequency only after your skin adjusts."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://celimax.us/products/the-vita-a-retinal-shot-tightening-booster",
+        "title": "Celimax US — The Vita A Retinal Shot Tightening Booster"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Official page states 0.1% retinal; no need to put strength in marketing copy."
+    ],
+    "extraImages": [],
+    "usageBrief": "Use on alternate nights for the first two weeks as tolerated. Keep a small amount away from eyes and lips. Follow with moisturiser and wear daytime sunscreen."
+  },
+  {
+    "id": "TS0066",
+    "brand": "Biodance",
+    "productName": "Biodance - Bio-Collagen Real Deep Mask Set",
+    "ar": {
+      "name": "ماسك بايو كولاجين ريل ديب من بايودانس",
+      "tagline": "استراحة طويلة، وإحساس مرطّب.",
+      "description": "ماسك بايودانس هيدروجيل من جزأين يجمع الكولاجين المتحلل وحمض الهيالورونيك لعناية مرطّبة ومظهر أكثر امتلاءً. يلتصق بالوجه وتزداد شفافيته خلال جلسة الاستخدام الممتدة، ليأخذ مكانه بعد التونر أو السيروم في وقت عناية هادئ.",
+      "benefits": [
+        "ترطيب للبشرة",
+        "مظهر أكثر امتلاءً",
+        "هيدروجيل يلتصق بالوجه"
+      ],
+      "textureTitle": "هيدروجيل يتحول تدريجيًا",
+      "textureText": "تزداد شفافيته أثناء مدة الاستخدام؛ ليس قناعًا ورقيًا عاديًا.",
+      "fitText": "لمن تفضّل جلسة ترطيب ممتدة بدل الماسكات السريعة.",
+      "steps": [
+        {
+          "title": "حضّري بشرتكِ",
+          "text": "ضعيه بعد التنظيف والتونر أو السيروم."
+        },
+        {
+          "title": "ثبّتي الجزأين",
+          "text": "انزعي الأغشية ووزّعي القناع حول العينين والفم."
+        },
+        {
+          "title": "امنحيه وقته",
+          "text": "اتركيه 3–4 ساعات أو حتى يصبح شفافًا، ثم أزيليه."
+        }
+      ],
+      "notes": "للاستخدام الواحد؛ أزيليه عند الانزعاج. عدد الماسكات يتبع الباقة المعروضة.",
+      "ingredients": [
+        "كولاجين متحلل",
+        "حمض هيالورونيك"
+      ],
+      "faq": [
+        {
+          "question": "هل يُشطف بعده؟",
+          "answer": "اربتي برفق على البقايا وفق تعليمات العبوة."
+        },
+        {
+          "question": "هل هو قناع سريع؟",
+          "answer": "تعليمات الشركة تتضمن جلسة نهارية من 3–4 ساعات."
+        }
+      ]
+    },
+    "en": {
+      "name": "Biodance Bio-Collagen Real Deep Mask",
+      "tagline": "Make time for a hydrating pause.",
+      "description": "Biodance combines hydrolysed collagen and hyaluronic acid in a two-part hydrogel mask for hydration and a plumper-looking finish. The close-fitting gel becomes more transparent during an extended session after toner or serum.",
+      "benefits": [
+        "Hydrating care",
+        "Plumper-looking finish",
+        "Close-fitting hydrogel"
+      ],
+      "textureTitle": "Hydrogel that gradually clears",
+      "textureText": "The mask becomes more transparent during wear.",
+      "fitText": "For an extended moisture session rather than a quick sheet mask.",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Apply after cleansing and toner or serum."
+        },
+        {
+          "title": "Position",
+          "text": "Remove the films and align both pieces around eyes and mouth."
+        },
+        {
+          "title": "Allow time",
+          "text": "Wear for 3–4 hours or until transparent, then remove."
+        }
+      ],
+      "notes": "Single use. Remove if uncomfortable; pack quantity follows the selected offer.",
+      "ingredients": [
+        "Hydrolysed collagen",
+        "Hyaluronic acid"
+      ],
+      "faq": [
+        {
+          "question": "Rinse afterwards?",
+          "answer": "Gently pat remaining essence as directed on the pack."
+        },
+        {
+          "question": "A quick mask?",
+          "answer": "The brand describes a 3–4 hour daytime session."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://biodance.com/products/biodance-bio-collagen-real-deep-mask",
+        "title": "Biodance — Bio Collagen-Real Deep Mask"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Apply after cleansing and toner or serum. Remove the films and align both pieces around eyes and mouth. Wear for 3–4 hours or until transparent, then remove."
+  },
+  {
+    "id": "TS0068",
+    "brand": "Abib",
+    "productName": "Abib - PDRN Retinal Eye Patch Glow Jelly",
+    "ar": {
+      "name": "باتشات العين PDRN وريتينال من أبيب",
+      "tagline": "دقائق لعناية منطقة العين.",
+      "description": "باتشات أبيب الجلّية تجمع PDRN والريتينال والكافيين للعناية بترطيب تحت العين ومظهر التعب. يساعد سطحها على الثبات خلال جلسة قصيرة، وتوضع على الجلد الخارجي بعيدًا عن خط الرموش قبل إزالة الباتشات والتربيت على البقايا.",
+      "benefits": [
+        "ترطيب تحت العين",
+        "مظهر أكثر انتعاشًا",
+        "ملمس هلامي مريح"
+      ],
+      "textureTitle": "جل مرن قريب من البشرة",
+      "textureText": "باتشات ذات سطح يساعدها على الثبات أثناء الجلسة.",
+      "fitText": "لعناية خارجية بمنطقة تحت العين؛ لا توضع داخل العين أو على الجفن المتحرك.",
+      "steps": [
+        {
+          "title": "اختاري زوجًا",
+          "text": "استخدمي الملعقة النظيفة لرفع الباتشات."
+        },
+        {
+          "title": "ضعي برفق",
+          "text": "ثبّتيها تحت العين دون ملامسة خط الرموش."
+        },
+        {
+          "title": "انتظري وأزيلي",
+          "text": "اتركيها 10–15 دقيقة، ثم أزيليها واربتي على البقايا."
+        }
+      ],
+      "notes": "تحتوي ريتينال؛ تجنبيها أثناء الحمل والتخطيط له، وأوقفيها عند التهيج.",
+      "ingredients": [
+        "PDRN",
+        "ريتينال",
+        "كافيين"
+      ],
+      "faq": [
+        {
+          "question": "هل أنام بها؟",
+          "answer": "اتبعي جلسة 10–15 دقيقة المبيّنة في إرشادات الشركة."
+        },
+        {
+          "question": "هل تلامس العين؟",
+          "answer": "توضع على الجلد الخارجي تحت العين فقط."
+        }
+      ]
+    },
+    "en": {
+      "name": "Abib PDRN Retinal Eye Patch Glow Jelly",
+      "tagline": "A few minutes for your eye contour.",
+      "description": "Abib brings PDRN, retinal and caffeine together in jelly patches for under-eye hydration and a refreshed appearance. Their textured surface helps them stay in place during a short session on external under-eye skin, followed by gentle patting of the remaining essence.",
+      "benefits": [
+        "Under-eye hydration",
+        "Refreshed appearance",
+        "Comfortable jelly feel"
+      ],
+      "textureTitle": "Flexible close-fitting jelly",
+      "textureText": "A textured surface helps the patches stay in place.",
+      "fitText": "For external under-eye skin, away from eyes and moving eyelids.",
+      "steps": [
+        {
+          "title": "Lift carefully",
+          "text": "Use the clean spatula to take out a pair."
+        },
+        {
+          "title": "Position gently",
+          "text": "Place beneath the eyes without touching the lash line."
+        },
+        {
+          "title": "Remove",
+          "text": "Leave for 10–15 minutes, then pat in remaining essence."
+        }
+      ],
+      "notes": "Contains retinal. Avoid during pregnancy or when trying to conceive; stop if irritated.",
+      "ingredients": [
+        "PDRN",
+        "Retinal",
+        "Caffeine"
+      ],
+      "faq": [
+        {
+          "question": "Sleep in them?",
+          "answer": "Follow the brand’s 10–15 minute application guidance."
+        },
+        {
+          "question": "Touch the eyes?",
+          "answer": "Apply only to external under-eye skin."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://en.abib.com/products/pdrn-retinal-eye-patch-glow-jelly",
+        "title": "Abib — PDRN retinal eye patch Glow jelly"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Use the clean spatula to take out a pair. Place beneath the eyes without touching the lash line. Leave for 10–15 minutes, then pat in remaining essence."
+  },
+  {
+    "id": "TS0072",
+    "brand": "P.CALM",
+    "productName": "P.CALM - Holy Basil Bubble Deep Mask",
+    "ar": {
+      "name": "ماسك هولي بازل الفقاعي من بي كالم",
+      "tagline": "من قوام الماسك إلى فقاعات التنظيف.",
+      "description": "ماسك هولي بازل من بي كالم يتميّز بقوام يتحوّل إلى فقاعات فوق البشرة، كخطوة تنظيف إضافية للعناية بالتراكمات السطحية. تُترك الفقاعات للمدة المحددة على العبوة ثم تُدلّك بلطف وتُشطف بالكامل، قبل إكمال العناية بالترطيب.",
+      "benefits": [
+        "تنظيف سطح البشرة",
+        "تجربة فقاعية",
+        "ملمس أنعم بعد الشطف"
+      ],
+      "textureTitle": "فقاعات فوق طبقة الماسك",
+      "textureText": "يتطور القوام على البشرة قبل تدليك لطيف وشطف كامل.",
+      "fitText": "لمن تريد ماسك تنظيف يُشطف، مع تقليل الاستخدام إذا كانت البشرة سريعة التهيج.",
+      "steps": [
+        {
+          "title": "وزّعي طبقة",
+          "text": "ضعيه على بشرة جافة بعيدًا عن العينين."
+        },
+        {
+          "title": "دعي الفقاعات تتكون",
+          "text": "انتظري المدة المحددة على العبوة ثم دلّكي بلطف."
+        },
+        {
+          "title": "اشطفي ورطّبي",
+          "text": "أزيليه بالماء الفاتر وأكملي بمرطب."
+        }
+      ],
+      "notes": "لا تفركي بقوة أو تستخدميه على جلد متضرر. أغلقي الغطاء جيدًا.",
+      "ingredients": [
+        "هولي بازل",
+        "قوام فقاعي يُشطف"
+      ],
+      "faq": [
+        {
+          "question": "هل يبقى على الوجه؟",
+          "answer": "يُشطف بالكامل؛ ليس كريمًا يُترك على البشرة."
+        },
+        {
+          "question": "هل أترك العبوة مفتوحة؟",
+          "answer": "أعيدي إغلاقها بإحكام بعد أخذ الكمية."
+        }
+      ]
+    },
+    "en": {
+      "name": "P.CALM Holy Basil Bubble Deep Mask",
+      "tagline": "A cleansing mask that turns to bubbles.",
+      "description": "P.CALM Holy Basil Bubble Deep Mask changes from a mask layer into bubbles for an additional surface-cleansing step. Let the bubbles develop for the time on your pack, then massage gently, rinse thoroughly and finish with moisturiser.",
+      "benefits": [
+        "Surface cleansing",
+        "Bubbling application",
+        "Softer skin feel"
+      ],
+      "textureTitle": "From mask to foam",
+      "textureText": "Allow bubbles to form before gentle massage and rinsing.",
+      "fitText": "For a rinse-off cleansing session, used less often if skin feels reactive.",
+      "steps": [
+        {
+          "title": "Spread",
+          "text": "Apply to dry skin, avoiding the eyes."
+        },
+        {
+          "title": "Let it bubble",
+          "text": "Wait for the pack’s stated time and massage gently."
+        },
+        {
+          "title": "Rinse",
+          "text": "Remove thoroughly with lukewarm water, then moisturise."
+        }
+      ],
+      "notes": "Avoid strong rubbing and damaged skin. Close the lid firmly after use.",
+      "ingredients": [
+        "Holy basil",
+        "Rinse-off bubble texture"
+      ],
+      "faq": [
+        {
+          "question": "Leave it on?",
+          "answer": "Rinse it away completely; it is not a moisturiser."
+        },
+        {
+          "question": "Leave the jar open?",
+          "answer": "Close tightly after taking out your portion."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.pcalm.co.kr/product/detail.html?product_no=1216",
+        "title": "P.CALM Korea — Holy Basil Bubble Deep Mask"
+      },
+      {
+        "url": "https://pcalm.us/products/p-calm-holy-basil-sparking-bubble-13-mask",
+        "title": "P.CALM US indexed product"
+      }
+    ],
+    "sourceStatus": "limited",
+    "researchNotes": [
+      "Primary Korean page retrieved; image-heavy directions not fully readable. US indexed page now404. Exact timing deferred to pack rather than copying retailer timing."
+    ],
+    "extraImages": [],
+    "usageBrief": "Apply to dry skin, avoiding the eyes. Wait for the pack’s stated time and massage gently. Remove thoroughly with lukewarm water, then moisturise."
+  },
+  {
+    "id": "TS0075",
+    "brand": "Isntree",
+    "productName": "Isntree - Hyaluronic Acid Moist Cream",
+    "ar": {
+      "name": "كريم الهيالورونيك المرطّب من إزنتري",
+      "tagline": "لمسة أغنى عندما تحتاجين راحة أكثر.",
+      "description": "كريم إزنتري بالهيالورونيك وزبدة الشيا يقدّم قوامًا غنيًا يجمع المرطّبات والمطرّيات لإحساس أنعم وأكثر راحة. يناسب تفضيل البشرة العادية إلى الجافة للكريمات الممتلئة، ويُستخدم بعد السيروم كطبقة الترطيب الأخيرة في روتينكِ.",
+      "benefits": [
+        "تقليل إحساس الجفاف",
+        "نعومة ومرونة الملمس",
+        "طبقة ترطيب أخيرة"
+      ],
+      "textureTitle": "قوام كريمي غني",
+      "textureText": "يناسب تفضيل الكريمات الأثقل من الجل المائي.",
+      "fitText": "خصوصًا للبشرة العادية إلى الجافة التي تحتاج ترطيبًا أكثر غنى.",
+      "steps": [
+        {
+          "title": "بعد السيروم",
+          "text": "خذي كمية مناسبة في نهاية خطوات العناية."
+        },
+        {
+          "title": "وزّعي بالتساوي",
+          "text": "مدّيه على الوجه دون شد البشرة."
+        },
+        {
+          "title": "اربتي بلطف",
+          "text": "اتركيه يمتص، وأتبعيه بواقي الشمس صباحًا."
+        }
+      ],
+      "notes": "اختبريه أولًا إذا كانت بشرتكِ تتحسس من الزيوت أو زبدة الشيا.",
+      "ingredients": [
+        "حمض هيالورونيك",
+        "زبدة الشيا"
+      ],
+      "faq": [
+        {
+          "question": "قبل السيروم أم بعده؟",
+          "answer": "بعد السيروم كخطوة ترطيب أخيرة."
+        },
+        {
+          "question": "هل هو واقي شمس؟",
+          "answer": "هو مرطب؛ أضيفي الحماية الشمسية نهارًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "Isntree Hyaluronic Acid Moist Cream",
+      "tagline": "A richer finish when skin needs comfort.",
+      "description": "Isntree combines hyaluronic acid and shea butter in a rich cream that pairs water-binding ingredients with emollients for a softer, more comfortable skin feel. Use it after serum as the moisturising finish, especially when normal-to-dry skin calls for a fuller-bodied cream.",
+      "benefits": [
+        "Dryness comfort",
+        "Softer skin feel",
+        "Final moisturising layer"
+      ],
+      "textureTitle": "A rich cream texture",
+      "textureText": "A fuller-bodied choice than a watery gel.",
+      "fitText": "Especially normal-to-dry skin seeking a richer moisturiser.",
+      "steps": [
+        {
+          "title": "After serum",
+          "text": "Take an appropriate amount at the moisturising step."
+        },
+        {
+          "title": "Spread",
+          "text": "Smooth evenly over the face without pulling."
+        },
+        {
+          "title": "Pat",
+          "text": "Let it absorb; add sunscreen in the morning."
+        }
+      ],
+      "notes": "Patch test if sensitive to botanical oils or shea butter.",
+      "ingredients": [
+        "Hyaluronic acid",
+        "Shea butter"
+      ],
+      "faq": [
+        {
+          "question": "Before serum?",
+          "answer": "Use after serum as the moisturising finish."
+        },
+        {
+          "question": "Is it sunscreen?",
+          "answer": "No; add separate daytime sun protection."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://isntree-global.com/products/isntree-hyaluronic-acid-moist-cream-100ml",
+        "title": "Isntree — Hyaluronic Acid Moist Cream"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Brand currently describes renewed 10-HA family; no HA count or full INCI copied to prevent version mismatch."
+    ],
+    "extraImages": [],
+    "usageBrief": "Take an appropriate amount at the moisturising step. Smooth evenly over the face without pulling. Let it absorb; add sunscreen in the morning."
+  },
+  {
+    "id": "TS0076",
+    "brand": "Isntree",
+    "productName": "Isntree - Hyaluronic Acid Watery Sun Gel",
+    "ar": {
+      "name": "واقي الشمس الهيالورونيك ووترِي صن جل من إزنتري",
+      "tagline": "حماية نهارية بإحساس مائي.",
+      "description": "ووتري صن جل من إزنتري واقي شمس بمرطّبات هيالورونيك وقوام مائي يسهل توزيعه بالتساوي. يأتي في نهاية عناية الصباح قبل المكياج، لمن تفضّل حماية بإحساس خفيف مع الالتزام بالكمية ودرجة الحماية وتعليمات التجديد على عبوتها.",
+      "benefits": [
+        "حماية شمسية نهارية",
+        "إحساس مائي مرطّب",
+        "سهولة توزيع"
+      ],
+      "textureTitle": "جل مائي للخطوة الأخيرة",
+      "textureText": "يُوزّع بتغطية متساوية؛ رقة الملمس لا تعني تقليل الكمية.",
+      "fitText": "لمن تفضّل واقيًا مرطّبًا بقوام جل؛ درجة الحماية المعتمدة هي المكتوبة على العبوة.",
+      "steps": [
+        {
+          "title": "أكملي الترطيب",
+          "text": "استخدميه آخر خطوة عناية قبل المكياج."
+        },
+        {
+          "title": "غطّي بالتساوي",
+          "text": "وزّعي الكمية الموصى بها على المناطق المكشوفة."
+        },
+        {
+          "title": "جدّدي الحماية",
+          "text": "أعيدي وضعه حسب العبوة والتعرض والتعرق."
+        }
+      ],
+      "notes": "ليس بديلًا عن الظل والملابس الواقية. تجنبي ملامسة العينين.",
+      "ingredients": [
+        "حمض هيالورونيك",
+        "مرشحات شمسية بحسب العبوة"
+      ],
+      "faq": [
+        {
+          "question": "هل هو Daily Sun Gel؟",
+          "answer": "هذا Watery Sun Gel؛ التركيبتان الإقليميتان مختلفتان."
+        },
+        {
+          "question": "هل يكفي تحت المكياج؟",
+          "answer": "طبّقي تغطية كافية قبل المكياج وجددي الحماية نهارًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "Isntree Hyaluronic Acid Watery Sun Gel",
+      "tagline": "Daily protection with a watery feel.",
+      "description": "Isntree Watery Sun Gel pairs sun protection with hyaluronic hydration in a light, easy-to-spread gel. Apply it at the end of morning skincare before makeup, using the full amount and reapplication guidance on your actual tube.",
+      "benefits": [
+        "Daytime UV protection",
+        "Watery hydrating feel",
+        "Even application"
+      ],
+      "textureTitle": "A watery final layer",
+      "textureText": "Light texture still needs the full labelled amount.",
+      "fitText": "For a hydrating gel preference; follow the protection rating on your actual tube.",
+      "steps": [
+        {
+          "title": "Finish skincare",
+          "text": "Apply after moisturiser and before makeup."
+        },
+        {
+          "title": "Cover evenly",
+          "text": "Use the labelled amount on exposed areas."
+        },
+        {
+          "title": "Reapply",
+          "text": "Follow the pack for exposure, sweating and renewal."
+        }
+      ],
+      "notes": "Use shade and protective clothing too. Keep away from the eyes.",
+      "ingredients": [
+        "Hyaluronic acid",
+        "Pack-specific UV filters"
+      ],
+      "faq": [
+        {
+          "question": "The same as Daily Sun Gel?",
+          "answer": "No; Watery and regional Daily formulas differ."
+        },
+        {
+          "question": "Under makeup?",
+          "answer": "Apply adequate coverage first and renew protection during the day."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://isntree-global.com/products/isntree-hyaluronic-acid-watery-sun-gel-50ml",
+        "title": "Isntree — Hyaluronic Acid Watery Sun Gel"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Primary store explicitly distinguishes original Watery Sun Gel from US Daily alternative; no unsupported SPF reassignment."
+    ],
+    "extraImages": [],
+    "usageBrief": "Apply after moisturiser and before makeup. Use the labelled amount on exposed areas. Follow the pack for exposure, sweating and renewal."
+  },
+  {
+    "id": "TS0078",
+    "brand": "SKIN1004",
+    "productName": "SKIN1004 – Madagascar Centella Tone Brightening Capsule Ampoule (50ml)",
+    "ar": {
+      "name": "أمبول سنتيلا تون برايتنينغ من سكين1004",
+      "tagline": "ترطيب خفيف، ومظهر أكثر إشراقًا.",
+      "description": "أمبول الكبسولات من سكين1004 يجمع السنتيلا والنياسيناميد وحمض الترانيكساميك للعناية بمظهر تفاوت اللون والبهتان. تتوزّع كبسولاته الصغيرة مع التربيت ليضيف ترطيبًا خفيفًا قبل الكريم، ضمن روتين تبحثين فيه عن مظهر أكثر إشراقًا وتجانسًا.",
+      "benefits": [
+        "مظهر لون أكثر تجانسًا",
+        "ترطيب خفيف",
+        "عناية بالبهتان"
+      ],
+      "textureTitle": "كبسولات داخل أمبول خفيف",
+      "textureText": "يُفرد على البشرة ثم يُربّت حتى تتوزع التركيبة.",
+      "fitText": "للبشرة العادية والجافة والمختلطة التي تريد خطوة إشراقة قبل المرطب.",
+      "steps": [
+        {
+          "title": "بعد التنظيف",
+          "text": "خذي كمية مناسبة دون ملامسة القطّارة للبشرة."
+        },
+        {
+          "title": "وزّعي واربتي",
+          "text": "مدّيه بالتساوي واربتي بلطف."
+        },
+        {
+          "title": "أكملي العناية",
+          "text": "ضعي المرطب، والحماية الشمسية نهارًا."
+        }
+      ],
+      "notes": "راجعي قائمة العبوة للحساسية؛ الإشراقة نتيجة تجميلية تختلف بين الأشخاص.",
+      "ingredients": [
+        "سنتيلا",
+        "نياسيناميد",
+        "حمض ترانيكساميك"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه أم أغسله؟",
+          "answer": "يُترك على البشرة ضمن خطوات العناية."
+        },
+        {
+          "question": "متى يأتي المرطب؟",
+          "answer": "بعد الأمبول، ثم واقي الشمس في النهار."
+        }
+      ]
+    },
+    "en": {
+      "name": "SKIN1004 Tone Brightening Capsule Ampoule",
+      "tagline": "Light hydration and a brighter-looking finish.",
+      "description": "SKIN1004 pairs centella, niacinamide and tranexamic acid in a capsule ampoule for dullness and uneven-tone appearance care. Spread and pat the small capsules into an even layer before moisturiser for light hydration and a more radiant-looking finish.",
+      "benefits": [
+        "More even-looking tone",
+        "Light hydration",
+        "Dullness care"
+      ],
+      "textureTitle": "Fine capsules in a light ampoule",
+      "textureText": "Spread evenly and pat to distribute the formula.",
+      "fitText": "Normal, dry or combination skin seeking radiance before moisturiser.",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Take an appropriate amount after cleansing."
+        },
+        {
+          "title": "Spread",
+          "text": "Apply evenly and pat gently."
+        },
+        {
+          "title": "Finish",
+          "text": "Follow with moisturiser and daytime sunscreen."
+        }
+      ],
+      "notes": "Check the pack for allergens; cosmetic results vary.",
+      "ingredients": [
+        "Centella",
+        "Niacinamide",
+        "Tranexamic acid"
+      ],
+      "faq": [
+        {
+          "question": "Rinse it off?",
+          "answer": "Leave it on as part of your skincare."
+        },
+        {
+          "question": "When to moisturise?",
+          "answer": "After the ampoule, then daytime sunscreen."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/products/skin1004-madagascar-centella-tone-brightening-capsule-ampoule?variant=40788191314077",
+        "title": "SKIN1004 — Tone Brightening Capsule Ampoule"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Catalog identifies50ml; current manufacturer page also displays100ml/30ml images. Existing catalog pack remains authoritative."
+    ],
+    "extraImages": [],
+    "usageBrief": "Take an appropriate amount after cleansing. Apply evenly and pat gently. Follow with moisturiser and daytime sunscreen."
+  },
+  {
+    "id": "TS0082",
+    "brand": "Mary & May",
+    "productName": "Mary & May – Tranexamic Acid + Glutathione Eye Cream",
+    "ar": {
+      "name": "كريم العين ترانيكساميك وغلوتاثيون من ماري آند ماي",
+      "tagline": "ترطيب ولمسة إشراقة حول العين.",
+      "description": "كريم العين من ماري آند ماي يجمع حمض الترانيكساميك والغلوتاثيون والبانثينول لترطيب المحيط والعناية بمظهر البهتان. قوامه الكريمي الناعم يُوزّع بطبقة خفيفة دون فرك، ليضيف خطوة مخصصة لمظهر تفاوت اللون حول العينين.",
+      "benefits": [
+        "ترطيب محيط العين",
+        "عناية بمظهر البهتان",
+        "ملمس كريمي ناعم"
+      ],
+      "textureTitle": "كريم لمنطقة صغيرة",
+      "textureText": "كمية قليلة تكفي لتوزيع طبقة خفيفة دون فرك.",
+      "fitText": "لمن تبحث عن كريم عين مع عناية بمظهر تفاوت اللون.",
+      "steps": [
+        {
+          "title": "خذي قليلًا",
+          "text": "استخدمي كمية صغيرة بأطراف أصابع نظيفة."
+        },
+        {
+          "title": "على المحيط",
+          "text": "وزّعي على الجلد حول العين بعيدًا عن خط الرموش."
+        },
+        {
+          "title": "اربتي بلطف",
+          "text": "اتركيه يمتص دون سحب الجلد."
+        }
+      ],
+      "notes": "تجنبي ملامسة العين نفسها؛ أوقفيه إذا سبب لسعًا أو تهيجًا.",
+      "ingredients": [
+        "حمض ترانيكساميك",
+        "غلوتاثيون",
+        "بانثينول"
+      ],
+      "faq": [
+        {
+          "question": "هل يزيل كل الهالات؟",
+          "answer": "أسباب الهالات متعددة؛ لا تُضمن نتيجة موحدة."
+        },
+        {
+          "question": "هل يُستخدم داخل العين؟",
+          "answer": "هو للجلد الخارجي حول العين فقط."
+        }
+      ]
+    },
+    "en": {
+      "name": "Mary&May Tranexamic Acid + Glutathione Eye Cream",
+      "tagline": "Moisture and radiance for the eye contour.",
+      "description": "Mary & May combines tranexamic acid, glutathione and panthenol in an eye cream for moisture and dullness appearance care. Its smooth cream texture spreads in a light layer around the external contour without dragging delicate skin.",
+      "benefits": [
+        "Eye-contour moisture",
+        "Dullness appearance care",
+        "Smooth cream feel"
+      ],
+      "textureTitle": "A little cream for a small area",
+      "textureText": "Use a light layer without dragging delicate skin.",
+      "fitText": "For an eye moisturiser with tone-care ingredients.",
+      "steps": [
+        {
+          "title": "Take a little",
+          "text": "Use a small amount with clean fingertips."
+        },
+        {
+          "title": "Place",
+          "text": "Apply around the eye contour, clear of the lash line."
+        },
+        {
+          "title": "Pat",
+          "text": "Allow to absorb with gentle tapping."
+        }
+      ],
+      "notes": "Avoid contact with eyes; stop if stinging or irritation develops.",
+      "ingredients": [
+        "Tranexamic acid",
+        "Glutathione",
+        "Panthenol"
+      ],
+      "faq": [
+        {
+          "question": "Removes every dark circle?",
+          "answer": "Dark circles have varied causes; results are not guaranteed."
+        },
+        {
+          "question": "Inside the eye?",
+          "answer": "Use only on external eye-contour skin."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://marynmay.com/products/mary-may-tranexamic-acid-glutathione-eye-cream-30g",
+        "title": "Mary&May — Tranexamic Acid + Glutathione Eye Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Use a small amount with clean fingertips. Apply around the eye contour, clear of the lash line. Allow to absorb with gentle tapping."
+  },
+  {
+    "id": "TS0085",
+    "brand": "SKIN1004",
+    "productName": "SKIN1004 – Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
+    "ar": {
+      "name": "واقي سنتيلا هيالو سيكا ووتر فيت من سكين1004",
+      "tagline": "واقي شمس بإحساس السيروم.",
+      "description": "هيالو سيكا ووتر فيت من سكين1004 واقي شمس يجمع السنتيلا وحمض الهيالورونيك في قوام خفيف يشبه السيروم. يُفرد بتغطية كافية على الوجه والرقبة بعد الترطيب وقبل المكياج، مع اتباع تفاصيل الحماية والتجديد الخاصة بالنسخة المتاحة لديكِ.",
+      "benefits": [
+        "حماية من الشمس",
+        "ملمس خفيف",
+        "ترطيب مريح"
+      ],
+      "textureTitle": "من قوام السيروم إلى تغطية متساوية",
+      "textureText": "افرديه جيدًا على الوجه والرقبة دون الاكتفاء بطبقة رقيقة جدًا.",
+      "fitText": "لمن تفضّل واقيًا مرطّبًا خفيفًا؛ اتبعي درجة الحماية وتركيبة العبوة المتاحة.",
+      "steps": [
+        {
+          "title": "آخر خطوة عناية",
+          "text": "ضعيه بعد المرطب وقبل المكياج."
+        },
+        {
+          "title": "تغطية كافية",
+          "text": "وزّعي الكمية المبيّنة على العبوة بالتساوي."
+        },
+        {
+          "title": "جدّدي عند الحاجة",
+          "text": "اتبعي تعليمات إعادة التطبيق أثناء النهار."
+        }
+      ],
+      "notes": "اتبعي تفاصيل الحماية والمكونات على عبوتكِ، وجددي التطبيق حسب التعرض والتعرق.",
+      "ingredients": [
+        "سنتيلا",
+        "حمض هيالورونيك"
+      ],
+      "faq": [
+        {
+          "question": "هل هو سيروم فقط؟",
+          "answer": "هو واقي شمس رغم قوامه الشبيه بالسيروم."
+        },
+        {
+          "question": "هل تختلف النسخ؟",
+          "answer": "نعم؛ تفاصيل الحماية والمكونات المرجع فيها عبوتكِ."
+        }
+      ]
+    },
+    "en": {
+      "name": "SKIN1004 Hyalu-Cica Water-Fit Sun Serum",
+      "tagline": "Sun protection with a serum-like feel.",
+      "description": "SKIN1004 Hyalu-Cica Water-Fit Sun Serum combines centella and hyaluronic acid with sun protection in a light, serum-like texture. Spread adequate coverage over face and neck after moisturiser and before makeup, following the rating and reapplication directions on your specific pack.",
+      "benefits": [
+        "Daytime UV protection",
+        "Light serum-like texture",
+        "Hydrating comfort"
+      ],
+      "textureTitle": "Spread into an even layer",
+      "textureText": "Cover face and neck adequately rather than using a very thin film.",
+      "fitText": "For a light hydrating sunscreen; follow your specific pack’s rating and formula.",
+      "steps": [
+        {
+          "title": "Last skincare step",
+          "text": "Apply after moisturiser, before makeup."
+        },
+        {
+          "title": "Cover adequately",
+          "text": "Spread the labelled amount evenly."
+        },
+        {
+          "title": "Renew",
+          "text": "Follow the pack’s daytime reapplication directions."
+        }
+      ],
+      "notes": "Follow your tube’s protection and ingredient details, and reapply for exposure and sweating.",
+      "ingredients": [
+        "Centella",
+        "Hyaluronic acid"
+      ],
+      "faq": [
+        {
+          "question": "Only a serum?",
+          "answer": "It is sunscreen despite the serum-like feel."
+        },
+        {
+          "question": "Do versions differ?",
+          "answer": "Yes. Your pack controls protection and ingredient details."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/products/hyalu-cica-water-fit-sun-serum-uv?variant=51261874995446",
+        "title": "SKIN1004 — Hyalu-Cica Water-Fit Sun Serum UV"
+      },
+      {
+        "url": "https://www.skin1004.com/pages/collection-series",
+        "title": "SKIN1004 — Collection Series"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Current US product is reformulated SPF50; existing Korean catalog hero retained. No filters/PA/US drug claims transferred."
+    ],
+    "extraImages": [],
+    "usageBrief": "Apply after moisturiser, before makeup. Spread the labelled amount evenly. Follow the pack’s daytime reapplication directions."
+  },
+  {
+    "id": "TS0087",
+    "brand": "SKIN1004",
+    "productName": "SKIN1004 – Madagascar Centella Light Cleansing Oil",
+    "ar": {
+      "name": "زيت التنظيف الخفيف بالسنتيلا من سكين1004",
+      "tagline": "ابدئي ببشرة جافة، وانتهي بشطف مريح.",
+      "description": "زيت التنظيف الخفيف من سكين1004 بالسنتيلا وزيوت الجوجوبا ودوار الشمس يذيب المكياج وواقي الشمس كخطوة إزالة أولى. يبدأ على بشرة جافة، ثم يتحوّل مع الماء إلى مستحلب يُشطف جيدًا قبل الغسول المائي عند الحاجة.",
+      "benefits": [
+        "إزالة المكياج وواقي الشمس",
+        "ملمس زيتي خفيف",
+        "يتحول إلى مستحلب"
+      ],
+      "textureTitle": "زيت يتحول إلى حليب",
+      "textureText": "إضافة الماء والتدليك اللطيف جزء أساسي من شطفه.",
+      "fitText": "لمن تريد خطوة تنظيف زيتي قبل الغسول المائي عند الحاجة.",
+      "steps": [
+        {
+          "title": "بيدين جافتين",
+          "text": "دلّكي كمية مناسبة على وجه جاف."
+        },
+        {
+          "title": "أضيفي الماء",
+          "text": "استمري بالتدليك حتى يصبح مستحلبًا حليبيًا."
+        },
+        {
+          "title": "اشطفي بالكامل",
+          "text": "استخدمي ماء فاترًا وأتبعيه بالغسول عند الحاجة."
+        }
+      ],
+      "notes": "تحتوي التركيبة زيوتًا عطرية؛ اختبريها عند الحساسية وتجنبي دخولها العين.",
+      "ingredients": [
+        "سنتيلا",
+        "زيت الجوجوبا",
+        "زيت دوار الشمس"
+      ],
+      "faq": [
+        {
+          "question": "على بشرة مبللة؟",
+          "answer": "ابدئي على وجه ويدين جافتين."
+        },
+        {
+          "question": "هل يُترك كزيت ترطيب؟",
+          "answer": "لا؛ هو منتج تنظيف يجب شطفه."
+        }
+      ]
+    },
+    "en": {
+      "name": "SKIN1004 Centella Light Cleansing Oil",
+      "tagline": "Start dry, then rinse comfortably.",
+      "description": "SKIN1004 combines centella with jojoba and sunflower oils in a light first cleanser for makeup and sunscreen removal. Massage onto dry skin, add water to emulsify, then rinse thoroughly before a water-based cleanser when needed.",
+      "benefits": [
+        "Makeup and SPF removal",
+        "Light oil texture",
+        "Milky emulsification"
+      ],
+      "textureTitle": "Oil that turns milky",
+      "textureText": "Adding water is an important part of removal.",
+      "fitText": "For an oil-cleansing step before a water-based cleanser when needed.",
+      "steps": [
+        {
+          "title": "Start dry",
+          "text": "Massage an appropriate amount onto dry skin with dry hands."
+        },
+        {
+          "title": "Emulsify",
+          "text": "Add water and massage until milky."
+        },
+        {
+          "title": "Rinse",
+          "text": "Rinse completely with lukewarm water."
+        }
+      ],
+      "notes": "Contains aromatic botanical oils; patch test if sensitive and avoid eye contact.",
+      "ingredients": [
+        "Centella",
+        "Jojoba oil",
+        "Sunflower oil"
+      ],
+      "faq": [
+        {
+          "question": "On wet skin?",
+          "answer": "Start with a dry face and hands."
+        },
+        {
+          "question": "Leave on as face oil?",
+          "answer": "No; this cleanser must be rinsed away."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/collections/cleanser/products/skin1004-madagascar-centella-light-cleansing-oil",
+        "title": "SKIN1004 — Centella Light Cleansing Oil"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Massage an appropriate amount onto dry skin with dry hands. Add water and massage until milky. Rinse completely with lukewarm water."
+  },
+  {
+    "id": "TS0102",
+    "brand": "SKIN1004",
+    "productName": "Centella Poremizing Light Gel Cream",
+    "ar": {
+      "name": "جل كريم بورمايزنغ الخفيف من سكين1004",
+      "tagline": "ترطيب منعش بلمسة جل.",
+      "description": "جل كريم بورمايزينغ من سكين1004 يجمع الألوفيرا والنياسيناميد والسنتيلا في ترطيب خفيف بإحساس منعش. يمتد بسهولة كخطوة الترطيب بعد المستحضرات الأخف، لمن تفضّل ملمس الجل والعناية بمظهر النعومة دون قوام الكريمات الغنية.",
+      "benefits": [
+        "ترطيب خفيف",
+        "إحساس منعش",
+        "عناية بمظهر الملمس"
+      ],
+      "textureTitle": "جل خفيف سهل الفرد",
+      "textureText": "يمتد على البشرة ويترك إحساسًا مرطّبًا دون قوام كريمي ثقيل.",
+      "fitText": "لمن تفضّل الجل في خطوة الترطيب، خصوصًا عند تجنب الكريمات الغنية.",
+      "steps": [
+        {
+          "title": "بعد السيروم",
+          "text": "خذي مقدارًا يناسب وجهكِ."
+        },
+        {
+          "title": "افردي بلطف",
+          "text": "وزّعيه بالتساوي على الجلد."
+        },
+        {
+          "title": "ثبّتي الترطيب",
+          "text": "اربتي براحتيكِ وأضيفي واقي الشمس نهارًا."
+        }
+      ],
+      "notes": "لا يغيّر حجم المسام تشريحيًا؛ المقصود العناية بمظهرها وملمس البشرة.",
+      "ingredients": [
+        "ألوفيرا",
+        "نياسيناميد",
+        "سنتيلا"
+      ],
+      "faq": [
+        {
+          "question": "هل هو غسول؟",
+          "answer": "هو مرطب يُترك على البشرة."
+        },
+        {
+          "question": "متى أضعه؟",
+          "answer": "في نهاية العناية وقبل الواقي صباحًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "SKIN1004 Poremizing Light Gel Cream",
+      "tagline": "A refreshing gel moisturiser.",
+      "description": "SKIN1004 Poremizing Light Gel Cream combines aloe, niacinamide and centella in a refreshing moisturising texture. Smooth it over lighter skincare steps when you prefer a gel finish and smoother-looking skin without a rich cream feel.",
+      "benefits": [
+        "Light moisture",
+        "Refreshing feel",
+        "Texture appearance care"
+      ],
+      "textureTitle": "Easy-spreading gel",
+      "textureText": "A lighter-feeling finish than a rich cream.",
+      "fitText": "For those who prefer gel moisturisers over heavy creams.",
+      "steps": [
+        {
+          "title": "After serum",
+          "text": "Take an appropriate amount."
+        },
+        {
+          "title": "Smooth",
+          "text": "Spread gently over the face."
+        },
+        {
+          "title": "Finish",
+          "text": "Pat with your palms; add daytime sunscreen."
+        }
+      ],
+      "notes": "Pore care refers to appearance, not permanently changing pore anatomy.",
+      "ingredients": [
+        "Aloe",
+        "Niacinamide",
+        "Centella"
+      ],
+      "faq": [
+        {
+          "question": "A cleanser?",
+          "answer": "No; leave this moisturiser on."
+        },
+        {
+          "question": "When in the routine?",
+          "answer": "At the moisturising step, before morning sunscreen."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/products/poremizing-light-gel-cream",
+        "title": "SKIN1004 — Poremizing Light Gel Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Take an appropriate amount. Spread gently over the face. Pat with your palms; add daytime sunscreen."
+  },
+  {
+    "id": "TS0103",
+    "brand": "SKIN1004",
+    "productName": "Centella Soothing Cream",
+    "ar": {
+      "name": "كريم سنتيلا المهدّئ من سكين1004",
+      "tagline": "راحة الترطيب بقوام جل كريمي.",
+      "description": "كريم سنتيلا سوذينغ من سكين1004 يجمع السنتيلا والتريهالوز وسيراميد NP لترطيب يومي ودعم حاجز البشرة. ينساب بقوام خفيف وإحساس غير لزج في نهاية العناية، خصوصًا لمن تريد راحة المرطب مع طبقة سهلة التوزيع والتربيت.",
+      "benefits": [
+        "ترطيب يومي",
+        "دعم حاجز البشرة",
+        "إحساس غير لزج"
+      ],
+      "textureTitle": "جل كريمي بلون طبيعي خفيف",
+      "textureText": "ينساب على البشرة ويُربّت عليه ليمتص.",
+      "fitText": "للبشرة العادية أو التي تفضّل ترطيبًا خفيفًا؛ اختبريه إذا كانت شديدة الحساسية.",
+      "steps": [
+        {
+          "title": "بعد العناية",
+          "text": "خذي كمية مناسبة بعد السيروم."
+        },
+        {
+          "title": "وزّعي",
+          "text": "مدّي المرطب برفق على الوجه."
+        },
+        {
+          "title": "اربتي",
+          "text": "اتركيه على البشرة وأتبعيه بالواقي صباحًا."
+        }
+      ],
+      "notes": "اختبري كمية صغيرة عند الحساسية وأوقفيه إذا ظهر تهيج.",
+      "ingredients": [
+        "سنتيلا",
+        "تريهالوز",
+        "سيراميد NP"
+      ],
+      "faq": [
+        {
+          "question": "هل يُشطف؟",
+          "answer": "يبقى على البشرة كمرطب."
+        },
+        {
+          "question": "هل قوامه غني جدًا؟",
+          "answer": "تصفه الشركة بجل كريمي خفيف غير لزج."
+        }
+      ]
+    },
+    "en": {
+      "name": "SKIN1004 Centella Soothing Cream",
+      "tagline": "Comfortable moisture in a gel cream.",
+      "description": "SKIN1004 Centella Soothing Cream brings centella, trehalose and Ceramide NP together for daily hydration and barrier support. Its light, non-sticky feel makes it a comfortable moisturising finish to smooth and pat over the skin.",
+      "benefits": [
+        "Daily hydration",
+        "Barrier support",
+        "Non-sticky feel"
+      ],
+      "textureTitle": "Light naturally tinted gel cream",
+      "textureText": "Smooth over skin, then gently pat.",
+      "fitText": "For normal skin or anyone preferring a light moisturiser; patch test reactive skin.",
+      "steps": [
+        {
+          "title": "After skincare",
+          "text": "Take an appropriate amount after serum."
+        },
+        {
+          "title": "Spread",
+          "text": "Smooth gently over the face."
+        },
+        {
+          "title": "Pat",
+          "text": "Leave on and finish with morning sunscreen."
+        }
+      ],
+      "notes": "Patch test sensitive skin and stop if irritation develops.",
+      "ingredients": [
+        "Centella",
+        "Trehalose",
+        "Ceramide NP"
+      ],
+      "faq": [
+        {
+          "question": "Rinse?",
+          "answer": "Leave it on as your moisturiser."
+        },
+        {
+          "question": "Very rich?",
+          "answer": "The brand describes a light, non-sticky gel cream."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.skin1004.com/collections/cream/products/skin1004-madagascar-centella-soothing-cream",
+        "title": "SKIN1004 — Centella Soothing Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Take an appropriate amount after serum. Smooth gently over the face. Leave on and finish with morning sunscreen."
+  },
+  {
+    "id": "TS0113",
+    "brand": "Dr.Melaxin",
+    "productName": "Dr.Melaxin - Peel Shot Exfoliating Black Rice Ampoule",
+    "ar": {
+      "name": "أمبول بيل شوت المقشّر بالأرز الأسود من دكتور ميلاكسين",
+      "tagline": "تقشير متباعد للعناية بمظهر المسام.",
+      "description": "بيل شوت بالأرز الأسود من دكتور ميلاكسين مقشّر للعناية بالتراكمات السطحية ومظهر المسام، يُستخدم في جلسات متباعدة. يُدلّك على بشرة نظيفة وجافة ثم يُشطف ويُتبع بالترطيب؛ هذا الأمبول خطوة تقشير تُزال بعد الاستخدام.",
+      "benefits": [
+        "إزالة تراكمات سطحية",
+        "العناية بمظهر المسام",
+        "ملمس أنعم بعد الشطف"
+      ],
+      "textureTitle": "قوام تقشير يتكتل بالتدليك",
+      "textureText": "التكتلات تشمل تركيبة المنتج؛ لا تُقدّم بوصفها دليلًا على خروج شوائب عميقة.",
+      "fitText": "لمن تحتاج تقشيرًا سطحيًا متباعدًا؛ تجنبي جمعه مع مقشرات أخرى في الجلسة.",
+      "steps": [
+        {
+          "title": "بشرة جافة",
+          "text": "ضعي كمية مناسبة بعد تنظيف الوجه وتجفيفه."
+        },
+        {
+          "title": "تدليك خفيف",
+          "text": "دلّكي دون ضغط، بعيدًا عن العين والشفاه."
+        },
+        {
+          "title": "شطف وترطيب",
+          "text": "اشطفي جيدًا وأكملي بمرطب؛ اتبعي تكرار العبوة."
+        }
+      ],
+      "notes": "لا يُستخدم على الجلد المتضرر. أوقفيه عند التهيج واستخدمي الحماية الشمسية.",
+      "ingredients": [
+        "مستخلص الأرز",
+        "أحماض AHA وBHA",
+        "نياسيناميد"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه كسيروم؟",
+          "answer": "لا؛ يُشطف بعد التدليك وفق تعليمات المنتج."
+        },
+        {
+          "question": "هل التكتلات كلها جلد ميت؟",
+          "answer": "لا؛ تكتل تركيبة التقشير ليس قياسًا لكمية الجلد."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr.Melaxin Peel Shot Black Rice Exfoliating Ampoule",
+      "tagline": "Occasional exfoliation for pore appearance care.",
+      "description": "Dr.Melaxin Black Rice Peel Shot is an occasional exfoliating step for surface buildup and pore appearance care. Massage gently onto clean, dry skin, rinse and follow with moisturiser. The ampoule format is designed to be removed after use.",
+      "benefits": [
+        "Surface buildup removal",
+        "Pore appearance care",
+        "Softer after rinsing"
+      ],
+      "textureTitle": "A rolling exfoliating texture",
+      "textureText": "Rolled material includes product formula, not proof of deep impurities.",
+      "fitText": "For occasional surface exfoliation, avoiding other exfoliators in the same session.",
+      "steps": [
+        {
+          "title": "Start dry",
+          "text": "Apply after cleansing and drying your face."
+        },
+        {
+          "title": "Massage gently",
+          "text": "Keep clear of eyes and lips; do not scrub."
+        },
+        {
+          "title": "Rinse",
+          "text": "Rinse thoroughly and moisturise; follow labelled frequency."
+        }
+      ],
+      "notes": "Avoid damaged skin. Stop if irritated and use sun protection.",
+      "ingredients": [
+        "Rice extract",
+        "AHA and BHA",
+        "Niacinamide"
+      ],
+      "faq": [
+        {
+          "question": "Leave on as serum?",
+          "answer": "No. Rinse after gentle massage as directed."
+        },
+        {
+          "question": "Are rolls only dead skin?",
+          "answer": "No; rolling formula does not measure dead skin."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://drmelaxin.us/products/peel-shot-glow-black-rice-ampoule",
+        "title": "Dr.Melaxin US — Peel Shot Glow Black Rice Ampoule"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Official brand501-linked US product verified. Rinse-off directions corroborated by original how-to infographic; no dramatic pore/blackhead claims copied."
+    ],
+    "extraImages": [],
+    "usageBrief": "Apply after cleansing and drying your face. Keep clear of eyes and lips; do not scrub. Rinse thoroughly and moisturise; follow labelled frequency."
+  },
+  {
+    "id": "TS0114",
+    "brand": "Dr.Melaxin",
+    "productName": "Dr.Melaxin - Peel Shot Exfoliating White Rice Ampoule",
+    "ar": {
+      "name": "أمبول بيل شوت المقشّر بالأرز الأبيض من دكتور ميلاكسين",
+      "tagline": "شطف لطيف لملمس يبدو أكثر نعومة.",
+      "description": "بيل شوت بالأرز الأبيض من دكتور ميلاكسين مقشّر يُشطف للعناية بالملمس الخشن وإحساس أكثر نعومة بعد الاستخدام. يأخذ مكانه في جلسة تقشير متباعدة على بشرة نظيفة وجافة، مع تدليك خفيف وشطف كامل ثم استكمال العناية بالمرطب.",
+      "benefits": [
+        "عناية بالملمس الخشن",
+        "تقشير سطحي يُشطف",
+        "إحساس مرطّب بعد الاستخدام"
+      ],
+      "textureTitle": "قوام تقشير يتكتل بالتدليك",
+      "textureText": "التكتلات تشمل تركيبة المنتج؛ لا تُقدّم بوصفها دليلًا على خروج شوائب عميقة.",
+      "fitText": "لمن تحتاج تقشيرًا سطحيًا متباعدًا؛ تجنبي جمعه مع مقشرات أخرى في الجلسة.",
+      "steps": [
+        {
+          "title": "بشرة جافة",
+          "text": "ضعي كمية مناسبة بعد تنظيف الوجه وتجفيفه."
+        },
+        {
+          "title": "تدليك خفيف",
+          "text": "دلّكي دون ضغط، بعيدًا عن العين والشفاه."
+        },
+        {
+          "title": "شطف وترطيب",
+          "text": "اشطفي جيدًا وأكملي بمرطب؛ اتبعي تكرار العبوة."
+        }
+      ],
+      "notes": "لا يُستخدم على الجلد المتضرر. أوقفيه عند التهيج واستخدمي الحماية الشمسية.",
+      "ingredients": [
+        "مستخلص الأرز",
+        "أحماض AHA وBHA",
+        "نياسيناميد"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه كسيروم؟",
+          "answer": "لا؛ يُشطف بعد التدليك وفق تعليمات المنتج."
+        },
+        {
+          "question": "هل التكتلات كلها جلد ميت؟",
+          "answer": "لا؛ تكتل تركيبة التقشير ليس قياسًا لكمية الجلد."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr.Melaxin Peel Shot White Rice Exfoliating Ampoule",
+      "tagline": "A gentle rinse for smoother-looking texture.",
+      "description": "Dr.Melaxin White Rice Peel Shot is a rinse-off exfoliator for rough-texture appearance care and a softer skin feel. Use it as an occasional step on clean, dry skin, with gentle massage and thorough rinsing before moisturiser.",
+      "benefits": [
+        "Rough-texture appearance care",
+        "Rinse-off surface exfoliation",
+        "Comfortable moisture feel"
+      ],
+      "textureTitle": "A rolling exfoliating texture",
+      "textureText": "Rolled material includes product formula, not proof of deep impurities.",
+      "fitText": "For occasional surface exfoliation, avoiding other exfoliators in the same session.",
+      "steps": [
+        {
+          "title": "Start dry",
+          "text": "Apply after cleansing and drying your face."
+        },
+        {
+          "title": "Massage gently",
+          "text": "Keep clear of eyes and lips; do not scrub."
+        },
+        {
+          "title": "Rinse",
+          "text": "Rinse thoroughly and moisturise; follow labelled frequency."
+        }
+      ],
+      "notes": "Avoid damaged skin. Stop if irritated and use sun protection.",
+      "ingredients": [
+        "Rice extract",
+        "AHA and BHA",
+        "Niacinamide"
+      ],
+      "faq": [
+        {
+          "question": "Leave on as serum?",
+          "answer": "No. Rinse after gentle massage as directed."
+        },
+        {
+          "question": "Are rolls only dead skin?",
+          "answer": "No; rolling formula does not measure dead skin."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://drmelaxin.us/products/peel-shot-glow-white-rice-ampoule",
+        "title": "Dr.Melaxin US — Peel Shot Glow White Rice Ampoule"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Official brand501-linked US product verified. Rinse-off directions corroborated by original how-to infographic; no dramatic pore/blackhead claims copied."
+    ],
+    "extraImages": [],
+    "usageBrief": "Apply after cleansing and drying your face. Keep clear of eyes and lips; do not scrub. Rinse thoroughly and moisturise; follow labelled frequency."
+  },
+  {
+    "id": "TS0116",
+    "brand": "ETUDE",
+    "productName": "ETUDE - My Lash Serum",
+    "ar": {
+      "name": "سيروم الرموش ماي لاش من إيتود",
+      "tagline": "عناية خفيفة للرموش النظيفة.",
+      "description": "سيروم ماي لاش من إيتود يجمع البانثينول والبيوتين في عناية تجميلية لترطيب الرموش وتحسين مظهرها المعتنى به. تتيح فرشاته توزيع كمية قليلة بتحكّم، ليكون خطوة رموش مستقلة ضمن روتينكِ مع تجنب ملامسة العين نفسها.",
+      "benefits": [
+        "ترطيب الرموش",
+        "مظهر رموش معتنى بها",
+        "تطبيق بالفرشاة"
+      ],
+      "textureTitle": "سيروم شفاف وخفيف",
+      "textureText": "يُستخدم بكمية قليلة دون إغراق الفرشاة.",
+      "fitText": "لمن تبحث عن عناية تجميلية للرموش؛ لا نقدمه كدواء لإنباتها.",
+      "steps": [
+        {
+          "title": "نظّفي الرموش",
+          "text": "أزيلي المكياج وجففي المنطقة."
+        },
+        {
+          "title": "مشّطي برفق",
+          "text": "مرري كمية قليلة على الرموش دون لمس العين."
+        },
+        {
+          "title": "اتركيه يجف",
+          "text": "أغلقي العبوة وحافظي على نظافة الفرشاة."
+        }
+      ],
+      "notes": "لا تضعيه داخل العين أو على جلد متهيج؛ أوقفيه إذا سبب حرقة.",
+      "ingredients": [
+        "بانثينول",
+        "بيوتين"
+      ],
+      "faq": [
+        {
+          "question": "هل هو ماسكارا ملونة؟",
+          "answer": "هو عناية للرموش، لا منتج تلوين."
+        },
+        {
+          "question": "هل يضمن تطويل الرموش؟",
+          "answer": "لا نعد بإنبات أو طول محدد."
+        }
+      ]
+    },
+    "en": {
+      "name": "ETUDE My Lash Serum",
+      "tagline": "Light care for clean lashes.",
+      "description": "ETUDE My Lash Serum combines panthenol and biotin in a cosmetic conditioning step for a cared-for lash appearance. Its brush helps you distribute a small amount with control, keeping the product clear of the eyes themselves.",
+      "benefits": [
+        "Lash conditioning",
+        "Cared-for appearance",
+        "Brush application"
+      ],
+      "textureTitle": "A light clear serum",
+      "textureText": "Use a little without overloading the brush.",
+      "fitText": "For cosmetic lash care, not a medicine for regrowth.",
+      "steps": [
+        {
+          "title": "Clean",
+          "text": "Remove makeup and dry the lash area."
+        },
+        {
+          "title": "Brush gently",
+          "text": "Apply a little to lashes without touching the eye."
+        },
+        {
+          "title": "Let dry",
+          "text": "Close the tube and keep the brush clean."
+        }
+      ],
+      "notes": "Do not apply inside eyes or on irritated skin; stop if burning occurs.",
+      "ingredients": [
+        "Panthenol",
+        "Biotin"
+      ],
+      "faq": [
+        {
+          "question": "Coloured mascara?",
+          "answer": "No; this is a lash-care product."
+        },
+        {
+          "question": "Guaranteed longer lashes?",
+          "answer": "No specific growth or length is promised."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://int.etude.com/shop/category/eye/my-lash-serum-9g/",
+        "title": "ETUDE Global — My Lash Serum"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Remove makeup and dry the lash area. Apply a little to lashes without touching the eye. Close the tube and keep the brush clean."
+  },
+  {
+    "id": "TS0117",
+    "brand": "JUMISO",
+    "productName": "JUMISO - All Day Vitamin Brightening & Balancing Facial Serum",
+    "ar": {
+      "name": "سيروم فيتامين برايتنينغ آند بالانسنغ من جوميسو",
+      "tagline": "إشراقة يومية في طبقة خفيفة.",
+      "description": "سيروم الفيتامين من جوميسو يجمع مستخلص النبق البحري والنياسيناميد وهيالورونات الصوديوم للعناية بمظهر البهتان والترطيب. قوامه الخفيف يسهل إدخاله بعد التونر وقبل الكريم، صباحًا أو مساءً، عندما تريدين خطوة إشراقة سهلة الطبقات.",
+      "benefits": [
+        "مظهر أكثر إشراقًا",
+        "ترطيب خفيف",
+        "قوام سهل الطبقات"
+      ],
+      "textureTitle": "سيروم سريع التوزيع",
+      "textureText": "يوزّع بعد التونر ويُترك قبل المرطب.",
+      "fitText": "لروتين صباحي أو مسائي يحتاج خطوة خفيفة للعناية بمظهر البهتان.",
+      "steps": [
+        {
+          "title": "بعد التنظيف",
+          "text": "ضعي كمية مناسبة بعد التونر."
+        },
+        {
+          "title": "وزّعي بالتساوي",
+          "text": "اربتي على الوجه برفق."
+        },
+        {
+          "title": "أكملي الروتين",
+          "text": "أتبعيه بالمرطب، ثم الواقي صباحًا."
+        }
+      ],
+      "notes": "مستخلص Vitamin Tree ليس تركيزًا مماثلًا لفيتامين C النقي؛ راجعي العبوة للحساسية.",
+      "ingredients": [
+        "مستخلص النبق البحري",
+        "نياسيناميد",
+        "هيالورونات الصوديوم"
+      ],
+      "faq": [
+        {
+          "question": "صباحًا أم مساءً؟",
+          "answer": "تذكر الشركة الاستخدام في الروتينين."
+        },
+        {
+          "question": "هل هو فيتامين C نقي؟",
+          "answer": "تُبنى تركيبته على مستخلص نباتي ومكونات أخرى، لا نفترض تركيزًا نقيًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "Jumiso All Day Vitamin Brightening & Balancing Serum",
+      "tagline": "Everyday radiance in a light layer.",
+      "description": "Jumiso pairs sea-buckthorn extract, niacinamide and sodium hyaluronate in a light serum for dullness appearance care and hydration. Layer it after toner and before cream in a morning or evening routine when you want an easy-to-layer radiance step.",
+      "benefits": [
+        "Brighter-looking skin",
+        "Light hydration",
+        "Easy layering"
+      ],
+      "textureTitle": "A light spreading serum",
+      "textureText": "Apply after toner and leave on before moisturiser.",
+      "fitText": "For a morning or evening routine focused on dull-looking skin.",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Apply an appropriate amount after cleansing and toner."
+        },
+        {
+          "title": "Spread",
+          "text": "Distribute evenly and gently pat."
+        },
+        {
+          "title": "Finish",
+          "text": "Add moisturiser and morning sunscreen."
+        }
+      ],
+      "notes": "Vitamin-tree extract is not equivalent to a pure vitamin C percentage. Check pack allergens.",
+      "ingredients": [
+        "Sea-buckthorn extract",
+        "Niacinamide",
+        "Sodium hyaluronate"
+      ],
+      "faq": [
+        {
+          "question": "Morning or night?",
+          "answer": "The brand describes both morning and evening use."
+        },
+        {
+          "question": "Pure vitamin C?",
+          "answer": "The formula uses plant extract and other ingredients; no pure-C strength is assumed."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://jumiso.us/products/all-day-vitamin-brightening-balancing-serum",
+        "title": "Jumiso US — All Day Vitamin Brightening & Balancing Serum"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Apply an appropriate amount after cleansing and toner. Distribute evenly and gently pat. Add moisturiser and morning sunscreen."
+  },
+  {
+    "id": "TS0118",
+    "brand": "KSECRET",
+    "productName": "KSECRET - SEOUL 1988 Eye Cream : Retinal Liposome 4% + Fermented Bean",
+    "ar": {
+      "name": "كريم العين سيول 1988 ريتينال وفاصولياء مخمّرة",
+      "tagline": "خطوة عين مسائية بتدرّج هادئ.",
+      "description": "كريم العين سيول 1988 من كيه سيكرت يجمع مركّب الريتينال الليبوسومي ومستخلص الفاصولياء المخمّر للعناية بمظهر الخطوط والترطيب. يُربّت منه مقدار صغير على المحيط الخارجي مساءً، ضمن روتين عين يُدخل الريتينويد تدريجيًا وبعيدًا عن الرموش.",
+      "benefits": [
+        "عناية بمظهر الخطوط",
+        "ترطيب محيط العين",
+        "توزيع بكمية قليلة"
+      ],
+      "textureTitle": "كريم لطيف التوزيع",
+      "textureText": "طبقة خفيفة على محيط العين الخارجي دون الاقتراب من الرموش.",
+      "fitText": "لمن تريد إدخال ريتينويد مخصص للعين تدريجيًا ضمن روتينها.",
+      "steps": [
+        {
+          "title": "ابدئي مساءً",
+          "text": "خذي كمية صغيرة بعد خطوات العناية الخفيفة."
+        },
+        {
+          "title": "على المحيط الخارجي",
+          "text": "اربتي برفق بعيدًا عن العين وخط الرموش."
+        },
+        {
+          "title": "زيدي بالتدرّج",
+          "text": "اتبعي تكرار العبوة وتحمل البشرة مع واقي نهاري."
+        }
+      ],
+      "notes": "4% في الاسم تشير إلى مركّب ليبوسومي وليست 4% ريتينال نقي. يُتجنب أثناء الحمل والتخطيط له.",
+      "ingredients": [
+        "مركّب ريتينال ليبوسومي",
+        "مستخلص فاصولياء مخمّر"
+      ],
+      "faq": [
+        {
+          "question": "هل يحتوي 4% ريتينال نقي؟",
+          "answer": "لا؛ الاسم يصف مركّب Retinal Liposome."
+        },
+        {
+          "question": "هل أستخدم كمية كبيرة؟",
+          "answer": "ابدئي بكمية صغيرة وتكرار متدرج."
+        }
+      ]
+    },
+    "en": {
+      "name": "KSECRET Seoul 1988 Retinal Liposome Eye Cream",
+      "tagline": "A gradually introduced evening eye step.",
+      "description": "KSECRET Seoul 1988 Eye Cream pairs a retinal-liposome complex with fermented soybean extract for moisture and fine-line appearance care. Pat a small amount onto the external eye contour at night as you gradually introduce an eye-specific retinoid.",
+      "benefits": [
+        "Fine-line appearance care",
+        "Eye-contour moisture",
+        "Small-amount application"
+      ],
+      "textureTitle": "A smooth cream layer",
+      "textureText": "Pat lightly on the external contour, away from lashes.",
+      "fitText": "For gradually introducing an eye-area retinoid.",
+      "steps": [
+        {
+          "title": "Start at night",
+          "text": "Take a small amount after lighter skincare."
+        },
+        {
+          "title": "Pat around",
+          "text": "Keep clear of eyes and lash lines."
+        },
+        {
+          "title": "Build gradually",
+          "text": "Follow pack frequency and tolerance, with daytime sunscreen."
+        }
+      ],
+      "notes": "The name’s 4% describes a liposome complex, not pure retinal. Avoid during pregnancy or when trying to conceive.",
+      "ingredients": [
+        "Retinal-liposome complex",
+        "Fermented soybean extract"
+      ],
+      "faq": [
+        {
+          "question": "Four percent pure retinal?",
+          "answer": "No; the name refers to Retinal Liposome."
+        },
+        {
+          "question": "Use generously?",
+          "answer": "Start with a small amount and gradual frequency."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.ksecret.com/en/k-secret-seoul-1988-eye-cream-retinal-liposome-4-fermented-bean",
+        "title": "KSECRET — Seoul 1988 Eye Cream"
+      },
+      {
+        "url": "https://ksecretcosmetics.com/products/seoul-1988-eye-cream-retinal-liposome-4-fermented-bean",
+        "title": "KSECRET Cosmetics — Seoul1988 Eye Cream and directions"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Exact manufacturer brand product retrieved; image-heavy instructions. No unverified pure-retinal concentration stated."
+    ],
+    "extraImages": [],
+    "usageBrief": "Take a small amount after lighter skincare. Keep clear of eyes and lash lines. Follow pack frequency and tolerance, with daytime sunscreen."
+  },
+  {
+    "id": "TS0122",
+    "brand": "SOME BY MI",
+    "productName": "SOME BY MI Retinol Intense Reactivating Serum",
+    "ar": {
+      "name": "سيروم ريتينول إنتنس من سوم باي مي",
+      "tagline": "عناية مسائية بمظهر الملمس والخطوط.",
+      "description": "سيروم ريتينول إنتنس من سوم باي مي خطوة ريتينويد للوجه للعناية بمظهر الخطوط والملمس غير المتجانس. تُوزّع كمية صغيرة مساءً قبل إكمال الترطيب، ضمن روتين متدرّج يراعي تحمّل البشرة ويلتزم بالحماية الشمسية نهارًا.",
+      "benefits": [
+        "مظهر ملمس أنعم",
+        "عناية بمظهر الخطوط",
+        "خطوة مسائية تدريجية"
+      ],
+      "textureTitle": "سيروم يُترك على البشرة",
+      "textureText": "تُستخدم كمية صغيرة بعيدًا عن العينين قبل إكمال الترطيب.",
+      "fitText": "لمن تريد خطوة ريتينويد وتستطيع الالتزام بالتدرّج؛ لا تبدئي عدة مكونات قوية معًا.",
+      "steps": [
+        {
+          "title": "ابدئي على مساحة صغيرة",
+          "text": "اختبريه وأدخليه بليالٍ متباعدة حسب العبوة."
+        },
+        {
+          "title": "وزّعي قليلًا",
+          "text": "ضعيه على بشرة نظيفة بعيدًا عن العين والشفاه."
+        },
+        {
+          "title": "رطّبي واحمي",
+          "text": "أكملي بمرطب واستخدمي واقي الشمس نهارًا."
+        }
+      ],
+      "notes": "يُتجنب أثناء الحمل والتخطيط له. خففي التكرار وأوقفيه عند تهيج مستمر.",
+      "ingredients": [
+        "ريتينول",
+        "تركيبة ريتينويد مسائية"
+      ],
+      "faq": [
+        {
+          "question": "هل أبدأ كل ليلة؟",
+          "answer": "اتبعي مرحلة التعوّد المبيّنة على العبوة."
+        },
+        {
+          "question": "هل أضعه حول العين؟",
+          "answer": "اختاري منتج العين المخصص بدل السيروم الوجهي."
+        }
+      ]
+    },
+    "en": {
+      "name": "SOME BY MI Retinol Intense Reactivating Serum",
+      "tagline": "A gradual evening texture-care step.",
+      "description": "SOME BY MI Retinol Intense Reactivating Serum is a facial retinoid step for fine-line and uneven-texture appearance care. Apply a small amount in the evening before moisturiser, building frequency gradually and keeping daytime sun protection part of your routine.",
+      "benefits": [
+        "Smoother-looking texture",
+        "Fine-line appearance care",
+        "Gradual evening step"
+      ],
+      "textureTitle": "A leave-on serum",
+      "textureText": "Use a small amount clear of eyes before moisturising.",
+      "fitText": "For a carefully introduced retinoid routine, avoiding several strong new actives together.",
+      "steps": [
+        {
+          "title": "Test first",
+          "text": "Introduce on spaced evenings following your pack."
+        },
+        {
+          "title": "Apply a little",
+          "text": "Use on clean skin, away from eyes and lips."
+        },
+        {
+          "title": "Finish",
+          "text": "Moisturise and use daytime sunscreen."
+        }
+      ],
+      "notes": "Avoid during pregnancy or when trying to conceive. Stop persistent irritation.",
+      "ingredients": [
+        "Retinol",
+        "Evening retinoid formula"
+      ],
+      "faq": [
+        {
+          "question": "Every night immediately?",
+          "answer": "Follow the pack’s adjustment schedule."
+        },
+        {
+          "question": "Around the eyes?",
+          "answer": "Choose the dedicated eye product instead."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://en.somebymi.com/product/retinol-intense-reactivating-serum-30ml/303/category/380/display/1/",
+        "title": "SOME BY MI — Retinol Intense Reactivating Serum"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Exact serum primary product retrieved; image-heavy ingredient details. No unverified active percentages included."
+    ],
+    "extraImages": [],
+    "usageBrief": "Introduce on spaced evenings following your pack. Use on clean skin, away from eyes and lips. Moisturise and use daytime sunscreen."
+  },
+  {
+    "id": "TS0129",
+    "brand": "Secret Key",
+    "productName": "Secret Key Snow White Spot Gel",
+    "ar": {
+      "name": "جل سنو وايت سبوت من سيكرت كي",
+      "tagline": "عناية محددة، على مساحة محددة.",
+      "description": "سنو وايت سبوت من سيكرت كي جل للعناية الموضعية بمظهر تفاوت اللون، يُوزّع بكمية قليلة على جلد سليم. تحدد تعليمات عبوتكِ مناطق الاستخدام والكمية والتكرار وطريقة الإزالة، لتأخذ هذه الخطوة مكانها بحسب النسخة المتاحة لديكِ.",
+      "benefits": [
+        "تطبيق موضعي",
+        "قوام جل",
+        "سهولة توزيع كمية قليلة"
+      ],
+      "textureTitle": "جل للعناية بمناطق محددة",
+      "textureText": "يُوزّع على جلد سليم وفق تعليمات النسخة المتاحة.",
+      "fitText": "لمن تبحث عن عناية موضعية؛ ليس منتجًا لتغيير لون البشرة الطبيعي.",
+      "steps": [
+        {
+          "title": "راجعي مناطق الاستخدام",
+          "text": "تأكدي من المناطق المسموح بها على العبوة."
+        },
+        {
+          "title": "اختبري قليلًا",
+          "text": "ابدئي بمساحة صغيرة من جلد نظيف وجاف."
+        },
+        {
+          "title": "اتبعي الملصق",
+          "text": "التزمي بالكمية والتكرار وتعليمات الإبقاء أو الشطف."
+        }
+      ],
+      "notes": "تجنبي العينين والأغشية المخاطية والجلد المتهيج. أوقفيه عند الانزعاج.",
+      "ingredients": [
+        "قوام جل",
+        "عناية موضعية خارجية"
+      ],
+      "faq": [
+        {
+          "question": "هل يستخدم على أي منطقة؟",
+          "answer": "فقط المناطق التي تسمح بها تعليمات العبوة."
+        },
+        {
+          "question": "هل تتغير بشرتي فورًا؟",
+          "answer": "لا نعد بنتيجة فورية أو بدرجة لون محددة."
+        }
+      ]
+    },
+    "en": {
+      "name": "Secret Key Snow White Spot Gel",
+      "tagline": "Focused care for selected areas.",
+      "description": "Secret Key Snow White Spot Gel offers targeted appearance care in a gel texture that spreads in a small amount on intact skin. Let your exact pack determine permitted areas, quantity, frequency and removal instructions before adding it to your routine.",
+      "benefits": [
+        "Targeted application",
+        "Gel format",
+        "Small-amount spreading"
+      ],
+      "textureTitle": "A gel for selected areas",
+      "textureText": "Apply to intact skin according to your version’s label.",
+      "fitText": "For localised appearance care, not changing your natural skin colour.",
+      "steps": [
+        {
+          "title": "Check areas",
+          "text": "Read the pack’s permitted application areas."
+        },
+        {
+          "title": "Test a little",
+          "text": "Start on a small clean, dry skin area."
+        },
+        {
+          "title": "Follow the label",
+          "text": "Observe amounts, frequency and removal instructions."
+        }
+      ],
+      "notes": "Avoid eyes, mucous membranes and irritated skin. Stop if uncomfortable.",
+      "ingredients": [
+        "Gel texture",
+        "External targeted care"
+      ],
+      "faq": [
+        {
+          "question": "Any body area?",
+          "answer": "Only areas permitted on the product label."
+        },
+        {
+          "question": "Instant colour change?",
+          "answer": "No instant outcome or particular skin shade is promised."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.secretkey.co.kr/m/product.html?branduid=93",
+        "title": "Secret Key Korea — Snow White Spot Gel"
+      }
+    ],
+    "sourceStatus": "limited",
+    "researchNotes": [
+      "Exact primary product exists; ingredients and detailed use are image-only, not safely extracted. Public copy intentionally avoids invented actives, intimate-area instructions or unverified leave-on timing."
+    ],
+    "extraImages": [],
+    "usageBrief": "Read the pack’s permitted application areas. Start on a small clean, dry skin area. Observe amounts, frequency and removal instructions."
+  },
+  {
+    "id": "TS0155",
+    "brand": "SEAPURI",
+    "productName": "SEAPURI Scalpy Hair Serum 20 ml",
+    "ar": {
+      "name": "سيروم سكالبي لفروة الرأس من سيبوري",
+      "tagline": "عناية بخط الشعر، بلمسة رولر.",
+      "description": "سيروم سكالبي من سيبوري مخصص لفروة الرأس وخط الشعر، ويجمع البانثينول والكيراتين المتحلل والمنثول لإحساس مرطّب ومنتعش. يوزّع رأس الرولر كمية صغيرة مع تدليك خفيف على المنطقة المطلوبة، ثم يُترك السيروم ليجف هوائيًا.",
+      "benefits": [
+        "ترطيب فروة الرأس",
+        "عناية بمظهر الشعر",
+        "تطبيق موضعي بالرولر"
+      ],
+      "textureTitle": "سيروم يوزّعه رأس الرولر",
+      "textureText": "يساعد الرأس على توزيع كمية صغيرة مع تدليك خفيف.",
+      "fitText": "لعناية خط الشعر والمناطق الخفيفة؛ هو مستحضر تجميلي وليس علاجًا لتساقط الشعر.",
+      "steps": [
+        {
+          "title": "حددي المنطقة",
+          "text": "مرريه على خط الشعر أو المنطقة المطلوبة من الفروة."
+        },
+        {
+          "title": "دلّكي بخفة",
+          "text": "استخدمي الرولر دون ضغط أو خدش."
+        },
+        {
+          "title": "اتركيه يجف",
+          "text": "دعيه يجف هوائيًا وأغلقي العبوة."
+        }
+      ],
+      "notes": "ليس للوجه أو الرموش؛ تجنبي الجلد المجروح وملامسة العينين.",
+      "ingredients": [
+        "كيراتين متحلل",
+        "بانثينول",
+        "منثول"
+      ],
+      "faq": [
+        {
+          "question": "هل أغسله فورًا؟",
+          "answer": "تعليمات الشركة تصفه كخطوة تُترك لتجف."
+        },
+        {
+          "question": "هل يضمن إنبات الشعر؟",
+          "answer": "لا؛ لا نقدم ضمان إنبات أو علاجًا للصلع."
+        }
+      ]
+    },
+    "en": {
+      "name": "SEAPURI Scalpy Hair Serum",
+      "tagline": "Roll-on care for your hairline.",
+      "description": "SEAPURI Scalpy is a scalp-and-hairline serum with panthenol, hydrolysed keratin and menthol for a moisturised, refreshed feel. Its roller distributes a small amount with gentle massage over the selected scalp area, then the serum is left to air-dry.",
+      "benefits": [
+        "Scalp moisture",
+        "Cared-for hair appearance",
+        "Targeted roller application"
+      ],
+      "textureTitle": "Serum through a roller head",
+      "textureText": "Use the head for light, controlled distribution.",
+      "fitText": "For hairline and sparse-area cosmetic care, not a hair-loss medicine.",
+      "steps": [
+        {
+          "title": "Target",
+          "text": "Apply along the hairline or chosen scalp area."
+        },
+        {
+          "title": "Massage",
+          "text": "Move the roller gently without scratching."
+        },
+        {
+          "title": "Let dry",
+          "text": "Air dry and close the tube."
+        }
+      ],
+      "notes": "Not for the face or lashes; avoid broken skin and eye contact.",
+      "ingredients": [
+        "Hydrolysed keratin",
+        "Panthenol",
+        "Menthol"
+      ],
+      "faq": [
+        {
+          "question": "Rinse immediately?",
+          "answer": "The brand’s routine leaves it to air dry."
+        },
+        {
+          "question": "Guaranteed regrowth?",
+          "answer": "No regrowth guarantee or baldness treatment is claimed."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://seapuri.us/products/scalpy-hair-serum",
+        "title": "SEAPURI US — Scalpy Hair Serum"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Apply along the hairline or chosen scalp area. Move the roller gently without scratching. Air dry and close the tube."
+  },
+  {
+    "id": "TS0158",
+    "brand": "ETUDE",
+    "productName": "ETUDE - كريم سون جونج 2x باريير المكثف",
+    "ar": {
+      "name": "كريم سون جونغ 2x باريير من إيتود",
+      "tagline": "راحة كريم، لختام روتين بسيط.",
+      "description": "كريم سون جونج 2x من إيتود يجمع البانثينول والماديكاسوسايد مع المطرّيات لدعم راحة حاجز البشرة وتقليل إحساس الشد. قوامه المرطّب الغني يأتي بعد المستحضرات الأخف، ليمنح روتينكِ خطوة ختامية ناعمة خصوصًا عند الشعور بالجفاف.",
+      "benefits": [
+        "ترطيب غني",
+        "دعم حاجز البشرة",
+        "تقليل إحساس الشد"
+      ],
+      "textureTitle": "كريم يغلف البشرة بالترطيب",
+      "textureText": "اختاري كمية مناسبة بدل تكديس طبقات لا تحتاجينها.",
+      "fitText": "لمن تفضّل كريمًا مرطبًا بسيط الخطوة، خصوصًا عند الشعور بالجفاف.",
+      "steps": [
+        {
+          "title": "بعد الخطوات الخفيفة",
+          "text": "خذي كمية مناسبة بعد التونر أو السيروم."
+        },
+        {
+          "title": "وزّعي",
+          "text": "مدّيه برفق على الوجه."
+        },
+        {
+          "title": "اتركيه يمتص",
+          "text": "أضيفي واقي الشمس كآخر خطوة صباحًا."
+        }
+      ],
+      "notes": "تختلف بعض الإصدارات؛ راجعي ملصق عبوتكِ عند وجود حساسية لمكوّن محدد.",
+      "ingredients": [
+        "بانثينول",
+        "ماديكاسوسايد",
+        "مطرّيات"
+      ],
+      "faq": [
+        {
+          "question": "هل يناسب روتين المساء؟",
+          "answer": "ضعيه كخطوة ترطيب أخيرة بعد المستحضرات الأخف."
+        },
+        {
+          "question": "هل أضعه قبل الواقي؟",
+          "answer": "نعم؛ استخدمي الواقي آخر خطوة نهارًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "ETUDE SoonJung 2x Barrier Intensive Cream",
+      "tagline": "A comforting finish to a simple routine.",
+      "description": "ETUDE SoonJung 2x Barrier Cream combines panthenol, madecassoside and emollients for barrier comfort and a less tight skin feel. Apply its rich moisturising texture after lighter products as a soft finishing layer, especially when skin feels dry.",
+      "benefits": [
+        "Rich hydration",
+        "Barrier comfort",
+        "Less tight-feeling skin"
+      ],
+      "textureTitle": "A cushioning cream layer",
+      "textureText": "Use an appropriate amount without unnecessary layering.",
+      "fitText": "For those who prefer a straightforward, richer moisturising step.",
+      "steps": [
+        {
+          "title": "After lighter steps",
+          "text": "Take an appropriate amount after toner or serum."
+        },
+        {
+          "title": "Spread",
+          "text": "Smooth gently over the face."
+        },
+        {
+          "title": "Let absorb",
+          "text": "Add sunscreen as the final morning step."
+        }
+      ],
+      "notes": "Versions can differ; check your pack if you have ingredient sensitivities.",
+      "ingredients": [
+        "Panthenol",
+        "Madecassoside",
+        "Emollients"
+      ],
+      "faq": [
+        {
+          "question": "An evening routine?",
+          "answer": "Use as the moisturising finish after lighter products."
+        },
+        {
+          "question": "Before sunscreen?",
+          "answer": "Yes. Sunscreen remains the last daytime step."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://int.etude.com/shop/category/skin-care/skin-care-all/soonjung-2x-barrier-intensive-cream-60ml/",
+        "title": "ETUDE — SoonJung 2x Barrier Intensive Cream"
+      },
+      {
+        "url": "https://int.etude.com/shop/category/skin-care/skin-care-all/soonjung-2x-barrier-intensive-cream-60ml-2/",
+        "title": "ETUDE — SoonJung updated cream"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Two primary versions with ingredient-list differences retrieved. No blanket hypoallergenic/allergen-free guarantee."
+    ],
+    "extraImages": [],
+    "usageBrief": "Take an appropriate amount after toner or serum. Smooth gently over the face. Add sunscreen as the final morning step."
+  },
+  {
+    "id": "TS0161",
+    "brand": "ROUND LAB",
+    "productName": "ROUND LAB - عصارة البتولا مرطب واقي من الشمس",
+    "ar": {
+      "name": "واقي الشمس المرطّب بعصارة البتولا من راوند لاب",
+      "tagline": "خطوة صباحية تجمع الترطيب والحماية.",
+      "description": "واقي البتولا من راوند لاب يجمع الحماية النهارية وعناية مرطّبة بعصارة البتولا في كريم خفيف يسهل فرده. يُستخدم بعد الترطيب وقبل المكياج بتغطية متساوية، مع الرجوع إلى عبوتكِ لتفاصيل درجة الحماية والمرشحات وإعادة التطبيق.",
+      "benefits": [
+        "حماية نهارية",
+        "ملمس مرطّب",
+        "قوام يسهل فرده"
+      ],
+      "textureTitle": "كريم خفيف لروتين الصباح",
+      "textureText": "تغطية كافية أهم من الاكتفاء بإحساس خفيف على البشرة.",
+      "fitText": "لمن تحب واقيًا مرطبًا؛ تفاصيل SPF والمرشحات تتبع النسخة المكتوبة على عبوتكِ.",
+      "steps": [
+        {
+          "title": "بعد الترطيب",
+          "text": "استخدميه آخر العناية وقبل المكياج."
+        },
+        {
+          "title": "غطّي المناطق المكشوفة",
+          "text": "وزّعي الكمية الموصى بها على الوجه والرقبة."
+        },
+        {
+          "title": "جدّدي الحماية",
+          "text": "اتبعي تعليمات العبوة خلال التعرض للشمس."
+        }
+      ],
+      "notes": "راجعي درجة الحماية على عبوتكِ وجددي التطبيق؛ استخدمي الظل والملابس الواقية أيضًا.",
+      "ingredients": [
+        "عصارة البتولا",
+        "مكونات مرطّبة"
+      ],
+      "faq": [
+        {
+          "question": "هل كل نسخ البتولا واحدة؟",
+          "answer": "لا؛ اختاري بحسب الاسم والعبوة المحددين."
+        },
+        {
+          "question": "هل يلغي الحاجة للتجديد؟",
+          "answer": "لا؛ جددي وفق التعرض وتعليمات المنتج."
+        }
+      ]
+    },
+    "en": {
+      "name": "ROUND LAB Birch Juice Moisturizing Sunscreen",
+      "tagline": "Moisture and protection for your morning.",
+      "description": "ROUND LAB Birch Juice Moisturizing Sunscreen combines daytime protection with birch-sap hydration in an easy-spreading light cream. Apply an even, adequate layer after moisturiser and before makeup, following your actual tube for protection and reapplication details.",
+      "benefits": [
+        "Daytime UV protection",
+        "Hydrating feel",
+        "Easy-spreading cream"
+      ],
+      "textureTitle": "A light morning cream",
+      "textureText": "Adequate coverage matters more than a very thin layer.",
+      "fitText": "For a hydrating sunscreen preference; your tube controls SPF and filter details.",
+      "steps": [
+        {
+          "title": "After moisturiser",
+          "text": "Use last in skincare, before makeup."
+        },
+        {
+          "title": "Cover",
+          "text": "Apply the labelled amount over exposed face and neck."
+        },
+        {
+          "title": "Reapply",
+          "text": "Follow pack instructions during sun exposure."
+        }
+      ],
+      "notes": "Check your tube’s rating and reapply; use shade and protective clothing too.",
+      "ingredients": [
+        "Birch sap",
+        "Hydrating ingredients"
+      ],
+      "faq": [
+        {
+          "question": "All birch versions identical?",
+          "answer": "No; check the exact name and pack."
+        },
+        {
+          "question": "No reapplication needed?",
+          "answer": "Renew protection as exposure and the label require."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://roundlab.com/products/birch-moisturizing-uv-sunscreen",
+        "title": "ROUND LAB — Birch sunscreen product family"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "US primary page currently refers to regional UVLock formulation/rating, not necessarily the catalog Korean pack. Core birch/hydration/UV-use facts retained without guessed SPF/PA/filters."
+    ],
+    "extraImages": [],
+    "usageBrief": "Use last in skincare, before makeup. Apply the labelled amount over exposed face and neck. Follow pack instructions during sun exposure."
+  },
+  {
+    "id": "TS0163",
+    "brand": "Derma:B",
+    "productName": "Derma: B - Everyday Sun Block 200 ml",
+    "ar": {
+      "name": "واقي إيفري داي للجسم من ديرما بي",
+      "tagline": "لا تنسي حماية اليدين والذراعين.",
+      "description": "إيفري داي صن بلوك من ديرما بي واقي شمس مرطّب للعناية بالمناطق المكشوفة من الجسم. قوامه سهل التوزيع وعبوته العملية يجعلان تغطية الأطراف جزءًا من استعدادكِ للخروج، مع الالتزام بكمية وتكرار التطبيق الموضّحين على النسخة المتاحة.",
+      "benefits": [
+        "حماية للجسم",
+        "سهولة التوزيع",
+        "إحساس مرطّب"
+      ],
+      "textureTitle": "قوام قابل للفرد على مساحات أوسع",
+      "textureText": "وزّعيه بالتساوي على الأطراف والمناطق المكشوفة.",
+      "fitText": "لمن تحتاج واقيًا للجسم؛ اتبعي تخصيص عبوتكِ عند استخدامه على الوجه.",
+      "steps": [
+        {
+          "title": "قبل التعرض",
+          "text": "ضعي الكمية والوقت الموصى بهما على العبوة."
+        },
+        {
+          "title": "تغطية متساوية",
+          "text": "وزّعي على الذراعين والساقين وبقية الجلد المكشوف."
+        },
+        {
+          "title": "أعيدي التطبيق",
+          "text": "جددي حسب العبوة وبعد التعرق أو السباحة."
+        }
+      ],
+      "notes": "لا نفترض مقاومة الماء؛ استخدمي الظل والملابس الواقية كذلك.",
+      "ingredients": [
+        "تركيبة شمسية مرطّبة",
+        "عناية بحاجز البشرة"
+      ],
+      "faq": [
+        {
+          "question": "هل هو للجسم فقط؟",
+          "answer": "راجعي عبوتكِ لتأكيد السماح باستخدامه على الوجه."
+        },
+        {
+          "question": "هل هو مقاوم للماء؟",
+          "answer": "لا نفترض ذلك دون نص واضح على العبوة."
+        }
+      ]
+    },
+    "en": {
+      "name": "Derma:B Everyday Sun Block",
+      "tagline": "Remember your hands and arms too.",
+      "description": "Derma:B Everyday Sun Block is a moisturising sunscreen for exposed areas of the body. Its easy-spreading texture and practical pack fit into getting ready for daytime exposure, using the amount and reapplication guidance on your specific version.",
+      "benefits": [
+        "Body UV protection",
+        "Easy spreading",
+        "Moisturising feel"
+      ],
+      "textureTitle": "Spread over broader areas",
+      "textureText": "Cover exposed limbs evenly.",
+      "fitText": "For body sun care; check your pack before facial use.",
+      "steps": [
+        {
+          "title": "Before exposure",
+          "text": "Follow the labelled amount and lead time."
+        },
+        {
+          "title": "Cover evenly",
+          "text": "Apply over arms, legs and other exposed skin."
+        },
+        {
+          "title": "Renew",
+          "text": "Reapply as labelled, including after sweating or swimming."
+        }
+      ],
+      "notes": "Water resistance is not assumed. Use shade and protective clothing too.",
+      "ingredients": [
+        "Moisturising sun formula",
+        "Skin-barrier care"
+      ],
+      "faq": [
+        {
+          "question": "Body only?",
+          "answer": "Check your version’s label for facial use."
+        },
+        {
+          "question": "Water-resistant?",
+          "answer": "Only rely on this if explicitly stated on the pack."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.neopharm.co.kr/en/brand-dermab.do",
+        "title": "NEOPHARM — Derma:B brand and Everyday Sunblock"
+      },
+      {
+        "url": "https://www.newswire.co.kr/newsRead.php?no=986070",
+        "title": "NEOPHARM product announcement — renewed Everyday Sun Block"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology — applying and reapplying sunscreen"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Manufacturer official site links to dermab.co.kr but product site returned502. Manufacturer-issued release on Newswire retrieved. Public copy avoids blanket child-safety and waterproof claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Follow the labelled amount and lead time. Apply over arms, legs and other exposed skin. Reapply as labelled, including after sweating or swimming."
+  },
+  {
+    "id": "TS0165",
+    "brand": "TIRTIR",
+    "productName": "TIRTIR - Niacinamide 20% Serum",
+    "ar": {
+      "name": "سيروم نياسيناميد 20% من تيرتير",
+      "tagline": "تركيز واضح، وخطوة تبدأ ببطء.",
+      "description": "سيروم تيرتير يجمع نياسيناميد 20% وألفا أربوتين ومكونات ترطيب للعناية بمظهر تفاوت اللون والملمس. تُوزّع قطرات قليلة قبل الكريم مع اختبار التحمل أولًا؛ فهو تركيز مرتفع، وتضم قائمته الرسمية ريتينولًا أيضًا ضمن التركيبة.",
+      "benefits": [
+        "عناية بتفاوت اللون",
+        "مظهر ملمس أنعم",
+        "ترطيب خفيف"
+      ],
+      "textureTitle": "سيروم خفيف سريع الفرد",
+      "textureText": "قطرات قليلة تُوزّع قبل الكريم؛ التركيز المرتفع يحتاج اختبار الملاءمة.",
+      "fitText": "لمن اعتادت النياسيناميد وتريد تركيزًا أعلى؛ ليس بالضرورة الخيار الأول للبشرة المتفاعلة.",
+      "steps": [
+        {
+          "title": "اختبري أولًا",
+          "text": "ابدئي بكمية قليلة وعلى مساحة صغيرة."
+        },
+        {
+          "title": "بعد التونر",
+          "text": "وزّعي 2–3 قطرات واربتي بلطف."
+        },
+        {
+          "title": "أكملي الترطيب",
+          "text": "ضعي المرطب والحماية الشمسية في النهار."
+        }
+      ],
+      "notes": "قائمة الشركة تتضمن ريتينول؛ يُتجنب أثناء الحمل والتخطيط له. أوقفيه عند التهيج.",
+      "ingredients": [
+        "نياسيناميد 20%",
+        "ألفا أربوتين",
+        "ريتينول"
+      ],
+      "faq": [
+        {
+          "question": "هل هو نياسيناميد فقط؟",
+          "answer": "لا؛ تتضمن التركيبة ريتينول ومكونات أخرى."
+        },
+        {
+          "question": "هل أزيد القطرات؟",
+          "answer": "التزمي بكمية قليلة ولا تفترضي أن الأكثر أفضل."
+        }
+      ]
+    },
+    "en": {
+      "name": "TIRTIR Niacinamide 20% Serum",
+      "tagline": "A high-strength step, introduced slowly.",
+      "description": "TIRTIR pairs 20% niacinamide with alpha-arbutin and hydrating ingredients for uneven-tone and texture appearance care. Use a few drops before cream after testing tolerance. This high-strength formula also includes retinol in the official ingredient list.",
+      "benefits": [
+        "Uneven-tone appearance care",
+        "Smoother-looking texture",
+        "Light hydration"
+      ],
+      "textureTitle": "A light spreading serum",
+      "textureText": "A few drops go before cream; high strength needs tolerance testing.",
+      "fitText": "For experienced niacinamide users seeking higher strength, not automatically reactive skin’s first choice.",
+      "steps": [
+        {
+          "title": "Patch test",
+          "text": "Start with a little on a small area."
+        },
+        {
+          "title": "After toner",
+          "text": "Spread 2–3 drops and pat gently."
+        },
+        {
+          "title": "Finish",
+          "text": "Follow with moisturiser and daytime sun protection."
+        }
+      ],
+      "notes": "The official ingredient list includes retinol. Avoid during pregnancy or when trying to conceive.",
+      "ingredients": [
+        "Niacinamide 20%",
+        "Alpha-arbutin",
+        "Retinol"
+      ],
+      "faq": [
+        {
+          "question": "Only niacinamide?",
+          "answer": "No; the formula includes retinol and other ingredients."
+        },
+        {
+          "question": "More drops better?",
+          "answer": "Keep to a small amount rather than overapplying."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://tirtir.global/products/niacinamide-20-serum",
+        "title": "TIRTIR — Niacinamide 20% Serum"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Retinol is present in official INCI despite niacinamide-led title. Avoid pregnancy-safe claims or framing solely as vitaminB3."
+    ],
+    "extraImages": [],
+    "usageBrief": "Start with a little on a small area. Spread 2–3 drops and pat gently. Follow with moisturiser and daytime sun protection."
+  },
+  {
+    "id": "TS0166",
+    "brand": "PURITO SEOUL",
+    "productName": "PURITO SEOUL - Wonder Releaf Centella Serum Unscented 60ml",
+    "ar": {
+      "name": "سيروم وندر ريليف سنتيلا غير المعطّر من بيوريتو",
+      "tagline": "خطوة هادئة لراحة البشرة.",
+      "description": "سيروم وندر ريليف غير المعطّر من بوريتو يجمع السنتيلا والبانثينول والنياسيناميد لإضافة ترطيب وراحة للملمس. يُربّت بعد التونر وقبل الكريم، لمن تفضّل خطوة سيروم دون عطر صناعي مع اختبار الملاءمة وفق حساسية بشرتها.",
+      "benefits": [
+        "ترطيب مريح",
+        "عناية بالسنتيلا",
+        "دون عطر صناعي"
+      ],
+      "textureTitle": "سيروم سهل التوزيع",
+      "textureText": "يُربّت بعد التونر قبل الكريم.",
+      "fitText": "لمن تفضّل النسخة غير المعطّرة؛ الاختبار الموضعي مهم حتى للبشرة الحساسة.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "خذي 2–3 ضغطات وفق الحاجة والعبوة."
+        },
+        {
+          "title": "وزّعي",
+          "text": "مدّيه على الوجه والرقبة برفق."
+        },
+        {
+          "title": "اربتي وأكملي",
+          "text": "اتركيه يمتص ثم استخدمي المرطب."
+        }
+      ],
+      "notes": "الإصدارات المجددة قد تختلف في النسب؛ راجعي عبوتكِ للمكونات الكاملة.",
+      "ingredients": [
+        "سنتيلا",
+        "بانثينول",
+        "نياسيناميد"
+      ],
+      "faq": [
+        {
+          "question": "هل هو النسخة المعطّرة؟",
+          "answer": "هذه نسخة Unscented المبيّنة باسم المنتج."
+        },
+        {
+          "question": "هل يحل محل المرطب؟",
+          "answer": "يمكنكِ إتباعه بكريم يناسب احتياج بشرتكِ."
+        }
+      ]
+    },
+    "en": {
+      "name": "PURITO Wonder Releaf Centella Serum Unscented",
+      "tagline": "A calm step for skin comfort.",
+      "description": "PURITO Wonder Releaf Centella Serum Unscented combines centella, panthenol and niacinamide for hydration and a comfortable skin feel. Pat it on after toner and before cream when you prefer a serum without synthetic fragrance, while still checking individual tolerance.",
+      "benefits": [
+        "Comforting hydration",
+        "Centella care",
+        "No synthetic fragrance"
+      ],
+      "textureTitle": "An easy-spreading serum",
+      "textureText": "Pat on after toner and before cream.",
+      "fitText": "For an unscented preference; sensitive skin still needs patch testing.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Use 2–3 pumps as appropriate for your pack."
+        },
+        {
+          "title": "Spread",
+          "text": "Apply gently over face and neck."
+        },
+        {
+          "title": "Pat and finish",
+          "text": "Let absorb, then moisturise."
+        }
+      ],
+      "notes": "Renewed versions may differ in percentages; check the full pack ingredients.",
+      "ingredients": [
+        "Centella",
+        "Panthenol",
+        "Niacinamide"
+      ],
+      "faq": [
+        {
+          "question": "The fragranced version?",
+          "answer": "This listing identifies the Unscented version."
+        },
+        {
+          "question": "Replace moisturiser?",
+          "answer": "Follow with a cream if your skin needs it."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://purito.com/product/wonder-releaf-centella-serum-unscented/?sort=best",
+        "title": "PURITO SEOUL — Wonder Releaf Centella Serum Unscented"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Official renewed serum includes changed centella content and extracellular vesicles. Avoid exact percentages and new-version-only claims for existing60ml stock."
+    ],
+    "extraImages": [],
+    "usageBrief": "Use 2–3 pumps as appropriate for your pack. Apply gently over face and neck. Let absorb, then moisturise."
+  },
+  {
+    "id": "TS0174",
+    "brand": "JUMISO",
+    "productName": "JUMISO - Niacinamide 5+ Overnight Cream 50 ml",
+    "ar": {
+      "name": "كريم نياسيناميد 5+ الليلي من جوميسو",
+      "tagline": "اختمي المساء بطبقة ترطيب.",
+      "description": "كريم نياسيناميد 5+ الليلي من جوميسو يتميّز بكبسولات داخل قوام جل، مع السكوالان وحمض الترانيكساميك لعناية مرطّبة ومظهر لون أكثر تجانسًا. يُوزّع بلطف في خطوة ترطيب المساء حتى تتجانس طبقته، لينهي روتينكِ بالعناية بالبهتان والملمس.",
+      "benefits": [
+        "ترطيب ليلي",
+        "مظهر لون أكثر تجانسًا",
+        "قوام جل وكبسولات"
+      ],
+      "textureTitle": "الكبسولات تندمج أثناء التوزيع",
+      "textureText": "وزّعي بلطف حتى تتجانس الطبقة على البشرة.",
+      "fitText": "لمن تريد كريمًا ليليًا مع عناية بمظهر تفاوت اللون.",
+      "steps": [
+        {
+          "title": "في نهاية المساء",
+          "text": "خذي كمية مناسبة بعد الخطوات الأخف."
+        },
+        {
+          "title": "امزجي ووزّعي",
+          "text": "ادمجي الكبسولات بلطف أثناء الفرد."
+        },
+        {
+          "title": "اتركيه على البشرة",
+          "text": "أكملي بواقي الشمس صباحًا."
+        }
+      ],
+      "notes": "اختبري الملاءمة ولا تضيفي عدة مستحضرات جديدة في الليلة نفسها.",
+      "ingredients": [
+        "نياسيناميد",
+        "سكوالان",
+        "حمض ترانيكساميك"
+      ],
+      "faq": [
+        {
+          "question": "هل يُشطف كقناع؟",
+          "answer": "هو كريم ليلي يُترك على البشرة."
+        },
+        {
+          "question": "هل الكبسولات حبيبات تقشير؟",
+          "answer": "ليست دعوة لفرك البشرة أو تقشيرها."
+        }
+      ]
+    },
+    "en": {
+      "name": "Jumiso Niacinamide 5+ Overnight Cream",
+      "tagline": "Finish your evening with moisture.",
+      "description": "Jumiso Niacinamide 5+ Overnight Cream places capsules within a gel texture, with squalane and tranexamic acid for moisture and more even-looking tone. Smooth it into a uniform layer at the evening moisturising step for dullness and skin-feel care.",
+      "benefits": [
+        "Overnight moisture",
+        "More even-looking tone",
+        "Gel-and-capsule texture"
+      ],
+      "textureTitle": "Capsules blend as you spread",
+      "textureText": "Smooth gently until the layer feels even.",
+      "fitText": "For a night cream with uneven-tone appearance care.",
+      "steps": [
+        {
+          "title": "Last evening step",
+          "text": "Take an appropriate amount after lighter products."
+        },
+        {
+          "title": "Blend and spread",
+          "text": "Gently blend the capsules while applying."
+        },
+        {
+          "title": "Leave on",
+          "text": "Use sun protection the next morning."
+        }
+      ],
+      "notes": "Patch test and avoid introducing several new products on the same night.",
+      "ingredients": [
+        "Niacinamide",
+        "Squalane",
+        "Tranexamic acid"
+      ],
+      "faq": [
+        {
+          "question": "Rinse like a mask?",
+          "answer": "No; leave this night cream on."
+        },
+        {
+          "question": "Exfoliating grains?",
+          "answer": "The capsules are not an instruction to scrub."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://jumiso.us/collections/moisturizers/products/new-niacinamide-5-overnight-cream-50ml",
+        "title": "Jumiso — Niacinamide 5+ Overnight Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Take an appropriate amount after lighter products. Gently blend the capsules while applying. Use sun protection the next morning."
+  },
+  {
+    "id": "TS0175",
+    "brand": "Haruharu Wonder",
+    "productName": "Haruharu WONDER - كريم العين باكوتشيول من الأرز الأسود 20 مل",
+    "ar": {
+      "name": "كريم العين بالأرز الأسود والباكوتشيول من هارو هارو",
+      "tagline": "ترطيب لطيف قبل لمسة الكونسيلر.",
+      "description": "كريم العين من هاروهارو وندر يجمع الأرز الأسود المخمّر والباكوتشيول في قوام خفيف وناعم للعناية بالجفاف ومظهر الخطوط. يُربّت حول المحيط الخارجي ويُترك ليمتص قبل المكياج، لمن تفضّل عناية عين بالباكوتشيول وترطيبًا خفيف الإحساس.",
+      "benefits": [
+        "ترطيب محيط العين",
+        "ملمس خفيف",
+        "عناية بمظهر الخطوط"
+      ],
+      "textureTitle": "قوام حليبي خفيف",
+      "textureText": "يُربّت برفق حتى يمتص قبل المكياج.",
+      "fitText": "لمن تفضّل كريم عين بالباكوتشيول بدل منتج بعنوان ريتينول.",
+      "steps": [
+        {
+          "title": "بعد العناية",
+          "text": "خذي كمية مناسبة بأطراف أصابع نظيفة."
+        },
+        {
+          "title": "وزّعي حول العين",
+          "text": "اربتي على الجلد الخارجي دون شد."
+        },
+        {
+          "title": "اتركيه يمتص",
+          "text": "انتظري قبل وضع الكونسيلر."
+        }
+      ],
+      "notes": "اختبري الملاءمة وأوقفيه عند التهيج؛ أبعديه عن العين نفسها.",
+      "ingredients": [
+        "باكوتشيول",
+        "أرز أسود مخمّر",
+        "مستخلص خيزران"
+      ],
+      "faq": [
+        {
+          "question": "هل هو ريتينول؟",
+          "answer": "لا؛ يحتوي باكوتشيول وهو مكوّن مختلف."
+        },
+        {
+          "question": "هل يناسب تحت المكياج؟",
+          "answer": "اتركي طبقة صغيرة تمتص قبل الكونسيلر."
+        }
+      ]
+    },
+    "en": {
+      "name": "Haruharu Wonder Black Rice Bakuchiol Eye Cream",
+      "tagline": "Light moisture before concealer.",
+      "description": "Haruharu WONDER pairs fermented black rice with bakuchiol in a light, smooth eye cream for dryness and fine-line appearance care. Pat around the external contour and let it absorb before makeup when you prefer a bakuchiol eye step with light-feeling moisture.",
+      "benefits": [
+        "Eye-contour moisture",
+        "Light milky feel",
+        "Fine-line appearance care"
+      ],
+      "textureTitle": "A light milky texture",
+      "textureText": "Pat gently and let absorb before makeup.",
+      "fitText": "For those preferring a bakuchiol eye cream to a retinol-labelled option.",
+      "steps": [
+        {
+          "title": "After skincare",
+          "text": "Take a suitable amount with clean fingertips."
+        },
+        {
+          "title": "Pat around",
+          "text": "Apply to the external contour without pulling."
+        },
+        {
+          "title": "Let absorb",
+          "text": "Wait before adding concealer."
+        }
+      ],
+      "notes": "Patch test and stop if irritated; keep out of the eyes.",
+      "ingredients": [
+        "Bakuchiol",
+        "Fermented black rice",
+        "Bamboo extract"
+      ],
+      "faq": [
+        {
+          "question": "Is this retinol?",
+          "answer": "No. Bakuchiol is a different ingredient."
+        },
+        {
+          "question": "Under makeup?",
+          "answer": "Let a small layer absorb before concealer."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-bakuchiol-eye-cream-20ml",
+        "title": "Haruharu Wonder — Black Rice Bakuchiol Eye Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Take a suitable amount with clean fingertips. Apply to the external contour without pulling. Wait before adding concealer."
+  },
+  {
+    "id": "TS0179",
+    "brand": "Centellian24",
+    "productName": "Centellian24 - Madeca Cream Time Reverse 50 ml",
+    "ar": {
+      "name": "كريم ماديكا تايم ريفيرس من سنتيليان24",
+      "tagline": "كريم غني لراحة نهاية اليوم.",
+      "description": "كريم ماديكا تايم ريفيرس من سنتيليان24 يجمع مركّب السنتيلا وسيراميد NP في مرطب غني لدعم حاجز البشرة ومظهر النعومة. يُفرد في نهاية العناية بطبقة مناسبة دون فرك، لمن تحب القوام الممتلئ مع مراجعة مكونات هذه النسخة، ومنها الريتينول والعطر.",
+      "benefits": [
+        "ترطيب غني",
+        "دعم حاجز البشرة",
+        "مظهر أكثر نعومة"
+      ],
+      "textureTitle": "كريم ممتلئ القوام",
+      "textureText": "طبقة مناسبة تُفرد في نهاية العناية دون فرك.",
+      "fitText": "لمن تحب الكريمات الغنية؛ راجعي النسخة عند الحساسية للعطور والزيوت العطرية.",
+      "steps": [
+        {
+          "title": "نهاية العناية",
+          "text": "خذي كمية صغيرة بعد الخطوات الأخف."
+        },
+        {
+          "title": "وزّعي بالتساوي",
+          "text": "مدّيه على الوجه برفق."
+        },
+        {
+          "title": "اربتي واتركيه",
+          "text": "راقبي التحمل واستخدمي واقي الشمس نهارًا."
+        }
+      ],
+      "notes": "قائمة Time Reverse الرسمية تتضمن ريتينول وعطورًا؛ يُتجنب أثناء الحمل والتخطيط له.",
+      "ingredients": [
+        "مركّب سنتيلا",
+        "سيراميد NP",
+        "ريتينول"
+      ],
+      "faq": [
+        {
+          "question": "هل هو كل إصدارات ماديكا؟",
+          "answer": "لا؛ هذه نسخة Time Reverse المحددة."
+        },
+        {
+          "question": "هل يخلو من الريتينول؟",
+          "answer": "قائمة الشركة لهذه النسخة تتضمن ريتينول."
+        }
+      ]
+    },
+    "en": {
+      "name": "Centellian24 Madeca Cream Time Reverse",
+      "tagline": "A rich, comforting finish.",
+      "description": "Centellian24 Madeca Cream Time Reverse combines a centella complex and Ceramide NP in a rich moisturiser for barrier support and a smoother-looking finish. Spread a comfortable layer at the end of skincare, checking this version’s ingredient list, which includes retinol and fragrance.",
+      "benefits": [
+        "Rich moisture",
+        "Barrier support",
+        "Smoother appearance"
+      ],
+      "textureTitle": "A full-bodied cream",
+      "textureText": "Spread an appropriate layer at the end of skincare.",
+      "fitText": "For rich-cream preferences; check fragrance and essential-oil sensitivities.",
+      "steps": [
+        {
+          "title": "Finish skincare",
+          "text": "Take a small amount after lighter steps."
+        },
+        {
+          "title": "Spread evenly",
+          "text": "Smooth gently over the face."
+        },
+        {
+          "title": "Pat and leave",
+          "text": "Monitor tolerance and use daytime sunscreen."
+        }
+      ],
+      "notes": "Official Time Reverse ingredients include retinol and fragrance. Avoid during pregnancy or when trying to conceive.",
+      "ingredients": [
+        "Centella complex",
+        "Ceramide NP",
+        "Retinol"
+      ],
+      "faq": [
+        {
+          "question": "Every Madeca version?",
+          "answer": "No; this is the specified Time Reverse version."
+        },
+        {
+          "question": "Retinol-free?",
+          "answer": "The brand’s list for this version includes retinol."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://centellian24usa.com/products/centellian-24-madeca-cream-time-reverse-korean-skincare-centella-asiatica",
+        "title": "Centellian24 — Madeca Cream Time Reverse"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Manufacturer current Time Reverse INCI includes retinol and fragrance/essential oils. No blanket sensitive-skin or pregnancy-safe claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Take a small amount after lighter steps. Smooth gently over the face. Monitor tolerance and use daytime sunscreen."
+  },
+  {
+    "id": "TS0180",
+    "brand": "KSECRET",
+    "productName": "KSECRET - Collagen Boosting Secret Sleeping Mask 60 ml",
+    "ar": {
+      "name": "ماسك النوم كولاجين بوستنغ من كيه سيكرت",
+      "tagline": "لمسة المساء الأخيرة، وشطف صباحي.",
+      "description": "ماسك النوم كولاجين بوستنغ من كيه سيكرت يضيف طبقة ترطيب ختامية بقوام يحتوي كبسولات تندمج مع التوزيع. يُمرر بلطف في نهاية عناية المساء حتى تتجانس الطبقة، ويُترك خلال الليل ثم يُشطف صباحًا قبل استكمال روتينكِ.",
+      "benefits": [
+        "تكملة ترطيب المساء",
+        "ملمس أنعم",
+        "كبسولات تندمج بالتوزيع"
+      ],
+      "textureTitle": "كبسولات ضمن طبقة ماسك النوم",
+      "textureText": "دلّكي بخفة حتى تتوزع الكبسولات تمامًا.",
+      "fitText": "لمن تفضّل ماسكًا ليليًا يُشطف في الصباح بدل ماسك ورقي.",
+      "steps": [
+        {
+          "title": "قبل النوم",
+          "text": "ضعيه على الوجه في نهاية العناية."
+        },
+        {
+          "title": "وزّعي الكبسولات",
+          "text": "مرري الأصابع بلطف حتى تندمج."
+        },
+        {
+          "title": "صباحًا",
+          "text": "اشطفي الوجه وأكملي عناية الصباح."
+        }
+      ],
+      "notes": "ليس قناعًا يُنزع كطبقة؛ راجعي مكونات نسختكِ عند الحساسية.",
+      "ingredients": [
+        "قوام ماسك نوم",
+        "كبسولات ضمن التركيبة"
+      ],
+      "faq": [
+        {
+          "question": "متى أشطفه؟",
+          "answer": "توضح إرشادات الشركة الشطف في الصباح."
+        },
+        {
+          "question": "هل أنزعه كقناع تقشير؟",
+          "answer": "لا؛ لا تُسحبي طبقة جافة عن البشرة."
+        }
+      ]
+    },
+    "en": {
+      "name": "KSECRET Collagen Boosting Secret Sleeping Mask",
+      "tagline": "Your last evening layer, rinsed in the morning.",
+      "description": "KSECRET Collagen Boosting Secret Sleeping Mask adds a final moisturising layer with capsules that blend as you spread it. Smooth gently at the end of evening skincare, leave overnight and rinse in the morning before continuing your routine.",
+      "benefits": [
+        "Evening moisture care",
+        "Softer skin feel",
+        "Blendable capsules"
+      ],
+      "textureTitle": "Capsules within a sleeping-mask layer",
+      "textureText": "Smooth gently until the capsules blend.",
+      "fitText": "For an overnight rinse-off format rather than a sheet mask.",
+      "steps": [
+        {
+          "title": "Before bed",
+          "text": "Apply over the face at the end of skincare."
+        },
+        {
+          "title": "Blend",
+          "text": "Roll fingertips gently until capsules are distributed."
+        },
+        {
+          "title": "Next morning",
+          "text": "Rinse and continue morning skincare."
+        }
+      ],
+      "notes": "Not a peel-off film. Check your exact version for ingredient sensitivities.",
+      "ingredients": [
+        "Sleeping-mask format",
+        "Formula capsules"
+      ],
+      "faq": [
+        {
+          "question": "When to rinse?",
+          "answer": "The brand instructs rinsing in the morning."
+        },
+        {
+          "question": "Peel it away?",
+          "answer": "No; do not pull a dried film from the skin."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://ksecretcosmetics.com/pages/ss23-collagen-sleeping-mask",
+        "title": "KSECRET Cosmetics — Collagen Sleeping Mask"
+      },
+      {
+        "url": "https://www.ksecret.com/en/ProductTab/ProductCustomTab/2274",
+        "title": "KSECRET — sleeping-mask directions"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "No retinoid claim copied from retailers; official instruction tab retrieved for overnight use and morning rinse."
+    ],
+    "extraImages": [],
+    "usageBrief": "Apply over the face at the end of skincare. Roll fingertips gently until capsules are distributed. Rinse and continue morning skincare."
+  },
+  {
+    "id": "TS0184",
+    "brand": "Numbuzin",
+    "productName": "numbuzin - No.9 NAD Bio Lifting-sil",
+    "ar": {
+      "name": "ماسك الوجه رقم9 NAD+ ليفتينغ سيل من نمبوزين",
+      "tagline": "ترطيب الوجه والذقن في جلسة واحدة.",
+      "description": "ماسك نمبوزين رقم 9 NAD+ يأتي بأجزاء للوجه والذقن مع رباط داعم، ويجمع الببتيدات والنياسيناميد في جلسة ترطيب لمظهر منتعش. تُضبط فتحاته وتثبيته برفق على بشرة نظيفة، ليأخذ شكل الوجه والذقن دون شد أو ضغط مزعج.",
+      "benefits": [
+        "ترطيب الوجه",
+        "مظهر أكثر مرونة",
+        "تثبيت حول الذقن"
+      ],
+      "textureTitle": "ماسك علوي وجزء سفلي",
+      "textureText": "تُضبط فتحات التثبيت والرباط برفق حسب تعليمات العبوة.",
+      "fitText": "لمن تريد جلسة قناع للوجه والذقن؛ لا يُعد بديلًا عن إجراءات الشد.",
+      "steps": [
+        {
+          "title": "ثبّتي الجزء العلوي",
+          "text": "حاذي فتحات العينين على بشرة نظيفة."
+        },
+        {
+          "title": "اضبطي جزء الذقن",
+          "text": "ارفعي الطرفين نحو الأذنين دون شد مزعج، وثبتي الرباط إن توفر."
+        },
+        {
+          "title": "امنحيه الوقت",
+          "text": "اتركيه حسب العبوة؛ تذكر الشركة 20 دقيقة على الأقل، ثم أزيليه."
+        }
+      ],
+      "notes": "استخدميه مرة واحدة وتجنبي الضغط المزعج. عدد الأقنعة والرباط يتبع الباقة.",
+      "ingredients": [
+        "NAD+",
+        "ببتيدات",
+        "نياسيناميد"
+      ],
+      "faq": [
+        {
+          "question": "هل هو إيسنس سائل؟",
+          "answer": "العبوة المعروضة ماسك وجه كامل، لا زجاجة إيسنس."
+        },
+        {
+          "question": "هل يجب شدّه بقوة؟",
+          "answer": "لا؛ اختاري تثبيتًا مريحًا دون ضغط مؤلم."
+        }
+      ]
+    },
+    "en": {
+      "name": "numbuzin No.9 NAD+ BIO Lifting-sil Full Face Mask",
+      "tagline": "Face-and-chin hydration in one session.",
+      "description": "numbuzin No.9 NAD+ BIO Lifting-sil combines face and chin mask sections with a supporting band, peptides and niacinamide for a hydrated, refreshed appearance. Adjust its openings and fixing points gently on clean skin for a comfortable face-and-chin session.",
+      "benefits": [
+        "Facial hydration",
+        "Supple-looking finish",
+        "Chin-area fit"
+      ],
+      "textureTitle": "Upper and lower mask sections",
+      "textureText": "Adjust the fixing slits and band gently as labelled.",
+      "fitText": "For a face-and-chin mask session, not a replacement for lifting procedures.",
+      "steps": [
+        {
+          "title": "Position upper section",
+          "text": "Align eye openings on clean skin."
+        },
+        {
+          "title": "Adjust chin section",
+          "text": "Hook ends comfortably by the ears and use the included band as directed."
+        },
+        {
+          "title": "Allow time",
+          "text": "Follow the pack; the brand describes at least 20 minutes, then remove."
+        }
+      ],
+      "notes": "Single use. Avoid uncomfortable tension; mask and band quantities follow the selected pack.",
+      "ingredients": [
+        "NAD+",
+        "Peptides",
+        "Niacinamide"
+      ],
+      "faq": [
+        {
+          "question": "A bottled essence?",
+          "answer": "The displayed pack is the full-face mask."
+        },
+        {
+          "question": "Pull firmly?",
+          "answer": "Choose a comfortable fit without painful pressure."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://us.numbuzin.com/products/no-9-nad-bio-lifting-sil-full-face-mask",
+        "title": "numbuzin US — No.9 NAD+ BIO Lifting-sil Full Face Mask"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Catalog pack visually inspected and confirmed full-face mask plus lifting band. Do not confuse No.9 essence or transfer clinical percentages."
+    ],
+    "extraImages": [],
+    "usageBrief": "Align eye openings on clean skin. Hook ends comfortably by the ears and use the included band as directed. Follow the pack; the brand describes at least 20 minutes, then remove."
+  },
+  {
+    "id": "TS0190",
+    "brand": "mixsoon",
+    "productName": "mixsoon - Bean Cleansing Oil Jumbo 195 ml",
+    "ar": {
+      "name": "زيت تنظيف الفاصولياء من ميكسون",
+      "tagline": "خطوة الإزالة تبدأ قبل الماء.",
+      "description": "زيت تنظيف الفاصولياء من ميكسون يجمع زيوت فول الصويا والجوجوبا ومستخلصات مخمّرة لإزالة المكياج وواقي الشمس. يُدلّك أولًا على بشرة جافة، ثم يتحوّل بإضافة الماء إلى مستحلب حليبي يُشطف قبل استكمال التنظيف بالغسول وفق روتينكِ.",
+      "benefits": [
+        "إزالة المكياج والواقي",
+        "زيوت نباتية",
+        "شطف بمستحلب حليبي"
+      ],
+      "textureTitle": "زيت يتحول عند إضافة الماء",
+      "textureText": "ابدئي جافًا ثم أضيفي الماء قبل الشطف.",
+      "fitText": "لمن تريد تنظيفًا زيتيًا أوليًا مع الحفاظ على إحساس مريح للبشرة.",
+      "steps": [
+        {
+          "title": "ابدئي جافًا",
+          "text": "دلّكي 2–3 ضغطات بيدين جافتين على وجه جاف."
+        },
+        {
+          "title": "استحلبي بالماء",
+          "text": "أضيفي قليلًا من الماء ودلّكي بلطف."
+        },
+        {
+          "title": "اشطفي",
+          "text": "أزيليه بالماء الفاتر وأكملي بالغسول حسب روتينكِ."
+        }
+      ],
+      "notes": "تتضمن التركيبة عطرًا؛ اختبريها عند الحساسية. لا يُترك كزيت وجه.",
+      "ingredients": [
+        "زيت فول الصويا",
+        "زيت الجوجوبا",
+        "مستخلصات مخمّرة"
+      ],
+      "faq": [
+        {
+          "question": "قبل الغسول أم بعده؟",
+          "answer": "هو خطوة إزالة أولى قبل الغسول المائي."
+        },
+        {
+          "question": "على وجه مبلل؟",
+          "answer": "ابدئي ببشرة جافة ثم أضيفي الماء للاستحلاب."
+        }
+      ]
+    },
+    "en": {
+      "name": "mixsoon Bean Cleansing Oil",
+      "tagline": "Removal starts before the water.",
+      "description": "mixsoon Bean Cleansing Oil combines soybean and jojoba oils with fermented extracts to remove makeup and sunscreen. Massage onto dry skin first, then add water to form a milky emulsion and rinse before continuing your cleanser routine.",
+      "benefits": [
+        "Makeup and SPF removal",
+        "Plant-derived oils",
+        "Milky rinsing step"
+      ],
+      "textureTitle": "Oil that emulsifies with water",
+      "textureText": "Begin dry, then add water before rinsing.",
+      "fitText": "For a first oil-cleansing step with a comfortable skin feel.",
+      "steps": [
+        {
+          "title": "Start dry",
+          "text": "Massage 2–3 pumps onto dry skin with dry hands."
+        },
+        {
+          "title": "Emulsify",
+          "text": "Add a little water and massage gently."
+        },
+        {
+          "title": "Rinse",
+          "text": "Rinse with lukewarm water; follow your water-cleanser routine."
+        }
+      ],
+      "notes": "Contains fragrance. Patch test sensitive skin; do not leave on as face oil.",
+      "ingredients": [
+        "Soybean oil",
+        "Jojoba oil",
+        "Fermented extracts"
+      ],
+      "faq": [
+        {
+          "question": "Before cleanser?",
+          "answer": "Use as the first removal step before water-based cleanser."
+        },
+        {
+          "question": "Wet face first?",
+          "answer": "Start dry and add water to emulsify afterwards."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://mixsoon.us/collections/cleansing-1/products/mixsoon-bean-cleansing-oil-195ml",
+        "title": "mixsoon US — Bean Cleansing Oil195ml"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Massage 2–3 pumps onto dry skin with dry hands. Add a little water and massage gently. Rinse with lukewarm water; follow your water-cleanser routine."
+  },
+  {
+    "id": "TS0206",
+    "brand": "SOME BY MI",
+    "productName": "Retinol Intense Advanced Triple Action Eye Cream",
+    "ar": {
+      "name": "كريم العين ريتينول إنتنس من سوم باي مي",
+      "tagline": "كمية صغيرة، وعناية مسائية دقيقة.",
+      "description": "كريم العين ريتينول إنتنس من سوم باي مي يجمع الريتينول والنياسيناميد والبانثينول للعناية بمظهر الخطوط والبهتان مع الترطيب. يُستخدم بمقدار صغير في نهاية عناية المساء، بالتربيت حول المحيط الخارجي وبوتيرة متدرّجة تراعي تحمّل البشرة.",
+      "benefits": [
+        "عناية بمظهر الخطوط",
+        "ترطيب محيط العين",
+        "تطبيق مسائي محدد"
+      ],
+      "textureTitle": "طبقة كريم رقيقة",
+      "textureText": "اربتي على المنطقة الخارجية دون فرك أو اقتراب من العين.",
+      "fitText": "لمن تريد ريتينويدًا مخصصًا للعين، مع الالتزام بالتدرّج.",
+      "steps": [
+        {
+          "title": "نهاية عناية المساء",
+          "text": "خذي كمية صغيرة بعد تنظيف البشرة والعناية."
+        },
+        {
+          "title": "اربتي حول المحيط",
+          "text": "ضعيه بعيدًا عن خط الرموش والجفن المتحرك."
+        },
+        {
+          "title": "راقبي التحمل",
+          "text": "اتبعي تكرار العبوة واستخدمي واقيًا نهارًا."
+        }
+      ],
+      "notes": "يحتوي ريتينول؛ يُتجنب أثناء الحمل والتخطيط له. لا تضعيه داخل العين.",
+      "ingredients": [
+        "ريتينول",
+        "نياسيناميد",
+        "بانثينول"
+      ],
+      "faq": [
+        {
+          "question": "هل هو السيروم الوجهي؟",
+          "answer": "لا؛ هذا كريم العين المخصص."
+        },
+        {
+          "question": "هل أبدأ بكمية كبيرة؟",
+          "answer": "ابدئي بكمية صغيرة وتكرار متدرج."
+        }
+      ]
+    },
+    "en": {
+      "name": "SOME BY MI Retinol Intense Advanced Triple Action Eye Cream",
+      "tagline": "A small, careful evening application.",
+      "description": "SOME BY MI Retinol Intense Eye Cream pairs retinol with niacinamide and panthenol for moisture and fine-line and dullness appearance care. Pat a small amount around the external eye contour at the end of evening skincare, introducing it gradually according to tolerance.",
+      "benefits": [
+        "Fine-line appearance care",
+        "Eye-contour moisture",
+        "Focused evening use"
+      ],
+      "textureTitle": "A thin cream layer",
+      "textureText": "Pat the external contour without rubbing or touching eyes.",
+      "fitText": "For gradually introducing an eye-specific retinoid.",
+      "steps": [
+        {
+          "title": "Finish evening skincare",
+          "text": "Take a small amount after cleansing and skincare."
+        },
+        {
+          "title": "Pat around the contour",
+          "text": "Keep clear of lashes and moving eyelids."
+        },
+        {
+          "title": "Monitor",
+          "text": "Follow labelled frequency and use daytime sunscreen."
+        }
+      ],
+      "notes": "Contains retinol. Avoid during pregnancy or when trying to conceive; keep out of eyes.",
+      "ingredients": [
+        "Retinol",
+        "Niacinamide",
+        "Panthenol"
+      ],
+      "faq": [
+        {
+          "question": "The facial serum?",
+          "answer": "No; this is the dedicated eye cream."
+        },
+        {
+          "question": "Start generously?",
+          "answer": "Begin with a small amount and gradual frequency."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://somebymi.com/product/detail.html?product_no=265",
+        "title": "SOME BY MI Korea — Retinol Intense Advanced Triple Action Eye Cream"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "American Academy of Dermatology — retinoid precautions during pregnancy"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Primary Korean product text specifies evening use as final skincare step and lists retinol0.1%; no numeric claim needed publicly."
+    ],
+    "extraImages": [],
+    "usageBrief": "Take a small amount after cleansing and skincare. Keep clear of lashes and moving eyelids. Follow labelled frequency and use daytime sunscreen."
+  },
+  {
+    "id": "TS0226",
+    "brand": "Farmstay",
+    "productName": "24K Gold Peptide Solution Prime Ampoule",
+    "ar": {
+      "name": "أمبول الذهب والببتيدات برايم من فارم ستاي",
+      "tagline": "طبقة ترطيب بلمسة ذهبية.",
+      "description": "أمبول فارم ستاي الذهبي يجمع الببتيدات والنياسيناميد ومستخلص غذاء ملكات النحل في قوام جل مرطّب بلمسة ذهبية. يُوزّع بعد التونر ويُربّت حتى يمتص قبل الكريم، كطبقة عناية بمظهر النعومة والإشراقة وبإحساس البشرة المرطّبة.",
+      "benefits": [
+        "ترطيب للبشرة",
+        "مظهر أكثر نعومة",
+        "عناية بالبهتان"
+      ],
+      "textureTitle": "جل أمبول بلمعة ذهبية",
+      "textureText": "كمية مناسبة تُفرد وتُربّت حتى تمتص.",
+      "fitText": "لمن تفضّل أمبول ترطيب بقوام جل؛ اسم 24K لا يعني نسبة ذهب في التركيبة.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "خذي كمية مناسبة بأداة أو يد نظيفة."
+        },
+        {
+          "title": "وزّعي بخفة",
+          "text": "مدّي الأمبول على الوجه بعيدًا عن العينين."
+        },
+        {
+          "title": "اربتي وأكملي",
+          "text": "اتركيه يمتص ثم أضيفي الكريم."
+        }
+      ],
+      "notes": "راجعي قائمة العبوة للحساسية، خاصة منتجات النحل إذا ظهرت ضمنها.",
+      "ingredients": [
+        "ببتيدات",
+        "نياسيناميد",
+        "مستخلص غذاء ملكات النحل"
+      ],
+      "faq": [
+        {
+          "question": "هل يغني عن الكريم؟",
+          "answer": "أكملي بمرطب إذا احتاجت بشرتكِ."
+        },
+        {
+          "question": "هل يُشطف بعد التوزيع؟",
+          "answer": "يُترك ليمتص، ثم تُستكمل العناية بالكريم."
+        }
+      ]
+    },
+    "en": {
+      "name": "Farmstay 24K Gold & Peptide Solution Prime Ampoule",
+      "tagline": "A moisturising layer with a golden touch.",
+      "description": "Farmstay pairs peptides, niacinamide and royal jelly extract in a hydrating gel ampoule with a golden touch. Spread after toner and pat to absorb before cream for moisturised skin and a smoother, more radiant-looking finish.",
+      "benefits": [
+        "Skin hydration",
+        "Smoother appearance",
+        "Dullness care"
+      ],
+      "textureTitle": "A gold-flecked gel ampoule",
+      "textureText": "Spread an appropriate amount and pat to absorb.",
+      "fitText": "For a gel-ampoule preference; 24K is not a gold concentration claim.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Take an appropriate amount with a clean tool or hand."
+        },
+        {
+          "title": "Spread lightly",
+          "text": "Apply to the face, avoiding eyes."
+        },
+        {
+          "title": "Pat and finish",
+          "text": "Let absorb, then add cream."
+        }
+      ],
+      "notes": "Check pack allergens, including bee-derived ingredients where listed.",
+      "ingredients": [
+        "Peptides",
+        "Niacinamide",
+        "Royal jelly extract"
+      ],
+      "faq": [
+        {
+          "question": "Replace cream?",
+          "answer": "Add moisturiser if your skin needs it."
+        },
+        {
+          "question": "Rinse after application?",
+          "answer": "Let it absorb, then continue with cream."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://en.fscos.com/product/farmstay-24k-gold-peptide-solution-prime-ampoule/132/",
+        "title": "Farmstay — 24K Gold & Peptide Solution Prime Ampoule"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Manufacturer page confirms niacinamide and royal jelly; catalog size remains unchanged because not clearly recorded. No claims that gold creates medical or exceptional benefits."
+    ],
+    "extraImages": [],
+    "usageBrief": "Take an appropriate amount with a clean tool or hand. Apply to the face, avoiding eyes. Let absorb, then add cream."
+  },
+  {
+    "id": "TS0331",
+    "brand": "Elizavecca",
+    "productName": "Witch Piggy Hell-Pore Marine Collagen Ample",
+    "ar": {
+      "name": "أمبول الكولاجين البحري من إليزافيكا",
+      "tagline": "قطرات لعناية الملمس والترطيب.",
+      "description": "أمبول الكولاجين البحري من إليزافيكا يجمع الكولاجين المتحلل والغليسرين والألانتوين لإضافة ترطيب وإحساس أنعم للملمس. تُربّت منه قطرات قليلة على المناطق المطلوبة بعد التونر وقبل الكريم، ليأخذ مكانه كطبقة عناية خفيفة ضمن روتينكِ.",
+      "benefits": [
+        "ترطيب للملمس",
+        "مظهر أنعم",
+        "تطبيق بقطرات قليلة"
+      ],
+      "textureTitle": "قوام أمبول قابل للتوزيع",
+      "textureText": "قطرتان أو ثلاث تُربّت على المناطق المطلوبة.",
+      "fitText": "لمن تريد إضافة أمبول ترطيب؛ لا يُقدم كتعويض للكولاجين داخل الجلد.",
+      "steps": [
+        {
+          "title": "خذي قطرات قليلة",
+          "text": "استخدمي 2–3 قطرات بعد التنظيف والتونر."
+        },
+        {
+          "title": "وزّعي",
+          "text": "مدّيه على المناطق الخشنة أو الباهتة بعيدًا عن العينين."
+        },
+        {
+          "title": "اربتي",
+          "text": "اتركيه يمتص وأكملي بالمرطب."
+        }
+      ],
+      "notes": "يتضمن عطرًا ومكونات بحرية؛ راجعي الملصق عند الحساسية.",
+      "ingredients": [
+        "كولاجين متحلل",
+        "غليسرين",
+        "ألانتوين"
+      ],
+      "faq": [
+        {
+          "question": "متى أضعه في الروتين؟",
+          "answer": "بعد التنظيف والتونر وقبل الكريم المرطب."
+        },
+        {
+          "question": "هل يوضع حول العين؟",
+          "answer": "تطلب تعليمات الشركة تجنب منطقة العين."
+        }
+      ]
+    },
+    "en": {
+      "name": "Elizavecca Witch Piggy Hell-Pore Marine Collagen Ample",
+      "tagline": "A few drops for moisture and texture care.",
+      "description": "Elizavecca Marine Collagen Ample combines hydrolysed collagen, glycerin and allantoin for hydration and a softer skin feel. Pat a few drops onto selected areas after toner and before cream as an extra light layer in your moisturising routine.",
+      "benefits": [
+        "Skin-feel hydration",
+        "Smoother appearance",
+        "Few-drop application"
+      ],
+      "textureTitle": "An easy-spreading ampoule",
+      "textureText": "Pat two or three drops onto target areas.",
+      "fitText": "For an extra moisture step, not replenishing collagen inside the skin.",
+      "steps": [
+        {
+          "title": "Take a few drops",
+          "text": "Use 2–3 drops after cleansing and toner."
+        },
+        {
+          "title": "Spread",
+          "text": "Apply to rough or dull-looking areas, clear of eyes."
+        },
+        {
+          "title": "Pat",
+          "text": "Let absorb, then moisturise."
+        }
+      ],
+      "notes": "Contains fragrance and marine-derived ingredients; check pack allergens.",
+      "ingredients": [
+        "Hydrolysed collagen",
+        "Glycerin",
+        "Allantoin"
+      ],
+      "faq": [
+        {
+          "question": "Where in my routine?",
+          "answer": "After cleansing and toner, before moisturising cream."
+        },
+        {
+          "question": "Around the eyes?",
+          "answer": "The brand instructs avoiding the eye area."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://elizavecca.com/goods/goods_view.php?goodsNo=955",
+        "title": "Elizavecca — Witch Piggy Hell-Pore Marine Collagen Ample"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Official current ingredient list states hydrolysed collagen9,500ppm, not95%. Retailer95% claims rejected. Product photo/version controls exact formulation.",
+      "Catalog pack visibly says95%, whereas current official INCI gives9,500ppm; this could be version/claim difference and was not resolved. Public copy therefore states no percentage, without contradicting visible pack or declaring authenticity."
+    ],
+    "extraImages": [],
+    "usageBrief": "Use 2–3 drops after cleansing and toner. Apply to rough or dull-looking areas, clear of eyes. Let absorb, then moisturise."
+  }
+]

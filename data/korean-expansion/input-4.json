@@ -1,0 +1,802 @@
+[
+  {
+    "source": "Glowcery",
+    "brand": "EQQUALBERRY",
+    "name": "EQQUALBERRY - Vitamin Illuminating Serum",
+    "subcat": "سيروم",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0061",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي البشرة الباهتة عناية تركز على مظهر تفاوت اللون والنضارة. يضيف سيروم إكوالبيري قوامًا سهل الدمج مع روتينك، لتكملي الترطيب بخطوة موجهة إلى إشراقة تبدو طبيعية ومتجانسة مع الاستمرار المناسب.",
+    "discount": 49,
+    "priceFils": 6990,
+    "image": "/images/catalog/TS0061-88f84b45d59b.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم فيتامين إلومينيتنغ من إكوالبيري",
+      "tagline": "خطوة لإطلالة أكثر إشراقًا.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "تحسين مظهر تفاوت اللون",
+        "قوام مناسب لطبقات العناية"
+      ],
+      "howToUse": "وزعي كمية صغيرة بعد التنظيف وقبل الكريم، واتّبعي تعليمات العبوة.",
+      "notes": "استكملي روتين النهار بواقي شمس، دون توقع زوال البقع فورًا.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 7,
+      "productType": "serum",
+      "en": {
+        "name": "EQQUALBERRY - Vitamin Illuminating Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "EQQUALBERRY - Vitamin Illuminating Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0061",
+      "TS0146"
+    ],
+    "researchReferenceFils": 16990
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Medicube",
+    "name": "Medicube - Collagen Night Wrapping Mask",
+    "subcat": "ماسك",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0073",
+    "category": "البشرة",
+    "description": "استراحة جمال على إيقاعكِ. اختتمي عنايتك الليلية بماسك يشكل طبقة تغلف الوجه وتساعد على الاحتفاظ بإحساس الترطيب. يليق بمن تحب روتين المساء الأكثر تدليلًا، لتبدو البشرة صباحًا أكثر نعومة واهتمامًا بحسب استجابتها.",
+    "discount": 49,
+    "priceFils": 6990,
+    "image": "/images/catalog/TS0073-05a996400080.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك كولاجين نايت رابينغ من ميديكيوب",
+      "tagline": "غلاف عناية يكمل روتين المساء.",
+      "benefits": [
+        "تكملة لترطيب المساء",
+        "طبقة عناية تغلف البشرة",
+        "مظهر أنعم بعد الروتين"
+      ],
+      "howToUse": "طبقيه كآخر خطوة وفق تعليمات العبوة، واتركيه يتماسك ثم أزيليه بالطريقة المحددة.",
+      "notes": "لا يقترب من خط الشعر أو العينين، ولا ينزع بعنف.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "face-mask",
+      "en": {
+        "name": "Medicube - Collagen Night Wrapping Mask",
+        "tagline": "A little beauty pause, at your own pace.",
+        "description": "Medicube - Collagen Night Wrapping Mask. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little beauty pause, at your own pace.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask.",
+        "notes": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0073"
+    ],
+    "researchReferenceFils": 16990
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Medicube",
+    "name": "medicube - Collagen Jelly Cream (110ml)",
+    "subcat": "مرطب",
+    "reference": 17950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0083",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. امنحي البشرة إحساسًا نديًا مع كريم الكولاجين الجيلي من ميديكيوب. يوزع بسهولة كخطوة ترطيب بعد السيرومات، ويساعد على تحسين مظهر الجفاف ليصبح الوجه أكثر نعومة وحيوية في روتينك المعتاد.",
+    "discount": 38,
+    "priceFils": 10990,
+    "image": "/images/catalog/TS0083-db815bac5be6.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم كولاجين جيلي من ميديكيوب",
+      "tagline": "ترطيب بقوام جيلي ينعش روتينك.",
+      "benefits": [
+        "إحساس ندي بالترطيب",
+        "قوام جيلي",
+        "تلطيف مظهر الجفاف"
+      ],
+      "howToUse": "وزعي كمية مناسبة على الوجه بعد السيروم وربتي حتى يتوزع.",
+      "notes": "ابدئي بكمية خفيفة إذا كانت بشرتك تميل إلى اللمعان.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "medicube - Collagen Jelly Cream (110ml)",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "medicube - Collagen Jelly Cream (110ml). Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0083"
+    ],
+    "researchReferenceFils": 21000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "EQQUALBERRY",
+    "name": "EQQUALBERRY - Bakuchiol Plumping Serum",
+    "subcat": "سيروم",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0088",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أضيفي خطوة سيروم تهتم بإطلالة أكثر نعومة وامتلاءً بالترطيب. سيروم باكوتشيول بلامبنغ يركز على مظهر الملمس والخطوط الدقيقة، ويمكن تنسيقه مع روتين بسيط يحافظ على راحة بشرتك.",
+    "discount": 28,
+    "priceFils": 9990,
+    "image": "/images/catalog/TS0088-7b03712f2547.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم باكوتشيول بلامبنغ من إكوالبيري",
+      "tagline": "عناية بمظهر المرونة والملمس.",
+      "benefits": [
+        "العناية بمظهر المرونة",
+        "ملمس أنعم",
+        "إحساس بالترطيب"
+      ],
+      "howToUse": "وزعي كمية صغيرة بعد التنظيف وقبل الكريم وفق إرشادات العبوة.",
+      "notes": "لا يفترض أنه مناسب لكل بشرة لمجرد احتوائه على باكوتشيول؛ اختبريه أولًا.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "EQQUALBERRY - Bakuchiol Plumping Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "EQQUALBERRY - Bakuchiol Plumping Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0088"
+    ],
+    "researchReferenceFils": 16990
+  },
+  {
+    "source": "Glowcery",
+    "brand": "APRILSKIN",
+    "name": "APRILSKIN - TXA Niacinamide Toning Shot 99 Serum",
+    "subcat": "سيروم",
+    "reference": 12950,
+    "source_url": "https://glowceryjo.com/collections/all",
+    "source_note": "صفحة الفهرس الحالية المفهرسة منذ شهرين",
+    "id": "TS0097",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أضيفي إلى عنايتك خطوة تركز على مظهر الآثار والنضارة مع سيروم أبريل سكين. يوزع بسهولة قبل الكريم ويكمل روتينًا منتظمًا يوازن بين المستحضرات الموجهة والترطيب والحماية من الشمس.",
+    "discount": 49,
+    "priceFils": 6490,
+    "image": "/images/catalog/TS0097-eab18691f55a.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم توننغ شوت 99 من أبريل سكين",
+      "tagline": "عناية بمظهر تفاوت اللون والبهتان.",
+      "benefits": [
+        "العناية بمظهر الآثار",
+        "إشراقة أكثر تجانسًا",
+        "قوام سيروم سهل التوزيع"
+      ],
+      "howToUse": "طبقي كمية صغيرة وفق تواتر العبوة ثم أتبعيها بمرطب مناسب.",
+      "notes": "اختبريه أولًا وأدخلي المستحضرات المركزة إلى الروتين تدريجيًا.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "APRILSKIN - TXA Niacinamide Toning Shot 99 Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "APRILSKIN - TXA Niacinamide Toning Shot 99 Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0097"
+    ],
+    "researchReferenceFils": 15000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "EQQUALBERRY",
+    "name": "EQQUALBERRY - NAD+ Peptide Boosting Serum",
+    "subcat": "سيروم",
+    "reference": 14950,
+    "source_url": "https://glowceryjo.com/collections/all?page=3",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0115",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي البشرة التي تبدو مرهقة خطوة تهتم بمرونة المظهر والنعومة. سيروم البيبتايد من إكوالبيري ينسجم مع روتين الترطيب، ويساعدك على التركيز على ملمس أكثر عناية وإطلالة تبدو ممتلئة بالحيوية.",
+    "discount": 39,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0115-d919265c013b.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم NAD+ بيبتايد من إكوالبيري",
+      "tagline": "عناية بمظهر المرونة والحيوية.",
+      "benefits": [
+        "العناية بمظهر المرونة",
+        "إحساس بالترطيب",
+        "تحسين مظهر الملمس"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد التنظيف وقبل المرطب حسب تعليمات العبوة.",
+      "notes": "لا حاجة إلى جمع عدة سيرومات متشابهة في الروتين نفسه.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "EQQUALBERRY - NAD+ Peptide Boosting Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "EQQUALBERRY - NAD+ Peptide Boosting Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0115"
+    ],
+    "researchReferenceFils": 18000
+  },
+  {
+    "source": "Farah Glow",
+    "brand": "Medicube",
+    "name": "Medicube PDRN Lip Sleeping Mask",
+    "subcat": "الشفاه",
+    "reference": 11950,
+    "source_url": "https://www.farahglow.shop/category?id=3",
+    "source_note": "فهرسة قبل شهر؛ القسم: الصيدلية التجميلية",
+    "id": "TS0136",
+    "category": "المكياج",
+    "description": "لحظة لون أو عناية، لكِ وحدكِ. امنحي شفاهك وقتًا من الترطيب مع ماسك ميديكيوب الليلي ذي العبوة الوردية المميزة. يركز على تلطيف مظهر الجفاف وراحة الملمس، ليكمل روتين المساء ويهيئ الشفاه لإطلالة أنعم.",
+    "discount": 28,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0136-6249bdeaef5c.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك الشفاه الليلي PDRN من ميديكيوب",
+      "tagline": "طبقة عناية لشفاه ناعمة المظهر.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "تلطيف مظهر الجفاف",
+        "عناية ليلية بالشفاه"
+      ],
+      "howToUse": "وزعي طبقة مناسبة على شفاه نظيفة قبل النوم بحسب إرشادات العبوة.",
+      "notes": "استخدمي أداة نظيفة ولا تضعيه داخل الفم.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "lips",
+      "en": {
+        "name": "Medicube PDRN Lip Sleeping Mask",
+        "tagline": "A little moment for your lips.",
+        "description": "Medicube PDRN Lip Sleeping Mask. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+        "benefits": [
+          "A little moment for your lips.",
+          "Make the finish your own, one light layer at a time."
+        ],
+        "howToUse": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed.",
+        "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0136"
+    ],
+    "researchReferenceFils": 14990
+  },
+  {
+    "source": "Farah Glow",
+    "brand": "VT Cosmetics",
+    "name": "VT Cosmetics Reedle Shot 100",
+    "subcat": "سيروم",
+    "reference": 16950,
+    "source_url": "https://www.farahglow.shop/index.php",
+    "source_note": "الواجهة الرئيسية مفهرسة قبل شهر",
+    "id": "TS0149",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي روتينك خطوة مختلفة مع ريدل شوت 100 المخصص للعناية بمظهر الملمس والنضارة. قد يصاحبه إحساس بالوخز، لذلك يحتاج تطبيقًا وفق تعليمات النسخة وتدرجًا يراعي استجابة البشرة بدل زيادة الكمية أو التكرار.",
+    "discount": 49,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0149-fbfad33d9289.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ريدل شوت 100 من في تي",
+      "tagline": "خطوة عناية متخصصة بمظهر الملمس.",
+      "benefits": [
+        "العناية بمظهر الملمس",
+        "تكملة لروتين النضارة",
+        "خطوة عناية متخصصة"
+      ],
+      "howToUse": "اتبعي ترتيب التطبيق وتواتر الاستخدام المدونين على العبوة ثم أكملي الترطيب.",
+      "notes": "لا يستخدم على البشرة المتضررة أو مع تهيج قائم، وتوقفي عند انزعاج غير محتمل.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "VT Cosmetics Reedle Shot 100",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "VT Cosmetics Reedle Shot 100. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. This is a concentrated treatment format. Follow all application, frequency and sensitivity instructions on the exact pack.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0149"
+    ],
+    "researchReferenceFils": 18990
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "Medicube",
+    "name": "medicube - One Day Exosome Shot Pore Ampoule 25000 13 ml",
+    "subcat": "أمبول",
+    "reference": 16950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Medicube-exsosome-shot",
+    "source_note": "4 أشهر",
+    "id": "TS0171",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. اختيار متخصص لمن تريد الاهتمام بمظهر المسام والملمس غير المتجانس ضمن روتين مدروس. أمبول شوت 25000 يختلف عن سيرومات الترطيب اليومية، ويحتاج الالتزام بالتواتر الخاص بالنسخة ومراقبة استجابة البشرة.",
+    "discount": 41,
+    "priceFils": 10000,
+    "image": "/images/catalog/TS0171-e9a2add1cdf5.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول إكسوسوم شوت 25000 من ميديكيوب",
+      "tagline": "عناية مكثفة بمظهر الملمس والمسام.",
+      "benefits": [
+        "العناية بمظهر المسام",
+        "تحسين مظهر الملمس",
+        "خطوة مكثفة متخصصة"
+      ],
+      "howToUse": "اتبعي طريقة وتواتر العبوة بدقة ثم استكملي الترطيب؛ لا تزيدي التكرار من تلقاء نفسك.",
+      "notes": "قد يسبب إحساسًا بالوخز، ولا يستخدم على البشرة المتهيجة أو المتضررة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "medicube - One Day Exosome Shot Pore Ampoule 25000 13 ml",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "medicube - One Day Exosome Shot Pore Ampoule 25000 13 ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. This is a concentrated treatment format. Follow all application, frequency and sensitivity instructions on the exact pack.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0171"
+    ],
+    "researchReferenceFils": 19000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "VT",
+    "name": "VT - PDRN R5 Firming Ampoule 30 ml",
+    "subcat": "أمبول",
+    "reference": 12950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Vt-r5-firming-ampoule",
+    "source_note": "5 أشهر",
+    "id": "TS0172",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي البشرة التي تبدو مرهقة خطوة أمبول تركز على مظهر أكثر نعومة وامتلاءً بالترطيب. نسخة R5 من في تي تكمّل السيرومات والكريمات التي تختارينها بحسب حاجتك، ضمن روتين لا يزدحم بمستحضرات متشابهة.",
+    "discount": 30,
+    "priceFils": 9000,
+    "image": "/images/catalog/TS0172-a26ca31802c3.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول PDRN R5 من في تي",
+      "tagline": "عناية بمظهر الحيوية والمرونة.",
+      "benefits": [
+        "العناية بمظهر المرونة",
+        "إحساس بالترطيب",
+        "تكملة لروتين النضارة"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد التنظيف وقبل الكريم بحسب إرشادات العبوة.",
+      "notes": "اختبريه موضعيًا ولا تعتمدي على الاسم وحده لاختيار ملاءمته لبشرتك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "VT - PDRN R5 Firming Ampoule 30 ml",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "VT - PDRN R5 Firming Ampoule 30 ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0172"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "VT",
+    "name": "VT - Glutathione G2 Brightening Ampoule 30 ml",
+    "subcat": "أمبول",
+    "reference": 12950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Vt-glutatione",
+    "source_note": "أسبوعان",
+    "id": "TS0173",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أضيفي إلى الروتين اهتمامًا بمظهر البهتان وتفاوت اللون مع أمبول G2. يمنحك قوامًا يمكن توزيعه بسهولة قبل المرطب، ليكمل روتين النضارة والحماية من الشمس دون وعود بتغيير لون البشرة الطبيعي.",
+    "discount": 49,
+    "priceFils": 6490,
+    "image": "/images/catalog/TS0173-0a7ccb95674b.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول غلوتاثيون G2 من في تي",
+      "tagline": "خطوة لعناية أكثر إشراقًا.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "إشراقة متجانسة",
+        "قوام أمبول للعناية"
+      ],
+      "howToUse": "طبقي كمية صغيرة وفق إرشادات العبوة ثم أكملي الكريم.",
+      "notes": "اهتمي بالحماية من الشمس وراقبي استجابة بشرتك قبل تكثيف الروتين.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "VT - Glutathione G2 Brightening Ampoule 30 ml",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "VT - Glutathione G2 Brightening Ampoule 30 ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0173"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "Medicube",
+    "name": "medicube - PDRN Pink Collagen Exosome Shot Serum 7500 30 ml",
+    "subcat": "سيروم",
+    "reference": 19950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Medicube-pdrn-shot",
+    "source_note": "3 أشهر",
+    "id": "TS0176",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي روتينك الليلي اهتمامًا بمظهر البشرة غير المتجانس مع نسخة شوت 7500 الوردية. تجمع فكرة العناية المكثفة ومظهر النضارة، وتحتاج استخدامًا حسب تعليمات العبوة بدل معاملتها كسيروم ترطيب عادي يصلح بكل تواتر.",
+    "discount": 29,
+    "priceFils": 13990,
+    "image": "/images/catalog/TS0176-f3c2ebf06d5e.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم PDRN بينك إكسوسوم 7500 من ميديكيوب",
+      "tagline": "عناية متخصصة بمظهر المرونة والملمس.",
+      "benefits": [
+        "العناية بمظهر الملمس",
+        "تحسين مظهر المرونة",
+        "خطوة عناية مكثفة"
+      ],
+      "howToUse": "اتبعي الكمية وتواتر الاستخدام الخاصين بهذه النسخة ثم استكملي مرطبًا مناسبًا.",
+      "notes": "قد يصاحبه وخز؛ لا يجمع عشوائيًا مع تقشير قوي أو على جلد متهيج.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "medicube - PDRN Pink Collagen Exosome Shot Serum 7500 30 ml",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "medicube - PDRN Pink Collagen Exosome Shot Serum 7500 30 ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. This is a concentrated treatment format. Follow all application, frequency and sensitivity instructions on the exact pack.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0176"
+    ],
+    "researchReferenceFils": 25000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "APRILSKIN",
+    "name": "APRILSKIN - TXA Niacinamide 99 Milky Toner 150 ml",
+    "subcat": "تونر",
+    "reference": 12950,
+    "source_url": "https://ksecret.myeasyorders.com/products/APRILSKIN-Niacinamide-milky-toner",
+    "source_note": "3 أسابيع",
+    "id": "TS0177",
+    "category": "البشرة",
+    "description": "مساحة هادئة بين التنظيف والعناية. أضيفي بعد التنظيف خطوة تونر حليبية تركز على مظهر البهتان والترطيب. يهيئ 99 ميلكي البشرة للسيروم والكريم، ويليق بمن تحب أن تبدأ عنايتها بقوام مريح بدل الاكتفاء بمنتج واحد كثيف.",
+    "discount": 49,
+    "priceFils": 6490,
+    "image": "/images/catalog/TS0177-1521fede5d9a.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "تونر 99 ميلكي من أبريل سكين",
+      "tagline": "طبقة عناية حليبية لمظهر أكثر إشراقًا.",
+      "benefits": [
+        "قوام حليبي",
+        "إحساس بالترطيب",
+        "العناية بمظهر البهتان"
+      ],
+      "howToUse": "وزعي براحة اليد أو بالطريقة المحددة على العبوة ثم أكملي خطوات العناية.",
+      "notes": "يختلف التونر عن سيروم Toning Shot 99 من المجموعة نفسها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "toner",
+      "en": {
+        "name": "APRILSKIN - TXA Niacinamide 99 Milky Toner 150 ml",
+        "tagline": "A quiet little pause between cleansing and care.",
+        "description": "APRILSKIN - TXA Niacinamide 99 Milky Toner 150 ml. A quiet little pause between cleansing and care. Take a pause after cleansing before your next layer of care.",
+        "benefits": [
+          "A quiet little pause between cleansing and care.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser.",
+        "notes": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0177"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "Medicube",
+    "name": "medicube Salmon DNA PDRN Pink Peptide Serum, Pink glow serum, Peptide",
+    "subcat": "سيروم",
+    "reference": 15950,
+    "source_url": "https://ksecret.myeasyorders.com/products/medicube-pdrn-serum",
+    "source_note": "3 أسابيع",
+    "id": "TS0182",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي روتينك خطوة تركز على مظهر البشرة المرهقة والملمس الجاف. بينك بيبتايد يوزع قبل الكريم ليساعد على إحساس أكثر نعومة وحيوية، ويختلف عن إصدارات شوت التي تحمل أرقام 7500 أو 25000.",
+    "discount": 18,
+    "priceFils": 12990,
+    "image": "/images/catalog/TS0182-ea6e3cc9c31c.webp",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم PDRN بينك بيبتايد من ميديكيوب",
+      "tagline": "ترطيب ونضارة بإحساس سيروم خفيف.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "العناية بمظهر النضارة",
+        "قوام سيروم قبل الكريم"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد التنظيف وفق إرشادات العبوة ثم أكملي الترطيب.",
+      "notes": "هذا سيروم Pink Peptide العادي؛ طابقي الاسم الكامل عند اختيار العبوة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "medicube Salmon DNA PDRN Pink Peptide Serum, Pink glow serum, Peptide",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "medicube Salmon DNA PDRN Pink Peptide Serum, Pink glow serum, Peptide. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0182"
+    ],
+    "researchReferenceFils": 19000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "EQQUALBERRY",
+    "name": "EQQUALBERRY - Hyaltoin Flooding Serum 30 ml",
+    "subcat": "سيروم",
+    "reference": 16950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Eqqualberry-hyaltoin-flooding-serum",
+    "source_note": "3 أشهر",
+    "id": "TS0187",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي البشرة التي تشعر بالشد خطوة سيروم تركز على إحساس الترطيب ونعومة الملمس. يندمج هيالتوين فلودنغ قبل الكريم ليكمل روتينًا يهتم بمظهر أكثر امتلاءً ونضارة دون الحاجة إلى طبقات كثيرة.",
+    "discount": 41,
+    "priceFils": 10000,
+    "image": "/images/catalog/TS0187-af9ea50a2313.webp",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم هيالتوين فلودنغ من إكوالبيري",
+      "tagline": "ترطيب ينعش مظهر البشرة الجافة.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "تلطيف مظهر الجفاف",
+        "تهيئة البشرة للكريم"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد تنظيف الوجه ثم أتبعيها بمرطب يحافظ على راحة البشرة.",
+      "notes": "عدلي الكمية بحسب حاجة المناطق المختلفة من الوجه.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "EQQUALBERRY - Hyaltoin Flooding Serum 30 ml",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "EQQUALBERRY - Hyaltoin Flooding Serum 30 ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0187"
+    ],
+    "researchReferenceFils": 20000
+  },
+  {
+    "id": "TS0344",
+    "brand": "Medicube",
+    "name": "Collagen Firming Sun Cream SPF50+",
+    "category": "البشرة",
+    "subcat": "واقي الشمس",
+    "description": "خطوة نهارية تستحق مكانًا في روتينكِ. واقي الشمس كولاجين فيرمينغ من ميديكوب SPF50+ بعبوة 50 مل يكمّل روتين الصباح بعد الترطيب. وزعيه بكمية كافية قبل التعرض للشمس وجدديه حسب التعليمات؛ حماية منتظمة ولحظة اهتمام لبشرتكِ.",
+    "reference": 16000,
+    "priceFils": 11990,
+    "discount": 25,
+    "image": "/images/catalog/TS0344-59b10a924b3c.webp",
+    "approved": true,
+    "active": 1,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي الشمس كولاجين فيرمنغ من ميديكيوب SPF50+",
+      "tagline": "خطوة صباحية ترافق إشراقتكِ.",
+      "benefits": [
+        "عامل حماية SPF50+ بحسب العبوة",
+        "خطوة بعد المرطب",
+        "عبوة 50 مل"
+      ],
+      "howToUse": "وزعي بكمية كافية قبل التعرض للشمس، وجددي كل ساعتين وبعد السباحة أو التعرق أو التجفيف، مع اتباع تعليمات العبوة.",
+      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+      "imageType": "photo",
+      "collection": "beauty",
+      "featuredOrder": 100,
+      "productType": "sunscreen",
+      "size": "50 ml",
+      "shade": "",
+      "variantNote": "",
+      "intakeBatch": "2026-10-27-b",
+      "en": {
+        "name": "Medicube · Collagen Firming Sun Cream SPF50+",
+        "tagline": "Make room for a daily sun-care ritual.",
+        "description": "Medicube · Collagen Firming Sun Cream SPF50+. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "source": "Owner intake 2026-10-27-b",
+    "source_url": "https://international-cosmetic.com/products/medicube-collagen-firming-sun-cream-spf50-50ml"
+  }
+]

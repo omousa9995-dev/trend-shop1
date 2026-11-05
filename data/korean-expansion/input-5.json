@@ -1,0 +1,1703 @@
+[
+  {
+    "source": "Glowcery",
+    "brand": "Celimax",
+    "name": "Celimax – THE VITA-A Retinal Shot Tightening Booster",
+    "subcat": "سيروم",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0060",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. اختاري خطوة ليلية مدروسة مع معزز ريتينال شوت. يركز على مظهر الخطوط الدقيقة وتفاوت الملمس، ويحتاج إدخالًا تدريجيًا إلى روتين عناية بسيط مع مرطب مناسب بدل جمع مستحضرات نشطة كثيرة في الوقت نفسه.",
+    "discount": 28,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0060-ee8fb68a8af8.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "معزز ريتينال شوت من سيليماكس",
+      "tagline": "عناية متقدمة بمظهر المرونة والملمس.",
+      "benefits": [
+        "العناية بمظهر الخطوط",
+        "تحسين مظهر الملمس",
+        "خطوة مركزة للروتين الليلي"
+      ],
+      "howToUse": "استخدمي كمية صغيرة وفق إرشادات العبوة وتواترها، ثم أتبعيها بمرطب لطيف.",
+      "notes": "منتج مركز قد يسبب الوخز أو التهيج؛ التزمي بتعليمات الشركة والحماية من الشمس.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "Celimax – THE VITA-A Retinal Shot Tightening Booster",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Celimax – THE VITA-A Retinal Shot Tightening Booster. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding. This is a concentrated treatment format. Follow all application, frequency and sensitivity instructions on the exact pack.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0060",
+      "TS0167"
+    ],
+    "researchReferenceFils": 13990
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Biodance",
+    "name": "Biodance - Bio-Collagen Real Deep Mask Set",
+    "subcat": "ماسك",
+    "reference": 15950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0066",
+    "category": "البشرة",
+    "description": "استراحة جمال على إيقاعكِ. حوّلي وقت الراحة إلى جلسة عناية مع ماسكات بايودانس الهيدروجيل. تلتصق طبقاتها بالبشرة لتمنحها إحساسًا بالترطيب والنعومة، وتناسب لحظات التدليل عندما يبدو الوجه جافًا أو مرهقًا.",
+    "discount": 18,
+    "priceFils": 12990,
+    "image": "/images/catalog/TS0066-a542ceee754e.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "مجموعة ماسكات بايو كولاجين من بايودانس",
+      "tagline": "وقت عناية يمنح بشرتك إحساسًا ممتلئًا بالترطيب.",
+      "benefits": [
+        "إحساس مكثف بالترطيب",
+        "ملمس أنعم",
+        "تجربة هيدروجيل مريحة"
+      ],
+      "howToUse": "ضعي القناع على بشرة نظيفة بالطريقة والمدة المحددتين على عبوتك، ثم أزيليه بلطف.",
+      "notes": "تُراجع أعداد القطع في المجموعة، ولا تمددي مدة الاستخدام عن تعليمات العبوة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "face-mask",
+      "en": {
+        "name": "Biodance - Bio-Collagen Real Deep Mask Set",
+        "tagline": "A little beauty pause, at your own pace.",
+        "description": "Biodance - Bio-Collagen Real Deep Mask Set. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little beauty pause, at your own pace.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask.",
+        "notes": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0066"
+    ],
+    "researchReferenceFils": 20000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Abib",
+    "name": "Abib - PDRN Retinal Eye Patch Glow Jelly",
+    "subcat": "العين",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0068",
+    "category": "البشرة",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. امنحي منطقة تحت العين وقت عناية مريحًا مع باتشات أبيب الجيلية. تساعد على تلطيف مظهر الجفاف والخطوط الناتجة عنه، وتضيف إلى روتينك خطوة خاصة عندما ترغبين بمظهر أكثر نعومة وانتعاشًا.",
+    "discount": 28,
+    "priceFils": 9990,
+    "image": "/images/catalog/TS0068-317fbd1a7574.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "باتشات غلو جيلي للعين من أبيب",
+      "tagline": "استراحة ترطيب لمحيط العين.",
+      "benefits": [
+        "ترطيب لمحيط العين",
+        "قوام جيلي مريح",
+        "تحسين مظهر الجفاف"
+      ],
+      "howToUse": "ثبتي الباتشات في المكان المخصص للمدة المدونة على العبوة، ثم أزيليها بلطف.",
+      "notes": "تحتوي هذه النسخة على ريتينال؛ اتّبعي تواتر العبوة وتجنبي التهيج والعين نفسها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "en": {
+        "name": "Abib - PDRN Retinal Eye Patch Glow Jelly",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "Abib - PDRN Retinal Eye Patch Glow Jelly. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0068"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "P.CALM",
+    "name": "P.CALM - Holy Basil Bubble Deep Mask",
+    "subcat": "ماسك",
+    "reference": 12950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0072",
+    "category": "البشرة",
+    "description": "استراحة جمال على إيقاعكِ. امنحي روتينك لحظة عناية مميزة مع ماسك الفقاعات من بي كالم. يركز على تنظيف السطح وتجديد الإحساس بالنظافة، ليكون خطوة إضافية متباعدة حين تريدين الاهتمام بمظهر الشوائب دون تعقيد العناية اليومية.",
+    "discount": 30,
+    "priceFils": 9000,
+    "image": "/images/catalog/TS0072-bf27532c2a3f.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك هولي بازل بابل ديب من بي كالم",
+      "tagline": "جلسة تنظيف بقوام مختلف.",
+      "benefits": [
+        "إحساس بالنظافة",
+        "قوام فقاعات للعناية",
+        "تكملة للتنظيف المعتاد"
+      ],
+      "howToUse": "وزعيه على الوجه بالطريقة المحددة على العبوة، ثم أزيليه واشطفي حسب التعليمات.",
+      "notes": "تجنبي العينين ولا تتجاوزي مدة الاستخدام الموصى بها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "face-mask",
+      "en": {
+        "name": "P.CALM - Holy Basil Bubble Deep Mask",
+        "tagline": "A little beauty pause, at your own pace.",
+        "description": "P.CALM - Holy Basil Bubble Deep Mask. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little beauty pause, at your own pace.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask.",
+        "notes": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0072"
+    ],
+    "researchReferenceFils": 15990
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Isntree",
+    "name": "Isntree - Hyaluronic Acid Moist Cream",
+    "subcat": "مرطب",
+    "reference": 12950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0075",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. لمن تحتاج بشرتها إلى كريم يتجاوز الترطيب الخفيف، يمنحك مويست كريم من إزنتري خطوة عناية مريحة. يساعد على تلطيف مظهر الجفاف ويكمل روتين السيروم، ليصبح ملمس البشرة أنعم وإحساسها أقل شدًا.",
+    "discount": 38,
+    "priceFils": 7990,
+    "image": "/images/catalog/TS0075-d7b1375fe52a.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم هيالورونيك أسيد مويست من إزنتري",
+      "tagline": "ترطيب لملمس أكثر مرونة ونعومة.",
+      "benefits": [
+        "ترطيب للبشرة الجافة",
+        "تلطيف مظهر الخطوط الجافة",
+        "ملمس كريم مريح"
+      ],
+      "howToUse": "وزعيه على الوجه بعد السيروم صباحًا أو مساءً، وفق حاجة البشرة.",
+      "notes": "يمكن تقليل الكمية على المناطق التي تميل إلى اللمعان.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 6,
+      "productType": "moisturizer",
+      "en": {
+        "name": "Isntree - Hyaluronic Acid Moist Cream",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "Isntree - Hyaluronic Acid Moist Cream. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0075",
+      "TS0181"
+    ],
+    "researchReferenceFils": 15000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Isntree",
+    "name": "Isntree - Hyaluronic Acid Watery Sun Gel",
+    "subcat": "واقي شمس",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0076",
+    "category": "البشرة",
+    "description": "خطوة نهارية تستحق مكانًا في روتينكِ. أكملي روتين النهار مع واقٍ بقوام جل مائي يناسب من تبحث عن إحساس مرطب وسهل التوزيع. واتري صن جل يندمج مع خطوات العناية قبل المكياج، مع ضرورة استخدام كمية كافية وتجديد الحماية.",
+    "discount": 31,
+    "priceFils": 7500,
+    "image": "/images/catalog/TS0076-e7ad8f4440fb.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي هيالورونيك واتري صن جل من إزنتري",
+      "tagline": "حماية بلمسة ترطيب خفيفة.",
+      "benefits": [
+        "حماية نهارية",
+        "قوام جل مائي",
+        "إحساس بالترطيب"
+      ],
+      "howToUse": "وزعي كمية كافية حسب تعليمات العبوة وجددي أثناء التعرض للشمس وبعد التعرق أو السباحة.",
+      "notes": "لا تخلطي بينه وبين منتجات الترطيب الخالية من الحماية الشمسية.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "sunscreen",
+      "en": {
+        "name": "Isntree - Hyaluronic Acid Watery Sun Gel",
+        "tagline": "Make room for a daily sun-care ritual.",
+        "description": "Isntree - Hyaluronic Acid Watery Sun Gel. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0076",
+      "TS0170"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "SKIN1004",
+    "name": "SKIN1004 – Madagascar Centella Tone Brightening Capsule Ampoule (50ml)",
+    "subcat": "سيروم",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0078",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أضيفي إلى العناية الكورية خطوة تركز على مظهر البهتان والآثار. أمبول تون برايتننغ يمنحك قوامًا يسهل توزيعه قبل الكريم، ليساعد البشرة على الظهور بنضارة أكثر تجانسًا ضمن روتين منتظم.",
+    "discount": 17,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0078-ccddeb9c39cd.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول تون برايتننغ من سكين 1004",
+      "tagline": "عناية بإشراقة البشرة وتجانس مظهرها.",
+      "benefits": [
+        "العناية بمظهر تفاوت اللون",
+        "إحساس بالترطيب",
+        "خطوة أمبول سهلة الدمج"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد التونر إن استخدمته وقبل المرطب.",
+      "notes": "استكملي الحماية من الشمس؛ النسخة المرجعية في القائمة 50 مل.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "SKIN1004 – Madagascar Centella Tone Brightening Capsule Ampoule (50ml)",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "SKIN1004 – Madagascar Centella Tone Brightening Capsule Ampoule (50ml). A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0078"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Mary & May",
+    "name": "Mary & May – Tranexamic Acid + Glutathione Eye Cream",
+    "subcat": "العين",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0082",
+    "category": "البشرة",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. خصصي لمحيط العين خطوة تهتم بمظهر البهتان مع الترطيب. يمنحك كريم ماري آند ماي عناية سهلة التوزيع حول المنطقة الرقيقة، لتكملي روتين الوجه بلمسة تركز على النعومة وإطلالة أكثر انتعاشًا.",
+    "discount": 17,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0082-2f5e89e9b11d.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم العين ترانكساميك وغلوتاثيون من ماري آند ماي",
+      "tagline": "عناية بإشراقة منطقة تحت العين.",
+      "benefits": [
+        "ترطيب محيط العين",
+        "العناية بمظهر البهتان",
+        "ملمس أنعم تحت المكياج"
+      ],
+      "howToUse": "ربتي بكمية صغيرة حول عظمة العين دون شد الجلد أو إدخاله إلى العين.",
+      "notes": "لا يعالج كل أسباب الهالات، واختبري ملاءمته لبشرتك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "en": {
+        "name": "Mary & May – Tranexamic Acid + Glutathione Eye Cream",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "Mary & May – Tranexamic Acid + Glutathione Eye Cream. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0082",
+      "TS0128"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "SKIN1004",
+    "name": "SKIN1004 – Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
+    "subcat": "واقي شمس",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0085",
+    "category": "البشرة",
+    "description": "اجعلي واقي هيالو سيكا ووتر فيت من سكين 1004 جزءًا من استعدادكِ ليومكِ، من مشوار سريع إلى يوم مليء بالتفاصيل. اختاريه كخطوة أخيرة للعناية الصباحية، ثم ضعي مكياجكِ إن أحببتِ. راجعي تعليمات العبوة والتزمي بتجديد الحماية خلال اليوم.",
+    "discount": 49,
+    "priceFils": 5990,
+    "image": "/images/catalog/TS0085-6f77dfeba7eb.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي هيالو سيكا ووتر فيت من سكين 1004",
+      "tagline": "حماية النهار، ضمن روتين تحبّينه.",
+      "benefits": [
+        "حماية نهارية",
+        "قوام سيروم",
+        "إحساس مرطب قبل المكياج"
+      ],
+      "howToUse": "وزعي كمية كافية حسب العبوة وجددي الحماية خلال التعرض وبعد التعرق أو السباحة.",
+      "notes": "لا تكفي طبقة قليلة جدًا لتحقيق الحماية المدونة على العبوة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 5,
+      "productType": "sunscreen",
+      "en": {
+        "name": "SKIN1004 – Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
+        "tagline": "Make sun care part of a routine you enjoy.",
+        "description": "Bring SKIN1004 Hyalu-Cica Water-Fit Sun Serum into your getting-ready ritual, whether your day is busy or beautifully simple. Apply as the last skincare step before makeup, and follow the directions on your exact pack for quantity and reapplication.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0085"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "SKIN1004",
+    "name": "SKIN1004 – Madagascar Centella Light Cleansing Oil",
+    "subcat": "غسول زيتي",
+    "reference": 13950,
+    "source_url": "https://glowceryjo.com/",
+    "source_note": "لقطة مفهرسة منذ شهرين",
+    "id": "TS0087",
+    "category": "البشرة",
+    "description": "أغلقي يومكِ بلحظة انتعاش. امنحي المكياج وواقي الشمس خطوة إزالة مخصصة مع زيت التنظيف الخفيف من سكين 1004. يوزع على البشرة الجافة ثم يتحول عند إضافة الماء، ليسهل شطف المستحضر قبل استكمال غسولك المعتاد عند الحاجة.",
+    "discount": 39,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0087-b2f1955e73ee.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "زيت سنتيلا لايت للتنظيف من سكين 1004",
+      "tagline": "بداية ناعمة لإزالة بقايا اليوم.",
+      "benefits": [
+        "تفكيك المكياج وواقي الشمس",
+        "تنظيف أولي سهل",
+        "خطوة مناسبة للتنظيف المزدوج"
+      ],
+      "howToUse": "دلكي كمية مناسبة على الوجه الجاف، أضيفي قليلًا من الماء ثم اشطفي جيدًا.",
+      "notes": "تجنبي فرك العينين واتّبعي تعليمات العبوة بشأن إزالة مكياج العين.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "cleanser",
+      "en": {
+        "name": "SKIN1004 – Madagascar Centella Light Cleansing Oil",
+        "tagline": "A fresh start, or a gentle end to your day.",
+        "description": "SKIN1004 – Madagascar Centella Light Cleansing Oil. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+        "benefits": [
+          "A fresh start, or a gentle end to your day.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.",
+        "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0087"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "SKIN1004",
+    "name": "Centella Poremizing Light Gel Cream",
+    "subcat": "مرطب",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0102",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. امنحي البشرة خطوة ترطيب لا تبدأ بقوام كريم كثيف. جل كريم بورمايزنغ لايت يليق بروتين يركز على إحساس الانتعاش ومظهر المسام، مع توزيع كمية مناسبة على المناطق التي تحتاج ترطيبًا.",
+    "discount": 17,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0102-6bf9bea8c712.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "جل كريم بورمايزنغ لايت من سكين 1004",
+      "tagline": "ترطيب خفيف للبشرة التي تفضل قوام الجل.",
+      "benefits": [
+        "قوام جل خفيف",
+        "إحساس منعش",
+        "ترطيب مناسب لطبقات العناية"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد السيروم وربتي حتى يتوزع المستحضر.",
+      "notes": "يمكن زيادة العناية بالمناطق الأكثر جفافًا بمرطب يناسبها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "SKIN1004 · Centella Poremizing Light Gel Cream",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "SKIN1004 · Centella Poremizing Light Gel Cream. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0102"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "SKIN1004",
+    "name": "Centella Soothing Cream",
+    "subcat": "مرطب",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/collections/all?page=2",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0103",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. أكملي العناية بكريم يركز على إحساس البشرة بالراحة وتلطيف مظهر الجفاف. سنتيلا سوذينغ يضيف طبقة ترطيب بعد السيروم، ويناسب من تبحث عن روتين بسيط يراعي حاجز البشرة ونعومة ملمسها.",
+    "discount": 40,
+    "priceFils": 6500,
+    "image": "/images/catalog/TS0103-c0519551b6fb.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم سنتيلا سوذينغ من سكين 1004",
+      "tagline": "راحة ترطيب بخطوة هادئة.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "تلطيف مظهر الجفاف",
+        "تكملة لروتين بسيط"
+      ],
+      "howToUse": "وزعي كمية مناسبة على بشرة نظيفة بعد الخطوات الأخف قوامًا.",
+      "notes": "توقفي عند ظهور تحسس؛ كلمة مهدئ لا تعني أنه يناسب الجميع.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "SKIN1004 · Centella Soothing Cream",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "SKIN1004 · Centella Soothing Cream. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0103"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Dr.Melaxin",
+    "name": "Dr.Melaxin - Peel Shot Exfoliating Black Rice Ampoule",
+    "subcat": "تقشير",
+    "reference": 16950,
+    "source_url": "https://glowceryjo.com/collections/all?page=3",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0113",
+    "category": "البشرة",
+    "description": "امنحي روتينكِ مساحة للتجدد، بتأنٍ. امنحي روتينك عناية تركز على مظهر الجلد المتراكم والملمس غير المتجانس. هذه نسخة الأرز الأسود من بيل شوت، وتحتاج قراءة طريقة التطبيق الخاصة بها بعناية لأن خطوة التقشير تختلف عن سيروم الترطيب المعتاد.",
+    "discount": 49,
+    "priceFils": 8490,
+    "image": "/images/catalog/TS0113-62467be0eae6.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول بيل شوت بالأرز الأسود من دكتور ميلاكسين",
+      "tagline": "خطوة عناية بملمس السطح الباهت.",
+      "benefits": [
+        "العناية بمظهر الملمس",
+        "تقليل مظهر البهتان",
+        "خطوة تقشير مخصصة"
+      ],
+      "howToUse": "اتبعي تعليمات التطبيق والإزالة أو الشطف الموجودة على العبوة الفعلية دون زيادة الفرك.",
+      "notes": "لا يطبق على البشرة المتهيجة، وتجنبي جمع عدة مقشرات في الجلسة نفسها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "exfoliant",
+      "en": {
+        "name": "Dr.Melaxin - Peel Shot Exfoliating Black Rice Ampoule",
+        "tagline": "A considered step, taken gently.",
+        "description": "Dr.Melaxin - Peel Shot Exfoliating Black Rice Ampoule. A considered step, taken gently. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A considered step, taken gently.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use only at the frequency and for the contact time stated on the exact packaging. Introduce gradually and follow with moisturiser.",
+        "notes": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0113"
+    ],
+    "researchReferenceFils": 20000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "Dr.Melaxin",
+    "name": "Dr.Melaxin - Peel Shot Exfoliating White Rice Ampoule",
+    "subcat": "تقشير",
+    "reference": 16950,
+    "source_url": "https://glowceryjo.com/collections/all?page=3",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0114",
+    "category": "البشرة",
+    "description": "امنحي روتينكِ مساحة للتجدد، بتأنٍ. أضيفي خطوة تقشير تهتم بمظهر البهتان مع نسخة الأرز الأبيض من بيل شوت. يساعدك على توجيه العناية إلى ملمس البشرة، ويُستكمل بترطيب مناسب وتواتر مدروس بدل التعامل معه كسيروم يومي للجميع.",
+    "discount": 20,
+    "priceFils": 13500,
+    "image": "/images/catalog/TS0114-97043b94fa7d.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول بيل شوت بالأرز الأبيض من دكتور ميلاكسين",
+      "tagline": "اهتمام بإشراقة السطح ونعومته.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "تحسين مظهر السطح",
+        "تكملة لروتين النعومة"
+      ],
+      "howToUse": "التزمي بتعليمات العبوة بشأن التدليك ومدة التطبيق وطريقة الإزالة أو الشطف.",
+      "notes": "اختبريه على منطقة صغيرة واستخدمي واقي شمس في روتين النهار.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "exfoliant",
+      "en": {
+        "name": "Dr.Melaxin - Peel Shot Exfoliating White Rice Ampoule",
+        "tagline": "A considered step, taken gently.",
+        "description": "Dr.Melaxin - Peel Shot Exfoliating White Rice Ampoule. A considered step, taken gently. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A considered step, taken gently.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use only at the frequency and for the contact time stated on the exact packaging. Introduce gradually and follow with moisturiser.",
+        "notes": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0114"
+    ],
+    "researchReferenceFils": 20000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "ETUDE",
+    "name": "ETUDE - My Lash Serum",
+    "subcat": "الرموش",
+    "reference": 5950,
+    "source_url": "https://glowceryjo.com/collections/all?page=3",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0116",
+    "category": "البشرة",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. أضيفي إلى روتين إزالة المكياج خطوة مخصصة للعناية بمظهر الرموش. سيروم ماي لاش يمنح الشعيرات إحساسًا بالعناية ويسهل توزيعه بأداته، ليكون مناسبًا لمن تحب الاهتمام بالرموش دون افتراض نتيجة علاجية لطولها.",
+    "discount": 32,
+    "priceFils": 4000,
+    "image": "/images/catalog/TS0116-f9dd3c5833e6.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم ماي لاش للرموش من إيتود",
+      "tagline": "عناية يومية بالتفاصيل التي تبرز عينيك.",
+      "benefits": [
+        "العناية بمظهر الرموش",
+        "أداة تطبيق سهلة",
+        "تكملة لروتين المساء"
+      ],
+      "howToUse": "استخدميه على رموش نظيفة بالطريقة المسموح بها على العبوة دون إدخاله إلى العين.",
+      "notes": "حافظي على نظافة الأداة ولا تشاركيها مع الآخرين.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "en": {
+        "name": "ETUDE - My Lash Serum",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "ETUDE - My Lash Serum. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0116"
+    ],
+    "researchReferenceFils": 8000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "JUMISO",
+    "name": "JUMISO - All Day Vitamin Brightening & Balancing Facial Serum",
+    "subcat": "سيروم",
+    "reference": 11950,
+    "source_url": "https://glowceryjo.com/collections/all?page=3",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0117",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أضيفي إلى الروتين اهتمامًا بمظهر تفاوت اللون والبهتان مع سيروم أول داي فيتامين. يتيح لك توزيع عناية خفيفة قبل الكريم، لتبدو البشرة أكثر نضارة وملمسها أكثر نعومة ضمن استخدام منتظم يناسبها.",
+    "discount": 49,
+    "priceFils": 5990,
+    "image": "/images/catalog/TS0117-da7b87115051.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم أول داي فيتامين من جوميسو",
+      "tagline": "إشراقة ناعمة تكمل ترطيبك.",
+      "benefits": [
+        "العناية بمظهر البهتان",
+        "إشراقة أكثر تجانسًا",
+        "قوام سهل الدمج مع المرطب"
+      ],
+      "howToUse": "وزعي كمية صغيرة بعد تنظيف الوجه وقبل الكريم وفق تعليمات العبوة.",
+      "notes": "استكملي الحماية من الشمس نهارًا واختبري ملاءمته لبشرتك.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "JUMISO - All Day Vitamin Brightening & Balancing Facial Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "JUMISO - All Day Vitamin Brightening & Balancing Facial Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0117"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Glowcery",
+    "brand": "KSECRET",
+    "name": "KSECRET - SEOUL 1988 Eye Cream : Retinal Liposome 4% + Fermented Bean",
+    "subcat": "العين",
+    "reference": 10950,
+    "source_url": "https://glowceryjo.com/collections/all?page=3",
+    "source_note": "أرشيف مفهرس منذ 8 أشهر — يحتاج إعادة تحقق",
+    "id": "TS0118",
+    "category": "البشرة",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. امنحي محيط العين خطوة مركزة من خط سيول 1988 للعناية بمظهر النعومة والخطوط الدقيقة. يجمع قوام الكريم والترطيب في روتين يحتاج التدرج والكمية الصغيرة، خصوصًا عند إدخال منتج يحتوي على ريتينال.",
+    "discount": 17,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0118-60ce70988c1a.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم العين سيول 1988 من كيه سيكرت",
+      "tagline": "عناية ليلية بالتفاصيل الدقيقة حول العين.",
+      "benefits": [
+        "العناية بمظهر الخطوط",
+        "ترطيب محيط العين",
+        "خطوة كريم مركزة"
+      ],
+      "howToUse": "ربتي بكمية صغيرة في المنطقة المسموح بها على العبوة واتبعي تواتر الاستخدام المحدد عليها.",
+      "notes": "أدخليه تدريجيًا إلى الروتين وتجنبي تهيج المنطقة أو دخول المستحضر إلى العين.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "en": {
+        "name": "KSECRET - SEOUL 1988 Eye Cream : Retinal Liposome 4% + Fermented Bean",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "KSECRET - SEOUL 1988 Eye Cream : Retinal Liposome 4% + Fermented Bean. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0118"
+    ],
+    "researchReferenceFils": 13000
+  },
+  {
+    "source": "Farah Glow",
+    "brand": "SOME BY MI",
+    "name": "SOME BY MI Retinol Intense Reactivating Serum",
+    "subcat": "سيروم",
+    "reference": 10950,
+    "source_url": "https://www.farahglow.shop/category?id=3",
+    "source_note": "فهرسة قبل شهر؛ القسم: الصيدلية التجميلية",
+    "id": "TS0122",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أضيفي الريتينول إلى روتينك بطريقة مدروسة مع سيروم سوم باي مي. يركز على مظهر الخطوط الدقيقة والملمس غير المتجانس، ويكمل روتين الترطيب عندما تريدين خطوة ليلية متخصصة بدل إضافة عدة مستحضرات نشطة معًا.",
+    "discount": 17,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0122-b8163e8c4ce3.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم ريتينول إنتنس من سوم باي مي",
+      "tagline": "عناية ليلية بمظهر الخطوط والملمس.",
+      "benefits": [
+        "العناية بمظهر الخطوط",
+        "تحسين مظهر الملمس",
+        "خطوة سيروم للروتين الليلي"
+      ],
+      "howToUse": "استخدمي كمية صغيرة حسب تعليمات الشركة، وابدئي بتواتر منخفض مع مرطب مناسب.",
+      "notes": "لا يدمج مع ريتينويد آخر في الروتين نفسه، مع الحماية من الشمس نهارًا.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "SOME BY MI Retinol Intense Reactivating Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "SOME BY MI Retinol Intense Reactivating Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0122"
+    ],
+    "researchReferenceFils": 11990
+  },
+  {
+    "source": "Farah Glow",
+    "brand": "Secret Key",
+    "name": "Secret Key Snow White Spot Gel",
+    "subcat": "البشرة",
+    "reference": 7950,
+    "source_url": "https://www.farahglow.shop/category?id=3",
+    "source_note": "فهرسة قبل شهر؛ القسم: الصيدلية التجميلية",
+    "id": "TS0129",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. أضيفي إلى روتينك خطوة جل خفيفة تركز على المناطق التي يبدو لونها متفاوتًا. يمنحك سنو وايت سبوت تطبيقًا موجهًا وسهل التوزيع، ليكمل العناية بالمظهر العام مع الترطيب والحماية اليومية.",
+    "discount": 49,
+    "priceFils": 3990,
+    "image": "/images/catalog/TS0129-aa1b115eced4.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "جل سنو وايت سبوت من سيكرت كي",
+      "tagline": "عناية موضعية بمظهر تفاوت اللون.",
+      "benefits": [
+        "تطبيق موضعي",
+        "قوام جل",
+        "العناية بمظهر تفاوت اللون"
+      ],
+      "howToUse": "طبقي فقط على المناطق المسموح بها وفق إرشادات العبوة.",
+      "notes": "لا يستخدم لتغيير لون البشرة الطبيعي، وتجنبي العينين والجلد المتهيج.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "Secret Key Snow White Spot Gel",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "Secret Key Snow White Spot Gel. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0129"
+    ],
+    "researchReferenceFils": 9990
+  },
+  {
+    "source": "Farah Glow",
+    "brand": "SEAPURI",
+    "name": "SEAPURI Scalpy Hair Serum 20 ml",
+    "subcat": "الشعر",
+    "reference": 11950,
+    "source_url": "https://www.farahglow.shop/index.php",
+    "source_note": "الواجهة الرئيسية مفهرسة قبل شهر",
+    "id": "TS0155",
+    "category": "الشعر",
+    "description": "لمسة عناية قبل أن تكملي يومكِ. خصصي لفروة رأسك روتينًا واضحًا مع سيروم سكالبي من SEAPURI. تتيح عبوة التطبيق توزيع العناية على مناطق الفروة بسهولة، ليكون خطوة لمن تريد الاهتمام بمظهر كثافة الشعر وإحساس راحة الفروة دون إثقال الأطوال.",
+    "discount": 41,
+    "priceFils": 7000,
+    "image": "/images/catalog/TS0155-eb7b4264631f.webp",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم سكالبي للشعر من سيابوري",
+      "tagline": "عناية موجهة لفروة الرأس ومظهر الشعر.",
+      "benefits": [
+        "تطبيق موجه للفروة",
+        "العناية بمظهر الكثافة",
+        "أداة توزيع عملية"
+      ],
+      "howToUse": "طبقي بالكمية والطريقة الموصى بهما على العبوة ودلكي الفروة بلطف.",
+      "notes": "ليس دواءً لعلاج تساقط الشعر؛ اعتمدي حجم 20 مل بعد مطابقة العبوة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "hair-oil",
+      "en": {
+        "name": "SEAPURI Scalpy Hair Serum 20 ml",
+        "tagline": "A little finishing care for your hair.",
+        "description": "SEAPURI Scalpy Hair Serum 20 ml. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little finishing care for your hair.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed.",
+        "notes": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0155"
+    ],
+    "researchReferenceFils": 14000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "ETUDE",
+    "name": "ETUDE - كريم سون جونج 2x باريير المكثف",
+    "subcat": "مرطبات",
+    "reference": 9950,
+    "source_url": "https://ksecret.myeasyorders.com/products/skincare-etude-cream",
+    "source_note": "أسبوع",
+    "id": "TS0158",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. اختاري كريمًا بسيط الفكرة لروتين يهتم براحة البشرة ومظهر الجفاف. سون جونج 2x باريير يضيف طبقة ترطيب مريحة بعد المستحضرات الأخف، ليكون مناسبًا لمن تريد تخفيف ازدحام الروتين والتركيز على الأساسيات.",
+    "discount": 19,
+    "priceFils": 7990,
+    "image": "/images/catalog/TS0158-4cc9b8927b7a.webp",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم سون جونج 2x باريير من إيتود",
+      "tagline": "عناية تركز على حاجز الترطيب.",
+      "benefits": [
+        "دعم حاجز الترطيب",
+        "تلطيف مظهر الجفاف",
+        "تكملة لروتين بسيط"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد تنظيف الوجه والسيروم إن استخدمته.",
+      "notes": "تختلف ملاءمة الكريم من بشرة لأخرى؛ اختبريه أولًا عند التحسس المتكرر.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "ETUDE SoonJung 2x Barrier Intensive Cream",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "ETUDE SoonJung 2x Barrier Intensive Cream. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0158"
+    ],
+    "researchReferenceFils": 12000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "ROUND LAB",
+    "name": "ROUND LAB - عصارة البتولا مرطب واقي من الشمس",
+    "subcat": "واقي شمس",
+    "reference": 12950,
+    "source_url": "https://ksecret.myeasyorders.com/products/skincare-round-lab-sunscreen",
+    "source_note": "أسبوع",
+    "id": "TS0161",
+    "category": "البشرة",
+    "description": "خطوة نهارية تستحق مكانًا في روتينكِ. أكملي عناية الصباح بواقي بيرش جوس من راوند لاب. يمنحك خطوة حماية يمكن تنسيقها مع بقية الروتين، مع إحساس مرطب يناسب من لا تحب أن يبدو الوجه جافًا تحت المكياج.",
+    "discount": 49,
+    "priceFils": 6490,
+    "image": "/images/catalog/TS0161-f8ee054fe119.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي بيرش جوس من راوند لاب",
+      "tagline": "حماية نهارية بلمسة ترطيب.",
+      "benefits": [
+        "حماية نهارية",
+        "إحساس بالترطيب",
+        "سهولة الدمج قبل المكياج"
+      ],
+      "howToUse": "وزعي كمية كافية وفق تعليمات العبوة وجددي خلال التعرض للشمس وبعد التعرق أو السباحة.",
+      "notes": "تُطابق نسخة المنتج ودرجة الحماية مع العبوة عند اعتمادها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "sunscreen",
+      "en": {
+        "name": "ROUND LAB Birch Juice Moisturising Sunscreen",
+        "tagline": "Make room for a daily sun-care ritual.",
+        "description": "ROUND LAB Birch Juice Moisturising Sunscreen. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+        "benefits": [
+          "Make room for a daily sun-care ritual.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming.",
+        "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0161"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "Derma:B",
+    "name": "Derma: B - Everyday Sun Block 200 ml",
+    "subcat": "واقي شمس",
+    "reference": 12950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Dermab-sunscreen",
+    "source_note": "3 أشهر",
+    "id": "TS0163",
+    "category": "الجسم",
+    "description": "جهّزي عناية النهار لكل مشاويركِ. امنحي مناطق الجسم المعرضة للشمس خطوة حماية سهلة التوزيع مع إيفري داي صن بلوك. عبوة 200 مل المرجعية تناسب العناية بالذراعين والساقين وغيرها من المناطق المكشوفة، مع الاهتمام بالكمية الكافية والتجديد.",
+    "discount": 38,
+    "priceFils": 7990,
+    "image": "/images/catalog/TS0163-b05920d1a52d.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "واقي الجسم إيفري داي من ديرما بي",
+      "tagline": "حماية ترافق روتين الجسم اليومي.",
+      "benefits": [
+        "حماية نهارية للجسم",
+        "عبوة عملية للاستخدام المتكرر",
+        "سهولة التوزيع"
+      ],
+      "howToUse": "وزعي حسب تعليمات العبوة قبل التعرض للشمس وجددي أثناء التعرض وبعد التعرق أو السباحة.",
+      "notes": "راجعي تخصيص العبوة للوجه إذا أردتِ استخدامها عليه.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "body-sunscreen",
+      "en": {
+        "name": "Derma:B · Derma: B - Everyday Sun Block 200 ml",
+        "tagline": "A sun-care step before your day begins.",
+        "description": "Derma:B · Derma: B - Everyday Sun Block 200 ml. A sun-care step before your day begins. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A sun-care step before your day begins.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply generously to exposed body skin before sun exposure. Reapply following the exact pack directions, especially after swimming or sweating.",
+        "notes": "Check the SPF on your exact pack. Use shade and protective clothing too; no sunscreen blocks all UV exposure.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0163"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "TIRTIR",
+    "name": "TIRTIR - Niacinamide 20% Serum",
+    "subcat": "سيروم",
+    "reference": 12950,
+    "source_url": "https://ksecret.myeasyorders.com/products/tirtir-nia",
+    "source_note": "شهر",
+    "id": "TS0165",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. لمن لديها روتين مدروس وتريد عناية أكثر تركيزًا بمظهر المسام وتفاوت اللون، يقدم هذا السيروم من تيرتير خيارًا مركزًا. يعتمد اختيار الكمية والتكرار على تعليمات العبوة وتحمل البشرة، مع المحافظة على الترطيب.",
+    "discount": 49,
+    "priceFils": 6490,
+    "image": "/images/catalog/TS0165-d3e7ae7d9874.webp",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم نياسيناميد 20% من تيرتير",
+      "tagline": "خطوة مركزة للعناية بمظهر المسام واللون.",
+      "benefits": [
+        "العناية بمظهر المسام",
+        "تحسين مظهر تفاوت اللون",
+        "قوام سيروم مركز"
+      ],
+      "howToUse": "ابدئي بكمية صغيرة وفق إرشادات الشركة وراقبي استجابة البشرة قبل زيادة التكرار.",
+      "notes": "تركيز مرتفع؛ لا يفترض أنه مناسب للبشرة الحساسة أو للمبتدئات دون اختبار.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "TIRTIR - Niacinamide 20% Serum",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "TIRTIR - Niacinamide 20% Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0165"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "PURITO SEOUL",
+    "name": "PURITO SEOUL - Wonder Releaf Centella Serum Unscented 60ml",
+    "subcat": "سيروم",
+    "reference": 12950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Purito-serum",
+    "source_note": "أسبوع",
+    "id": "TS0166",
+    "category": "البشرة",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. امنحي البشرة خطوة سيروم سهلة ضمن روتين بسيط مع وندر ريليف غير المعطر. يركز على إحساس الترطيب وراحة الملمس، ويكمّل الكريم عندما تريدين عناية خفيفة دون اختيار نسخة معطرة من المجموعة.",
+    "discount": 18,
+    "priceFils": 10490,
+    "image": "/images/catalog/TS0166-297f0f0987bb.webp",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "سيروم وندر ريليف غير المعطر من بوريتو سيول",
+      "tagline": "عناية هادئة لروتين يركز على الراحة.",
+      "benefits": [
+        "نسخة غير معطرة",
+        "إحساس بالترطيب",
+        "تكملة لروتين بسيط"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد التنظيف وقبل المرطب حسب تعليمات العبوة.",
+      "notes": "اختاري نسخة Unscented المحددة؛ لا يعني غياب العطر انعدام احتمال التحسس.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "en": {
+        "name": "PURITO SEOUL - Wonder Releaf Centella Serum Unscented 60ml",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "PURITO SEOUL - Wonder Releaf Centella Serum Unscented 60ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0166"
+    ],
+    "researchReferenceFils": 16000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "JUMISO",
+    "name": "JUMISO - Niacinamide 5+ Overnight Cream 50 ml",
+    "subcat": "مرطبات",
+    "reference": 13950,
+    "source_url": "https://ksecret.myeasyorders.com/products/JUMISO-overnight-cream",
+    "source_note": "شهر",
+    "id": "TS0174",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. اختتمي اليوم بكريم يضيف إلى الترطيب اهتمامًا بمظهر تفاوت اللون والملمس. يساعدك كريم جوميسو الليلي على تنسيق خطوة ختامية للروتين، ليبقى إحساس البشرة أكثر نعومة وراحة بعد العناية.",
+    "discount": 21,
+    "priceFils": 11000,
+    "image": "/images/catalog/TS0174-f8d3582f64e9.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم نياسيناميد 5+ الليلي من جوميسو",
+      "tagline": "ترطيب للمساء مع عناية بمظهر النضارة.",
+      "benefits": [
+        "ترطيب للمساء",
+        "العناية بمظهر النضارة",
+        "خطوة كريم ختامية"
+      ],
+      "howToUse": "وزعي كمية مناسبة بعد السيروم في روتين المساء بحسب إرشادات العبوة.",
+      "notes": "لا تفرطي في طبقات العناية إذا شعرتِ بالثقل أو اللمعان الزائد.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "JUMISO - Niacinamide 5+ Overnight Cream 50 ml",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "JUMISO - Niacinamide 5+ Overnight Cream 50 ml. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0174"
+    ],
+    "researchReferenceFils": 17000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "Haruharu Wonder",
+    "name": "Haruharu WONDER - كريم العين باكوتشيول من الأرز الأسود 20 مل",
+    "subcat": "العناية بالعين",
+    "reference": 9950,
+    "source_url": "https://ksecret.myeasyorders.com/products/skincare-haruharu-eye-cream",
+    "source_note": "5 أشهر",
+    "id": "TS0175",
+    "category": "البشرة",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. امنحي المنطقة الرقيقة حول العين خطوة كريم تهتم بالنعومة ومظهر الجفاف. نسخة بلاك رايس باكوتشيول من هارو هارو تكمل روتين الوجه، لمن تريد عناية مخصصة لمحيط العين بدل استخدام أي كريم بشكل عشوائي.",
+    "discount": 39,
+    "priceFils": 5990,
+    "image": "/images/catalog/TS0175-60f46fe6f37c.webp",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم العين بلاك رايس باكوتشيول من هارو هارو",
+      "tagline": "ترطيب يمنح محيط العين مظهرًا أكثر راحة.",
+      "benefits": [
+        "ترطيب لمحيط العين",
+        "تحسين مظهر الخطوط الجافة",
+        "إحساس أنعم"
+      ],
+      "howToUse": "ربتي بكمية صغيرة حول عظمة محيط العين حسب العبوة دون فرك أو ملامسة العين.",
+      "notes": "النسخة المرجعية 20 مل، مع اختبار الملاءمة قبل الاستخدام المعتاد.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "en": {
+        "name": "Haruharu Wonder Black Rice Bakuchiol Eye Cream 20 ml",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "Haruharu Wonder Black Rice Bakuchiol Eye Cream 20 ml. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0175"
+    ],
+    "researchReferenceFils": 12000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "Centellian24",
+    "name": "Centellian24 - Madeca Cream Time Reverse 50 ml",
+    "subcat": "مرطبات",
+    "reference": 14950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Madeca",
+    "source_note": "شهر",
+    "id": "TS0179",
+    "category": "البشرة",
+    "description": "اجعلي وقت الترطيب لحظتكِ المفضلة. امنحي البشرة الجافة أو المرهقة كريمًا يركز على إحساس العناية ومظهر المرونة. ماديكا تايم ريفيرس يضيف طبقة ترطيب مريحة بعد السيروم، ليكمل روتينًا يهتم بتلطيف الجفاف وتحسين مظهر الملمس.",
+    "discount": 39,
+    "priceFils": 8990,
+    "image": "/images/catalog/TS0179-eaa69d8f2bb8.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم ماديكا تايم ريفيرس من سنتيليان 24",
+      "tagline": "عناية بملمس يبدو أكثر نعومة ومرونة.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "العناية بمظهر المرونة",
+        "خطوة كريم مريحة"
+      ],
+      "howToUse": "وزعي كمية مناسبة على الوجه بعد خطوات العناية الأخف وفق العبوة.",
+      "notes": "راجعي اسم النسخة كاملًا لأن مجموعة ماديكا تضم إصدارات مختلفة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "moisturizer",
+      "en": {
+        "name": "Centellian24 - Madeca Cream Time Reverse 50 ml",
+        "tagline": "Make your moisturising moment something to enjoy.",
+        "description": "Centellian24 - Madeca Cream Time Reverse 50 ml. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+        "benefits": [
+          "Make your moisturising moment something to enjoy.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack.",
+        "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0179"
+    ],
+    "researchReferenceFils": 18000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "KSECRET",
+    "name": "KSECRET - Collagen Boosting Secret Sleeping Mask 60 ml",
+    "subcat": "ماسك",
+    "reference": 14950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Ksecret-sleeping-mask",
+    "source_note": "3 أسابيع",
+    "id": "TS0180",
+    "category": "البشرة",
+    "description": "استراحة جمال على إيقاعكِ. أضيفي إلى الليل ماسكًا يكمّل الترطيب ويمنح البشرة إحساسًا بالعناية. كولاجين بوستنغ من كيه سيكرت ينسجم مع روتين بسيط قبل النوم، عندما تريدين مظهرًا أنعم وشعورًا أقل جفافًا بعد العناية.",
+    "discount": 29,
+    "priceFils": 10490,
+    "image": "/images/catalog/TS0180-0b6f4397067d.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك النوم كولاجين بوستنغ من كيه سيكرت",
+      "tagline": "اللمسة الأخيرة لعناية المساء.",
+      "benefits": [
+        "تكملة لترطيب المساء",
+        "ملمس أنعم",
+        "خطوة ختامية للروتين"
+      ],
+      "howToUse": "طبقي بالطريقة والكمية المحددتين على العبوة كخطوة أخيرة في المساء.",
+      "notes": "اتبعي تعليمات الشركة حول الشطف أو الإزالة صباحًا.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "face-mask",
+      "en": {
+        "name": "KSECRET - Collagen Boosting Secret Sleeping Mask 60 ml",
+        "tagline": "A little beauty pause, at your own pace.",
+        "description": "KSECRET - Collagen Boosting Secret Sleeping Mask 60 ml. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little beauty pause, at your own pace.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask.",
+        "notes": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0180"
+    ],
+    "researchReferenceFils": 18000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "Numbuzin",
+    "name": "numbuzin - No.9 NAD Bio Lifting-sil",
+    "subcat": "ماسك",
+    "reference": 19950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Numbuzin-mask",
+    "source_note": "شهران",
+    "id": "TS0184",
+    "category": "البشرة",
+    "description": "استراحة جمال على إيقاعكِ. امنحي وجهك وقتًا خاصًا مع ماسك رقم 9 من نمبوزين. يركز على إحساس الترطيب ومظهر النعومة والمرونة، ليكون خطوة تدليل عند الحاجة إلى عناية إضافية أو قبل إطلالة ترغبين أن تبدو أكثر نضارة.",
+    "discount": 29,
+    "priceFils": 13990,
+    "image": "/images/catalog/TS0184-80ce733cdb64.png",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "ماسك رقم 9 NAD من نمبوزين",
+      "tagline": "جلسة عناية لملمس أكثر حيوية.",
+      "benefits": [
+        "إحساس بالترطيب",
+        "تحسين مظهر النعومة",
+        "جلسة عناية مريحة"
+      ],
+      "howToUse": "ثبتي القناع على بشرة نظيفة للمدة المحددة على العبوة ثم أزيليه بلطف.",
+      "notes": "اختاري نسخة No.9 المحددة واتّبعي طريقة تثبيت أجزائها.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "face-mask",
+      "en": {
+        "name": "numbuzin - No.9 NAD Bio Lifting-sil",
+        "tagline": "A little beauty pause, at your own pace.",
+        "description": "numbuzin - No.9 NAD Bio Lifting-sil. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A little beauty pause, at your own pace.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask.",
+        "notes": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0184"
+    ],
+    "researchReferenceFils": 22000
+  },
+  {
+    "source": "Ksecret (فرعي، غير متحقق)",
+    "brand": "mixsoon",
+    "name": "mixsoon - Bean Cleansing Oil Jumbo 195 ml",
+    "subcat": "تنظيف زيتي",
+    "reference": 14950,
+    "source_url": "https://ksecret.myeasyorders.com/products/Mixsoon-oil-cleanser",
+    "source_note": "5 أشهر",
+    "id": "TS0190",
+    "category": "البشرة",
+    "description": "أغلقي يومكِ بلحظة انتعاش. امنحي المكياج وواقي الشمس خطوة إزالة انسيابية مع زيت بين من ميكسون بحجم 195 مل المرجعي. يوزع على الوجه الجاف ثم يستحلب بالماء، ليساعد على إزالة بقايا اليوم قبل التنظيف المائي عند الحاجة.",
+    "discount": 19,
+    "priceFils": 11990,
+    "image": "/images/catalog/TS0190-f5e4a9eb9ff5.jpg",
+    "approved": true,
+    "stock": 24,
+    "details": {
+      "nameAr": "زيت بين للتنظيف بالحجم الكبير من ميكسون",
+      "tagline": "تنظيف أولي بمقاس يرافق روتينك.",
+      "benefits": [
+        "تفكيك المكياج والواقي",
+        "خطوة للتنظيف المزدوج",
+        "حجم كبير للروتين المنتظم"
+      ],
+      "howToUse": "دلكي كمية مناسبة على الوجه الجاف، أضيفي قليلًا من الماء ثم اشطفي جيدًا.",
+      "notes": "اتبعي تعليمات العبوة حول منطقة العين وأكملي غسولًا مائيًا عند الحاجة.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "cleanser",
+      "en": {
+        "name": "mixsoon - Bean Cleansing Oil Jumbo 195 ml",
+        "tagline": "A fresh start, or a gentle end to your day.",
+        "description": "mixsoon - Bean Cleansing Oil Jumbo 195 ml. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+        "benefits": [
+          "A fresh start, or a gentle end to your day.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs.",
+        "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "active": 1,
+    "canonicalSources": [
+      "TS0190"
+    ],
+    "researchReferenceFils": 18000
+  },
+  {
+    "id": "TS0206",
+    "brand": "SOME BY MI",
+    "name": "Retinol Intense Advanced Triple Action Eye Cream",
+    "category": "البشرة",
+    "subcat": "العناية بالعين",
+    "description": "لمسة عناية لأكثر تفاصيل وجهكِ رقة. كريم العين ريتينول إنتنس من سوم باي مي لخطوة العناية المسائية بمحيط العين. ابدئي بكمية صغيرة وفق إرشادات العبوة وتدرجي في الاستخدام، مع الحفاظ على ترطيب البشرة وواقي الشمس صباحًا.",
+    "reference": 12000,
+    "priceFils": 8990,
+    "discount": 25,
+    "image": "/images/catalog/TS0206-7fb02243cc1a.webp",
+    "approved": true,
+    "active": 1,
+    "stock": 24,
+    "details": {
+      "nameAr": "كريم العين ريتينول إنتنس من سوم باي مي",
+      "tagline": "عناية مسائية لمحيط العين.",
+      "benefits": [
+        "عناية مسائية بالعين",
+        "خطوة ريتينول تدريجية",
+        "كمية صغيرة تكفي للتوزيع"
+      ],
+      "howToUse": "استخدمي مساءً وفق ملصق العبوة. ابدئي بكمية صغيرة وبوتيرة متباعدة حول عظمة العين بعيدًا عن الجفن المتحرك وخط الرموش، ثم رطبي البشرة.",
+      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي ريتينول؛ يُتجنب أثناء الحمل والتخطيط له، واستشيري مختصًا عند الرضاعة أو استخدام علاجات بشرة. لا تبدئيه مع مقشرات أخرى في الجلسة نفسها.",
+      "imageType": "photo",
+      "collection": "beauty",
+      "featuredOrder": 100,
+      "productType": "eye-care",
+      "size": "",
+      "shade": "",
+      "variantNote": "",
+      "intakeBatch": "2026-10-27",
+      "en": {
+        "name": "SOME BY MI · Retinol Intense Advanced Triple Action Eye Cream",
+        "tagline": "A small, careful moment for your eyes.",
+        "description": "SOME BY MI · Retinol Intense Advanced Triple Action Eye Cream. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+        "benefits": [
+          "A small, careful moment for your eyes.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling.",
+        "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "source": "Owner intake 2026-10-27",
+    "source_url": "https://www.mikaela-beauty.com/products/some-by-mi-retinol-intense-advanced-triple-action-eye-cream"
+  },
+  {
+    "id": "TS0226",
+    "brand": "Farmstay",
+    "name": "24K Gold Peptide Solution Prime Ampoule",
+    "category": "البشرة",
+    "subcat": "السيروم",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أمبول 24K غولد بيبتايد سوليوشن برايم من فارم ستاي لروتين العناية بالوجه. توزع كمية صغيرة قبل الكريم لإضافة خطوة سيروم إلى الروتين، مع اتباع تعليمات العبوة وعدم استخدامه قرب العينين.",
+    "reference": 12000,
+    "priceFils": 8990,
+    "discount": 25,
+    "image": "/images/catalog/TS0226-349d3af10084.webp",
+    "approved": true,
+    "active": 1,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول غولد بيبتايد سوليوشن برايم من فارم ستاي",
+      "tagline": "أمبول غولد وبيبتايد.",
+      "benefits": [
+        "صيغة أمبول",
+        "خطوة قبل الكريم",
+        "من مجموعة غولد بيبتايد"
+      ],
+      "howToUse": "وزعي بضع قطرات على بشرة نظيفة، ثم اتبعيها بالمرطب. التزمي بكمية ووتيرة الاستخدام على العبوة.",
+      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "size": "",
+      "shade": "",
+      "variantNote": "",
+      "intakeBatch": "2026-10-27",
+      "en": {
+        "name": "Farmstay · 24K Gold Peptide Solution Prime Ampoule",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Farmstay · 24K Gold Peptide Solution Prime Ampoule. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "source": "Owner intake 2026-10-27",
+    "source_url": "https://shopee.co.th/Farmstay-24K-Gold-Peptide-Solution-Prime-Ampoule-%28250ml%29-i.1494335589.24392565968"
+  },
+  {
+    "id": "TS0331",
+    "brand": "Elizavecca",
+    "name": "Witch Piggy Hell-Pore Marine Collagen Ample",
+    "category": "البشرة",
+    "subcat": "السيروم",
+    "description": "خطوة تختارينها على مزاج بشرتكِ. أمبول مارين كولاجين من إليزافيكا يضيف خطوة سيروم إلى روتين بشرتكِ. وزعي كمية صغيرة بعد التنظيف وقبل المرطب، وربتي بلطف لتمنحي بشرتكِ لحظة اهتمام ومظهرًا أكثر انتعاشًا مع العناية المنتظمة.",
+    "reference": 10000,
+    "priceFils": 6990,
+    "discount": 30,
+    "image": "/images/catalog/TS0331-a46d7a9e1ca1.webp",
+    "approved": true,
+    "active": 1,
+    "stock": 24,
+    "details": {
+      "nameAr": "أمبول مارين كولاجين من إليزافيكا",
+      "tagline": "قطرات عناية، ولمسة ناعمة تحبينها.",
+      "benefits": [
+        "أمبول للعناية بالبشرة",
+        "صيغة بالكولاجين البحري",
+        "يُستخدم قبل المرطب"
+      ],
+      "howToUse": "وزعي كمية صغيرة على البشرة النظيفة قبل المرطب، بعيدًا عن العينين. اتبعي وتيرة الاستخدام المكتوبة على العبوة.",
+      "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+      "imageType": "photo",
+      "collection": "k-beauty",
+      "featuredOrder": 100,
+      "productType": "serum",
+      "size": "",
+      "shade": "",
+      "variantNote": "",
+      "intakeBatch": "2026-10-27-b",
+      "en": {
+        "name": "Elizavecca · Witch Piggy Hell-Pore Marine Collagen Ample",
+        "tagline": "A thoughtful step in a routine that is yours.",
+        "description": "Elizavecca · Witch Piggy Hell-Pore Marine Collagen Ample. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+        "benefits": [
+          "A thoughtful step in a routine that is yours.",
+          "A dedicated step to coordinate with your existing routine."
+        ],
+        "howToUse": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time.",
+        "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+        "variantNote": ""
+      },
+      "contentVersion": "3.0.0"
+    },
+    "source": "Owner intake 2026-10-27-b",
+    "source_url": "owner-supplied:IMG_0420.jpeg"
+  }
+]

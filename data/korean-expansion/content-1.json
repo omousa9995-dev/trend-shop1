@@ -1,0 +1,1836 @@
+[
+  {
+    "id": "TS0038",
+    "brand": "COSRX",
+    "productName": "Original Advanced Snail Peptide Eye Cream By Cosrx",
+    "ar": {
+      "name": "كريم العين سنيل بيبتايد من كوسركس",
+      "tagline": "لمسة خفيفة، وعناية بتفاصيل نظرتكِ.",
+      "description": "لمنطقة العين روتينها اللطيف. يجمع كريم سنيل بيبتايد من كوسركس ترشيح إفراز الحلزون والنياسيناميد والببتيدات في خطوة ترطيب خفيفة. وزّعي قليلًا بعد السيروم وربّتي بهدوء حول العين؛ عناية تساعد على تنعيم مظهر المنطقة ومنحها إشراقة، دون الحاجة إلى طبقة ثقيلة.",
+      "benefits": [
+        "يرطّب المنطقة المحيطة بالعين",
+        "يساعد على تنعيم مظهر الخطوط الدقيقة",
+        "يدعم مظهرًا أكثر إشراقًا"
+      ],
+      "textureTitle": "كريم عين خفيف وسريع الامتصاص",
+      "textureText": "قوام يناسب التربيت اللطيف؛ ابدئي بكمية صغيرة بدل تكثيف الطبقات.",
+      "fitText": "للمنطقة التي تبدو جافة أو باهتة حول العين، مع مراعاة تحمّل بشرتكِ.",
+      "steps": [
+        {
+          "title": "بعد السيروم",
+          "text": "نظّفي بشرتكِ ثم استخدمي الإيسنس أو السيروم."
+        },
+        {
+          "title": "كمية قليلة",
+          "text": "وزّعي قليلًا حول محيط العين دون إدخاله إليها."
+        },
+        {
+          "title": "تربيت هادئ",
+          "text": "ربّتي بأطراف الأصابع حتى الامتصاص، دون شد الجلد."
+        }
+      ],
+      "notes": "تجنّبي ملامسة العين مباشرة. اختبري موضعيًا عند التحسس من مكوّنات الحلزون، وتوقفي عند التهيّج.",
+      "ingredients": [
+        "ترشيح إفراز الحلزون",
+        "نياسيناميد",
+        "ببتيدات"
+      ],
+      "faq": [
+        {
+          "question": "متى يأتي في الروتين؟",
+          "answer": "بعد الإيسنس أو السيروم وقبل إكمال الترطيب."
+        },
+        {
+          "question": "هل أحتاج كمية كبيرة؟",
+          "answer": "ابدئي بالقليل وربّتي بلطف؛ المنطقة لا تحتاج طبقة ثقيلة."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Advanced Snail Peptide Eye Cream",
+      "tagline": "A light touch for your eye-care moment.",
+      "description": "Give the eye area a gentle step of its own. Snail filtrate, niacinamide and peptides come together in a light moisturising cream. Pat on a little after your serum to soften the look of fine lines and refresh the appearance of dull under-eyes.",
+      "benefits": [
+        "Moisturises the eye contour",
+        "Softens the look of fine lines",
+        "Supports a brighter-looking eye area"
+      ],
+      "textureTitle": "Lightweight eye cream",
+      "textureText": "Start with a small amount and pat gently rather than building a heavy layer.",
+      "fitText": "For a dry or dull-looking eye contour, according to your skin’s tolerance.",
+      "steps": [
+        {
+          "title": "After serum",
+          "text": "Cleanse and apply your essence or serum."
+        },
+        {
+          "title": "A small amount",
+          "text": "Distribute a little around the eye contour, keeping it out of the eyes."
+        },
+        {
+          "title": "Pat gently",
+          "text": "Tap with fingertips until absorbed; do not pull the skin."
+        }
+      ],
+      "notes": "Avoid direct eye contact. Patch test if sensitive to snail ingredients and stop if irritated.",
+      "ingredients": [
+        "Snail secretion filtrate",
+        "Niacinamide",
+        "Peptides"
+      ],
+      "faq": [
+        {
+          "question": "Where does it fit?",
+          "answer": "After essence or serum, before finishing your moisturising routine."
+        },
+        {
+          "question": "Do I need a thick layer?",
+          "answer": "No. Start small and pat gently."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/advanced-snail-peptide-eye-cream",
+        "title": "COSRX Advanced Snail Peptide Eye Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently patting a tiny amount around orbital bone with fingertip, not on eyelid; exact yellow/white COSRX eye cream pack beside her."
+  },
+  {
+    "id": "TS0040",
+    "brand": "COSRX",
+    "productName": "كريم مرطب حمض الهيالورونيك أسيد COSRX",
+    "ar": {
+      "name": "كريم الترطيب المكثف بالهيالورونيك من كوسركس",
+      "tagline": "اختمي روتينكِ بملمس ألين.",
+      "description": "عندما تحتاج بشرتكِ إلى ترطيب أوضح، امنحيها خطوة كريمية مريحة بعد الإيسنس. يجمع كريم كوسركس المكثف الهيالورونيك مع مكوّنات مرطبة، ليساعد على الاحتفاظ بالرطوبة وتخفيف إحساس الجفاف. خذي كمية تناسب بشرتكِ ووزّعيها بهدوء؛ لمسة أخيرة يمكنكِ تعديلها بحسب احتياج كل منطقة.",
+      "benefits": [
+        "يساعد على الاحتفاظ برطوبة البشرة",
+        "يمنح ملمسًا أنعم",
+        "يلائم خطوة الترطيب للبشرة الجافة"
+      ],
+      "textureTitle": "كريم غني بالترطيب",
+      "textureText": "طبقة كريمية تُوزَّع بلطف؛ اضبطي الكمية بحسب الجفاف بدل الإكثار تلقائيًا.",
+      "fitText": "للبشرة الجافة أو التي تعاني نقص الترطيب وتفضّل كريمًا بدل السيروم وحده.",
+      "steps": [
+        {
+          "title": "بعد العناية الخفيفة",
+          "text": "ابدئي بالتنظيف ثم التونر أو الإيسنس إن استخدمتِه."
+        },
+        {
+          "title": "وزّعي الكريم",
+          "text": "ضعي كمية مناسبة على الوجه وافرديها بلطف."
+        },
+        {
+          "title": "اربتي وأكملي",
+          "text": "ربّتي حتى الامتصاص، وأتبعيه بواقي الشمس صباحًا."
+        }
+      ],
+      "notes": "للاستخدام الخارجي. راجعي قائمة عبوتكِ عند وجود حساسية من المكوّنات، وتوقفي عند التهيّج.",
+      "ingredients": [
+        "هيالورونات الصوديوم",
+        "ماء نبق البحر",
+        "بانثينول"
+      ],
+      "faq": [
+        {
+          "question": "هل يحل محل الإيسنس؟",
+          "answer": "هو خطوة كريم؛ يمكن وضعه بعد الإيسنس حسب احتياجكِ."
+        },
+        {
+          "question": "لمن يناسب أكثر؟",
+          "answer": "لمن تبحث عن ترطيب كريمي للبشرة الجافة أو المفتقرة للرطوبة."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Hyaluronic Acid Intensive Cream",
+      "tagline": "Finish your routine with a softer feel.",
+      "description": "When skin wants more moisture, finish with a comforting cream. This COSRX moisturiser combines sodium hyaluronate and nourishing ingredients to help retain hydration and soften a dry feel. Spread a suitable amount after lighter layers and adjust it to the needs of your skin.",
+      "benefits": [
+        "Helps retain moisture",
+        "Leaves skin feeling softer",
+        "A cream step for dry skin"
+      ],
+      "textureTitle": "A moisture-rich cream",
+      "textureText": "Spread a comfortable layer and adapt the amount to dry areas.",
+      "fitText": "For dry or dehydrated skin that prefers a cream after lighter skincare.",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Cleanse, then use toner or essence if desired."
+        },
+        {
+          "title": "Apply",
+          "text": "Spread a suitable amount gently over the face."
+        },
+        {
+          "title": "Finish",
+          "text": "Pat until absorbed; follow with sunscreen in the morning."
+        }
+      ],
+      "notes": "External use only. Check your jar’s ingredient list for allergies and stop if irritation develops.",
+      "ingredients": [
+        "Sodium hyaluronate",
+        "Sea-buckthorn water",
+        "Panthenol"
+      ],
+      "faq": [
+        {
+          "question": "Does it replace essence?",
+          "answer": "It is a cream step; apply after essence if your routine includes one."
+        },
+        {
+          "question": "Who is it for?",
+          "answer": "Skin seeking richer, cream-based hydration."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/collections/all/products/hyaluronic-acid-intensive-cream",
+        "title": "COSRX Hyaluronic Acid Intensive Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Inspected store pack: Hyaluronic Acid Intensive Cream 100g; do not confuse with Hydra Power Essence."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman spreading a small cream dab on cheek; exact frosted COSRX 100g jar with black lid and blue label."
+  },
+  {
+    "id": "TS0044",
+    "brand": "COSRX",
+    "productName": "سيروم Cosrx Galactomyces95 Tone Balancing Essence",
+    "ar": {
+      "name": "إيسنس جالاكتومايسس 95 من كوسركس",
+      "tagline": "طبقة خفيفة لإشراقة روتينكِ.",
+      "description": "إذا بدا ملمس بشرتكِ خشنًا أو مرهقًا، أضيفي إيسنس خفيفًا بين التونر والكريم. يعتمد جالاكتومايسس 95 على ترشيح التخمير مع مكوّنات مرطبة، ليساعد على النعومة ومظهر أكثر إشراقًا. بضع لمسات موزعة بهدوء تجعل هذه الخطوة سهلة الاندماج في روتينكِ اليومي.",
+      "benefits": [
+        "يساعد على ترطيب البشرة",
+        "يدعم ملمسًا أنعم",
+        "يحسّن مظهر البهتان"
+      ],
+      "textureTitle": "إيسنس خفيف سريع الامتصاص",
+      "textureText": "طبقة رقيقة تسبق المرطب؛ لا يحتاج شطفًا بعد التوزيع.",
+      "fitText": "للبشرة الباهتة أو الخشنة التي ترغب في عناية خفيفة قبل الكريم.",
+      "steps": [
+        {
+          "title": "نظّفي أولًا",
+          "text": "ابدئي ببشرة نظيفة واستخدمي التونر إن رغبتِ."
+        },
+        {
+          "title": "وزّعي قليلًا",
+          "text": "ضعي كمية صغيرة بالتساوي على الوجه."
+        },
+        {
+          "title": "اربتي ثم رطّبي",
+          "text": "ربّتي بأطراف الأصابع وأكملي بكريم الترطيب."
+        }
+      ],
+      "notes": "اختبريه على منطقة صغيرة، خصوصًا عند التحسس من مكوّنات التخمير. تجنّبي العين وتوقفي عند التهيّج.",
+      "ingredients": [
+        "ترشيح تخمير الجالاكتومايسس",
+        "نياسيناميد",
+        "بانثينول وهيالورونات الصوديوم"
+      ],
+      "faq": [
+        {
+          "question": "هل يُغسل؟",
+          "answer": "لا؛ يُترك ليمتص ثم يُتبع بالمرطب."
+        },
+        {
+          "question": "هل هو كريم؟",
+          "answer": "لا، هو إيسنس خفيف يأتي قبل الكريم."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Galactomyces 95 Tone Balancing Essence",
+      "tagline": "A light layer for a brighter-looking routine.",
+      "description": "Bring a light essence step between toner and cream. Galactomyces ferment filtrate and moisturising ingredients help soften a rough feel, hydrate and refresh the appearance of dull skin. Pat a little across your face, then finish with your preferred moisturiser.",
+      "benefits": [
+        "Helps hydrate",
+        "Softens rough-feeling texture",
+        "Refreshes the look of dull skin"
+      ],
+      "textureTitle": "A light, quick-absorbing essence",
+      "textureText": "Apply a thin leave-on layer before moisturiser.",
+      "fitText": "For dull or rough-feeling skin seeking a light step before cream.",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Cleanse and tone if desired."
+        },
+        {
+          "title": "Apply",
+          "text": "Spread a small amount evenly over the face."
+        },
+        {
+          "title": "Complete",
+          "text": "Pat with fingertips, then apply moisturiser."
+        }
+      ],
+      "notes": "Patch test, particularly if sensitive to fermented ingredients. Avoid eyes and stop if irritated.",
+      "ingredients": [
+        "Galactomyces ferment filtrate",
+        "Niacinamide",
+        "Panthenol and sodium hyaluronate"
+      ],
+      "faq": [
+        {
+          "question": "Should I rinse it?",
+          "answer": "No. Let it absorb, then moisturise."
+        },
+        {
+          "question": "Is this a cream?",
+          "answer": "No. It is an essence used before cream."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://b2c.cosrx.com/collections/dullness/products/galactomyces-95-tone-balancing-essence",
+        "title": "COSRX Galactomyces 95 Tone Balancing Essence"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman patting clear essence into cheek; exact COSRX Galactomyces 95 bottle, no fake whitening split-screen."
+  },
+  {
+    "id": "TS0065",
+    "brand": "Beauty of Joseon",
+    "productName": "Beauty of Joseon – Relief Sun",
+    "ar": {
+      "name": "واقي الشمس ريليف صن من بيوتي أوف جوسون",
+      "tagline": "خطوة نهارية ناعمة، تستحق الاستمرار.",
+      "description": "اجعلي آخر خطوة صباحية جزءًا مريحًا من روتينكِ. ريليف صن بقوامه الكريمي يجمع الحماية الشمسية مع إحساس بالترطيب، ويناسب من تحب اللمسة الندية. وزّعي كمية وافرة قبل الخروج وجدديها أثناء التعرض للشمس. قد تحمل العبوة اسم الأرز والبروبيوتيك أو تسمية الأرز والنياسيناميد الأحدث بحسب الإصدار.",
+      "benefits": [
+        "حماية شمسية SPF50+ PA++++ بحسب العبوة",
+        "ملمس كريمي مرطّب",
+        "لمسة ندية مناسبة للروتين الصباحي"
+      ],
+      "textureTitle": "كريمي وخفيف على البشرة",
+      "textureText": "يمتد كالكريم، ويأتي بعد بقية العناية وقبل المكياج.",
+      "fitText": "خيار للبشرة العادية والجافة والمختلطة التي تفضّل واقيًا بلمسة مرطّبة.",
+      "steps": [
+        {
+          "title": "آخر خطوة صباحًا",
+          "text": "أكملي العناية الأساسية قبل الواقي."
+        },
+        {
+          "title": "كمية وافرة",
+          "text": "وزّعيه بالتساوي على الوجه والرقبة والمناطق المكشوفة."
+        },
+        {
+          "title": "جدّدي الحماية",
+          "text": "أعيدي التطبيق كل ساعتين على الأقل أثناء التعرض للشمس."
+        }
+      ],
+      "notes": "ليس بديلًا عن الظل والملابس الواقية. استخدمي واقيًا مقاومًا للماء للسباحة أو التعرّق، وراجعي تعليمات العبوة.",
+      "ingredients": [
+        "مستخلص الأرز",
+        "نياسيناميد",
+        "فلاتر شمسية للنسخة المدونة على العبوة"
+      ],
+      "faq": [
+        {
+          "question": "هل اختلف اسم العبوة؟",
+          "answer": "توضح الشركة انتقال تسمية الأرز والبروبيوتيك إلى الأرز والنياسيناميد دون تغيير الصيغة."
+        },
+        {
+          "question": "هل هو نفسه أكوا فريش؟",
+          "answer": "لا؛ أكوا فريش إصدار منفصل بقوام أخف مع الأرز وB5."
+        }
+      ]
+    },
+    "en": {
+      "name": "Beauty of Joseon Relief Sun",
+      "tagline": "A comfortable finish to your morning care.",
+      "description": "Finish your morning with creamy, moisturising sun care. Relief Sun suits those who enjoy a dewy feel. Apply generously before going out and renew protection while exposed. Packaging may say Rice + Probiotics or the newer Rice + Niacinamide name, depending on the edition.",
+      "benefits": [
+        "SPF50+ PA++++ as labelled",
+        "Creamy, moisturising feel",
+        "Dewy daytime finish"
+      ],
+      "textureTitle": "Light cream texture",
+      "textureText": "Apply after skincare and before makeup.",
+      "fitText": "An option for normal, dry or combination skin preferring a moisturising finish.",
+      "steps": [
+        {
+          "title": "Finish skincare",
+          "text": "Use as the last morning skincare step."
+        },
+        {
+          "title": "Cover evenly",
+          "text": "Apply generously over face, neck and exposed areas."
+        },
+        {
+          "title": "Reapply",
+          "text": "Renew at least every two hours during sun exposure."
+        }
+      ],
+      "notes": "Use shade and protective clothing too. Choose water-resistant sunscreen for swimming or sweating; follow your tube.",
+      "ingredients": [
+        "Rice extract",
+        "Niacinamide",
+        "UV filters listed on your pack"
+      ],
+      "faq": [
+        {
+          "question": "Has the name changed?",
+          "answer": "The brand says Rice + Probiotics was renamed Rice + Niacinamide without a formula change."
+        },
+        {
+          "question": "Is Aqua-Fresh the same?",
+          "answer": "No. Aqua-Fresh is a separate, lighter Rice + B5 formula."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/relief-sun-rice-probiotics?country=PH&currency=PHP",
+        "title": "Beauty of Joseon Relief Sun official product information"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Official global labeling refresh: original Rice + Probiotics now Rice + Niacinamide; preserve photographed catalog pack. Do not substitute US Daily Relief SPF40."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman applying adequate white sunscreen dots across cheek; exact old-label Relief Sun tube retained; no tan/whitening before-after."
+  },
+  {
+    "id": "TS0079",
+    "brand": "COSRX",
+    "productName": "COSRX – Advanced Snail 96 Mucin Power Essence",
+    "ar": {
+      "name": "إيسنس سنيل 96 من كوسركس",
+      "tagline": "ترطيب خفيف بين التنظيف والكريم.",
+      "description": "امنحي بشرتكِ طبقة عناية هادئة مع إيسنس سنيل 96. قوامه المرن والخفيف يوزّع بسهولة بعد التونر، ويساعد على الترطيب وملمس أنعم دون أن يحل محل الكريم. ربّتي كمية صغيرة، دعيها تستقر، ثم أكملي روتينكِ؛ خطوة بسيطة عندما تفتقد البشرة الراحة والإشراقة.",
+      "benefits": [
+        "يساعد على ترطيب البشرة",
+        "ينعّم مظهر الملمس",
+        "يترك لمسة خفيفة قبل الكريم"
+      ],
+      "textureTitle": "إيسنس مرن وخفيف",
+      "textureText": "قوام مميز يُربّت على البشرة؛ يليه المرطب لتكميل العناية.",
+      "fitText": "للبشرة التي تفتقد الترطيب أو تبدو باهتة، مع اختبار تحمّل المكوّنات.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "نظّفي الوجه واستخدمي التونر إن كان ضمن روتينكِ."
+        },
+        {
+          "title": "كمية صغيرة",
+          "text": "وزّعي الإيسنس على الوجه بعيدًا عن العينين."
+        },
+        {
+          "title": "اربتي ورطّبي",
+          "text": "ربّتي بلطف ثم ضعي كريم الترطيب."
+        }
+      ],
+      "notes": "اختبري موضعيًا عند الحساسية من مكوّنات الحلزون، وتوقفي عند التهيّج. لا يُستخدم بدل واقي الشمس.",
+      "ingredients": [
+        "ترشيح إفراز الحلزون",
+        "هيالورونات الصوديوم",
+        "بانثينول وألانتوين"
+      ],
+      "faq": [
+        {
+          "question": "هل أضع الكريم بعده؟",
+          "answer": "نعم؛ توصي الشركة بإكماله بمرطب."
+        },
+        {
+          "question": "هل هو غسول؟",
+          "answer": "لا، إيسنس يترك على البشرة بعد التنظيف."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Advanced Snail 96 Mucin Power Essence",
+      "tagline": "A light hydration step before cream.",
+      "description": "Add a quiet layer of care with Snail 96 Essence. Its light, elastic texture spreads after toner to help hydrate and soften skin’s feel. Pat in a little and finish with moisturiser; a simple step for skin that looks dull or wants extra moisture.",
+      "benefits": [
+        "Helps hydrate skin",
+        "Softens the look of texture",
+        "Layers lightly before cream"
+      ],
+      "textureTitle": "A light, elastic essence",
+      "textureText": "Pat the distinctive texture onto skin, then moisturise.",
+      "fitText": "For skin seeking extra hydration or a fresher-looking finish, subject to tolerance.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Cleanse and tone if this is part of your routine."
+        },
+        {
+          "title": "Apply lightly",
+          "text": "Spread a small amount, avoiding the eyes."
+        },
+        {
+          "title": "Pat and moisturise",
+          "text": "Pat gently, then apply moisturiser."
+        }
+      ],
+      "notes": "Patch test if sensitive to snail ingredients. Stop if irritated. This is not sunscreen.",
+      "ingredients": [
+        "Snail secretion filtrate",
+        "Sodium hyaluronate",
+        "Panthenol and allantoin"
+      ],
+      "faq": [
+        {
+          "question": "Do I use cream afterwards?",
+          "answer": "Yes. The manufacturer recommends following with moisturiser."
+        },
+        {
+          "question": "Is it a cleanser?",
+          "answer": "No. This is a leave-on essence used after cleansing."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/advanced-snail-96-mucin-power-essence",
+        "title": "COSRX Advanced Snail 96 Mucin Power Essence"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman patting essence on cheek with palm; exact COSRX Snail 96 pump bottle; preserve natural skin texture."
+  },
+  {
+    "id": "TS0080",
+    "brand": "COSRX",
+    "productName": "COSRX – Advanced Snail 92 All In One Cream",
+    "ar": {
+      "name": "كريم سنيل 92 أول إن ون من كوسركس",
+      "tagline": "ملمس مرن، ونهاية مرطّبة لروتينكِ.",
+      "description": "قليل من كريم سنيل 92 يكمل خطواتكِ بطبقة ترطيب ذات قوام مرن مميز. يساعد على نعومة البشرة وتقليل إحساس الجفاف، ويأتي بعد خطوات العناية الأخف. وزّعيه بلطف على الوجه، ثم امنحيه لحظة للامتصاص؛ وفي الصباح أكملي بالواقي قبل الانطلاق ليومكِ.",
+      "benefits": [
+        "يساعد على تخفيف إحساس الجفاف",
+        "يترك البشرة أكثر نعومة",
+        "يكمّل روتين الترطيب"
+      ],
+      "textureTitle": "كريم مرن خفيف الطبقة",
+      "textureText": "قوام يتمدد قليلًا عند أخذه من العبوة ثم يوزع على البشرة برفق.",
+      "fitText": "لمن تبحث عن كريم مرطب بقوام مختلف، خصوصًا مع البشرة الجافة أو المفتقرة للرطوبة.",
+      "steps": [
+        {
+          "title": "بعد العناية الخفيفة",
+          "text": "استخدميه بعد التنظيف والتونر أو الإيسنس."
+        },
+        {
+          "title": "وزّعي طبقة مناسبة",
+          "text": "افردي كمية صغيرة على الوجه بعيدًا عن العينين."
+        },
+        {
+          "title": "اربتي وأكملي",
+          "text": "ربّتي للامتصاص وأتبعيه بواقي الشمس صباحًا."
+        }
+      ],
+      "notes": "اختبري موضعيًا عند التحسس من الحلزون أو أي مكوّن آخر. لا يعني اسم All In One الاستغناء عن واقي الشمس.",
+      "ingredients": [
+        "ترشيح إفراز الحلزون",
+        "هيالورونات الصوديوم",
+        "بيتين وبانثينول"
+      ],
+      "faq": [
+        {
+          "question": "هل يغني عن الواقي؟",
+          "answer": "لا؛ أكملي روتين الصباح بواقي شمس."
+        },
+        {
+          "question": "هل يأتي قبل الإيسنس؟",
+          "answer": "يُفضَّل بعد الإيسنس بوصفه خطوة كريم."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Advanced Snail 92 All In One Cream",
+      "tagline": "An elastic texture, a moisturising finish.",
+      "description": "Complete lighter skincare layers with Snail 92 cream. Its distinctive elastic texture helps soften skin and relieve a dry feel. Spread a little gently, allow it to settle, and finish with sunscreen in the morning.",
+      "benefits": [
+        "Helps relieve a dry feel",
+        "Leaves skin feeling softer",
+        "Completes moisturising care"
+      ],
+      "textureTitle": "An elastic cream texture",
+      "textureText": "The cream stretches slightly as it leaves the jar and spreads gently over skin.",
+      "fitText": "For skin seeking a distinctive moisturiser, particularly when dry or dehydrated.",
+      "steps": [
+        {
+          "title": "After lighter layers",
+          "text": "Use after cleansing, toner or essence."
+        },
+        {
+          "title": "Spread",
+          "text": "Apply a suitable amount, avoiding eyes."
+        },
+        {
+          "title": "Finish",
+          "text": "Pat to absorb; follow with sunscreen in the morning."
+        }
+      ],
+      "notes": "Patch test for snail or other ingredient sensitivity. All In One does not replace sunscreen.",
+      "ingredients": [
+        "Snail secretion filtrate",
+        "Sodium hyaluronate",
+        "Betaine and panthenol"
+      ],
+      "faq": [
+        {
+          "question": "Does it replace SPF?",
+          "answer": "No. Follow with sunscreen during the day."
+        },
+        {
+          "question": "Before essence?",
+          "answer": "Use after essence as the cream step."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/advanced-snail-92-all-in-one-cream",
+        "title": "COSRX Advanced Snail 92 All In One Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman smoothing small amount of clear-white elastic cream on cheek, exact white COSRX jar with black lid/yellow label."
+  },
+  {
+    "id": "TS0081",
+    "brand": "Beauty of Joseon",
+    "productName": "Beauty of joseon - Relief Sun Aqua Fresh",
+    "ar": {
+      "name": "ريليف صن أكوا فريش من بيوتي أوف جوسون",
+      "tagline": "حماية نهارية بملمس مائي أخف.",
+      "description": "إذا كنتِ تحبّين واقي الشمس المنعش والخفيف، تعرّفي على أكوا فريش. يجمع ماء بذور الأرز والبانثينول في قوام أقرب للوشن المائي، ليكمل روتينكِ بحماية شمسية ولمسة ترطيب. وزّعيه بسخاء بعد العناية، وجدديه خلال النهار؛ مناسب لمن تجد القوام الكريمي التقليدي أثقل مما ترغب.",
+      "benefits": [
+        "حماية SPF50+ PA++++ بحسب العبوة",
+        "قوام مائي خفيف",
+        "ترطيب مع البانثينول"
+      ],
+      "textureTitle": "لوشن مائي سريع التوزيع",
+      "textureText": "أخف إحساسًا من ريليف صن الأصلي، بلمسة منعشة.",
+      "fitText": "للراغبات بقوام خفيف، وخاصة البشرة الدهنية والمختلطة وفق توجيه الشركة.",
+      "steps": [
+        {
+          "title": "أكملي العناية",
+          "text": "ضعيه في نهاية روتين الصباح."
+        },
+        {
+          "title": "وزّعي بسخاء",
+          "text": "غطي الوجه والرقبة والمناطق المكشوفة بالتساوي قبل التعرض."
+        },
+        {
+          "title": "جدّدي أثناء النهار",
+          "text": "أعيدي التطبيق كل ساعتين على الأقل عند التعرض للشمس."
+        }
+      ],
+      "notes": "للسباحة أو التعرّق اختاري واقيًا مقاومًا للماء. لا تكفي طبقة صباحية واحدة لكل اليوم، ولا يُغني الواقي عن الظل.",
+      "ingredients": [
+        "ماء بذور الأرز",
+        "بانثينول B5",
+        "فلاتر شمسية بحسب العبوة"
+      ],
+      "faq": [
+        {
+          "question": "ما الفرق عن الأصلي؟",
+          "answer": "أكوا فريش مائي وأخف؛ الأصلي أكثر كريمية."
+        },
+        {
+          "question": "هل أضعه قبل المكياج؟",
+          "answer": "يأتي بعد العناية وقبل المكياج، مع تجديد الحماية حسب التعرض."
+        }
+      ]
+    },
+    "en": {
+      "name": "Beauty of Joseon Relief Sun Aqua-Fresh",
+      "tagline": "A lighter, watery daytime finish.",
+      "description": "Prefer a refreshing sunscreen feel? Aqua-Fresh pairs rice seed water and panthenol in a watery lotion texture. It adds sun protection and hydration after skincare, with a lighter feel than the original creamy Relief Sun.",
+      "benefits": [
+        "Labelled SPF50+ PA++++ protection",
+        "Light watery texture",
+        "Hydration with panthenol"
+      ],
+      "textureTitle": "A watery lotion",
+      "textureText": "Spreads easily with a fresh feel, lighter than original Relief Sun.",
+      "fitText": "For those wanting a light finish, especially oily or combination skin according to the brand.",
+      "steps": [
+        {
+          "title": "Finish skincare",
+          "text": "Use at the end of your morning routine."
+        },
+        {
+          "title": "Apply generously",
+          "text": "Cover face, neck and exposed areas evenly before exposure."
+        },
+        {
+          "title": "Reapply",
+          "text": "Renew at least every two hours during sun exposure."
+        }
+      ],
+      "notes": "Choose water-resistant sunscreen for swimming or sweating. Renew protection and use shade too.",
+      "ingredients": [
+        "Rice seed water",
+        "Panthenol B5",
+        "UV filters listed on your tube"
+      ],
+      "faq": [
+        {
+          "question": "How is it different?",
+          "answer": "Aqua-Fresh is watery and lighter; the original is creamier."
+        },
+        {
+          "question": "Before makeup?",
+          "answer": "After skincare, before makeup; reapply according to exposure."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/pages/relief-sun-aqua-fresh?shpxid=557f0f50-365f-4341-a6bc-72db208119b3",
+        "title": "Beauty of Joseon Relief Sun Aqua-Fresh information"
+      },
+      {
+        "url": "https://beautyofjoseon.com/pages/relief-sun-aqua-fresh-cpnp-scpn-information",
+        "title": "Beauty of Joseon Aqua-Fresh directions"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman distributing sunscreen on cheek, exact blue-white Aqua-Fresh Rice+B5 tube, no original Relief Sun substitution."
+  },
+  {
+    "id": "TS0086",
+    "brand": "COSRX",
+    "productName": "COSRX - Salicylic Acid Daily Gentle Cleanser",
+    "ar": {
+      "name": "غسول الساليسيليك اليومي اللطيف من كوسركس",
+      "tagline": "نظافة واضحة للبشرة الدهنية والمختلطة.",
+      "description": "ابدئي خطوة التنظيف برغوة تُشطف مع غسول الساليسيليك من كوسركس. صُمم للبشرة الدهنية والمختلطة، ويضم حمض الساليسيليك ضمن تركيبته. رغّي كمية صغيرة بين يديكِ ثم دلّكي الوجه برفق واشطفيه؛ خطوة تنظيف، تتبعينها بالترطيب المناسب دون فرك البشرة بقوة.",
+      "benefits": [
+        "ينظف الشوائب اليومية",
+        "يضم حمض الساليسيليك في التركيبة",
+        "موجّه للبشرة الدهنية والمختلطة"
+      ],
+      "textureTitle": "غسول يتحول إلى رغوة",
+      "textureText": "يُرغّى بالماء ثم يُشطف؛ لا يُترك على البشرة مثل السيروم.",
+      "fitText": "للبشرة الدهنية والمختلطة وفق صفحة كوسركس الكورية، مع مراقبة الجفاف.",
+      "steps": [
+        {
+          "title": "بللي ورغّي",
+          "text": "بللي يديكِ ووجهكِ ورغّي كمية قليلة من الغسول."
+        },
+        {
+          "title": "دلّكي بلطف",
+          "text": "مرّري الرغوة على الوجه مع تجنّب العينين والفم."
+        },
+        {
+          "title": "اشطفي ورطّبي",
+          "text": "اشطفي جيدًا بماء فاتر وأكملي بمرطب مناسب."
+        }
+      ],
+      "notes": "تجنّبي العينين والجلد المتضرر. خففي الاستخدام إذا سبب جفافًا، وراجعي المكونات عند التحسس من العطور أو الزيوت النباتية.",
+      "ingredients": [
+        "حمض الساليسيليك",
+        "ماء لحاء الصفصاف",
+        "زيت شجرة الشاي"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه ليعمل؟",
+          "answer": "لا؛ هذا غسول يُشطف بعد التنظيف."
+        },
+        {
+          "question": "هل يغني عن المرطب؟",
+          "answer": "لا، أكملي روتينكِ بترطيب يناسب بشرتكِ."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Salicylic Acid Daily Gentle Cleanser",
+      "tagline": "A rinse-off cleanse for oily and combination skin.",
+      "description": "Start with a foaming cleanse. This COSRX cleanser is intended for oily and combination skin and includes salicylic acid. Lather a small amount with water, massage gently and rinse, then follow with suitable moisturising care.",
+      "benefits": [
+        "Cleanses daily impurities",
+        "Contains salicylic acid",
+        "Intended for oily and combination skin"
+      ],
+      "textureTitle": "A rinse-off foaming cleanser",
+      "textureText": "Lather with water and rinse; this is not a leave-on acid serum.",
+      "fitText": "For oily or combination skin according to COSRX Korea; watch for dryness.",
+      "steps": [
+        {
+          "title": "Lather",
+          "text": "Wet hands and face; foam a little cleanser with water."
+        },
+        {
+          "title": "Massage",
+          "text": "Cleanse gently, avoiding eyes and mouth."
+        },
+        {
+          "title": "Rinse",
+          "text": "Rinse thoroughly with lukewarm water and moisturise."
+        }
+      ],
+      "notes": "Avoid eyes and damaged skin. Reduce use if drying. Check ingredients for fragrance or plant-oil sensitivity.",
+      "ingredients": [
+        "Salicylic acid",
+        "Willow bark water",
+        "Tea tree oil"
+      ],
+      "faq": [
+        {
+          "question": "Should I leave it on?",
+          "answer": "No. Rinse it off after cleansing."
+        },
+        {
+          "question": "Does it replace moisturiser?",
+          "answer": "No. Follow with moisturising care."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.co.kr/m/product.html?branduid=188",
+        "title": "COSRX Korea Salicylic Acid Daily Gentle Cleanser"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Official US product URL no longer resolves; official Korean page verifies exact identity, oily/combination positioning and INCI. No unverified salicylic percentage added."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently washing face with soft foam; red-and-white COSRX salicylic cleanser tube visible, no harsh scrub."
+  },
+  {
+    "id": "TS0100",
+    "brand": "Beauty of Joseon",
+    "productName": "Beauty of Joseon - Red Bean Refreshing Pore Mask",
+    "ar": {
+      "name": "ماسك الفاصولياء الحمراء للمسام من بيوتي أوف جوسون",
+      "tagline": "استراحة قصيرة لبشرة أقل لمعانًا.",
+      "description": "امنحي روتينكِ استراحة مع ماسك الفاصولياء الحمراء. يجمع الكاولين ومسحوق الفاصولياء في قوام طيني ناعم، ليساعد على امتصاص الزيوت الزائدة وتنعيم ملمس البشرة. افردي طبقة متساوية على بشرة نظيفة ورطبة قليلًا، ثم اشطفي بعد الوقت المحدد؛ خطوة أسبوعية لطيفة دون دعك قوي.",
+      "benefits": [
+        "يساعد على امتصاص الزيوت الزائدة",
+        "ينعّم ملمس البشرة",
+        "عناية تُشطف للمسام التي تبدو محتقنة"
+      ],
+      "textureTitle": "قوام طيني بحبيبات الفاصولياء",
+      "textureText": "تظهر جزيئات طبيعية في الماسك؛ لا تحتاج إلى فرك عنيف.",
+      "fitText": "للبشرة الدهنية والمختلطة أو لمن ترغب بعناية دورية للملمس واللمعان.",
+      "steps": [
+        {
+          "title": "طبقة متساوية",
+          "text": "ضعي طبقة على وجه نظيف ورطب قليلًا بعيدًا عن العينين والشفاه."
+        },
+        {
+          "title": "انتظري قليلًا",
+          "text": "اتركيه 5–10 دقائق وفق تعليمات الشركة."
+        },
+        {
+          "title": "اشطفي برفق",
+          "text": "دلّكي بخفة واشطفي بماء فاتر؛ ابدئي بمرة أسبوعيًا."
+        }
+      ],
+      "notes": "تجنّبي الجلد المتهيج والفرك القوي. اختبري موضعيًا، وأكملي بالترطيب إذا شعرتِ بالجفاف.",
+      "ingredients": [
+        "كاولين",
+        "مسحوق ومستخلص الفاصولياء الحمراء",
+        "جليسرين"
+      ],
+      "faq": [
+        {
+          "question": "ما الحبيبات داخل الماسك؟",
+          "answer": "هي مسحوق الفاصولياء الحمراء بحسب الشركة."
+        },
+        {
+          "question": "هل أتركه طوال الليل؟",
+          "answer": "لا؛ يُشطف بعد 5–10 دقائق."
+        }
+      ]
+    },
+    "en": {
+      "name": "Beauty of Joseon Red Bean Refreshing Pore Mask",
+      "tagline": "A short pause for a less shiny feel.",
+      "description": "Give your routine a rinse-off mask moment. Kaolin and red bean powder help absorb excess oil and soften skin’s texture. Apply an even layer to clean, slightly damp skin, wait briefly and rinse gently; no vigorous scrubbing needed.",
+      "benefits": [
+        "Helps absorb excess oil",
+        "Softens skin texture",
+        "Rinse-off care for congested-looking pores"
+      ],
+      "textureTitle": "A soft clay texture with red bean particles",
+      "textureText": "Natural particles are visible; massage lightly.",
+      "fitText": "For oily or combination skin and occasional care for excess shine.",
+      "steps": [
+        {
+          "title": "Apply",
+          "text": "Spread evenly on clean, slightly damp skin, away from eyes and lips."
+        },
+        {
+          "title": "Wait",
+          "text": "Leave for 5–10 minutes."
+        },
+        {
+          "title": "Rinse",
+          "text": "Massage gently and rinse with lukewarm water; start weekly."
+        }
+      ],
+      "notes": "Avoid irritated skin and harsh rubbing. Patch test and moisturise if skin feels dry.",
+      "ingredients": [
+        "Kaolin",
+        "Red bean powder and extract",
+        "Glycerin"
+      ],
+      "faq": [
+        {
+          "question": "What are the particles?",
+          "answer": "Natural red bean powder, according to the brand."
+        },
+        {
+          "question": "Can it stay overnight?",
+          "answer": "No. Rinse after 5–10 minutes."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/red-bean-refreshing-pore-mask",
+        "title": "Beauty of Joseon Red Bean Refreshing Pore Mask"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman applying reddish soft clay mask to cheek with clean spatula; avoid eyes/lips; exact BOJ red bean jar."
+  },
+  {
+    "id": "TS0101",
+    "brand": "Beauty of Joseon",
+    "productName": "Beauty of Joseon - Relief Sun Mini",
+    "ar": {
+      "name": "ريليف صن ميني من بيوتي أوف جوسون",
+      "tagline": "خطوتكِ النهارية في عبوة صغيرة.",
+      "description": "للحقيبة أو تجربة القوام، تأتي نسخة ريليف صن ميني لترافق روتينكِ النهاري بعبوة أصغر. احتفظي بنفس الاهتمام بكمية الواقي وتجديده؛ صغر العبوة لا يعني الاكتفاء بطبقة أقل. قوام كريمي بلمسة مرطبة، يوضع في نهاية العناية وقبل المكياج. راجعي الحجم المطبوع على العبوة المتاحة عند الطلب.",
+      "benefits": [
+        "حماية شمسية SPF50+ PA++++ بحسب العبوة",
+        "ملمس كريمي مرطّب",
+        "لمسة ندية مناسبة للروتين الصباحي"
+      ],
+      "textureTitle": "كريمي وخفيف على البشرة",
+      "textureText": "يمتد كالكريم، ويأتي بعد بقية العناية وقبل المكياج.",
+      "fitText": "خيار للبشرة العادية والجافة والمختلطة التي تفضّل واقيًا بلمسة مرطّبة.",
+      "steps": [
+        {
+          "title": "آخر خطوة صباحًا",
+          "text": "أكملي العناية الأساسية قبل الواقي."
+        },
+        {
+          "title": "كمية وافرة",
+          "text": "وزّعيه بالتساوي على الوجه والرقبة والمناطق المكشوفة."
+        },
+        {
+          "title": "جدّدي الحماية",
+          "text": "أعيدي التطبيق كل ساعتين على الأقل أثناء التعرض للشمس."
+        }
+      ],
+      "notes": "ليس بديلًا عن الظل والملابس الواقية. استخدمي واقيًا مقاومًا للماء للسباحة أو التعرّق، وراجعي تعليمات العبوة.",
+      "ingredients": [
+        "مستخلص الأرز",
+        "نياسيناميد",
+        "فلاتر شمسية للنسخة المدونة على العبوة"
+      ],
+      "faq": [
+        {
+          "question": "هل تكفي كمية أقل لأنه ميني؟",
+          "answer": "لا؛ استخدمي كمية وافرة وجددي الحماية كالمعتاد."
+        },
+        {
+          "question": "ما حجم العبوة؟",
+          "answer": "راجعي الحجم المطبوع على العبوة المتاحة أو أكديه مع المتجر."
+        }
+      ]
+    },
+    "en": {
+      "name": "Beauty of Joseon Relief Sun Mini",
+      "tagline": "Your daytime step, in a smaller tube.",
+      "description": "Keep a smaller Relief Sun tube close for travel or trying the creamy feel. A mini pack still needs generous application and regular reapplication. Use after skincare and before makeup; confirm the available tube’s printed volume when ordering.",
+      "benefits": [
+        "SPF50+ PA++++ as labelled",
+        "Creamy, moisturising feel",
+        "Dewy daytime finish"
+      ],
+      "textureTitle": "Light cream texture",
+      "textureText": "Apply after skincare and before makeup.",
+      "fitText": "An option for normal, dry or combination skin preferring a moisturising finish.",
+      "steps": [
+        {
+          "title": "Finish skincare",
+          "text": "Use as the last morning skincare step."
+        },
+        {
+          "title": "Cover evenly",
+          "text": "Apply generously over face, neck and exposed areas."
+        },
+        {
+          "title": "Reapply",
+          "text": "Renew at least every two hours during sun exposure."
+        }
+      ],
+      "notes": "Use shade and protective clothing too. Choose water-resistant sunscreen for swimming or sweating; follow your tube.",
+      "ingredients": [
+        "Rice extract",
+        "Niacinamide",
+        "UV filters listed on your pack"
+      ],
+      "faq": [
+        {
+          "question": "Do I use less because it is mini?",
+          "answer": "No. Apply generously and reapply as usual."
+        },
+        {
+          "question": "What is the volume?",
+          "answer": "Check the available tube or confirm it with the store."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/relief-sun-rice-probiotics?country=PH&currency=PHP",
+        "title": "Beauty of Joseon Relief Sun official product information"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Inspected small original-label Relief Sun tube. Mini volume not legible enough to assert; formula family information reused, never substituted Aqua-Fresh or SPF40."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman with travel-size BOJ Relief Sun tube in handbag/morning-care scene, exact small tube, no reduction in recommended sunscreen amount."
+  },
+  {
+    "id": "TS0105",
+    "brand": "COSRX",
+    "productName": "COSRX - AHA/BHA Clarifying Treatment Toner",
+    "ar": {
+      "name": "تونر AHA/BHA المنقّي من كوسركس",
+      "tagline": "خطوة مقشّرة خفيفة بعد التنظيف.",
+      "description": "أضيفي إلى روتينكِ تونرًا يجمع التنظيف الخفيف للملمس مع الترطيب. تُرش تركيبته على قطنة ثم تُمرَّر برفق، لتساعد على إزالة الخلايا السطحية المتراكمة وتحسين الإحساس بالنعومة. ابدئي بهدوء وراقبي تحمّل بشرتكِ؛ ومع أحماض التقشير، يبقى واقي الشمس جزءًا أساسيًا من روتين النهار.",
+      "benefits": [
+        "تقشير سطحي لطيف",
+        "يساعد على ملمس أنعم",
+        "خطوة خفيفة بعد التنظيف"
+      ],
+      "textureTitle": "تونر سائل في عبوة رش",
+      "textureText": "يُرش على قطنة بدل رشه مباشرة باتجاه العينين.",
+      "fitText": "لمن تبدأ عناية التقشير اللطيف أو ترغب بتحسين ملمس البشرة، بحسب التحمل.",
+      "steps": [
+        {
+          "title": "بعد الغسول",
+          "text": "ابدئي بوجه نظيف."
+        },
+        {
+          "title": "رشي على قطنة",
+          "text": "مرّري القطنة برفق مع تجنب محيط العينين والفم."
+        },
+        {
+          "title": "رطّبي واحمي",
+          "text": "أكملي بالمرطب؛ نهارًا استخدمي واقيًا واسع الطيف SPF30 أو أعلى."
+        }
+      ],
+      "notes": "لا تجمعيه مع أحماض أخرى أو ريتينويدات أو فيتامين C في الروتين نفسه. توصي الشركة بتجنّبه أثناء الحمل والرضاعة.",
+      "ingredients": [
+        "حمض الجليكوليك",
+        "بيتين ساليسيلات",
+        "ماء لحاء الصفصاف والتفاح"
+      ],
+      "faq": [
+        {
+          "question": "هل أرشه مباشرة على الوجه؟",
+          "answer": "توصي الشركة برشه على قطنة ثم تمريره."
+        },
+        {
+          "question": "هل أستخدمه مع الريتينول؟",
+          "answer": "لا توصي الشركة بجمعهما في الروتين نفسه لتقليل التهيّج."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX AHA/BHA Clarifying Treatment Toner",
+      "tagline": "A light exfoliating step after cleansing.",
+      "description": "Spray onto a cotton pad and sweep gently to refine a rough feel. This light acid toner helps lift surface buildup and soften texture. Start carefully according to tolerance, moisturise afterwards and keep sunscreen in your daytime routine.",
+      "benefits": [
+        "Gentle surface exfoliation",
+        "Helps soften texture",
+        "A light post-cleanse step"
+      ],
+      "textureTitle": "A liquid spray toner",
+      "textureText": "Spray onto a cotton pad, away from eyes.",
+      "fitText": "For those introducing gentle exfoliation, according to skin tolerance.",
+      "steps": [
+        {
+          "title": "Cleanse",
+          "text": "Start with clean skin."
+        },
+        {
+          "title": "Sweep gently",
+          "text": "Spray onto cotton and wipe, avoiding eyes and mouth."
+        },
+        {
+          "title": "Finish",
+          "text": "Moisturise; use broad-spectrum SPF30 or higher during the day."
+        }
+      ],
+      "notes": "Do not combine with other acids, retinoids or vitamin C in the same routine. The brand advises avoiding pregnancy and breastfeeding.",
+      "ingredients": [
+        "Glycolic acid",
+        "Betaine salicylate",
+        "Willow bark and apple waters"
+      ],
+      "faq": [
+        {
+          "question": "Spray directly onto my face?",
+          "answer": "The brand recommends spraying onto cotton first."
+        },
+        {
+          "question": "With retinol?",
+          "answer": "The manufacturer advises against combining them in one routine."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/collections/best/products/aha-bha-clarifying-treatment-toner",
+        "title": "COSRX AHA/BHA Clarifying Treatment Toner"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently wiping cheek with cotton pad; exact COSRX clear toner spray bottle; no spraying toward eyes."
+  },
+  {
+    "id": "TS0106",
+    "brand": "COSRX",
+    "productName": "COSRX - All About Snail Trial Kit",
+    "ar": {
+      "name": "مجموعة سنيل التجريبية من كوسركس",
+      "tagline": "تعرّفي إلى روتين الحلزون بخطواته.",
+      "description": "للتجربة أو السفر، تجمع مجموعة All About Snail خطوات التنظيف والإيسنس والعين والكريم في أحجام صغيرة. تعرّفي إلى القوام الذي يناسبكِ دون الخلط بين وظيفة كل عبوة: الغسول يُشطف، ثم تأتي العناية التي تُترك على البشرة. راجعي محتويات المجموعة وأحجامها على العبوة المتاحة قبل الطلب.",
+      "benefits": [
+        "تجربة عدة خطوات من مجموعة سنيل",
+        "أحجام صغيرة مناسبة للتنقل",
+        "ترتيب واضح للتنظيف والترطيب"
+      ],
+      "textureTitle": "أربع خطوات بقوام مختلف",
+      "textureText": "غسول جل، إيسنس، كريم عين وكريم وجه؛ لكل واحد طريقة استخدامه.",
+      "fitText": "لمن تريد التعرف إلى مجموعة سنيل أو حمل روتين مصغّر، بعد اختبار التحمل.",
+      "steps": [
+        {
+          "title": "الغسول أولًا",
+          "text": "دلّكي غسول سنيل على وجه مبلل ثم اشطفيه جيدًا."
+        },
+        {
+          "title": "الإيسنس",
+          "text": "وزّعي كمية مناسبة من الإيسنس بعيدًا عن العينين."
+        },
+        {
+          "title": "العين ثم الكريم",
+          "text": "ربّتي كريم العين حولها ثم وزّعي كريم الوجه لإكمال الترطيب."
+        }
+      ],
+      "notes": "أدخلي المنتجات الجديدة تدريجيًا، ولا تستخدميها عند التحسس من مكوناتها. المجموعة لا تحتوي بديلًا عن واقي الشمس.",
+      "ingredients": [
+        "ترشيح إفراز الحلزون في المجموعة",
+        "خطوة تنظيف تُشطف",
+        "منتجات ترطيب تُترك على البشرة"
+      ],
+      "faq": [
+        {
+          "question": "هل أشطف جميع الخطوات؟",
+          "answer": "الغسول فقط؛ الإيسنس وكريما العين والوجه تُترك للامتصاص."
+        },
+        {
+          "question": "هل أحجامها كاملة؟",
+          "answer": "هي مجموعة تجريبية؛ راجعي الأحجام على العلبة المتاحة."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX All About Snail Trial Kit",
+      "tagline": "Meet the snail routine, one step at a time.",
+      "description": "Explore cleansing, essence, eye care and cream in smaller sizes. Keep each step distinct: rinse the cleanser, then layer the leave-on products. A compact introduction to the Snail range; check the available box for exact contents and volumes.",
+      "benefits": [
+        "Introduces several Snail steps",
+        "Compact sizes for travel",
+        "A clear cleansing-to-cream order"
+      ],
+      "textureTitle": "Different textures, different roles",
+      "textureText": "Gel cleanser, essence, eye cream and face cream form the routine.",
+      "fitText": "For trying the Snail range or carrying a smaller routine, subject to tolerance.",
+      "steps": [
+        {
+          "title": "Cleanse",
+          "text": "Massage the gel cleanser onto wet skin and rinse."
+        },
+        {
+          "title": "Essence",
+          "text": "Apply essence, avoiding the eyes."
+        },
+        {
+          "title": "Finish",
+          "text": "Pat eye cream around the eyes, then apply face cream."
+        }
+      ],
+      "notes": "Introduce new products gradually and check allergies. This set does not replace sunscreen.",
+      "ingredients": [
+        "Snail filtrate within the range",
+        "Rinse-off cleanser",
+        "Leave-on moisturising steps"
+      ],
+      "faq": [
+        {
+          "question": "Rinse every step?",
+          "answer": "Only the cleanser; leave the essence and creams to absorb."
+        },
+        {
+          "question": "Full-size bottles?",
+          "answer": "This is a trial kit; check the box for volumes."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/all-about-snail-kit-4-step",
+        "title": "COSRX All About Snail Kit 4-step"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman arranging exact four mini COSRX Snail kit bottles in usage order, original kit box retained; no mixing all four together."
+  },
+  {
+    "id": "TS0107",
+    "brand": "COSRX",
+    "productName": "COSRX - Balancium Ceramide Lip Butter Sleeping Mask",
+    "ar": {
+      "name": "ماسك زبدة الشفاه بالسيراميد من كوسركس",
+      "tagline": "طبقة زبدية لشفاه أكثر راحة.",
+      "description": "اجعلي ترطيب الشفاه لحظة سهلة خلال اليوم أو قبل النوم. يجمع ماسك ليب باتر السيراميد وزبدة الشيا في بلسم كثيف يلين بحرارة الشفاه. وزّعي طبقة خفيفة عند الحاجة، أو طبقة أغنى ليلًا؛ عناية تركز على النعومة والراحة دون لون أو عطر مضاف وفق وصف الشركة.",
+      "benefits": [
+        "ترطيب غني للشفاه",
+        "يساعد على تنعيم الإحساس بالجفاف",
+        "يمكن استخدامه نهارًا أو كطبقة ليلية"
+      ],
+      "textureTitle": "بلسم كثيف يلين بالحرارة",
+      "textureText": "قوام يشبه الزبدة يغطّي الشفاه بطبقة مريحة.",
+      "fitText": "للشفاه الجافة التي تحتاج بلسمًا غنيًا بدل اللمعة اللونية.",
+      "steps": [
+        {
+          "title": "بأصابع نظيفة",
+          "text": "خذي كمية صغيرة من العبوة."
+        },
+        {
+          "title": "وزّعي بالتساوي",
+          "text": "مرّريها على الشفاه الخارجية حسب الحاجة."
+        },
+        {
+          "title": "اختاري الطبقة",
+          "text": "استخدمي طبقة خفيفة نهارًا أو أسمك قبل النوم."
+        }
+      ],
+      "notes": "لا يُستخدم على التشققات النازفة أو عند التحسس من مكوناته. استعملي أداة نظيفة وتوقفي عند التهيّج.",
+      "ingredients": [
+        "سيراميد",
+        "زبدة الشيا",
+        "بلسم عديم اللون"
+      ],
+      "faq": [
+        {
+          "question": "هل يجب استعماله ليلًا فقط؟",
+          "answer": "يمكن استعماله خلال اليوم؛ الطبقة الأسمك مناسبة للنوم."
+        },
+        {
+          "question": "هل يعطي لونًا؟",
+          "answer": "تصفه الشركة بقوام عديم اللون."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Balancium Ceramide Lip Butter Sleeping Mask",
+      "tagline": "A buttery layer for comfortable lips.",
+      "description": "Keep lip care simple, day or night. Ceramide and shea butter meet in a dense balm that softens with body warmth. Use a light layer as needed, or a richer layer before bed for a softer, moisturised feel.",
+      "benefits": [
+        "Rich lip moisturising care",
+        "Softens a dry feel",
+        "Daytime balm or overnight layer"
+      ],
+      "textureTitle": "A dense, melting balm",
+      "textureText": "A butter-like texture softens as it coats the lips.",
+      "fitText": "For dry lips wanting rich care without a colour tint.",
+      "steps": [
+        {
+          "title": "Use clean hands",
+          "text": "Take a small amount with a clean fingertip or tool."
+        },
+        {
+          "title": "Spread",
+          "text": "Apply evenly over the outer lips."
+        },
+        {
+          "title": "Adapt the layer",
+          "text": "Use lightly by day or more thickly before bed."
+        }
+      ],
+      "notes": "Avoid bleeding cracks and ingredient allergies. Use a clean tool and stop if irritated.",
+      "ingredients": [
+        "Ceramide",
+        "Shea butter",
+        "Colourless balm texture"
+      ],
+      "faq": [
+        {
+          "question": "Only for night?",
+          "answer": "It can be used by day; apply more thickly as a sleeping mask."
+        },
+        {
+          "question": "Is it tinted?",
+          "answer": "The brand describes it as colourless."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/lip-sleep-balancium-ceramide-lip-butter-sleeping-mask",
+        "title": "COSRX Balancium Ceramide Lip Butter Sleeping Mask"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman applying a small amount of balm to outer lips with fingertip; exact white COSRX ceramide lip mask jar, no injections or exaggerated lips."
+  },
+  {
+    "id": "TS0108",
+    "brand": "COSRX",
+    "productName": "COSRX - Full Fit Propolis Lip Sleeping Mask",
+    "ar": {
+      "name": "ماسك الشفاه الليلي بالبروبوليس من كوسركس",
+      "tagline": "اختمي يومكِ بعناية للشفاه.",
+      "description": "امنحي الشفاه خطوة هادئة قبل النوم مع ماسك ليب سليب بالبروبوليس. يأتي في عبوة بلسم تُستخدم بكمية مناسبة على الشفاه الخارجية، لتكمّل عنايتكِ الليلية. خذي القليل بأداة نظيفة، وراجعي تعليمات عبوتكِ ومكوناتها؛ خصوصًا إن كنتِ تتحسسين من منتجات النحل.",
+      "benefits": [
+        "خطوة عناية ليلية للشفاه",
+        "يساعد على راحة الشفاه الجافة",
+        "قوام بلسم يوزّع بطبقة مناسبة"
+      ],
+      "textureTitle": "بلسم شفاه في عبوة صغيرة",
+      "textureText": "خذي كمية قليلة ووزّعيها بهدوء على الشفاه الخارجية.",
+      "fitText": "لمن تريد إضافة بلسم ليلي إلى روتين الشفاه وتتحمل مكوّنات المنتج.",
+      "steps": [
+        {
+          "title": "نظافة أولًا",
+          "text": "نظّفي الشفاه وجففيها برفق."
+        },
+        {
+          "title": "خذي القليل",
+          "text": "استخدمي إصبعًا أو ملعقة نظيفة لأخذ كمية مناسبة."
+        },
+        {
+          "title": "طبقة ليلية",
+          "text": "وزّعيه على الشفاه وفق إرشادات العبوة قبل النوم."
+        }
+      ],
+      "notes": "راجعي قائمة العبوة، خاصة عند الحساسية من البروبوليس أو منتجات النحل. تجنّبي الجروح والتهيج؛ توقفي إذا لم يناسبكِ.",
+      "ingredients": [
+        "البروبوليس مذكور في اسم المنتج",
+        "ماسك شفاه ليلي يُترك على الشفاه"
+      ],
+      "faq": [
+        {
+          "question": "هل هو مقشّر الشفاه بالعسل؟",
+          "answer": "لا؛ Lip Sleep هو الماسك الليلي، وLip Scrub منتج مختلف."
+        },
+        {
+          "question": "هل يناسب الحساسية من منتجات النحل؟",
+          "answer": "راجعي المكونات وتجنّبيه عند وجود حساسية معروفة من أحدها."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Full Fit Propolis Lip Sleeping Mask",
+      "tagline": "Finish your evening with a lip-care moment.",
+      "description": "Add a quiet balm step before bed. Lip Sleep Propolis is a leave-on lip mask in a small jar. Take a suitable amount with a clean tool and follow the directions on your own pack, especially if you are sensitive to bee-derived ingredients.",
+      "benefits": [
+        "An overnight lip-care step",
+        "Comfort for dry-feeling lips",
+        "A balm layer for the outer lips"
+      ],
+      "textureTitle": "A jar-format lip balm",
+      "textureText": "Take a small amount and spread gently.",
+      "fitText": "For those wanting a night-time lip balm and who tolerate its ingredients.",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Clean the lips and dry gently."
+        },
+        {
+          "title": "Take a little",
+          "text": "Use a clean finger or spatula."
+        },
+        {
+          "title": "Apply",
+          "text": "Spread over the outer lips before bed, following your label."
+        }
+      ],
+      "notes": "Check the ingredient list for propolis or bee-product allergies. Avoid wounded or irritated lips and stop if unsuitable.",
+      "ingredients": [
+        "Propolis named on the photographed pack",
+        "Leave-on overnight lip mask"
+      ],
+      "faq": [
+        {
+          "question": "Is this the honey scrub?",
+          "answer": "No. Lip Sleep is a sleeping mask; Lip Scrub is a different product."
+        },
+        {
+          "question": "For bee-product allergies?",
+          "answer": "Check the label and avoid known allergens."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/lip-scrub-full-fit-propolis-honey-sugar-lip-scrub",
+        "title": "COSRX official lip-care page referencing Full Fit Propolis Lip Sleeping Mask"
+      }
+    ],
+    "sourceStatus": "limited",
+    "researchNotes": [
+      "Exact photographed pack inspected: Lip Sleep Propolis Lip Sleeping Mask 20g. Official current catalog no longer has an accessible dedicated product page; official Honey Sugar Scrub page names this mask. No Honey-6 complex, percentages, fragrance-free or clinical claims asserted. Public directions conservatively defer to pack."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman with clean fingertip applying lip balm to outer lips before bed; exact yellow translucent COSRX Lip Sleep Propolis 20g jar with white lid."
+  },
+  {
+    "id": "TS0109",
+    "brand": "COSRX",
+    "productName": "COSRX - Low pH Good Morning Gel Cleanser",
+    "ar": {
+      "name": "غسول جود مورنينغ منخفض الحموضة من كوسركس",
+      "tagline": "بداية نظيفة، بقوام جل خفيف.",
+      "description": "سواء في صباحكِ أو نهاية يومكِ، يبدأ هذا الغسول بجل يتحول إلى رغوة لطيفة بالماء. صيغ بحموضة خفيفة ويضم زيت شجرة الشاي وبيتين ساليسيلات. دلّكيه برفق على وجه مبلل ثم اشطفيه؛ تنظيف للشوائب اليومية يليه ترطيب مناسب، مع إزالة المكياج أولًا عند الحاجة.",
+      "benefits": [
+        "ينظف الشوائب اليومية",
+        "قوام جل يُرغّى بالماء",
+        "حموضة خفيفة بحسب وصف الشركة"
+      ],
+      "textureTitle": "من جل إلى رغوة خفيفة",
+      "textureText": "يُستخدم على وجه ويدين مبللين ثم يُشطف جيدًا.",
+      "fitText": "لمن تفضّل غسول جل يوميًا؛ البشرة الحساسة تحتاج اختبار التحمل خاصة مع زيت شجرة الشاي.",
+      "steps": [
+        {
+          "title": "بللي الوجه",
+          "text": "أزيلي المكياج أولًا وبللي الوجه واليدين."
+        },
+        {
+          "title": "رغّي ودلّكي",
+          "text": "رغّي كمية مناسبة ودلّكي برفق بعيدًا عن العينين والفم."
+        },
+        {
+          "title": "اشطفي",
+          "text": "اشطفي بماء فاتر ثم أكملي الترطيب."
+        }
+      ],
+      "notes": "تجنّبي ملامسة العينين. خففي الاستخدام إذا ظهر جفاف، وتوقفي عند التهيّج أو التحسس من أحد المكونات.",
+      "ingredients": [
+        "زيت شجرة الشاي",
+        "بيتين ساليسيلات",
+        "حموضة خفيفة"
+      ],
+      "faq": [
+        {
+          "question": "هل هو للصباح فقط؟",
+          "answer": "تذكر الشركة استخدامه صباحًا ومساءً بعد إزالة المكياج."
+        },
+        {
+          "question": "هل أتركه على الوجه؟",
+          "answer": "لا؛ يُشطف بعد التنظيف."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Low pH Good Morning Gel Cleanser",
+      "tagline": "A fresh start with a light gel cleanse.",
+      "description": "Morning or evening, this gel cleanser foams with water to remove daily impurities. The mildly acidic formula contains tea tree oil and betaine salicylate. Massage onto wet skin, rinse and moisturise, removing makeup first when needed.",
+      "benefits": [
+        "Cleanses daily impurities",
+        "Gel-to-foam texture",
+        "Mildly acidic formula"
+      ],
+      "textureTitle": "A light foaming gel",
+      "textureText": "Use with wet hands and face, then rinse thoroughly.",
+      "fitText": "For those preferring a daily gel cleanser; sensitive skin should patch test, particularly for tea tree oil.",
+      "steps": [
+        {
+          "title": "Wet skin",
+          "text": "Remove makeup first; wet hands and face."
+        },
+        {
+          "title": "Lather",
+          "text": "Foam a suitable amount and massage away from eyes and mouth."
+        },
+        {
+          "title": "Rinse",
+          "text": "Rinse with lukewarm water, then moisturise."
+        }
+      ],
+      "notes": "Avoid eye contact. Reduce use if drying and stop if irritation or sensitivity occurs.",
+      "ingredients": [
+        "Tea tree oil",
+        "Betaine salicylate",
+        "Mildly acidic pH"
+      ],
+      "faq": [
+        {
+          "question": "Only for mornings?",
+          "answer": "The brand also recommends evening use after makeup removal."
+        },
+        {
+          "question": "Leave it on?",
+          "answer": "No. Rinse after cleansing."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/low-ph-good-morning-gel-cleanser",
+        "title": "COSRX Low pH Good Morning Gel Cleanser"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently cleansing with foam and water; exact white COSRX Low pH Good Morning tube with green/blue band."
+  },
+  {
+    "id": "TS0110",
+    "brand": "COSRX",
+    "productName": "COSRX - Refresh AHA BHA Vitamin C Lip Plumper",
+    "ar": {
+      "name": "ليب بلامبر AHA/BHA وفيتامين C من كوسركس",
+      "tagline": "لمعة مرطّبة مع إحساس الامتلاء المؤقت.",
+      "description": "للمسة لامعة على الشفاه، يأتي ليب بلامبر بقوام جل كريمي يلين بحرارتها. يضم أحماض AHA وBHA ومشتق فيتامين C، مع مكوّنات تمنح إحساس المنتج المعبّئ. ابدئي بكمية صغيرة؛ قد يصاحبه وخز يختلف بين الأشخاص. اختاريه للعناية والمظهر المؤقت، دون توقع تغيير دائم في حجم الشفاه.",
+      "benefits": [
+        "يمنح مظهرًا لامعًا للشفاه",
+        "يساعد على نعومة سطح الشفاه",
+        "قوام جل كريمي سهل التوزيع"
+      ],
+      "textureTitle": "جل كريمي بلمعة مائية",
+      "textureText": "يذوب بحرارة الشفاه، وقد يصاحبه وخز لدى بعض المستخدمات.",
+      "fitText": "لمن تتحمل منتجات امتلاء الشفاه المؤقت وتريد لمسة لامعة؛ لا يناسب الشفاه المتهيجة.",
+      "steps": [
+        {
+          "title": "جرّبي قليلًا",
+          "text": "ابدئي بكمية صغيرة على شفاه سليمة."
+        },
+        {
+          "title": "وزّعي بلطف",
+          "text": "مرريه على الشفاه الخارجية مع تجنب الجلد المحيط."
+        },
+        {
+          "title": "راقبي الإحساس",
+          "text": "أوقفي الاستخدام واغسليه إذا كان الوخز شديدًا أو ظهر تهيّج."
+        }
+      ],
+      "notes": "قد يسبب وخزًا؛ لا يعني ذلك أن عليكِ تحمّل الألم. تجنّبي الشفاه المتشققة أو المجروحة والتحسس من مكوّناته.",
+      "ingredients": [
+        "حمض الستريك AHA",
+        "بيتين ساليسيلات BHA",
+        "مشتق فيتامين C"
+      ],
+      "faq": [
+        {
+          "question": "هل الوخز وارد؟",
+          "answer": "نعم بحسب الشركة، لكن الألم الشديد أو التهيج يستدعيان إزالته والتوقف."
+        },
+        {
+          "question": "هل الامتلاء دائم؟",
+          "answer": "هو منتج تجميلي للمظهر المؤقت، وليس إجراءً لتغيير حجم الشفاه."
+        }
+      ]
+    },
+    "en": {
+      "name": "COSRX Refresh AHA BHA Vitamin C Lip Plumper",
+      "tagline": "A glossy finish with a temporary plumping feel.",
+      "description": "This gel-cream lip product melts with warmth into a glossy layer. It combines AHA, BHA and a vitamin C derivative. Start small: tingling can vary between users. Choose it for cosmetic care and a temporary look, not a permanent change in lip size.",
+      "benefits": [
+        "Glossy lip appearance",
+        "Helps smooth the lip surface",
+        "Easy-spreading gel-cream texture"
+      ],
+      "textureTitle": "A glossy gel cream",
+      "textureText": "Melts on the lips and may cause tingling.",
+      "fitText": "For those who tolerate lip-plumping products; avoid irritated lips.",
+      "steps": [
+        {
+          "title": "Start small",
+          "text": "Try a small amount on intact lips."
+        },
+        {
+          "title": "Spread gently",
+          "text": "Apply to outer lips, avoiding surrounding skin."
+        },
+        {
+          "title": "Watch tolerance",
+          "text": "Remove and stop if tingling is intense or irritation develops."
+        }
+      ],
+      "notes": "Tingling is possible, but pain should not be endured. Avoid cracked, wounded lips and known ingredient allergies.",
+      "ingredients": [
+        "Citric acid AHA",
+        "Betaine salicylate BHA",
+        "Vitamin C derivative"
+      ],
+      "faq": [
+        {
+          "question": "Can it tingle?",
+          "answer": "Yes, according to the brand; remove if painful or irritating."
+        },
+        {
+          "question": "Permanent fullness?",
+          "answer": "No. This is cosmetic care for a temporary appearance."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.cosrx.com/products/lip-plump-refresh-aha-bha-viamin-c-lip-plumper",
+        "title": "COSRX Refresh AHA BHA Vitamin C Lip Plumper"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman applying a tiny amount of glossy balm to natural lips, exact COSRX Lip Plump jar; no enlarged before/after lips or needles."
+  },
+  {
+    "id": "TS0218",
+    "brand": "Beauty of Joseon",
+    "productName": "Glow Serum Propolis Niacinamide",
+    "ar": {
+      "name": "سيروم جلو بالبروبوليس والنياسيناميد من بيوتي أوف جوسون",
+      "tagline": "قطرات تمنح روتينكِ لمعة هادئة.",
+      "description": "لإحساس أكثر ترطيبًا ولمسة ندية، وزّعي بضع قطرات من جلو سيروم بعد التنظيف. يجمع البروبوليس والنياسيناميد في قوام ناعم يساعد على تحسين مظهر الملمس والبهتان. ربّتي بلطف على الوجه والرقبة ثم أكملي بالكريم؛ خطوة عناية يومية تندمج بسهولة دون وعود بتغيير فوري أو موحد لكل بشرة.",
+      "benefits": [
+        "يساعد على ترطيب البشرة",
+        "يدعم مظهرًا أكثر إشراقًا",
+        "ينعّم مظهر الملمس والمسام"
+      ],
+      "textureTitle": "سيروم ناعم بلمسة ندية",
+      "textureText": "بضع قطرات توزّع وتُربّت حتى الامتصاص.",
+      "fitText": "للبشرة التي ترغب بترطيب ولمسة إشراق، مع مراعاة التحسس من منتجات النحل.",
+      "steps": [
+        {
+          "title": "قطرات قليلة",
+          "text": "ضعي 2–3 قطرات في راحة اليد بعد التنظيف."
+        },
+        {
+          "title": "الوجه والرقبة",
+          "text": "وزّعي بلطف مع تجنّب العينين."
+        },
+        {
+          "title": "تربيت خفيف",
+          "text": "ربّتي حتى الامتصاص ثم أكملي بالمرطب."
+        }
+      ],
+      "notes": "اختبريه موضعيًا. راجعي المكونات عند الحساسية من البروبوليس أو منتجات النحل، وتوقفي عند التهيّج.",
+      "ingredients": [
+        "بروبوليس",
+        "نياسيناميد",
+        "مكوّنات مرطّبة بحسب العبوة"
+      ],
+      "faq": [
+        {
+          "question": "كم قطرة أستخدم؟",
+          "answer": "توصي الشركة بقطرتين إلى ثلاث قطرات."
+        },
+        {
+          "question": "هل هو واقي شمس؟",
+          "answer": "لا؛ أكملي روتين النهار بواقي الشمس."
+        }
+      ]
+    },
+    "en": {
+      "name": "Beauty of Joseon Glow Serum: Propolis + Niacinamide",
+      "tagline": "A few drops for a soft, dewy finish.",
+      "description": "Pat a few drops into your routine for hydration and a dewy look. Propolis and niacinamide help refine the appearance of texture and refresh dull-looking skin. Apply gently over face and neck, then finish with moisturiser.",
+      "benefits": [
+        "Helps hydrate skin",
+        "Supports a brighter-looking finish",
+        "Refines the look of texture and pores"
+      ],
+      "textureTitle": "A cushiony, dewy serum",
+      "textureText": "Pat in a few drops until absorbed.",
+      "fitText": "For skin seeking moisture and glow, with attention to bee-product sensitivity.",
+      "steps": [
+        {
+          "title": "Dispense",
+          "text": "Take 2–3 drops in your palm after cleansing."
+        },
+        {
+          "title": "Apply",
+          "text": "Spread gently over face and neck, avoiding eyes."
+        },
+        {
+          "title": "Pat",
+          "text": "Tap until absorbed, then moisturise."
+        }
+      ],
+      "notes": "Patch test. Check for propolis or bee-product allergies and stop if irritation develops.",
+      "ingredients": [
+        "Propolis",
+        "Niacinamide",
+        "Moisturising ingredients listed on your pack"
+      ],
+      "faq": [
+        {
+          "question": "How many drops?",
+          "answer": "The manufacturer recommends two to three drops."
+        },
+        {
+          "question": "Is it sunscreen?",
+          "answer": "No. Finish daytime skincare with sunscreen."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/glow-serum-propolis-niacinamide?country=US&currency=USD&variant=51833681772916",
+        "title": "Beauty of Joseon Glow Serum official product page"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Current official INCI/listing differs from older concentration-led marketing; no 60% propolis or 2% niacinamide concentration asserted without exact-pack confirmation."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman patting amber serum with fingertips; exact BOJ Glow Serum dropper bottle shown; dropper does not touch skin."
+  },
+  {
+    "id": "TS0301",
+    "brand": "Beauty of Joseon",
+    "productName": "Revive Eye Serum Ginseng + Retinal",
+    "ar": {
+      "name": "سيروم العين ريفايف بالجنسنغ والريتينال من بيوتي أوف جوسون",
+      "tagline": "عناية مدروسة بتفاصيل محيط العين.",
+      "description": "امنحي محيط العين خطوة خفيفة مع سيروم ريفايف. يجمع الجنسنغ والريتينال في قوام سريع الامتصاص، ليساعد على الترطيب وتحسين مظهر الخطوط الدقيقة. ابدئي بقليل وراقبي تحمّل بشرتكِ؛ هذه عناية تدريجية للمنطقة الحساسة، لا تحتاج فركًا أو ملامسة خط الرموش.",
+      "benefits": [
+        "يرطّب محيط العين",
+        "يساعد على تحسين مظهر الخطوط الدقيقة",
+        "قوام خفيف غير لزج بحسب الشركة"
+      ],
+      "textureTitle": "سيروم كريمي خفيف",
+      "textureText": "كمية صغيرة تربّت برفق حول العين، دون ملامستها مباشرة.",
+      "fitText": "لمن ترغب بعناية لمظهر الخطوط والجفاف حول العين وتتحمل الريتينويدات.",
+      "steps": [
+        {
+          "title": "ابدئي بقليل",
+          "text": "على بشرة نظيفة، خذي كمية صغيرة وابدئي تدريجيًا."
+        },
+        {
+          "title": "حول العين برفق",
+          "text": "ربّتي حول محيط العين بعيدًا عن العين نفسها وخط الرموش."
+        },
+        {
+          "title": "أكملي الحماية",
+          "text": "أكملي بالمرطب عند الحاجة، واستخدمي واقي الشمس نهارًا."
+        }
+      ],
+      "notes": "يحتوي ريتينال؛ تجنّبيه أثناء الحمل والرضاعة وفق الشركة. لا تجمعيه مع AHA/BHA/PHA في الروتين نفسه، وتوقفي عند التهيّج.",
+      "ingredients": [
+        "مستخلص الجنسنغ",
+        "ريتينال ضمن نظام ليبوسومات",
+        "قوام مرطب خفيف"
+      ],
+      "faq": [
+        {
+          "question": "هل هو ريتينول؟",
+          "answer": "المكوّن المذكور هو ريتينال، وهو مختلف عن الريتينول."
+        },
+        {
+          "question": "هل أستخدمه مع الأحماض؟",
+          "answer": "توصي الشركة بعدم جمعه مع AHA/BHA/PHA لتقليل التهيّج."
+        }
+      ]
+    },
+    "en": {
+      "name": "Beauty of Joseon Revive Eye Serum: Ginseng + Retinal",
+      "tagline": "Thoughtful care for the eye contour.",
+      "description": "Ginseng and retinal meet in a quick-absorbing eye serum to hydrate and soften the appearance of fine lines. Start with a little and watch tolerance; the delicate eye area needs gentle patting, not rubbing or application into the lash line.",
+      "benefits": [
+        "Hydrates the eye contour",
+        "Softens the appearance of fine lines",
+        "Light, non-sticky serum feel"
+      ],
+      "textureTitle": "A lightweight creamy serum",
+      "textureText": "Pat a small amount around the contour, keeping it out of the eyes.",
+      "fitText": "For those seeking care for visible fine lines or dryness and who tolerate retinoids.",
+      "steps": [
+        {
+          "title": "Start small",
+          "text": "Take a small amount on clean skin and introduce gradually."
+        },
+        {
+          "title": "Pat gently",
+          "text": "Apply around the eye contour, away from eyes and lash line."
+        },
+        {
+          "title": "Complete",
+          "text": "Moisturise if needed and use daytime sunscreen."
+        }
+      ],
+      "notes": "Contains retinal. The brand advises avoiding pregnancy and breastfeeding. Do not combine with AHA/BHA/PHA; stop if irritated.",
+      "ingredients": [
+        "Ginseng extract",
+        "Retinal in a liposome delivery system",
+        "Light moisturising texture"
+      ],
+      "faq": [
+        {
+          "question": "Is this retinol?",
+          "answer": "No. The named ingredient is retinal, a different retinoid."
+        },
+        {
+          "question": "Use with acids?",
+          "answer": "The manufacturer advises against combining with AHA/BHA/PHA."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://beautyofjoseon.com/products/revive-eye-serum-ginseng-retinal?variant=41689275367589",
+        "title": "Beauty of Joseon Revive Eye Serum official product page"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "No concentration asserted; a liposome-complex percentage must never be presented as the percentage of pure retinal."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently patting tiny amount on orbital bone; exact pale BOJ Ginseng+Retinal tube; keep cream away from lash line and inner eye."
+  }
+]

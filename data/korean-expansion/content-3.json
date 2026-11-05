@@ -1,0 +1,1891 @@
+[
+  {
+    "id": "TS0059",
+    "brand": "Dr. Althea",
+    "productName": "Dr. Althea - 345 Relief Cream",
+    "ar": {
+      "name": "كريم 345 ريليف من دكتور ألثيا",
+      "tagline": "ترطيب خفيف، وراحة لروتينكِ.",
+      "description": "حين تريدين ترطيبًا مريحًا دون طبقة ثقيلة، اختاري كريم 345. قوامه الخفيف ينساب بعد السيروم، ليساعد البشرة على الاحتفاظ بالنعومة ويخفف إحساس الجفاف. وزّعيه بهدوء، ثم أكملي صباحكِ بواقي الشمس.",
+      "benefits": [
+        "ترطيب يومي خفيف",
+        "دعم حاجز الرطوبة",
+        "ملمس أنعم دون ثقل"
+      ],
+      "textureTitle": "كريم خفيف لآخر خطوة عناية",
+      "textureText": "طبقة ناعمة قابلة للتوزيع؛ ابدئي بالقليل وزيدي وفق احتياج المناطق الجافة.",
+      "fitText": "اختيار للبشرة المختلطة أو التي تحتاج ترطيبًا مريحًا، بما فيها البشرة المعرضة للشوائب؛ تقبّل البشرة يختلف.",
+      "steps": [
+        {
+          "title": "بعد السيروم",
+          "text": "استخدميه بعد تنظيف البشرة والسيروم الذي اعتدتِ عليه."
+        },
+        {
+          "title": "وزعي برفق",
+          "text": "ضعي كمية مناسبة على الوجه وربّتي حتى تمتصها البشرة."
+        },
+        {
+          "title": "أكملي النهار",
+          "text": "اجعلي واقي الشمس آخر خطوة نهارًا."
+        }
+      ],
+      "notes": "اختبريه على منطقة صغيرة. قد تختلف تركيبة الإصدارات؛ ملصق عبوتكِ هو المرجع عند الحساسية.",
+      "ingredients": [
+        "نياسيناميد",
+        "بانثينول",
+        "سيراميد NP"
+      ],
+      "faq": [
+        {
+          "question": "هل هو كريم أم علاج للحبوب؟",
+          "answer": "هو مرطب للعناية اليومية، ولا يحل محل علاج يصفه الطبيب."
+        },
+        {
+          "question": "كيف يختلف عن 147؟",
+          "answer": "345 أخف قوامًا، بينما 147 يمنح إحساسًا أغنى بالترطيب."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea 345 Relief Cream",
+      "tagline": "Light moisture. A quieter daily ritual.",
+      "description": "Choose 345 when you want comfortable hydration without a heavy layer. This lightweight cream smooths on after serum to support softness and the moisture barrier. Start with a little and finish daytime care with sunscreen.",
+      "benefits": [
+        "Light everyday hydration",
+        "Moisture-barrier support",
+        "Softer, comfortable skin"
+      ],
+      "textureTitle": "A light finishing cream",
+      "textureText": "A smooth, easily spread layer; adjust the amount to drier areas.",
+      "fitText": "For skin needing comfortable daily moisture, including combination and blemish-prone skin; individual tolerance varies.",
+      "steps": [
+        {
+          "title": "After serum",
+          "text": "Use after cleansing and your usual serum."
+        },
+        {
+          "title": "Smooth and press",
+          "text": "Spread an appropriate amount over the face and gently pat in."
+        },
+        {
+          "title": "Finish daytime care",
+          "text": "Apply sunscreen as your final morning step."
+        }
+      ],
+      "notes": "Patch test. Formulas can vary by edition; check your own label for sensitivities.",
+      "ingredients": [
+        "Niacinamide",
+        "Panthenol",
+        "Ceramide NP"
+      ],
+      "faq": [
+        {
+          "question": "Is this an acne treatment?",
+          "answer": "It is a daily moisturiser and does not replace prescribed treatment."
+        },
+        {
+          "question": "How does it compare with 147?",
+          "answer": "345 feels lighter; 147 provides a richer moisturising layer."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/345-relief-cream",
+        "title": "Dr.Althea 345 Relief Cream"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/dual-cream-set-345-relief-cream-147-barrier-cream",
+        "title": "Dr.Althea Dual Cream Set"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Current official page describes Ver.2 50 ml; existing store packaging may be an older formula. Only cross-edition features used; no current-version clinical claims transferred."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently patting a small amount of white moisturising cream onto cheek; exact original 345 tube/100 ml pack beside her; no claims or before-after."
+  },
+  {
+    "id": "TS0069",
+    "brand": "Arencia",
+    "productName": "Arencia - Vitamin C Booster Shot",
+    "ar": {
+      "name": "فيتامين C بوستر شوت من أرينسيا",
+      "tagline": "إشراقة لطيفة في خطوة السيروم.",
+      "description": "للبشرة التي يبدو عليها البهتان، أضيفي فيتامين C بوستر شوت إلى وقت العناية. قوامه الخفيف ينساب بين التونر والمرطب، مع مشتقات فيتامين C ونياسيناميد وجلوتاثيون للعناية بمظهر الإشراقة وتجانس اللون.",
+      "benefits": [
+        "يعزز مظهر الإشراقة",
+        "يدعم تجانس اللون بالمظهر",
+        "قوام مناسب تحت المرطب"
+      ],
+      "textureTitle": "سيروم بملمس كريمي خفيف",
+      "textureText": "كمية صغيرة تُوزع بسهولة، ثم يُستكمل الروتين بالمرطب.",
+      "fitText": "للبشرة الباهتة أو متفاوتة اللون بالمظهر، مع إدخال تدريجي إذا كنتِ جديدة على فيتامين C.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "ضعي كمية صغيرة على بشرة نظيفة بعد التونر."
+        },
+        {
+          "title": "وزعي بلطف",
+          "text": "وزعي بعيدًا عن العينين حتى الامتصاص؛ ابدئي يومًا بعد يوم."
+        },
+        {
+          "title": "أكملي العناية",
+          "text": "أتبعيه بمرطب، ثم واقي الشمس عند الاستخدام صباحًا."
+        }
+      ],
+      "notes": "اختبري منطقة صغيرة. لا تجمعيه في الروتين نفسه مع الريتينويدات أو الأحماض المقشرة القوية إذا اتبعتِ تعليمات الشركة.",
+      "ingredients": [
+        "مشتقات فيتامين C",
+        "نياسيناميد",
+        "جلوتاثيون"
+      ],
+      "faq": [
+        {
+          "question": "هل 65% على العبوة تعني فيتامين C نقيًا؟",
+          "answer": "لا؛ هي تسمية لمركب مكونات، وليست نسبة فيتامين C نقي."
+        },
+        {
+          "question": "هل أستخدمه صباحًا؟",
+          "answer": "يمكن ذلك مع إنهاء الروتين بواقي الشمس."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Vitamin C Booster Shot",
+      "tagline": "A brighter-looking serum moment.",
+      "description": "For dull-looking skin, add a light Vitamin C Booster Shot step between toner and cream. Vitamin C derivatives, niacinamide and glutathione support the appearance of radiance and even-looking tone.",
+      "benefits": [
+        "Brighter-looking radiance",
+        "More even-looking tone",
+        "Layers beneath moisturiser"
+      ],
+      "textureTitle": "A light creamy serum",
+      "textureText": "Smooth on a small amount before finishing with moisturiser.",
+      "fitText": "For dull or uneven-looking skin; introduce gradually if new to vitamin C.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Apply a little to clean skin after toner."
+        },
+        {
+          "title": "Smooth gently",
+          "text": "Avoid eyes; start every other day."
+        },
+        {
+          "title": "Finish care",
+          "text": "Follow with moisturiser and morning sunscreen."
+        }
+      ],
+      "notes": "Patch test. Manufacturer advises separating from retinoids and strong exfoliating acids.",
+      "ingredients": [
+        "Vitamin C derivatives",
+        "Niacinamide",
+        "Glutathione"
+      ],
+      "faq": [
+        {
+          "question": "Does 65% mean pure vitamin C?",
+          "answer": "No; a complex percentage is not pure vitamin C concentration."
+        },
+        {
+          "question": "Can I use it in the morning?",
+          "answer": "Yes, finishing with sunscreen."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/vitamin-c-booster-shot-pure-vitamin-c-glutathione-for-bright-healthy-skin",
+        "title": "Arencia Vitamin C Booster Shot"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Original store tube visually says VITAMIN C COMPLEX65% + GLUTATHIONE. Official INCI lists ethyl ascorbic acid50000ppm and ascorbic acid10ppm; did not misrepresent65% as purevitaminC."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman applying a tiny pale-yellow serum dab to cheek, original gold-green30ml tube nearby, no before-after or strong whitening."
+  },
+  {
+    "id": "TS0074",
+    "brand": "Dr. Althea",
+    "productName": "Dr. Althea - 147 Barrier Cream",
+    "ar": {
+      "name": "كريم 147 باريير من دكتور ألثيا",
+      "tagline": "طبقة أغنى حين تحتاج بشرتكِ للراحة.",
+      "description": "إذا كان الجفاف يجعل بشرتكِ مشدودة أو خشنة، امنحي خطوة الترطيب قوامًا أغنى. كريم 147 يحيط البشرة بطبقة مريحة تساعد على الاحتفاظ بالرطوبة، ويكمل السيروم دون الحاجة إلى تغيير روتينكِ كله.",
+      "benefits": [
+        "يساعد على الاحتفاظ بالرطوبة",
+        "يخفف إحساس الشد بسبب الجفاف",
+        "يترك ملمسًا أكثر نعومة"
+      ],
+      "textureTitle": "ترطيب غني قابل للتوزيع",
+      "textureText": "كريم أغنى من 345، مناسب لطبقة ختامية على المناطق التي تحتاج مزيدًا من العناية.",
+      "fitText": "للبشرة الجافة أو التي تشعر بالشد وتحتاج دعم حاجز الرطوبة.",
+      "steps": [
+        {
+          "title": "جهزي البشرة",
+          "text": "نظفي البشرة وضعي السيروم إن استخدمتِه."
+        },
+        {
+          "title": "ضعي الكريم",
+          "text": "وزعي كمية مناسبة وربّتي بلطف حتى الامتصاص."
+        },
+        {
+          "title": "عدلي الكمية",
+          "text": "زِيدي قليلًا على المناطق الجافة، وأتبعيه نهارًا بواقي الشمس."
+        }
+      ],
+      "notes": "للاستخدام الخارجي. اختبري منطقة صغيرة وتوقفي إذا ظهر تهيج؛ راجعي مكونات عبوتكِ.",
+      "ingredients": [
+        "سيراميد NP",
+        "سكوالان",
+        "حمض الهيالورونيك"
+      ],
+      "faq": [
+        {
+          "question": "متى أختار 147 بدل 345؟",
+          "answer": "عندما تفضلين إحساسًا أغنى بالترطيب، خصوصًا مع الجفاف."
+        },
+        {
+          "question": "هل يسبق السيروم؟",
+          "answer": "في الروتين المعتاد يوضع بعد السيروم، قبل واقي الشمس نهارًا."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea 147 Barrier Cream",
+      "tagline": "A richer layer of everyday comfort.",
+      "description": "When dryness leaves your skin feeling tight or rough, give your moisturising step a richer texture. 147 wraps skin in comfortable moisture, helping maintain softness and supporting its moisture barrier after serum.",
+      "benefits": [
+        "Helps retain moisture",
+        "Comforts dryness-related tightness",
+        "Softens rough-feeling skin"
+      ],
+      "textureTitle": "Rich, spreadable moisture",
+      "textureText": "Richer than 345, with a cushioning finish for areas needing extra moisture.",
+      "fitText": "For dry, tight-feeling skin needing a richer moisture-barrier step.",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Cleanse and apply serum if used."
+        },
+        {
+          "title": "Smooth on",
+          "text": "Spread an appropriate amount and gently press in."
+        },
+        {
+          "title": "Adjust",
+          "text": "Add a little to dry areas; follow with daytime sunscreen."
+        }
+      ],
+      "notes": "External use. Patch test, stop if irritation develops, and check your pack ingredients.",
+      "ingredients": [
+        "Ceramide NP",
+        "Squalane",
+        "Hyaluronic acid"
+      ],
+      "faq": [
+        {
+          "question": "When choose 147 over 345?",
+          "answer": "Choose it for a richer moisturising feel, especially with dryness."
+        },
+        {
+          "question": "Before or after serum?",
+          "answer": "Usually after serum and before daytime sunscreen."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/dralthea-147_barrier_cream",
+        "title": "Dr.Althea 147 Barrier Cream"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/dual-cream-set-345-relief-cream-147-barrier-cream",
+        "title": "Dr.Althea Dual Cream Set"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Avoided claiming actual barrier repair treatment or guaranteed suitability; exact-pack formula should govern INCI."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman smoothing a small cream amount onto a dry-feeling cheek, matching exact 147 pack; soft ivory and blue setting."
+  },
+  {
+    "id": "TS0098",
+    "brand": "Arencia",
+    "productName": "Arencia - Fresh Green Rice Mochi Cleanser",
+    "ar": {
+      "name": "غسول غرين رايس موتشي من أرينسيا",
+      "tagline": "رغوة ناعمة، وبداية منعشة.",
+      "description": "ابدئي روتينكِ بلحظة تنظيف مع الأرز والشاي الأخضر. غسول غرين رايس يميزه قوام الموتشي الذي يلين مع الماء ويصبح رغوة. ضعي القليل، رغّيه بين يديكِ، ثم دلكي بلطف واشطفي لتكملي باقي العناية على بشرة نظيفة.",
+      "benefits": [
+        "تنظيف الشوائب اليومية",
+        "يساعد على إزالة الزيوت الزائدة",
+        "إحساس ناعم بعد الشطف"
+      ],
+      "textureTitle": "من الموتشي إلى الرغوة",
+      "textureText": "معجون موتشي يتحول بالماء إلى رغوة؛ خطوة تنظيف مختلفة في بداية روتينكِ.",
+      "fitText": "لبشرة عادية أو مختلطة أو دهنية، وخطوة تنظيف للرغبة بإحساس منعش.",
+      "steps": [
+        {
+          "title": "رغّيه أولًا",
+          "text": "خذي كمية صغيرة وامزجيها بالماء بين يديكِ."
+        },
+        {
+          "title": "دلكي برفق",
+          "text": "وزعي الرغوة على بشرة رطبة بحركات لطيفة دون فرك قوي."
+        },
+        {
+          "title": "اشطفي وأكملي",
+          "text": "اشطفي جيدًا بماء فاتر، ثم أكملي بمرطب مناسب."
+        }
+      ],
+      "notes": "تجنبي العين والجلد المجروح. اختبريه عند الحساسية؛ قد تحتوي التركيبة على عطر أو مشتق لوز، وملصق عبوتكِ هو المرجع.",
+      "ingredients": [
+        "مسحوق الأرز",
+        "الشاي الأخضر"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه على الوجه كماسك؟",
+          "answer": "الخطوات هنا لغسول يُشطف. لأي استخدام إضافي اتبعي تعليمات عبوتكِ."
+        },
+        {
+          "question": "هل يزيل المكياج المقاوم للماء؟",
+          "answer": "ابدئي بمزيل مناسب للمكياج الثقيل أو المقاوم للماء ثم استخدمي الغسول."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Fresh Green Rice Mochi Cleanser",
+      "tagline": "Soft lather. A fresh beginning.",
+      "description": "Start your ritual with rice and green tea. Fresh Green has a distinctive mochi texture that softens into foam with water. Lather a little between wet hands, gently cleanse, then rinse before the rest of your skincare.",
+      "benefits": [
+        "Cleanses daily impurities",
+        "Helps wash away excess oil",
+        "Soft feel after rinsing"
+      ],
+      "textureTitle": "From mochi to lather",
+      "textureText": "Mochi-like paste turns to foam with water: a distinctive start to your routine.",
+      "fitText": "For normal, combination or oily skin wanting a refreshed cleansing step.",
+      "steps": [
+        {
+          "title": "Lather first",
+          "text": "Work a small amount with water between your hands."
+        },
+        {
+          "title": "Cleanse gently",
+          "text": "Massage the lather onto damp skin without harsh rubbing."
+        },
+        {
+          "title": "Rinse and continue",
+          "text": "Rinse thoroughly with lukewarm water, then moisturise."
+        }
+      ],
+      "notes": "Avoid eyes and broken skin. Patch test; fragrance or almond-derived ingredients may be present. Your jar’s label is authoritative.",
+      "ingredients": [
+        "Rice powder",
+        "Green tea"
+      ],
+      "faq": [
+        {
+          "question": "Can I leave it on as a mask?",
+          "answer": "These steps describe rinse-off cleansing. Follow your own jar for any additional use."
+        },
+        {
+          "question": "Does it remove waterproof makeup?",
+          "answer": "Use a suitable remover for heavy or waterproof makeup before cleansing."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-fresh-green-mochi-cleanser",
+        "title": "Arencia Fresh Green Rice Mochi Cleanser"
+      },
+      {
+        "url": "https://arencia.com/product/프레시-그린-클렌저-떡솝-120g/78/category/72/display/1/",
+        "title": "Arencia Korean Fresh Green Cleanser"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Actual store jar photo inspected;120g visible forTS0098. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman cleansing damp cheek with soft white foam beside exact Fresh Green Arencia jar; do not depict unfoamed dense paste as required mask use. Original pack and jar colour unchanged."
+  },
+  {
+    "id": "TS0111",
+    "brand": "Dr. Althea",
+    "productName": "Dr. Althea - 345 Relief Cream Mist Mini",
+    "ar": {
+      "name": "ميست 345 ريليف كريم من دكتور ألثيا",
+      "tagline": "رشة ترطيب بين لحظات يومكِ.",
+      "description": "جددي إحساس الترطيب دون إعادة الروتين من البداية. ميست 345 يجمع طبقة كريمية وأخرى شبيهة بالإيسنس في رذاذ ناعم؛ رجّي العبوة ثم استخدميه بعد التنظيف أو عند احتياج البشرة لانتعاش مريح.",
+      "benefits": [
+        "رذاذ ناعم متساوٍ",
+        "ترطيب دون فرك إضافي",
+        "ينعش إحساس البشرة بالجفاف"
+      ],
+      "textureTitle": "كريم وإيسنس في رشة",
+      "textureText": "رجّ العبوة يمزج الطبقتين قبل كل استخدام للحصول على توزيع متجانس.",
+      "fitText": "لبشرة تشعر بالجفاف أو الشد خلال اليوم، ولمن تفضل خطوة ترطيب على هيئة رذاذ.",
+      "steps": [
+        {
+          "title": "رجّي العبوة",
+          "text": "امزجي طبقتي الكريم والإيسنس جيدًا."
+        },
+        {
+          "title": "رشي برفق",
+          "text": "أغلقي العينين والفم ورشي من مسافة نحو 20 سم."
+        },
+        {
+          "title": "اتركيه يستقر",
+          "text": "ربّتي برفق على البشرة النظيفة أو اتركيه يستقر فوق المكياج."
+        }
+      ],
+      "notes": "لا ترشي في العينين أو تستنشقي الرذاذ. ليس واقي شمس، ولا يغني عن تجديده.",
+      "ingredients": [
+        "ماء نخالة الأرز",
+        "بانثينول",
+        "ماديكاسوسايد"
+      ],
+      "faq": [
+        {
+          "question": "هل يمكن وضعه فوق المكياج؟",
+          "answer": "تذكر الشركة استخدامه فوق المكياج لتجديد الترطيب، دون فرك."
+        },
+        {
+          "question": "لماذا أرجّه أولًا؟",
+          "answer": "لمزج الطبقتين قبل الرش."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea 345 Relief Cream Mist",
+      "tagline": "A moisture refresh between daily moments.",
+      "description": "Refresh hydration without restarting your routine. This fine mist blends a cream layer with an essence layer. Shake, spray after cleansing or when skin feels dry, and enjoy a softer, comfortable finish.",
+      "benefits": [
+        "Fine, even mist",
+        "Moisture without extra rubbing",
+        "Refreshes dry-feeling skin"
+      ],
+      "textureTitle": "Cream and essence in a mist",
+      "textureText": "Shake before each use to blend its two layers evenly.",
+      "fitText": "For tight, dry-feeling skin and anyone preferring a mist-style moisture step.",
+      "steps": [
+        {
+          "title": "Shake",
+          "text": "Blend the cream and essence layers well."
+        },
+        {
+          "title": "Mist",
+          "text": "Close eyes and mouth; spray from about 20 cm away."
+        },
+        {
+          "title": "Let settle",
+          "text": "Pat into bare skin or let settle over makeup."
+        }
+      ],
+      "notes": "Avoid eyes and inhaling mist. This is not sunscreen or a substitute for reapplication.",
+      "ingredients": [
+        "Rice bran water",
+        "Panthenol",
+        "Madecassoside"
+      ],
+      "faq": [
+        {
+          "question": "Can it go over makeup?",
+          "answer": "The manufacturer describes refreshing moisture over makeup without rubbing."
+        },
+        {
+          "question": "Why shake first?",
+          "answer": "To mix the two layers before spraying."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/345-relief-cream-mist",
+        "title": "Dr.Althea 345 Relief Cream Mist"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Store photo confirms 60 ml; Mini is a store naming convention. Manufacturer currently offers 60/100 ml."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman eyes and mouth closed holding exact 345 mist about20 cm from face; no visible aerosol directed into open eyes."
+  },
+  {
+    "id": "TS0112",
+    "brand": "Dr. Althea",
+    "productName": "Dr. Althea - Pure Grinding Cleansing Balm",
+    "ar": {
+      "name": "بلسم التنظيف بيور غرايندينغ من دكتور ألثيا",
+      "tagline": "لفّة صغيرة، وبداية تنظيف ألطف.",
+      "description": "ابدئي إزالة المكياج وواقي الشمس ببلسم يذوب على البشرة الجافة. تصميم الطحن يخرج كمية جديدة دون إدخال الأصابع في العبوة، ثم يتحول البلسم مع الماء إلى مستحلب يُشطف بسهولة.",
+      "benefits": [
+        "يساعد على إذابة المكياج وواقي الشمس",
+        "يتحول لمستحلب مع الماء",
+        "تصميم طحن للتحكم بالكمية"
+      ],
+      "textureTitle": "من بلسم إلى مستحلب",
+      "textureText": "قوام صلب يلين أثناء التدليك، ثم يصبح حليبيًا عند إضافة الماء.",
+      "fitText": "لمن تريد خطوة تنظيف زيتية قبل الغسول، خصوصًا بعد واقي الشمس أو المكياج.",
+      "steps": [
+        {
+          "title": "لفّي ووزعي",
+          "text": "بيدين جافتين، لفي العبوة وخذي كمية مناسبة على وجه جاف."
+        },
+        {
+          "title": "دلّكي واستحلبي",
+          "text": "دلكي بلطف ثم أضيفي قليلًا من الماء حتى يصبح القوام حليبيًا."
+        },
+        {
+          "title": "اشطفي",
+          "text": "اشطفي بماء فاتر، ثم غسول مائي إذا اتبعتِ التنظيف المزدوج."
+        }
+      ],
+      "notes": "تجنبي الفرك القوي وملامسة داخل العين. اشطفي جيدًا وتوقفي عند التهيج.",
+      "ingredients": [
+        "زيت بذور الشاي الأخضر",
+        "زيت بذور العنب",
+        "ماديكاسوسايد"
+      ],
+      "faq": [
+        {
+          "question": "هل أبدأ على وجه مبلل؟",
+          "answer": "يبدأ على بشرة ويدين جافتين؛ يضاف الماء لاحقًا للاستحلاب."
+        },
+        {
+          "question": "هل هو نفسه الغسول الرغوي؟",
+          "answer": "هو خطوة تنظيف زيتية، ويمكن اتباعه بغسول مائي."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea Pure Grinding Cleansing Balm",
+      "tagline": "A fresh twist on your first cleanse.",
+      "description": "Start makeup and sunscreen removal with a balm that melts over dry skin. The grinder dispenses a fresh portion without dipping fingers into the jar. Add water to turn the balm milky before rinsing.",
+      "benefits": [
+        "Helps dissolve makeup and sunscreen",
+        "Emulsifies with water",
+        "Controlled grinding dispenser"
+      ],
+      "textureTitle": "Balm, oil, then milk",
+      "textureText": "The balm softens during massage and turns milky when water is added.",
+      "fitText": "For an oil-based first cleanse after makeup or sunscreen.",
+      "steps": [
+        {
+          "title": "Twist and apply",
+          "text": "With dry hands, dispense onto a dry face."
+        },
+        {
+          "title": "Massage and emulsify",
+          "text": "Massage gently, then add water until milky."
+        },
+        {
+          "title": "Rinse",
+          "text": "Rinse with lukewarm water; follow with water-based cleanser if double cleansing."
+        }
+      ],
+      "notes": "Avoid harsh rubbing and direct eye contact. Rinse thoroughly; stop if irritated.",
+      "ingredients": [
+        "Green tea seed oil",
+        "Grape seed oil",
+        "Madecassoside"
+      ],
+      "faq": [
+        {
+          "question": "Start with wet skin?",
+          "answer": "Begin on dry hands and skin; add water later."
+        },
+        {
+          "question": "Is it a foaming cleanser?",
+          "answer": "It is an oil-based first cleanse and may precede one."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/pure-grinding-cleansing-balm",
+        "title": "Dr.Althea Pure Grinding Cleansing Balm"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman massaging a clear balm into dry cheek, exact grinder jar nearby; separate small water bowl evokes later emulsification, no foam at first stage."
+  },
+  {
+    "id": "TS0123",
+    "brand": "Dr. Althea",
+    "productName": "Dr. Althea Purifying Green Tea Sunscreen",
+    "ar": {
+      "name": "واقي الشمس بيوريفاينغ غرين تي من دكتور ألثيا",
+      "tagline": "حماية النهار، بخطوة مريحة.",
+      "description": "واقي غرين تي يضيف خطوة حماية إلى روتينكِ، مع ملمس كريمي ناعم ومكونات مرطبة مدونة على العبوة. وزّعي كمية كافية بالتساوي قبل الخروج، واحتفظي به قريبًا لتجديد الحماية.",
+      "benefits": [
+        "خطوة حماية نهارية",
+        "ملمس ناعم سهل التوزيع",
+        "يكمل روتين الترطيب"
+      ],
+      "textureTitle": "قوام كريمي ناعم",
+      "textureText": "تصف العبوة ملمسًا ناعمًا وإحساسًا مرطبًا بعد التوزيع.",
+      "fitText": "لمن تبحث عن واقي وجه يومي يناسب روتينها؛ اختبري التوافق خصوصًا عند الحساسية.",
+      "steps": [
+        {
+          "title": "آخر خطوة صباحًا",
+          "text": "ضعي كمية كافية على البشرة الجافة قبل التعرض للشمس وفق ملصق العبوة."
+        },
+        {
+          "title": "وزعي بالتساوي",
+          "text": "غطي الوجه والرقبة والمناطق المكشوفة دون ملامسة العين."
+        },
+        {
+          "title": "جددي الحماية",
+          "text": "أعيدي التطبيق كل ساعتين خارجًا وبعد السباحة أو التعرق أو المسح، وفق تعليمات العبوة."
+        }
+      ],
+      "notes": "لا يغني واقي الشمس عن الظل والملابس الواقية. لا نفترض مقاومة الماء؛ راجعي الملصق.",
+      "ingredients": [
+        "ماء أوراق الشاي الأخضر",
+        "بانثينول",
+        "سنتيلا"
+      ],
+      "faq": [
+        {
+          "question": "هل أحمي بشرتي بوضعه صباحًا فقط؟",
+          "answer": "خارج المنزل يلزم تجديده، خصوصًا بعد العرق أو الماء أو المسح."
+        },
+        {
+          "question": "هل أستخدمه بدل المرطب؟",
+          "answer": "يمكنكِ إبقاء المرطب قبله بحسب احتياج بشرتكِ."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea Purifying Green Tea Sunscreen",
+      "tagline": "Daily protection, comfortably applied.",
+      "description": "Green Tea adds sun protection with a soft cream texture and moisturising ingredients shown on its pack. Apply generously before going outside and keep it handy for reapplication.",
+      "benefits": [
+        "A daytime protection step",
+        "Smooth, spreadable texture",
+        "Complements moisturising care"
+      ],
+      "textureTitle": "A soft cream finish",
+      "textureText": "The pack describes a smooth texture and moisturised after-feel.",
+      "fitText": "For a daily facial sunscreen step that fits your routine; patch test if sensitive.",
+      "steps": [
+        {
+          "title": "Finish morning care",
+          "text": "Apply generously to dry skin before sun exposure, following your label."
+        },
+        {
+          "title": "Cover evenly",
+          "text": "Cover face, neck and exposed areas, avoiding eyes."
+        },
+        {
+          "title": "Reapply",
+          "text": "Reapply every two hours outdoors and after swimming, sweating or towelling, following the label."
+        }
+      ],
+      "notes": "Use shade and protective clothing too. Do not assume water resistance; check the label.",
+      "ingredients": [
+        "Green tea leaf water",
+        "Panthenol",
+        "Centella"
+      ],
+      "faq": [
+        {
+          "question": "Is a morning application enough?",
+          "answer": "Outdoors, reapply, especially after sweat, water or towelling."
+        },
+        {
+          "question": "Does it replace moisturiser?",
+          "answer": "Keep moisturiser beneath it if your skin needs it."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoralthea.co.kr/category/make-upsun-care/148/",
+        "title": "Dr.Althea official sun-care collection"
+      },
+      {
+        "url": "https://doctoralthea.co.kr/product/그린티-프레쉬-선-스크린/500/",
+        "title": "Dr.Althea official Korean sunscreen page"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology: sunscreen application"
+      }
+    ],
+    "sourceStatus": "limited",
+    "researchNotes": [
+      "Existing store pack visually inspected. Older PURIFYING GREEN TEA pack states SPF50+ PA++++ and lists Centella, green tea leaf water and panthenol. Official Korean page now named Green Tea Fresh; current Green Tea Calming US edition not substituted.",
+      "General reapplication guidance from AAD; exact directions, protection and water resistance are governed by actual pack."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman applying an adequate white sunscreen amount to cheek in bright indirect daylight; exact white-green tube present. No sunbathing or waterproof claims."
+  },
+  {
+    "id": "TS0169",
+    "brand": "Arencia",
+    "productName": "Arencia - Holy Hyssop Serum 30 30 ml",
+    "ar": {
+      "name": "سيروم هولي هيسوب 30 من أرينسيا",
+      "tagline": "جل غني للحظة عناية مسائية.",
+      "description": "لأمسيات تحتاج فيها البشرة ترطيبًا ومظهرًا أكثر انتعاشًا، اختاري هولي هيسوب 30. جل غني مع النياسيناميد وخلاصة الهيسوب، يُربت بعد التونر ليترك البشرة ناعمة وندية قبل استكمال العناية.",
+      "benefits": [
+        "ترطيب بملمس جل غني",
+        "يدعم الإشراقة بالمظهر",
+        "يساعد على نعومة البشرة"
+      ],
+      "textureTitle": "جل كثيف لطيف التوزيع",
+      "textureText": "قوام هلامي غني، مختلف عن سيروم سائل خفيف؛ ابدئي بكمية صغيرة.",
+      "fitText": "للبشرة التي تريد ترطيبًا مسائيًا مع عناية بمظهر البهتان وتجانس اللون.",
+      "steps": [
+        {
+          "title": "بعد التونر",
+          "text": "وزعي كمية مناسبة على وجه ورقبة نظيفين."
+        },
+        {
+          "title": "ربتي",
+          "text": "دلكي وربتي برفق حتى يستقر القوام."
+        },
+        {
+          "title": "أكملي حسب الحاجة",
+          "text": "أضيفي مرطبكِ إذا احتاجت البشرة؛ أي استخدام كماسك يتبع تعليمات العبوة."
+        }
+      ],
+      "notes": "اختبريه أولًا. الرقم30 جزء من اسم المنتج؛ الحجم المطبوع على العبوة هو المرجع.",
+      "ingredients": [
+        "نياسيناميد",
+        "خلاصة الهيسوب",
+        "مشتقات فيتامين C"
+      ],
+      "faq": [
+        {
+          "question": "هل30 هو حجم العبوة؟",
+          "answer": "لا؛ الرقم جزء من اسم السيروم. راجعي وزن أو حجم العبوة المعروضة."
+        },
+        {
+          "question": "هل قوامه مائي؟",
+          "answer": "هو جل غني، ويمكن تعديل كميته حسب احتياج البشرة."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Holy Hyssop Serum 30",
+      "tagline": "A rich gel for your evening ritual.",
+      "description": "Choose Holy Hyssop 30 when evening skin needs moisture and a fresher-looking finish. This rich gel with niacinamide and hyssop extract pats on after toner for soft, dewy-feeling care.",
+      "benefits": [
+        "Rich gel hydration",
+        "Radiant-looking finish",
+        "Supports skin softness"
+      ],
+      "textureTitle": "A substantial gel texture",
+      "textureText": "Richer than a watery serum; start with a small amount.",
+      "fitText": "For evening moisture and the appearance of dull, uneven-looking tone.",
+      "steps": [
+        {
+          "title": "After toner",
+          "text": "Apply to a clean face and neck after toner."
+        },
+        {
+          "title": "Pat in",
+          "text": "Massage and pat gently until settled."
+        },
+        {
+          "title": "Complete care",
+          "text": "Add moisturiser if needed; follow your jar for mask use."
+        }
+      ],
+      "notes": "Patch test.30 is part of the product name; your jar states the actual net amount.",
+      "ingredients": [
+        "Niacinamide",
+        "Hyssop extract",
+        "Vitamin C derivatives"
+      ],
+      "faq": [
+        {
+          "question": "Is 30 the pack size?",
+          "answer": "No; it is part of the name. Check the displayed jar’s net weight."
+        },
+        {
+          "question": "Is it watery?",
+          "answer": "It is a rich gel; adjust the amount to your skin."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-holy-hyssop-serum-30-1-76-oz-copy",
+        "title": "Arencia Holy Hyssop Serum 30"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "IMPORTANT: catalog name says30ml but actual existing photo explicitly50g/1.76oz. New public title omits incorrect30ml; parent informed. Did not change record price, stock or identity."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman patting transparent teal gel onto cheek at evening vanity; exact mint50g HolyHyssop 30 jar visible, no30ml invented."
+  },
+  {
+    "id": "TS0178",
+    "brand": "Dr. Althea",
+    "productName": "Dr. Althea - Aqua Glowing Sunscreen",
+    "ar": {
+      "name": "واقي الشمس أكوا غلوينغ من دكتور ألثيا",
+      "tagline": "حماية النهار، بخطوة مريحة.",
+      "description": "واقي أكوا غلوينغ يجمع خطوة الحماية مع إحساس مرطب ولمسة مضيئة. عبوته الدائرية تميزه عن أنبوب غرين تي. وزّعي كمية كافية بالتساوي قبل الخروج، واحتفظي به قريبًا لتجديد الحماية.",
+      "benefits": [
+        "خطوة حماية نهارية",
+        "ملمس ناعم سهل التوزيع",
+        "يكمل روتين الترطيب"
+      ],
+      "textureTitle": "قوام كريمي بلمسة مضيئة",
+      "textureText": "كريم مرطب الإحساس في عبوة دائرية؛ راجعي ملصق نسختكِ للحماية المحددة.",
+      "fitText": "لمن تبحث عن واقي وجه يومي يناسب روتينها؛ اختبري التوافق خصوصًا عند الحساسية.",
+      "steps": [
+        {
+          "title": "آخر خطوة صباحًا",
+          "text": "ضعي كمية كافية على البشرة الجافة قبل التعرض للشمس وفق ملصق العبوة."
+        },
+        {
+          "title": "وزعي بالتساوي",
+          "text": "غطي الوجه والرقبة والمناطق المكشوفة دون ملامسة العين."
+        },
+        {
+          "title": "جددي الحماية",
+          "text": "أعيدي التطبيق كل ساعتين خارجًا وبعد السباحة أو التعرق أو المسح، وفق تعليمات العبوة."
+        }
+      ],
+      "notes": "لا يغني واقي الشمس عن الظل والملابس الواقية. لا نفترض مقاومة الماء؛ راجعي الملصق.",
+      "ingredients": [
+        "بانثينول",
+        "سيراميد NP",
+        "ماء البامبو"
+      ],
+      "faq": [
+        {
+          "question": "هل أحمي بشرتي بوضعه صباحًا فقط؟",
+          "answer": "خارج المنزل يلزم تجديده، خصوصًا بعد العرق أو الماء أو المسح."
+        },
+        {
+          "question": "هل أستخدمه بدل المرطب؟",
+          "answer": "يمكنكِ إبقاء المرطب قبله بحسب احتياج بشرتكِ."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea Aqua Glowing Sunscreen",
+      "tagline": "Daily protection, comfortably applied.",
+      "description": "Aqua Glowing pairs daily sun care with a moisturised, luminous finish in its distinctive round pack. Apply generously before going outside and keep it handy for reapplication.",
+      "benefits": [
+        "A daytime protection step",
+        "Smooth, spreadable texture",
+        "Complements moisturising care"
+      ],
+      "textureTitle": "A soft cream with a glow",
+      "textureText": "A moisturising-feel cream in a round pack; check your edition’s protection label.",
+      "fitText": "For a daily facial sunscreen step that fits your routine; patch test if sensitive.",
+      "steps": [
+        {
+          "title": "Finish morning care",
+          "text": "Apply generously to dry skin before sun exposure, following your label."
+        },
+        {
+          "title": "Cover evenly",
+          "text": "Cover face, neck and exposed areas, avoiding eyes."
+        },
+        {
+          "title": "Reapply",
+          "text": "Reapply every two hours outdoors and after swimming, sweating or towelling, following the label."
+        }
+      ],
+      "notes": "Use shade and protective clothing too. Do not assume water resistance; check the label.",
+      "ingredients": [
+        "Panthenol",
+        "Ceramide NP",
+        "Bamboo water"
+      ],
+      "faq": [
+        {
+          "question": "Is a morning application enough?",
+          "answer": "Outdoors, reapply, especially after sweat, water or towelling."
+        },
+        {
+          "question": "Does it replace moisturiser?",
+          "answer": "Keep moisturiser beneath it if your skin needs it."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoralthea.co.kr/category/make-upsun-care/148/",
+        "title": "Dr.Althea official sun-care collection"
+      },
+      {
+        "url": "https://doctoralthea.co.kr/product/닥터엘시아-아쿠아-글로잉-선-스크린-50ml/499/",
+        "title": "Dr.Althea official Korean sunscreen page"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+        "title": "American Academy of Dermatology: sunscreen application"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Existing store pack visually inspected. Store round AQUA GLOWING pack lists green caviar extract, ceramide NP, panthenol, bamboo water, niacinamide. Exact SPF not legible in stored front image, so no SPF number invented.",
+      "General reapplication guidance from AAD; exact directions, protection and water resistance are governed by actual pack."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman applying an adequate white sunscreen amount to cheek in bright indirect daylight; exact round blue-white jar present. No sunbathing or waterproof claims."
+  },
+  {
+    "id": "TS0183",
+    "brand": "Arencia",
+    "productName": "Arencia - Retinal Booster Shot 30 ml",
+    "ar": {
+      "name": "ريتينال بوستر شوت من أرينسيا",
+      "tagline": "خطوة ليلية، تبدأ على مهل.",
+      "description": "أضيفي عناية الريتينال إلى المساء عندما تبحثين عن مظهر أكثر نعومة وتجانسًا. ريتينال بوستر شوت يجمع الريتينال مع الكافيين ومكونات مرطبة؛ القليل والتدرج أهم من زيادة الكمية.",
+      "benefits": [
+        "يدعم نعومة المظهر",
+        "يعتني بمظهر الخطوط الدقيقة",
+        "خطوة سيروم ليلية"
+      ],
+      "textureTitle": "سيروم ليلي خفيف",
+      "textureText": "طبقة صغيرة بين التونر والمرطب، دون الإفراط في الكمية.",
+      "fitText": "للبشرة المتحملة للريتينويدات التي تريد العناية بالملمس والخطوط بالمظهر؛ غير مناسب للحمل.",
+      "steps": [
+        {
+          "title": "مساءً على بشرة نظيفة",
+          "text": "ابدئي بعد التنظيف والتونر على بشرة جافة."
+        },
+        {
+          "title": "كمية قليلة وتدرج",
+          "text": "وزعي كمية صغيرة بعيدًا عن العين والشفاه؛ ابدئي مرتين أو ثلاثًا أسبوعيًا حسب التحمل."
+        },
+        {
+          "title": "رطبي واحمي",
+          "text": "أتبعيه بمرطب، واستخدمي واقي الشمس في النهار."
+        }
+      ],
+      "notes": "لا يستخدم أثناء الحمل أو التخطيط له. تجنبي دمجه في الليلة نفسها مع ريتينويد آخر أو أحماض قوية أو فيتامين C وفق إرشادات الشركة. توقفي عند التهيج.",
+      "ingredients": [
+        "ريتينال",
+        "كافيين",
+        "إكتوين"
+      ],
+      "faq": [
+        {
+          "question": "هل أبدأ يوميًا؟",
+          "answer": "توصي الشركة بالبدء مرتين أو ثلاثًا أسبوعيًا وزيادة الاستخدام حسب التحمل."
+        },
+        {
+          "question": "هل مركب الريتينال 2% يعني ريتينال نقيًا 2%؟",
+          "answer": "لا؛ نسبة المركب تختلف عن تركيز الريتينال النقي."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Retinal Booster Shot",
+      "tagline": "An evening step, introduced slowly.",
+      "description": "Bring retinal into evening care for smoother-looking texture and fine lines. This serum combines retinal, caffeine and moisturising ingredients. A little product and gradual introduction matter more than extra quantity.",
+      "benefits": [
+        "Smoother-looking texture",
+        "Fine-line appearance care",
+        "An evening serum step"
+      ],
+      "textureTitle": "A light night serum",
+      "textureText": "Apply a small layer between toner and moisturiser.",
+      "fitText": "For retinoid-tolerant skin seeking texture care; not for pregnancy.",
+      "steps": [
+        {
+          "title": "At night",
+          "text": "Begin after cleansing and toner on dry skin."
+        },
+        {
+          "title": "Start slowly",
+          "text": "Apply a small amount away from eyes and lips; begin2–3 nights weekly as tolerated."
+        },
+        {
+          "title": "Moisturise and protect",
+          "text": "Follow with moisturiser and use daytime sunscreen."
+        }
+      ],
+      "notes": "Avoid during pregnancy or when trying to conceive. Do not combine with other retinoids, strong acids or vitamin C in the same routine per manufacturer guidance. Stop if irritated.",
+      "ingredients": [
+        "Retinal",
+        "Caffeine",
+        "Ectoin"
+      ],
+      "faq": [
+        {
+          "question": "Start every night?",
+          "answer": "Manufacturer recommends 2–3 times weekly initially, increasing as tolerated."
+        },
+        {
+          "question": "Is a 2% complex pure retinal 2%?",
+          "answer": "No; complex and pure-active concentrations differ."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/retinal-booster-shot-advanced-retinal-caffeine-formula",
+        "title": "Arencia Retinal Booster Shot"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care",
+        "title": "AAD pregnancy skin care"
+      },
+      {
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol/",
+        "title": "AAD retinoid introduction"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Store tube RETINAL COMPLEX2% is not2%pure retinal. Official INCI says Retinal200ppm; no numeric concentration used publicly."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman at evening vanity with original gold retinal30ml tube; tiny cream amount on cheek, no use on eyelid, no pregnant model, no needles or before-after."
+  },
+  {
+    "id": "TS0188",
+    "brand": "Dr. Althea",
+    "productName": "Dr. Althea - Aqua Marine Deep Serum 30 ml",
+    "ar": {
+      "name": "سيروم أكوا مارين ديب من دكتور ألثيا",
+      "tagline": "طبقة ماء خفيفة قبل كريمكِ.",
+      "description": "عندما تشعر بشرتكِ بالعطش حتى مع المرطب، أضيفي طبقة سيروم خفيفة. أكوا مارين ديب يمنح ترطيبًا مائي الإحساس ويترك ملمسًا ناعمًا، ليسهل دمجه بين التونر والكريم دون ثقل دهني.",
+      "benefits": [
+        "ترطيب خفيف متعدد الطبقات",
+        "إحساس ناعم ومنتعش",
+        "يمهّد لخطوة الكريم"
+      ],
+      "textureTitle": "سيروم مائي سريع التوزيع",
+      "textureText": "قوام خفيف مناسب لوضع طبقة ترطيب إضافية تحت المرطب.",
+      "fitText": "للبشرة الجافة أو المختلطة التي تفضل الترطيب الخفيف وتحتاج راحة من إحساس الشد.",
+      "steps": [
+        {
+          "title": "بعد التنظيف",
+          "text": "ضعيه بعد التنظيف والتونر إن استخدمتِه."
+        },
+        {
+          "title": "وزعي وربتي",
+          "text": "وزعي كمية صغيرة بعيدًا عن العينين وربتي حتى الامتصاص."
+        },
+        {
+          "title": "احفظي الترطيب",
+          "text": "أتبعيه بمرطب، ثم واقي الشمس نهارًا."
+        }
+      ],
+      "notes": "للاستخدام الخارجي؛ اختبري منطقة صغيرة وتجنبي العين والجلد المتهيج.",
+      "ingredients": [
+        "ماء البامبو",
+        "حمض الهيالورونيك",
+        "بانثينول"
+      ],
+      "faq": [
+        {
+          "question": "هل يحل محل المرطب؟",
+          "answer": "صُمم كطبقة سيروم تحت الكريم؛ اضبطي الروتين حسب احتياج بشرتكِ."
+        },
+        {
+          "question": "هل هو ثقيل؟",
+          "answer": "تصف الشركة قوامه بأنه خفيف وسريع الامتصاص."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea Aqua Marine Deep Serum",
+      "tagline": "Water-light care beneath your cream.",
+      "description": "When skin still feels thirsty beneath moisturiser, add a light serum layer. Aqua Marine Deep Serum refreshes hydration and softness, fitting between toner and cream without a heavy oily feel.",
+      "benefits": [
+        "Light layered hydration",
+        "Soft, refreshed feel",
+        "Prepares for moisturiser"
+      ],
+      "textureTitle": "A water-light serum",
+      "textureText": "An easily spread texture for an extra moisture layer beneath cream.",
+      "fitText": "For dry or combination skin wanting light hydration and comfort from tightness.",
+      "steps": [
+        {
+          "title": "After cleansing",
+          "text": "Use after cleansing and toner, if used."
+        },
+        {
+          "title": "Press in",
+          "text": "Apply a small amount away from eyes and gently pat."
+        },
+        {
+          "title": "Seal in",
+          "text": "Follow with moisturiser and daytime sunscreen."
+        }
+      ],
+      "notes": "External use. Patch test and avoid eyes or irritated skin.",
+      "ingredients": [
+        "Bamboo water",
+        "Hyaluronic acid",
+        "Panthenol"
+      ],
+      "faq": [
+        {
+          "question": "Does it replace cream?",
+          "answer": "It is designed to layer beneath cream; adapt to your skin."
+        },
+        {
+          "question": "Does it feel heavy?",
+          "answer": "The manufacturer describes a light, fast-absorbing texture."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/aqua-marine-deep-serum",
+        "title": "Dr.Althea Aqua Marine Deep Serum"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/aqua-deep-hydration-duo",
+        "title": "Dr.Althea Aqua Deep Hydration Duo"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [],
+    "extraImages": [],
+    "usageBrief": "Adult woman patting a tiny translucent serum amount onto cheek; exact blue serum bottle intact beside her."
+  },
+  {
+    "id": "TS0201",
+    "brand": "Dr. Althea",
+    "productName": "To Be Youthful Eye Serum",
+    "ar": {
+      "name": "سيروم تو بي يوثفول للعين من دكتور ألثيا",
+      "tagline": "لحظة خفيفة لمحيط عينيكِ.",
+      "description": "امنحي محيط العين ترطيبًا بقوام جل غير لزج كما تصفه العبوة. تو بي يوثفول خطوة موضعية خفيفة قبل إكمال روتينكِ؛ وزّعي كمية صغيرة بالتربيت، دون شد البشرة الرقيقة أو الاقتراب من داخل العين.",
+      "benefits": [
+        "ترطيب لمحيط العين",
+        "قوام جل خفيف",
+        "إحساس منعش غير لزج"
+      ],
+      "textureTitle": "جل ناعم لمحيط العين",
+      "textureText": "عبوة 25 مل وقوام جل موضح على العلبة؛ تكفي كمية صغيرة للتوزيع اللطيف.",
+      "fitText": "لمن تريد خطوة ترطيب مخصصة لمحيط العين، دون توقع تغيير فوري للهالات أو التجاعيد.",
+      "steps": [
+        {
+          "title": "نظفي المنطقة",
+          "text": "استخدميه على بشرة نظيفة حول العين."
+        },
+        {
+          "title": "خذي القليل",
+          "text": "وزعي كمية صغيرة على محيط العظم بعيدًا عن خط الرموش وداخل العين."
+        },
+        {
+          "title": "ربتي بلطف",
+          "text": "ربتي بأطراف الأصابع دون شد، واتبعي تكرار الاستخدام على ملصقكِ."
+        }
+      ],
+      "notes": "تجنبي داخل العين وتوقفي عند التهيج. راجعي القائمة الكاملة على عبوتكِ عند الحساسية.",
+      "ingredients": [
+        "قوام جل مرطب",
+        "عناية موضعية لمحيط العين"
+      ],
+      "faq": [
+        {
+          "question": "هل هو سيروم للوجه كله؟",
+          "answer": "هذا المنتج مخصص أساسًا لمحيط العين."
+        },
+        {
+          "question": "هل يعالج الهالات؟",
+          "answer": "نصفه كخطوة ترطيب؛ أسباب الهالات متعددة ولا نعد بإزالتها."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea To Be Youthful Eye Serum",
+      "tagline": "A light moment for your eye contour.",
+      "description": "Give the eye contour a light moisture step with the non-sticky gel texture described on its pack. Pat a small amount gently, without pulling delicate skin or bringing product into your eyes.",
+      "benefits": [
+        "Eye-contour hydration",
+        "Light gel texture",
+        "Fresh, non-sticky feel"
+      ],
+      "textureTitle": "A soft eye-contour gel",
+      "textureText": "The 25 ml pack describes a cooling gel; spread a small amount gently.",
+      "fitText": "For an eye-area moisturising step without expecting instant dark-circle or wrinkle changes.",
+      "steps": [
+        {
+          "title": "Cleanse",
+          "text": "Begin with clean skin around the eyes."
+        },
+        {
+          "title": "Use a little",
+          "text": "Apply around the orbital area, away from lash lines and eyes."
+        },
+        {
+          "title": "Pat gently",
+          "text": "Pat without pulling; follow your pack for frequency."
+        }
+      ],
+      "notes": "Avoid direct eye contact. Stop if irritated and check your label for sensitivities.",
+      "ingredients": [
+        "Moisturising gel texture",
+        "Targeted eye-contour care"
+      ],
+      "faq": [
+        {
+          "question": "Is this a whole-face serum?",
+          "answer": "It is primarily intended for the eye contour."
+        },
+        {
+          "question": "Will it remove dark circles?",
+          "answer": "It is described here as moisturising care, without that promise."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://en.doctoralthea.co.kr/",
+        "title": "Dr.Althea official online store"
+      }
+    ],
+    "sourceStatus": "limited",
+    "researchNotes": [
+      "Exact historical product page no longer found on official global store. Public copy limited to actual inspected box:25 ml, cooling non-sticky gel, hydrating/refreshed eye care. No retailer-only ingredient claims used. Ingredients field deliberately contains supported texture/properties rather than an invented INCI."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently patting a tiny clear gel amount along orbital bone with ring finger; exact white To Be Youthful25ml tube nearby, no contact inside eye."
+  },
+  {
+    "id": "TS0203",
+    "brand": "Dr. Althea",
+    "productName": "PDRN Reju 5000 Cream",
+    "ar": {
+      "name": "كريم PDRN ريجو 5000 من دكتور ألثيا",
+      "tagline": "ترطيب ناعم ولمسة امتلاء بالمظهر.",
+      "description": "امنحي البشرة التي يبدو عليها الجفاف طبقة كريمية مريحة بعد السيروم. ريجو 5000 يجمع PDRN المشتق من التخمر مع مكونات مرطبة، ليساعد على النعومة والمظهر الندي دون الحاجة لطبقة كثيفة.",
+      "benefits": [
+        "يرطب البشرة الجافة",
+        "يساعد على نعومة الملمس",
+        "يمنح مظهرًا نديًا"
+      ],
+      "textureTitle": "كريم يمكنكِ ضبط كميته",
+      "textureText": "قوام قابل لوضع طبقات خفيفة؛ أضيفي قليلًا للمناطق الأشد جفافًا.",
+      "fitText": "للبشرة التي تحتاج ترطيبًا ونعومة وإشراقة ناتجة عن الرطوبة.",
+      "steps": [
+        {
+          "title": "بعد السيروم",
+          "text": "استخدميه على بشرة نظيفة بعد السيروم."
+        },
+        {
+          "title": "وزعي برفق",
+          "text": "ابدئي بكمية صغيرة وربتي حتى الامتصاص."
+        },
+        {
+          "title": "اضبطي العناية",
+          "text": "زِيدي قليلًا عند الجفاف، وأتبعيه نهارًا بواقي الشمس."
+        }
+      ],
+      "notes": "عناية تجميلية خارجية؛ ليس إجراء PDRN طبيًا. اختبريه موضعيًا وراجعي مكونات العبوة.",
+      "ingredients": [
+        "PDRN مشتق من التخمر",
+        "بانثينول",
+        "ماء أوراق السنتيلا"
+      ],
+      "faq": [
+        {
+          "question": "هل الرقم 5000 يعني إجراءً طبيًا؟",
+          "answer": "لا؛ هو اسم الكريم المرتبط بتركيبته التجميلية."
+        },
+        {
+          "question": "هل أضع طبقة كبيرة؟",
+          "answer": "ابدئي بالقليل وعدلي الكمية بحسب الجفاف."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea PDRN Reju 5000 Cream",
+      "tagline": "Soft moisture, a dewy-looking finish.",
+      "description": "Give dry-looking skin a comfortable cream layer after serum. Reju 5000 combines fermentation-derived PDRN with moisturising ingredients to support softness and a fresh, dewy appearance without a thick coating.",
+      "benefits": [
+        "Moisturises dry skin",
+        "Supports a softer feel",
+        "Adds a hydrated glow"
+      ],
+      "textureTitle": "Layer to your comfort",
+      "textureText": "Start with a light layer and add a little where skin feels drier.",
+      "fitText": "For skin needing moisture, softness and a hydrated-looking finish.",
+      "steps": [
+        {
+          "title": "After serum",
+          "text": "Apply to clean skin after serum."
+        },
+        {
+          "title": "Smooth gently",
+          "text": "Start with a small amount and press in."
+        },
+        {
+          "title": "Adjust care",
+          "text": "Add to dry areas as needed; use daytime sunscreen."
+        }
+      ],
+      "notes": "External cosmetic care, not a medical PDRN procedure. Patch test and check your label.",
+      "ingredients": [
+        "Fermentation-derived PDRN",
+        "Panthenol",
+        "Centella leaf water"
+      ],
+      "faq": [
+        {
+          "question": "Is 5000 a medical procedure?",
+          "answer": "No; it is this cosmetic cream’s product name."
+        },
+        {
+          "question": "Should I use a thick layer?",
+          "answer": "Begin with a little and adjust to dryness."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/pdrn-reju-5000-cream",
+        "title": "Dr.Althea PDRN Reju 5000 Cream"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "20 g confirmed on store pack. No invasive/procedure equivalence or quantified outcomes."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman spreading small white cream amount on cheek; exact slim white-purple20g PDRN tube intact."
+  },
+  {
+    "id": "TS0215",
+    "brand": "Dr. Althea",
+    "productName": "345 Relief Cream 100 ml",
+    "ar": {
+      "name": "كريم 345 ريليف من دكتور ألثيا — 100 مل",
+      "tagline": "ترطيب خفيف، وراحة لروتينكِ.",
+      "description": "حجم 100 مل من كريم 345 يمنح روتين الترطيب اليومي مساحة أطول. قوامه الخفيف ينساب بعد السيروم، ليساعد البشرة على الاحتفاظ بالنعومة ويخفف إحساس الجفاف. وزّعيه بهدوء، ثم أكملي صباحكِ بواقي الشمس.",
+      "benefits": [
+        "ترطيب يومي خفيف",
+        "دعم حاجز الرطوبة",
+        "ملمس أنعم دون ثقل"
+      ],
+      "textureTitle": "كريم خفيف لآخر خطوة عناية",
+      "textureText": "طبقة ناعمة قابلة للتوزيع؛ ابدئي بالقليل وزيدي وفق احتياج المناطق الجافة.",
+      "fitText": "اختيار للبشرة المختلطة أو التي تحتاج ترطيبًا مريحًا، بما فيها البشرة المعرضة للشوائب؛ تقبّل البشرة يختلف.",
+      "steps": [
+        {
+          "title": "بعد السيروم",
+          "text": "استخدميه بعد تنظيف البشرة والسيروم الذي اعتدتِ عليه."
+        },
+        {
+          "title": "وزعي برفق",
+          "text": "ضعي كمية مناسبة على الوجه وربّتي حتى تمتصها البشرة."
+        },
+        {
+          "title": "أكملي النهار",
+          "text": "اجعلي واقي الشمس آخر خطوة نهارًا."
+        }
+      ],
+      "notes": "اختبريه على منطقة صغيرة. قد تختلف تركيبة الإصدارات؛ ملصق عبوتكِ هو المرجع عند الحساسية.",
+      "ingredients": [
+        "نياسيناميد",
+        "بانثينول",
+        "سيراميد NP"
+      ],
+      "faq": [
+        {
+          "question": "هل هو كريم أم علاج للحبوب؟",
+          "answer": "هو مرطب للعناية اليومية، ولا يحل محل علاج يصفه الطبيب."
+        },
+        {
+          "question": "كيف يختلف عن 147؟",
+          "answer": "345 أخف قوامًا، بينما 147 يمنح إحساسًا أغنى بالترطيب."
+        }
+      ]
+    },
+    "en": {
+      "name": "Dr. Althea 345 Relief Cream — 100 ml",
+      "tagline": "Light moisture. A quieter daily ritual.",
+      "description": "The 100 ml size keeps your daily moisturising ritual going longer. This lightweight cream smooths on after serum to support softness and the moisture barrier. Start with a little and finish daytime care with sunscreen.",
+      "benefits": [
+        "Light everyday hydration",
+        "Moisture-barrier support",
+        "Softer, comfortable skin"
+      ],
+      "textureTitle": "A light finishing cream",
+      "textureText": "A smooth, easily spread layer; adjust the amount to drier areas.",
+      "fitText": "For skin needing comfortable daily moisture, including combination and blemish-prone skin; individual tolerance varies.",
+      "steps": [
+        {
+          "title": "After serum",
+          "text": "Use after cleansing and your usual serum."
+        },
+        {
+          "title": "Smooth and press",
+          "text": "Spread an appropriate amount over the face and gently pat in."
+        },
+        {
+          "title": "Finish daytime care",
+          "text": "Apply sunscreen as your final morning step."
+        }
+      ],
+      "notes": "Patch test. Formulas can vary by edition; check your own label for sensitivities.",
+      "ingredients": [
+        "Niacinamide",
+        "Panthenol",
+        "Ceramide NP"
+      ],
+      "faq": [
+        {
+          "question": "Is this an acne treatment?",
+          "answer": "It is a daily moisturiser and does not replace prescribed treatment."
+        },
+        {
+          "question": "How does it compare with 147?",
+          "answer": "345 feels lighter; 147 provides a richer moisturising layer."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://doctoraltheaglobal.com/products/345-relief-cream",
+        "title": "Dr.Althea 345 Relief Cream"
+      },
+      {
+        "url": "https://doctoraltheaglobal.com/products/dual-cream-set-345-relief-cream-147-barrier-cream",
+        "title": "Dr.Althea Dual Cream Set"
+      }
+    ],
+    "sourceStatus": "family",
+    "researchNotes": [
+      "Current official page describes Ver.2 50 ml; existing store packaging may be an older formula. Only cross-edition features used; no current-version clinical claims transferred.",
+      "100 ml confirmed on actual store pack photo; official global page currently offers 50 ml sizes, so sourceStatus is family."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman gently patting a small amount of white moisturising cream onto cheek; exact original 345 tube/100 ml pack beside her; no claims or before-after."
+  },
+  {
+    "id": "TS0278",
+    "brand": "Arencia",
+    "productName": "Black Tea Rice Mochi Cleanser",
+    "ar": {
+      "name": "غسول بلاك تي موتشي من أرينسيا",
+      "tagline": "رغوة ناعمة، وبداية منعشة.",
+      "description": "ابدئي روتينكِ بلحظة تنظيف مع الشاي الأسود والأرز. غسول بلاك تي يميزه قوام الموتشي الذي يلين مع الماء ويصبح رغوة. ضعي القليل، رغّيه بين يديكِ، ثم دلكي بلطف واشطفي لتكملي باقي العناية على بشرة نظيفة.",
+      "benefits": [
+        "ينظف الزيوت والشوائب",
+        "يساعد على نعومة الملمس",
+        "قوام موتشي مميز"
+      ],
+      "textureTitle": "من الموتشي إلى الرغوة",
+      "textureText": "قوام موتشي داكن مع الشاي الأسود والفحم؛ يُرغى أولًا للحصول على تنظيف لطيف دون فرك قوي.",
+      "fitText": "للبشرة الدهنية أو المختلطة التي تريد تنظيف الزيوت الزائدة والعناية بالملمس.",
+      "steps": [
+        {
+          "title": "رغّيه أولًا",
+          "text": "خذي كمية صغيرة وامزجيها بالماء بين يديكِ."
+        },
+        {
+          "title": "دلكي برفق",
+          "text": "وزعي الرغوة على بشرة رطبة بحركات لطيفة دون فرك قوي."
+        },
+        {
+          "title": "اشطفي وأكملي",
+          "text": "اشطفي جيدًا بماء فاتر، ثم أكملي بمرطب مناسب."
+        }
+      ],
+      "notes": "تجنبي العين والجلد المجروح. اختبريه عند الحساسية؛ قد تحتوي التركيبة على عطر أو مشتق لوز، وملصق عبوتكِ هو المرجع.",
+      "ingredients": [
+        "الشاي الأسود",
+        "الفحم",
+        "الأرز"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه على الوجه كماسك؟",
+          "answer": "الخطوات هنا لغسول يُشطف. لأي استخدام إضافي اتبعي تعليمات عبوتكِ."
+        },
+        {
+          "question": "هل يزيل المكياج المقاوم للماء؟",
+          "answer": "ابدئي بمزيل مناسب للمكياج الثقيل أو المقاوم للماء ثم استخدمي الغسول."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Black Tea Rice Mochi Cleanser",
+      "tagline": "Soft lather. A fresh beginning.",
+      "description": "Start your ritual with black tea and rice. Black Tea has a distinctive mochi texture that softens into foam with water. Lather a little between wet hands, gently cleanse, then rinse before the rest of your skincare.",
+      "benefits": [
+        "Washes away oil and impurities",
+        "Supports a smoother feel",
+        "Distinctive mochi texture"
+      ],
+      "textureTitle": "From mochi to lather",
+      "textureText": "Dark mochi paste with black tea and charcoal; lather first for low-friction cleansing.",
+      "fitText": "For oily or combination skin wanting excess-oil cleansing and texture care.",
+      "steps": [
+        {
+          "title": "Lather first",
+          "text": "Work a small amount with water between your hands."
+        },
+        {
+          "title": "Cleanse gently",
+          "text": "Massage the lather onto damp skin without harsh rubbing."
+        },
+        {
+          "title": "Rinse and continue",
+          "text": "Rinse thoroughly with lukewarm water, then moisturise."
+        }
+      ],
+      "notes": "Avoid eyes and broken skin. Patch test; fragrance or almond-derived ingredients may be present. Your jar’s label is authoritative.",
+      "ingredients": [
+        "Black tea",
+        "Charcoal",
+        "Rice"
+      ],
+      "faq": [
+        {
+          "question": "Can I leave it on as a mask?",
+          "answer": "These steps describe rinse-off cleansing. Follow your own jar for any additional use."
+        },
+        {
+          "question": "Does it remove waterproof makeup?",
+          "answer": "Use a suitable remover for heavy or waterproof makeup before cleansing."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-black-tea-rice-mochi-cleanser",
+        "title": "Arencia Black Tea Rice Mochi Cleanser"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Actual store jar photo inspected;120g visible forTS0278. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman cleansing damp cheek with soft white foam beside exact Black Tea Arencia jar; do not depict unfoamed dense paste as required mask use. Original pack and jar colour unchanged."
+  },
+  {
+    "id": "TS0279",
+    "brand": "Arencia",
+    "productName": "Fresh Blue Hyssop Rice Mochi Cleanser",
+    "ar": {
+      "name": "غسول بلو هيسوب موتشي من أرينسيا",
+      "tagline": "رغوة ناعمة، وبداية منعشة.",
+      "description": "ابدئي روتينكِ بلحظة تنظيف مع الهيسوب والأرز. غسول بلو هيسوب يميزه قوام الموتشي الذي يلين مع الماء ويصبح رغوة. ضعي القليل، رغّيه بين يديكِ، ثم دلكي بلطف واشطفي لتكملي باقي العناية على بشرة نظيفة.",
+      "benefits": [
+        "يساعد على إزالة الزيوت",
+        "ينظف الشوائب المتراكمة",
+        "يترك إحساسًا منتعشًا"
+      ],
+      "textureTitle": "من الموتشي إلى الرغوة",
+      "textureText": "معجون موتشي أزرق بقوام مميز، مع الهيسوب والأرز والبنتونيت في وصف الشركة.",
+      "fitText": "للبشرة الدهنية أو المختلطة التي تفضل تنظيفًا منعشًا للزيوت المتراكمة.",
+      "steps": [
+        {
+          "title": "رغّيه أولًا",
+          "text": "خذي كمية صغيرة وامزجيها بالماء بين يديكِ."
+        },
+        {
+          "title": "دلكي برفق",
+          "text": "وزعي الرغوة على بشرة رطبة بحركات لطيفة دون فرك قوي."
+        },
+        {
+          "title": "اشطفي وأكملي",
+          "text": "اشطفي جيدًا بماء فاتر، ثم أكملي بمرطب مناسب."
+        }
+      ],
+      "notes": "تجنبي العين والجلد المجروح. اختبريه عند الحساسية؛ قد تحتوي التركيبة على عطر أو مشتق لوز، وملصق عبوتكِ هو المرجع.",
+      "ingredients": [
+        "الهيسوب",
+        "مسحوق الأرز",
+        "البنتونيت"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه على الوجه كماسك؟",
+          "answer": "الخطوات هنا لغسول يُشطف. لأي استخدام إضافي اتبعي تعليمات عبوتكِ."
+        },
+        {
+          "question": "هل يزيل المكياج المقاوم للماء؟",
+          "answer": "ابدئي بمزيل مناسب للمكياج الثقيل أو المقاوم للماء ثم استخدمي الغسول."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Fresh Blue Hyssop Rice Mochi Cleanser",
+      "tagline": "Soft lather. A fresh beginning.",
+      "description": "Start your ritual with hyssop and rice. Fresh Blue Hyssop has a distinctive mochi texture that softens into foam with water. Lather a little between wet hands, gently cleanse, then rinse before the rest of your skincare.",
+      "benefits": [
+        "Helps remove excess oil",
+        "Cleanses daily buildup",
+        "Leaves a refreshed feel"
+      ],
+      "textureTitle": "From mochi to lather",
+      "textureText": "A blue mochi-like paste featuring hyssop, rice and bentonite in the manufacturer’s description.",
+      "fitText": "For oily or combination skin preferring a refreshed cleanse for excess oil.",
+      "steps": [
+        {
+          "title": "Lather first",
+          "text": "Work a small amount with water between your hands."
+        },
+        {
+          "title": "Cleanse gently",
+          "text": "Massage the lather onto damp skin without harsh rubbing."
+        },
+        {
+          "title": "Rinse and continue",
+          "text": "Rinse thoroughly with lukewarm water, then moisturise."
+        }
+      ],
+      "notes": "Avoid eyes and broken skin. Patch test; fragrance or almond-derived ingredients may be present. Your jar’s label is authoritative.",
+      "ingredients": [
+        "Hyssop",
+        "Rice powder",
+        "Bentonite"
+      ],
+      "faq": [
+        {
+          "question": "Can I leave it on as a mask?",
+          "answer": "These steps describe rinse-off cleansing. Follow your own jar for any additional use."
+        },
+        {
+          "question": "Does it remove waterproof makeup?",
+          "answer": "Use a suitable remover for heavy or waterproof makeup before cleansing."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-blue-hyssop-rice-mochi-cleanser",
+        "title": "Arencia Fresh Blue Hyssop Rice Mochi Cleanser"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Actual store jar photo inspected;120g visible forTS0279. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman cleansing damp cheek with soft white foam beside exact Fresh Blue Hyssop Arencia jar; do not depict unfoamed dense paste as required mask use. Original pack and jar colour unchanged."
+  },
+  {
+    "id": "TS0280",
+    "brand": "Arencia",
+    "productName": "Fresh Rosehip Rice Mochi Cleanser",
+    "ar": {
+      "name": "غسول روزهيب موتشي من أرينسيا",
+      "tagline": "رغوة ناعمة، وبداية منعشة.",
+      "description": "ابدئي روتينكِ بلحظة تنظيف مع الروزهيب والأرز. غسول روزهيب يميزه قوام الموتشي الذي يلين مع الماء ويصبح رغوة. ضعي القليل، رغّيه بين يديكِ، ثم دلكي بلطف واشطفي لتكملي باقي العناية على بشرة نظيفة.",
+      "benefits": [
+        "ينظف الشوائب اليومية",
+        "إحساس كريمي مريح",
+        "يساعد على نعومة البشرة"
+      ],
+      "textureTitle": "من الموتشي إلى الرغوة",
+      "textureText": "قوام موتشي وردي يتحول إلى رغوة كريمية، مع الروزهيب والأرز في وصف الشركة.",
+      "fitText": "للبشرة الجافة أو الباهتة التي تفضل تنظيفًا بملمس كريمي مريح؛ اختبريه عند الحساسية.",
+      "steps": [
+        {
+          "title": "رغّيه أولًا",
+          "text": "خذي كمية صغيرة وامزجيها بالماء بين يديكِ."
+        },
+        {
+          "title": "دلكي برفق",
+          "text": "وزعي الرغوة على بشرة رطبة بحركات لطيفة دون فرك قوي."
+        },
+        {
+          "title": "اشطفي وأكملي",
+          "text": "اشطفي جيدًا بماء فاتر، ثم أكملي بمرطب مناسب."
+        }
+      ],
+      "notes": "تجنبي العين والجلد المجروح. اختبريه عند الحساسية؛ قد تحتوي التركيبة على عطر أو مشتق لوز، وملصق عبوتكِ هو المرجع.",
+      "ingredients": [
+        "الروزهيب",
+        "مسحوق الأرز"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه على الوجه كماسك؟",
+          "answer": "الخطوات هنا لغسول يُشطف. لأي استخدام إضافي اتبعي تعليمات عبوتكِ."
+        },
+        {
+          "question": "هل يزيل المكياج المقاوم للماء؟",
+          "answer": "ابدئي بمزيل مناسب للمكياج الثقيل أو المقاوم للماء ثم استخدمي الغسول."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Fresh Rosehip Rice Mochi Cleanser",
+      "tagline": "Soft lather. A fresh beginning.",
+      "description": "Start your ritual with rosehip and rice. Fresh Rosehip has a distinctive mochi texture that softens into foam with water. Lather a little between wet hands, gently cleanse, then rinse before the rest of your skincare.",
+      "benefits": [
+        "Cleanses daily impurities",
+        "Comfortable creamy feel",
+        "Supports skin softness"
+      ],
+      "textureTitle": "From mochi to lather",
+      "textureText": "Pink mochi paste turns to creamy foam, with rosehip and rice in the manufacturer’s description.",
+      "fitText": "For dry or dull-looking skin preferring comfortable creamy cleansing; patch test if sensitive.",
+      "steps": [
+        {
+          "title": "Lather first",
+          "text": "Work a small amount with water between your hands."
+        },
+        {
+          "title": "Cleanse gently",
+          "text": "Massage the lather onto damp skin without harsh rubbing."
+        },
+        {
+          "title": "Rinse and continue",
+          "text": "Rinse thoroughly with lukewarm water, then moisturise."
+        }
+      ],
+      "notes": "Avoid eyes and broken skin. Patch test; fragrance or almond-derived ingredients may be present. Your jar’s label is authoritative.",
+      "ingredients": [
+        "Rosehip",
+        "Rice powder"
+      ],
+      "faq": [
+        {
+          "question": "Can I leave it on as a mask?",
+          "answer": "These steps describe rinse-off cleansing. Follow your own jar for any additional use."
+        },
+        {
+          "question": "Does it remove waterproof makeup?",
+          "answer": "Use a suitable remover for heavy or waterproof makeup before cleansing."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-fresh-rosehip-mochi-cleanser",
+        "title": "Arencia Fresh Rosehip Rice Mochi Cleanser"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Actual store jar photo inspected;120g visible forTS0280. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman cleansing damp cheek with soft white foam beside exact Fresh Rosehip Arencia jar; do not depict unfoamed dense paste as required mask use. Original pack and jar colour unchanged."
+  },
+  {
+    "id": "TS0281",
+    "brand": "Arencia",
+    "productName": "Calendula Rice Mochi Cleanser",
+    "ar": {
+      "name": "غسول كاليندولا موتشي من أرينسيا",
+      "tagline": "رغوة ناعمة، وبداية منعشة.",
+      "description": "ابدئي روتينكِ بلحظة تنظيف مع الكاليندولا والأرز. غسول كاليندولا يميزه قوام الموتشي الذي يلين مع الماء ويصبح رغوة. ضعي القليل، رغّيه بين يديكِ، ثم دلكي بلطف واشطفي لتكملي باقي العناية على بشرة نظيفة.",
+      "benefits": [
+        "ينظف الشوائب اليومية",
+        "يساعد على راحة البشرة",
+        "قوام رغوي ناعم"
+      ],
+      "textureTitle": "من الموتشي إلى الرغوة",
+      "textureText": "معجون موتشي كريمي مع الكاليندولا والأرز، يُخفف بالماء قبل ملامسة الوجه.",
+      "fitText": "للبشرة الجافة أو الحساسة التي تبحث عن تنظيف مريح، مع اختبار موضعي قبل الاعتماد.",
+      "steps": [
+        {
+          "title": "رغّيه أولًا",
+          "text": "خذي كمية صغيرة وامزجيها بالماء بين يديكِ."
+        },
+        {
+          "title": "دلكي برفق",
+          "text": "وزعي الرغوة على بشرة رطبة بحركات لطيفة دون فرك قوي."
+        },
+        {
+          "title": "اشطفي وأكملي",
+          "text": "اشطفي جيدًا بماء فاتر، ثم أكملي بمرطب مناسب."
+        }
+      ],
+      "notes": "تجنبي العين والجلد المجروح. اختبريه عند الحساسية؛ قد تحتوي التركيبة على عطر أو مشتق لوز، وملصق عبوتكِ هو المرجع.",
+      "ingredients": [
+        "خلاصة الكاليندولا",
+        "مسحوق الأرز"
+      ],
+      "faq": [
+        {
+          "question": "هل أتركه على الوجه كماسك؟",
+          "answer": "الخطوات هنا لغسول يُشطف. لأي استخدام إضافي اتبعي تعليمات عبوتكِ."
+        },
+        {
+          "question": "هل يزيل المكياج المقاوم للماء؟",
+          "answer": "ابدئي بمزيل مناسب للمكياج الثقيل أو المقاوم للماء ثم استخدمي الغسول."
+        }
+      ]
+    },
+    "en": {
+      "name": "Arencia Calendula Rice Mochi Cleanser",
+      "tagline": "Soft lather. A fresh beginning.",
+      "description": "Start your ritual with calendula and rice. Calendula has a distinctive mochi texture that softens into foam with water. Lather a little between wet hands, gently cleanse, then rinse before the rest of your skincare.",
+      "benefits": [
+        "Washes away daily impurities",
+        "Supports a comfortable feel",
+        "Soft foaming texture"
+      ],
+      "textureTitle": "From mochi to lather",
+      "textureText": "A creamy mochi paste with calendula and rice, lathered with water before application.",
+      "fitText": "For dry or sensitive skin seeking comfortable cleansing, after a patch test.",
+      "steps": [
+        {
+          "title": "Lather first",
+          "text": "Work a small amount with water between your hands."
+        },
+        {
+          "title": "Cleanse gently",
+          "text": "Massage the lather onto damp skin without harsh rubbing."
+        },
+        {
+          "title": "Rinse and continue",
+          "text": "Rinse thoroughly with lukewarm water, then moisturise."
+        }
+      ],
+      "notes": "Avoid eyes and broken skin. Patch test; fragrance or almond-derived ingredients may be present. Your jar’s label is authoritative.",
+      "ingredients": [
+        "Calendula extract",
+        "Rice powder"
+      ],
+      "faq": [
+        {
+          "question": "Can I leave it on as a mask?",
+          "answer": "These steps describe rinse-off cleansing. Follow your own jar for any additional use."
+        },
+        {
+          "question": "Does it remove waterproof makeup?",
+          "answer": "Use a suitable remover for heavy or waterproof makeup before cleansing."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://arencia.us/products/arencia-calendula-rice-mochi-cleanser-gentle-exfoliating-foam-wash-for-sensitive-dry-rough-skin",
+        "title": "Arencia Calendula Rice Mochi Cleanser"
+      }
+    ],
+    "sourceStatus": "exact",
+    "researchNotes": [
+      "Actual store jar photo inspected;120g visible forTS0281. US/Korean formulations and extra-mask timings differ; preserved rinse-off only directions and deferred INCI/extra uses to the actual jar. No clinical percentages or before-after claims."
+    ],
+    "extraImages": [],
+    "usageBrief": "Adult woman cleansing damp cheek with soft white foam beside exact Calendula Arencia jar; do not depict unfoamed dense paste as required mask use. Original pack and jar colour unchanged."
+  }
+]
