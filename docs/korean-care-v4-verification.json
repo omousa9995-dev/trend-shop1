@@ -1,0 +1,101 @@
+{
+  "release": "4.0.0",
+  "publishedAt": "2026-11-05T01:03:50.889984Z",
+  "verifiedAt": "2026-11-05T01:05:30.643Z",
+  "site": "https://trendjo.pages.dev/",
+  "collection": "https://trendjo.pages.dev/#/shop?collection=korean-care",
+  "implementationCommit": "e353a01208e804f7c693cd77d1035091e67b0829",
+  "sourceTree": "e32039e6210144347da1b684f592af06ddff918b",
+  "workerVersion": "56148ab5-fc19-4401-a734-b124b14477e3",
+  "workerDeployment": "a91d1e78-a8ec-48bd-8375-c5c2d36660c3",
+  "packageSha256": "7b9d9f157f7aaca8d07dc282ddee2c43ed3c06b3e1c285b626a52511e0de1c31",
+  "content": {
+    "products": 105,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "newPromotionalScenes": 104,
+    "newWebpFiles": 210,
+    "selectedSceneVariants": 113,
+    "primaryImagesPreserved": true,
+    "productVideosAdded": 0
+  },
+  "tests": {
+    "passed": 193,
+    "failed": 0,
+    "wranglerDryRunPassed": true,
+    "physicalIphoneTested": false,
+    "isolatedPhoneWidth": 390
+  },
+  "liveBrowser": {
+    "product": "https://trendjo.pages.dev/p/TS0118",
+    "arabic": true,
+    "english": true,
+    "primaryImageLoaded": true,
+    "newSceneLoaded": true,
+    "gallerySelection": true,
+    "videoRegionHiddenWhenEmpty": true,
+    "collectionVisibleCount": 105,
+    "desktopHorizontalOverflow": false
+  },
+  "database": {
+    "verifiedAt": "2026-11-05T01:05:30.643Z",
+    "productCount": 321,
+    "totalStock": 7218,
+    "enriched": 105,
+    "commerceChanged": [],
+    "protectedDetailsChanged": [],
+    "unchangedTables": {
+      "orders": true,
+      "order_items": true,
+      "promotions": true,
+      "admin_credentials": true,
+      "reviews": true,
+      "review_media": true
+    },
+    "orders": 13,
+    "orderItems": 71,
+    "promotions": 6,
+    "videos": 0,
+    "foreignKeyErrors": 0
+  },
+  "bindingsPreserved": [
+    {
+      "name": "DB",
+      "type": "d1"
+    },
+    {
+      "name": "MAIL_WEBHOOK_TOKEN",
+      "type": "secret_text"
+    },
+    {
+      "name": "MAIL_WEBHOOK_URL",
+      "type": "secret_text"
+    },
+    {
+      "name": "MEDIA",
+      "type": "kv_namespace"
+    },
+    {
+      "name": "SESSION_SECRET",
+      "type": "secret_text"
+    },
+    {
+      "name": "SETUP_TOKEN",
+      "type": "secret_text"
+    },
+    {
+      "name": "STORE_LIVE",
+      "type": "plain_text"
+    }
+  ],
+  "backup": {
+    "sourceBranch": "backup/v3.2.0-before-korean-stories-2026-11-05",
+    "sourceCommit": "e2f39e8ef20ee5b15e5dcfec89d9da5f862bcbc0",
+    "workerVersion": "6111a7d6-9eb5-427f-91c4-381e5ffdfac3",
+    "privateFullDatabaseSnapshotRetained": true
+  },
+  "productionOrdersCreatedDuringRelease": 0,
+  "productionTestEmailsSentDuringRelease": 0
+}

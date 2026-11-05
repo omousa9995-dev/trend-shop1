@@ -1,6 +1,6 @@
 # Korean care product stories — v4.0.0
 
-Prepared 5 November 2026 for the existing Trend Shop deployment. Extends the Arencia layout to every one of the 105 products in the current Korean care collection. Other product-page layouts, prices, inventory, offers and historical orders are preserved.
+Published 5 November 2026 at https://trendjo.pages.dev/. Extends the Arencia layout to every one of the 105 products in the current Korean care collection. Other product-page layouts, prices, inventory, offers and historical orders are preserved.
 
 ## Product content and photographs
 
@@ -22,10 +22,14 @@ Upload and management require the existing signed administrator session and same
 
 ## Validation and release safeguards
 
-The full automated suite and isolated browser checks are recorded during publication. Meaningful coverage includes all105 pages in both languages, shared pricing, unchanged commerce fields and order snapshots, repeatable copy migrations, image identity changes, empty videos, authorization, oversized/disguised uploads, per-product caps, actual persisted attachment identity, stream ranges, hide/restore/delete and stale upload/list responses. The browser preview uses only public catalog copies, synthetic in-memory SQLite and temporary credentials; it has no production database or mail configuration. Phone QA uses a390px frame, not physical iPhone hardware.
+All 193 automated tests pass and the Wrangler deployment dry run succeeds. Live browser checks verify the 105-product collection, Arabic/English product content, original and new gallery images, and the empty video section. The release record is `docs/korean-care-v4-verification.json`. Meaningful coverage includes all105 pages in both languages, shared pricing, unchanged commerce fields and order snapshots, repeatable copy migrations, image identity changes, empty videos, authorization, oversized/disguised uploads, per-product caps, actual persisted attachment identity, stream ranges, hide/restore/delete and stale upload/list responses. The browser preview uses only public catalog copies, synthetic in-memory SQLite and temporary credentials; it has no production database or mail configuration. Phone QA uses a390px frame, not physical iPhone hardware.
 
 Source recovery point: `backup/v3.2.0-before-korean-stories-2026-11-05`, commit `e2f39e8ef20ee5b15e5dcfec89d9da5f862bcbc0`. Previous production Worker: `6111a7d6-9eb5-427f-91c4-381e5ffdfac3`. A full pre-development database/schema snapshot is privately retained in existing MEDIA; public media routes reject its internal key. Existing images are not removed.
 
 Migration0019 only adds the empty `product_videos` table/index/trigger. Migration0020 updates only the 105 named products' descriptions and selected bilingual copy fields, guarding the captured name and update timestamp. It preserves nested options and other metadata with JSON patch. Concurrently edited or sold rows are skipped for explicit review rather than overwritten; repeat execution does not reset content or sales. Rollback must preserve subsequent inventory, orders, admin edits and uploaded videos. Source rollback does not imply restoring an old database.
 
 The previously prepared bilingual confirmation-email activation remains a separate pending Google Apps Script step; this release does not change its live bridge or credentials.
+
+## Publication verification
+
+Implementation commit: `e353a01208e804f7c693cd77d1035091e67b0829`. Production Worker: `56148ab5-fc19-4401-a734-b124b14477e3` at 100%. Source package SHA-256: `7b9d9f157f7aaca8d07dc282ddee2c43ed3c06b3e1c285b626a52511e0de1c31`. Both migrations applied successfully: 105 products enriched; product videos remain empty. Exact comparison against the private snapshot confirms all commerce fields, protected product metadata, orders, order items, promotions, administrator credentials and reviews unchanged. Database foreign-key checks return no errors. All seven bindings, including the four secret bindings, are retained. There are 321 product rows, 302 active/approved rows and 7,218 units at verification; no test order or email was sent.
