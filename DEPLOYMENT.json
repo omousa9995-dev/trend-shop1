@@ -1,13 +1,13 @@
 {
-  "version": "4.2.0",
+  "version": "5.0.0",
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
-  "deployed_at": "2026-11-05T12:52:50.850647Z",
-  "worker_version_id": "0ba94bbd-d341-40f3-8090-be5cb9ac1292",
-  "worker_deployment_id": "702b190c-66f8-41bb-89ca-b516ab96cdae",
-  "implementation_commit": "f9599ba1e6c7119ace0b90364b2bc8e4f03259e6",
-  "source_tree": "58162b88f6b204a3cab9cca412afc4ab8d3c7481",
-  "package_sha256": "bec8c6cbe04bfb82f01f6c41fe04693f3e5f35de4410a8e09f527762b44a2305",
+  "deployed_at": "2026-11-05T14:02:15.901112Z",
+  "worker_version_id": "1d6754aa-61d0-4479-a25c-9c54267fbe99",
+  "worker_deployment_id": "3790c2ed-21d2-4083-aa8b-58f59feaa3e3",
+  "implementation_commit": "b05784ed05bfd5eab2280827f08a50bf5099545f",
+  "source_tree": "2e623f86a2302007fd09fd8d12c6e4f81e9e027c",
+  "package_sha256": "a19abf9c6c118b58c0a4e9530e5865a16b19710780d02fc8ec21472465fac230",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
@@ -23,17 +23,16 @@
   "total_stock_at_verification": 7207,
   "new_promotional_scenes": 0,
   "new_image_files": 0,
-  "automated_tests_passed": 222,
+  "automated_tests_passed": 255,
   "database_changed_in_release": true,
   "database_migrations": [
-    "0023_aqua_fresh_video_presentation.sql",
-    "0024_aqua_fresh_pilot_copy.sql"
+    "0025_storefront_controls.sql"
   ],
   "stock_reset_on_release": false,
   "physical_iphone_tested": false,
   "production_orders_created_during_release": 0,
   "production_test_emails_sent_during_release": 0,
-  "frontend_cache_revision": "4.2.0",
+  "frontend_cache_revision": "5.0.0",
   "video_upload": {
     "direct": true,
     "max_bytes": 20971520,
@@ -44,18 +43,18 @@
     "autoplay": "muted, inline, while visible",
     "loop": true,
     "mixed_photo_video_swipe": true,
-    "pilot_product_id": "TS0081",
-    "pilot_covers_and_ordering": true,
-    "pilot_expanded_viewer": true,
-    "pilot_explicit_seek_and_sound_controls": true
+    "applies_to": "all products",
+    "covers_and_ordering": true,
+    "expanded_viewer": true,
+    "explicit_seek_and_sound_controls": true,
+    "existing_owner_uploads": 2
   },
   "previous_version_backup": {
-    "sourceBranch": "backup/v4.1-before-aqua-fresh-pilot-2026-11-05",
-    "sourceCommit": "00e07a9a952f833f6b47ad07e289872fc73f6947",
-    "workerVersion": "77158a4d-2b28-42f7-a806-d95371f99388",
-    "privateCustomerCopySnapshotRetained": true
+    "sourceBranch": "backup/v4.2-before-global-experience-v5-2026-11-05",
+    "sourceCommit": "bc70add79a5c973c10c4d61d052e5ef7b2f40a7c",
+    "workerVersion": "0ba94bbd-d341-40f3-8090-be5cb9ac1292"
   },
-  "verification_file": "docs/aqua-fresh-pilot-v42-verification.json",
+  "verification_file": "docs/global-experience-v5-verification.json",
   "bilingual_email_activation": "Previously prepared Google Apps Script activation remains a separate pending step; bridge and secrets unchanged.",
   "historical_record_v1_8_1": {
     "worker_name": "trend-shop-jo",
@@ -191,9 +190,27 @@
     "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/40329018501"
   },
   "package_hash_format": "SHA-256 of deployment-private/modules.json",
-  "customer_copy_products": 1,
+  "customer_copy_products": 302,
   "mobile_viewport_tested": true,
-  "pilot_product_id": "TS0081",
-  "pilot_product_video_uploads": 0,
-  "isolated_preview_disabled_after_qa": true
+  "isolated_preview_disabled_after_qa": true,
+  "previous_release_v4_2": {
+    "version": "4.2.0",
+    "deployed_at": "2026-11-05T12:52:50.850647Z",
+    "worker_version_id": "0ba94bbd-d341-40f3-8090-be5cb9ac1292",
+    "worker_deployment_id": "702b190c-66f8-41bb-89ca-b516ab96cdae",
+    "implementation_commit": "f9599ba1e6c7119ace0b90364b2bc8e4f03259e6",
+    "package_sha256": "bec8c6cbe04bfb82f01f6c41fe04693f3e5f35de4410a8e09f527762b44a2305"
+  },
+  "new_story_profile_files": 202,
+  "global_product_experience": true,
+  "owner_site_settings": true,
+  "owner_settings_revision": 1,
+  "automatic_pair_prices": true,
+  "pair_pricing_round_up_fraction": 0.6,
+  "pair_pricing_retail_ending": ".99",
+  "low_price_pair_exception": "Keep the 10% discount floored to cents if the retail tag would equal or exceed two single prices.",
+  "commercial_fields_unchanged": true,
+  "uploaded_videos_unchanged": true,
+  "product_videos_at_verification": 2,
+  "temporary_synthetic_database_removed": true
 }

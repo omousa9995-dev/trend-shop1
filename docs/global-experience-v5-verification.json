@@ -1,0 +1,116 @@
+{
+  "version": "5.0.0",
+  "date": "2026-11-05",
+  "site": "https://trendjo.pages.dev/",
+  "admin": "https://trendjo.pages.dev/admin.html",
+  "implementationCommit": "b05784ed05bfd5eab2280827f08a50bf5099545f",
+  "sourceTree": "2e623f86a2302007fd09fd8d12c6e4f81e9e027c",
+  "workerVersion": "1d6754aa-61d0-4479-a25c-9c54267fbe99",
+  "workerDeployment": "3790c2ed-21d2-4083-aa8b-58f59feaa3e3",
+  "packageSha256": "a19abf9c6c118b58c0a4e9530e5865a16b19710780d02fc8ec21472465fac230",
+  "activeProducts": 302,
+  "automatedTests": {
+    "passed": 255,
+    "failed": 0
+  },
+  "browser": {
+    "liveNonKoreanProduct": "TS0347",
+    "livePairPriceFils": 15990,
+    "livePairDeliveryFils": 1000,
+    "livePairTotalFils": 16990,
+    "liveToneSelection": "tone-2",
+    "qaPublicRepositoryExamples": 12,
+    "qaPricesAndStock": "synthetic",
+    "qaCustomerOrders": 0,
+    "qaMailBindings": 0,
+    "qaAdminSaveAndPublicHero": true,
+    "qaHomeOrderAndVisibility": true,
+    "qaProductSectionOrder": true,
+    "qaProductRank": true,
+    "qaPrivacyPlainText": true,
+    "qaUndo": true,
+    "qaVideoProduct": "TS0081",
+    "qaVideoLoop": true,
+    "qaVideoMuted": true,
+    "qaVideoLoadedReadyState": 4,
+    "qaVideoExplicitSeekSeconds": 5,
+    "qaVideoAspectRatio": "9 / 16",
+    "qaPackageQtyAfterAddThenCheckout": 2,
+    "qaPackagePresentation": "one row with image and whole price",
+    "phoneFrameWidthPx": 415,
+    "phoneDocumentClientWidthPx": 400,
+    "phoneDocumentScrollWidthPx": 400,
+    "physicalIPhoneTested": false
+  },
+  "data": {
+    "before": {
+      "counts": {
+        "productRows": 321,
+        "stock": 7207,
+        "active": 302
+      },
+      "orders": {
+        "orders": 14
+      },
+      "orderItems": {
+        "orderItems": 81
+      },
+      "videoCount": 2,
+      "commercialHash": "41b246496ff788c212323f4f73c91dce93f0c689302f7f1feb47ed19ae64d816",
+      "videoHash": "6f325c30fdfcf1134a3614a2a3924db6a8b6f5b8978eb22503f37fb43391be19",
+      "hasSettings": false,
+      "at": "2026-11-05T13:56:19.064Z"
+    },
+    "after": {
+      "counts": {
+        "productRows": 321,
+        "stock": 7207,
+        "active": 302
+      },
+      "orders": {
+        "orders": 14
+      },
+      "orderItems": {
+        "orderItems": 81
+      },
+      "videoCount": 2,
+      "commercialHash": "41b246496ff788c212323f4f73c91dce93f0c689302f7f1feb47ed19ae64d816",
+      "videoHash": "6f325c30fdfcf1134a3614a2a3924db6a8b6f5b8978eb22503f37fb43391be19",
+      "settings": [
+        {
+          "id": "storefront",
+          "revision": 1,
+          "pairPricing": 1
+        }
+      ],
+      "foreignKeyErrors": [],
+      "at": "2026-11-05T14:04:16.830Z"
+    },
+    "productCommercialFieldsUnchanged": true,
+    "uploadedVideoMetadataUnchanged": true,
+    "foreignKeyErrors": []
+  },
+  "safety": {
+    "productionOrdersCreated": 0,
+    "productionTestEmailsSent": 0,
+    "newProductVideosSeeded": 0,
+    "productStockReset": false,
+    "temporaryQaWorkerDeleted": true,
+    "temporarySyntheticDatabaseDeleted": true,
+    "productionAuthenticationUnchanged": true,
+    "secretBindingNamesPreserved": true
+  },
+  "screenshots": [
+    "docs/verification/global-v5-product-desktop.jpg",
+    "docs/verification/global-v5-cart-desktop.jpg"
+  ],
+  "backup": {
+    "branch": "backup/v4.2-before-global-experience-v5-2026-11-05",
+    "commit": "bc70add79a5c973c10c4d61d052e5ef7b2f40a7c",
+    "workerVersion": "0ba94bbd-d341-40f3-8090-be5cb9ac1292"
+  },
+  "limitations": [
+    "Physical iPhone was not available.",
+    "Admin settings save was exercised against an isolated synthetic database; production sign-in remains the owner's normal password flow."
+  ]
+}
