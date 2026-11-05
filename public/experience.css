@@ -8,3 +8,5 @@
 .touch-media-stage.is-video{max-width:min(390px,calc(78dvh * 9 / 16))}.touch-media-content video{max-height:none;touch-action:pan-y pinch-zoom}@media(max-width:760px){.touch-media-stage.is-video{max-width:min(100%,calc(74dvh * 9 / 16))}}
 
 .cart-remove{display:inline-block;border:0;background:transparent;color:#8b6879;font-size:10px;text-decoration:underline;cursor:pointer;padding:6px 0}.story-purchase>.variant-picker{margin-top:0;margin-bottom:18px}
+
+@media(max-width:760px){.site-header .header-inner{height:auto}}
