@@ -1,1 +1,170 @@
-{"id":"TS0081","brand":"Beauty of Joseon","productName":"Beauty of joseon - Relief Sun Aqua Fresh","primary":"/images/catalog/TS0081-6d2d6b7dbd3c.jpg","ar":{"name":"ريليف صن أكوا فريش من بيوتي أوف جوسون","tagline":"صباحكِ ألطف مع خطوة تهتم بكِ.","description":"قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. إذا كنتِ تحبّين واقي الشمس المنعش والخفيف، تعرّفي على أكوا فريش. يجمع ماء بذور الأرز والبانثينول في قوام أقرب للوشن المائي، ليكمل روتينكِ بحماية شمسية ولمسة ترطيب. وزّعيه بسخاء بعد العناية، وجدديه خلال النهار؛ مناسب لمن تجد القوام الكريمي التقليدي أثقل مما ترغب.","benefits":["حماية SPF50+ PA++++ بحسب العبوة","قوام مائي خفيف","ترطيب مع البانثينول"],"textureTitle":"لوشن مائي سريع التوزيع","textureText":"أخف إحساسًا من ريليف صن الأصلي، بلمسة منعشة.","fitText":"للراغبات بقوام خفيف، وخاصة البشرة الدهنية والمختلطة وفق توجيه الشركة.","steps":[{"title":"أكملي العناية","text":"ضعيه في نهاية روتين الصباح."},{"title":"وزّعي بسخاء","text":"غطي الوجه والرقبة والمناطق المكشوفة بالتساوي قبل التعرض."},{"title":"جدّدي أثناء النهار","text":"أعيدي التطبيق كل ساعتين على الأقل عند التعرض للشمس."}],"notes":"للسباحة أو التعرّق اختاري واقيًا مقاومًا للماء. لا تكفي طبقة صباحية واحدة لكل اليوم، ولا يُغني الواقي عن الظل.","ingredients":["ماء بذور الأرز","بانثينول B5","فلاتر شمسية بحسب العبوة"],"faq":[{"question":"ما الفرق عن الأصلي؟","answer":"أكوا فريش مائي وأخف؛ الأصلي أكثر كريمية."},{"question":"هل أضعه قبل المكياج؟","answer":"يأتي بعد العناية وقبل المكياج، مع تجديد الحماية حسب التعرض."}]},"en":{"name":"Beauty of Joseon Relief Sun Aqua-Fresh","tagline":"A little care to take into your day.","description":"Give your morning routine a moment of thoughtful care. Prefer a refreshing sunscreen feel? Aqua-Fresh pairs rice seed water and panthenol in a watery lotion texture. It adds sun protection and hydration after skincare, with a lighter feel than the original creamy Relief Sun.","benefits":["Labelled SPF50+ PA++++ protection","Light watery texture","Hydration with panthenol"],"textureTitle":"A watery lotion","textureText":"Spreads easily with a fresh feel, lighter than original Relief Sun.","fitText":"For those wanting a light finish, especially oily or combination skin according to the brand.","steps":[{"title":"Finish skincare","text":"Use at the end of your morning routine."},{"title":"Apply generously","text":"Cover face, neck and exposed areas evenly before exposure."},{"title":"Reapply","text":"Renew at least every two hours during sun exposure."}],"notes":"Choose water-resistant sunscreen for swimming or sweating. Renew protection and use shade too.","ingredients":["Rice seed water","Panthenol B5","UV filters listed on your tube"],"faq":[{"question":"How is it different?","answer":"Aqua-Fresh is watery and lighter; the original is creamier."},{"question":"Before makeup?","answer":"After skincare, before makeup; reapply according to exposure."}]},"sources":[{"url":"https://beautyofjoseon.com/pages/relief-sun-aqua-fresh?shpxid=557f0f50-365f-4341-a6bc-72db208119b3","title":"Beauty of Joseon Relief Sun Aqua-Fresh information"},{"url":"https://beautyofjoseon.com/pages/relief-sun-aqua-fresh-cpnp-scpn-information","title":"Beauty of Joseon Aqua-Fresh directions"}],"images":[{"url":"/images/catalog/marketing/TS0081-kcare-scene-b4a755f4ae2e.webp","thumbnail":"/images/catalog/marketing/TS0081-kcare-thumb-3d189aa4c0e7.webp","kind":"promotional","label":{"ar":"لحظة العناية","en":"The ritual"},"caption":{"ar":"مشهد دعائي","en":"Promotional scene"}}]}
+{
+  "id": "TS0081",
+  "brand": "Beauty of Joseon",
+  "productName": "Beauty of joseon - Relief Sun Aqua Fresh",
+  "primary": "/images/catalog/TS0081-6d2d6b7dbd3c.jpg",
+  "ar": {
+    "name": "واقي شمس أكوا فريش من بيوتي أوف جوسون",
+    "tagline": "خفة تحبّينها… وخطوة تهتم بصباحكِ.",
+    "description": "بين مشواركِ الأول وقهوتكِ الصباحية، امنحي بشرتكِ خطوة تحبّين تكرارها. أكوا فريش يجمع حماية SPF50+ PA++++ مع ماء بذور الأرز والبانثينول B5، في قوام مائي خفيف ينسجم مع روتينكِ قبل المكياج. لحظة صغيرة للعناية، مع تجديد الحماية خلال النهار.",
+    "benefits": [
+      "حماية SPF50+ PA++++ وفق العبوة",
+      "ملمس مائي خفيف، خاصة لمحبات القوام الأخف",
+      "ماء بذور الأرز + بانثينول B5 للترطيب"
+    ],
+    "textureTitle": "خفيف في ملمسه، قريب من روتينكِ.",
+    "textureText": "إذا كان واقي الشمس الكريمي أثقل مما تحبّين، فقد تجدين راحتكِ في هذا القوام المائي. سهل التوزيع، ليأتي بعد العناية وقبل المكياج دون أن تصبح خطوتكِ الصباحية معقّدة.",
+    "fitText": "خيار يستحق التجربة إذا كانت بشرتكِ دهنية أو مختلطة، أو كنتِ تفضلين لوشنًا أخف من ريليف صن الأصلي. اختاريه حسب إحساس بشرتكِ، مع الالتزام بتعليمات العبوة؛ الملاءمة تختلف من شخص لآخر.",
+    "steps": [
+      {
+        "title": "أنهي روتين العناية",
+        "text": "ضعيه بعد خطوات العناية الصباحية وقبل المكياج، وقبل التعرض للشمس بنحو 30 دقيقة وفق تعليمات الشركة."
+      },
+      {
+        "title": "وزّعي بسخاء",
+        "text": "غطّي الوجه والرقبة والمناطق المكشوفة بطبقة كافية ومتجانسة، واتبعي الكمية الموضّحة على عبوتكِ."
+      },
+      {
+        "title": "جدّدي اهتمامكِ",
+        "text": "أعيدي التطبيق كل ساعتين على الأقل أثناء التعرض للشمس. للسباحة أو التعرّق اختاري واقيًا مقاومًا للماء."
+      }
+    ],
+    "notes": "لا تكفي طبقة صباحية واحدة لكل اليوم. جدّدي الحماية، واستعيني بالظل والملابس الواقية. اختاري واقيًا مقاومًا للماء للسباحة أو التعرّق، وراجعي تعليمات عبوتكِ.",
+    "ingredients": [
+      "ماء بذور الأرز",
+      "بانثينول B5",
+      "فلاتر شمسية بحسب العبوة"
+    ],
+    "faq": [
+      {
+        "question": "هل يناسب بشرتي الدهنية أو المختلطة؟",
+        "answer": "توجّه الشركة هذه النسخة لمحبات القوام الأخف، وخاصة البشرة الدهنية والمختلطة. راقبي ملاءمته لبشرتكِ؛ لا توجد تركيبة تضمن النتيجة نفسها للجميع."
+      },
+      {
+        "question": "ما الفرق بينه وبين ريليف صن الأصلي؟",
+        "answer": "أكوا فريش Rice + B5 لوشن مائي أخف. ريليف صن الأصلي Rice + Probiotics أكثر كريمية؛ اختاري حسب القوام الذي ترتاح له بشرتكِ."
+      },
+      {
+        "question": "أستخدمه قبل المكياج أم بعده؟",
+        "answer": "بعد العناية الصباحية وقبل المكياج، مع توزيع كمية كافية ومتساوية. يبقى تجديد الحماية مهمًا خلال التعرض للشمس."
+      },
+      {
+        "question": "هل تكفي مرة واحدة صباحًا؟",
+        "answer": "جدّدي التطبيق كل ساعتين على الأقل أثناء التعرض للشمس. واستخدمي واقيًا مقاومًا للماء عند السباحة أو التعرّق."
+      },
+      {
+        "question": "هل الصور تجارب زبونات؟",
+        "answer": "صور العبوة تعرض المنتج، ومشهد العناية صورة دعائية. تجارب الشراء الموثّقة تظهر في قسمها الخاص عند توفرها."
+      }
+    ],
+    "ingredientCards": [
+      {
+        "label": "RICE SEED WATER",
+        "title": "ماء بذور الأرز",
+        "text": "يدعم الترطيب بملمس خفيف، لخطوة عناية منسجمة مع صباحكِ."
+      },
+      {
+        "label": "VITAMIN B5",
+        "title": "بانثينول B5",
+        "text": "يساعد على ترطيب البشرة وتهدئتها ودعم حاجزها الطبيعي."
+      }
+    ]
+  },
+  "en": {
+    "name": "Beauty of Joseon Relief Sun Aqua-Fresh",
+    "tagline": "A lighter feel. A little care for your morning.",
+    "description": "Between your first coffee and your first plans, make room for a sun-care step you enjoy. Aqua-Fresh combines labelled SPF50+ PA++++ protection with rice seed water and panthenol B5 in a light, watery lotion. Wear after skincare and before makeup, and renew protection through the day.",
+    "benefits": [
+      "Labelled SPF50+ PA++++ protection",
+      "A light, watery lotion feel",
+      "Hydration with rice seed water and panthenol B5"
+    ],
+    "textureTitle": "Light in texture. Easy in your routine.",
+    "textureText": "If a richer sunscreen feels heavier than you prefer, this watery lotion offers a lighter option. Smooth it on after morning skincare and before makeup for a simple, familiar care step.",
+    "fitText": "Consider Aqua-Fresh if you have oily or combination skin, or prefer a lighter lotion to original Relief Sun. Choose for your own skin and follow your pack directions; individual tolerance varies.",
+    "steps": [
+      {
+        "title": "Finish your skincare",
+        "text": "Apply after morning skincare and before makeup, about 30 minutes before sun exposure as directed by the brand."
+      },
+      {
+        "title": "Apply generously",
+        "text": "Cover face, neck and exposed areas evenly. Follow the amount and directions on your actual pack."
+      },
+      {
+        "title": "Renew your protection",
+        "text": "Reapply at least every two hours during sun exposure. Choose water-resistant sunscreen for swimming or sweating."
+      }
+    ],
+    "notes": "One morning application is not enough for the whole day. Renew protection, use shade and protective clothing, and choose water-resistant sunscreen for swimming or sweating. Follow your actual pack directions.",
+    "ingredients": [
+      "Rice seed water",
+      "Panthenol B5",
+      "UV filters listed on your tube"
+    ],
+    "faq": [
+      {
+        "question": "Is it for oily or combination skin?",
+        "answer": "The brand positions Aqua-Fresh for those wanting a lighter texture, especially oily or combination skin. Check how your own skin responds; individual tolerance varies."
+      },
+      {
+        "question": "How is it different from original Relief Sun?",
+        "answer": "Aqua-Fresh Rice + B5 is a lighter, watery lotion. Original Rice + Probiotics is creamier. Choose the texture you prefer."
+      },
+      {
+        "question": "Before or after makeup?",
+        "answer": "Apply after morning skincare and before makeup, generously and evenly. Renew protection during sun exposure."
+      },
+      {
+        "question": "Is one morning application enough?",
+        "answer": "Reapply at least every two hours during sun exposure, and choose water-resistant sunscreen for swimming or sweating."
+      },
+      {
+        "question": "Are these customer review photos?",
+        "answer": "Pack images show the product; the care scene is promotional. Verified purchase experiences appear in their own section when available."
+      }
+    ],
+    "ingredientCards": [
+      {
+        "label": "RICE SEED WATER",
+        "title": "Rice seed water",
+        "text": "Helps keep skin hydrated with a lightweight feel."
+      },
+      {
+        "label": "VITAMIN B5",
+        "title": "Panthenol B5",
+        "text": "Helps moisturize and soothe while supporting the skin barrier."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://beautyofjoseon.com/products/relief-sun-aqua-fresh",
+      "title": "Official product information; indexed manufacturer page verified 2026-11-05"
+    },
+    {
+      "url": "https://beautyofjoseon.global/en-gb/products/relief-sun-aqua-fresh-rice-b5?variant=51770720682300",
+      "title": "Official global product page"
+    },
+    {
+      "url": "https://beautyofjoseon.com/pages/relief-sun-aqua-fresh-cpnp-scpn-information",
+      "title": "Official pack directions"
+    }
+  ],
+  "images": [
+    {
+      "url": "/images/catalog/marketing/TS0081-kcare-scene-b4a755f4ae2e.webp",
+      "thumbnail": "/images/catalog/marketing/TS0081-kcare-thumb-3d189aa4c0e7.webp",
+      "kind": "promotional",
+      "label": {
+        "ar": "لحظة العناية",
+        "en": "The ritual"
+      },
+      "caption": {
+        "ar": "مشهد دعائي",
+        "en": "Promotional scene"
+      }
+    }
+  ],
+  "experienceVersion": "aqua-fresh-pilot-4.2.0"
+}

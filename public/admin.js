@@ -1,5 +1,5 @@
 import {orderDisplayItems,orderLineTotal} from './order-presentation.js';
-import {createProductVideoManager} from './product-videos-admin.js?v=4.0.0';
+import {createProductVideoManager} from './product-videos-admin.js?v=4.2.0';
 import {createReviewManager} from './reviews-admin.js?v=3.0.0';
 import {optionSummary,SKIN_TONES,usesSkinTones} from './product-variants.js?v=2.0.0';
 import {PRODUCT_TYPES} from './product-types.js?v=2.3.0';

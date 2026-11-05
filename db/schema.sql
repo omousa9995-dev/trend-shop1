@@ -84,6 +84,7 @@ CREATE TABLE IF NOT EXISTS product_videos (
  mime TEXT NOT NULL CHECK(mime IN ('video/mp4','video/quicktime','video/webm')),
  size INTEGER NOT NULL CHECK(size BETWEEN 24 AND 20971520),
  title TEXT NOT NULL DEFAULT '', title_en TEXT NOT NULL DEFAULT '',
+ poster_url TEXT NOT NULL DEFAULT '', sort_order INTEGER NOT NULL DEFAULT 0,
  active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1)),
  created_at TEXT NOT NULL DEFAULT(datetime('now')),
  updated_at TEXT NOT NULL DEFAULT(datetime('now'))

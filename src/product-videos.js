@@ -1,12 +1,13 @@
 import {readLimitedBody} from './media.js';
 import {isRetiredProduct} from '../public/catalog-policy.js';
+import {AQUA_FRESH_PILOT_ID,isAquaFreshPilot,validVideoPoster} from '../public/product-video-presentation.js';
 
 export const MAX_VIDEO_BYTES = 20 * 1024 * 1024;
 export const MAX_PRODUCT_VIDEOS = 3;
 const UUID = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
 const PRODUCT = /^TS[A-Z0-9-]{4,64}$/;
 const text = (v,n=120) => typeof v==='string' ? v.trim().slice(0,n) : '';
-const videoRow = r => ({id:r.id,productId:r.product_id,title:r.title,titleEn:r.title_en,url:'/product-videos/'+r.id,mime:r.mime,bytes:r.size,active:!!r.active});
+const videoRow = r => ({id:r.id,productId:r.product_id,title:r.title,titleEn:r.title_en,url:'/product-videos/'+r.id,mime:r.mime,bytes:r.size,active:!!r.active,...(isAquaFreshPilot(r.product_id)?{poster:r.poster_url||'',sortOrder:Number(r.sort_order)||0}:{})});
 
 export function sniffVideo(bytes) {
  if(bytes.length<24)return null;
@@ -26,7 +27,7 @@ export function sniffVideo(bytes) {
 export async function publicProductVideos(request,env,{json,error}) {
  const id=new URL(request.url).searchParams.get('product');
  if(!PRODUCT.test(id||'')||isRetiredProduct(id))return error('المنتج غير موجود',404);
- const rows=await env.DB.prepare('SELECT v.* FROM product_videos v JOIN products p ON p.id=v.product_id WHERE v.product_id=? AND v.active=1 AND p.active=1 AND p.approved=1 ORDER BY v.created_at,v.id LIMIT 3').bind(id).all();
+ const rows=await env.DB.prepare('SELECT v.* FROM product_videos v JOIN products p ON p.id=v.product_id WHERE v.product_id=? AND v.active=1 AND p.active=1 AND p.approved=1 ORDER BY CASE WHEN v.product_id=? THEN v.sort_order ELSE 0 END,v.created_at,v.id LIMIT 3').bind(id,AQUA_FRESH_PILOT_ID).all();
  return json({videos:(rows.results||[]).map(videoRow)});
 }
 
@@ -34,12 +35,29 @@ export async function adminProductVideos(request,env,{json,error,sameOrigin,thro
  const url=new URL(request.url);
  if(request.method==='GET'){
   const product=url.searchParams.get('product');if(!PRODUCT.test(product||'')||isRetiredProduct(product))return error('اختاري منتجًا صالحًا');
-  const rows=await env.DB.prepare('SELECT * FROM product_videos WHERE product_id=? ORDER BY created_at,id LIMIT 100').bind(product).all();
+  const rows=await env.DB.prepare('SELECT * FROM product_videos WHERE product_id=? ORDER BY CASE WHEN product_id=? THEN sort_order ELSE 0 END,created_at,id LIMIT 100').bind(product,AQUA_FRESH_PILOT_ID).all();
   return json({videos:(rows.results||[]).map(videoRow),maxBytes:MAX_VIDEO_BYTES,maxVideos:MAX_PRODUCT_VIDEOS});
  }
  if(!sameOrigin(request)||request.headers.get('x-trend-admin')!=='1')return error('غير مصرح',403);
  if(request.headers.get('content-type')?.startsWith('application/json')){
   let b;try{b=await content(request)}catch{return error('بيانات غير صالحة')}
+  if(b.action==='reorder'){
+   if(!isAquaFreshPilot(b.productId)||!Array.isArray(b.ids)||!b.ids.length||b.ids.length>MAX_PRODUCT_VIDEOS||b.ids.some(id=>!UUID.test(id))||new Set(b.ids).size!==b.ids.length)return error('اختاري ترتيبًا صالحًا لفيديوهات أكوا فريش');
+   const rows=await env.DB.prepare('SELECT id FROM product_videos WHERE product_id=?').bind(b.productId).all();
+   if(rows.results.length!==b.ids.length||rows.results.some(row=>!b.ids.includes(row.id)))return error('تغيرت القائمة؛ أعيدي فتح المنتج قبل ترتيب الفيديوهات',409);
+   const cases=b.ids.map((_,index)=>'WHEN ? THEN '+index).join(' ');
+   const placeholders=b.ids.map(()=>'?').join(',');
+   const result=await env.DB.prepare("UPDATE product_videos SET sort_order=CASE id "+cases+" ELSE sort_order END,updated_at=datetime('now') WHERE product_id=? AND (SELECT count(*) FROM product_videos WHERE product_id=?)=? AND (SELECT count(*) FROM product_videos WHERE product_id=? AND id IN ("+placeholders+"))=?").bind(...b.ids,b.productId,b.productId,b.ids.length,b.productId,...b.ids,b.ids.length).run();
+   if(Number(result.meta?.changes)!==b.ids.length)return error('تغيرت القائمة؛ أعيدي فتح المنتج قبل ترتيب الفيديوهات',409);
+   return json({ok:true});
+  }
+  if(b.action==='presentation'){
+   if(!UUID.test(b.id||'')||!isAquaFreshPilot(b.productId)||!validVideoPoster(b.poster)||typeof b.title!=='string'||typeof b.titleEn!=='string')return error('تحققي من عنوان الفيديو وصورة الغلاف');
+   const row=await env.DB.prepare('SELECT product_id FROM product_videos WHERE id=?').bind(b.id).first();
+   if(!row||row.product_id!==b.productId)return error('الفيديو غير موجود لهذا المنتج',404);
+   await env.DB.prepare("UPDATE product_videos SET title=?,title_en=?,poster_url=?,updated_at=datetime('now') WHERE id=? AND product_id=?").bind(text(b.title),text(b.titleEn),b.poster,b.id,b.productId).run();
+   return json({ok:true});
+  }
   if(!UUID.test(b.id||'')||(typeof b.active!=='boolean'&&b.action!=='remove'))return error('اختاري الفيديو والإجراء الصحيح');
   const row=await env.DB.prepare('SELECT * FROM product_videos WHERE id=?').bind(b.id).first();if(!row||isRetiredProduct(row.product_id))return error('الفيديو غير موجود',404);
   if(b.action==='remove'){await env.DB.prepare('DELETE FROM product_videos WHERE id=?').bind(b.id).run();await env.MEDIA?.delete(row.media_key).catch(()=>{});return json({ok:true})}

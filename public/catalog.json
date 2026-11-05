@@ -3657,41 +3657,44 @@
     "source_note": "لقطة مفهرسة منذ شهرين",
     "id": "TS0081",
     "category": "البشرة",
-    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. إذا كنتِ تحبّين واقي الشمس المنعش والخفيف، تعرّفي على أكوا فريش. يجمع ماء بذور الأرز والبانثينول في قوام أقرب للوشن المائي، ليكمل روتينكِ بحماية شمسية ولمسة ترطيب. وزّعيه بسخاء بعد العناية، وجدديه خلال النهار؛ مناسب لمن تجد القوام الكريمي التقليدي أثقل مما ترغب.",
+    "description": "بين مشواركِ الأول وقهوتكِ الصباحية، امنحي بشرتكِ خطوة تحبّين تكرارها. أكوا فريش يجمع حماية SPF50+ PA++++ مع ماء بذور الأرز والبانثينول B5، في قوام مائي خفيف ينسجم مع روتينكِ قبل المكياج. لحظة صغيرة للعناية، مع تجديد الحماية خلال النهار.",
     "discount": 49,
     "priceFils": 5490,
     "image": "/images/catalog/TS0081-6d2d6b7dbd3c.jpg",
     "approved": true,
     "stock": 24,
     "details": {
-      "nameAr": "ريليف صن أكوا فريش من بيوتي أوف جوسون",
-      "tagline": "صباحكِ ألطف مع خطوة تهتم بكِ.",
+      "nameAr": "واقي شمس أكوا فريش من بيوتي أوف جوسون",
+      "tagline": "خفة تحبّينها… وخطوة تهتم بصباحكِ.",
       "benefits": [
-        "حماية SPF50+ PA++++ بحسب العبوة",
-        "قوام مائي خفيف",
-        "ترطيب مع البانثينول"
+        "حماية SPF50+ PA++++ وفق العبوة",
+        "ملمس مائي خفيف، خاصة لمحبات القوام الأخف",
+        "ماء بذور الأرز + بانثينول B5 للترطيب"
       ],
-      "howToUse": "أكملي العناية: ضعيه في نهاية روتين الصباح.\nوزّعي بسخاء: غطي الوجه والرقبة والمناطق المكشوفة بالتساوي قبل التعرض.\nجدّدي أثناء النهار: أعيدي التطبيق كل ساعتين على الأقل عند التعرض للشمس.",
-      "notes": "للسباحة أو التعرّق اختاري واقيًا مقاومًا للماء. لا تكفي طبقة صباحية واحدة لكل اليوم، ولا يُغني الواقي عن الظل.",
+      "howToUse": "أنهي روتين العناية: ضعيه بعد خطوات العناية الصباحية وقبل المكياج، وقبل التعرض للشمس بنحو 30 دقيقة وفق تعليمات الشركة.\nوزّعي بسخاء: غطّي الوجه والرقبة والمناطق المكشوفة بطبقة كافية ومتجانسة، واتبعي الكمية الموضّحة على عبوتكِ.\nجدّدي اهتمامكِ: أعيدي التطبيق كل ساعتين على الأقل أثناء التعرض للشمس. للسباحة أو التعرّق اختاري واقيًا مقاومًا للماء.",
+      "notes": "لا تكفي طبقة صباحية واحدة لكل اليوم. جدّدي الحماية، واستعيني بالظل والملابس الواقية. اختاري واقيًا مقاومًا للماء للسباحة أو التعرّق، وراجعي تعليمات عبوتكِ.",
       "imageType": "photo",
       "collection": "k-beauty",
       "featuredOrder": 100,
       "productType": "sunscreen",
       "en": {
         "name": "Beauty of Joseon Relief Sun Aqua-Fresh",
-        "tagline": "A little care to take into your day.",
-        "description": "Give your morning routine a moment of thoughtful care. Prefer a refreshing sunscreen feel? Aqua-Fresh pairs rice seed water and panthenol in a watery lotion texture. It adds sun protection and hydration after skincare, with a lighter feel than the original creamy Relief Sun.",
+        "tagline": "A lighter feel. A little care for your morning.",
+        "description": "Between your first coffee and your first plans, make room for a sun-care step you enjoy. Aqua-Fresh combines labelled SPF50+ PA++++ protection with rice seed water and panthenol B5 in a light, watery lotion. Wear after skincare and before makeup, and renew protection through the day.",
         "benefits": [
           "Labelled SPF50+ PA++++ protection",
-          "Light watery texture",
-          "Hydration with panthenol"
+          "A light, watery lotion feel",
+          "Hydration with rice seed water and panthenol B5"
         ],
-        "howToUse": "Finish skincare: Use at the end of your morning routine.\nApply generously: Cover face, neck and exposed areas evenly before exposure.\nReapply: Renew at least every two hours during sun exposure.",
-        "notes": "Choose water-resistant sunscreen for swimming or sweating. Renew protection and use shade too.",
-        "variantNote": ""
+        "howToUse": "Finish your skincare: Apply after morning skincare and before makeup, about 30 minutes before sun exposure as directed by the brand.\nApply generously: Cover face, neck and exposed areas evenly. Follow the amount and directions on your actual pack.\nRenew your protection: Reapply at least every two hours during sun exposure. Choose water-resistant sunscreen for swimming or sweating.",
+        "notes": "One morning application is not enough for the whole day. Renew protection, use shade and protective clothing, and choose water-resistant sunscreen for swimming or sweating. Follow your actual pack directions.",
+        "variantNote": "",
+        "size": "50 mL"
       },
       "contentVersion": "4.0.0",
-      "toneVersion": "4.1.0"
+      "toneVersion": "4.1.0",
+      "size": "50 مل",
+      "experienceVersion": "aqua-fresh-pilot-4.2.0"
     },
     "active": 1,
     "canonicalSources": [

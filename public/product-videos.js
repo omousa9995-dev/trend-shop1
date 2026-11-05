@@ -3,11 +3,17 @@ import {mountMediaGallery,validProductVideo} from './media-gallery.js';
 const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export async function mountProductVideos(region,{productId,fetcher=fetch}={}){
  if(!region)return;
- region.hidden=true;region.replaceChildren();const language=locale();
+ const pilot=region.aquaFreshRail;
+ if(!pilot){region.hidden=true;region.replaceChildren();}const language=locale();
  try{
   const response=await fetcher('/api/product-videos?product='+encodeURIComponent(productId),{cache:'no-store'});if(!response.ok)return;
   const data=await response.json();if(!region.isConnected||locale()!==language)return;
-  const videos=(data.videos||[]).filter(validProductVideo).slice(0,3).map(v=>({...v,title:language==='en'?v.titleEn||v.title:v.title}));
+  const videos=(data.videos||[]).filter(v=>validProductVideo(v)&&(!v.productId||v.productId===productId)).slice(0,3).map(v=>({...v,title:language==='en'?v.titleEn||v.title:v.title}));
+  if(pilot){
+   const ownVideos=videos.filter(v=>v.productId===productId);
+   const gallery=[...region.ownerDocument.querySelectorAll('[data-gallery-product]')].find(el=>el.dataset.galleryProduct===productId);
+   gallery?.mediaGallery?.setVideos(ownVideos);pilot.setVideos(ownVideos);return;
+  }
   if(!videos.length)return;
   const gallery=[...region.ownerDocument.querySelectorAll('[data-gallery-product]')].find(el=>el.dataset.galleryProduct===productId);
   gallery?.mediaGallery?.setVideos(videos);

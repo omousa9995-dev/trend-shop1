@@ -1,0 +1,50 @@
+/* The review experience only applies to Aqua-Fresh TS0081. */
+.aqua-fresh-pilot{--aqua-ink:#304c49;--aqua-line:#d5e1dd;--aqua-soft:#edf3f0}
+.aqua-fresh-pilot .story-tagline{font-size:clamp(28px,3.2vw,43px);line-height:1.65;color:var(--aqua-ink)}
+.aqua-hero-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px;margin:12px 0;color:var(--aqua-ink)}
+.aqua-hero-price strong{font-size:29px}.aqua-hero-price span{font-size:11px;color:#667b73}
+.aqua-fresh-pilot .story-lead{font-size:14px;line-height:2.15;max-width:540px}
+.aqua-fresh-pilot .story-facts span{border-color:var(--aqua-line);background:#f2f6f3;color:var(--aqua-ink)}
+.aqua-fresh-pilot .story-quick-benefits{grid-template-columns:1fr;gap:9px;border-block:1px solid var(--aqua-line);padding-block:15px}
+.aqua-fresh-pilot .story-quick-benefits li>span:last-child{font-size:13px;color:var(--aqua-ink)}
+.aqua-delivery-note{font-size:11px;line-height:1.9;color:#5f766b;margin:10px 0}
+.aqua-ingredient-cards{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}
+.aqua-ingredient-cards>div{border:1px solid var(--aqua-line);border-radius:17px;padding:19px;background:#f5f8f4}
+.aqua-ingredient-cards>div>span{font-size:10px;letter-spacing:1.5px;color:#648072}
+.aqua-ingredient-cards h3{font-size:18px;margin:10px 0}.aqua-ingredient-cards p{font-size:12px;line-height:2;margin:0;color:#647369}
+.aqua-fresh-pilot .aqua-showcase{margin-block:10px 35px;padding:30px!important;border:1px solid var(--aqua-line);border-radius:24px;background:linear-gradient(120deg,#f0f5f1,#fbfaf6)}
+.aqua-showcase-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}
+.aqua-showcase h2{font-size:clamp(27px,3vw,37px);color:var(--aqua-ink);margin:6px 0}
+.aqua-showcase-heading p{font-size:13px;line-height:1.9;color:#677c71;margin:0;max-width:600px}
+.aqua-rail-navigation{display:flex;gap:8px}.aqua-rail-navigation button{width:44px;height:44px;border:1px solid #bbcec6;background:#fffaf5;border-radius:50%;color:var(--aqua-ink);font-size:27px;cursor:pointer}
+.aqua-media-rail{display:flex;gap:15px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding:3px 2px 15px;scrollbar-width:thin;scrollbar-color:#a6beb1 transparent}
+.aqua-media-card{flex:0 0 min(31%,290px);min-width:230px;min-height:44px;border:0;border-radius:15px;padding:0;overflow:hidden;background:#fff;color:var(--aqua-ink);scroll-snap-align:start;cursor:pointer;text-align:start;box-shadow:0 3px 13px #304c4908}
+.aqua-card-media{position:relative;display:block;aspect-ratio:9/16;overflow:hidden;background:#e6eee9;border-radius:15px}
+.aqua-card-media img,.aqua-card-media video{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:9/16}
+.aqua-media-card.is-pack .aqua-card-media img{object-fit:contain;padding:28px;background:#fff}
+.aqua-video-badge{position:absolute;inset-inline:10px;bottom:11px;border:1px solid #ffffff68;border-radius:30px;background:#233e39cc;padding:8px 12px;font-size:10px;line-height:1.6;text-align:center;color:#fff;backdrop-filter:blur(5px)}
+.aqua-card-caption{display:block;padding:13px 15px;font-size:12px;line-height:1.8}
+.aqua-showcase-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:13px;margin-top:8px}
+.aqua-showcase-foot p{font-size:11px;color:#61756a;margin:0}.aqua-showcase-foot button{border:0;border-bottom:1px solid #728c7d;background:none;padding:10px 0;min-height:44px;color:var(--aqua-ink);font:inherit;font-size:12px;cursor:pointer}
+.aqua-media-card:focus-visible,.aqua-showcase button:focus-visible{outline:3px solid #7a9c8b;outline-offset:3px}
+.aqua-media-dialog{border:0;border-radius:20px;padding:0;background:#172923;color:#fff;width:min(94vw,440px);max-width:94vw;max-height:94dvh;overflow-y:auto;overscroll-behavior:contain;box-shadow:0 25px 80px #0008}
+.aqua-media-dialog::backdrop{background:#0c1713d9;backdrop-filter:blur(6px)}
+.aqua-dialog-shell>header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;background:#172923}
+.aqua-dialog-shell>header small{font-size:8px;letter-spacing:2px;color:#bfd3c4}.aqua-dialog-shell h2{font-size:17px;line-height:1.8;margin:3px 0 0;color:#fff}
+.aqua-dialog-shell>header button{width:44px;height:44px;border:1px solid #ffffff44;border-radius:50%;background:#ffffff10;color:white;font-size:27px;cursor:pointer;flex-shrink:0}
+.aqua-dialog-stage{background:#0d1814;position:relative;touch-action:pan-y pinch-zoom;overflow:hidden}
+.aqua-dialog-stage>video,.aqua-dialog-stage>img{display:block;width:100%;height:auto;aspect-ratio:9/16;max-height:59dvh;object-fit:contain;margin:auto;background:#0d1814}
+.aqua-dialog-stage>video{touch-action:auto}.aqua-dialog-stage>img{background:#f7f7f0;object-fit:contain}.aqua-dialog-stage>small{position:absolute;bottom:10px;inset-inline:10px;font-size:10px;color:#fff;background:#172923bb;border-radius:15px;padding:5px 12px;text-align:center}
+.aqua-dialog-navigation{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:7px 15px}
+.aqua-dialog-navigation button{min-height:44px;min-width:70px;border:1px solid #ffffff3d;background:transparent;border-radius:30px;color:#fff;font:inherit;font-size:12px;cursor:pointer}.aqua-dialog-navigation span{font-size:12px;direction:ltr}
+.aqua-dialog-shell>[data-aqua-dialog-caption]{font-size:12px;text-align:center;margin:2px 15px;line-height:1.7}
+.aqua-dialog-shell>#aquaMediaHelp{font-size:10px;color:#c2d1c6;line-height:1.8;text-align:center;margin:5px 17px 10px}
+.aqua-dialog-shell>footer{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid #ffffff24;padding:13px 17px max(13px,env(safe-area-inset-bottom));background:#20382e}
+.aqua-dialog-shell>footer>span{display:grid;gap:3px}.aqua-dialog-shell>footer small{font-size:9px;color:#c6d7cb}.aqua-dialog-shell>footer b{font-size:18px}
+.aqua-dialog-shell>footer>button{min-height:44px;padding:10px 25px;border:0;border-radius:30px;background:#eef3de;color:#243b2d;font:inherit;font-size:12px;cursor:pointer}
+.aqua-media-dialog button:focus-visible{outline:3px solid #eef3de;outline-offset:2px}.aqua-video-fallback{padding:14px;font-size:12px;line-height:1.9}.aqua-video-fallback[hidden],.aqua-media-dialog [hidden],.aqua-showcase [hidden]{display:none!important}
+@media(max-width:760px){.aqua-fresh-pilot .story-lead{font-size:13px}.aqua-hero-price strong{font-size:27px}.aqua-fresh-pilot .aqua-showcase{padding:22px 17px!important;border-radius:20px;margin-bottom:25px}.aqua-showcase-heading{align-items:start;gap:12px}.aqua-showcase-heading h2{font-size:26px;line-height:1.7}.aqua-showcase-heading p{font-size:12px}.aqua-rail-navigation{padding-top:23px;gap:5px}.aqua-rail-navigation button{width:40px;height:44px}.aqua-media-rail{gap:12px;margin-inline:-2px}.aqua-media-card{flex-basis:76%;min-width:0;max-width:310px}.aqua-card-media{border-radius:13px}.aqua-ingredient-cards{gap:10px}.aqua-ingredient-cards>div{padding:14px 12px}.aqua-ingredient-cards h3{font-size:16px}.aqua-ingredient-cards p{font-size:11px}.aqua-showcase-foot{gap:5px}.aqua-showcase-foot p{font-size:10px}.aqua-media-dialog{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0;margin:0}.aqua-dialog-shell{min-height:100dvh;display:flex;flex-direction:column}.aqua-dialog-stage{flex:1;display:grid;align-content:center}.aqua-dialog-stage>video,.aqua-dialog-stage>img{max-height:58dvh;width:auto;max-width:100%;min-width:0}.aqua-dialog-shell>footer{margin-top:auto}}
+@media(prefers-reduced-motion:reduce){.aqua-media-rail{scroll-behavior:auto!important}}
+.aqua-media-rail:has(>.aqua-media-card:nth-child(-n+3):last-child){justify-content:center}
+.aqua-video-tools{padding:7px 15px 2px;background:#172923}.aqua-video-timeline{display:flex;align-items:center;gap:12px}.aqua-video-timeline input{min-width:0;flex:1;accent-color:#d4e4c9;min-height:28px;cursor:pointer}.aqua-video-timeline output{font-size:10px;color:#dce5de;min-width:68px}.aqua-video-actions{display:flex;align-items:center;justify-content:space-between;gap:5px}.aqua-video-actions button{min-height:40px;border:0;border-radius:20px;background:#ffffff10;color:#fff;padding:7px 12px;font:inherit;font-size:11px;cursor:pointer}.aqua-dialog-stage>video{height:min(55dvh,560px);width:auto;max-width:100%;aspect-ratio:9/16}
+@media(max-width:760px){.aqua-media-rail:has(>.aqua-media-card:nth-child(-n+3):last-child){justify-content:flex-start}.aqua-dialog-stage>video{height:50dvh;max-height:50dvh;max-width:100%}.aqua-video-tools{padding-top:2px}.aqua-video-actions button{min-height:40px}.aqua-dialog-shell>header{padding-block:12px}}

@@ -4,3 +4,5 @@
 
 .login-panel .mail-connection-status{margin:0;padding:10px 12px;background:#fff6e8;border-radius:8px;color:#765d35;font-size:12px}.login-panel .mail-connection-status[data-state="ready"]{background:#eaf5ee;color:#246743}
 #productVideoPanel [data-video-list]{display:grid;gap:14px;margin-top:18px}.admin-video-card{display:grid;gap:10px;padding:14px;background:#fff;border:1px solid #e4dce0;border-radius:12px;min-width:0}.admin-video-card small{display:block;color:#766a72;font-size:12px}.admin-video-card video{width:100%;max-width:460px;max-height:280px;background:#f0eded;border-radius:8px}.admin-video-card button{justify-self:start}#productVideoPanel input[type=file]{max-width:100%;font-size:16px}#productVideoPanel button{min-height:44px}
+
+.aqua-video-editor{display:grid;gap:10px;border-top:1px solid #e1e6df;padding-top:15px;margin-top:12px}.aqua-video-editor label{display:grid;gap:6px;font-size:12px}.aqua-video-editor .input{width:100%;min-height:44px;font-size:16px}.aqua-video-order{display:flex;gap:8px;flex-wrap:wrap}.aqua-video-editor .minor{min-height:44px}

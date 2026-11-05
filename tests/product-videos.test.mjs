@@ -70,3 +70,29 @@ test('An empty video registry never adds a video or an empty customer section; u
  await mountProductVideos(region,{productId:p.id,fetcher:async()=>Response.json({videos:[]})});assert.equal(region.hidden,true);assert.equal(root.querySelector('video'),null);
  await mountProductVideos(region,{productId:p.id,fetcher:async()=>Response.json({videos:[{id:'00000000-0000-4000-8000-000000000000',url:'/product-videos/00000000-0000-4000-8000-000000000000',mime:'video/mp4',title:'مرحلة الاستخدام'}]})});assert.equal(region.hidden,false);const video=region.querySelector('video');assert.equal(video.preload,'metadata');assert.equal(video.autoplay,true);assert.equal(video.loop,true);assert.equal(video.muted,true);assert.equal(video.controls,true);assert.equal(video.width/video.height,9/16);dom.window.close();
 });
+
+test('Only Aqua-Fresh accepts presentation edits, exposes its cover and keeps pricing, stock and other uploads unchanged',async t=>{
+ const f=fixture();t.after(f.close);f.sql.exec("INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,stock,approved,active) VALUES('TS0081','Beauty of Joseon','Aqua-Fresh','البشرة',10950,5490,24,1,1)");
+ const pilot=(await(await upload(f,{product:'TS0081'})).json()).video,other=(await(await upload(f)).json()).video;
+ const before=f.sql.prepare('SELECT id,price_fils,stock FROM products ORDER BY id').all();
+ const body={id:pilot.id,productId:'TS0081',action:'presentation',title:'القوام عن قرب',titleEn:'Texture up close',poster:'/images/catalog/TS0081-6d2d6b7dbd3c.jpg'};
+ assert.equal((await action(f,body)).status,200);
+ const data=(await(await api(f,'/api/product-videos?product=TS0081')).json()).videos[0];assert.equal(data.poster,body.poster);assert.equal(data.title,body.title);assert.equal(data.sortOrder,0);
+ assert.equal((await action(f,{...body,id:other.id})).status,404);assert.equal((await action(f,{...body,productId:'TS0079'})).status,400);
+ for(const poster of ['https://evil.example/p.jpg','/images/../admin.html','javascript:alert(1)'])assert.equal((await action(f,{...body,poster})).status,400);
+ const otherRow=(await(await api(f,'/api/product-videos?product=TS0079')).json()).videos[0];assert.equal('poster' in otherRow,false);assert.deepEqual(f.sql.prepare('SELECT id,price_fils,stock FROM products ORDER BY id').all(),before);
+ assert.equal(f.sql.prepare('SELECT count(*) n FROM orders').get().n,0);
+});
+test('Reordering requires the exact complete pilot list and changes only that product in one statement',async t=>{
+ const f=fixture();t.after(f.close);f.sql.exec("INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,stock,approved,active) VALUES('TS0081','Beauty of Joseon','Aqua-Fresh','البشرة',10950,5490,24,1,1)");
+ const first=(await(await upload(f,{product:'TS0081'})).json()).video,second=(await(await upload(f,{product:'TS0081'})).json()).video,other=(await(await upload(f)).json()).video;
+ const body={action:'reorder',productId:'TS0081',ids:[second.id,first.id]};assert.equal((await action(f,body)).status,200);
+ assert.deepEqual((await(await api(f,'/api/product-videos?product=TS0081')).json()).videos.map(v=>v.id),body.ids);
+ assert.equal((await action(f,{...body,ids:[first.id]})).status,409);assert.equal((await action(f,{...body,ids:[first.id,other.id]})).status,409);assert.equal((await action(f,{...body,ids:[first.id,first.id]})).status,400);
+ assert.equal((await action(f,{...body,productId:'TS0079',ids:[other.id]})).status,400);assert.equal(f.sql.prepare('SELECT sort_order FROM product_videos WHERE id=?').get(other.id).sort_order,0);
+});
+test('The pilot presentation and ordering endpoints require the existing authenticated same-origin admin session',async t=>{
+ const f=fixture();t.after(f.close);const body={action:'reorder',productId:'TS0081',ids:['00000000-0000-4000-8000-000000000001']};
+ assert.equal((await api(f,'/api/admin/product-videos',{method:'POST',headers:{origin:'https://trend.test','content-type':'application/json','x-trend-admin':'1'},body:JSON.stringify(body)})).status,401);
+ assert.equal((await api(f,'/api/admin/product-videos',{method:'POST',headers:{origin:'https://other.test','content-type':'application/json','x-trend-admin':'1',cookie:'ts_admin='+await _test.makeSession(f.env)},body:JSON.stringify(body)})).status,403);
+});
