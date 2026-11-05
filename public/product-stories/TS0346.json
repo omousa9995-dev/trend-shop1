@@ -1,0 +1,71 @@
+{
+  "id": "TS0346",
+  "brand": "Beauty Tools",
+  "productName": "Waist Training Corset",
+  "primary": "/images/catalog/TS0346-1ee53c182087.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مشد الخصر القابل للضبط",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اختاري راحتكِ قبل كل شيء. مشد الخصر المصوّر خيار لتنسيق الملابس بحسب راحتكِ ومقاسكِ. تأكدي من المقاس المتاح مع المتجر قبل تثبيت الطلب، واختاري ملاءمة مريحة للحركة والتنفس؛ المشد لا يحرق الدهون ولا يغيّر قياسات الجسم بصورة دائمة.",
+    "benefits": [
+      "مشد لتنسيق الملابس",
+      "يتطلب تأكيد المقاس",
+      "قطعة واحدة بالسعر المعروض"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اختاري راحتكِ قبل كل شيء. مشد الخصر المصوّر خيار لتنسيق الملابس بحسب راحتكِ ومقاسكِ. تأكدي من المقاس المتاح مع المتجر قبل تثبيت الطلب، واختاري ملاءمة مريحة للحركة والتنفس؛ المشد لا يحرق الدهون ولا يغيّر قياسات الجسم بصورة دائمة.",
+    "fitText": "المقاس غير محدد في الصور؛ تواصلي مع المتجر لتأكيد المقاس المتاح قبل تثبيت الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "أكدي المقاس المتاح مع المتجر قبل الطلب. اختاري ملاءمة تسمح بالحركة والتنفس، وانزعيه فورًا عند الألم أو الضيق."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "أكدي المقاس المتاح مع المتجر قبل الطلب. اختاري ملاءمة تسمح بالحركة والتنفس، وانزعيه فورًا عند الألم أو الضيق."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "المقاس غير محدد في الصور؛ تواصلي مع المتجر لتأكيد المقاس المتاح قبل تثبيت الطلب."
+      }
+    ],
+    "productType": "shapewear"
+  },
+  "en": {
+    "name": "Beauty Tools · Waist Training Corset",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Beauty Tools · Waist Training Corset. Choose your own comfort first. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Choose your own comfort first.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Beauty Tools · Waist Training Corset. Choose your own comfort first. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Choose the correct size and adjust comfortably without restricting breathing or movement."
+      }
+    ],
+    "notes": "Not a medical product or a weight-loss treatment. Stop wearing it if it causes discomfort.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Choose the correct size and adjust comfortably without restricting breathing or movement."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "shapewear"
+  },
+  "contentVersion": "5.0.0"
+}

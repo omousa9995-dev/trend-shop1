@@ -1,0 +1,71 @@
+{
+  "id": "TS0261",
+  "brand": "Benefit",
+  "productName": "Benetint Rose Tinted Lip Cheek Stain",
+  "primary": "/images/catalog/TS0261-4bece12dae48.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بنيتنت صبغة الشفاه والخدود من بنفت",
+    "tagline": "ابتسامتكِ، ولمستكِ المفضلة.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. بنيتنت من بنفت صبغة سائلة للشفاه والخدود بحجم 12.5 مل. توزع نقاط قليلة وتدمج بسرعة للحصول على لمسة لون، ثم تزاد بالتدريج حسب الإطلالة؛ ضعيها على بشرة سليمة وشفاه مرتاحة.",
+    "benefits": [
+      "للشفاه والخدود",
+      "لون Rose بحسب العبوة",
+      "حجم 12.5 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. بنيتنت من بنفت صبغة سائلة للشفاه والخدود بحجم 12.5 مل. توزع نقاط قليلة وتدمج بسرعة للحصول على لمسة لون، ثم تزاد بالتدريج حسب الإطلالة؛ ضعيها على بشرة سليمة وشفاه مرتاحة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي نقاطًا قليلة على الخدود أو الشفاه السليمة وادمجي مباشرة. زيدي اللون تدريجيًا وأغلقي العبوة بعد الاستخدام."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي نقاطًا قليلة على الخدود أو الشفاه السليمة وادمجي مباشرة. زيدي اللون تدريجيًا وأغلقي العبوة بعد الاستخدام."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "Benefit · Benetint Rose Tinted Lip Cheek Stain",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. Benefit · Benetint Rose Tinted Lip Cheek Stain. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. Benefit · Benetint Rose Tinted Lip Cheek Stain. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

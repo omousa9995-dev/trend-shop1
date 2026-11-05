@@ -1,0 +1,71 @@
+{
+  "id": "TS0316",
+  "brand": "Lady Speed Stick",
+  "productName": "Deodorant Stick Collection",
+  "primary": "/images/catalog/TS0316-e477f689376b.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مزيل عرق ستيك من ليدي سبيد ستيك — اختاري العبوة",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ليدي سبيد ستيك خيار عملي لإكمال روتين العناية قبل الخروج. اختاري النسخة التي تفضلينها من خيارات العبوات المصوّرة، وضعي كمية خفيفة على بشرة نظيفة وجافة؛ السعر يخص قطعة واحدة من اختياركِ.",
+    "benefits": [
+      "عبوة ستيك عملية",
+      "اختيار النسخة قبل الطلب",
+      "قطعة واحدة بالسعر المعروض"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ليدي سبيد ستيك خيار عملي لإكمال روتين العناية قبل الخروج. اختاري النسخة التي تفضلينها من خيارات العبوات المصوّرة، وضعي كمية خفيفة على بشرة نظيفة وجافة؛ السعر يخص قطعة واحدة من اختياركِ.",
+    "fitText": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي طبقة خفيفة على بشرة نظيفة وجافة، واتركيها تجف قبل ارتداء الملابس. لا تستخدميها على بشرة متهيجة أو مجروحة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي طبقة خفيفة على بشرة نظيفة وجافة، واتركيها تجف قبل ارتداء الملابس. لا تستخدميها على بشرة متهيجة أو مجروحة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح."
+      }
+    ],
+    "productType": "deodorant"
+  },
+  "en": {
+    "name": "Lady Speed Stick · Deodorant Stick Collection",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Lady Speed Stick · Deodorant Stick Collection. An easy little step before you head out. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "An easy little step before you head out.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Lady Speed Stick · Deodorant Stick Collection. An easy little step before you head out. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to clean, dry underarms as directed and allow to dry before dressing."
+      }
+    ],
+    "notes": "Do not use on broken or freshly irritated skin. Stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to clean, dry underarms as directed and allow to dry before dressing."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "deodorant"
+  },
+  "contentVersion": "5.0.0"
+}

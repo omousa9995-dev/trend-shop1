@@ -1,0 +1,71 @@
+{
+  "id": "TS0349",
+  "brand": "La Roche-Posay",
+  "productName": "Pure Vitamin C10 Serum",
+  "primary": "/images/catalog/TS0349-6625abab3ee2.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم بيور فيتامين C10 من لاروش بوزيه",
+    "tagline": "خطوة تحبّين العودة إليها.",
+    "description": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم بيور فيتامين C10 من لاروش بوزيه بعبوة 30 مل خطوة عناية قبل المرطب وواقي الشمس. وزعي كمية صغيرة على البشرة النظيفة، وامنحي يومكِ بداية مرتبة؛ تحفظ العبوة بعيدًا عن الحرارة والضوء.",
+    "benefits": [
+      "سيروم من مجموعة Pure C10",
+      "يُستخدم قبل المرطب",
+      "عبوة 30 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم بيور فيتامين C10 من لاروش بوزيه بعبوة 30 مل خطوة عناية قبل المرطب وواقي الشمس. وزعي كمية صغيرة على البشرة النظيفة، وامنحي يومكِ بداية مرتبة؛ تحفظ العبوة بعيدًا عن الحرارة والضوء.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية صغيرة على البشرة النظيفة قبل المرطب، بعيدًا عن العينين. اتبعي وتيرة الاستخدام المكتوبة على العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية صغيرة على البشرة النظيفة قبل المرطب، بعيدًا عن العينين. اتبعي وتيرة الاستخدام المكتوبة على العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "serum"
+  },
+  "en": {
+    "name": "La Roche-Posay · Pure Vitamin C10 Serum",
+    "tagline": "A thoughtful little addition to your ritual.",
+    "description": "Keep your ritual simple and choose a step that suits what you need. La Roche-Posay · Pure Vitamin C10 Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "benefits": [
+      "A thoughtful step in a routine that is yours.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Keep your ritual simple and choose a step that suits what you need. La Roche-Posay · Pure Vitamin C10 Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "fitText": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      }
+    ],
+    "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice."
+      }
+    ],
+    "productType": "serum"
+  },
+  "contentVersion": "5.0.0"
+}

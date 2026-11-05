@@ -1,0 +1,71 @@
+{
+  "id": "TS0268",
+  "brand": "Benefit",
+  "productName": "Brow Contour Pro 4-in-1 Pencil",
+  "primary": "/images/catalog/TS0268-1af592d2d902.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "قلم الحواجب برو كونتور برو 4 في 1 من بنفت",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. برو كونتور برو 4 في 1 من بنفت قلم لترتيب وتحديد مظهر الحواجب بحسب العبوة. اختاري الطرف المناسب وارسمي بخفة ثم ادمجي لتحصلي على مظهر متوازن؛ درجة القلم تحتاج تأكيدًا مع المتجر.",
+    "benefits": [
+      "قلم حواجب 4 في 1",
+      "لرسم وتحديد الحاجبين",
+      "تطبيق بخطوط خفيفة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. برو كونتور برو 4 في 1 من بنفت قلم لترتيب وتحديد مظهر الحواجب بحسب العبوة. اختاري الطرف المناسب وارسمي بخفة ثم ادمجي لتحصلي على مظهر متوازن؛ درجة القلم تحتاج تأكيدًا مع المتجر.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اختاري الطرف أو الدرجة المناسبة وارسمي خطوطًا خفيفة باتجاه الشعر، ثم ادمجي للمظهر المطلوب."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اختاري الطرف أو الدرجة المناسبة وارسمي خطوطًا خفيفة باتجاه الشعر، ثم ادمجي للمظهر المطلوب."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "brows"
+  },
+  "en": {
+    "name": "Benefit · Brow Contour Pro 4-in-1 Pencil",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Benefit · Brow Contour Pro 4-in-1 Pencil. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "The little brow detail that finishes your look.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Benefit · Brow Contour Pro 4-in-1 Pencil. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a light hand to shape or define the brows, following their natural direction."
+      }
+    ],
+    "notes": "Use only as directed, avoiding contact with the eye itself.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a light hand to shape or define the brows, following their natural direction."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "brows"
+  },
+  "contentVersion": "5.0.0"
+}

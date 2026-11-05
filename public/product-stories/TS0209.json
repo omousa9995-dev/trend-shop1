@@ -1,0 +1,71 @@
+{
+  "id": "TS0209",
+  "brand": "Eucerin",
+  "productName": "Advanced Hydration SPF50 Sunscreen",
+  "primary": "/images/catalog/TS0209-40ed506479ce.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "واقي أدفانسد هايدريشن من يوسيرين SPF50",
+    "tagline": "اختيار صغير يرافق يومكِ.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. واقي أدفانسد هايدريشن من يوسيرين SPF50 بعبوة 150 مل. يجمع خطوة الحماية الشمسية مع عناية ترطيب للبشرة، ويمكن إدخاله في روتين الخروج اليومي مع تطبيق كمية كافية وتجديدها.",
+    "benefits": [
+      "عامل SPF50",
+      "عبوة 150 مل",
+      "خطوة حماية مع ترطيب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. واقي أدفانسد هايدريشن من يوسيرين SPF50 بعبوة 150 مل. يجمع خطوة الحماية الشمسية مع عناية ترطيب للبشرة، ويمكن إدخاله في روتين الخروج اليومي مع تطبيق كمية كافية وتجديدها.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "Eucerin · Advanced Hydration SPF50 Sunscreen",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. Eucerin · Advanced Hydration SPF50 Sunscreen. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. Eucerin · Advanced Hydration SPF50 Sunscreen. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0049",
+  "brand": "NOTE",
+  "productName": "NOTE MOISTURIZING LASH & BROW OIL",
+  "primary": "/images/catalog/TS0049-2ad0d1d587ce.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت الرموش والحواجب المرطب من نوت",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. خصصي للرموش والحواجب خطوة عناية خفيفة تساعد على تلطيف مظهر الشعيرات وترتيبها. يليق بروتين المساء بعد إزالة المكياج، لمن تحب الاهتمام بنعومة الشعيرات ومظهرها دون توقع نتائج علاجية لكثافتها.",
+    "benefits": [
+      "العناية بمظهر الشعيرات",
+      "تلطيف إحساس الجفاف",
+      "خطوة سهلة بعد إزالة المكياج"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. خصصي للرموش والحواجب خطوة عناية خفيفة تساعد على تلطيف مظهر الشعيرات وترتيبها. يليق بروتين المساء بعد إزالة المكياج، لمن تحب الاهتمام بنعومة الشعيرات ومظهرها دون توقع نتائج علاجية لكثافتها.",
+    "fitText": "تجنبي دخول الزيت إلى العين ولا تشاركي أداة التطبيق.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي الأداة بكمية صغيرة في المناطق المسموح بها على العبوة مع الحفاظ على نظافتها."
+      }
+    ],
+    "notes": "تجنبي دخول الزيت إلى العين ولا تشاركي أداة التطبيق.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي الأداة بكمية صغيرة في المناطق المسموح بها على العبوة مع الحفاظ على نظافتها."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تجنبي دخول الزيت إلى العين ولا تشاركي أداة التطبيق."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "en": {
+    "name": "NOTE MOISTURIZING LASH & BROW OIL",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. NOTE MOISTURIZING LASH & BROW OIL. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small, careful moment for your eyes.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. NOTE MOISTURIZING LASH & BROW OIL. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      }
+    ],
+    "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "contentVersion": "5.0.0"
+}

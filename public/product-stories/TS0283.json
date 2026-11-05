@@ -1,0 +1,71 @@
+{
+  "id": "TS0283",
+  "brand": "L'Oreal Paris",
+  "productName": "Volume Million Lashes Panorama All Night Black",
+  "primary": "/images/catalog/TS0283-120eb849a3d5.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا بانوراما أول نايت بلاك من لوريال — العبوة السوداء",
+    "tagline": "لمسة للرموش، وابتسامة قبل الخروج.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. ماسكارا بانوراما أول نايت بلاك من لوريال بالعبوة السوداء. نسخة مستقلة عن بانوراما الذهبية لإبراز مظهر الرموش بلون أسود، مع توزيع الفرشاة من الجذور للأطراف وزيادة الطبقات بالتدريج.",
+    "benefits": [
+      "نسخة All Night Black",
+      "عبوة سوداء",
+      "تعريف مظهر الرموش"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. ماسكارا بانوراما أول نايت بلاك من لوريال بالعبوة السوداء. نسخة مستقلة عن بانوراما الذهبية لإبراز مظهر الرموش بلون أسود، مع توزيع الفرشاة من الجذور للأطراف وزيادة الطبقات بالتدريج.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "L'Oreal Paris · Volume Million Lashes Panorama All Night Black",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. L'Oreal Paris · Volume Million Lashes Panorama All Night Black. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. L'Oreal Paris · Volume Million Lashes Panorama All Night Black. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "fitText": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

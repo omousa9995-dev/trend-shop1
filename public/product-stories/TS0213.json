@@ -1,0 +1,71 @@
+{
+  "id": "TS0213",
+  "brand": "Benefit",
+  "productName": "The POREfessional PRO Balm",
+  "primary": "/images/catalog/TS0213-1c4793a4ca45.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "برايمر ذا بورفيشنال من بنفت",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. برايمر ذا بورفيشنال من بنفت بعبوة 44 مل لتهيئة البشرة قبل كريم الأساس. توزع كمية قليلة على المناطق المطلوبة لتنعيم مظهر سطح البشرة، ثم يضاف الفاونديشن بطبقة خفيفة.",
+    "benefits": [
+      "خطوة قبل كريم الأساس",
+      "تنعيم مظهر القاعدة",
+      "حجم 44 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. برايمر ذا بورفيشنال من بنفت بعبوة 44 مل لتهيئة البشرة قبل كريم الأساس. توزع كمية قليلة على المناطق المطلوبة لتنعيم مظهر سطح البشرة، ثم يضاف الفاونديشن بطبقة خفيفة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي طبقة رقيقة على المناطق المطلوبة بعد المرطب، واتركيها تستقر قبل كريم الأساس."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي طبقة رقيقة على المناطق المطلوبة بعد المرطب، واتركيها تستقر قبل كريم الأساس."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "primer"
+  },
+  "en": {
+    "name": "Benefit · The POREfessional PRO Balm",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Benefit · The POREfessional PRO Balm. A thoughtful start to your makeup routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A thoughtful start to your makeup routine.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Benefit · The POREfessional PRO Balm. A thoughtful start to your makeup routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Patch test first, especially if your skin is sensitive. Avoid the eye area.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a thin layer after skincare. Allow it to settle before applying foundation."
+      }
+    ],
+    "notes": "Patch test first, especially if your skin is sensitive. Avoid the eye area.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a thin layer after skincare. Allow it to settle before applying foundation."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first, especially if your skin is sensitive. Avoid the eye area."
+      }
+    ],
+    "productType": "primer"
+  },
+  "contentVersion": "5.0.0"
+}

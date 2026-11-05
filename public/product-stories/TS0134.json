@@ -1,0 +1,71 @@
+{
+  "id": "TS0134",
+  "brand": "LANBENA",
+  "productName": "LANBENA Bamboo Charcoal Blackhead Mask",
+  "primary": "/images/catalog/TS0134-8361f9f4e8ec.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك الفحم للرؤوس السوداء من لانبينا",
+    "tagline": "خذي وقتكِ، هذه لحظتكِ.",
+    "description": "خصصي لنفسكِ استراحة صغيرة، واتبعي خطوات العناية على مهل. استراحة جمال على إيقاعكِ. امنحي المناطق المعرضة للرواسب السطحية عناية مخصصة مع ماسك لانبينا. تختلف طريقة التطبيق والإزالة بحسب النسخة، لذلك يرافق الاهتمام بمظهر المسام تطبيق لطيف ودقيق دون شد الجلد أو تكرار مفرط.",
+    "benefits": [
+      "عناية موضعية بالشوائب",
+      "التركيز على مظهر المسام",
+      "خطوة تنظيف إضافية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "خصصي لنفسكِ استراحة صغيرة، واتبعي خطوات العناية على مهل. استراحة جمال على إيقاعكِ. امنحي المناطق المعرضة للرواسب السطحية عناية مخصصة مع ماسك لانبينا. تختلف طريقة التطبيق والإزالة بحسب النسخة، لذلك يرافق الاهتمام بمظهر المسام تطبيق لطيف ودقيق دون شد الجلد أو تكرار مفرط.",
+    "fitText": "لا يستخدم على جلد مقشر أو متهيج، ولا ينزع بعنف.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي طريقة التطبيق ومدة الانتظار وأداة الإزالة المحددة على العبوة."
+      }
+    ],
+    "notes": "لا يستخدم على جلد مقشر أو متهيج، ولا ينزع بعنف.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي طريقة التطبيق ومدة الانتظار وأداة الإزالة المحددة على العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يستخدم على جلد مقشر أو متهيج، ولا ينزع بعنف."
+      }
+    ],
+    "productType": "face-mask"
+  },
+  "en": {
+    "name": "LANBENA Bamboo Charcoal Blackhead Mask",
+    "tagline": "A little pause. A moment for you.",
+    "description": "Set aside a little pause and take your care steps at your own pace. LANBENA Bamboo Charcoal Blackhead Mask. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little beauty pause, at your own pace.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Set aside a little pause and take your care steps at your own pace. LANBENA Bamboo Charcoal Blackhead Mask. A little beauty pause, at your own pace. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask."
+      }
+    ],
+    "notes": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to clean skin for the time specified on the exact pack. Remove, rinse or leave on only as directed for that mask."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid the eyes and broken skin. Patch test first; do not exceed the labelled contact time."
+      }
+    ],
+    "productType": "face-mask"
+  },
+  "contentVersion": "5.0.0"
+}

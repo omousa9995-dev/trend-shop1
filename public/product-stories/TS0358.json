@@ -1,0 +1,71 @@
+{
+  "id": "TS0358",
+  "brand": "حسب العبوة",
+  "productName": "Cacumen Biotae Shampoo Brick",
+  "primary": "/images/catalog/TS0358-f7035e82f3e5.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "شامبو صلب بأوراق التويا — العبوة المثلثة",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية منتعشة لوقت العناية بخصلاتكِ. صابونة شامبو نيتشر Cacumen Biotae بالشكل المثلث تمنح روتين غسل الشعر خيارًا صلبًا عمليًا. رغّميها بالماء ودلكي فروة الرأس برفق ثم اشطفي جيدًا؛ اختيار للتنظيف، دون وعد بوقف التساقط أو إنبات الشعر.",
+    "benefits": [
+      "شامبو صلب بالشكل المثلث",
+      "خطوة تنظيف تُشطف",
+      "بديل عملي للشامبو السائل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية منتعشة لوقت العناية بخصلاتكِ. صابونة شامبو نيتشر Cacumen Biotae بالشكل المثلث تمنح روتين غسل الشعر خيارًا صلبًا عمليًا. رغّميها بالماء ودلكي فروة الرأس برفق ثم اشطفي جيدًا؛ اختيار للتنظيف، دون وعد بوقف التساقط أو إنبات الشعر.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "رغّمي الصابونة بالماء، ودلكي الرغوة بلطف على فروة الرأس المبللة ثم اشطفي جيدًا واتركي الصابونة تجف."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "رغّمي الصابونة بالماء، ودلكي الرغوة بلطف على فروة الرأس المبللة ثم اشطفي جيدًا واتركي الصابونة تجف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "shampoo"
+  },
+  "en": {
+    "name": "Cacumen Biotae Shampoo Brick",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Cacumen Biotae Shampoo Brick. A fresh beginning for your hair ritual. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A fresh beginning for your hair ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Cacumen Biotae Shampoo Brick. A fresh beginning for your hair ritual. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Avoid the eyes and stop use if scalp irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to wet hair, massage the scalp gently and rinse thoroughly. Follow the packaging directions."
+      }
+    ],
+    "notes": "Avoid the eyes and stop use if scalp irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to wet hair, massage the scalp gently and rinse thoroughly. Follow the packaging directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid the eyes and stop use if scalp irritation occurs."
+      }
+    ],
+    "productType": "shampoo"
+  },
+  "contentVersion": "5.0.0"
+}

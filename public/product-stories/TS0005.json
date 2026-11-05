@@ -1,0 +1,71 @@
+{
+  "id": "TS0005",
+  "brand": "bobo",
+  "productName": "Gel Color By bobo",
+  "primary": "/images/catalog/TS0005-afa322d2d52c.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "جل تلوين الأظافر من بوبو",
+    "tagline": "إطلالة أظافر لامعة على طريقتك.",
+    "description": "لون صغير يغيّر مزاج يومكِ. لمن تحب تنسيق مانيكيرها مع تفاصيل إطلالتها، يتيح جل بوبو إضافة لون مميز للأظافر. تتوقف طريقة التطبيق والتجفيف على النسخة الفعلية، لذلك نحرص على تحديد نظام المنتج والدرجة قبل اعتماده للبيع.",
+    "benefits": [
+      "تنسيق لون الأظافر",
+      "لمسة مرتبة لليدين",
+      "درجات تناسب إطلالات مختلفة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لون صغير يغيّر مزاج يومكِ. لمن تحب تنسيق مانيكيرها مع تفاصيل إطلالتها، يتيح جل بوبو إضافة لون مميز للأظافر. تتوقف طريقة التطبيق والتجفيف على النسخة الفعلية، لذلك نحرص على تحديد نظام المنتج والدرجة قبل اعتماده للبيع.",
+    "fitText": "لا تعاملي طلاء الجل كطلاء عادي قبل التحقق من تعليمات العبوة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي نظام التحضير والتجفيف المدون على العبوة، بما فيه جهاز التجفيف إذا كانت النسخة تتطلبه."
+      }
+    ],
+    "notes": "لا تعاملي طلاء الجل كطلاء عادي قبل التحقق من تعليمات العبوة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي نظام التحضير والتجفيف المدون على العبوة، بما فيه جهاز التجفيف إذا كانت النسخة تتطلبه."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا تعاملي طلاء الجل كطلاء عادي قبل التحقق من تعليمات العبوة."
+      }
+    ],
+    "productType": "nails"
+  },
+  "en": {
+    "name": "bobo · Gel Color",
+    "tagline": "A little colour for your everyday mood.",
+    "description": "bobo · Gel Color. A little colour for your everyday mood. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little colour for your everyday mood.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "bobo · Gel Color. A little colour for your everyday mood. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact product’s instructions on clean, dry nails. Allow each layer to dry before the next."
+      }
+    ],
+    "notes": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact product’s instructions on clean, dry nails. Allow each layer to dry before the next."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin."
+      }
+    ],
+    "productType": "nails"
+  },
+  "contentVersion": "5.0.0"
+}

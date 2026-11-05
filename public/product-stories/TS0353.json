@@ -1,0 +1,71 @@
+{
+  "id": "TS0353",
+  "brand": "Maybelline",
+  "productName": "Mascara Fuchsia Photographed Edition",
+  "primary": "/images/catalog/TS0353-ac2caf9b08a9.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا ميبيلين — العبوة الوردية المصوّرة",
+    "tagline": "نظرتكِ الجميلة، على طريقتكِ.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. ماسكارا ميبيلين بالعبوة الوردية الفاقعة تضيف إلى مكياجكِ خطوة لإبراز الرموش وتحديدها. وزعيها بطبقات خفيفة من الجذور إلى الأطراف، وامنحي الزوايا الخارجية اهتمامًا إضافيًا لتكملي نظرتكِ باللمسة التي تحبينها.",
+    "benefits": [
+      "ماسكارا لتحديد الرموش",
+      "تطبيق متدرج بالطبقات",
+      "العبوة الوردية المصوّرة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. ماسكارا ميبيلين بالعبوة الوردية الفاقعة تضيف إلى مكياجكِ خطوة لإبراز الرموش وتحديدها. وزعيها بطبقات خفيفة من الجذور إلى الأطراف، وامنحي الزوايا الخارجية اهتمامًا إضافيًا لتكملي نظرتكِ باللمسة التي تحبينها.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. أضيفي طبقة عند الحاجة، وأزيلي المكياج بلطف مساءً."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. أضيفي طبقة عند الحاجة، وأزيلي المكياج بلطف مساءً."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "Maybelline · Mascara Fuchsia Photographed Edition",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. Maybelline · Mascara Fuchsia Photographed Edition. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. Maybelline · Mascara Fuchsia Photographed Edition. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "fitText": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0017",
+  "brand": "DERMOKIL",
+  "productName": "Clay and Hemp Oil Exfoliating Foot Mask By DERMOKIL",
+  "primary": "/images/catalog/TS0017-3de9d4cb196d.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك تقشير القدمين بالطين من ديرموكيل",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. حين تبدو بشرة القدمين خشنة رغم الترطيب، قد تحتاج إلى خطوة عناية مخصصة. ماسك الطين للقدمين يركز على تحسين ملمس الجلد ضمن روتين تقشير مدروس، يتبعه الترطيب للحفاظ على الراحة.",
+    "benefits": [
+      "عناية بجلد القدمين",
+      "تحسين مظهر الملمس",
+      "تكملة لروتين الترطيب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. حين تبدو بشرة القدمين خشنة رغم الترطيب، قد تحتاج إلى خطوة عناية مخصصة. ماسك الطين للقدمين يركز على تحسين ملمس الجلد ضمن روتين تقشير مدروس، يتبعه الترطيب للحفاظ على الراحة.",
+    "fitText": "تجنبي استخدامه على الجروح أو الجلد المتهيج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "يستخدم على قدمين نظيفتين وفق طريقة ومدة العبوة دون إطالة."
+      }
+    ],
+    "notes": "تجنبي استخدامه على الجروح أو الجلد المتهيج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "يستخدم على قدمين نظيفتين وفق طريقة ومدة العبوة دون إطالة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تجنبي استخدامه على الجروح أو الجلد المتهيج."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "en": {
+    "name": "DERMOKIL · Clay and Hemp Oil Exfoliating Foot Mask",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. DERMOKIL · Clay and Hemp Oil Exfoliating Foot Mask. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small pause for your feet after a long day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. DERMOKIL · Clay and Hemp Oil Exfoliating Foot Mask. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      }
+    ],
+    "notes": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "contentVersion": "5.0.0"
+}

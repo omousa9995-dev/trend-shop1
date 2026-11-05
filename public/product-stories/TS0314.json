@@ -1,0 +1,71 @@
+{
+  "id": "TS0314",
+  "brand": "Flormar",
+  "productName": "Artliner Eyeliner Pen",
+  "primary": "/images/catalog/TS0314-0856ee5e710a.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "قلم آرتلاينر لتحديد العيون من فلورمار",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ارسمي لمستكِ الخاصة مع قلم آرتلاينر من فلورمار. ابدئي بمحاذاة الرموش بخط رفيع، ثم زيدي السمك أو أضيفي امتدادًا ناعمًا عند الزاوية الخارجية؛ تفصيل بسيط يمنح مكياج عينيكِ مظهرًا مرتبًا.",
+    "benefits": [
+      "قلم لتحديد العين",
+      "تطبيق بمحاذاة الرموش",
+      "تحكم بشكل وسماكة الخط"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ارسمي لمستكِ الخاصة مع قلم آرتلاينر من فلورمار. ابدئي بمحاذاة الرموش بخط رفيع، ثم زيدي السمك أو أضيفي امتدادًا ناعمًا عند الزاوية الخارجية؛ تفصيل بسيط يمنح مكياج عينيكِ مظهرًا مرتبًا.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ارسمي خطًا رفيعًا بمحاذاة الرموش على الجلد الخارجي، وزيدي السمك بالتدريج. تجنبي ملامسة داخل العين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ارسمي خطًا رفيعًا بمحاذاة الرموش على الجلد الخارجي، وزيدي السمك بالتدريج. تجنبي ملامسة داخل العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "eyeliner"
+  },
+  "en": {
+    "name": "Flormar · Artliner Eyeliner Pen",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Flormar · Artliner Eyeliner Pen. Define your moment, softly or boldly. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Define your moment, softly or boldly.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Flormar · Artliner Eyeliner Pen. Define your moment, softly or boldly. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Use only in the areas indicated on the packaging. Do not share eye products.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Draw a light line along the lash line, building the shape in short strokes."
+      }
+    ],
+    "notes": "Use only in the areas indicated on the packaging. Do not share eye products.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Draw a light line along the lash line, building the shape in short strokes."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Use only in the areas indicated on the packaging. Do not share eye products."
+      }
+    ],
+    "productType": "eyeliner"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0263",
+  "brand": "The Ordinary",
+  "productName": "Mineral UV Filters SPF30 with Antioxidants",
+  "primary": "/images/catalog/TS0263-e52c41cef92e.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "واقي الشمس المعدني SPF30 من ذا أورديناري",
+    "tagline": "خذي عنايتكِ معكِ، أينما أخذَكِ النهار.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. واقي الشمس مينيرال يو في فلترز SPF30 مع مضادات الأكسدة من ذا أورديناري بحجم 50 مل. النسخة المصوّرة تحمل SPF30؛ توزع بكمية كافية وتجدد خلال اليوم، وقد تترك أثرًا أبيض بحسب البشرة.",
+    "benefits": [
+      "واقي معدني SPF30",
+      "النسخة المصوّرة 50 مل",
+      "خطوة حماية صباحية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. واقي الشمس مينيرال يو في فلترز SPF30 مع مضادات الأكسدة من ذا أورديناري بحجم 50 مل. النسخة المصوّرة تحمل SPF30؛ توزع بكمية كافية وتجدد خلال اليوم، وقد تترك أثرًا أبيض بحسب البشرة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "The Ordinary · Mineral UV Filters SPF30 with Antioxidants",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. The Ordinary · Mineral UV Filters SPF30 with Antioxidants. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. The Ordinary · Mineral UV Filters SPF30 with Antioxidants. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

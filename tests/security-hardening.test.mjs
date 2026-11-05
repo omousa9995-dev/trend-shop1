@@ -8,7 +8,7 @@ const file=name=>fs.readFileSync(new URL(name,base),'utf8');
 const fakeDB=()=>{
  const sql=new DatabaseSync(':memory:');sql.exec(file('db/schema.sql'));
  sql.prepare(`INSERT INTO products (id,brand,name,category,reference_price_fils,price_fils,discount_percent,approved,active,stock) VALUES ('TS1001','ACME','Approved','البشرة',10000,8000,20,1,1,5),('TS1002','ACME','Draft','البشرة',10000,8000,20,0,1,0),('TS1003','ACME','Archived','البشرة',10000,8000,20,1,0,5)`).run();
- return {prepare(query){let args=[];return {bind(...params){args=params;return this},async all(){return {results:sql.prepare(query).all(...args)}}}}};
+ return {prepare(query){let args=[];return {bind(...params){args=params;return this},async first(){return sql.prepare(query).get(...args)||null},async all(){return {results:sql.prepare(query).all(...args)}}}}};
 };
 test('Live catalog never exposes unapproved or archived products',async()=>{
  const DB=fakeDB(),url='https://trend.test/api/catalog';

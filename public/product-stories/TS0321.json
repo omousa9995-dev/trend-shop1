@@ -1,0 +1,71 @@
+{
+  "id": "TS0321",
+  "brand": "Ever Rosa",
+  "productName": "Hot Long Body Massage Cream",
+  "primary": "/images/catalog/TS0321-1619ca952d4a.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم هوت لونغ لمساج الجسم من إيفر روزا",
+    "tagline": "اهتمام يليق بلحظاتكِ الهادئة.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم هوت لونغ من إيفر روزا يرافق لحظات تدليك الجسم والعناية بملمس البشرة. ابدئي بكمية قليلة وتحققي من ملاءمته لكِ؛ المنتج التجميلي لا يضمن خسارة الوزن أو حرق الدهون أو تغيير قياسات الجسم.",
+    "benefits": [
+      "كريم لتدليك الجسم",
+      "كمية صغيرة قابلة للتوزيع",
+      "خطوة عناية بعد يومكِ"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم هوت لونغ من إيفر روزا يرافق لحظات تدليك الجسم والعناية بملمس البشرة. ابدئي بكمية قليلة وتحققي من ملاءمته لكِ؛ المنتج التجميلي لا يضمن خسارة الوزن أو حرق الدهون أو تغيير قياسات الجسم.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. اختبري كمية صغيرة أولًا؛ لا تضعيه مع مصدر حرارة أو تغطية محكمة، ولا على المناطق الحساسة. توقفي عند الحرق أو الاحمرار.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. اختبري كمية صغيرة أولًا؛ لا تضعيه مع مصدر حرارة أو تغطية محكمة، ولا على المناطق الحساسة. توقفي عند الحرق أو الاحمرار.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. اختبري كمية صغيرة أولًا؛ لا تضعيه مع مصدر حرارة أو تغطية محكمة، ولا على المناطق الحساسة. توقفي عند الحرق أو الاحمرار."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "Ever Rosa · Hot Long Body Massage Cream",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. Ever Rosa · Hot Long Body Massage Cream. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. Ever Rosa · Hot Long Body Massage Cream. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them. Warming massage products do not cause weight loss. Do not use with additional heat.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them. Warming massage products do not cause weight loss. Do not use with additional heat.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them. Warming massage products do not cause weight loss. Do not use with additional heat."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

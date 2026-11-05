@@ -1,0 +1,71 @@
+{
+  "id": "TS0259",
+  "brand": "Romantic Matte",
+  "productName": "Wonder Stick Highlight Contour",
+  "primary": "/images/catalog/TS0259-fb5dc977112a.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ستيك وندر للهايلايتر والكونتور من رومانتيك مات",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. حدّدي ملامحكِ بلمستكِ الخاصة. ستيك وندر من رومانتيك مات للهايلايتر والكونتور بحسب العبوة ثنائية الطرف المصوّرة. استخدمي كمية صغيرة في مناطق التحديد والإضاءة وادمجيها جيدًا، مع تأكيد الدرجات المتاحة مع المتجر.",
+    "benefits": [
+      "ستيك ثنائي الطرف",
+      "للتحديد والإضاءة",
+      "دمج بكمية قليلة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. حدّدي ملامحكِ بلمستكِ الخاصة. ستيك وندر من رومانتيك مات للهايلايتر والكونتور بحسب العبوة ثنائية الطرف المصوّرة. استخدمي كمية صغيرة في مناطق التحديد والإضاءة وادمجيها جيدًا، مع تأكيد الدرجات المتاحة مع المتجر.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "حددي المناطق المطلوبة بكمية قليلة ثم ادمجي الحواف جيدًا بفرشاة أو إسفنجة نظيفة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "حددي المناطق المطلوبة بكمية قليلة ثم ادمجي الحواف جيدًا بفرشاة أو إسفنجة نظيفة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "contour"
+  },
+  "en": {
+    "name": "Romantic Matte · Wonder Stick Highlight Contour",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Romantic Matte · Wonder Stick Highlight Contour. Your features, with your own finishing touch. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Your features, with your own finishing touch.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Romantic Matte · Wonder Stick Highlight Contour. Your features, with your own finishing touch. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a little to the areas you want to define and blend the edges well with a suitable brush or sponge."
+      }
+    ],
+    "notes": "Choose the available shade with the store. Follow the product’s labelled areas of use.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a little to the areas you want to define and blend the edges well with a suitable brush or sponge."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "contour"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0230",
+  "brand": "PanOxyl",
+  "productName": "Acne Creamy Wash Benzoyl Peroxide 4%",
+  "primary": "/images/catalog/TS0230-19fb8e3df7a8.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "غسول بان أوكسيل الكريمي بنزويل بيروكسيد 4%",
+    "tagline": "خذي نفسًا، ودعي العناية تبدأ.",
+    "description": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. غسول بان أوكسيل الكريمي بتركيز بنزويل بيروكسيد 4% وحجم 170 غرامًا. منتج للحبوب له تعليمات استخدام خاصة؛ اتبعي ملصق العبوة بدقة، وابدئي بتدرج مع تجنب العينين والجلد المتشقق.",
+    "benefits": [
+      "بنزويل بيروكسيد 4%",
+      "غسول يُشطف",
+      "حجم 170 غرامًا"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. غسول بان أوكسيل الكريمي بتركيز بنزويل بيروكسيد 4% وحجم 170 غرامًا. منتج للحبوب له تعليمات استخدام خاصة؛ اتبعي ملصق العبوة بدقة، وابدئي بتدرج مع تجنب العينين والجلد المتشقق.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. قد يسبب جفافًا أو يبهت الأقمشة والشعر. لا يُترك على الجلد ككريم. عند التحسس أو استمرار الحبوب استشيري الصيدلي أو الطبيب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي ملصق بنزويل بيروكسيد 4% على العبوة بدقة من حيث المدة وعدد مرات الاستخدام. بللي المنطقة ودلكي بلطف ثم اشطفي جيدًا؛ ابدئي تدريجيًا إذا سمحت التعليمات."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. قد يسبب جفافًا أو يبهت الأقمشة والشعر. لا يُترك على الجلد ككريم. عند التحسس أو استمرار الحبوب استشيري الصيدلي أو الطبيب.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي ملصق بنزويل بيروكسيد 4% على العبوة بدقة من حيث المدة وعدد مرات الاستخدام. بللي المنطقة ودلكي بلطف ثم اشطفي جيدًا؛ ابدئي تدريجيًا إذا سمحت التعليمات."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. قد يسبب جفافًا أو يبهت الأقمشة والشعر. لا يُترك على الجلد ككريم. عند التحسس أو استمرار الحبوب استشيري الصيدلي أو الطبيب."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "en": {
+    "name": "PanOxyl · Acne Creamy Wash Benzoyl Peroxide 4%",
+    "tagline": "A gentle beginning to your own little ritual.",
+    "description": "Make a little room for a calm cleansing moment. PanOxyl · Acne Creamy Wash Benzoyl Peroxide 4% is a benzoyl peroxide acne wash. Check the strength on the exact pack and follow its Drug Facts directions; the 4% and 10% versions are different products.",
+    "benefits": [
+      "Clearly identified benzoyl peroxide strength.",
+      "Rinse-off format; follow your exact pack."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little room for a calm cleansing moment. PanOxyl · Acne Creamy Wash Benzoyl Peroxide 4% is a benzoyl peroxide acne wash. Check the strength on the exact pack and follow its Drug Facts directions; the 4% and 10% versions are different products.",
+    "fitText": "Avoid eyes, lips and mouth. Benzoyl peroxide can cause dryness or irritation and bleach hair or fabrics. Do not use if sensitive to it. Ask a health professional before use in pregnancy or breastfeeding; stop and seek advice for severe irritation.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the Drug Facts directions on your exact pack. Rinse thoroughly; do not leave this wash on as a serum."
+      }
+    ],
+    "notes": "Avoid eyes, lips and mouth. Benzoyl peroxide can cause dryness or irritation and bleach hair or fabrics. Do not use if sensitive to it. Ask a health professional before use in pregnancy or breastfeeding; stop and seek advice for severe irritation.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the Drug Facts directions on your exact pack. Rinse thoroughly; do not leave this wash on as a serum."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid eyes, lips and mouth. Benzoyl peroxide can cause dryness or irritation and bleach hair or fabrics. Do not use if sensitive to it. Ask a health professional before use in pregnancy or breastfeeding; stop and seek advice for severe irritation."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "contentVersion": "5.0.0"
+}

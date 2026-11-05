@@ -1,0 +1,71 @@
+{
+  "id": "TS0120",
+  "brand": "Mavala",
+  "productName": "Mavala Mascara Waterproof - Black",
+  "primary": "/images/catalog/TS0120-f859c20039db.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا مافالا المقاومة للماء بالأسود",
+    "tagline": "نظرتكِ الجميلة، على طريقتكِ.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. امنحي نظرة العين تحديدًا واضحًا مع ماسكارا مافالا السوداء المقاومة للماء. استخدمي الفرشاة لتغليف الرموش وتنسيقها من الجذور إلى الأطراف، وابني التأثير على مراحل حتى تصلي إلى المظهر الذي تحبينه.",
+    "benefits": [
+      "تحديد الرموش بالأسود",
+      "صيغة مقاومة للماء",
+      "بناء تأثير الإطلالة تدريجيًا"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. امنحي نظرة العين تحديدًا واضحًا مع ماسكارا مافالا السوداء المقاومة للماء. استخدمي الفرشاة لتغليف الرموش وتنسيقها من الجذور إلى الأطراف، وابني التأثير على مراحل حتى تصلي إلى المظهر الذي تحبينه.",
+    "fitText": "تزال بمزيل مخصص للمكياج المقاوم للماء دون فرك العين.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة بلطف من قاعدة الرموش إلى الأطراف واتركي الطبقة تستقر قبل زيادة الكمية."
+      }
+    ],
+    "notes": "تزال بمزيل مخصص للمكياج المقاوم للماء دون فرك العين.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة بلطف من قاعدة الرموش إلى الأطراف واتركي الطبقة تستقر قبل زيادة الكمية."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تزال بمزيل مخصص للمكياج المقاوم للماء دون فرك العين."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "Mavala Mascara Waterproof - Black",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. Mavala Mascara Waterproof - Black. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. Mavala Mascara Waterproof - Black. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "fitText": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

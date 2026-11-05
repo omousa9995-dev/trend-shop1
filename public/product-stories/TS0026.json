@@ -1,0 +1,71 @@
+{
+  "id": "TS0026",
+  "brand": "The Ordinary",
+  "productName": "سيروم الهيالورونيك أسيد The Ordinary Hyaluronic Acid 2%+B5",
+  "primary": "/images/catalog/TS0026-65cf674a2df1.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم هيالورونيك أسيد مع B5 من ذا أورديناري",
+    "tagline": "تفاصيل صغيرة، واهتمام يشبهكِ.",
+    "description": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. إذا بدت بشرتك مشدودة أو باهتة، يضيف هذا السيروم خطوة ترطيب خفيفة قبل الكريم. يساعد على تحسين الإحساس بالنعومة ومظهر الخطوط المرتبطة بالجفاف، ليصبح روتينك اليومي أكثر راحة وتوازنًا.",
+    "benefits": [
+      "إحساس أكثر ترطيبًا",
+      "تنعيم مظهر الملمس",
+      "تهيئة البشرة للمرطب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. إذا بدت بشرتك مشدودة أو باهتة، يضيف هذا السيروم خطوة ترطيب خفيفة قبل الكريم. يساعد على تحسين الإحساس بالنعومة ومظهر الخطوط المرتبطة بالجفاف، ليصبح روتينك اليومي أكثر راحة وتوازنًا.",
+    "fitText": "تجنبي محيط العين المباشر إذا كانت العبوة لا تخصصه لذلك.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي كمية قليلة بعد تنظيف البشرة، ثم أتبعيه بمرطب مناسب."
+      }
+    ],
+    "notes": "تجنبي محيط العين المباشر إذا كانت العبوة لا تخصصه لذلك.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي كمية قليلة بعد تنظيف البشرة، ثم أتبعيه بمرطب مناسب."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تجنبي محيط العين المباشر إذا كانت العبوة لا تخصصه لذلك."
+      }
+    ],
+    "productType": "serum"
+  },
+  "en": {
+    "name": "The Ordinary Hyaluronic Acid 2% + B5",
+    "tagline": "A thoughtful little addition to your ritual.",
+    "description": "Keep your ritual simple and choose a step that suits what you need. The Ordinary Hyaluronic Acid 2% + B5. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "benefits": [
+      "A thoughtful step in a routine that is yours.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Keep your ritual simple and choose a step that suits what you need. The Ordinary Hyaluronic Acid 2% + B5. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "fitText": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      }
+    ],
+    "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice."
+      }
+    ],
+    "productType": "serum"
+  },
+  "contentVersion": "5.0.0"
+}

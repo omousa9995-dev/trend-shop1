@@ -1,0 +1,71 @@
+{
+  "id": "TS0220",
+  "brand": "CeraVe",
+  "productName": "Skin Renewing Retinol Serum",
+  "primary": "/images/catalog/TS0220-52e6a98d2957.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم سكن رينيوينغ ريتينول من سيرافي",
+    "tagline": "تفاصيل صغيرة، واهتمام يشبهكِ.",
+    "description": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم سكن رينيوينغ ريتينول من سيرافي بحجم 30 مل للعناية المسائية بمظهر البشرة. ابدئي وفق تعليمات العبوة وبوتيرة تدريجية، ثم استخدمي مرطبًا مناسبًا وواقي شمس في الروتين الصباحي.",
+    "benefits": [
+      "سيروم ريتينول",
+      "عناية مسائية تدريجية",
+      "عبوة 30 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم سكن رينيوينغ ريتينول من سيرافي بحجم 30 مل للعناية المسائية بمظهر البشرة. ابدئي وفق تعليمات العبوة وبوتيرة تدريجية، ثم استخدمي مرطبًا مناسبًا وواقي شمس في الروتين الصباحي.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي ريتينول؛ يُتجنب أثناء الحمل والتخطيط له، واستشيري مختصًا عند الرضاعة أو استخدام علاجات بشرة. لا تبدئيه مع مقشرات أخرى في الجلسة نفسها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي مساءً على بشرة نظيفة وجافة حسب ملصق العبوة. ابدئي بوتيرة متباعدة وبكمية قليلة، ثم ضعي المرطب وواقي الشمس صباحًا."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي ريتينول؛ يُتجنب أثناء الحمل والتخطيط له، واستشيري مختصًا عند الرضاعة أو استخدام علاجات بشرة. لا تبدئيه مع مقشرات أخرى في الجلسة نفسها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي مساءً على بشرة نظيفة وجافة حسب ملصق العبوة. ابدئي بوتيرة متباعدة وبكمية قليلة، ثم ضعي المرطب وواقي الشمس صباحًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي ريتينول؛ يُتجنب أثناء الحمل والتخطيط له، واستشيري مختصًا عند الرضاعة أو استخدام علاجات بشرة. لا تبدئيه مع مقشرات أخرى في الجلسة نفسها."
+      }
+    ],
+    "productType": "serum"
+  },
+  "en": {
+    "name": "CeraVe · Skin Renewing Retinol Serum",
+    "tagline": "A thoughtful little addition to your ritual.",
+    "description": "Keep your ritual simple and choose a step that suits what you need. CeraVe · Skin Renewing Retinol Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "benefits": [
+      "A thoughtful step in a routine that is yours.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Keep your ritual simple and choose a step that suits what you need. CeraVe · Skin Renewing Retinol Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "fitText": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      }
+    ],
+    "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding."
+      }
+    ],
+    "productType": "serum"
+  },
+  "contentVersion": "5.0.0"
+}

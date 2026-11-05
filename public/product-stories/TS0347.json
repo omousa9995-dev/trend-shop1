@@ -1,0 +1,71 @@
+{
+  "id": "TS0347",
+  "brand": "SHEGLAM",
+  "productName": "Complexion Pro Long Lasting Breathable Matte Foundation",
+  "primary": "/images/catalog/TS0347-5bee95e54b0b.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم أساس كومبلكشن برو المات من شيغلام",
+    "tagline": "قاعدة لإطلالة تحبّين أن تكون لكِ.",
+    "description": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. من مكياج يومكِ الخفيف إلى استعدادكِ لمناسبة تحبّينها، ابدئي بكريم أساس كومبلكشن برو المات من شيغلام. اختاري مستوى بشرتكِ من الخيارات الأربعة، ثم ادمجي كمية صغيرة وزيديها حيث ترغبين. أكملي بكونسيلر أو مسكارا من المقترحات لتجمعي إطلالتكِ بسهولة.",
+    "benefits": [
+      "كريم أساس للوجه",
+      "تغطية تُبنى بالتدريج",
+      "4 مستويات للبشرة للاختيار"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. من مكياج يومكِ الخفيف إلى استعدادكِ لمناسبة تحبّينها، ابدئي بكريم أساس كومبلكشن برو المات من شيغلام. اختاري مستوى بشرتكِ من الخيارات الأربعة، ثم ادمجي كمية صغيرة وزيديها حيث ترغبين. أكملي بكونسيلر أو مسكارا من المقترحات لتجمعي إطلالتكِ بسهولة.",
+    "fitText": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة من وسط الوجه إلى الخارج. زيدي التغطية بالتدريج."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة من وسط الوجه إلى الخارج. زيدي التغطية بالتدريج."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "en": {
+    "name": "SHEGLAM · Complexion Pro Long Lasting Breathable Matte Foundation",
+    "tagline": "Your look begins with a choice that feels like you.",
+    "description": "Choose the base and tone that feel right, then take your time with your look. From an easy everyday look to getting ready for a special occasion, begin with SHEGLAM Complexion Pro Matte Foundation. Choose your preferred skin tone from the four approximate options, blend a little, then build where you want. Explore a concealer or mascara to finish your look.",
+    "benefits": [
+      "Your look begins with a base that feels like you.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose the base and tone that feel right, then take your time with your look. From an easy everyday look to getting ready for a special occasion, begin with SHEGLAM Complexion Pro Matte Foundation. Choose your preferred skin tone from the four approximate options, blend a little, then build where you want. Explore a concealer or mascara to finish your look.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      }
+    ],
+    "notes": "Choose your approximate skin tone preference before adding to your bag; confirm the actual manufacturer shade with the store.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "contentVersion": "5.0.0"
+}

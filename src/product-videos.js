@@ -27,7 +27,7 @@ export function sniffVideo(bytes) {
 export async function publicProductVideos(request,env,{json,error}) {
  const id=new URL(request.url).searchParams.get('product');
  if(!PRODUCT.test(id||'')||isRetiredProduct(id))return error('المنتج غير موجود',404);
- const rows=await env.DB.prepare('SELECT v.* FROM product_videos v JOIN products p ON p.id=v.product_id WHERE v.product_id=? AND v.active=1 AND p.active=1 AND p.approved=1 ORDER BY CASE WHEN v.product_id=? THEN v.sort_order ELSE 0 END,v.created_at,v.id LIMIT 3').bind(id,AQUA_FRESH_PILOT_ID).all();
+ const rows=await env.DB.prepare('SELECT v.* FROM product_videos v JOIN products p ON p.id=v.product_id WHERE v.product_id=? AND v.active=1 AND p.active=1 AND p.approved=1 ORDER BY v.sort_order,v.created_at,v.id LIMIT 3').bind(id).all();
  return json({videos:(rows.results||[]).map(videoRow)});
 }
 
@@ -35,14 +35,14 @@ export async function adminProductVideos(request,env,{json,error,sameOrigin,thro
  const url=new URL(request.url);
  if(request.method==='GET'){
   const product=url.searchParams.get('product');if(!PRODUCT.test(product||'')||isRetiredProduct(product))return error('اختاري منتجًا صالحًا');
-  const rows=await env.DB.prepare('SELECT * FROM product_videos WHERE product_id=? ORDER BY CASE WHEN product_id=? THEN sort_order ELSE 0 END,created_at,id LIMIT 100').bind(product,AQUA_FRESH_PILOT_ID).all();
+  const rows=await env.DB.prepare('SELECT * FROM product_videos WHERE product_id=? ORDER BY sort_order,created_at,id LIMIT 100').bind(product).all();
   return json({videos:(rows.results||[]).map(videoRow),maxBytes:MAX_VIDEO_BYTES,maxVideos:MAX_PRODUCT_VIDEOS});
  }
  if(!sameOrigin(request)||request.headers.get('x-trend-admin')!=='1')return error('غير مصرح',403);
  if(request.headers.get('content-type')?.startsWith('application/json')){
   let b;try{b=await content(request)}catch{return error('بيانات غير صالحة')}
   if(b.action==='reorder'){
-   if(!isAquaFreshPilot(b.productId)||!Array.isArray(b.ids)||!b.ids.length||b.ids.length>MAX_PRODUCT_VIDEOS||b.ids.some(id=>!UUID.test(id))||new Set(b.ids).size!==b.ids.length)return error('اختاري ترتيبًا صالحًا لفيديوهات أكوا فريش');
+   if((!isAquaFreshPilot(b.productId)||isRetiredProduct(b.productId))||!Array.isArray(b.ids)||!b.ids.length||b.ids.length>MAX_PRODUCT_VIDEOS||b.ids.some(id=>!UUID.test(id))||new Set(b.ids).size!==b.ids.length)return error('اختاري ترتيبًا صالحًا لفيديوهات المنتج');
    const rows=await env.DB.prepare('SELECT id FROM product_videos WHERE product_id=?').bind(b.productId).all();
    if(rows.results.length!==b.ids.length||rows.results.some(row=>!b.ids.includes(row.id)))return error('تغيرت القائمة؛ أعيدي فتح المنتج قبل ترتيب الفيديوهات',409);
    const cases=b.ids.map((_,index)=>'WHEN ? THEN '+index).join(' ');
@@ -52,7 +52,7 @@ export async function adminProductVideos(request,env,{json,error,sameOrigin,thro
    return json({ok:true});
   }
   if(b.action==='presentation'){
-   if(!UUID.test(b.id||'')||!isAquaFreshPilot(b.productId)||!validVideoPoster(b.poster)||typeof b.title!=='string'||typeof b.titleEn!=='string')return error('تحققي من عنوان الفيديو وصورة الغلاف');
+   if(!UUID.test(b.id||'')||(!isAquaFreshPilot(b.productId)||isRetiredProduct(b.productId))||!validVideoPoster(b.poster)||typeof b.title!=='string'||typeof b.titleEn!=='string')return error('تحققي من عنوان الفيديو وصورة الغلاف');
    const row=await env.DB.prepare('SELECT product_id FROM product_videos WHERE id=?').bind(b.id).first();
    if(!row||row.product_id!==b.productId)return error('الفيديو غير موجود لهذا المنتج',404);
    await env.DB.prepare("UPDATE product_videos SET title=?,title_en=?,poster_url=?,updated_at=datetime('now') WHERE id=? AND product_id=?").bind(text(b.title),text(b.titleEn),b.poster,b.id,b.productId).run();

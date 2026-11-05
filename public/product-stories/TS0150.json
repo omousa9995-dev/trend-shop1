@@ -1,0 +1,71 @@
+{
+  "id": "TS0150",
+  "brand": "e.l.f.",
+  "productName": "e.l.f. Power Grip Primer",
+  "primary": "/images/catalog/TS0150-b256cda24417.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "برايمر باور غريب من إلف",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي قبل الفاونديشن طبقة برايمر تساعد على تهيئة سطح البشرة. باور غريب معروف بقوامه الجل ذي الإحساس الملتصق قليلًا، ليكون خطوة مناسبة لمن تريد تنظيم طبقات المكياج والاهتمام بثبات الإطلالة.",
+    "benefits": [
+      "تهيئة سطح البشرة",
+      "قوام جل",
+      "تكملة لخطوات ثبات المكياج"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي قبل الفاونديشن طبقة برايمر تساعد على تهيئة سطح البشرة. باور غريب معروف بقوامه الجل ذي الإحساس الملتصق قليلًا، ليكون خطوة مناسبة لمن تريد تنظيم طبقات المكياج والاهتمام بثبات الإطلالة.",
+    "fitText": "لا تكثري الكمية حتى لا تتراكم الطبقات أو يتكتل المكياج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية خفيفة واتركيها تستقر حسب تعليمات العبوة قبل وضع الفاونديشن."
+      }
+    ],
+    "notes": "لا تكثري الكمية حتى لا تتراكم الطبقات أو يتكتل المكياج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية خفيفة واتركيها تستقر حسب تعليمات العبوة قبل وضع الفاونديشن."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا تكثري الكمية حتى لا تتراكم الطبقات أو يتكتل المكياج."
+      }
+    ],
+    "productType": "primer"
+  },
+  "en": {
+    "name": "e.l.f. Power Grip Primer",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. e.l.f. Power Grip Primer. A thoughtful start to your makeup routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A thoughtful start to your makeup routine.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. e.l.f. Power Grip Primer. A thoughtful start to your makeup routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Patch test first, especially if your skin is sensitive. Avoid the eye area.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a thin layer after skincare. Allow it to settle before applying foundation."
+      }
+    ],
+    "notes": "Patch test first, especially if your skin is sensitive. Avoid the eye area.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a thin layer after skincare. Allow it to settle before applying foundation."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first, especially if your skin is sensitive. Avoid the eye area."
+      }
+    ],
+    "productType": "primer"
+  },
+  "contentVersion": "5.0.0"
+}

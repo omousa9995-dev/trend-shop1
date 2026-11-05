@@ -1,20 +1,20 @@
-import {isAquaFreshPilot,AQUA_FRESH_COVERS,validVideoPoster} from './product-video-presentation.js';
+import {isAquaFreshPilot,AQUA_FRESH_COVERS,validVideoPoster} from './product-video-presentation.js?v=5.0.0';
 const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const MAX_BYTES=20*1024*1024;
 export function createProductVideoManager({call,root=document}){
  const panel=root.querySelector('#productVideoPanel');if(!panel)return {select(){},cancel(){},get busy(){return false}};
  const input=panel.querySelector('[data-video-file]'),status=panel.querySelector('[data-video-status]'),list=panel.querySelector('[data-video-list]'),button=panel.querySelector('[data-video-upload]');
- let productId='',sequence=0,listRevision=0,xhr=null,busy=false,rows=[],selectedProduct=null;
+ let productId='',sequence=0,listRevision=0,xhr=null,busy=false,rows=[],selectedProduct=null,productCovers=[];
  function cancel(){sequence++;listRevision++;xhr?.abort();xhr=null;busy=false;button.disabled=!productId;input.disabled=!productId;}
  function render(){
   list.innerHTML=rows.length?rows.map(v=>`<article class="admin-video-card"><div><b>${safe(v.title||'فيديو المنتج')}</b><small>${(v.bytes/1024/1024).toFixed(1)} ميغابايت · ${v.active?'ظاهر للزبونات':'مخفي'}</small></div><video controls playsinline preload="none" src="${safe(v.url)}" aria-label="معاينة فيديو المنتج"></video><button type="button" class="minor" data-toggle-video="${safe(v.id)}">${v.active?'إخفاء الفيديو':'استعادة الفيديو'}</button><button type='button' class='minor' data-remove-video='${safe(v.id)}'>حذف الفيديو</button></article>`).join(''):'<p class="micro">لا توجد فيديوهات لهذا المنتج. لن يظهر قسم الفيديو للزبونة حتى ترفعي فيديو.</p>';
   if(isAquaFreshPilot(productId)){
-   if(!rows.length)list.innerHTML='<p class="micro">تجربة أكوا فريش الجديدة جاهزة. تظهر الصور الآن، ويظهر الفيديو في أول الشريط فور رفعه. يمكنك ترتيب المقاطع واختيار أغلفتها هنا.</p>';
+   if(!rows.length)list.innerHTML='<p class="micro">عرض الصور والفيديوهات الجديد جاهز. تظهر الصور الآن، ويظهر الفيديو في أول الشريط فور رفعه. يمكنك ترتيب المقاطع واختيار أغلفتها هنا.</p>';
    const cards=list.querySelectorAll('.admin-video-card');
    rows.forEach((v,index)=>{
-    const covers=[...new Set(['',selectedProduct?.image_url||selectedProduct?.image,...AQUA_FRESH_COVERS,v.poster].filter(value=>typeof value==='string'&&validVideoPoster(value)))];
+    const covers=[...new Set(['',selectedProduct?.image_url||selectedProduct?.image,...productCovers,v.poster].filter(value=>typeof value==='string'&&validVideoPoster(value)))];
     const form=panel.ownerDocument.createElement('div');form.className='aqua-video-editor';form.dataset.aquaVideoEditor=v.id;
-    form.innerHTML=`<label>عنوان اللقطة بالعربية<input class="input" data-presentation-title maxlength="120" value="${safe(v.title)}"/></label><label>English caption<input class="input" dir="ltr" data-presentation-title-en maxlength="120" value="${safe(v.titleEn)}"/></label><label>صورة الغلاف<select class="input" data-presentation-poster>${covers.map((url,n)=>`<option value="${safe(url)}" ${url===(v.poster||'')?'selected':''}>${!url?'صورة المنتج الافتراضية':url===(selectedProduct?.image_url||selectedProduct?.image)?'صورة العبوة':AQUA_FRESH_COVERS.includes(url)?'مشهد العناية':'الغلاف المحفوظ'}</option>`).join('')}</select></label><button class="minor" type="button" data-save-presentation="${safe(v.id)}">حفظ العنوان والغلاف</button><div class="aqua-video-order"><button class="minor" type="button" data-video-move="-1" data-video-id="${safe(v.id)}" ${index===0?'disabled':''}>تقديم المقطع</button><button class="minor" type="button" data-video-move="1" data-video-id="${safe(v.id)}" ${index===rows.length-1?'disabled':''}>تأخير المقطع</button></div>`;
+    form.innerHTML=`<label>عنوان اللقطة بالعربية<input class="input" data-presentation-title maxlength="120" value="${safe(v.title)}"/></label><label>English caption<input class="input" dir="ltr" data-presentation-title-en maxlength="120" value="${safe(v.titleEn)}"/></label><label>صورة الغلاف<select class="input" data-presentation-poster>${covers.map((url,n)=>`<option value="${safe(url)}" ${url===(v.poster||'')?'selected':''}>${!url?'صورة المنتج الافتراضية':url===(selectedProduct?.image_url||selectedProduct?.image)?'صورة العبوة':productCovers.includes(url)?'مشهد العناية':'الغلاف المحفوظ'}</option>`).join('')}</select></label><button class="minor" type="button" data-save-presentation="${safe(v.id)}">حفظ العنوان والغلاف</button><div class="aqua-video-order"><button class="minor" type="button" data-video-move="-1" data-video-id="${safe(v.id)}" ${index===0?'disabled':''}>تقديم المقطع</button><button class="minor" type="button" data-video-move="1" data-video-id="${safe(v.id)}" ${index===rows.length-1?'disabled':''}>تأخير المقطع</button></div>`;
     cards[index].append(form);
    });
    list.querySelectorAll('[data-save-presentation]').forEach(b=>b.onclick=async()=>{
@@ -37,10 +37,10 @@ export function createProductVideoManager({call,root=document}){
   finally{if(token===sequence){busy=false;button.disabled=false;input.disabled=false}}
  }
  async function select(product){
-  cancel();selectedProduct=product;productId=product?.id||'';const token=sequence,revision=++listRevision;rows=[];input.value='';panel.querySelector('[data-video-title]').value='';panel.querySelector('[data-video-title-en]').value='';status.textContent='';button.disabled=!productId;input.disabled=!productId;
+  cancel();selectedProduct=product;productCovers=[];productId=product?.id||'';const token=sequence,revision=++listRevision;rows=[];input.value='';panel.querySelector('[data-video-title]').value='';panel.querySelector('[data-video-title-en]').value='';status.textContent='';button.disabled=!productId;input.disabled=!productId;
   if(!productId){list.innerHTML='<p class="micro">احفظي المنتج الجديد أولًا، ثم افتحيه مجددًا لإضافة الفيديو.</p>';return;}
   list.innerHTML='<p class="micro">جارٍ تحميل الفيديوهات…</p>';
-  try{const r=await call('product-videos?product='+encodeURIComponent(productId));if(token!==sequence||revision!==listRevision)return;rows=r.videos||[];render()}catch(e){if(token===sequence&&revision===listRevision){list.replaceChildren();status.textContent=e.message}}
+  try{const r=await call('product-videos?product='+encodeURIComponent(productId));if(token!==sequence||revision!==listRevision)return;rows=r.videos||[];try{const response=await fetch('/product-stories/'+encodeURIComponent(productId)+'.json?v=5.0.0');const profile=response.ok?await response.json():null;if(token!==sequence||revision!==listRevision)return;productCovers=profile?.primary===(product?.image_url||product?.image)?(profile.images||[]).map(x=>x.url):[];}catch{}if(token!==sequence||revision!==listRevision)return;render()}catch(e){if(token===sequence&&revision===listRevision){list.replaceChildren();status.textContent=e.message}}
  }
  button.onclick=async()=>{
   const file=input.files?.[0];if(!file||!productId){status.textContent='اختاري فيديو من ألبوم الصور أولًا.';return}

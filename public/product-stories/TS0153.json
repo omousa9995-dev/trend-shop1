@@ -1,0 +1,70 @@
+{
+  "id": "TS0153",
+  "brand": "Generic",
+  "productName": "One Step Hair Dryer & Volumizer Brush",
+  "primary": "/images/catalog/TS0153-065dc84b825a.avif",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "فرشاة تجفيف وتصفيف الشعر بخطوة واحدة",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اجعلي وقت تصفيف شعركِ لحظة تخصّكِ مع فرشاة التجفيف والتصفيف ذات الخطوة الواحدة. اختاري طريقة الاستخدام المناسبة لطراز الجهاز ونوع شعركِ، وخذي وقتكِ في العمل على خصلات صغيرة بدل الاستعجال. راجعي تعليمات العبوة وإعدادات الحرارة والجهد قبل الاستخدام.",
+    "benefits": [
+      "أداة لتنسيق روتين تصفيف الشعر",
+      "اختاري إعدادات الجهاز وفق التعليمات",
+      "استخدميها على خصلات مناسبة لطراز الفرشاة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اجعلي وقت تصفيف شعركِ لحظة تخصّكِ مع فرشاة التجفيف والتصفيف ذات الخطوة الواحدة. اختاري طريقة الاستخدام المناسبة لطراز الجهاز ونوع شعركِ، وخذي وقتكِ في العمل على خصلات صغيرة بدل الاستعجال. راجعي تعليمات العبوة وإعدادات الحرارة والجهد قبل الاستخدام.",
+    "fitText": "تحققي من الجهد الكهربائي وتعليمات الجهاز. أبقيه بعيدًا عن الماء وافصليه قبل التنظيف أو التخزين. لا تضيفي زيوتًا أو مستحضرات غير مصرح بها قبل الحرارة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي تعليمات طراز الجهاز لتحديد حالة الشعر وإعداد الحرارة المناسبة. استخدميه بيدين جافتين، وقسّمي الشعر إلى خصلات صغيرة دون شدّ قوي."
+      }
+    ],
+    "notes": "تحققي من الجهد الكهربائي وتعليمات الجهاز. أبقيه بعيدًا عن الماء وافصليه قبل التنظيف أو التخزين. لا تضيفي زيوتًا أو مستحضرات غير مصرح بها قبل الحرارة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي تعليمات طراز الجهاز لتحديد حالة الشعر وإعداد الحرارة المناسبة. استخدميه بيدين جافتين، وقسّمي الشعر إلى خصلات صغيرة دون شدّ قوي."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تحققي من الجهد الكهربائي وتعليمات الجهاز. أبقيه بعيدًا عن الماء وافصليه قبل التنظيف أو التخزين. لا تضيفي زيوتًا أو مستحضرات غير مصرح بها قبل الحرارة."
+      }
+    ],
+    "productType": "hair-tools"
+  },
+  "en": {
+    "name": "One Step Hair Dryer & Volumizer Brush",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Make styling a little time of your own with this one-step hair dryer and volumising brush. Work at your own pace in small sections, and follow the exact model’s directions for hair condition, heat settings and voltage.",
+    "benefits": [
+      "A tool to coordinate with your hair-styling routine.",
+      "Choose the settings permitted by your exact model."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Make styling a little time of your own with this one-step hair dryer and volumising brush. Work at your own pace in small sections, and follow the exact model’s directions for hair condition, heat settings and voltage.",
+    "fitText": "Check the voltage and operating instructions. Keep away from water and unplug before cleaning or storing. Use only products specifically permitted before heat styling.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact model’s directions for hair condition and heat settings. Use dry hands and work gently in small sections."
+      }
+    ],
+    "notes": "Check the voltage and operating instructions. Keep away from water and unplug before cleaning or storing. Use only products specifically permitted before heat styling.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact model’s directions for hair condition and heat settings. Use dry hands and work gently in small sections."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the voltage and operating instructions. Keep away from water and unplug before cleaning or storing. Use only products specifically permitted before heat styling."
+      }
+    ],
+    "productType": "hair-tools"
+  }
+}

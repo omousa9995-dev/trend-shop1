@@ -1,0 +1,71 @@
+{
+  "id": "TS0253",
+  "brand": "Clinique",
+  "productName": "Beyond Perfecting Foundation Concealer",
+  "primary": "/images/catalog/TS0253-37cba2aac10a.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم أساس وكونسيلر بيوند بيرفكتنغ من كلينيك",
+    "tagline": "إطلالتكِ تبدأ باختيار يريحكِ.",
+    "description": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. بيوند بيرفكتنغ من كلينيك كريم أساس وكونسيلر بحسب العبوة المصوّرة التي تحمل حجم 45 مل. يوزع بكمية قليلة ويُدمج بالتدريج، مع تأكيد رقم الدرجة قبل الشراء؛ الحجم مسجل كما على عبوتك.",
+    "benefits": [
+      "أساس وكونسيلر",
+      "العبوة المصوّرة 45 مل",
+      "دمج بطبقات خفيفة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. بيوند بيرفكتنغ من كلينيك كريم أساس وكونسيلر بحسب العبوة المصوّرة التي تحمل حجم 45 مل. يوزع بكمية قليلة ويُدمج بالتدريج، مع تأكيد رقم الدرجة قبل الشراء؛ الحجم مسجل كما على عبوتك.",
+    "fitText": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة. أضيفي طبقة صغيرة عند الحاجة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. عامل الحماية في المكياج لا يغني عن واقي شمس مستقل بكمية كافية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة. أضيفي طبقة صغيرة عند الحاجة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "en": {
+    "name": "Clinique · Beyond Perfecting Foundation Concealer",
+    "tagline": "Your look begins with a choice that feels like you.",
+    "description": "Choose the base and tone that feel right, then take your time with your look. Clinique · Beyond Perfecting Foundation Concealer. Your look begins with a base that feels like you. Start small and build the makeup look you feel most comfortable in.",
+    "benefits": [
+      "Your look begins with a base that feels like you.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose the base and tone that feel right, then take your time with your look. Clinique · Beyond Perfecting Foundation Concealer. Your look begins with a base that feels like you. Start small and build the makeup look you feel most comfortable in.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      }
+    ],
+    "notes": "Choose your approximate skin tone preference before adding to your bag; confirm the actual manufacturer shade with the store.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "contentVersion": "5.0.0"
+}

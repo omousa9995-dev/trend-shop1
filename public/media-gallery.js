@@ -18,7 +18,7 @@ export function mountMediaGallery(host,{photos=[],videos=[],name='',productId=''
    // Observe the actual stage; videos stop as soon as their gallery leaves view.
    if(globalThis.IntersectionObserver){observer?.disconnect();observer=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;visible?play():pause()},{threshold:.15});observer.observe(stage)}else play();
   }else{
-   observer?.disconnect();content.innerHTML=`<button type="button" class="media-zoom" ${mainImageId==='galleryMain'?'id="openImageZoom"':'data-story-zoom'} aria-label="${tx('تكبير صورة المنتج','Enlarge product image')}"><img ${mainImageId?`id="${safe(mainImageId)}"`:''} src="${safe(item.url)}" alt="${safe(item.alt||name)}" width="700" height="760" draggable="false"/><span>⊕ ${tx('شاهدي التفاصيل','See the detail')}</span></button>`;
+   observer?.disconnect();content.innerHTML=`<button type="button" class="media-zoom" ${mainImageId==='storyMainImage'?'id="openImageZoom"':''} ${mainImageId==='galleryMain'?'id="openImageZoom"':'data-story-zoom'} aria-label="${tx('تكبير صورة المنتج','Enlarge product image')}"><img ${mainImageId?`id="${safe(mainImageId)}"`:''} src="${safe(item.url)}" alt="${safe(item.alt||name)}" width="700" height="760" draggable="false"/><span>⊕ ${tx('شاهدي التفاصيل','See the detail')}</span></button>`;
    content.querySelector('button').onclick=()=>onZoom?.(pictures.map(p=>p.url),name,pictures.findIndex(p=>p.url===item.url));
   }
   host.querySelector('.media-count').textContent=(index+1)+' / '+items.length;

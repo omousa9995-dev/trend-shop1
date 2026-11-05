@@ -1,4 +1,4 @@
-import {money,retailPrice,actualDiscount,productPrice,promotionData} from './commerce.js?v=3.1.0';
+import {money,retailPrice,actualDiscount,productPrice,promotionData} from './commerce.js?v=5.0.0';
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function createPromotionManager({call,getProducts,refreshProducts}) {
  const section=document.getElementById('promotionsSection');let promotions=[];

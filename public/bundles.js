@@ -1,7 +1,8 @@
-import {quoteCart,productPrice,promotionData,shippingFee} from './commerce.js';
+import {quoteCart,productPrice,promotionData,shippingFee} from './commerce.js?v=5.0.0';
 import {productOptions,selectedOption,cartSelectionError,aggregateCart} from './product-variants.js';
 import {isRetiredProduct} from './catalog-policy.js';
 import {productDetails} from './shop-tools.js';
+import {pairPriceFils,quantityPriceFils} from './pair-pricing.js?v=5.0.0';
 
 export const isBundleId=id=>typeof id==='string'&&/^PROMO[A-Z0-9-]{6,64}$/.test(id);
 const productId=id=>typeof id==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(id);
@@ -19,7 +20,7 @@ export function bundleProduct(raw,products=[]){
  const active=members.every(x=>x.product.active!==0&&x.product.active!==false&&x.product.approved!==0&&x.product.approved!==false);
  const stock=active?Math.max(0,Math.min(...members.map(x=>Math.floor(Number(x.product.stock||0)/x.qty)))):0;
  const image=bundleImage(offer,products)||members[0].product.image||members[0].product.image_url;
- return {id:offer.id,_bundle:offer,name:offer.title,brand:'TREND SHOP',category:members[0].product.category,description:offer.description,image,image_url:image,priceFils:offer.priceFils,reference:before,discount:Math.floor((before-offer.priceFils)*100/before),stock,approved:active,details:{nameAr:offer.title,tagline:'اختيارات تنسجم معكِ، في باكيج واحد.',en:{name:offer.en?.title||offer.title,description:offer.en?.description||offer.description,tagline:'Your favourites, beautifully together.'}}};
+ return {id:offer.id,_bundle:offer,...(members.every(x=>Number.isInteger(x.product.automaticPairPriceFils))?{automaticPairPriceFils:pairPriceFils(offer.priceFils)}:{}),name:offer.title,brand:'TREND SHOP',category:members[0].product.category,description:offer.description,image,image_url:image,priceFils:offer.priceFils,reference:before,discount:Math.floor((before-offer.priceFils)*100/before),stock,approved:active,details:{nameAr:offer.title,tagline:'اختيارات تنسجم معكِ، في باكيج واحد.',benefits:['اختيارات متكاملة بسعر ألطف','تفاصيل تحبّينها في باكيج واحد','لكِ، أو هدية لمن تحبّين'],howToUse:offer.notes||'استخدمي كل منتج بحسب تعليمات عبوته، كخطوة مستقلة في روتينكِ.',notes:offer.notes||'',en:{name:offer.en?.title||offer.title,description:offer.en?.description||offer.description,tagline:'Your favourites, beautifully together.',benefits:['Thoughtfully paired at a gentler price','Your favourites, together in one bundle','For you, or someone you love'],howToUse:offer.en?.notes||'Use each product separately, following its own pack directions.',notes:offer.en?.notes||''}}};
 }
 export function purchaseProductIds(cart,promotions){
  const ids=new Set();
@@ -69,7 +70,8 @@ export function quotePurchase(cart,products,promotions=[],language='ar'){
  const singles=cart.filter(x=>!isBundleId(x.id)),byId=new Map(products.map(p=>[p.id,p]));
  const unavailable=id=>({id,name:language==='en'?'This selection is currently unavailable':'هذا الاختيار غير متاح حاليًا',brand:'TREND SHOP',image:'/images/TS0001.svg',stock:0,approved:false,priceFils:0});
  const bundles=cart.filter(x=>isBundleId(x.id)).map(item=>({item,offer:bundleData(item.id,promotions)})).filter(x=>bundleProduct(x.offer,products));
- const fixed=bundles.reduce((n,{item,offer})=>n+offer.priceFils*item.qty,0),ordinary=quoteCart(singles,products,promotions,{fixedSubtotalFils:fixed});
+ const fixed=bundles.reduce((n,{item,offer})=>n+quantityPriceFils(bundleProduct(offer,products),item.qty),0),ordinary=quoteCart(singles,products,promotions,{fixedSubtotalFils:fixed});
+ if(language==='en')ordinary.promotions=ordinary.promotions.map(p=>p.id.startsWith('AUTOPAIR-')?{...p,title:'Pair price'}:p);
  const lines=singles.map(item=>{const p=byId.get(item.id)||unavailable(item.id),d=productDetails(p),price=productPrice(p),reference=Math.max(price,Number(p?.reference??p?.reference_price_fils??price));return {...item,kind:'product',product:p,name:language==='en'?(d.en?.name||p?.name):d.nameAr||p?.name,image:p?.image||p?.image_url,lineTotalFils:price*item.qty,originalTotalFils:reference*item.qty,offerSavingFils:0}});
  const remaining=singles.map(x=>x.qty);
  for(const offer of ordinary.promotions){
@@ -80,7 +82,7 @@ export function quotePurchase(cart,products,promotions=[],language='ar'){
  let bundleOriginal=0,bundleSavings=0;
  const explicit=[];
  for(const {item,offer} of bundles){
-  const p=bundleProduct(offer,products),original=p.reference*item.qty,total=offer.priceFils*item.qty;bundleOriginal+=original;bundleSavings+=original-total;
+  const p=bundleProduct(offer,products),original=p.reference*item.qty,total=quantityPriceFils(p,item.qty);bundleOriginal+=original;bundleSavings+=original-total;
   lines.push({...item,kind:'bundle',product:p,name:language==='en'?offer.en?.title||offer.title:offer.title,image:p.image,lineTotalFils:total,originalTotalFils:original,offerSavingFils:original-total});
   explicit.push({id:offer.id,title:offer.title,priceFils:offer.priceFils,items:offer.items,count:item.qty,savingFils:original-total,explicit:true});
  }

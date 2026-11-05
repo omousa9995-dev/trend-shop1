@@ -1,0 +1,71 @@
+{
+  "id": "TS0058",
+  "brand": "The Ordinary",
+  "productName": "The Ordinary Salicylic Acid 2% Solution, 30ml",
+  "primary": "/images/catalog/TS0058-8f01419830e9.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "محلول ساليسيليك أسيد 2% من ذا أورديناري",
+    "tagline": "مساحة صغيرة في روتينكِ، لكِ وحدكِ.",
+    "description": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. امنحي المناطق المعرضة لانسداد المسام خطوة عناية خفيفة يمكن توزيعها بدقة. يركز محلول الساليسيليك على تحسين مظهر الشوائب والملمس غير المتساوي، ويكمل روتين التنظيف والترطيب دون الحاجة إلى طبقة كثيفة.",
+    "benefits": [
+      "العناية بمظهر المسام",
+      "تحسين مظهر الشوائب",
+      "قوام خفيف للتطبيق الموضعي"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. امنحي المناطق المعرضة لانسداد المسام خطوة عناية خفيفة يمكن توزيعها بدقة. يركز محلول الساليسيليك على تحسين مظهر الشوائب والملمس غير المتساوي، ويكمل روتين التنظيف والترطيب دون الحاجة إلى طبقة كثيفة.",
+    "fitText": "لا يوضع على جلد متهيج، وتجنبي الإفراط في المقشرات واستخدمي واقي شمس.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية صغيرة بالطريقة والتواتر المحددين على العبوة بعيدًا عن العينين."
+      }
+    ],
+    "notes": "لا يوضع على جلد متهيج، وتجنبي الإفراط في المقشرات واستخدمي واقي شمس.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية صغيرة بالطريقة والتواتر المحددين على العبوة بعيدًا عن العينين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يوضع على جلد متهيج، وتجنبي الإفراط في المقشرات واستخدمي واقي شمس."
+      }
+    ],
+    "productType": "serum"
+  },
+  "en": {
+    "name": "The Ordinary Salicylic Acid 2% Solution, 30ml",
+    "tagline": "A thoughtful little addition to your ritual.",
+    "description": "Keep your ritual simple and choose a step that suits what you need. The Ordinary Salicylic Acid 2% Solution, 30ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "benefits": [
+      "A thoughtful step in a routine that is yours.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Keep your ritual simple and choose a step that suits what you need. The Ordinary Salicylic Acid 2% Solution, 30ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "fitText": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      }
+    ],
+    "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice."
+      }
+    ],
+    "productType": "serum"
+  },
+  "contentVersion": "5.0.0"
+}

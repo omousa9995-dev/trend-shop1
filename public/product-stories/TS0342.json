@@ -1,0 +1,71 @@
+{
+  "id": "TS0342",
+  "brand": "Vaseline",
+  "productName": "Intensive Care Cocoa Radiant Body Oil",
+  "primary": "/images/catalog/TS0342-45a0cca0d042.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت كاكاو راديانت للجسم من فازلين",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. زيت الجسم كاكاو راديانت من فازلين بعبوة 200 مل يمنح روتين ما بعد الاستحمام لحظة تحبين العودة إليها. دلكي كمية صغيرة على الذراعين والساقين والمناطق الجافة لملمس أنعم ولمسة لامعة جميلة.",
+    "benefits": [
+      "زيت مخصص للجسم",
+      "من مجموعة Cocoa Radiant",
+      "عبوة 200 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. زيت الجسم كاكاو راديانت من فازلين بعبوة 200 مل يمنح روتين ما بعد الاستحمام لحظة تحبين العودة إليها. دلكي كمية صغيرة على الذراعين والساقين والمناطق الجافة لملمس أنعم ولمسة لامعة جميلة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي قليلًا على بشرة الجسم الرطبة بعد الاستحمام ودلكي بلطف. انتبهي لتجنب الانزلاق على الأسطح."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي قليلًا على بشرة الجسم الرطبة بعد الاستحمام ودلكي بلطف. انتبهي لتجنب الانزلاق على الأسطح."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "en": {
+    "name": "Vaseline · Intensive Care Cocoa Radiant Body Oil",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Vaseline · Intensive Care Cocoa Radiant Body Oil. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little time for yourself after your shower.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Vaseline · Intensive Care Cocoa Radiant Body Oil. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      }
+    ],
+    "notes": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use. Avoid eyes and slippery surfaces; patch test first."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "contentVersion": "5.0.0"
+}

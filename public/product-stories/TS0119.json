@@ -1,0 +1,71 @@
+{
+  "id": "TS0119",
+  "brand": "Huda Beauty",
+  "productName": "Huda Beauty Lip Contour Stain",
+  "primary": "/images/catalog/TS0119-441dfb4491fc.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "صبغة تحديد الشفاه ليب كونتور من هدى بيوتي",
+    "tagline": "لون لمزاجكِ، وابتسامة ليومكِ.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. ارسمي حدود الشفاه بطريقتك مع ليب كونتور ستين. يساعدك التطبيق الدقيق على تعزيز شكل الشفاه وتنسيق لونها مع الغلوس أو أحمر الشفاه، لتختاري إطلالة محددة ومرتبة تناسب يومك.",
+    "benefits": [
+      "تحديد دقيق للشفاه",
+      "تنسيق لون الإطلالة",
+      "سهولة دمجه مع الغلوس"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. ارسمي حدود الشفاه بطريقتك مع ليب كونتور ستين. يساعدك التطبيق الدقيق على تعزيز شكل الشفاه وتنسيق لونها مع الغلوس أو أحمر الشفاه، لتختاري إطلالة محددة ومرتبة تناسب يومك.",
+    "fitText": "تختلف النتيجة بحسب الدرجة ولون الشفاه الطبيعي؛ اختاري الدرجة المتاحة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي على شفاه نظيفة وجافة حسب تعليمات الصبغة، مع التحكم بالحدود والكمية."
+      }
+    ],
+    "notes": "تختلف النتيجة بحسب الدرجة ولون الشفاه الطبيعي؛ اختاري الدرجة المتاحة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي على شفاه نظيفة وجافة حسب تعليمات الصبغة، مع التحكم بالحدود والكمية."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تختلف النتيجة بحسب الدرجة ولون الشفاه الطبيعي؛ اختاري الدرجة المتاحة."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "Huda Beauty Lip Contour Stain",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. Huda Beauty Lip Contour Stain. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. Huda Beauty Lip Contour Stain. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

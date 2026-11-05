@@ -1,0 +1,71 @@
+{
+  "id": "TS0028",
+  "brand": "The Ordinary",
+  "productName": "AHA 30%+BHA 2% Peeling Solution By The Ordinary",
+  "primary": "/images/catalog/TS0028-cdfedf418b07.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "محلول التقشير الأحمر من ذا أورديناري",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. هذا المقشر خيار مركز لمن لديها خبرة باستخدام الأحماض وتريد العناية ببهتان البشرة وتفاوت ملمسها. يساعد على تحسين مظهر السطح والمسام، ويحتاج التزامًا دقيقًا بتعليمات الشركة بدل استخدامه كسيروم يومي أو ماسك ليلي.",
+    "benefits": [
+      "تحسين مظهر الملمس",
+      "العناية ببهتان البشرة",
+      "تقشير مخصص للمستخدمات المتمرسات"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. هذا المقشر خيار مركز لمن لديها خبرة باستخدام الأحماض وتريد العناية ببهتان البشرة وتفاوت ملمسها. يساعد على تحسين مظهر السطح والمسام، ويحتاج التزامًا دقيقًا بتعليمات الشركة بدل استخدامه كسيروم يومي أو ماسك ليلي.",
+    "fitText": "لا يناسب البشرة الحساسة أو المتضررة. اختبريه موضعيًا، واستخدمي واقي شمس وتوقفي عند التهيج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "على بشرة نظيفة وجافة تمامًا مساءً، بعيدًا عن العينين. يشطف قبل تجاوز 10 دقائق، وبحد أقصى مرتين أسبوعيًا وفق تعليمات الشركة."
+      }
+    ],
+    "notes": "لا يناسب البشرة الحساسة أو المتضررة. اختبريه موضعيًا، واستخدمي واقي شمس وتوقفي عند التهيج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "على بشرة نظيفة وجافة تمامًا مساءً، بعيدًا عن العينين. يشطف قبل تجاوز 10 دقائق، وبحد أقصى مرتين أسبوعيًا وفق تعليمات الشركة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يناسب البشرة الحساسة أو المتضررة. اختبريه موضعيًا، واستخدمي واقي شمس وتوقفي عند التهيج."
+      }
+    ],
+    "productType": "exfoliant"
+  },
+  "en": {
+    "name": "The Ordinary · AHA 30%+BHA 2% Peeling Solution",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. The Ordinary · AHA 30%+BHA 2% Peeling Solution. A considered step, taken gently. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A considered step, taken gently.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. The Ordinary · AHA 30%+BHA 2% Peeling Solution. A considered step, taken gently. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on sensitive, irritated or damaged skin. Patch test first; stop and rinse if irritation occurs. Use sunscreen, protective clothing and limit sun exposure during use and for a week afterwards.",
+    "steps": [
+      {
+        "title": "For experienced acid users",
+        "text": "apply to clean, fully dry skin in the evening, avoiding eyes. Rinse with lukewarm water within 10 minutes; use no more than twice weekly."
+      }
+    ],
+    "notes": "Do not use on sensitive, irritated or damaged skin. Patch test first; stop and rinse if irritation occurs. Use sunscreen, protective clothing and limit sun exposure during use and for a week afterwards.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "For experienced acid users: apply to clean, fully dry skin in the evening, avoiding eyes. Rinse with lukewarm water within 10 minutes; use no more than twice weekly."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on sensitive, irritated or damaged skin. Patch test first; stop and rinse if irritation occurs. Use sunscreen, protective clothing and limit sun exposure during use and for a week afterwards."
+      }
+    ],
+    "productType": "exfoliant"
+  },
+  "contentVersion": "5.0.0"
+}

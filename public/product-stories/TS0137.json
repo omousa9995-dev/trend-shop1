@@ -1,0 +1,71 @@
+{
+  "id": "TS0137",
+  "brand": "rhode",
+  "productName": "rhode Peptide Lip Treatment Unscented 10 ml",
+  "primary": "/images/catalog/TS0137-bad72eaa03a8.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بيبتايد ليب تريتمنت غير المعطر من رود",
+    "tagline": "لون لمزاجكِ، وابتسامة ليومكِ.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. امنحي الشفاه مظهرًا نديًا وإحساسًا أكثر نعومة مع بيبتايد ليب تريتمنت. يليق بروتين الإطلالة الخفيفة أو كلمسة فوق لون الشفاه، لتختاري عناية سهلة تحملينها معك وتجدديها عند الحاجة.",
+    "benefits": [
+      "لمسة لامعة",
+      "إحساس بالترطيب",
+      "سهولة حمله في الحقيبة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. امنحي الشفاه مظهرًا نديًا وإحساسًا أكثر نعومة مع بيبتايد ليب تريتمنت. يليق بروتين الإطلالة الخفيفة أو كلمسة فوق لون الشفاه، لتختاري عناية سهلة تحملينها معك وتجدديها عند الحاجة.",
+    "fitText": "هذه النسخة غير المعطرة؛ تختلف عن Peptide Lip Tint الملون.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي طبقة خفيفة على الشفاه وجددي عند الحاجة وفق تعليمات العبوة."
+      }
+    ],
+    "notes": "هذه النسخة غير المعطرة؛ تختلف عن Peptide Lip Tint الملون.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي طبقة خفيفة على الشفاه وجددي عند الحاجة وفق تعليمات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "هذه النسخة غير المعطرة؛ تختلف عن Peptide Lip Tint الملون."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "rhode Peptide Lip Treatment Unscented 10 ml",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. rhode Peptide Lip Treatment Unscented 10 ml. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. rhode Peptide Lip Treatment Unscented 10 ml. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

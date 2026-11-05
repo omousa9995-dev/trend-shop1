@@ -1,0 +1,71 @@
+{
+  "id": "TS0317",
+  "brand": "Vaseline",
+  "productName": "GlutaGlow Ultra Bright Ampoule Serum Deodorant",
+  "primary": "/images/catalog/TS0317-8fcb3417af6b.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مزيل عرق جلوتاغلو أمبول سيروم من فازلين",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. رول أون غلوتا غلو ألترا برايت من فازلين خطوة سهلة تضعينها بعد الاستحمام وعلى بشرة جافة. أضيفيه إلى روتينكِ اليومي لإحساس بالعناية والانتعاش؛ الاسم التجاري لا يعني وعدًا بتغيير لون البشرة.",
+    "benefits": [
+      "تطبيق رول أون",
+      "من مجموعة Gluta Glow",
+      "خطوة للعناية اليومية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. رول أون غلوتا غلو ألترا برايت من فازلين خطوة سهلة تضعينها بعد الاستحمام وعلى بشرة جافة. أضيفيه إلى روتينكِ اليومي لإحساس بالعناية والانتعاش؛ الاسم التجاري لا يعني وعدًا بتغيير لون البشرة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي طبقة خفيفة على بشرة نظيفة وجافة، واتركيها تجف قبل ارتداء الملابس. لا تستخدميها على بشرة متهيجة أو مجروحة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي طبقة خفيفة على بشرة نظيفة وجافة، واتركيها تجف قبل ارتداء الملابس. لا تستخدميها على بشرة متهيجة أو مجروحة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "deodorant"
+  },
+  "en": {
+    "name": "Vaseline · GlutaGlow Ultra Bright Ampoule Serum Deodorant",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Vaseline · GlutaGlow Ultra Bright Ampoule Serum Deodorant. An easy little step before you head out. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "An easy little step before you head out.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Vaseline · GlutaGlow Ultra Bright Ampoule Serum Deodorant. An easy little step before you head out. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on broken or freshly irritated skin. Stop use if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to clean, dry underarms as directed and allow to dry before dressing."
+      }
+    ],
+    "notes": "Do not use on broken or freshly irritated skin. Stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to clean, dry underarms as directed and allow to dry before dressing."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on broken or freshly irritated skin. Stop use if irritation occurs."
+      }
+    ],
+    "productType": "deodorant"
+  },
+  "contentVersion": "5.0.0"
+}

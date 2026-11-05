@@ -1,0 +1,71 @@
+{
+  "id": "TS0320",
+  "brand": "Fruit of the Wokali",
+  "productName": "Breast Firming Cream",
+  "primary": "/images/catalog/TS0320-d3e26ea94f24.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم العناية بمنطقة الصدر من فروت أوف ذا ووكالي",
+    "tagline": "لأن وقت العناية، وقت لكِ.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم الجسم من فروت أوف ذا ووكالي بعبوة 150 مل، إصدار Breast Firming، لخطوة ترطيب وتدليك ضمن روتينكِ. امنحي بشرتكِ لحظة عناية لطيفة؛ لا يعد الكريم بتكبير الصدر أو تغيير حجمه أو شكله.",
+    "benefits": [
+      "كريم لترطيب الجسم",
+      "مناسب لخطوة التدليك",
+      "عبوة 150 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم الجسم من فروت أوف ذا ووكالي بعبوة 150 مل، إصدار Breast Firming، لخطوة ترطيب وتدليك ضمن روتينكِ. امنحي بشرتكِ لحظة عناية لطيفة؛ لا يعد الكريم بتكبير الصدر أو تغيير حجمه أو شكله.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "Fruit of the Wokali · Breast Firming Cream",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. Fruit of the Wokali · Breast Firming Cream. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. Fruit of the Wokali · Breast Firming Cream. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them. A body-care cream does not guarantee lifting or enlargement.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them. A body-care cream does not guarantee lifting or enlargement.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them. A body-care cream does not guarantee lifting or enlargement."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

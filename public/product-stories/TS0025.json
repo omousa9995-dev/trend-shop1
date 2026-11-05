@@ -1,0 +1,71 @@
+{
+  "id": "TS0025",
+  "brand": "The Ordinary",
+  "productName": "Natural Moisturizing Factors + HA for Scalp Hair Serum By THE ORDINARY",
+  "primary": "/images/catalog/TS0025-8de6bb03287b.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم ترطيب فروة الرأس من ذا أورديناري",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. خصصي لفروة رأسكِ لحظة عناية. امنحي فروة رأسك نصيبها من الترطيب مع سيروم Natural Moisturizing Factors + HA. يركز على إحساس الجفاف في الفروة، ليكمل العناية بالشعر دون الخلط بين ترطيب الفروة وبين مستحضرات تكثيف الشعر الأخرى من العلامة.",
+    "benefits": [
+      "ترطيب لفروة الرأس",
+      "العناية بإحساس الجفاف",
+      "خطوة مخصصة للفروة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. خصصي لفروة رأسكِ لحظة عناية. امنحي فروة رأسك نصيبها من الترطيب مع سيروم Natural Moisturizing Factors + HA. يركز على إحساس الجفاف في الفروة، ليكمل العناية بالشعر دون الخلط بين ترطيب الفروة وبين مستحضرات تكثيف الشعر الأخرى من العلامة.",
+    "fitText": "ليس هو سيروم Multi-Peptide لكثافة الشعر؛ اختاري المنتج حسب هدفك.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية صغيرة على فروة رأس نظيفة ودلكي بلطف وفق تعليمات العبوة."
+      }
+    ],
+    "notes": "ليس هو سيروم Multi-Peptide لكثافة الشعر؛ اختاري المنتج حسب هدفك.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية صغيرة على فروة رأس نظيفة ودلكي بلطف وفق تعليمات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "ليس هو سيروم Multi-Peptide لكثافة الشعر؛ اختاري المنتج حسب هدفك."
+      }
+    ],
+    "productType": "hair-treatment"
+  },
+  "en": {
+    "name": "The Ordinary · Natural Moisturizing Factors + HA for Scalp Hair Serum",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. The Ordinary · Natural Moisturizing Factors + HA for Scalp Hair Serum. Make a little room for scalp care. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Make a little room for scalp care.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. The Ordinary · Natural Moisturizing Factors + HA for Scalp Hair Serum. Make a little room for scalp care. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Persistent scalp problems or hair loss need professional assessment. This product does not guarantee hair growth.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply only to the areas and at the frequency stated on the packaging. Massage gently if directed."
+      }
+    ],
+    "notes": "Persistent scalp problems or hair loss need professional assessment. This product does not guarantee hair growth.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply only to the areas and at the frequency stated on the packaging. Massage gently if directed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Persistent scalp problems or hair loss need professional assessment. This product does not guarantee hair growth."
+      }
+    ],
+    "productType": "hair-treatment"
+  },
+  "contentVersion": "5.0.0"
+}

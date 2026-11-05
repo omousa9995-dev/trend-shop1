@@ -1,0 +1,71 @@
+{
+  "id": "TS0145",
+  "brand": "CeraVe",
+  "productName": "CeraVe Facial Moisturising Lotion AM SPF 50",
+  "primary": "/images/catalog/TS0145-f9277fa3e1c3.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "لوشن الوجه الصباحي SPF 50 من سيرافي",
+    "tagline": "خذي عنايتكِ معكِ، أينما أخذَكِ النهار.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. اختاري خطوة صباحية تجمع الإحساس بالترطيب مع الحماية الشمسية في نسخة AM SPF 50 من سيرافي. تساعدك على تبسيط الروتين قبل المكياج، مع بقاء استخدام كمية كافية وتجديد الحماية ضروريين أثناء التعرض للشمس.",
+    "benefits": [
+      "ترطيب صباحي",
+      "حماية SPF 50",
+      "تبسيط خطوات النهار"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. اختاري خطوة صباحية تجمع الإحساس بالترطيب مع الحماية الشمسية في نسخة AM SPF 50 من سيرافي. تساعدك على تبسيط الروتين قبل المكياج، مع بقاء استخدام كمية كافية وتجديد الحماية ضروريين أثناء التعرض للشمس.",
+    "fitText": "هذه نسخة SPF 50؛ لا تخلطيها مع عبوات AM ذات درجات حماية مختلفة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي حسب تعليمات الحماية على العبوة وجددي أثناء التعرض للشمس وبعد السباحة أو التعرق."
+      }
+    ],
+    "notes": "هذه نسخة SPF 50؛ لا تخلطيها مع عبوات AM ذات درجات حماية مختلفة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي حسب تعليمات الحماية على العبوة وجددي أثناء التعرض للشمس وبعد السباحة أو التعرق."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "هذه نسخة SPF 50؛ لا تخلطيها مع عبوات AM ذات درجات حماية مختلفة."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "CeraVe Facial Moisturising Lotion AM SPF 50",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. CeraVe Facial Moisturising Lotion AM SPF 50. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. CeraVe Facial Moisturising Lotion AM SPF 50. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

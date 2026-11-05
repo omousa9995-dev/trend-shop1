@@ -1,0 +1,71 @@
+{
+  "id": "TS0264",
+  "brand": "حسب العبوة",
+  "productName": "Makeup Brow Kit 6 Colors",
+  "primary": "/images/catalog/TS0264-8034ac05e88e.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "باليت الحواجب 6 ألوان",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت حواجب ميك أب برو كيت 6 ألوان بالعبوة السوداء والذهبية المصوّرة. اختاري الدرجة الأنسب لحاجبيك واستخدمي فرشاة رفيعة لملء الفراغات بخفة؛ توزيع الألوان الداخلي يُؤكّد مع المتجر.",
+    "benefits": [
+      "6 ألوان بحسب العبوة",
+      "لتحديد مظهر الحاجبين",
+      "عبوة تجمع الدرجات"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت حواجب ميك أب برو كيت 6 ألوان بالعبوة السوداء والذهبية المصوّرة. اختاري الدرجة الأنسب لحاجبيك واستخدمي فرشاة رفيعة لملء الفراغات بخفة؛ توزيع الألوان الداخلي يُؤكّد مع المتجر.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اختاري الطرف أو الدرجة المناسبة وارسمي خطوطًا خفيفة باتجاه الشعر، ثم ادمجي للمظهر المطلوب."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اختاري الطرف أو الدرجة المناسبة وارسمي خطوطًا خفيفة باتجاه الشعر، ثم ادمجي للمظهر المطلوب."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "brows"
+  },
+  "en": {
+    "name": "Makeup Brow Kit 6 Colors",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Makeup Brow Kit 6 Colors. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "The little brow detail that finishes your look.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Makeup Brow Kit 6 Colors. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a light hand to shape or define the brows, following their natural direction."
+      }
+    ],
+    "notes": "Use only as directed, avoiding contact with the eye itself.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a light hand to shape or define the brows, following their natural direction."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "brows"
+  },
+  "contentVersion": "5.0.0"
+}

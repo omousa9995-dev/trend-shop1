@@ -1,0 +1,71 @@
+{
+  "id": "TS0267",
+  "brand": "COVER FX",
+  "productName": "The Perfect Light Highlighting Palette",
+  "primary": "/images/catalog/TS0267-a0073d3613bd.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "باليت ذا بيرفكت لايت للهايلايتر من كفر إف إكس",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت ذا بيرفكت لايت للهايلايتر من كفر إف إكس بالعبوة الفاتحة المصوّرة. يستخدم لإضافة الإضاءة إلى نقاط الوجه المطلوبة؛ شكل العبوة واضح، بينما الدرجات الداخلية تُؤكّد مع المتجر.",
+    "benefits": [
+      "باليت هايلايتر",
+      "لنقاط الإضاءة",
+      "عبوة The Perfect Light"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت ذا بيرفكت لايت للهايلايتر من كفر إف إكس بالعبوة الفاتحة المصوّرة. يستخدم لإضافة الإضاءة إلى نقاط الوجه المطلوبة؛ شكل العبوة واضح، بينما الدرجات الداخلية تُؤكّد مع المتجر.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي كمية صغيرة على نقاط الإضاءة مثل أعلى الخدين وادمجي بلطف بعيدًا عن العينين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي كمية صغيرة على نقاط الإضاءة مثل أعلى الخدين وادمجي بلطف بعيدًا عن العينين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "highlighter"
+  },
+  "en": {
+    "name": "COVER FX · The Perfect Light Highlighting Palette",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. COVER FX · The Perfect Light Highlighting Palette. A small touch of light, your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small touch of light, your way.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. COVER FX · The Perfect Light Highlighting Palette. A small touch of light, your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to the high points you want to highlight and blend softly."
+      }
+    ],
+    "notes": "The available shade may vary. Avoid the eye area unless the packaging specifically permits it.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to the high points you want to highlight and blend softly."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "highlighter"
+  },
+  "contentVersion": "5.0.0"
+}

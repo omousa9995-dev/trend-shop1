@@ -1,0 +1,71 @@
+{
+  "id": "TS0257",
+  "brand": "Miss Lara",
+  "productName": "Sky High Mascara Green Tube",
+  "primary": "/images/catalog/TS0257-97b7c2859bee.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا سكاي هاي ميس لارا — العبوة الخضراء",
+    "tagline": "نظرتكِ الجميلة، على طريقتكِ.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. قبل أن تخرجي، أضيفي اللمسة التي تكمّل مزاج إطلالتكِ مع ماسكارا سكاي هاي من ميس لارا بالعبوة الخضراء. مرري الفرشاة من الجذور للأطراف بطبقات خفيفة، ونسّقيها مع قلم العيون أو لون الشفاه الذي تحبّينه. هذه نسخة ميس لارا كما تظهر في العبوة.",
+    "benefits": [
+      "من ميس لارا",
+      "عبوة خضراء 16 مل",
+      "تعريف مظهر الرموش"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. قبل أن تخرجي، أضيفي اللمسة التي تكمّل مزاج إطلالتكِ مع ماسكارا سكاي هاي من ميس لارا بالعبوة الخضراء. مرري الفرشاة من الجذور للأطراف بطبقات خفيفة، ونسّقيها مع قلم العيون أو لون الشفاه الذي تحبّينه. هذه نسخة ميس لارا كما تظهر في العبوة.",
+    "fitText": "لون الأخضر/الأزرق يصف العبوة فقط؛ أكدي لون تركيبة الماسكارا مع المتجر قبل الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لون الأخضر/الأزرق يصف العبوة فقط؛ أكدي لون تركيبة الماسكارا مع المتجر قبل الطلب."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "Miss Lara · Sky High Mascara Green Tube",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. Before you head out, finish your look with Miss Lara Sky High Mascara in the green tube. Brush from roots to tips in light coats and pair it with the eyeliner or lip colour you enjoy. This is the Miss Lara version shown on the packaging.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. Before you head out, finish your look with Miss Lara Sky High Mascara in the green tube. Brush from roots to tips in light coats and pair it with the eyeliner or lip colour you enjoy. This is the Miss Lara version shown on the packaging.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

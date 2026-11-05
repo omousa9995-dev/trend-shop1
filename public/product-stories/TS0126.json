@@ -1,0 +1,71 @@
+{
+  "id": "TS0126",
+  "brand": "ACM",
+  "productName": "ACM Dépiwhite Advanced",
+  "primary": "/images/catalog/TS0126-02f2e590c753.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم ديبيوايت أدفانسد من إيه سي إم",
+    "tagline": "وقت قصير لكِ، واهتمام يستحقه روتينكِ.",
+    "description": "بين مشاغل يومكِ، خذي لحظة عناية لنفسكِ. لمن تريد الاهتمام بمظهر مناطق أغمق من محيطها، يضيف ديبيوايت أدفانسد خطوة عناية مخصصة بدل استخدام كريم عام للوجه كله. يحتاج روتينًا منتظمًا وتطبيقًا في المناطق المسموح بها مع الحماية من الشمس.",
+    "benefits": [
+      "العناية بمظهر البقع",
+      "تطبيق موجه للمناطق المطلوبة",
+      "تكملة لروتين توحيد المظهر"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "بين مشاغل يومكِ، خذي لحظة عناية لنفسكِ. لمن تريد الاهتمام بمظهر مناطق أغمق من محيطها، يضيف ديبيوايت أدفانسد خطوة عناية مخصصة بدل استخدام كريم عام للوجه كله. يحتاج روتينًا منتظمًا وتطبيقًا في المناطق المسموح بها مع الحماية من الشمس.",
+    "fitText": "لا يستخدم على محيط العين أو المناطق الحساسة دون تخصيص واضح من الشركة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي بدقة مناطق التطبيق والمدة والتواتر المدونين على العبوة."
+      }
+    ],
+    "notes": "لا يستخدم على محيط العين أو المناطق الحساسة دون تخصيص واضح من الشركة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي بدقة مناطق التطبيق والمدة والتواتر المدونين على العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يستخدم على محيط العين أو المناطق الحساسة دون تخصيص واضح من الشركة."
+      }
+    ],
+    "productType": "moisturizer"
+  },
+  "en": {
+    "name": "ACM Dépiwhite Advanced",
+    "tagline": "A little moisture. A moment just for you.",
+    "description": "Between the busy moments, make a little time for your skincare. ACM Dépiwhite Advanced. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+    "benefits": [
+      "Make your moisturising moment something to enjoy.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Between the busy moments, make a little time for your skincare. ACM Dépiwhite Advanced. Make your moisturising moment something to enjoy. Take a little time for gentle application, after your chosen skincare steps.",
+    "fitText": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack."
+      }
+    ],
+    "notes": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a suitable amount to clean skin and massage gently. Follow the frequency and areas of use on the pack."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Stop use if irritation occurs and avoid contact with the eyes."
+      }
+    ],
+    "productType": "moisturizer"
+  },
+  "contentVersion": "5.0.0"
+}

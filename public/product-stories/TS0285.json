@@ -1,0 +1,71 @@
+{
+  "id": "TS0285",
+  "brand": "Tarte",
+  "productName": "Shape Tape Contour Concealer",
+  "primary": "/images/catalog/TS0285-7040503e9060.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كونسيلر شيب تيب من تارت",
+    "tagline": "لمسة صغيرة تكمّل استعدادكِ.",
+    "description": "من مكياجكِ الخفيف إلى إطلالة المساء، اتركي اللمسة الأخيرة لذوقكِ. ابدئي بتغطية تختارين مكانها بنفسكِ مع كونسيلر شيب تيب من تارت. نقاط صغيرة ودمج لطيف يمنحانكِ حرية بناء المكياج على ذوقكِ، ثم أكملي ببودرة أو مسكارا من المقترحات. راجعي الدرجة المتاحة لتنسجم مع قاعدة مكياجكِ.",
+    "benefits": [
+      "كونسيلر سائل",
+      "تغطية موضعية",
+      "دمج بكمية قليلة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "من مكياجكِ الخفيف إلى إطلالة المساء، اتركي اللمسة الأخيرة لذوقكِ. ابدئي بتغطية تختارين مكانها بنفسكِ مع كونسيلر شيب تيب من تارت. نقاط صغيرة ودمج لطيف يمنحانكِ حرية بناء المكياج على ذوقكِ، ثم أكملي ببودرة أو مسكارا من المقترحات. راجعي الدرجة المتاحة لتنسجم مع قاعدة مكياجكِ.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي نقاطًا قليلة على المناطق المطلوبة وادمجي بالتربيت بفرشاة أو إسفنجة نظيفة، ثم ثبتي بخفة إذا رغبتِ."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي نقاطًا قليلة على المناطق المطلوبة وادمجي بالتربيت بفرشاة أو إسفنجة نظيفة، ثم ثبتي بخفة إذا رغبتِ."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "concealer"
+  },
+  "en": {
+    "name": "Tarte · Shape Tape Contour Concealer",
+    "tagline": "A little detail, finished your way.",
+    "description": "From a light everyday look to an evening out, make the finishing touch your own. Choose where you want coverage with Tarte Shape Tape Concealer. Small dots and gentle blending leave you in control of your makeup. Explore a powder or mascara to finish, and confirm the available shade to suit your base.",
+    "benefits": [
+      "A little detail that brings your base together.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "From a light everyday look to an evening out, make the finishing touch your own. Choose where you want coverage with Tarte Shape Tape Concealer. Small dots and gentle blending leave you in control of your makeup. Explore a powder or mascara to finish, and confirm the available shade to suit your base.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Dot a small amount where you want coverage, then tap and blend gently. Add more gradually."
+      }
+    ],
+    "notes": "Choose the available shade with the store; avoid contact with the eye itself.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Dot a small amount where you want coverage, then tap and blend gently. Add more gradually."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "concealer"
+  },
+  "contentVersion": "5.0.0"
+}

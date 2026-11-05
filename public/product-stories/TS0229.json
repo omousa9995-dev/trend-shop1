@@ -1,0 +1,71 @@
+{
+  "id": "TS0229",
+  "brand": "Estee Lauder",
+  "productName": "Advanced Night Repair 100 ml",
+  "primary": "/images/catalog/TS0229-f9f1a613196f.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم أدفانسد نايت ريبير من إستيه لودر — 100 مل",
+    "tagline": "تفاصيل صغيرة، واهتمام يشبهكِ.",
+    "description": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم أدفانسد نايت ريبير من إستيه لودر بعبوة Travel Exclusive المصوّرة، حجم 100 مل. خطوة سيروم للعناية المسائية بمظهر البشرة وملمسها، توضع قبل المرطب بكمية صغيرة مناسبة.",
+    "benefits": [
+      "عبوة Travel Exclusive",
+      "حجم 100 مل",
+      "سيروم قبل المرطب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم أدفانسد نايت ريبير من إستيه لودر بعبوة Travel Exclusive المصوّرة، حجم 100 مل. خطوة سيروم للعناية المسائية بمظهر البشرة وملمسها، توضع قبل المرطب بكمية صغيرة مناسبة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي بضع قطرات على بشرة نظيفة، ثم اتبعيها بالمرطب. التزمي بكمية ووتيرة الاستخدام على العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي بضع قطرات على بشرة نظيفة، ثم اتبعيها بالمرطب. التزمي بكمية ووتيرة الاستخدام على العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "serum"
+  },
+  "en": {
+    "name": "Estee Lauder · Advanced Night Repair 100 ml",
+    "tagline": "A thoughtful little addition to your ritual.",
+    "description": "Keep your ritual simple and choose a step that suits what you need. Estee Lauder · Advanced Night Repair 100 ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "benefits": [
+      "A thoughtful step in a routine that is yours.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Keep your ritual simple and choose a step that suits what you need. Estee Lauder · Advanced Night Repair 100 ml. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "fitText": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      }
+    ],
+    "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice."
+      }
+    ],
+    "productType": "serum"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0244",
+  "brand": "Mielle",
+  "productName": "Rosemary Mint Blend Strengthening Conditioner",
+  "primary": "/images/catalog/TS0244-217d76d89935.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بلسم روزماري منت من ميلي",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. الخطوة التي تجعل وقت الشعر أهدأ. بلسم روزماري منت من ميلي بحجم 355 مل للعناية بأطوال الشعر بعد التنظيف. يوزع على الخصلات وفق مدة العبوة ثم يشطف، ويساعد على ترتيب روتينك بين الشامبو والتصفيف.",
+    "benefits": [
+      "بلسم يُشطف",
+      "لأطوال الشعر",
+      "عبوة 355 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. الخطوة التي تجعل وقت الشعر أهدأ. بلسم روزماري منت من ميلي بحجم 355 مل للعناية بأطوال الشعر بعد التنظيف. يوزع على الخصلات وفق مدة العبوة ثم يشطف، ويساعد على ترتيب روتينك بين الشامبو والتصفيف.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي على أطوال الشعر بعد الشامبو، واتركي للمدة المكتوبة على العبوة ثم اشطفي جيدًا."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي على أطوال الشعر بعد الشامبو، واتركي للمدة المكتوبة على العبوة ثم اشطفي جيدًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "conditioner"
+  },
+  "en": {
+    "name": "Mielle · Rosemary Mint Blend Strengthening Conditioner",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Mielle · Rosemary Mint Blend Strengthening Conditioner. Take a little time for your lengths. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Take a little time for your lengths.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Mielle · Rosemary Mint Blend Strengthening Conditioner. Take a little time for your lengths. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Follow the exact pack instructions; rinse-out and leave-in products are used differently.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use after shampoo as directed on the pack, paying attention to the lengths. Rinse unless the product is specifically leave-in."
+      }
+    ],
+    "notes": "Follow the exact pack instructions; rinse-out and leave-in products are used differently.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use after shampoo as directed on the pack, paying attention to the lengths. Rinse unless the product is specifically leave-in."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Follow the exact pack instructions; rinse-out and leave-in products are used differently."
+      }
+    ],
+    "productType": "conditioner"
+  },
+  "contentVersion": "5.0.0"
+}

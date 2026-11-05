@@ -1,0 +1,71 @@
+{
+  "id": "TS0277",
+  "brand": "Feather",
+  "productName": "Flamingos Facial Razors 3 Pack",
+  "primary": "/images/catalog/TS0277-3b4fda223ed2.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "شفرات فلامينغوس للوجه — 3 قطع",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أداة صغيرة لروتينكِ في البيت. شفرات فيذر فلامينغوس للوجه، مجموعة من 3 قطع كما في العبوة المصوّرة. استخدمي شفرة نظيفة بحركات قصيرة وخفيفة وفق التعليمات، وتجنبي البشرة المتهيجة أو مشاركة الشفرة مع الآخرين.",
+    "benefits": [
+      "مجموعة 3 قطع",
+      "للترتيب بحركات خفيفة",
+      "مقبض عملي للاستخدام"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أداة صغيرة لروتينكِ في البيت. شفرات فيذر فلامينغوس للوجه، مجموعة من 3 قطع كما في العبوة المصوّرة. استخدمي شفرة نظيفة بحركات قصيرة وخفيفة وفق التعليمات، وتجنبي البشرة المتهيجة أو مشاركة الشفرة مع الآخرين.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي شفرة نظيفة بحركات قصيرة وخفيفة حسب تعليمات العبوة، بعيدًا عن الجلد المتهيج والحبوب. لا تشاركي الشفرة وتخلّصي منها إذا تلفت."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي شفرة نظيفة بحركات قصيرة وخفيفة حسب تعليمات العبوة، بعيدًا عن الجلد المتهيج والحبوب. لا تشاركي الشفرة وتخلّصي منها إذا تلفت."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "hair-removal"
+  },
+  "en": {
+    "name": "Feather · Flamingos Facial Razors 3 Pack",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Feather · Flamingos Facial Razors 3 Pack. A little tool for your at-home routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little tool for your at-home routine.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Feather · Flamingos Facial Razors 3 Pack. A little tool for your at-home routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Avoid irritated skin and do not share personal grooming tools. Keep blades away from children.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use gently on clean skin following the tool’s exact instructions, without repeated hard pressure."
+      }
+    ],
+    "notes": "Avoid irritated skin and do not share personal grooming tools. Keep blades away from children.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use gently on clean skin following the tool’s exact instructions, without repeated hard pressure."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid irritated skin and do not share personal grooming tools. Keep blades away from children."
+      }
+    ],
+    "productType": "hair-removal"
+  },
+  "contentVersion": "5.0.0"
+}

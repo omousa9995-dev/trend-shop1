@@ -1,0 +1,71 @@
+{
+  "id": "TS0354",
+  "brand": "Plump it!",
+  "productName": "Volumising Lip Plumper Sponge Tip Click Applicator",
+  "primary": "/images/catalog/TS0354-5fcabbd7a10b.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ليب بلامبر بفرشاة إسفنجية من بلامب إت",
+    "tagline": "ابتسامتكِ، ولمستكِ المفضلة.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. ليب بلامبر من بلامب إت بفرشاة إسفنجية يضيف خطوة لامعة إلى مكياج الشفاه. ابدئي بكمية قليلة على شفاه سليمة واتّبعي تعليمات العبوة؛ قد يسبب إحساسًا بالوخز، ولا يضمن تكبيرًا دائمًا للشفاه.",
+    "benefits": [
+      "فرشاة إسفنجية للتطبيق",
+      "لمسة تجميلية للشفاه",
+      "كمية صغيرة قابلة للتوزيع"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. ليب بلامبر من بلامب إت بفرشاة إسفنجية يضيف خطوة لامعة إلى مكياج الشفاه. ابدئي بكمية قليلة على شفاه سليمة واتّبعي تعليمات العبوة؛ قد يسبب إحساسًا بالوخز، ولا يضمن تكبيرًا دائمًا للشفاه.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. قد يسبب الوخز؛ توقفي عند الألم أو التورم أو التهيج، ولا تضعيه على شفاه متشققة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي كمية قليلة على شفاه سليمة وجافة، ثم وزعي بلطف بحسب تعليمات العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. قد يسبب الوخز؛ توقفي عند الألم أو التورم أو التهيج، ولا تضعيه على شفاه متشققة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي كمية قليلة على شفاه سليمة وجافة، ثم وزعي بلطف بحسب تعليمات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. قد يسبب الوخز؛ توقفي عند الألم أو التورم أو التهيج، ولا تضعيه على شفاه متشققة."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "Plump it! · Volumising Lip Plumper Sponge Tip Click Applicator",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. Plump it! · Volumising Lip Plumper Sponge Tip Click Applicator. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. Plump it! · Volumising Lip Plumper Sponge Tip Click Applicator. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

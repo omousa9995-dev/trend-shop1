@@ -1,0 +1,71 @@
+{
+  "id": "TS0240",
+  "brand": "La Roche-Posay",
+  "productName": "Hydraphase HA BB Cream SPF15 Light",
+  "primary": "/images/catalog/TS0240-041a533aafaa.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم هيدرافاز HA BB من لاروش بوزيه — فاتح",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. إطلالة يومية بأقل خطوات. كريم هيدرافاز HA BB من لاروش بوزيه بدرجة Light وعامل SPF15، حجم 40 مل. اختيار لقاعدة لونية خفيفة يوزع على البشرة المرطبة، مع التأكد من ملاءمة الدرجة واستخدام حماية شمس مستقلة.",
+    "benefits": [
+      "درجة Light الفاتحة",
+      "كريم BB",
+      "حجم 40 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. إطلالة يومية بأقل خطوات. كريم هيدرافاز HA BB من لاروش بوزيه بدرجة Light وعامل SPF15، حجم 40 مل. اختيار لقاعدة لونية خفيفة يوزع على البشرة المرطبة، مع التأكد من ملاءمة الدرجة واستخدام حماية شمس مستقلة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. عامل الحماية في المكياج لا يغني عن واقي شمس مستقل بكمية كافية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ادمجي طبقة رقيقة على بشرة مرطبة وقارني اللون في إضاءة طبيعية. استخدمي واقي شمس مستقلًا بكمية كافية."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. عامل الحماية في المكياج لا يغني عن واقي شمس مستقل بكمية كافية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ادمجي طبقة رقيقة على بشرة مرطبة وقارني اللون في إضاءة طبيعية. استخدمي واقي شمس مستقلًا بكمية كافية."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. عامل الحماية في المكياج لا يغني عن واقي شمس مستقل بكمية كافية."
+      }
+    ],
+    "productType": "bb-cc"
+  },
+  "en": {
+    "name": "La Roche-Posay · Hydraphase HA BB Cream SPF15 Light",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. La Roche-Posay · Hydraphase HA BB Cream SPF15 Light. Keep your everyday look simple. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Keep your everyday look simple.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. La Roche-Posay · Hydraphase HA BB Cream SPF15 Light. Keep your everyday look simple. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Confirm the available shade. Tinted makeup does not replace a dedicated sunscreen used as directed.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Blend a small amount evenly over your face after your skincare routine."
+      }
+    ],
+    "notes": "Confirm the available shade. Tinted makeup does not replace a dedicated sunscreen used as directed.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Blend a small amount evenly over your face after your skincare routine."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Confirm the available shade. Tinted makeup does not replace a dedicated sunscreen used as directed."
+      }
+    ],
+    "productType": "bb-cc"
+  },
+  "contentVersion": "5.0.0"
+}

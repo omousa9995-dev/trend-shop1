@@ -1,0 +1,71 @@
+{
+  "id": "TS0303",
+  "brand": "Balance Active Formula",
+  "productName": "The Mighty Three Serum Set",
+  "primary": "/images/catalog/TS0303-c1c6a8b0ad84.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مجموعة ذا مايتي ثري من بالانس — 3 سيرومات",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اكتشفي روتينكِ، خطوة بخطوة. اجعلي ترتيب روتينكِ أسهل مع مجموعة ذا مايتي ثري من بالانس: ثلاثة سيرومات، كل منها بحجم 30 مل. مجموعة تجمع خطوات متنوعة للعناية، لتختاري فيتامين C أو النياسيناميد أو الهيالورونيك بحسب احتياج بشرتكِ وإرشادات كل عبوة.",
+    "benefits": [
+      "مجموعة كاملة من 3 سيرومات",
+      "30 مل لكل سيروم",
+      "اختيارات لتنويع روتين العناية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اكتشفي روتينكِ، خطوة بخطوة. اجعلي ترتيب روتينكِ أسهل مع مجموعة ذا مايتي ثري من بالانس: ثلاثة سيرومات، كل منها بحجم 30 مل. مجموعة تجمع خطوات متنوعة للعناية، لتختاري فيتامين C أو النياسيناميد أو الهيالورونيك بحسب احتياج بشرتكِ وإرشادات كل عبوة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اختاري سيرومًا بحسب احتياج بشرتكِ وإرشادات كل عبوة، ووزعي كمية صغيرة قبل المرطب. أدخلي كل سيروم على حدة واتبعي واقي الشمس صباحًا."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اختاري سيرومًا بحسب احتياج بشرتكِ وإرشادات كل عبوة، ووزعي كمية صغيرة قبل المرطب. أدخلي كل سيروم على حدة واتبعي واقي الشمس صباحًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "skincare-set"
+  },
+  "en": {
+    "name": "Balance Active Formula · The Mighty Three Serum Set",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Balance Active Formula · The Mighty Three Serum Set. Explore your next ritual, one step at a time. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Explore your next ritual, one step at a time.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Balance Active Formula · The Mighty Three Serum Set. Explore your next ritual, one step at a time. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Set contents and sizes should be checked against the available pack. Patch test each new product.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Check the directions for each item in the set and introduce new products gradually rather than all at once."
+      }
+    ],
+    "notes": "Set contents and sizes should be checked against the available pack. Patch test each new product.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Check the directions for each item in the set and introduce new products gradually rather than all at once."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Set contents and sizes should be checked against the available pack. Patch test each new product."
+      }
+    ],
+    "productType": "skincare-set"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0210",
+  "brand": "Eucerin",
+  "productName": "DermatoCLEAN Hyaluron Cleansing Gel",
+  "primary": "/images/catalog/TS0210-1f62d7e2d5af.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "غسول ديرماتو كلين هيالورون من يوسيرين",
+    "tagline": "اغسلي تعب اليوم، وابدئي لحظتكِ.",
+    "description": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. جل التنظيف ديرماتو كلين هيالورون من يوسيرين لخطوة تنظيف الوجه اليومية. يدلك على بشرة مبللة لإزالة الشوائب اليومية ثم يشطف، ويليه سيروم أو مرطب مناسب لنوع بشرتك.",
+    "benefits": [
+      "منظف بقوام جل",
+      "يُشطف بالماء",
+      "خطوة قبل الترطيب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. جل التنظيف ديرماتو كلين هيالورون من يوسيرين لخطوة تنظيف الوجه اليومية. يدلك على بشرة مبللة لإزالة الشوائب اليومية ثم يشطف، ويليه سيروم أو مرطب مناسب لنوع بشرتك.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "بللي الوجه، ودلكي كمية مناسبة بلطف بعيدًا عن العينين، ثم اشطفي جيدًا بالماء واتبعيه بمرطب."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "بللي الوجه، ودلكي كمية مناسبة بلطف بعيدًا عن العينين، ثم اشطفي جيدًا بالماء واتبعيه بمرطب."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "en": {
+    "name": "Eucerin · DermatoCLEAN Hyaluron Cleansing Gel",
+    "tagline": "A gentle beginning to your own little ritual.",
+    "description": "Make a little room for a calm cleansing moment. Eucerin · DermatoCLEAN Hyaluron Cleansing Gel. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "benefits": [
+      "A fresh start, or a gentle end to your day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little room for a calm cleansing moment. Eucerin · DermatoCLEAN Hyaluron Cleansing Gel. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "fitText": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      }
+    ],
+    "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "contentVersion": "5.0.0"
+}

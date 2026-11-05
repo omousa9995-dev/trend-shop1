@@ -1,0 +1,71 @@
+{
+  "id": "TS0002",
+  "brand": "Dodo Girl",
+  "productName": "Nude Contour & Eyeshadow Palette By Dodo Girl",
+  "primary": "/images/catalog/TS0002-4f6b4132e536.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "باليت نود للكونتور والظلال من دودو جيرل",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. حدّدي ملامحكِ بلمستكِ الخاصة. درجات نود تمنحك مساحة للعب بالظل وتحديد الملامح دون تعقيد روتينك. تساعدك باليت دودو جيرل على الانتقال من لمسة خفيفة للنهار إلى تحديد أوضح للمساء، مع تنسيق الدرجات بحسب إطلالتك ولون بشرتك.",
+    "benefits": [
+      "درجات نود قابلة للتنسيق",
+      "تحديد ناعم للملامح",
+      "إطلالات متنوعة من باليت واحدة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. حدّدي ملامحكِ بلمستكِ الخاصة. درجات نود تمنحك مساحة للعب بالظل وتحديد الملامح دون تعقيد روتينك. تساعدك باليت دودو جيرل على الانتقال من لمسة خفيفة للنهار إلى تحديد أوضح للمساء، مع تنسيق الدرجات بحسب إطلالتك ولون بشرتك.",
+    "fitText": "تُراجع ألوان الباليت وتفاصيل استخدامها عند اختيار النسخة المتاحة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ابدئي بكمية قليلة بفرشاة مناسبة، ثم ادمجي تدريجيًا. استخدمي كل خانة في المنطقة المحددة على العبوة."
+      }
+    ],
+    "notes": "تُراجع ألوان الباليت وتفاصيل استخدامها عند اختيار النسخة المتاحة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ابدئي بكمية قليلة بفرشاة مناسبة، ثم ادمجي تدريجيًا. استخدمي كل خانة في المنطقة المحددة على العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تُراجع ألوان الباليت وتفاصيل استخدامها عند اختيار النسخة المتاحة."
+      }
+    ],
+    "productType": "contour"
+  },
+  "en": {
+    "name": "Dodo Girl · Nude Contour & Eyeshadow Palette",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Dodo Girl · Nude Contour & Eyeshadow Palette. Your features, with your own finishing touch. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Your features, with your own finishing touch.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Dodo Girl · Nude Contour & Eyeshadow Palette. Your features, with your own finishing touch. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Choose the available shade with the store. Follow the product’s labelled areas of use.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a little to the areas you want to define and blend the edges well with a suitable brush or sponge."
+      }
+    ],
+    "notes": "Choose the available shade with the store. Follow the product’s labelled areas of use.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a little to the areas you want to define and blend the edges well with a suitable brush or sponge."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Choose the available shade with the store. Follow the product’s labelled areas of use."
+      }
+    ],
+    "productType": "contour"
+  },
+  "contentVersion": "5.0.0"
+}

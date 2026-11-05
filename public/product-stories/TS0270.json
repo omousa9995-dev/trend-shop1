@@ -1,0 +1,71 @@
+{
+  "id": "TS0270",
+  "brand": "The Ordinary",
+  "productName": "Saccharomyces Ferment 30% Milky Toner",
+  "primary": "/images/catalog/TS0270-89a659fd21e3.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "تونر ساكارومايسس فيرمنت 30% الميلكي من ذا أورديناري",
+    "tagline": "امنحي روتينكِ وقتًا ألطف.",
+    "description": "خذي وقتكِ بين خطوات العناية، واختاري ما ينسجم مع بشرتكِ. مساحة هادئة بين التنظيف والعناية. تونر ساكارومايسس فيرمنت 30% الميلكي من ذا أورديناري بحجم 100 مل. خطوة سائلة للعناية بملمس البشرة بعد التنظيف، تستخدم وفق إرشادات المنتج مع التدرج ومتابعتها بالمرطب والحماية الشمسية.",
+    "benefits": [
+      "تونر ميلكي",
+      "ساكارومايسس فيرمنت 30%",
+      "حجم 100 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "خذي وقتكِ بين خطوات العناية، واختاري ما ينسجم مع بشرتكِ. مساحة هادئة بين التنظيف والعناية. تونر ساكارومايسس فيرمنت 30% الميلكي من ذا أورديناري بحجم 100 مل. خطوة سائلة للعناية بملمس البشرة بعد التنظيف، تستخدم وفق إرشادات المنتج مع التدرج ومتابعتها بالمرطب والحماية الشمسية.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تدرجي في الاستخدام وتجنبي جمعه مع مقشرات قوية في الروتين نفسه، واستخدمي واقي الشمس نهارًا.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية قليلة بعد تنظيف البشرة وفق تعليمات العبوة، ثم تابعي بالمرطب. ابدئي بوتيرة متباعدة إذا كانت التركيبة مقشرة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تدرجي في الاستخدام وتجنبي جمعه مع مقشرات قوية في الروتين نفسه، واستخدمي واقي الشمس نهارًا.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية قليلة بعد تنظيف البشرة وفق تعليمات العبوة، ثم تابعي بالمرطب. ابدئي بوتيرة متباعدة إذا كانت التركيبة مقشرة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تدرجي في الاستخدام وتجنبي جمعه مع مقشرات قوية في الروتين نفسه، واستخدمي واقي الشمس نهارًا."
+      }
+    ],
+    "productType": "toner"
+  },
+  "en": {
+    "name": "The Ordinary · Saccharomyces Ferment 30% Milky Toner",
+    "tagline": "A quiet moment between your care steps.",
+    "description": "Take your time between care steps and find what fits your skin. The Ordinary · Saccharomyces Ferment 30% Milky Toner. A quiet little pause between cleansing and care. Take a pause after cleansing before your next layer of care.",
+    "benefits": [
+      "A quiet little pause between cleansing and care.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Take your time between care steps and find what fits your skin. The Ordinary · Saccharomyces Ferment 30% Milky Toner. A quiet little pause between cleansing and care. Take a pause after cleansing before your next layer of care.",
+    "fitText": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser."
+      }
+    ],
+    "notes": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "After cleansing, apply gently using your palms or a cotton pad, as directed on the pack. Follow with moisturiser."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. If the toner contains exfoliating acids, introduce gradually and use sunscreen in the daytime."
+      }
+    ],
+    "productType": "toner"
+  },
+  "contentVersion": "5.0.0"
+}

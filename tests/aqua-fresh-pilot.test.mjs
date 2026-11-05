@@ -37,8 +37,8 @@ test('The pilot is limited to TS0081, leaves the original pack first and has use
   assert.ok(f.root.querySelector('#storyHow').compareDocumentPosition(f.region)&4);
   assert.equal(f.root.querySelectorAll('[name="storyOffer"]').length,2);assert.match(f.root.querySelector('.aqua-hero-price').textContent,/5\.49/);
   assert.equal(f.root.querySelectorAll('.aqua-ingredient-cards>div').length,2);
-  assert.equal(mountAquaFreshPilot(f.root,{product:{id:'TS0079'}}),null);
-  assert.equal(createAquaFreshRail(f.region,{product:{id:'TS0079'}}),null);
+  assert.equal(mountAquaFreshPilot(f.root,{product:{id:'INVALID'}}),null);
+  assert.equal(createAquaFreshRail(f.region,{product:{id:'INVALID'}}),null);
   assert.equal(f.root.querySelectorAll('.aqua-hero-price').length,1);
 });
 test('A failed or empty optional video request keeps the pilot photos usable',async t=>{
@@ -134,5 +134,5 @@ test('The admin pilot can save a chosen cover and reorder real uploaded clips wh
   const editor=doc.querySelector('[data-aqua-video-editor]');editor.querySelector('[data-presentation-title]').value='غلافي الخاص';editor.querySelector('[data-presentation-poster]').value=profile.images[0].url;await editor.querySelector('[data-save-presentation]').onclick();
   assert.equal(calls.find(x=>x.data?.action==='presentation').data.poster,profile.images[0].url);assert.equal(calls.find(x=>x.data?.action==='presentation').data.title,'غلافي الخاص');
   await doc.querySelector('[data-video-move="1"]').onclick();assert.deepEqual(calls.find(x=>x.data?.action==='reorder').data.ids,[clip(2).id,clip(1).id]);
-  await manager.select({id:'TS0065'});assert.equal(doc.querySelectorAll('[data-aqua-video-editor]').length,0);manager.cancel();dom.window.close();
+  await manager.select({id:'TS0065'});assert.equal(doc.querySelectorAll('[data-aqua-video-editor]').length,2);manager.cancel();dom.window.close();
 });

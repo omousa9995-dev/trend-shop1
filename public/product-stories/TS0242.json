@@ -1,0 +1,71 @@
+{
+  "id": "TS0242",
+  "brand": "Mielle",
+  "productName": "Rosemary Mint Scalp Hair Strengthening Oil",
+  "primary": "/images/catalog/TS0242-bac676b2bc1d.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت روزماري منت للشعر من ميلي",
+    "tagline": "وقتكِ مع شعركِ، بقليل من الدلال.",
+    "description": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. زيت روزماري منت من ميلي بحجم 59 مل للعناية بالشعر وفروة الرأس بحسب تعليمات العبوة. وزعي كمية قليلة على المناطق المناسبة ودلكي بلطف، دون وعد بتغيير نمو الشعر أو علاج التساقط.",
+    "benefits": [
+      "زيت للشعر",
+      "روزماري ومنت",
+      "حجم 59 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. زيت روزماري منت من ميلي بحجم 59 مل للعناية بالشعر وفروة الرأس بحسب تعليمات العبوة. وزعي كمية قليلة على المناطق المناسبة ودلكي بلطف، دون وعد بتغيير نمو الشعر أو علاج التساقط.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية قليلة على الأطوال أو المناطق المسموح بها على العبوة. لا تفرطي بالكمية وراقبي ملاءمة فروة الرأس."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية قليلة على الأطوال أو المناطق المسموح بها على العبوة. لا تفرطي بالكمية وراقبي ملاءمة فروة الرأس."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "en": {
+    "name": "Mielle · Rosemary Mint Scalp Hair Strengthening Oil",
+    "tagline": "A little care for the hair you love.",
+    "description": "Take a moment with your hair and choose what fits your routine. Mielle · Rosemary Mint Scalp Hair Strengthening Oil. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little finishing care for your hair.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Take a moment with your hair and choose what fits your routine. Mielle · Rosemary Mint Scalp Hair Strengthening Oil. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      }
+    ],
+    "notes": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "contentVersion": "5.0.0"
+}

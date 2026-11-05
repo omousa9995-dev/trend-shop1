@@ -1,0 +1,71 @@
+{
+  "id": "TS0221",
+  "brand": "Pixi",
+  "productName": "Jasmine Oil Blend",
+  "primary": "/images/catalog/TS0221-df03ea5550a7.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مزيج زيت الياسمين من بيكسي",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بضع قطرات تُكمل وقت العناية. مزيج زيت الياسمين من بيكسي لخطوة العناية بالوجه. استخدمي قطرات قليلة ضمن روتينك حسب حاجة البشرة وملاءمتها للزيوت، وادمجيها بلطف دون الاقتراب من العينين أو المبالغة في الكمية.",
+    "benefits": [
+      "مزيج زيتي للوجه",
+      "كمية قليلة للتوزيع",
+      "خطوة عناية إضافية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بضع قطرات تُكمل وقت العناية. مزيج زيت الياسمين من بيكسي لخطوة العناية بالوجه. استخدمي قطرات قليلة ضمن روتينك حسب حاجة البشرة وملاءمتها للزيوت، وادمجيها بلطف دون الاقتراب من العينين أو المبالغة في الكمية.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ربّتي قطرات قليلة على البشرة ضمن روتينك بحسب تعليمات العبوة، وتجنبي العينين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ربّتي قطرات قليلة على البشرة ضمن روتينك بحسب تعليمات العبوة، وتجنبي العينين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "face-oil"
+  },
+  "en": {
+    "name": "Pixi · Jasmine Oil Blend",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Pixi · Jasmine Oil Blend. A few drops to finish your care ritual. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A few drops to finish your care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Pixi · Jasmine Oil Blend. A few drops to finish your care ritual. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Patch test first. Avoid the eyes, and check that the product is suitable for your skin.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Warm a small amount between your palms and press gently onto the areas specified on the pack."
+      }
+    ],
+    "notes": "Patch test first. Avoid the eyes, and check that the product is suitable for your skin.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Warm a small amount between your palms and press gently onto the areas specified on the pack."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Avoid the eyes, and check that the product is suitable for your skin."
+      }
+    ],
+    "productType": "face-oil"
+  },
+  "contentVersion": "5.0.0"
+}

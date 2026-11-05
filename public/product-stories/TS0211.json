@@ -1,0 +1,71 @@
+{
+  "id": "TS0211",
+  "brand": "CeraVe",
+  "productName": "SA Smoothing Cream Urea 10%",
+  "primary": "/images/catalog/TS0211-8b077117fa97.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم SA لتنعيم البشرة مع يوريا 10% من سيرافي",
+    "tagline": "لأن وقت العناية، وقت لكِ.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم SA سموذينغ من سيرافي مع يوريا 10% بعبوة 177 مل. عناية للجسم تجمع الترطيب والتنعيم للمناطق ذات الملمس الخشن، مع التدرج في الاستخدام واتباع تعليمات العبوة دون فرك إضافي.",
+    "benefits": [
+      "يوريا 10% بحسب العبوة",
+      "عناية بملمس الجسم",
+      "عبوة 177 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم SA سموذينغ من سيرافي مع يوريا 10% بعبوة 177 مل. عناية للجسم تجمع الترطيب والتنعيم للمناطق ذات الملمس الخشن، مع التدرج في الاستخدام واتباع تعليمات العبوة دون فرك إضافي.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تدرجي في الاستخدام وتجنبي جمعه مع مقشرات قوية في الروتين نفسه، واستخدمي واقي الشمس نهارًا.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي على مناطق الجسم ذات الملمس الخشن حسب تعليمات العبوة. ابدئي على مساحة صغيرة ولا تضعيه على جلد مجروح أو متهيج."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تدرجي في الاستخدام وتجنبي جمعه مع مقشرات قوية في الروتين نفسه، واستخدمي واقي الشمس نهارًا.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي على مناطق الجسم ذات الملمس الخشن حسب تعليمات العبوة. ابدئي على مساحة صغيرة ولا تضعيه على جلد مجروح أو متهيج."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تدرجي في الاستخدام وتجنبي جمعه مع مقشرات قوية في الروتين نفسه، واستخدمي واقي الشمس نهارًا."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "CeraVe · SA Smoothing Cream Urea 10%",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. CeraVe · SA Smoothing Cream Urea 10%. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. CeraVe · SA Smoothing Cream Urea 10%. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

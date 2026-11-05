@@ -1,0 +1,71 @@
+{
+  "id": "TS0332",
+  "brand": "SADOER",
+  "productName": "Strawberry Moisture Foot Mask",
+  "primary": "/images/catalog/TS0332-44cdd21a976a.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك القدمين المرطب بالفراولة من سادور",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ماسك القدمين بالفراولة من سادور، في العبوة المصوّرة على شكل قدم، دعوة لوقت هادئ بعد يوم من الحركة. اتبعي مدة الاستخدام المكتوبة على العبوة واستمتعي بخطوة عناية تهتم بملمس القدمين وراحتهما.",
+    "benefits": [
+      "ماسك مخصص للقدمين",
+      "نسخة الفراولة",
+      "لحظة عناية منزلية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ماسك القدمين بالفراولة من سادور، في العبوة المصوّرة على شكل قدم، دعوة لوقت هادئ بعد يوم من الحركة. اتبعي مدة الاستخدام المكتوبة على العبوة واستمتعي بخطوة عناية تهتم بملمس القدمين وراحتهما.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي الماسك على قدمين نظيفتين وجافتين. التزمي بمدة الاستخدام وإرشادات العبوة، ثم أكملي العناية حسب التعليمات."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي الماسك على قدمين نظيفتين وجافتين. التزمي بمدة الاستخدام وإرشادات العبوة، ثم أكملي العناية حسب التعليمات."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "en": {
+    "name": "SADOER · Strawberry Moisture Foot Mask",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. SADOER · Strawberry Moisture Foot Mask. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small pause for your feet after a long day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. SADOER · Strawberry Moisture Foot Mask. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      }
+    ],
+    "notes": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "contentVersion": "5.0.0"
+}

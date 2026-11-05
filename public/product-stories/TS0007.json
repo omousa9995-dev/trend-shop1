@@ -1,0 +1,71 @@
+{
+  "id": "TS0007",
+  "brand": "MERRYCOLOR",
+  "productName": "9 Color Eyeshadow Palette By MERRYCOLOR",
+  "primary": "/images/catalog/TS0007-513d8ec6f9c3.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "باليت 9 ألوان للعيون من ميري كولور",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت صغيرة تساعدك على تجربة تنسيقات مختلفة للعين دون الحاجة إلى قطع كثيرة. اختاري درجة أساسية ثم أضيفي تحديدًا أو لمعة بحسب الألوان الفعلية في الباليت، لتحصلي على إطلالة تناسب يومك.",
+    "benefits": [
+      "تسع درجات في عبوة واحدة",
+      "تسهيل تنسيق الظلال",
+      "تحكم في قوة الإطلالة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت صغيرة تساعدك على تجربة تنسيقات مختلفة للعين دون الحاجة إلى قطع كثيرة. اختاري درجة أساسية ثم أضيفي تحديدًا أو لمعة بحسب الألوان الفعلية في الباليت، لتحصلي على إطلالة تناسب يومك.",
+    "fitText": "تُحدّد لوحة الألوان المتاحة قبل اعتماد المنتج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي الظلال على الجفن بفرشاة نظيفة، وابني اللون بخفة وادمجي جيدًا."
+      }
+    ],
+    "notes": "تُحدّد لوحة الألوان المتاحة قبل اعتماد المنتج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي الظلال على الجفن بفرشاة نظيفة، وابني اللون بخفة وادمجي جيدًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تُحدّد لوحة الألوان المتاحة قبل اعتماد المنتج."
+      }
+    ],
+    "productType": "eyeshadow"
+  },
+  "en": {
+    "name": "MERRYCOLOR · 9 Color Eyeshadow Palette",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. MERRYCOLOR · 9 Color Eyeshadow Palette. A little palette of possibilities. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little palette of possibilities.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. MERRYCOLOR · 9 Color Eyeshadow Palette. A little palette of possibilities. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available palette colours and the areas of use indicated on its packaging.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Start with a small amount on a suitable brush, then blend and layer gradually."
+      }
+    ],
+    "notes": "Check the available palette colours and the areas of use indicated on its packaging.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Start with a small amount on a suitable brush, then blend and layer gradually."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available palette colours and the areas of use indicated on its packaging."
+      }
+    ],
+    "productType": "eyeshadow"
+  },
+  "contentVersion": "5.0.0"
+}

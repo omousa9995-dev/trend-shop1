@@ -1,0 +1,71 @@
+{
+  "id": "TS0323",
+  "brand": "Flormar",
+  "productName": "Stylematic Eyeliner Pencil Collection",
+  "primary": "/images/catalog/TS0323-8b67bd78ec57.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "قلم ستايلماتيك لتحديد العيون من فلورمار",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. قلم ستايلماتيك من فلورمار يمنح مكياج العين مساحة للون والتجربة. قوام القلم الدوار يسهل رسم الخط، وصيغته مقاومة للماء؛ أكدي اللون المتاح قبل الطلب، فالسعر المعروض لقلم واحد من اختياركِ.",
+    "benefits": [
+      "قلم دوار لتحديد العين",
+      "صيغة مقاومة للماء",
+      "السعر لقلم واحد"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. قلم ستايلماتيك من فلورمار يمنح مكياج العين مساحة للون والتجربة. قوام القلم الدوار يسهل رسم الخط، وصيغته مقاومة للماء؛ أكدي اللون المتاح قبل الطلب، فالسعر المعروض لقلم واحد من اختياركِ.",
+    "fitText": "السعر لقلم واحد؛ الصورة توضح أحد الألوان، وأكدي اللون المتاح قبل الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ارسمي خطًا رفيعًا بمحاذاة الرموش على الجلد الخارجي، وزيدي السمك بالتدريج. تجنبي ملامسة داخل العين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ارسمي خطًا رفيعًا بمحاذاة الرموش على الجلد الخارجي، وزيدي السمك بالتدريج. تجنبي ملامسة داخل العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "السعر لقلم واحد؛ الصورة توضح أحد الألوان، وأكدي اللون المتاح قبل الطلب."
+      }
+    ],
+    "productType": "eyeliner"
+  },
+  "en": {
+    "name": "Flormar · Stylematic Eyeliner Pencil Collection",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Flormar · Stylematic Eyeliner Pencil Collection. Define your moment, softly or boldly. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Define your moment, softly or boldly.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Flormar · Stylematic Eyeliner Pencil Collection. Define your moment, softly or boldly. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Draw a light line along the lash line, building the shape in short strokes."
+      }
+    ],
+    "notes": "Use only in the areas indicated on the packaging. Do not share eye products.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Draw a light line along the lash line, building the shape in short strokes."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "eyeliner"
+  },
+  "contentVersion": "5.0.0"
+}

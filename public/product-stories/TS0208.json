@@ -1,0 +1,71 @@
+{
+  "id": "TS0208",
+  "brand": "SHEGLAM",
+  "productName": "Color Bloom Liquid Blush",
+  "primary": "/images/catalog/TS0208-23b5b549ecd6.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بلاشر كولور بلوم السائل من شيغلام",
+    "tagline": "لون لطيف للحظاتكِ الحلوة.",
+    "description": "امنحي إطلالتكِ لمسة لون على ذوقكِ، وابدئي يومكِ بابتسامة. لمسة لون ترافق ابتسامتكِ. بلاشر كولور بلوم السائل من شيغلام يمنح الخدود لمسة لون قابلة للدمج. ابدئي بنقاط قليلة وادمجيها بلطف فوق قاعدة المكياج أو البشرة المرطبة؛ الدرجة المتاحة تحتاج تأكيدًا مع المتجر.",
+    "benefits": [
+      "بلاشر سائل",
+      "دمج سهل بالتدريج",
+      "تحكم بكمية اللون"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "امنحي إطلالتكِ لمسة لون على ذوقكِ، وابدئي يومكِ بابتسامة. لمسة لون ترافق ابتسامتكِ. بلاشر كولور بلوم السائل من شيغلام يمنح الخدود لمسة لون قابلة للدمج. ابدئي بنقاط قليلة وادمجيها بلطف فوق قاعدة المكياج أو البشرة المرطبة؛ الدرجة المتاحة تحتاج تأكيدًا مع المتجر.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ابدئي بنقاط قليلة على الخدين وادمجي بسرعة ولطف. أضيفي المزيد بالتدريج حسب درجة اللون المطلوبة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ابدئي بنقاط قليلة على الخدين وادمجي بسرعة ولطف. أضيفي المزيد بالتدريج حسب درجة اللون المطلوبة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "blush"
+  },
+  "en": {
+    "name": "SHEGLAM · Color Bloom Liquid Blush",
+    "tagline": "A touch of colour for your lovely moments.",
+    "description": "Add a little colour your way and start your day with a smile. SHEGLAM · Color Bloom Liquid Blush. A touch of colour to go with your smile. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A touch of colour to go with your smile.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Add a little colour your way and start your day with a smile. SHEGLAM · Color Bloom Liquid Blush. A touch of colour to go with your smile. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a little to your cheeks and blend gradually to the intensity you prefer."
+      }
+    ],
+    "notes": "Check the available colour with the store; the photographed pack does not represent every shade.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a little to your cheeks and blend gradually to the intensity you prefer."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "blush"
+  },
+  "contentVersion": "5.0.0"
+}

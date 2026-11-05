@@ -1,0 +1,71 @@
+{
+  "id": "TS0304",
+  "brand": "Maybelline",
+  "productName": "Super Stay Vinyl Ink Liquid Lipcolor",
+  "primary": "/images/catalog/TS0304-cb3d47b3b475.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "أحمر شفاه سوبر ستاي فينيل إنك من ميبيلين",
+    "tagline": "لون لمزاجكِ، وابتسامة ليومكِ.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. حين ترغبين بلمسة لون لافتة، يأتي سوبر ستاي فينيل إنك من ميبيلين ليمنح شفتيكِ مظهرًا لامعًا وأنيقًا. طبقة مدروسة تعطي إطلالتكِ حضورها؛ اختاري اللون المتاح مع المتجر قبل تثبيت الطلب.",
+    "benefits": [
+      "لمسة نهائية لامعة",
+      "أحمر شفاه سائل",
+      "فرشاة لتحديد وتوزيع اللون"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. حين ترغبين بلمسة لون لافتة، يأتي سوبر ستاي فينيل إنك من ميبيلين ليمنح شفتيكِ مظهرًا لامعًا وأنيقًا. طبقة مدروسة تعطي إطلالتكِ حضورها؛ اختاري اللون المتاح مع المتجر قبل تثبيت الطلب.",
+    "fitText": "أكدي لون الشفاه المتاح مع المتجر قبل تثبيت الطلب؛ الصورة توضيحية للمنتج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي كمية قليلة على شفاه سليمة وجافة، ثم وزعي بلطف بحسب تعليمات العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي كمية قليلة على شفاه سليمة وجافة، ثم وزعي بلطف بحسب تعليمات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "أكدي لون الشفاه المتاح مع المتجر قبل تثبيت الطلب؛ الصورة توضيحية للمنتج."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "Maybelline · Super Stay Vinyl Ink Liquid Lipcolor",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. Maybelline · Super Stay Vinyl Ink Liquid Lipcolor. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. Maybelline · Super Stay Vinyl Ink Liquid Lipcolor. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

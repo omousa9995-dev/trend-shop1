@@ -1,0 +1,71 @@
+{
+  "id": "TS0339",
+  "brand": "Hismile",
+  "productName": "V34 Colour Corrector Serum",
+  "primary": "/images/catalog/TS0339-1b56ed5a6c82.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم تصحيح مظهر لون الأسنان V34 من هاي سمايل",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تفصيلة من روتين ابتسامتكِ. مصحح اللون البنفسجي V34 من هاي سمايل بعبوة 30 مل مخصص لتحسين مظهر لون الابتسامة بصورة تجميلية مؤقتة. اتبعي تعليمات العبوة، واحتفظي بتنظيف الأسنان اليومي كخطوة أساسية؛ ليس تبييضًا دائمًا أو علاجًا للأسنان.",
+    "benefits": [
+      "تصحيح تجميلي مؤقت لمظهر اللون",
+      "صيغة بنفسجية",
+      "عبوة 30 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تفصيلة من روتين ابتسامتكِ. مصحح اللون البنفسجي V34 من هاي سمايل بعبوة 30 مل مخصص لتحسين مظهر لون الابتسامة بصورة تجميلية مؤقتة. اتبعي تعليمات العبوة، واحتفظي بتنظيف الأسنان اليومي كخطوة أساسية؛ ليس تبييضًا دائمًا أو علاجًا للأسنان.",
+    "fitText": "لا يُبتلع. اتبعي تعليمات العبوة والقيود العمرية، وتوقفي عند التهيج. لا يغني عن تنظيف الأسنان أو مراجعة طبيب الأسنان.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي تعليمات العبوة للكمية وطريقة الاستعمال. لا تبتلعي المنتج، ولا تجعليه بديلًا عن تنظيف الأسنان المعتاد."
+      }
+    ],
+    "notes": "لا يُبتلع. اتبعي تعليمات العبوة والقيود العمرية، وتوقفي عند التهيج. لا يغني عن تنظيف الأسنان أو مراجعة طبيب الأسنان.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي تعليمات العبوة للكمية وطريقة الاستعمال. لا تبتلعي المنتج، ولا تجعليه بديلًا عن تنظيف الأسنان المعتاد."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يُبتلع. اتبعي تعليمات العبوة والقيود العمرية، وتوقفي عند التهيج. لا يغني عن تنظيف الأسنان أو مراجعة طبيب الأسنان."
+      }
+    ],
+    "productType": "oral-care"
+  },
+  "en": {
+    "name": "Hismile · V34 Colour Corrector Serum",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Hismile V34 Colour Corrector Serum is a temporary cosmetic colour-correcting step for the appearance of teeth. Follow its exact directions; it does not replace toothbrushing, dental care or permanent whitening treatment.",
+    "benefits": [
+      "A little detail in your smile-care routine.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Hismile V34 Colour Corrector Serum is a temporary cosmetic colour-correcting step for the appearance of teeth. Follow its exact directions; it does not replace toothbrushing, dental care or permanent whitening treatment.",
+    "fitText": "Cosmetic colour correction is temporary and does not replace toothbrushing or dental care. Use only as labelled.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact oral-care product’s instructions, including the recommended quantity and contact time. Do not swallow."
+      }
+    ],
+    "notes": "Cosmetic colour correction is temporary and does not replace toothbrushing or dental care. Use only as labelled.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact oral-care product’s instructions, including the recommended quantity and contact time. Do not swallow."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Cosmetic colour correction is temporary and does not replace toothbrushing or dental care. Use only as labelled."
+      }
+    ],
+    "productType": "oral-care"
+  },
+  "contentVersion": "5.0.0"
+}

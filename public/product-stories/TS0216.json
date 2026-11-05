@@ -1,0 +1,71 @@
+{
+  "id": "TS0216",
+  "brand": "Vichy",
+  "productName": "Capital Soleil Hydrating Light Spray SPF50",
+  "primary": "/images/catalog/TS0216-f1f93c3d421e.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بخاخ الحماية كابيتال سولاي من فيشي SPF50",
+    "tagline": "صباحكِ ألطف مع خطوة تهتم بكِ.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. بخاخ كابيتال سولاي المرطب من فيشي SPF50 لتطبيق الحماية الشمسية على المناطق المسموح بها في تعليمات العبوة. وزعيه بكمية كافية وجددّيه خلال التعرض للشمس، دون رش مباشر قرب العين أو استنشاق الرذاذ.",
+    "benefits": [
+      "عامل SPF50",
+      "صيغة بخاخ",
+      "لروتين الحماية خارج المنزل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. بخاخ كابيتال سولاي المرطب من فيشي SPF50 لتطبيق الحماية الشمسية على المناطق المسموح بها في تعليمات العبوة. وزعيه بكمية كافية وجددّيه خلال التعرض للشمس، دون رش مباشر قرب العين أو استنشاق الرذاذ.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي مسافة الرش والتعليمات على العبوة ووزعي المنتج بيديك لتغطية متجانسة. لا ترشي مباشرة على الوجه ولا تستنشقي الرذاذ. جددي الحماية بانتظام."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي مسافة الرش والتعليمات على العبوة ووزعي المنتج بيديك لتغطية متجانسة. لا ترشي مباشرة على الوجه ولا تستنشقي الرذاذ. جددي الحماية بانتظام."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "Vichy · Capital Soleil Hydrating Light Spray SPF50",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. Vichy · Capital Soleil Hydrating Light Spray SPF50. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. Vichy · Capital Soleil Hydrating Light Spray SPF50. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

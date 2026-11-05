@@ -1,0 +1,71 @@
+{
+  "id": "TS0238",
+  "brand": "La Roche-Posay",
+  "productName": "Anthelios Invisible Fluid SPF50+",
+  "primary": "/images/catalog/TS0238-67ff8d50a73c.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "واقي أنثيليوس الفلويد غير المرئي من لاروش بوزيه SPF50+",
+    "tagline": "صباحكِ ألطف مع خطوة تهتم بكِ.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. فلويد أنثيليوس غير المرئي من لاروش بوزيه SPF50+ بحجم 50 مل. يُرج حسب تعليمات العبوة قبل توزيع طبقة كافية ومتجانسة، ويعاد تطبيقه أثناء الخروج وبعد التعرق أو السباحة.",
+    "benefits": [
+      "عامل SPF50+",
+      "فلويد يُرج قبل الاستخدام",
+      "حجم 50 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. فلويد أنثيليوس غير المرئي من لاروش بوزيه SPF50+ بحجم 50 مل. يُرج حسب تعليمات العبوة قبل توزيع طبقة كافية ومتجانسة، ويعاد تطبيقه أثناء الخروج وبعد التعرق أو السباحة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "La Roche-Posay · Anthelios Invisible Fluid SPF50+",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. La Roche-Posay · Anthelios Invisible Fluid SPF50+. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. La Roche-Posay · Anthelios Invisible Fluid SPF50+. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

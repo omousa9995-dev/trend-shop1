@@ -39,8 +39,12 @@ export function quoteCart(cart, products, promotions = [], {fixedSubtotalFils=0}
   const byId=new Map(products.map(p=>[p.id,p])),available=new Map();for(const item of cart)available.set(item.id,(available.get(item.id)||0)+item.qty);
   const itemsSubtotalFils=cart.reduce((n,x)=>n+productPrice(byId.get(x.id))*x.qty,0);
   const eligible=[];
+  for(const [id,qty]of available){const product=byId.get(id),pair=product?.automaticPairPriceFils;
+    if(qty>=2&&Number.isInteger(pair)&&pair>0&&pair<productPrice(product)*2)eligible.push({id:'AUTOPAIR-'+id,title:'سعر القطعتين',priceFils:pair,items:[{id,qty:2}],saving:productPrice(product)*2-pair});
+  }
   for(const raw of promotions){
     const p=promotionData(raw);if(!p?.active||!Array.isArray(p.items)||!p.items.length||!Number.isInteger(p.priceFils))continue;
+    if(p.items.length===1&&p.items[0].qty===2&&Number.isInteger(byId.get(p.items[0].id)?.automaticPairPriceFils))continue;
     if(new Set(p.items.map(x=>x.id)).size!==p.items.length||p.items.some(x=>!Number.isInteger(x.qty)||x.qty<1||!byId.has(x.id)))continue;
     const count=Math.min(...p.items.map(x=>Math.floor((available.get(x.id)||0)/x.qty)));
     const before=p.items.reduce((n,x)=>n+productPrice(byId.get(x.id))*x.qty,0);

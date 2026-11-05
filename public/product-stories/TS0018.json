@@ -1,0 +1,71 @@
+{
+  "id": "TS0018",
+  "brand": "DERMOKIL",
+  "productName": "Intensive Moisturizing Foot Mask By DERMOKIL",
+  "primary": "/images/catalog/TS0018-36db4e16b3c6.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك ترطيب مكثف للقدمين من ديرموكيل",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي قدميك استراحة عناية مع ماسك يركز على الترطيب وإحساس النعومة. يلائم روتين المساء عندما تريدين الاهتمام بمظهر الجفاف والخشونة، خصوصًا بعد يوم طويل من الوقوف أو ارتداء الأحذية.",
+    "benefits": [
+      "إحساس مريح بالترطيب",
+      "تلطيف الجلد الجاف",
+      "روتين مساء بسيط"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي قدميك استراحة عناية مع ماسك يركز على الترطيب وإحساس النعومة. يلائم روتين المساء عندما تريدين الاهتمام بمظهر الجفاف والخشونة، خصوصًا بعد يوم طويل من الوقوف أو ارتداء الأحذية.",
+    "fitText": "لا يطبق على الجروح أو التشققات المفتوحة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي الماسك بالطريقة والمدة المحددتين على العبوة، ثم أكملي العناية حسب التعليمات."
+      }
+    ],
+    "notes": "لا يطبق على الجروح أو التشققات المفتوحة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي الماسك بالطريقة والمدة المحددتين على العبوة، ثم أكملي العناية حسب التعليمات."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يطبق على الجروح أو التشققات المفتوحة."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "en": {
+    "name": "DERMOKIL · Intensive Moisturizing Foot Mask",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. DERMOKIL · Intensive Moisturizing Foot Mask. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small pause for your feet after a long day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. DERMOKIL · Intensive Moisturizing Foot Mask. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      }
+    ],
+    "notes": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "contentVersion": "5.0.0"
+}

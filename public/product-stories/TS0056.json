@@ -1,0 +1,71 @@
+{
+  "id": "TS0056",
+  "brand": "The Ordinary",
+  "productName": "The Ordinary Retinol Serum 0.5% in Squalane 30ml. TO-19401",
+  "primary": "/images/catalog/TS0056-c5c913469b65.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم ريتينول 0.5% في سكوالان من ذا أورديناري",
+    "tagline": "خطوة تحبّين العودة إليها.",
+    "description": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. اختيار لمن لديها روتين مدروس وتريد إدخال الريتينول للعناية بمظهر تفاوت الملمس والخطوط الدقيقة. قوامه الزيتي يضيف إحساسًا بالعناية، ويحتاج إدخالًا تدريجيًا واهتمامًا بالترطيب بدل استخدامه كخطوة عشوائية يومية.",
+    "benefits": [
+      "العناية بمظهر الخطوط الدقيقة",
+      "تحسين مظهر الملمس",
+      "قوام زيتي لروتين المساء"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. اختيار لمن لديها روتين مدروس وتريد إدخال الريتينول للعناية بمظهر تفاوت الملمس والخطوط الدقيقة. قوامه الزيتي يضيف إحساسًا بالعناية، ويحتاج إدخالًا تدريجيًا واهتمامًا بالترطيب بدل استخدامه كخطوة عشوائية يومية.",
+    "fitText": "لا يدمج مع ريتينويد آخر في الروتين نفسه. استخدمي واقي شمس وتوقفي عند التهيج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي كمية صغيرة مساءً على بشرة سليمة، واتبعي تعليمات الشركة بشأن التدرج والتخزين."
+      }
+    ],
+    "notes": "لا يدمج مع ريتينويد آخر في الروتين نفسه. استخدمي واقي شمس وتوقفي عند التهيج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي كمية صغيرة مساءً على بشرة سليمة، واتبعي تعليمات الشركة بشأن التدرج والتخزين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يدمج مع ريتينويد آخر في الروتين نفسه. استخدمي واقي شمس وتوقفي عند التهيج."
+      }
+    ],
+    "productType": "serum"
+  },
+  "en": {
+    "name": "The Ordinary Retinol Serum 0.5% in Squalane 30ml. TO-19401",
+    "tagline": "A thoughtful little addition to your ritual.",
+    "description": "Keep your ritual simple and choose a step that suits what you need. The Ordinary Retinol Serum 0.5% in Squalane 30ml. TO-19401. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "benefits": [
+      "A thoughtful step in a routine that is yours.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Keep your ritual simple and choose a step that suits what you need. The Ordinary Retinol Serum 0.5% in Squalane 30ml. TO-19401. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "fitText": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      }
+    ],
+    "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice. Introduce gradually and follow the exact retinoid directions. Check suitability with a qualified professional if pregnant or breastfeeding."
+      }
+    ],
+    "productType": "serum"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0006",
+  "brand": "Diamond Beauty",
+  "productName": "Ultimate Dream Eyeshadow Palette By Diamond Beauty",
+  "primary": "/images/catalog/TS0006-daf240317120.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "باليت ظلال ألتيميت دريم من دايموند بيوتي",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اصنعي إطلالة عين تعبّر عنك مع باليت ألتيميت دريم. يمكنك توزيع الدرجات الفاتحة لإضاءة الجفن وبناء العمق بالدرجات الأغمق، لتبقى شدة اللون بيدك من بداية التطبيق حتى اللمسة الأخيرة.",
+    "benefits": [
+      "تنويع إطلالات العين",
+      "مزج درجات متكاملة",
+      "بناء كثافة اللون تدريجيًا"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. اصنعي إطلالة عين تعبّر عنك مع باليت ألتيميت دريم. يمكنك توزيع الدرجات الفاتحة لإضاءة الجفن وبناء العمق بالدرجات الأغمق، لتبقى شدة اللون بيدك من بداية التطبيق حتى اللمسة الأخيرة.",
+    "fitText": "تجنبي إدخال البودرة إلى العين، واختاري النسخة ودرجاتها المحددة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي كمية قليلة بفرشاة ظلال، وادمجي الحواف قبل إضافة طبقة أخرى."
+      }
+    ],
+    "notes": "تجنبي إدخال البودرة إلى العين، واختاري النسخة ودرجاتها المحددة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي كمية قليلة بفرشاة ظلال، وادمجي الحواف قبل إضافة طبقة أخرى."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تجنبي إدخال البودرة إلى العين، واختاري النسخة ودرجاتها المحددة."
+      }
+    ],
+    "productType": "eyeshadow"
+  },
+  "en": {
+    "name": "Diamond Beauty · Ultimate Dream Eyeshadow Palette",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Diamond Beauty · Ultimate Dream Eyeshadow Palette. A little palette of possibilities. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little palette of possibilities.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Diamond Beauty · Ultimate Dream Eyeshadow Palette. A little palette of possibilities. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available palette colours and the areas of use indicated on its packaging.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Start with a small amount on a suitable brush, then blend and layer gradually."
+      }
+    ],
+    "notes": "Check the available palette colours and the areas of use indicated on its packaging.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Start with a small amount on a suitable brush, then blend and layer gradually."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available palette colours and the areas of use indicated on its packaging."
+      }
+    ],
+    "productType": "eyeshadow"
+  },
+  "contentVersion": "5.0.0"
+}

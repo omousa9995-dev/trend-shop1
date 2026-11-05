@@ -1,0 +1,71 @@
+{
+  "id": "TS0319",
+  "brand": "Vaseline",
+  "productName": "Golden Hour Glow Body Oil",
+  "primary": "/images/catalog/TS0319-73f5e5c2cfdd.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت غولدن آور غلو للجسم من فازلين",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. زيت الجسم غولدن آور غلو من فازلين بعبوة 200 مل يرافق لحظتكِ بعد الاستحمام. وزعي كمية صغيرة على البشرة ودلكي بهدوء لتحصلي على ملمس أنعم ولمسة لامعة جميلة، خاصة على الذراعين والساقين.",
+    "benefits": [
+      "زيت مخصص للجسم",
+      "لمسة لامعة وملمس ناعم",
+      "عبوة 200 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. زيت الجسم غولدن آور غلو من فازلين بعبوة 200 مل يرافق لحظتكِ بعد الاستحمام. وزعي كمية صغيرة على البشرة ودلكي بهدوء لتحصلي على ملمس أنعم ولمسة لامعة جميلة، خاصة على الذراعين والساقين.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي قليلًا على بشرة الجسم الرطبة بعد الاستحمام ودلكي بلطف. انتبهي لتجنب الانزلاق على الأسطح."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي قليلًا على بشرة الجسم الرطبة بعد الاستحمام ودلكي بلطف. انتبهي لتجنب الانزلاق على الأسطح."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "en": {
+    "name": "Vaseline · Golden Hour Glow Body Oil",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Vaseline · Golden Hour Glow Body Oil. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little time for yourself after your shower.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Vaseline · Golden Hour Glow Body Oil. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      }
+    ],
+    "notes": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use. Avoid eyes and slippery surfaces; patch test first."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "contentVersion": "5.0.0"
+}

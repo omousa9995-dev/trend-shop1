@@ -1,0 +1,71 @@
+{
+  "id": "TS0125",
+  "brand": "ACM",
+  "productName": "ACM Sébionex Cleansing Gel",
+  "primary": "/images/catalog/TS0125-1903716b4915.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "غسول سيبيونكس جل من إيه سي إم",
+    "tagline": "اغسلي تعب اليوم، وابدئي لحظتكِ.",
+    "description": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. ابدئي روتين البشرة الدهنية أو المختلطة مع غسول سيبيونكس الجل. يساعد على إزالة دهون السطح وبقايا اليوم، لتكملي العناية بإحساس نظيف ومتجدد قبل المرطب والخطوات التي تناسب بشرتك.",
+    "benefits": [
+      "تنظيف الدهون والشوائب",
+      "قوام جل",
+      "تهيئة البشرة للترطيب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. ابدئي روتين البشرة الدهنية أو المختلطة مع غسول سيبيونكس الجل. يساعد على إزالة دهون السطح وبقايا اليوم، لتكملي العناية بإحساس نظيف ومتجدد قبل المرطب والخطوات التي تناسب بشرتك.",
+    "fitText": "اتبعيه بمرطب مناسب بدل محاولة إزالة كل إحساس بالترطيب من البشرة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "رغّي كمية صغيرة على بشرة مبللة ثم اشطفي جيدًا دون فرك قوي."
+      }
+    ],
+    "notes": "اتبعيه بمرطب مناسب بدل محاولة إزالة كل إحساس بالترطيب من البشرة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "رغّي كمية صغيرة على بشرة مبللة ثم اشطفي جيدًا دون فرك قوي."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اتبعيه بمرطب مناسب بدل محاولة إزالة كل إحساس بالترطيب من البشرة."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "en": {
+    "name": "ACM Sébionex Cleansing Gel",
+    "tagline": "A gentle beginning to your own little ritual.",
+    "description": "Make a little room for a calm cleansing moment. ACM Sébionex Cleansing Gel. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "benefits": [
+      "A fresh start, or a gentle end to your day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little room for a calm cleansing moment. ACM Sébionex Cleansing Gel. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "fitText": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      }
+    ],
+    "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "contentVersion": "5.0.0"
+}

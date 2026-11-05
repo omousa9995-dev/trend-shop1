@@ -1,0 +1,71 @@
+{
+  "id": "TS0260",
+  "brand": "Beauty Tools",
+  "productName": "Crystal Hair Removal Exfoliator BD612",
+  "primary": "/images/catalog/TS0260-a5411c8847d7.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "أداة إزالة الشعر الكريستالية BD612",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أداة صغيرة لروتينكِ في البيت. أداة إزالة الشعر الكريستالية BD612 باللون الفيروزي والشكل البيضاوي المصوّر على العبوة. استخدميها فقط على مناطق الجسم المسموح بها وبضغط خفيف وفق دليلها، مع اختبار جزء صغير أولًا.",
+    "benefits": [
+      "الموديل BD612",
+      "تصميم بيضاوي",
+      "أداة قابلة لإعادة الاستخدام"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أداة صغيرة لروتينكِ في البيت. أداة إزالة الشعر الكريستالية BD612 باللون الفيروزي والشكل البيضاوي المصوّر على العبوة. استخدميها فقط على مناطق الجسم المسموح بها وبضغط خفيف وفق دليلها، مع اختبار جزء صغير أولًا.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. لا يستخدم على الجروح أو الجلد الملتهب؛ استشيري مختصًا قبل استخدامه عند السكري أو ضعف الإحساس أو الدورة الدموية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي دليل الأداة واختبري مساحة صغيرة من الجسم أولًا. استخدمي حركة وضغطًا خفيفين فقط على المناطق المسموح بها، وتوقفي عند الاحمرار."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. لا يستخدم على الجروح أو الجلد الملتهب؛ استشيري مختصًا قبل استخدامه عند السكري أو ضعف الإحساس أو الدورة الدموية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي دليل الأداة واختبري مساحة صغيرة من الجسم أولًا. استخدمي حركة وضغطًا خفيفين فقط على المناطق المسموح بها، وتوقفي عند الاحمرار."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. لا يستخدم على الجروح أو الجلد الملتهب؛ استشيري مختصًا قبل استخدامه عند السكري أو ضعف الإحساس أو الدورة الدموية."
+      }
+    ],
+    "productType": "hair-removal"
+  },
+  "en": {
+    "name": "Beauty Tools · Crystal Hair Removal Exfoliator BD612",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Beauty Tools · Crystal Hair Removal Exfoliator BD612. A little tool for your at-home routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little tool for your at-home routine.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Beauty Tools · Crystal Hair Removal Exfoliator BD612. A little tool for your at-home routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Avoid irritated skin and do not share personal grooming tools. Keep blades away from children.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use gently on clean skin following the tool’s exact instructions, without repeated hard pressure."
+      }
+    ],
+    "notes": "Avoid irritated skin and do not share personal grooming tools. Keep blades away from children.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use gently on clean skin following the tool’s exact instructions, without repeated hard pressure."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid irritated skin and do not share personal grooming tools. Keep blades away from children."
+      }
+    ],
+    "productType": "hair-removal"
+  },
+  "contentVersion": "5.0.0"
+}

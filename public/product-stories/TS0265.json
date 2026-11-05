@@ -1,0 +1,71 @@
+{
+  "id": "TS0265",
+  "brand": "Huda Beauty",
+  "productName": "Naughty Nude Eyeshadow Palette Burgundy",
+  "primary": "/images/catalog/TS0265-a378ff64209c.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "باليت ظلال نوتي نود — العبوة العنابية",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت ظلال نوتي نود بالعبوة العنابية المصوّرة لإطلالات مكياج العيون. اختاري درجات متناسقة وادمجيها تدريجيًا على الجفن، مع تأكيد نسخة وألوان الباليت المتاحة قبل تثبيت الطلب.",
+    "benefits": [
+      "باليت لظلال العين",
+      "العبوة العنابية",
+      "تنسيق ودمج الألوان"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. باليت ظلال نوتي نود بالعبوة العنابية المصوّرة لإطلالات مكياج العيون. اختاري درجات متناسقة وادمجيها تدريجيًا على الجفن، مع تأكيد نسخة وألوان الباليت المتاحة قبل تثبيت الطلب.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي الظلال على الجفن بفرشاة نظيفة وادمجي بالتدريج. تجنبي دخول المنتج إلى العين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي الظلال على الجفن بفرشاة نظيفة وادمجي بالتدريج. تجنبي دخول المنتج إلى العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "eyeshadow"
+  },
+  "en": {
+    "name": "Huda Beauty · Naughty Nude Eyeshadow Palette Burgundy",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Huda Beauty · Naughty Nude Eyeshadow Palette Burgundy. A little palette of possibilities. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little palette of possibilities.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Huda Beauty · Naughty Nude Eyeshadow Palette Burgundy. A little palette of possibilities. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Start with a small amount on a suitable brush, then blend and layer gradually."
+      }
+    ],
+    "notes": "Check the available palette colours and the areas of use indicated on its packaging.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Start with a small amount on a suitable brush, then blend and layer gradually."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "eyeshadow"
+  },
+  "contentVersion": "5.0.0"
+}

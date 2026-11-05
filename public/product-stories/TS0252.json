@@ -1,0 +1,71 @@
+{
+  "id": "TS0252",
+  "brand": "KIKO Milano",
+  "productName": "3D Hydra Lipgloss",
+  "primary": "/images/catalog/TS0252-a0ddeac761ae.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "غلوس 3D هايدرا من كيكو ميلانو",
+    "tagline": "ابتسامتكِ، ولمستكِ المفضلة.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. غلوس 3D هايدرا من كيكو ميلانو بحجم 6.5 مل للمسة لمعان على الشفاه. يستخدم بمفرده أو فوق لونك المفضل حسب الإطلالة؛ الصورة توضيحية للعبوة والدرجة المتاحة تحتاج تأكيدًا مع المتجر.",
+    "benefits": [
+      "غلوس للشفاه",
+      "لمسة لمعان",
+      "حجم 6.5 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. غلوس 3D هايدرا من كيكو ميلانو بحجم 6.5 مل للمسة لمعان على الشفاه. يستخدم بمفرده أو فوق لونك المفضل حسب الإطلالة؛ الصورة توضيحية للعبوة والدرجة المتاحة تحتاج تأكيدًا مع المتجر.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي كمية قليلة على الشفاه السليمة وزيدي بالتدريج. نظفي أداة التطبيق وأغلقي العبوة بعد الاستخدام."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي كمية قليلة على الشفاه السليمة وزيدي بالتدريج. نظفي أداة التطبيق وأغلقي العبوة بعد الاستخدام."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "KIKO Milano · 3D Hydra Lipgloss",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. KIKO Milano · 3D Hydra Lipgloss. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. KIKO Milano · 3D Hydra Lipgloss. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

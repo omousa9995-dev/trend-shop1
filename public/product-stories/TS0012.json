@@ -1,0 +1,71 @@
+{
+  "id": "TS0012",
+  "brand": "DERMOKIL",
+  "productName": "Argan Steam Hair Care Mask By DERMOKIL",
+  "primary": "/images/catalog/TS0012-f296cc27747b.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك الشعر البخاري بالأرغان من ديرموكيل",
+    "tagline": "استراحة عناية لأطوال تحتاج نعومة.",
+    "description": "امنحي خصلاتكِ وقتًا من الدلال. امنحي شعرك وقتًا إضافيًا من الاهتمام مع ماسك الأرغان البخاري. صُمم كخطوة عناية مكثفة للأطوال التي تبدو جافة أو خشنة، ليساعدك على الحصول على ملمس أنعم وتسريح أكثر سهولة ضمن روتين الغسل.",
+    "benefits": [
+      "تلطيف ملمس الشعر",
+      "عناية بالأطوال الجافة",
+      "تسهيل التسريح"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "امنحي خصلاتكِ وقتًا من الدلال. امنحي شعرك وقتًا إضافيًا من الاهتمام مع ماسك الأرغان البخاري. صُمم كخطوة عناية مكثفة للأطوال التي تبدو جافة أو خشنة، ليساعدك على الحصول على ملمس أنعم وتسريح أكثر سهولة ضمن روتين الغسل.",
+    "fitText": "راجعي طريقة تفعيل الغطاء أو القناع البخاري في العبوة الفعلية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقيه بالطريقة والمدة المحددتين على العبوة، ووزعيه على الأطوال ثم اشطفي إذا كانت التعليمات تتطلب ذلك."
+      }
+    ],
+    "notes": "راجعي طريقة تفعيل الغطاء أو القناع البخاري في العبوة الفعلية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقيه بالطريقة والمدة المحددتين على العبوة، ووزعيه على الأطوال ثم اشطفي إذا كانت التعليمات تتطلب ذلك."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "راجعي طريقة تفعيل الغطاء أو القناع البخاري في العبوة الفعلية."
+      }
+    ],
+    "productType": "hair-mask"
+  },
+  "en": {
+    "name": "DERMOKIL · Argan Steam Hair Care Mask",
+    "tagline": "Give your lengths a little time of their own.",
+    "description": "DERMOKIL · Argan Steam Hair Care Mask. Give your lengths a little time of their own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Give your lengths a little time of their own.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "DERMOKIL · Argan Steam Hair Care Mask. Give your lengths a little time of their own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply as directed to the indicated areas of the hair, leave for the labelled time and rinse if required."
+      }
+    ],
+    "notes": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply as directed to the indicated areas of the hair, leave for the labelled time and rinse if required."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions."
+      }
+    ],
+    "productType": "hair-mask"
+  },
+  "contentVersion": "5.0.0"
+}

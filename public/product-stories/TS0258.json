@@ -1,0 +1,71 @@
+{
+  "id": "TS0258",
+  "brand": "Miss Lara",
+  "productName": "Sky High Mascara Blue Tube",
+  "primary": "/images/catalog/TS0258-c201672a523e.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا سكاي هاي ميس لارا — العبوة الزرقاء",
+    "tagline": "آخر لمسة، وأنتِ جاهزة للحظة.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. ماسكارا سكاي هاي من ميس لارا بالأنبوب الأزرق والعبوة المصوّرة 16 مل. مرري الفرشاة من جذور الرموش لأطرافها بالتدريج؛ الأزرق لون العبوة، ولا يعني أن لون الماسكارا نفسها أزرق.",
+    "benefits": [
+      "من ميس لارا",
+      "عبوة زرقاء 16 مل",
+      "تطبيق تدريجي للرموش"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. ماسكارا سكاي هاي من ميس لارا بالأنبوب الأزرق والعبوة المصوّرة 16 مل. مرري الفرشاة من جذور الرموش لأطرافها بالتدريج؛ الأزرق لون العبوة، ولا يعني أن لون الماسكارا نفسها أزرق.",
+    "fitText": "لون الأخضر/الأزرق يصف العبوة فقط؛ أكدي لون تركيبة الماسكارا مع المتجر قبل الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لون الأخضر/الأزرق يصف العبوة فقط؛ أكدي لون تركيبة الماسكارا مع المتجر قبل الطلب."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "Miss Lara · Sky High Mascara Blue Tube",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. Miss Lara · Sky High Mascara Blue Tube. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. Miss Lara · Sky High Mascara Blue Tube. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0034",
+  "brand": "Dr Rashel",
+  "productName": "كريم فيتامين أي والريتينول لرفع العين ومكافحة الشيخوخة من Dr Rashel",
+  "primary": "/images/catalog/TS0034-29fee2409fd6.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم العين بفيتامين E والريتينول من دكتور راشيل",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي محيط العين خطوة عناية تركز على الترطيب ومظهر النعومة. هذا الكريم مخصص للمنطقة التي قد تبدو عليها علامات الجفاف والتعب، ويحتاج استخدامًا خفيفًا وفق تعليمات العبوة لأن منطقة العين أكثر حساسية.",
+    "benefits": [
+      "ترطيب لمحيط العين",
+      "تحسين مظهر الخطوط المرتبطة بالجفاف",
+      "قوام كريم لروتين العناية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي محيط العين خطوة عناية تركز على الترطيب ومظهر النعومة. هذا الكريم مخصص للمنطقة التي قد تبدو عليها علامات الجفاف والتعب، ويحتاج استخدامًا خفيفًا وفق تعليمات العبوة لأن منطقة العين أكثر حساسية.",
+    "fitText": "لا يدخل إلى العين، ويُدخل إلى الروتين تدريجيًا إذا احتوى على الريتينول.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ربتي بكمية صغيرة في المنطقة المسموح بها على العبوة، واتبعي تواتر الاستخدام المحدد عليها."
+      }
+    ],
+    "notes": "لا يدخل إلى العين، ويُدخل إلى الروتين تدريجيًا إذا احتوى على الريتينول.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ربتي بكمية صغيرة في المنطقة المسموح بها على العبوة، واتبعي تواتر الاستخدام المحدد عليها."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يدخل إلى العين، ويُدخل إلى الروتين تدريجيًا إذا احتوى على الريتينول."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "en": {
+    "name": "Dr Rashel Vitamin E & Retinol Eye Cream",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Dr Rashel Vitamin E & Retinol Eye Cream. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small, careful moment for your eyes.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Dr Rashel Vitamin E & Retinol Eye Cream. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      }
+    ],
+    "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0010",
+  "brand": "FREELOOK",
+  "productName": "Hair Care Oil With Keratin & Vitamin E By FREELOOK",
+  "primary": "/images/catalog/TS0010-f45a7a45f7a3.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت عناية بالكيراتين من فري لوك",
+    "tagline": "تفاصيل صغيرة لروتين شعركِ.",
+    "description": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. إذا كانت الأطراف المتطايرة تفسد مظهر التسريحة، أضيفي زيت فري لوك بالكيراتين إلى خطوة العناية النهائية. يمنح الأطوال ملمسًا أكثر نعومة ويساعد على تحسين مظهر الشعر بعد التصفيف دون الحاجة إلى استخدام كمية كبيرة.",
+    "benefits": [
+      "مظهر أطراف مرتب",
+      "إحساس أنعم بالأطوال",
+      "لمسة عناية بعد التصفيف"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. إذا كانت الأطراف المتطايرة تفسد مظهر التسريحة، أضيفي زيت فري لوك بالكيراتين إلى خطوة العناية النهائية. يمنح الأطوال ملمسًا أكثر نعومة ويساعد على تحسين مظهر الشعر بعد التصفيف دون الحاجة إلى استخدام كمية كبيرة.",
+    "fitText": "المنتج خطوة تجميلية للعناية؛ لا يعيد وصل الشعر المتقصف.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري كمية قليلة على الأطوال والأطراف مع توزيعها جيدًا بعيدًا عن الجذور عند عدم الحاجة."
+      }
+    ],
+    "notes": "المنتج خطوة تجميلية للعناية؛ لا يعيد وصل الشعر المتقصف.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري كمية قليلة على الأطوال والأطراف مع توزيعها جيدًا بعيدًا عن الجذور عند عدم الحاجة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "المنتج خطوة تجميلية للعناية؛ لا يعيد وصل الشعر المتقصف."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "en": {
+    "name": "FREELOOK · Hair Care Oil With Keratin & Vitamin E",
+    "tagline": "A little care for the hair you love.",
+    "description": "Take a moment with your hair and choose what fits your routine. FREELOOK · Hair Care Oil With Keratin & Vitamin E. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little finishing care for your hair.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Take a moment with your hair and choose what fits your routine. FREELOOK · Hair Care Oil With Keratin & Vitamin E. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      }
+    ],
+    "notes": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "contentVersion": "5.0.0"
+}

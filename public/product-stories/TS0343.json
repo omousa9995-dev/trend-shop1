@@ -1,0 +1,71 @@
+{
+  "id": "TS0343",
+  "brand": "ACM",
+  "productName": "Novophane Reactional Anti-Hair Loss Lotion",
+  "primary": "/images/catalog/TS0343-376099ce8a3b.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "لوشن نوفوفان رياكشنال للشعر من إيه سي إم",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. خصصي لفروة رأسكِ لحظة عناية. لوشن نوفوفان رياكسيونال من إيه سي إم بعبوة 100 مل خطوة للعناية بفروة الرأس والشعر. طبقيه بحسب تعليمات العبوة مع تدليك لطيف؛ العناية المنتظمة تدعم روتينكِ، دون وعد بإعادة إنبات الشعر أو نتيجة مضمونة.",
+    "benefits": [
+      "لوشن للعناية بفروة الرأس",
+      "من مجموعة Novophane",
+      "عبوة 100 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. خصصي لفروة رأسكِ لحظة عناية. لوشن نوفوفان رياكسيونال من إيه سي إم بعبوة 100 مل خطوة للعناية بفروة الرأس والشعر. طبقيه بحسب تعليمات العبوة مع تدليك لطيف؛ العناية المنتظمة تدعم روتينكِ، دون وعد بإعادة إنبات الشعر أو نتيجة مضمونة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي على فروة الرأس بالكمية والوتيرة المحددتين على العبوة، مع تدليك لطيف وتجنب العينين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي على فروة الرأس بالكمية والوتيرة المحددتين على العبوة، مع تدليك لطيف وتجنب العينين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "hair-treatment"
+  },
+  "en": {
+    "name": "ACM · Novophane Reactional Anti-Hair Loss Lotion",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. ACM · Novophane Reactional Anti-Hair Loss Lotion. Make a little room for scalp care. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Make a little room for scalp care.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. ACM · Novophane Reactional Anti-Hair Loss Lotion. Make a little room for scalp care. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Persistent scalp problems or hair loss need professional assessment. This product does not guarantee hair growth.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply only to the areas and at the frequency stated on the packaging. Massage gently if directed."
+      }
+    ],
+    "notes": "Persistent scalp problems or hair loss need professional assessment. This product does not guarantee hair growth.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply only to the areas and at the frequency stated on the packaging. Massage gently if directed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Persistent scalp problems or hair loss need professional assessment. This product does not guarantee hair growth."
+      }
+    ],
+    "productType": "hair-treatment"
+  },
+  "contentVersion": "5.0.0"
+}

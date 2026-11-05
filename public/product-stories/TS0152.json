@@ -1,0 +1,71 @@
+{
+  "id": "TS0152",
+  "brand": "Hemani",
+  "productName": "Hemani Rose Oil",
+  "primary": "/images/catalog/TS0152-1c1cb84dce4b.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت الورد من هيماني",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي إلى روتينك لمسة زيت الورد من هيماني بحسب نوع التركيبة الفعلية. يناسب من تحب تجربة الزيوت في العناية، مع أهمية معرفة هل النسخة جاهزة للتطبيق أم تحتاج تخفيفًا قبل ملامسة الجلد.",
+    "benefits": [
+      "لمسة عطرية",
+      "خيار لإضافة زيت إلى الروتين",
+      "سهولة تحديد مناطق العناية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي إلى روتينك لمسة زيت الورد من هيماني بحسب نوع التركيبة الفعلية. يناسب من تحب تجربة الزيوت في العناية، مع أهمية معرفة هل النسخة جاهزة للتطبيق أم تحتاج تخفيفًا قبل ملامسة الجلد.",
+    "fitText": "لا يبلع ولا يوضع قرب العينين، ولا يفترض أنه صالح للتطبيق المباشر دون مراجعة العبوة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي طريقة الاستخدام والتخفيف المدونتين على العبوة، واختبري كمية صغيرة أولًا."
+      }
+    ],
+    "notes": "لا يبلع ولا يوضع قرب العينين، ولا يفترض أنه صالح للتطبيق المباشر دون مراجعة العبوة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي طريقة الاستخدام والتخفيف المدونتين على العبوة، واختبري كمية صغيرة أولًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يبلع ولا يوضع قرب العينين، ولا يفترض أنه صالح للتطبيق المباشر دون مراجعة العبوة."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "en": {
+    "name": "Hemani Rose Oil",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Hemani Rose Oil. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little time for yourself after your shower.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Hemani Rose Oil. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      }
+    ],
+    "notes": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use. Avoid eyes and slippery surfaces; patch test first."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "contentVersion": "5.0.0"
+}

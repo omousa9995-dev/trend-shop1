@@ -1,0 +1,71 @@
+{
+  "id": "TS0219",
+  "brand": "Toppik",
+  "productName": "Hair Building Fibers Dark Brown",
+  "primary": "/images/catalog/TS0219-be0d0d66e1b2.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ألياف تكثيف الشعر من توبيك — بني داكن",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تسريحة على مزاجكِ، بلمستكِ. ألياف توبيك لتكثيف مظهر الشعر باللون البني الداكن Dark Brown، حجم 27.5 غرامًا. تنثر على الشعر الجاف في المناطق المطلوبة وتدمج بلطف للحصول على تغطية تجميلية مؤقتة للفراغات.",
+    "benefits": [
+      "درجة بني داكن",
+      "تكثيف تجميلي مؤقت",
+      "تطبيق على شعر جاف"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تسريحة على مزاجكِ، بلمستكِ. ألياف توبيك لتكثيف مظهر الشعر باللون البني الداكن Dark Brown، حجم 27.5 غرامًا. تنثر على الشعر الجاف في المناطق المطلوبة وتدمج بلطف للحصول على تغطية تجميلية مؤقتة للفراغات.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "انثري مقدارًا قليلًا على شعر جاف في المناطق المطلوبة وادمجي بلطف، مع تجنب الاستنشاق والعينين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "انثري مقدارًا قليلًا على شعر جاف في المناطق المطلوبة وادمجي بلطف، مع تجنب الاستنشاق والعينين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر."
+      }
+    ],
+    "productType": "hair-styling"
+  },
+  "en": {
+    "name": "Toppik · Hair Building Fibers Dark Brown",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Toppik · Hair Building Fibers Dark Brown. Your hair, styled your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Your hair, styled your way.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Toppik · Hair Building Fibers Dark Brown. Your hair, styled your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Avoid eyes and inhaling powders or sprays. Wash out as directed.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Work a small amount through the specified areas and shape gently, following the exact product’s instructions."
+      }
+    ],
+    "notes": "Avoid eyes and inhaling powders or sprays. Wash out as directed.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Work a small amount through the specified areas and shape gently, following the exact product’s instructions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid eyes and inhaling powders or sprays. Wash out as directed."
+      }
+    ],
+    "productType": "hair-styling"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0048",
+  "brand": "NOTE",
+  "productName": "NOTE BROW ADDICT TINT & SHAPING GEL",
+  "primary": "/images/catalog/TS0048-e0e804536a9b.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "جل الحواجب برو أديكت من نوت",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. شكلي الحاجبين مع جل يجمع ترتيب الشعيرات ولمسة اللون في خطوة واحدة. يساعدك على إبراز شكل الحاجب الطبيعي وتعبئة مظهره بصريًا دون الاعتماد على رسم ثقيل، مع التحكم بالنتيجة أثناء التمشيط.",
+    "benefits": [
+      "ترتيب شعيرات الحاجب",
+      "إضافة لون قابل للبناء",
+      "إطلالة طبيعية أكثر تحديدًا"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. شكلي الحاجبين مع جل يجمع ترتيب الشعيرات ولمسة اللون في خطوة واحدة. يساعدك على إبراز شكل الحاجب الطبيعي وتعبئة مظهره بصريًا دون الاعتماد على رسم ثقيل، مع التحكم بالنتيجة أثناء التمشيط.",
+    "fitText": "اختاري الدرجة المناسبة وتجنبي ملامسة العين.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مشطي باتجاه نمو الشعر بكمية خفيفة، ثم أضيفي على الفراغات عند الحاجة."
+      }
+    ],
+    "notes": "اختاري الدرجة المناسبة وتجنبي ملامسة العين.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مشطي باتجاه نمو الشعر بكمية خفيفة، ثم أضيفي على الفراغات عند الحاجة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري الدرجة المناسبة وتجنبي ملامسة العين."
+      }
+    ],
+    "productType": "brows"
+  },
+  "en": {
+    "name": "NOTE BROW ADDICT TINT & SHAPING GEL",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. NOTE BROW ADDICT TINT & SHAPING GEL. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "The little brow detail that finishes your look.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. NOTE BROW ADDICT TINT & SHAPING GEL. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Use only as directed, avoiding contact with the eye itself.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a light hand to shape or define the brows, following their natural direction."
+      }
+    ],
+    "notes": "Use only as directed, avoiding contact with the eye itself.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a light hand to shape or define the brows, following their natural direction."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Use only as directed, avoiding contact with the eye itself."
+      }
+    ],
+    "productType": "brows"
+  },
+  "contentVersion": "5.0.0"
+}

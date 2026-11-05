@@ -1,0 +1,71 @@
+{
+  "id": "TS0325",
+  "brand": "CeraVe",
+  "productName": "Hydrating Facial Cleanser Value Size",
+  "primary": "/images/catalog/TS0325-9808f3471f7d.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "غسول هايدريتنغ المرطب من سيرافي — الحجم الكبير",
+    "tagline": "اغسلي تعب اليوم، وابدئي لحظتكِ.",
+    "description": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. غسول هايدريتنج من سيرافي بعبوة 562 مل ينظف البشرة ضمن روتين بسيط ومدروس. دلكي كمية مناسبة على الوجه المبلل ثم اشطفي، وأكملي بمرطبكِ المفضل؛ خطوة عملية تجعل وقت العناية أسهل.",
+    "benefits": [
+      "من مجموعة Hydrating",
+      "غسول يومي يُشطف",
+      "عبوة 562 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. غسول هايدريتنج من سيرافي بعبوة 562 مل ينظف البشرة ضمن روتين بسيط ومدروس. دلكي كمية مناسبة على الوجه المبلل ثم اشطفي، وأكملي بمرطبكِ المفضل؛ خطوة عملية تجعل وقت العناية أسهل.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "بللي البشرة، ودلكي كمية مناسبة بلطف ثم اشطفي جيدًا. تجنبي العينين وأكملي بالمرطب."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "بللي البشرة، ودلكي كمية مناسبة بلطف ثم اشطفي جيدًا. تجنبي العينين وأكملي بالمرطب."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "en": {
+    "name": "CeraVe · Hydrating Facial Cleanser Value Size",
+    "tagline": "A gentle beginning to your own little ritual.",
+    "description": "Make a little room for a calm cleansing moment. CeraVe · Hydrating Facial Cleanser Value Size. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "benefits": [
+      "A fresh start, or a gentle end to your day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little room for a calm cleansing moment. CeraVe · Hydrating Facial Cleanser Value Size. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "fitText": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      }
+    ],
+    "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "contentVersion": "5.0.0"
+}

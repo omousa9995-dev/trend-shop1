@@ -1,0 +1,71 @@
+{
+  "id": "TS0030",
+  "brand": "Eucerin",
+  "productName": "Daily Hydration Lotion By Eucerin",
+  "primary": "/images/catalog/TS0030-3a412304e269.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "لوشن ديلي هيدريشن من يوسيرين",
+    "tagline": "اهتمام يليق بلحظاتكِ الهادئة.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. امنحي الجسم ترطيبًا عمليًا مع لوشن ديلي هيدريشن. يساعد على تلطيف إحساس الشد ومظهر الجفاف، ويليق بروتين ما بعد الاستحمام عندما ترغبين ببشرة أكثر نعومة وراحة قبل ارتداء ملابسك.",
+    "benefits": [
+      "ترطيب لبشرة الجسم",
+      "تلطيف الإحساس بالجفاف",
+      "نعومة يومية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. امنحي الجسم ترطيبًا عمليًا مع لوشن ديلي هيدريشن. يساعد على تلطيف إحساس الشد ومظهر الجفاف، ويليق بروتين ما بعد الاستحمام عندما ترغبين ببشرة أكثر نعومة وراحة قبل ارتداء ملابسك.",
+    "fitText": "راجعي نسخة العبوة؛ لا يفترض وجود حماية شمسية ما لم تكن مذكورة عليها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعيه على الجسم بعد الاستحمام أو عند الحاجة، ودلكي حتى يمتص."
+      }
+    ],
+    "notes": "راجعي نسخة العبوة؛ لا يفترض وجود حماية شمسية ما لم تكن مذكورة عليها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعيه على الجسم بعد الاستحمام أو عند الحاجة، ودلكي حتى يمتص."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "راجعي نسخة العبوة؛ لا يفترض وجود حماية شمسية ما لم تكن مذكورة عليها."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "Eucerin · Daily Hydration Lotion",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. Eucerin · Daily Hydration Lotion. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. Eucerin · Daily Hydration Lotion. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

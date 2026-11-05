@@ -1,0 +1,71 @@
+{
+  "id": "TS0033",
+  "brand": "Dr Rashel",
+  "productName": "مثبت مكياج Dr.Rashel",
+  "primary": "/images/catalog/TS0033-81da2d7c9704.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بخاخ تثبيت المكياج من دكتور راشيل",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ختام خفيف لروتين مكياجكِ. أكملي المكياج برذاذ يساعد على توحيد مظهر طبقاته ومنح الإطلالة لمسة نهائية مرتبة. يناسب من تحب إضافة خطوة تثبيت بعد البودرة أو الفاونديشن، مع اختيار القوام الذي ينسجم مع نوع بشرتها.",
+    "benefits": [
+      "إنهاء خطوات المكياج",
+      "تلطيف مظهر الطبقات",
+      "توزيع برذاذ خفيف"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. ختام خفيف لروتين مكياجكِ. أكملي المكياج برذاذ يساعد على توحيد مظهر طبقاته ومنح الإطلالة لمسة نهائية مرتبة. يناسب من تحب إضافة خطوة تثبيت بعد البودرة أو الفاونديشن، مع اختيار القوام الذي ينسجم مع نوع بشرتها.",
+    "fitText": "لا يرش داخل العين ولا يستخدم على جلد متهيج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "رشي بالمسافة المحددة على العبوة بعد المكياج مع إغلاق العينين والفم، واتركيه يجف."
+      }
+    ],
+    "notes": "لا يرش داخل العين ولا يستخدم على جلد متهيج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "رشي بالمسافة المحددة على العبوة بعد المكياج مع إغلاق العينين والفم، واتركيه يجف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يرش داخل العين ولا يستخدم على جلد متهيج."
+      }
+    ],
+    "productType": "setting-spray"
+  },
+  "en": {
+    "name": "Dr Rashel Makeup Setting Spray",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Dr Rashel Makeup Setting Spray. A finishing moment for your makeup. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A finishing moment for your makeup.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Dr Rashel Makeup Setting Spray. A finishing moment for your makeup. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not inhale the spray. Follow the packaging directions and avoid spraying into the eyes.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Close your eyes and mouth and mist from the distance stated on the packaging."
+      }
+    ],
+    "notes": "Do not inhale the spray. Follow the packaging directions and avoid spraying into the eyes.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Close your eyes and mouth and mist from the distance stated on the packaging."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not inhale the spray. Follow the packaging directions and avoid spraying into the eyes."
+      }
+    ],
+    "productType": "setting-spray"
+  },
+  "contentVersion": "5.0.0"
+}

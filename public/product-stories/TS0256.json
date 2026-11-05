@@ -1,0 +1,71 @@
+{
+  "id": "TS0256",
+  "brand": "Make Up For Ever",
+  "productName": "Ultra HD Invisible Cover Foundation 30 ml",
+  "primary": "/images/catalog/TS0256-188c3f0552bf.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم أساس ألترا HD من ميك أب فور إيفر",
+    "tagline": "إطلالتكِ تبدأ باختيار يريحكِ.",
+    "description": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. استمتعي بوقت تجهيزكِ مع كريم أساس ألترا HD من ميك أب فور إيفر. ابدئي بكمية قليلة وادمجيها بإسفنجة أو فرشاة مناسبة، ثم قرّري أنتِ أين تحتاجين إضافة أكثر. اختاري درجة بشرتكِ التقريبية، وأكملي لون الشفاه أو الرموش الذي تحبّينه.",
+    "benefits": [
+      "كريم أساس سائل",
+      "عبوة أسطوانية 30 مل",
+      "تغطية قابلة للدمج"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. استمتعي بوقت تجهيزكِ مع كريم أساس ألترا HD من ميك أب فور إيفر. ابدئي بكمية قليلة وادمجيها بإسفنجة أو فرشاة مناسبة، ثم قرّري أنتِ أين تحتاجين إضافة أكثر. اختاري درجة بشرتكِ التقريبية، وأكملي لون الشفاه أو الرموش الذي تحبّينه.",
+    "fitText": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة. أضيفي طبقة صغيرة عند الحاجة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. عامل الحماية في المكياج لا يغني عن واقي شمس مستقل بكمية كافية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة. أضيفي طبقة صغيرة عند الحاجة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "en": {
+    "name": "Make Up For Ever · Ultra HD Invisible Cover Foundation 30 ml",
+    "tagline": "Your look begins with a choice that feels like you.",
+    "description": "Choose the base and tone that feel right, then take your time with your look. Enjoy your getting-ready moment with Make Up For Ever Ultra HD Foundation. Start with a small amount, blend with a suitable sponge or brush, and build only where you choose. Select your approximate skin tone preference, then add the lip or lash detail you love.",
+    "benefits": [
+      "Your look begins with a base that feels like you.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose the base and tone that feel right, then take your time with your look. Enjoy your getting-ready moment with Make Up For Ever Ultra HD Foundation. Start with a small amount, blend with a suitable sponge or brush, and build only where you choose. Select your approximate skin tone preference, then add the lip or lash detail you love.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      }
+    ],
+    "notes": "Choose your approximate skin tone preference before adding to your bag; confirm the actual manufacturer shade with the store.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "contentVersion": "5.0.0"
+}

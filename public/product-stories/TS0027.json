@@ -1,0 +1,71 @@
+{
+  "id": "TS0027",
+  "brand": "The Ordinary",
+  "productName": "سيروم الهالات السوداء The Ordinary Caffeine Solution 5% EGCG",
+  "primary": "/images/catalog/TS0027-d234974bf298.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم الكافيين لمحيط العين من ذا أورديناري",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي منطقة تحت العين عناية خفيفة مع Caffeine Solution. يركز على تحسين مظهر التعب والانتفاخ المرئي، ويسهل إدخاله قبل مرطب العين عندما ترغبين بروتين بسيط لمنطقة تبدو أكثر انتعاشًا.",
+    "benefits": [
+      "عناية خفيفة بمحيط العين",
+      "تحسين مظهر التعب",
+      "سهولة دمجه مع مرطب العين"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي منطقة تحت العين عناية خفيفة مع Caffeine Solution. يركز على تحسين مظهر التعب والانتفاخ المرئي، ويسهل إدخاله قبل مرطب العين عندما ترغبين بروتين بسيط لمنطقة تبدو أكثر انتعاشًا.",
+    "fitText": "الهالات لها أسباب متعددة؛ لا يعد المنتج علاجًا لكل أسبابها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية صغيرة جدًا على عظمة محيط العين حسب تعليمات العبوة دون إدخاله إلى العين."
+      }
+    ],
+    "notes": "الهالات لها أسباب متعددة؛ لا يعد المنتج علاجًا لكل أسبابها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية صغيرة جدًا على عظمة محيط العين حسب تعليمات العبوة دون إدخاله إلى العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الهالات لها أسباب متعددة؛ لا يعد المنتج علاجًا لكل أسبابها."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "en": {
+    "name": "The Ordinary Caffeine Solution 5% + EGCG",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. The Ordinary Caffeine Solution 5% + EGCG. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small, careful moment for your eyes.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. The Ordinary Caffeine Solution 5% + EGCG. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      }
+    ],
+    "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "contentVersion": "5.0.0"
+}

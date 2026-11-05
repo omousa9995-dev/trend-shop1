@@ -1,0 +1,71 @@
+{
+  "id": "TS0356",
+  "brand": "Maybelline",
+  "productName": "Instant Age Rewind Eraser Concealer",
+  "primary": "/images/catalog/TS0356-6170bf5987a9.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كونسيلر إنستانت إيج ريوايند من ميبيلين",
+    "tagline": "تغطية تختارينها، وثقة تشبهكِ.",
+    "description": "من مكياجكِ الخفيف إلى إطلالة المساء، اتركي اللمسة الأخيرة لذوقكِ. مع كونسيلر إنستانت إيج ريوايند إيريزر من ميبيلين، اجعلي خطوة التغطية جزءًا سهلًا من وقت تجهيزكِ. اتّبعي طريقة فتح الأداة على العبوة، ثم وزّعي كمية صغيرة وادمجي بلطف. اختاري الدرجة المتاحة التي تلائم مكياجكِ، دون مشاركة الأداة مع غيركِ.",
+    "benefits": [
+      "طرف إسفنجي للتطبيق",
+      "كونسيلر لمظهر أكثر تجانسًا",
+      "دمج خفيف بالتربيت"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "من مكياجكِ الخفيف إلى إطلالة المساء، اتركي اللمسة الأخيرة لذوقكِ. مع كونسيلر إنستانت إيج ريوايند إيريزر من ميبيلين، اجعلي خطوة التغطية جزءًا سهلًا من وقت تجهيزكِ. اتّبعي طريقة فتح الأداة على العبوة، ثم وزّعي كمية صغيرة وادمجي بلطف. اختاري الدرجة المتاحة التي تلائم مكياجكِ، دون مشاركة الأداة مع غيركِ.",
+    "fitText": "أكدي درجة الكونسيلر المتاحة مع المتجر قبل تثبيت الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي نقاطًا صغيرة على المناطق المطلوبة وادمجي بلطف بإسفنجة أو فرشاة نظيفة، بعيدًا عن داخل العين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي نقاطًا صغيرة على المناطق المطلوبة وادمجي بلطف بإسفنجة أو فرشاة نظيفة، بعيدًا عن داخل العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "أكدي درجة الكونسيلر المتاحة مع المتجر قبل تثبيت الطلب."
+      }
+    ],
+    "productType": "concealer"
+  },
+  "en": {
+    "name": "Maybelline · Instant Age Rewind Eraser Concealer",
+    "tagline": "A little detail, finished your way.",
+    "description": "From a light everyday look to an evening out, make the finishing touch your own. Make coverage an easy part of getting ready with Maybelline Instant Age Rewind Eraser Concealer. Follow the pack directions for the applicator, then distribute a small amount and blend gently. Confirm your preferred available shade and keep the applicator for your own use.",
+    "benefits": [
+      "A little detail that brings your base together.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "From a light everyday look to an evening out, make the finishing touch your own. Make coverage an easy part of getting ready with Maybelline Instant Age Rewind Eraser Concealer. Follow the pack directions for the applicator, then distribute a small amount and blend gently. Confirm your preferred available shade and keep the applicator for your own use.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Dot a small amount where you want coverage, then tap and blend gently. Add more gradually."
+      }
+    ],
+    "notes": "Choose the available shade with the store; avoid contact with the eye itself.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Dot a small amount where you want coverage, then tap and blend gently. Add more gradually."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "concealer"
+  },
+  "contentVersion": "5.0.0"
+}

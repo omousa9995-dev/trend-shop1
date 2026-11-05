@@ -1,0 +1,71 @@
+{
+  "id": "TS0202",
+  "brand": "Maybelline",
+  "productName": "Lash Sensational Sky High Very Black",
+  "primary": "/images/catalog/TS0202-f4c69f102aa4.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا لاش سنسيشنال سكاي هاي من ميبيلين",
+    "tagline": "نظرتكِ الجميلة، على طريقتكِ.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. من يوم العمل إلى طلعة لطيفة، اجعلي وقت الرموش خطوتكِ الأخيرة مع لاش سنسيشنال سكاي هاي من ميبيلين. مرري الفرشاة برفق من الجذور إلى الأطراف، وابني الطبقات بالتدريج. نسّقي معها قلم عيون أو لون شفاه لتكتمل إطلالتكِ كما تحبّين.",
+    "benefits": [
+      "تعريف للرموش",
+      "طبقات حسب الإطلالة",
+      "نسخة Very Black"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. من يوم العمل إلى طلعة لطيفة، اجعلي وقت الرموش خطوتكِ الأخيرة مع لاش سنسيشنال سكاي هاي من ميبيلين. مرري الفرشاة برفق من الجذور إلى الأطراف، وابني الطبقات بالتدريج. نسّقي معها قلم عيون أو لون شفاه لتكتمل إطلالتكِ كما تحبّين.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. زيدي طبقة بحسب الإطلالة وأزيلي المكياج بلطف مساءً."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "Maybelline · Lash Sensational Sky High Very Black",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. From your workday to plans you look forward to, finish with Maybelline Lash Sensational Sky High. Sweep gently from roots to tips and build in light coats. Add the eyeliner or lip colour that makes the look yours.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. From your workday to plans you look forward to, finish with Maybelline Lash Sensational Sky High. Sweep gently from roots to tips and build in light coats. Add the eyeliner or lip colour that makes the look yours.",
+    "fitText": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

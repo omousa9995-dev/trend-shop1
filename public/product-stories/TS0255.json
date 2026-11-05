@@ -1,0 +1,71 @@
+{
+  "id": "TS0255",
+  "brand": "Maybelline",
+  "productName": "Dream Matte Mousse Foundation",
+  "primary": "/images/catalog/TS0255-7b607e2d1003.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم أساس دريم مات موس من ميبيلين",
+    "tagline": "لمستكِ الخاصة، من أول خطوة.",
+    "description": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. كريم أساس دريم مات موس من ميبيلين في العبوة الدائرية المصوّرة. يطبق بكمية صغيرة ويدمج للحصول على قاعدة بمظهر مطفي، مع زيادة التغطية تدريجيًا وتأكيد الدرجة المتاحة قبل الطلب.",
+    "benefits": [
+      "قوام موس",
+      "مظهر مطفي",
+      "تحكم بالتغطية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. كريم أساس دريم مات موس من ميبيلين في العبوة الدائرية المصوّرة. يطبق بكمية صغيرة ويدمج للحصول على قاعدة بمظهر مطفي، مع زيادة التغطية تدريجيًا وتأكيد الدرجة المتاحة قبل الطلب.",
+    "fitText": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة. أضيفي طبقة صغيرة عند الحاجة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. عامل الحماية في المكياج لا يغني عن واقي شمس مستقل بكمية كافية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "حضّري البشرة بالمرطب، ثم ادمجي طبقة رقيقة بفرشاة أو إسفنجة نظيفة. أضيفي طبقة صغيرة عند الحاجة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "en": {
+    "name": "Maybelline · Dream Matte Mousse Foundation",
+    "tagline": "Your look begins with a choice that feels like you.",
+    "description": "Choose the base and tone that feel right, then take your time with your look. Maybelline · Dream Matte Mousse Foundation. Your look begins with a base that feels like you. Start small and build the makeup look you feel most comfortable in.",
+    "benefits": [
+      "Your look begins with a base that feels like you.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose the base and tone that feel right, then take your time with your look. Maybelline · Dream Matte Mousse Foundation. Your look begins with a base that feels like you. Start small and build the makeup look you feel most comfortable in.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      }
+    ],
+    "notes": "Choose your approximate skin tone preference before adding to your bag; confirm the actual manufacturer shade with the store.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -93,3 +93,9 @@ CREATE INDEX IF NOT EXISTS product_videos_product ON product_videos(product_id,a
 CREATE TRIGGER IF NOT EXISTS product_videos_cap BEFORE INSERT ON product_videos
 WHEN (SELECT count(*) FROM product_videos WHERE product_id=NEW.product_id)>=3
 BEGIN SELECT RAISE(ABORT,'product video limit'); END;
+
+CREATE TABLE IF NOT EXISTS site_settings (
+ id TEXT PRIMARY KEY CHECK(id='storefront'), revision INTEGER NOT NULL DEFAULT 1,
+ config_json TEXT NOT NULL, history_json TEXT NOT NULL DEFAULT '[]',
+ updated_at TEXT NOT NULL DEFAULT(datetime('now'))
+);

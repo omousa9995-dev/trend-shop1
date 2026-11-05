@@ -1,0 +1,71 @@
+{
+  "id": "TS0001",
+  "brand": "ICE",
+  "productName": "Nail Polish By ICE",
+  "primary": "/images/catalog/TS0001-54e0b8e9482d.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "طلاء أظافر آيس",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. لون صغير يغيّر مزاج يومكِ. أضيفي لمسة لون أنيقة إلى يديك مع طلاء الأظافر من آيس. اختيار بسيط لتجديد المانيكير في المنزل، سواء أحببتِ إطلالة يومية هادئة أو لونًا يرافق مناسباتك. حدّدي الدرجة التي تناسبك عند اعتماد التشكيلة.",
+    "benefits": [
+      "لون يكمّل إطلالتك",
+      "تجديد سهل للمانيكير",
+      "مناسب لتنسيق ألوانك المفضلة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. لون صغير يغيّر مزاج يومكِ. أضيفي لمسة لون أنيقة إلى يديك مع طلاء الأظافر من آيس. اختيار بسيط لتجديد المانيكير في المنزل، سواء أحببتِ إطلالة يومية هادئة أو لونًا يرافق مناسباتك. حدّدي الدرجة التي تناسبك عند اعتماد التشكيلة.",
+    "fitText": "اختاري الدرجة المتاحة؛ صور الألوان لا تغني عن تحديد اسم الدرجة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي طبقات رقيقة على أظافر نظيفة وجافة، واتركي كل طبقة تجف قبل التالية."
+      }
+    ],
+    "notes": "اختاري الدرجة المتاحة؛ صور الألوان لا تغني عن تحديد اسم الدرجة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي طبقات رقيقة على أظافر نظيفة وجافة، واتركي كل طبقة تجف قبل التالية."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري الدرجة المتاحة؛ صور الألوان لا تغني عن تحديد اسم الدرجة."
+      }
+    ],
+    "productType": "nails"
+  },
+  "en": {
+    "name": "ICE · Nail Polish",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. ICE · Nail Polish. A little colour for your everyday mood. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little colour for your everyday mood.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. ICE · Nail Polish. A little colour for your everyday mood. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact product’s instructions on clean, dry nails. Allow each layer to dry before the next."
+      }
+    ],
+    "notes": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact product’s instructions on clean, dry nails. Allow each layer to dry before the next."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin."
+      }
+    ],
+    "productType": "nails"
+  },
+  "contentVersion": "5.0.0"
+}

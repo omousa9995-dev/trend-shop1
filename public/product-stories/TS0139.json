@@ -1,0 +1,71 @@
+{
+  "id": "TS0139",
+  "brand": "Mavala",
+  "productName": "Mavala Scientifique Nail Hardener",
+  "primary": "/images/catalog/TS0139-d55f0a2808d4.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مقوي أظافر سيونتيفيك من مافالا",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. لون صغير يغيّر مزاج يومكِ. خصصي للأظافر خطوة عناية دقيقة مع مافالا سيونتيفيك. يركز على الجزء المسموح من الظفر بدل تغطيته عشوائيًا كمناكير، ويحتاج الالتزام بالكمية والتكرار المدونين على العبوة للحصول على تجربة مناسبة.",
+    "benefits": [
+      "عناية بالأظافر الهشة",
+      "تطبيق موضعي دقيق",
+      "تكملة لروتين المانيكير"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. لون صغير يغيّر مزاج يومكِ. خصصي للأظافر خطوة عناية دقيقة مع مافالا سيونتيفيك. يركز على الجزء المسموح من الظفر بدل تغطيته عشوائيًا كمناكير، ويحتاج الالتزام بالكمية والتكرار المدونين على العبوة للحصول على تجربة مناسبة.",
+    "fitText": "راجعي نسخة المنتج وتعليماته؛ لا يستخدم مثل طلاء الأظافر العادي.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي على المنطقة المحددة من الظفر وفق تعليمات الشركة، مع تجنب الجلد المحيط."
+      }
+    ],
+    "notes": "راجعي نسخة المنتج وتعليماته؛ لا يستخدم مثل طلاء الأظافر العادي.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي على المنطقة المحددة من الظفر وفق تعليمات الشركة، مع تجنب الجلد المحيط."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "راجعي نسخة المنتج وتعليماته؛ لا يستخدم مثل طلاء الأظافر العادي."
+      }
+    ],
+    "productType": "nails"
+  },
+  "en": {
+    "name": "Mavala Scientifique Nail Hardener",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Mavala Scientifique Nail Hardener. A little colour for your everyday mood. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little colour for your everyday mood.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Mavala Scientifique Nail Hardener. A little colour for your everyday mood. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact product’s instructions on clean, dry nails. Allow each layer to dry before the next."
+      }
+    ],
+    "notes": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact product’s instructions on clean, dry nails. Allow each layer to dry before the next."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Gel colour may require an appropriate lamp. Check the product type before use and avoid the surrounding skin."
+      }
+    ],
+    "productType": "nails"
+  },
+  "contentVersion": "5.0.0"
+}

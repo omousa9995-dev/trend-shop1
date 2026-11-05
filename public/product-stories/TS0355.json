@@ -1,0 +1,71 @@
+{
+  "id": "TS0355",
+  "brand": "L'Oreal Paris",
+  "productName": "Infallible Full Wear Concealer",
+  "primary": "/images/catalog/TS0355-5e645a7dfbc7.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كونسيلر إنفاليبل فول وير من لوريال",
+    "tagline": "تفاصيل إطلالتكِ، بلمسة منكِ.",
+    "description": "من مكياجكِ الخفيف إلى إطلالة المساء، اتركي اللمسة الأخيرة لذوقكِ. نسّقي قاعدة مكياجكِ مع كونسيلر إنفاليبل فول وير من لوريال. ضعي القليل على المناطق التي تختارينها وادمجي تدريجيًا، ثم توقّفي عند الإطلالة التي ترتاحين لها. اسألي عن الدرجة المتاحة، وأكملي روتينكِ ببودرة ولمسة للرموش إن أحببتِ.",
+    "benefits": [
+      "كونسيلر سائل",
+      "تطبيق موضعي بنقاط صغيرة",
+      "تغطية تُبنى بالتدريج"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "من مكياجكِ الخفيف إلى إطلالة المساء، اتركي اللمسة الأخيرة لذوقكِ. نسّقي قاعدة مكياجكِ مع كونسيلر إنفاليبل فول وير من لوريال. ضعي القليل على المناطق التي تختارينها وادمجي تدريجيًا، ثم توقّفي عند الإطلالة التي ترتاحين لها. اسألي عن الدرجة المتاحة، وأكملي روتينكِ ببودرة ولمسة للرموش إن أحببتِ.",
+    "fitText": "أكدي درجة الكونسيلر المتاحة مع المتجر قبل تثبيت الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي نقاطًا صغيرة على المناطق المطلوبة وادمجي بلطف بإسفنجة أو فرشاة نظيفة، بعيدًا عن داخل العين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي نقاطًا صغيرة على المناطق المطلوبة وادمجي بلطف بإسفنجة أو فرشاة نظيفة، بعيدًا عن داخل العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "أكدي درجة الكونسيلر المتاحة مع المتجر قبل تثبيت الطلب."
+      }
+    ],
+    "productType": "concealer"
+  },
+  "en": {
+    "name": "L'Oreal Paris · Infallible Full Wear Concealer",
+    "tagline": "A little detail, finished your way.",
+    "description": "From a light everyday look to an evening out, make the finishing touch your own. Bring your base together with L’Oréal Infallible Full Wear Concealer. Apply a little where you choose and blend gradually, stopping at the finish you enjoy. Confirm the available shade, and explore a powder or lash detail if you like.",
+    "benefits": [
+      "A little detail that brings your base together.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "From a light everyday look to an evening out, make the finishing touch your own. Bring your base together with L’Oréal Infallible Full Wear Concealer. Apply a little where you choose and blend gradually, stopping at the finish you enjoy. Confirm the available shade, and explore a powder or lash detail if you like.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Dot a small amount where you want coverage, then tap and blend gently. Add more gradually."
+      }
+    ],
+    "notes": "Choose the available shade with the store; avoid contact with the eye itself.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Dot a small amount where you want coverage, then tap and blend gently. Add more gradually."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "concealer"
+  },
+  "contentVersion": "5.0.0"
+}

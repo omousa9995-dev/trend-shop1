@@ -1,0 +1,71 @@
+{
+  "id": "TS0029",
+  "brand": "Bioderma",
+  "productName": "واقي شمس Bioderma Photoderm Max SPF100",
+  "primary": "/images/catalog/TS0029-eb49f74912e9.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "واقي فوتوديرم ماكس من بيوديرما",
+    "tagline": "خذي عنايتكِ معكِ، أينما أخذَكِ النهار.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. أكملي عناية بشرتك بخطوة حماية من الشمس من مجموعة فوتوديرم ماكس. اختاري القوام والنسخة الملائمين لك، واهتمي بتوزيع كمية كافية وتجديدها؛ فالالتزام بالاستخدام جزء أساسي من فائدة الواقي.",
+    "benefits": [
+      "خطوة حماية نهارية",
+      "تكملة لروتين العناية",
+      "خيارات تناسب احتياجات مختلفة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. أكملي عناية بشرتك بخطوة حماية من الشمس من مجموعة فوتوديرم ماكس. اختاري القوام والنسخة الملائمين لك، واهتمي بتوزيع كمية كافية وتجديدها؛ فالالتزام بالاستخدام جزء أساسي من فائدة الواقي.",
+    "fitText": "تُراجع درجة SPF والنسخة عند اعتماد العبوة؛ لا توجد حماية كاملة من الشمس.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي بحسب كمية ووقت تعليمات العبوة قبل التعرض للشمس، وجددي الحماية أثناء التعرض وبعد السباحة أو التعرق."
+      }
+    ],
+    "notes": "تُراجع درجة SPF والنسخة عند اعتماد العبوة؛ لا توجد حماية كاملة من الشمس.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي بحسب كمية ووقت تعليمات العبوة قبل التعرض للشمس، وجددي الحماية أثناء التعرض وبعد السباحة أو التعرق."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تُراجع درجة SPF والنسخة عند اعتماد العبوة؛ لا توجد حماية كاملة من الشمس."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "Bioderma Photoderm Max SPF100",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. Bioderma Photoderm Max SPF100. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. Bioderma Photoderm Max SPF100. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

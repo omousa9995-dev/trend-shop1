@@ -1,0 +1,71 @@
+{
+  "id": "TS0336",
+  "brand": "Johnson's",
+  "productName": "Baby Oil Pink Cap",
+  "primary": "/images/catalog/TS0336-e86f4a83a818.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت الأطفال من جونسون — العبوة الوردية",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. زيت جونسون بالغطاء الوردي خيار لخطوة تدليك وترطيب الجسم. وزعي قليلًا منه على البشرة الرطبة برفق، واستمتعي بلحظة عناية هادئة؛ تجنبي ملامسة العينين والانزلاق على الأسطح بعد الاستخدام.",
+    "benefits": [
+      "زيت للجسم",
+      "مناسب لخطوة التدليك",
+      "الغطاء الوردي المصوّر"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. زيت جونسون بالغطاء الوردي خيار لخطوة تدليك وترطيب الجسم. وزعي قليلًا منه على البشرة الرطبة برفق، واستمتعي بلحظة عناية هادئة؛ تجنبي ملامسة العينين والانزلاق على الأسطح بعد الاستخدام.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي قليلًا على بشرة الجسم الرطبة بعد الاستحمام ودلكي بلطف. انتبهي لتجنب الانزلاق على الأسطح."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي قليلًا على بشرة الجسم الرطبة بعد الاستحمام ودلكي بلطف. انتبهي لتجنب الانزلاق على الأسطح."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "en": {
+    "name": "Johnson's · Baby Oil Pink Cap",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Johnson's · Baby Oil Pink Cap. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little time for yourself after your shower.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Johnson's · Baby Oil Pink Cap. A little time for yourself after your shower. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      }
+    ],
+    "notes": "For external use. Avoid eyes and slippery surfaces; patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to the body as directed and massage gently. Allow it to settle before dressing."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use. Avoid eyes and slippery surfaces; patch test first."
+      }
+    ],
+    "productType": "body-oil"
+  },
+  "contentVersion": "5.0.0"
+}

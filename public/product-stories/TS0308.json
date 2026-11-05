@@ -1,0 +1,71 @@
+{
+  "id": "TS0308",
+  "brand": "Maybelline",
+  "productName": "Lash Sensational Lash Multiplying Mascara",
+  "primary": "/images/catalog/TS0308-f8ecc8a2d764.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا لاش سنسيشنال من ميبيلين",
+    "tagline": "نظرتكِ الجميلة، على طريقتكِ.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. لاش سنسيشنال من ميبيلين لمسة تكمل مكياجكِ من أول تمريرة. وزعي الماسكارا بهدوء من الجذور نحو الأطراف، وامنحي زوايا العين اهتمامًا إضافيًا لتحصلي على مظهر رموش محددة يرافق ابتسامتكِ.",
+    "benefits": [
+      "فرشاة لتوزيع الماسكارا",
+      "إبراز تفاصيل الرموش",
+      "طبقات خفيفة حسب الرغبة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. لاش سنسيشنال من ميبيلين لمسة تكمل مكياجكِ من أول تمريرة. وزعي الماسكارا بهدوء من الجذور نحو الأطراف، وامنحي زوايا العين اهتمامًا إضافيًا لتحصلي على مظهر رموش محددة يرافق ابتسامتكِ.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. أضيفي طبقة عند الحاجة، وأزيلي المكياج بلطف مساءً."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. أضيفي طبقة عند الحاجة، وأزيلي المكياج بلطف مساءً."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "Maybelline · Lash Sensational Lash Multiplying Mascara",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. Maybelline · Lash Sensational Lash Multiplying Mascara. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. Maybelline · Lash Sensational Lash Multiplying Mascara. A little lift to your everyday beauty ritual. Let your lashes be your last little touch before heading out.",
+    "fitText": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

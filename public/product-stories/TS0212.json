@@ -1,0 +1,71 @@
+{
+  "id": "TS0212",
+  "brand": "Vichy",
+  "productName": "Ideal Soleil Hydrating Protective Water SPF30",
+  "primary": "/images/catalog/TS0212-b45c3f8e5c55.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماء الحماية والترطيب إيديال سولاي من فيشي SPF30",
+    "tagline": "اختيار صغير يرافق يومكِ.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. ماء الحماية والترطيب إيديال سولاي من فيشي SPF30 بعبوة 200 مل. صيغة سائلة تحتاج الرجّ واتباع تعليمات العبوة لضمان توزيع متجانس، مع تجديد التطبيق بعد السباحة أو التعرق.",
+    "benefits": [
+      "عامل SPF30",
+      "عبوة 200 مل",
+      "قوام سائل للحماية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. ماء الحماية والترطيب إيديال سولاي من فيشي SPF30 بعبوة 200 مل. صيغة سائلة تحتاج الرجّ واتباع تعليمات العبوة لضمان توزيع متجانس، مع تجديد التطبيق بعد السباحة أو التعرق.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "رجّي العبوة جيدًا وفق الملصق ووزعي كمية كافية ومتجانسة. جددي التطبيق كل ساعتين وبعد الماء أو التعرق أو التجفيف."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "رجّي العبوة جيدًا وفق الملصق ووزعي كمية كافية ومتجانسة. جددي التطبيق كل ساعتين وبعد الماء أو التعرق أو التجفيف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "Vichy · Ideal Soleil Hydrating Protective Water SPF30",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. Vichy · Ideal Soleil Hydrating Protective Water SPF30. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. Vichy · Ideal Soleil Hydrating Protective Water SPF30. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

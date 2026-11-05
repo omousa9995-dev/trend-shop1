@@ -1,0 +1,71 @@
+{
+  "id": "TS0047",
+  "brand": "NOTE",
+  "productName": "NOTE MATTIFYING EXTREME WEAR FOUNDATION",
+  "primary": "/images/catalog/TS0047-0da340cd9298.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "فاونديشن ماتييفاينغ إكستريم وير من نوت",
+    "tagline": "إطلالتكِ تبدأ باختيار يريحكِ.",
+    "description": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. لإطلالة تميل إلى تقليل اللمعان، يمنحك فاونديشن نوت قاعدة مكياج قابلة للتوزيع على المناطق التي تحتاج توحيدًا. اختاري الدرجة المطابقة وابدئي بطبقة خفيفة، ثم أضيفي فقط حيث ترغبين بتغطية أوضح.",
+    "benefits": [
+      "توحيد مظهر البشرة",
+      "لمسة مطفية",
+      "تحكم في مستوى التغطية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري القاعدة والدرجة التي تنسجم معكِ، وخذي راحتكِ في بناء إطلالتكِ. لإطلالة تميل إلى تقليل اللمعان، يمنحك فاونديشن نوت قاعدة مكياج قابلة للتوزيع على المناطق التي تحتاج توحيدًا. اختاري الدرجة المطابقة وابدئي بطبقة خفيفة، ثم أضيفي فقط حيث ترغبين بتغطية أوضح.",
+    "fitText": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي طبقة رقيقة على بشرة مرطبة، وادمجي من وسط الوجه إلى الخارج."
+      }
+    ],
+    "notes": "حددي درجة اللون قبل الطلب؛ لا يمكن استنتاجها من صورة العبوة وحدها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي طبقة رقيقة على بشرة مرطبة، وادمجي من وسط الوجه إلى الخارج."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "en": {
+    "name": "NOTE MATTIFYING EXTREME WEAR FOUNDATION",
+    "tagline": "Your look begins with a choice that feels like you.",
+    "description": "Choose the base and tone that feel right, then take your time with your look. NOTE MATTIFYING EXTREME WEAR FOUNDATION. Your look begins with a base that feels like you. Start small and build the makeup look you feel most comfortable in.",
+    "benefits": [
+      "Your look begins with a base that feels like you.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose the base and tone that feel right, then take your time with your look. NOTE MATTIFYING EXTREME WEAR FOUNDATION. Your look begins with a base that feels like you. Start small and build the makeup look you feel most comfortable in.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      }
+    ],
+    "notes": "Choose your approximate skin tone preference before adding to your bag; confirm the actual manufacturer shade with the store.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Blend a small amount from the centre of the face outwards. Build gradually where you want more coverage."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "foundation"
+  },
+  "contentVersion": "5.0.0"
+}

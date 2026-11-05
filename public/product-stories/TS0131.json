@@ -1,0 +1,71 @@
+{
+  "id": "TS0131",
+  "brand": "Sebamed",
+  "productName": "Sebamed Lip Defense",
+  "primary": "/images/catalog/TS0131-713300fda0d5.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بلسم ليب ديفنس من سيباميد",
+    "tagline": "لمسة تحبّينها في كل حقيبة.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. اجعلي العناية بالشفاه خطوة سهلة تتكرر عند الحاجة مع ليب ديفنس. يساعد على تلطيف إحساس الجفاف ومنح الشفاه مظهرًا أنعم، ويمكن استخدامه ضمن الإطلالة الخفيفة أو قبل مستحضر لون الشفاه.",
+    "benefits": [
+      "إحساس مريح بالترطيب",
+      "تلطيف مظهر الجفاف",
+      "سهولة الاستخدام خارج المنزل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. اجعلي العناية بالشفاه خطوة سهلة تتكرر عند الحاجة مع ليب ديفنس. يساعد على تلطيف إحساس الجفاف ومنح الشفاه مظهرًا أنعم، ويمكن استخدامه ضمن الإطلالة الخفيفة أو قبل مستحضر لون الشفاه.",
+    "fitText": "تُراجع النسخة ودرجة الحماية الشمسية إن وجدت قبل اعتمادها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري طبقة خفيفة على الشفاه وجدديها عند الحاجة وفق العبوة."
+      }
+    ],
+    "notes": "تُراجع النسخة ودرجة الحماية الشمسية إن وجدت قبل اعتمادها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري طبقة خفيفة على الشفاه وجدديها عند الحاجة وفق العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تُراجع النسخة ودرجة الحماية الشمسية إن وجدت قبل اعتمادها."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "Sebamed Lip Defense",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. Sebamed Lip Defense. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. Sebamed Lip Defense. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0276",
+  "brand": "BAOL",
+  "productName": "Pedicure Foot File",
+  "primary": "/images/catalog/TS0276-df4920ac97d6.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مبرد القدمين من باول",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تفصيلة عناية لقدميكِ في المنزل. مبرد القدمين من باول بالعبوة الصفراء المصوّرة للعناية بالجلد الخشن في المناطق المناسبة. يستخدم برفق حسب تعليماته دون إزالة مفرطة للجلد، وينظف ويجفف بعد الاستخدام ليبقى جاهزًا لروتينك.",
+    "benefits": [
+      "أداة للعناية بالقدمين",
+      "مقبض لسهولة التحكم",
+      "قابل للتنظيف بعد الاستخدام"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تفصيلة عناية لقدميكِ في المنزل. مبرد القدمين من باول بالعبوة الصفراء المصوّرة للعناية بالجلد الخشن في المناطق المناسبة. يستخدم برفق حسب تعليماته دون إزالة مفرطة للجلد، وينظف ويجفف بعد الاستخدام ليبقى جاهزًا لروتينك.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. لا يستخدم على الجروح أو الجلد الملتهب؛ استشيري مختصًا قبل استخدامه عند السكري أو ضعف الإحساس أو الدورة الدموية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي المبرد بلطف على مناطق الجلد الخشن المناسبة وفق دليله، دون إفراط. نظفيه وجففيه بعد الاستخدام."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. لا يستخدم على الجروح أو الجلد الملتهب؛ استشيري مختصًا قبل استخدامه عند السكري أو ضعف الإحساس أو الدورة الدموية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي المبرد بلطف على مناطق الجلد الخشن المناسبة وفق دليله، دون إفراط. نظفيه وجففيه بعد الاستخدام."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. لا يستخدم على الجروح أو الجلد الملتهب؛ استشيري مختصًا قبل استخدامه عند السكري أو ضعف الإحساس أو الدورة الدموية."
+      }
+    ],
+    "productType": "foot-tools"
+  },
+  "en": {
+    "name": "BAOL · Pedicure Foot File",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. BAOL · Pedicure Foot File. A little care for your feet at home. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little care for your feet at home.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. BAOL · Pedicure Foot File. A little care for your feet at home. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on broken skin. Ask a professional first if you have diabetes or circulation problems.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use gently as directed without excessive pressure, then clean and dry the tool."
+      }
+    ],
+    "notes": "Do not use on broken skin. Ask a professional first if you have diabetes or circulation problems.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use gently as directed without excessive pressure, then clean and dry the tool."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on broken skin. Ask a professional first if you have diabetes or circulation problems."
+      }
+    ],
+    "productType": "foot-tools"
+  },
+  "contentVersion": "5.0.0"
+}

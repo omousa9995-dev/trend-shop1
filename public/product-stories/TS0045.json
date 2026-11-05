@@ -1,0 +1,71 @@
+{
+  "id": "TS0045",
+  "brand": "NOTE",
+  "productName": "NOTE INSTANT BI-PHASE MAKE UP REMOVER",
+  "primary": "/images/catalog/TS0045-7ca145df3014.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مزيل المكياج ثنائي الطور من نوت",
+    "tagline": "بداية ناعمة لروتين تحبّينه.",
+    "description": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. امنحي نهاية يومك عناية مرتبة مع مزيل نوت ثنائي الطور. تتجانس طبقاته عند الرج لتساعد على تفكيك المكياج وإزالته بلطف، قبل الانتقال إلى التنظيف الذي تفضلينه حسب حاجة بشرتك.",
+    "benefits": [
+      "تفكيك بقايا المكياج",
+      "تركيبة ثنائية الطور",
+      "تقليل الفرك المتكرر"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. امنحي نهاية يومك عناية مرتبة مع مزيل نوت ثنائي الطور. تتجانس طبقاته عند الرج لتساعد على تفكيك المكياج وإزالته بلطف، قبل الانتقال إلى التنظيف الذي تفضلينه حسب حاجة بشرتك.",
+    "fitText": "تأكدي من تخصيص العبوة لمحيط العين قبل استخدامها هناك.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "رجي العبوة حسب التعليمات، بللي قطعة قطن ومرريها بلطف على المنطقة المسموح بها."
+      }
+    ],
+    "notes": "تأكدي من تخصيص العبوة لمحيط العين قبل استخدامها هناك.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "رجي العبوة حسب التعليمات، بللي قطعة قطن ومرريها بلطف على المنطقة المسموح بها."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تأكدي من تخصيص العبوة لمحيط العين قبل استخدامها هناك."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "en": {
+    "name": "NOTE INSTANT BI-PHASE MAKE UP REMOVER",
+    "tagline": "A gentle beginning to your own little ritual.",
+    "description": "Make a little room for a calm cleansing moment. NOTE INSTANT BI-PHASE MAKE UP REMOVER. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "benefits": [
+      "A fresh start, or a gentle end to your day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little room for a calm cleansing moment. NOTE INSTANT BI-PHASE MAKE UP REMOVER. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "fitText": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      }
+    ],
+    "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "contentVersion": "5.0.0"
+}

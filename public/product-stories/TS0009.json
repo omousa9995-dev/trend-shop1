@@ -1,0 +1,71 @@
+{
+  "id": "TS0009",
+  "brand": "FREELOOK",
+  "productName": "Hair Care Oil Macadamia & Vitamin E By FREELOOK",
+  "primary": "/images/catalog/TS0009-82df1eda5621.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت عناية بالمكاديميا من فري لوك",
+    "tagline": "وقتكِ مع شعركِ، بقليل من الدلال.",
+    "description": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. امنحي أطراف شعرك عناية تكمل التصفيف مع زيت فري لوك بالمكاديميا. يساعد على تلطيف الإحساس بالخشونة وتحسين مظهر الهيشان، ويضيف إلى روتينك لمسة نهائية تناسب الشعر الذي يبدو جافًا عند الأطراف.",
+    "benefits": [
+      "تنعيم مظهر الأطراف",
+      "تقليل مظهر الهيشان",
+      "تجميل اللمسة النهائية للتصفيف"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. امنحي أطراف شعرك عناية تكمل التصفيف مع زيت فري لوك بالمكاديميا. يساعد على تلطيف الإحساس بالخشونة وتحسين مظهر الهيشان، ويضيف إلى روتينك لمسة نهائية تناسب الشعر الذي يبدو جافًا عند الأطراف.",
+    "fitText": "ابدئي بالقليل لتجنب إثقال الشعر، خاصة الشعر الناعم.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية صغيرة بين راحتيك ثم مرريها على الأطوال والأطراف، وزيدي حسب الحاجة."
+      }
+    ],
+    "notes": "ابدئي بالقليل لتجنب إثقال الشعر، خاصة الشعر الناعم.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية صغيرة بين راحتيك ثم مرريها على الأطوال والأطراف، وزيدي حسب الحاجة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "ابدئي بالقليل لتجنب إثقال الشعر، خاصة الشعر الناعم."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "en": {
+    "name": "FREELOOK · Hair Care Oil Macadamia & Vitamin E",
+    "tagline": "A little care for the hair you love.",
+    "description": "Take a moment with your hair and choose what fits your routine. FREELOOK · Hair Care Oil Macadamia & Vitamin E. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little finishing care for your hair.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Take a moment with your hair and choose what fits your routine. FREELOOK · Hair Care Oil Macadamia & Vitamin E. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      }
+    ],
+    "notes": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "contentVersion": "5.0.0"
+}

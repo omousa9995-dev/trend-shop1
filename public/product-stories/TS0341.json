@@ -1,0 +1,71 @@
+{
+  "id": "TS0341",
+  "brand": "COVIX CARE",
+  "productName": "Cool Intimate Wash Collection",
+  "primary": "/images/catalog/TS0341-f74f602f3610.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "غسول كول للعناية الحميمة من كوفيكس كير",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية انتعاش تمنحكِ وقتًا لنفسكِ. غسول كول للعناية الحميمة من كوفيكس كير بعبوة 215 مل، بخياري النسخة الزرقاء أو العكر الفاسي الحمراء. اختاري عبوة واحدة من القائمة؛ يُستخدم للتنظيف الخارجي فقط وفق إرشادات العبوة، وليس علاجًا للالتهابات.",
+    "benefits": [
+      "خياران للنسخة",
+      "للتنظيف الخارجي فقط",
+      "عبوة 215 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية انتعاش تمنحكِ وقتًا لنفسكِ. غسول كول للعناية الحميمة من كوفيكس كير بعبوة 215 مل، بخياري النسخة الزرقاء أو العكر الفاسي الحمراء. اختاري عبوة واحدة من القائمة؛ يُستخدم للتنظيف الخارجي فقط وفق إرشادات العبوة، وليس علاجًا للالتهابات.",
+    "fitText": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي كمية قليلة مع الماء للتنظيف الخارجي فقط، ثم اشطفي جيدًا وجففي برفق بحسب إرشادات العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي كمية قليلة مع الماء للتنظيف الخارجي فقط، ثم اشطفي جيدًا وجففي برفق بحسب إرشادات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح."
+      }
+    ],
+    "productType": "body-cleansing"
+  },
+  "en": {
+    "name": "COVIX CARE · Cool Intimate Wash Collection",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. COVIX CARE · Cool Intimate Wash Collection. A fresh little ritual to call your own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A fresh little ritual to call your own.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. COVIX CARE · Cool Intimate Wash Collection. A fresh little ritual to call your own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact wash or soap directions. Cleanse gently and rinse well."
+      }
+    ],
+    "notes": "For external use. Intimate washes are external only; avoid internal use and discontinue if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact wash or soap directions. Cleanse gently and rinse well."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "body-cleansing"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0247",
+  "brand": "Bourjois",
+  "productName": "Healthy Mix Blurring Primer",
+  "primary": "/images/catalog/TS0247-9fdb8e355ec0.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "برايمر هيلثي ميكس من بورجوا",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. برايمر هيلثي ميكس بلورينغ من بورجوا بالأنبوب الأحمر المصوّر. خطوة تسبق كريم الأساس لتنعيم مظهر القاعدة؛ ضعي طبقة رقيقة واتركيها تستقر قبل متابعة المكياج حتى لا تتراكم الطبقات.",
+    "benefits": [
+      "برايمر قبل الأساس",
+      "قوام قابل للدمج",
+      "طبقة رقيقة للقاعدة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. برايمر هيلثي ميكس بلورينغ من بورجوا بالأنبوب الأحمر المصوّر. خطوة تسبق كريم الأساس لتنعيم مظهر القاعدة؛ ضعي طبقة رقيقة واتركيها تستقر قبل متابعة المكياج حتى لا تتراكم الطبقات.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي طبقة رقيقة على المناطق المطلوبة بعد المرطب، واتركيها تستقر قبل كريم الأساس."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي طبقة رقيقة على المناطق المطلوبة بعد المرطب، واتركيها تستقر قبل كريم الأساس."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "primer"
+  },
+  "en": {
+    "name": "Bourjois · Healthy Mix Blurring Primer",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Bourjois · Healthy Mix Blurring Primer. A thoughtful start to your makeup routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A thoughtful start to your makeup routine.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Bourjois · Healthy Mix Blurring Primer. A thoughtful start to your makeup routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Patch test first, especially if your skin is sensitive. Avoid the eye area.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a thin layer after skincare. Allow it to settle before applying foundation."
+      }
+    ],
+    "notes": "Patch test first, especially if your skin is sensitive. Avoid the eye area.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a thin layer after skincare. Allow it to settle before applying foundation."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first, especially if your skin is sensitive. Avoid the eye area."
+      }
+    ],
+    "productType": "primer"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0015",
+  "brand": "DERMOKIL",
+  "productName": "Repairing and Nourishing Hand Mask By DERMOKIL",
+  "primary": "/images/catalog/TS0015-654447698ccb.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك ترطيب وتجديد اليدين من ديرموكيل",
+    "tagline": "اهتمام يليق بلحظاتكِ الهادئة.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. أعيدي الاهتمام إلى يديك مع ماسك يمنح الجلد إحساسًا بالترطيب والنعومة. يلائم روتين العناية المنزلية لليدين بعد التعرض المتكرر للماء، ويضيف خطوة تدليل مريحة قبل استكمال مرطبك المعتاد.",
+    "benefits": [
+      "إحساس بالترطيب",
+      "تلطيف ملمس اليدين",
+      "عناية منزلية بسيطة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. أعيدي الاهتمام إلى يديك مع ماسك يمنح الجلد إحساسًا بالترطيب والنعومة. يلائم روتين العناية المنزلية لليدين بعد التعرض المتكرر للماء، ويضيف خطوة تدليل مريحة قبل استكمال مرطبك المعتاد.",
+    "fitText": "توقفي عن استخدامه عند ظهور تهيج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقيه على يدين نظيفتين حسب مدة العبوة، ووزعي بقايا العناية إذا كانت التعليمات تسمح."
+      }
+    ],
+    "notes": "توقفي عن استخدامه عند ظهور تهيج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقيه على يدين نظيفتين حسب مدة العبوة، ووزعي بقايا العناية إذا كانت التعليمات تسمح."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "توقفي عن استخدامه عند ظهور تهيج."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "DERMOKIL · Repairing and Nourishing Hand Mask",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. DERMOKIL · Repairing and Nourishing Hand Mask. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. DERMOKIL · Repairing and Nourishing Hand Mask. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

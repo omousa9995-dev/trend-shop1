@@ -1,0 +1,71 @@
+{
+  "id": "TS0031",
+  "brand": "Eucerin",
+  "productName": "واقي شمس Eucerin Oil Control",
+  "primary": "/images/catalog/TS0031-aadaa0387edb.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "واقي الشمس أويل كنترول من يوسيرين",
+    "tagline": "صباحكِ ألطف مع خطوة تهتم بكِ.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. أضيفي إلى صباحك واقيًا من خط أويل كنترول عندما تريدين حماية يومية مع اهتمام بمظهر اللمعان. صُممت هذه المجموعة لتلائم روتين البشرة الدهنية أو المختلطة، مع ضرورة اختيار النسخة الفعلية ودرجة الحماية المناسبة.",
+    "benefits": [
+      "خطوة حماية نهارية",
+      "اهتمام بمظهر اللمعان",
+      "مناسب لروتين البشرة الدهنية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. أضيفي إلى صباحك واقيًا من خط أويل كنترول عندما تريدين حماية يومية مع اهتمام بمظهر اللمعان. صُممت هذه المجموعة لتلائم روتين البشرة الدهنية أو المختلطة، مع ضرورة اختيار النسخة الفعلية ودرجة الحماية المناسبة.",
+    "fitText": "تُحدد النسخة ودرجة SPF والحجم عند اعتماد المنتج.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية كافية وفق العبوة وجددي أثناء التعرض للشمس، خاصة بعد التعرق أو السباحة."
+      }
+    ],
+    "notes": "تُحدد النسخة ودرجة SPF والحجم عند اعتماد المنتج.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية كافية وفق العبوة وجددي أثناء التعرض للشمس، خاصة بعد التعرق أو السباحة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تُحدد النسخة ودرجة SPF والحجم عند اعتماد المنتج."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "Eucerin Oil Control Sunscreen",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. Eucerin Oil Control Sunscreen. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. Eucerin Oil Control Sunscreen. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0154",
+  "brand": "Schwarzkopf",
+  "productName": "Schwarzkopf Got2b Glued 4 Brows & Edges",
+  "primary": "/images/catalog/TS0154-28b06f08e8bb.avif",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "جل غوت تو بي للحواجب والحواف من شوارزكوف",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. نسقي الحواجب والشعيرات الصغيرة عند خط الشعر مع غوت تو بي المخصص لهذه المناطق. تساعد الأداة على توزيع المستحضر والتحكم في الشكل، لتختاري إطلالة طبيعية مرتبة أو تمشيطًا أكثر تحديدًا.",
+    "benefits": [
+      "ترتيب الحواجب",
+      "تصفيف شعيرات خط الشعر",
+      "تحكم في شكل الشعيرات"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. نسقي الحواجب والشعيرات الصغيرة عند خط الشعر مع غوت تو بي المخصص لهذه المناطق. تساعد الأداة على توزيع المستحضر والتحكم في الشكل، لتختاري إطلالة طبيعية مرتبة أو تمشيطًا أكثر تحديدًا.",
+    "fitText": "هذا المنتج للحواجب والحواف، ولا يستخدم على الرموش أو داخل العين.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري كمية قليلة بالأداة على الشعيرات المطلوبة وامشطي باتجاه التسريحة."
+      }
+    ],
+    "notes": "هذا المنتج للحواجب والحواف، ولا يستخدم على الرموش أو داخل العين.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري كمية قليلة بالأداة على الشعيرات المطلوبة وامشطي باتجاه التسريحة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "هذا المنتج للحواجب والحواف، ولا يستخدم على الرموش أو داخل العين."
+      }
+    ],
+    "productType": "brows"
+  },
+  "en": {
+    "name": "Schwarzkopf Got2b Glued 4 Brows & Edges",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Schwarzkopf Got2b Glued 4 Brows & Edges. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "The little brow detail that finishes your look.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Schwarzkopf Got2b Glued 4 Brows & Edges. The little brow detail that finishes your look. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Use only as directed, avoiding contact with the eye itself.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a light hand to shape or define the brows, following their natural direction."
+      }
+    ],
+    "notes": "Use only as directed, avoiding contact with the eye itself.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a light hand to shape or define the brows, following their natural direction."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Use only as directed, avoiding contact with the eye itself."
+      }
+    ],
+    "productType": "brows"
+  },
+  "contentVersion": "5.0.0"
+}

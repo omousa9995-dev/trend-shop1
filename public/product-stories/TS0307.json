@@ -1,0 +1,71 @@
+{
+  "id": "TS0307",
+  "brand": "essence",
+  "productName": "I Love Extreme Crazy Volume Mascara",
+  "primary": "/images/catalog/TS0307-38757f24c801.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسكارا آي لاف إكستريم من إيسنس — الوردية",
+    "tagline": "لمسة للرموش، وابتسامة قبل الخروج.",
+    "description": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. للمشاوير اليومية أو لحظة خروج تحبّين الاستعداد لها، اختاري لمسة الرموش مع إيسنس آي لاف إكستريم كريزي فوليوم. العبوة الوردية سهلة التمييز بين مستحضراتكِ؛ مرري الفرشاة بلطف وركّزي على الإطلالة التي تحبّينها، من دون استعجال أو طبقات كثيرة دفعة واحدة.",
+    "benefits": [
+      "من مجموعة Crazy Volume",
+      "إبراز مظهر كثافة الرموش",
+      "العبوة الوردية المميزة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل المشوار أو لقاء تحبّينه، اختاري اللمسة التي تشبهكِ. للمشاوير اليومية أو لحظة خروج تحبّين الاستعداد لها، اختاري لمسة الرموش مع إيسنس آي لاف إكستريم كريزي فوليوم. العبوة الوردية سهلة التمييز بين مستحضراتكِ؛ مرري الفرشاة بلطف وركّزي على الإطلالة التي تحبّينها، من دون استعجال أو طبقات كثيرة دفعة واحدة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. أضيفي طبقة عند الحاجة، وأزيلي المكياج بلطف مساءً."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري الفرشاة من جذور الرموش إلى الأطراف بحركات خفيفة. أضيفي طبقة عند الحاجة، وأزيلي المكياج بلطف مساءً."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "en": {
+    "name": "essence · I Love Extreme Crazy Volume Mascara",
+    "tagline": "A little lash detail before you go.",
+    "description": "Before a busy day or a favourite evening, choose your own finishing touch. For daily plans or a moment you enjoy getting ready for, add a lash detail with essence I Love Extreme Crazy Volume. The pink tube is easy to spot in your beauty bag. Brush gently and build your preferred look in light coats rather than rushing.",
+    "benefits": [
+      "A little lift to your everyday beauty ritual.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Before a busy day or a favourite evening, choose your own finishing touch. For daily plans or a moment you enjoy getting ready for, add a lash detail with essence I Love Extreme Crazy Volume. The pink tube is easy to spot in your beauty bag. Brush gently and build your preferred look in light coats rather than rushing.",
+    "fitText": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      }
+    ],
+    "notes": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Brush gently from the base of your lashes towards the tips. Add a second light coat if desired."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For your own use only. Do not share mascara or apply inside the eye. Stop using it if irritation occurs."
+      }
+    ],
+    "productType": "mascara"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0138",
+  "brand": "Marvis",
+  "productName": "Marvis Whitening Mint",
+  "primary": "/images/catalog/TS0138-68902cbfe571.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "معجون وايتننغ منت من مارفيس",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تفصيلة من روتين ابتسامتكِ. أضيفي إلى روتين تنظيف الأسنان تجربة مارفيس بنكهة النعناع. يساعد المعجون على تنظيف السطح ومنح الفم إحساسًا بالانتعاش، ويليق بمن تحب التفاصيل الصغيرة الجميلة في العناية اليومية.",
+    "benefits": [
+      "تنظيف الأسنان",
+      "انتعاش النعناع",
+      "تكملة لروتين العناية بالفم"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تفصيلة من روتين ابتسامتكِ. أضيفي إلى روتين تنظيف الأسنان تجربة مارفيس بنكهة النعناع. يساعد المعجون على تنظيف السطح ومنح الفم إحساسًا بالانتعاش، ويليق بمن تحب التفاصيل الصغيرة الجميلة في العناية اليومية.",
+    "fitText": "لا يبلع، ولا يحل محل العناية المهنية عند وجود ألم أو مشكلة في الأسنان.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي مع فرشاة الأسنان وفق التعليمات الموجودة على العبوة وابصقي بعد التفريش."
+      }
+    ],
+    "notes": "لا يبلع، ولا يحل محل العناية المهنية عند وجود ألم أو مشكلة في الأسنان.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي مع فرشاة الأسنان وفق التعليمات الموجودة على العبوة وابصقي بعد التفريش."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يبلع، ولا يحل محل العناية المهنية عند وجود ألم أو مشكلة في الأسنان."
+      }
+    ],
+    "productType": "oral-care"
+  },
+  "en": {
+    "name": "Marvis Whitening Mint",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Marvis Whitening Mint. A little detail in your smile-care routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little detail in your smile-care routine.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Marvis Whitening Mint. A little detail in your smile-care routine. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Cosmetic colour correction is temporary and does not replace toothbrushing or dental care. Use only as labelled.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact oral-care product’s instructions, including the recommended quantity and contact time. Do not swallow."
+      }
+    ],
+    "notes": "Cosmetic colour correction is temporary and does not replace toothbrushing or dental care. Use only as labelled.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact oral-care product’s instructions, including the recommended quantity and contact time. Do not swallow."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Cosmetic colour correction is temporary and does not replace toothbrushing or dental care. Use only as labelled."
+      }
+    ],
+    "productType": "oral-care"
+  },
+  "contentVersion": "5.0.0"
+}

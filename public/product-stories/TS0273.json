@@ -1,0 +1,71 @@
+{
+  "id": "TS0273",
+  "brand": "Yo-Siken",
+  "productName": "Air Stocking Leg Makeup",
+  "primary": "/images/catalog/TS0273-a1a77607985f.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "إير ستوكينغ لتوحيد مظهر لون الساقين",
+    "tagline": "اهتمام يليق بلحظاتكِ الهادئة.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. إير ستوكينغ من يو سيكن بالعبوة البيج ذات النافذة المصوّرة لتوحيد مظهر لون الساقين تجميليًا. اتبعي تعليمات التطبيق على العبوة واتركي اللون يستقر قبل الملابس، مع تأكيد الدرجة المتاحة.",
+    "benefits": [
+      "مكياج للجسم",
+      "لمظهر لون أكثر تجانسًا",
+      "العبوة البيج المصوّرة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. إير ستوكينغ من يو سيكن بالعبوة البيج ذات النافذة المصوّرة لتوحيد مظهر لون الساقين تجميليًا. اتبعي تعليمات التطبيق على العبوة واتركي اللون يستقر قبل الملابس، مع تأكيد الدرجة المتاحة.",
+    "fitText": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي تعليمات العبوة لتوزيع طبقة رقيقة على الساقين السليمتين. اتركي اللون يستقر قبل ارتداء الملابس واختبري احتمال انتقاله للقماش."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي تعليمات العبوة لتوزيع طبقة رقيقة على الساقين السليمتين. اتركي اللون يستقر قبل ارتداء الملابس واختبري احتمال انتقاله للقماش."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة اللونية غير محددة في الصور المرسلة. أكدي اللون المتاح مع المتجر عبر واتساب قبل تثبيت الطلب؛ الصورة لا تمثل وعدًا بدرجة بعينها."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "Yo-Siken · Air Stocking Leg Makeup",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. Yo-Siken · Air Stocking Leg Makeup. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. Yo-Siken · Air Stocking Leg Makeup. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

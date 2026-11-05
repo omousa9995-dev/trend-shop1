@@ -1,0 +1,71 @@
+{
+  "id": "TS0245",
+  "brand": "Mielle",
+  "productName": "Rosemary Mint Strengthening Hair Masque",
+  "primary": "/images/catalog/TS0245-11a12c03056a.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك روزماري منت للشعر من ميلي",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي خصلاتكِ وقتًا من الدلال. ماسك روزماري منت من ميلي بحجم 340 غرامًا لخطوة عناية بالشعر أثناء الغسل. وزعيه على الأطوال واتركيه للمدة المحددة على العبوة ثم اشطفيه جيدًا؛ عدّلي وتيرة الاستخدام حسب حاجة شعرك.",
+    "benefits": [
+      "ماسك للشعر",
+      "عناية أثناء الغسل",
+      "حجم 340 غرامًا"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي خصلاتكِ وقتًا من الدلال. ماسك روزماري منت من ميلي بحجم 340 غرامًا لخطوة عناية بالشعر أثناء الغسل. وزعيه على الأطوال واتركيه للمدة المحددة على العبوة ثم اشطفيه جيدًا؛ عدّلي وتيرة الاستخدام حسب حاجة شعرك.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي على أطوال الشعر بعد التنظيف، واتركي للمدة المحددة على العبوة ثم اشطفي جيدًا."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي على أطوال الشعر بعد التنظيف، واتركي للمدة المحددة على العبوة ثم اشطفي جيدًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "hair-mask"
+  },
+  "en": {
+    "name": "Mielle · Rosemary Mint Strengthening Hair Masque",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Mielle · Rosemary Mint Strengthening Hair Masque. Give your lengths a little time of their own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Give your lengths a little time of their own.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Mielle · Rosemary Mint Strengthening Hair Masque. Give your lengths a little time of their own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply as directed to the indicated areas of the hair, leave for the labelled time and rinse if required."
+      }
+    ],
+    "notes": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply as directed to the indicated areas of the hair, leave for the labelled time and rinse if required."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions."
+      }
+    ],
+    "productType": "hair-mask"
+  },
+  "contentVersion": "5.0.0"
+}

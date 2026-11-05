@@ -1,0 +1,71 @@
+{
+  "id": "TS0233",
+  "brand": "CeraVe",
+  "productName": "Hydrating Mineral Sunscreen Face SPF50",
+  "primary": "/images/catalog/TS0233-97d2f401f4c8.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "واقي هايدريتنغ المعدني للوجه من سيرافي SPF50",
+    "tagline": "خذي عنايتكِ معكِ، أينما أخذَكِ النهار.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. واقي هايدريتنغ المعدني للوجه من سيرافي SPF50 بحجم 75 مل. يوزع بكمية كافية كآخر خطوة للعناية الصباحية قبل المكياج، وقد يظهر أثر أبيض بحسب لون البشرة وطريقة الدمج.",
+    "benefits": [
+      "عامل SPF50",
+      "واقي معدني للوجه",
+      "عبوة 75 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. واقي هايدريتنغ المعدني للوجه من سيرافي SPF50 بحجم 75 مل. يوزع بكمية كافية كآخر خطوة للعناية الصباحية قبل المكياج، وقد يظهر أثر أبيض بحسب لون البشرة وطريقة الدمج.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقي كمية كافية ومتجانسة قبل التعرض للشمس وفق تعليمات العبوة. أعيدي التطبيق كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. تجنبي شمس الظهيرة والتعرض الطويل؛ الواقي لا يوفر حماية كاملة بمفرده."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "CeraVe · Hydrating Mineral Sunscreen Face SPF50",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. CeraVe · Hydrating Mineral Sunscreen Face SPF50. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. CeraVe · Hydrating Mineral Sunscreen Face SPF50. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "TS0042",
+  "brand": "Dr Rashel",
+  "productName": "سكراب ومقشر بخلاصة الالوفيرا من Dr Rashel",
+  "primary": "/images/catalog/TS0042-fd98ff72f9a1.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سكراب الألوفيرا من دكتور راشيل",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. إذا بدا سطح بشرتك خشنًا، يمكن لخطوة تقشير مناسبة أن تكمل العناية والترطيب. سكراب الألوفيرا من دكتور راشيل مخصص لتحسين مظهر الملمس، مع أهمية تجنب الفرك القوي أو الاستخدام على بشرة متهيجة.",
+    "benefits": [
+      "العناية بملمس البشرة",
+      "تجديد إحساس النعومة",
+      "تكملة لروتين الترطيب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. إذا بدا سطح بشرتك خشنًا، يمكن لخطوة تقشير مناسبة أن تكمل العناية والترطيب. سكراب الألوفيرا من دكتور راشيل مخصص لتحسين مظهر الملمس، مع أهمية تجنب الفرك القوي أو الاستخدام على بشرة متهيجة.",
+    "fitText": "لا تجمعيه مع تقشير قوي آخر في الجلسة نفسها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدميه في المنطقة المخصصة على العبوة وبحركة لطيفة، ثم اشطفي جيدًا."
+      }
+    ],
+    "notes": "لا تجمعيه مع تقشير قوي آخر في الجلسة نفسها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدميه في المنطقة المخصصة على العبوة وبحركة لطيفة، ثم اشطفي جيدًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا تجمعيه مع تقشير قوي آخر في الجلسة نفسها."
+      }
+    ],
+    "productType": "exfoliant"
+  },
+  "en": {
+    "name": "Dr Rashel Aloe Vera Scrub",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Dr Rashel Aloe Vera Scrub. A considered step, taken gently. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A considered step, taken gently.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Dr Rashel Aloe Vera Scrub. A considered step, taken gently. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use only at the frequency and for the contact time stated on the exact packaging. Introduce gradually and follow with moisturiser."
+      }
+    ],
+    "notes": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use only at the frequency and for the contact time stated on the exact packaging. Introduce gradually and follow with moisturiser."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs."
+      }
+    ],
+    "productType": "exfoliant"
+  },
+  "contentVersion": "5.0.0"
+}

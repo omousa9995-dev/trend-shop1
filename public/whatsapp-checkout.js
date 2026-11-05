@@ -1,7 +1,7 @@
-import {money} from './commerce.js';
+import {money} from './commerce.js?v=5.0.0';
 import {productDetails} from './shop-tools.js';
 import {productUrl,STORE_ORIGIN} from './product-links.js';
-import {isBundleId,bundleHref} from './bundles.js';
+import {isBundleId,bundleHref} from './bundles.js?v=5.0.0';
 import {isRetiredProduct} from './catalog-policy.js';
 const storeNumber='962790025430';
 const oneLine=(value,max=110)=>String(value??'').replace(/[\r\n\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,max);

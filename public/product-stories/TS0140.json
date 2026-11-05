@@ -1,0 +1,71 @@
+{
+  "id": "TS0140",
+  "brand": "Mavala",
+  "productName": "Mavala Double-Lash",
+  "primary": "/images/catalog/TS0140-cef211b8c599.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "عناية دبل لاش للرموش من مافالا",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي للرموش والحواجب خطوة عناية خفيفة مع دبل لاش. تمنحك أداة العبوة طريقة لتوزيع المستحضر على الشعيرات، لتكملي تنظيف المنطقة بروتين يهتم بالمظهر والنعومة دون افتراض نمو علاجي مضمون.",
+    "benefits": [
+      "العناية بمظهر الشعيرات",
+      "أداة توزيع عملية",
+      "خطوة بعد إزالة المكياج"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي للرموش والحواجب خطوة عناية خفيفة مع دبل لاش. تمنحك أداة العبوة طريقة لتوزيع المستحضر على الشعيرات، لتكملي تنظيف المنطقة بروتين يهتم بالمظهر والنعومة دون افتراض نمو علاجي مضمون.",
+    "fitText": "لا تشاركي أداة التطبيق وتوقفي عند التحسس.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدميه على الرموش النظيفة بالطريقة المحددة على العبوة دون إدخاله إلى العين."
+      }
+    ],
+    "notes": "لا تشاركي أداة التطبيق وتوقفي عند التحسس.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدميه على الرموش النظيفة بالطريقة المحددة على العبوة دون إدخاله إلى العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا تشاركي أداة التطبيق وتوقفي عند التحسس."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "en": {
+    "name": "Mavala Double-Lash",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Mavala Double-Lash. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small, careful moment for your eyes.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Mavala Double-Lash. A small, careful moment for your eyes. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      }
+    ],
+    "notes": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a very small amount in the area indicated on the pack, with gentle application and no pulling."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Keep out of the eyes. Lash products and eye creams have different directions; follow your exact product’s label."
+      }
+    ],
+    "productType": "eye-care"
+  },
+  "contentVersion": "5.0.0"
+}

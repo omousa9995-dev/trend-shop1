@@ -1,0 +1,71 @@
+{
+  "id": "TS0335",
+  "brand": "SADOER",
+  "productName": "Body Lotion Collection",
+  "primary": "/images/catalog/TS0335-cd9e54f2c728.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "لوشن الجسم من سادور — اختاري لمستكِ المفضلة",
+    "tagline": "لأن وقت العناية، وقت لكِ.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. لوشن الجسم من سادور بخياراته المصوّرة يتيح لكِ اختيار النسخة الأقرب لذوقكِ: الأفوكادو أو الفراولة أو النياسيناميد والمارشميلو أو البرتقال الأحمر. وزعيه بعد الاستحمام لملمس أنعم؛ السعر لعبوة واحدة.",
+    "benefits": [
+      "4 نسخ للاختيار",
+      "لوشن للعناية اليومية بالجسم",
+      "السعر لعبوة واحدة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. لوشن الجسم من سادور بخياراته المصوّرة يتيح لكِ اختيار النسخة الأقرب لذوقكِ: الأفوكادو أو الفراولة أو النياسيناميد والمارشميلو أو البرتقال الأحمر. وزعيه بعد الاستحمام لملمس أنعم؛ السعر لعبوة واحدة.",
+    "fitText": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "السعر لعبوة واحدة من النسخة المحددة؛ التشكيلة في الصورة للتوضيح."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "SADOER · Body Lotion Collection",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. SADOER · Body Lotion Collection. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. SADOER · Body Lotion Collection. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

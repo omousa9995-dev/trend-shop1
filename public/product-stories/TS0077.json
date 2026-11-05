@@ -1,0 +1,71 @@
+{
+  "id": "TS0077",
+  "brand": "Fino",
+  "productName": "Fino Premium Touch Hair Mask",
+  "primary": "/images/catalog/TS0077-75afdc6d85cc.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك بريميوم تاتش للشعر من فينو",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي خصلاتكِ وقتًا من الدلال. امنحي شعرك خطوة عناية مكثفة مع ماسك فينو بريميوم تاتش. يساعد على تلطيف ملمس الأطوال التي تبدو جافة أو خشنة، ليكون التسريح أكثر سلاسة وتبدو اللمسة النهائية للتصفيف أكثر ترتيبًا.",
+    "benefits": [
+      "تنعيم ملمس الأطوال",
+      "تسهيل فك التشابك",
+      "عناية بعد الغسل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي خصلاتكِ وقتًا من الدلال. امنحي شعرك خطوة عناية مكثفة مع ماسك فينو بريميوم تاتش. يساعد على تلطيف ملمس الأطوال التي تبدو جافة أو خشنة، ليكون التسريح أكثر سلاسة وتبدو اللمسة النهائية للتصفيف أكثر ترتيبًا.",
+    "fitText": "ابدئي من الأطوال وتجنبي إثقال الجذور غير المحتاجة للماسك.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي على أطوال الشعر بعد الشامبو واتركيه للمدة المحددة على العبوة ثم اشطفي جيدًا."
+      }
+    ],
+    "notes": "ابدئي من الأطوال وتجنبي إثقال الجذور غير المحتاجة للماسك.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي على أطوال الشعر بعد الشامبو واتركيه للمدة المحددة على العبوة ثم اشطفي جيدًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "ابدئي من الأطوال وتجنبي إثقال الجذور غير المحتاجة للماسك."
+      }
+    ],
+    "productType": "hair-mask"
+  },
+  "en": {
+    "name": "Fino Premium Touch Hair Mask",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Fino Premium Touch Hair Mask. Give your lengths a little time of their own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Give your lengths a little time of their own.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Fino Premium Touch Hair Mask. Give your lengths a little time of their own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply as directed to the indicated areas of the hair, leave for the labelled time and rinse if required."
+      }
+    ],
+    "notes": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply as directed to the indicated areas of the hair, leave for the labelled time and rinse if required."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not exceed the recommended time. Avoid the eyes and check scalp-use instructions."
+      }
+    ],
+    "productType": "hair-mask"
+  },
+  "contentVersion": "5.0.0"
+}

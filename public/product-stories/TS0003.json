@@ -1,0 +1,71 @@
+{
+  "id": "TS0003",
+  "brand": "OLIBOLLA",
+  "productName": "Jelly Lip Gloss Set By OLIBOLLA",
+  "primary": "/images/catalog/TS0003-0f711204ecc2.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مجموعة جلوس جيلي للشفاه من أوليبولا",
+    "tagline": "ابتسامتكِ، ولمستكِ المفضلة.",
+    "description": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. لمسة جيلي لامعة تمنح الشفاه مظهرًا حيويًا وتتيح لك تنويع الإطلالة بسهولة. تضم المجموعة خيارات لتنسيق اللمعة مع المكياج اليومي أو فوق لون شفاهك المفضل، لتختاري اللمسة التي تناسب مزاجك.",
+    "benefits": [
+      "مظهر لامع للشفاه",
+      "تنويع الإطلالة اليومية",
+      "يمكن تنسيقه مع لون شفاه آخر"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لحظة أمام المرآة، واختيار صغير يعبّر عنكِ. لمسة جيلي لامعة تمنح الشفاه مظهرًا حيويًا وتتيح لك تنويع الإطلالة بسهولة. تضم المجموعة خيارات لتنسيق اللمعة مع المكياج اليومي أو فوق لون شفاهك المفضل، لتختاري اللمسة التي تناسب مزاجك.",
+    "fitText": "تُحدّد ألوان المجموعة وعدد القطع بحسب العبوة المعتمدة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري كمية خفيفة على الشفاه ووزعيها بالتساوي، منفردة أو فوق أحمر الشفاه."
+      }
+    ],
+    "notes": "تُحدّد ألوان المجموعة وعدد القطع بحسب العبوة المعتمدة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري كمية خفيفة على الشفاه ووزعيها بالتساوي، منفردة أو فوق أحمر الشفاه."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تُحدّد ألوان المجموعة وعدد القطع بحسب العبوة المعتمدة."
+      }
+    ],
+    "productType": "lips"
+  },
+  "en": {
+    "name": "OLIBOLLA · Jelly Lip Gloss Set",
+    "tagline": "A little colour. A smile that is yours.",
+    "description": "A moment at the mirror and a little choice that feels like you. OLIBOLLA · Jelly Lip Gloss Set. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "benefits": [
+      "A little moment for your lips.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "A moment at the mirror and a little choice that feels like you. OLIBOLLA · Jelly Lip Gloss Set. A little moment for your lips. Keep your favourite lip detail close, from an everyday moment to evening plans.",
+    "fitText": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      }
+    ],
+    "notes": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply gently to clean lips as directed on the packaging. Start with a little and add more if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Choose the available colour or version. Do not share lip products, and stop use if irritation occurs."
+      }
+    ],
+    "productType": "lips"
+  },
+  "contentVersion": "5.0.0"
+}

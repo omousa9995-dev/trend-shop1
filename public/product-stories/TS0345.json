@@ -1,0 +1,71 @@
+{
+  "id": "TS0345",
+  "brand": "Bioderma",
+  "productName": "Photoderm MAX SPF100 Tinted Cream",
+  "primary": "/images/catalog/TS0345-38d725591a77.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "واقي فوتوديرم ماكس الملون من بيوديرما SPF100",
+    "tagline": "اختيار صغير يرافق يومكِ.",
+    "description": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. فوتوديرم ماكس من بيوديرما، النسخة الملونة المكتوب عليها SPF100 بعبوة 100 مل، يضيف لمسة لون إلى خطوة الحماية. تأكدي من ملاءمة اللون المتاح لكِ، واستخدمي كمية كافية مع التجديد؛ لا يوجد واقٍ يمنع الأشعة بالكامل.",
+    "benefits": [
+      "نسخة ملونة",
+      "SPF100 كما على العبوة",
+      "حجم 100 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "قبل أن يبدأ نهاركِ، امنحي العناية مساحة في روتينكِ. فوتوديرم ماكس من بيوديرما، النسخة الملونة المكتوب عليها SPF100 بعبوة 100 مل، يضيف لمسة لون إلى خطوة الحماية. تأكدي من ملاءمة اللون المتاح لكِ، واستخدمي كمية كافية مع التجديد؛ لا يوجد واقٍ يمنع الأشعة بالكامل.",
+    "fitText": "نسخة ملونة؛ أكدي ملاءمة اللون المتاح مع المتجر قبل الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي بكمية كافية قبل التعرض للشمس، وجددي كل ساعتين وبعد السباحة أو التعرق أو التجفيف، مع اتباع تعليمات العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي بكمية كافية قبل التعرض للشمس، وجددي كل ساعتين وبعد السباحة أو التعرق أو التجفيف، مع اتباع تعليمات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "نسخة ملونة؛ أكدي ملاءمة اللون المتاح مع المتجر قبل الطلب."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "en": {
+    "name": "Bioderma · Photoderm MAX SPF100 Tinted Cream",
+    "tagline": "A little care to take into your day.",
+    "description": "Give your morning routine a moment of thoughtful care. Bioderma · Photoderm MAX SPF100 Tinted Cream. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "benefits": [
+      "Make room for a daily sun-care ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Give your morning routine a moment of thoughtful care. Bioderma · Photoderm MAX SPF100 Tinted Cream. Make room for a daily sun-care ritual. Give sun care a regular place at the end of your morning skincare, before makeup.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      }
+    ],
+    "notes": "Check the SPF and directions on your exact pack. Use shade and protective clothing as well; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously and evenly as the final step of morning skincare, before sun exposure. Reapply as directed, especially after sweating or swimming."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

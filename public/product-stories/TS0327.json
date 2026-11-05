@@ -1,0 +1,71 @@
+{
+  "id": "TS0327",
+  "brand": "CeraVe",
+  "productName": "Moisturising Cream",
+  "primary": "/images/catalog/TS0327-89ad593d4128.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "كريم الترطيب من سيرافي",
+    "tagline": "اهتمام يليق بلحظاتكِ الهادئة.",
+    "description": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم الترطيب من سيرافي بعبوة 454 غرامًا يرافق العناية اليومية بالوجه والجسم. وزعيه بعد التنظيف أو حين تشعرين بالجفاف، وامنحي بشرتكِ ملمسًا ناعمًا بخطوة سهلة تجد مكانها في روتينكِ.",
+    "benefits": [
+      "كريم مرطب للوجه والجسم",
+      "مناسب لخطوة ما بعد التنظيف",
+      "عبوة 454 غرامًا"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اجعلي للعناية وقتًا مريحًا بين تفاصيل يومكِ. كريم الترطيب من سيرافي بعبوة 454 غرامًا يرافق العناية اليومية بالوجه والجسم. وزعيه بعد التنظيف أو حين تشعرين بالجفاف، وامنحي بشرتكِ ملمسًا ناعمًا بخطوة سهلة تجد مكانها في روتينكِ.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية مناسبة على بشرة الجسم النظيفة ودلكي برفق حتى تتوزع. اتبعي إرشادات العبوة للمناطق المسموح بها."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "CeraVe · Moisturising Cream",
+    "tagline": "A little care in the quieter moments.",
+    "description": "Make a little comfortable space for care in your everyday routine. CeraVe · Moisturising Cream. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little comfortable space for care in your everyday routine. CeraVe · Moisturising Cream. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

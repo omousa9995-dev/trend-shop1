@@ -1,0 +1,71 @@
+{
+  "id": "TS0011",
+  "brand": "DERMOKIL",
+  "productName": "Floral Shimmer Fragrance Lotion By DERMOKIL",
+  "primary": "/images/catalog/TS0011-aa3f5f66e72e.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "لوشن الجسم فلورال شيمر من ديرموكيل",
+    "tagline": "عناية للجسم مع لمعة لطيفة.",
+    "description": "دلال يومي لكل تفاصيلكِ. امنحي بشرة جسمك لحظة تدليل تجمع الترطيب والإطلالة المضيئة. لوشن فلورال شيمر يضيف إلى روتينك إحساسًا ناعمًا ولمسة عطرية، ويليق بالأيام التي ترغبين فيها بإظهار الساقين أو الذراعين بوهج خفيف.",
+    "benefits": [
+      "نعومة لبشرة الجسم",
+      "لمسة مضيئة",
+      "تجربة عناية عطرية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "دلال يومي لكل تفاصيلكِ. امنحي بشرة جسمك لحظة تدليل تجمع الترطيب والإطلالة المضيئة. لوشن فلورال شيمر يضيف إلى روتينك إحساسًا ناعمًا ولمسة عطرية، ويليق بالأيام التي ترغبين فيها بإظهار الساقين أو الذراعين بوهج خفيف.",
+    "fitText": "للاستخدام على الجسم؛ تجنبي الوجه والمناطق المتهيجة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية مناسبة على الجسم ودلكي حتى يتوزع اللوشن، واتركيه يمتص قبل ارتداء الملابس."
+      }
+    ],
+    "notes": "للاستخدام على الجسم؛ تجنبي الوجه والمناطق المتهيجة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية مناسبة على الجسم ودلكي حتى يتوزع اللوشن، واتركيه يمتص قبل ارتداء الملابس."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام على الجسم؛ تجنبي الوجه والمناطق المتهيجة."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "en": {
+    "name": "DERMOKIL · Floral Shimmer Fragrance Lotion",
+    "tagline": "Little moments of care, just for you.",
+    "description": "DERMOKIL · Floral Shimmer Fragrance Lotion. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Little moments of care, just for you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "DERMOKIL · Floral Shimmer Fragrance Lotion. Little moments of care, just for you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      }
+    ],
+    "notes": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to the body areas indicated on the packaging and massage gently. Follow the exact product’s directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use only. Patch test and avoid irritated skin and sensitive areas unless the product is specifically labelled for them."
+      }
+    ],
+    "productType": "body-care"
+  },
+  "contentVersion": "5.0.0"
+}

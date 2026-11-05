@@ -1,0 +1,71 @@
+{
+  "id": "TS0016",
+  "brand": "DERMOKIL",
+  "productName": "Vitamin C Peel-Off Foot Mask with Exfoliating Effect By DERMOKIL",
+  "primary": "/images/catalog/TS0016-e9e0f8aae53c.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "ماسك تقشير القدمين بفيتامين سي من ديرموكيل",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي قدميك روتينًا يتجاوز الترطيب السريع. يساعد هذا الماسك المقشر على العناية بمظهر الجلد الخشن، وتختلف مراحل التقشير بحسب نوع القناع والعبوة؛ لذلك يبقى الالتزام بالتعليمات جزءًا أساسيًا من التجربة.",
+    "benefits": [
+      "العناية بملمس القدمين",
+      "تقليل مظهر الخشونة",
+      "خطوة عناية منزلية متخصصة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. امنحي قدميك روتينًا يتجاوز الترطيب السريع. يساعد هذا الماسك المقشر على العناية بمظهر الجلد الخشن، وتختلف مراحل التقشير بحسب نوع القناع والعبوة؛ لذلك يبقى الالتزام بالتعليمات جزءًا أساسيًا من التجربة.",
+    "fitText": "لا تنزعي الجلد بالقوة ولا تستخدميه على التشققات المفتوحة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "اتبعي مدة ارتداء الماسك وتعليمات الغسل المدونة على العبوة، ثم رطبي القدمين حسب الإرشادات."
+      }
+    ],
+    "notes": "لا تنزعي الجلد بالقوة ولا تستخدميه على التشققات المفتوحة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "اتبعي مدة ارتداء الماسك وتعليمات الغسل المدونة على العبوة، ثم رطبي القدمين حسب الإرشادات."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا تنزعي الجلد بالقوة ولا تستخدميه على التشققات المفتوحة."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "en": {
+    "name": "DERMOKIL · Vitamin C Peel-Off Foot Mask with Exfoliating Effect",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. DERMOKIL · Vitamin C Peel-Off Foot Mask with Exfoliating Effect. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small pause for your feet after a long day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. DERMOKIL · Vitamin C Peel-Off Foot Mask with Exfoliating Effect. A small pause for your feet after a long day. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      }
+    ],
+    "notes": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use on the feet only, following the exact mask, cream or scrub directions and contact time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on broken skin. If you have diabetes or circulation problems, ask a healthcare professional before using peeling masks or foot exfoliants."
+      }
+    ],
+    "productType": "foot-care"
+  },
+  "contentVersion": "5.0.0"
+}

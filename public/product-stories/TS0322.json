@@ -1,0 +1,71 @@
+{
+  "id": "TS0322",
+  "brand": "KIKO",
+  "productName": "Waterproof Eyeliner Pencil Collection",
+  "primary": "/images/catalog/TS0322-6cac0738d164.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "قلم تحديد عيون مقاوم للماء من كيكو",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي لمسة مرحة إلى مكياج عينيكِ مع محدد العيون الملون من كيكو ميلانو. اختاري اللون المتاح مع المتجر وارسمي خطًا رفيعًا أو لمسة عند الزاوية؛ صورة تشكيلة الأقلام للتوضيح والسعر لقلم واحد.",
+    "benefits": [
+      "محدد عيون ملون",
+      "تنويع لمسة مكياج العين",
+      "السعر لقلم واحد"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أضيفي لمسة مرحة إلى مكياج عينيكِ مع محدد العيون الملون من كيكو ميلانو. اختاري اللون المتاح مع المتجر وارسمي خطًا رفيعًا أو لمسة عند الزاوية؛ صورة تشكيلة الأقلام للتوضيح والسعر لقلم واحد.",
+    "fitText": "السعر لقلم واحد؛ أكدي اللون المتاح مع المتجر قبل تثبيت الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ارسمي خطًا رفيعًا بمحاذاة الرموش على الجلد الخارجي، وزيدي السمك بالتدريج. تجنبي ملامسة داخل العين."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ارسمي خطًا رفيعًا بمحاذاة الرموش على الجلد الخارجي، وزيدي السمك بالتدريج. تجنبي ملامسة داخل العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "السعر لقلم واحد؛ أكدي اللون المتاح مع المتجر قبل تثبيت الطلب."
+      }
+    ],
+    "productType": "eyeliner"
+  },
+  "en": {
+    "name": "KIKO · Waterproof Eyeliner Pencil Collection",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. KIKO · Waterproof Eyeliner Pencil Collection. Define your moment, softly or boldly. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Define your moment, softly or boldly.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. KIKO · Waterproof Eyeliner Pencil Collection. Define your moment, softly or boldly. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Draw a light line along the lash line, building the shape in short strokes."
+      }
+    ],
+    "notes": "Use only in the areas indicated on the packaging. Do not share eye products.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Draw a light line along the lash line, building the shape in short strokes."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "eyeliner"
+  },
+  "contentVersion": "5.0.0"
+}

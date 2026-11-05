@@ -1,0 +1,71 @@
+{
+  "id": "TS0064",
+  "brand": "The Ordinary",
+  "productName": "The Ordinary - Glycolic Acid 7% Exfoliating Toner",
+  "primary": "/images/catalog/TS0064-3986c417dad3.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "تونر التقشير جلايكوليك أسيد 7% من ذا أورديناري",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. إذا كان التقشير مناسبًا لبشرتكِ، ضعي تونر جلايكوليك أسيد 7% من ذا أورديناري ضمن روتين مسائي مدروس. ابدئي تدريجيًا بحسب تعليمات العبوة، وأتبعيه بمرطب لطيف، مع واقي الشمس نهارًا. لا تحتاج العناية إلى المبالغة لتصبح لحظة تحبّينها.",
+    "benefits": [
+      "تحسين مظهر البهتان",
+      "العناية بتفاوت الملمس",
+      "خطوة تقشير سائلة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. إذا كان التقشير مناسبًا لبشرتكِ، ضعي تونر جلايكوليك أسيد 7% من ذا أورديناري ضمن روتين مسائي مدروس. ابدئي تدريجيًا بحسب تعليمات العبوة، وأتبعيه بمرطب لطيف، مع واقي الشمس نهارًا. لا تحتاج العناية إلى المبالغة لتصبح لحظة تحبّينها.",
+    "fitText": "لا يطبق على الجلد الحساس أو المتضرر، ولا يجمع مع مقشر قوي آخر في الروتين نفسه.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "طبقيه على بشرة نظيفة وجافة بحسب تعليمات العبوة، مع تجنب العينين."
+      }
+    ],
+    "notes": "لا يطبق على الجلد الحساس أو المتضرر، ولا يجمع مع مقشر قوي آخر في الروتين نفسه.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "طبقيه على بشرة نظيفة وجافة بحسب تعليمات العبوة، مع تجنب العينين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "لا يطبق على الجلد الحساس أو المتضرر، ولا يجمع مع مقشر قوي آخر في الروتين نفسه."
+      }
+    ],
+    "productType": "exfoliant"
+  },
+  "en": {
+    "name": "The Ordinary - Glycolic Acid 7% Exfoliating Toner",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. If exfoliation suits your skin, make The Ordinary Glycolic Acid 7% Exfoliating Toner part of a considered evening routine. Introduce it gradually following the exact pack directions, follow with a gentle moisturiser and use sunscreen during the day. More is not always better.",
+    "benefits": [
+      "A considered step, taken gently.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. If exfoliation suits your skin, make The Ordinary Glycolic Acid 7% Exfoliating Toner part of a considered evening routine. Introduce it gradually following the exact pack directions, follow with a gentle moisturiser and use sunscreen during the day. More is not always better.",
+    "fitText": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use only at the frequency and for the contact time stated on the exact packaging. Introduce gradually and follow with moisturiser."
+      }
+    ],
+    "notes": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use only at the frequency and for the contact time stated on the exact packaging. Introduce gradually and follow with moisturiser."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Do not use on irritated or broken skin. Do not combine strong exfoliants in the same routine. Use daytime sunscreen and stop if irritation occurs."
+      }
+    ],
+    "productType": "exfoliant"
+  },
+  "contentVersion": "5.0.0"
+}

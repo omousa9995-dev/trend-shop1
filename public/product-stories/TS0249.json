@@ -1,0 +1,71 @@
+{
+  "id": "TS0249",
+  "brand": "حسب العبوة",
+  "productName": "Argan Oil Keratin Gold Hair Oil",
+  "primary": "/images/catalog/TS0249-bfe7728bee7d.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "زيت الأرغان بالكيراتين غولد للشعر",
+    "tagline": "تفاصيل صغيرة لروتين شعركِ.",
+    "description": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. زيت الأرغان بالكيراتين غولد للشعر بالعبوة السوداء ذات المضخة الذهبية المصوّرة. توزع كمية قليلة على الأطوال والأطراف وفق تعليمات العبوة لإضافة خطوة عناية ولمسة ترتيب إلى التصفيف.",
+    "benefits": [
+      "عبوة بمضخة",
+      "للأطوال والأطراف",
+      "كمية قليلة للتحكم"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "خذي لحظة مع خصلاتكِ واختاري ما يناسب روتين شعركِ. زيت الأرغان بالكيراتين غولد للشعر بالعبوة السوداء ذات المضخة الذهبية المصوّرة. توزع كمية قليلة على الأطوال والأطراف وفق تعليمات العبوة لإضافة خطوة عناية ولمسة ترتيب إلى التصفيف.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية قليلة على الأطوال أو المناطق المسموح بها على العبوة. لا تفرطي بالكمية وراقبي ملاءمة فروة الرأس."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية قليلة على الأطوال أو المناطق المسموح بها على العبوة. لا تفرطي بالكمية وراقبي ملاءمة فروة الرأس."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. نتيجة تجميلية للعناية والمظهر، وليس علاجًا مثبتًا لتساقط الشعر."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "en": {
+    "name": "Argan Oil Keratin Gold Hair Oil",
+    "tagline": "A little care for the hair you love.",
+    "description": "Take a moment with your hair and choose what fits your routine. Argan Oil Keratin Gold Hair Oil. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little finishing care for your hair.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Take a moment with your hair and choose what fits your routine. Argan Oil Keratin Gold Hair Oil. A little finishing care for your hair. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      }
+    ],
+    "notes": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Start with a few drops, apply to the areas indicated on the pack and add more only if needed."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Some oils are for lengths and others for the scalp; follow the exact product directions and patch test first."
+      }
+    ],
+    "productType": "hair-oil"
+  },
+  "contentVersion": "5.0.0"
+}

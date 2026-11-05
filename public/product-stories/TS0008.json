@@ -1,0 +1,71 @@
+{
+  "id": "TS0008",
+  "brand": "Romantic Bright",
+  "productName": "Color Shifter Highlighter Palette By Romantic Bright",
+  "primary": "/images/catalog/TS0008-f9a58c303c2e.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "باليت هايلايتر كولور شيفتر من رومانتيك برايت",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أبرزي الأماكن التي تحبينها بلمسة إضاءة قابلة للبناء. باليت كولور شيفتر تضيف بعدًا مضيئًا إلى المكياج، ويمكنك الاكتفاء بوهج خفيف أو تعزيز اللمعة لمناسباتك بحسب طريقة التطبيق والدرجة المختارة.",
+    "benefits": [
+      "إبراز أعلى الخد",
+      "لمعة قابلة للبناء",
+      "تنسيق الإضاءة مع المكياج"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. أبرزي الأماكن التي تحبينها بلمسة إضاءة قابلة للبناء. باليت كولور شيفتر تضيف بعدًا مضيئًا إلى المكياج، ويمكنك الاكتفاء بوهج خفيف أو تعزيز اللمعة لمناسباتك بحسب طريقة التطبيق والدرجة المختارة.",
+    "fitText": "ابدئي بكمية قليلة لتختاري شدة اللمعة التي تفضلينها.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "مرري كمية خفيفة بفرشاة هايلايتر على مناطق الإضاءة، ثم زيديها تدريجيًا."
+      }
+    ],
+    "notes": "ابدئي بكمية قليلة لتختاري شدة اللمعة التي تفضلينها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "مرري كمية خفيفة بفرشاة هايلايتر على مناطق الإضاءة، ثم زيديها تدريجيًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "ابدئي بكمية قليلة لتختاري شدة اللمعة التي تفضلينها."
+      }
+    ],
+    "productType": "highlighter"
+  },
+  "en": {
+    "name": "Romantic Bright · Color Shifter Highlighter Palette",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Romantic Bright · Color Shifter Highlighter Palette. A small touch of light, your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small touch of light, your way.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Romantic Bright · Color Shifter Highlighter Palette. A small touch of light, your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "The available shade may vary. Avoid the eye area unless the packaging specifically permits it.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to the high points you want to highlight and blend softly."
+      }
+    ],
+    "notes": "The available shade may vary. Avoid the eye area unless the packaging specifically permits it.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to the high points you want to highlight and blend softly."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "The available shade may vary. Avoid the eye area unless the packaging specifically permits it."
+      }
+    ],
+    "productType": "highlighter"
+  },
+  "contentVersion": "5.0.0"
+}

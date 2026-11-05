@@ -1,0 +1,71 @@
+{
+  "id": "TS0141",
+  "brand": "ACURE",
+  "productName": "ACURE Brightening Cleansing Gel",
+  "primary": "/images/catalog/TS0141-63aa3c9c6a86.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "غسول برايتننغ جل من أكيور",
+    "tagline": "بداية ناعمة لروتين تحبّينه.",
+    "description": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. امنحي التنظيف اليومي خطوة تزيل شوائب السطح وتترك الوجه مهيأً للعناية. غسول أكيور برايتننغ ينسجم مع روتين يركز على النضارة والملمس، مع استكمال مرطب يناسب البشرة بعد الشطف.",
+    "benefits": [
+      "إزالة الشوائب اليومية",
+      "إحساس بالنظافة",
+      "تهيئة البشرة للعناية"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "في نهاية يومكِ، تستحقين بداية هادئة للعناية. امنحي التنظيف اليومي خطوة تزيل شوائب السطح وتترك الوجه مهيأً للعناية. غسول أكيور برايتننغ ينسجم مع روتين يركز على النضارة والملمس، مع استكمال مرطب يناسب البشرة بعد الشطف.",
+    "fitText": "تجنبي العينين وخففي التكرار إذا سبب الغسول إحساسًا بالشد.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "رغّي كمية صغيرة على الوجه المبلل ودلكي بلطف ثم اشطفي جيدًا."
+      }
+    ],
+    "notes": "تجنبي العينين وخففي التكرار إذا سبب الغسول إحساسًا بالشد.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "رغّي كمية صغيرة على الوجه المبلل ودلكي بلطف ثم اشطفي جيدًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "تجنبي العينين وخففي التكرار إذا سبب الغسول إحساسًا بالشد."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "en": {
+    "name": "ACURE Brightening Cleansing Gel",
+    "tagline": "A gentle beginning to your own little ritual.",
+    "description": "Make a little room for a calm cleansing moment. ACURE Brightening Cleansing Gel. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "benefits": [
+      "A fresh start, or a gentle end to your day.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Make a little room for a calm cleansing moment. ACURE Brightening Cleansing Gel. A fresh start, or a gentle end to your day. Make cleansing the first step of a little time for yourself.",
+    "fitText": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      }
+    ],
+    "notes": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the instructions for this cleanser’s format. Massage gently without rubbing hard, and rinse or wipe off as its label directs."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid contact with the eyes unless the exact product is labelled for eye makeup removal. Patch test and stop if irritation occurs."
+      }
+    ],
+    "productType": "cleanser"
+  },
+  "contentVersion": "5.0.0"
+}

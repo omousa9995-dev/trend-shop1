@@ -1,0 +1,71 @@
+{
+  "id": "TS0359",
+  "brand": "Bioderma",
+  "productName": "Photoderm SPF100 Invisible Body Sun Milk",
+  "primary": "/images/catalog/TS0359-7c26f4407b60.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "حليب الشمس غير الملون للجسم من بيوديرما فوتوديرم",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. جهّزي عناية النهار لكل مشاويركِ. حليب الشمس غير الملون للجسم من بيوديرما فوتوديرم، بالعلبة البيضاء المكتوب عليها SPF100 وحجم 100 مل. وزعيه بكمية كافية قبل التعرض للشمس وجدديه حسب الإرشادات؛ هذا إصدار الجسم غير الملون، منفصل عن النسخة الملونة.",
+    "benefits": [
+      "حليب شمس مخصص للجسم",
+      "إصدار غير ملون",
+      "SPF100 وحجم 100 مل بحسب العبوة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. جهّزي عناية النهار لكل مشاويركِ. حليب الشمس غير الملون للجسم من بيوديرما فوتوديرم، بالعلبة البيضاء المكتوب عليها SPF100 وحجم 100 مل. وزعيه بكمية كافية قبل التعرض للشمس وجدديه حسب الإرشادات؛ هذا إصدار الجسم غير الملون، منفصل عن النسخة الملونة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي بكمية كافية على مناطق الجسم المكشوفة قبل التعرض للشمس، وجددي كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي بكمية كافية على مناطق الجسم المكشوفة قبل التعرض للشمس، وجددي كل ساعتين وبعد السباحة أو التعرق أو التجفيف."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "body-sunscreen"
+  },
+  "en": {
+    "name": "Bioderma · Photoderm SPF100 Invisible Body Sun Milk",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Bioderma · Photoderm SPF100 Invisible Body Sun Milk. A sun-care step before your day begins. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A sun-care step before your day begins.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Bioderma · Photoderm SPF100 Invisible Body Sun Milk. A sun-care step before your day begins. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the SPF on your exact pack. Use shade and protective clothing too; no sunscreen blocks all UV exposure.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply generously to exposed body skin before sun exposure. Reapply following the exact pack directions, especially after swimming or sweating."
+      }
+    ],
+    "notes": "Check the SPF on your exact pack. Use shade and protective clothing too; no sunscreen blocks all UV exposure.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply generously to exposed body skin before sun exposure. Reapply following the exact pack directions, especially after swimming or sweating."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the SPF on your exact pack. Use shade and protective clothing too; no sunscreen blocks all UV exposure."
+      }
+    ],
+    "productType": "body-sunscreen"
+  },
+  "contentVersion": "5.0.0"
+}

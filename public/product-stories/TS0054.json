@@ -1,0 +1,71 @@
+{
+  "id": "TS0054",
+  "brand": "NISHLADY",
+  "productName": "Touch of Silver Bi-phase Conditioner for Blonde and Gray Hair By NISHLADY",
+  "primary": "/images/catalog/TS0054-288ceb113d79.png",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بلسم تاتش أوف سيلفر ثنائي الطور من نيش ليدي",
+    "tagline": "عناية مخصصة للشعر الأشقر والرمادي.",
+    "description": "الخطوة التي تجعل وقت الشعر أهدأ. امنحي الشعر الفاتح روتينًا يناسب مظهره مع بلسم تاتش أوف سيلفر. يجمع صيغة ثنائية الطور مع عناية بالأطوال، ليكمل التصفيف ويساعد على الحفاظ على مظهر اللون والملمس بحسب النسخة الفعلية.",
+    "benefits": [
+      "عناية بالشعر الفاتح",
+      "تلطيف الأطوال",
+      "سهولة التوزيع بعد الرج"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "الخطوة التي تجعل وقت الشعر أهدأ. امنحي الشعر الفاتح روتينًا يناسب مظهره مع بلسم تاتش أوف سيلفر. يجمع صيغة ثنائية الطور مع عناية بالأطوال، ليكمل التصفيف ويساعد على الحفاظ على مظهر اللون والملمس بحسب النسخة الفعلية.",
+    "fitText": "قد تؤثر مستحضرات الشعر البنفسجية في اللون؛ اختبري خصلة واتّبعي العبوة.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "رجي العبوة واتبعي طريقة التطبيق والتكرار المحددين عليها، بما فيه الشطف أو عدمه."
+      }
+    ],
+    "notes": "قد تؤثر مستحضرات الشعر البنفسجية في اللون؛ اختبري خصلة واتّبعي العبوة.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "رجي العبوة واتبعي طريقة التطبيق والتكرار المحددين عليها، بما فيه الشطف أو عدمه."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "قد تؤثر مستحضرات الشعر البنفسجية في اللون؛ اختبري خصلة واتّبعي العبوة."
+      }
+    ],
+    "productType": "conditioner"
+  },
+  "en": {
+    "name": "NISHLADY · Touch of Silver Bi-phase Conditioner for Blonde and Gray Hair",
+    "tagline": "Take a little time for your lengths.",
+    "description": "NISHLADY · Touch of Silver Bi-phase Conditioner for Blonde and Gray Hair. Take a little time for your lengths. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Take a little time for your lengths.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "NISHLADY · Touch of Silver Bi-phase Conditioner for Blonde and Gray Hair. Take a little time for your lengths. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Follow the exact pack instructions; rinse-out and leave-in products are used differently.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use after shampoo as directed on the pack, paying attention to the lengths. Rinse unless the product is specifically leave-in."
+      }
+    ],
+    "notes": "Follow the exact pack instructions; rinse-out and leave-in products are used differently.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use after shampoo as directed on the pack, paying attention to the lengths. Rinse unless the product is specifically leave-in."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Follow the exact pack instructions; rinse-out and leave-in products are used differently."
+      }
+    ],
+    "productType": "conditioner"
+  },
+  "contentVersion": "5.0.0"
+}

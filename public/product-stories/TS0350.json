@@ -1,0 +1,71 @@
+{
+  "id": "TS0350",
+  "brand": "La Roche-Posay",
+  "productName": "Effaclar Ultra Concentrated Serum",
+  "primary": "/images/catalog/TS0350-0b4345caa60c.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "سيروم إيفاكلار ألترا كونسنتريتد من لاروش بوزيه",
+    "tagline": "تفاصيل صغيرة، واهتمام يشبهكِ.",
+    "description": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم إيفاكلار ألترا كونسنتريتد من لاروش بوزيه بعبوة 30 مل يحتوي أحماضًا مقشرة ضمن خطوة عناية مسائية. ابدئي بوتيرة قليلة حسب ملاءمة بشرتكِ وتعليمات العبوة، وأكملي بالمرطب وواقي الشمس صباحًا.",
+    "benefits": [
+      "سيروم مقشر للعناية المسائية",
+      "من مجموعة Effaclar",
+      "عبوة 30 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "لا يحتاج روتينكِ إلى التعقيد؛ اختاري خطوة تلائم ما تبحثين عنه. سيروم إيفاكلار ألترا كونسنتريتد من لاروش بوزيه بعبوة 30 مل يحتوي أحماضًا مقشرة ضمن خطوة عناية مسائية. ابدئي بوتيرة قليلة حسب ملاءمة بشرتكِ وتعليمات العبوة، وأكملي بالمرطب وواقي الشمس صباحًا.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي أحماضًا مقشرة؛ لا تجمعيه في الروتين نفسه مع مقشرات أخرى أو ريتينويد دون إرشاد مختص.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "يُستخدم مساءً على بشرة نظيفة وجافة بعيدًا عن العينين. ابدئي بوتيرة قليلة واتبعي تعليمات العبوة، ثم أكملي بالمرطب وواقي الشمس صباحًا."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي أحماضًا مقشرة؛ لا تجمعيه في الروتين نفسه مع مقشرات أخرى أو ريتينويد دون إرشاد مختص.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "يُستخدم مساءً على بشرة نظيفة وجافة بعيدًا عن العينين. ابدئي بوتيرة قليلة واتبعي تعليمات العبوة، ثم أكملي بالمرطب وواقي الشمس صباحًا."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية. يحتوي أحماضًا مقشرة؛ لا تجمعيه في الروتين نفسه مع مقشرات أخرى أو ريتينويد دون إرشاد مختص."
+      }
+    ],
+    "productType": "serum"
+  },
+  "en": {
+    "name": "La Roche-Posay · Effaclar Ultra Concentrated Serum",
+    "tagline": "A thoughtful little addition to your ritual.",
+    "description": "Keep your ritual simple and choose a step that suits what you need. La Roche-Posay · Effaclar Ultra Concentrated Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "benefits": [
+      "A thoughtful step in a routine that is yours.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Keep your ritual simple and choose a step that suits what you need. La Roche-Posay · Effaclar Ultra Concentrated Serum. A thoughtful step in a routine that is yours. Choose this step to suit your own skin and routine, introducing it gradually.",
+    "fitText": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      }
+    ],
+    "notes": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to clean skin as directed on the exact product, then follow with moisturiser. Introduce one new active product at a time."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first. Results vary by skin and routine; this product is not a substitute for medical advice."
+      }
+    ],
+    "productType": "serum"
+  },
+  "contentVersion": "5.0.0"
+}

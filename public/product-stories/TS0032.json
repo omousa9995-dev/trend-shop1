@@ -1,0 +1,71 @@
+{
+  "id": "TS0032",
+  "brand": "The Ordinary",
+  "productName": "مجموعة كثافة الشعر والرموش والحواجب The Ordinary Hair,Lash&Brow Density Sit",
+  "primary": "/images/catalog/TS0032-044d1e8b219d.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "مجموعة عناية الشعر والرموش والحواجب من ذا أورديناري",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تسريحة على مزاجكِ، بلمستكِ. تجمع هذه المجموعة خطوات مخصصة لمظهر الشعر والرموش والحواجب لتختاري لكل منطقة عنايتها المناسبة. هي خيار لمن تحب تنسيق الروتين، مع الحفاظ على الفصل بين مستحضر فروة الرأس والمستحضر المخصص لمنطقة العين.",
+    "benefits": [
+      "تنظيم خطوات العناية",
+      "منتجات لمناطق مختلفة",
+      "مجموعة بدل شراء القطع منفردة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. تسريحة على مزاجكِ، بلمستكِ. تجمع هذه المجموعة خطوات مخصصة لمظهر الشعر والرموش والحواجب لتختاري لكل منطقة عنايتها المناسبة. هي خيار لمن تحب تنسيق الروتين، مع الحفاظ على الفصل بين مستحضر فروة الرأس والمستحضر المخصص لمنطقة العين.",
+    "fitText": "يجب اعتماد مكونات المجموعة وعدد القطع والأحجام قبل عرضها للبيع.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي كل قطعة في المنطقة والطريقة المحددتين عليها، دون نقل مستحضر الشعر إلى العين."
+      }
+    ],
+    "notes": "يجب اعتماد مكونات المجموعة وعدد القطع والأحجام قبل عرضها للبيع.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي كل قطعة في المنطقة والطريقة المحددتين عليها، دون نقل مستحضر الشعر إلى العين."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "يجب اعتماد مكونات المجموعة وعدد القطع والأحجام قبل عرضها للبيع."
+      }
+    ],
+    "productType": "hair-styling"
+  },
+  "en": {
+    "name": "The Ordinary Hair, Lash & Brow Care Set",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. The Ordinary Hair, Lash & Brow Care Set. Your hair, styled your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "Your hair, styled your way.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. The Ordinary Hair, Lash & Brow Care Set. Your hair, styled your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Avoid eyes and inhaling powders or sprays. Wash out as directed.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Work a small amount through the specified areas and shape gently, following the exact product’s instructions."
+      }
+    ],
+    "notes": "Avoid eyes and inhaling powders or sprays. Wash out as directed.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Work a small amount through the specified areas and shape gently, following the exact product’s instructions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid eyes and inhaling powders or sprays. Wash out as directed."
+      }
+    ],
+    "productType": "hair-styling"
+  },
+  "contentVersion": "5.0.0"
+}

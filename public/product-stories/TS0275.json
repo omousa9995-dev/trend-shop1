@@ -1,0 +1,71 @@
+{
+  "id": "TS0275",
+  "brand": "L'Oreal Paris",
+  "productName": "Infallible 24H Fresh Wear Foundation in a Powder",
+  "primary": "/images/catalog/TS0275-0c2559779012.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "بودرة إنفاليبل فريش وير من لوريال",
+    "tagline": "تفاصيل تُكمل إطلالة تشبهكِ.",
+    "description": "حين تصلين إلى اللمسات الأخيرة، اختاري ما ينسجم مع إطلالتكِ. بودرة كريم أساس إنفاليبل فريش وير من لوريال بدرجة 200 Ivory وحجم 9 غرامات. تستخدم منفردة أو فوق القاعدة بطبقات خفيفة لتوحيد مظهر اللون؛ النسخة المصوّرة 200 وليست درجة 20.",
+    "benefits": [
+      "بودرة كريم أساس",
+      "حجم 9 غرامات",
+      "4 مستويات للبشرة للاختيار"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "حين تصلين إلى اللمسات الأخيرة، اختاري ما ينسجم مع إطلالتكِ. بودرة كريم أساس إنفاليبل فريش وير من لوريال بدرجة 200 Ivory وحجم 9 غرامات. تستخدم منفردة أو فوق القاعدة بطبقات خفيفة لتوحيد مظهر اللون؛ النسخة المصوّرة 200 وليست درجة 20.",
+    "fitText": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "خذي كمية قليلة بفرشاة أو إسفنجة نظيفة، وانفضي الزائد ثم طبقي طبقة خفيفة على المناطق المطلوبة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "خذي كمية قليلة بفرشاة أو إسفنجة نظيفة، وانفضي الزائد ثم طبقي طبقة خفيفة على المناطق المطلوبة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "اختاري مستوى بشرتكِ من 1 إلى 4؛ التصنيف تقريبي للمتجر، وليس أكواد الشركة. صورة العبوة توضيحية."
+      }
+    ],
+    "productType": "powder"
+  },
+  "en": {
+    "name": "L'Oreal Paris · Infallible 24H Fresh Wear Foundation in a Powder",
+    "tagline": "Your finishing touch, your way.",
+    "description": "When it is time for the finishing touches, choose what feels right for your look. L'Oreal Paris · Infallible 24H Fresh Wear Foundation in a Powder. A finishing touch to bring your look together. Use a light touch to finish your base, then add your favourite lip or lash detail.",
+    "benefits": [
+      "A finishing touch to bring your look together.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "When it is time for the finishing touches, choose what feels right for your look. L'Oreal Paris · Infallible 24H Fresh Wear Foundation in a Powder. A finishing touch to bring your look together. Use a light touch to finish your base, then add your favourite lip or lash detail.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a little with a brush or puff and blend gently over the areas you want to set."
+      }
+    ],
+    "notes": "Use a light hand and choose your preferred skin tone before ordering.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a little with a brush or puff and blend gently over the areas you want to set."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "powder"
+  },
+  "contentVersion": "5.0.0"
+}

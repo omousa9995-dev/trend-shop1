@@ -1,0 +1,71 @@
+{
+  "id": "TS0225",
+  "brand": "Eucerin",
+  "productName": "Hyaluron-Filler Advanced HA Essence",
+  "primary": "/images/catalog/TS0225-eda112490405.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "إيسنس هيالورون فيلر أدفانسد HA من يوسيرين",
+    "tagline": "تفاصيل جميلة، تختارينها لنفسكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. طبقة عناية تجعل روتينكِ ألطف. إيسنس هيالورون فيلر أدفانسد HA من يوسيرين بالعبوة المصوّرة. خطوة سائلة تسبق المرطب وتساعد في ترتيب روتين العناية بملمس البشرة؛ الحجم غير واضح في الصورة ويُؤكّد من العبوة المتاحة.",
+    "benefits": [
+      "خطوة إيسنس",
+      "قبل المرطب",
+      "عناية بملمس البشرة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. طبقة عناية تجعل روتينكِ ألطف. إيسنس هيالورون فيلر أدفانسد HA من يوسيرين بالعبوة المصوّرة. خطوة سائلة تسبق المرطب وتساعد في ترتيب روتين العناية بملمس البشرة؛ الحجم غير واضح في الصورة ويُؤكّد من العبوة المتاحة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "وزعي كمية قليلة على بشرة نظيفة بعد التنظيف وقبل السيروم أو المرطب، وفق إرشادات العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "وزعي كمية قليلة على بشرة نظيفة بعد التنظيف وقبل السيروم أو المرطب، وفق إرشادات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "essence"
+  },
+  "en": {
+    "name": "Eucerin · Hyaluron-Filler Advanced HA Essence",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Eucerin · Hyaluron-Filler Advanced HA Essence. A little layer of care to look forward to. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A little layer of care to look forward to.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Eucerin · Hyaluron-Filler Advanced HA Essence. A little layer of care to look forward to. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Patch test before regular use and stop if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Pat a small amount onto clean skin after toner and before moisturiser, following the pack directions."
+      }
+    ],
+    "notes": "Patch test before regular use and stop if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Pat a small amount onto clean skin after toner and before moisturiser, following the pack directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test before regular use and stop if irritation occurs."
+      }
+    ],
+    "productType": "essence"
+  },
+  "contentVersion": "5.0.0"
+}

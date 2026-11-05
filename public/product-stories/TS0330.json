@@ -1,0 +1,71 @@
+{
+  "id": "TS0330",
+  "brand": "Kojie San",
+  "productName": "Skin Lightening Soap Classic",
+  "primary": "/images/catalog/TS0330-13ec8fd92385.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "صابونة كوجي سان الكلاسيكية",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية انتعاش تمنحكِ وقتًا لنفسكِ. صابونة كوجي سان الكلاسيكية تضيف إلى روتين التنظيف خطوة بسيطة تُشطف بالماء. رغّميها برفق وتجنبي منطقة العين، ثم أكملي بالمرطب؛ جمال الروتين في الاستمرار والملاءمة، دون وعد بتغيير لون البشرة.",
+    "benefits": [
+      "صابونة تنظيف كلاسيكية",
+      "خطوة تُشطف بالماء",
+      "من مجموعة Kojie San"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية انتعاش تمنحكِ وقتًا لنفسكِ. صابونة كوجي سان الكلاسيكية تضيف إلى روتين التنظيف خطوة بسيطة تُشطف بالماء. رغّميها برفق وتجنبي منطقة العين، ثم أكملي بالمرطب؛ جمال الروتين في الاستمرار والملاءمة، دون وعد بتغيير لون البشرة.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "استخدمي كمية قليلة مع الماء للتنظيف الخارجي فقط، ثم اشطفي جيدًا وجففي برفق بحسب إرشادات العبوة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "استخدمي كمية قليلة مع الماء للتنظيف الخارجي فقط، ثم اشطفي جيدًا وجففي برفق بحسب إرشادات العبوة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "body-cleansing"
+  },
+  "en": {
+    "name": "Kojie San · Skin Lightening Soap Classic",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Kojie San · Skin Lightening Soap Classic. A fresh little ritual to call your own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A fresh little ritual to call your own.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Kojie San · Skin Lightening Soap Classic. A fresh little ritual to call your own. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "For external use. Intimate washes are external only; avoid internal use and discontinue if irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Follow the exact wash or soap directions. Cleanse gently and rinse well."
+      }
+    ],
+    "notes": "For external use. Intimate washes are external only; avoid internal use and discontinue if irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Follow the exact wash or soap directions. Cleanse gently and rinse well."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "For external use. Intimate washes are external only; avoid internal use and discontinue if irritation occurs."
+      }
+    ],
+    "productType": "body-cleansing"
+  },
+  "contentVersion": "5.0.0"
+}

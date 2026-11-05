@@ -1,0 +1,71 @@
+{
+  "id": "TS0046",
+  "brand": "NOTE",
+  "productName": "NOTE PERFECTING PEN 01",
+  "primary": "/images/catalog/TS0046-940cbd2a6181.jpg",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "قلم بيرفكتنغ بن 01 من نوت",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. رائحة تصبح جزءًا من لحظتكِ. امنحي مكياجك لمسة تصحيح موضعية مع قلم نوت بدرجة 01. يساعدك شكل القلم على توزيع المستحضر في المساحات الصغيرة والتحكم بالكمية، لتبدو اللمسة النهائية مرتبة من دون تحميل البشرة طبقة ثقيلة.",
+    "benefits": [
+      "تطبيق موضعي دقيق",
+      "تحكم في الكمية",
+      "سهولة دمج التصحيح"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. رائحة تصبح جزءًا من لحظتكِ. امنحي مكياجك لمسة تصحيح موضعية مع قلم نوت بدرجة 01. يساعدك شكل القلم على توزيع المستحضر في المساحات الصغيرة والتحكم بالكمية، لتبدو اللمسة النهائية مرتبة من دون تحميل البشرة طبقة ثقيلة.",
+    "fitText": "الدرجة 01 تحتاج مطابقة للون بشرتك وهدف التصحيح.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي كمية قليلة على المنطقة المراد تصحيح مظهرها، ثم ادمجي بلطف بأداة نظيفة."
+      }
+    ],
+    "notes": "الدرجة 01 تحتاج مطابقة للون بشرتك وهدف التصحيح.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي كمية قليلة على المنطقة المراد تصحيح مظهرها، ثم ادمجي بلطف بأداة نظيفة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "الدرجة 01 تحتاج مطابقة للون بشرتك وهدف التصحيح."
+      }
+    ],
+    "productType": ""
+  },
+  "en": {
+    "name": "NOTE PERFECTING PEN 01",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. NOTE PERFECTING PEN 01. A scent for a moment that feels like you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A scent for a moment that feels like you.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. NOTE PERFECTING PEN 01. A scent for a moment that feels like you. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Patch test first and check the available fragrance version with the store.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Use a small amount as directed on the packaging, avoiding eyes and irritated skin."
+      }
+    ],
+    "notes": "Patch test first and check the available fragrance version with the store.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Use a small amount as directed on the packaging, avoiding eyes and irritated skin."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Patch test first and check the available fragrance version with the store."
+      }
+    ],
+    "productType": ""
+  },
+  "contentVersion": "5.0.0"
+}

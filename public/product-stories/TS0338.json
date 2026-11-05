@@ -1,0 +1,71 @@
+{
+  "id": "TS0338",
+  "brand": "Rare Beauty",
+  "productName": "Positive Light Liquid Luminizer",
+  "primary": "/images/catalog/TS0338-1089cc040daf.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "هايلايتر بوزيتيف لايت السائل من رير بيوتي",
+    "tagline": "اختياركِ، ولمستكِ، ولحظتكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. هايلايتر بوزيتيف لايت السائل من رير بيوتي يضيف لمسة إضاءة إلى أعلى الخدين والمناطق التي تحبين إبرازها. ابدئي بنقطة صغيرة وادمجي بلطف، ثم زيدي الوهج حسب ذوقكِ؛ أكدي اللون المتاح قبل الطلب.",
+    "benefits": [
+      "هايلايتر سائل",
+      "لمسة إضاءة قابلة للتدرج",
+      "تطبيق بنقاط صغيرة"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. هايلايتر بوزيتيف لايت السائل من رير بيوتي يضيف لمسة إضاءة إلى أعلى الخدين والمناطق التي تحبين إبرازها. ابدئي بنقطة صغيرة وادمجي بلطف، ثم زيدي الوهج حسب ذوقكِ؛ أكدي اللون المتاح قبل الطلب.",
+    "fitText": "أكدي لون الهايلايتر المتاح مع المتجر قبل تثبيت الطلب.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "ضعي نقطة صغيرة أعلى الخدين أو المناطق المطلوبة، وادمجي بأصابع أو إسفنجة نظيفة بعيدًا عن العين. زيدي الإضاءة بالتدريج."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "ضعي نقطة صغيرة أعلى الخدين أو المناطق المطلوبة، وادمجي بأصابع أو إسفنجة نظيفة بعيدًا عن العين. زيدي الإضاءة بالتدريج."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "أكدي لون الهايلايتر المتاح مع المتجر قبل تثبيت الطلب."
+      }
+    ],
+    "productType": "highlighter"
+  },
+  "en": {
+    "name": "Rare Beauty · Positive Light Liquid Luminizer",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Rare Beauty · Positive Light Liquid Luminizer. A small touch of light, your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A small touch of light, your way.",
+      "Make the finish your own, one light layer at a time."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Rare Beauty · Positive Light Liquid Luminizer. A small touch of light, your way. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Check the available shade or version with the store before ordering.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply a small amount to the high points you want to highlight and blend softly."
+      }
+    ],
+    "notes": "The available shade may vary. Avoid the eye area unless the packaging specifically permits it.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply a small amount to the high points you want to highlight and blend softly."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Check the available shade or version with the store before ordering."
+      }
+    ],
+    "productType": "highlighter"
+  },
+  "contentVersion": "5.0.0"
+}

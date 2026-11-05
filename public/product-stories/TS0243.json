@@ -1,0 +1,71 @@
+{
+  "id": "TS0243",
+  "brand": "Mielle",
+  "productName": "Rosemary Mint Strengthening Shampoo",
+  "primary": "/images/catalog/TS0243-6b618477fe69.webp",
+  "images": [],
+  "sources": [],
+  "liveSource": true,
+  "ar": {
+    "name": "شامبو روزماري منت من ميلي",
+    "tagline": "دلال بسيط يرافق يومكِ.",
+    "description": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية منتعشة لوقت العناية بخصلاتكِ. شامبو روزماري منت من ميلي بحجم 355 مل لتنظيف الشعر ضمن روتين الغسل. يدلك على شعر مبلل ثم يشطف جيدًا، ويمكن متابعة الروتين بالبلسم المناسب لسهولة ترتيب الخصلات.",
+    "benefits": [
+      "شامبو للشعر",
+      "يُشطف بعد التدليك",
+      "عبوة 355 مل"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "اختاري ما ينسجم مع روتينكِ، وخذي لحظتكِ كما تحبّين. بداية منتعشة لوقت العناية بخصلاتكِ. شامبو روزماري منت من ميلي بحجم 355 مل لتنظيف الشعر ضمن روتين الغسل. يدلك على شعر مبلل ثم يشطف جيدًا، ويمكن متابعة الروتين بالبلسم المناسب لسهولة ترتيب الخصلات.",
+    "fitText": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "steps": [
+      {
+        "title": "خطوتكِ 1",
+        "text": "دلكي كمية مناسبة على شعر مبلل وفروة الرأس ثم اشطفي جيدًا. كرري فقط عند الحاجة."
+      }
+    ],
+    "notes": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "دلكي كمية مناسبة على شعر مبلل وفروة الرأس ثم اشطفي جيدًا. كرري فقط عند الحاجة."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "للاستخدام الخارجي. اختبري الملاءمة على مساحة صغيرة، وتوقفي عند التهيج. اتبعي تعليمات العبوة وتحققي من الصلاحية."
+      }
+    ],
+    "productType": "shampoo"
+  },
+  "en": {
+    "name": "Mielle · Rosemary Mint Strengthening Shampoo",
+    "tagline": "A little detail, chosen just for you.",
+    "description": "Choose what fits your routine and make the moment your own. Mielle · Rosemary Mint Strengthening Shampoo. A fresh beginning for your hair ritual. Choose a small moment of beauty that fits the way you like to get ready.",
+    "benefits": [
+      "A fresh beginning for your hair ritual.",
+      "A dedicated step to coordinate with your existing routine."
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Choose what fits your routine and make the moment your own. Mielle · Rosemary Mint Strengthening Shampoo. A fresh beginning for your hair ritual. Choose a small moment of beauty that fits the way you like to get ready.",
+    "fitText": "Avoid the eyes and stop use if scalp irritation occurs.",
+    "steps": [
+      {
+        "title": "Your care step 1",
+        "text": "Apply to wet hair, massage the scalp gently and rinse thoroughly. Follow the packaging directions."
+      }
+    ],
+    "notes": "Avoid the eyes and stop use if scalp irritation occurs.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "Apply to wet hair, massage the scalp gently and rinse thoroughly. Follow the packaging directions."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Avoid the eyes and stop use if scalp irritation occurs."
+      }
+    ],
+    "productType": "shampoo"
+  },
+  "contentVersion": "5.0.0"
+}
