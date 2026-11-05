@@ -33,3 +33,7 @@ Manufacturer product information and the official pack-directions page were revi
 `0023_aqua_fresh_video_presentation.sql` adds two backward-compatible columns to existing video rows. `0024_aqua_fresh_pilot_copy.sql` updates only TS0081 description/details when both match the exact reviewed baseline, preserving concurrent owner copy edits. Neither changes product price, stock, orders or order items.
 
 Source backup: `backup/v4.1-before-aqua-fresh-pilot-2026-11-05`, based on `00e07a9a952f833f6b47ad07e289872fc73f6947`. The before-copy record is retained in the versioned pilot data file and a private deployment backup. A source rollback can ignore the two additive columns; a copy rollback must remain conditional so it never overwrites later owner changes.
+
+## Verified publication
+
+Published `f9599ba1e6c7119ace0b90364b2bc8e4f03259e6` as Worker `0ba94bbd-d341-40f3-8090-be5cb9ac1292` at `2026-11-05T12:52:50.850647Z`. The native deployment routes 100% of traffic to this version. Post-publication browser checks confirmed the actual product title, 5.49 JOD single price, quantities 1/2, two current photos, the modal and zero external product links. TS0065 kept its existing video controls and has no pilot enhancement. Final counts were 14 orders, 81 order items, 7207 stock units, one existing video overall and zero TS0081 videos. All existing bindings/secrets were retained. The isolated QA Worker was deleted. See the verification JSON and live screenshot.

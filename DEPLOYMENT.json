@@ -1,13 +1,13 @@
 {
-  "version": "4.1.0",
+  "version": "4.2.0",
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
-  "deployed_at": "2026-11-05T09:22:11.989622Z",
-  "worker_version_id": "77158a4d-2b28-42f7-a806-d95371f99388",
-  "worker_deployment_id": "bc99f892-fbdd-4c30-b17e-b7252f39b9fc",
-  "implementation_commit": "1ce2d77d0795cb3325b304162c994b7a7c52bb18",
-  "source_tree": "7dba9bc84274b05da0ded2026919acbfe9175d98",
-  "package_sha256": "6aefc20afd4a9bb3dd89064265e5bece581a3f2395c9f46a5db1c206efff2eb0",
+  "deployed_at": "2026-11-05T12:52:50.850647Z",
+  "worker_version_id": "0ba94bbd-d341-40f3-8090-be5cb9ac1292",
+  "worker_deployment_id": "702b190c-66f8-41bb-89ca-b516ab96cdae",
+  "implementation_commit": "f9599ba1e6c7119ace0b90364b2bc8e4f03259e6",
+  "source_tree": "58162b88f6b204a3cab9cca412afc4ab8d3c7481",
+  "package_sha256": "bec8c6cbe04bfb82f01f6c41fe04693f3e5f35de4410a8e09f527762b44a2305",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
@@ -20,20 +20,20 @@
   "korean_care_products": 105,
   "minimum_price_fils": 500,
   "maximum_price_fils": 17990,
-  "total_stock_at_verification": 7218,
-  "new_promotional_scenes": 4,
-  "new_image_files": 8,
-  "automated_tests_passed": 204,
+  "total_stock_at_verification": 7207,
+  "new_promotional_scenes": 0,
+  "new_image_files": 0,
+  "automated_tests_passed": 222,
   "database_changed_in_release": true,
   "database_migrations": [
-    "0021_order_presentation.sql",
-    "0022_customer_copy_v41.sql"
+    "0023_aqua_fresh_video_presentation.sql",
+    "0024_aqua_fresh_pilot_copy.sql"
   ],
   "stock_reset_on_release": false,
   "physical_iphone_tested": false,
   "production_orders_created_during_release": 0,
   "production_test_emails_sent_during_release": 0,
-  "frontend_cache_revision": "4.1.0.1",
+  "frontend_cache_revision": "4.2.0",
   "video_upload": {
     "direct": true,
     "max_bytes": 20971520,
@@ -43,15 +43,19 @@
     "aspect_ratio": "9:16",
     "autoplay": "muted, inline, while visible",
     "loop": true,
-    "mixed_photo_video_swipe": true
+    "mixed_photo_video_swipe": true,
+    "pilot_product_id": "TS0081",
+    "pilot_covers_and_ordering": true,
+    "pilot_expanded_viewer": true,
+    "pilot_explicit_seek_and_sound_controls": true
   },
   "previous_version_backup": {
-    "sourceBranch": "backup/v4.0.0-before-shopping-v41-2026-11-05",
-    "sourceCommit": "4f983568ef1e378866ae30cecefcf3093639a341",
-    "workerVersion": "56148ab5-fc19-4401-a734-b124b14477e3",
+    "sourceBranch": "backup/v4.1-before-aqua-fresh-pilot-2026-11-05",
+    "sourceCommit": "00e07a9a952f833f6b47ad07e289872fc73f6947",
+    "workerVersion": "77158a4d-2b28-42f7-a806-d95371f99388",
     "privateCustomerCopySnapshotRetained": true
   },
-  "verification_file": "docs/shopping-experience-v41-verification.json",
+  "verification_file": "docs/aqua-fresh-pilot-v42-verification.json",
   "bilingual_email_activation": "Previously prepared Google Apps Script activation remains a separate pending step; bridge and secrets unchanged.",
   "historical_record_v1_8_1": {
     "worker_name": "trend-shop-jo",
@@ -187,6 +191,9 @@
     "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/40329018501"
   },
   "package_hash_format": "SHA-256 of deployment-private/modules.json",
-  "customer_copy_products": 302,
-  "mobile_viewport_tested": true
+  "customer_copy_products": 1,
+  "mobile_viewport_tested": true,
+  "pilot_product_id": "TS0081",
+  "pilot_product_video_uploads": 0,
+  "isolated_preview_disabled_after_qa": true
 }
