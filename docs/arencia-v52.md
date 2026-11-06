@@ -25,4 +25,8 @@ Prices, stock, orders, promotions, product copy rows, review settings and authen
 
 Source backup: `backup/v5.1-before-arencia-v52-2026-11-06` at `0af449f773b734b8180e881472eabe07c7e5843d`. Previous Worker version: `027bd4cb-993d-4a30-a458-2b8067736135`.
 
-Final deployment identifiers, runtime asset hashes and before/after data fingerprints are recorded after publication in `DEPLOYMENT.json` and `docs/arencia-v52-verification.json`.
+Published at 2026-11-06T19:29:09.385117Z. Worker version: `9a89ab24-0ffa-4ee5-a1de-363ab21aab3b`. Worker deployment: `fa29e0c9-0b10-436a-a6a5-42d45880c652`, serving 100% of traffic. Implementation commit: `d97e231488b29f39b36be8ff55612ef91ef6d9de`.
+
+Live browser checks confirmed the three service statements, three gallery photos, hidden review entry, and the two-item checkout at 19.99 JOD with free delivery. The test bag was emptied without submitting an order.
+
+All product data and uploaded-video metadata fingerprints matched before and after deployment. GitHub validation run 42279978541 completed successfully. Runtime asset hashes and data fingerprints are recorded in `DEPLOYMENT.json` and `docs/arencia-v52-verification.json`.

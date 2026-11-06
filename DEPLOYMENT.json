@@ -1,12 +1,12 @@
 {
-  "version": "5.1.0",
+  "version": "5.2.0",
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
-  "deployed_at": "2026-11-06T17:21:53.729244Z",
-  "worker_version_id": "027bd4cb-993d-4a30-a458-2b8067736135",
-  "worker_deployment_id": "d66add48-231b-4fab-9fba-7d76c75f0256",
-  "implementation_commit": "f96bb0cb3609186085601a09e7dd010a0b6ec423",
-  "source_tree": "30dba962048d4bd04d75c525ece56894775f39cc",
+  "deployed_at": "2026-11-06T19:29:09.385117Z",
+  "worker_version_id": "9a89ab24-0ffa-4ee5-a1de-363ab21aab3b",
+  "worker_deployment_id": "fa29e0c9-0b10-436a-a6a5-42d45880c652",
+  "implementation_commit": "d97e231488b29f39b36be8ff55612ef91ef6d9de",
+  "source_tree": "9195de720b7d23111d09185c1d20a28b0205d907",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
@@ -21,15 +21,15 @@
   "maximum_price_fils": 17990,
   "total_stock_at_verification": 7207,
   "new_promotional_scenes": 0,
-  "new_image_files": 2,
-  "automated_tests_passed": 268,
+  "new_image_files": 0,
+  "automated_tests_passed": 272,
   "database_changed_in_release": false,
   "database_migrations": [],
   "stock_reset_on_release": false,
   "physical_iphone_tested": false,
   "production_orders_created_during_release": 0,
   "production_test_emails_sent_during_release": 0,
-  "frontend_cache_revision": "5.1.0",
+  "frontend_cache_revision": "5.2.0",
   "video_upload": {
     "direct": true,
     "max_bytes": 20971520,
@@ -47,11 +47,11 @@
     "existing_owner_uploads": 2
   },
   "previous_version_backup": {
-    "sourceBranch": "backup/v5-before-mobile-v51-2026-11-06",
-    "sourceCommit": "1df913666c8de6d1f965732104a5763f41979c9f",
-    "workerVersion": "1d6754aa-61d0-4479-a25c-9c54267fbe99"
+    "sourceBranch": "backup/v5.1-before-arencia-v52-2026-11-06",
+    "sourceCommit": "0af449f773b734b8180e881472eabe07c7e5843d",
+    "workerVersion": "027bd4cb-993d-4a30-a458-2b8067736135"
   },
-  "verification_file": "docs/mobile-experience-v51-verification.json",
+  "verification_file": "docs/arencia-v52-verification.json",
   "bilingual_email_activation": "Previously prepared Google Apps Script activation remains a separate pending step; bridge and secrets unchanged.",
   "historical_record_v1_8_1": {
     "worker_name": "trend-shop-jo",
@@ -219,11 +219,31 @@
     "package_sha256": "a19abf9c6c118b58c0a4e9530e5865a16b19710780d02fc8ec21472465fac230",
     "verification_file": "docs/global-experience-v5-verification.json"
   },
-  "new_category_images": 2,
+  "new_category_images": 0,
   "review_submissions_enabled": false,
   "mobile_search_dialog": true,
   "editable_checkout_summary": true,
-  "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42260863201",
-  "live_verified_at": "2026-11-06T17:31:36.283Z",
-  "isolated_preview_status": "Read-only review Worker remains available without production database or mail bindings."
+  "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42279978541",
+  "live_verified_at": "2026-11-06T19:31:54.171Z",
+  "isolated_preview_status": "v5.2 local read-only preview stopped after QA; the earlier read-only review Worker was not modified.",
+  "package_sha256": "8c695c8b563d00a43771a56fd21b7981fc87bb2975ccee5436717199ed05c6b7",
+  "package_hash_format": "SHA-256 of sorted [moduleName,moduleText] pairs serialized as JSON",
+  "previous_release_v51": {
+    "version": "5.1.0",
+    "deployed_at": "2026-11-06T17:21:53.729244Z",
+    "worker_version_id": "027bd4cb-993d-4a30-a458-2b8067736135",
+    "worker_deployment_id": "d66add48-231b-4fab-9fba-7d76c75f0256",
+    "implementation_commit": "f96bb0cb3609186085601a09e7dd010a0b6ec423",
+    "source_tree": "30dba962048d4bd04d75c525ece56894775f39cc",
+    "verification_file": "docs/mobile-experience-v51-verification.json"
+  },
+  "arencia_product_pilot": {
+    "id": "TS0098",
+    "gallery_photos": 3,
+    "approved_delivery_hours": 24,
+    "delivery_coverage": "All areas of Jordan",
+    "inspection_before_payment": true,
+    "authenticity_claim": "100% authentic; owner-confirmed",
+    "scope": "Arencia product page only"
+  }
 }

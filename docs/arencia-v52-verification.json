@@ -1,0 +1,177 @@
+{
+  "version": "5.2.0",
+  "date": "2026-11-06",
+  "site": "https://trendjo.pages.dev/",
+  "product": "https://trendjo.pages.dev/p/TS0098",
+  "scope": {
+    "productIds": [
+      "TS0098"
+    ],
+    "homePageChanged": false,
+    "otherProductLayoutsChanged": false,
+    "databaseWrites": 0,
+    "newProductImages": 0,
+    "newProductVideos": 0
+  },
+  "implementationCommit": "d97e231488b29f39b36be8ff55612ef91ef6d9de",
+  "sourceTree": "9195de720b7d23111d09185c1d20a28b0205d907",
+  "workerVersion": "9a89ab24-0ffa-4ee5-a1de-363ab21aab3b",
+  "workerDeployment": "fa29e0c9-0b10-436a-a6a5-42d45880c652",
+  "deployedAt": "2026-11-06T19:29:09.385117Z",
+  "verifiedAt": "2026-11-06T19:31:54.171Z",
+  "trafficPercentage": 100,
+  "packageSha256": "8c695c8b563d00a43771a56fd21b7981fc87bb2975ccee5436717199ed05c6b7",
+  "packageHashFormat": "SHA-256 of sorted [moduleName,moduleText] pairs serialized as JSON",
+  "changedRuntimeAssets": [
+    {
+      "path": "/app.js",
+      "sha256": "7023846c5f99a051af21a89b8438b3a918436955e1dcbe90664d8bd5c0d9fc35"
+    },
+    {
+      "path": "/index.html",
+      "sha256": "35cc2553b551c353073b672d3e9cabd6818f22ac01d488a2ffaf9fe2656ef6c0"
+    },
+    {
+      "path": "/product-story.js",
+      "sha256": "ced15c41b63657cc20cd23190c81c86bc3c80926cd31bc8fb3710d8791f8b740"
+    },
+    {
+      "path": "/arencia-pilot.js",
+      "sha256": "1c2574f09bfc90b8d860f93c3d112cc845663b1dc3dfc3cc860c73126f23d60a"
+    },
+    {
+      "path": "/arencia-pilot.css",
+      "sha256": "b45e495e70b963a4c6debab4ebedb5e44c3bc3a652cfcbb53c572d0f59bf538e"
+    }
+  ],
+  "unrelatedRuntimeAssetsPreserved": true,
+  "authenticationBindingsPreserved": [
+    "DB",
+    "MAIL_WEBHOOK_TOKEN",
+    "MAIL_WEBHOOK_URL",
+    "MEDIA",
+    "SESSION_SECRET",
+    "SETUP_TOKEN",
+    "STORE_LIVE"
+  ],
+  "approvedMerchantStatements": {
+    "delivery": "Delivery to all areas of Jordan within 24 hours",
+    "inspection": "Customer can inspect the order before paying on delivery",
+    "authenticity": "100% authentic products",
+    "source": "Explicit owner instruction on 2026-11-06"
+  },
+  "automatedTests": {
+    "passed": 272,
+    "failed": 0,
+    "focusedPilotChecks": 4,
+    "ciRun": 42279978541,
+    "ciConclusion": "success"
+  },
+  "browser": {
+    "livePilotMarker": "arencia-v52",
+    "galleryPhotos": 3,
+    "originalPackFirst": true,
+    "allImagesLoaded": true,
+    "liveServiceStatements": true,
+    "reviewInvitationHidden": true,
+    "pairCheckout": {
+      "quantity": 2,
+      "subtotalFils": 19990,
+      "shippingFeeFils": 0,
+      "totalFils": 19990
+    },
+    "singleItemFils": 11000,
+    "singleDeliveredTotalFils": 12000,
+    "earlyOrderButtonUsesSelectedQuantity": true,
+    "previewLanguages": [
+      "ar",
+      "en"
+    ],
+    "previewFrame": {
+      "width": 390,
+      "height": 860,
+      "clientWidth": 375,
+      "scrollWidth": 375
+    },
+    "physicalIPhoneTested": false,
+    "productionOrderSubmitted": false,
+    "productionTestEmailsSent": 0,
+    "testCartEmptied": true
+  },
+  "data": {
+    "before": {
+      "at": "2026-11-06T19:25:18.425Z",
+      "productRows": 321,
+      "activeProducts": 302,
+      "stock": 7207,
+      "productDataHash": "02ce24a15046b0d48a97a93cc9c1038a3a56851cd96aff13faa56bc68b87d680",
+      "videoMetadataHash": "210cd638b2e4bbbb99eb34ff06044a33dfaa7f2c56d7c88282a91a80e64b5802",
+      "videos": 2,
+      "orders": 14,
+      "orderItems": 81,
+      "settings": [
+        {
+          "id": "storefront",
+          "revision": 5,
+          "reviewSubmissionsEnabled": 0
+        }
+      ],
+      "arencia": {
+        "id": "TS0098",
+        "priceFils": 11000,
+        "referencePriceFils": 13950,
+        "stock": 24,
+        "active": 1,
+        "approved": 1,
+        "image": "/images/catalog/TS0098-ca6be2972b93.jpg"
+      }
+    },
+    "after": {
+      "at": "2026-11-06T19:31:54.171Z",
+      "productRows": 321,
+      "activeProducts": 302,
+      "stock": 7207,
+      "productDataHash": "02ce24a15046b0d48a97a93cc9c1038a3a56851cd96aff13faa56bc68b87d680",
+      "videoMetadataHash": "210cd638b2e4bbbb99eb34ff06044a33dfaa7f2c56d7c88282a91a80e64b5802",
+      "videos": 2,
+      "orders": 14,
+      "orderItems": 81,
+      "settings": [
+        {
+          "id": "storefront",
+          "revision": 5,
+          "reviewSubmissionsEnabled": 0
+        }
+      ],
+      "arencia": {
+        "id": "TS0098",
+        "priceFils": 11000,
+        "referencePriceFils": 13950,
+        "stock": 24,
+        "active": 1,
+        "approved": 1,
+        "image": "/images/catalog/TS0098-ca6be2972b93.jpg"
+      }
+    },
+    "productDataUnchanged": true,
+    "videoMetadataUnchanged": true,
+    "ordersUnchanged": true,
+    "orderItemsUnchanged": true
+  },
+  "preview": {
+    "readOnly": true,
+    "productionDatabaseBound": false,
+    "productionMailBound": false,
+    "localPreviewStopped": true
+  },
+  "backup": {
+    "sourceBranch": "backup/v5.1-before-arencia-v52-2026-11-06",
+    "sourceCommit": "0af449f773b734b8180e881472eabe07c7e5843d",
+    "workerVersion": "027bd4cb-993d-4a30-a458-2b8067736135"
+  },
+  "limitations": [
+    "No physical iPhone was available; mobile layout was checked in a browser iframe.",
+    "No production order or test email was submitted; submission behavior remains covered by the passing integration suite.",
+    "Conversion changes have not been measured."
+  ]
+}
