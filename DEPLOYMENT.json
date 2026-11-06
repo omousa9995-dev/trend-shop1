@@ -1,12 +1,12 @@
 {
-  "version": "5.2.1",
+  "version": "5.3.0",
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
-  "deployed_at": "2026-11-06T20:40:36.760877Z",
-  "worker_version_id": "401b6143-dd71-453a-9708-3cdfa923634e",
-  "worker_deployment_id": "6dc872ae-d693-4e64-a875-695af350551a",
-  "implementation_commit": "5a3c1e1018043b0ae8e10a57992ab792f4bae7b9",
-  "source_tree": "c993b147a03b4e7ed963db876957f73fd9bdaeb1",
+  "deployed_at": "2026-11-06T21:36:26.295674Z",
+  "worker_version_id": "b640b2d8-dfd8-4f0d-b080-0f1b9b3dabda",
+  "worker_deployment_id": "75a9fda5-3c1e-4a3d-b0bd-7eb8356b2a35",
+  "implementation_commit": "24e63ad9d83c1a2dfb84de9685860599c70219ab",
+  "source_tree": "b9e8aa797aa2fa83f3d9594cb1efab55950e3894",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
@@ -22,14 +22,16 @@
   "total_stock_at_verification": 7207,
   "new_promotional_scenes": 0,
   "new_image_files": 0,
-  "automated_tests_passed": 271,
-  "database_changed_in_release": false,
-  "database_migrations": [],
+  "automated_tests_passed": 280,
+  "database_changed_in_release": true,
+  "database_migrations": [
+    "db/migrations/0026_arencia_featured_video.sql"
+  ],
   "stock_reset_on_release": false,
   "physical_iphone_tested": false,
   "production_orders_created_during_release": 0,
   "production_test_emails_sent_during_release": 0,
-  "frontend_cache_revision": "5.2.1",
+  "frontend_cache_revision": "5.3.0",
   "video_upload": {
     "direct": true,
     "max_bytes": 20971520,
@@ -44,14 +46,15 @@
     "covers_and_ordering": true,
     "expanded_viewer": true,
     "explicit_seek_and_sound_controls": true,
-    "existing_owner_uploads": 2
+    "existing_owner_uploads": 2,
+    "section": "Existing lower product videos, independent from the new single upper video"
   },
   "previous_version_backup": {
     "sourceBranch": "backup/v5.1-before-arencia-v52-2026-11-06",
     "sourceCommit": "0af449f773b734b8180e881472eabe07c7e5843d",
     "workerVersion": "027bd4cb-993d-4a30-a458-2b8067736135"
   },
-  "verification_file": "docs/arencia-service-card-v521-verification.json",
+  "verification_file": "docs/arencia-featured-video-v53-verification.json",
   "bilingual_email_activation": "Previously prepared Google Apps Script activation remains a separate pending step; bridge and secrets unchanged.",
   "historical_record_v1_8_1": {
     "worker_name": "trend-shop-jo",
@@ -223,10 +226,10 @@
   "review_submissions_enabled": false,
   "mobile_search_dialog": true,
   "editable_checkout_summary": true,
-  "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42290295306/job/128141653981",
-  "live_verified_at": "2026-11-06T20:42:21.896Z",
-  "isolated_preview_status": "v5.2.1 local read-only preview stopped after QA; the earlier read-only review Worker was not modified.",
-  "package_sha256": "d4fd9c7e9144ae22ae1936ce918246c59f05a2d1f6eea5887a1c05fbad70213e",
+  "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42298042615/job/128168277525",
+  "live_verified_at": "2026-11-06T21:38:48.322Z",
+  "isolated_preview_status": "v5.3 isolated local SQLite/KV fixture stopped after QA; no test media uploaded to production.",
+  "package_sha256": "931a18fdf45d1597e97b212773ba299cd51be96b57c2f7514b7d525eafd219be",
   "package_hash_format": "SHA-256 of sorted [moduleName,moduleText] pairs serialized as JSON",
   "previous_release_v51": {
     "version": "5.1.0",
@@ -259,6 +262,37 @@
     "delivery_coverage": "All areas of Jordan",
     "inspection_before_payment": true,
     "authenticity_claim": "100% authentic; owner-confirmed",
-    "scope": "Arencia product page only; screenshot service card is the only visual addition"
+    "scope": "Preserved on Arencia product page only"
+  },
+  "previous_release_v521": {
+    "version": "5.2.1",
+    "deployed_at": "2026-11-06T20:40:36.760877Z",
+    "worker_version_id": "401b6143-dd71-453a-9708-3cdfa923634e",
+    "worker_deployment_id": "6dc872ae-d693-4e64-a875-695af350551a",
+    "implementation_commit": "5a3c1e1018043b0ae8e10a57992ab792f4bae7b9",
+    "source_tree": "c993b147a03b4e7ed963db876957f73fd9bdaeb1",
+    "package_sha256": "d4fd9c7e9144ae22ae1936ce918246c59f05a2d1f6eea5887a1c05fbad70213e",
+    "verification_file": "docs/arencia-service-card-v521-verification.json"
+  },
+  "existing_database_records_unchanged": true,
+  "arencia_featured_video": {
+    "id": "TS0098",
+    "max_videos": 1,
+    "uploaded_videos_at_verification": 0,
+    "aspect_ratio": "9:16",
+    "placement": "Below delivery and order details, above the additional cart button and WhatsApp help",
+    "muted": true,
+    "autoplay": true,
+    "loop": true,
+    "customer_controls": false,
+    "tap_to_open": false,
+    "picture_in_picture": false,
+    "admin_panel": "الفيديو العلوي لأرينسيا — فيديو واحد فقط",
+    "max_bytes": 20971520,
+    "separate_from_lower_videos": true,
+    "table": "product_featured_videos",
+    "replacement": "Explicit stale-ID-guarded replacement; one video per product enforced by UNIQUE constraint",
+    "bundle_card_removed": true,
+    "additional_cart_button": true
   }
 }
