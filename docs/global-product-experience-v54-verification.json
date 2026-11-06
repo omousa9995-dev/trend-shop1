@@ -1,0 +1,279 @@
+{
+  "version": "5.4.0",
+  "verified_at": "2026-11-06T22:33:44.336Z",
+  "implementation_commit": "c246f3b61ccc23a4f492dd2bee8daa3e5ed4d83f",
+  "source_tree": "896ec0c498d7320bdff5562fc7a745e67ac76188",
+  "deployment": {
+    "id": "9c018a7b-5c2c-4714-b08e-b8d8118db208",
+    "worker_version_id": "c61c3d71-469c-4822-b0a3-9e87e6ecb0d7",
+    "created_on": "2026-11-06T22:30:55.251943Z",
+    "percentage": 100,
+    "package_sha256": "7ce8123dcde07c6eb6165677279698290efcafdbfefb210adafde01c8290d4b3",
+    "package_hash_format": "SHA-256 of sorted [moduleName,moduleText] pairs serialized as JSON"
+  },
+  "changes": {
+    "assets": [
+      {
+        "path": "/admin.html",
+        "sha256": "b83265237ddbbb521e0847661053457cd6cbb96836443a081d54e7784abcab57",
+        "add": false
+      },
+      {
+        "path": "/admin.js",
+        "sha256": "a2660156e2f8a718a584e29d8315f86f68c524883b7d1d546dfbbe3367e69833",
+        "add": false
+      },
+      {
+        "path": "/app.js",
+        "sha256": "319df2bf76ac3ca8257a44e9e021125a13355e40857f4e5fce3479f2b0d15338",
+        "add": false
+      },
+      {
+        "path": "/aqua-fresh-pilot.js",
+        "sha256": "336127ebc9cee679346e4597cc170b847facbe260295153afbd0851324a22c41",
+        "add": false
+      },
+      {
+        "path": "/arencia-pilot.css",
+        "sha256": "11e0b549d82aa4f7d59ab7ee503d988aff1324e5fa0abc8e1ac7de520a193090",
+        "add": false
+      },
+      {
+        "path": "/arencia-pilot.js",
+        "sha256": "37f1e9057e5cef7d033d04c8daaf3ff62e3feeea3fa0709cbbac2237fbd1cf25",
+        "add": false
+      },
+      {
+        "path": "/index.html",
+        "sha256": "474ddd292380db03df1c03ff6aeaa62e8bcd494fad8cc212e473c7691bafae35",
+        "add": false
+      },
+      {
+        "path": "/media-gallery.js",
+        "sha256": "ed66bc8d48f8685e3a6d38daa414b26a85a6c0efa97a9092162c0ba8cbf5d714",
+        "add": false
+      },
+      {
+        "path": "/product-featured-video-admin.js",
+        "sha256": "8c4d12ee5b6fdb026cc7aada6ef9e8436669f45420138784cd3a8344e8909c99",
+        "add": false
+      },
+      {
+        "path": "/product-featured-video.js",
+        "sha256": "40952962dccd9f48563d268931aaf306b9d6e04466b2b5af2a72552739bfb745",
+        "add": false
+      },
+      {
+        "path": "/product-story.js",
+        "sha256": "f8b506e953798ac19a25a25a40f9dc12bc2b42cfcf12c9debd1066a0b91a3529",
+        "add": false
+      },
+      {
+        "path": "/product-videos-admin.js",
+        "sha256": "02a70725aae5fb409a88e97734107debbbe2c6af0001b47c343e247cc4d44e08",
+        "add": false
+      },
+      {
+        "path": "/product-videos.js",
+        "sha256": "f357292dd71674faccf56638bda8eeec9220a5f9a528708989e6e61e9965c581",
+        "add": false
+      },
+      {
+        "path": "/silent-video.js",
+        "sha256": "7f4de030966f87cf4785402ca5be89452e852d90f4bfd4487c5dce2b8eab6050",
+        "add": true
+      }
+    ],
+    "modules": [
+      {
+        "path": "product-featured-video.js",
+        "sha256": "12b78538e231a3157a48a22136cd5811a6e0a75cd0074e9fb7c81e30261006d9",
+        "add": false
+      }
+    ],
+    "unrelated_assets_and_modules_unchanged": true,
+    "binding_names_preserved": [
+      "DB",
+      "MAIL_WEBHOOK_TOKEN",
+      "MAIL_WEBHOOK_URL",
+      "MEDIA",
+      "SESSION_SECRET",
+      "SETUP_TOKEN",
+      "STORE_LIVE"
+    ],
+    "database_migrations": []
+  },
+  "tests": {
+    "passed": 285,
+    "failed": 0,
+    "catalog_pages_rendered": 304,
+    "github": {
+      "name": "test",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42305254605/job/128192859554"
+    }
+  },
+  "isolated_browser_checks": {
+    "phone_iframe": [
+      390,
+      860
+    ],
+    "document_width": 375,
+    "document_scroll_width": 375,
+    "foundation_search_opened_correct_product": true,
+    "four_tone_choices_retained": true,
+    "two_item_cart_selection_once": true,
+    "editable_order_quantity_and_removal": true,
+    "non_arencia_upper_upload_replacement": true,
+    "three_independent_lower_clips": true,
+    "upper_frame": [
+      339,
+      603
+    ],
+    "lower_frames": [
+      303,
+      539
+    ],
+    "customer_controls": 0,
+    "tap_to_open": false,
+    "preview_stopped": true,
+    "physical_iphone_tested": false
+  },
+  "live_checks": {
+    "home_url": "https://trendjo.pages.dev/",
+    "products": [
+      {
+        "id": "TS0081",
+        "service_rows": 3,
+        "upper_slots": 1,
+        "lower_videos": 1,
+        "customer_controls": 0,
+        "photo_gallery_video_thumbs": 0,
+        "extra_cart_button": true,
+        "bundle_cards": 0,
+        "playback": {
+          "muted": true,
+          "loop": true,
+          "paused": false,
+          "ready_state": 4,
+          "frame": [
+            360,
+            640
+          ]
+        }
+      },
+      {
+        "id": "TS0098",
+        "existing_upper_preserved": true,
+        "playback": {
+          "muted": true,
+          "loop": true,
+          "paused": false,
+          "ready_state": 4,
+          "frame": [
+            360,
+            640
+          ]
+        }
+      },
+      {
+        "id": "TS0079",
+        "service_rows": 3,
+        "upper_slots": 1,
+        "extra_cart_button": true,
+        "bundle_cards": 0
+      }
+    ]
+  },
+  "before": {
+    "deployment": {
+      "id": "75a9fda5-3c1e-4a3d-b0bd-7eb8356b2a35",
+      "versions": [
+        {
+          "version_id": "b640b2d8-dfd8-4f0d-b080-0f1b9b3dabda",
+          "percentage": 100
+        }
+      ],
+      "created_on": "2026-11-06T21:36:26.295674Z"
+    },
+    "productDataHash": "2e3a9ebd4a6238295a93531b4310ff4b099219ed5e7dde033518c93c12854658",
+    "lowerVideoHash": "210cd638b2e4bbbb99eb34ff06044a33dfaa7f2c56d7c88282a91a80e64b5802",
+    "upperVideoHash": "2432f5780af9c627010ef32c68b9c760e0cf64cda346a6d30b032465df85f7c5",
+    "productRows": 321,
+    "activeProducts": 302,
+    "stock": 7207,
+    "orders": 14,
+    "orderItems": 81,
+    "settings": [
+      {
+        "id": "storefront",
+        "revision": 5,
+        "reviewSubmissionsEnabled": 0
+      }
+    ],
+    "lowerVideos": [
+      {
+        "id": "8b1d2535-dbef-4efa-9121-4f3bd1cf6288",
+        "productId": "TS0081"
+      },
+      {
+        "id": "ad054b18-0312-44a3-b7f9-0d7524e686ff",
+        "productId": "TS0065"
+      }
+    ],
+    "upperVideos": [
+      {
+        "id": "e5c40477-cb07-40c7-a7c3-ce3a040a9799",
+        "productId": "TS0098"
+      }
+    ]
+  },
+  "after": {
+    "deployment": {
+      "id": "9c018a7b-5c2c-4714-b08e-b8d8118db208",
+      "versions": [
+        {
+          "version_id": "c61c3d71-469c-4822-b0a3-9e87e6ecb0d7",
+          "percentage": 100
+        }
+      ],
+      "created_on": "2026-11-06T22:30:55.251943Z"
+    },
+    "productDataHash": "2e3a9ebd4a6238295a93531b4310ff4b099219ed5e7dde033518c93c12854658",
+    "lowerVideoHash": "210cd638b2e4bbbb99eb34ff06044a33dfaa7f2c56d7c88282a91a80e64b5802",
+    "upperVideoHash": "2432f5780af9c627010ef32c68b9c760e0cf64cda346a6d30b032465df85f7c5",
+    "productRows": 321,
+    "activeProducts": 302,
+    "stock": 7207,
+    "orders": 14,
+    "orderItems": 81,
+    "settings": [
+      {
+        "id": "storefront",
+        "revision": 5,
+        "reviewSubmissionsEnabled": 0
+      }
+    ],
+    "lowerVideos": [
+      {
+        "id": "8b1d2535-dbef-4efa-9121-4f3bd1cf6288",
+        "productId": "TS0081"
+      },
+      {
+        "id": "ad054b18-0312-44a3-b7f9-0d7524e686ff",
+        "productId": "TS0065"
+      }
+    ],
+    "upperVideos": [
+      {
+        "id": "e5c40477-cb07-40c7-a7c3-ce3a040a9799",
+        "productId": "TS0098"
+      }
+    ]
+  },
+  "existing_records_unchanged": true,
+  "production_test_orders": 0,
+  "production_test_emails": 0,
+  "production_test_videos": 0
+}
