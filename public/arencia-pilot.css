@@ -1,0 +1,94 @@
+/* Arencia TS0098 only. Shared checkout, pricing and all other pages keep their existing behavior. */
+.arencia-pilot{--story-ink:#34463d;--story-accent:#704b5e;--story-line:#dfe3d9;background:#fdfbf8}
+.arencia-pilot .story-hero{gap:44px;padding-top:12px;align-items:start}
+.arencia-pilot .story-intro h1{font-size:clamp(24px,2.6vw,33px);line-height:1.6;margin-block:8px}
+.arencia-pilot .story-eyebrow{color:#7b625f}
+.arencia-pilot .story-tagline{font-family:inherit;font-size:18px;line-height:1.9;letter-spacing:0;color:#665952;margin:5px 0}
+.arencia-pilot .story-lead{font-size:14px;line-height:1.9;color:#4d5d50;margin:8px 0 2px}
+.arencia-pilot .arencia-hero-price{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:16px 0 14px;padding:14px 0;border-block:1px solid var(--story-line)}
+.arencia-hero-price>div{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.arencia-pilot .arencia-hero-price strong{font-size:32px;line-height:1.45;color:#704b5e}
+.arencia-pilot .arencia-hero-price small{font-size:12px;color:#65705e}
+.arencia-pilot .arencia-hero-price>span{font-size:12px;color:#65705e;white-space:nowrap}
+.arencia-pilot .story-facts{margin:10px 0 13px}
+.arencia-pilot .arencia-quick-order{display:none}
+.arencia-pilot .arencia-service{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #e2ddd6;border-radius:16px;background:#f8f5f0;margin:15px 0;overflow:hidden}
+.arencia-service>div{display:flex;gap:8px;align-items:flex-start;padding:15px 10px;min-width:0}
+.arencia-service>div+div{border-inline-start:1px solid #e3ded6}
+.arencia-service svg{width:27px;height:29px;flex:none;color:#765263}
+.arencia-service strong{display:block;font-size:11px;line-height:1.8;color:#474f43;font-weight:700}
+.arencia-service small{display:block;font-size:10px;line-height:1.8;color:#727569}
+.arencia-pilot .story-purchase{border:1px solid #d8c4cd;box-shadow:0 8px 28px #65435509;border-radius:20px;padding:21px;background:#fff}
+.arencia-pilot .story-offer:has(input:checked){border-color:#8c6679;background:#fbf4f7;box-shadow:inset 0 0 0 1px #8c6679}
+.arencia-pilot .story-offer input{accent-color:#704b5e}
+.arencia-pilot .story-order{background:#704b5e;border-color:#704b5e;color:#fff;min-height:49px}
+.arencia-pilot .story-order:hover{background:#5c3a4b}
+.arencia-pilot .story-order:focus-visible,.arencia-pilot .story-text-button:focus-visible{outline:3px solid #bd8da5;outline-offset:4px}
+.arencia-pilot .story-stepper button{background:#f5f1ef;color:#704b5e}
+.arencia-pilot .arencia-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;border:0;padding:0;margin:20px 0}
+.arencia-pilot .arencia-benefits li{display:block;padding:15px 12px;background:#eff3ea;border:1px solid #e0e6d8;border-radius:15px}
+.arencia-pilot .arencia-benefits .arencia-benefit-number{font-family:Georgia,serif;font-size:22px;color:#8a9c7a;display:block;line-height:1.3;margin-bottom:7px}
+.arencia-pilot .arencia-benefits li>span:last-child{font-size:11px;line-height:1.9;color:#64715b}
+.arencia-pilot .arencia-benefits b{display:block;font-size:12px;line-height:1.8;margin-bottom:6px;color:#3d563f}
+.arencia-pilot .story-gallery .touch-media-stage{border-radius:24px;background:#fff;border-color:#dce3d5}
+.arencia-pilot .touch-media-content img{aspect-ratio:1/1;object-fit:contain;padding:22px;background:#fff}
+.arencia-pilot .touch-media-stage.is-scene img{object-fit:cover;padding:0}
+.arencia-pilot .story-gallery .touch-media-thumbs{gap:9px}
+.arencia-pilot .story-editorial{padding-block:42px;gap:42px}
+.arencia-pilot .story-editorial-photo img{border-radius:24px;aspect-ratio:4/5}
+.arencia-pilot .story-editorial-copy h2{font-size:33px}
+.arencia-pilot .arencia-full-intro{font-size:13px;line-height:2.1;color:#66735e}
+.arencia-pilot .story-fit{background:#f0f3eb;border-radius:22px}
+.arencia-pilot .arencia-step-icon{display:grid;place-items:center;width:66px;height:66px;border-radius:20px;background:#eef2e7;margin-bottom:16px;color:#617c54}
+.arencia-pilot .arencia-step-icon svg{width:38px;height:38px}
+.arencia-pilot .story-steps li>span:not(.arencia-step-icon){font-size:25px}
+.arencia-pilot .story-faq details{background:#fff;border:1px solid #e1e4db;border-radius:13px;padding:14px 17px;margin-bottom:10px}
+.arencia-pilot .story-faq summary{font-size:13px;line-height:1.9;cursor:pointer}
+.arencia-pilot .story-faq details p{font-size:12px;line-height:2}
+.arencia-pilot .story-sticky{border-color:#ddcbd2;background:#fffaf7f7}
+.arencia-pilot .story-sticky b{color:#704b5e}
+@media(max-width:1050px) and (min-width:761px){.arencia-pilot .story-hero{gap:25px}.arencia-service>div{display:block;padding:12px 9px}.arencia-service svg{margin-bottom:5px}}
+@media(max-width:760px){
+ .arencia-pilot .story-breadcrumb{padding-block:10px;font-size:10px}
+ .arencia-pilot .story-hero{gap:14px;padding-top:0}
+ .arencia-pilot .story-gallery{display:block;width:100%;position:static;order:0}
+ .arencia-pilot .story-gallery .touch-media-stage{border-radius:20px}
+ .arencia-pilot .touch-media-content img{height:180px;aspect-ratio:auto;width:100%;padding:9px;object-fit:contain}
+ .arencia-pilot .touch-media-stage.is-scene img{height:300px;object-fit:cover;padding:0}
+ .arencia-pilot .touch-media-thumbs{margin-top:8px}
+ .arencia-pilot .touch-media-thumbs button{min-width:92px;min-height:44px;padding:5px 8px;font-size:10px}
+ .arencia-pilot .touch-media-thumbs img{width:29px;height:34px}
+ .arencia-pilot .media-swipe-hint{display:none}
+ .arencia-pilot .media-caption{font-size:10px;line-height:1.6;margin-block:6px 0}
+ .arencia-pilot .story-brand-row{min-height:32px}
+ .arencia-pilot .story-intro>.story-eyebrow{display:none}
+ .arencia-pilot .story-intro h1{font-size:23px;line-height:1.6;margin:3px 0 5px}
+ .arencia-pilot .story-intro>.story-tagline{display:none}
+ .arencia-pilot .story-lead{font-size:12px;line-height:1.8;margin:5px 0}
+ .arencia-pilot .arencia-hero-price{margin:10px 0;padding:10px 0}
+ .arencia-pilot .arencia-hero-price strong{font-size:28px}
+ .arencia-pilot .arencia-hero-price small,.arencia-pilot .arencia-hero-price>span{font-size:11px}
+ .arencia-pilot .arencia-quick-order{display:block;width:100%;margin:10px 0 14px;min-height:47px;font-size:13px}
+ .arencia-pilot .arencia-service{grid-template-columns:1fr;border-radius:15px;margin:12px 0}
+ .arencia-service>div{display:flex;align-items:center;padding:10px 14px;gap:12px}
+ .arencia-service>div+div{border-inline-start:0;border-top:1px solid #e3ded6}
+ .arencia-service>div>span{display:flex;flex:1;align-items:center;justify-content:space-between;gap:9px}
+ .arencia-service svg{width:25px;height:27px}
+ .arencia-service strong{font-size:12px;line-height:1.7}
+ .arencia-service small{font-size:10px;line-height:1.7}
+ .arencia-pilot .story-purchase{padding:17px}
+ .arencia-pilot .arencia-benefits{grid-template-columns:1fr;gap:9px;margin:17px 0}
+ .arencia-pilot .arencia-benefits li{display:flex;gap:13px;padding:12px 14px;align-items:start}
+ .arencia-pilot .arencia-benefit-number{flex:none;margin:0;min-width:24px}
+ .arencia-pilot .arencia-benefits li>span:last-child{font-size:12px;line-height:1.8}
+ .arencia-pilot .arencia-benefits b{font-size:13px;margin-bottom:3px}
+ .arencia-pilot .story-editorial{padding-block:28px;gap:20px}
+ .arencia-pilot .story-editorial-copy h2{font-size:29px}
+ .arencia-pilot .story-steps li{grid-template-columns:52px minmax(0,1fr);gap:0 13px;padding-bottom:18px}
+ .arencia-pilot .story-steps .arencia-step-icon{grid-column:1;grid-row:1/4;width:52px;height:58px;border-radius:16px;margin:0;font-size:inherit}
+ .arencia-pilot .arencia-step-icon svg{width:33px;height:33px}
+ .arencia-pilot .story-steps li>span:not(.arencia-step-icon){grid-column:2;grid-row:auto;font-size:18px;line-height:1.4}
+ .arencia-pilot .story-steps h3,.arencia-pilot .story-steps p{grid-column:2}
+ .arencia-pilot .story-sticky .btn{min-width:145px}
+ .arencia-pilot .story-faq details{padding:12px 14px}
+}
