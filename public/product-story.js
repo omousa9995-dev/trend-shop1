@@ -1,7 +1,7 @@
 import {mountMediaGallery} from './media-gallery.js?v=5.0.0';
 import {fallbackProductProfile} from './product-profiles.js?v=5.0.0';
 import {mountAquaFreshPilot} from './aqua-fresh-pilot.js?v=5.1.0';
-import {arenciaPhotos,arenciaFaq,mountArenciaPilot} from './arencia-pilot.js?v=5.2.0';
+import {mountArenciaServiceCard} from './arencia-pilot.js?v=5.2.1';
 import {locale,tx,translateText,formatMoney as money} from './i18n.js?v=5.1.0';
 import {quoteCart,productPrice,promotionData} from './commerce.js?v=5.0.0';
 import {isKoreanCare} from './korean-care.js';
@@ -50,12 +50,11 @@ export function storyGallery(p,profile,images=[]){
 }
 export function mountProductStory(element,{product:p,name,image,cap=0,live,quantity=1,promotions=[],profile=null,images=[],taxonomy='',brand='',bundles='',options='',inBag=0,hasOtherItems=false,onCheckout,onAdd,onZoom,onShare,onQuantity}={}){
  profile=profile||fallbackProductProfile(p);
- const c=storyContent(p,profile),photos=arenciaPhotos(p,storyGallery(p,profile,images));if(image&&photos[0])photos[0].url=image;
+ const c=storyContent(p,profile),photos=storyGallery(p,profile,images);if(image&&photos[0])photos[0].url=image;
  const canBuy=cap>0;let selected=Math.max(1,Math.min(cap||1,quantity));
  const quantityOffers=promotions.map(promotionData).filter(o=>o?.active&&o.items?.length===1&&o.items[0].id===p.id&&o.items[0].qty>1&&o.items[0].qty<=cap&&selectionQuote(p,o.items[0].qty,promotions).discountFils>0).sort((a,b)=>a.items[0].qty-b.items[0].qty);
  const offerQuantity=2,pair=selectionQuote(p,2,promotions);
  const faq=[...(c.faq||[]),{question:tx('كيف يُحسب الطلب والتوصيل؟','How are my order and delivery calculated?'),answer:tx('التوصيل دينار لكل الأردن، ومجاني إذا تجاوز مجموع المنتجات بعد الخصم 19 دينارًا. راجعي الكمية والعروض والإجمالي قبل التأكيد. الدفع عند الاستلام أو CliQ اليدوي.','Delivery is 1 JOD across Jordan, free when products after discounts total more than 19 JOD. Review quantities, offers and the delivered total before confirming. Pay on delivery or by manual CliQ.')},{question:tx('كيف أتحقق من النسخة والاستبدال؟','How do I check the version and exchange terms?'),answer:tx('راجعي صورة العبوة والحجم، وتواصلي مع المتجر لتأكيد النسخة ومدة التوصيل وشروط الاستبدال قبل الطلب.','Check the pack photo and size, and ask the store to confirm the version, delivery timing and exchange terms before ordering.')}];
- const serviceFaq=arenciaFaq(p,faq);
  const scene=photos.find(x=>x.kind==='promotional')||photos[1]||photos[0];
 
  element.innerHTML=`<article class='product-story' data-no-translate>
@@ -73,11 +72,11 @@ export function mountProductStory(element,{product:p,name,image,cap=0,live,quant
  <section class='story-how wrap' id='storyHow'><div class='story-section-title'><span class='story-eyebrow'>YOUR CARE, STEP BY STEP</span><h2>${tx('لحظات صغيرة، واهتمام يليق بكِ.','A little time. A little care for you.')}</h2></div><ol class='story-steps'>${c.steps.map((step,i)=>`<li><span aria-hidden='true'>${String(i+1).padStart(2,'0')}</span><h3>${safe(step.title)}</h3><p>${safe(step.text)}</p></li>`).join('')}</ol></section>
  <section id='storyVideos' class='wrap product-video-section' data-product-videos hidden></section>
 
- <section id='productReviews' class='section wrap reviews-section story-reviews'></section><section class='story-faq wrap' id='storyFaq'><div><span class='story-eyebrow'>A LITTLE MORE CLARITY</span><h2>${tx('قبل أن تختاري.','Before you choose.')}</h2><p>${tx('خذي راحتكِ، هذه التفاصيل تساعدكِ على الاختيار.','Take your time. A few details to help you choose.')}</p></div><div>${serviceFaq.map(({question,answer})=>`<details><summary>${safe(question)}</summary><p>${safe(answer)}</p></details>`).join('')}</div></section>
+ <section id='productReviews' class='section wrap reviews-section story-reviews'></section><section class='story-faq wrap' id='storyFaq'><div><span class='story-eyebrow'>A LITTLE MORE CLARITY</span><h2>${tx('قبل أن تختاري.','Before you choose.')}</h2><p>${tx('خذي راحتكِ، هذه التفاصيل تساعدكِ على الاختيار.','Take your time. A few details to help you choose.')}</p></div><div>${faq.map(({question,answer})=>`<details><summary>${safe(question)}</summary><p>${safe(answer)}</p></details>`).join('')}</div></section>
  <section class='story-last-cta wrap'><span class='story-eyebrow'>YOUR RITUAL STARTS HERE</span><h2>${safe(c.tagline)}</h2><button type='button' class='btn story-order' data-story-checkout ${!canBuy?'disabled':''}>${tx('راجعي اختياري وطلبي','Review my selection & order')}</button></section><section class='wrap' id='detailRecommendations' data-related-for='${safe(p.id)}'></section><div class='story-sticky' data-story-sticky><div><small>${tx('اختياركِ مع التوصيل','Your selection, delivered')}</small><b id='storyStickyPrice'></b></div><button type='button' class='btn story-order' data-story-checkout ${!canBuy?'disabled':''}>${tx('راجعي الطلب','Review order')} <span aria-hidden='true'>←</span></button></div></article>`;
  const media=mountMediaGallery(element.querySelector('.story-gallery'),{photos,name,productId:p.id,onZoom,mainImageId:'storyMainImage'});
  mountAquaFreshPilot(element,{product:p,content:c,photos});
- mountArenciaPilot(element,{product:p,content:c});
+ mountArenciaServiceCard(element,{product:p});
  element.querySelector('[data-story-share]').onclick=()=>onShare?.();
  element.querySelectorAll('[data-story-scroll]').forEach(button=>button.onclick=()=>{const target=element.querySelector('#'+button.dataset.storyScroll);if(target){target.scrollIntoView({behavior:globalThis.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth',block:'start'});target.tabIndex=-1;target.focus({preventScroll:true})}});
  function update(){const q=selectionQuote(p,selected,promotions),unit=Math.round(q.subtotalFils/(selected*10))*10;onQuantity?.(selected);element.querySelector('#storyQuantity').textContent=selected;element.querySelectorAll('[name=storyOffer]').forEach(r=>r.checked=Number(r.value)===selected);element.querySelector('[data-story-step="-1"]').disabled=!canBuy||selected<=1;element.querySelector('[data-story-step="1"]').disabled=!canBuy||selected>=cap;element.querySelector('#storySelectionPrice').innerHTML=`<div class='story-choice-price'><span>${tx('سعر اختياركِ','Your selection')} · ${selected}</span><strong>${money(q.subtotalFils)}</strong></div><div class='story-delivery-price'><span>${tx('التوصيل داخل الأردن','Delivery in Jordan')}</span><b>${q.shippingFeeFils===0?tx('مجاني ♡','Free ♡'):money(q.shippingFeeFils)}</b></div><div class='story-delivered-price'><span>${tx('الإجمالي مع التوصيل','Total with delivery')}</span><b>${money(q.totalFils)}</b></div>`;element.querySelector('#storyStickyPrice').textContent=money(q.totalFils)}
