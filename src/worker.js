@@ -102,6 +102,7 @@ async function handle(req,env,ctx){const url=new URL(req.url),p=url.pathname;if(
  if(p==='/api/site-settings'&&req.method==='GET')return json({settings:await readSiteSettings(env)});
  if(p==='/api/product-videos'&&req.method==='GET')return publicProductVideos(req,env,{json,error});
  if(p==='/api/reviews'&&req.method==='GET')return publicReviews(req,env,{json,error});
+ if(req.method==='POST'&&['/api/reviews','/api/reviews/verify','/api/reviews/media'].includes(p)&&!(await readSiteSettings(env)).reviewSubmissionsEnabled)return error('مشاركة التجارب غير متاحة حاليًا',403,{code:'REVIEW_SUBMISSIONS_PAUSED'});
  if(p==='/api/reviews/verify'&&req.method==='POST')return reviewAction(req,env,{json,error,sameOrigin,throttle,content,hmac},'verify');
  if(p==='/api/reviews'&&req.method==='POST')return reviewAction(req,env,{json,error,sameOrigin,throttle,content,hmac},'submit');
  if(p==='/api/reviews/media'&&req.method==='POST')return uploadReviewMedia(req,env,{json,error,sameOrigin,throttle,hmac});

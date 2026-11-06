@@ -1,4 +1,4 @@
-import {locale,tx} from './i18n.js';
+import {locale,tx} from './i18n.js?v=5.1.0';
 import {mountMediaGallery,validProductVideo} from './media-gallery.js?v=5.0.0';
 const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export async function mountProductVideos(region,{productId,fetcher=fetch}={}){

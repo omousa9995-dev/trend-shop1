@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {JSDOM} from 'jsdom';
-import {setLocale} from '../public/i18n.js';
+import {setLocale} from '../public/i18n.js?v=5.1.0';
 import {storyContent} from '../public/product-story.js';
 import {createProductVideoManager} from '../public/product-videos-admin.js';
 

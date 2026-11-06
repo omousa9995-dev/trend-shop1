@@ -1,4 +1,4 @@
-import {DEFAULT_SITE_SETTINGS} from './site-defaults.js?v=5.0.0';
+import {DEFAULT_SITE_SETTINGS} from './site-defaults.js?v=5.1.0';
 export {DEFAULT_SITE_SETTINGS};
 export const HOME_SECTIONS={hero:'الواجهة الرئيسية',benefits:'مميزات التسوق',categories:'أقسام المنتجات',offers:'العروض والباكجات',picks:'اختيارات المتجر',moments:'لحظات الجمال',korean:'العناية الكورية',callout:'رسالة المتجر',deals:'أسعار لطيفة',reviews:'تجارب الزبائن',trust:'بطاقات الثقة'};
 export const PRODUCT_SECTIONS={hero:'الصور والسعر والاختيارات',navigation:'التنقل بين تفاصيل المنتج',about:'عن المنتج',fit:'هل يناسبكِ؟',usage:'طريقة الاستخدام',media:'الصور والفيديوهات',reviews:'التجارب الموثقة',faq:'الأسئلة الشائعة',recommendations:'المنتجات المقترحة',last:'دعوة الاختيار الأخيرة'};
@@ -6,6 +6,8 @@ const strings={storeName:60,sloganAr:180,sloganEn:180,heroTitleAr:180,heroTitleE
 export function normalizeSiteSettings(raw,{productIds}={}){
  if(!raw||typeof raw!=='object'||Array.isArray(raw))throw Error('إعدادات غير صالحة');
  const value={...DEFAULT_SITE_SETTINGS,version:5,pairPricing:true};
+ if(raw.reviewSubmissionsEnabled!==undefined&&typeof raw.reviewSubmissionsEnabled!=='boolean')throw Error('خيار مشاركة التجارب غير صالح');
+ value.reviewSubmissionsEnabled=raw.reviewSubmissionsEnabled??false;
  for(const[key,max]of Object.entries(strings)){
   const text=raw[key]??value[key];if(typeof text!=='string'||text.length>max||/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(text))throw Error('راجعي طول النص في '+key);
   value[key]=text.trim();

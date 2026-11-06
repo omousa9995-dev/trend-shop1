@@ -1,7 +1,8 @@
-import {DEFAULT_SITE_SETTINGS,arrangeSections} from './site-settings.js?v=5.0.0';
+import {DEFAULT_SITE_SETTINGS,arrangeSections} from './site-settings.js?v=5.1.0';
 export function applyAppearance(doc,settings,language){
  doc.documentElement.dataset.desktopColumns=String(settings.desktopColumns);doc.documentElement.dataset.mobileColumns=String(settings.mobileColumns);
- doc.querySelectorAll('.logo strong,.footer-logo').forEach(el=>{if(el.textContent.trim()!==settings.storeName)el.textContent=settings.storeName;});
+ doc.querySelectorAll('.logo strong,.footer-logo').forEach(el=>{if(settings.storeName===DEFAULT_SITE_SETTINGS.storeName){if(!el.querySelector('.wordmark-trend'))el.innerHTML='<span class="wordmark-trend">TREND</span> <span class="wordmark-shop">SHOP</span>';}else if(el.textContent.trim()!==settings.storeName)el.textContent=settings.storeName;});
+ doc.querySelectorAll('[data-review-entry-link]').forEach(el=>el.hidden=settings.reviewSubmissionsEnabled!==true);
  const slogan=settings[language==='en'?'sloganEn':'sloganAr'];doc.querySelector('.logo small')?.replaceChildren(doc.createTextNode(slogan));
  const footer=doc.querySelector('.footer-grid>div:first-child p');if(footer)footer.textContent=slogan;
 }

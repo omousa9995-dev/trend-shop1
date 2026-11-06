@@ -1,4 +1,4 @@
-import {tx} from './i18n.js';
+import {tx} from './i18n.js?v=5.1.0';
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const validProductVideo=v=>/^\/product-videos\/[a-f0-9-]{36}$/.test(v?.url||'')&&['video/mp4','video/quicktime','video/webm'].includes(v.mime);
 export function mountMediaGallery(host,{photos=[],videos=[],name='',productId='',startWithVideo=false,onZoom,mainImageId=''}={}){

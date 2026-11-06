@@ -7,7 +7,7 @@ import {mountProductStory} from '../public/product-story.js';
 import {mountProductVideos} from '../public/product-videos.js';
 import {createAquaFreshRail,mountAquaFreshPilot} from '../public/aqua-fresh-pilot.js';
 import {validVideoPoster} from '../public/product-video-presentation.js';
-import {setLocale} from '../public/i18n.js';
+import {setLocale} from '../public/i18n.js?v=5.1.0';
 import {createProductVideoManager} from '../public/product-videos-admin.js';
 
 const read=path=>JSON.parse(fs.readFileSync(new URL('../'+path,import.meta.url),'utf8'));

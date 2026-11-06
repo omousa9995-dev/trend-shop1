@@ -1,5 +1,5 @@
 import {pairPriceFils} from './pair-pricing.js?v=5.0.0';
-import {createSiteSettingsManager} from './site-settings-admin.js?v=5.0.0';
+import {createSiteSettingsManager} from './site-settings-admin.js?v=5.1.0';
 import {orderDisplayItems,orderLineTotal} from './order-presentation.js';
 import {createProductVideoManager} from './product-videos-admin.js?v=5.0.0';
 import {createReviewManager} from './reviews-admin.js?v=3.0.0';

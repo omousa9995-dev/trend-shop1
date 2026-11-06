@@ -1,6 +1,7 @@
 {
   "version": 5,
   "pairPricing": true,
+  "reviewSubmissionsEnabled": false,
   "storeName": "TREND SHOP",
   "sloganAr": "إبتسمي فلا جميلة الا أنت",
   "sloganEn": "Your beauty. Your smile.",

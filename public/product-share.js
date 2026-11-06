@@ -1,4 +1,4 @@
-import {locale} from './i18n.js';
+import {locale} from './i18n.js?v=5.1.0';
 import {productUrl} from './product-links.js?v=1.8.1';
 export function createProductShare(){
  const dialog=document.createElement('dialog');dialog.className='product-share';dialog.setAttribute('aria-labelledby','shareHeading');
