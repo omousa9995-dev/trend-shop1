@@ -1,0 +1,133 @@
+{
+  "version": "5.2.1",
+  "verified_at": "2026-11-06T20:42:21.896Z",
+  "implementation_commit": "5a3c1e1018043b0ae8e10a57992ab792f4bae7b9",
+  "source_tree": "c993b147a03b4e7ed963db876957f73fd9bdaeb1",
+  "restored_source_commit": "0af449f773b734b8180e881472eabe07c7e5843d",
+  "deployment": {
+    "worker_name": "trend-shop-jo",
+    "id": "6dc872ae-d693-4e64-a875-695af350551a",
+    "version_id": "401b6143-dd71-453a-9708-3cdfa923634e",
+    "percentage": 100,
+    "created_on": "2026-11-06T20:40:36.760877Z",
+    "package_sha256": "d4fd9c7e9144ae22ae1936ce918246c59f05a2d1f6eea5887a1c05fbad70213e",
+    "package_hash_format": "SHA-256 of sorted [moduleName,moduleText] pairs serialized as JSON"
+  },
+  "assetChanges": [
+    {
+      "path": "/app.js",
+      "sha256": "83b8b44b4a16641820000077dfbaf6c1e0acac8b551054fac36f8be72ea03ec9"
+    },
+    {
+      "path": "/index.html",
+      "sha256": "e8e4bb562a88e58092aaa264fdbdd4cc3b2961d357d1c6de0408322579eb6407"
+    },
+    {
+      "path": "/product-story.js",
+      "sha256": "e04af43ccefd0a1da9f578eeae227d9c8a59263c50175abf23e9f0549f4114ad"
+    },
+    {
+      "path": "/arencia-pilot.js",
+      "sha256": "ab2f3837c2963a7a2fa71cfa1e3ec9eb70b6ba48b4754bb5355c657d5e336cb5"
+    },
+    {
+      "path": "/arencia-pilot.css",
+      "sha256": "bea05e125e9ac3906d4ca5c63074d8f8848553b2cbe220480935ac6b11d8520a"
+    }
+  ],
+  "unrelatedAssetsUnchanged": true,
+  "unrelatedAssetsHash": "d866a2d955d9fc6c139bb4532191632667ca3be990dec4f95d0339ec77b9a1cb",
+  "backendModulesUnchanged": true,
+  "bindingNamesPreserved": [
+    "DB",
+    "MAIL_WEBHOOK_TOKEN",
+    "MAIL_WEBHOOK_URL",
+    "MEDIA",
+    "SESSION_SECRET",
+    "SETUP_TOKEN",
+    "STORE_LIVE"
+  ],
+  "tests": {
+    "passed": 271,
+    "failed": 0,
+    "github_check_conclusion": "success",
+    "github_check_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42290295306/job/128141653981"
+  },
+  "liveChecks": {
+    "url": "https://trendjo.pages.dev/p/TS0098",
+    "original_title_intro_benefits_steps_faq_restored": true,
+    "gallery_photos": 2,
+    "pilot_layout_classes": 0,
+    "service_card_rows": [
+      "خلال 24 ساعة / لجميع مناطق المملكة",
+      "تفقدي طلبكِ قبل الدفع / عند الاستلام",
+      "منتجات أصلية 100% / تسوّقي بثقة"
+    ],
+    "card_immediately_before_purchase": true,
+    "frontend_cache_revision": "5.2.1"
+  },
+  "phonePreview": {
+    "iframe_width": 390,
+    "iframe_height": 860,
+    "document_width": 375,
+    "document_scroll_width": 375,
+    "horizontal_overflow": false,
+    "physical_iphone_tested": false
+  },
+  "before": {
+    "productDataHash": "02ce24a15046b0d48a97a93cc9c1038a3a56851cd96aff13faa56bc68b87d680",
+    "videoMetadataHash": "210cd638b2e4bbbb99eb34ff06044a33dfaa7f2c56d7c88282a91a80e64b5802",
+    "productRows": 321,
+    "activeProducts": 302,
+    "stock": 7207,
+    "orders": 14,
+    "orderItems": 81,
+    "videoRows": 2,
+    "settings": [
+      {
+        "id": "storefront",
+        "revision": 5,
+        "reviewSubmissionsEnabled": 0
+      }
+    ],
+    "arencia": {
+      "id": "TS0098",
+      "price_fils": 11000,
+      "reference_price_fils": 13950,
+      "stock": 24,
+      "active": 1,
+      "approved": 1,
+      "image_url": "/images/catalog/TS0098-ca6be2972b93.jpg"
+    }
+  },
+  "after": {
+    "productDataHash": "02ce24a15046b0d48a97a93cc9c1038a3a56851cd96aff13faa56bc68b87d680",
+    "videoMetadataHash": "210cd638b2e4bbbb99eb34ff06044a33dfaa7f2c56d7c88282a91a80e64b5802",
+    "productRows": 321,
+    "activeProducts": 302,
+    "stock": 7207,
+    "orders": 14,
+    "orderItems": 81,
+    "videoRows": 2,
+    "settings": [
+      {
+        "id": "storefront",
+        "revision": 5,
+        "reviewSubmissionsEnabled": 0
+      }
+    ],
+    "arencia": {
+      "id": "TS0098",
+      "price_fils": 11000,
+      "reference_price_fils": 13950,
+      "stock": 24,
+      "active": 1,
+      "approved": 1,
+      "image_url": "/images/catalog/TS0098-ca6be2972b93.jpg"
+    }
+  },
+  "database_changed": false,
+  "production_orders_created": 0,
+  "production_emails_sent": 0,
+  "local_preview_stopped": true
+}
