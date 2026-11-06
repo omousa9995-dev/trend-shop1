@@ -88,13 +88,13 @@ test('The wording migration preserves prices, stock and concurrent owner edits a
  const after=db.prepare('SELECT * FROM products ORDER BY id').all();db.exec(read('db/migrations/0022_customer_copy_v41.sql'));assert.deepEqual(db.prepare('SELECT * FROM products ORDER BY id').all(),after);db.close();
 });
 const galleryBundle=buildSync({stdin:{contents:"export {mountMediaGallery} from './public/media-gallery.js';",resolveDir:new URL('../',import.meta.url).pathname},bundle:true,format:'iife',globalName:'Gallery',write:false,logLevel:'silent'}).outputFiles[0].text;
-test('Photo and portrait video navigation supports touch swipes, silent loops and native seeking controls',()=>{
+test('Photo and portrait video navigation supports touch swipes and silent loops without customer controls',()=>{
  const dom=new JSDOM('<div id="gallery"></div>',{url:'https://trend.test',runScripts:'outside-only',pretendToBeVisual:true}),w=dom.window,d=w.document;let plays=0;
- w.HTMLMediaElement.prototype.play=async()=>{plays++};w.HTMLMediaElement.prototype.pause=()=>{};w.eval(galleryBundle);
+ w.HTMLMediaElement.prototype.play=async()=>{plays++};w.HTMLMediaElement.prototype.pause=()=>{};w.HTMLMediaElement.prototype.load=()=>{};w.eval(galleryBundle);
  const controller=w.Gallery.mountMediaGallery(d.querySelector('#gallery'),{photos:[{url:'/images/TS0001.svg'}],videos:[{url:'/product-videos/00000000-0000-4000-8000-000000000001',mime:'video/mp4',title:'Care'}],name:'Test'});
  const stage=d.querySelector('.touch-media-stage'),event=(type,x,y)=>{const e=new w.MouseEvent(type,{bubbles:true,clientX:x,clientY:y,button:0});Object.defineProperty(e,'pointerId',{value:1});stage.dispatchEvent(e)};
  event('pointerdown',250,100);event('pointerup',100,103);assert.equal(controller.index,1);
- const video=d.querySelector('video');assert.ok(video.autoplay&&video.loop&&video.controls&&video.muted&&video.playsInline);assert.ok(plays>0);assert.equal(video.width,360);assert.equal(video.height,640);
+ const video=d.querySelector('video');assert.ok(video.autoplay&&video.loop&&!video.controls&&video.muted&&video.playsInline);assert.ok(plays>0);assert.equal(video.width/video.height,9/16);assert.equal(video.disablePictureInPicture,true);
  event('pointerdown',100,100);event('pointerup',250,102);assert.equal(controller.index,0);assert.ok(d.querySelector('img'));
  event('pointerdown',100,100);event('pointerup',105,250);assert.equal(controller.index,0,'vertical scrolling does not advance the gallery');controller.destroy();dom.window.close();
 });

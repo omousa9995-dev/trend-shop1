@@ -9,7 +9,7 @@ export function createProductVideoManager({call,root=document}){
  function render(){
   list.innerHTML=rows.length?rows.map(v=>`<article class="admin-video-card"><div><b>${safe(v.title||'فيديو المنتج')}</b><small>${(v.bytes/1024/1024).toFixed(1)} ميغابايت · ${v.active?'ظاهر للزبونات':'مخفي'}</small></div><video controls playsinline preload="none" src="${safe(v.url)}" aria-label="معاينة فيديو المنتج"></video><button type="button" class="minor" data-toggle-video="${safe(v.id)}">${v.active?'إخفاء الفيديو':'استعادة الفيديو'}</button><button type='button' class='minor' data-remove-video='${safe(v.id)}'>حذف الفيديو</button></article>`).join(''):'<p class="micro">لا توجد فيديوهات لهذا المنتج. لن يظهر قسم الفيديو للزبونة حتى ترفعي فيديو.</p>';
   if(isAquaFreshPilot(productId)){
-   if(!rows.length)list.innerHTML='<p class="micro">عرض الصور والفيديوهات الجديد جاهز. تظهر الصور الآن، ويظهر الفيديو في أول الشريط فور رفعه. يمكنك ترتيب المقاطع واختيار أغلفتها هنا.</p>';
+   if(!rows.length)list.innerHTML='<p class="micro">فيديوهات الأسفل جاهزة. ارفعي حتى ثلاثة مقاطع؛ تظهر صامتة وبالتكرار في إطارات عمودية 9:16. يمكنك ترتيبها واختيار أغلفتها هنا.</p>';
    const cards=list.querySelectorAll('.admin-video-card');
    rows.forEach((v,index)=>{
     const covers=[...new Set(['',selectedProduct?.image_url||selectedProduct?.image,...productCovers,v.poster].filter(value=>typeof value==='string'&&validVideoPoster(value)))];

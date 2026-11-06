@@ -15,7 +15,7 @@ function page(t,{id='TS0098',language='ar'}={}){
  t.after(()=>{root.querySelector('[data-product-videos]')?.aquaFreshRail?.destroy();dom.window.close();setLocale('ar');});
  return {root,product,content:storyContent(product,profile)};
 }
-test('Arencia restores its previous copy, gallery, benefit order and FAQ with only the requested card added',t=>{
+test('Arencia restores its previous copy, gallery, benefit order and FAQ with the approved card and product video slot',t=>{
  const {root,product,content}=page(t);
  assert.equal(root.querySelector('.story-tagline').textContent,content.tagline);
  assert.equal(root.querySelector('.story-lead').textContent,content.description);
@@ -38,7 +38,7 @@ test('The card supports English while retaining the normal quantity quotation',t
  assert.match(root.querySelector('.arencia-service-card').textContent,/100% authentic products/);
  root.querySelector('[name=storyOffer][value="2"]').click();assert.match(root.querySelector('#storyStickyPrice').textContent,/19.99/);
 });
-test('Other products do not receive the Arencia service-card addition',t=>{
- const {root}=page(t,{id:'TS0091'});assert.equal(root.querySelector('.arencia-service-card'),null);
+test('Other products receive the same approved service-card addition',t=>{
+ const {root}=page(t,{id:'TS0091'});assert.equal(root.querySelectorAll('.arencia-service-row').length,3);assert.ok(root.querySelector('[data-featured-video]'));
  assert.equal(root.querySelectorAll('.touch-media-thumbs button').length,2);
 });

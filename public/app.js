@@ -1,12 +1,12 @@
-import {mountFeaturedVideo} from './product-featured-video.js?v=5.3.0';
+import {mountFeaturedVideo} from './product-featured-video.js?v=5.4.0';
 import {createSearchDialog} from './search-dialog.js?v=5.1.0';
 import {applyAppearance,applyHomeLayout,applyProductSections} from './storefront-settings.js?v=5.1.0';
 import {DEFAULT_SITE_SETTINGS,settingsProductCompare,arrangeSections} from './site-settings.js?v=5.1.0';
 import {withPairPricing} from './pair-pricing.js?v=5.0.0';
-import {mountMediaGallery} from './media-gallery.js?v=5.0.0';
+import {mountMediaGallery} from './media-gallery.js?v=5.4.0';
 import {isBundleId,bundleData,bundleProduct,bundleHref,bundleImage,quotePurchase,purchaseCartError,expandPurchaseCart} from './bundles.js?v=5.0.0';
-import {mountProductVideos} from './product-videos.js?v=5.0.0';
-import {hasProductStory,mountProductStory,renderReviewSummary,productStoryOffers,loadProductStory} from './product-story.js?v=5.3.0';
+import {mountProductVideos} from './product-videos.js?v=5.4.0';
+import {hasProductStory,mountProductStory,renderReviewSummary,productStoryOffers,loadProductStory} from './product-story.js?v=5.4.0';
 import {isKoreanCare,KOREAN_CARE_HREF} from './korean-care.js?v=3.1.0';
 import {mountReviews} from './reviews.js?v=5.1.0';
 import {locale,tx,setLocale,formatMoney as money,localizedDetails,localizedDescription,fieldMessage,translateText,startTranslator} from './i18n.js?v=5.1.0';

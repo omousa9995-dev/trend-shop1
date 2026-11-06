@@ -1,23 +1,13 @@
-import {locale,tx} from './i18n.js?v=5.1.0';
-import {mountMediaGallery,validProductVideo} from './media-gallery.js?v=5.0.0';
-const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+import {locale} from './i18n.js?v=5.1.0';
+import {validProductVideo} from './media-gallery.js?v=5.4.0';
+import {createAquaFreshRail} from './aqua-fresh-pilot.js?v=5.4.0';
 export async function mountProductVideos(region,{productId,fetcher=fetch}={}){
  if(!region)return;
- const pilot=region.aquaFreshRail;
- if(!pilot){region.hidden=true;region.replaceChildren();}const language=locale();
+ const token=Symbol('video-request'),language=locale();region.productVideoRequest=token;
  try{
   const response=await fetcher('/api/product-videos?product='+encodeURIComponent(productId),{cache:'no-store'});if(!response.ok)return;
-  const data=await response.json();if(!region.isConnected||locale()!==language)return;
-  const videos=(data.videos||[]).filter(v=>validProductVideo(v)&&(!v.productId||v.productId===productId)).slice(0,3).map(v=>({...v,title:language==='en'?v.titleEn||v.title:v.title}));
-  if(pilot){
-   const ownVideos=videos.filter(v=>v.productId===productId);
-   const gallery=[...region.ownerDocument.querySelectorAll('[data-gallery-product]')].find(el=>el.dataset.galleryProduct===productId);
-   gallery?.mediaGallery?.setVideos(ownVideos);pilot.setVideos(ownVideos);return;
-  }
-  if(!videos.length)return;
-  const gallery=[...region.ownerDocument.querySelectorAll('[data-gallery-product]')].find(el=>el.dataset.galleryProduct===productId);
-  gallery?.mediaGallery?.setVideos(videos);
-  region.innerHTML=`<div class="story-section-title"><span class="story-eyebrow">A MOMENT FOR YOU</span><h2>${tx('شاهدي لحظة العناية','See the care moment')}</h2><p>${tx('خذي وقتكِ واكتشفي التفاصيل. اسحبي للتنقل بين الصور والفيديوهات.','Take your time with the details. Swipe between photos and videos.')}</p></div><div class="product-video-gallery"></div>`;
-  region.hidden=false;mountMediaGallery(region.querySelector('.product-video-gallery'),{photos:gallery?.mediaGallery?.photos||[],videos,productId,name:gallery?.querySelector('img')?.alt||'',startWithVideo:true});
- }catch{/* Optional media must never block product information or checkout. */}
+  const data=await response.json();if(!region.isConnected||region.productVideoRequest!==token||locale()!==language)return;
+  const videos=(data.videos||[]).filter(v=>validProductVideo(v)&&v.productId===productId).slice(0,3).map(v=>({...v,title:language==='en'?v.titleEn||v.title:v.title}));
+  const rail=region.aquaFreshRail||createAquaFreshRail(region,{product:{id:productId,name:''}});rail?.setVideos(videos);
+ }catch{/* Optional media never blocks product information or checkout. */}
 }

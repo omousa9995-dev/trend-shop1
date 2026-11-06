@@ -47,13 +47,13 @@ test('Simultaneous initial and replacement uploads leave one video with no orpha
  const id=f.sql.prepare('SELECT id FROM product_featured_videos').get().id;
  const next=await Promise.all([upload(f,{replaceId:id}),upload(f,{replaceId:id})]);assert.deepEqual(next.map(r=>r.status).sort(),[201,409]);assert.equal(f.values.size,1);assert.equal(f.sql.prepare('SELECT COUNT(*) n FROM product_featured_videos').get().n,1);
 });
-test('The upper upload enforces authentication, same origin, Arencia scope and file validation',async t=>{
+test('The upper upload enforces authentication, same origin, valid product scope and file validation',async t=>{
  const f=fixture(t);
  assert.equal((await upload(f,{authenticated:false})).status,401);assert.equal((await upload(f,{origin:'https://evil.test'})).status,403);
- assert.equal((await upload(f,{product:'TS0079'})).status,400);assert.equal((await upload(f,{bytes:Buffer.from('<html>executable payload</html>')})).status,415);
+ assert.equal((await upload(f,{product:'TS0023'})).status,400);assert.equal((await upload(f,{bytes:Buffer.from('<html>executable payload</html>')})).status,415);
  const tooLarge=new Request('https://trend.test/api/admin/product-feature-video',{method:'POST',headers:{origin:'https://trend.test','x-trend-admin':'1',cookie:'ts_admin='+await _test.makeSession(f.env),'content-type':'multipart/form-data; boundary=x'},body:new Uint8Array(20*1024*1024+65537)});
  assert.equal((await worker.fetch(tooLarge,f.env,{})).status,413);assert.equal(f.values.size,0);
- assert.equal((await api(f,'/api/admin/product-feature-video?product=TS0098')).status,401);assert.equal((await api(f,'/api/product-feature-video?product=TS0079')).status,404);
+ assert.equal((await api(f,'/api/admin/product-feature-video?product=TS0098')).status,401);assert.equal((await api(f,'/api/product-feature-video?product=TS0023')).status,404);
 });
 test('Upper playback supports range and HEAD and follows product visibility without exposing lower video IDs',async t=>{
  const f=fixture(t),v=(await(await upload(f)).json()).video;
@@ -79,8 +79,8 @@ test('Arencia removes its bundle card, adds an independent upper slot and cart b
  const video=upper.querySelector('video');assert.ok(video);assert.equal(video.width/video.height,9/16);assert.equal(video.muted,true);assert.equal(video.loop,true);assert.equal(video.autoplay,true);assert.equal(video.playsInline,true);assert.equal(video.controls,false);assert.equal(video.tabIndex,-1);assert.equal(video.disablePictureInPicture,true);assert.equal(upper.querySelectorAll('button,a,input').length,0);
  await mountProductVideos(lower,{productId:'TS0098',fetcher:async()=>Response.json({videos:[]})});assert.equal(upper.querySelector('video'),video);assert.equal(lower.hidden,false);
 });
-test('Other product bundles and lower videos are retained; empty or untrusted upper video results stay invisible',async t=>{
- const {root}=page(t,'TS0079');assert.ok(root.querySelector('.product-bundles'));assert.equal(root.querySelector('[data-featured-video]'),null);assert.equal(root.querySelector('.arencia-extra-add'),null);
+test('Other products receive the same layout; empty or untrusted upper video results stay invisible',async t=>{
+ const {root}=page(t,'TS0079');assert.equal(root.querySelector('.product-bundles'),null);assert.ok(root.querySelector('[data-featured-video]'));assert.ok(root.querySelector('.arencia-extra-add'));
  const region=root.ownerDocument.createElement('div');root.append(region);
  for(const video of [null,{...clip,url:'https://evil.test/video.mp4'},{...clip,productId:'TS0079'}]){await mountFeaturedVideo(region,{productId:'TS0098',fetcher:async()=>Response.json({video})});assert.equal(region.hidden,true);assert.equal(region.querySelector('video'),null);}
 });
@@ -88,11 +88,11 @@ test('Leaving a product cancels a pending upper-video response before it can mou
  const {root}=page(t),region=root.querySelector('[data-featured-video]');let finish;
  const mounted=mountFeaturedVideo(region,{productId:'TS0098',fetcher:()=>new Promise(resolve=>{finish=resolve;})});region.featuredVideo.destroy();finish(Response.json({video:clip}));await mounted;assert.equal(region.querySelector('video'),null);assert.equal(region.hidden,true);
 });
-test('The admin has two distinct upload areas; the upper area is shown only for Arencia and preserves stale-selection safety',async t=>{
+test('The admin has two distinct upload areas; the upper area follows the selected saved product and preserves stale-selection safety',async t=>{
  const dom=new JSDOM(read('public/admin.html'),{url:'https://trend.test/admin.html'}),w=dom.window;w.HTMLMediaElement.prototype.pause=()=>{};t.after(()=>w.close());const root=w.document,panel=root.querySelector('#productFeaturedVideoPanel'),lower=root.querySelector('#productVideoPanel');
  assert.match(panel.textContent,/فيديو واحد فقط/);assert.match(panel.textContent,/9:16/);assert.match(lower.textContent,/حتى 3 فيديوهات/);assert.equal(panel.querySelector('input[type=file]').multiple,false);
  let finish;const manager=createFeaturedVideoManager({root,call:()=>new Promise(resolve=>{finish=resolve;})});const pending=manager.select({id:'TS0098'});assert.equal(panel.hidden,false);assert.equal(panel.querySelector('[data-featured-upload]').disabled,true);
- await manager.select({id:'TS0079'});finish({video:clip});await pending;assert.equal(panel.hidden,true);assert.equal(panel.querySelector('video'),null);assert.equal(lower.hidden,false);
+ await manager.select(null);finish({video:clip});await pending;assert.equal(panel.hidden,true);assert.equal(panel.querySelector('video'),null);assert.equal(lower.hidden,false);
 });
 test('Admin upload progress, replacement and cancel use the separate single-video endpoint',async t=>{
  const dom=new JSDOM(read('public/admin.html'),{url:'https://trend.test/admin.html'}),w=dom.window;w.HTMLMediaElement.prototype.pause=()=>{};t.after(()=>w.close());const root=w.document,panel=root.querySelector('#productFeaturedVideoPanel'),input=panel.querySelector('[data-featured-file]'),button=panel.querySelector('[data-featured-upload]'),requests=[];

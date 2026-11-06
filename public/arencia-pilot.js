@@ -7,9 +7,8 @@ const icons=[
  icon('<path d="M16 3 28 8v8c0 7-6 11-12 14C10 27 4 23 4 16V8z"/><path d="m10 16 4 4 8-9"/>')
 ];
 
-// The customer's screenshot is the only addition to the pre-pilot Arencia page.
+// Owner-approved service card, shared by product and bundle pages.
 export function mountArenciaServiceCard(root,{product}={}){
- if(product?.id!=='TS0098')return null;
  const purchase=root.querySelector('.story-purchase');
  if(!purchase)return null;
  const existing=root.querySelector('.arencia-service-card');if(existing)return existing;
