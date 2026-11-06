@@ -1,10 +1,15 @@
-/* Screenshot service card only; no changes to the original product layout. */
+/* Arencia service card and the independent upper product video. */
 .arencia-service-card{border:1px solid #e1ded7;border-radius:18px;background:#f8f5ef;margin:17px 0;overflow:hidden;color:#4b5147}
 .arencia-service-row{display:grid;grid-template-columns:32px minmax(0,1fr) auto;align-items:center;gap:12px;padding:17px 20px;min-width:0}
 .arencia-service-row+.arencia-service-row{border-top:1px solid #e1ded7}
 .arencia-service-row svg{display:block;width:30px;height:32px;color:#785b6b}
 .arencia-service-row strong{font-size:14px;line-height:1.7;font-weight:700;min-width:0}
 .arencia-service-row>span{font-size:12px;line-height:1.7;color:#7b7c72;text-align:end}
+.arencia-feature-video{width:min(100%,360px);aspect-ratio:9/16;margin:20px auto;overflow:hidden;border-radius:16px;background:#f8f5ef;position:relative;isolation:isolate}
+.arencia-feature-video[hidden]{display:none}
+.arencia-feature-video video{display:block;width:100%;height:100%;aspect-ratio:9/16;object-fit:contain;pointer-events:none;user-select:none}
+.arencia-extra-add{display:block;width:100%;margin:20px 0 12px;min-height:48px;background:var(--story-accent,#4f6548);color:#fff;border-radius:999px}
+.arencia-extra-add.is-added{background:#f8e8ef;color:#9a4f70}
 @media(max-width:760px){
  .arencia-service-card{border-radius:15px;margin:15px 0}
  .arencia-service-row{grid-template-columns:27px minmax(0,1fr) auto;gap:9px;padding:13px 12px}

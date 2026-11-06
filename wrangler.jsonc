@@ -13,6 +13,7 @@
       "/media/*",
       "/review-media/*",
       "/product-videos/*",
+      "/product-feature-videos/*",
       "/images/catalog/*"
     ]
   },
