@@ -1,13 +1,12 @@
 {
-  "version": "5.0.0",
+  "version": "5.1.0",
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
-  "deployed_at": "2026-11-05T14:02:15.901112Z",
-  "worker_version_id": "1d6754aa-61d0-4479-a25c-9c54267fbe99",
-  "worker_deployment_id": "3790c2ed-21d2-4083-aa8b-58f59feaa3e3",
-  "implementation_commit": "b05784ed05bfd5eab2280827f08a50bf5099545f",
-  "source_tree": "2e623f86a2302007fd09fd8d12c6e4f81e9e027c",
-  "package_sha256": "a19abf9c6c118b58c0a4e9530e5865a16b19710780d02fc8ec21472465fac230",
+  "deployed_at": "2026-11-06T17:21:53.729244Z",
+  "worker_version_id": "027bd4cb-993d-4a30-a458-2b8067736135",
+  "worker_deployment_id": "d66add48-231b-4fab-9fba-7d76c75f0256",
+  "implementation_commit": "f96bb0cb3609186085601a09e7dd010a0b6ec423",
+  "source_tree": "30dba962048d4bd04d75c525ece56894775f39cc",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
@@ -22,17 +21,15 @@
   "maximum_price_fils": 17990,
   "total_stock_at_verification": 7207,
   "new_promotional_scenes": 0,
-  "new_image_files": 0,
-  "automated_tests_passed": 255,
-  "database_changed_in_release": true,
-  "database_migrations": [
-    "0025_storefront_controls.sql"
-  ],
+  "new_image_files": 2,
+  "automated_tests_passed": 268,
+  "database_changed_in_release": false,
+  "database_migrations": [],
   "stock_reset_on_release": false,
   "physical_iphone_tested": false,
   "production_orders_created_during_release": 0,
   "production_test_emails_sent_during_release": 0,
-  "frontend_cache_revision": "5.0.0",
+  "frontend_cache_revision": "5.1.0",
   "video_upload": {
     "direct": true,
     "max_bytes": 20971520,
@@ -50,11 +47,11 @@
     "existing_owner_uploads": 2
   },
   "previous_version_backup": {
-    "sourceBranch": "backup/v4.2-before-global-experience-v5-2026-11-05",
-    "sourceCommit": "bc70add79a5c973c10c4d61d052e5ef7b2f40a7c",
-    "workerVersion": "0ba94bbd-d341-40f3-8090-be5cb9ac1292"
+    "sourceBranch": "backup/v5-before-mobile-v51-2026-11-06",
+    "sourceCommit": "1df913666c8de6d1f965732104a5763f41979c9f",
+    "workerVersion": "1d6754aa-61d0-4479-a25c-9c54267fbe99"
   },
-  "verification_file": "docs/global-experience-v5-verification.json",
+  "verification_file": "docs/mobile-experience-v51-verification.json",
   "bilingual_email_activation": "Previously prepared Google Apps Script activation remains a separate pending step; bridge and secrets unchanged.",
   "historical_record_v1_8_1": {
     "worker_name": "trend-shop-jo",
@@ -189,10 +186,9 @@
     "physical_iphone_tested": false,
     "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/40329018501"
   },
-  "package_hash_format": "SHA-256 of deployment-private/modules.json",
   "customer_copy_products": 302,
   "mobile_viewport_tested": true,
-  "isolated_preview_disabled_after_qa": true,
+  "isolated_preview_disabled_after_qa": false,
   "previous_release_v4_2": {
     "version": "4.2.0",
     "deployed_at": "2026-11-05T12:52:50.850647Z",
@@ -201,10 +197,10 @@
     "implementation_commit": "f9599ba1e6c7119ace0b90364b2bc8e4f03259e6",
     "package_sha256": "bec8c6cbe04bfb82f01f6c41fe04693f3e5f35de4410a8e09f527762b44a2305"
   },
-  "new_story_profile_files": 202,
+  "new_story_profile_files": 0,
   "global_product_experience": true,
   "owner_site_settings": true,
-  "owner_settings_revision": 1,
+  "owner_settings_revision": 5,
   "automatic_pair_prices": true,
   "pair_pricing_round_up_fraction": 0.6,
   "pair_pricing_retail_ending": ".99",
@@ -212,5 +208,22 @@
   "commercial_fields_unchanged": true,
   "uploaded_videos_unchanged": true,
   "product_videos_at_verification": 2,
-  "temporary_synthetic_database_removed": true
+  "temporary_synthetic_database_removed": true,
+  "previous_release_v5": {
+    "version": "5.0.0",
+    "deployed_at": "2026-11-05T14:02:15.901112Z",
+    "worker_version_id": "1d6754aa-61d0-4479-a25c-9c54267fbe99",
+    "worker_deployment_id": "3790c2ed-21d2-4083-aa8b-58f59feaa3e3",
+    "implementation_commit": "b05784ed05bfd5eab2280827f08a50bf5099545f",
+    "source_tree": "2e623f86a2302007fd09fd8d12c6e4f81e9e027c",
+    "package_sha256": "a19abf9c6c118b58c0a4e9530e5865a16b19710780d02fc8ec21472465fac230",
+    "verification_file": "docs/global-experience-v5-verification.json"
+  },
+  "new_category_images": 2,
+  "review_submissions_enabled": false,
+  "mobile_search_dialog": true,
+  "editable_checkout_summary": true,
+  "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42260863201",
+  "live_verified_at": "2026-11-06T17:31:36.283Z",
+  "isolated_preview_status": "Read-only review Worker remains available without production database or mail bindings."
 }

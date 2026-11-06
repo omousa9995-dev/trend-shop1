@@ -1,0 +1,113 @@
+{
+  "version": "5.1.0",
+  "date": "2026-11-06",
+  "site": "https://trendjo.pages.dev/",
+  "admin": "https://trendjo.pages.dev/admin.html",
+  "implementationCommit": "f96bb0cb3609186085601a09e7dd010a0b6ec423",
+  "sourceTree": "30dba962048d4bd04d75c525ece56894775f39cc",
+  "workerVersion": "027bd4cb-993d-4a30-a458-2b8067736135",
+  "workerDeployment": "d66add48-231b-4fab-9fba-7d76c75f0256",
+  "deployedAt": "2026-11-06T17:21:53.729244Z",
+  "verifiedAt": "2026-11-06T17:31:36.283Z",
+  "deployment": {
+    "trafficPercentage": 100,
+    "source": "Cloudflare Workers deployments API",
+    "pagesProject": "trendjo",
+    "pagesServiceBinding": "STORE -> trend-shop-jo"
+  },
+  "automatedTests": {
+    "passed": 268,
+    "failed": 0,
+    "ciRunId": 42260863201,
+    "ciUrl": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42260863201",
+    "ciConclusion": "success",
+    "integrationTestJobConclusion": "success",
+    "countSource": "docs/mobile-experience-v51.md; existing release checks, unchanged implementation"
+  },
+  "browser": {
+    "liveStorefront": true,
+    "liveAssetRevision": "5.1.0",
+    "searchQuery": "تونر",
+    "searchResultOpened": "TS0091",
+    "searchImagesAndPrices": true,
+    "quickCheckout": true,
+    "quantityPrices": [
+      {
+        "quantity": 1,
+        "subtotalFils": 9500,
+        "shippingFils": 1000,
+        "totalFils": 10500
+      },
+      {
+        "quantity": 2,
+        "subtotalFils": 16990,
+        "shippingFils": 1000,
+        "totalFils": 17990
+      },
+      {
+        "quantity": 3,
+        "subtotalFils": 26490,
+        "shippingFils": 0,
+        "totalFils": 26490
+      }
+    ],
+    "removeLastProduct": true,
+    "emptyCheckoutConfirmDisabled": true,
+    "addReplacementFromCheckout": "TS0105",
+    "replacementSubtotalFils": 5990,
+    "replacementTotalFils": 6990,
+    "nameAndAddressPreserved": true,
+    "testValuesCleared": true,
+    "testCartEmptied": true,
+    "checkoutConsentSentenceAbsent": true,
+    "customerReviewEntryHidden": true,
+    "koreanGatewayImageLoaded": true,
+    "editRemovedFromObservedHeadings": true,
+    "storefrontLogoUpdated": true,
+    "adminLoginPageReachable": true,
+    "physicalIPhoneTested": false,
+    "previousPreviewViewportChecks": {
+      "source": "docs/mobile-experience-v51.md",
+      "widthPx": 390,
+      "heightPx": [
+        860,
+        420
+      ],
+      "horizontalOverflow": false
+    }
+  },
+  "data": {
+    "snapshotAt": "2026-11-06T17:31:36.283Z",
+    "productRows": 321,
+    "activeProducts": 302,
+    "stock": 7207,
+    "orders": 14,
+    "orderItems": 81,
+    "productVideos": 2,
+    "siteSettingsRevision": 5,
+    "reviewSubmissionsEnabled": false,
+    "foreignKeyErrors": []
+  },
+  "continuation": {
+    "databaseWrites": 0,
+    "productionOrdersCreated": 0,
+    "productionTestEmailsSent": 0,
+    "productionSignInPerformed": false,
+    "productionAuthenticationChanged": false
+  },
+  "backup": {
+    "branch": "backup/v5-before-mobile-v51-2026-11-06",
+    "commit": "1df913666c8de6d1f965732104a5763f41979c9f",
+    "workerVersion": "1d6754aa-61d0-4479-a25c-9c54267fbe99"
+  },
+  "reviewPreview": {
+    "url": "https://trend-shop-review.trend-shop-jo.workers.dev/__qa/phone",
+    "status": "still deployed; read-only release preview per preparation record",
+    "deleted": false
+  },
+  "limitations": [
+    "No physical iPhone was available; the previous mobile checks used a browser iframe.",
+    "The live order-confirmation button was not submitted; checkout submission coverage comes from the passing automated integration tests.",
+    "Production admin settings were inspected through source and read-only database state; no production sign-in or settings save was performed."
+  ]
+}
