@@ -1,0 +1,69 @@
+{
+  "version": "5.6.1",
+  "verified_at": "2026-11-07T19:09:01.540Z",
+  "implementation_commit": "1d3fbbeb283306f3fca3ee8795dcd2a9d3bb419f",
+  "deployment": {
+    "id": "e956c933-084f-4287-a66b-0bd6fd803af4",
+    "source": "api",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/message": "Automatic deployment on upload.",
+      "workers/triggered_by": "upload"
+    },
+    "versions": [
+      {
+        "version_id": "aaef63c7-9bee-4e52-acd4-d1333c1243ec",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-11-07T19:07:17.825215Z"
+  },
+  "assets": [
+    {
+      "path": "/admin.html",
+      "sha256": "47269757a246f1cbb69b50c74cf9913e056cae590085f79547ddd5fd9cf9d2fb"
+    },
+    {
+      "path": "/admin.js",
+      "sha256": "f6925811fb146f3b194ecc66d0a7b25d6d9ec787822ea73e58fceae0da76220e"
+    },
+    {
+      "path": "/admin-hub.css",
+      "sha256": "621ae9dfdf3ce0fc837d38da9d71dd48afff8ce820298d1362234a67527be881"
+    }
+  ],
+  "server_modules_unchanged": true,
+  "production_database_writes": 0,
+  "order_item_and_stock_counts_preserved": true,
+  "bindings_preserved": true,
+  "tests": {
+    "passed": 299,
+    "failed": 0
+  },
+  "invoice_behavior": {
+    "batch_print_invocations": 1,
+    "only_selected_orders": true,
+    "existing_daily_print_handler_unchanged": true,
+    "individual_printing_unchanged": true,
+    "refresh_preserves_current_selection": true,
+    "filter_change_clears_selection_with_hint": true,
+    "late_responses_and_failures_cannot_print_stale_selection": true
+  },
+  "browser": {
+    "preview_orders": "three synthetic demo orders; no customer data",
+    "preview_frame_widths": [
+      390
+    ],
+    "horizontal_overflow": false,
+    "mobile_print_button_height": 52,
+    "selected_count_verified": 2,
+    "published_admin_asset_version": "5.6.1",
+    "production_test_orders": 0,
+    "physical_printer_used": false
+  },
+  "rollback": {
+    "previous_source_commit": "0052572c458eabaf5ff395bfa9c1db808529acbe",
+    "previous_worker_version": "6ecd2139-d6f3-4f8c-897f-c3fe4ebd4df4",
+    "keep_current_database_and_media": true
+  }
+}
