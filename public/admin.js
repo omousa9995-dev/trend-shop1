@@ -1,3 +1,4 @@
+import {createCustomerReportManager} from './customer-report-admin.js?v=5.7.0';
 import {createFeaturedVideoManager} from './product-featured-video-admin.js?v=5.4.0';
 import {pairPriceFils} from './pair-pricing.js?v=5.0.0';
 import {createSiteSettingsManager} from './site-settings-admin.js?v=5.6.0';
@@ -10,6 +11,7 @@ import {money,retailPrice,actualDiscount} from './commerce.js?v=5.0.0';
 import {createPromotionManager} from './promotions-admin.js?v=3.1.0';
 import {invoice} from './invoice.js?v=4.1.0';
 (()=>{'use strict';const $=(s,r=document)=>r.querySelector(s),safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const jordanDate=s=>{try{return new Date(String(s).replace(' ','T')+'Z').toLocaleString('ar-JO',{timeZone:'Asia/Amman',dateStyle:'medium',timeStyle:'short'})}catch{return s}};const state={products:[],orders:[],filter:'all',ordersLoading:false,invoiceSelection:new Set(),logged:false,live:false};let currentProductDetails={},currentProductImage='',productSaving=false;let orderLoadSequence=0;const cats=['البشرة','المكياج','الشعر','الجسم','العطور','الأدوات'];
+const customerReportManager=createCustomerReportManager({call});
 const reviewManager=createReviewManager({call});
 const siteManager=createSiteSettingsManager({call,getProducts:()=>state.products});
 const videoManager=createProductVideoManager({call});
@@ -20,7 +22,8 @@ async function start(){try{const j=await call('me');state.logged=true;state.live
 function show(){$('#loginView').hidden=true;$('#dashboardView').hidden=false;$('#liveStatus').textContent=state.live?'المتجر يستقبل طلبات':'مرحلة الإعداد — الطلبات غير مفعّلة';$('#liveStatus').classList.toggle('live',state.live)}
 $('#loginForm').onsubmit=async e=>{e.preventDefault();const pass=$('#password').value;$('#loginError').textContent='';try{const r=await fetch('/api/admin/login',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({password:pass})});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'تعذر الدخول');$('#password').value='';await start()}catch(e){$('#loginError').textContent=e.message}};
 $('#logoutBtn').onclick=async()=>{await call('logout','POST').catch(()=>{});location.reload()};
-function activeTab(tab){for(const name of ['overview','orders','products','promotions','reviews','site']){const button=$('#'+name+'Tab');button.classList.toggle('active',tab===name);if(tab===name)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');$('#'+name+'Section').hidden=tab!==name}}
+function activeTab(tab){customerReportManager.setActive(tab==='customers');for(const name of ['overview','orders','products','promotions','reviews','site','customers']){const button=$('#'+name+'Tab');button.classList.toggle('active',tab===name);if(tab===name)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');$('#'+name+'Section').hidden=tab!==name}}
+$('#customersTab').onclick=()=>activeTab('customers');
 $('#overviewTab').onclick=()=>activeTab('overview');
 document.querySelectorAll('[data-admin-go]').forEach(button=>button.onclick=async()=>{const tab=button.dataset.adminGo;activeTab(tab);if(tab==='site'){await siteManager.load();siteManager.focus(button.dataset.siteFocus||'identity')}if(tab==='reviews')reviewManager.load()});
 document.querySelector('[data-owner-new]').onclick=()=>{activeTab('products');openEditor(null)};
