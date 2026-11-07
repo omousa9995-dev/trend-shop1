@@ -12,9 +12,16 @@
 .product-size{display:block;font-size:11px;color:#655c59;margin:0 0 6px}
 .product-saving{display:block;color:#6b4556;font-size:12px;font-weight:700;line-height:1.7;margin:3px 0 9px}
 .brand-tile:focus-visible,.discovery-active a:focus-visible{outline:3px solid #76516a;outline-offset:3px}
-.category-korean .cat-art{aspect-ratio:3/2;align-self:center;height:auto}
-.category-korean .cat-art .lifestyle{object-fit:contain;object-position:center}
+.cat-grid-with-korean{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cat-grid-with-korean>.category-korean{grid-column:1/-1;margin-top:2px}
+.category-korean .cat-art{grid-row:1;aspect-ratio:3/2;align-self:center;height:auto;min-width:0}
+.category-korean .cat-art .lifestyle{height:auto;aspect-ratio:3/2;object-fit:contain;object-position:center}
+.category-korean .korean-card-copy{grid-column:2;grid-row:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;align-self:center;padding:24px;min-width:0}
+.category-korean .korean-card-copy .category-kicker{align-self:auto}
+.category-korean .korean-card-cta{display:inline-flex;align-items:center;min-height:44px;margin-top:22px;padding:10px 20px;border:1px solid #adbd9f;border-radius:999px;font-size:13px;font-weight:600;color:#405338;background:#f3f5eb}
+.korean-universe-hero>img{aspect-ratio:1672/941;height:auto;max-height:none;object-fit:contain;align-self:center}
+@media(max-width:760px){.cat-grid-with-korean{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:900px){.brand-rail{display:flex;overflow-x:auto;gap:10px;padding:2px 2px 12px;scroll-snap-type:x proximity}.brand-tile{flex:0 0 118px;scroll-snap-align:start}}
-@media(max-width:600px){.brand-discovery h3{font-size:19px}.brand-tile{flex-basis:105px;min-height:128px}.product-purpose{font-size:12px!important;min-height:3.6em}.product-saving{font-size:11px}.product-size{font-size:11px}.category-korean{grid-template-columns:1fr;gap:0;padding:14px}.category-korean .cat-art{grid-column:1;grid-row:auto;width:100%}.category-korean .category-kicker,.category-korean h3,.category-korean p{grid-column:1}.category-korean .category-kicker{margin-top:14px}.category-korean h3{margin:7px 0}}
+@media(max-width:600px){.brand-discovery h3{font-size:19px}.brand-tile{flex-basis:105px;min-height:128px}.product-purpose{font-size:12px!important;min-height:3.6em}.product-saving{font-size:11px}.product-size{font-size:11px}.category-korean{grid-template-columns:1fr;gap:0;padding:14px}.category-korean .cat-art{grid-column:1;grid-row:auto;width:100%}.category-korean .category-kicker,.category-korean h3,.category-korean p{grid-column:1}.category-korean .category-kicker{margin-top:14px}.category-korean h3{margin:7px 0}.category-korean .korean-card-copy{grid-column:1;grid-row:auto;padding:0}.category-korean .korean-card-cta{margin-top:14px}}
 @media(prefers-reduced-motion:reduce){.brand-tile{transition:none}}
 @media(max-width:360px){.shop-results .filter-head{align-items:stretch;flex-wrap:wrap;gap:8px}.shop-results .filter-head>p{flex-basis:100%;margin:0}.shop-results .sort-row{width:100%;min-width:0;display:flex}.shop-results #sortSelect{flex:1;min-width:0;max-width:100%}.shop-results .mobile-filter{flex:0 0 auto}}

@@ -1,0 +1,37 @@
+{
+  "version": "5.5.2",
+  "mode": "built-in image editing / reference photo compositing",
+  "product_reference_images": [
+    "public/images/catalog/TS0079-a9ee4ad7e0be.jpg",
+    "public/images/catalog/TS0091-f84e3c1c3bc1.png",
+    "public/images/catalog/TS0098-ca6be2972b93.jpg"
+  ],
+  "brands": [
+    "COSRX",
+    "Anua",
+    "Arencia"
+  ],
+  "assets": [
+    {
+      "role": "home category card",
+      "path": "public/images/editorial/korean-care-brands-card-v552.webp",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bb4e4e6178ba751a4fae61ca324cfa3c661b32c373c8a1d200f10079f5936b39",
+      "prompt": "Use case: compositing\nAsset type: finished homepage Korean care card artwork for Trend Shop, landscape exact 3:2, 1536x1024.\nPrimary request: upgrade the provided editorial card into a more captivating premium Korean skincare campaign image. Use the existing adult woman and soft sage, cream and dusty blush atmosphere, but REPLACE ALL anonymous/unbranded containers with the THREE actual photographed products in the supporting images. Keep the products faithful to the photographs: COSRX Advanced Snail 96 Mucin Power Essence clear tall black pump bottle with yellow/black label; Anua Heartleaf 77% Soothing Toner translucent white screw cap bottle with its authentic Anua / 77% black typography; Arencia Fresh Green Rice Mochi Cleanser open pale-green jar containing textured green cleanser with its authentic Arencia label. Preserve reference package silhouettes, proportions, colours and correct visible brand labels. These are recognizable actual products, not invented lookalike packaging. Include each exactly once. Do not invent any additional packs.\nInput images: Image 1 is the edit target/style and adult woman reference. Images 2, 3 and 4 are supporting REAL PRODUCT PHOTOGRAPHS to composite faithfully in place of the generic containers.\nComposition: polished editorial portrait of the adult woman at the left, welcoming natural smile, clear natural skin texture; a carefully lit sculptural ivory product podium with all three reference products large and clearly visible at the bottom/right, no product cropping, no floating containers. Keep a clean uncluttered upper-right area for a short, LARGE readable Arabic headline. Feminine and refined rather than clinical. Subtle pearly planets, elegant thin orbit lines and a few blush cherry blossoms connect to the established K-beauty universe, restrained sparkle, premium photography, warm natural side lighting and realistic product shadows.\nText (verbatim): \"عنايتكِ الكورية\" on the first line and \"تبدأ هنا\" on the second line. One short headline only, beautiful bold simple readable Arabic lettering in dark forest green, large enough to read when the full 3:2 artwork is shown 340px wide. Correct right-to-left joined Arabic. No other marketing text, no prices, no discount badges, no medical or before/after claims. Existing product label text stays intact. Do not add a new shop logo or watermark.\nConstraints: exact 3:2 horizontal; adult woman retained; no generic containers anywhere; all three supplied authentic branded packs represented accurately; comfortable 7% safe margin around headline, face and product group; no text on the woman's face or on products."
+    },
+    {
+      "role": "Korean collection cover",
+      "path": "public/images/editorial/korean-care-brands-cover-v552.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "6def99c6cf9f841450725e258059cfaeecbdeacda0b2d642e0ef52098f9602e7",
+      "prompt": "Use case: compositing\nAsset type: finished Korean care collection cover for Trend Shop, exact 16:9 horizontal, 1536x864.\nPrimary request: replace the generic floating cosmetic containers in the old collection banner with a premium, more attractive editorial campaign featuring the THREE REAL branded skincare packages from the product photographs. Match the new woman's campaign card. This is a coordinated collection cover, newly composed for wide proportions.\nInput images: Image 1 (old planetary banner) is the edit target whose anonymous containers must disappear. Image 2 (new woman card) is the visual reference for the adult woman, original product grouping, creamy ivory / soft sage / blush brand atmosphere and typography style. Images 3, 4 and 5 are supporting REAL PRODUCT PHOTOGRAPHS. Preserve their authentic package silhouettes, label designs and colours faithfully: COSRX Advanced Snail 96 Mucin Power Essence black-pump clear bottle with the yellow and black COSRX label; Anua Heartleaf 77% Soothing Toner translucent white cap bottle with its correct Anua / 77% label; Arencia Fresh Green Rice Mochi Cleanser open pale green jar with real textured green cleanser and correct Arencia label. Each product appears exactly once and is prominently recognizable. Use real packaging from these references rather than any generic or invented packs.\nComposition: calm smiling adult Korean woman on the far left, naturally radiant skin and ivory blouse, waist/shoulder portrait, no chopped-off head. The three actual product packs stand in a layered product still life on a warm ivory stone podium in the center/bottom, with matched soft realistic shadows and a little dimensional depth. Large elegant clean Arabic headline in the upper right. All face, product labels and text comfortably inside the canvas with generous safe margins; no overlap between text and products. A few large soft pearly blush and sage planets and very fine champagne orbit lines recede into the background, subtle cherry blossoms near an edge; rich but calm modern luxury skincare campaign, photographic realism, warm luminous daylight and tasteful soft contrast.\nText (verbatim): \"اكتشفي عالم\" first line, \"العناية الكورية\" second line. Large, correct joined right-to-left Arabic in a simple refined bold dark green font, readable on mobile. Only this marketing headline. Do not invent more text, prices, discounts, badges or treatment claims. Preserve the original text on the real product packs. No watermark or added shop logo.\nConstraints: exact 16:9 landscape, complete products and face visible, no anonymous containers, no floating products, realistic packaging, attractive distinct composition coordinated with image 2 without merely stretching it."
+    }
+  ],
+  "notes": "Reference product photographs are unchanged. Campaign compositions are image edits based on the supplied real packaging photographs, not new product packshots or customer testimonials."
+}

@@ -64,7 +64,7 @@ test('Owner settings editor saves the participation switch through its normal ex
 });
 
 test('Korean gateway and collection use the new universe assets and customer headings omit edit',async t=>{
- const {d}=await open(t,{path:'#/'});assert.match(d.querySelector('.category-korean img').src,/korean-care-woman-v551/);assert.doesNotMatch(d.querySelector('#app').textContent,/\bedit\b/i);assert.ok(d.querySelector('.logo .wordmark-trend'));const page=await open(t,{path:'#/shop?collection=korean-care'});assert.match(page.d.querySelector('.korean-universe-hero img').src,/korean-universe-banner-v51/);assert.equal(page.d.querySelector('h1').textContent,'Korean care');
+ const {d}=await open(t,{path:'#/'});assert.match(d.querySelector('.category-korean img').src,/korean-care-brands-card-v552/);assert.doesNotMatch(d.querySelector('#app').textContent,/\bedit\b/i);assert.ok(d.querySelector('.logo .wordmark-trend'));const page=await open(t,{path:'#/shop?collection=korean-care'});assert.match(page.d.querySelector('.korean-universe-hero img').src,/korean-care-brands-cover-v552/);assert.equal(page.d.querySelector('h1').textContent,'Korean care');
 });
 
 test('Paused review endpoints reject old forms and uploads, while the admin switch and moderation remain available',async()=>{

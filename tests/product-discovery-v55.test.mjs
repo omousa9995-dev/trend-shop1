@@ -34,7 +34,8 @@ test('Home removes all care-need controls while retaining brands, practical card
  const {d}=await open(t);assert.equal(d.querySelector('.need-discovery,.need-tile,.discovery-pills,#needSelect'),null);
  assert.doesNotMatch(d.querySelector('#app').textContent,/تسوّقي حسب احتياجكِ|احتياج العناية|Shop by care need/);
  assert.ok(d.querySelectorAll('.brand-tile').length>3);assert.ok(d.querySelector('.product-purpose'));assert.ok(d.querySelector('.product-saving'));
- const image=d.querySelector('.category-korean img');assert.match(image.src,/korean-care-woman-v551\.webp/);assert.equal(Number(image.getAttribute('width'))/Number(image.getAttribute('height')),1.5);
+ const categories=[...d.querySelectorAll('.cat-grid>.cat-item')];assert.equal(categories.length,7);assert.ok(categories.slice(0,6).every(card=>!card.classList.contains('category-korean')));assert.ok(categories[6].classList.contains('category-korean'));
+ const image=d.querySelector('.category-korean img');assert.match(image.src,/korean-care-brands-card-v552\.webp/);assert.equal(Number(image.getAttribute('width'))/Number(image.getAttribute('height')),1.5);
  const settings=structuredClone(DEFAULT_SITE_SETTINGS);for(const section of settings.homeSections)if(['categories','korean'].includes(section.id))section.enabled=false;
  const hidden=await open(t,'#/',settings);assert.equal(hidden.d.querySelector('.category-korean').closest('section').hidden,true);assert.equal(hidden.d.querySelector('.brand-discovery').closest('section').hidden,true);
 });
