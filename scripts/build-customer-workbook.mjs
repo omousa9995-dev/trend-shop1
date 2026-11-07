@@ -14,7 +14,10 @@ const raw=source.orders.map(o=>({...o,items:o.items||source.items?.filter(i=>i.o
 const report=buildCustomerReport(raw,{asOf:source.asOf,filters:source.filters});
 const model=customerWorkbookModel(report),wb=Workbook.create();
 for(const def of model.sheets)wb.worksheets.add(def.name);
-for(const [si,def] of model.sheets.entries()){
+// Populate source sheets before aggregate formulas. This also keeps first-export
+// cached aggregate results based on populated source ranges.
+for(const def of [...model.sheets.slice(1),model.sheets[0]]){
+ const si=model.sheets.indexOf(def);
  const sh=wb.worksheets.getItem(def.name),last=columnName(def.headers.length-1),end=def.rows.length+6,range=sh.getRange(`A1:${last}${end}`);
  sh.showGridLines=false;sh.tabColor=si===0?'#704F60':'#8C9B88';range.format={font:{name:'Arial',size:11,color:'#382F33'},rowHeight:36,verticalAlignment:'center',wrapText:true};
  for(let i=0;i<def.widths.length;i++)sh.getRange(`${columnName(i)}1:${columnName(i)}${end}`).format.columnWidth=def.widths[i];
@@ -22,7 +25,7 @@ for(const [si,def] of model.sheets.entries()){
  sh.getRange('A1').values=[[def.title]];sh.getRange(`A1:${last}1`).format={fill:'#503843',font:{name:'Arial',size:18,bold:true,color:'#FFFFFF'},rowHeight:43};
  sh.getRange('A2').values=[[model.sourceText]];sh.getRange('A3').values=[[model.filterText]];sh.getRange('A4').values=[[def.note]];sh.getRange(`A2:${last}4`).format={fill:'#F5F0EB',font:{name:'Arial',size:10,color:'#62545A'},rowHeight:32};
  sh.getRange(`A6:${last}6`).values=[def.headers];sh.getRange(`A6:${last}6`).format={fill:'#704F60',font:{name:'Arial',size:11,bold:true,color:'#FFFFFF'},rowHeight:38};
- const matrix=def.rows.map(row=>row.map(c=>typeof c.v==='string'&&c.v.startsWith('=')?"'"+c.v:c.v));
+ const matrix=def.rows.map(row=>row.map(c=>c.v===''?null:typeof c.v==='string'&&c.v.startsWith('=')?"'"+c.v:c.v));
  // Text formatting must precede the value write to preserve international phone
  // strings. Formatting a numeric-coerced value afterwards cannot recover its +.
  sh.getRange(`A7:${last}${end}`).setNumberFormat('@');

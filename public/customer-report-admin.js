@@ -1,5 +1,5 @@
-import {fetchCustomerReport,metaCustomerCsv,META_CUSTOMER_HEADERS,customerOrderDate} from './customer-report.js?v=5.7.1';
-import {downloadCustomerWorkbook,saveCustomerFile} from './customer-workbook.js?v=5.7.1';
+import {fetchCustomerReport,metaCustomerCsv,META_CUSTOMER_HEADERS,customerOrderDate} from './customer-report.js?v=5.7.2';
+import {downloadCustomerWorkbook,saveCustomerFile} from './customer-workbook.js?v=5.7.2';
 
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const jod=value=>value==null?'غير مسجل':(value/1000).toLocaleString('en-JO',{minimumFractionDigits:3,maximumFractionDigits:3})+' د.أ';

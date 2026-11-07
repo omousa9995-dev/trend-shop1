@@ -1,4 +1,4 @@
-import {customerOrderDate,META_CUSTOMER_HEADERS} from './customer-report.js?v=5.7.1';
+import {customerOrderDate,META_CUSTOMER_HEADERS} from './customer-report.js?v=5.7.2';
 
 export const columnName=index=>{let s='';for(let n=index+1;n;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s;};
 const cell=(v,style='text',f)=>({v:v??'',style,...(f?{f}:{})});
@@ -17,8 +17,8 @@ export function customerWorkbookModel(report){
  const metaData=metaRows.map(r=>META_CUSTOMER_HEADERS.map(k=>k==='value'?cell(r[k],'money'):text(r[k])));
  const rows=[
   [text('المؤشر'),text('القيمة'),text('التفسير')],
-  [text('إجمالي الفواتير'),formula(`COUNTIF(${o('A')},"?*")`,s.orderCount),text('حسب الفترة والحالة المختارتين')],
-  [text('جهات الاتصال'),formula(`COUNTIF(${c('A')},"?*")`,s.contactCount),text('حسب الهاتف الدولي أو البريد؛ ليست عدد أشخاص مؤكدًا')],
+  [text('إجمالي الفواتير'),formula(`COUNTA(${o('A')})`,s.orderCount),text('حسب الفترة والحالة المختارتين')],
+  [text('جهات الاتصال'),formula(`COUNTA(${c('A')})`,s.contactCount),text('حسب الهاتف الدولي أو البريد؛ ليست عدد أشخاص مؤكدًا')],
   [text('فواتير حالتها تم'),formula(`COUNTIF(${o('C')},"تم")`,s.completedCount),text('بحسب حالة الفاتورة المسجلة')],
   [text('قيمة منتجات فواتير تم'),formula(`SUMIF(${o('C')},"تم",${o('L')})`,s.completedGoodsFils/1000,'money'),text('بعد خصومات الفواتير، دون التوصيل؛ ليست إثبات تحصيل')],
   [text('إجمالي المنتجات لكل الحالات'),formula(`SUM(${o('L')})`,s.goodsFils/1000,'money'),text('لا يمثل مبيعات مكتملة لجميع الحالات')],

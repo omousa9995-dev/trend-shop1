@@ -1,4 +1,4 @@
-# Customer reports — v5.7.1
+# Customer reports — v5.7.2
 
 The owner dashboard now includes **الزبائن وExcel** with a current invoice
 preview, contact grouping, product/governorate summaries, XLSX download, customer
