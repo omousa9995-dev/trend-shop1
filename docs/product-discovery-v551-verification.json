@@ -1,0 +1,109 @@
+{
+  "version": "5.5.1",
+  "verified_at": "2026-11-07T17:31:55.414Z",
+  "implementation_commit": "ee3176020d0a5586d8e47fca6cfd695da91ff994",
+  "deployment": {
+    "id": "979907e1-f649-4cb3-82aa-1b45e639abec",
+    "source": "api",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/message": "Automatic deployment on upload.",
+      "workers/triggered_by": "upload"
+    },
+    "versions": [
+      {
+        "version_id": "9d4a489e-34fb-41c1-afd7-ef410181d691",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-11-07T17:30:16.433686Z"
+  },
+  "changes": [
+    {
+      "path": "/app.js",
+      "sha256": "85108ae2e9998a947f05e21f36975e5427c5458758eca2a9295e9ec53d867d55"
+    },
+    {
+      "path": "/index.html",
+      "sha256": "e77194b9be560072bee5bdd01050696bc1dcc15f78587b5f2a82dc01a425ba8b"
+    },
+    {
+      "path": "/product-discovery.js",
+      "sha256": "7c62aa19ed5510c267987db5771f7a49bf2164838410a7aae19168ed45a7342d"
+    },
+    {
+      "path": "/product-discovery.css",
+      "sha256": "edb29544ebfab28007a025987c91863fac3336342f1171dc5307e6401df5b9e1"
+    },
+    {
+      "path": "/category-media.json",
+      "sha256": "721bf0b47a67f788ae5ca9cf2a6a313c6e147f3b3a22ecd7bfb3c5846fd9be2e"
+    },
+    {
+      "path": "/images/editorial/korean-care-woman-v551.webp",
+      "sha256": "039ff33eb0d8419d3d962a9925a665321793d10a01dc42da1b3598487ec1e96a"
+    }
+  ],
+  "server_modules_unchanged": true,
+  "production_data_preserved": true,
+  "data_fingerprints": {
+    "products": {
+      "rows": 321,
+      "sha256": "031e3bf243eb563807e3d4edb0a63ba236a748bf9b5138f71bcf0b4225892da2"
+    },
+    "promotions": {
+      "rows": 6,
+      "sha256": "6f7adb9b0b5881eb48750280cd9649894682c69b4446d8c80cd2fa9047e368e4"
+    },
+    "site_settings": {
+      "rows": 1,
+      "sha256": "d12ab90a3a06d3ad37a1fb8cebcc6ab17a47399034583326c188c9df435888cc"
+    },
+    "product_videos": {
+      "rows": 2,
+      "sha256": "e04842c55a77bbb3dd2bd816d2ac304feae3da3441cc94081001804302bd74c2"
+    },
+    "product_featured_videos": {
+      "rows": 1,
+      "sha256": "2432f5780af9c627010ef32c68b9c760e0cf64cda346a6d30b032465df85f7c5"
+    }
+  },
+  "bindings_preserved": [
+    "DB",
+    "MAIL_WEBHOOK_TOKEN",
+    "MAIL_WEBHOOK_URL",
+    "MEDIA",
+    "SESSION_SECRET",
+    "SETUP_TOKEN",
+    "STORE_LIVE"
+  ],
+  "store_live": true,
+  "tests": {
+    "passed": 290,
+    "failed": 0
+  },
+  "browser": {
+    "preview_languages": [
+      "ar",
+      "en"
+    ],
+    "preview_frame_widths": [
+      390
+    ],
+    "desktop_card_verified": true,
+    "production_card_image_verified": true,
+    "production_care_need_controls": 0,
+    "production_korean_catalog_brand_tiles": 8,
+    "production_test_orders": 0,
+    "image_dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "rollback": {
+    "previous_source_commit": "97f4f4dd6d26551f30c63a9c4e6b98768f99874c",
+    "previous_worker_version": "abe3ff61-8909-471c-9404-238626841379",
+    "v54_backup_preserved": true,
+    "keep_current_database_and_media": true
+  }
+}
