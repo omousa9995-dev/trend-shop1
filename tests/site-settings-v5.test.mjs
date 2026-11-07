@@ -237,3 +237,33 @@ for(const language of ['ar','en'])test(`The actual ${language} privacy route ren
  for(let i=0;i<40&&!d.querySelector('.privacy p');i++)await new Promise(resolve=>setTimeout(resolve,5));
  const privacy=d.querySelector('.privacy');assert.ok(privacy);assert.equal(privacy.querySelectorAll('p').length,2);assert.equal(privacy.querySelectorAll('br').length,1);assert.equal(privacy.querySelectorAll('script,img').length,0);assert.equal(privacy.lastElementChild.textContent,markup);assert.equal(privacy.firstElementChild.textContent,copy[language].split('\n\n')[0].replace('\n',''));assert.equal(w.settingsExecuted,undefined);assert.deepEqual(errors.map(error=>error.message),[]);
 });
+
+test('Owner image overrides reject unsafe paths and save and restore with the existing authenticated revision flow',async t=>{
+ const path='/media/uploads/2026-11/12345678-1234-1234-1234-123456789abc.jpg';
+ for(const siteImages of [{hero:'https://foreign.test/x.jpg'},{hero:'javascript:alert(1)'},{hero:'/images/../admin.html'},{hero:'/images/%2e%2e/x.jpg'},{hero:'/images/x.jpg?tracking=1'},{hero:'//foreign.test/x.jpg'},{unknown:'/images/x.webp'},[],null]){
+  assert.throws(()=>settings({siteImages}));
+ }
+ const f=fixture(t),admin=await adminClient(f),initial=(await jsonOk(await admin())).settings;
+ const draft={...initial,siteImages:{koreanCard:path,hero:'/images/editorial/skincare-ritual.webp'}};delete draft.revision;
+ await jsonOk(await admin('POST',{revision:1,settings:draft}));
+ const saved=(await jsonOk(await admin())).settings;assert.equal(saved.siteImages.koreanCard,path);
+ assert.equal(saved.heroTitleAr,initial.heroTitleAr);assert.equal(saved.productSections.length,initial.productSections.length);
+ const catalog=await jsonOk(await worker.fetch(new Request('https://trend.test/api/catalog'),f.env,{}));assert.equal(catalog.siteSettings.siteImages.hero,draft.siteImages.hero);
+ await jsonOk(await admin('POST',{action:'restore',revision:2,restoreRevision:1}));assert.deepEqual((await jsonOk(await admin())).settings.siteImages,{});
+ assert.equal(f.sql.prepare('SELECT count(*) n FROM orders').get().n,0);
+});
+
+test('Image upload stays in the owner draft, retains text, saves once and can restore the approved image',async t=>{
+ const dom=new JSDOM('<section id="siteSection"></section>');t.after(()=>dom.window.close());const root=dom.window.document,posts=[];
+ let stored={...clone(DEFAULT_SITE_SETTINGS),revision:3},release;const pending=new Promise(resolve=>release=resolve);
+ const manager=createSiteSettingsManager({root,getProducts:()=>products,uploadImage:()=>pending,call:async(path,method,body)=>{if(method==='POST'){posts.push(body);stored={...clone(body.settings),revision:4};return {ok:true}}return {settings:stored,history:[]}}});
+ await manager.load();manager.focus('images');assert.equal(root.querySelector('[data-site-panel=images]').open,true);
+ setField(root,'heroTitleEn','Keep this unsaved heading');
+ const input=root.querySelector('[data-site-image-file=koreanCard]');Object.defineProperty(input,'files',{value:[{name:'phone.jpg',size:10}]});const upload=input.onchange();
+ assert.equal(root.querySelector('[data-site-save]').disabled,true);await root.querySelector('[data-site-form]').onsubmit(new dom.window.Event('submit',{cancelable:true}));assert.equal(posts.length,0);
+ const path='/media/uploads/2026-11/12345678-1234-1234-1234-123456789abc.jpg';release(path);await upload;
+ assert.equal(posts.length,0);assert.equal(root.querySelector('[data-image-preview=koreanCard]').getAttribute('src'),path);
+ assert.equal(root.querySelector('[name=heroTitleEn]').value,'Keep this unsaved heading');
+ await root.querySelector('[data-site-form]').onsubmit(new dom.window.Event('submit',{cancelable:true}));assert.equal(posts.length,1);assert.equal(posts[0].settings.siteImages.koreanCard,path);assert.equal(posts[0].settings.heroTitleEn,'Keep this unsaved heading');
+ root.querySelector('[data-site-image-reset=koreanCard]').click();assert.match(root.querySelector('[data-image-preview=koreanCard]').getAttribute('src'),/korean-care-brands-card-v552/);assert.equal(posts.length,1);
+});

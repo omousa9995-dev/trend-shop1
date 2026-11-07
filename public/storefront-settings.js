@@ -1,4 +1,4 @@
-import {DEFAULT_SITE_SETTINGS,arrangeSections} from './site-settings.js?v=5.1.0';
+import {DEFAULT_SITE_SETTINGS,arrangeSections,isSiteImagePath} from './site-settings.js?v=5.6.0';
 export function applyAppearance(doc,settings,language){
  doc.documentElement.dataset.desktopColumns=String(settings.desktopColumns);doc.documentElement.dataset.mobileColumns=String(settings.mobileColumns);
  doc.querySelectorAll('.logo strong,.footer-logo').forEach(el=>{if(settings.storeName===DEFAULT_SITE_SETTINGS.storeName){if(!el.querySelector('.wordmark-trend'))el.innerHTML='<span class="wordmark-trend">TREND</span> <span class="wordmark-shop">SHOP</span>';}else if(el.textContent.trim()!==settings.storeName)el.textContent=settings.storeName;});
@@ -19,3 +19,5 @@ export function applyProductSections(main,settings){
  article.querySelectorAll('[data-story-scroll]').forEach(button=>{const target=article.querySelector('#'+button.dataset.storyScroll);if(target?.hidden){button.hidden=true;button.dataset.settingsHidden='';}});
  const jump=article.querySelector('[data-aqua-jump]');if(jump&&article.querySelector('#storyVideos')?.hidden){jump.hidden=true;jump.dataset.settingsHidden='';}
 }
+
+export function applySiteImages(root,settings){for(const image of root.querySelectorAll('[data-site-image]')){const url=settings?.siteImages?.[image.dataset.siteImage];if(isSiteImagePath(url))image.src=url;}}

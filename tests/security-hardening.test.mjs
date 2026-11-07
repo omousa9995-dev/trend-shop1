@@ -22,5 +22,5 @@ test('Cloudflare static assets have CSP and administrative screens disallow inde
  assert.ok(file('src/worker.js').includes("'cache-control':'no-store'"),'API responses must be no-store');
 });
 test('Admin UI offers safe reversible removal from storefront',()=>{
- const script=file('public/admin.js');assert.ok(script.includes('حذف من العرض'));assert.ok(script.includes('استعادة للعرض'));assert.ok(script.includes('active:next'));
+ const script=file('public/admin.js');assert.ok(script.includes('إخفاء من المتجر'));assert.ok(script.includes('إظهار في المتجر'));assert.ok(script.includes('active:next'));
 });

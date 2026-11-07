@@ -1,0 +1,9 @@
+# Owner administration 5.6.0
+
+Add a task-based owner hub with six clearly labelled areas and descriptions. Tabs have large touch targets and an active-state label; product actions distinguish editing, discounts, hiding and showing. On phones products become readable cards rather than a wide table. Product save, close and preview actions remain visible in the editor. The upper single-video slot and three lower video slots remain distinct.
+
+Add owner control over ten image positions: the hero, six category cards, Korean care card and cover, and the store message image. Uploads use the existing authenticated image endpoint, compress on-device, remain drafts until an explicit save, and can revert each position to its approved image. The existing revision-conflict, five-version history and restore mechanism covers image overrides alongside all prior settings. Unsafe and external image paths are rejected server-side; the storefront only applies valid declared image overrides. Existing configurations need no migration and keep the approved customer design.
+
+The current account already represents the store owner. No accounts, roles, passwords, tokens, sessions, access scopes or authentication rules change. Only the shared settings normalizer and its defaults change in server modules; order, inventory, pricing and media endpoints remain the same. No production data write, upload or test order is performed during deployment.
+
+Validation: 295 tests pass, including owner navigation, anonymous sign-in boundary, saved image overrides, unsafe paths, explicit draft publication, upload locking, conflict preservation and restoration. Local browser preview uses sanitized catalog products and no customer orders; POST requests are blocked. A 390px frame verifies no horizontal overflow and buttons at least 44px high, plus visible product save/close actions.

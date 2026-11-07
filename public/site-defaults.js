@@ -1,4 +1,5 @@
 export const DEFAULT_SITE_SETTINGS={
+  "siteImages": {},
   "version": 5,
   "pairPricing": true,
   "reviewSubmissionsEnabled": false,
