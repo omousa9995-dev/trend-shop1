@@ -1,31 +1,10 @@
-import {productDetails,normalizeSearch} from './shop-tools.js';
+import {productDetails} from './shop-tools.js';
 import {productType} from './product-types.js';
-
-// Discovery uses the saved product benefits and type, never usage warnings or reviews.
-export const SHOPPING_NEEDS = [
- {id:'cleansing',ar:'التنظيف',en:'Cleansing',noteAr:'غسول ومنظفات لروتينكِ',noteEn:'Cleansers for your routine',icon:'cleanse'},
- {id:'hydration',ar:'الترطيب',en:'Hydration',noteAr:'عناية بإحساس الجفاف',noteEn:'Care for a dry skin feel',icon:'drop'},
- {id:'sun-care',ar:'الحماية من الشمس',en:'Sun care',noteAr:'واقي الشمس لخطوة النهار',noteEn:'Sunscreen for your day',icon:'sun'},
- {id:'glow',ar:'الإشراقة وتجانس اللون',en:'Glow & even-looking tone',noteAr:'عناية بمظهر البهتان والبقع',noteEn:'Care for dullness and uneven-looking tone',icon:'spark'},
- {id:'hair-care',ar:'العناية بالشعر',en:'Hair care',noteAr:'اختيارات لخصلاتكِ وروتينها',noteEn:'Choices for your hair routine',icon:'hair'}
-];
-export const shoppingNeed = id => SHOPPING_NEEDS.find(need=>need.id===id);
-export function matchesShoppingNeed(product,id){
- if(!shoppingNeed(id))return true;
- const d=productDetails(product),type=productType(product);
- if(id==='cleansing')return ['cleanser','body-cleansing'].includes(type);
- if(id==='sun-care')return ['sunscreen','body-sunscreen'].includes(type);
- if(id==='hair-care')return product.category==='الشعر';
- if(product.category!=='البشرة'||['cleanser','exfoliant','sunscreen','eye-care'].includes(type))return false;
- const text=normalizeSearch([product.name,d.nameAr,d.en?.name,...(Array.isArray(d.benefits)?d.benefits:[]),...(Array.isArray(d.en?.benefits)?d.en.benefits:[])].join(' '));
- if(id==='hydration')return /ترطيب|مرطب|رطوبه|hydrat|moisturi/.test(text);
- return /اشراق|تجانس|توحيد|تفتيح|تصبغ|بقع|brighten|illuminat|dark spot|glow|even.{0,10}tone/.test(text);
-}
-export function availableShoppingNeeds(products){return SHOPPING_NEEDS.filter(need=>products.some(p=>matchesShoppingNeed(p,need.id)))}
 
 export function discoveryHref(query={},patch={}){
  const params=new URLSearchParams(query);
  for(const [key,value] of Object.entries(patch))value===null||value===undefined||value===''?params.delete(key):params.set(key,String(value));
+ params.delete('need');
  return '#/shop'+(params.size?'?'+params.toString():'');
 }
 

@@ -1,0 +1,13 @@
+{
+  "version": "5.5.1",
+  "path": "public/images/editorial/korean-care-woman-v551.webp",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "aspect_ratio": "3:2",
+  "generation": "built-in image generation",
+  "prompt": "Use case: ads-marketing. Create one original premium Korean skincare category image for the Arabic Trend Shop cosmetics website. EXACT horizontal landscape 3:2 aspect ratio, 1536 by 1024 pixels. A sophisticated photorealistic editorial portrait of one adult Korean woman around age 25, natural radiant skin texture, soft warm smile and relaxed confident gaze, wearing a modest ivory blouse, seen from the waist up. Beside her, a beautifully arranged small collection of unbranded Korean skincare jars, serum dropper bottles and a cleanser tube in frosted glass, ivory and soft sage on a sculptural cream plinth. Dreamlike understated K-beauty universe: a few elegant pearlescent floating spheres and delicate orbital arcs in the background, evoking planets without overwhelming the woman or products. Muted sage green, warm ivory, pale blush and subtle champagne light, harmonious with an elegant cream, forest-green and dusty-rose online beauty boutique. Soft diffused beauty photography lighting, realistic skin and hands, refined luxury campaign, welcoming and serene, carefully balanced uncluttered composition. Keep the adult woman's entire head and the skincare arrangement comfortably inside the central 80% of the image for a responsive category card. Full bleed image, no inset border. NO text, letters, typography, branding, logos, watermark, clinical claims or before/after comparison. This is a new imaginative image, not an edit or recreation of another picture.",
+  "sha256": "039ff33eb0d8419d3d962a9925a665321793d10a01dc42da1b3598487ec1e96a",
+  "purpose": "Korean care category card; editorial scene, not a customer testimonial or an individual product claim"
+}
