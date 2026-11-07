@@ -6,7 +6,7 @@ import worker,{_test} from '../src/worker.js';
 import {buildCustomerReport,customerOrderDate,fetchCustomerReport,metaCustomerCsv,splitCustomerName} from '../public/customer-report.js';
 import {customerWorkbookModel} from '../public/customer-workbook-model.js';
 
-const row=(id,more={})=>({id,name:'سارة الاختبار',phone:'0791234567',email:'SARA@example.test',governorate:'عمّان',address:'عنوان اختبار',status:'تم',subtotal_fils:7250,discount_fils:750,shipping_fee_fils:1000,created_at:'2026-11-07 21:30:00',items:[{product_id:'TS9001',name_snapshot:'تونر اختبار',qty:2,unit_price_fils:4000,category:'البشرة',brand:'Test',product_type:'toner'}],...more});
+const row=(id,more={})=>({id,name:'سارة النموذج',phone:'0791234567',email:'SARA@example.test',governorate:'عمّان',address:'عنوان اختبار',status:'تم',subtotal_fils:7250,discount_fils:750,shipping_fee_fils:1000,created_at:'2026-11-07 21:30:00',items:[{product_id:'TS9001',name_snapshot:'تونر اختبار',qty:2,unit_price_fils:4000,category:'البشرة',brand:'Test',product_type:'toner'}],...more});
 function fixture(t){
  const db=new DatabaseSync(':memory:');db.exec(readFileSync(new URL('../db/schema.sql',import.meta.url),'utf8'));
  db.prepare('INSERT INTO products(id,name,brand,category,price_fils,reference_price_fils,image_url,stock,details_json,approved,active) VALUES(?,?,?,?,?,?,?,?,?,?,?)').run('TS9001','تونر اختبار','Test','البشرة',4000,5000,'/images/TS0001.svg',10000,'{"productType":"toner"}',1,1);
@@ -37,7 +37,7 @@ test('Date filtering uses Amman days and status filtering uses the stored status
  for(const query of ['?from=2026-02-30','?from=2026-11-08&to=2026-11-07','?status=constructor','?snapshot=-1','?cursor=3','?snapshot=2&cursor=3','?snapshot=1.2','?snapshot=1&cursor=0'])assert.equal((await f.get(query,cookie)).status,400,query);
 });
 test('International phone normalization, Amman dates, exact amounts and completed-only Meta aggregation preserve source meaning',()=>{
- const report=buildCustomerReport([row('A',{phone:'٠٧٩١٢٣٤٥٦٧'}),row('B',{phone:'+962 79 123 4567',subtotal_fils:2150,shipping_fee_fils:null,status:'جديد'}),row('C',{phone:'00966501234567',name:'عبد الله الاختبار',subtotal_fils:3500,shipping_fee_fils:0})]);
+ const report=buildCustomerReport([row('A',{phone:'٠٧٩١٢٣٤٥٦٧'}),row('B',{phone:'+962 79 123 4567',subtotal_fils:2150,shipping_fee_fils:null,status:'جديد'}),row('C',{phone:'00966501234567',name:'عبد الله النموذج',subtotal_fils:3500,shipping_fee_fils:0})]);
  assert.equal(report.contacts.length,2);assert.equal(report.contacts[0].orderCount,2);assert.equal(report.orders.find(o=>o.id==='B').totalFils,null);assert.equal(report.summary.unknownTotalCount,1);
  assert.equal(report.summary.goodsFils,12900);assert.equal(report.summary.completedGoodsFils,10750);assert.equal(report.metaRows.length,2);
  assert.equal(report.metaRows.find(r=>r.phone==='962791234567').value,7.25);assert.equal(report.metaRows.find(r=>r.phone==='966501234567').fn,'عبد الله');assert.equal(report.metaRows[0].country,'jo');assert.equal(report.metaRows.find(r=>r.phone==='962791234567').st,'amman');
@@ -58,4 +58,8 @@ test('Report fetch refuses changing snapshots, repeated cursors and aborted requ
 test('Shared emails cannot merge different phone contacts in Meta, and unknown purchase values stay empty',()=>{
  const report=buildCustomerReport([row('A'),row('B',{phone:'0791234568',subtotal_fils:null}),row('C',{phone:'',email:'only@example.test'})]);
  assert.equal(report.metaRows.find(r=>r.phone==='962791234567').email,'');assert.equal(report.metaRows.find(r=>r.phone==='962791234568').email,'');assert.equal(report.metaRows.find(r=>r.phone==='962791234568').value,null);assert.equal(report.metaRows.find(r=>r.email==='only@example.test').phone,'');assert.ok(report.contacts.find(c=>c.phone==='+962791234567').flags.some(f=>f.includes('البريد مستخدم')));assert.match(metaCustomerCsv(report),/"962791234568"[^\r\n]*,""\r\n/);
+});
+test('Explicitly marked test invoices stay in Excel but never enter Meta audiences or values',()=>{
+ const report=buildCustomerReport([row('A'),row('B',{name:'سارة تجريبي',subtotal_fils:999000}),row('TR-DEMO-1',{phone:'0791234568',email:'demo@example.test',name:'سارة النموذج'})]);
+ assert.equal(report.orders.length,3);assert.equal(report.summary.testOrders,2);assert.equal(report.metaRows.length,1);assert.equal(report.metaRows[0].value,7.25);assert.ok(report.orders.find(o=>o.id==='B').flags.some(f=>f.includes('كتجربة')));assert.equal(customerWorkbookModel(report).sheets.find(s=>s.name==='الطلبات').rows.length,3);
 });

@@ -1,4 +1,4 @@
-# Customer reports — v5.7.0
+# Customer reports — v5.7.1
 
 The owner dashboard now includes **الزبائن وExcel** with a current invoice
 preview, contact grouping, product/governorate summaries, XLSX download, customer
@@ -38,7 +38,9 @@ remain intact, with explicitly inferred first/family fields; missing family name
 stay blank. Different names on one phone are flagged and omitted from Meta's name
 fields. An email shared by different contact groups is flagged and omitted from
 CSV to avoid ambiguous matching. Invalid phone originals remain available for
-review. Unknown completed goods values stay empty in the CSV.
+review. Explicit test markers in an invoice ID or customer name are flagged and
+excluded from Meta contacts/values, while the complete invoice remains in Excel.
+Unknown completed goods values stay empty in the CSV.
 
 ## Meta file
 

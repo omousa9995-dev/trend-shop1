@@ -1,6 +1,6 @@
 // Fill an artifact-tool authored, data-free template. No third-party workbook
 // writer or remote service is needed; customer records stay in the admin session.
-import {customerWorkbookModel,columnName} from './customer-workbook-model.js';
+import {customerWorkbookModel,columnName} from './customer-workbook-model.js?v=5.7.1';
 const encode=value=>new TextEncoder().encode(value);
 const xml=value=>String(value??'').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
 const crcTable=Array.from({length:256},(_,n)=>{for(let k=0;k<8;k++)n=n&1?0xedb88320^(n>>>1):n>>>1;return n>>>0;});
@@ -39,7 +39,7 @@ export function fillCustomerWorkbook(report,template){
  return zipXmlParts(parts);
 }
 export async function downloadCustomerWorkbook(report,{fetchImpl=fetch,download}={}){
- const response=await fetchImpl('/customer-workbook-template.json?v=5.7.0',{credentials:'same-origin',cache:'no-cache'});if(!response.ok)throw Error('تعذر تحميل قالب Excel؛ حاول مجددًا');
+ const response=await fetchImpl('/customer-workbook-template.json?v=5.7.1',{credentials:'same-origin',cache:'no-cache'});if(!response.ok)throw Error('تعذر تحميل قالب Excel؛ حاول مجددًا');
  const bytes=fillCustomerWorkbook(report,await response.json());
  const blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
  const name=`Trend-Shop-Customers-${new Date(report.asOf).toISOString().slice(0,10)}.xlsx`;

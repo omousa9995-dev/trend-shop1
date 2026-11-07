@@ -8,7 +8,7 @@ import {fillCustomerWorkbook} from '../public/customer-workbook.js';
 import {createCustomerReportManager} from '../public/customer-report-admin.js';
 
 const template=JSON.parse(readFileSync(new URL('../public/customer-workbook-template.json',import.meta.url),'utf8'));
-const row=(id='TEST',extra={})=>({id,name:'اختبار العائلة',phone:'0791234567',email:'test@example.test',governorate:'عمّان',address:'عنوان <img src=x onerror=alert(1)>',status:'تم',subtotal_fils:7250,shipping_fee_fils:1000,discount_fils:0,created_at:'2026-11-07 21:30:00',items:[{name_snapshot:'تونر اختبار',product_id:'TEST',category:'البشرة',product_type:'toner',qty:2,unit_price_fils:4000}],...extra});
+const row=(id='TEST',extra={})=>({id,name:'سارة النموذج',phone:'0791234567',email:'test@example.test',governorate:'عمّان',address:'عنوان <img src=x onerror=alert(1)>',status:'تم',subtotal_fils:7250,shipping_fee_fils:1000,discount_fils:0,created_at:'2026-11-07 21:30:00',items:[{name_snapshot:'تونر اختبار',product_id:'TEST',category:'البشرة',product_type:'toner',qty:2,unit_price_fils:4000}],...extra});
 const until=async fn=>{for(let i=0;i<100;i++){if(fn())return;await new Promise(r=>setTimeout(r,5));}assert.ok(fn(),'expected report UI state');};
 function inspectXlsx(bytes){
  const script=`import io,json,sys,zipfile,xml.etree.ElementTree as E
@@ -33,7 +33,7 @@ test('Customer preview escapes source text; printing refreshes all rows and CSV 
  const manager=createCustomerReportManager({call,download:(blob,name)=>downloads.push({blob,name}),print:()=>printed.push(document.querySelector('#printRoot').innerHTML),refreshMs:100000});t.after(()=>manager.destroy());manager.setActive(true);
  await until(()=>manager.report?.orders.length===1&&!document.querySelector('[data-customer-action=print]').disabled);
  assert.equal(document.querySelector('[data-customer-body] img'),null);assert.match(document.querySelector('[data-customer-body]').textContent,/<img/);
- orders.push(row('B',{phone:'0791234568',name:'ثان اختبار',email:'second@example.test'}));document.querySelector('[data-customer-search]').value='NO-MATCH';document.querySelector('[data-customer-search]').dispatchEvent(new dom.window.Event('input'));assert.match(document.querySelector('[data-customer-body]').textContent,/لا توجد نتائج/);
+ orders.push(row('B',{phone:'0791234568',name:'ليان النموذج',email:'second@example.test'}));document.querySelector('[data-customer-search]').value='NO-MATCH';document.querySelector('[data-customer-search]').dispatchEvent(new dom.window.Event('input'));assert.match(document.querySelector('[data-customer-body]').textContent,/لا توجد نتائج/);
  document.querySelector('[data-customer-action=print]').click();await until(()=>printed.length===1);assert.equal(requests,2);assert.match(printed[0],/A/);assert.match(printed[0],/B/);assert.equal(new JSDOM(printed[0]).window.document.querySelector('img'),null);
  document.querySelector('[data-customer-action=csv]').click();await until(()=>downloads.length===1);assert.equal(downloads[0].name,'Trend-Shop-Meta-2026-11-07.csv');assert.match(await downloads[0].blob.text(),/962791234567/);
  fail=true;document.querySelector('[data-customer-action=csv]').click();await until(()=>document.querySelector('[data-customer-error]').textContent.includes('الاتصال'));assert.equal(downloads.length,1,'failed refresh must not export stale data');assert.equal(printed.length,1);

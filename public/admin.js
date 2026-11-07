@@ -1,4 +1,4 @@
-import {createCustomerReportManager} from './customer-report-admin.js?v=5.7.0';
+import {createCustomerReportManager} from './customer-report-admin.js?v=5.7.1';
 import {createFeaturedVideoManager} from './product-featured-video-admin.js?v=5.4.0';
 import {pairPriceFils} from './pair-pricing.js?v=5.0.0';
 import {createSiteSettingsManager} from './site-settings-admin.js?v=5.6.0';
