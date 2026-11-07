@@ -35,6 +35,6 @@ export function mountMediaGallery(host,{photos=[],videos=[],name='',productId=''
  stage.addEventListener('pointercancel',()=>{drag=null});
  stage.addEventListener('click',e=>{if(suppressClick){e.preventDefault();e.stopPropagation()}},true);
  const visibility=()=>host.ownerDocument.hidden?pause():play();host.ownerDocument.addEventListener('visibilitychange',visibility);
- const controller={photos:pictures,get index(){return index},show,setVideos(rows){clips=rows.filter(validProductVideo).map(v=>({...v,type:'video'}));rebuild()},destroy(){player?.destroy();pause();observer?.disconnect();host.ownerDocument.removeEventListener('visibilitychange',visibility)}};
+ const controller={setPhotos(rows){pictures.splice(0,pictures.length,...rows.filter(p=>p?.url).map(p=>({...p,type:"image"})));rebuild();},photos:pictures,get index(){return index},show,setVideos(rows){clips=rows.filter(validProductVideo).map(v=>({...v,type:'video'}));rebuild()},destroy(){player?.destroy();pause();observer?.disconnect();host.ownerDocument.removeEventListener('visibilitychange',visibility)}};
  host.mediaGallery=controller;rebuild();return controller;
 }

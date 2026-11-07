@@ -1,3 +1,4 @@
+import {productLoading} from '../public/product-loading.js';
 import {isRetiredProduct,storefrontProduct} from '../public/catalog-policy.js';
 import {productIdFromPath,productUrl,STORE_ORIGIN} from '../public/product-links.js';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -19,7 +20,7 @@ export function productPageHtml(shell,product,language='ar'){
  const twitter='<meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="'+escape(meta.title)+'"/><meta name="twitter:description" content="'+escape(meta.description)+'"/><meta name="twitter:image" content="'+escape(meta.image)+'"/>';
  html=html.replace('</head>',twitter+'<link rel="alternate" hreflang="ar" href="'+escape(productUrl(product.id))+'"/><link rel="alternate" hreflang="en" href="'+escape(productUrl(product.id,'en'))+'"/></head>')
   .replace(/<link rel="preload" as="image" href="\/images\/editorial\/beauty-hero-v2.webp"\/>/,'<link rel="preload" as="image" href="'+escape(meta.image)+'"/>');
- return html.replace('<main id="app" tabindex="-1"></main>',()=>'<main id="app" tabindex="-1"><div class="wrap section"><h1 dir="auto">'+escape(meta.name)+'</h1><p>'+escape(meta.description)+'</p><img src="'+escape(meta.image)+'" alt="'+escape(meta.name)+'" width="500" height="500"/><p>'+ (language==='en'?'Loading product details…':'جارٍ تحميل تفاصيل المنتج…') +'</p><noscript>'+ (language==='en'?'Enable JavaScript to choose quantities and checkout.':'فعّلي JavaScript لاختيار الكمية وإتمام الطلب.') +'</noscript></div></main>');
+ return html.replace('<main id="app" tabindex="-1"></main>',()=>'<main id="app" tabindex="-1">'+productLoading(product,language)+'<noscript>'+(language==='en'?'Enable JavaScript to choose quantities and checkout.':'فعّلي JavaScript لاختيار الكمية وإتمام الطلب.')+'</noscript></main>');
 }
 export async function productPage(request,env){
  if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{allow:'GET, HEAD'}});

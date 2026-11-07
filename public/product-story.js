@@ -1,6 +1,7 @@
-import {mountMediaGallery} from './media-gallery.js?v=5.4.0';
+import {compactProductDetails} from './product-experience.js?v=5.8.0';
+import {mountMediaGallery} from './media-gallery.js?v=5.8.0';
 import {fallbackProductProfile} from './product-profiles.js?v=5.0.0';
-import {mountAquaFreshPilot} from './aqua-fresh-pilot.js?v=5.4.0';
+import {mountAquaFreshPilot} from './aqua-fresh-pilot.js?v=5.8.0';
 import {mountArenciaServiceCard} from './arencia-pilot.js?v=5.4.0';
 import {locale,tx,translateText,formatMoney as money} from './i18n.js?v=5.1.0';
 import {quoteCart,productPrice,promotionData} from './commerce.js?v=5.0.0';
@@ -48,7 +49,7 @@ export function storyGallery(p,profile,images=[]){
  if(p.id==='TS0098'&&primary===arenciaGuide.primary&&!profile)photos.push({url:arenciaGuide.scene,kind:'promotional',label:tx('لحظة العناية','The ritual')},{url:arenciaGuide.texture,kind:'texture',label:tx('التفاصيل','Details')});
  return photos.filter(x=>imageUrl(x.url)).filter((x,i,a)=>a.findIndex(y=>y.url===x.url)===i).slice(0,7).map(x=>({...x,label:typeof x.label==='object'?x.label[locale()]:x.label}));
 }
-export function mountProductStory(element,{product:p,name,image,cap=0,live,quantity=1,promotions=[],profile=null,images=[],taxonomy='',brand='',bundles='',options='',inBag=0,hasOtherItems=false,onCheckout,onAdd,onZoom,onShare,onQuantity}={}){
+export function mountProductStory(element,{product:p,name,image,cap=0,live,quantity=1,promotions=[],profile=null,images=[],taxonomy='',brand='',bundles='',options='',inBag=0,hasOtherItems=false,onCheckout,onAdd,onZoom,onShare,onQuantity,onReady}={}){
  profile=profile||fallbackProductProfile(p);
  const c=storyContent(p,profile),photos=storyGallery(p,profile,images);if(image&&photos[0])photos[0].url=image;
  const canBuy=cap>0;let selected=Math.max(1,Math.min(cap||1,quantity));
@@ -82,5 +83,6 @@ export function mountProductStory(element,{product:p,name,image,cap=0,live,quant
  function update(){const q=selectionQuote(p,selected,promotions),unit=Math.round(q.subtotalFils/(selected*10))*10;onQuantity?.(selected);element.querySelector('#storyQuantity').textContent=selected;element.querySelectorAll('[name=storyOffer]').forEach(r=>r.checked=Number(r.value)===selected);element.querySelector('[data-story-step="-1"]').disabled=!canBuy||selected<=1;element.querySelector('[data-story-step="1"]').disabled=!canBuy||selected>=cap;element.querySelector('#storySelectionPrice').innerHTML=`<div class='story-choice-price'><span>${tx('سعر اختياركِ','Your selection')} · ${selected}</span><strong>${money(q.subtotalFils)}</strong></div><div class='story-delivery-price'><span>${tx('التوصيل داخل الأردن','Delivery in Jordan')}</span><b>${q.shippingFeeFils===0?tx('مجاني ♡','Free ♡'):money(q.shippingFeeFils)}</b></div><div class='story-delivered-price'><span>${tx('الإجمالي مع التوصيل','Total with delivery')}</span><b>${money(q.totalFils)}</b></div>`;element.querySelector('#storyStickyPrice').textContent=money(q.totalFils)}
  element.querySelectorAll('[name=storyOffer]').forEach(r=>r.onchange=()=>{selected=Number(r.value);update()});element.querySelectorAll('[data-story-step]').forEach(b=>b.onclick=()=>{selected=Math.max(1,Math.min(cap,selected+Number(b.dataset.storyStep)));update()});
  element.querySelectorAll('[data-story-checkout]').forEach(b=>b.onclick=()=>onCheckout?.(selected));element.querySelectorAll('[data-story-add]').forEach(button=>button.onclick=event=>{event.stopPropagation();if(onAdd?.(selected)!==false){element.querySelectorAll('[data-story-add]').forEach(b=>{b.textContent=b.classList.contains('arencia-extra-add')?tx('✓ تمت إضافة المنتج للسلة','✓ Product added to bag'):tx('✓ تمت إضافة اختياري للسلة','✓ My selection is in the bag');b.classList.add('is-added')});element.querySelector('#storyBagNote').textContent=tx('تعديل الكمية هنا يحدّث نفس الاختيار عند المتابعة.','Changing quantity here updates the same selection when you continue.')}});
+ compactProductDetails(element);onReady?.({media,photos});
  if(inBag)element.querySelector('#storyBagNote').textContent=tx(`في سلتكِ الآن ${inBag} من هذا المنتج.`,`Your bag contains ${inBag} of this product.`)+(hasOtherItems?' '+tx('باقي المنتجات تبقى في سلتكِ.','Your other bag items are kept.'):'');update();return {media,get quantity(){return selected}};
 }

@@ -1,0 +1,220 @@
+{
+  "scope": "Read-only reference research plus private manufacturer asset downloads; no app/source or production changes.",
+  "criticalConstraint": "These assets and manufacturer names/codes are references only; no store stocked codes or quantities were inferred. Existing four generic tone preferences are not manufacturer shade codes.",
+  "assets": [
+    {
+      "productId": "TS0151",
+      "sourcePage": "https://hudabeauty.com/en-jo/products/easy-bake-loose-baking-setting-powder-hb00140m",
+      "sourceImage": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSE-COFFEECAKE-TILE5.webp?v=1770025694&width=1946",
+      "sha256": "c845bd5bfc98f4149ba15751bb6c95da9cd4a6686bf65694fc17ea461c88c46b",
+      "bytes": 414392,
+      "format": "JPEG",
+      "dimensions": [
+        1946,
+        2270
+      ],
+      "visuallyVerified": true,
+      "role": "manufacturer range reference only",
+      "stockAvailabilityVerified": false,
+      "note": "Full official Easy Bake range chart; actual payload is JPEG despite source extension.",
+      "path": "/images/shades/huda-easy-bake-official-shade-guide.webp",
+      "derivativeSha256": "c1bd174a3e27d0b14f54484c77dc3a2c46a174a2481bc9a29cb70e67a023cdf9",
+      "derivativeBytes": 147716,
+      "width": 1200,
+      "height": 1400,
+      "processing": "Resize and WebP compression only; no recolouring or generation"
+    },
+    {
+      "productId": "TS0285",
+      "sourcePage": "https://tartecosmetics.com/products/shape-tape-concealer",
+      "sourceImage": "https://tartecosmetics.com/cdn/shop/files/unique__846733030309__shape-tape-contour-concealer-8B-porcelain-beige__04.jpg?v=1787850797&width=1445",
+      "sha256": "efa8bed1b3be10ca964d3d18305442edd5d427d62230d69ee0f3c09ab8ba42f6",
+      "bytes": 368449,
+      "format": "JPEG",
+      "dimensions": [
+        1445,
+        1927
+      ],
+      "visuallyVerified": true,
+      "role": "manufacturer range reference only",
+      "stockAvailabilityVerified": false,
+      "note": "Official overview: fair to light, eight models/codes.",
+      "path": "/images/shades/tarte-shape-tape-official-fair-light-guide.webp",
+      "derivativeSha256": "18a6045c31783fb65ebda13887bba3b81aede81520ab7548eb5a1ddabc37fed1",
+      "derivativeBytes": 231218,
+      "width": 1200,
+      "height": 1600,
+      "processing": "Resize and WebP compression only; no recolouring or generation"
+    },
+    {
+      "productId": "TS0285",
+      "sourcePage": "https://tartecosmetics.com/products/shape-tape-concealer",
+      "sourceImage": "https://tartecosmetics.com/cdn/shop/files/unique__846733030347__shape-tape-contour-concealer-34S-medium-sand__04.jpg?v=1787849573&width=1445",
+      "sha256": "85f81de62cfe906a3b92a9b892ea5173ea0514781a86c651640f81eeccd5949c",
+      "bytes": 389628,
+      "format": "JPEG",
+      "dimensions": [
+        1445,
+        1927
+      ],
+      "visuallyVerified": true,
+      "role": "manufacturer range reference only",
+      "stockAvailabilityVerified": false,
+      "note": "Official overview: light to medium, eight models/codes.",
+      "path": "/images/shades/tarte-shape-tape-official-light-medium-guide.webp",
+      "derivativeSha256": "401c88c15afe178d9f712a2f8cf42c10a0073c7c77454e7e7cea6421715bf776",
+      "derivativeBytes": 245910,
+      "width": 1200,
+      "height": 1600,
+      "processing": "Resize and WebP compression only; no recolouring or generation"
+    },
+    {
+      "productId": "TS0285",
+      "sourcePage": "https://tartecosmetics.com/products/shape-tape-concealer",
+      "sourceImage": "https://tartecosmetics.com/cdn/shop/files/unique__846733030361__shape-tape-contour-concealer-37G-medium-tan-golden__04.jpg?v=1787849125&width=1445",
+      "sha256": "029d2978269a7666b8e5d4bc176bf8bfb1fcf604c510ae45a6c39455c7e0a88f",
+      "bytes": 430318,
+      "format": "JPEG",
+      "dimensions": [
+        1445,
+        1927
+      ],
+      "visuallyVerified": true,
+      "role": "manufacturer range reference only",
+      "stockAvailabilityVerified": false,
+      "note": "Official overview: medium-tan to tan-deep, eight models/codes.",
+      "path": "/images/shades/tarte-shape-tape-official-medium-tan-guide.webp",
+      "derivativeSha256": "96abb6c187d28be496eac59b550c7b859de85aa006f0bb4410057028201b9c14",
+      "derivativeBytes": 279624,
+      "width": 1200,
+      "height": 1600,
+      "processing": "Resize and WebP compression only; no recolouring or generation"
+    },
+    {
+      "productId": "TS0285",
+      "sourcePage": "https://tartecosmetics.com/products/shape-tape-concealer",
+      "sourceImage": "https://tartecosmetics.com/cdn/shop/files/unique__846733016167__shape-tape-contour-concealer-53N-deep__04.jpg?v=1787851672&width=1445",
+      "sha256": "33cf0cebbb88944b59c68f5b40e708e06f8e74a10df2cf8b4e63b4db5985057a",
+      "bytes": 462745,
+      "format": "JPEG",
+      "dimensions": [
+        1445,
+        1927
+      ],
+      "visuallyVerified": true,
+      "role": "manufacturer range reference only",
+      "stockAvailabilityVerified": false,
+      "note": "Official overview: tan-deep to deep, eight models/codes.",
+      "path": "/images/shades/tarte-shape-tape-official-deep-guide.webp",
+      "derivativeSha256": "a5dc5fb6658ef93dc191e7a84854509368104e1ccf139b9fd86b3cf623be7dc5",
+      "derivativeBytes": 325038,
+      "width": 1200,
+      "height": 1600,
+      "processing": "Resize and WebP compression only; no recolouring or generation"
+    },
+    {
+      "productId": "TS0285",
+      "sourcePage": "https://tartecosmetics.com/products/shape-tape-concealer",
+      "sourceImage": "https://tartecosmetics.com/cdn/shop/files/unique__846733018024__shape-tape-contour-concealer-60N-mahogany__04.jpg?v=1787851502&width=1445",
+      "sha256": "1ddd35601baba0e78670469c7c1b185aecba2535d224637ffa488143c1c53726",
+      "bytes": 473503,
+      "format": "JPEG",
+      "dimensions": [
+        1445,
+        1927
+      ],
+      "visuallyVerified": true,
+      "role": "manufacturer range reference only",
+      "stockAvailabilityVerified": false,
+      "note": "Official overview: rich to mahogany, eight models/codes.",
+      "path": "/images/shades/tarte-shape-tape-official-rich-guide.webp",
+      "derivativeSha256": "d1a56850a8cb9248a120450e5219da276189afb1d0680adb9d9189438d0c8a7e",
+      "derivativeBytes": 333906,
+      "width": 1200,
+      "height": 1600,
+      "processing": "Resize and WebP compression only; no recolouring or generation"
+    },
+    {
+      "productId": "TS0285",
+      "sourcePage": "https://tartecosmetics.com/products/shape-tape-concealer",
+      "sourceImage": "https://tartecosmetics.com/cdn/shop/files/unique__197689036793__shape-tape-contour-concealer-61N-espresso-neutral__04.jpg?v=1787770161&width=1445",
+      "sha256": "694057329efbc487d738afef1c17c2735178ce018343376a90a7c03d590b5221",
+      "bytes": 441986,
+      "format": "JPEG",
+      "dimensions": [
+        1445,
+        1927
+      ],
+      "visuallyVerified": true,
+      "role": "manufacturer range reference only",
+      "stockAvailabilityVerified": false,
+      "note": "Official overview: mahogany to espresso, eight models/codes.",
+      "path": "/images/shades/tarte-shape-tape-official-deepest-guide.webp",
+      "derivativeSha256": "50baaca03198c31a824b31204e1a616f630de27de6348d9caa59db7fdbb4d2dd",
+      "derivativeBytes": 307328,
+      "width": 1200,
+      "height": 1600,
+      "processing": "Resize and WebP compression only; no recolouring or generation"
+    }
+  ],
+  "products": [
+    {
+      "id": "TS0151",
+      "name": "Huda Beauty Easy Bake Loose Baking & Setting Powder",
+      "primaryPage": "https://hudabeauty.com/en-jo/products/easy-bake-loose-baking-setting-powder-hb00140m",
+      "status": "Exact official family and range chart confirmed; store stocked codes unknown.",
+      "guidance_ar": "بودرة تثبيت حرة بدرجات ونغمات متعددة. اختاري حسب عمق البشرة والنغمة الداخلية والهدف من التثبيت أو التفتيح، ثم أكدي كود الدرجة المتوفر."
+    },
+    {
+      "id": "TS0246",
+      "name": "Bourjois Healthy Mix Pressed Powder",
+      "primaryPage": "https://bourjois.fr/products/poudre-compacte-healthy-mix-clean-porcelaine-3616303915100",
+      "status": "Primary current Clean page verified, but store photo is older Healthy Mix red compact with printed shade 52. Current 01–05 Clean codes must not be mapped to old 52. No same-version overview chart confirmed.",
+      "guidance_ar": "بودرة مضغوطة ملوّنة؛ قارني اللون بكريم الأساس على خط الفك، وطابقي كود العبوة من نفس الإصدار قبل الطلب."
+    },
+    {
+      "id": "TS0262",
+      "name": "Emelie Loose Powder",
+      "primaryPage": null,
+      "candidatePage": "https://emeliecosmetics.com/products/professional-prestige-cuminous-loose-powder",
+      "status": "No exact manufacturer/model verification. Branded retailer candidate E627 15g is not confirmed to match generic gold store box, so its 01–04 chart was not used.",
+      "guidance_ar": "تأكدي من كود العبوة الفعلي وصورتها؛ وصف بودرة سائبة لا يعني أن المنتج شفاف أو أن جميع الدرجات تناسب البشرة نفسها."
+    },
+    {
+      "id": "TS0275",
+      "name": "L’Oréal Infallible 24H Fresh Wear Foundation in a Powder",
+      "primaryPage": "https://www.lorealparisusa.com/makeup/face/face-powder/infallible-up-to-24h-fresh-wear-in-a-powder-matte-finish",
+      "status": "Exact official family confirmed. Full-coverage matte powder foundation; 20 manufacturer shades. Normal-network HTML/image extraction returned 403, not bypassed. No local chart.",
+      "guidance_ar": "فاونديشن بتركيبة بودرة وتغطية كاملة؛ اختاري درجة قريبة من لون الرقبة ونغمة البشرة، ثم طابقي كود العبوة. لا تعامليه كبودرة تثبيت شفافة."
+    },
+    {
+      "id": "TS0313",
+      "name": "Rose Berry Translucent Loose Setting Powder",
+      "primaryPage": null,
+      "status": "No trustworthy manufacturer family chart found. Store pack is Net 20g; retailer NO.01–03 / 29g examples are not sufficient evidence and were excluded.",
+      "guidance_ar": "بودرة للتثبيت؛ تحققي من كود العبوة وملاءمة اللون الفعلي للبشرة. كلمة شفافة وحدها لا تؤكد تطابق جميع الإصدارات أو الدرجات."
+    },
+    {
+      "id": "TS0285",
+      "name": "Tarte Shape Tape Contour Concealer",
+      "primaryPage": "https://tartecosmetics.com/products/shape-tape-concealer",
+      "status": "Exact official family and six manufacturer overview panels visually verified. No stocked shade mapping.",
+      "guidance_ar": "اختاري العمق والنغمة الداخلية معًا. للتغطية الطبيعية اختاري لونًا قريبًا من البشرة؛ التفتيح أو الكونتور لهما اختيار مختلف. رموز الشركة: B وردي بارد، S ذهبي دافئ، N محايد، H خوخي دافئ، G ذهبي أو زيتوني، W وردي دافئ."
+    },
+    {
+      "id": "TS0355",
+      "name": "L’Oréal Infallible Full Wear Concealer",
+      "primaryPage": "https://www.lorealparisusa.com/makeup/face/concealer/infallible-full-wear-concealer-waterproof-full-coverage",
+      "status": "Official US family page confirmed; market-specific codes may differ. Store source image labeled 309 does not establish actual inventory or equivalence to US codes. Direct normal-network retrieval returned 403, not bypassed.",
+      "guidance_ar": "اختاري الكونسيلر بحسب عمق البشرة والنغمة الداخلية وهدف الاستخدام، وأكدي كود نفس العبوة؛ أرقام الدرجات قد تختلف بين أسواق لوريال."
+    },
+    {
+      "id": "TS0356",
+      "name": "Maybelline Instant Age Rewind Eraser Concealer",
+      "primaryPage": "https://www.maybelline.com/face-makeup/concealer/instant-age-rewind-eraser-dark-circles-concealer-treatment",
+      "officialOverviewImage": "https://www.maybelline.com/-/media/project/loreal/brand-sites/mny/americas/us/face-makeup/concealer/instant-age-rewind-eraser-dark-circles-concealer-treatment/update-nov-25/iar-eraser-shade-range_632x950.jpg?rev=62ac797d6e5a408a80729b822b2aa75c&cx=0&cy=0&cw=633&ch=950&hash=F30BE90766E37A2D5A933CDAEE2528A8",
+      "status": "Official family and overview image URL confirmed in primary page. Normal direct image download timed out; not bypassed. Local retailer source image 130 does not establish stocked shade.",
+      "guidance_ar": "اختاري درجة قريبة من لون البشرة للتغطية الطبيعية. درجات التفتيح والتصحيح مثل Brightener وNeutralizer لها استخدام مختلف؛ أكدي كود الدرجة المتوفر قبل الطلب."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+// Match the final hero's geometry while catalog/story data loads. Shared by the
+// public product HTML and client navigation, replacing the previous small flash.
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function productLoading(product={},language='ar'){
+ let d={};try{d=product.details||JSON.parse(product.details_json||'{}')}catch{}
+ const english=language==='en',name=english?(d.en?.name||product.name):(d.nameAr||product.name),image=product.image_url||product.image;
+ const safeImage=typeof image==='string'&&(/^(?:\/images\/|\/media\/|https:\/\/)/.test(image));
+ return `<article class="product-story product-loading" data-product-loading="${esc(product.id||'')}" aria-busy="true"><div class="wrap story-breadcrumb loading-breadcrumb"><span>${english?'Trend Shop · Product':'Trend Shop · المنتج'}</span></div><section class="wrap story-hero"><div class="story-gallery loading-gallery"><div class="loading-product-image">${safeImage?`<img src="${esc(image)}" alt="${esc(name||'')}" width="700" height="700" fetchpriority="high" decoding="async"/>`:'<span class="loading-placeholder"></span>'}</div><div class="loading-thumbnails" aria-hidden="true"><span></span><span></span><span></span></div></div><div class="story-intro loading-intro"><p class="story-eyebrow">${esc(product.brand||'TREND SHOP')}</p>${name?`<h1 dir="auto">${esc(name)}</h1>`:'<div class="loading-title loading-placeholder" aria-hidden="true"></div>'}<p class="loading-message" role="status">${english?'Preparing your product details…':'نجهّز تفاصيل اختياركِ…'}</p><div class="loading-copy" aria-hidden="true"><span></span><span></span><span></span></div><div class="loading-purchase loading-placeholder" aria-hidden="true"></div></div></section></article>`;
+}

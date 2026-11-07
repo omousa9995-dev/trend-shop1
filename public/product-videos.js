@@ -1,6 +1,6 @@
 import {locale} from './i18n.js?v=5.1.0';
-import {validProductVideo} from './media-gallery.js?v=5.4.0';
-import {createAquaFreshRail} from './aqua-fresh-pilot.js?v=5.4.0';
+import {validProductVideo} from './media-gallery.js?v=5.8.0';
+import {createAquaFreshRail} from './aqua-fresh-pilot.js?v=5.8.0';
 export async function mountProductVideos(region,{productId,fetcher=fetch}={}){
  if(!region)return;
  const token=Symbol('video-request'),language=locale();region.productVideoRequest=token;
