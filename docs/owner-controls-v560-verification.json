@@ -1,0 +1,137 @@
+{
+  "version": "5.6.0",
+  "verified_at": "2026-11-07T18:18:48.336Z",
+  "implementation_commit": "20c1a746312345176343a332e368d0dc48ca3cff",
+  "deployment": {
+    "id": "db279220-c4b2-4d13-b445-34435913b9ff",
+    "source": "api",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/message": "Automatic deployment on upload.",
+      "workers/triggered_by": "upload"
+    },
+    "versions": [
+      {
+        "version_id": "6ecd2139-d6f3-4f8c-897f-c3fe4ebd4df4",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-11-07T18:16:05.182284Z"
+  },
+  "assets": [
+    {
+      "path": "/admin.html",
+      "sha256": "8d1e257ed2375764501dae5e912208182cffb7f3fa4d7a9143c107e3212bd9b3"
+    },
+    {
+      "path": "/admin.js",
+      "sha256": "448058680ad2c6fd792098438c6a61192f1b914b6d19024d467cb34d3f62d2ed"
+    },
+    {
+      "path": "/admin-hub.css",
+      "sha256": "c8b35aa51e4206d1a8d58ce66e55a81d463337c6f3f8d10730a15253ea6386b2"
+    },
+    {
+      "path": "/site-image-upload.js",
+      "sha256": "81e733c5f7542cf6ec727a6ca0f10f4e4be1df27e549f19e83716db2e962b231"
+    },
+    {
+      "path": "/app.js",
+      "sha256": "bfa831569f9496c83edf33994d53f86b3c44075ab13d8885c8b445ef2ebda801"
+    },
+    {
+      "path": "/index.html",
+      "sha256": "1819d08e1f6ef2a6a2160df5309f8649a72b1d0cd7114a1f5f27ea8d1ee4685f"
+    },
+    {
+      "path": "/site-defaults.js",
+      "sha256": "cdd09e1379eec2ff9b57240b4286ddec6a6b8e35d1bd4a9acf0ecf546bd4bc57"
+    },
+    {
+      "path": "/site-settings.js",
+      "sha256": "37036676d6d00614e4cb7878f1be82bddba3dc29cecbaed0a2e6088801bb38ad"
+    },
+    {
+      "path": "/site-settings-admin.js",
+      "sha256": "6e7d9890106887b2246a2a30212820f2067f71544f764a44d60e40807215db2e"
+    },
+    {
+      "path": "/site-settings.json",
+      "sha256": "6f1e3c01ca9ad9259914efce2a6c4e082e2958955e7c016760a755fdf23bd1bf"
+    },
+    {
+      "path": "/storefront-settings.js",
+      "sha256": "9003f32994bd4595f50b4ca1221b4afead7516c1168ab682ef13f488c19dcf2d"
+    }
+  ],
+  "server_module_changes": [
+    {
+      "name": "site-settings.js",
+      "sha256": "7db8abda7d4d514d2cddefebe8adbe41bd8030367aabe072c05cf51f8f88fa1a"
+    },
+    {
+      "name": "site-defaults.js",
+      "sha256": "cdd09e1379eec2ff9b57240b4286ddec6a6b8e35d1bd4a9acf0ecf546bd4bc57"
+    }
+  ],
+  "authentication_and_commerce_modules_unchanged": true,
+  "account_roles_and_credentials_changed": false,
+  "production_database_writes": 0,
+  "production_data_preserved": true,
+  "data_fingerprints": {
+    "products": {
+      "rows": 321,
+      "sha256": "031e3bf243eb563807e3d4edb0a63ba236a748bf9b5138f71bcf0b4225892da2"
+    },
+    "promotions": {
+      "rows": 6,
+      "sha256": "6f7adb9b0b5881eb48750280cd9649894682c69b4446d8c80cd2fa9047e368e4"
+    },
+    "site_settings": {
+      "rows": 1,
+      "sha256": "d12ab90a3a06d3ad37a1fb8cebcc6ab17a47399034583326c188c9df435888cc"
+    },
+    "product_videos": {
+      "rows": 2,
+      "sha256": "e04842c55a77bbb3dd2bd816d2ac304feae3da3441cc94081001804302bd74c2"
+    },
+    "product_featured_videos": {
+      "rows": 1,
+      "sha256": "2432f5780af9c627010ef32c68b9c760e0cf64cda346a6d30b032465df85f7c5"
+    }
+  },
+  "bindings_preserved": [
+    "DB",
+    "MAIL_WEBHOOK_TOKEN",
+    "MAIL_WEBHOOK_URL",
+    "MEDIA",
+    "SESSION_SECRET",
+    "SETUP_TOKEN",
+    "STORE_LIVE"
+  ],
+  "store_live": true,
+  "tests": {
+    "passed": 295,
+    "failed": 0
+  },
+  "browser": {
+    "admin_preview_uses_sanitized_catalog_and_no_customer_orders": true,
+    "preview_frame_widths": [
+      390
+    ],
+    "navigation_buttons_min_height": 54,
+    "preview_horizontal_overflow": false,
+    "ten_image_slots_available": true,
+    "korean_card_and_cover_independent": true,
+    "product_save_and_close_visible_on_phone": true,
+    "published_admin_asset_version": "5.6.0",
+    "production_admin_sign_in_boundary_visible": true,
+    "production_storefront_loaded_with_approved_korean_card": true,
+    "production_test_orders": 0
+  },
+  "rollback": {
+    "previous_source_commit": "812e4135a4bcd9e20fb11c3417b0b4c7105d746f",
+    "previous_worker_version": "51642c19-2381-4ed8-82d1-5f89f7d36a8c",
+    "keep_current_database_and_media": true
+  }
+}
