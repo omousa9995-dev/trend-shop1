@@ -1,0 +1,108 @@
+{
+  "version": "5.7.2",
+  "sourceCommit": "fc5a83b5dd48fcfacd6cba25a8e74a1f81e4beee",
+  "deployed": {
+    "deployment": "a8f3874a-572c-480b-8357-ece653758d4e",
+    "version": [
+      {
+        "version_id": "680850ac-02a8-4b16-ba7c-5cce22653bd2",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-11-07T20:04:40.774608Z",
+    "assetCount": 595,
+    "moduleCount": 26,
+    "bindingsPreserved": true,
+    "sourceCommit": "fc5a83b5dd48fcfacd6cba25a8e74a1f81e4beee",
+    "verifiedAssets": [
+      {
+        "path": "/admin.html",
+        "hash": "dfb2117fbd95d44688a6623e4319e6cc33edf48f597d0bac59c9c9c7dc98b3a8"
+      },
+      {
+        "path": "/admin.js",
+        "hash": "1dde3d0d817a231765e5927919919af7e7317f114da7f0e19d850f26f4f72e22"
+      },
+      {
+        "path": "/customer-report-admin.js",
+        "hash": "7654e361dac6821129653f9dd5da4d4736ecededbb542c68c37085c75099c6cf"
+      },
+      {
+        "path": "/customer-workbook-model.js",
+        "hash": "695dccbd9cb247b1f1b1b3c5c8ae55f80a04ced537841b07bd7e91a300bf9bdb"
+      },
+      {
+        "path": "/customer-workbook.js",
+        "hash": "e9c010be3e908f25d0b297d5a7d90ea4a3d68177381d294cbb569470a595ce17"
+      }
+    ],
+    "changedServerModules": []
+  },
+  "validation": {
+    "automatedTests": {
+      "passed": 310,
+      "failed": 0
+    },
+    "privateApi": {
+      "signedSessionRequired": true,
+      "productionUnauthenticatedRequestRejected": true,
+      "noStore": true,
+      "completeHistoryPagination": true,
+      "syntheticOrderCountTested": 607,
+      "concurrentInsertSnapshotTest": true,
+      "actualD1ReadVerified": true
+    },
+    "workbook": {
+      "sheets": 5,
+      "authoring": "artifact-tool",
+      "allActualDataCellsCompared": true,
+      "runtimeActualWorkbookCompared": true,
+      "formulaErrors": 0,
+      "phonesAsText": true,
+      "moneyNumericJOD": true,
+      "datesNumericAmman": true,
+      "printAreasAndRepeatingHeaders": true,
+      "browserDownloadRoundTrip": true,
+      "customerDataInPublicAssets": false
+    },
+    "browser": {
+      "previewData": "synthetic only",
+      "productionSignedInReportTested": false,
+      "productionSignInAndModuleGraphVerified": true,
+      "liveAdminEntry": "/admin.js?v=5.7.2",
+      "mobile390NoPageOverflow": true,
+      "exportExcel": true,
+      "exportCsv": true,
+      "filters": true,
+      "protectedReport": true,
+      "consoleErrors": "browser extension metadata messages only"
+    },
+    "databaseChanges": {
+      "migrations": false,
+      "writes": false,
+      "orderItemAndStockIntegrityUnchanged": true
+    },
+    "preserved": {
+      "dailyInvoicePrint": true,
+      "selectedInvoicePrint": true,
+      "individualInvoicePrint": true,
+      "storefront": true,
+      "ownerAuthentication": true,
+      "workerBindings": true
+    },
+    "meta": {
+      "automaticTransmission": false,
+      "consentInferred": false,
+      "completedOnly": true,
+      "testOrdersExcluded": true,
+      "missingAndAmbiguousNamesFlagged": true,
+      "sharedEmailsOmitted": true
+    }
+  },
+  "limitations": [
+    "Downloaded workbooks are timestamped snapshots; every new download fetches current records.",
+    "First and family names are inferred from the full name because orders do not store them separately.",
+    "Marketing consent is not recorded in existing orders.",
+    "Browser interaction tests used synthetic records; production report authentication remained intact."
+  ]
+}
