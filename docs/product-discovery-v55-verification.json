@@ -1,0 +1,81 @@
+{
+  "version": "5.5.0",
+  "verified_at": "2026-11-07T14:10:38.766Z",
+  "implementation_commit": "9773f7587b14752ef570430b42fb73d7fe5b02bd",
+  "deployment": {
+    "id": "68a51251-c14a-4a17-adfd-c5757a26cead",
+    "source": "api",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/message": "Automatic deployment on upload.",
+      "workers/triggered_by": "upload"
+    },
+    "versions": [
+      {
+        "version_id": "abe3ff61-8909-471c-9404-238626841379",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-11-07T14:07:18.920759Z"
+  },
+  "changes": [
+    {
+      "path": "/app.js",
+      "sha256": "f0c0a69fd839fa38f64b10faa0880079ef48c0e81871bb98409542b561931d56"
+    },
+    {
+      "path": "/index.html",
+      "sha256": "d7ae189416121b2342998ff809b95a739968be13e6bd3bb1f7ad4a6918d73b87"
+    },
+    {
+      "path": "/product-discovery.js",
+      "sha256": "96ae1b38bd17fc3acf5bdd5da55f31866cb3961cecca12849a8a575dc6618657"
+    },
+    {
+      "path": "/product-discovery.css",
+      "sha256": "e9fe1ddd2fdc7d67da1235538f5804aec76bfddf1c942c80cb86b1d61b60a3b2"
+    }
+  ],
+  "server_modules_unchanged": true,
+  "production_data_preserved": true,
+  "product_and_setting_hashes": {
+    "products": "031e3bf243eb563807e3d4edb0a63ba236a748bf9b5138f71bcf0b4225892da2",
+    "promotions": "81d6256c000a2f1af97323c9ee6e5c802e64a0c006f7025f8a67365ea241df19",
+    "site_settings": "d12ab90a3a06d3ad37a1fb8cebcc6ab17a47399034583326c188c9df435888cc",
+    "product_videos": "210cd638b2e4bbbb99eb34ff06044a33dfaa7f2c56d7c88282a91a80e64b5802",
+    "product_featured_videos": "2432f5780af9c627010ef32c68b9c760e0cf64cda346a6d30b032465df85f7c5"
+  },
+  "bindings_preserved": [
+    "DB",
+    "MAIL_WEBHOOK_TOKEN",
+    "MAIL_WEBHOOK_URL",
+    "MEDIA",
+    "SESSION_SECRET",
+    "SETUP_TOKEN",
+    "STORE_LIVE"
+  ],
+  "store_live": true,
+  "tests": {
+    "passed": 292,
+    "failed": 0
+  },
+  "browser": {
+    "preview_languages": [
+      "ar",
+      "en"
+    ],
+    "preview_frame_widths": [
+      320,
+      390
+    ],
+    "production_home_and_combined_brand_need_filters": true,
+    "production_test_orders": 0
+  },
+  "rollback": {
+    "version": "5.4.0",
+    "branch": "backup/v5.4.0-before-glowy-2026-11-07",
+    "source_commit": "dbe4f97501848f0703b51d83f85071f5db7c8bfe",
+    "worker_version_id": "c61c3d71-469c-4822-b0a3-9e87e6ecb0d7",
+    "keep_current_database_and_media": true
+  }
+}
