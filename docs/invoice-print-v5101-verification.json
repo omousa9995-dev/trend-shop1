@@ -1,0 +1,29 @@
+{
+  "release": "5.10.1",
+  "sourceCommit": "615cbff6e21b0a60d4324074f6778d9c9543413d",
+  "versionId": "21392f96-c18c-43c2-8fb0-571b658dc8ba",
+  "deploymentId": "5e812115-42c2-45df-a556-1d7c57b8151d",
+  "percentage": 100,
+  "tests": 354,
+  "githubRun": 42533130165,
+  "githubConclusion": "success",
+  "syntheticPdf": {
+    "pages": 2,
+    "A4": true,
+    "oneInvoicePerPage": true,
+    "toolbarAbsent": true
+  },
+  "emulatedMobile": {
+    "width": 390,
+    "height": 844,
+    "reviewed": true
+  },
+  "liveBrowser": {
+    "url": "https://trendjo.pages.dev/admin.html?v=5.10.1",
+    "adminScript": "/admin.js?v=5.10.1",
+    "previewControllerMounted": true,
+    "stylesheetPresent": true,
+    "anonymousLoginVisible": true
+  },
+  "physicalPrinterTested": false
+}
