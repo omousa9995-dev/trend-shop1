@@ -1,0 +1,106 @@
+{
+  "release": "5.9.1",
+  "status": "published",
+  "url": "https://trendjo.pages.dev/",
+  "admin_url": "https://trendjo.pages.dev/admin.html",
+  "implementation_commit": "76c88d7c607b67af9293419bd07646ac80eb86b2",
+  "ci_result": "success",
+  "ci_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42513797647",
+  "worker_version_id": "9871c423-ff7f-4dfc-9413-327f3700b74e",
+  "worker_version_number": 51,
+  "deployment_id": "4b279443-6a4b-4c35-934f-d185c5a47bcb",
+  "traffic_percent": 100,
+  "published_utc": "2026-11-08T21:15:11.227872Z",
+  "published_jordan": "2026-11-09T00:15:11.227872+03:00",
+  "rollback_worker_version_id": "1111b562-d1a2-4ec8-9b47-af21ee1f5c1b",
+  "automated_tests": {
+    "passed": 336,
+    "failed": 0,
+    "new_regression_cases": 3
+  },
+  "package": {
+    "modules": 29,
+    "embedded_files": 603,
+    "changed_assets": [
+      "/app.js",
+      "/index.html"
+    ],
+    "baseline_hashes_verified": true
+  },
+  "smoke_checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "8fda498be5d66151ab0f1881e16d9da79e6260db2a5d5a8a39550a0a9081f988",
+      "app591": true,
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/app.js?v=5.9.1",
+      "status": 200,
+      "sha256": "c983367c9d84228dccc5f1eb0c83feff7dd9e7058e9f238d8d170f55c307a421",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/admin.html",
+      "status": 200,
+      "sha256": "d14ac6ea937acf8443440bacf6a6251f1b99a1f9c8d04d92b8369fdf852ac7f1"
+    },
+    {
+      "path": "/p/TS0098",
+      "status": 200,
+      "sha256": "376c25a950f316958b92b23c089f4e0d2139f4248d5f9be6aeb34ef8aeb91b8b",
+      "app591": true
+    },
+    {
+      "path": "/api/catalog",
+      "status": 200,
+      "sha256": "a117a3cf871cca1ce1ddb0ef3dc93277f22f437a7073fb8b934613406350f4b3",
+      "products": 302,
+      "storeLive": true
+    },
+    {
+      "path": "/api/mail-health",
+      "status": 200,
+      "sha256": "42a8b60bd041c20d08d41549b7dad466f62f0cb2d8733440768b475736a5ba6c",
+      "configured": true,
+      "reachable": true,
+      "canSend": true
+    },
+    {
+      "path": "/api/admin/orders",
+      "status": 401,
+      "sha256": "fe692473b5a6193dae5803549b8434c2b66c740ef1e95f2d2649851c8669f4c1"
+    },
+    {
+      "path": "/api/admin/customer-report",
+      "status": 401,
+      "sha256": "fe692473b5a6193dae5803549b8434c2b66c740ef1e95f2d2649851c8669f4c1"
+    }
+  ],
+  "browser": {
+    "search": "تونر",
+    "opened_product_id": "TS0091",
+    "app_script": "/app.js?v=5.9.1",
+    "submitted_order": false
+  },
+  "retained_bindings": [
+    "DB",
+    "MAIL_WEBHOOK_TOKEN",
+    "MAIL_WEBHOOK_URL",
+    "MEDIA",
+    "SESSION_SECRET",
+    "SETUP_TOKEN",
+    "SHORT_ORDER_IDS",
+    "STORE_LIVE"
+  ],
+  "observability_retained": true,
+  "database_migrations": [],
+  "production_test_orders_created": 0,
+  "test_emails_sent": 0,
+  "limits": {
+    "fifty_simultaneous_rendered_browsers_verified": false,
+    "physical_iphone_tested": false,
+    "durable_email_queue_implemented": false
+  }
+}

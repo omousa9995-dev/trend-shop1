@@ -28,5 +28,34 @@ continues to contain only the opaque key and timestamp, with no contact details.
 No new production test order or email is needed for this release. Customer order
 tracking remains deferred. This change does not implement a durable mail queue.
 
-The production deployment and byte-verification record is saved separately in
-`checkout-recovery-v591-verification.json` after publication.
+## Publication status
+
+Published after explicit user approval on 9 November 2026 at 00:15 Jordan time
+(8 November 21:15:11 UTC). Worker version
+`9871c423-ff7f-4dfc-9413-327f3700b74e` (number 51) serves 100% of traffic under
+deployment `4b279443-6a4b-4c35-934f-d185c5a47bcb`.
+
+The implementation is saved in commit
+`76c88d7c607b67af9293419bd07646ac80eb86b2`, whose GitHub validation passed.
+The production package was made from the deployed modules by replacing exactly
+two embedded assets after checking their baseline SHA-256 hashes against the
+repository. All bindings, live-store settings, media and observability remain
+inherited. No database migration or production test order was needed.
+
+After publication, storefront HTML and app JavaScript matched the tested source
+byte for byte. Store, admin, a server-rendered product, catalog and mail health
+returned 200. The catalog has 302 products with live ordering; mail health reports
+configured/reachable/canSend. Unauthenticated order administration and customer
+reports returned 401. In the live browser, «تونر» search displayed matching
+products and selecting Anua opened TS0091. The browser loaded `/app.js?v=5.9.1`.
+
+The prior publication attempt was blocked by automatic approval review. The user
+then explicitly approved publication; the same staged version was deployed
+through the original API route. No workaround was used.
+
+Rollback code by deploying prior Worker version
+`1111b562-d1a2-4ec8-9b47-af21ee1f5c1b`, without restoring or resetting business
+data. The staged Version URL had returned 404 before publication; browser
+verification here refers to the production store.
+
+See `checkout-recovery-v591-verification.json` for the retained hashes and status.
