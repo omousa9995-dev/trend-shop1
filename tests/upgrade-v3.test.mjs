@@ -12,9 +12,10 @@ import {productType} from '../public/product-types.js';
 import {curatedProducts} from '../public/merchandising.js';
 const read=file=>fs.readFileSync(new URL('../'+file,import.meta.url),'utf8'),catalog=JSON.parse(read('public/catalog.json'));
 const pause=()=>new Promise(resolve=>setTimeout(resolve,5));
-async function open(t,{path='/?lang=en#/shop',cart=[],live=false,onOrder,onStatus}={}){
+async function open(t,{path='/?lang=en#/shop',cart=[],live=false,onOrder,onStatus,pending=null,products=catalog}={}){
  const dom=new JSDOM(read('public/index.html'),{url:'https://trend.test'+path,runScripts:'outside-only',pretendToBeVisual:true});t.after(()=>dom.window.close());const w=dom.window,d=w.document;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};w.localStorage.setItem('trend-shop-cart-v1',JSON.stringify(cart));
- w.fetch=async(url,options={})=>{if(String(url).startsWith('/api/catalog'))return Response.json({products:catalog,promotions:[],storeLive:live});if(String(url).startsWith('/api/reviews'))return Response.json({reviews:[],summary:{count:0,average:null}});if(url==='/api/orders')return onOrder?onOrder(options):Response.json({orderId:'TR-TEST-SAFE',received:true,paymentMethod:'cod',shippingFeeFils:1000,totalFils:11000});if(url==='/api/order-status')return onStatus?onStatus(options):Response.json({received:false});try{return Response.json(JSON.parse(read('public'+String(url).split('?')[0])))}catch{return Response.json({}, {status:404})}};
+ if(pending)savePendingCheckout(w.sessionStorage,pending);
+ w.fetch=async(url,options={})=>{if(String(url).startsWith('/api/catalog'))return Response.json({products,promotions:[],storeLive:live});if(String(url).startsWith('/api/reviews'))return Response.json({reviews:[],summary:{count:0,average:null}});if(url==='/api/orders')return onOrder?onOrder(options):Response.json({orderId:'TR-TEST-SAFE',received:true,paymentMethod:'cod',shippingFeeFils:1000,totalFils:11000});if(url==='/api/order-status')return onStatus?onStatus(options):Response.json({received:false});try{return Response.json(JSON.parse(read('public'+String(url).split('?')[0])))}catch{return Response.json({}, {status:404})}};
  w.eval(storefrontBundle);for(let n=0;n<100&&!(d.querySelector('.product-card')||d.querySelector('#checkoutForm')||d.querySelector('.detail-content')||d.querySelector('.product-story'));n++)await pause();await pause();return {w,d};
 }
 test('Shared checkout accepts two-letter names, one-word areas, optional email and pasted Arabic/English phones',()=>{
@@ -60,4 +61,26 @@ test('A saved order recovered after a lost response shows its real receipt witho
 });
 test('English checkout has complete visible translations, including the free-delivery incentive',async t=>{
  const {d}=await open(t,{path:'/?lang=en#/checkout',cart:[{id:'TS0079',qty:2},{id:'TS0035',qty:1}],live:true});await pause();assert.match(d.querySelector('.delivery-goal').textContent,/free delivery|Free delivery/);assert.doesNotMatch(d.querySelector('#app').textContent,/[\u0600-\u06ff]/);
+});
+
+test('Reload recovers a saved receipt before validating empty customer fields or depleted stock, without another order',async t=>{
+ const key='reload-lost-response-123456789',checks=[];let posts=0;
+ const {w,d}=await open(t,{path:'/?lang=en#/checkout',live:true,cart:[{id:'TS0079',qty:1}],products:catalog.map(p=>({...p,stock:0})),pending:{key,at:Date.now()},onOrder:()=>{posts++;throw Error('Must not resubmit')},onStatus:options=>{checks.push(options);return Response.json({received:true,orderId:'TR-7K3M',paymentMethod:'cliq',shippingFeeFils:1000,totalFils:8000})}});
+ for(let i=0;i<80&&!d.querySelector('.success-panel');i++)await pause();
+ assert.ok(d.querySelector('.success-panel'));assert.match(d.querySelector('.success-panel').textContent,/TR-7K3M/);assert.match(d.querySelector('.success-panel').textContent,/8.00 JOD/);assert.match(d.querySelector('.success-panel').textContent,/CliQ/);
+ assert.equal(posts,0);assert.equal(checks.length,1);assert.equal(checks[0].headers['x-idempotency-key'],key);assert.equal(checks[0].body,'{}');assert.equal(w.sessionStorage.getItem('trend-shop-pending-checkout-v3'),null);assert.deepEqual(JSON.parse(w.localStorage.getItem('trend-shop-cart-v1')),[]);
+});
+
+test('Offline reload keeps the receipt key and a manual confirm recovers it before requiring customer fields',async t=>{
+ const key='reload-offline-response-123456789';let checks=0,posts=0;
+ const {w,d}=await open(t,{path:'/?lang=en#/checkout',live:true,cart:[{id:'TS0079',qty:1}],pending:{key,at:Date.now()},onOrder:()=>{posts++;throw Error('Must not resubmit')},onStatus:()=>{checks++;if(checks===1)throw Error('offline');return Response.json({received:true,orderId:'TR-8N5M',paymentMethod:'cod',shippingFeeFils:0,totalFils:27980})}});
+ const form=d.querySelector('#checkoutForm');assert.ok(form);assert.equal(form.elements.name.value,'');assert.equal(readPendingCheckout(w.sessionStorage).key,key);assert.equal(posts,0);
+ form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));for(let i=0;i<80&&!d.querySelector('.success-panel');i++)await pause();
+ assert.ok(d.querySelector('.success-panel'));assert.match(d.querySelector('.success-panel').textContent,/TR-8N5M/);assert.equal(checks,2);assert.equal(posts,0);assert.equal(w.sessionStorage.getItem('trend-shop-pending-checkout-v3'),null);
+});
+
+test('Reload with no saved server receipt retains the key and never creates an order automatically',async t=>{
+ const key='reload-no-server-receipt-123456789';let checks=0,posts=0;
+ const {w,d}=await open(t,{path:'/?lang=en#/checkout',live:true,cart:[{id:'TS0079',qty:1}],pending:{key,at:Date.now()},onOrder:()=>{posts++;return Response.json({})},onStatus:()=>{checks++;return Response.json({received:false})}});
+ assert.ok(d.querySelector('#checkoutForm'));assert.equal(checks,1);assert.equal(posts,0);assert.equal(readPendingCheckout(w.sessionStorage).key,key);assert.equal(JSON.parse(w.localStorage.getItem('trend-shop-cart-v1')).length,1);assert.doesNotMatch(w.sessionStorage.getItem('trend-shop-pending-checkout-v3'),/phone|address|name/);
 });
