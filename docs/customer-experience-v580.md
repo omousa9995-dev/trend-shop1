@@ -68,12 +68,18 @@ endpoint is retained; it is not a tracking page.
 
 ## Validation and rollback
 
-`npm test`: 324 passing tests, including 14 new focused cases for discovery,
+`npm test`: 325 passing tests, including 14 new focused cases for discovery,
 browser storage, shade coverage/validation/photo changes, preserved content,
 owner saves, measurement privacy/deduplication and real-order idempotency.
 Phone UI checked at 320, 390 and 430 CSS pixels, in Arabic and English.
 No real test order was created. Existing invoice printing, customer reports,
 authentication, media controls, pricing and shared-stock guards remain covered.
+
+The API deployment package resolves the actual Worker import graph, including
+customer reports and metrics. Its additional smoke test imports the generated
+entrypoint and checks store/admin HTML and the exact bytes of all seven charts.
+All seven original chart files remain same-origin static assets with unchanged
+bytes. The upload is below the current 64 MiB uncompressed Worker size limit.
 
 Roll back by restoring the previous Worker source and static assets. Leave the
 additive metrics tables in place; the previous version does not access them.

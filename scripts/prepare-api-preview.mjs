@@ -3,9 +3,10 @@
  * This preview adapter invokes the Worker for static files too.
  */
 import {readFileSync,writeFileSync,mkdirSync,readdirSync} from 'node:fs';
-import {join,relative,extname} from 'node:path';
+import {join,relative,extname,dirname} from 'node:path';
 import {createHash} from 'node:crypto';
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon'};
+import {buildSync} from 'esbuild';
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.txt':'text/plain; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon'};
 const entries={};
 function walk(dir){for(const file of readdirSync(dir,{withFileTypes:true})){
  const path=join(dir,file.name);
@@ -27,11 +28,19 @@ export const assets={async fetch(request){
  const body=request.method==='HEAD'?null:file[2]?Uint8Array.from(atob(file[0]),c=>c.charCodeAt(0)):file[0];
  return new Response(body,{headers});
 }};`;
-const entry="import worker from './worker.js';\nimport {assets} from './preview-assets.js';\nexport default {fetch(request,env,ctx){return worker.fetch(request,{...env,ASSETS:assets},ctx)}};\n";
+const entry="import worker from './src/worker.js';\nimport {assets} from './preview-assets.js';\nexport default {fetch(request,env,ctx){return worker.fetch(request,{...env,ASSETS:assets},ctx)}};\n";
 mkdirSync('deployment-private',{recursive:true});
 writeFileSync('deployment-private/preview-assets.js',adapter);
 writeFileSync('deployment-private/preview-entry.js',entry);
-const modules=[['preview-entry.js',entry],['preview-assets.js',adapter],['worker.js',readFileSync('src/worker.js','utf8').replaceAll('../public/','./').replace("'./site-settings.js'","'./site-settings-server.js'").replace("'../public/commerce.js'","'./commerce.js'").replace("'../public/product-variants.js'","'./product-variants.js'").replace("'../public/contact-phone.js'","'./contact-phone.js'").replace("'../public/catalog-policy.js'","'./catalog-policy.js'")],['commerce.js',readFileSync('public/commerce.js','utf8')],['promotion-planner.js',readFileSync('public/promotion-planner.js','utf8')],...['bundles.js','pair-pricing.js','site-defaults.js','site-settings.js','product-video-presentation.js','product-variants.js','product-types.js','shop-tools.js','contact-phone.js','catalog-policy.js','checkout-rules.js'].map(f=>[f,readFileSync('public/'+f,'utf8')]),['product-page.js',readFileSync('src/product-page.js','utf8').replace("'../public/product-links.js'","'./product-links.js'").replace("'../public/catalog-policy.js'","'./catalog-policy.js'")],['product-links.js',readFileSync('public/product-links.js','utf8')],['promotions.js',readFileSync('src/promotions.js','utf8').replace("'../public/commerce.js'","'./commerce.js'").replace("'../public/product-variants.js'","'./product-variants.js'").replace("'../public/contact-phone.js'","'./contact-phone.js'").replace("'../public/catalog-policy.js'","'./catalog-policy.js'")],['site-settings-server.js',readFileSync('src/site-settings.js','utf8').replaceAll('../public/','./')],['admin-setup.js',readFileSync('src/admin-setup.js','utf8')],['media.js',readFileSync('src/media.js','utf8')],['product-videos.js',readFileSync('src/product-videos.js','utf8').replaceAll('../public/','./')],['product-featured-video.js',readFileSync('src/product-featured-video.js','utf8').replaceAll('../public/','./')],['reviews.js',readFileSync('src/reviews.js','utf8').replaceAll('../public/','./')]];
-for(const row of modules)if(row[0]!=='preview-assets.js')row[1]=row[1].replace(/\.js\?v=[^'\"]+/g,'.js');
+// Resolve the actual Worker graph so newly imported server modules cannot be
+// silently left out. Preserve directory names: src/site-settings.js and
+// public/site-settings.js are separate modules with different responsibilities.
+const graph=buildSync({entryPoints:['src/worker.js'],bundle:true,write:false,format:'esm',platform:'browser',target:'es2022',metafile:true,logLevel:'silent'}).metafile;
+const sources=[...new Set(Object.keys(graph.inputs).map(p=>p.split('?')[0]))].sort();
+if(sources.some(p=>!p.startsWith('src/')&&!p.startsWith('public/')))throw Error('Unexpected deployment dependency');
+const modules=[['preview-entry.js',entry],['preview-assets.js',adapter],...sources.map(p=>[p,readFileSync(p,'utf8').replace(/\.js\?v=[^'\"]+/g,'.js')])];
+for(const [name,text]of modules){const path=join('deployment-private',name);mkdirSync(dirname(path),{recursive:true});writeFileSync(path,text);}
 writeFileSync('deployment-private/modules.json',JSON.stringify(modules));
-console.log(JSON.stringify({files:Object.keys(entries).length,modules:modules.length,bytes:modules.reduce((n,[_,s])=>n+Buffer.byteLength(s),0)}));
+const hash=createHash('sha256').update(JSON.stringify([...modules].sort(([a],[b])=>a.localeCompare(b)))).digest('hex');
+writeFileSync('deployment-private/package-summary.json',JSON.stringify({files:Object.keys(entries).length,modules:modules.length,bytes:modules.reduce((n,[_,s])=>n+Buffer.byteLength(s),0),sha256:hash}));
+console.log(readFileSync('deployment-private/package-summary.json','utf8'));
