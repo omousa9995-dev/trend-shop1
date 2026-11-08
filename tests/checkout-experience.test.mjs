@@ -102,3 +102,11 @@ test('Retired products cannot reappear in old saved carts, API rows, search or r
 test('Former advertising choices do not load a banner or tracking scripts and are cleared without affecting the cart',async t=>{
  for(const choice of ['accepted','rejected']){const {w,d}=await open(t,{marketingChoice:choice,live:true,cart:[{id:'TS0064',qty:1}]});assert.equal(d.querySelector('#marketingConsent'),null);assert.equal(d.querySelector('[data-marketing-preferences]'),null);assert.equal(typeof w.fbq,'undefined');assert.equal(w.localStorage.getItem('trend-shop-marketing-consent-v1'),null);assert.doesNotMatch(d.cookie,/_fbp/);assert.equal(d.querySelector('#cartCount').textContent,'1');assert.ok([...d.querySelectorAll('script[src]')].every(x=>new URL(x.src).origin===w.location.origin))}
 });
+
+test('Every visible product-brand position opens the complete normalized brand collection',async t=>{
+ for(const selector of ['.detail-brand.brand-link','.story-intro .story-eyebrow .brand-link','.story-breadcrumb .brand-link']){
+  const {w,d,tick}=await open(t,{hash:'#/product/TS0109',cart:[{id:'TS0064',qty:1}]});const link=d.querySelector(selector);assert.ok(link,selector);assert.equal(link.textContent,'COSRX');link.click();
+  for(let i=0;i<60&&!d.querySelector('#brandSelect');i++){tick(0);await pause()}
+  assert.equal(d.querySelector('#brandSelect').value,'COSRX');assertCatalogResults(d,catalog.filter(p=>p.brand.toLowerCase()==='cosrx').length+' منتج');assert.equal(d.querySelector('#cartCount').textContent,'1');
+ }
+});

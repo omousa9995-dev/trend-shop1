@@ -30,12 +30,21 @@ test('Quick review edits quantities and shipping in place without remounting del
  const products=catalog.map(p=>p.id==='TS0081'?{...p,priceFils:11000}:p);const {w,d}=await open(t,{products});d.querySelector('.story-order').click();await until(()=>d.querySelector('#checkoutForm'));const f=fill(d);d.querySelector('#checkoutSummary [data-step="1"]').click();assert.equal(d.querySelector('#checkoutForm'),f);assert.equal(f.elements.address.value,'العبدلي');assert.equal(cart(w)[0].qty,2);assert.match(d.querySelector('#checkoutSummary').textContent,/19.99/);assert.match(d.querySelector('#checkoutSummary').textContent,/مجاني/);d.querySelector('#checkoutSummary [data-step="-1"]').click();assert.equal(cart(w)[0].qty,1);assert.match(d.querySelector('#checkoutSummary').textContent,/1.00/);assert.doesNotMatch(d.querySelector('.quick-checkout').textContent,/بتأكيد الطلب توافقين/);assert.equal(d.querySelector('.quick-checkout a[href="#/privacy"]'),null);
 });
 
-test('Removing the last item disables confirmation; search adds a replacement and preserves the form',async t=>{
- const {w,d,sent}=await open(t,{path:'#/checkout',cart:[{id:'TS0081',qty:1}]});const f=fill(d);d.querySelector('#checkoutSummary [data-remove-cart]').click();assert.deepEqual(cart(w),[]);assert.equal(d.querySelector('#confirmButton').disabled,true);assert.ok(d.querySelector('.checkout-empty'));d.querySelector('[data-checkout-add]').click();assert.equal(d.querySelector('#searchAllResults').hidden,true);input(w,d.querySelector('#globalSearch'),'جلايكوليك');d.querySelector('#globalSuggestions [role=option]').click();assert.equal(d.querySelector('#searchPanel').hidden,true);assert.equal(w.location.hash,'#/checkout');assert.equal(cart(w)[0].id,'TS0064');assert.equal(d.querySelector('#checkoutForm'),f);assert.equal(f.elements.name.value,'طلب اختبار محلي');assert.equal(f.elements.address.value,'العبدلي');assert.equal(d.querySelector('#confirmButton').disabled,false);assert.equal(sent.length,0);
+test('Removing the last item opens a curated replacement picker without search and preserves the form',async t=>{
+ const {w,d,sent}=await open(t,{path:'#/checkout',cart:[{id:'TS0081',qty:1}]});const f=fill(d);
+ d.querySelector('#checkoutSummary [data-remove-cart]').click();assert.deepEqual(cart(w),[]);assert.equal(d.querySelector('#confirmButton').disabled,true);
+ const trigger=d.querySelector('[data-checkout-add]');trigger.click();const panel=d.querySelector('#checkoutSuggestions');assert.equal(panel.open,true);assert.equal(d.querySelector('#searchPanel').hidden,true);assert.equal(panel.querySelector('input[type=search]'),null);
+ const add=panel.querySelector('[data-suggestion-add]'),id=add.dataset.suggestionAdd;add.click();
+ assert.equal(cart(w)[0].id,id);assert.equal(w.location.hash,'#/checkout');assert.equal(d.querySelector('#checkoutForm'),f);assert.equal(f.elements.name.value,'طلب اختبار محلي');assert.equal(f.elements.address.value,'العبدلي');assert.equal(d.querySelector('#confirmButton').disabled,false);assert.equal(sent.length,0);
+ panel.querySelector('[data-suggestions-close]').click();assert.equal(panel.open,false);assert.equal(d.activeElement,d.querySelector('[data-checkout-add]'));
 });
 
-test('Order-review search opens the required tone picker before adding a foundation',async t=>{
- const {w,d}=await open(t,{path:'#/checkout',cart:[{id:'TS0081',qty:1}]});const f=fill(d);d.querySelector('[data-checkout-add]').click();input(w,d.querySelector('#globalSearch'),'كومبلكشن');const option=d.querySelector('#globalSuggestions a[href="/p/TS0347"]');assert.ok(option);option.click();assert.equal(cart(w).length,1);const dialog=d.querySelector('.option-dialog');assert.equal(dialog.open,true);const tone=dialog.querySelector('[value="tone-3"]');tone.checked=true;dialog.querySelector('form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));assert.ok(cart(w).some(x=>x.id==='TS0347'&&x.variant==='tone-3'));assert.equal(f,d.querySelector('#checkoutForm'));assert.equal(f.elements.address.value,'العبدلي');assert.equal(d.querySelector('#checkoutSummary [data-cart-option="TS0347"]').value,'tone-3');
+test('Checkout complements require an explicit powder shade and save it without replacing delivery fields',async t=>{
+ const {w,d,sent}=await open(t,{path:'#/checkout',cart:[{id:'TS0347',qty:1,variant:'tone-2'}]});const f=fill(d);
+ d.querySelector('[data-checkout-add]').click();const panel=d.querySelector('#checkoutSuggestions');assert.equal(panel.open,true);
+ const card=panel.querySelector('[data-suggestion-type=powder]');assert.ok(card);const id=card.dataset.suggestionProduct;card.querySelector('[data-suggestion-add]').click();assert.equal(cart(w).length,1);
+ const select=card.querySelector('select');assert.equal(select.getAttribute('aria-invalid'),'true');assert.equal(d.activeElement,select);select.value='tone-3';select.dispatchEvent(new w.Event('change',{bubbles:true}));card.querySelector('[data-suggestion-add]').click();
+ assert.ok(cart(w).some(x=>x.id===id&&x.variant==='tone-3'));assert.equal(f,d.querySelector('#checkoutForm'));assert.equal(f.elements.address.value,'العبدلي');assert.equal(d.querySelector('#checkoutSummary [data-cart-option="'+id+'"]').value,'tone-3');assert.equal(panel.querySelector('[data-suggestion-type=powder]'),null);assert.equal(sent.length,0);
 });
 
 test('A bundle stays one image and complete price row while quantities change or it is removed',async t=>{
@@ -86,4 +95,16 @@ test('A query typed while the catalog is loading stays open and receives results
  assert.ok(d.querySelectorAll('#globalSuggestions [role=option]').length>1);
  assert.equal(d.activeElement.id,'globalSearch');
  assert.equal(d.body.style.overflow,'hidden');
+});
+
+test('Quick checkout keeps its form mounted beneath contextual suggestions and returns focus on Escape',async t=>{
+ const {w,d,sent}=await open(t,{path:'#/product/TS0079'});d.querySelector('.story-order').click();await until(()=>d.querySelector('#checkoutForm'));const f=fill(d),quick=d.querySelector('.quick-checkout');
+ d.querySelector('[data-checkout-add]').click();const panel=d.querySelector('#checkoutSuggestions');assert.equal(quick.open,true);assert.equal(panel.open,true);assert.equal(d.activeElement.id,'checkoutSuggestionsTitle');
+ const row=panel.querySelector('[data-suggestion-group=skin-moisture] [data-suggestion-add]');assert.ok(row);row.click();assert.equal(d.querySelector('#checkoutForm'),f);assert.equal(f.elements.notes.value,'اختبار لا يرسل طلبات');assert.equal(panel.querySelector('[data-suggestion-group=skin-moisture]'),null);assert.equal(cart(w).length,2);assert.equal(sent.length,0);
+ panel.dispatchEvent(new w.Event('cancel',{cancelable:true}));assert.equal(panel.open,false);assert.equal(quick.open,true);assert.equal(d.body.style.overflow,'hidden');assert.equal(d.activeElement,d.querySelector('[data-checkout-add]'));assert.equal(d.querySelector('#searchPanel').hidden,true);
+});
+
+test('English suggestion groups, shade labels, feedback and totals follow the checkout language',async t=>{
+ const {w,d}=await open(t,{path:'?lang=en#/checkout',cart:[{id:'TS0347',qty:1,variant:'tone-2'}]});fill(d);d.querySelector('[data-checkout-add]').click();const panel=d.querySelector('#checkoutSuggestions');assert.doesNotMatch(panel.textContent,/[\u0600-\u06ff]/);
+ panel.querySelector('[data-suggestion-type=mascara] [data-suggestion-add]').click();assert.match(panel.querySelector('[role=status]').textContent,/Added/);assert.doesNotMatch(panel.textContent,/[\u0600-\u06ff]/);assert.equal(cart(w).length,2);
 });
