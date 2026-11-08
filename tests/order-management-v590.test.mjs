@@ -86,7 +86,7 @@ test('Select all can change every displayed order once; pending requests lock se
   const html=read('public/admin.html'),source=buildSync({entryPoints:[new URL('../public/admin.js',import.meta.url).pathname],bundle:true,format:'iife',write:false,logLevel:'silent'}).outputFiles[0].text;
   const vc=new VirtualConsole(),errors=[];vc.on('jsdomError',e=>errors.push(e.message));
   const dom=new JSDOM(html,{url:'https://trend.test/admin.html',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});t.after(()=>dom.window.close());
-  const w=dom.window,d=w.document;w.structuredClone=structuredClone;w.HTMLElement.prototype.scrollIntoView=()=>{};
+  const w=dom.window,d=w.document;w.structuredClone=structuredClone;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};
   let release;const pending=new Promise(resolve=>release=resolve),posts=[],printed=[];
   const rows=['TR-7K3M','TR-8N4P'].map(id=>({id,status:'جديد',created_at:'2026-11-08 10:00:00',name:'سارة',subtotal_fils:11990,shipping_fee_fils:1000,items:[]}));
   w.print=()=>printed.push(d.querySelector('#printRoot').innerHTML);
@@ -101,7 +101,7 @@ test('Select all can change every displayed order once; pending requests lock se
   d.querySelector('#applyOrderStatus').click();d.querySelector('#applyOrderStatus').click();assert.equal(posts.length,1);assert.equal(d.querySelector('#selectAllInvoices').disabled,true);
   release();await until(()=>!d.querySelector('#selectAllInvoices').disabled&&d.querySelector('[data-status-id]').value==='قيد التجهيز');
   assert.deepEqual(posts[0],{ids:['TR-7K3M','TR-8N4P'],status:'قيد التجهيز'});assert.match(d.querySelector('#orderStatusMessage').textContent,/2 طلب/);
-  d.querySelector('#printSelectedInvoices').click();assert.equal(printed.length,1);assert.equal((printed[0].match(/invoice-parcel-total/g)||[]).length,2);assert.deepEqual(errors,[]);
+  d.querySelector('#printSelectedInvoices').click();await until(()=>!d.querySelector('#printInvoicesNow').disabled);d.querySelector('#printInvoicesNow').click();assert.equal(printed.length,1);assert.equal((printed[0].match(/invoice-parcel-total/g)||[]).length,2);assert.deepEqual(errors,[]);
 });
 
 test('The production compatibility switch keeps the existing email bridge valid until its matching update is published',()=>{
