@@ -1,0 +1,98 @@
+{
+  "release": "5.10.0",
+  "status": "published",
+  "implementation_commit": "3cce9b4b80cff453c1849e5498be1354a52c91c2",
+  "worker_version_id": "fa6182bc-4960-49af-aed9-407a3f2027e9",
+  "deployment_id": "c7a69a70-2597-42bf-bfd0-478878d1e639",
+  "traffic_percent": 100,
+  "published_utc": "2026-11-08T21:40:46.484889Z",
+  "published_jordan": "2026-11-09T00:40:46.484889+03:00",
+  "automated_tests": {
+    "passed": 346,
+    "failed": 0
+  },
+  "ci_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42526312547",
+  "ci_conclusion": "success",
+  "modules_preserved": 29,
+  "embedded_files": 606,
+  "smoke_checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "a3ead3bd2c96ddd10c3bcfba05dd1af7dcec03ad89d808d2ef3fb9b4763ca2d7",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/app.js?v=5.10.0",
+      "status": 200,
+      "sha256": "af84fc38620aeeb80efa7177c00f6feb7416aec482152161680ab28289ab8565",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/product-story.js?v=5.10.0",
+      "status": 200,
+      "sha256": "027cabc1fa1a926294e9de6f23d5614564fa0b59bbc12687e7a31615bdd595b3",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/checkout-suggestions.js?v=5.10.0",
+      "status": 200,
+      "sha256": "0c811fed39f1b689d25a886389b20d73c2913384c8449f7960009ce7859e3c39",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/checkout-recommendations.js",
+      "status": 200,
+      "sha256": "45948d7a34c076935f06157e9ba3f9602ff31ec6febc941c8769f7d1b5770e00",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/checkout-suggestions.css?v=5.10.0",
+      "status": 200,
+      "sha256": "550460a691a4146acdded39d5b79eea4fe5e1587c785d7a63bcdf50a633acb96",
+      "matchesTestedSource": true
+    },
+    {
+      "path": "/api/catalog",
+      "status": 200,
+      "sha256": "a117a3cf871cca1ce1ddb0ef3dc93277f22f437a7073fb8b934613406350f4b3",
+      "products": 302,
+      "storeLive": true
+    },
+    {
+      "path": "/api/mail-health",
+      "status": 200,
+      "sha256": "3c500465b038c7876da67c20632657dbd57603737104d3b442d27b7bddcdbaad",
+      "configured": true,
+      "reachable": true,
+      "canSend": true
+    },
+    {
+      "path": "/api/admin/orders",
+      "status": 401,
+      "sha256": "fe692473b5a6193dae5803549b8434c2b66c740ef1e95f2d2649851c8669f4c1"
+    }
+  ],
+  "browser_checks": {
+    "lower_Anua_link_products": 10,
+    "upper_SHEGLAM_link_products": 3,
+    "foundation": "TS0347",
+    "foundation_shade": "tone-2",
+    "powder": "TS0275",
+    "powder_shade": "tone-3",
+    "missing_shade_blocks_add": true,
+    "initial_delivered_total_fils": 9990,
+    "after_powder_total_fils": 18980,
+    "form_preserved": true,
+    "further_powder_suggestions_removed": true,
+    "test_cart_emptied": true,
+    "synthetic_form_cleared_by_reload": true
+  },
+  "production_test_orders_submitted": 0,
+  "test_emails_sent": 0,
+  "database_migrations": [],
+  "all_bindings_preserved": true,
+  "observability_preserved": true,
+  "rollback_version": "9871c423-ff7f-4dfc-9413-327f3700b74e",
+  "physical_iphone_tested": false
+}
