@@ -1,5 +1,5 @@
 import {quoteCart,productPrice,promotionData,shippingFee} from './commerce.js?v=5.0.0';
-import {productOptions,selectedOption,cartSelectionError,aggregateCart} from './product-variants.js?v=5.8.0';
+import {productOptions,selectedOption,cartSelectionError,aggregateCart} from './product-variants.js?v=5.9.0';
 import {isRetiredProduct} from './catalog-policy.js';
 import {productDetails} from './shop-tools.js';
 import {pairPriceFils,quantityPriceFils} from './pair-pricing.js?v=5.0.0';

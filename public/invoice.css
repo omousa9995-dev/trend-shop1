@@ -6,3 +6,5 @@
 .invoice .mini{width:40px;height:44px;object-fit:contain;vertical-align:middle;margin-inline-end:6px}.invoice-total{margin-top:20px;text-align:left;font-size:18px;font-weight:bold}.invoice-footer{font-size:11px;color:#666;margin-top:30px;text-align:center}
 @page{size:A4;margin:12mm}
 @media print{.invoice{width:100%;max-width:none;margin:0;padding:0}.invoice-header{padding-bottom:10mm}}
+
+.invoice-status-block{display:grid;align-content:start;gap:6px}.invoice-parcel-total{display:grid;gap:3px;border:2px solid #543e46;border-radius:5px;padding:10px 15px;background:#faf7f8;text-align:center;break-inside:avoid}.invoice-parcel-total>span{font-size:13px;font-weight:700}.invoice-parcel-total>strong{font-size:25px;line-height:1.4;white-space:nowrap}.invoice-parcel-total>small{font-size:11px}.invoice-parcel-total .invoice-total-pending{font-size:15px;white-space:normal}@media print{.invoice-parcel-total{border-color:#222;background:#fff;color:#111}.invoice-status-block{break-inside:avoid}}

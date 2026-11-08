@@ -68,3 +68,8 @@ test('Owner initialization preserves an existing secret and logs no secret while
  assert.equal(JSON.parse(ctx.checkMailBridge().getContent()).ok,true);assert.equal(sent.length,2);assert.ok(sent.every(x=>x.to==='stpostpo470@gmail.com'));
  assert.ok(logs.every(x=>!x.includes(created)));
 });
+
+test('The updated mail bridge accepts the same four-character order reference in both owner and customer messages',()=>{
+ const {sent,response}=testBridge({token,order:{...order,id:'TR-7K3M'}});assert.equal(response.ok,true);assert.equal(sent.length,2);for(const mail of sent){assert.match(mail.subject,/TR-7K3M/);assert.match(mail.body,/TR-7K3M/);}
+ assert.equal(testBridge({token,order:{...order,id:'TR-1A0M'}}).sent.length,0);assert.equal(testBridge({token,action:'health'}).response.orderIdFormat,'short4-v1');
+});

@@ -43,7 +43,7 @@ function doPost(e) {
     const data = JSON.parse((e && e.postData && e.postData.contents) || '{}');
     if (data.token !== token) return jsonResult_({ok:false,reason:'unauthorized'});
     const quota=MailApp.getRemainingDailyQuota();
-    if (data.action==='health') return jsonResult_({ok:true,service:'trend-shop-mail',ownerEmail:STORE_EMAIL,remainingRecipients:quota});
+    if (data.action==='health') return jsonResult_({ok:true,service:'trend-shop-mail',ownerEmail:STORE_EMAIL,remainingRecipients:quota,orderIdFormat:'short4-v1'});
     if (data.action==='test') {
       if (quota<1) return jsonResult_({ok:false,reason:'quota_exhausted'});
       MailApp.sendEmail({to:STORE_EMAIL,subject:'Trend Shop | اختبار ربط بريد الطلبات',body:'هذه رسالة اختبار لربط إشعارات Trend Shop. لا تمثل طلب شراء ولا تحتوي بيانات عميل.\n\nإبتسمي فلا جميلة إلا أنتِ ♡',name:'Trend Shop'});
@@ -51,7 +51,7 @@ function doPost(e) {
     }
     if (data.action && data.action!=='order') return jsonResult_({ok:false,reason:'invalid_action'});
     const o = data.order || {};
-    if (!/^TR-[A-Z0-9-]{8,40}$/.test(o.id || '') ||
+    if (!/^TR-(?:[1-9A-HJ-NP-Z]{4}|[A-Z0-9-]{8,40})$/.test(o.id || '') ||
         (o.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(o.email))) {
       return jsonResult_({ok:false,reason:'invalid_order'});
     }

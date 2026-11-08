@@ -27,6 +27,17 @@ async function open(t,{hash='#/product/TS0064',cart=[],live=false,products=catal
  w.eval(storefrontBundle);
  for(let i=0;i<50&&!d.querySelector('.detail-content,#checkoutForm');i++)await pause();assert.deepEqual(errors,[]);return{w,d,tick,sent,errors};
 }
+test('Cart and checkout omit complementary product suggestions while product-page suggestions remain available',async t=>{
+ const {d}=await open(t,{hash:'#/checkout',cart:[{id:'TS0064',qty:1}]});
+ assert.equal(d.querySelector('#checkoutSummary .recommend-title'),null);
+ assert.equal(d.querySelector('#checkoutSummary [data-add]'),null);
+ assert.ok(d.querySelector('#checkoutSummary [data-checkout-add]'));
+ d.querySelector('#cartBtn').click();
+ assert.equal(d.querySelector('#drawer .recommend-title'),null);
+ assert.equal(d.querySelector('#drawer [data-add]'),null);
+ assert.ok(d.querySelector('#drawer a[href="#/checkout"]'));
+ assert.ok(d.querySelector('#drawer .cart-totals'));
+});
 test('Add feedback is pink immediately; recommendations appear after exactly three quiet seconds and keep focus unchanged',async t=>{
  const {w,d,tick}=await open(t);d.querySelector('.detail-content [data-add="TS0064"]').click();const active=d.activeElement;assert.equal(d.querySelector('#cartAssist').hidden,true);assert.match(d.querySelector('#toast').textContent,/تمت الإضافة إلى السلة/);assert.ok(d.querySelector('#toast.is-added .added-icon'));assert.equal(w.getComputedStyle(d.querySelector('#toast')).color,'var(--added-pink)');assert.equal(w.getComputedStyle(d.documentElement).getPropertyValue('--added-pink'),'#b34272');assert.ok(d.querySelector('[data-story-add].is-added'));assert.ok(d.querySelector('#cartBtn.has-items'));
  tick(2999);assert.equal(d.querySelector('#cartAssist').hidden,true);tick(1);assert.equal(d.querySelector('#cartAssist').hidden,false);assert.equal(d.activeElement,active);assert.ok(d.querySelector('#cartAssist a[href="#/checkout"]'));

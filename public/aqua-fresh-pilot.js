@@ -1,7 +1,7 @@
 import {mountSilentVideo} from './silent-video.js?v=5.4.0';
 import {tx,formatMoney as money} from './i18n.js?v=5.1.0';
 import {productPrice} from './commerce.js?v=5.0.0';
-import {validProductVideo} from './media-gallery.js?v=5.8.0';
+import {validProductVideo} from './media-gallery.js?v=5.9.0';
 import {isAquaFreshPilot,validVideoPoster} from './product-video-presentation.js?v=5.0.0';
 
 const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

@@ -1,3 +1,4 @@
+import {isOrderId} from './order-management.js';
 import {normalizeContactPhone} from '../public/contact-phone.js';
 import {isRetiredProduct} from '../public/catalog-policy.js';
 import {readLimitedBody,sniffImage,MAX_IMAGE_BYTES} from './media.js';
@@ -7,7 +8,7 @@ const clean=(s,max)=>typeof s==='string'?s.normalize('NFKC').replace(/[\u0000-\u
 export function safeReviewVideo(value){if(!value)return '';try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&['youtube.com','www.youtube.com','youtu.be','www.instagram.com','instagram.com','www.facebook.com','facebook.com','www.tiktok.com','tiktok.com'].includes(u.hostname)?u.href.slice(0,500):''}catch{return ''}}
 function constant(a,b){let diff=a.length^b.length;for(let i=0;i<Math.max(a.length,b.length);i++)diff|=(a.charCodeAt(i)||0)^(b.charCodeAt(i)||0);return diff===0}
 async function sign(env,payload,hmac){const data=btoa(JSON.stringify(payload)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');return data+'.'+await hmac(env.SESSION_SECRET,'review:'+data)}
-async function verify(env,token,hmac){try{const[data,signature]=String(token).split('.');if(!data||!signature||data.length>1000||!constant(signature,await hmac(env.SESSION_SECRET,'review:'+data)))return null;const p=JSON.parse(atob(data.replace(/-/g,'+').replace(/_/g,'/')));return p.exp>Date.now()&&p.exp<=Date.now()+16*60*1000&&/^TR-[A-Z0-9-]{5,40}$/.test(p.orderId)?p:null}catch{return null}}
+async function verify(env,token,hmac){try{const[data,signature]=String(token).split('.');if(!data||!signature||data.length>1000||!constant(signature,await hmac(env.SESSION_SECRET,'review:'+data)))return null;const p=JSON.parse(atob(data.replace(/-/g,'+').replace(/_/g,'/')));return p.exp>Date.now()&&p.exp<=Date.now()+16*60*1000&&isOrderId(p.orderId)?p:null}catch{return null}}
 export async function publicReviews(request,env,{json,error}){
  const id=new URL(request.url).searchParams.get('product');if(id&&!validProduct(id))return error('غير موجود',404);
  const where="r.status='approved' AND o.status='تم' AND p.active=1 AND p.approved=1"+(id?' AND r.product_id=?':'');
@@ -25,7 +26,7 @@ export async function reviewAction(request,env,helpers,action){
  let b;try{b=await content(request)}catch{return error('بيانات غير صالحة',400,{code:'REVIEW_INVALID'})}
  if(action==='verify'){
   const phone=normalizeContactPhone(b.phone),orderId=clean(b.orderId,60).toUpperCase();
-  const order=phone&&/^TR-[A-Z0-9-]{5,40}$/.test(orderId)?await env.DB.prepare("SELECT id,phone FROM orders WHERE id=? AND status='تم'").bind(orderId).first():null;
+  const order=phone&&isOrderId(orderId)?await env.DB.prepare("SELECT id,phone FROM orders WHERE id=? AND status='تم'").bind(orderId).first():null;
   if(!order||normalizeContactPhone(order.phone)!==phone)return error('تعذّر التحقق. استخدمي رقم الطلب والهاتف المسجّل معه، بعد اكتمال استلامه.',400,{code:'REVIEW_NOT_ELIGIBLE'});
   const items=await env.DB.prepare('SELECT oi.product_id AS id,oi.name_snapshot AS name,p.image_url AS image,p.details_json FROM order_items oi JOIN products p ON p.id=oi.product_id WHERE oi.order_id=? AND p.active=1 AND p.approved=1').bind(orderId).all();
   return json({token:await sign(env,{orderId,exp:Date.now()+15*60*1000},hmac),products:(items.results||[]).filter(p=>validProduct(p.id))});

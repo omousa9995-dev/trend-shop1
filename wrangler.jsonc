@@ -25,7 +25,8 @@
     }
   ],
   "vars": {
-    "STORE_LIVE": "true"
+    "STORE_LIVE": "true",
+    "SHORT_ORDER_IDS": "false"
   },
   "observability": {
     "enabled": true,
