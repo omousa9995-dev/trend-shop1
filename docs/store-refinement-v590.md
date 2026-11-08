@@ -9,13 +9,13 @@
 - Reuse order/invoice selection for bulk status changes to new, processing and completed. Select all is scoped to the currently displayed filter. Disable competing order actions during saving, report the result, reload current server data, and retain selected invoice printing.
 - Validate bulk IDs/statuses and owner/same-origin access on the server. Reject missing or invalid selections before writing. Groups of at most 90 IDs remain within D1's 100 bound-parameter limit; updates execute in one transactional D1 batch. No inventory, pricing or customer fields are updated.
 
-## Short order IDs: implemented, activation pending
+## Short order IDs: active for new orders
 
 The new generator produces `TR-` plus four characters from `123456789ABCDEFGHJKLMNPQRSTUVWXYZ`. It uses Web Crypto with rejection sampling, retries actual primary-key collisions, and retains the existing idempotent receipt and stock transaction. New and historical IDs remain valid in administration and review verification. Receipts, invoices, customer reports and Excel use the same stored identifier.
 
-The production Google Apps Script email bridge currently accepts the old longer format. The source in `integrations/google-apps-script.gs` has the compatible validator and an `orderIdFormat: short4-v1` health capability, but this Google deployment has not been updated. Automatic action review rejected starting Google authentication because the user's current authorization named Cloudflare. Earlier user authorization for the same Google mail bridge was retrieved, but the automatic reviewer still rejected sign-in. A fresh explicit approval is therefore needed before that authentication can proceed. No Google account changes were performed.
+On 8 November 2026 the existing Google Apps Script deployment was updated to version 2 with the compatible validator and unified Arabic-English HTML/plain-text confirmation. Its tested source matched the saved editor source exactly, and the owner-only health check reported `orderIdFormat=short4-v1` and `confirmationFormat=bilingual-v2`. Google confirmed the existing deployment update, and the store mail-health endpoint remained connected and ready. The same deployment URL, owner execution, access setting and Script Properties were retained.
 
-To keep current order notifications working, publish with `SHORT_ORDER_IDS=false`. This retains the old generator until the owner explicitly authorizes updating the existing Google mail project. After deploying the mail bridge update and checking its authenticated health response, set `SHORT_ORDER_IDS=true`. Do not activate this switch merely because repository tests pass; the external mail deployment must match first. Existing identifiers are never renamed.
+`SHORT_ORDER_IDS=true` is now active. Worker version `1111b562-d1a2-4ec8-9b47-af21ee1f5c1b` serves 100% under deployment `a5b386b6-c3ee-46b5-ae18-fe2d9631ceac`. All existing bindings were inherited; no business data migration was needed. Existing identifiers are never renamed. `SHORT_ORDER_IDS=false` remains available to restore the historical format for future orders without undoing any order data.
 
 ## Validation
 
