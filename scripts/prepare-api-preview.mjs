@@ -6,13 +6,13 @@ import {readFileSync,writeFileSync,mkdirSync,readdirSync} from 'node:fs';
 import {join,relative,extname,dirname} from 'node:path';
 import {createHash} from 'node:crypto';
 import {buildSync} from 'esbuild';
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.txt':'text/plain; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon'};
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.txt':'text/plain; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon','.woff2':'font/woff2'};
 const entries={};
 function walk(dir){for(const file of readdirSync(dir,{withFileTypes:true})){
  const path=join(dir,file.name);
  if(file.isDirectory()){walk(path);continue;}
  if(file.name.startsWith('_')||path.startsWith(join('public','images','catalog')))continue;
- const bytes=readFileSync(path),ext=extname(path),binary=['.webp','.png','.ico'].includes(ext);
+ const bytes=readFileSync(path),ext=extname(path),binary=['.webp','.png','.ico','.woff2'].includes(ext);
  entries['/'+relative('public',path).split('\\').join('/')]=[binary?bytes.toString('base64'):bytes.toString('utf8'),types[ext]||'application/octet-stream',binary,createHash('sha256').update(bytes).digest('hex')];
 }}
 walk('public');

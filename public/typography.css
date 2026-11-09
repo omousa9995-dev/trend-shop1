@@ -1,0 +1,16 @@
+/* Local OFL fonts. Manrope supplies Latin/digits; Tajawal supplies Arabic. */
+@font-face{font-family:Tajawal;src:url('/fonts/tajawal-regular-v512.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Tajawal;src:url('/fonts/tajawal-medium-v512.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Tajawal;src:url('/fonts/tajawal-bold-v512.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:Manrope;src:url('/fonts/manrope-variable-v512.woff2') format('woff2');font-style:normal;font-weight:200 800;font-display:swap}
+:root{--store-font:Manrope,Tajawal,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+body,[dir=ltr] body,button,input,select,textarea,
+.logo strong,.logo-mark,.footer-logo,.hero h1,.title-set h2,.callout h2,.callout-visual b,.drawer-head h2,.page-hero h1,.detail-content h1,.checkout-form h2,.success-panel h1,
+.story-tagline,.story-editorial-copy h2,.story-fit h2,.story-how h2,.story-faq h2,.story-last-cta h2,.story-steps li>span,.product-video-section h2,
+.wordmark-trend,.wordmark-shop,.korean-universe-hero h1,.media-arrow,.editorial-card h2,.discount-pill b,.catalog-nav .korean-nav,.category-korean h3,.wishlist-header [data-favorite-count]{font-family:var(--store-font)}
+h1,h2,h3,h4,h5,h6,.hero h1,.title-set h2,.callout h2,.drawer-head h2,.page-hero h1,.detail-content h1,.checkout-form h2,.success-panel h1,
+.story-editorial-copy h2,.story-fit h2,.story-how h2,.story-faq h2,.story-last-cta h2,.product-video-section h2,.editorial-card h2,.category-korean h3{font-weight:700}
+.logo-mark,.callout-visual b{font-style:normal}
+/* Keep larger Arabic headings and mixed product names comfortably spaced. */
+:root[lang=ar] .hero h1,:root[lang=ar] .page-hero h1,:root[lang=ar] .detail-content h1{line-height:1.55}
+.story-tagline{line-height:1.75;font-weight:500}
