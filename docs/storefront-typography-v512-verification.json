@@ -1,0 +1,42 @@
+{
+  "release": "5.12.0",
+  "sourceCommit": "5eefd255a4587f22995460500834af24bcd2a4c8",
+  "deploymentId": "23e010b1-479d-48d3-915e-0dd54eb70084",
+  "versionId": "66511e55-74ea-42c9-9b90-075436a9c17e",
+  "percentage": 100,
+  "previousVersion": "3de52f49-91d0-401b-9cec-ee3fe2b21359",
+  "tests": {
+    "passed": 369,
+    "failed": 0,
+    "includesBinaryFontIntegrity": true
+  },
+  "githubRun": {
+    "id": 42662102952,
+    "conclusion": "success"
+  },
+  "fontFiles": 4,
+  "fontBytes": 116064,
+  "assets": 620,
+  "serverModules": 31,
+  "liveBrowser": {
+    "url": "https://trendjo.pages.dev/?v=5.12.0",
+    "arabicFontReady": true,
+    "englishFontReady": true,
+    "arabicAndEnglishHomeReviewed": true,
+    "productTitleAndTaglineReviewed": true,
+    "headingWeight": "700",
+    "taglineWeight": "500",
+    "horizontalOverflow": false
+  },
+  "mobileRender": {
+    "width": 390,
+    "height": 844,
+    "source": "live production URL",
+    "reviewed": true
+  },
+  "physicalIPhoneTested": false,
+  "sourceReferences": {
+    "Tajawal": "https://github.com/google/fonts/tree/main/ofl/tajawal",
+    "Manrope": "https://github.com/google/fonts/tree/main/ofl/manrope"
+  }
+}
