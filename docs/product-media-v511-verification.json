@@ -1,0 +1,98 @@
+{
+  "release": "5.11.0",
+  "date": "2026-11-09",
+  "sourceCommit": "9b2a82cc94991306511baca02ab68032c958b91b",
+  "githubRun": {
+    "id": 42571669792,
+    "conclusion": "success"
+  },
+  "tests": {
+    "passed": 369,
+    "failed": 0
+  },
+  "migration": "0028_product_photo_galleries.sql",
+  "deploymentId": "d66a073b-a3bd-4338-9e9f-74c0e0fc36ce",
+  "versions": [
+    {
+      "version_id": "3de52f49-91d0-401b-9cec-ee3fe2b21359",
+      "percentage": 100
+    }
+  ],
+  "bindings": [
+    {
+      "name": "DB",
+      "type": "d1"
+    },
+    {
+      "name": "MAIL_WEBHOOK_TOKEN",
+      "type": "secret_text"
+    },
+    {
+      "name": "MAIL_WEBHOOK_URL",
+      "type": "secret_text"
+    },
+    {
+      "name": "MEDIA",
+      "type": "kv_namespace"
+    },
+    {
+      "name": "SESSION_SECRET",
+      "type": "secret_text"
+    },
+    {
+      "name": "SETUP_TOKEN",
+      "type": "secret_text"
+    },
+    {
+      "name": "SHORT_ORDER_IDS",
+      "type": "plain_text"
+    },
+    {
+      "name": "STORE_LIVE",
+      "type": "plain_text"
+    }
+  ],
+  "commerce": {
+    "products": 321,
+    "orders": 15,
+    "videos": 3,
+    "featured_videos": 8,
+    "stock": 7199,
+    "price_sum": 2416143,
+    "galleries": 0
+  },
+  "previousVersion": "21392f96-c18c-43c2-8fb0-571b658dc8ba",
+  "assets": 613,
+  "modules": 31,
+  "liveBrowser": {
+    "adminUrl": "https://trendjo.pages.dev/admin.html?v=5.11.0",
+    "adminScript": "/admin.js?v=5.11.0",
+    "multiPhotoPicker": true,
+    "mediaTabPresent": true,
+    "invoicePrinterMounted": true,
+    "storeUrl": "https://trendjo.pages.dev/#/shop",
+    "storeScript": "/app.js?v=5.11.0",
+    "loadedProducts": 72,
+    "returnedProducts": 72,
+    "returnedScrollY": 11472,
+    "selectedProductVisibleAfterBack": true,
+    "productGalleryPhotos": 3
+  },
+  "syntheticMobile": {
+    "width": 390,
+    "height": 844,
+    "photoEditorReviewed": true,
+    "mediaLibraryReviewed": true,
+    "horizontalOverflow": false
+  },
+  "physicalIPhoneTested": false,
+  "productionMediaChangedByQA": false,
+  "commerceBefore": {
+    "products": 321,
+    "orders": 15,
+    "videos": 3,
+    "featured_videos": 8,
+    "stock": 7199,
+    "price_sum": 2416143
+  }
+}
