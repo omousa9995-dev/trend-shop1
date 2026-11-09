@@ -27,7 +27,7 @@
    if(sequence!==uploadSequence)return;
    form.elements.image_url.value=data.imageUrl;
    if(previewUrl)URL.revokeObjectURL(previewUrl);previewUrl=URL.createObjectURL(blob);preview.src=previewUrl;preview.hidden=false;
-   status.textContent='رُفعت الصورة. اضغط حفظ التغييرات لاعتمادها للمنتج.';
+   status.textContent='رُفعت صورة البطاقة. اضغط حفظ المنتج لاعتمادها؛ صور صفحة المنتج مستقلة.';
   }catch(error){if(sequence===uploadSequence&&error.name!=='AbortError')status.textContent=error.message}finally{if(sequence===uploadSequence){submit.disabled=false;input.disabled=false;input.value=''}}
  });
  form.addEventListener('reset',()=>{uploadSequence++;uploadController?.abort();input.disabled=false;form.querySelector('button[type="submit"]').disabled=false;status.textContent='';preview.hidden=true;preview.removeAttribute('src');if(previewUrl){URL.revokeObjectURL(previewUrl);previewUrl=null}});

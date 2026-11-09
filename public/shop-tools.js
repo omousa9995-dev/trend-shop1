@@ -26,6 +26,7 @@ export function nextQuantity(current, change, available, live) {
   return Math.max(0, Math.min(cap, (Number(current) || 0) + change));
 }
 export function productGallery(product, galleries = {}) {
+  if(Array.isArray(product.galleryPhotos))return [...new Set(product.galleryPhotos.map(x=>x.url))].filter(url=>typeof url==='string'&&(/^\/(?:images|media)\/[a-zA-Z0-9_./-]+$/.test(url)||/^https:\/\//.test(url))).slice(0,24);
   const primary = product.image || product.image_url;
   const details = productDetails(product);
   const reviewed = galleries[product.id];

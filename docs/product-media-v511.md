@@ -1,0 +1,11 @@
+# Product media and browsing — v5.11.0
+
+Product page photos now have a separate, revisioned gallery, independent of the card image and ordinary product saves. Owners can select multiple photos from their phone, prepare/upload them sequentially, see partial failures, reorder/remove photos and keep up to 24 page photos per product. Existing reviewed photos are retained exactly. Card replacement does not replace the gallery.
+
+The new Images and videos administration tab groups all product cards, page photos and both uploaded video locations, with totals, previews and search. Removing a library photo removes its associations from that product’s card and page; the card uses the existing neutral placeholder if removed. Gallery-only removal leaves the card intact. Shared/historical photo bytes are retained so invoices and other products do not break. Video removal uses the existing authenticated product-video deletion endpoints. Site design images and customer review photos remain in their own controls.
+
+Browsing remembers the catalog URL, loaded product count, filters and scroll position before opening a product. Browser Back and an explicit return link restore that place. Different filters start at the first page. Restoration cannot override a subsequent touch, wheel or link interaction. No checkout/customer data is stored for browsing.
+
+Migration 0028 adds only product_photo_galleries. Optimistic revisions and conditional writes reject stale edits; photo upload IDs avoid duplicate retries; failed association writes clean up their newly uploaded bytes. Existing login and same-origin protections apply. Prices, stock and order records are not modified by media operations.
+
+Validation: 369 tests pass, including actual storefront Back/return after 72/48 products, API authorization, upload limits and races, card/gallery separation, deletion, both video locations, iPhone-style multiple selection, stale selection and interrupted upload. Synthetic 390×844 mobile renders reviewed for photo editor and media library with no horizontal overflow. Physical iPhone picker/HEIC decoding was not available for testing; Safari’s image picker/decoder and the existing JPEG preparation path are used. No production media or real customer records were changed during QA.

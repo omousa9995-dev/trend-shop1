@@ -43,6 +43,7 @@ export function storyContent(p,profile){
  return {...c,name:d.nameAr||c.name||p.name,tagline:has('tagline')?d.tagline:c.tagline||tx('لحظة عناية، على طريقتكِ.','A little care, your way.'),description,benefits:Array.isArray(d.benefits)?d.benefits:c.benefits||[],notes:has('notes')?d.notes:c.notes||'',steps,size:d.size||'',type:d.productType||''};
 }
 export function storyGallery(p,profile,images=[]){
+ if(Array.isArray(p.galleryPhotos)){const photos=p.galleryPhotos.filter(x=>imageUrl(x.url)).slice(0,24);return (photos.length?photos:[{url:'/images/TS0001.svg',kind:'pack'}]).map(x=>({...x,label:typeof x.label==='object'?x.label[locale()]:x.label||tx('التفاصيل','Details'),alt:p.name}))}
  const primary=p.image||p.image_url;
  const reviewed=profile?.primary===primary;
  const photos=[{url:primary,label:tx('العبوة','The pack'),kind:'pack',alt:p.name},...(reviewed?(profile.images||[]):[]),...images.filter(url=>url!==primary).map(url=>({url,kind:url.includes('/marketing/')?'promotional':'pack',label:tx('التفاصيل','Details'),alt:p.name}))];
@@ -51,7 +52,7 @@ export function storyGallery(p,profile,images=[]){
 }
 export function mountProductStory(element,{product:p,name,image,cap=0,live,quantity=1,promotions=[],profile=null,images=[],taxonomy='',brand='',bundles='',options='',inBag=0,hasOtherItems=false,onCheckout,onAdd,onZoom,onShare,onQuantity}={}){
  profile=profile||fallbackProductProfile(p);
- const c=storyContent(p,profile),photos=storyGallery(p,profile,images);if(image&&photos[0])photos[0].url=image;
+ const c=storyContent(p,profile),photos=storyGallery(p,profile,images);if(image&&photos[0]&&!Array.isArray(p.galleryPhotos))photos[0].url=image;
  const canBuy=cap>0;let selected=Math.max(1,Math.min(cap||1,quantity));
  const quantityOffers=promotions.map(promotionData).filter(o=>o?.active&&o.items?.length===1&&o.items[0].id===p.id&&o.items[0].qty>1&&o.items[0].qty<=cap&&selectionQuote(p,o.items[0].qty,promotions).discountFils>0).sort((a,b)=>a.items[0].qty-b.items[0].qty);
  const offerQuantity=2,pair=selectionQuote(p,2,promotions);
