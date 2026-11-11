@@ -1,0 +1,58 @@
+{
+  "release": "5.16.0",
+  "assistantName": "لُمى",
+  "verifiedOn": "2026-11-11",
+  "sourceCommit": "4e77fc71d30e1290b09081e7216da1a57bd8596f",
+  "deployment": {
+    "worker": "trend-shop-jo",
+    "versionId": "d9eb317e-5ae3-4b52-ab4e-66d3d8ca4817",
+    "deploymentId": "cc45846e-37c4-42f2-808b-d83c7593610f",
+    "percentage": 100,
+    "packageSha256": "64baa279fd284144472f5b0fe15769467342123fa07836dd88ca87b454c13285",
+    "modules": 32,
+    "embeddedAssets": 632,
+    "compatibilityDate": "2026-10-25"
+  },
+  "validation": {
+    "localTests": {
+      "passed": 408,
+      "failed": 0,
+      "careTests": 21
+    },
+    "githubActions": {
+      "runId": 43059206955,
+      "jobId": 130656834662,
+      "conclusion": "success"
+    },
+    "syntheticConversationTested": true,
+    "syntheticBudgetQuickReplyTested": true,
+    "mobileContentWidth": 375,
+    "mobileHorizontalOverflow": false,
+    "launcherSearchSuppressionVerified": true,
+    "physicalIPhoneTested": false,
+    "realGoogleInferenceTested": false,
+    "realPhotoInterpretationTested": false
+  },
+  "production": {
+    "customerPage": "https://trendjo.pages.dev/care-assistant.html",
+    "admin": "https://trendjo.pages.dev/admin.html?v=5.16.0#care",
+    "status": {
+      "available": false,
+      "imagesAvailable": false,
+      "consentVersion": "care-2026-11-v2",
+      "assistantName": "لُمى"
+    },
+    "allThreeStorefrontEntriesHidden": true,
+    "ownerLoginRequired": true,
+    "keyPresent": false,
+    "settingsRevision": 1,
+    "usageRows": 0,
+    "products": 323,
+    "orders": 15,
+    "storeLive": "true",
+    "existingBindingsAndObservabilityPreserved": true,
+    "newMigrationRequired": false
+  },
+  "activationRequired": "Owner adds an existing Google API key through the authenticated admin panel, completes active paid-project setup directly with Google, tests the connection and real responses, then enables customer use and optional images. No key or billing was created or activated by this release.",
+  "limits": "Luma is a disclosed automated shopping assistant. Text and photos support cosmetic product discovery and tentative observations, not medical diagnosis or treatment. Concerning signs and unsupported photos produce no product sales. Model-generated matching quality remains unverified until real inference is evaluated."
+}
