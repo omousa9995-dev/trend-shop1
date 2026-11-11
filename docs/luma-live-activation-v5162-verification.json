@@ -1,0 +1,45 @@
+{
+  "version": "5.16.2",
+  "settingsRevision": 3,
+  "activeModel": "gemini-3.5-flash-lite",
+  "enabled": true,
+  "imagesEnabled": true,
+  "billingConfirmedByOwner": true,
+  "dailyCustomerRequestLimit": 50,
+  "tests": {"totalPassed": 412, "assistantPassed": 25, "failed": 0},
+  "productionConversation": {
+    "url": "https://trendjo.pages.dev/care-assistant.html",
+    "budgetFils": 15000,
+    "products": [{"id": "TS0109", "priceFils": 4490}, {"id": "TS0103", "priceFils": 6500}],
+    "subtotalFils": 10990,
+    "shippingFeeFils": 1000,
+    "totalFils": 11990,
+    "withinBudget": true
+  },
+  "productionPhotoFlow": {
+    "fixture": "synthetic white JPEG, 32x32",
+    "realPersonPhotoUsed": false,
+    "pickerAndPreviewVerified": true,
+    "separateConsentVerified": true,
+    "unsupportedImageGuidanceObserved": true,
+    "productCardsReturned": 0,
+    "previewClearedAfterSubmission": true,
+    "skinImageAccuracyValidated": false
+  },
+  "capacityRetry": {
+    "retryableStatus": 503,
+    "maxProviderAttempts": 2,
+    "delayMs": 1000,
+    "sharedOverallDeadlineMs": 35000,
+    "maxAcceptedRetryAfterMs": 1000,
+    "dailyReservationsPerCustomerRequest": 1,
+    "modelFallback": false
+  },
+  "package": {
+    "files": 632,
+    "modules": 32,
+    "bytes": 6389909,
+    "sha256": "4adeb60f7d72dead8fcdf8ebdeb4e7e5403ceb151ea09645894dea38785c94d5"
+  },
+  "credentialValueRecorded": false
+}

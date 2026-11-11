@@ -164,7 +164,22 @@ export async function publicCareChat(req,env,helpers){
  let response,usage={};
  try{
   const parts=[{text:'USER_INPUT='+JSON.stringify(context)}];if(input.image)parts.push({inlineData:input.image});
-  response=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${config.settings.model}:generateContent`,{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':await apiKey(env,config)},body:JSON.stringify({systemInstruction:{parts:[{text:system}]},contents:[{role:'user',parts}],generationConfig:{temperature:0.2,maxOutputTokens:3072,responseMimeType:'application/json',responseSchema:CARE_SCHEMA,thinkingConfig:{thinkingLevel:'low'}}}),signal:AbortSignal.timeout(35000)});
+  const url=`https://generativelanguage.googleapis.com/v1beta/models/${config.settings.model}:generateContent`;
+  const options={method:'POST',headers:{'content-type':'application/json','x-goog-api-key':await apiKey(env,config)},body:JSON.stringify({systemInstruction:{parts:[{text:system}]},contents:[{role:'user',parts}],generationConfig:{temperature:0.2,maxOutputTokens:3072,responseMimeType:'application/json',responseSchema:CARE_SCHEMA,thinkingConfig:{thinkingLevel:'low'}}}),signal:AbortSignal.timeout(35000)};
+  // One retry for temporary capacity errors, using the same model and overall deadline.
+  for(let attempt=0;attempt<2;attempt++){
+   response=await fetch(url,options);
+   if(attempt||response.status!==503||options.signal.aborted)break;
+   const retryAfter=response.headers.get('retry-after');
+   const waitMs=retryAfter===null?1000:/^\d+(?:\.\d+)?$/.test(retryAfter)?Number(retryAfter)*1000:Date.parse(retryAfter)-Date.now();
+   if(!Number.isFinite(waitMs)||waitMs>1000)break;
+   await response.body?.cancel();
+   await new Promise((resolve,reject)=>{
+    const abort=()=>{clearTimeout(timer);reject(options.signal.reason)};
+    const timer=setTimeout(()=>{options.signal.removeEventListener('abort',abort);resolve()},1000);
+    options.signal.addEventListener('abort',abort,{once:true});if(options.signal.aborted)abort();
+   });
+  }
   if(!response.ok){await response.body?.cancel();throw Error('UPSTREAM_UNAVAILABLE')}
   const data=await readBoundedJson(response);usage=data.usageMetadata||{};
   const candidate=data.candidates?.[0];if(!candidate||candidate.finishReason!=='STOP')throw Error('UPSTREAM_INCOMPLETE');
