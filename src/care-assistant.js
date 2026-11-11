@@ -35,7 +35,7 @@ async function encryptionKey(secret){
 const base64=bytes=>{let s='';for(const x of new Uint8Array(bytes))s+=String.fromCharCode(x);return btoa(s)};
 export async function encryptCareKey(value,secret){const iv=crypto.getRandomValues(new Uint8Array(12));return JSON.stringify({v:1,iv:base64(iv),data:base64(await crypto.subtle.encrypt({name:'AES-GCM',iv},await encryptionKey(secret),encoder.encode(value)))})}
 export async function decryptCareKey(value,secret){const p=JSON.parse(value);if(p.v!==1)throw Error('INVALID_KEY_FORMAT');return new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:Uint8Array.from(atob(p.iv),c=>c.charCodeAt(0))},await encryptionKey(secret),Uint8Array.from(atob(p.data),c=>c.charCodeAt(0))))}
-async function apiKey(env,config){return env.GEMINI_API_KEY||await decryptCareKey(config.row.encrypted_key,env.SESSION_SECRET)}
+async function apiKey(env,config){return config.row?.encrypted_key?await decryptCareKey(config.row.encrypted_key,env.SESSION_SECRET):env.GEMINI_API_KEY}
 
 export function careCatalog(products){
  return storefrontProducts(products).filter(p=>p.approved===1&&p.stock>0&&['البشرة','الجسم','الشعر','المكياج'].includes(p.category)&&Number.isInteger(p.price_fils)&&p.price_fils>0).map(p=>{
@@ -193,7 +193,7 @@ export async function adminCare(req,env,{json,error,sameOrigin,content,throttle}
  }
  if(body.revision!==(config.row?.revision||0))return error('تغيّرت الإعدادات؛ حدّثي القسم قبل الحفظ.',409);
  const next=normalizeCareSettings(body.settings);
- const supplied=text(body.apiKey,220);if(supplied&&!/^[A-Za-z0-9_-]{20,200}$/.test(supplied))return error('مفتاح Google غير صالح.');
+ const supplied=text(body.apiKey,220);if(supplied&&!/^[A-Za-z0-9._-]{20,200}$/.test(supplied))return error('مفتاح Google غير صالح.');
  if(next.enabled&&(!next.billingConfirmed||!config.hasKey&&!supplied))return error('لتفعيل المساعد الشخصي: أضيفي المفتاح وأكّدي أن مشروع Google مفعّل للفوترة.');
  if(next.imagesEnabled&&!next.billingConfirmed)return error('الصور تتطلب مشروع Google مفعّلًا للفوترة.');
  const encrypted=supplied?await encryptCareKey(supplied,env.SESSION_SECRET):config.row?.encrypted_key||'';
