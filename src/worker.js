@@ -51,7 +51,7 @@ async function orderStatus(req,env){
  if(!(await throttle(req,env,'order-status',60,900)))return error('يرجى الانتظار قليلًا ثم المحاولة.',429);
  const row=await env.DB.prepare('SELECT id,subtotal_fils,shipping_fee_fils,discount_fils,payment_method,locale FROM orders WHERE idempotency_key=?').bind(key).first();return json(row?orderReceipt(row):{received:false});
 }
-async function postOrder(req,env,ctx){if(!isProductionConfigured(env))return error('الطلبات غير مفعلة حتى اكتمال إعداد المتجر والبريد الإلكتروني والتحقق من الأسعار والمخزون',503);
+async function postOrder(req,env,ctx){if(!isProductionConfigured(env))return error('تعذّر إتمام الطلب مؤقتًا. يرجى المحاولة بعد قليل أو التواصل مع المتجر للمساعدة.',503);
  if(!sameOrigin(req))return error('طلب غير مصرح',403);
  if(!(await throttle(req,env,'orders',30,900)))return error('تم تجاوز عدد المحاولات المسموح بها',429);
  let b;try{b=await content(req)}catch{return error('بيانات الطلب غير صالحة')};if(b.website)return error('تعذر تسجيل الطلب',400);
