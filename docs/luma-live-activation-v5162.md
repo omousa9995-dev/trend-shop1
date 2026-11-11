@@ -21,3 +21,5 @@ All 412 automated tests passed, including 25 assistant tests. New integration co
 Google's official generateContent error reference identifies 503 as temporary capacity unavailability and recommends waiting and retrying: https://aistudio.google.com/docs/api-errors?generate-content=true .
 
 The candidate preserves the existing 32-module embedded-assets deployment with 632 static files. Package SHA-256: `4adeb60f7d72dead8fcdf8ebdeb4e7e5403ceb151ea09645894dea38785c94d5`. Deployment uses the existing Worker and inherited bindings; no credential-bearing verification resource is created.
+
+After CI run 43108144577 passed, commit `33f61b9f25280634fbb45b039589d6d02f5a2022` was deployed at 100% as Worker version `16205d5c-b641-4a91-81af-3ddad46c958c`, deployment `4f3304a0-e726-4ee3-adb7-3179e02f1fd4`. The store launcher was visibly available and opened the customer conversation. A fresh post-release production request returned TS0109 (4.49 JOD) and TS0021 (3.49 JOD): 7.98 JOD subtotal plus 1.00 JOD delivery, total 8.98 JOD within the confirmed 15 JOD budget. Live settings revision 3 and all nine binding names/types were preserved.

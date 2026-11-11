@@ -6,11 +6,24 @@
   "imagesEnabled": true,
   "billingConfirmedByOwner": true,
   "dailyCustomerRequestLimit": 50,
-  "tests": {"totalPassed": 412, "assistantPassed": 25, "failed": 0},
+  "tests": {
+    "totalPassed": 412,
+    "assistantPassed": 25,
+    "failed": 0
+  },
   "productionConversation": {
     "url": "https://trendjo.pages.dev/care-assistant.html",
     "budgetFils": 15000,
-    "products": [{"id": "TS0109", "priceFils": 4490}, {"id": "TS0103", "priceFils": 6500}],
+    "products": [
+      {
+        "id": "TS0109",
+        "priceFils": 4490
+      },
+      {
+        "id": "TS0103",
+        "priceFils": 6500
+      }
+    ],
     "subtotalFils": 10990,
     "shippingFeeFils": 1000,
     "totalFils": 11990,
@@ -41,5 +54,32 @@
     "bytes": 6389909,
     "sha256": "4adeb60f7d72dead8fcdf8ebdeb4e7e5403ceb151ea09645894dea38785c94d5"
   },
-  "credentialValueRecorded": false
+  "credentialValueRecorded": false,
+  "release": {
+    "commit": "33f61b9f25280634fbb45b039589d6d02f5a2022",
+    "ciRun": 43108144577,
+    "ciConclusion": "success",
+    "workerVersion": "16205d5c-b641-4a91-81af-3ddad46c958c",
+    "deploymentId": "4f3304a0-e726-4ee3-adb7-3179e02f1fd4",
+    "percentage": 100
+  },
+  "postReleaseConversation": {
+    "launcherVisibleAndOpenedConversation": true,
+    "budgetFils": 15000,
+    "products": [
+      {
+        "id": "TS0109",
+        "priceFils": 4490
+      },
+      {
+        "id": "TS0021",
+        "priceFils": 3490
+      }
+    ],
+    "subtotalFils": 7980,
+    "shippingFeeFils": 1000,
+    "totalFils": 8980,
+    "withinBudget": true,
+    "generationSucceeded": true
+  }
 }
