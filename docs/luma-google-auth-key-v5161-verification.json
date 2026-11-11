@@ -1,0 +1,58 @@
+{
+  "release": "5.16.1",
+  "verifiedOn": "2026-11-11",
+  "sourceCommit": "943d74980cdef1fe1b63e7246e5b82c0e3bdffbb",
+  "deployment": {
+    "versionId": "350868e9-0294-4022-9054-c0bcb39d68d5",
+    "deploymentId": "28e34bf8-5aa9-493d-a0a3-370a8e00b4bc",
+    "packageSha256": "cf749414b762d8111f87c00adb6a5472c1fcf47c9bb01eacfd8efaa7d674297a"
+  },
+  "credential": {
+    "stored": true,
+    "binding": "GEMINI_API_KEY",
+    "location": "Cloudflare secret on the existing store Worker",
+    "valueInSource": false,
+    "valueInPublicAssets": false
+  },
+  "googleChecks": {
+    "metadata": {
+      "authenticatedModel": "models/gemini-3.8-flash",
+      "success": true
+    },
+    "syntheticGeneration": {
+      "firstAttempt": {
+        "httpStatus": 503,
+        "status": "UNAVAILABLE",
+        "reason": "Temporary high model demand"
+      },
+      "singleRetry": {
+        "success": false,
+        "reason": "Read operation timed out"
+      }
+    },
+    "customerDataSent": false,
+    "imagesSent": false,
+    "billingVerified": false
+  },
+  "validation": {
+    "testsPassed": 409,
+    "testsFailed": 0,
+    "careTests": 22,
+    "ciRunId": 43066082839,
+    "ciJobId": 130681288849,
+    "ciConclusion": "success"
+  },
+  "activation": {
+    "customerEnabled": false,
+    "imagesEnabled": false,
+    "billingConfirmed": false,
+    "settingsRevision": 1,
+    "usageRows": 0
+  },
+  "temporaryVerificationResource": {
+    "created": false,
+    "automaticReviewRejected": true,
+    "saferAlternative": "Direct Google API check using hidden terminal input; no additional public Worker"
+  },
+  "remaining": "Owner confirms an active paid Google project. Successful synthetic generation and store-matching validation remain required before enabling customer traffic."
+}
