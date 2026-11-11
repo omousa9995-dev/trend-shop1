@@ -100,3 +100,23 @@ test('Card uploads lock both save buttons and a late upload cannot change the ne
  f.reset();f.elements.image_url.value='/images/next-product.svg';finishUpload(Response.json({imageUrl:'/media/uploads/old-request.jpg'}));await new Promise(r=>setTimeout(r,10));
  assert.equal(f.elements.image_url.value,'/images/next-product.svg');assert.equal(f.dataset.cardUploadBusy,'false');assert.ok([...f.querySelectorAll('button')].every(b=>!b.disabled));assert.equal(d.querySelector('#imageUploadPreview').hidden,true);
 });
+test('Editing an existing product through category adds Korean care while keeping its skincare category, type and inventory',async t=>{
+ const {w,d,requests,products,errors}=await editor(t);d.querySelector('[data-edit=TSOTHER1]').click();await until(()=>!d.querySelector('[data-photo-files]').disabled);
+ const f=d.querySelector('#productForm');f.elements.productType.value='serum';f.elements.category.value='korean-care:البشرة';f.elements.category.dispatchEvent(new w.Event('change'));
+ assert.equal(f.elements.koreanCare.value,'include');assert.equal(f.elements.productType.value,'serum');assert.match(d.querySelector('#productCategoryHelp').textContent,/Korean care.*العناية بالبشرة/);
+ f.dispatchEvent(new w.SubmitEvent('submit',{bubbles:true,cancelable:true,submitter:d.querySelector('#saveProductMedia')}));await until(()=>d.querySelector('#productSaveMessage').textContent.includes('حُفظ'));
+ const saved=JSON.parse(requests.find(x=>x.opts.method==='POST').opts.body);assert.equal(saved.id,'TSOTHER1');assert.equal(saved.category,'البشرة');assert.equal(saved.details.productType,'serum');assert.equal(saved.details.koreanCare,true);assert.equal(saved.stock,0);assert.equal(saved.price_fils,4990);assert.equal(products.length,3);assert.equal(f.elements.category.value,'korean-care:البشرة');assert.deepEqual(errors,[]);
+});
+test('The category menu preserves typed shade codes when adding makeup to Korean care',async t=>{
+ const {w,d,requests,errors}=await editor(t);d.querySelector('[data-edit=TSOTHER1]').click();await until(()=>!d.querySelector('[data-photo-files]').disabled);
+ const f=d.querySelector('#productForm');f.elements.category.value='المكياج';f.elements.category.dispatchEvent(new w.Event('change'));f.elements.productType.value='foundation';f.elements.productType.dispatchEvent(new w.Event('change'));f.elements['shadeCode-tone-2'].value='MY-REAL-CODE';
+ f.elements.category.value='korean-care:المكياج';f.elements.category.dispatchEvent(new w.Event('change'));assert.equal(f.elements.productType.value,'foundation');assert.equal(f.elements['shadeCode-tone-2'].value,'MY-REAL-CODE');
+ f.dispatchEvent(new w.SubmitEvent('submit',{bubbles:true,cancelable:true,submitter:d.querySelector('#saveProductMedia')}));await until(()=>d.querySelector('#productSaveMessage').textContent.includes('حُفظ'));
+ const saved=JSON.parse(requests.find(x=>x.opts.method==='POST').opts.body);assert.equal(saved.category,'المكياج');assert.equal(saved.details.koreanCare,true);assert.equal(saved.details.shadeCodes['tone-2'],'MY-REAL-CODE');assert.deepEqual(errors,[]);
+});
+test('Both category routes and the separate collection control stay synchronized when removing or restoring Korean care',async t=>{
+ const {w,d,requests,errors}=await editor(t);d.querySelector('[data-edit=TSCUSTOM1]').click();const f=d.querySelector('#productForm');assert.equal(f.elements.category.value,'korean-care:البشرة');
+ f.elements.category.value='البشرة';f.elements.category.dispatchEvent(new w.Event('change'));assert.equal(f.elements.koreanCare.value,'exclude');assert.equal(f.elements.category.value,'البشرة');
+ f.elements.koreanCare.value='include';f.elements.koreanCare.dispatchEvent(new w.Event('change'));assert.equal(f.elements.category.value,'korean-care:البشرة');
+ f.elements.koreanCare.value='auto';f.elements.koreanCare.dispatchEvent(new w.Event('change'));assert.equal(f.elements.category.value,'البشرة');assert.equal(requests.filter(x=>x.opts.method==='POST').length,0);assert.deepEqual(errors,[]);
+});

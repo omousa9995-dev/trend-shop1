@@ -1,4 +1,4 @@
-import {filterAdminProducts,koreanCareChoice,applyKoreanCareChoice,collectionHint,publicationHint} from './admin-product-tools.js?v=5.14.0';
+import {filterAdminProducts,koreanCareChoice,applyKoreanCareChoice,collectionHint,publicationHint,parseCategoryChoice,categoryChoiceValue} from './admin-product-tools.js?v=5.14.1';
 import {isKoreanCare} from './korean-care.js?v=5.14.0';
 import {availableBrands} from './brand-tools.js';
 import {productDetails} from './shop-tools.js';
@@ -104,8 +104,13 @@ function syncProductContext(){
  const f=$('#productForm'),choice=f.elements.koreanCare.value;
  $('#koreanCareHelp').textContent=collectionHint(choice,f.elements.brand.value);
  const details=applyKoreanCareChoice(currentProductDetails,choice,f.elements.brand.value);
- $('#productPublishStatus').textContent=publicationHint({active:f.elements.active.checked,approved:f.elements.approved.checked,stock:f.elements.stock.value,korean:isKoreanCare({brand:f.elements.brand.value,details})});
+ const category=parseCategoryChoice(f.elements.category.value).category,korean=isKoreanCare({brand:f.elements.brand.value,details});
+ f.elements.category.value=categoryChoiceValue(category,korean);f.elements.category.dataset.baseCategory=category;
+ $('#productCategoryHelp').textContent=korean?'سيظهر في Korean care وفي '+categoryLabel(category)+' معًا بعد الحفظ.':'سيظهر في '+categoryLabel(category)+'. اختر من مجموعة «الفئة + Korean care» لإضافته للقسمين.';
+ $('#productPublishStatus').textContent=publicationHint({active:f.elements.active.checked,approved:f.elements.approved.checked,stock:f.elements.stock.value,korean});
 }
+function categoryLabel(category){return {البشرة:'العناية بالبشرة',الشعر:'العناية بالشعر',الجسم:'العناية بالجسم',المكياج:'المكياج',العطور:'العطور',الأدوات:'أدوات الجمال'}[category]||category}
+function categoryOptions(){return '<optgroup label="الفئة فقط">'+cats.map(c=>`<option value="${c}">${categoryLabel(c)}</option>`).join('')+'</optgroup><optgroup label="الفئة + Korean care">'+cats.map(c=>`<option value="${categoryChoiceValue(c,true)}">Korean care + ${categoryLabel(c)}</option>`).join('')+'</optgroup>'}
 function openEditor(p,{korean=false}={}){
  const preview=$('#previewProductLink');preview.hidden=!p;if(p)preview.href='/#/product/'+encodeURIComponent(p.id);
  const f=$('#productForm');f.reset();currentProductDetails=productDetails(p||{})||{};
@@ -113,15 +118,19 @@ function openEditor(p,{korean=false}={}){
  f.elements.nameAr.value=currentProductDetails.nameAr||'';f.elements.tagline.value=currentProductDetails.tagline||'';f.elements.benefits.value=(currentProductDetails.benefits||[]).join('\n');f.elements.howToUse.value=currentProductDetails.howToUse||'';f.elements.productNotes.value=currentProductDetails.notes||'';
  $('#editorTitle').textContent=p?'تعديل المنتج':korean?'إضافة منتج إلى Korean care':'إضافة منتج جديد';$('#editorError').textContent='';$('#productSaveMessage').textContent='';
  f.elements.koreanCare.value=korean?'include':koreanCareChoice(p);
- f.elements.category.innerHTML=cats.map(c=>`<option>${c}</option>`).join('');f.elements.id.value=p?.id||'';f.elements.name.value=p?.name||'';f.elements.brand.value=p?.brand||'';f.elements.category.value=p?.category||'البشرة';currentProductImage=p?.image_url||'/images/TS0001.svg';f.elements.size.value=currentProductDetails.size||'';f.elements.shade.value=currentProductDetails.shade||'';f.elements.variantNote.value=currentProductDetails.variantNote||'';
+ f.elements.category.innerHTML=categoryOptions();f.elements.id.value=p?.id||'';f.elements.name.value=p?.name||'';f.elements.brand.value=p?.brand||'';f.elements.category.value=p?.category||'البشرة';currentProductImage=p?.image_url||'/images/TS0001.svg';f.elements.size.value=currentProductDetails.size||'';f.elements.shade.value=currentProductDetails.shade||'';f.elements.variantNote.value=currentProductDetails.variantNote||'';
  fillProductTypes(currentProductDetails.productType||'');f.elements.subcategory.value=p?.subcategory||'';f.elements.description.value=p?.description||'';f.elements.referenceJod.value=p?(p.reference_price_fils/1000).toFixed(2):'';f.elements.discount_percent.value=p?.discount_percent||0;f.elements.priceJod.value=p?(p.price_fils/1000).toFixed(2):'';$('#productPricePreview').textContent='';
  f.elements.stock.value=p?.stock??24;f.elements.image_url.value=p?.image_url||'/images/TS0001.svg';f.elements.approved.checked=!!p?.approved;f.elements.active.checked=p?.active!==0;
  renderToneEditor();syncProductContext();$('.editor-card').scrollTop=0;$('#editorOverlay').hidden=false;photoManager.select(p);videoManager.select(p);featuredVideoManager.select(p);
 }
 for(const name of ['koreanCare','brand','stock','active','approved']){const input=$('#productForm').elements[name];input.addEventListener('input',syncProductContext);input.addEventListener('change',syncProductContext)}
-function fillProductTypes(selected=''){const f=$('#productForm');f.elements.productType.innerHTML='<option value="">تلقائي بحسب الاسم</option>'+PRODUCT_TYPES.filter(t=>t.category===f.elements.category.value).map(t=>`<option value="${t.id}" ${selected===t.id?'selected':''}>${safe(t.label)}</option>`).join('')}
-function renderToneEditor(){const f=$('#productForm'),p={name:f.elements.name.value,category:f.elements.category.value,details:{productType:f.elements.productType.value,nameAr:f.elements.nameAr.value}};$('#toneEditor').hidden=!usesSkinTones(p);if(!$('#toneCodeFields').children.length)$('#toneCodeFields').innerHTML=SKIN_TONES.map(x=>`<label>${safe(x.label)} · كود الشركة (اختياري)<input class="input" name="shadeCode-${x.id}" maxlength="60"/></label>`).join('');for(const x of SKIN_TONES)f.elements['shadeCode-'+x.id].value=currentProductDetails.shadeCodes?.[x.id]||'';}
-$('#productForm').elements.category.addEventListener('change',()=>{fillProductTypes();renderToneEditor()});
+function fillProductTypes(selected=''){const f=$('#productForm'),category=parseCategoryChoice(f.elements.category.value).category;f.elements.productType.innerHTML='<option value="">تلقائي بحسب الاسم</option>'+PRODUCT_TYPES.filter(t=>t.category===category).map(t=>`<option value="${t.id}" ${selected===t.id?'selected':''}>${safe(t.label)}</option>`).join('')}
+function renderToneEditor(){const f=$('#productForm'),p={name:f.elements.name.value,category:parseCategoryChoice(f.elements.category.value).category,details:{productType:f.elements.productType.value,nameAr:f.elements.nameAr.value}};$('#toneEditor').hidden=!usesSkinTones(p);if(!$('#toneCodeFields').children.length)$('#toneCodeFields').innerHTML=SKIN_TONES.map(x=>`<label>${safe(x.label)} · كود الشركة (اختياري)<input class="input" name="shadeCode-${x.id}" maxlength="60"/></label>`).join('');for(const x of SKIN_TONES)f.elements['shadeCode-'+x.id].value=currentProductDetails.shadeCodes?.[x.id]||'';}
+$('#productForm').elements.category.addEventListener('change',()=>{
+ const f=$('#productForm'),previous=f.elements.category.dataset.baseCategory,choice=parseCategoryChoice(f.elements.category.value);
+ f.elements.koreanCare.value=choice.korean?'include':'exclude';syncProductContext();
+ if(previous!==choice.category){fillProductTypes();renderToneEditor()}
+});
 $('#productForm').elements.productType.addEventListener('change',renderToneEditor);
 $('#productForm').onsubmit=async e=>{
  e.preventDefault();if(productSaving)return;const f=e.currentTarget;
@@ -129,7 +138,7 @@ $('#productForm').onsubmit=async e=>{
  // Keep one product ID for a new draft across network failures and retries.
  if(!f.elements.id.value)f.elements.id.value='TS'+crypto.randomUUID().slice(0,8).toUpperCase();
  const details=applyKoreanCareChoice({...currentProductDetails,en:{...(currentProductDetails.en||{}),...Object.fromEntries(['name','tagline','description','benefits','howToUse','notes','variantNote'].map(key=>[key,key==='benefits'?f.elements['en-'+key].value.split('\n').map(x=>x.trim()).filter(Boolean):f.elements['en-'+key].value]))},...(f.elements.image_url.value!==currentProductImage?{imageEditedWithAI:false,imageNote:''}:{}),productType:f.elements.productType.value,shadeCodes:Object.fromEntries(SKIN_TONES.map(x=>[x.id,f.elements['shadeCode-'+x.id]?.value||''])),size:f.elements.size.value,shade:f.elements.shade.value,variantNote:f.elements.variantNote.value,introductoryOffer:false,nameAr:f.elements.nameAr.value,tagline:f.elements.tagline.value,benefits:f.elements.benefits.value.split('\n').map(x=>x.trim()).filter(Boolean),howToUse:f.elements.howToUse.value,notes:f.elements.productNotes.value,imageType:/\.svg(?:\?|$)/.test(f.elements.image_url.value)?'illustration':'photo'},f.elements.koreanCare.value,f.elements.brand.value);
- const data={id:f.elements.id.value,name:f.elements.name.value,brand:f.elements.brand.value,category:f.elements.category.value,subcategory:f.elements.subcategory.value,description:f.elements.description.value,details,reference_price_fils:Math.round(Number(f.elements.referenceJod.value)*1000),price_fils:Math.round(Number(f.elements.priceJod.value)*1000),discount_percent:Number(f.elements.discount_percent.value),stock:Number(f.elements.stock.value),image_url:f.elements.image_url.value||'/images/TS0001.svg',approved:f.elements.approved.checked,active:f.elements.active.checked};
+ const data={id:f.elements.id.value,name:f.elements.name.value,brand:f.elements.brand.value,category:parseCategoryChoice(f.elements.category.value).category,subcategory:f.elements.subcategory.value,description:f.elements.description.value,details,reference_price_fils:Math.round(Number(f.elements.referenceJod.value)*1000),price_fils:Math.round(Number(f.elements.priceJod.value)*1000),discount_percent:Number(f.elements.discount_percent.value),stock:Number(f.elements.stock.value),image_url:f.elements.image_url.value||'/images/TS0001.svg',approved:f.elements.approved.checked,active:f.elements.active.checked};
  const keepEditing=e.submitter?.id==='saveProductMedia',buttons=[...f.querySelectorAll('[type=submit]')],labels=buttons.map(b=>b.textContent);
  $('#editorError').textContent='';$('#productSaveMessage').textContent='';productSaving=true;buttons.forEach(b=>{b.disabled=true;b.textContent='جارٍ حفظ المنتج…'});
  try{

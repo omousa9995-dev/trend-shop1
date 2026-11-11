@@ -1,6 +1,12 @@
 import {isKoreanCare,isKoreanBrand} from './korean-care.js?v=5.14.0';
 import {productDetails,normalizeSearch} from './shop-tools.js';
 
+export function parseCategoryChoice(value){
+ const korean=String(value).startsWith('korean-care:');
+ return {category:korean?value.slice('korean-care:'.length):value,korean};
+}
+export function categoryChoiceValue(category,korean){return korean?'korean-care:'+category:category;}
+
 export function koreanCareChoice(product){
  const value=productDetails(product||{}).koreanCare;
  return value===true?'include':value===false?'exclude':'auto';
