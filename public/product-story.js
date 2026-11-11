@@ -5,7 +5,7 @@ import {mountAquaFreshPilot} from './aqua-fresh-pilot.js?v=5.9.0';
 import {mountArenciaServiceCard} from './arencia-pilot.js?v=5.4.0';
 import {locale,tx,translateText,formatMoney as money} from './i18n.js?v=5.1.0';
 import {quoteCart,productPrice,promotionData} from './commerce.js?v=5.0.0';
-import {isKoreanCare} from './korean-care.js';
+import {isKoreanCare} from './korean-care.js?v=5.14.0';
 import {productDetails} from './shop-tools.js';
 import {isRetiredProduct} from './catalog-policy.js';
 

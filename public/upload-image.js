@@ -18,7 +18,7 @@
  input.addEventListener('change',async()=>{
   const file=input.files?.[0];if(!file)return;
   const sequence=++uploadSequence;uploadController?.abort();uploadController=new AbortController();
-  const submit=form.querySelector('button[type="submit"]');submit.disabled=true;input.disabled=true;status.textContent='جاري تهيئة الصورة ورفعها…';
+  const submits=[...form.querySelectorAll('button[type="submit"]')];submits.forEach(button=>button.disabled=true);form.dataset.cardUploadBusy='true';input.disabled=true;status.textContent='جاري تهيئة الصورة ورفعها…';
   try{
    const blob=await prepare(file),body=new FormData();body.append('image',blob,'product.jpg');
    if(sequence!==uploadSequence)return;
@@ -28,7 +28,7 @@
    form.elements.image_url.value=data.imageUrl;
    if(previewUrl)URL.revokeObjectURL(previewUrl);previewUrl=URL.createObjectURL(blob);preview.src=previewUrl;preview.hidden=false;
    status.textContent='رُفعت صورة البطاقة. اضغط حفظ المنتج لاعتمادها؛ صور صفحة المنتج مستقلة.';
-  }catch(error){if(sequence===uploadSequence&&error.name!=='AbortError')status.textContent=error.message}finally{if(sequence===uploadSequence){submit.disabled=false;input.disabled=false;input.value=''}}
+  }catch(error){if(sequence===uploadSequence&&error.name!=='AbortError')status.textContent=error.message}finally{if(sequence===uploadSequence){submits.forEach(button=>button.disabled=false);form.dataset.cardUploadBusy='false';input.disabled=false;input.value=''}}
  });
- form.addEventListener('reset',()=>{uploadSequence++;uploadController?.abort();input.disabled=false;form.querySelector('button[type="submit"]').disabled=false;status.textContent='';preview.hidden=true;preview.removeAttribute('src');if(previewUrl){URL.revokeObjectURL(previewUrl);previewUrl=null}});
+ form.addEventListener('reset',()=>{uploadSequence++;uploadController?.abort();input.disabled=false;form.dataset.cardUploadBusy='false';form.querySelectorAll('button[type="submit"]').forEach(button=>button.disabled=false);status.textContent='';preview.hidden=true;preview.removeAttribute('src');if(previewUrl){URL.revokeObjectURL(previewUrl);previewUrl=null}});
 })();

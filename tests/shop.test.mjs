@@ -317,3 +317,32 @@ test('A pre-removal order for a retired product can still replay its successful 
  const f=fixture();f.DB.sql.prepare("INSERT INTO products(id,brand,name,category,reference_price_fils,price_fils,stock,approved,active) VALUES('TS0232','CHECK OUT','Retired','البشرة',4000,2500,24,1,1)").run();f.DB.sql.exec("INSERT INTO orders(id,idempotency_key,name,phone,governorate,address,payment_method,subtotal_fils,shipping_fee_fils) VALUES('TR-OLD-REMOVAL','retired-existing-key','Test','0790000000','عمّان','العبدلي','cod',2500,1000);INSERT INTO order_items(order_id,product_id,name_snapshot,qty,unit_price_fils) VALUES('TR-OLD-REMOVAL','TS0232','Saved product',1,2500)");f.DB.sql.exec(file('db/migrations/0012_retire_owner_products.sql'));
  const result=await api('/api/orders',f.env,f.ctx,{...cart,items:[{id:'TS0232',qty:1}]},{'x-idempotency-key':'retired-existing-key'});assert.equal(result.status,200);const receipt=await result.json();assert.equal(receipt.duplicate,true);assert.equal(receipt.orderId,'TR-OLD-REMOVAL');assert.equal(f.DB.sql.prepare("SELECT stock FROM products WHERE id='TS0232'").get().stock,23);assert.equal(f.pending.length,0);f.DB.sql.close();
 });
+
+
+test('Owner Korean care choices survive save, hide and public catalog without changing other products',async()=>{
+ const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env),headers={cookie,'x-trend-admin':'1'};
+ const body={id:'TSKOREANNEW',name:'New Korean Serum',brand:'A new Korean brand',category:'البشرة',subcategory:'سيروم',description:'Individual description',reference_price_fils:5000,price_fils:4990,discount_percent:0,stock:24,approved:true,active:true,image_url:'/images/TS0001.svg',details:{koreanCare:true,collection:'k-beauty',productType:'serum',nameAr:'سيروم جديد',howToUse:'اتبع تعليمات العبوة',en:{description:'Individual English copy'}}};
+ const original=f.DB.sql.prepare("SELECT * FROM products WHERE id='TS0001'").get();
+ try{
+  assert.equal((await api('/api/admin/products',f.env,f.ctx,body,headers)).status,200);
+  let saved=f.DB.sql.prepare("SELECT * FROM products WHERE id='TSKOREANNEW'").get();assert.equal(JSON.parse(saved.details_json).koreanCare,true);
+  const publicCatalog=await(await api('/api/catalog',f.env,f.ctx)).json();const product=publicCatalog.products.find(p=>p.id===body.id);
+  const {isKoreanCare}=await import('../public/korean-care.js');assert.ok(product);assert.equal(isKoreanCare(product),true);
+  assert.equal((await api('/api/admin/products',f.env,f.ctx,{...saved,active:false},headers)).status,200);
+  saved=f.DB.sql.prepare("SELECT * FROM products WHERE id='TSKOREANNEW'").get();assert.equal(JSON.parse(saved.details_json).koreanCare,true);assert.equal(saved.active,0);
+  assert.equal((await api('/api/admin/products',f.env,f.ctx,{...body,brand:'Anua',details:{...body.details,koreanCare:false}},headers)).status,200);
+  saved=f.DB.sql.prepare("SELECT * FROM products WHERE id='TSKOREANNEW'").get();assert.equal(isKoreanCare(saved),false);
+  assert.equal((await api('/api/admin/products',f.env,f.ctx,{...body,details:{collection:'beauty'}},headers)).status,200);
+  assert.equal(Object.hasOwn(JSON.parse(f.DB.sql.prepare("SELECT details_json FROM products WHERE id='TSKOREANNEW'").get().details_json),'koreanCare'),false);
+  assert.deepEqual(f.DB.sql.prepare("SELECT * FROM products WHERE id='TS0001'").get(),original);assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM orders').get().n,0);
+ }finally{f.DB.sql.close();}
+});
+test('The Korean care setting requires a real boolean and retains owner authentication',async()=>{
+ const f=fixture(),cookie='ts_admin='+await _test.makeSession(f.env),headers={cookie,'x-trend-admin':'1'};
+ const body={id:'TSKOREANBAD',name:'Test serum',brand:'Test',category:'البشرة',reference_price_fils:5000,price_fils:4990,discount_percent:0,stock:24,approved:true,active:true};
+ try{
+  assert.equal((await api('/api/admin/products',f.env,f.ctx,{...body,details:{koreanCare:true}},{'x-trend-admin':'1'})).status,401);
+  for(const value of ['true',1,0,null,[]])assert.equal((await api('/api/admin/products',f.env,f.ctx,{...body,details:{koreanCare:value}},headers)).status,400);
+  assert.equal(f.DB.sql.prepare('SELECT COUNT(*) n FROM products').get().n,1);
+ }finally{f.DB.sql.close();}
+});
