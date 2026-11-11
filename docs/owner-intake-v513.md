@@ -11,3 +11,13 @@ Customer-facing preview/launch/price-approval copy and client-only simulated che
 Sources: owner-supplied IMG_0671.jpeg and IMG_0670.png; https://www.clinique.com/products/dramatically-different-moisturizing-lotion (type/use); independent retailer listings were used only to cross-check June naming, without adopting their unverified enlargement or ingredient claims.
 
 Validation includes the full suite, additive/repeatable migration, gallery/provenance checks, correct taxonomy, preservation of a real low review rating, and failure to fabricate a checkout success when offline. Physical iPhone testing is unavailable; mobile browser rendering is used for visual review.
+
+## Published verification — 2026-11-11
+
+- Source: bcb8fb161188fb47a398c10504db9112da13d933. All 374 tests and the matching GitHub workflow passed.
+- Cloudflare Worker version: e5c38cda-c4c1-4d27-b8c5-3e2afcc6c65e, number 57; deployment 158fbe31-0e38-49a3-ae38-227567bc20fa serves 100% of traffic.
+- The deployed 31-module, 623-asset package matches local SHA-256 2a1269570e69d1841d7c0b1f43bca8bea0d66b647d97c7380debddbae2cb8b9f. Existing bindings and storefront fonts were inherited.
+- All 14 original/promotional WebP files and thumbnails were read back from media storage and matched their local byte hashes.
+- The additive migration inserted exactly two rows: products 321 to 323 and stock +48. Existing order count remained 15; review count remained zero. No test order was submitted.
+- Both live product pages, the promotional gallery, Arabic/English copy and the pre-submission order summary were checked in the browser. Completed 390 × 844 mobile screenshots show each original pack, gallery thumbnails and the correct delivered price. The mobile renderer initially encountered connection/idle-wait errors; final captures succeeded after waiting for image loading following DOM readiness.
+- Product pages: https://trendjo.pages.dev/?v=5.13.0#/product/TS0360 and https://trendjo.pages.dev/?v=5.13.0#/product/TS0361.
