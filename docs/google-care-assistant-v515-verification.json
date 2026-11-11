@@ -1,0 +1,56 @@
+{
+  "release": "5.15.0",
+  "verifiedOn": "2026-11-11",
+  "sourceCommit": "61d16dc1d4d9086fd551cfa9e87f02716a1c1aec",
+  "deployment": {
+    "worker": "trend-shop-jo",
+    "versionId": "8cc10ae1-c2e1-4994-920b-8586d732cf07",
+    "deploymentId": "8aed76a7-487e-4a93-8705-ed75c2f8d2e6",
+    "percentage": 100,
+    "packageSha256": "3526c78f0e17b548e245ac9813c784326d53d045318dec7591748e1f2786ef63",
+    "modules": 32,
+    "embeddedAssets": 631,
+    "compatibilityDate": "2026-10-25"
+  },
+  "validation": {
+    "localTests": {
+      "passed": 400,
+      "failed": 0,
+      "careTests": 13
+    },
+    "githubActions": {
+      "runId": 43051807650,
+      "jobId": 130630650946,
+      "conclusion": "success"
+    },
+    "syntheticCustomerAndOwnerUi": true,
+    "mobileContentWidth": 375,
+    "horizontalOverflow": false,
+    "physicalIPhoneTested": false,
+    "realGoogleInferenceTested": false,
+    "realFaceAnalysisTested": false
+  },
+  "production": {
+    "storefront": "https://trendjo.pages.dev/",
+    "admin": "https://trendjo.pages.dev/admin.html?v=5.15.0#care",
+    "customerPage": "https://trendjo.pages.dev/care-assistant.html",
+    "publicStatus": {
+      "available": false,
+      "imagesAvailable": false,
+      "consentVersion": "care-2026-11-v1"
+    },
+    "adminUnauthenticatedResponse": "يجب تسجيل الدخول",
+    "customerEntryHidden": true,
+    "adminSectionRequiresOwnerLogin": true,
+    "googleKeyConfigured": false,
+    "googleBillingConfiguredByThisRelease": false,
+    "usageRows": 0,
+    "products": 323,
+    "orders": 15,
+    "storeLive": "true",
+    "shortOrderIds": "true",
+    "existingBindingsAndObservabilityPreserved": true,
+    "migration": "db/migrations/0030_care_assistant.sql"
+  },
+  "remaining": "Owner supplies an existing Google API key through the authenticated admin panel and completes paid-project setup directly with Google. Run the connection check and evaluate real cosmetic replies before enabling customer use. Photos require separate user consent and remain cosmetic observations, never diagnosis or treatment."
+}
