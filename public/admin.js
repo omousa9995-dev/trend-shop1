@@ -1,4 +1,5 @@
 import {filterAdminProducts,koreanCareChoice,applyKoreanCareChoice,collectionHint,publicationHint,parseCategoryChoice,categoryChoiceValue} from './admin-product-tools.js?v=5.14.1';
+import {createCareAssistantManager} from './care-assistant-admin.js?v=5.15.0';
 import {isKoreanCare} from './korean-care.js?v=5.14.0';
 import {availableBrands} from './brand-tools.js';
 import {productDetails} from './shop-tools.js';
@@ -24,6 +25,7 @@ const customerReportManager=createCustomerReportManager({call});
 const experiencePanel=createExperienceMetricsPanel({call});
 const reviewManager=createReviewManager({call});
 const siteManager=createSiteSettingsManager({call,getProducts:()=>state.products});
+const careManager=createCareAssistantManager({call});
 const photoManager=createProductPhotoManager({call});
 const mediaLibrary=createMediaLibrary({call,onChange:()=>loadProducts(),onEdit:id=>{activeTab('products');openEditor(state.products.find(p=>p.id===id))}});
 const videoManager=createProductVideoManager({call});
@@ -31,10 +33,11 @@ const featuredVideoManager=createFeaturedVideoManager({call});
 const promotionManager=createPromotionManager({call,getProducts:()=>state.products,refreshProducts:()=>loadProducts()});
 async function call(path,method='GET',data){const response=await fetch('/api/admin/'+path,{method,credentials:'same-origin',headers:{...(data?{'content-type':'application/json','x-trend-admin':'1'}:{})},body:data?JSON.stringify(data):undefined});let result=await response.json().catch(()=>({}));if(!response.ok)throw Error(result.error||'تعذر تنفيذ العملية');return result}
 async function start(){try{const j=await call('me');state.logged=true;state.live=!!j.live;show();experiencePanel.load();await Promise.all([loadOrders(),loadProducts()]);await promotionManager.load();}catch{$('#loginView').hidden=false;$('#dashboardView').hidden=true}}
-function show(){$('#loginView').hidden=true;$('#dashboardView').hidden=false;$('#liveStatus').textContent=state.live?'المتجر يستقبل طلبات':'مرحلة الإعداد — الطلبات غير مفعّلة';$('#liveStatus').classList.toggle('live',state.live)}
+function show(){if(location.hash==='#care')activeTab('care');$('#loginView').hidden=true;$('#dashboardView').hidden=false;$('#liveStatus').textContent=state.live?'المتجر يستقبل طلبات':'مرحلة الإعداد — الطلبات غير مفعّلة';$('#liveStatus').classList.toggle('live',state.live)}
 $('#loginForm').onsubmit=async e=>{e.preventDefault();const pass=$('#password').value;$('#loginError').textContent='';try{const r=await fetch('/api/admin/login',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({password:pass})});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'تعذر الدخول');$('#password').value='';await start()}catch(e){$('#loginError').textContent=e.message}};
 $('#logoutBtn').onclick=async()=>{await call('logout','POST').catch(()=>{});location.reload()};
-function activeTab(tab){if(tab==='media')mediaLibrary.load();if(tab==='overview')experiencePanel.load();customerReportManager.setActive(tab==='customers');for(const name of ['overview','orders','products','promotions','reviews','site','customers','media']){const button=$('#'+name+'Tab');button.classList.toggle('active',tab===name);if(tab===name)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');$('#'+name+'Section').hidden=tab!==name}}
+function activeTab(tab){if(tab==='care')careManager.load();if(tab==='media')mediaLibrary.load();if(tab==='overview')experiencePanel.load();customerReportManager.setActive(tab==='customers');for(const name of ['overview','orders','products','promotions','reviews','site','customers','media','care']){const button=$('#'+name+'Tab');button.classList.toggle('active',tab===name);if(tab===name)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');$('#'+name+'Section').hidden=tab!==name}}
+$('#careTab').onclick=()=>activeTab('care');
 $('#mediaTab').onclick=()=>activeTab('media');
 $('#customersTab').onclick=()=>activeTab('customers');
 $('#overviewTab').onclick=()=>activeTab('overview');
