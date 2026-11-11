@@ -224,5 +224,20 @@
     "images": [
       "/images/catalog/marketing/TS0208-scene-6c889f1edacf.webp"
     ]
+  },
+  "TS0360": {
+    "primary": "/images/catalog/TS0360-fe1a6a661075.webp",
+    "images": [
+      "/images/catalog/marketing/TS0360-scene-896c0878ba47.webp",
+      "/images/catalog/marketing/TS0360-scene-5bc8f665f579.webp",
+      "/images/catalog/marketing/TS0360-scene-5c971227e7e1.webp"
+    ]
+  },
+  "TS0361": {
+    "primary": "/images/catalog/TS0361-8ed7a903eb64.webp",
+    "images": [
+      "/images/catalog/marketing/TS0361-scene-f8a13c3224fc.webp",
+      "/images/catalog/marketing/TS0361-scene-742546d10da1.webp"
+    ]
   }
 }

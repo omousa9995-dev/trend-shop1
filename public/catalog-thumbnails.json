@@ -2008,5 +2008,15 @@
     "primary": "/images/catalog/TS0359-7c26f4407b60.webp",
     "thumbnail": "/images/catalog/TS0359-4eacad2bbbac.webp",
     "highResolution": "/images/catalog/TS0359-7c26f4407b60.webp"
+  },
+  "TS0360": {
+    "primary": "/images/catalog/TS0360-fe1a6a661075.webp",
+    "thumbnail": "/images/catalog/TS0360-84ed5b23eb0e.webp",
+    "large": "/images/catalog/TS0360-fe1a6a661075.webp"
+  },
+  "TS0361": {
+    "primary": "/images/catalog/TS0361-8ed7a903eb64.webp",
+    "thumbnail": "/images/catalog/TS0361-26a830283ff8.webp",
+    "large": "/images/catalog/TS0361-8ed7a903eb64.webp"
   }
 }

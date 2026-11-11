@@ -34,7 +34,7 @@ test('An admin replacement photo takes precedence and galleries cannot repeat a 
 test('Every alternate product photo is reviewed, distinct, local, and belongs to a selected product',()=>{
  const galleries=JSON.parse(fs.readFileSync(new URL('../public/product-galleries.json',import.meta.url),'utf8'));
  const provenance=JSON.parse(fs.readFileSync(new URL('../data/gallery-provenance.json',import.meta.url),'utf8'));
- const generated=JSON.parse(fs.readFileSync(new URL('../data/marketing-assets-v41.json',import.meta.url),'utf8')).images;
+ const generated=[...JSON.parse(fs.readFileSync(new URL('../data/marketing-assets-v41.json',import.meta.url),'utf8')).images,...JSON.parse(fs.readFileSync(new URL('../data/intake-2026-11-11/marketing.json',import.meta.url),'utf8')).images];
  assert.ok(Object.keys(galleries).length>=10);
  for(const [id,gallery] of Object.entries(galleries)){
   const product=catalog.find(p=>p.id===id);assert.ok(product);assert.equal(gallery.primary,product.image);

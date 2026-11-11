@@ -1,0 +1,13 @@
+# Owner intake and production presentation — v5.13.0
+
+Two owner-supplied products are added as distinct SKUs: TS0360 Clinique Dramatically Different Moisturizing Lotion+ in face moisturizers, and TS0361 June Bloom Bloom Premium Soap in body cleansing. Neither is placed in the Korean-brand collection. The soap package says “Formulated in Korea”; manufacturing country, full ingredients and package weight are not established from the front image. Clinique pack volume is likewise left unspecified. Content avoids enlargement/body-shape claims and unverified cosmetic results.
+
+Both have individual Arabic/English descriptions, directions and pack notes. The previously authorized initial quantity is 24 per SKU. Store prices are 19.99 JOD and 3.99 JOD, respectively, within the existing owner range. Reference prices equal selling prices: no invented strikethrough price, discount or rating is added. Migration 0029 uses INSERT OR IGNORE and preserves subsequent owner edits, sold stock, unrelated products and all orders.
+
+Image set: two supplied pack photos plus five generated promotional photos, seven full images with compact thumbnails. Original packs remain first; additional images carry promotional metadata and captions. The generated full-resolution PNGs remain available alongside their project WebP derivatives. Prompts and sources are recorded in data/intake-2026-11-11/marketing.json. Product images are copied into the repository and published through the existing media KV, not embedded into the Worker bundle.
+
+Customer-facing preview/launch/price-approval copy and client-only simulated checkout success are removed. Connection problems remain explicit, and checkout retains the bag until an actual server order receipt is received. The server configuration, authentication and mail gates are unchanged. Genuine review cards now identify/link their product and show their actual numeric rating alongside stars. No reviews, ratings, customer identities or testimonials are fabricated; no production review records are inserted or altered, and review-submission visibility retains the owner setting.
+
+Sources: owner-supplied IMG_0671.jpeg and IMG_0670.png; https://www.clinique.com/products/dramatically-different-moisturizing-lotion (type/use); independent retailer listings were used only to cross-check June naming, without adopting their unverified enlargement or ingredient claims.
+
+Validation includes the full suite, additive/repeatable migration, gallery/provenance checks, correct taxonomy, preservation of a real low review rating, and failure to fabricate a checkout success when offline. Physical iPhone testing is unavailable; mobile browser rendering is used for visual review.

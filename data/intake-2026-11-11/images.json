@@ -1,0 +1,93 @@
+[
+  {
+    "name": "clinique-pack",
+    "id": "TS0360",
+    "kind": "pack",
+    "source": "IMG_0671.jpeg",
+    "url": "/images/catalog/TS0360-fe1a6a661075.webp",
+    "thumbnail": "/images/catalog/TS0360-84ed5b23eb0e.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 46602,
+    "thumbnailBytes": 8766,
+    "visuallyReviewed": true
+  },
+  {
+    "name": "june-pack",
+    "id": "TS0361",
+    "kind": "pack",
+    "source": "IMG_0670.png",
+    "url": "/images/catalog/TS0361-8ed7a903eb64.webp",
+    "thumbnail": "/images/catalog/TS0361-26a830283ff8.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 117088,
+    "thumbnailBytes": 24964,
+    "visuallyReviewed": true
+  },
+  {
+    "name": "clinique-studio",
+    "id": "TS0360",
+    "kind": "promotional",
+    "source": "exec-b4821b99-912a-44f3-a6e1-189a2aaa1a39.png",
+    "url": "/images/catalog/marketing/TS0360-scene-896c0878ba47.webp",
+    "thumbnail": "/images/catalog/marketing/TS0360-thumb-00c088d9cc3d.webp",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 162384,
+    "thumbnailBytes": 16728,
+    "visuallyReviewed": true
+  },
+  {
+    "name": "clinique-model",
+    "id": "TS0360",
+    "kind": "promotional",
+    "source": "exec-c4dac4ff-2d20-4701-8299-beb2ac4595cf.png",
+    "url": "/images/catalog/marketing/TS0360-scene-5bc8f665f579.webp",
+    "thumbnail": "/images/catalog/marketing/TS0360-thumb-d7e7bd524b37.webp",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 310246,
+    "thumbnailBytes": 26884,
+    "visuallyReviewed": true
+  },
+  {
+    "name": "clinique-hand",
+    "id": "TS0360",
+    "kind": "promotional",
+    "source": "exec-3ead2cb8-d41e-48fd-9e1d-ab3419883ba2.png",
+    "url": "/images/catalog/marketing/TS0360-scene-5c971227e7e1.webp",
+    "thumbnail": "/images/catalog/marketing/TS0360-thumb-d54faf367d5f.webp",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 241094,
+    "thumbnailBytes": 21460,
+    "visuallyReviewed": true
+  },
+  {
+    "name": "june-studio",
+    "id": "TS0361",
+    "kind": "promotional",
+    "source": "exec-711d6106-8d2e-47ed-ad66-1bb56cdaed84.png",
+    "url": "/images/catalog/marketing/TS0361-scene-f8a13c3224fc.webp",
+    "thumbnail": "/images/catalog/marketing/TS0361-thumb-a3cd2b83906a.webp",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 298686,
+    "thumbnailBytes": 35894,
+    "visuallyReviewed": true
+  },
+  {
+    "name": "june-ritual",
+    "id": "TS0361",
+    "kind": "promotional",
+    "source": "exec-a671a8f4-e62c-4b3c-ae66-533c6d6bca96.png",
+    "url": "/images/catalog/marketing/TS0361-scene-742546d10da1.webp",
+    "thumbnail": "/images/catalog/marketing/TS0361-thumb-94b397c01382.webp",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 372004,
+    "thumbnailBytes": 39770,
+    "visuallyReviewed": true
+  }
+]

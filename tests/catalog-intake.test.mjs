@@ -11,7 +11,7 @@ import {productType,matchesProductType} from '../public/product-types.js';
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const catalog=JSON.parse(read('public/catalog.json')),products=JSON.parse(read('data/intake-2026-10-27/products.json')),manifest=JSON.parse(read('data/intake-2026-10-27/manifest.json')),images=JSON.parse(read('data/intake-2026-10-27/images.json'));
 test('Every photographed item maps to one of 85 new SKUs or 9 existing SKUs, with distinct sizes and brands retained',()=>{
- assert.equal(manifest.length,94);assert.equal(manifest.filter(p=>p.existing).length,9);assert.equal(products.length,85);assert.equal(catalog.length,304);assert.equal(new Set(catalog.map(p=>p.id)).size,304);
+ assert.equal(manifest.length,94);assert.equal(manifest.filter(p=>p.existing).length,9);assert.equal(products.length,85);const previous=catalog.filter(p=>p.details?.intakeBatch!=='2026-11-11');assert.equal(previous.length,304);assert.equal(new Set(catalog.map(p=>p.id)).size,catalog.length);
  for(const r of manifest)assert.equal(catalog.filter(p=>p.id===r.id).length,isRetiredProduct(r.id)?0:1,r.id);
  assert.match(products.find(p=>p.id==='TS0215').details.size,/100/);assert.ok(catalog.some(p=>p.id==='TS0059'));
  for(const id of ['TS0202','TS0257','TS0258'])assert.equal(productType(catalog.find(p=>p.id===id)),'mascara');

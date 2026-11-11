@@ -1,0 +1,59 @@
+{
+  "images": [
+    {
+      "id": "TS0360",
+      "image": "/images/catalog/marketing/TS0360-scene-896c0878ba47.webp",
+      "primary": "/images/catalog/TS0360-fe1a6a661075.webp",
+      "thumbnail": "/images/catalog/marketing/TS0360-thumb-00c088d9cc3d.webp",
+      "reference": "owner-supplied:IMG_0671.jpeg",
+      "prompt": "Use case: product-mockup. Create one photorealistic premium ecommerce editorial product photo for the Trend Shop cosmetics website. The attached reference is the exact product and all of its physical details must remain unchanged: CLINIQUE dramatically different moisturizing lotion+, pale yellow rectangular lotion bottle, black pump, clear cylindrical cap, metallic silver C logo and original label. One bottle upright on a warm ivory stone vanity, soft daylight from the left, subtle natural shadow and quiet champagne reflections. Square composition, bottle occupies about 70 percent height, accurate front label clearly visible, beautiful tactile photographic quality. Preserve the exact reference bottle proportions, pump/cap and printed words; change only environment and lighting. No extra products, added captions, review stars, logos other than original packaging, medical symbols, before/after, SPF claims or watermark.",
+      "generator": "built-in image_gen",
+      "kind": "promotional",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "TS0360",
+      "image": "/images/catalog/marketing/TS0360-scene-5bc8f665f579.webp",
+      "primary": "/images/catalog/TS0360-fe1a6a661075.webp",
+      "thumbnail": "/images/catalog/marketing/TS0360-thumb-d7e7bd524b37.webp",
+      "reference": "owner-supplied:IMG_0671.jpeg",
+      "prompt": "Use case: photorealistic-natural. One premium cosmetics promotional photograph for Trend Shop. Exact product reference: CLINIQUE dramatically different moisturizing lotion+, same pale yellow bottle with silver C, black pump and clear cap. An elegant fictional adult woman age 28 with dark brown hair, natural skin texture and minimal makeup, fully clothed in a cream blouse, seated at a softly sunlit cream vanity. She gently applies a tiny dot of ordinary moisturizer to her cheek with fingertips while the exact reference bottle stands in the foreground, label facing camera, cap placed naturally beside it. Show face, shoulders and hands, friendly relaxed expression, realistic hands, warm ivory and soft rose colors, square editorial composition. Preserve the bottle design and original printed label faithfully. This is an advertising model, no testimonial text, stars, claims of results, airbrushed perfect skin, before/after, medical symbols, extra products or watermark.",
+      "generator": "built-in image_gen",
+      "kind": "promotional",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "TS0360",
+      "image": "/images/catalog/marketing/TS0360-scene-5c971227e7e1.webp",
+      "primary": "/images/catalog/TS0360-fe1a6a661075.webp",
+      "thumbnail": "/images/catalog/marketing/TS0360-thumb-d54faf367d5f.webp",
+      "reference": "owner-supplied:IMG_0671.jpeg",
+      "prompt": "Use case: product-mockup. Single photorealistic close-up ritual photo for a cosmetics product page. Preserve the exact attached CLINIQUE dramatically different moisturizing lotion+ bottle, pale yellow rectangular bottle, silver C logo, black pump and label. Close-up of one adult woman's natural hands at an ivory vanity; one hand presses the black pump once while the other hand is held under its nozzle with a small off-white lotion dot on the back. Cap placed beside the bottle. Fully covered cream sleeves, no face or body needed. Physically plausible hand positioning with five fingers, pump nozzle over the receiving hand, bottle label facing camera and readable. Beautiful soft daylight, ivory stone and subtle shadow, square crop, focus on bottle and lotion application. No extra text, stars, alleged results, syringe, SPF or watermark.",
+      "generator": "built-in image_gen",
+      "kind": "promotional",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "TS0361",
+      "image": "/images/catalog/marketing/TS0361-scene-f8a13c3224fc.webp",
+      "primary": "/images/catalog/TS0361-8ed7a903eb64.webp",
+      "thumbnail": "/images/catalog/marketing/TS0361-thumb-a3cd2b83906a.webp",
+      "reference": "owner-supplied:IMG_0670.png",
+      "prompt": "Use case: product-mockup. Create one beautiful premium ecommerce advertising still life using the exact attached sealed June Bloom Bloom Premium Soap package as the unchanged main subject. Preserve its cream/yellow pouch, blue corner strips, blue June brand, hot pink Bloom Bloom lettering, Premium Soap wording, small Formulated in Korea flag area, Thai writing and the blue/pink printed illustration on the package. It is a soap pouch with a printed illustration, not clothing. Upright sealed pouch on a pale ivory bathroom stone pedestal, pale blue towel to one side, subtle pink reflection, sophisticated warm natural daylight. Square composition, packaging fills 70 percent height with correct shape and legible original design. Do not open package or invent the soap's color or shape. No extra captions, stars, bust enlargement promises, body transformations, extra products or watermark.",
+      "generator": "built-in image_gen",
+      "kind": "promotional",
+      "visuallyReviewed": true
+    },
+    {
+      "id": "TS0361",
+      "image": "/images/catalog/marketing/TS0361-scene-742546d10da1.webp",
+      "primary": "/images/catalog/TS0361-8ed7a903eb64.webp",
+      "thumbnail": "/images/catalog/marketing/TS0361-thumb-94b397c01382.webp",
+      "reference": "owner-supplied:IMG_0670.png",
+      "prompt": "Use case: product-mockup. A high-quality photorealistic body-care ritual still life for an ecommerce product detail page. The exact attached sealed June Bloom Bloom Premium Soap package stands on a dry ivory stone counter beside a folded soft pale-blue towel and a clear glass dish containing only water droplets. One fully clothed adult woman's hand with cream sleeve gently reaches toward the sealed pouch from the side. Preserve every main packaging feature and front label: June in blue, Bloom Bloom in hot pink, Premium Soap, cream background, blue corner strips, original Thai print and printed blue/pink illustration. Soft early morning natural light, realistic fabric and small water droplets, calm light blue/ivory/pink palette, square composition, crisp accurate package. No actual unwrapped soap bar, invented ingredients or product shape, stars, testimonials, body modification claims, before/after, added captions or watermark.",
+      "generator": "built-in image_gen",
+      "kind": "promotional",
+      "visuallyReviewed": true
+    }
+  ]
+}

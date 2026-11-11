@@ -1,0 +1,111 @@
+{
+  "id": "TS0361",
+  "brand": "June",
+  "productName": "Bloom Bloom Premium Soap",
+  "primary": "/images/catalog/TS0361-8ed7a903eb64.webp",
+  "images": [
+    {
+      "url": "/images/catalog/marketing/TS0361-scene-f8a13c3224fc.webp",
+      "thumbnail": "/images/catalog/marketing/TS0361-thumb-a3cd2b83906a.webp",
+      "kind": "promotional",
+      "label": {
+        "ar": "مشهد دعائي",
+        "en": "Promotional scene"
+      }
+    },
+    {
+      "url": "/images/catalog/marketing/TS0361-scene-742546d10da1.webp",
+      "thumbnail": "/images/catalog/marketing/TS0361-thumb-94b397c01382.webp",
+      "kind": "promotional",
+      "label": {
+        "ar": "مشهد دعائي",
+        "en": "Promotional scene"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "owner-supplied:IMG_0670.png",
+      "title": "Owner-supplied package front"
+    }
+  ],
+  "liveSource": true,
+  "ar": {
+    "name": "صابونة جون بلوم بلوم — Bloom Bloom Premium Soap",
+    "tagline": "روتين جسمكِ، بلمسة Bloom Bloom.",
+    "description": "أضيفي إلى روتين جسمكِ خطوة تنظيف بعبوة Bloom Bloom المرحة من June. هذا صابون ضمن العناية الخارجية بالجسم، وتظهر على غلافه عبارة Formulated in Korea؛ وهي وصف للتركيبة ولا تعني وحدها أن المنتج مصنوع في كوريا. استخدميه وفق إرشادات العبوة، واشطفي جيدًا، ثم استكملي روتينكِ بمرطب للجسم عند الحاجة. نقدمه كمنتج تجميلي للتنظيف، دون وعود بتغيير شكل الجسم أو حجمه.",
+    "benefits": [
+      "صابون للتنظيف الخارجي ضمن روتين عناية الجسم",
+      "عبوة June Bloom Bloom كما تظهر في الصورة",
+      "خطوة تنظيف يمكن إتباعها بمرطب الجسم المناسب لكِ"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "أضيفي إلى روتين جسمكِ خطوة تنظيف بعبوة Bloom Bloom المرحة من June. هذا صابون ضمن العناية الخارجية بالجسم، وتظهر على غلافه عبارة Formulated in Korea؛ وهي وصف للتركيبة ولا تعني وحدها أن المنتج مصنوع في كوريا. استخدميه وفق إرشادات العبوة، واشطفي جيدًا، ثم استكملي روتينكِ بمرطب للجسم عند الحاجة. نقدمه كمنتج تجميلي للتنظيف، دون وعود بتغيير شكل الجسم أو حجمه.",
+    "fitText": "العبوة المكتوب عليها June Bloom Bloom Premium Soap. عبارة Formulated in Korea تشير إلى التركيبة وليست تأكيدًا لبلد التصنيع.",
+    "steps": [
+      {
+        "title": "1",
+        "text": "راجعي مواضع الاستخدام وتعليمات العبوة قبل الاستعمال."
+      },
+      {
+        "title": "2",
+        "text": "بللي الصابون وكوّني رغوة بين اليدين، ثم نظفي بلطف جلد الجسم الخارجي السليم."
+      },
+      {
+        "title": "3",
+        "text": "اشطفي جيدًا وجففي بلطف، واستكملي بالترطيب عند الحاجة. احفظي الصابون في مكان جاف بين الاستعمالات."
+      }
+    ],
+    "notes": "للاستخدام الخارجي بحسب العبوة، بعيدًا عن العينين والمناطق المخاطية والجلد المتهيج. لا نقدمه بوعد بالتكبير أو تغيير شكل الجسم. لا تتوفر صورة خلفية للمكونات أو الوزن؛ راجعي العبوة المتاحة أو اسألي المتجر لتأكيدها.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "1: راجعي مواضع الاستخدام وتعليمات العبوة قبل الاستعمال.\n2: بللي الصابون وكوّني رغوة بين اليدين، ثم نظفي بلطف جلد الجسم الخارجي السليم.\n3: اشطفي جيدًا وجففي بلطف، واستكملي بالترطيب عند الحاجة. احفظي الصابون في مكان جاف بين الاستعمالات."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "العبوة المكتوب عليها June Bloom Bloom Premium Soap. عبارة Formulated in Korea تشير إلى التركيبة وليست تأكيدًا لبلد التصنيع."
+      }
+    ],
+    "productType": "body-cleansing"
+  },
+  "en": {
+    "name": "June · Bloom Bloom Premium Soap",
+    "tagline": "A Bloom Bloom detail for your body-care routine.",
+    "description": "Add a cleansing step to your body-care routine with June Bloom Bloom Premium Soap in its distinctive pink and blue pack. The front reads “Formulated in Korea”, which describes the formulation and does not by itself confirm the manufacturing country. Follow your pack’s directions for external body use, rinse thoroughly and moisturize as needed. We present it as a cosmetic cleansing product, without body-shape or enlargement promises.",
+    "benefits": [
+      "Soap for an external body-cleansing routine",
+      "The pictured June Bloom Bloom Premium Soap pack",
+      "Follow cleansing with a suitable body moisturizer as needed"
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Add a cleansing step to your body-care routine with June Bloom Bloom Premium Soap in its distinctive pink and blue pack. The front reads “Formulated in Korea”, which describes the formulation and does not by itself confirm the manufacturing country. Follow your pack’s directions for external body use, rinse thoroughly and moisturize as needed. We present it as a cosmetic cleansing product, without body-shape or enlargement promises.",
+    "fitText": "June Bloom Bloom Premium Soap as pictured. “Formulated in Korea” does not by itself confirm manufacturing country.",
+    "steps": [
+      {
+        "title": "1",
+        "text": "Check the intended application areas and directions on your pack."
+      },
+      {
+        "title": "2",
+        "text": "Wet the soap and lather between your hands, then gently cleanse intact external body skin."
+      },
+      {
+        "title": "3",
+        "text": "Rinse thoroughly and pat dry. Moisturize as needed and keep the soap dry between uses."
+      }
+    ],
+    "notes": "External use according to the pack directions. Avoid eyes, mucous membranes and irritated skin. No enlargement or body-shape results are promised. Ingredients and net weight are not visible in the supplied front photo; confirm the available pack with the store.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "1: Check the intended application areas and directions on your pack.\n2: Wet the soap and lather between your hands, then gently cleanse intact external body skin.\n3: Rinse thoroughly and pat dry. Moisturize as needed and keep the soap dry between uses."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "June Bloom Bloom Premium Soap as pictured. “Formulated in Korea” does not by itself confirm manufacturing country."
+      }
+    ],
+    "productType": "body-cleansing"
+  }
+}

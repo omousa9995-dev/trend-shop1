@@ -7,7 +7,7 @@ test('The 13 owner-selected products are removed from every shipped catalog, gal
  assert.deepEqual([...RETIRED_PRODUCT_IDS],['TS0023','TS0024','TS0050','TS0051','TS0052','TS0053','TS0055','TS0127','TS0156','TS0157','TS0185','TS0186','TS0232']);
  const archive=JSON.parse(read('data/retired-products-2026-11-01.json'));assert.equal(archive.products.length,13);assert.deepEqual(archive.products.map(p=>p.id),[...RETIRED_PRODUCT_IDS]);
  for(const p of archive.products){assert.ok(!catalog.some(x=>x.id===p.id));assert.ok(isRetiredProduct(p));for(const index of ['public/product-galleries.json','public/catalog-thumbnails.json'])assert.equal(JSON.parse(read(index))[p.id],undefined)}
- assert.equal(catalog.length,304);assert.ok(catalog.some(x=>x.id==='TS0021'),'The unpictured Dermokil cream is retained');
+ assert.equal(catalog.length,306);assert.ok(catalog.some(x=>x.id==='TS0021'),'The unpictured Dermokil cream is retained');
 });
 test('Public copy removes production captions and launch markers without changing normal names, decimal strengths or option labels',()=>{
  const original={id:'TSKEEP',name:'Dr. Althea 0.1 SPF50+',description:'ترطيب لطيف. مناسب لروتينكِ.',details:{nameAr:'تركيز 0.1 من د. ألثيا',imageNote:'صورة محسنة بالذكاء الاصطناعي',imageEditedWithAI:true,introductoryOffer:true,options:[{id:'tone-1',label:'1 — فاتح'}],tagline:'صورة مُحسّنة بالذّكاء الاصطناعي. عناية لطيفة.'}};

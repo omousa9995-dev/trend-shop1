@@ -12,7 +12,7 @@ async function verify(env,token,hmac){try{const[data,signature]=String(token).sp
 export async function publicReviews(request,env,{json,error}){
  const id=new URL(request.url).searchParams.get('product');if(id&&!validProduct(id))return error('غير موجود',404);
  const where="r.status='approved' AND o.status='تم' AND p.active=1 AND p.approved=1"+(id?' AND r.product_id=?':'');
- const sql=`SELECT r.id,r.product_id,r.display_name,r.rating,r.body,r.locale,r.video_url,r.created_at,o.governorate FROM reviews r JOIN orders o ON o.id=r.order_id JOIN products p ON p.id=r.product_id WHERE ${where} ORDER BY r.created_at DESC LIMIT 24`;
+ const sql=`SELECT r.id,r.product_id,r.display_name,r.rating,r.body,r.locale,r.video_url,r.created_at,o.governorate,p.name product_name,p.brand product_brand FROM reviews r JOIN orders o ON o.id=r.order_id JOIN products p ON p.id=r.product_id WHERE ${where} ORDER BY r.created_at DESC LIMIT 24`;
  const result=await (id?env.DB.prepare(sql).bind(id):env.DB.prepare(sql)).all();const rows=(result.results||[]).filter(r=>!isRetiredProduct(r.product_id));
  const media=rows.length?await env.DB.prepare(`SELECT id,review_id FROM review_media WHERE review_id IN (${rows.map(()=>'?').join(',')}) ORDER BY created_at`).bind(...rows.map(x=>x.id)).all():{results:[]};
  let summary={count:rows.length,average:rows.length?Number((rows.reduce((n,r)=>n+r.rating,0)/rows.length).toFixed(1)):null};

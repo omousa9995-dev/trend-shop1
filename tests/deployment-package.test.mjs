@@ -10,7 +10,7 @@ test('The deployable Worker imports successfully and serves current store, admin
  const {default:worker}=await import(new URL('../deployment-private/preview-entry.js',import.meta.url));
 
  const get=path=>worker.fetch(new Request('https://trend.test'+path),{},{});
- for(const [path,script] of [['/','/app.js?v=5.11.0'],['/admin.html','/admin.js?v=5.11.0']]){const r=await get(path);assert.equal(r.status,200);assert.ok((await r.text()).includes(script));}
+ for(const [path,script] of [['/','/app.js?v=5.13.0'],['/admin.html','/admin.js?v=5.11.0']]){const r=await get(path);assert.equal(r.status,200);assert.ok((await r.text()).includes(script));}
  for(const path of ['/shade-references.json','/shade-guide.js','/images/shades/huda-easy-bake-official-shade-guide.webp'])assert.equal((await get(path)).status,404);
  for(const name of ['tajawal-regular','tajawal-medium','tajawal-bold','manrope-variable']){const path='/fonts/'+name+'-v512.woff2',r=await get(path),actual=Buffer.from(await r.arrayBuffer()),expected=readFileSync(new URL('../public'+path,import.meta.url));assert.equal(r.status,200);assert.equal(r.headers.get('content-type'),'font/woff2');assert.equal(actual.subarray(0,4).toString(),'wOF2');assert.deepEqual(actual,expected,'The deployed font must retain its original binary bytes');}
  const type=await get('/typography.css');assert.match(await type.text(),/font-display:swap/);

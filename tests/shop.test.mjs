@@ -155,7 +155,7 @@ test('Admin can create and edit a tools product while preserving its type and va
 
 test('The curated catalog preserves auditable reference prices and uses reviewed product photos',()=>{
  const c=JSON.parse(file('public/catalog.json'));
- assert.equal(c.length,304);assert.equal(new Set(c.map(p=>p.id)).size,c.length);
+ assert.equal(c.length,306);assert.equal(new Set(c.map(p=>p.id)).size,c.length);
  const shops=new Set(c.map(p=>p.source));assert.ok(shops.has('LeoMarka'));assert.ok([...shops].some(s=>s.includes('Ksecret')));
  for(const p of c){assert.ok(p.name&&p.brand&&p.source_url);assert.match(p.image,/^\/images\/catalog\//);assert.ok(fs.existsSync(new URL('public'+p.image,root)));assert.equal(p.discount,Math.floor((p.reference-p.priceFils)*100/p.reference+1e-8));assert.equal(p.approved,true);assert.equal(p.stock,24)}
  assert.ok(fs.existsSync(new URL('public/images/hero.webp',root)));

@@ -1,0 +1,120 @@
+{
+  "id": "TS0360",
+  "brand": "Clinique",
+  "productName": "Dramatically Different Moisturizing Lotion+",
+  "primary": "/images/catalog/TS0360-fe1a6a661075.webp",
+  "images": [
+    {
+      "url": "/images/catalog/marketing/TS0360-scene-896c0878ba47.webp",
+      "thumbnail": "/images/catalog/marketing/TS0360-thumb-00c088d9cc3d.webp",
+      "kind": "promotional",
+      "label": {
+        "ar": "مشهد دعائي",
+        "en": "Promotional scene"
+      }
+    },
+    {
+      "url": "/images/catalog/marketing/TS0360-scene-5bc8f665f579.webp",
+      "thumbnail": "/images/catalog/marketing/TS0360-thumb-d7e7bd524b37.webp",
+      "kind": "promotional",
+      "label": {
+        "ar": "مشهد دعائي",
+        "en": "Promotional scene"
+      }
+    },
+    {
+      "url": "/images/catalog/marketing/TS0360-scene-5c971227e7e1.webp",
+      "thumbnail": "/images/catalog/marketing/TS0360-thumb-d54faf367d5f.webp",
+      "kind": "promotional",
+      "label": {
+        "ar": "مشهد دعائي",
+        "en": "Promotional scene"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.clinique.com/products/dramatically-different-moisturizing-lotion",
+      "title": "Clinique — official product directions"
+    }
+  ],
+  "liveSource": true,
+  "ar": {
+    "name": "لوشن الترطيب اليومي من كلينيك — Dramatically Different Lotion+",
+    "tagline": "لحظة ترطيب، وراحة ترافق يومكِ.",
+    "description": "خطوة ترطيب ناعمة تمنح روتينكِ اليومي إحساسًا بالراحة. لوشن Dramatically Different Moisturizing Lotion+ من كلينيك مخصص للبشرة الجافة جدًا إلى المختلطة المائلة للجفاف، ويُستخدم على الوجه والرقبة صباحًا ومساءً أو بحسب الحاجة. اختاريه إذا كنتِ تبحثين عن لوشن يومي ضمن روتين الترطيب، مع الانتباه إلى أنه إصدار Lotion+ وليس الجل أو الجيلي، ولا يغني عن واقي الشمس.",
+    "benefits": [
+      "مخصص للبشرة الجافة جدًا إلى المختلطة المائلة للجفاف",
+      "لوشن لترطيب الوجه والرقبة ضمن الروتين اليومي",
+      "يُستخدم صباحًا ومساءً أو على المناطق التي تحتاج الترطيب"
+    ],
+    "textureTitle": "تفاصيل صغيرة، لاختيار يشبهكِ.",
+    "textureText": "خطوة ترطيب ناعمة تمنح روتينكِ اليومي إحساسًا بالراحة. لوشن Dramatically Different Moisturizing Lotion+ من كلينيك مخصص للبشرة الجافة جدًا إلى المختلطة المائلة للجفاف، ويُستخدم على الوجه والرقبة صباحًا ومساءً أو بحسب الحاجة. اختاريه إذا كنتِ تبحثين عن لوشن يومي ضمن روتين الترطيب، مع الانتباه إلى أنه إصدار Lotion+ وليس الجل أو الجيلي، ولا يغني عن واقي الشمس.",
+    "fitText": "إصدار Lotion+ الأصفر بالمضخة كما في الصورة. تأكدي من حجم العبوة المتاحة مع المتجر عند الحاجة.",
+    "steps": [
+      {
+        "title": "1",
+        "text": "نظفي البشرة وجففيها بلطف."
+      },
+      {
+        "title": "2",
+        "text": "وزعي كمية مناسبة على الوجه والرقبة، بعيدًا عن العينين، صباحًا ومساءً أو حسب الحاجة."
+      },
+      {
+        "title": "3",
+        "text": "دلكي بلطف، واتبعي روتين الصباح بواقي شمس مناسب. اتبعي تعليمات العبوة الفعلية."
+      }
+    ],
+    "notes": "هذا هو إصدار Lotion+؛ ليس Moisturizing Gel أو Jelly ولا يحتوي اسمه على حماية شمسية. راجعي مكونات العبوة المتاحة لديكِ، وتوقفي عن الاستخدام إذا ظهر تهيج. الحجم غير محدد من الصورة؛ يمكن تأكيده مع المتجر قبل الطلب.",
+    "faq": [
+      {
+        "question": "كيف أستخدمه؟",
+        "answer": "1: نظفي البشرة وجففيها بلطف.\n2: وزعي كمية مناسبة على الوجه والرقبة، بعيدًا عن العينين، صباحًا ومساءً أو حسب الحاجة.\n3: دلكي بلطف، واتبعي روتين الصباح بواقي شمس مناسب. اتبعي تعليمات العبوة الفعلية."
+      },
+      {
+        "question": "ما الذي أراجعه قبل اختياري؟",
+        "answer": "إصدار Lotion+ الأصفر بالمضخة كما في الصورة. تأكدي من حجم العبوة المتاحة مع المتجر عند الحاجة."
+      }
+    ],
+    "productType": "moisturizer"
+  },
+  "en": {
+    "name": "Clinique · Dramatically Different Moisturizing Lotion+",
+    "tagline": "A softer moment in your daily routine.",
+    "description": "Bring a comfortable moisturizing step to your daily routine. Clinique Dramatically Different Moisturizing Lotion+ is a face and neck lotion for very dry to dry combination skin. Apply morning and evening, or where needed. This is the yellow Lotion+ formula shown in the owner’s product photo, not the Gel or Jelly version. It does not replace sunscreen.",
+    "benefits": [
+      "For very dry to dry combination skin",
+      "A daily moisturizing step for face and neck",
+      "Use morning and evening, or where needed"
+    ],
+    "textureTitle": "A closer look at your choice.",
+    "textureText": "Bring a comfortable moisturizing step to your daily routine. Clinique Dramatically Different Moisturizing Lotion+ is a face and neck lotion for very dry to dry combination skin. Apply morning and evening, or where needed. This is the yellow Lotion+ formula shown in the owner’s product photo, not the Gel or Jelly version. It does not replace sunscreen.",
+    "fitText": "Yellow Lotion+ pump bottle as pictured. Confirm the available pack size with the store if needed.",
+    "steps": [
+      {
+        "title": "1",
+        "text": "Cleanse and gently pat skin dry."
+      },
+      {
+        "title": "2",
+        "text": "Apply an appropriate amount to face and neck, avoiding the eyes, morning and evening or where needed."
+      },
+      {
+        "title": "3",
+        "text": "Smooth gently and follow your morning routine with sunscreen. Follow the directions on your actual pack."
+      }
+    ],
+    "notes": "Lotion+ is distinct from the Gel and Jelly formulas. Check the ingredient list on your actual pack and stop use if irritation occurs. The pack size cannot be confirmed from the supplied front photo; ask the store if needed.",
+    "faq": [
+      {
+        "question": "How do I use it?",
+        "answer": "1: Cleanse and gently pat skin dry.\n2: Apply an appropriate amount to face and neck, avoiding the eyes, morning and evening or where needed.\n3: Smooth gently and follow your morning routine with sunscreen. Follow the directions on your actual pack."
+      },
+      {
+        "question": "What should I check before choosing?",
+        "answer": "Yellow Lotion+ pump bottle as pictured. Confirm the available pack size with the store if needed."
+      }
+    ],
+    "productType": "moisturizer"
+  }
+}

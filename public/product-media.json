@@ -226,5 +226,23 @@
       "ar": "مشهد دعائي",
       "en": "Promotional scene"
     }
+  },
+  "TS0360": {
+    "primary": "/images/catalog/TS0360-fe1a6a661075.webp",
+    "image": "/images/catalog/marketing/TS0360-scene-896c0878ba47.webp",
+    "thumbnail": "/images/catalog/marketing/TS0360-thumb-00c088d9cc3d.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    }
+  },
+  "TS0361": {
+    "primary": "/images/catalog/TS0361-8ed7a903eb64.webp",
+    "image": "/images/catalog/marketing/TS0361-scene-f8a13c3224fc.webp",
+    "thumbnail": "/images/catalog/marketing/TS0361-thumb-a3cd2b83906a.webp",
+    "caption": {
+      "ar": "مشهد دعائي",
+      "en": "Promotional scene"
+    }
   }
 }
