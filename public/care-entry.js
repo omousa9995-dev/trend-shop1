@@ -1,7 +1,7 @@
 // Capability metadata only: no cart, profile or message is sent from the storefront.
 fetch('/api/care/status',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(status=>{
  if(!status?.available)return;
- if(status.widgetAvailable){let widget;document.addEventListener('click',event=>{const entry=event.target.closest?.('[data-care-entry]');if(!entry||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();(widget?Promise.resolve(widget):import('./luma-widget.js?v=5.17.0').then(module=>module.mountLumaWidget({status}))).then(api=>{widget=api;api.open()}).catch(()=>{location.href='/care-assistant.html'})})}
+ if(status.widgetAvailable){let widget;document.addEventListener('click',event=>{const entry=event.target.closest?.('[data-care-entry]');if(!entry||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();(widget?Promise.resolve(widget):import('./luma-widget.js?v=5.17.1').then(module=>module.mountLumaWidget({status}))).then(api=>{widget=api;api.open()}).catch(()=>{location.href='/care-assistant.html'})})}
  const launcher=document.querySelector('[data-care-launcher]');let scheduled=false,frame=0,stopped=false;
  function update(){scheduled=false;frame=0;if(stopped)return;const en=document.documentElement.lang==='en';
   for(const link of document.querySelectorAll('[data-care-entry]')){if(link===launcher)continue;if(link.hidden)link.hidden=false;const label=en?'Ask Luma ✦':'اسألي لُمى ✦';if(link.textContent!==label)link.textContent=label}

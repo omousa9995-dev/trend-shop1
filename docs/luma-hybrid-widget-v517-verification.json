@@ -1,11 +1,12 @@
 {
-  "version": "5.17.0",
+  "version": "5.17.1",
   "textModel": "gemini-3.5-flash-lite",
   "liveModel": "gemini-3.8-live",
   "tests": {
-    "fullPassed": 433,
-    "newAssistantTestsPassed": 21,
-    "failed": 0
+    "previousFullPassed": 435,
+    "newAssistantTestsPassed": 24,
+    "failed": 0,
+    "finalCIPending": true
   },
   "build": "Wrangler dry-run passed",
   "mobileQa": {
@@ -46,12 +47,20 @@
   "publication": {
     "targetWorker": "trend-shop-jo",
     "targetPages": "trendjo",
-    "pending": true
+    "pending": true,
+    "initialDeployment": "633e0673-8308-47c0-ab1d-e1a2a69ad686"
   },
   "package": {
     "files": 637,
     "modules": 33,
-    "bytes": 6456423,
-    "sha256": "7bf64c5204d7ed8086c6d8ea84989cee9db2c5968cf02268a788c7f300027d6f"
+    "bytes": 6459421,
+    "sha256": "e871a2f3e248e04ad3b9e212f4a09cbd0b118a368e384591af8f8613f56c4f78"
+  },
+  "conversationRefinement": {
+    "geminiResolvedProfilePersistedInMemory": true,
+    "alreadyAnsweredQuestionsSuppressed": true,
+    "oralBudgetConfirmationSupported": true,
+    "knownBudgetCannotSilentlyIncrease": true,
+    "quickRepliesDisabledUntilResponseFinishes": true
   }
 }

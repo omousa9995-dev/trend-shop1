@@ -1,4 +1,4 @@
-import {pcmToFloat,bytesToBase64,base64ToBytes} from './luma-pcm.js?v=5.17.0';
+import {pcmToFloat,bytesToBase64,base64ToBytes} from './luma-pcm.js?v=5.17.1';
 const endpoint='wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContentConstrained';
 export class LumaLive {
  constructor({payload,onState,onTool,onNotice}){Object.assign(this,{payload,onState,onTool,onNotice});this.sources=new Set();this.tools=new Map();this.closed=true;this.muted=false;this.sequence=0}
@@ -14,7 +14,7 @@ export class LumaLive {
    await this.audio.resume();if(!this.audio.audioWorklet)throw Error('المتصفح لا يدعم الصوت المباشر. تقدري تكمّلي كتابةً.');
    const stream=await navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true,noiseSuppression:true,autoGainControl:true},video:false});
    if(this.closed||sequence!==this.sequence){stream.getTracks().forEach(t=>t.stop());return}this.stream=stream;
-   await this.audio.audioWorklet.addModule('/luma-audio-worklet.js?v=5.17.0');
+   await this.audio.audioWorklet.addModule('/luma-audio-worklet.js?v=5.17.1');
    const initial=this.payload();
    const response=await fetch('/api/session',{method:'POST',headers:{'content-type':'application/json','x-trend-care':'1'},body:JSON.stringify({...initial,audioConsent:true,image:undefined}),signal:this.abort.signal});
    const session=await response.json().catch(()=>({}));if(!response.ok)throw Error(session.error||'تعذّر بدء المكالمة الآن.');if(this.closed||sequence!==this.sequence)return;
@@ -53,7 +53,7 @@ export class LumaLive {
  }
  async tool(call){
   const id=String(call.id||'').slice(0,200);if(!id||this.tools.has(id))return;const abort=new AbortController();this.tools.set(id,abort);
-  try{const response=await fetch('/api/luma-tools',{method:'POST',headers:{'content-type':'application/json','x-trend-care':'1'},body:JSON.stringify({...this.payload(),image:undefined,call:{id,name:call.name,args:call.args}}),signal:abort.signal});const result=await response.json().catch(()=>({}));if(this.closed||abort.signal.aborted)return;if(!response.ok)throw Error();this.onTool?.(result);this.send({toolResponse:{functionResponses:[{id,name:call.name,response:result}]}})}catch{if(!this.closed&&!abort.signal.aborted)this.send({toolResponse:{functionResponses:[{id,name:call.name,response:{error:'لم يمكن التحقق من بيانات المتجر الآن؛ لا ترشحي منتجًا غير متحقق.'}}]}})}finally{this.tools.delete(id)}
+  try{const response=await fetch('/api/luma-tools',{method:'POST',headers:{'content-type':'application/json','x-trend-care':'1'},body:JSON.stringify({...this.payload(),liveMode:true,audioConsent:true,image:undefined,call:{id,name:call.name,args:call.args}}),signal:abort.signal});const result=await response.json().catch(()=>({}));if(this.closed||abort.signal.aborted)return;if(!response.ok)throw Error();this.onTool?.(result);this.send({toolResponse:{functionResponses:[{id,name:call.name,response:result}]}})}catch{if(!this.closed&&!abort.signal.aborted)this.send({toolResponse:{functionResponses:[{id,name:call.name,response:{error:'لم يمكن التحقق من بيانات المتجر الآن؛ لا ترشحي منتجًا غير متحقق.'}}]}})}finally{this.tools.delete(id)}
  }
  play(data){
   if(this.closed||!this.audio||this.audio.state==='closed')return;
