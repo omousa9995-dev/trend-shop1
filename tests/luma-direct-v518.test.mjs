@@ -5,7 +5,7 @@ import {readFileSync} from 'node:fs';
 import {buildSync} from 'esbuild';
 import {JSDOM} from 'jsdom';
 import worker,{_test} from '../src/worker.js';
-import {publicLumaSession,publicLumaChat,publicLumaTool,publicLumaProducts,runLumaTool,readSSE} from '../src/luma-assistant.js';
+import {publicLumaSession,publicLumaChat,publicLumaTool,publicLumaProducts,runLumaTool,readSSE,lumaSystem} from '../src/luma-assistant.js';
 import {validateCareInput} from '../src/care-assistant.js';
 import {publicLumaTranscribe,validateDictation} from '../src/luma-dictation.js';
 import {careCatalog,publicCareStatus} from '../src/care-assistant.js';
@@ -103,5 +103,16 @@ test('Each completed model message has an on-demand listening control and no spe
 test('Pending microphone approval can be cancelled safely and late granted tracks are released without upload',async()=>{
  const keys=['navigator','MediaRecorder'],saved=new Map(keys.map(k=>[k,Object.getOwnPropertyDescriptor(globalThis,k)]));let resolve,stops=0;
  try{Object.defineProperty(globalThis,'navigator',{configurable:true,value:{mediaDevices:{getUserMedia:()=>new Promise(r=>resolve=r)}}});Object.defineProperty(globalThis,'MediaRecorder',{configurable:true,value:class{}});const recorder=new LumaDictation();const pending=recorder.start();recorder.cancel();resolve({getTracks:()=>[{stop(){stops++}}]});await pending;assert.equal(stops,1);assert.equal(recorder.active,false)}finally{for(const [k,d]of saved){if(d)Object.defineProperty(globalThis,k,d);else delete globalThis[k]}}
+});
+test('A full catalog is sent as a compact index while exact usage and ingredients are retrieved by requested IDs',async()=>{
+ const f=fixture();try{
+  const base=careCatalog([{id:'TSBASE1',name:'Gentle cream',brand:'Test',category:'البشرة',approved:1,active:1,stock:2,price_fils:3000,description:'وصف '.repeat(100),details_json:JSON.stringify({productType:'moisturizer',howToUse:'تعليمات '.repeat(100),notes:'ملاحظة '.repeat(100)})}])[0];
+  const input=validateCareInput(payload(),false),many=Array.from({length:350},(_,i)=>({...base,id:'TSINDEX'+i})),prompt=lumaSystem(input,many);assert.ok(prompt.length<160000);assert.match(prompt,/TSINDEX349/);assert.doesNotMatch(prompt,/تعليمات تعليمات تعليمات/);
+  const result=await runLumaTool({name:'get_catalog',args:{productIds:['TSDEMO2']}},input,f.env);assert.deepEqual(result.products.map(p=>p.id),['TSDEMO2']);assert.equal(result.products[0].howToUse,'تعليمات العبوة');
+ }finally{f.close()}
+});
+test('An incomplete provider answer returns a bounded non-sensitive diagnostic and never marks the response done',async()=>{
+ const f=fixture(),old=globalThis.fetch;globalThis.fetch=async()=>stream([{candidates:[{finishReason:'MAX_TOKENS',content:{parts:[{text:'خطوة غير مكتملة.'}]}}]}]);
+ try{const out=await events(await publicLumaChat(request({message:'كيف أعتني ببشرتي؟'}),f.env,helpers,{}));assert.equal(out.at(-1).event,'error');assert.equal(out.at(-1).data.code,'FINISH_MAX_TOKENS');assert.equal(out.filter(e=>e.event==='done').length,0);assert.equal(f.db.prepare('SELECT failures FROM care_assistant_usage').get().failures,1)}finally{globalThis.fetch=old;f.close()}
 });
 

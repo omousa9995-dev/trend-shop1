@@ -1,4 +1,4 @@
-# Luma 5.18.0 — direct chat, recorded dictation and spoken replies
+# Luma 5.18.1 — direct chat, recorded dictation and spoken replies
 
 Requested by the store owner on 2026-11-12. Existing Trend Shop Pages/Worker hosting and nine production bindings are preserved.
 
@@ -17,3 +17,9 @@ Validation before release: full `npm test` **442/442 passed**; Wrangler dry run 
 Reviewed primary references: `src/luma-care-knowledge.js` lists AAD back acne, face washing, dry skin, cracked heels and pregnancy guidance, and exact manufacturer PanOxyl 4%/10% labels. Dictation follows Gemini audio input documentation; MediaRecorder format negotiation and SpeechSynthesis use the standard browser APIs documented by MDN.
 
 Production verification and exact deployment identifiers are appended after publication.
+
+## Production checks and response refinement
+
+Initial production deployment of 5.18.0 exposed an incomplete care answer despite passing local checks. The dictation endpoint successfully transcribed an 86,638-byte, 2.705-second synthetic WAV into the editable composer ("I need a gentle cleanser for my dry skin.") without automatically sending it. No real voice, customer data or new order was used.
+
+5.18.1 reduces the initial catalog to a compact factual index, retrieves exact detailed facts for at most eight requested IDs, caps general lookups at twenty entries and allows 4096 output tokens per bounded round. This reduces repeated prompt payload for the enlarged eligible catalog. Incomplete answers return only a safe enumerated error code; partial text is replaced with a clear retry message. No upstream diagnostic bodies, customer content or credentials are logged. Final live verification follows the redeployment.
