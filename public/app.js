@@ -1,5 +1,5 @@
 import {createBrowsePosition} from './browse-position.js?v=5.11.0';
-import './care-entry.js?v=5.19.1';
+import './care-entry.js?v=5.19.5';
 import {createCheckoutSuggestions} from './checkout-suggestions.js?v=5.10.0';
 import {createExperienceMetrics} from './experience-metrics.js?v=5.9.0';
 import {searchProducts,searchCorrection,nearbyAvailableProducts} from './product-search.js?v=5.9.0';
