@@ -1,4 +1,4 @@
-# Luma embedded chat and native Live audio — v5.17.1
+# Luma embedded chat and native Live audio — v5.17.2
 
 The owner explicitly requested implementing and activating native bidirectional voice alongside text chat, and authorized the existing Cloudflare and Google resources. Hosting stays on the existing Pages -> private STORE service binding -> trend-shop-jo Worker. Pages advanced mode ignores the functions directory, so the requested Pages adapters share the same Worker implementation; actual production endpoints are also registered in src/worker.js. No parallel credential-bearing test service is created.
 
@@ -26,7 +26,7 @@ The full suite passed 433 tests after the cancellation-lifecycle refinement. The
 
 A managed local browser preview at 390 CSS pixels displayed the question, quick replies, product cards and totals. The dialog measured 374px within the 390px viewport, with no horizontal overflow. This preview used clearly identified synthetic fixtures, not Google recommendations. The browser has no microphone; its NotFoundError path correctly kept chat usable and did not mint a token.
 
-A separate direct request to Google's official API, using the provided credential through hidden terminal input and only synthetic data, verified the exact locked Live setup used by the application. Results: auth token HTTP 200, setupComplete=true, 6,400 bytes of synthetic 16kHz PCM input, 271,202 bytes of native PCM output and a show_products function call. Input and output audio transcription were absent. No real person's audio or personal information was submitted. This validates Google protocol/native output/tool transport; real iPhone microphone acoustics and interruptions still need a physical-device check.
+A separate direct request to Google's official API, using the provided credential through hidden terminal input and only synthetic data, verified the initial locked Live setup and native audio/tool transport. Results: auth token HTTP 200, setupComplete=true, 6,400 bytes of synthetic 16kHz PCM input, 271,202 bytes of native PCM output and a show_products function call. Input and output audio transcription were absent. No real person's audio or personal information was submitted. This validates Google protocol/native output/tool transport; real iPhone microphone acoustics and interruptions still need a physical-device check.
 
 Primary references checked 2026-11-12:
 - https://aistudio.google.com/docs/live-api/ephemeral-tokens
@@ -36,6 +36,10 @@ Primary references checked 2026-11-12:
 - https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live
 - https://developers.cloudflare.com/pages/functions/advanced-mode/
 
-## Conversation refinement — v5.17.1
+## Conversation refinement — v5.17.2
 
 The first production conversation revealed repeated questions for face area and balanced/non-sensitive skin already stated in the original message. Tool calls now carry a validated profile extracted by Gemini from explicit customer words; the browser retains it only in memory and supplies it in subsequent text/voice tool requests. The server suppresses questions for already known fields while still allowing explicit changes. Budget questions remain separate from inferred preferences. Native voice can acknowledge an explicit oral budget confirmation without speech-to-text or a mandatory click; an already confirmed budget cannot be silently increased. Quick replies remain disabled until the current response finishes. Twenty-four focused integration/client tests pass; the final CI gate covers the whole suite.
+
+## Price presentation — v5.17.2
+
+Production cards showed the correct 11.99 JOD total, but the model re-quoted prices in free text using an ambiguous comma/three-decimal format. Text recommendations now stop after canonical cards and a short plain confirmation, eliminating a redundant generation pass and preventing a second price list. Catalog/tool facts expose decimal priceJod and fixed priceLabel values; internal *Fils fields are removed from function results sent back to Gemini Live, while the UI retains integer-fils arithmetic. Two additional integration tests cover this separation and the single-generation card path.

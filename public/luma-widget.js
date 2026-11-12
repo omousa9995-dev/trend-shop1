@@ -1,4 +1,4 @@
-import {LumaLive} from './luma-live.js?v=5.17.1';
+import {LumaLive} from './luma-live.js?v=5.17.2';
 const make=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el};
 const money=n=>(n/1000).toLocaleString('ar-JO',{minimumFractionDigits:2,maximumFractionDigits:2})+' د.أ';
 let instance;
@@ -6,7 +6,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
  if(instance)return instance;
  const status=initial||await fetch('/api/care/status',{cache:'no-store'}).then(r=>r.json());
  if(!status.available)throw Error('لُمى غير متاحة حاليًا. تقدري تتواصلي مع المتجر.');
- if(!document.querySelector('[data-luma-styles]')){const css=make('link');css.rel='stylesheet';css.href='/luma-widget.css?v=5.17.1';css.dataset.lumaStyles='1';document.head.append(css)}
+ if(!document.querySelector('[data-luma-styles]')){const css=make('link');css.rel='stylesheet';css.href='/luma-widget.css?v=5.17.2';css.dataset.lumaStyles='1';document.head.append(css)}
  const dialog=make('dialog',undefined,'luma-chat');dialog.id='lumaChat';dialog.dir='rtl';dialog.lang='ar';dialog.setAttribute('aria-labelledby','lumaChatTitle');
  dialog.innerHTML=`<header class="luma-head"><span class="luma-avatar" aria-hidden="true">لُ</span><div><h2 id="lumaChatTitle">لُمى <span lang="en">Luma</span></h2><p>مساعد Trend Shop الآلي · معكِ خطوة بخطوة</p></div><button type="button" data-luma-close aria-label="إغلاق محادثة لُمى">×</button></header>
  <div class="luma-callbar" hidden><span class="luma-pulse" aria-hidden="true"></span><span data-luma-callstate role="status"></span><span data-luma-time>٠:٠٠</span><button type="button" data-luma-mute aria-pressed="false">كتم الميكروفون</button><button type="button" data-luma-end>إنهاء</button></div>

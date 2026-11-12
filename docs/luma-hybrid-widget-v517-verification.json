@@ -1,10 +1,10 @@
 {
-  "version": "5.17.1",
+  "version": "5.17.2",
   "textModel": "gemini-3.5-flash-lite",
   "liveModel": "gemini-3.8-live",
   "tests": {
-    "previousFullPassed": 435,
-    "newAssistantTestsPassed": 24,
+    "previousFullPassed": 436,
+    "newAssistantTestsPassed": 26,
     "failed": 0,
     "finalCIPending": true
   },
@@ -53,8 +53,8 @@
   "package": {
     "files": 637,
     "modules": 33,
-    "bytes": 6459421,
-    "sha256": "e871a2f3e248e04ad3b9e212f4a09cbd0b118a368e384591af8f8613f56c4f78"
+    "bytes": 6460654,
+    "sha256": "9acee2a7f2d773fc3856f4f0007c41d473484714a0677dd885e85defc59e78cc"
   },
   "conversationRefinement": {
     "geminiResolvedProfilePersistedInMemory": true,
@@ -62,5 +62,11 @@
     "oralBudgetConfirmationSupported": true,
     "knownBudgetCannotSilentlyIncrease": true,
     "quickRepliesDisabledUntilResponseFinishes": true
+  },
+  "pricePresentation": {
+    "canonicalIntegerFilsForUI": true,
+    "decimalJodForModel": true,
+    "freeTextPriceRequotingAfterCards": false,
+    "noSecondGenerationAfterProductCards": true
   }
 }
