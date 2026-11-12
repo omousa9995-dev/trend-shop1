@@ -1,0 +1,83 @@
+{
+  "release": "5.19.10",
+  "verified_on": "2026-11-13",
+  "timezone": "Asia/Riyadh",
+  "store_url": "https://trendjo.pages.dev/",
+  "checks": {
+    "local_tests": 471,
+    "local_passed": 471,
+    "local_failed": 0,
+    "diff_check": "passed"
+  },
+  "live_checks": {
+    "general_faq": {
+      "real_model_reply": true,
+      "delivery_jod": 1
+    },
+    "generic_two_product_routine": {
+      "prompt": "غسول ومرطب للوجه، بشرة دهنية غير حساسة، 20 دينارًا مع التوصيل",
+      "repeated_profile_or_budget_questions": false,
+      "cards": [
+        {
+          "id": "TS0037",
+          "name": "غسول سيبيوم جل موسان من بيوديرما",
+          "price_jod": 4.49
+        },
+        {
+          "id": "TS0102",
+          "name": "جل كريم بورمايزنغ الخفيف من سكين1004",
+          "price_jod": 8.99
+        }
+      ],
+      "subtotal_jod": 13.48,
+      "delivery_jod": 1,
+      "total_jod": 14.48,
+      "within_budget": true,
+      "complete_reply": true,
+      "recovered_provider_failures": true
+    },
+    "cart": {
+      "added_from_assistant": 2,
+      "quantity_each": 1,
+      "verified_subtotal_jod": 13.48,
+      "verified_total_jod": 14.48,
+      "order_created": false
+    },
+    "voice": {
+      "fixture": "synthetic WAV speech",
+      "transcript": "How much is delivery to Amman?",
+      "auto_submitted_once": true,
+      "real_reply_received": true,
+      "manual_second_send": false,
+      "cloud_microphone": "not found",
+      "physical_iphone_capture": "not tested",
+      "acoustic_device_speech": "not tested"
+    },
+    "vision": {
+      "fixture": "synthetic green and purple blocks",
+      "uploaded_through_photo_control": true,
+      "correctly_described_colors": true,
+      "no_skin_diagnosis_or_cards_invented": true,
+      "composer_image_cleared_after_success": true
+    },
+    "placement": {
+      "header_entries": 1,
+      "footer_entries": 1,
+      "all_entries": 2,
+      "floating_entries": 0,
+      "korean_navigation_entries": 0,
+      "ssr_product_entries": 0,
+      "ssr_product_chat": 0,
+      "hash_product_entries_visible": 0,
+      "hash_product_chat": 0
+    }
+  },
+  "limits": [
+    "Provider 503/format failures were observed; finite fallback recovery was verified, permanent upstream availability is not guaranteed.",
+    "Real iPhone microphone/audio hardware was not available in the cloud browser."
+  ],
+  "evidence": {
+    "screenshot": "luma-routine-proof.jpg",
+    "contains_real_customer_data": false
+  }
+}
