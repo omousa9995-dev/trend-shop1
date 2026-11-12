@@ -34,7 +34,8 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
   }catch(error){
    if(signal?.aborted)throw signal.reason||error;
    const timedOut=timeout.signal.aborted;last=timedOut?Object.assign(Error('PROVIDER_TIMEOUT'),{reason:'TIMEOUT'}):error;
-   onAttempt({model:selected,transport,api,attempt:index+1,ok:false,status:last.status||0,reason:last.reason||'TRANSPORT'});
+   const category=last.reason||({INVALID_ACTION_OUTPUT:'ACTION_FORMAT',PROVIDER_RESPONSE_INVALID:'RESPONSE_FORMAT',PROVIDER_RESPONSE_TOO_LARGE:'RESPONSE_SIZE',EMPTY_REPLY:'EMPTY_REPLY'})[last.message]||'TRANSPORT';
+   onAttempt({model:selected,transport,api,attempt:index+1,ok:false,status:last.status||0,reason:category});
    const transient=timedOut||!last.status||[408,429,500,502,503,504].includes(last.status)||last.status===404;
    if(!transient||index===candidates.length-1||retryAfter>2000)throw last;
   }finally{clearTimeout(timer)}

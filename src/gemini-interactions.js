@@ -18,6 +18,7 @@ export function interactionRequest(model,payload){
  return {model,store:false,input,system_instruction:(payload.systemInstruction?.parts||[]).map(p=>p.text||'').join('\n'),tools,generation_config:{max_output_tokens:payload.generationConfig?.maxOutputTokens||4096,thinking_level:'low',...(tools.length?{tool_choice:'any'}:{})}};
 }
 export function interactionResponse(value){
+ if(value?.status==='incomplete')throw Object.assign(Error('PROVIDER_INCOMPLETE'),{reason:'OUTPUT_INCOMPLETE'});
  if(!['completed','requires_action'].includes(value?.status)||!Array.isArray(value.steps))throw Error('PROVIDER_RESPONSE_INVALID');
  const parts=[{interactionSteps:value.steps.filter(s=>s.type!=='user_input')}];
  for(const step of value.steps){
