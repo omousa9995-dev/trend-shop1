@@ -13,3 +13,7 @@ Validation before publication: 456 passing tests, including atomic daily caps, e
 ## 5.19.1 follow-up during production verification
 
 The real recorded-audio path transcribed and submitted successfully, preserving an unrelated typed draft. Both legacy chat models nevertheless returned HTTP 503 on the catalog/tool request. This was not treated as successful activation. The chat tool path moves to Google's current Interactions API with `store:false`; the working standalone transcription transport stays unchanged. Original thought/tool steps and call IDs are preserved in stateless continuations. Initial catalog entries retain IDs, names, areas, types and prices; full ingredients, directions and variants are fetched only by requested IDs. Safe DOM diagnostics identify the transport/reason without logging customer content. Production re-verification follows this deployment.
+
+## 5.19.2 compatibility path
+
+Production also returned HTTP 503 for native Interactions tools. The chat path now asks Gemini for one typed JSON action using the already working structured-output endpoint, then dispatches it through the same canonical server functions. No native-tool call is required for the customer reply. This retains one-question turns, live catalog lookups, product-card actions, budget checks and pharmacy follow-up. The primary model is aligned with the successfully verified transcription model. The adapter does not turn off clinical guardrails or substitute fabricated local answers. 459 tests pass before deployment; actual replies are verified next.

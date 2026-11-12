@@ -141,7 +141,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
    let questionSent=false,handoffSent=false,displayed=false,answered=false,spoken='',selectedModel;
    for(let round=0;round<3;round++){
     const payload={systemInstruction:{parts:[{text:lumaSystem(g.input,products)}]},contents,tools:LUMA_TOOLS,toolConfig:{functionCallingConfig:{mode:'ANY'}},generationConfig:{maxOutputTokens:4096,thinkingConfig:{thinkingLevel:'low'}}};
-    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,payload,transport:'interactions',signal:abort.signal,onAttempt:attempt=>send('provider',attempt)});
+    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,payload,transport:'actions',signal:abort.signal,onAttempt:attempt=>send('provider',attempt)});
     selectedModel=completion.model;
     const data=completion.data,candidate=data.candidates[0],parts=(candidate.content?.parts||[]).filter(p=>!p.thought),calls=parts.filter(p=>p.functionCall).slice(0,6).map(p=>p.functionCall),finish=candidate.finishReason||'',roundUsage=data.usageMetadata||{};
     let textBuffer=parts.filter(p=>typeof p.text==='string').map(p=>p.text).join('');

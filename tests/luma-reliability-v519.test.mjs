@@ -78,3 +78,11 @@ test('Real chat transport targets the current Interactions endpoint and accepts 
  globalThis.fetch=async(url,init)=>{assert.equal(url,'https://generativelanguage.googleapis.com/v1beta/interactions');sent=JSON.parse(init.body);return json({status:'requires_action',steps:[{type:'function_call',id:'q1',name:'ask_question',arguments:{text:'شو نوع بشرتكِ؟'}}]})};
  try{const result=await requestGemini({...options,transport:'interactions',payload:{contents:[{role:'user',parts:[{text:'روتين تجريبي'}]}],tools:[{functionDeclarations:[{name:'ask_question',parameters:{type:'OBJECT',properties:{text:{type:'STRING'}}}}]}]}});assert.equal(sent.store,false);assert.equal(sent.model,'gemini-3.8-flash');assert.equal(result.data.candidates[0].content.parts[1].functionCall.name,'ask_question')}finally{globalThis.fetch=old}
 });
+
+test('Structured actions retain model-selected functions without the failing native-tool transport, and reject invalid action output',async()=>{
+ const {actionRequest,actionResponse}=await import('../src/luma-json-actions.js');
+ const req=actionRequest({systemInstruction:{parts:[{text:'Instructions'}]},contents:[{role:'user',parts:[{text:'سؤال'}]},{role:'model',parts:[{functionCall:{name:'get_catalog',args:{productIds:['TSDEMO1']}}}]},{role:'user',parts:[{functionResponse:{name:'get_catalog',id:'old-call',response:{products:[]}}}]}]});
+ assert.equal(req.tools,undefined);assert.equal(req.generationConfig.responseMimeType,'application/json');assert.equal(JSON.parse(req.contents[1].parts[0].text).action,'get_catalog');assert.match(req.contents[2].parts[0].text,/STORE ACTION RESULT/);
+ const raw={candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({action:'show_products',text:'روتين تجريبي',productIds:['TSDEMO1'],budgetFils:10000})}]}}]};
+ const selected=actionResponse(raw).candidates[0].content.parts[0].functionCall;assert.equal(selected.name,'show_products');assert.equal(selected.args.carePlan,'روتين تجريبي');assert.equal(selected.args.budgetFils,10000);assert.throws(()=>actionResponse({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"delete_all","text":""}'}]}}]}));
+});
