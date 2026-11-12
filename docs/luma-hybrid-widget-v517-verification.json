@@ -3,10 +3,12 @@
   "textModel": "gemini-3.5-flash-lite",
   "liveModel": "gemini-3.8-live",
   "tests": {
-    "previousFullPassed": 438,
+    "fullPassed": 439,
     "newAssistantTestsPassed": 27,
     "failed": 0,
-    "finalCIPending": true
+    "finalCIPending": false,
+    "ciRun": 43212196758,
+    "ciConclusion": "success"
   },
   "build": "Wrangler dry-run passed",
   "mobileQa": {
@@ -47,8 +49,17 @@
   "publication": {
     "targetWorker": "trend-shop-jo",
     "targetPages": "trendjo",
-    "pending": true,
-    "initialDeployment": "633e0673-8308-47c0-ab1d-e1a2a69ad686"
+    "pending": false,
+    "initialDeployment": "633e0673-8308-47c0-ab1d-e1a2a69ad686",
+    "commit": "06c491c690fb63eead2f962ea314e4f23fecf7f6",
+    "deploymentId": "07fdbee3-adf2-4726-98b0-a6cd721944f8",
+    "workerVersion": "63b09e4a-1b00-458f-93f5-a1508543f626",
+    "percentage": 100,
+    "settingsRevision": 4,
+    "voiceEnabled": true,
+    "dailyCustomerRequestLimit": 50,
+    "dailyVoiceAttemptLimit": 10,
+    "allNineBindingsPreserved": true
   },
   "package": {
     "files": 637,
@@ -69,5 +80,31 @@
     "decimalJodForModel": true,
     "freeTextPriceRequotingAfterCards": false,
     "noSecondGenerationAfterProductCards": true
+  },
+  "productionUi": {
+    "widgetOpenedWithoutNavigation": true,
+    "voiceButtonVisible": true,
+    "plainBudgetClarificationShowsQuickReplies": true,
+    "budgetChoiceConfirmedFils": 15000,
+    "products": [
+      {
+        "id": "TS0109",
+        "priceFils": 4490
+      },
+      {
+        "id": "TS0020",
+        "priceFils": 4990
+      }
+    ],
+    "subtotalFils": 9480,
+    "shippingFeeFils": 1000,
+    "totalFils": 10480,
+    "withinConfirmedBudget": true,
+    "duplicateAreaOrSkinQuestionsObserved": false,
+    "cartButtonAddedProduct": true,
+    "cartCountBefore": 0,
+    "cartCountAfter": 1,
+    "freeTextPriceRequotingObserved": false,
+    "oneBudgetChoiceThenProductCards": true
   }
 }

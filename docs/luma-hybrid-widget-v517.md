@@ -47,3 +47,9 @@ Production cards showed the correct 11.99 JOD total, but the model re-quoted pri
 ## Quick reply fallback — v5.17.3
 
 A production model turn asked to confirm the budget in plain text instead of invoking ask_question. The widget now supplies optional 5/10/15/20 JOD choices for this observed budget-clarification case without adding a duplicate question. Product selection remains with Gemini. Twenty-seven focused tests pass; final whole-suite CI remains the release gate.
+
+## Final publication
+
+Commit `06c491c690fb63eead2f962ea314e4f23fecf7f6` passed full CI run 43212196758 (439 tests) and was deployed at 100% as Worker version `63b09e4a-1b00-458f-93f5-a1508543f626`, deployment `07fdbee3-adf2-4726-98b0-a6cd721944f8`. Settings revision 4 keeps the assistant, optional images and native voice enabled, with 50 total customer requests and 10 call-issuance attempts per day. All nine existing binding names/types were retained. The production store launcher opened the dialog without navigation, the native-call button was visible, and the plain-text budget clarification displayed functional quick replies.
+
+The final production conversation moved from the original stated face/balanced/non-sensitive request to budget confirmation and product cards without repeating those preferences. It selected TS0109 at 4.49 JOD and TS0020 at 4.99 JOD: 9.48 JOD subtotal + 1.00 JOD delivery = 10.48 JOD within 15 JOD. The product button changed to the added confirmation and the existing cart count increased from 0 to 1 without navigation or creating an order. Prices were displayed in canonical cards without a second model-generated price list. The native-call button remained visible. Physical iPhone microphone acoustics were not tested; native audio/token/function transport and no-device cleanup were verified separately as described above.
