@@ -1,0 +1,57 @@
+{
+  "version": "5.17.0",
+  "textModel": "gemini-3.5-flash-lite",
+  "liveModel": "gemini-3.8-live",
+  "tests": {
+    "fullPassed": 433,
+    "newAssistantTestsPassed": 21,
+    "failed": 0
+  },
+  "build": "Wrangler dry-run passed",
+  "mobileQa": {
+    "cssViewportWidth": 390,
+    "dialogWidth": 374,
+    "horizontalOverflow": false,
+    "source": "managed local preview with synthetic fixtures"
+  },
+  "liveApi": {
+    "model": "models/gemini-3.8-live",
+    "realPersonAudioUsed": false,
+    "transcriptionEnabled": false,
+    "tokenStatus": 200,
+    "setupComplete": true,
+    "syntheticPcmInputBytes": 6400,
+    "audioOutputBytes": 271202,
+    "toolCalls": [
+      "show_products"
+    ],
+    "nativeAudioAndToolsVerified": true
+  },
+  "physicalMicrophoneTested": false,
+  "microphoneLimitation": "Cloud browser has no input device; denial/no-device cleanup and raw PCM client protocol were verified separately.",
+  "privacy": {
+    "permanentKeyInBrowser": false,
+    "transcriptionEnabled": false,
+    "personalAudioUsed": false,
+    "audioStoredByStore": false,
+    "conversationsPersisted": false
+  },
+  "token": {
+    "uses": 1,
+    "connectWindowSeconds": 60,
+    "expirySeconds": 180,
+    "fullSetupLocked": true,
+    "resumptionEnabled": false
+  },
+  "publication": {
+    "targetWorker": "trend-shop-jo",
+    "targetPages": "trendjo",
+    "pending": true
+  },
+  "package": {
+    "files": 637,
+    "modules": 33,
+    "bytes": 6456423,
+    "sha256": "7bf64c5204d7ed8086c6d8ea84989cee9db2c5968cf02268a788c7f300027d6f"
+  }
+}

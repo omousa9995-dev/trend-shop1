@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS luma_voice_usage (
+ day TEXT PRIMARY KEY,
+ sessions INTEGER NOT NULL DEFAULT 0,
+ tokens_issued INTEGER NOT NULL DEFAULT 0,
+ failures INTEGER NOT NULL DEFAULT 0
+);

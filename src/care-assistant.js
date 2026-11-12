@@ -3,6 +3,7 @@ import {productDetails} from '../public/shop-tools.js';
 import {productType} from '../public/product-types.js';
 import {shippingFee} from '../public/commerce.js';
 import {withPairPricing} from '../public/pair-pricing.js';
+import {productOptions} from '../public/product-variants.js';
 import {readSiteSettings} from './site-settings.js';
 
 export const CARE_MODELS=['gemini-3.8-flash','gemini-3.5-flash-lite'];
@@ -19,7 +20,7 @@ const risky=/(?:retin(?:ol|al|oid)|tretinoin|adapalene|benzoyl|hydroquinone|hydr
 const medicalClaim=/(?:تشخيص(?:ك|ها|كِ)?|مصاب[ةه]?\s+ب|تعانين\s+من\s+(?:مرض|اكزيما|أكزيما|صدفي|وردي)|يعالج\s+(?:حب|مرض|اكزيما|أكزيما|صدفي)|علاج\s+حب|tretinoin|adapalene|isotretinoin|hydroquinone|benzoyl|هيدروكينون|ايزوتريتينوين|إيزوتريتينوين|تريتينوين|كورتيزون|مضاد\s+حيوي|cures?\s|diagnos|\bprescri|\bmg\b|مضمون|guaranteed)/i;
 export function normalizeCareSettings(input={}){
  if(!input||typeof input!=='object'||Array.isArray(input))input={};
- return {enabled:input.enabled===true,imagesEnabled:input.imagesEnabled===true,billingConfirmed:input.billingConfirmed===true,model:enumValue(input.model,CARE_MODELS,CARE_DEFAULTS.model),dailyLimit:Number.isInteger(input.dailyLimit)?Math.min(500,Math.max(1,input.dailyLimit)):50};
+ return {enabled:input.enabled===true,imagesEnabled:input.imagesEnabled===true,billingConfirmed:input.billingConfirmed===true,model:enumValue(input.model,CARE_MODELS,CARE_DEFAULTS.model),dailyLimit:Number.isInteger(input.dailyLimit)?Math.min(500,Math.max(1,input.dailyLimit)):50,voiceEnabled:input.voiceEnabled===true,voiceDailyLimit:Number.isInteger(input.voiceDailyLimit)?Math.min(50,Math.max(1,input.voiceDailyLimit)):10};
 }
 async function settingsRow(env){
  try{return await env.DB.prepare('SELECT * FROM care_assistant_settings WHERE id=1').first()}
@@ -49,7 +50,7 @@ export function careCatalog(products){
   }
   const cosmeticTypes=['cleanser','moisturizer','sunscreen','toner','serum','essence','face-mask','face-oil','mist','eye-care','body-care','body-cleansing','body-oil','body-sunscreen','foot-care','shampoo','conditioner','hair-mask','hair-oil'];
   const cosmeticCandidate=!!type&&(p.category==='المكياج'||cosmeticTypes.includes(type))&&!risky.test(facts);
-  return {id:p.id,name:text(d.nameAr||p.name,160),brand:text(p.brand,80),type,areas,priceFils:p.price_fils,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
+  return {id:p.id,name:text(d.nameAr||p.name,160),brand:text(p.brand,80),type,areas,priceFils:p.price_fils,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
  });
 }
 async function loadCatalog(env){
@@ -127,9 +128,9 @@ export function normalizeCareResult(raw,products,input){
  let subtotal=0;const types=new Set(),seen=new Set(),routine=[];
  const reasons=new Map((Array.isArray(raw?.selections)?raw.selections:[]).slice(0,8).map(x=>[x?.productId,safeModelText(x?.reason,260)]));
  if(!questions.length&&input.budgetFils!==null)for(const id of Array.isArray(raw?.productIds)?raw.productIds.slice(0,12):[]){
-  const p=available.get(id);if(!p||seen.has(id)||types.has(p.type)||input.existingIds.includes(id)||routine.length===3)continue;
+  const p=available.get(id);if(!p||seen.has(id)||types.has(p.type)||input.existingIds.includes(id)||routine.length===(input.maxProducts===6?6:3))continue;
   const next=subtotal+p.priceFils;if(next+(input.includeDelivery?shippingFee(next):0)>input.budgetFils)continue;
-  routine.push({id:p.id,name:p.name,brand:p.brand,type:p.type,priceFils:p.priceFils,size:p.size,image:p.image,href:'/#/product/'+encodeURIComponent(p.id),benefits:p.benefits,howToUse:p.howToUse,reason:reasons.get(id)||'',step:routine.length+1});subtotal=next;seen.add(id);types.add(p.type);
+  routine.push({id:p.id,name:p.name,brand:p.brand,type:p.type,priceFils:p.priceFils,size:p.size,image:p.image,href:'/#/product/'+encodeURIComponent(p.id),benefits:p.benefits,howToUse:p.howToUse,options:p.options||[],reason:reasons.get(id)||'',step:routine.length+1});subtotal=next;seen.add(id);types.add(p.type);
  }
  const observations=input.image&&Array.isArray(raw?.observations)?[...new Set(raw.observations)].filter(x=>allowedObservations.includes(x)).slice(0,4).map(x=>observationsAr[x]):[];
  return {message:safeModelText(raw?.message,1200)||(questions.length?'خلّينا نوضّح هالتفاصيل حتى أرتّب اختيارات أقرب لاحتياجكِ.':routine.length?'رتّبت لكِ هذه الاختيارات من المتوفر حاليًا، بناءً على كلامكِ.':'لم أجد اختيارًا موثوقًا ضمن هذه الشروط والميزانية. يمكنك تعديل الميزانية أو توضيح ما تحتاجينه.'),questions,observations,routine,area,needsProfessional:false,subtotalFils:subtotal,shippingFeeFils:subtotal?shippingFee(subtotal):0,totalFils:subtotal?subtotal+shippingFee(subtotal):0,budgetExceeded:false,stage:questions.length?'clarify':routine.length?'recommend':'clarify',guidanceNote:routine.length?'ابدئي بتعليمات العبوة، وأوقفي المنتج إذا سبّب تهيّجًا. استمرار الأعراض أو شدّتها يستدعي سؤال مختصة.':''};
@@ -148,8 +149,11 @@ async function recordOutcome(env,day,success,usage={}){
  await env.DB.prepare('UPDATE care_assistant_usage SET successes=successes+?,failures=failures+?,input_tokens=input_tokens+?,output_tokens=output_tokens+? WHERE day=?').bind(success?1:0,success?0:1,tokens(usage.promptTokenCount),tokens(usage.candidatesTokenCount)+tokens(usage.thoughtsTokenCount),day).run();
 }
 export async function publicCareStatus(req,env,{json}){
- const config=await readSettings(env);return json({available:ready(config),imagesAvailable:ready(config)&&config.settings.imagesEnabled,consentVersion,assistantName:'لُمى'});
+ const config=await readSettings(env);return json({available:ready(config),imagesAvailable:ready(config)&&config.settings.imagesEnabled,widgetAvailable:ready(config),liveAvailable:ready(config)&&config.settings.voiceEnabled,consentVersion,assistantName:'لُمى'});
 }
+
+// Shared server-only primitives for the embedded chat and constrained Live sessions.
+export {readSettings as readCareSettings,ready as careReady,apiKey as careApiKey,loadCatalog as loadCareCatalog,catalogRevision as careCatalogRevision,reserveRequest as reserveCareRequest,recordOutcome as recordCareOutcome,readBoundedJson,safeModelText};
 export async function publicCareChat(req,env,helpers){
  const {json,error,sameOrigin,content,throttle}=helpers;
  if(!sameOrigin(req)||req.headers.get('x-trend-care')!=='1')return error('طلب غير مصرح',403);

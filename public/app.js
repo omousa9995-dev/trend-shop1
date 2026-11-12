@@ -1,5 +1,5 @@
 import {createBrowsePosition} from './browse-position.js?v=5.11.0';
-import './care-entry.js?v=5.16.0';
+import './care-entry.js?v=5.17.0';
 import {createCheckoutSuggestions} from './checkout-suggestions.js?v=5.10.0';
 import {createExperienceMetrics} from './experience-metrics.js?v=5.9.0';
 import {searchProducts,searchCorrection,nearbyAvailableProducts} from './product-search.js?v=5.9.0';
@@ -133,8 +133,16 @@ function add(id,amount=1,requested){
  if(!canBuy(p)){toast(tx('هذا المنتج غير متاح للطلب حاليًا','This item is currently unavailable'));return}
  if(current)current.qty+=amount;else next.push({id,qty:amount,variant});
  const error=purchaseCartError(next,state.products,state.promotions,{checkStock:state.live});if(error){toast(translateText(error));return}
- state.selectedOptions[id]=variant;state.cart=next;experienceMetrics.measure('cart_add');saveCart();refreshCartViews();if(parseRoute().path!=='/checkout'&&$('#drawer').hidden)scheduleAssist(id);toast(tx('تمت الإضافة إلى السلة','Added to bag'),true)
+ state.selectedOptions[id]=variant;state.cart=next;experienceMetrics.measure('cart_add');saveCart();refreshCartViews();if(parseRoute().path!=='/checkout'&&$('#drawer').hidden&&!document.querySelector('#lumaChat[open]'))scheduleAssist(id);toast(tx('تمت الإضافة إلى السلة','Added to bag'),true)
 }
+document.addEventListener('trend:luma-add',event=>{
+ const id=event.detail?.id;if(typeof id!=='string'||!/^TS[A-Z0-9-]{4,64}$/.test(id))return;event.preventDefault();
+ const p=find(id);if(!p){event.detail.respond?.({added:false,message:'تعذر قراءة المنتج؛ حدّثي المتجر.'});return}
+ const needsOptions=productOptions(p).length>0&&!selectedOption(p,activeVariant(p));
+ if(needsOptions)event.detail.respond?.({needsOptions:true});
+ const before=state.cart.filter(x=>x.id===id).reduce((n,x)=>n+x.qty,0);add(id);const after=state.cart.filter(x=>x.id===id).reduce((n,x)=>n+x.qty,0);
+ if(!needsOptions)event.detail.respond?.({added:after>before,message:after>before?'أضيفت لسلتكِ.':'تعذرت الإضافة؛ راجعي المخزون أو خيارات المنتج.'});
+});
 function qty(id,step,variant=''){
  if(guardCartEdit())return;
  const next=state.cart.map(x=>({...x})),item=next.find(x=>x.id===id&&(x.variant||'')===variant);if(!item)return;item.qty+=step;

@@ -153,3 +153,11 @@ CREATE TABLE IF NOT EXISTS care_assistant_usage (
  images INTEGER NOT NULL DEFAULT 0, input_tokens INTEGER NOT NULL DEFAULT 0,
  output_tokens INTEGER NOT NULL DEFAULT 0
 );
+
+-- Live call issuance counters only; no tokens, recordings or transcripts.
+CREATE TABLE IF NOT EXISTS luma_voice_usage (
+ day TEXT PRIMARY KEY,
+ sessions INTEGER NOT NULL DEFAULT 0,
+ tokens_issued INTEGER NOT NULL DEFAULT 0,
+ failures INTEGER NOT NULL DEFAULT 0
+);

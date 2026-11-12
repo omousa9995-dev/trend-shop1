@@ -35,9 +35,9 @@ test('WhatsApp checkout carries the selected variant, quantities and the same di
 test('Retired sharing URLs cannot disclose old product details, even when a restored database could supply them',async()=>{
  let reads=0;const env={DB:{prepare(){reads++;throw Error('Retired URL must not read the database')}},ASSETS:{fetch:async()=>new Response('shell')}};for(const id of RETIRED_PRODUCT_IDS){const r=await worker.fetch(new Request('https://trend.test/p/'+id),env,{});assert.equal(r.status,404);assert.match(r.headers.get('x-robots-tag'),/noindex/)}assert.equal(reads,0);
 });
-test('The advertising integration and Maps UI are gone; all app pages use same-origin scripts and connections',async()=>{
+test('The advertising integration and Maps UI are gone; app scripts remain same-origin and only the requested Live voice connection is permitted',async()=>{
  for(const path of ['public/meta-pixel.js','public/meta-pixel.css','public/order-location.js'])assert.equal(fs.existsSync(new URL('../'+path,import.meta.url)),false);
  for(const path of ['public/app.js','public/index.html','public/admin.js','public/admin.html','public/invoice.js'])assert.doesNotMatch(read(path),/createMetaPixel|meta-pixel\.(?:js|css)|mapsUrl|orderMapLink|عرض الإطلاق|عرض إطلاق|اختياركِ للخصوصية/);
- for(const path of ['/','/admin.html']){const r=await worker.fetch(new Request('https://trend.test'+path),{ASSETS:{fetch:async()=>new Response('ok')}},{});const csp=r.headers.get('content-security-policy');assert.doesNotMatch(csp,/facebook|unsafe-eval/);assert.match(csp,/script-src 'self';/);assert.match(csp,/connect-src 'self';/);assert.match(csp,/frame-ancestors 'none'/)}
+ for(const path of ['/','/admin.html']){const r=await worker.fetch(new Request('https://trend.test'+path),{ASSETS:{fetch:async()=>new Response('ok')}},{});const csp=r.headers.get('content-security-policy');assert.doesNotMatch(csp,/facebook|unsafe-eval/);assert.match(csp,/script-src 'self';/);assert.match(csp,path.startsWith('/admin')?/connect-src 'self';/:/connect-src 'self' wss:\/\/generativelanguage\.googleapis\.com;/);assert.match(csp,/frame-ancestors 'none'/)}
  assert.doesNotMatch(invoice({id:'OLD',name:'Test',phone:'0790000000',maps_url:'https://maps.app.goo.gl/Old',items:[],created_at:'2026-11-01',subtotal_fils:1000}),/maps.app|خرائط/);
 });

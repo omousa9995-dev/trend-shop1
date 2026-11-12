@@ -1,5 +1,5 @@
 import {filterAdminProducts,koreanCareChoice,applyKoreanCareChoice,collectionHint,publicationHint,parseCategoryChoice,categoryChoiceValue} from './admin-product-tools.js?v=5.14.1';
-import {createCareAssistantManager} from './care-assistant-admin.js?v=5.16.0';
+import {createCareAssistantManager} from './care-assistant-admin.js?v=5.17.0';
 import {isKoreanCare} from './korean-care.js?v=5.14.0';
 import {availableBrands} from './brand-tools.js';
 import {productDetails} from './shop-tools.js';
