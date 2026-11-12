@@ -3,6 +3,7 @@ import {readCareSettings,careReady,careApiKey,loadCareCatalog,careCatalogRevisio
 import {urgentCareReply} from './luma-urgent-care.js';
 
 import {requestGemini} from './gemini-provider.js';
+import {shippingFee} from '../public/commerce.js';
 export const LUMA_TEXT_MODEL='gemini-3.8-flash';
 import {LUMA_CARE_KNOWLEDGE,lumaText,lumaProductAllowed} from './luma-care-knowledge.js';
 const enc=new TextEncoder();
@@ -104,6 +105,12 @@ export async function runLumaTool(call,input,env){
  const periods=new Map((Array.isArray(args.selections)?args.selections:[]).map(s=>[s.productId,['am','pm','both','makeup'].includes(s.period)?s.period:'']));
  for(const product of result.routine){product.period=product.type==='sunscreen'?'am':periods.get(product.id)||'';product.priceJod=product.priceFils/1000;product.priceLabel=product.priceJod.toFixed(2)+' د.أ'}
  if(result.questions.length)return {type:'question',question:result.questions[0],profile:resolved,confirmedBudgetFils:input.budgetFils};
+ if(!result.routine.length){
+  // A rejected/empty selection is a tool result to repair, not a completed sale.
+  // Do not send the model's claimed routine or announce nonexistent product cards.
+  const eligible=products.filter(p=>lumaProductAllowed(p,input)&&p.areas.includes(result.area)&&!input.existingIds.includes(p.id)&&p.priceFils+(input.includeDelivery?shippingFee(p.priceFils):0)<=input.budgetFils);
+  return {type:'catalog',validation:{code:'NO_VALID_SELECTION',requestedIds:(Array.isArray(args.productIds)?args.productIds:[]).filter(id=>typeof id==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(id)).slice(0,12),message:'لم تُعرض أي بطاقة. صححي معرفات المنتجات من البيانات الحالية واحترمي الميزانية والتوصيل، أو أجيبي بوضوح إذا لم يناسب أي منتج.'},area:result.area,budgetJod:input.budgetFils/1000,availableTypes:[...new Set(eligible.map(p=>p.type))],products:eligible.slice(0,20).map(p=>({id:p.id,name:p.name,type:p.type,priceJod:p.priceFils/1000})),profile:resolved};
+ }
  return {type:'products',...result,carePlan:lumaText(args.carePlan,1500),subtotalJod:result.subtotalFils/1000,shippingFeeJod:result.shippingFeeFils/1000,totalJod:result.totalFils/1000,profile:resolved,confirmedBudgetFils:input.budgetFils,confirmedBudgetJod:input.budgetFils===null?null:input.budgetFils/1000,catalogRevision:await careCatalogRevision(products),catalogReadAt:new Date().toISOString()};
 }
 async function gate(req,env,helpers,{paid=true}={}){

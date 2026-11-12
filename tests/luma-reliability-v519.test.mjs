@@ -104,3 +104,12 @@ test('Malformed plain-text action output never becomes customer text and stops a
  globalThis.fetch=async()=>{calls++;const text='```json\n{"action":"delete_all","text":"private provider text"}\n```';return calls===1?json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text}]}]}):json({candidates:[{finishReason:'STOP',content:{parts:[{text}]}}]})};
  try{await assert.rejects(requestGemini({...options,transport:'actions'}),/INVALID_ACTION_OUTPUT/);assert.equal(calls,2)}finally{globalThis.fetch=old}
 });
+
+test('A selection-only action preserves exact IDs for canonical validation without inventing product identifiers',async()=>{
+ const {actionResponse}=await import('../src/luma-json-actions.js');
+ const response=value=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(value)}]}}]});
+ const call=actionResponse(response({action:'show_products',text:'روتين',selections:[{productId:'TSDEMO1',reason:'مرطب'},{productId:'invented url'}]})).candidates[0].content.parts[0].functionCall;
+ assert.deepEqual(call.args.productIds,['TSDEMO1']);
+ const explicit=actionResponse(response({action:'show_products',text:'روتين',productIds:['TSDEMO2'],selections:[{productId:'TSDEMO1'}]})).candidates[0].content.parts[0].functionCall;
+ assert.deepEqual(explicit.args.productIds,['TSDEMO2']);
+});
