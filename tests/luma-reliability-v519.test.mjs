@@ -64,3 +64,17 @@ test('A delayed widget load cannot open the chat after navigating into a product
  const {w}=browser('<a data-care-region="header" data-care-entry><span data-luma-entry-title></span></a>');let resolve,opens=0,destroys=0;
  try{w.eval(buildSync({entryPoints:[new URL('../public/luma-placement.js',import.meta.url).pathname],bundle:true,format:'iife',globalName:'Placement',write:false,logLevel:'silent'}).outputFiles[0].text);const entries=w.Placement.installCareEntries({status:{available:true},loadWidget:()=>new Promise(r=>resolve=r)});w.document.querySelector('a').click();w.location.hash='#/product/TSDEMO1';await pause(15);resolve({open(){opens++},destroy(){destroys++}});await pause(15);assert.equal(opens,0);assert.equal(destroys,1);entries.destroy()}finally{w.close()}
 });
+
+test('Interactions preserves the private thought and tool timeline in stateless continuations and maps output without exposing thoughts',async()=>{
+ const {interactionRequest,interactionResponse}=await import('../src/gemini-interactions.js');
+ const timeline=[{type:'thought',signature:'opaque-private-signature',summary:[]},{type:'function_call',id:'call-7',name:'get_catalog',arguments:{productIds:['TSDEMO1']},signature:'opaque-tool-signature'}];
+ const normalized=interactionResponse({status:'requires_action',steps:timeline,usage:{total_input_tokens:120,total_output_tokens:30}});
+ assert.equal(normalized.candidates[0].content.parts[1].functionCall.id,'call-7');assert.equal(normalized.usageMetadata.promptTokenCount,120);
+ const payload={systemInstruction:{parts:[{text:'System'}]},tools:[{functionDeclarations:[{name:'get_catalog',parameters:{type:'OBJECT',properties:{area:{type:'STRING'}}}}]}],contents:[{role:'user',parts:[{text:'احتياج تجريبي'},{inlineData:{mimeType:'image/jpeg',data:'synthetic-image'}}]},normalized.candidates[0].content,{role:'user',parts:[{functionResponse:{id:'call-7',name:'get_catalog',response:{products:[]}}}]}]};
+ const request=interactionRequest('gemini-3.8-flash',payload);assert.equal(request.store,false);assert.equal(request.previous_interaction_id,undefined);assert.deepEqual(request.input.slice(1,3),timeline);assert.equal(request.input[3].call_id,'call-7');assert.equal(request.input[0].content[1].type,'image');assert.equal(request.tools[0].parameters.type,'object');assert.equal(request.generation_config.tool_choice,'any');assert.throws(()=>interactionResponse({status:'incomplete',steps:timeline}));
+});
+test('Real chat transport targets the current Interactions endpoint and accepts a complete function response',async()=>{
+ const old=globalThis.fetch;let sent;
+ globalThis.fetch=async(url,init)=>{assert.equal(url,'https://generativelanguage.googleapis.com/v1beta/interactions');sent=JSON.parse(init.body);return json({status:'requires_action',steps:[{type:'function_call',id:'q1',name:'ask_question',arguments:{text:'شو نوع بشرتكِ؟'}}]})};
+ try{const result=await requestGemini({...options,transport:'interactions',payload:{contents:[{role:'user',parts:[{text:'روتين تجريبي'}]}],tools:[{functionDeclarations:[{name:'ask_question',parameters:{type:'OBJECT',properties:{text:{type:'STRING'}}}}]}]}});assert.equal(sent.store,false);assert.equal(sent.model,'gemini-3.8-flash');assert.equal(result.data.candidates[0].content.parts[1].functionCall.name,'ask_question')}finally{globalThis.fetch=old}
+});
