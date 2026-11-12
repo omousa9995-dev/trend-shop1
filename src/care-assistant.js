@@ -5,6 +5,7 @@ import {shippingFee} from '../public/commerce.js';
 import {withPairPricing} from '../public/pair-pricing.js';
 import {productOptions} from '../public/product-variants.js';
 import {readSiteSettings} from './site-settings.js';
+import {lumaProductFacts,lumaText,lumaProductAllowed} from './luma-care-knowledge.js';
 
 export const CARE_MODELS=['gemini-3.8-flash','gemini-3.5-flash-lite'];
 export const CARE_DEFAULTS=Object.freeze({enabled:false,imagesEnabled:false,billingConfirmed:false,model:CARE_MODELS[0],dailyLimit:50});
@@ -20,7 +21,7 @@ const risky=/(?:retin(?:ol|al|oid)|tretinoin|adapalene|benzoyl|hydroquinone|hydr
 const medicalClaim=/(?:تشخيص(?:ك|ها|كِ)?|مصاب[ةه]?\s+ب|تعانين\s+من\s+(?:مرض|اكزيما|أكزيما|صدفي|وردي)|يعالج\s+(?:حب|مرض|اكزيما|أكزيما|صدفي)|علاج\s+حب|tretinoin|adapalene|isotretinoin|hydroquinone|benzoyl|هيدروكينون|ايزوتريتينوين|إيزوتريتينوين|تريتينوين|كورتيزون|مضاد\s+حيوي|cures?\s|diagnos|\bprescri|\bmg\b|مضمون|guaranteed)/i;
 export function normalizeCareSettings(input={}){
  if(!input||typeof input!=='object'||Array.isArray(input))input={};
- return {enabled:input.enabled===true,imagesEnabled:input.imagesEnabled===true,billingConfirmed:input.billingConfirmed===true,model:enumValue(input.model,CARE_MODELS,CARE_DEFAULTS.model),dailyLimit:Number.isInteger(input.dailyLimit)?Math.min(500,Math.max(1,input.dailyLimit)):50,voiceEnabled:input.voiceEnabled===true,voiceDailyLimit:Number.isInteger(input.voiceDailyLimit)?Math.min(50,Math.max(1,input.voiceDailyLimit)):10};
+ return {enabled:input.enabled===true,imagesEnabled:input.imagesEnabled===true,billingConfirmed:input.billingConfirmed===true,model:enumValue(input.model,CARE_MODELS,CARE_DEFAULTS.model),dailyLimit:Number.isInteger(input.dailyLimit)?Math.min(500,Math.max(1,input.dailyLimit)):50,dictationEnabled:input.dictationEnabled!==false,voiceEnabled:false,voiceDailyLimit:Number.isInteger(input.voiceDailyLimit)?Math.min(50,Math.max(1,input.voiceDailyLimit)):10};
 }
 async function settingsRow(env){
  try{return await env.DB.prepare('SELECT * FROM care_assistant_settings WHERE id=1').first()}
@@ -50,7 +51,7 @@ export function careCatalog(products){
   }
   const cosmeticTypes=['cleanser','moisturizer','sunscreen','toner','serum','essence','face-mask','face-oil','mist','eye-care','body-care','body-cleansing','body-oil','body-sunscreen','foot-care','shampoo','conditioner','hair-mask','hair-oil'];
   const cosmeticCandidate=!!type&&(p.category==='المكياج'||cosmeticTypes.includes(type))&&!risky.test(facts);
-  return {id:p.id,name:text(d.nameAr||p.name,160),brand:text(p.brand,80),type,areas,priceFils:p.price_fils,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
+  return {id:p.id,name:text(d.nameAr||p.name,160),brand:text(p.brand,80),type,areas,priceFils:p.price_fils,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,...lumaProductFacts(p,d,type,cosmeticCandidate),gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
  });
 }
 async function loadCatalog(env){
@@ -59,14 +60,15 @@ async function loadCatalog(env){
 }
 async function catalogRevision(products){return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',encoder.encode(JSON.stringify(products.map(({image,...p})=>p)))))).map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,20)}
 
-export function validateCareInput(body,imagesAllowed){
- if(body?.adultConfirmed!==true||body?.consentVersion!==consentVersion||body?.googleConsent!==true)throw Error('CONSENT_REQUIRED');
+export function validateCareInput(body,imagesAllowed,{requireConsent=true,requirePhotoConsent=true}={}){
+ if(!body||typeof body!=='object'||Array.isArray(body))throw Error('INVALID_INPUT');
+ if(requireConsent&&(body?.adultConfirmed!==true||body?.consentVersion!==consentVersion||body?.googleConsent!==true))throw Error('CONSENT_REQUIRED');
  if(body.budgetFils!=null&&(!Number.isInteger(body.budgetFils)||body.budgetFils<500||body.budgetFils>100000))throw Error('INVALID_BUDGET');
  const profile=body.profile||{};
  const values={message:text(body.message,1500),budgetFils:body.budgetFils??null,area:enumValue(profile.area,CARE_AREAS,'unknown'),includeDelivery:body.includeDelivery!==false,skinType:enumValue(profile.skinType,['unknown','dry','oily','combination','balanced'],'unknown'),goal:enumValue(profile.goal,['basic','dryness','shine','texture','fine_lines','tone','breakouts'],'basic'),sensitive:enumValue(profile.sensitive,['unknown','yes','no'],'unknown'),warningSigns:profile.warningSigns===true,existingIds:Array.isArray(body.existingIds)?body.existingIds.filter(x=>typeof x==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(x)).slice(0,20):[],history:Array.isArray(body.history)?body.history.slice(-6).filter(x=>x&&['user','model'].includes(x.role)&&typeof x.text==='string').map(x=>({role:x.role,text:text(x.text,1500)})):[]};
  if(body.image){
   if(!imagesAllowed)throw Error('IMAGES_DISABLED');
-  if(body.photoConsent!==true)throw Error('PHOTO_CONSENT_REQUIRED');
+  if(requirePhotoConsent&&body.photoConsent!==true)throw Error('PHOTO_CONSENT_REQUIRED');
   if(body.image.mimeType!=='image/jpeg'||typeof body.image.data!=='string'||body.image.data.length>1400000||body.image.data.length<172||!/^[A-Za-z0-9+/]+={0,2}$/.test(body.image.data))throw Error('INVALID_IMAGE');
   let bytes;try{bytes=atob(body.image.data)}catch{throw Error('INVALID_IMAGE')}
   if(bytes.length>1048576||bytes.charCodeAt(0)!==255||bytes.charCodeAt(1)!==216||bytes.charCodeAt(2)!==255)throw Error('INVALID_IMAGE');
@@ -124,13 +126,14 @@ export function normalizeCareResult(raw,products,input){
  if(area==='unknown')required.push(areaQuestion());
  else if(input.area!=='unknown'&&proposedArea!=='unknown'&&proposedArea!==input.area)required.push({field:'area',text:'ننتقل للعناية بمنطقة ثانية؟',choices:questionChoices('area',[{value:proposedArea},{value:input.area}])});
  const questions=[...required,...normalizeQuestions(raw?.questions).filter(q=>typeof q==='string'||!required.some(r=>r.field===q.field)&&!(q.field==='budget'&&input.budgetFils!==null)&&!(q.field==='area'&&area!=='unknown')&&!(q.field==='skinType'&&input.skinType!=='unknown')&&!(q.field==='sensitive'&&input.sensitive!=='unknown'))].slice(0,2);
- const available=new Map(products.filter(p=>p.cosmeticCandidate&&p.areas.includes(area)).map(p=>[p.id,p]));
+ const available=new Map(products.filter(p=>(input.catalogScope==='luma'?lumaProductAllowed(p,input):p.cosmeticCandidate)&&p.areas.includes(area)).map(p=>[p.id,p]));
  let subtotal=0;const types=new Set(),seen=new Set(),routine=[];
- const reasons=new Map((Array.isArray(raw?.selections)?raw.selections:[]).slice(0,8).map(x=>[x?.productId,safeModelText(x?.reason,260)]));
+ const resultText=input.catalogScope==='luma'?lumaText:safeModelText;
+ const reasons=new Map((Array.isArray(raw?.selections)?raw.selections:[]).slice(0,8).map(x=>[x?.productId,resultText(x?.reason,260)]));
  if(!questions.length&&input.budgetFils!==null)for(const id of Array.isArray(raw?.productIds)?raw.productIds.slice(0,12):[]){
   const p=available.get(id);if(!p||seen.has(id)||types.has(p.type)||input.existingIds.includes(id)||routine.length===(input.maxProducts===6?6:3))continue;
   const next=subtotal+p.priceFils;if(next+(input.includeDelivery?shippingFee(next):0)>input.budgetFils)continue;
-  routine.push({id:p.id,name:p.name,brand:p.brand,type:p.type,priceFils:p.priceFils,size:p.size,image:p.image,href:'/#/product/'+encodeURIComponent(p.id),benefits:p.benefits,howToUse:p.howToUse,options:p.options||[],reason:reasons.get(id)||'',step:routine.length+1});subtotal=next;seen.add(id);types.add(p.type);
+  routine.push({id:p.id,name:p.name,brand:p.brand,type:p.type,priceFils:p.priceFils,size:p.size,image:p.image,href:'/#/product/'+encodeURIComponent(p.id),benefits:p.benefits,howToUse:input.catalogScope==='luma'?(p.assistantHowToUse||p.howToUse):p.howToUse,options:p.options||[],reason:reasons.get(id)||'',step:routine.length+1});subtotal=next;seen.add(id);types.add(p.type);
  }
  const observations=input.image&&Array.isArray(raw?.observations)?[...new Set(raw.observations)].filter(x=>allowedObservations.includes(x)).slice(0,4).map(x=>observationsAr[x]):[];
  return {message:safeModelText(raw?.message,1200)||(questions.length?'خلّينا نوضّح هالتفاصيل حتى أرتّب اختيارات أقرب لاحتياجكِ.':routine.length?'رتّبت لكِ هذه الاختيارات من المتوفر حاليًا، بناءً على كلامكِ.':'لم أجد اختيارًا موثوقًا ضمن هذه الشروط والميزانية. يمكنك تعديل الميزانية أو توضيح ما تحتاجينه.'),questions,observations,routine,area,needsProfessional:false,subtotalFils:subtotal,shippingFeeFils:subtotal?shippingFee(subtotal):0,totalFils:subtotal?subtotal+shippingFee(subtotal):0,budgetExceeded:false,stage:questions.length?'clarify':routine.length?'recommend':'clarify',guidanceNote:routine.length?'ابدئي بتعليمات العبوة، وأوقفي المنتج إذا سبّب تهيّجًا. استمرار الأعراض أو شدّتها يستدعي سؤال مختصة.':''};
@@ -149,7 +152,7 @@ async function recordOutcome(env,day,success,usage={}){
  await env.DB.prepare('UPDATE care_assistant_usage SET successes=successes+?,failures=failures+?,input_tokens=input_tokens+?,output_tokens=output_tokens+? WHERE day=?').bind(success?1:0,success?0:1,tokens(usage.promptTokenCount),tokens(usage.candidatesTokenCount)+tokens(usage.thoughtsTokenCount),day).run();
 }
 export async function publicCareStatus(req,env,{json}){
- const config=await readSettings(env);return json({available:ready(config),imagesAvailable:ready(config)&&config.settings.imagesEnabled,widgetAvailable:ready(config),liveAvailable:ready(config)&&config.settings.voiceEnabled,consentVersion,assistantName:'لُمى'});
+ const config=await readSettings(env);return json({available:ready(config),imagesAvailable:ready(config)&&config.settings.imagesEnabled,widgetAvailable:ready(config),liveAvailable:false,dictationAvailable:ready(config)&&config.settings.dictationEnabled,consentVersion,assistantName:'لُمى'});
 }
 
 // Shared server-only primitives for the embedded chat and constrained Live sessions.
