@@ -1,4 +1,4 @@
-# Luma 5.18.2 — direct chat, recorded dictation and spoken replies
+# Luma 5.18.3 — direct chat, recorded dictation and spoken replies
 
 Requested by the store owner on 2026-11-12. Existing Trend Shop Pages/Worker hosting and nine production bindings are preserved.
 
@@ -25,3 +25,9 @@ Initial production deployment of 5.18.0 exposed an incomplete care answer despit
 5.18.1 reduces the initial catalog to a compact factual index, retrieves exact detailed facts for at most eight requested IDs, caps general lookups at twenty entries and allows 4096 output tokens per bounded round. This reduces repeated prompt payload for the enlarged eligible catalog. Incomplete answers return only a safe enumerated error code; partial text is replaced with a clear retry message. No upstream diagnostic bodies, customer content or credentials are logged. Final live verification follows the redeployment.
 
 5.18.1 completed the actual care text, but the provider AUTO mode mentioned a product without calling its card tool. 5.18.2 requires a response function on every real turn (`ANY`): `answer_customer` for care-only/FAQ, `ask_question` for one missing detail, and `show_products` for any recommendation. This preserves direct care answers without a budget question and makes cards part of the recommendation contract. The client no longer manufactures a budget confirmation merely because a sentence contains the word budget.
+
+5.18.2 production checks succeeded for an actual complete back-care routine, PanOxyl 4% (TS0230, 8.99 JOD), body moisturizer (TS0335, 3.50 JOD), delivery (1 JOD) and total 13.49 JOD under the stated 15 JOD budget. The PanOxyl card added to the existing cart. A care-only dry-hands question returned practical steps without purchase/budget questions. A separate hypothetical deep-wound check encountered provider HTTP 503.
+
+5.18.3 therefore adds a narrow, negation-aware immediate response for explicit deep wounds/uncontrolled bleeding before provider inference or paid quota reservation, based on NHS first-aid guidance. It advises timely emergency care before the final supplementary pharmacy follow-up and returns no product cards. This is not a disease classifier. The general specialist message no longer assumes every issue is a photo or a dermatology-only problem.
+
+Speech controls are implemented using device synthesis. The cloud test browser returned a synthesis error; audible Arabic playback and a physical iPhone microphone/keyboard remain unverified on a real device. Recorded synthetic audio transcription was verified successfully on production.

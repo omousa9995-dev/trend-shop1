@@ -10,6 +10,7 @@ import {validateCareInput} from '../src/care-assistant.js';
 import {publicLumaTranscribe,validateDictation} from '../src/luma-dictation.js';
 import {careCatalog,publicCareStatus} from '../src/care-assistant.js';
 import {LumaDictation,LumaSpeech} from '../public/luma-speech.js';
+import {urgentCareReply} from '../src/luma-urgent-care.js';
 const json=(v,status=200)=>new Response(JSON.stringify(v),{status,headers:{'content-type':'application/json'}});
 const helpers={json,error:(message,status=400,extra={})=>json({error:message,...extra},status),sameOrigin:req=>req.headers.get('origin')===new URL(req.url).origin,content:_test.content,throttle:async()=>true};
 const payload=(extra={})=>({adultConfirmed:true,googleConsent:true,audioConsent:true,consentVersion:'care-2026-11-v2',message:'أحتاج غسولًا ومرطبًا',budgetFils:15000,profile:{area:'face',skinType:'balanced',sensitive:'no'},...extra});
@@ -119,5 +120,12 @@ test('Every real request requires a response tool; a care-only answer needs no b
  const f=fixture(),old=globalThis.fetch;let sent;
  globalThis.fetch=async(url,options)=>{sent=JSON.parse(options.body);return stream([chunk([{functionCall:{name:'answer_customer',args:{text:'رطبي إيديكِ بعد الغسل وارتدي قفازات عند استخدام المنظفات.',followUp:true,profile:{area:'hands'}}}}])])};
  try{const out=await events(await publicLumaChat(request({message:'إيدي ناشفة، كيف أعتني فيها؟'}),f.env,helpers,{}));assert.equal(sent.toolConfig.functionCallingConfig.mode,'ANY');assert.equal(out.filter(e=>e.event==='question').length,0);assert.match(out.find(e=>e.event==='delta').data.text,/رطبي/);assert.equal(out.at(-2).event,'followup');assert.equal(out.at(-1).event,'done');assert.equal(f.db.prepare('SELECT successes FROM care_assistant_usage').get().successes,1)}finally{globalThis.fetch=old;f.close()}
+});
+test('Explicit deep wounds or uncontrolled bleeding get immediate guidance and pharmacy follow-up without provider availability or paid quota',async()=>{
+ const f=fixture(),old=globalThis.fetch;globalThis.fetch=async()=>{throw Error('Provider intentionally unavailable')};
+ try{for(const message of ['جرح عميق باليد ونزيف مستمر','The bleeding will not stop']){const out=await events(await publicLumaChat(request({message}),f.env,helpers,{}));const reply=out.find(e=>e.event==='handoff').data;assert.match(reply.message,/للطوارئ الآن/);assert.equal(reply.routine.length,0);assert.match(reply.team.label,/صيدلانيات/);assert.equal(out.at(-1).event,'done')}assert.equal(f.db.prepare('SELECT count(*) n FROM care_assistant_usage').get().n,0)}finally{globalThis.fetch=old;f.close()}
+});
+test('Negated injury signals and ordinary skin concerns do not trigger the emergency path',()=>{
+ for(const text of ['ما عندي جرح عميق ولا نزيف مستمر، بس حبوب خفيفة','ما في جرح عميق أو نزيف مستمر','حبوب الظهر مش مؤلمة وبدون جروح عميقة','جفاف اليدين بدون نزيف','No deep wound or heavy bleeding','إيدي ناشفة، ما فيها جروح ولا نزيف ولا ألم'])assert.equal(urgentCareReply(text),null);
 });
 
