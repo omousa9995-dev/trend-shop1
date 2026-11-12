@@ -21,3 +21,7 @@ Production also returned HTTP 503 for native Interactions tools. The chat path n
 ## 5.19.3 on-demand catalog
 
 The first chat turn now contains no catalog inventory. Gemini reads only the needed live catalog slice through get_catalog, with full details fetched by selected IDs. Ordinary advice and clarifying questions avoid a repeated store-wide inventory payload. This isolates the remaining production failure from inventory size and reduces token use and latency. Relevant 48 checks pass; the full CI suite runs before activation.
+
+## 5.19.4 response compatibility
+
+The action contract is supplied as instructions with JSON MIME output; server-side action validation remains mandatory. No native-tools or constrained response-schema decoder is required. The response budget is 2048 tokens. This last compatibility check distinguishes endpoint availability from tool/schema compilation and large input costs. Relevant 48 tests pass; production response availability still needs a real successful answer.
