@@ -82,7 +82,25 @@ test('Real chat transport targets the current Interactions endpoint and accepts 
 test('Structured actions retain model-selected functions without the failing native-tool transport, and reject invalid action output',async()=>{
  const {actionRequest,actionResponse}=await import('../src/luma-json-actions.js');
  const req=actionRequest({systemInstruction:{parts:[{text:'Instructions'}]},contents:[{role:'user',parts:[{text:'سؤال'}]},{role:'model',parts:[{functionCall:{name:'get_catalog',args:{productIds:['TSDEMO1']}}}]},{role:'user',parts:[{functionResponse:{name:'get_catalog',id:'old-call',response:{products:[]}}}]}]});
- assert.equal(req.tools,undefined);assert.equal(req.generationConfig.responseMimeType,'application/json');assert.equal(req.generationConfig.responseSchema,undefined);assert.equal(req.generationConfig.maxOutputTokens,2048);assert.match(req.systemInstruction.parts[0].text,/ACTION CONTRACT:/);assert.equal(JSON.parse(req.contents[1].parts[0].text).action,'get_catalog');assert.match(req.contents[2].parts[0].text,/STORE ACTION RESULT/);
+ assert.equal(req.tools,undefined);assert.equal(req.generationConfig.responseMimeType,undefined);assert.equal(req.generationConfig.responseSchema,undefined);assert.equal(req.generationConfig.maxOutputTokens,2048);assert.match(req.systemInstruction.parts[0].text,/ACTION CONTRACT:/);assert.equal(JSON.parse(req.contents[1].parts[0].text).action,'get_catalog');assert.match(req.contents[2].parts[0].text,/STORE ACTION RESULT/);
  const raw={candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({action:'show_products',text:'روتين تجريبي',productIds:['TSDEMO1'],budgetFils:10000})}]}}]};
  const selected=actionResponse(raw).candidates[0].content.parts[0].functionCall;assert.equal(selected.name,'show_products');assert.equal(selected.args.carePlan,'روتين تجريبي');assert.equal(selected.args.budgetFils,10000);assert.throws(()=>actionResponse({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"delete_all","text":""}'}]}}]}));
+});
+
+test('Actions use a stateless plain-text Interactions turn and keep private thought steps outside the displayed answer',async()=>{
+ const old=globalThis.fetch;let calls=0;
+ globalThis.fetch=async(url,init)=>{calls++;assert.equal(url,'https://generativelanguage.googleapis.com/v1beta/interactions');assert.equal(init.headers['Api-Revision'],'2026-05-20');const body=JSON.parse(init.body);assert.equal(body.store,false);assert.deepEqual(body.tools,[]);assert.equal(body.generation_config.tool_choice,undefined);assert.equal(body.generation_config.response_mime_type,undefined);return json({status:'completed',steps:[{type:'thought',signature:'private-opaque',summary:[]},{type:'model_output',content:[{type:'text',text:JSON.stringify({action:'answer_customer',text:'التوصيل دينار.',profile:{},followUp:false})}]}]})};
+ try{const result=await requestGemini({...options,transport:'actions'});const call=result.data.candidates[0].content.parts[0].functionCall;assert.equal(call.name,'answer_customer');assert.equal(call.args.text,'التوصيل دينار.');assert.doesNotMatch(JSON.stringify(result.data),/private-opaque/);assert.equal(calls,1)}finally{globalThis.fetch=old}
+});
+
+test('An unavailable action endpoint has one plain-text alternate with the same validated actions and no constrained decoding',async()=>{
+ const old=globalThis.fetch;let calls=0;
+ globalThis.fetch=async(url,init)=>{calls++;const body=JSON.parse(init.body);if(calls===1)return json({error:{message:'Unavailable'}},503);assert.match(url,/gemini-3\.5-flash-lite:generateContent$/);assert.equal(body.tools,undefined);assert.equal(body.generationConfig.responseMimeType,undefined);assert.equal(body.generationConfig.responseSchema,undefined);return json({candidates:[{finishReason:'STOP',content:{parts:[{text:'```json\n'+JSON.stringify({action:'ask_question',text:'شو نوع بشرتكِ؟',field:'skinType',profile:{},choices:[]})+'\n```'}]}}]})};
+ try{const result=await requestGemini({...options,transport:'actions'});assert.equal(result.fallback,true);assert.equal(result.data.candidates[0].content.parts[0].functionCall.name,'ask_question');assert.equal(calls,2)}finally{globalThis.fetch=old}
+});
+
+test('Malformed plain-text action output never becomes customer text and stops after two attempts',async()=>{
+ const old=globalThis.fetch;let calls=0;
+ globalThis.fetch=async()=>{calls++;const text='```json\n{"action":"delete_all","text":"private provider text"}\n```';return calls===1?json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text}]}]}):json({candidates:[{finishReason:'STOP',content:{parts:[{text}]}}]})};
+ try{await assert.rejects(requestGemini({...options,transport:'actions'}),/INVALID_ACTION_OUTPUT/);assert.equal(calls,2)}finally{globalThis.fetch=old}
 });

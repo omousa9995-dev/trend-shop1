@@ -31,7 +31,7 @@ function fixture(settings={enabled:true,billingConfirmed:true,imagesEnabled:true
  };
  return {db,env:{DB,SESSION_SECRET:'synthetic-session-secret-01234567890123456789',GEMINI_API_KEY:'synthetic-test-key-never-a-real-credential'},close:()=>db.close()};
 }
-const stream=chunks=>{const c=chunks.at(-1),v=c.candidates[0],p=v.content.parts[0],f=p.functionCall;const value=f?{action:f.name,text:f.args.text||f.args.carePlan||f.args.reason||'',...f.args}:{action:'answer_customer',text:p.text,profile:{},followUp:false};return json({...c,candidates:[{...v,content:{parts:[{text:JSON.stringify(value)}]}}]})};
+const stream=chunks=>{const c=chunks.at(-1),v=c.candidates[0],p=v.content.parts[0],f=p.functionCall;const value=f?{action:f.name,text:f.args.text||f.args.carePlan||f.args.reason||'',...f.args}:{action:'answer_customer',text:p.text,profile:{},followUp:false};return json({...c,status:v.finishReason==='STOP'?'completed':'incomplete',steps:[{type:'model_output',content:[{type:'text',text:JSON.stringify(value)}]}],usage:{total_input_tokens:20,total_output_tokens:10},candidates:[{...v,content:{parts:[{text:JSON.stringify(value)}]}}]})};
 const chunk=parts=>({candidates:[{finishReason:'STOP',content:{role:'model',parts}}],usageMetadata:{promptTokenCount:20,candidatesTokenCount:10}});
 const show={name:'show_products',id:'call-1',args:{productIds:['FAKE','TSDEMO1','TSDEMO2'],area:'face',budgetFils:15000,selections:[]}};
 const q={name:'ask_question',id:'q-1',args:{field:'preference',text:'هل بتحبي القوام الخفيف؟',choices:[{label:'نعم',value:'yes'},{label:'لا',value:'no'}]}};
@@ -43,7 +43,7 @@ const clip=(extra={})=>({audioConsent:true,durationSeconds:1,audio:{mimeType:'au
 test('New text API accepts a direct message without adult/provider acknowledgements and never fabricates them',async()=>{
  const f=fixture(),old=globalThis.fetch;let sent;
  globalThis.fetch=async(url,options)=>{sent=JSON.parse(options.body);return stream([chunk([{text:'من عيوني، رطبي إيديكِ بعد الغسل.'}])])};
- try{const out=await events(await publicLumaChat(request({message:'إيدي ناشفة، كيف أعتني فيها؟'}),f.env,helpers,{}));assert.equal(out.at(-1).event,'done');assert.doesNotMatch(JSON.stringify(sent.contents),/adultConfirmed|googleConsent/);assert.match(out.find(e=>e.event==='delta').data.text,/رطبي/)}finally{globalThis.fetch=old;f.close()}
+ try{const out=await events(await publicLumaChat(request({message:'إيدي ناشفة، كيف أعتني فيها؟'}),f.env,helpers,{}));assert.equal(out.at(-1).event,'done');assert.doesNotMatch(JSON.stringify(sent.input),/adultConfirmed|googleConsent/);assert.match(out.find(e=>e.event==='delta').data.text,/رطبي/)}finally{globalThis.fetch=old;f.close()}
 });
 test('Retired Live and public tool endpoints cannot mint tokens or spend requests even if old settings enabled voice',async()=>{
  const f=fixture(),old=globalThis.fetch;globalThis.fetch=()=>{throw Error('No external request allowed')};
@@ -119,7 +119,7 @@ test('An incomplete provider answer returns a bounded non-sensitive diagnostic a
 test('Every real request requires a response tool; a care-only answer needs no budget and can end with pharmacy follow-up',async()=>{
  const f=fixture(),old=globalThis.fetch;let sent;
  globalThis.fetch=async(url,options)=>{sent=JSON.parse(options.body);return stream([chunk([{functionCall:{name:'answer_customer',args:{text:'رطبي إيديكِ بعد الغسل وارتدي قفازات عند استخدام المنظفات.',followUp:true,profile:{area:'hands'}}}}])])};
- try{const out=await events(await publicLumaChat(request({message:'إيدي ناشفة، كيف أعتني فيها؟'}),f.env,helpers,{}));assert.equal(sent.generationConfig.responseMimeType,'application/json');assert.doesNotMatch(sent.systemInstruction.parts[0].text,/TSDEMO[123]/);assert.match(sent.systemInstruction.parts[0].text,/initial CATALOG is intentionally empty/);assert.equal(out.filter(e=>e.event==='question').length,0);assert.match(out.find(e=>e.event==='delta').data.text,/رطبي/);assert.equal(out.at(-2).event,'followup');assert.equal(out.at(-1).event,'done');assert.equal(f.db.prepare('SELECT successes FROM care_assistant_usage').get().successes,1)}finally{globalThis.fetch=old;f.close()}
+ try{const out=await events(await publicLumaChat(request({message:'إيدي ناشفة، كيف أعتني فيها؟'}),f.env,helpers,{}));assert.equal(sent.generation_config.response_mime_type,undefined);assert.deepEqual(sent.tools,[]);assert.equal(sent.store,false);assert.doesNotMatch(sent.system_instruction,/TSDEMO[123]/);assert.match(sent.system_instruction,/initial CATALOG is intentionally empty/);assert.equal(out.filter(e=>e.event==='question').length,0);assert.match(out.find(e=>e.event==='delta').data.text,/رطبي/);assert.equal(out.at(-2).event,'followup');assert.equal(out.at(-1).event,'done');assert.equal(f.db.prepare('SELECT successes FROM care_assistant_usage').get().successes,1)}finally{globalThis.fetch=old;f.close()}
 });
 test('Explicit deep wounds or uncontrolled bleeding get immediate guidance and pharmacy follow-up without provider availability or paid quota',async()=>{
  const f=fixture(),old=globalThis.fetch;globalThis.fetch=async()=>{throw Error('Provider intentionally unavailable')};

@@ -22,11 +22,14 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
   const timeout=new AbortController(),timer=setTimeout(()=>timeout.abort(new DOMException('Attempt timed out','TimeoutError')),timeoutMs);
   let retryAfter=0;
   try{
-   const live=transport==='interactions',body=live?interactionRequest(selected,payload):transport==='actions'?actionRequest(payload):payload;
-   const response=await fetch(live?'https://generativelanguage.googleapis.com/v1beta/interactions':'https://generativelanguage.googleapis.com/v1beta/models/'+selected+':generateContent',{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':apiKey},body:JSON.stringify(body),signal:signal?AbortSignal.any([signal,timeout.signal]):timeout.signal});
+   // Use the current stateless API for actions first, then a bounded plain-text
+   // generateContent alternate. Neither path enables native tools/JSON decoding.
+   const actions=transport==='actions',live=transport==='interactions'||actions&&index===0;
+   const prepared=actions?actionRequest(payload):payload,body=live?interactionRequest(selected,prepared):prepared;
+   const response=await fetch(live?'https://generativelanguage.googleapis.com/v1beta/interactions':'https://generativelanguage.googleapis.com/v1beta/models/'+selected+':generateContent',{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':apiKey,...(live?{'Api-Revision':'2026-05-20'}:{})},body:JSON.stringify(body),signal:signal?AbortSignal.any([signal,timeout.signal]):timeout.signal});
    const hint=response.headers.get('retry-after');if(hint)retryAfter=/^\d+(?:\.\d+)?$/.test(hint)?Number(hint)*1000:Math.max(0,Date.parse(hint)-Date.now());
    if(!response.ok){const info=await boundedJson(response,16000).catch(()=>({}));throw problem(response.status,info)}
-   const raw=await boundedJson(response,180000),data=live?interactionResponse(raw):transport==='actions'?actionResponse(raw):raw;if(!Array.isArray(data.candidates)||!data.candidates.length)throw Error('PROVIDER_RESPONSE_INVALID');
+   const raw=await boundedJson(response,180000),normalized=live?interactionResponse(raw):raw,data=actions?actionResponse(normalized):normalized;if(!Array.isArray(data.candidates)||!data.candidates.length)throw Error('PROVIDER_RESPONSE_INVALID');
    onAttempt({model:selected,transport,attempt:index+1,ok:true});return {data,model:selected,fallback:index>0};
   }catch(error){
    if(signal?.aborted)throw signal.reason||error;
