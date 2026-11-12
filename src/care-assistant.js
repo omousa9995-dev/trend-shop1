@@ -1,3 +1,4 @@
+import {requestGemini} from './gemini-provider.js';
 import {storefrontProducts} from '../public/catalog-policy.js';
 import {productDetails} from '../public/shop-tools.js';
 import {productType} from '../public/product-types.js';
@@ -211,7 +212,10 @@ export async function adminCare(req,env,{json,error,sameOrigin,content,throttle}
  let body;try{body=await content(req,5000)}catch{return error('بيانات غير صالحة')}
  if(body.action==='test'){
   if(!config.hasKey)return error('أضيفي مفتاح Google أولًا.');
-  try{const response=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${config.settings.model}`,{headers:{'x-goog-api-key':await apiKey(env,config)},signal:AbortSignal.timeout(10000)});const ok=response.ok;await response.body?.cancel();return ok?json({ok:true,message:'اتصال المفتاح بالنموذج يعمل. هذا الفحص لا يرسل صورًا أو محادثات ولا يثبت حالة الفوترة.'}):error('تعذّر الوصول إلى النموذج. راجعي المفتاح وصلاحية الوصول.',400)}catch{return error('تعذّر الاتصال بـGoogle الآن.',503)}
+  if(!ready(config))return error('فعّلي المساعد والفوترة قبل تجربة الرد.');
+  const day=await reserveRequest(env,config.settings.dailyLimit,false);if(!day)return error('وصل الحد اليومي؛ ارفعيه من الإعدادات أو جربي غدًا.',429);
+  let usage={};
+  try{const result=await requestGemini({apiKey:await apiKey(env,config),primary:config.settings.model,signal:AbortSignal.timeout(35000),payload:{contents:[{role:'user',parts:[{text:'Reply with OK only.'}]}],generationConfig:{maxOutputTokens:128,thinkingConfig:{thinkingLevel:'low'}}}});usage=result.data.usageMetadata||{};const candidate=result.data.candidates?.[0];if(candidate?.finishReason!=='STOP'||!candidate.content?.parts?.some(p=>!p.thought&&p.text?.trim()))throw Error('EMPTY_TEST');await recordOutcome(env,day,true,usage);return json({ok:true,model:result.model,fallback:result.fallback,message:'نجحت تجربة رد فعلي من النموذج. المحادثة جاهزة.'})}catch{await recordOutcome(env,day,false,usage).catch(()=>{});return error('لم تنجح تجربة الرد الفعلي. تحققي من المفتاح والفوترة وحدود الاستخدام.',503)}
  }
  if(body.revision!==(config.row?.revision||0))return error('تغيّرت الإعدادات؛ حدّثي القسم قبل الحفظ.',409);
  const next=normalizeCareSettings(body.settings);

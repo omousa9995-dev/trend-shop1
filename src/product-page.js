@@ -13,7 +13,7 @@ export function productMetadata(product,language='ar'){
 }
 export function productPageHtml(shell,product,language='ar'){
  const meta=productMetadata(product,language);
- let html=shell.replace(/<html lang="ar" dir="rtl">/,language==='en'?'<html lang="en" dir="ltr">':'<html lang="ar" dir="rtl">').replace(/<title>[^<]*<\/title>/i,()=>'<title>'+escape(meta.title)+'</title>')
+ let html=shell.replace(/<!-- LUMA_(HEADER|FOOTER)_START -->[\s\S]*?<!-- LUMA_\1_END -->/g,'').replace(/<html lang="ar" dir="rtl">/,language==='en'?'<html lang="en" dir="ltr">':'<html lang="ar" dir="rtl">').replace(/<title>[^<]*<\/title>/i,()=>'<title>'+escape(meta.title)+'</title>')
   .replace(/<meta name="description"[^>]*\/>/i,()=>'<meta name="description" content="'+escape(meta.description)+'"/>')
   .replace(/<link rel="canonical"[^>]*\/>/i,()=>'<link rel="canonical" href="'+escape(meta.url)+'"/>');
  for(const [name,value]of Object.entries({'og:title':meta.title,'og:description':meta.description,'og:type':'product','og:url':meta.url,'og:image':meta.image}))html=html.replace(new RegExp('<meta property="'+name+'"[^>]*\\/>','i'),()=>'<meta property="'+name+'" content="'+escape(value)+'"/>');

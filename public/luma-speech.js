@@ -36,12 +36,12 @@ export class LumaDictation{
    if(blob.size>MAX_BYTES||blob.size<44||!supportedMime(blob.type)||!Number.isFinite(durationSeconds)||durationSeconds<=0||durationSeconds>MAX_RECORDING_SECONDS)throw Error('اختاري تسجيلًا لا يتجاوز 45 ثانية وميغابايت واحد.');
    const data=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(Error('تعذّرت قراءة التسجيل.'));reader.readAsDataURL(blob)});
    if(sequence!==this.sequence)return;
-   const controller=new AbortController();this.controller=controller;timer=setTimeout(()=>controller.abort(),30000);
+   const controller=new AbortController();this.controller=controller;timer=setTimeout(()=>controller.abort(),40000);
    const response=await fetch('/api/transcribe',{method:'POST',headers:{'content-type':'application/json','x-trend-care':'1'},body:JSON.stringify({audioConsent:true,audio:{mimeType:normalizeMime(blob.type),data},durationSeconds}),signal:controller.signal});
    const result=await response.json().catch(()=>({}));if(!response.ok||typeof result.text!=='string'||!result.text.trim())throw Error(result.error||'ما قدرت أميّز الكلام. جرّبي مرة ثانية.');
-   if(sequence===this.sequence)this.onTranscript(result.text.slice(0,1500));
+   if(sequence===this.sequence){clearTimeout(timer);this.controller=null;this.stateTo('idle');await this.onTranscript(result.text.slice(0,1500))}
   }catch(error){if(sequence===this.sequence)this.onNotice(error.name==='AbortError'?'انتهى انتظار تحويل التسجيل؛ تقدري تكتبي سؤالكِ.':error.message)}
-  finally{clearTimeout(timer);if(sequence===this.sequence){this.controller=null;this.stateTo('idle')}}
+  finally{clearTimeout(timer);if(sequence===this.sequence&&this.state==='transcribing'){this.controller=null;this.stateTo('idle')}}
  }
  async fromFile(file){
   if(this.active)return;
