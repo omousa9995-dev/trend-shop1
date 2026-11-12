@@ -1,0 +1,53 @@
+{
+  "release": "5.18.3",
+  "storeUrl": "https://trendjo.pages.dev/",
+  "sourceCommit": "3b90fb5ad4f80a943ca5082b6c0437faa981b570",
+  "workerVersion": "4f3f1116-97bb-40a3-a9aa-0b0a84a513b5",
+  "deployment": "fcc1c180-feb5-4916-992e-826307164952",
+  "trafficPercentage": 100,
+  "packageSha256": "93ff71db9db82b2e58cb841fe5139ed259dabf94a01be5f87a841e42467271e2",
+  "ciRun": 43253978452,
+  "tests": {
+    "passed": 447,
+    "failed": 0
+  },
+  "productionChecks": {
+    "ageAndProviderOnboardingRemoved": true,
+    "liveCallingDisabled": true,
+    "dictationTranscriptReviewVerified": true,
+    "dictationUsedSyntheticAudioOnly": true,
+    "directCareWithoutPurchaseQuestionVerified": true,
+    "productCardsAndCartVerified": {
+      "release": "5.18.2",
+      "products": [
+        "TS0230",
+        "TS0335"
+      ],
+      "totalFils": 13490,
+      "budgetFils": 15000,
+      "addedToLocalTestCart": "TS0230"
+    },
+    "urgentInjuryGuidanceVerifiedOnFinalRelease": true,
+    "urgentResponseHasNoProductCards": true,
+    "pharmacyFollowUpVerified": true
+  },
+  "limits": {
+    "provider": "Intermittent provider HTTP 503 observed in live tests. Responses remain subject to provider availability; no fabricated model answer is substituted.",
+    "deviceSpeech": "The cloud browser reported a synthesis error. Audible Arabic playback must be checked on a device with an Arabic speech voice.",
+    "physicalIphoneMicrophoneVerified": false,
+    "physicalIphoneKeyboardVerified": false,
+    "actualMultiBrowserLoadTest": false
+  },
+  "assistantSettings": {
+    "revision": 5,
+    "dailyLimit": 50,
+    "voiceEnabled": false,
+    "dictationEnabled": true
+  },
+  "unchanged": [
+    "storefront orders",
+    "inventory",
+    "email integration",
+    "private key bindings"
+  ]
+}

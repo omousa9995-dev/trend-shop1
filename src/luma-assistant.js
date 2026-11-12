@@ -167,7 +167,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
    }
    if(!spoken&&!displayed&&!questionSent&&!handoffSent)throw Error('EMPTY_REPLY');
    send('done',{});await recordCareOutcome(env,day,true,usage);
-  }catch(error){const code=abort.signal.aborted?'TIMEOUT':/^(?:PROVIDER_HTTP_[0-9]{3}|FINISH_[A-Z_]{0,50}|EMPTY_REPLY|EMPTY_STREAM|STREAM_TOO_LARGE)$/.test(error?.message)?error.message:'RESPONSE_FAILED';send('error',{code,message:'ما اكتمل رد لُمى. أعيدي إرسال سؤالكِ بعد قليل.'});await recordCareOutcome(env,day,false,usage).catch(()=>{})}finally{clearTimeout(timer);req.signal.removeEventListener('abort',onAbort);if(!cancelled)controller.close()}})();
+  }catch(error){const code=abort.signal.aborted?'TIMEOUT':/^(?:PROVIDER_HTTP_[0-9]{3}|FINISH_[A-Z_]{0,50}|EMPTY_REPLY|EMPTY_STREAM|STREAM_TOO_LARGE)$/.test(error?.message)?error.message:'RESPONSE_FAILED';send('followup',{team:team()});send('error',{code,message:'لُمى مشغولة مؤقتًا. تقدري تحاولي مرة ثانية أو تتواصلي مباشرة مع صيدلانيات المتجر.'});await recordCareOutcome(env,day,false,usage).catch(()=>{})}finally{clearTimeout(timer);req.signal.removeEventListener('abort',onAbort);if(!cancelled)controller.close()}})();
   // Keep start synchronous so cancelling the reader immediately aborts upstream I/O.
   // The Worker execution context owns the producer until it completes.
   if(ctx?.waitUntil)ctx.waitUntil(work);

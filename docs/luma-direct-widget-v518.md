@@ -1,4 +1,4 @@
-# Luma 5.18.3 — direct chat, recorded dictation and spoken replies
+# Luma 5.18.4 — direct chat, recorded dictation and spoken replies
 
 Requested by the store owner on 2026-11-12. Existing Trend Shop Pages/Worker hosting and nine production bindings are preserved.
 
@@ -31,3 +31,13 @@ Initial production deployment of 5.18.0 exposed an incomplete care answer despit
 5.18.3 therefore adds a narrow, negation-aware immediate response for explicit deep wounds/uncontrolled bleeding before provider inference or paid quota reservation, based on NHS first-aid guidance. It advises timely emergency care before the final supplementary pharmacy follow-up and returns no product cards. This is not a disease classifier. The general specialist message no longer assumes every issue is a photo or a dermatology-only problem.
 
 Speech controls are implemented using device synthesis. The cloud test browser returned a synthesis error; audible Arabic playback and a physical iPhone microphone/keyboard remain unverified on a real device. Recorded synthetic audio transcription was verified successfully on production.
+
+## Final deployment
+
+Published **5.18.3** at https://trendjo.pages.dev/ with 100% traffic on Worker version `4f3f1116-97bb-40a3-a9aa-0b0a84a513b5`, deployment `fcc1c180-feb5-4916-992e-826307164952`, source `3b90fb5ad4f80a943ca5082b6c0437faa981b570`. Package SHA-256: `93ff71db9db82b2e58cb841fe5139ed259dabf94a01be5f87a841e42467271e2`. All nine bindings preserved. Settings revision 5 disables Live and enables optional dictation; the existing 50-request/day cap is retained.
+
+Final full suite **447/447 passed**; CI **43253978452** passed. A production hypothetical deep-wound/continuous-bleeding message immediately produced the intended emergency guidance, no product offer, and a final pharmacy WhatsApp link. Earlier actual production checks verified complete care steps, canonical product cards/cart, direct advice without a shopping questionnaire, and a reviewed transcript from synthetic audio.
+
+Some later ordinary model requests returned provider HTTP 503. This is an observed availability limit, not a guaranteed continuous service. The UI offers a clear retry; urgent explicit injury guidance works independently. Device speech controls were tested, but the cloud browser could not synthesize audio. Do not claim verified audible Arabic output or a real iPhone microphone/keyboard test. No order, payment, customer message or email was created.
+
+5.18.4 adds the fixed pharmacy WhatsApp follow-up when inference is unavailable, while preserving the retry/error state and recording exactly one failed request. No fabricated care answer or product recommendation substitutes for an unavailable provider.

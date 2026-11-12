@@ -128,4 +128,8 @@ test('Explicit deep wounds or uncontrolled bleeding get immediate guidance and p
 test('Negated injury signals and ordinary skin concerns do not trigger the emergency path',()=>{
  for(const text of ['ما عندي جرح عميق ولا نزيف مستمر، بس حبوب خفيفة','ما في جرح عميق أو نزيف مستمر','حبوب الظهر مش مؤلمة وبدون جروح عميقة','جفاف اليدين بدون نزيف','No deep wound or heavy bleeding','إيدي ناشفة، ما فيها جروح ولا نزيف ولا ألم'])assert.equal(urgentCareReply(text),null);
 });
+test('Unavailable inference offers fixed pharmacy follow-up with a retry state and no invented recommendation',async()=>{
+ const f=fixture(),old=globalThis.fetch;globalThis.fetch=async()=>new Response('private-provider-detail',{status:503,headers:{'retry-after':'60'}});
+ try{const out=await events(await publicLumaChat(request({message:'بدي عناية لبشرتي'}),f.env,helpers,{})),follow=out.find(e=>e.event==='followup');assert.match(follow.data.team.href,/^https:\/\/wa\.me\/962790025430/);assert.match(follow.data.team.label,/صيدلانيات/);assert.equal(out.at(-1).event,'error');assert.equal(out.at(-1).data.code,'PROVIDER_HTTP_503');assert.equal(out.filter(e=>e.event==='products').length,0);assert.doesNotMatch(JSON.stringify(out),/private-provider-detail/);assert.equal(f.db.prepare('SELECT failures FROM care_assistant_usage').get().failures,1)}finally{globalThis.fetch=old;f.close()}
+});
 
