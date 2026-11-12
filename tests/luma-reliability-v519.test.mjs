@@ -119,3 +119,17 @@ test('An incomplete thinking turn is reported as incomplete and receives one bou
  globalThis.fetch=async(url,init)=>{n++;if(n===1){const body=JSON.parse(init.body);assert.equal(body.generation_config.max_output_tokens,8192);return json({status:'incomplete',steps:[{type:'model_output',content:[{type:'text',text:'private partial text'}]}]})}return json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"answer_customer","text":"أهلًا فيكِ"}'}]}}]})};
  try{const result=await requestGemini({...options,transport:'actions',onAttempt:e=>attempts.push(e)});assert.equal(n,2);assert.equal(attempts[0].reason,'OUTPUT_INCOMPLETE');assert.doesNotMatch(JSON.stringify(result.data),/private partial/);assert.equal(result.data.candidates[0].content.parts[0].functionCall.args.text,'أهلًا فيكِ')}finally{globalThis.fetch=old}
 });
+
+test('Catalog actions may omit customer text and known declared function shapes normalize without changing the selected IDs',async()=>{
+ const {actionResponse}=await import('../src/luma-json-actions.js');
+ const response=value=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(value)}]}}]});
+ const catalog=actionResponse(response({action:'get_catalog',query:'moisturizer',area:'face'})).candidates[0].content.parts[0].functionCall;
+ assert.equal(catalog.name,'get_catalog');assert.equal(catalog.args.query,'moisturizer');assert.equal(catalog.args.text,'');
+ for(const value of [{name:'show_products',args:{carePlan:'روتين',productIds:['TSDEMO1']}},{functionCall:{name:'show_products',args:{carePlan:'روتين',productIds:['TSDEMO1']}}},{function_call:{name:'show_products',arguments:'{"carePlan":"روتين","productIds":["TSDEMO1"]}'}}]){const call=actionResponse(response(value)).candidates[0].content.parts[0].functionCall;assert.equal(call.name,'show_products');assert.deepEqual(call.args.productIds,['TSDEMO1']);assert.equal(call.args.carePlan,'روتين')}
+});
+
+test('Action compatibility rejects unknown functions, multiple actions and malformed arguments with controlled categories',async()=>{
+ const {actionResponse}=await import('../src/luma-json-actions.js');
+ const response=value=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(value)}]}}]});
+ for(const value of [{name:'delete_all',args:{}},[{name:'answer_customer',args:{text:'one'}},{name:'answer_customer',args:{text:'two'}}],{name:'get_catalog',arguments:'not JSON'},{action:'answer_customer'}])assert.throws(()=>actionResponse(response(value)),error=>error.message==='INVALID_ACTION_OUTPUT'&&/^ACTION_/.test(error.reason));
+});

@@ -20,15 +20,33 @@ export function actionRequest(payload){
 export function actionResponse(data){
  const candidate=data?.candidates?.[0];if(candidate?.finishReason!=='STOP')return data;
  const raw=(candidate.content?.parts||[]).filter(p=>!p.thought&&typeof p.text==='string').map(p=>p.text).join('').trim();
- const fenced=/^```(?:json)?\s*\n([\s\S]*?)\n```$/i.exec(raw);
+ const fenced=/^```(?:json)?\s*([\s\S]*?)\s*```$/i.exec(raw);
  const text=fenced?fenced[1]:raw;
- let output;try{output=JSON.parse(text)}catch{throw Error('INVALID_ACTION_OUTPUT')}
- if(!ACTION_SCHEMA.properties.action.enum.includes(output?.action)||typeof output.text!=='string')throw Error('INVALID_ACTION_OUTPUT');
- const {action,...args}=output;
+ const invalid=reason=>Object.assign(Error('INVALID_ACTION_OUTPUT'),{reason});
+ const object=value=>!!value&&typeof value==='object'&&!Array.isArray(value);
+ let output;try{output=JSON.parse(text)}catch{throw invalid('ACTION_JSON_SYNTAX')}
+ if(!object(output))throw invalid('ACTION_OBJECT');
+ let action,args;
+ if(typeof output.action==='string'){
+  const {action:name,args:nested,...rest}=output;action=name;args={...(object(nested)?nested:{}),...rest};
+ }else{
+  // Some model turns preserve the declared function shape instead of flattening
+  // it. Accept exactly one known function, then use the same canonical validator.
+  const call=output.functionCall??output.function_call??output;
+  if(!object(call)||typeof call.name!=='string')throw invalid('ACTION_NAME');
+  action=call.name;args=call.args??call.arguments;
+  if(typeof args==='string'){try{args=JSON.parse(args)}catch{throw invalid('ACTION_ARGUMENTS')}}
+  if(!object(args))throw invalid('ACTION_ARGUMENTS');
+  args={...args};
+ }
+ if(!ACTION_SCHEMA.properties.action.enum.includes(action))throw invalid('ACTION_NAME');
+ const message=typeof args.text==='string'?args.text:action==='get_catalog'?'':action==='show_products'?args.carePlan:action==='handoff_to_team'?(args.reason??''):args.message;
+ if(typeof message!=='string')throw invalid('ACTION_TEXT');
+ args.text=message;
  if(action==='show_products'){
-  args.carePlan=output.text;
+  args.carePlan=message;
   if(!Array.isArray(args.productIds)||!args.productIds.length)args.productIds=(Array.isArray(args.selections)?args.selections:[]).map(p=>p?.productId).filter(id=>typeof id==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(id)).slice(0,12);
  }
- if(action==='handoff_to_team')args.reason=output.text;
+ if(action==='handoff_to_team')args.reason=message;
  return {...data,candidates:[{...candidate,content:{role:'model',parts:[{functionCall:{id:'action-call',name:action,args}}]}}]};
 }
