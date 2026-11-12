@@ -17,3 +17,7 @@ The real recorded-audio path transcribed and submitted successfully, preserving 
 ## 5.19.2 compatibility path
 
 Production also returned HTTP 503 for native Interactions tools. The chat path now asks Gemini for one typed JSON action using the already working structured-output endpoint, then dispatches it through the same canonical server functions. No native-tool call is required for the customer reply. This retains one-question turns, live catalog lookups, product-card actions, budget checks and pharmacy follow-up. The primary model is aligned with the successfully verified transcription model. The adapter does not turn off clinical guardrails or substitute fabricated local answers. 459 tests pass before deployment; actual replies are verified next.
+
+## 5.19.3 on-demand catalog
+
+The first chat turn now contains no catalog inventory. Gemini reads only the needed live catalog slice through get_catalog, with full details fetched by selected IDs. Ordinary advice and clarifying questions avoid a repeated store-wide inventory payload. This isolates the remaining production failure from inventory size and reduces token use and latency. Relevant 48 checks pass; the full CI suite runs before activation.
