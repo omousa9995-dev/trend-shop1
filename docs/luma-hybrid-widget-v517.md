@@ -1,4 +1,4 @@
-# Luma embedded chat and native Live audio — v5.17.2
+# Luma embedded chat and native Live audio — v5.17.3
 
 The owner explicitly requested implementing and activating native bidirectional voice alongside text chat, and authorized the existing Cloudflare and Google resources. Hosting stays on the existing Pages -> private STORE service binding -> trend-shop-jo Worker. Pages advanced mode ignores the functions directory, so the requested Pages adapters share the same Worker implementation; actual production endpoints are also registered in src/worker.js. No parallel credential-bearing test service is created.
 
@@ -36,10 +36,14 @@ Primary references checked 2026-11-12:
 - https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live
 - https://developers.cloudflare.com/pages/functions/advanced-mode/
 
-## Conversation refinement — v5.17.2
+## Conversation refinement — v5.17.3
 
 The first production conversation revealed repeated questions for face area and balanced/non-sensitive skin already stated in the original message. Tool calls now carry a validated profile extracted by Gemini from explicit customer words; the browser retains it only in memory and supplies it in subsequent text/voice tool requests. The server suppresses questions for already known fields while still allowing explicit changes. Budget questions remain separate from inferred preferences. Native voice can acknowledge an explicit oral budget confirmation without speech-to-text or a mandatory click; an already confirmed budget cannot be silently increased. Quick replies remain disabled until the current response finishes. Twenty-four focused integration/client tests pass; the final CI gate covers the whole suite.
 
-## Price presentation — v5.17.2
+## Price presentation — v5.17.3
 
 Production cards showed the correct 11.99 JOD total, but the model re-quoted prices in free text using an ambiguous comma/three-decimal format. Text recommendations now stop after canonical cards and a short plain confirmation, eliminating a redundant generation pass and preventing a second price list. Catalog/tool facts expose decimal priceJod and fixed priceLabel values; internal *Fils fields are removed from function results sent back to Gemini Live, while the UI retains integer-fils arithmetic. Two additional integration tests cover this separation and the single-generation card path.
+
+## Quick reply fallback — v5.17.3
+
+A production model turn asked to confirm the budget in plain text instead of invoking ask_question. The widget now supplies optional 5/10/15/20 JOD choices for this observed budget-clarification case without adding a duplicate question. Product selection remains with Gemini. Twenty-seven focused tests pass; final whole-suite CI remains the release gate.

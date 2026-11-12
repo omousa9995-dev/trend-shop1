@@ -1,10 +1,10 @@
 {
-  "version": "5.17.2",
+  "version": "5.17.3",
   "textModel": "gemini-3.5-flash-lite",
   "liveModel": "gemini-3.8-live",
   "tests": {
-    "previousFullPassed": 436,
-    "newAssistantTestsPassed": 26,
+    "previousFullPassed": 438,
+    "newAssistantTestsPassed": 27,
     "failed": 0,
     "finalCIPending": true
   },
@@ -53,15 +53,16 @@
   "package": {
     "files": 637,
     "modules": 33,
-    "bytes": 6460654,
-    "sha256": "9acee2a7f2d773fc3856f4f0007c41d473484714a0677dd885e85defc59e78cc"
+    "bytes": 6460970,
+    "sha256": "1476518a00c1c2d67f750755bfb1c8bf97b4827f0c79dc0c3cacc63cacde5cfc"
   },
   "conversationRefinement": {
     "geminiResolvedProfilePersistedInMemory": true,
     "alreadyAnsweredQuestionsSuppressed": true,
     "oralBudgetConfirmationSupported": true,
     "knownBudgetCannotSilentlyIncrease": true,
-    "quickRepliesDisabledUntilResponseFinishes": true
+    "quickRepliesDisabledUntilResponseFinishes": true,
+    "budgetQuickReplyFallback": true
   },
   "pricePresentation": {
     "canonicalIntegerFilsForUI": true,
