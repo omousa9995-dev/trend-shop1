@@ -140,11 +140,11 @@ export async function publicLumaChat(req,env,helpers,ctx){
    if(g.input.warningSigns){send('handoff',{...professionalResult(),team:team()});send('done',{});await recordCareOutcome(env,day,true);return}
    const {image,...context}=g.input;
    const contents=[{role:'user',parts:[{text:JSON.stringify(context)},...(image?[{inlineData:image}]:[])]}];
-   let questionSent=false,handoffSent=false,displayed=false,answered=false,spoken='',selectedModel;
+   let questionSent=false,handoffSent=false,displayed=false,answered=false,spoken='',selectedModel,selectedApi;
    for(let round=0;round<5;round++){
     const payload={systemInstruction:{parts:[{text:lumaSystem(g.input,[])}]},contents,tools:LUMA_TOOLS,toolConfig:{functionCallingConfig:{mode:'ANY'}},generationConfig:{maxOutputTokens:4096,thinkingConfig:{thinkingLevel:'low'}}};
-    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,payload,transport:'actions',timeoutMs:30000,signal:abort.signal,onAttempt:attempt=>send('provider',attempt)});
-    selectedModel=completion.model;
+    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,preferredApi:selectedApi,payload,transport:'actions',timeoutMs:30000,signal:abort.signal,onAttempt:attempt=>send('provider',{...attempt,round:round+1})});
+    selectedModel=completion.model;selectedApi=completion.api;
     const data=completion.data,candidate=data.candidates[0],parts=(candidate.content?.parts||[]).filter(p=>!p.thought),calls=parts.filter(p=>p.functionCall).slice(0,6).map(p=>p.functionCall),finish=candidate.finishReason||'',roundUsage=data.usageMetadata||{};
     let textBuffer=parts.filter(p=>typeof p.text==='string').map(p=>p.text).join('');
     for(const key of Object.keys(usage))usage[key]+=(Number.isInteger(roundUsage[key])?roundUsage[key]:0);

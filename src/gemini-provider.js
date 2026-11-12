@@ -14,27 +14,27 @@ function problem(status,data){
  const reason=status===401||status===403?'AUTH':status===402||/billing|prepay|credit balance/i.test(message)?'BILLING':status===404?'MODEL':status===429?'RATE_LIMIT':/overload|capacity|busy/i.test(message)?'CAPACITY':status>=500?'UNAVAILABLE':'INVALID_REQUEST';
  return Object.assign(Error('PROVIDER_HTTP_'+status),{status,reason});
 }
-export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',onAttempt=()=>{},timeoutMs=15000}){
+export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',preferredApi,onAttempt=()=>{},timeoutMs=15000}){
  const candidates=model?[model,model]:modelOrder(primary);let last;
  for(let index=0;index<candidates.length;index++){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
   const selected=candidates[index];if(!GEMINI_TEXT_MODELS.includes(selected))throw Error('INVALID_PROVIDER_MODEL');
+  const actions=transport==='actions',live=transport==='interactions'||actions&&(preferredApi==='generateContent'?index===1:index===0),api=live?'interactions':'generateContent';
   const timeout=new AbortController(),timer=setTimeout(()=>timeout.abort(new DOMException('Attempt timed out','TimeoutError')),timeoutMs);
   let retryAfter=0;
   try{
    // Use the current stateless API for actions first, then a bounded plain-text
    // generateContent alternate. Neither path enables native tools/JSON decoding.
-   const actions=transport==='actions',live=transport==='interactions'||actions&&index===0;
    const prepared=actions?actionRequest(payload):payload,body=live?interactionRequest(selected,prepared):prepared;
    const response=await fetch(live?'https://generativelanguage.googleapis.com/v1beta/interactions':'https://generativelanguage.googleapis.com/v1beta/models/'+selected+':generateContent',{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':apiKey,...(live?{'Api-Revision':'2026-05-20'}:{})},body:JSON.stringify(body),signal:signal?AbortSignal.any([signal,timeout.signal]):timeout.signal});
    const hint=response.headers.get('retry-after');if(hint)retryAfter=/^\d+(?:\.\d+)?$/.test(hint)?Number(hint)*1000:Math.max(0,Date.parse(hint)-Date.now());
    if(!response.ok){const info=await boundedJson(response,16000).catch(()=>({}));throw problem(response.status,info)}
    const raw=await boundedJson(response,180000),normalized=live?interactionResponse(raw):raw,data=actions?actionResponse(normalized):normalized;if(!Array.isArray(data.candidates)||!data.candidates.length)throw Error('PROVIDER_RESPONSE_INVALID');
-   onAttempt({model:selected,transport,attempt:index+1,ok:true});return {data,model:selected,fallback:index>0};
+   onAttempt({model:selected,transport,api,attempt:index+1,ok:true});return {data,model:selected,api,fallback:index>0};
   }catch(error){
    if(signal?.aborted)throw signal.reason||error;
    const timedOut=timeout.signal.aborted;last=timedOut?Object.assign(Error('PROVIDER_TIMEOUT'),{reason:'TIMEOUT'}):error;
-   onAttempt({model:selected,transport,attempt:index+1,ok:false,status:last.status||0,reason:last.reason||'TRANSPORT'});
+   onAttempt({model:selected,transport,api,attempt:index+1,ok:false,status:last.status||0,reason:last.reason||'TRANSPORT'});
    const transient=timedOut||!last.status||[408,429,500,502,503,504].includes(last.status)||last.status===404;
    if(!transient||index===candidates.length-1||retryAfter>2000)throw last;
   }finally{clearTimeout(timer)}
