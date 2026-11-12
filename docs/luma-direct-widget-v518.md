@@ -41,3 +41,9 @@ Final full suite **447/447 passed**; CI **43253978452** passed. A production hyp
 Some later ordinary model requests returned provider HTTP 503. This is an observed availability limit, not a guaranteed continuous service. The UI offers a clear retry; urgent explicit injury guidance works independently. Device speech controls were tested, but the cloud browser could not synthesize audio. Do not claim verified audible Arabic output or a real iPhone microphone/keyboard test. No order, payment, customer message or email was created.
 
 5.18.4 adds the fixed pharmacy WhatsApp follow-up when inference is unavailable, while preserving the retry/error state and recording exactly one failed request. No fabricated care answer or product recommendation substitutes for an unavailable provider.
+
+## Final availability follow-up release
+
+Published **5.18.4** with 100% traffic on version `208b9625-5c81-49f5-9bcc-461417c5eda5`, deployment `457d4e71-2e05-4a6e-959b-7e7902d14d02`, source `68c40fb36eb6f46f90e2fcba60c193b1d77c47f0`. Package SHA-256 `4ef0df1c37cc7cf050f19621e913512e4169f158be7aeff27ec26104bb10a849`. Full suite **448/448** and CI **43255532552** passed. The only additional behavior is fixed pharmacy follow-up on failed inference; earlier verified direct chat, transcription, product-card/cart and immediate injury paths are preserved. Frontend assets retain their unchanged 5.18.2/5.18.0 versions. Provider availability and physical iPhone/audio limitations above remain applicable.
+
+The final production browser check displayed the unavailable-response notice and the fixed pharmacy WhatsApp button correctly, with direct text entry, speech/dictation controls and no age/provider consent panel. A screenshot was captured and the store tab retained for owner review. This confirms graceful fallback, not successful model availability in that final attempt.

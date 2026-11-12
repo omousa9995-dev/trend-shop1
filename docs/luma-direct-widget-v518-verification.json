@@ -1,14 +1,14 @@
 {
-  "release": "5.18.3",
+  "release": "5.18.4",
   "storeUrl": "https://trendjo.pages.dev/",
-  "sourceCommit": "3b90fb5ad4f80a943ca5082b6c0437faa981b570",
-  "workerVersion": "4f3f1116-97bb-40a3-a9aa-0b0a84a513b5",
-  "deployment": "fcc1c180-feb5-4916-992e-826307164952",
+  "sourceCommit": "68c40fb36eb6f46f90e2fcba60c193b1d77c47f0",
+  "workerVersion": "208b9625-5c81-49f5-9bcc-461417c5eda5",
+  "deployment": "457d4e71-2e05-4a6e-959b-7e7902d14d02",
   "trafficPercentage": 100,
-  "packageSha256": "93ff71db9db82b2e58cb841fe5139ed259dabf94a01be5f87a841e42467271e2",
-  "ciRun": 43253978452,
+  "packageSha256": "4ef0df1c37cc7cf050f19621e913512e4169f158be7aeff27ec26104bb10a849",
+  "ciRun": 43255532552,
   "tests": {
-    "passed": 447,
+    "passed": 448,
     "failed": 0
   },
   "productionChecks": {
@@ -27,9 +27,13 @@
       "budgetFils": 15000,
       "addedToLocalTestCart": "TS0230"
     },
-    "urgentInjuryGuidanceVerifiedOnFinalRelease": true,
+    "urgentInjuryGuidanceVerifiedOnFinalRelease": false,
     "urgentResponseHasNoProductCards": true,
-    "pharmacyFollowUpVerified": true
+    "pharmacyFollowUpVerified": true,
+    "urgentInjuryGuidanceVerifiedRelease": "5.18.3",
+    "providerUnavailablePharmacyFallbackUnitTestPassed": true,
+    "providerUnavailablePharmacyFallbackVerifiedOnFinalRelease": true,
+    "finalWidgetScreenshot": "Observed production UI with direct chat, speech/dictation controls and pharmacy follow-up; no age/provider onboarding."
   },
   "limits": {
     "provider": "Intermittent provider HTTP 503 observed in live tests. Responses remain subject to provider availability; no fabricated model answer is substituted.",
