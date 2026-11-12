@@ -115,4 +115,9 @@ test('An incomplete provider answer returns a bounded non-sensitive diagnostic a
  const f=fixture(),old=globalThis.fetch;globalThis.fetch=async()=>stream([{candidates:[{finishReason:'MAX_TOKENS',content:{parts:[{text:'خطوة غير مكتملة.'}]}}]}]);
  try{const out=await events(await publicLumaChat(request({message:'كيف أعتني ببشرتي؟'}),f.env,helpers,{}));assert.equal(out.at(-1).event,'error');assert.equal(out.at(-1).data.code,'FINISH_MAX_TOKENS');assert.equal(out.filter(e=>e.event==='done').length,0);assert.equal(f.db.prepare('SELECT failures FROM care_assistant_usage').get().failures,1)}finally{globalThis.fetch=old;f.close()}
 });
+test('Every real request requires a response tool; a care-only answer needs no budget and can end with pharmacy follow-up',async()=>{
+ const f=fixture(),old=globalThis.fetch;let sent;
+ globalThis.fetch=async(url,options)=>{sent=JSON.parse(options.body);return stream([chunk([{functionCall:{name:'answer_customer',args:{text:'رطبي إيديكِ بعد الغسل وارتدي قفازات عند استخدام المنظفات.',followUp:true,profile:{area:'hands'}}}}])])};
+ try{const out=await events(await publicLumaChat(request({message:'إيدي ناشفة، كيف أعتني فيها؟'}),f.env,helpers,{}));assert.equal(sent.toolConfig.functionCallingConfig.mode,'ANY');assert.equal(out.filter(e=>e.event==='question').length,0);assert.match(out.find(e=>e.event==='delta').data.text,/رطبي/);assert.equal(out.at(-2).event,'followup');assert.equal(out.at(-1).event,'done');assert.equal(f.db.prepare('SELECT successes FROM care_assistant_usage').get().successes,1)}finally{globalThis.fetch=old;f.close()}
+});
 

@@ -1,4 +1,4 @@
-# Luma 5.18.1 — direct chat, recorded dictation and spoken replies
+# Luma 5.18.2 — direct chat, recorded dictation and spoken replies
 
 Requested by the store owner on 2026-11-12. Existing Trend Shop Pages/Worker hosting and nine production bindings are preserved.
 
@@ -23,3 +23,5 @@ Production verification and exact deployment identifiers are appended after publ
 Initial production deployment of 5.18.0 exposed an incomplete care answer despite passing local checks. The dictation endpoint successfully transcribed an 86,638-byte, 2.705-second synthetic WAV into the editable composer ("I need a gentle cleanser for my dry skin.") without automatically sending it. No real voice, customer data or new order was used.
 
 5.18.1 reduces the initial catalog to a compact factual index, retrieves exact detailed facts for at most eight requested IDs, caps general lookups at twenty entries and allows 4096 output tokens per bounded round. This reduces repeated prompt payload for the enlarged eligible catalog. Incomplete answers return only a safe enumerated error code; partial text is replaced with a clear retry message. No upstream diagnostic bodies, customer content or credentials are logged. Final live verification follows the redeployment.
+
+5.18.1 completed the actual care text, but the provider AUTO mode mentioned a product without calling its card tool. 5.18.2 requires a response function on every real turn (`ANY`): `answer_customer` for care-only/FAQ, `ask_question` for one missing detail, and `show_products` for any recommendation. This preserves direct care answers without a budget question and makes cards part of the recommendation contract. The client no longer manufactures a budget confirmation merely because a sentence contains the word budget.
