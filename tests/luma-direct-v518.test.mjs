@@ -79,8 +79,8 @@ test('Live catalog includes exact approved PanOxyl 4% and 10% washes for face/bo
  assert.equal(catalog[0].cosmeticCandidate,false);assert.equal(catalog[0].lumaCandidate,true);assert.equal(catalog[0].activeStrength,'4%');assert.deepEqual(catalog[0].areas,['face','body']);assert.match(catalog[0].assistantHowToUse,/اشطفي/);assert.equal(catalog[1].activeStrength,'10%');assert.equal(catalog[2].lumaCandidate,false);assert.equal(catalog[3].lumaCandidate,false);
 });
 test('A practical routine is emitted before canonical cards without a compulsory pharmacy pitch',async()=>{
- const f=fixture(),old=globalThis.fetch;globalThis.fetch=async()=>stream([chunk([{functionCall:{...show,args:{...show.args,carePlan:'١. غسل لطيف.\n٢. ترطيب بعد الغسل.',profile:{area:'face'}}}}])]);
- try{const out=await events(await publicLumaChat(request(payload()),f.env,helpers,{}));const plan=out.findIndex(e=>e.event==='delta'&&e.data.text.includes('غسل لطيف')),cards=out.findIndex(e=>e.event==='products'),follow=out.findIndex(e=>e.event==='followup');assert.ok(plan<cards);assert.equal(follow,-1);assert.equal(out.at(-1).event,'done')}finally{globalThis.fetch=old;f.close()}
+ const f=fixture(),old=globalThis.fetch;globalThis.fetch=async()=>stream([chunk([{functionCall:{...show,args:{...show.args,carePlan:'١. غسل لطيف.\n٢. ترطيب بعد الغسل.\nالمنتجات المقترحة: TSDEMO1, TSDEMO2',profile:{area:'face'}}}}])]);
+ try{const out=await events(await publicLumaChat(request(payload()),f.env,helpers,{}));const plan=out.findIndex(e=>e.event==='delta'&&e.data.text.includes('غسل لطيف')),cards=out.findIndex(e=>e.event==='products'),follow=out.findIndex(e=>e.event==='followup');assert.ok(plan<cards);assert.doesNotMatch(out[cards].data.carePlan,/TSDEMO|المنتجات المقترحة/);assert.equal(follow,-1);assert.equal(out.at(-1).event,'done')}finally{globalThis.fetch=old;f.close()}
 });
 
 async function ui({fetch:network,speech=false}={}){
