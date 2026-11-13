@@ -4,7 +4,7 @@ import {readFileSync} from 'node:fs';
 import {buildSync} from 'esbuild';
 import {JSDOM} from 'jsdom';
 import {consumeLumaStream,appendLumaHistory} from '../public/luma-stream.js';
-import {lumaStoreReply,lumaDeliveryText,explicitLumaBudget,shortlistLumaCatalog} from '../src/luma-store-facts.js';
+import {lumaStoreReply,lumaDeliveryText,quickLumaAdvice,explicitLumaBudget,shortlistLumaCatalog} from '../src/luma-store-facts.js';
 import {validateCareInput} from '../src/care-assistant.js';
 const pause=()=>new Promise(r=>setTimeout(r,3));
 const until=async check=>{for(let i=0;i<150&&!check();i++)await pause();assert.ok(check(),'UI did not reach expected state')};
@@ -55,3 +55,7 @@ test('Shortlist includes complementary body acne facts without crossing into fac
  const base={lumaCandidate:true,priceFils:3000,brand:'Test',careClass:'everyday'},products=[{...base,id:'TSFACE1',name:'Face cream',type:'moisturizer',areas:['face']},{...base,id:'TSBODY1',name:'Body lotion',type:'body-care',areas:['body']},{...base,id:'TSACNE4',name:'PanOxyl 4%',type:'cleanser',areas:['face','body'],careClass:'otc-acne-wash',activeStrength:'4%'}];const chosen=shortlistLumaCatalog(products,{message:'حبوب بالظهر',history:[],existingIds:[],budgetFils:null,area:'unknown'});assert.deepEqual(chosen.map(p=>p.id),['TSACNE4','TSBODY1']);
 });
 test('Site entry avatar reuses the actual site girl in header, footer and text-only dialog',()=>{const shell=readFileSync(new URL('../public/index.html',import.meta.url),'utf8'),dom=new JSDOM(shell);assert.equal(dom.window.document.querySelectorAll('[data-care-region] img[src="/images/editorial/beauty-hero-v2.webp"]').length,2);dom.window.close();assert.doesNotMatch(bundle,/speechSynthesis|getUserMedia|MediaRecorder|luma-speech/)});
+
+test('Clear non-shopping dryness and hydration questions receive immediate advice while medical constraints stay outside fast advice',()=>{
+ const input={message:'كيف نهتم بجفاف البشرة يوميا؟ بدون منتجات حاليا',history:[]};assert.match(quickLumaAdvice(input).text,/رطبة شوي/);input.history=[{role:'user',text:input.message}];input.message='هل شرب الماء وحده بكفي؟';assert.match(quickLumaAdvice(input).text,/ما بتكفي/);input.message='عندي مرض كلى وجفاف، كم أشرب ماء؟';assert.equal(quickLumaAdvice(input),null);input.message='حبوب مؤلمة مع صديد، بدون منتجات';assert.equal(quickLumaAdvice(input),null);
+});

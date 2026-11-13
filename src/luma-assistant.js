@@ -3,7 +3,7 @@ import {readCareSettings,careReady,careApiKey,loadCareCatalog,careCatalogRevisio
 import {urgentCareReply} from './luma-urgent-care.js';
 
 import {requestGemini} from './gemini-provider.js';
-import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,explicitLumaBudget} from './luma-store-facts.js';
+import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,explicitLumaBudget,quickLumaAdvice} from './luma-store-facts.js';
 import {shippingFee} from '../public/commerce.js';
 export const LUMA_TEXT_MODEL='gemini-3.8-flash';
 import {lumaText,lumaProductAllowed} from './luma-care-knowledge.js';
@@ -142,7 +142,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
  const g=await gate(req,env,helpers);if(g.error)return g.error;
  if(!g.input.message&&!g.input.image)return helpers.error('اكتبي سؤالكِ أو أرفقي صورة مع احتياجكِ.',400);
  const urgent=urgentCareReply(g.input.message);if(urgent){const handoff={type:'handoff',...professionalResult(),message:urgent,team:team()};return new Response('event: ready\ndata: {}\n\nevent: handoff\ndata: '+JSON.stringify(handoff)+'\n\nevent: done\ndata: {}\n\n',{headers:{'content-type':'text/event-stream; charset=utf-8','cache-control':'no-store, no-transform','x-content-type-options':'nosniff'}})}
- const factual=!g.input.image&&!g.input.warningSigns&&lumaStoreReply(g.input.message);if(factual)return new Response('event: ready\ndata: {}\n\nevent: delta\ndata: '+JSON.stringify({text:factual.text})+'\n\n'+(factual.team?'event: followup\ndata: '+JSON.stringify({team:factual.team})+'\n\n':'')+'event: done\ndata: {}\n\n',{headers:{'content-type':'text/event-stream; charset=utf-8','cache-control':'no-store, no-transform','x-content-type-options':'nosniff'}});
+ const factual=!g.input.image&&!g.input.warningSigns&&(lumaStoreReply(g.input.message)||quickLumaAdvice(g.input));if(factual)return new Response('event: ready\ndata: {}\n\nevent: delta\ndata: '+JSON.stringify({text:factual.text})+'\n\n'+(factual.team?'event: followup\ndata: '+JSON.stringify({team:factual.team})+'\n\n':'')+'event: done\ndata: {}\n\n',{headers:{'content-type':'text/event-stream; charset=utf-8','cache-control':'no-store, no-transform','x-content-type-options':'nosniff'}});
  const day=await reserveCareRequest(env,g.config.settings.dailyLimit,!!g.input.image);if(!day)return helpers.error('وصلت لُمى لحد الاستخدام اليومي؛ تقدري تتواصلي مع المتجر.',429);
  const abort=new AbortController();let cancelled=false;
  const timer=setTimeout(()=>abort.abort(),40000),onAbort=()=>abort.abort();req.signal.addEventListener('abort',onAbort,{once:true});
@@ -151,15 +151,15 @@ export async function publicLumaChat(req,env,helpers,ctx){
   const work=(async()=>{let usage={promptTokenCount:0,candidatesTokenCount:0,thoughtsTokenCount:0};try{
    send('ready',{});
    if(g.input.warningSigns){send('handoff',{...professionalResult(),team:team()});send('done',{durationMs:Date.now()-startedAt});await recordCareOutcome(env,day,true);return}
-   const {image,history,...context}=g.input;
+   const {image,...context}=g.input;
    if(abort.signal.aborted)throw Error('TIMEOUT');
-   const initialCatalog=shortlistLumaCatalog((await loadCareCatalog(env)).filter(p=>lumaProductAllowed(p,g.input)),g.input);
+   const initialCatalog=/بدون منتجات|نصائح فقط|مش بدي منتجات/.test(g.input.message)?[]:shortlistLumaCatalog((await loadCareCatalog(env)).filter(p=>lumaProductAllowed(p,g.input)),g.input);
    const system=lumaSystem(g.input,initialCatalog);
-   const contents=[...history.map(item=>({role:item.role,parts:[{text:item.text}]})),{role:'user',parts:[{text:JSON.stringify(context)},...(image?[{inlineData:image}]:[])]}];
+   const contents=[{role:'user',parts:[{text:JSON.stringify(context)},...(image?[{inlineData:image}]:[])]}];
    let questionSent=false,handoffSent=false,displayed=false,answered=false,spoken='',selectedModel,selectedApi;
    for(let round=0;round<3;round++){
     const payload={systemInstruction:{parts:[{text:system}]},contents,tools:LUMA_TOOLS,toolConfig:{functionCallingConfig:{mode:'ANY'}},generationConfig:{maxOutputTokens:4096,thinkingConfig:{thinkingLevel:'low'}}};
-    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,preferredApi:selectedApi,payload,transport:'actions',timeoutMs:12000,signal:abort.signal,onAttempt:attempt=>send('provider',{...attempt,round:round+1,elapsedMs:Date.now()-startedAt})});
+    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,preferredApi:selectedApi,payload,transport:'actions',timeoutMs:18000,signal:abort.signal,onAttempt:attempt=>send('provider',{...attempt,round:round+1,elapsedMs:Date.now()-startedAt})});
     selectedModel=completion.model;selectedApi=completion.api;
     const data=completion.data,candidate=data.candidates[0],parts=(candidate.content?.parts||[]).filter(p=>!p.thought),calls=parts.filter(p=>p.functionCall).slice(0,6).map(p=>p.functionCall),finish=candidate.finishReason||'',roundUsage=data.usageMetadata||{};
     let textBuffer=parts.filter(p=>typeof p.text==='string').map(p=>p.text).join('');

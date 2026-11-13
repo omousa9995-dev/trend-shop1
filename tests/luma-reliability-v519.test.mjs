@@ -83,7 +83,7 @@ test('Real chat transport targets the current Interactions endpoint and accepts 
 test('Structured actions retain model-selected functions without the failing native-tool transport, and reject invalid action output',async()=>{
  const {actionRequest,actionResponse}=await import('../src/luma-json-actions.js');
  const req=actionRequest({systemInstruction:{parts:[{text:'Instructions'}]},contents:[{role:'user',parts:[{text:'سؤال'}]},{role:'model',parts:[{functionCall:{name:'get_catalog',args:{productIds:['TSDEMO1']}}}]},{role:'user',parts:[{functionResponse:{name:'get_catalog',id:'old-call',response:{products:[]}}}]}]});
- assert.equal(req.tools,undefined);assert.equal(req.generationConfig.responseMimeType,undefined);assert.equal(req.generationConfig.responseSchema,undefined);assert.equal(req.generationConfig.maxOutputTokens,4096);assert.match(req.systemInstruction.parts[0].text,/ACTION CONTRACT:/);assert.equal(JSON.parse(req.contents[1].parts[0].text).action,'get_catalog');assert.match(req.contents[2].parts[0].text,/STORE ACTION RESULT/);
+ assert.equal(req.tools,undefined);assert.equal(req.generationConfig.responseMimeType,undefined);assert.equal(req.generationConfig.responseSchema,undefined);assert.equal(req.generationConfig.maxOutputTokens,8192);assert.match(req.systemInstruction.parts[0].text,/ACTION CONTRACT:/);assert.equal(JSON.parse(req.contents[1].parts[0].text).action,'get_catalog');assert.match(req.contents[2].parts[0].text,/STORE ACTION RESULT/);
  const raw={candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({action:'show_products',text:'روتين تجريبي',productIds:['TSDEMO1'],budgetFils:10000})}]}}]};
  const selected=actionResponse(raw).candidates[0].content.parts[0].functionCall;assert.equal(selected.name,'show_products');assert.equal(selected.args.carePlan,'روتين تجريبي');assert.equal(selected.args.budgetFils,10000);assert.throws(()=>actionResponse({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"delete_all","text":""}'}]}}]}));
 });
@@ -117,7 +117,7 @@ test('A selection-only action preserves exact IDs for canonical validation witho
 
 test('An incomplete thinking turn is reported as incomplete and receives one bounded alternate, without leaking partial text',async()=>{
  const old=globalThis.fetch,attempts=[];let n=0;
- globalThis.fetch=async(url,init)=>{n++;if(n===1){const body=JSON.parse(init.body);assert.equal(body.generation_config.max_output_tokens,4096);return json({status:'incomplete',steps:[{type:'model_output',content:[{type:'text',text:'private partial text'}]}]})}return json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"answer_customer","text":"أهلًا فيكِ"}'}]}}]})};
+ globalThis.fetch=async(url,init)=>{n++;if(n===1){const body=JSON.parse(init.body);assert.equal(body.generation_config.max_output_tokens,8192);return json({status:'incomplete',steps:[{type:'model_output',content:[{type:'text',text:'private partial text'}]}]})}return json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"answer_customer","text":"أهلًا فيكِ"}'}]}}]})};
  try{const result=await requestGemini({...options,transport:'actions',onAttempt:e=>attempts.push(e)});assert.equal(n,2);assert.equal(attempts[0].reason,'OUTPUT_INCOMPLETE');assert.doesNotMatch(JSON.stringify(result.data),/private partial/);assert.equal(result.data.candidates[0].content.parts[0].functionCall.args.text,'أهلًا فيكِ')}finally{globalThis.fetch=old}
 });
 
