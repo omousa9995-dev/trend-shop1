@@ -15,7 +15,7 @@ export function interactionRequest(model,payload){
   if(ordinary.length)input.push({type:content.role==='model'?'model_output':'user_input',content:ordinary});
  }
  const tools=(payload.tools||[]).flatMap(t=>t.functionDeclarations||[]).map(t=>({type:'function',name:t.name,description:t.description,parameters:schema(t.parameters)}));
- return {model,store:false,input,system_instruction:(payload.systemInstruction?.parts||[]).map(p=>p.text||'').join('\n'),tools,generation_config:{max_output_tokens:payload.generationConfig?.maxOutputTokens||4096,thinking_level:'low',...(tools.length?{tool_choice:'any'}:{})}};
+ return {model,store:false,input,system_instruction:(payload.systemInstruction?.parts||[]).map(p=>p.text||'').join('\n'),tools,generation_config:{max_output_tokens:payload.generationConfig?.maxOutputTokens||4096,thinking_level:payload.generationConfig?.thinkingConfig?.thinkingLevel||'low',...(tools.length?{tool_choice:'any'}:{})}};
 }
 export function interactionResponse(value){
  if(value?.status==='incomplete')throw Object.assign(Error('PROVIDER_INCOMPLETE'),{reason:'OUTPUT_INCOMPLETE'});

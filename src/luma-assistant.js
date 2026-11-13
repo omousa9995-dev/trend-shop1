@@ -67,6 +67,14 @@ CATALOG=${JSON.stringify(catalog)}`;
 }
 function lumaInput(body,imagesAllowed=false){
  const input=validateCareInput(body,imagesAllowed,{requireConsent:false,requirePhotoConsent:false});input.maxProducts=6;input.catalogScope='luma';input.budgetOptional=true;
+ const current=input.message.replace(/[أإآ]/g,'ا');
+ const bodyArea=/ظهر|جسم|صدر|\bbody\b|\bback\b/i.test(current),faceArea=/وجه|وجهي|\bface\b/i.test(current);
+ if(bodyArea&&!faceArea)input.area='body';else if(faceArea&&!bodyArea)input.area='face';
+ if(/بشر(?:تي|ة|ه).{0,12}(?:مختلط|combination)/i.test(current))input.skinType='combination';
+ else if(/بشر(?:تي|ة|ه).{0,12}(?:دهني|دهنية|دهنيه|oily)/i.test(current)&&!/(?:مش|مو|ليست|غير).{0,5}(?:دهني|oily)/i.test(current))input.skinType='oily';
+ else if(/بشر(?:تي|ة|ه).{0,12}(?:جاف|ناشف|dry)/i.test(current))input.skinType='dry';
+ if(/بدون حساسي|مش حساس|غير حساس|مو حساس|not sensitive|no sensitivity/i.test(current))input.sensitive='no';
+ else if(/بشرتي.{0,8}حساس|sensitive skin/i.test(current))input.sensitive='yes';
  const statedBudget=explicitLumaBudget(input.message);if(statedBudget!==null)input.budgetFils=statedBudget;
  input.ageGroup=choiceValues.ageGroup.includes(body.profile?.ageGroup)?body.profile.ageGroup:'unknown';
  input.lifeStage=choiceValues.lifeStage.includes(body.profile?.lifeStage)?body.profile.lifeStage:'unknown';
@@ -149,7 +157,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
  const body=new ReadableStream({start(controller){
   const send=(event,data)=>{if(!cancelled)controller.enqueue(enc.encode('event: '+event+'\ndata: '+JSON.stringify(data)+'\n\n'))};
   const work=(async()=>{let usage={promptTokenCount:0,candidatesTokenCount:0,thoughtsTokenCount:0};try{
-   send('ready',{});
+   send('ready',{});const understood=Object.fromEntries(['area','skinType','sensitive'].filter(k=>g.input[k]&&g.input[k]!=='unknown').map(k=>[k,g.input[k]]));if(Object.keys(understood).length)send('profile',{profile:understood});
    if(g.input.warningSigns){send('handoff',{...professionalResult(),team:team()});send('done',{durationMs:Date.now()-startedAt});await recordCareOutcome(env,day,true);return}
    const {image,...context}=g.input;
    if(abort.signal.aborted)throw Error('TIMEOUT');

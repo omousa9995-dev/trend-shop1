@@ -134,3 +134,8 @@ test('Action compatibility rejects unknown functions, multiple actions and malfo
  const response=value=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(value)}]}}]});
  for(const value of [{name:'delete_all',args:{}},[{name:'answer_customer',args:{text:'one'}},{name:'answer_customer',args:{text:'two'}}],{name:'get_catalog',arguments:'not JSON'},{action:'answer_customer'}])assert.throws(()=>actionResponse(response(value)),error=>error.message==='INVALID_ACTION_OUTPUT'&&/^ACTION_/.test(error.reason));
 });
+
+test('Flash-Lite store actions use minimal thinking, while the 3.8 alternate keeps its supported low level',async()=>{
+ const old=globalThis.fetch,seen=[];globalThis.fetch=async(url,options)=>{const body=JSON.parse(options.body);seen.push(body);return body.model?json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text:'{"action":"answer_customer","text":"أهلا"}'}]}]}):json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"answer_customer","text":"أهلا"}'}]}}]})};
+ try{await requestGemini({apiKey:'test',primary:'gemini-3.5-flash-lite',transport:'actions',payload:{contents:[{role:'user',parts:[{text:'سؤال'}]}]}});await requestGemini({apiKey:'test',primary:'gemini-3.8-flash',transport:'actions',payload:{contents:[{role:'user',parts:[{text:'سؤال'}]}]}});assert.equal(seen[0].generation_config.thinking_level,'minimal');assert.equal(seen[1].generation_config.thinking_level,'low')}finally{globalThis.fetch=old}
+});

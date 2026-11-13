@@ -25,11 +25,11 @@ test('Terminal errors ignore trailing events and malformed/incomplete streams re
  await assert.rejects(consumeLumaStream(new Response('event: delta\ndata: invalid\n\n'),()=>{}));
 });
 test('Twenty sequential chat turns remain usable without reload, including a network stream that never closes',async()=>{
- const requests=[];let cancels=0;const {w,api,send}=await ui(async(url,init)=>{requests.push(JSON.parse(init.body));return new Response(new ReadableStream({start(c){c.enqueue(bytes.encode(event('profile',{profile:{area:'face',skinType:'dry'}})+event('delta',{text:'نصيحة '+requests.length})+event('products',{area:'face',routine:[{id:'TSDEMO1',name:'مرطب',priceFils:3000}],subtotalFils:3000,shippingFeeFils:1000,totalFils:4000})+event('done')))},cancel(){cancels++;return new Promise(()=>{})}}))});
+ const requests=[];let cancels=0;const {w,api,send}=await ui(async(url,init)=>{requests.push(JSON.parse(init.body));return new Response(new ReadableStream({start(c){c.enqueue(bytes.encode(event('profile',{profile:{area:'face',skinType:'dry'}})+event('delta',{text:'نصيحة '+requests.length})+event('products',{area:'face',routine:[{id:'TSDEMO1',name:'مرطب',priceFils:3000}],subtotalFils:3000,shippingFeeFils:1000,totalFils:4000})+event('delta',{text:'متابعة النص بعد البطاقات'})+event('done')))},cancel(){cancels++;return new Promise(()=>{})}}))});
  try{for(let i=1;i<=20;i++){send('سؤال '+i);await until(()=>requests.length===i&&api.dialog.getAttribute('aria-busy')==='false');assert.equal(w.document.querySelector('.luma-send').disabled,false)}
   assert.equal(requests.length,20);assert.equal(cancels,20);assert.equal(requests.at(-1).history.length,16);assert.equal(requests.at(-1).profile.skinType,'dry');
   for(const data of requests)for(let i=0;i<data.history.length;i+=2){assert.equal(data.history[i].role,'user');assert.equal(data.history[i+1].role,'model');assert.match(data.history[i+1].text,/TSDEMO1/)}
-  assert.equal(w.localStorage.length,0);assert.equal(api.dialog.querySelectorAll('[data-luma-record],.luma-listen,input[accept*=audio]').length,0);
+  assert.doesNotMatch(api.dialog.querySelector('.luma-log').textContent,/TSDEMO1/);assert.equal(w.localStorage.length,0);assert.equal(api.dialog.querySelectorAll('[data-luma-record],.luma-listen,input[accept*=audio]').length,0);
  }finally{api.destroy();w.close()}
 });
 test('Cancel, reset and close isolate stale requests from a newly opened conversation and preserve typed drafts',async()=>{
@@ -58,4 +58,8 @@ test('Site entry avatar reuses the actual site girl in header, footer and text-o
 
 test('Clear non-shopping dryness and hydration questions receive immediate advice while medical constraints stay outside fast advice',()=>{
  const input={message:'كيف نهتم بجفاف البشرة يوميا؟ بدون منتجات حاليا',history:[]};assert.match(quickLumaAdvice(input).text,/رطبة شوي/);input.history=[{role:'user',text:input.message}];input.message='هل شرب الماء وحده بكفي؟';assert.match(quickLumaAdvice(input).text,/ما بتكفي/);input.message='عندي مرض كلى وجفاف، كم أشرب ماء؟';assert.equal(quickLumaAdvice(input),null);input.message='حبوب مؤلمة مع صديد، بدون منتجات';assert.equal(quickLumaAdvice(input),null);
+});
+
+test('Current oily-acne intent outranks earlier dryness and repeated assistant prose',()=>{
+ const base={lumaCandidate:true,priceFils:3000,brand:'Test',areas:['face'],careClass:'everyday'},products=[{...base,id:'TSDRY01',name:'Rich intensive dry skin cream',type:'moisturizer'},{...base,id:'TSOILY1',name:'Light gel for oily skin',type:'moisturizer'},{...base,id:'TSACNE4',name:'PanOxyl',type:'cleanser',careClass:'otc-acne-wash',activeStrength:'4%'}];const chosen=shortlistLumaCatalog(products,{message:'حبوب الوجه للبشرة الدهنية',history:[{role:'model',text:'جفاف '.repeat(50)}],existingIds:[],budgetFils:null,area:'face',skinType:'unknown'});assert.equal(chosen[0].id,'TSACNE4');assert.ok(chosen.findIndex(p=>p.id==='TSOILY1')<chosen.findIndex(p=>p.id==='TSDRY01'));
 });

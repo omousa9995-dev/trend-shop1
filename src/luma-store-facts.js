@@ -34,15 +34,16 @@ export function explicitLumaBudget(message){
  const amount=t.match(/(?:ميزاني(?:تي|ه|ة|تها)?|ما يزيد عن|بحدود|حد اقصي|اقل من|حدود)\s*(?:هي|حوالي|تقريبا|من|بـ|ب)?\s*(\d{1,3}(?:[.,]\d{1,2})?)\s*(?:دينار|دنانير|د\.?ا|jod)?/i)?.[1];
  const fils=amount?Math.round(Number(amount.replace(',','.'))*1000):null;return fils>=500&&fils<=100000?fils:null;
 }
-export function lumaCatalogFacts(p){return {id:p.id,name:p.name,brand:p.brand,type:p.type,areas:p.areas,priceJod:p.priceFils/1000,careClass:p.careClass,ingredients:p.ingredients,howToUse:p.assistantHowToUse||p.howToUse,notes:p.notes,options:p.options,...(p.verifiedLabel?{activeIngredient:p.activeIngredient,activeStrength:p.activeStrength,verifiedLabel:p.verifiedLabel}:{}),...(p.requiresIngredientReview?{reviewIngredients:true}:{})}}
+export function lumaCatalogFacts(p){return {id:p.id,name:p.name,brand:p.brand,type:p.type,areas:p.areas,priceJod:p.priceFils/1000,careClass:p.careClass,description:p.description,ingredients:p.ingredients,howToUse:p.assistantHowToUse||p.howToUse,notes:p.notes,options:p.options,...(p.verifiedLabel?{activeIngredient:p.activeIngredient,activeStrength:p.activeStrength,verifiedLabel:p.verifiedLabel}:{}),...(p.requiresIngredientReview?{reviewIngredients:true}:{})}}
 
 // Seed a few complementary, relevant products so ordinary routines need one turn.
 // Exact IDs, ingredient/label facts and final stock validation remain authoritative.
 export function shortlistLumaCatalog(products,input){
- const t=normalize([input.message,...input.history.slice(-4).map(x=>x.text)].join(' '));
+ const current=normalize(input.message),past=normalize(input.history.filter(x=>x.role==='user').slice(-2).map(x=>x.text).join(' '));
+ const t=/حبوب|جفاف|نشف|دهن|جاف|acne|dry|oily/.test(current)?current:current+' '+past;
  const area=/(?:ظهر|جسم|صدر|back|body)/.test(normalize(input.message))?'body':/(?:وجه|وجهي|face)/.test(normalize(input.message))?'face':input.area;
  const available=products.filter(p=>p.lumaCandidate&&!input.existingIds.includes(p.id)&&(area==='unknown'||p.areas.includes(area))&&(input.budgetFils===null||p.priceFils<=input.budgetFils));
- const acne=/حبوب|acne|بثور/.test(t),dry=/جفاف|نشف|جاف|dry/.test(t),words=t.split(/[^\p{L}\p{N}]+/u).filter(w=>w.length>2);
- const ranked=available.map(p=>{const name=normalize([p.name,p.brand,p.type].join(' '));let score=words.reduce((s,w)=>s+(name.includes(w)?3:0),0);if(['cleanser','moisturizer','sunscreen'].includes(p.type))score+=2;if(dry&&p.type==='moisturizer')score+=3;if(acne&&p.activeStrength==='4%')score+=7;if(p.careClass==='everyday')score+=2;return {p,score}}).sort((a,b)=>b.score-a.score||a.p.priceFils-b.p.priceFils);
+ const acne=/حبوب|acne|بثور/.test(t),dry=/جفاف|نشف|جاف|dry/.test(t),oily=/دهنية|دهنيه|oily/.test(current)||input.skinType==='oily',words=[...new Set(t.split(/[^\p{L}\p{N}]+/u).filter(w=>w.length>2))];
+ const ranked=available.map(p=>{const name=normalize([p.name,p.brand,p.type].join(' '));let score=words.reduce((s,w)=>s+(name.includes(w)?3:0),0);if(['cleanser','moisturizer','sunscreen'].includes(p.type))score+=2;if(dry&&p.type==='moisturizer')score+=3;if(acne&&p.activeStrength==='4%')score+=20;const facts=normalize([p.name,p.description,p.notes].join(' '));if(oily){if(/دهنيه|دهنية|oily|خفيف|light|gel|جل/.test(facts))score+=5;if(/جافه|جافة|dry|مكثف|intens|rich/.test(facts))score-=8;}if(p.careClass==='everyday')score+=2;return {p,score}}).sort((a,b)=>b.score-a.score||a.p.priceFils-b.p.priceFils);
  const chosen=[],counts=new Map();for(const {p}of ranked){const count=counts.get(p.type)||0;if(count>=2)continue;chosen.push(p);counts.set(p.type,count+1);if(chosen.length===6)break}return chosen;
 }

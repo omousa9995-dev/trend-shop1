@@ -1,4 +1,4 @@
-import {consumeLumaStream,appendLumaHistory} from './luma-stream.js?v=5.20.0';
+import {consumeLumaStream,appendLumaHistory} from './luma-stream.js?v=5.20.1';
 const make=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el};
 const money=n=>(n/1000).toLocaleString('ar-JO',{minimumFractionDigits:2,maximumFractionDigits:2})+' د.أ';
 let instance;
@@ -6,7 +6,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
  if(instance)return instance;
  const status=initial||await fetch('/api/care/status',{cache:'no-store'}).then(r=>r.json());
  if(!status.available)throw Error('لُمى غير متاحة حاليًا. تقدري تتواصلي مع المتجر.');
- if(!document.querySelector('[data-luma-styles]')){const css=make('link');css.rel='stylesheet';css.href='/luma-widget.css?v=5.20.0';css.dataset.lumaStyles='1';document.head.append(css)}
+ if(!document.querySelector('[data-luma-styles]')){const css=make('link');css.rel='stylesheet';css.href='/luma-widget.css?v=5.20.1';css.dataset.lumaStyles='1';document.head.append(css)}
  const dialog=make('dialog',undefined,'luma-chat');dialog.id='lumaChat';dialog.dir='rtl';dialog.lang='ar';dialog.setAttribute('aria-labelledby','lumaChatTitle');
  dialog.innerHTML=`<header class="luma-head"><span class="luma-avatar" aria-hidden="true"><img src="/images/editorial/beauty-hero-v2.webp" alt=""/></span><div><h2 id="lumaChatTitle">لُمى <span lang="en">Luma</span></h2><p>معكِ للعناية والجمال</p></div><button type="button" data-luma-close aria-label="إغلاق محادثة لُمى">×</button></header>
  <div class="luma-log" role="log" aria-live="polite" aria-relevant="additions" aria-label="محادثتكِ مع لُمى" tabindex="0"></div>
@@ -47,7 +47,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   const data={...payload(),message:text},user=bubble(text||'أرفقت صورة مع سؤالي.','user');if(image)user.append(make('small','صورة مرفقة لهذه الرسالة فقط'));
   quick.replaceChildren();if(message.value.trim()===text)message.value='';busy=true;lastFailedText=text;
   const sequence=++requestSequence,requestController=new AbortController();controller=requestController;refresh();
-  const timeout=setTimeout(()=>requestController.abort(),45000);let answer='',reply,failed=false,done=false;const attempts=[];dialog.dataset.lumaProviderTrace='[]';
+  const timeout=setTimeout(()=>requestController.abort(),45000);let answer='',historyNotes='',reply,failed=false,done=false;const attempts=[];dialog.dataset.lumaProviderTrace='[]';
   try{
    const response=await fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json','x-trend-care':'1'},body:JSON.stringify(data),signal:requestController.signal});
    if(!response.ok){const error=await response.json().catch(()=>({}));throw Error(error.error||'تعذّر إكمال المحادثة الآن.')}
@@ -55,13 +55,13 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     if(sequence!==requestSequence)return;
     if(event==='provider'){attempts.push({round:data.round,model:data.model,api:data.api,attempt:data.attempt,ok:data.ok,status:data.status||0,reason:data.reason||'',elapsedMs:data.elapsedMs});dialog.dataset.lumaProviderTrace=JSON.stringify(attempts.slice(-8));dialog.dataset.lumaResponseModel=data.model;dialog.dataset.lumaProviderReason=data.reason||'';dialog.dataset.lumaTransport=data.transport||'';dialog.dataset.lumaProviderStatus=data.ok?'ok':String(data.status||data.reason)}
     else if(event==='delta'){if(!reply)reply=bubble('');answer+=data.text||'';reply.querySelector('p').textContent=answer;scroll()}
-    else if(['products','question','handoff','notice','followup','profile'].includes(event)){renderTool({...data,type:event});if(event==='question')answer+=' '+data.question.text;if(event==='products')answer+='\nالمنتجات المقترحة: '+(data.routine||[]).map(p=>p.id).join(', ');if(event==='handoff')answer+=' '+data.message}
+    else if(['products','question','handoff','notice','followup','profile'].includes(event)){renderTool({...data,type:event});if(event==='question')historyNotes+=' '+data.question.text;if(event==='products')historyNotes+='\nالمنتجات المقترحة: '+(data.routine||[]).map(p=>p.id).join(', ');if(event==='handoff')historyNotes+=' '+data.message}
     else if(event==='error'){failed=true;if(reply)reply.querySelector('p').textContent='ما اكتمل الرد. تقدري تعيدي المحاولة.';notice.textContent=data.message||'جرّبي مرة ثانية.';notice.dataset.lumaErrorCode=String(data.code||'UNKNOWN')}
     else if(event==='done'){done=true;if(Number.isFinite(data.durationMs))dialog.dataset.lumaResponseMs=String(data.durationMs)}
    },requestController.signal);
    if(sequence!==requestSequence)return;
    if(!done&&!failed)throw Error('انقطع الاتصال قبل اكتمال الإجابة.');
-   if(!failed){history=appendLumaHistory(history,text||'سؤال مع صورة اختيارية.',answer);lastFailedText=null;clearPhoto()}
+   if(!failed){history=appendLumaHistory(history,text||'سؤال مع صورة اختيارية.',answer+historyNotes);lastFailedText=null;clearPhoto()}
   }catch(error){if(sequence===requestSequence)notice.textContent=error.name==='AbortError'?'تأخر الرد. اضغطي إعادة المحاولة أو اكتبي سؤالكِ من جديد.':error.message}
   finally{clearTimeout(timeout);if(sequence===requestSequence){busy=false;controller=null;refresh()}}
  }
