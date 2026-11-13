@@ -66,7 +66,7 @@ export function validateCareInput(body,imagesAllowed,{requireConsent=true,requir
  if(requireConsent&&(body?.adultConfirmed!==true||body?.consentVersion!==consentVersion||body?.googleConsent!==true))throw Error('CONSENT_REQUIRED');
  if(body.budgetFils!=null&&(!Number.isInteger(body.budgetFils)||body.budgetFils<500||body.budgetFils>100000))throw Error('INVALID_BUDGET');
  const profile=body.profile||{};
- const values={message:text(body.message,1500),budgetFils:body.budgetFils??null,area:enumValue(profile.area,CARE_AREAS,'unknown'),includeDelivery:body.includeDelivery!==false,skinType:enumValue(profile.skinType,['unknown','dry','oily','combination','balanced'],'unknown'),goal:enumValue(profile.goal,['basic','dryness','shine','texture','fine_lines','tone','breakouts'],'basic'),sensitive:enumValue(profile.sensitive,['unknown','yes','no'],'unknown'),warningSigns:profile.warningSigns===true,existingIds:Array.isArray(body.existingIds)?body.existingIds.filter(x=>typeof x==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(x)).slice(0,20):[],history:Array.isArray(body.history)?body.history.slice(-6).filter(x=>x&&['user','model'].includes(x.role)&&typeof x.text==='string').map(x=>({role:x.role,text:text(x.text,1500)})):[]};
+ const values={message:text(body.message,1500),budgetFils:body.budgetFils??null,area:enumValue(profile.area,CARE_AREAS,'unknown'),includeDelivery:body.includeDelivery!==false,skinType:enumValue(profile.skinType,['unknown','dry','oily','combination','balanced'],'unknown'),goal:enumValue(profile.goal,['basic','dryness','shine','texture','fine_lines','tone','breakouts'],'basic'),sensitive:enumValue(profile.sensitive,['unknown','yes','no'],'unknown'),warningSigns:profile.warningSigns===true,existingIds:Array.isArray(body.existingIds)?body.existingIds.filter(x=>typeof x==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(x)).slice(0,20):[],history:Array.isArray(body.history)?body.history.slice(-16).filter(x=>x&&['user','model'].includes(x.role)&&typeof x.text==='string').map(x=>({role:x.role,text:text(x.text,2400)})):[]};
  if(body.image){
   if(!imagesAllowed)throw Error('IMAGES_DISABLED');
   if(requirePhotoConsent&&body.photoConsent!==true)throw Error('PHOTO_CONSENT_REQUIRED');
@@ -75,7 +75,7 @@ export function validateCareInput(body,imagesAllowed,{requireConsent=true,requir
   if(bytes.length>1048576||bytes.charCodeAt(0)!==255||bytes.charCodeAt(1)!==216||bytes.charCodeAt(2)!==255)throw Error('INVALID_IMAGE');
   values.image={mimeType:'image/jpeg',data:body.image.data};
  }
- return values;
+ while(values.history.length>2&&values.history.reduce((n,x)=>n+x.text.length,0)>12000)values.history.splice(0,2);return values;
 }
 const professionalMessage='هذه العلامات تحتاج تقييم طبيبة جلدية قبل اختيار منتجات جديدة. الصورة لا تكفي لمعرفة السبب أو تحديد العلاج؛ الأفضل الحصول على تقييم مختص بدل اقتراح مشتريات لهذه الحالة.';
 export function professionalResult(){return {message:professionalMessage,observations:[],questions:[],routine:[],needsProfessional:true,subtotalFils:0,shippingFeeFils:0,totalFils:0,budgetExceeded:false}}
@@ -122,18 +122,18 @@ export function normalizeCareResult(raw,products,input){
  const proposedBudget=Number.isInteger(raw?.budgetFils)&&raw.budgetFils>=500&&raw.budgetFils<=100000?raw.budgetFils:null;
  const proposedArea=enumValue(raw?.area,CARE_AREAS,'unknown');
  const required=[];
- if(input.budgetFils===null)required.push(budgetQuestion(proposedBudget));
- else if(proposedBudget!==null&&proposedBudget!==input.budgetFils)required.push({field:'budget',text:'تحبّي نعدّل الميزانية؟',choices:questionChoices('budget',[{value:String(proposedBudget)},{value:String(input.budgetFils)}])});
+ if(input.budgetFils===null&&!input.budgetOptional)required.push(budgetQuestion(proposedBudget));
+ else if(!input.budgetOptional&&proposedBudget!==null&&proposedBudget!==input.budgetFils)required.push({field:'budget',text:'تحبّي نعدّل الميزانية؟',choices:questionChoices('budget',[{value:String(proposedBudget)},{value:String(input.budgetFils)}])});
  if(area==='unknown')required.push(areaQuestion());
  else if(input.area!=='unknown'&&proposedArea!=='unknown'&&proposedArea!==input.area)required.push({field:'area',text:'ننتقل للعناية بمنطقة ثانية؟',choices:questionChoices('area',[{value:proposedArea},{value:input.area}])});
- const questions=[...required,...normalizeQuestions(raw?.questions).filter(q=>typeof q==='string'||!required.some(r=>r.field===q.field)&&!(q.field==='budget'&&input.budgetFils!==null)&&!(q.field==='area'&&area!=='unknown')&&!(q.field==='skinType'&&input.skinType!=='unknown')&&!(q.field==='sensitive'&&input.sensitive!=='unknown'))].slice(0,2);
+ const questions=[...required,...normalizeQuestions(raw?.questions).filter(q=>typeof q==='string'||!required.some(r=>r.field===q.field)&&!(q.field==='budget'&&(input.budgetFils!==null||input.budgetOptional))&&!(q.field==='area'&&area!=='unknown')&&!(q.field==='skinType'&&input.skinType!=='unknown')&&!(q.field==='sensitive'&&input.sensitive!=='unknown'))].slice(0,2);
  const available=new Map(products.filter(p=>(input.catalogScope==='luma'?lumaProductAllowed(p,input):p.cosmeticCandidate)&&p.areas.includes(area)).map(p=>[p.id,p]));
  let subtotal=0;const types=new Set(),seen=new Set(),routine=[];
  const resultText=input.catalogScope==='luma'?lumaText:safeModelText;
  const reasons=new Map((Array.isArray(raw?.selections)?raw.selections:[]).slice(0,8).map(x=>[x?.productId,resultText(x?.reason,260)]));
- if(!questions.length&&input.budgetFils!==null)for(const id of Array.isArray(raw?.productIds)?raw.productIds.slice(0,12):[]){
+ if(!questions.length&&(input.budgetFils!==null||input.budgetOptional))for(const id of Array.isArray(raw?.productIds)?raw.productIds.slice(0,12):[]){
   const p=available.get(id);if(!p||seen.has(id)||types.has(p.type)||input.existingIds.includes(id)||routine.length===(input.maxProducts===6?6:3))continue;
-  const next=subtotal+p.priceFils;if(next+(input.includeDelivery?shippingFee(next):0)>input.budgetFils)continue;
+  const next=subtotal+p.priceFils;if(input.budgetFils!==null&&next+(input.includeDelivery?shippingFee(next):0)>input.budgetFils)continue;
   routine.push({id:p.id,name:p.name,brand:p.brand,type:p.type,priceFils:p.priceFils,size:p.size,image:p.image,href:'/#/product/'+encodeURIComponent(p.id),benefits:p.benefits,howToUse:input.catalogScope==='luma'?(p.assistantHowToUse||p.howToUse):p.howToUse,options:p.options||[],reason:reasons.get(id)||'',step:routine.length+1});subtotal=next;seen.add(id);types.add(p.type);
  }
  const observations=input.image&&Array.isArray(raw?.observations)?[...new Set(raw.observations)].filter(x=>allowedObservations.includes(x)).slice(0,4).map(x=>observationsAr[x]):[];
@@ -153,7 +153,7 @@ async function recordOutcome(env,day,success,usage={}){
  await env.DB.prepare('UPDATE care_assistant_usage SET successes=successes+?,failures=failures+?,input_tokens=input_tokens+?,output_tokens=output_tokens+? WHERE day=?').bind(success?1:0,success?0:1,tokens(usage.promptTokenCount),tokens(usage.candidatesTokenCount)+tokens(usage.thoughtsTokenCount),day).run();
 }
 export async function publicCareStatus(req,env,{json}){
- const config=await readSettings(env);return json({available:ready(config),imagesAvailable:ready(config)&&config.settings.imagesEnabled,widgetAvailable:ready(config),liveAvailable:false,dictationAvailable:ready(config)&&config.settings.dictationEnabled,consentVersion,assistantName:'لُمى'});
+ const config=await readSettings(env);return json({available:ready(config),imagesAvailable:ready(config)&&config.settings.imagesEnabled,widgetAvailable:ready(config),liveAvailable:false,dictationAvailable:false,consentVersion,assistantName:'لُمى'});
 }
 
 // Shared server-only primitives for the embedded chat and constrained Live sessions.

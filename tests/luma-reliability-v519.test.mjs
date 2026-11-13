@@ -43,12 +43,13 @@ function microphone(w,{denied=false}={}){
  };
  return stats;
 }
-test('One microphone click starts recording, stop automatically transcribes and sends exactly once, preserving the typed draft',async()=>{
- const {w}=browser(),stats=microphone(w),calls=[];w.fetch=async(url,init)=>{calls.push({url,body:JSON.parse(init.body)});return url==='/api/transcribe'?json({text:'عندي جفاف بسيط بإيدي'}):new Response('event: provider\ndata: {"model":"gemini-3.8-flash","ok":true}\n\nevent: delta\ndata: {"text":"رطبي إيديكِ بعد الغسل."}\n\nevent: done\ndata: {}\n\n')};
- try{w.eval(script());const api=await w.LumaWidget.mountLumaWidget({status:{available:true,dictationAvailable:true}});api.open();const draft=w.document.querySelector('textarea');draft.value='مسودة مستقلة';w.document.querySelector('[data-luma-record]').click();await until(()=>stats.starts===1);assert.equal(stats.permissions,1);assert.equal(w.document.querySelector('.luma-record-consent'),null);await pause(5);w.document.querySelector('[data-luma-record-stop]').click();await until(()=>calls.length===2&&!api.dialog.hasAttribute('aria-busy')||calls.length===2&&api.dialog.getAttribute('aria-busy')==='false');assert.deepEqual(calls.map(c=>c.url),['/api/transcribe','/api/chat']);assert.equal(calls[1].body.message,'عندي جفاف بسيط بإيدي');assert.equal(calls[0].body.audioConsent,true);assert.equal(draft.value,'مسودة مستقلة');assert.match(w.document.querySelector('.luma-user').textContent,/رسالة صوتية/);assert.equal(stats.stops,1);assert.equal(api.dialog.dataset.lumaProviderStatus,'ok');api.destroy();assert.equal(w.document.querySelector('dialog'),null);const fresh=await w.LumaWidget.mountLumaWidget({status:{available:true}});assert.notEqual(fresh,api);fresh.destroy()}finally{w.close()}
+test('Legacy dictation capability metadata cannot re-enable any audio control or spend a request',async()=>{
+ const {w}=browser(),stats=microphone(w);let calls=0;w.fetch=async()=>{calls++;throw Error('Must not upload')};
+ try{w.eval(script());const api=await w.LumaWidget.mountLumaWidget({status:{available:true,dictationAvailable:true}});api.open();assert.equal(w.document.querySelector('[data-luma-record],.luma-listen,[data-luma-audio-file]'),null);assert.equal(stats.permissions,0);assert.equal(calls,0);api.destroy();const fresh=await w.LumaWidget.mountLumaWidget({status:{available:true}});assert.notEqual(fresh,api);fresh.destroy()}finally{w.close()}
 });
-test('Recording cancellation and native permission denial never upload or submit a message',async()=>{
- for(const denied of [false,true]){const {w}=browser(),stats=microphone(w,{denied});let calls=0;w.fetch=async()=>{calls++;throw Error('Must not upload')};try{w.eval(script());const api=await w.LumaWidget.mountLumaWidget({status:{available:true}});api.open();w.document.querySelector('[data-luma-record]').click();await pause(15);if(!denied){assert.equal(stats.starts,1);w.document.querySelector('[data-luma-record-cancel]').click()}await pause(15);assert.equal(calls,0);if(denied)assert.match(w.document.querySelector('.luma-notice').textContent,/الميكروفون/);api.destroy()}finally{w.close()}}
+
+test('Closing and destroying a text-only widget never requests microphone permission',async()=>{
+ const {w}=browser(),stats=microphone(w,{denied:true});try{w.eval(script());const api=await w.LumaWidget.mountLumaWidget({status:{available:true}});api.open();api.close();api.destroy();assert.equal(stats.permissions,0)}finally{w.close()}
 });
 
 test('Only header and footer entries exist, no floating/Korean nav entry, and SSR product HTML contains neither',()=>{
@@ -82,7 +83,7 @@ test('Real chat transport targets the current Interactions endpoint and accepts 
 test('Structured actions retain model-selected functions without the failing native-tool transport, and reject invalid action output',async()=>{
  const {actionRequest,actionResponse}=await import('../src/luma-json-actions.js');
  const req=actionRequest({systemInstruction:{parts:[{text:'Instructions'}]},contents:[{role:'user',parts:[{text:'سؤال'}]},{role:'model',parts:[{functionCall:{name:'get_catalog',args:{productIds:['TSDEMO1']}}}]},{role:'user',parts:[{functionResponse:{name:'get_catalog',id:'old-call',response:{products:[]}}}]}]});
- assert.equal(req.tools,undefined);assert.equal(req.generationConfig.responseMimeType,undefined);assert.equal(req.generationConfig.responseSchema,undefined);assert.equal(req.generationConfig.maxOutputTokens,8192);assert.match(req.systemInstruction.parts[0].text,/ACTION CONTRACT:/);assert.equal(JSON.parse(req.contents[1].parts[0].text).action,'get_catalog');assert.match(req.contents[2].parts[0].text,/STORE ACTION RESULT/);
+ assert.equal(req.tools,undefined);assert.equal(req.generationConfig.responseMimeType,undefined);assert.equal(req.generationConfig.responseSchema,undefined);assert.equal(req.generationConfig.maxOutputTokens,4096);assert.match(req.systemInstruction.parts[0].text,/ACTION CONTRACT:/);assert.equal(JSON.parse(req.contents[1].parts[0].text).action,'get_catalog');assert.match(req.contents[2].parts[0].text,/STORE ACTION RESULT/);
  const raw={candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({action:'show_products',text:'روتين تجريبي',productIds:['TSDEMO1'],budgetFils:10000})}]}}]};
  const selected=actionResponse(raw).candidates[0].content.parts[0].functionCall;assert.equal(selected.name,'show_products');assert.equal(selected.args.carePlan,'روتين تجريبي');assert.equal(selected.args.budgetFils,10000);assert.throws(()=>actionResponse({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"delete_all","text":""}'}]}}]}));
 });
@@ -116,7 +117,7 @@ test('A selection-only action preserves exact IDs for canonical validation witho
 
 test('An incomplete thinking turn is reported as incomplete and receives one bounded alternate, without leaking partial text',async()=>{
  const old=globalThis.fetch,attempts=[];let n=0;
- globalThis.fetch=async(url,init)=>{n++;if(n===1){const body=JSON.parse(init.body);assert.equal(body.generation_config.max_output_tokens,8192);return json({status:'incomplete',steps:[{type:'model_output',content:[{type:'text',text:'private partial text'}]}]})}return json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"answer_customer","text":"أهلًا فيكِ"}'}]}}]})};
+ globalThis.fetch=async(url,init)=>{n++;if(n===1){const body=JSON.parse(init.body);assert.equal(body.generation_config.max_output_tokens,4096);return json({status:'incomplete',steps:[{type:'model_output',content:[{type:'text',text:'private partial text'}]}]})}return json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"answer_customer","text":"أهلًا فيكِ"}'}]}}]})};
  try{const result=await requestGemini({...options,transport:'actions',onAttempt:e=>attempts.push(e)});assert.equal(n,2);assert.equal(attempts[0].reason,'OUTPUT_INCOMPLETE');assert.doesNotMatch(JSON.stringify(result.data),/private partial/);assert.equal(result.data.candidates[0].content.parts[0].functionCall.args.text,'أهلًا فيكِ')}finally{globalThis.fetch=old}
 });
 
