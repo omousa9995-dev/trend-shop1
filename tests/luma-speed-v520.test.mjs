@@ -63,3 +63,7 @@ test('Clear non-shopping dryness and hydration questions receive immediate advic
 test('Current oily-acne intent outranks earlier dryness and repeated assistant prose',()=>{
  const base={lumaCandidate:true,priceFils:3000,brand:'Test',areas:['face'],careClass:'everyday'},products=[{...base,id:'TSDRY01',name:'Rich intensive dry skin cream',type:'moisturizer'},{...base,id:'TSOILY1',name:'Light gel for oily skin',type:'moisturizer'},{...base,id:'TSACNE4',name:'PanOxyl',type:'cleanser',careClass:'otc-acne-wash',activeStrength:'4%'}];const chosen=shortlistLumaCatalog(products,{message:'حبوب الوجه للبشرة الدهنية',history:[{role:'model',text:'جفاف '.repeat(50)}],existingIds:[],budgetFils:null,area:'face',skinType:'unknown'});assert.equal(chosen[0].id,'TSACNE4');assert.ok(chosen.findIndex(p=>p.id==='TSOILY1')<chosen.findIndex(p=>p.id==='TSDRY01'));
 });
+
+test('A current acne hydration question takes precedence over earlier dry-skin context',()=>{
+ const result=quickLumaAdvice({message:'هل الماء وحده يعالج الحبوب؟',history:[{role:'user',text:'عندي جفاف باليدين'},{role:'model',text:'اشربي ماء بشكل متوازن ورطبي يديك'}]});assert.match(result.text,/مش علاج للحبوب/);assert.doesNotMatch(result.text,/لعلاج جفاف البشرة/);
+});
