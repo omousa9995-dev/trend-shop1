@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-11-14T19:28:32.545Z",
+  "sameExisting": true,
+  "drafts": [
+    {
+      "id": "TS0362",
+      "brand": "Medicube",
+      "name": "Triple Collagen Toner",
+      "priceFils": 0,
+      "referencePriceFils": 0,
+      "stock": 0,
+      "approved": 0,
+      "active": 0,
+      "image": "/images/catalog/TS0362-1afccabe3904.webp",
+      "koreanCare": true,
+      "size": "140 ml",
+      "bilingual": true
+    },
+    {
+      "id": "TS0363",
+      "brand": "Medicube",
+      "name": "PDRN Pink Tone Up Sun Cream SPF50+ PA++++",
+      "priceFils": 0,
+      "referencePriceFils": 0,
+      "stock": 0,
+      "approved": 0,
+      "active": 0,
+      "image": "/images/catalog/TS0363-ff2d643bfcab.webp",
+      "koreanCare": true,
+      "size": "50 ml",
+      "bilingual": true
+    },
+    {
+      "id": "TS0364",
+      "brand": "Dr.Melaxin",
+      "name": "TX-Astaxanthin Overnight Wrapping Mask",
+      "priceFils": 0,
+      "referencePriceFils": 0,
+      "stock": 0,
+      "approved": 0,
+      "active": 0,
+      "image": "/images/catalog/TS0364-b6920e793dcb.webp",
+      "koreanCare": true,
+      "size": "80 ml",
+      "bilingual": true
+    },
+    {
+      "id": "TS0365",
+      "brand": "Dr.Melaxin",
+      "name": "Peel Shot PS Glow Rice Toner",
+      "priceFils": 0,
+      "referencePriceFils": 0,
+      "stock": 0,
+      "approved": 0,
+      "active": 0,
+      "image": "/images/catalog/TS0365-232093abc389.webp",
+      "koreanCare": true,
+      "size": "200 ml",
+      "bilingual": true
+    }
+  ],
+  "galleries": [
+    {
+      "id": "TS0362",
+      "photos": [
+        "/images/catalog/TS0362-1afccabe3904.webp",
+        "/images/catalog/TS0362-0b410ee31b68.webp"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "TS0363",
+      "photos": [
+        "/images/catalog/TS0363-ff2d643bfcab.webp",
+        "/images/catalog/TS0363-3159b7e806b7.webp"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "TS0364",
+      "photos": [
+        "/images/catalog/TS0364-b6920e793dcb.webp"
+      ],
+      "revision": 1
+    },
+    {
+      "id": "TS0365",
+      "photos": [
+        "/images/catalog/TS0365-232093abc389.webp"
+      ],
+      "revision": 1
+    }
+  ],
+  "baseline": {
+    "productCount": 327,
+    "maxId": "TS0365"
+  },
+  "writes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ]
+}

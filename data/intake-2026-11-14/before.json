@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-14T19:27:13.476Z",
+  "baseline": {
+    "productCount": 323,
+    "maxId": "TS0361"
+  },
+  "existingProduct": {
+    "id": "TS0073",
+    "brand": "Medicube",
+    "name": "Medicube - Collagen Night Wrapping Mask",
+    "category": "البشرة",
+    "subcategory": "ماسك",
+    "description": "خصصي لنفسكِ استراحة صغيرة، واتبعي خطوات العناية على مهل. ماسك يُفرد فوق روتين المساء ويجف إلى غشاء يمكن نزعه صباحًا. يجمع الكولاجين ومرطبات البشرة للعناية بالنعومة ومظهر الإشراقة خلال روتينكِ الليلي.",
+    "reference_price_fils": 13950,
+    "price_fils": 6990,
+    "discount_percent": 49,
+    "image_url": "/images/catalog/TS0073-05a996400080.jpg",
+    "source_url": "https://glowceryjo.com/",
+    "source_shop": "Glowcery",
+    "approved": 1,
+    "stock": 24,
+    "active": 1,
+    "created_at": "2026-10-25 11:20:12",
+    "updated_at": "2026-11-05 09:13:50",
+    "details_json": "{\"nameAr\":\"ماسك الكولاجين الليلي من ميديكيوب\",\"tagline\":\"خذي وقتكِ، هذه لحظتكِ.\",\"benefits\":[\"غشاء ختامي لروتين المساء\",\"العناية بالترطيب والنعومة\",\"إزالة بالنزع اللطيف أو الشطف\"],\"howToUse\":\"أكملي روتينكِ: ضعي التونر والسيروم والكريم أولًا.\\nطبقة متساوية: تجنبي العينين والشفاه والحواجب وخط الشعر؛ اتركيه يجف.\\nفي الصباح: انزعيه من الأطراف بلطف أو اشطفيه بماء فاتر.\",\"notes\":\"لا تنزعيه بقوة. توقفي عند التهيج؛ لا يُطبَّق على الجروح.\",\"imageType\":\"photo\",\"collection\":\"k-beauty\",\"featuredOrder\":100,\"productType\":\"face-mask\",\"en\":{\"name\":\"Medicube Collagen Night Wrapping Mask\",\"tagline\":\"A little pause. A moment for you.\",\"description\":\"Set aside a little pause and take your care steps at your own pace. An overnight mask applied over evening skincare. It dries into a film that gently peels away in the morning, bringing collagen and moisturising ingredients to your night routine.\",\"benefits\":[\"Finishes evening skincare\",\"Hydration and softness care\",\"Peel or rinse removal\"],\"howToUse\":\"Complete skincare: Apply toner, serum and cream first.\\nAn even layer: Avoid eyes, lips, eyebrows and hairline; let dry.\\nNext morning: Gently peel from the edges or rinse with lukewarm water.\",\"notes\":\"Never force peeling. Stop if irritated; avoid wounded skin.\",\"variantNote\":\"\"},\"contentVersion\":\"4.0.0\",\"toneVersion\":\"4.1.0\"}"
+  },
+  "existingIdentityCount": 0
+}

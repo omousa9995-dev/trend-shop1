@@ -1,0 +1,85 @@
+{
+  "images": [
+    {
+      "url": "/images/catalog/TS0362-1afccabe3904.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 8750,
+      "hashMatches": true
+    },
+    {
+      "url": "/images/catalog/TS0363-ff2d643bfcab.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 16378,
+      "hashMatches": true
+    },
+    {
+      "url": "/images/catalog/TS0364-b6920e793dcb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 49760,
+      "hashMatches": true
+    },
+    {
+      "url": "/images/catalog/TS0365-232093abc389.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 41712,
+      "hashMatches": true
+    },
+    {
+      "url": "/images/catalog/TS0362-0b410ee31b68.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 25528,
+      "hashMatches": true
+    },
+    {
+      "url": "/images/catalog/TS0363-3159b7e806b7.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 28426,
+      "hashMatches": true
+    }
+  ],
+  "publicCatalog": {
+    "storeLive": true,
+    "productCount": 303,
+    "newDraftsExposed": false,
+    "existingMask": {
+      "id": "TS0073",
+      "priceFils": 6990,
+      "stock": 24
+    }
+  },
+  "unpublishedPages": [
+    {
+      "id": "TS0362",
+      "status": 404
+    },
+    {
+      "id": "TS0363",
+      "status": 404
+    },
+    {
+      "id": "TS0364",
+      "status": 404
+    },
+    {
+      "id": "TS0365",
+      "status": 404
+    }
+  ],
+  "tests": {
+    "passed": 13,
+    "failed": 0,
+    "command": "node --test tests/owner-video-intake-v520.test.mjs tests/owner-intake-v513.test.mjs tests/media.test.mjs"
+  },
+  "browserReview": {
+    "image": "/images/catalog/TS0362-1afccabe3904.webp",
+    "imageLoaded": true,
+    "adminPage": "/admin.html",
+    "adminSession": "Signed out; admin data verified through D1, not browser login."
+  }
+}

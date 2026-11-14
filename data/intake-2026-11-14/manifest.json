@@ -1,0 +1,81 @@
+{
+  "intakeDate": "2026-11-14",
+  "sourceVideo": "ScreenRecording_11-14-2026 19-14-36_1.mov",
+  "sourceVideoSha256": "9f6080d388ce82f6c731cc2195328cf178280e6b34f4f302edfaea3bd2a9e274",
+  "durationSeconds": 8.085034,
+  "identifiedProducts": 5,
+  "newDrafts": 4,
+  "pending": [
+    "owner sale prices",
+    "owner available quantities"
+  ],
+  "publicationState": {
+    "approved": 0,
+    "active": 0,
+    "stock": 0,
+    "priceFils": 0,
+    "referencePriceFils": 0,
+    "meaning": "Zero is a private pending-data sentinel, never a published free offer."
+  },
+  "existing": [
+    {
+      "id": "TS0073",
+      "name": "Medicube Collagen Night Wrapping Mask",
+      "visibleSize": "75 ml",
+      "videoSecond": 3,
+      "action": "Existing product matched; no duplicate, price change or stock change."
+    }
+  ],
+  "new": [
+    {
+      "id": "TS0362",
+      "brand": "Medicube",
+      "name": "Triple Collagen Toner",
+      "size": "140 ml",
+      "source": {
+        "page": "https://medicube.us/products/glass-glow-essence-2-0",
+        "image": "https://cdn.shopify.com/s/files/1/0156/3905/2336/files/00_ec3b128f-0ebc-480e-9209-57f01df62843.jpg?v=1766559203"
+      }
+    },
+    {
+      "id": "TS0363",
+      "brand": "Medicube",
+      "name": "PDRN Pink Tone Up Sun Cream SPF50+ PA++++",
+      "size": "50 ml",
+      "source": {
+        "page": "https://m.themedicube.co.kr/product/detail.html?product_no=2196",
+        "image": "https://m.themedicube.co.kr/web/product/big/202502/fd0bf0c5d6aa15df23ec60c6d9e93c7a.png"
+      }
+    },
+    {
+      "id": "TS0364",
+      "brand": "Dr.Melaxin",
+      "name": "TX-Astaxanthin Overnight Wrapping Mask",
+      "size": "80 ml",
+      "source": {
+        "page": "https://drmelaxin.us/products/bogo-free-tx-astaxanthin-overnight-wrapping-mask",
+        "directionsImage": "https://cdn.shopify.com/s/files/1/0778/4867/4615/files/tx_asta_wrapping_mask_05.png?v=1765178992"
+      }
+    },
+    {
+      "id": "TS0365",
+      "brand": "Dr.Melaxin",
+      "name": "Peel Shot PS Glow Rice Toner",
+      "size": "200 ml",
+      "source": {
+        "page": "https://drmelaxin.us/products/peel-shot-glow-rice-toner",
+        "directionsImage": "https://drmelaxin.us/cdn/shop/files/AMAZON_peelshot_toner_global_5.png?v=1776391786&width=1640"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "Owner video identifies the physical variants; no authenticity claim inferred.",
+    "Medicube Triple Collagen Toner is named without an unverified 4.0 edition.",
+    "PDRN Pink Tone Up sunscreen is distinct from existing TS0344 Collagen Firming Sun Cream.",
+    "Dr.Melaxin rice toner is distinct from TS0113 and TS0114 exfoliating ampoules.",
+    "Use owner video pack photos for the red mask and PS Glow Rice toner. The current rice manufacturer pack photo has different wording.",
+    "The red mask uses the correct tube directions image (lowercase tx_asta_wrapping_mask_05.png), not the mismatched hydrogel-sheet illustration in the page accordion.",
+    "No BOGO promotion, included brush, treatment result percentage, customer review or stock amount is inferred."
+  ],
+  "validation": "tests/owner-video-intake-v520.test.mjs"
+}
