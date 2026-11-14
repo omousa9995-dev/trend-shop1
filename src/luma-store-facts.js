@@ -35,7 +35,7 @@ export function explicitLumaBudget(message){
  const amount=t.match(/(?:ميزاني(?:تي|ه|ة|تها)?|ما يزيد عن|بحدود|حد اقصي|اقل من|حدود)\s*(?:هي|حوالي|تقريبا|من|بـ|ب)?\s*(\d{1,3}(?:[.,]\d{1,2})?)\s*(?:دينار|دنانير|د\.?ا|jod)?/i)?.[1];
  const fils=amount?Math.round(Number(amount.replace(',','.'))*1000):null;return fils>=500&&fils<=100000?fils:null;
 }
-export function lumaCatalogFacts(p){return {id:p.id,name:p.name,brand:p.brand,type:p.type,areas:p.areas,priceJod:p.priceFils/1000,careClass:p.careClass,description:p.description,ingredients:p.ingredients,howToUse:p.assistantHowToUse||p.howToUse,notes:p.notes,options:p.options,...(p.verifiedLabel?{activeIngredient:p.activeIngredient,activeStrength:p.activeStrength,verifiedLabel:p.verifiedLabel}:{}),...(p.requiresIngredientReview?{reviewIngredients:true}:{})}}
+export function lumaCatalogFacts(p){return {id:p.id,name:p.name,brand:p.brand,type:p.type,areas:p.areas,priceJod:p.priceFils/1000,referencePriceJod:p.referencePriceFils/1000,...(p.limitedOffer?{limitedOffer:{originalPriceJod:p.limitedOffer.originalPriceFils/1000,endsAt:new Date(p.limitedOffer.endsAt*1000).toISOString()}}:{}),careClass:p.careClass,description:p.description,ingredients:p.ingredients,howToUse:p.assistantHowToUse||p.howToUse,notes:p.notes,options:p.options,...(p.verifiedLabel?{activeIngredient:p.activeIngredient,activeStrength:p.activeStrength,verifiedLabel:p.verifiedLabel}:{}),...(p.requiresIngredientReview?{reviewIngredients:true}:{})}}
 
 // Seed a few complementary, relevant products so ordinary routines need one turn.
 // Exact IDs, ingredient/label facts and final stock validation remain authoritative.

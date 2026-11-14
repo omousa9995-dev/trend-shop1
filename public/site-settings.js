@@ -1,6 +1,6 @@
 import {DEFAULT_SITE_SETTINGS} from './site-defaults.js?v=5.6.0';
 export {DEFAULT_SITE_SETTINGS};
-export const HOME_SECTIONS={hero:'الواجهة الرئيسية',benefits:'مميزات التسوق',categories:'أقسام المنتجات',offers:'العروض والباكجات',picks:'اختيارات المتجر',moments:'لحظات الجمال',korean:'العناية الكورية',callout:'رسالة المتجر',deals:'أسعار لطيفة',reviews:'تجارب الزبائن',trust:'بطاقات الثقة'};
+export const HOME_SECTIONS={hero:'الواجهة الرئيسية',benefits:'مميزات التسوق',categories:'أقسام المنتجات',offers:'العروض والباكجات',picks:'اختيارات المتجر',moments:'لحظات الجمال',korean:'العناية الكورية',callout:'رسالة المتجر',deals:'أسعار لطيفة',reviews:'تجارب الزبائن',trust:'عروض لفترة محدودة'};
 export const PRODUCT_SECTIONS={hero:'الصور والسعر والاختيارات',navigation:'التنقل بين تفاصيل المنتج',about:'عن المنتج',fit:'هل يناسبكِ؟',usage:'طريقة الاستخدام',media:'الصور والفيديوهات',reviews:'التجارب الموثقة',faq:'الأسئلة الشائعة',recommendations:'المنتجات المقترحة',last:'دعوة الاختيار الأخيرة'};
 export const SITE_IMAGE_SLOTS=[
  {id:'hero',label:'صورة الواجهة الرئيسية',note:'الصورة الكبيرة أعلى المتجر',ratio:'3:2',url:'/images/editorial/beauty-hero-v2.webp'},

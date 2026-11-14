@@ -8,7 +8,7 @@ export function applyAppearance(doc,settings,language){
 }
 export function applyHomeLayout(main,settings,language){
  const hero=main.querySelector('.hero');if(hero){const title=language==='en'?'heroTitleEn':'heroTitleAr',text=language==='en'?'heroTextEn':'heroTextAr';if(settings[title]!==DEFAULT_SITE_SETTINGS[title])hero.querySelector('h1').textContent=settings[title];if(settings[text]!==DEFAULT_SITE_SETTINGS[text])hero.querySelector('.hero-content>p').textContent=settings[text];}
- const definitions={hero:'.hero',benefits:'.benefits',categories:'.cat-grid',offers:'.featured-offers',picks:'.new-products-head',moments:'.campaign-grid',korean:'a.text-link[href="#/shop?collection=korean-care"]',callout:'.callout',deals:'a.text-link[href="#/shop?max=5000"]',reviews:'#homeReviews',trust:'.trust-list'};
+ const definitions={hero:'.hero',benefits:'.benefits',categories:'.cat-grid',offers:'.featured-offers',picks:'.new-products-head',moments:'.campaign-grid',korean:'a.text-link[href="#/shop?collection=korean-care"]',callout:'.callout',deals:'a.text-link[href="#/shop?max=5000"]',reviews:'#homeReviews',trust:'.limited-offers'};
  for(const[id,selector]of Object.entries(definitions)){const found=main.querySelector(selector);if(found)(id==='benefits'?found:found.closest('section')).dataset.storeSection=id;}
  arrangeSections(main,settings.homeSections,Object.fromEntries(settings.homeSections.map(x=>[x.id,`[data-store-section="${x.id}"]`])));
 }

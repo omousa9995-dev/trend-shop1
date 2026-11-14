@@ -1,3 +1,4 @@
+import {applyLimitedOffers,loadLimitedOffers} from './limited-offers.js';
 import {requestGemini} from './gemini-provider.js';
 import {storefrontProducts} from '../public/catalog-policy.js';
 import {productDetails} from '../public/shop-tools.js';
@@ -52,12 +53,12 @@ export function careCatalog(products){
   }
   const cosmeticTypes=['cleanser','moisturizer','sunscreen','toner','serum','essence','face-mask','face-oil','mist','eye-care','body-care','body-cleansing','body-oil','body-sunscreen','foot-care','shampoo','conditioner','hair-mask','hair-oil'];
   const cosmeticCandidate=!!type&&(p.category==='المكياج'||cosmeticTypes.includes(type))&&!risky.test(facts);
-  return {id:p.id,name:text(d.nameAr||p.name,160),brand:text(p.brand,80),type,areas,priceFils:p.price_fils,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,...lumaProductFacts(p,d,type,cosmeticCandidate),gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
+  return {id:p.id,name:text(d.nameAr||p.name,160),brand:text(p.brand,80),type,areas,priceFils:p.price_fils,referencePriceFils:p.reference_price_fils,limitedOffer:p.limitedOffer,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,...lumaProductFacts(p,d,type,cosmeticCandidate),gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
  });
 }
 async function loadCatalog(env){
  const result=await env.DB.prepare('SELECT id,brand,name,category,subcategory,description,details_json,price_fils,reference_price_fils,stock,approved,active,image_url,updated_at FROM products WHERE active=1 AND approved=1 ORDER BY id LIMIT 1000').all();
- return careCatalog(withPairPricing(result.results||[],(await readSiteSettings(env)).pairPricing));
+ return careCatalog(withPairPricing(applyLimitedOffers(result.results||[],await loadLimitedOffers(env)),(await readSiteSettings(env)).pairPricing));
 }
 async function catalogRevision(products){return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',encoder.encode(JSON.stringify(products.map(({image,...p})=>p)))))).map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,20)}
 

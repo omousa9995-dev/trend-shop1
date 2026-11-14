@@ -1,5 +1,6 @@
 import {actionRequest,actionResponse} from './luma-json-actions.js';
 import {interactionRequest,interactionResponse} from './gemini-interactions.js';
+import {readGeminiStream} from './gemini-stream.js';
 // All credentials and inference stay server-side. No request text or raw provider
 // diagnostics are logged. A complete bounded JSON turn is validated before UI output.
 export const GEMINI_TEXT_MODELS=['gemini-3.8-flash','gemini-3.5-flash-lite'];
@@ -7,14 +8,14 @@ export function modelOrder(primary){const first=GEMINI_TEXT_MODELS.includes(prim
 async function boundedJson(response,maxBytes){
  const reader=response.body?.getReader();if(!reader)throw Error('PROVIDER_RESPONSE_INVALID');
  let bytes=0,out='';const decoder=new TextDecoder();
- try{while(true){const {done,value}=await reader.read();if(done)break;bytes+=value.byteLength;if(bytes>maxBytes)throw Error('PROVIDER_RESPONSE_TOO_LARGE');out+=decoder.decode(value,{stream:true})}out+=decoder.decode();return JSON.parse(out)}finally{await reader.cancel().catch(()=>{});reader.releaseLock()}
+ try{while(true){const {done,value}=await reader.read();if(done)break;bytes+=value.byteLength;if(bytes>maxBytes)throw Error('PROVIDER_RESPONSE_TOO_LARGE');out+=decoder.decode(value,{stream:true})}out+=decoder.decode();return JSON.parse(out)}finally{reader.cancel().catch(()=>{});try{reader.releaseLock()}catch{}}
 }
 function problem(status,data){
  const info=data?.error||{},message=typeof info.message==='string'?info.message:'';
  const reason=status===401||status===403?'AUTH':status===402||/billing|prepay|credit balance/i.test(message)?'BILLING':status===404?'MODEL':status===429?'RATE_LIMIT':/overload|capacity|busy/i.test(message)?'CAPACITY':status>=500?'UNAVAILABLE':'INVALID_REQUEST';
  return Object.assign(Error('PROVIDER_HTTP_'+status),{status,reason});
 }
-export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',preferredApi,onAttempt=()=>{},timeoutMs=15000}){
+export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',preferredApi,onAttempt=()=>{},onTextDelta,timeoutMs=15000}){
  const candidates=model?[model,model]:modelOrder(primary);let last;
  for(let index=0;index<candidates.length;index++){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
@@ -29,11 +30,13 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
    // Flash-Lite supports minimal thinking for latency-sensitive store actions.
    // The alternate 3.8 model supports low, not minimal. Never send an unsupported level.
    if(actions&&selected==='gemini-3.5-flash-lite')prepared.generationConfig.thinkingConfig={thinkingLevel:'minimal'};
-   const body=live?interactionRequest(selected,prepared):prepared;
-   const response=await fetch(live?'https://generativelanguage.googleapis.com/v1beta/interactions':'https://generativelanguage.googleapis.com/v1beta/models/'+selected+':generateContent',{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':apiKey,...(live?{'Api-Revision':'2026-05-20'}:{})},body:JSON.stringify(body),signal:signal?AbortSignal.any([signal,timeout.signal]):timeout.signal});
+   const streaming=typeof onTextDelta==='function',body=live?{...interactionRequest(selected,prepared),...(streaming?{stream:true}:{})}:prepared;
+   const combined=signal?AbortSignal.any([signal,timeout.signal]):timeout.signal;
+   const response=await fetch(live?'https://generativelanguage.googleapis.com/v1beta/interactions':'https://generativelanguage.googleapis.com/v1beta/models/'+selected+(streaming?':streamGenerateContent?alt=sse':':generateContent'),{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':apiKey,...(live?{'Api-Revision':'2026-05-20'}:{})},body:JSON.stringify(body),signal:combined});
    const hint=response.headers.get('retry-after');if(hint)retryAfter=/^\d+(?:\.\d+)?$/.test(hint)?Number(hint)*1000:Math.max(0,Date.parse(hint)-Date.now());
    if(!response.ok){const info=await boundedJson(response,16000).catch(()=>({}));throw problem(response.status,info)}
-   const raw=await boundedJson(response,180000),normalized=live?interactionResponse(raw):raw,data=actions?actionResponse(normalized):normalized;if(!Array.isArray(data.candidates)||!data.candidates.length)throw Error('PROVIDER_RESPONSE_INVALID');
+   const sse=streaming&&/text\/event-stream/i.test(response.headers.get('content-type')||'');
+   const raw=sse?await readGeminiStream(response,{api,signal:combined,onTextDelta}):await boundedJson(response,180000),normalized=live&&!sse?interactionResponse(raw):raw,data=actions?actionResponse(normalized):normalized;if(!Array.isArray(data.candidates)||!data.candidates.length)throw Error('PROVIDER_RESPONSE_INVALID');
    onAttempt({model:selected,transport,api,attempt:index+1,ok:true});return {data,model:selected,api,fallback:index>0};
   }catch(error){
    if(signal?.aborted)throw signal.reason||error;
