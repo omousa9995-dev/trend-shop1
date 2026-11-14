@@ -1,0 +1,84 @@
+{
+  "deployment": {
+    "id": "9f2a3c51-087b-4f12-a9d3-a42543e0dfba",
+    "versions": [
+      {
+        "version_id": "671f9492-0c11-425e-96b6-8778933ebe20",
+        "percentage": 100
+      }
+    ],
+    "createdOn": "2026-11-14T22:56:15.399783Z"
+  },
+  "commit": "d3ee4261bb472fd734c04e2d870d9e1e81f148ac",
+  "observability": true,
+  "bindings": [
+    {
+      "name": "DB",
+      "type": "d1"
+    },
+    {
+      "name": "GEMINI_API_KEY",
+      "type": "secret_text"
+    },
+    {
+      "name": "MAIL_WEBHOOK_TOKEN",
+      "type": "secret_text"
+    },
+    {
+      "name": "MAIL_WEBHOOK_URL",
+      "type": "secret_text"
+    },
+    {
+      "name": "MEDIA",
+      "type": "kv_namespace"
+    },
+    {
+      "name": "SESSION_SECRET",
+      "type": "secret_text"
+    },
+    {
+      "name": "SETUP_TOKEN",
+      "type": "secret_text"
+    },
+    {
+      "name": "SHORT_ORDER_IDS",
+      "type": "plain_text"
+    },
+    {
+      "name": "STORE_LIVE",
+      "type": "plain_text"
+    }
+  ],
+  "business": {
+    "products": 327,
+    "productStateHash": "fb83288f2968d83f",
+    "orders": 15,
+    "orderItems": 87,
+    "campaigns": 0
+  },
+  "before": {
+    "products": 327,
+    "productStateHash": "fb83288f2968d83f",
+    "orders": 15,
+    "orderItems": 87
+  },
+  "businessRowsUnchanged": true,
+  "validation": {
+    "localTests": {
+      "passed": 507,
+      "failed": 0
+    },
+    "githubCI": {
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "d3ee4261bb472fd734c04e2d870d9e1e81f148ac",
+      "url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/43650415241"
+    },
+    "liveHttpTurns": 8,
+    "liveBrowserTurns": 3,
+    "livePhotos": 2,
+    "browserPhotoServerDurationMs": 4365,
+    "adminUrl": "https://trendjo.pages.dev/admin.html#limited",
+    "screenshot": "docs/verification/v521-luma-live.jpg"
+  }
+}

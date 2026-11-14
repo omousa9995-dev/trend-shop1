@@ -29,3 +29,17 @@ New regressions cover scheduling/expiry, exact cents, Jordan timezone conversion
 Production verification and rollback identifiers are recorded alongside this release after activation. No claim of native iPhone hardware testing or zero possible future provider errors is made.
 
 Technical references: [Google Interactions streaming](https://ai.google.dev/gemini-api/docs/streaming), [generateContent streaming](https://ai.google.dev/api/generate-content), [Cloudflare versions and deployments](https://developers.cloudflare.com/workers/versions-and-deployments/).
+
+## Production activation — 15 November 2026, Jordan
+
+- Source commit: `d3ee4261bb472fd734c04e2d870d9e1e81f148ac`.
+- Worker version 93: `671f9492-0c11-425e-96b6-8778933ebe20`, 100% traffic.
+- Deployment: `9f2a3c51-087b-4f12-a9d3-a42543e0dfba`.
+- Rollback code version: `42179dd9-7a45-4890-a694-75ce3a0bf93f`. The additive campaign table can remain if rolling code back; no campaigns were seeded.
+- Product-state checksum, 327 product records, 15 existing orders and 87 existing order lines matched before/after publication. Credentials, bindings, observability and the daily cap of 100 were preserved. No production campaign, order, inventory change or price change was created.
+- Eight consecutive HTTP chat turns succeeded, including a genuine photo request, skincare routine, ordinary advice, authenticity, live offer/previous-price questions, delivery and management contact. Model replies produced 9–11 visible replacement events per answer, before their terminal completion. JSON and thought content stayed hidden.
+- Three additional live browser messages succeeded, including the actual camera file chooser and a second owner-supplied pack photo. Luma identified the rice toner, cleared the image after completion and re-enabled Send. That photo turn reported 4,365 ms server duration. This is a small functional sample, not a latency SLA.
+- The published new-conversation header button and camera icon were visually checked. The removed trust tiles were absent. The dedicated admin URL was verified at its existing sign-in wall; no session was minted or authentication changed.
+- The remote browser could not reach the isolated local preview. Filled-campaign rendering was exercised with local fixtures and admin DOM tests, not by creating fictitious discounts in the live store. No active campaigns currently exist: the owner must fill and activate the three slots. Native iPhone/HEIC hardware and a real customer hand photograph were not used in the live tests; shade-option validation uses explicit synthetic fixtures.
+
+Evidence: `docs/verification/v521-live-http.json`, `v521-assets.json`, `v521-deployment.json`, and `v521-luma-live.jpg`.

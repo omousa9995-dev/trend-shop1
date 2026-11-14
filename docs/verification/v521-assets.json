@@ -1,0 +1,50 @@
+{
+  "assets": [
+    {
+      "path": "/app.js",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/admin.js",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/limited-offers.js",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/limited-offers.css",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/limited-offers-admin.js",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/limited-offers-admin.css",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/luma-widget.js",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/luma-widget.css",
+      "status": 200,
+      "matchesSource": true
+    },
+    {
+      "path": "/prepare-photo.js",
+      "status": 200,
+      "matchesSource": true
+    }
+  ],
+  "adminCampaignUnauthenticatedStatus": 401
+}
