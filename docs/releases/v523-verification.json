@@ -1,0 +1,94 @@
+{
+  "release": "5.23.0",
+  "source_commit": "804dd26409431118ba3727fb53971fe55fbf7438",
+  "backup": {
+    "branch": "backup/v5.22-before-mobile-revisions-2026-11-22",
+    "source_commit": "57c06af72bea120d92236bf2f1aede00409031cf",
+    "worker_version_id": "c7219d5c-b3bc-47f7-8bae-22c8279003b9",
+    "worker_version_number": 95
+  },
+  "production": {
+    "url": "https://trendjo.pages.dev/",
+    "worker_version_id": "c78f5fda-262a-4e68-86d6-d7944f3b9c22",
+    "worker_version_number": 96,
+    "deployment_id": "7d9701ed-5a26-4ca1-b92e-4f64ee0f7420",
+    "traffic_percentage": 100,
+    "package": {
+      "files": 654,
+      "modules": 51,
+      "bytes": 6647324,
+      "sha256": "4761a4672ab1274e5eef5780d281c9d75f6994eaf138887feee0fec8a056e8b2"
+    }
+  },
+  "validation": {
+    "ci": {
+      "url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/45071283381",
+      "tested_commit": "804dd26409431118ba3727fb53971fe55fbf7438",
+      "tests": 525,
+      "pass": 525,
+      "fail": 0,
+      "skipped": 0
+    },
+    "browser": {
+      "environment": "Chromium browser with responsive viewports; no physical iPhone test",
+      "preview_viewports": [
+        {
+          "width": 320,
+          "height": 740
+        },
+        {
+          "width": 390,
+          "height": 844
+        },
+        {
+          "width": 1440,
+          "height": 1000
+        }
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "horizontal_overflow": false,
+      "back_home_delta_px": 0,
+      "back_guide_delta_px": 0,
+      "explicit_add_before_review": true,
+      "review_preserves_bag_quantity": true,
+      "pending_quantity_requires_explicit_add": true,
+      "automatic_recommendation_or_bag_popup": false,
+      "payment_blocks": 1,
+      "product_prices_exclude_delivery": true,
+      "product_type_icons": 11,
+      "header_social_links": 2,
+      "footer_social_links": 2,
+      "luma_visible_on_home_header_and_footer": true,
+      "luma_hidden_on_product": true,
+      "whatsapp_overlaps_home_cta": false,
+      "commercial_rating_links": 0,
+      "live_guides_checked": 9,
+      "live_guides_passed": 9,
+      "live_browser_page_errors": []
+    },
+    "public_http": {
+      "home": 200,
+      "catalog": 200,
+      "product": 200,
+      "sitemap": 200,
+      "google_feed": 200,
+      "returns_policy": 200,
+      "live_products": 303,
+      "google_feed_items": 303,
+      "product_specific_server_title": true,
+      "product_structured_data": true
+    },
+    "production_package_matches_independently_built_source": true,
+    "bindings_preserved": 9,
+    "real_orders_submitted": 0,
+    "database_mutations_performed": 0
+  },
+  "notes": [
+    "Shipping remains 1 JOD; free strictly above 19 JOD after discounts.",
+    "Payment is shown as one cash-on-delivery or manually arranged CliQ information block.",
+    "No checkout confirmation, customer email or inventory mutation was performed during browser checks."
+  ]
+}
