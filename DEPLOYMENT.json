@@ -312,8 +312,8 @@
   "search_console_ownership_verified": true,
   "sitemap_submitted": true,
   "sitemap_processing": "pending",
-  "merchant_center_connected": false,
-  "social_carousel_status": "saved draft; publication requires explicit approval",
+  "merchant_center_connected": true,
+  "social_carousel_status": "published and verified on both Facebook and Instagram after owner approval",
   "previous_recorded_deployment_v54": {
     "version": "5.4.0",
     "deployed_at": "2026-11-06T22:30:55.251943Z",
@@ -322,5 +322,6 @@
     "implementation_commit": "c246f3b61ccc23a4f492dd2bee8daa3e5ed4d83f",
     "source_tree": "896ec0c498d7320bdff5562fc7a745e67ac76188",
     "package_sha256": "7ce8123dcde07c6eb6165677279698290efcafdbfefb210adafde01c8290d4b3"
-  }
+  },
+  "merchant_center_account_created": false
 }

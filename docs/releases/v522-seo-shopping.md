@@ -12,10 +12,15 @@ The COSRX display spelling was corrected in source and 12 production product tex
 
 Validation: 516 local tests, zero failures; GitHub CI succeeded for the implementation commit. Tests cover first-load prices, hidden-product exclusion, real/expired source scores, verified one-to-five star inputs, price expiry, legacy links, and actual hydration/navigation of the storefront.
 
-Google ownership was verified using the actual downloaded HTML file. Search Console accepted https://trendjo.pages.dev/sitemap.xml at 2026-11-22T14:17:46.233Z. Its current status is pending processing, with no reported errors or warnings; acceptance is not indexing. Merchant Center is not connected, so the live feed has not been submitted there. Owner connection: https://loomascale.com/dashboard/connections?connect=merchant_center .
+Google ownership was verified using the actual downloaded HTML file. Search Console accepted https://trendjo.pages.dev/sitemap.xml at 2026-11-22T14:17:46.233Z. Its current status is pending processing, with no reported errors or warnings; acceptance is not indexing. A Merchant Center account has not yet been created, so the live feed has not been submitted there. Owner connection: https://loomascale.com/dashboard/connections?connect=merchant_center .
 
-The existing record reports that the Facebook cover and bio were published earlier in the session. The Beauty of Joseon four-photo carousel and caption are now saved in Meta Business Suite drafts for both TREND SHOP and trend_shop.jo, with paid promotion off. Public publication was rejected by automatic approval because it did not consider earlier authorization explicit enough and asked for verification of audience/settings. No publication retry or workaround was attempted; explicit owner approval remains required. Drafts: https://business.facebook.com/latest/posts/draft_posts/?asset_id=104096287731695&business_id=467583567928517&nav_ref=internal_nav
+The Facebook cover and bio were published earlier in the session. After explicit owner approval, the Beauty of Joseon four-photo carousel and caption were published to both TREND SHOP and trend_shop.jo with paid promotion off. Public pages and the live media connector confirmed both posts; Instagram returned four child images. Facebook: https://www.facebook.com/1619331160237476/posts/1619329586904300 . Instagram: https://www.instagram.com/p/DgDDZu3B3QQ/ .
+
+The owner connected Merchant Center and confirmed an online-only store. Google now accepts the connection but lists zero Merchant Center accounts; the browser likewise opens new-account setup. The website and online-only selection are prepared while account setup continues.
 
 Rollback: backup/v5.21-before-seo-2026-11-22, Worker 671f9492-0c11-425e-96b6-8778933ebe20. The small text-only spelling migration need not be undone when rolling code back.
 
 Evidence: [v522-release.json](../verification/v522-release.json).
+
+
+Merchant Center setup checkpoint: prepared Trend Shop, Jordan, https://trendjo.pages.dev/, online-only. Both optional email subscriptions are off. The final Continue action explicitly accepts Google Merchant Center Terms of Service (https://support.google.com/merchants/answer/160173); awaiting owner acceptance before account creation.

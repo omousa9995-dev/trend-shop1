@@ -5,12 +5,25 @@
   "newBio": "عناية كورية ومكياج لكل الأردن ✨\nتوصيل خلال 24 ساعة 🚚 الدفع عند الاستلام أو CliQ\nتسوّقي الآن ⬇️\nhttps://trendjo.pages.dev/",
   "coverGeneratedFile": "exec-7852411e-92f3-4250-b9f1-5e8a7abc15fa.png",
   "coverStatus": "published; verified cover photo link",
-  "facebookPostStatus": "saved draft; not published",
-  "instagramPostStatus": "saved draft; not published",
+  "facebookPostStatus": "published and publicly verified",
+  "instagramPostStatus": "published; four-photo carousel verified",
   "bioStatus": "published; verified in page About section",
   "coverUrl": "https://www.facebook.com/photo/?fbid=1619252503578675&set=a.456357176534886",
   "carouselImages": 4,
   "draftsUrl": "https://business.facebook.com/latest/posts/draft_posts/?asset_id=104096287731695&business_id=467583567928517&nav_ref=internal_nav",
   "paidPromotion": false,
-  "publishApprovalStatus": "automatic approval rejected public publication; explicit owner approval required"
+  "publishApprovalStatus": "explicit owner approval received and publication completed",
+  "publishedPosts": {
+    "facebook": {
+      "id": "104096287731695_1619329586904300",
+      "url": "https://www.facebook.com/1619331160237476/posts/1619329586904300",
+      "publishedAt": "2026-11-22T14:46:42+0000"
+    },
+    "instagram": {
+      "id": "18080740283758736",
+      "url": "https://www.instagram.com/p/DgDDZu3B3QQ/",
+      "publishedAt": "2026-11-22T14:46:45+0000",
+      "photos": 4
+    }
+  }
 }
