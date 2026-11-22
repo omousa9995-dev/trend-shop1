@@ -22,13 +22,19 @@ export function installProductNavigation(onNavigate,view=window){
   if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
   const anchor=event.target.closest?.('a[href]');if(!anchor||anchor.hasAttribute('download')||anchor.target&&anchor.target!=='_self')return;
   let url;try{url=new URL(anchor.href,view.location.href)}catch{return}if(url.origin!==view.location.origin)return;
+  // Section links on clean collection/product URLs must keep the current DOM.
+  if(url.hash&&!url.hash.startsWith('#/')&&url.pathname===view.location.pathname&&url.search===view.location.search){
+   let id;try{id=decodeURIComponent(url.hash.slice(1))}catch{return}
+   const section=view.document.getElementById(id);if(!section)return;
+   event.preventDefault();section.scrollIntoView({block:'start',behavior:view.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});return;
+  }
   const product=productIdFromPath(url.pathname),collection=url.pathname.startsWith('/collections/'),hash=url.hash.startsWith('#/');
   if(!product&&!collection&&!hash)return;
   event.preventDefault();
   const target=product&&!hash?productPath(product)+url.search:collection&&!hash?url.pathname+url.search:'/'+url.search+url.hash;
-  view.history.pushState(null,'',target);canonicalizeStoreLocation(view);lastLocation=view.location.href;onNavigate();
+  view.history.pushState(null,'',target);canonicalizeStoreLocation(view);lastLocation=view.location.href;onNavigate({history:'push'});
  };
- const pop=()=>{canonicalizeStoreLocation(view);if(lastLocation===view.location.href)return;lastLocation=view.location.href;onNavigate()};
+ const pop=()=>{canonicalizeStoreLocation(view);if(lastLocation===view.location.href)return;lastLocation=view.location.href;onNavigate({history:'pop'})};
  view.document.addEventListener('click',click);view.addEventListener('popstate',pop);view.addEventListener('hashchange',pop);
  return()=>{view.document.removeEventListener('click',click);view.removeEventListener('popstate',pop);view.removeEventListener('hashchange',pop)};
 }

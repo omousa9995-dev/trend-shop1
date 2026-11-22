@@ -38,14 +38,14 @@ test('Cart and checkout omit complementary product suggestions while product-pag
  assert.ok(d.querySelector('#drawer a[href="#/checkout"]'));
  assert.ok(d.querySelector('#drawer .cart-totals'));
 });
-test('Add feedback is pink immediately; recommendations appear after exactly three quiet seconds and keep focus unchanged',async t=>{
+test('Add feedback is pink immediately; browsing stays uninterrupted after three seconds and focus is preserved',async t=>{
  const {w,d,tick}=await open(t);d.querySelector('.detail-content [data-add="TS0064"]').click();const active=d.activeElement;assert.equal(d.querySelector('#cartAssist').hidden,true);assert.match(d.querySelector('#toast').textContent,/تمت الإضافة إلى السلة/);assert.ok(d.querySelector('#toast.is-added .added-icon'));assert.equal(w.getComputedStyle(d.querySelector('#toast')).color,'var(--added-pink)');assert.equal(w.getComputedStyle(d.documentElement).getPropertyValue('--added-pink'),'#b34272');assert.ok(d.querySelector('[data-story-add].is-added'));assert.ok(d.querySelector('#cartBtn.has-items'));
- tick(2999);assert.equal(d.querySelector('#cartAssist').hidden,true);tick(1);assert.equal(d.querySelector('#cartAssist').hidden,false);assert.equal(d.activeElement,active);assert.ok(d.querySelector('#cartAssist a[href="#/checkout"]'));
+ tick(2999);assert.equal(d.querySelector('#cartAssist').hidden,true);tick(1);assert.equal(d.querySelector('#cartAssist').hidden,true);assert.equal(d.activeElement,active);assert.equal(d.querySelector('.quick-checkout').open,false);
 });
-test('Rapid additions restart the quiet period and show recommendations for the current cart',async t=>{
- const {d,tick}=await open(t);const add=()=>d.querySelector('.detail-content [data-add="TS0064"]').click();add();tick(2000);d.querySelector('[data-story-step="1"]').click();add();tick(2999);assert.equal(d.querySelector('#cartAssist').hidden,true);tick(1);assert.equal(d.querySelector('#cartAssist').hidden,false);assert.equal(d.querySelector('#cartCount').textContent,'2');assert.match(d.querySelector('#cartAssist').textContent,/19.99/);
+test('Rapid explicit additions update the cart without automatically opening recommendations',async t=>{
+ const {d,tick}=await open(t);const add=()=>d.querySelector('.detail-content [data-add="TS0064"]').click();add();tick(2000);d.querySelector('[data-story-step="1"]').click();add();tick(2999);assert.equal(d.querySelector('#cartAssist').hidden,true);tick(1);assert.equal(d.querySelector('#cartAssist').hidden,true);assert.equal(d.querySelector('#cartCount').textContent,'2');assert.equal(d.querySelector('.quick-checkout').open,false);
 });
-test('Pending recommendations are canceled on search, cart, share, zoom, empty cart or checkout navigation',async t=>{
+test('Recommendations stay closed through search, cart, share, zoom, empty cart and checkout navigation',async t=>{
  for(const action of ['search','cart','share','zoom','empty','checkout']){const {w,d,tick}=await open(t);d.querySelector('.detail-content [data-add="TS0064"]').click();tick(1000);
   if(action==='search')d.querySelector('#searchBtn').click();if(action==='cart')d.querySelector('#cartBtn').click();if(action==='share')d.querySelector('#shareProduct').click();if(action==='zoom')d.querySelector('#openImageZoom').click();if(action==='empty'){d.querySelector('#cartBtn').click();d.querySelector('#drawer [data-qty][data-step="-1"]').click();d.querySelector('#drawer [data-close]').click();}if(action==='checkout'){w.location.hash='#/checkout';for(let i=0;i<40&&!d.querySelector('#checkoutForm');i++)await pause()}
   tick(10000);assert.equal(d.querySelector('#cartAssist').hidden,true,action);
