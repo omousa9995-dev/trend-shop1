@@ -1,0 +1,210 @@
+{
+  "release": "5.22.0",
+  "date": "2026-11-22",
+  "url": "https://trendjo.pages.dev/",
+  "sourceCommit": "587defa311e804f761a15733482ab9cf5f9beaa4",
+  "sourceTree": "56abe7fe12f98898b515de299b6560059b848b1d",
+  "workerVersion": "f53bd24b-b909-4ba9-8815-7f68562928d3",
+  "workerVersionNumber": 94,
+  "deployment": "eef01110-a0e5-4bb0-a297-bf698eb7cd1e",
+  "trafficPercent": 100,
+  "packageSha256": "f84936ee0c454286b38d4a891b7b22b3d5c83a11737c6b32f658c02984cae25b",
+  "packageMatchesReviewedSource": true,
+  "modules": 51,
+  "assets": 650,
+  "tests": {
+    "passed": 516,
+    "failed": 0,
+    "ci": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/45031639823"
+  },
+  "liveHTTP": [
+    {
+      "path": "/product/TS0065",
+      "status": 200,
+      "rawLength": 37885,
+      "title": "واقي الشمس ريليف صن من بيوتي أوف جوسون | Trend Shop",
+      "schema": {
+        "type": "Product",
+        "sku": "TS0065",
+        "price": "8.99",
+        "currency": "JOD"
+      },
+      "urlCount": 0,
+      "itemCount": 0,
+      "verification": false
+    },
+    {
+      "path": "/product/TS0079",
+      "status": 200,
+      "rawLength": 36500,
+      "title": "إيسنس سنيل 96 من كوزركس | Trend Shop",
+      "schema": {
+        "type": "Product",
+        "sku": "TS0079",
+        "price": "7.00",
+        "currency": "JOD"
+      },
+      "urlCount": 0,
+      "itemCount": 0,
+      "verification": false
+    },
+    {
+      "path": "/collections/cosrx",
+      "status": 200,
+      "rawLength": 39765,
+      "title": "كوزركس COSRX في الأردن | Trend Shop",
+      "schema": {
+        "type": "CollectionPage"
+      },
+      "urlCount": 0,
+      "itemCount": 0,
+      "verification": false
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "rawLength": 32617,
+      "schema": null,
+      "urlCount": 313,
+      "itemCount": 0,
+      "verification": false
+    },
+    {
+      "path": "/google-products.xml",
+      "status": 200,
+      "rawLength": 232503,
+      "title": "Trend Shop",
+      "schema": null,
+      "urlCount": 0,
+      "itemCount": 303,
+      "verification": false
+    },
+    {
+      "path": "/googlee50c1506ec1d889b.html",
+      "status": 200,
+      "rawLength": 159,
+      "schema": null,
+      "urlCount": 0,
+      "itemCount": 0,
+      "verification": true
+    }
+  ],
+  "guides": [
+    {
+      "slug": "korean-sunscreen",
+      "status": 200,
+      "title": "واقي شمس كوري في الأردن | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 9
+    },
+    {
+      "slug": "toner",
+      "status": 200,
+      "title": "تونر للبشرة في الأردن | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 7
+    },
+    {
+      "slug": "beginner-routine",
+      "status": 200,
+      "title": "روتين عناية بسيط للمبتدئة | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 78
+    },
+    {
+      "slug": "anua",
+      "status": 200,
+      "title": "أنوا Anua في الأردن | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 10
+    },
+    {
+      "slug": "beauty-of-joseon",
+      "status": 200,
+      "title": "بيوتي أوف جوسون في الأردن | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 5
+    },
+    {
+      "slug": "sky-high",
+      "status": 200,
+      "title": "ماسكارا سكاي هاي من ميبيلين | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 1
+    },
+    {
+      "slug": "estee-lauder-foundation",
+      "status": 200,
+      "title": "كريم أساس استيلودر في الأردن | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 1
+    },
+    {
+      "slug": "makeup-under-5",
+      "status": 200,
+      "title": "مكياج بـ5 دنانير أو أقل | Trend Shop",
+      "schemaType": "CollectionPage",
+      "products": 31
+    }
+  ],
+  "searchConsole": {
+    "verified": true,
+    "permission": "siteOwner",
+    "sitemap": "https://trendjo.pages.dev/sitemap.xml",
+    "submitted": true,
+    "submittedAt": "2026-11-22T14:17:46.233Z",
+    "processing": "pending",
+    "errors": 0,
+    "warnings": 0,
+    "urlsInLiveFile": 313
+  },
+  "merchantCenter": {
+    "feed": "https://trendjo.pages.dev/google-products.xml",
+    "products": 303,
+    "status": "feed is live; Merchant Center connection is required before submission",
+    "connectUrl": "https://loomascale.com/dashboard/connections?connect=merchant_center"
+  },
+  "commercialData": {
+    "products": 327,
+    "orders": 15,
+    "orderItems": 87,
+    "beforeHash": "7a57aa6db809315cb152ddf923299975d1b1d279108889b4a8c683ccac88fc84",
+    "afterHash": "7a57aa6db809315cb152ddf923299975d1b1d279108889b4a8c683ccac88fc84",
+    "unchanged": true,
+    "spellingMigrationRows": 12,
+    "remainingOldSpelling": 0
+  },
+  "browser": {
+    "productTitleAndCleanCanonicalVerified": true,
+    "productJSONLDAfterHydrationVerified": true,
+    "noLegacyProductAnchors": true,
+    "checkoutPhoneHint": "0791234567",
+    "singleProductJOD": "8.99",
+    "deliveryJOD": "1.00",
+    "checkoutTotalJOD": "9.99",
+    "checkoutSubmitted": false,
+    "cartCleaned": true,
+    "mobileViewport": {
+      "width": 390,
+      "height": 844,
+      "whatsappDoesNotCoverHeroCTA": true
+    },
+    "physicalIPhone": false
+  },
+  "social": {
+    "facebookPage": "https://www.facebook.com/profile.php?id=100064818215172",
+    "facebookName": "TREND SHOP",
+    "instagram": "trend_shop.jo",
+    "images": 4,
+    "status": "saved draft; not published",
+    "draftsUrl": "https://business.facebook.com/latest/posts/draft_posts/?asset_id=104096287731695&business_id=467583567928517&nav_ref=internal_nav",
+    "boosted": false,
+    "publishBlockedByAutomaticApproval": true,
+    "approvalReason": "Automatic approval did not consider the earlier authorization explicit enough to publish publicly to both accounts; explicit publication approval is required."
+  },
+  "rollback": {
+    "sourceBranch": "backup/v5.21-before-seo-2026-11-22",
+    "sourceCommit": "75ab33bf3095ea22a7cf9001aea770940f98ba81",
+    "workerVersion": "671f9492-0c11-425e-96b6-8778933ebe20"
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "version": "5.4.0",
+  "version": "5.22.0",
   "worker_name": "trend-shop-jo",
   "url": "https://trendjo.pages.dev/",
-  "deployed_at": "2026-11-06T22:30:55.251943Z",
-  "worker_version_id": "c61c3d71-469c-4822-b0a3-9e87e6ecb0d7",
-  "worker_deployment_id": "9c018a7b-5c2c-4714-b08e-b8d8118db208",
-  "implementation_commit": "c246f3b61ccc23a4f492dd2bee8daa3e5ed4d83f",
-  "source_tree": "896ec0c498d7320bdff5562fc7a745e67ac76188",
+  "deployed_at": "2026-11-22T14:15:22.605508Z",
+  "worker_version_id": "f53bd24b-b909-4ba9-8815-7f68562928d3",
+  "worker_deployment_id": "eef01110-a0e5-4bb0-a297-bf698eb7cd1e",
+  "implementation_commit": "587defa311e804f761a15733482ab9cf5f9beaa4",
+  "source_tree": "56abe7fe12f98898b515de299b6560059b848b1d",
   "mode": "api-preview-embedded-assets",
   "store_live": true,
   "cloudflare_account_id": "bf19df46fd3c108826a78388f8c91c9a",
@@ -15,21 +15,23 @@
   "repository_url": "https://github.com/omousa9995-dev/trend-shop1",
   "repository_branch": "main",
   "database_product_rows": 321,
-  "active_approved_products": 302,
+  "active_approved_products": 303,
   "korean_care_products": 105,
   "minimum_price_fils": 500,
   "maximum_price_fils": 17990,
   "total_stock_at_verification": 7207,
   "new_promotional_scenes": 0,
   "new_image_files": 0,
-  "automated_tests_passed": 285,
-  "database_changed_in_release": false,
-  "database_migrations": [],
+  "automated_tests_passed": 516,
+  "database_changed_in_release": true,
+  "database_migrations": [
+    "0034_seo_product_copy.sql (12 text-only spelling corrections)"
+  ],
   "stock_reset_on_release": false,
   "physical_iphone_tested": false,
   "production_orders_created_during_release": 0,
   "production_test_emails_sent_during_release": 0,
-  "frontend_cache_revision": "5.4.0",
+  "frontend_cache_revision": "5.22.0",
   "video_upload": {
     "direct": true,
     "max_bytes": 20971520,
@@ -51,11 +53,11 @@
     "picture_in_picture": false
   },
   "previous_version_backup": {
-    "sourceBranch": "backup/v5.1-before-arencia-v52-2026-11-06",
-    "sourceCommit": "0af449f773b734b8180e881472eabe07c7e5843d",
-    "workerVersion": "027bd4cb-993d-4a30-a458-2b8067736135"
+    "sourceBranch": "backup/v5.21-before-seo-2026-11-22",
+    "sourceCommit": "75ab33bf3095ea22a7cf9001aea770940f98ba81",
+    "workerVersion": "671f9492-0c11-425e-96b6-8778933ebe20"
   },
-  "verification_file": "docs/global-product-experience-v54-verification.json",
+  "verification_file": "docs/verification/v522-release.json",
   "bilingual_email_activation": "Previously prepared Google Apps Script activation remains a separate pending step; bridge and secrets unchanged.",
   "historical_record_v1_8_1": {
     "worker_name": "trend-shop-jo",
@@ -230,7 +232,7 @@
   "ci_validation_url": "https://github.com/omousa9995-dev/trend-shop1/actions/runs/42305254605/job/128192859554",
   "live_verified_at": "2026-11-06T22:33:44.336Z",
   "isolated_preview_status": "v5.4 isolated local fixture stopped after all QA; production received no test media, orders or emails.",
-  "package_sha256": "7ce8123dcde07c6eb6165677279698290efcafdbfefb210adafde01c8290d4b3",
+  "package_sha256": "f84936ee0c454286b38d4a891b7b22b3d5c83a11737c6b32f658c02984cae25b",
   "package_hash_format": "SHA-256 of sorted [moduleName,moduleText] pairs serialized as JSON",
   "previous_release_v51": {
     "version": "5.1.0",
@@ -303,5 +305,22 @@
   },
   "product_bundle_recommendation_card_removed": true,
   "extra_cart_button_above_whatsapp": true,
-  "bundle_contents_and_options_preserved": true
+  "bundle_contents_and_options_preserved": true,
+  "existing_commercial_records_unchanged": true,
+  "sitemap_urls": 313,
+  "merchant_feed_products": 303,
+  "search_console_ownership_verified": true,
+  "sitemap_submitted": true,
+  "sitemap_processing": "pending",
+  "merchant_center_connected": false,
+  "social_carousel_status": "saved draft; publication requires explicit approval",
+  "previous_recorded_deployment_v54": {
+    "version": "5.4.0",
+    "deployed_at": "2026-11-06T22:30:55.251943Z",
+    "worker_version_id": "c61c3d71-469c-4822-b0a3-9e87e6ecb0d7",
+    "worker_deployment_id": "9c018a7b-5c2c-4714-b08e-b8d8118db208",
+    "implementation_commit": "c246f3b61ccc23a4f492dd2bee8daa3e5ed4d83f",
+    "source_tree": "896ec0c498d7320bdff5562fc7a745e67ac76188",
+    "package_sha256": "7ce8123dcde07c6eb6165677279698290efcafdbfefb210adafde01c8290d4b3"
+  }
 }
