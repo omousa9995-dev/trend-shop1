@@ -1,4 +1,4 @@
-import {installCareEntries} from './luma-placement.js?v=5.21.0';
+import {installCareEntries} from './luma-placement.js?v=5.23.0';
 // Capability metadata only; messages and cart details are sent after a user action.
 if(document.querySelector('[data-care-region]')){
  let entries;

@@ -1,5 +1,5 @@
 export function careEntriesAllowed(location){
- return !/^\/p(?:\/|$)/.test(location.pathname)&&!/^#\/(?:product|checkout|success|order)(?:[/?]|$)/.test(location.hash);
+ return !/^\/(?:p|product|bundle|checkout|success|order)(?:\/|$)/.test(location.pathname)&&!/^#\/(?:product|checkout|success|order)(?:[/?]|$)/.test(location.hash);
 }
 export function installCareEntries({status,loadWidget=()=>import('./luma-widget.js?v=5.21.0').then(m=>m.mountLumaWidget({status}))}){
  let widget,loading,version=0,stopped=false;
@@ -14,7 +14,7 @@ export function installCareEntries({status,loadWidget=()=>import('./luma-widget.
   if(stopped||!careEntriesAllowed(location))return;event.preventDefault();const ticket=version;
   try{const api=widget||await(loading||=Promise.resolve(loadWidget()));if(stopped||ticket!==version||!careEntriesAllowed(location)){api.destroy();return}widget=api;api.open()}catch{loading=undefined;if(!stopped&&ticket===version&&careEntriesAllowed(location))location.href='/care-assistant.html'}
  }
- const observer=new MutationObserver(update);observer.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+ const observer=new MutationObserver(update);observer.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});if(document.body)observer.observe(document.body,{attributes:true,attributeFilter:['data-page-kind']});
  window.addEventListener('hashchange',update);window.addEventListener('popstate',update);document.addEventListener('click',click);update();
  return {update,destroy(){stopped=true;update();observer.disconnect();window.removeEventListener('hashchange',update);window.removeEventListener('popstate',update);document.removeEventListener('click',click)}};
 }

@@ -21,3 +21,9 @@ Shipping remains 1 JOD, free strictly above 19 JOD after discounts. No product p
 Before editing, the existing source was backed up at branch `backup/v5.22-before-mobile-revisions-2026-11-22`, source `57c06af72bea120d92236bf2f1aede00409031cf`. Production Worker version `c7219d5c-b3bc-47f7-8bae-22c8279003b9` remains the rollback version.
 
 Implementation prepared for CI and isolated browser review. Publication and final verification are pending.
+
+## Browser findings addressed before release
+
+- Back navigation now holds the saved position while asynchronous review blocks or images resize, and releases restoration immediately on touch, wheel, pointer or scrolling keys.
+- Luma placement recognizes canonical product and bundle URLs and observes SPA page changes, keeping its header and footer entries hidden while viewing products.
+- Added regression coverage for delayed layout shrinkage and canonical Luma placement.
