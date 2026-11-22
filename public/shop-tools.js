@@ -1,6 +1,6 @@
 // Shared storefront helpers: Arabic search, stock limits, and authentic galleries.
 export function normalizeSearch(value) {
-  return String(value ?? '').normalize('NFKC').toLocaleLowerCase('ar')
+  return String(value ?? '').replace(/كوسركس/g,'كوزركس').normalize('NFKC').toLocaleLowerCase('ar')
     .replace(/[\u0610-\u061a\u064b-\u065f\u0670\u06d6-\u06ed\u0640]/g, '')
     .replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ؤ/g, 'و').replace(/ئ/g, 'ي')
     .replace(/[^\p{L}\p{N}]+/gu, ' ').trim();

@@ -1,6 +1,6 @@
 import {PRODUCT_TYPES} from './product-types.js?v=5.21.0';
 import {preparePhotoFile} from './prepare-photo.js?v=5.21.0';
-import {limitedOfferActive} from './limited-offers.js?v=5.21.0';
+import {limitedOfferActive} from './limited-offers.js?v=5.22.0';
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const price=n=>(n/1000).toFixed(2)+' د.أ';
 export function jordanTime(seconds){return new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Amman',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(seconds*1000).replace(' ','T')}

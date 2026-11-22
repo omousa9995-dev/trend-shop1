@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-22",
+  "notice": "External product ratings are not Trend purchase reviews and must not be included in our Product aggregateRating.",
+  "products": {
+    "TS0079": {
+      "rating": 4.78,
+      "count": 3250,
+      "publisher": "COSRX Official",
+      "productName": "COSRX Advanced Snail 96 Mucin Power Essence",
+      "url": "https://www.cosrx.com/products/advanced-snail-96-mucin-power-essence",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0080": {
+      "rating": 4.7,
+      "count": 2805,
+      "publisher": "COSRX Official",
+      "productName": "COSRX Advanced Snail 92 All In One Cream",
+      "url": "https://www.cosrx.com/products/advanced-snail-92-all-in-one-cream",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0091": {
+      "rating": 4.7,
+      "count": 461,
+      "publisher": "Anua Official",
+      "productName": "Anua Heartleaf 77 Soothing Toner",
+      "url": "https://anua.com/products/heartleaf-77-soothing-toner",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0065": {
+      "rating": 4.9,
+      "count": 6358,
+      "publisher": "Beauty of Joseon Official",
+      "productName": "Relief Sun Rice + Niacinamide (formerly Rice + Probiotics)",
+      "url": "https://beautyofjoseon.com/products/relief-sun-rice-probiotics?country=PH&currency=PHP",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0038": {
+      "rating": 4.78,
+      "count": 726,
+      "publisher": "COSRX Official",
+      "productName": "Original Advanced Snail Peptide Eye Cream By Cosrx",
+      "url": "https://www.cosrx.com/products/advanced-snail-peptide-eye-cream",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0040": {
+      "rating": 4.86,
+      "count": 450,
+      "publisher": "COSRX Official",
+      "productName": "كريم مرطب حمض الهيالورونيك أسيد COSRX",
+      "url": "https://www.cosrx.com/collections/all/products/hyaluronic-acid-intensive-cream",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0044": {
+      "rating": 4.71,
+      "count": 104,
+      "publisher": "COSRX Official",
+      "productName": "سيروم Cosrx Galactomyces95 Tone Balancing Essence",
+      "url": "https://b2c.cosrx.com/collections/dullness/products/galactomyces-95-tone-balancing-essence",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0062": {
+      "rating": 4.7,
+      "count": 615,
+      "publisher": "Anua Official",
+      "productName": "Anua - Niacinamide 10 TXA 4 Serum",
+      "url": "https://anua.com/products/niacinamide-10-txa-4-serum-2",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0070": {
+      "rating": 4.6,
+      "count": 422,
+      "publisher": "Anua Official",
+      "productName": "Anua Heartleaf Quercetinol Pore Deep Cleansing Foam",
+      "url": "https://anua.com/products/heartleaf-quercetinol-pore-deep-cleansing-foam",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0071": {
+      "rating": 4.8,
+      "count": 127,
+      "publisher": "Anua Official",
+      "productName": "Anua - Azelaic Acid 10 Hyaluron Redness Soothing Serum",
+      "url": "https://anua.com/products/azelaic-acid-10-hyaluron-redness-soothing-serum",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    },
+    "TS0094": {
+      "rating": 4.8,
+      "count": 160,
+      "publisher": "Anua Official",
+      "productName": "Anua - Rice 70 Glow Milky Toner",
+      "url": "https://anua.com/products/rice-70-glow-milky-toner",
+      "checkedAt": "2026-11-22T12:00:00Z"
+    }
+  }
+}

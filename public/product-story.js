@@ -29,7 +29,7 @@ export async function loadProductStory(p,fetcher=fetch,{timeoutMs=4500,clock=glo
 }
 export function renderReviewSummary(element,summary,allowSubmissions=false){
  if(!element?.isConnected)return;element.hidden=!allowSubmissions&&!(summary?.count>0);const count=Number(summary?.count),average=Number(summary?.average);
- element.textContent=count>0&&average>=1&&average<=5?`${average.toFixed(1)} / 5 · ${count} ${tx('مراجعة شراء موثّق','verified purchase reviews')}`:summary?tx('شاركي أول تجربة موثّقة لهذا المنتج','Share the first verified experience'):tx('تجارب الشراء الموثّقة','Verified purchase experiences');
+ element.innerHTML=count>0&&average>=1&&average<=5?`<span class="review-star-summary"><span aria-hidden="true">${'★'.repeat(Math.round(average))}${'☆'.repeat(5-Math.round(average))}</span><b>${average.toFixed(1)} / 5</b> · ${count} ${tx('تقييم من زبائن Trend','Trend purchase reviews')}</span>`:summary?`<span aria-hidden="true">☆☆☆☆☆</span> ${tx('لا توجد تقييمات من زبائن Trend بعد','No Trend purchase ratings yet')}`:tx('تجارب الشراء الموثّقة','Verified purchase experiences');
 }
 export function storyContent(p,profile){
  profile=profile||fallbackProductProfile(p);

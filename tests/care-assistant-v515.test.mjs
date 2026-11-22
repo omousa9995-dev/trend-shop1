@@ -57,7 +57,7 @@ test('Mid-inference changes are revalidated against live stock and prices',async
 });
 test('Model-invented prices, IDs, duplicate products and out-of-budget combinations never control returned cards',()=>{
  const products=careCatalog([{id:'TSDEMO1',name:'cleanser',brand:'Test',category:'البشرة',approved:1,stock:1,price_fils:5000,details_json:'{"productType":"cleanser"}'},{id:'TSDEMO2',name:'cream',brand:'Test',category:'البشرة',approved:1,stock:1,price_fils:6000,details_json:'{"productType":"moisturizer"}'}]);
- const context=validateCareInput(input({budgetFils:10000}),true);const data=normalizeCareResult({...proposal,productIds:['FAKE','TSDEMO1','TSDEMO1','TSDEMO2'],priceFils:1},products,context);assert.deepEqual(data.routine.map(x=>x.id),['TSDEMO1']);assert.equal(data.totalFils,6000);assert.equal(data.routine[0].priceFils,5000);assert.equal(data.routine[0].href,'/#/product/TSDEMO1');
+ const context=validateCareInput(input({budgetFils:10000}),true);const data=normalizeCareResult({...proposal,productIds:['FAKE','TSDEMO1','TSDEMO1','TSDEMO2'],priceFils:1},products,context);assert.deepEqual(data.routine.map(x=>x.id),['TSDEMO1']);assert.equal(data.totalFils,6000);assert.equal(data.routine[0].priceFils,5000);assert.equal(data.routine[0].href,'/product/TSDEMO1');
 });
 test('Existing cart products, redundant steps and clarification questions prevent unnecessary purchases',()=>{
  const products=careCatalog([{id:'TSDEMO1',name:'cream',brand:'Test',category:'البشرة',approved:1,stock:1,price_fils:5000,details_json:'{"productType":"moisturizer"}'}]);

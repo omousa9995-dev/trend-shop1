@@ -4,7 +4,7 @@ const retiredIds=new Set(RETIRED_PRODUCT_IDS);
 export const isRetiredProduct=value=>retiredIds.has(typeof value==='string'?value:value?.id);
 const productionNote=/(?:ذكاء\s*(?:ال)?اصطناع|artificial\s+intelligence|\bAI\b)/i;
 const hasProductionNote=value=>productionNote.test(value.normalize('NFKC').replace(/[\u064b-\u065f\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا'));
-export function storeCopy(value){const text=String(value??'');if(!hasProductionNote(text))return text;return text.split(/(?<=[.!؟])\s+|\n+/u).filter(sentence=>!hasProductionNote(sentence)).join(' ').trim()}
+export function storeCopy(value){const text=String(value??'').replace(/كوسركس/g,'كوزركس');if(!hasProductionNote(text))return text;return text.split(/(?<=[.!؟])\s+|\n+/u).filter(sentence=>!hasProductionNote(sentence)).join(' ').trim()}
 export function storefrontProduct(product){
  const p={...product};let details;try{details=typeof p.details==='object'&&p.details?{...p.details}:JSON.parse(p.details_json||'{}')}catch{details={}}
  for(const key of ['imageNote','imageEditedWithAI','introductoryOffer'])delete details[key];

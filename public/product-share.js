@@ -1,5 +1,5 @@
 import {locale} from './i18n.js?v=5.1.0';
-import {productUrl} from './product-links.js?v=1.8.1';
+import {productUrl} from './product-links.js?v=5.22.0';
 export function createProductShare(){
  const dialog=document.createElement('dialog');dialog.className='product-share';dialog.setAttribute('aria-labelledby','shareHeading');
  dialog.innerHTML='<div class="share-head"><h2 id="shareHeading">شاركي هذا المنتج ♡</h2><button type="button" data-share="close" aria-label="إغلاق مشاركة المنتج">×</button></div><p class="share-name" dir="auto"></p><label for="productShareUrl">رابط هذا المنتج</label><input id="productShareUrl" class="field share-url" type="url" dir="ltr" readonly/><div class="share-actions"><button type="button" class="btn" data-share="copy">نسخ الرابط</button><button type="button" class="btn btn-light" data-share="native">مشاركة عبر التطبيقات</button><a class="btn btn-light" data-share="whatsapp" target="_blank" rel="noopener noreferrer">مشاركة عبر واتساب</a></div><p class="share-status" role="status" aria-live="polite"></p>';

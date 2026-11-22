@@ -137,7 +137,7 @@ async function gate(req,env,helpers,{paid=true}={}){
 export async function publicLumaProducts(req,env,{json}){
  const config=await readCareSettings(env);if(!careReady(config))return json({products:[]});
  const products=(await loadCareCatalog(env)).filter(p=>p.lumaCandidate);
- return json({currency:'JOD',source:'live-store',revision:await careCatalogRevision(products),products:products.map(p=>({...p,href:'/#/product/'+encodeURIComponent(p.id)}))});
+ return json({currency:'JOD',source:'live-store',revision:await careCatalogRevision(products),products:products.map(p=>({...p,href:'/product/'+encodeURIComponent(p.id)}))});
 }
 // Retired endpoints stay explicit for an old cached tab; they cannot mint tokens.
 export async function publicLumaSession(req,env,helpers){return helpers.error('لُمى متاحة بالرسائل النصية والصور الاختيارية فقط.',410)}

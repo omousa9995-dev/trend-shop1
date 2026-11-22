@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /review-media/
+
+Sitemap: https://trendjo.pages.dev/sitemap.xml

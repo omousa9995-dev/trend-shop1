@@ -1,7 +1,7 @@
 import {normalizeSearch,productDetails} from './shop-tools.js';
 // Local vocabulary only: no customer search text is sent to another service.
 const groups=[
- ['cosrx','كوسركس','كوزركس','كوسريكس','كوزريكس'],['arencia','ارينسيا','ارنسيا','ارنسيا','ارينشيا'],['anua','انوا','انوه'],['skin1004','skin 1004','سكين1004','سكين 1004'],
+ ['cosrx','كوزركس','كوزركس','كوسريكس','كوزريكس'],['arencia','ارينسيا','ارنسيا','ارنسيا','ارينشيا'],['anua','انوا','انوه'],['skin1004','skin 1004','سكين1004','سكين 1004'],
  ['loreal','l oreal','لوريال','لوريل'],['maybelline','ميبلين','مايبلين','ميبيلين'],['sheglam','شيجلام','شيغلام','شيقلام'],['hudabeauty','huda beauty','هدي بيوتي','هودا بيوتي'],['theordinary','the ordinary','اوريدناري','اورديناري','اوريناري'],['beautyofjoseon','beauty of joseon','بيوتي اوف جوسون','جوسون'],['tarte','تارت'],['bourjois','بورجوا','برجوا'],['kiko','كيكو'],['note','نوت'],['dior','ديور'],['clinique','كلينيك'],['esteelauder','estee lauder','استي لودر','استي لودر'],
  ['mascara','ماسكارا','مسكارا'],['foundation','فاونديشن','فوندشن','كريم اساس'],['concealer','كونسيلر','كنسيلر'],['powder','بودرة','بودره'],['sunscreen','واقي شمس','واقي الشمس','واقيشمس','صن سكرين'],['toner','تونر'],['serum','سيروم'],['cleanser','غسول'],['moisturizer','مرطب'],['lipstick','روج','احمر شفاه'],['eyeliner','ايلاينر','اي لاينر'],['shampoo','شامبو']
 ];
