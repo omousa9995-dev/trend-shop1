@@ -323,5 +323,13 @@
     "source_tree": "896ec0c498d7320bdff5562fc7a745e67ac76188",
     "package_sha256": "7ce8123dcde07c6eb6165677279698290efcafdbfefb210adafde01c8290d4b3"
   },
-  "merchant_center_account_created": false
+  "merchant_center_account_created": true,
+  "merchant_center_account_id": "5914540741",
+  "merchant_center_homepage_claimed": true,
+  "merchant_center_data_source_id": "10797445365",
+  "merchant_center_imported_products": 303,
+  "merchant_center_import_state": "SUCCEEDED",
+  "merchant_center_free_listings_only": true,
+  "merchant_center_under_review_products": 303,
+  "merchant_center_pending_owner_business_details": true
 }

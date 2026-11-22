@@ -161,15 +161,64 @@
   "merchantCenter": {
     "feed": "https://trendjo.pages.dev/google-products.xml",
     "products": 303,
-    "status": "New-account form completed; final creation requires owner agreement to Google Merchant Center Terms of Service. No terms have been accepted and no Merchant Center account has been created.",
+    "status": "Account created, homepage verified and claimed, Arabic JO file feed imported successfully with 303 products and no file issues. All 303 products are under initial review. Business address, shipping schedule and actual return policy are awaiting owner input; products are not yet approved or serving.",
     "connectUrl": "https://loomascale.com/dashboard/connections?connect=merchant_center",
     "connectionActive": true,
-    "accountsVisible": 0,
+    "accountsVisible": 1,
     "onlineOnlyConfirmedByOwner": true,
     "preparedAccountName": "Trend Shop",
     "registeredCountry": "JO",
     "website": "https://trendjo.pages.dev/",
-    "termsUrl": "https://support.google.com/merchants/answer/160173"
+    "termsUrl": "https://support.google.com/merchants/answer/160173",
+    "accountId": "5914540741",
+    "accountName": "Trend Shop",
+    "accountCreated": true,
+    "termsAcceptedWithOwnerApproval": true,
+    "homepageClaimed": true,
+    "countries": [
+      "JO"
+    ],
+    "contentLanguage": "ar",
+    "sourceCreated": true,
+    "importedProducts": 303,
+    "dataSourceId": "10797445365",
+    "sourceName": "Trend Shop — Jordan — Arabic",
+    "input": "FILE",
+    "fetchEnabled": true,
+    "fetchFrequency": "DAILY",
+    "fetchTimeLocal": "00:00",
+    "timeZone": "Asia/Amman",
+    "processingState": "SUCCEEDED",
+    "feedIssues": [],
+    "freeListingsOnly": true,
+    "approvedProducts": 0,
+    "underReviewProducts": 303,
+    "browserUnderReviewCountVerified": true,
+    "customerServiceConfigured": true,
+    "shippingServiceCount": 0,
+    "returnPolicyCount": 0,
+    "completedOnboardingTasks": 3,
+    "totalOnboardingTasks": 6,
+    "ownerInputPending": [
+      "Registered business address and postcode",
+      "Daily order cutoff and handling/delivery days",
+      "Actual return/exchange policy"
+    ],
+    "sampleProduct": {
+      "id": "ar~JO~TS0065",
+      "link": "https://trendjo.pages.dev/product/TS0065",
+      "price": "8.99 JOD",
+      "availability": "IN_STOCK",
+      "destination": "FREE_LISTINGS",
+      "pendingCountries": [
+        "JO"
+      ],
+      "processingIssues": [
+        "image_link_pending_crawl",
+        "pending_initial_policy_review_free_listings"
+      ],
+      "resolution": "pending_processing"
+    }
   },
   "commercialData": {
     "products": 327,
