@@ -37,7 +37,7 @@ import {PRODUCT_TYPES,productType,availableTypes,matchesProductType} from './pro
 import {shippingFee, shippingMessage, thumbnailFor, largeImageFor, quoteCart, deliveryNudge, recommendations, promotionData} from './commerce.js?v=5.0.0';
 import {createImageZoom} from './image-zoom.js?v=4.1.0';
 import {bindProductAutocomplete} from './autocomplete.js?v=5.9.0';
-import {parseStoreRoute,productPath,productUrl,STORE_ORIGIN,canonicalizeStoreLocation,installProductNavigation} from './product-links.js?v=5.23.1';
+import {parseStoreRoute,productPath,productUrl,STORE_ORIGIN,canonicalizeStoreLocation,installProductNavigation} from './product-links.js?v=5.23.2';
 import {createProductShare} from './product-share.js?v=1.8.1';
 import {normalizeSearch, productDetails, nextQuantity, productGallery} from './shop-tools.js?v=5.11.0';
 /* Trend Shop: Arabic storefront with locally served modules, progressive enhancements, private checkout and contextual product recommendations. */

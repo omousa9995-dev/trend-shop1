@@ -2,7 +2,7 @@ import {assertCatalogResults} from './helpers/catalog-results.mjs';
 import {storefrontBundle} from './helpers/storefront-bundle.mjs';
 import {loadContactPhone} from '../public/checkout-phone.js';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {JSDOM,VirtualConsole} from 'jsdom';
-import worker from '../src/worker.js';import {productPath,productUrl,productIdFromPath,parseStoreRoute} from '../public/product-links.js';import {productPageHtml} from '../src/product-page.js';
+import worker from '../src/worker.js';import {productPath,productUrl,productIdFromPath,parseStoreRoute,installProductNavigation} from '../public/product-links.js';import {productPageHtml} from '../src/product-page.js';
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8'),catalog=JSON.parse(read('public/catalog.json')),toner=catalog.find(p=>p.id==='TS0064');
 const pause=()=>new Promise(r=>setTimeout(r,5));
 async function app(t,url='https://trendjo.pages.dev/'){
@@ -57,4 +57,13 @@ test('Hidden, archived and missing products return 404, while unsupported method
 });
 test('Product-page text and metadata escape markup and disallow executable image URLs',()=>{
  const p={...toner,image_url:'javascript:alert(1)',details:{nameAr:'<script>alert("x")</script> $&',tagline:'"><img src=x onerror=alert(1)>'}},html=productPageHtml(read('public/index.html'),p),d=new JSDOM(html).window.document;assert.equal(d.querySelector('meta[property="og:title"]').content,p.details.nameAr+' | Trend Shop');assert.equal(d.querySelector('#app h1').textContent,p.details.nameAr);assert.equal(d.querySelectorAll('script:not([type="application/ld+json"])').length,1);assert.doesNotMatch(html,/src="javascript:|<img src=x|<script>alert/);
+});
+
+test('The logo on a directly opened product restores the full home document',()=>{
+ let click;
+ const location=new URL('https://trendjo.pages.dev/product/TS0064');
+ const view={location,document:{querySelector:()=>null,addEventListener:(name,fn)=>{if(name==='click')click=fn}},addEventListener(){}};
+ installProductNavigation(()=>assert.fail('The direct product cannot restore Luma through SPA routing'),view);
+ const anchor={href:'https://trendjo.pages.dev/#/',hasAttribute:name=>name==='data-store-home'};
+ click({button:0,target:{closest:()=>anchor},preventDefault:()=>assert.fail('Allow the normal home link')});
 });
