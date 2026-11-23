@@ -11,7 +11,7 @@ import {createExperienceMetricsPanel} from './experience-metrics-admin.js?v=5.9.
 import {createCustomerReportManager} from './customer-report-admin.js?v=5.7.2';
 import {createFeaturedVideoManager} from './product-featured-video-admin.js?v=5.4.0';
 import {pairPriceFils} from './pair-pricing.js?v=5.0.0';
-import {createSiteSettingsManager} from './site-settings-admin.js?v=5.6.0';
+import {createSiteSettingsManager} from './site-settings-admin.js?v=5.23.1';
 import {orderDisplayItems,orderLineTotal} from './order-presentation.js';
 import {createProductVideoManager} from './product-videos-admin.js?v=5.4.0';
 import {createReviewManager} from './reviews-admin.js?v=3.0.0';

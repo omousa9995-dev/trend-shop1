@@ -12,10 +12,10 @@ export function createBrowsePosition({view=window,getCount,getFilters}={}){
  for(const name of ['wheel','touchstart','pointerdown'])view.addEventListener(name,stopRestore,{passive:true});
  view.addEventListener('keydown',event=>{if(['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(event.key))stopRestore()});
  view.document.addEventListener('click',event=>{if(event.target.closest?.('a[href]')){stopRestore();capture(true)}},true);
- function enter(path,query,{history}={}){
+ function enter(path,query,{history,resetPosition=false}={}){
   capture(true);stopRestore();
   const key=(path.startsWith('/collections/')?'':'#')+(path||'/')+(query?.size?'?'+query.toString():''),browse=isBrowse(path),fromDetail=current?.detail;
-  const saved=browse&&(history==='pop'||fromDetail||current?.key===key)?pages.get(key):null;
+  const saved=!resetPosition&&browse&&(history==='pop'||fromDetail||current?.key===key)?pages.get(key):null;
   current={key,browse,detail:path.startsWith('/product/')||path.startsWith('/bundle/')};
   if(browse)lastBrowse=key;
   return saved||{y:0,count:24,filters:getFilters()};

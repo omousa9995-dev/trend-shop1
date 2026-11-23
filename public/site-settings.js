@@ -16,6 +16,18 @@ export const SITE_IMAGE_SLOTS=[
 ];
 export function isSiteImagePath(path){return typeof path==='string'&&path.length<=400&&!path.includes('..')&&!path.includes('//')&&(/^\/images\/[A-Za-z0-9_./-]+\.(?:jpe?g|png|webp|avif|svg)$/.test(path)||/^\/media\/uploads\/\d{4}-\d{2}\/[a-f0-9-]{36}\.(?:jpe?g|png|webp)$/.test(path));}
 export function siteImageUrl(settings,id){const value=settings?.siteImages?.[id];return isSiteImagePath(value)?value:SITE_IMAGE_SLOTS.find(slot=>slot.id===id)?.url||'';}
+export function whatsappChannelUrl(input) {
+  if (typeof input !== 'string' || input.length > 300) return '';
+  try {
+    const url = new URL(input.trim());
+    const channelId = url.pathname.match(/^\/channel\/([A-Za-z0-9]{15,70})\/?$/)?.[1];
+    if (url.protocol !== 'https:' || !['whatsapp.com','www.whatsapp.com'].includes(url.hostname) || url.port || url.username || url.password || !channelId) return '';
+    return 'https://whatsapp.com/channel/'+channelId;
+  } catch {
+    return '';
+  }
+}
+
 const strings={storeName:60,sloganAr:180,sloganEn:180,heroTitleAr:180,heroTitleEn:180,heroTextAr:600,heroTextEn:600,privacyAr:7000,privacyEn:7000};
 export function normalizeSiteSettings(raw,{productIds}={}){
  if(!raw||typeof raw!=='object'||Array.isArray(raw))throw Error('إعدادات غير صالحة');
@@ -24,6 +36,9 @@ export function normalizeSiteSettings(raw,{productIds}={}){
  value.siteImages={};for(const[id,path]of Object.entries(images)){if(!SITE_IMAGE_SLOTS.some(slot=>slot.id===id)||!isSiteImagePath(path))throw Error('رابط صورة الموقع غير صالح');value.siteImages[id]=path;}
  if(raw.reviewSubmissionsEnabled!==undefined&&typeof raw.reviewSubmissionsEnabled!=='boolean')throw Error('خيار مشاركة التجارب غير صالح');
  value.reviewSubmissionsEnabled=raw.reviewSubmissionsEnabled??false;
+ const channel=raw.whatsappChannelUrl??'';
+ if(typeof channel!=='string'||channel.trim()&&!whatsappChannelUrl(channel))throw Error('استخدمي رابط قناة واتساب يبدأ بـ https://whatsapp.com/channel/');
+ value.whatsappChannelUrl=whatsappChannelUrl(channel);
  for(const[key,max]of Object.entries(strings)){
   const text=raw[key]??value[key];if(typeof text!=='string'||text.length>max||/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(text))throw Error('راجعي طول النص في '+key);
   value[key]=text.trim();

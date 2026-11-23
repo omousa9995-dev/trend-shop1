@@ -28,11 +28,16 @@ export function installProductNavigation(onNavigate,view=window){
    const section=view.document.getElementById(id);if(!section)return;
    event.preventDefault();section.scrollIntoView({block:'start',behavior:view.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});return;
   }
+  if(anchor.hasAttribute('data-store-home')&&parseStoreRoute(view.location).path==='/'){
+   event.preventDefault();
+   view.scrollTo({top:0,left:0,behavior:'instant'});
+   return;
+  }
   const product=productIdFromPath(url.pathname),collection=url.pathname.startsWith('/collections/'),hash=url.hash.startsWith('#/');
   if(!product&&!collection&&!hash)return;
   event.preventDefault();
   const target=product&&!hash?productPath(product)+url.search:collection&&!hash?url.pathname+url.search:'/'+url.search+url.hash;
-  view.history.pushState(null,'',target);canonicalizeStoreLocation(view);lastLocation=view.location.href;onNavigate({history:'push'});
+  view.history.pushState(null,'',target);canonicalizeStoreLocation(view);lastLocation=view.location.href;onNavigate({history:'push',...(anchor.hasAttribute('data-store-home')?{resetPosition:true}:{})});
  };
  const pop=()=>{canonicalizeStoreLocation(view);if(lastLocation===view.location.href)return;lastLocation=view.location.href;onNavigate({history:'pop'})};
  view.document.addEventListener('click',click);view.addEventListener('popstate',pop);view.addEventListener('hashchange',pop);

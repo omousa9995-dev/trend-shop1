@@ -3,6 +3,7 @@ export const DEFAULT_SITE_SETTINGS={
   "version": 5,
   "pairPricing": true,
   "reviewSubmissionsEnabled": false,
+  "whatsappChannelUrl": "",
   "storeName": "TREND SHOP",
   "sloganAr": "إبتسمي فلا جميلة الا أنت",
   "sloganEn": "Your beauty. Your smile.",

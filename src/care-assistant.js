@@ -41,8 +41,8 @@ export async function encryptCareKey(value,secret){const iv=crypto.getRandomValu
 export async function decryptCareKey(value,secret){const p=JSON.parse(value);if(p.v!==1)throw Error('INVALID_KEY_FORMAT');return new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:Uint8Array.from(atob(p.iv),c=>c.charCodeAt(0))},await encryptionKey(secret),Uint8Array.from(atob(p.data),c=>c.charCodeAt(0))))}
 async function apiKey(env,config){return config.row?.encrypted_key?await decryptCareKey(config.row.encrypted_key,env.SESSION_SECRET):env.GEMINI_API_KEY}
 
-export function careCatalog(products){
- return storefrontProducts(products).filter(p=>p.approved===1&&p.stock>0&&['البشرة','الجسم','الشعر','المكياج'].includes(p.category)&&Number.isInteger(p.price_fils)&&p.price_fils>0).map(p=>{
+export function careCatalog(products,{includeUnavailable=false}={}){
+ return storefrontProducts(products).filter(p=>p.approved===1&&(includeUnavailable||p.stock>0&&['البشرة','الجسم','الشعر','المكياج'].includes(p.category))&&Number.isInteger(p.price_fils)&&p.price_fils>0).map(p=>{
   const d=productDetails(p),type=productType(p);
   const label=[p.name,d.nameAr,p.subcategory].join(' '),facts=[label,p.description,d.howToUse,d.notes,...(d.benefits||[])].join(' ');
   let areas=p.category==='المكياج'?['makeup']:p.category==='الشعر'?['hair']:p.category==='الجسم'||type.startsWith('body-')?['body','hands','feet']:['face'];
@@ -53,12 +53,12 @@ export function careCatalog(products){
   }
   const cosmeticTypes=['cleanser','moisturizer','sunscreen','toner','serum','essence','face-mask','face-oil','mist','eye-care','body-care','body-cleansing','body-oil','body-sunscreen','foot-care','shampoo','conditioner','hair-mask','hair-oil'];
   const cosmeticCandidate=!!type&&(p.category==='المكياج'||cosmeticTypes.includes(type))&&!risky.test(facts);
-  return {id:p.id,name:text(d.nameAr||p.name,160),brand:text(p.brand,80),type,areas,priceFils:p.price_fils,referencePriceFils:p.reference_price_fils,limitedOffer:p.limitedOffer,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,...lumaProductFacts(p,d,type,cosmeticCandidate),gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
+  return {id:p.id,name:text(d.nameAr||p.name,160),nameEn:text(p.name,160),available:p.stock>0,brand:text(p.brand,80),type,areas,priceFils:p.price_fils,referencePriceFils:p.reference_price_fils,limitedOffer:p.limitedOffer,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,...lumaProductFacts(p,d,type,cosmeticCandidate),gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
  });
 }
-async function loadCatalog(env){
+async function loadCatalog(env,options){
  const result=await env.DB.prepare('SELECT id,brand,name,category,subcategory,description,details_json,price_fils,reference_price_fils,stock,approved,active,image_url,updated_at FROM products WHERE active=1 AND approved=1 ORDER BY id LIMIT 1000').all();
- return careCatalog(withPairPricing(applyLimitedOffers(result.results||[],await loadLimitedOffers(env)),(await readSiteSettings(env)).pairPricing));
+ return careCatalog(withPairPricing(applyLimitedOffers(result.results||[],await loadLimitedOffers(env)),(await readSiteSettings(env)).pairPricing),options);
 }
 async function catalogRevision(products){return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',encoder.encode(JSON.stringify(products.map(({image,...p})=>p)))))).map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,20)}
 
@@ -133,7 +133,7 @@ export function normalizeCareResult(raw,products,input){
  const resultText=input.catalogScope==='luma'?lumaText:safeModelText;
  const reasons=new Map((Array.isArray(raw?.selections)?raw.selections:[]).slice(0,8).map(x=>[x?.productId,resultText(x?.reason,260)]));
  if(!questions.length&&(input.budgetFils!==null||input.budgetOptional))for(const id of Array.isArray(raw?.productIds)?raw.productIds.slice(0,12):[]){
-  const p=available.get(id);if(!p||seen.has(id)||types.has(p.type)||input.existingIds.includes(id)||routine.length===(input.maxProducts===6?6:3))continue;
+  const p=available.get(id);if(!p||seen.has(id)||types.has(p.type)||input.existingIds.includes(id)||routine.length>=3)continue;
   const next=subtotal+p.priceFils;if(input.budgetFils!==null&&next+(input.includeDelivery?shippingFee(next):0)>input.budgetFils)continue;
   routine.push({id:p.id,name:p.name,brand:p.brand,type:p.type,priceFils:p.priceFils,size:p.size,image:p.image,href:'/product/'+encodeURIComponent(p.id),benefits:p.benefits,howToUse:input.catalogScope==='luma'?(p.assistantHowToUse||p.howToUse):p.howToUse,options:p.options||[],reason:reasons.get(id)||'',step:routine.length+1});subtotal=next;seen.add(id);types.add(p.type);
  }
