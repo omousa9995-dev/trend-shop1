@@ -1,7 +1,7 @@
 import {DEFAULT_SITE_SETTINGS} from './site-defaults.js?v=5.6.0';
 export {DEFAULT_SITE_SETTINGS};
 export const HOME_SECTIONS={hero:'الواجهة الرئيسية',benefits:'مميزات التسوق',categories:'أقسام المنتجات',offers:'العروض والباكجات',picks:'اختيارات المتجر',moments:'لحظات الجمال',korean:'العناية الكورية',callout:'رسالة المتجر',deals:'أسعار لطيفة',reviews:'تجارب الزبائن',trust:'عروض لفترة محدودة'};
-export const PRODUCT_SECTIONS={hero:'الصور والسعر والاختيارات',navigation:'التنقل بين تفاصيل المنتج',about:'عن المنتج',fit:'هل يناسبكِ؟',usage:'طريقة الاستخدام',media:'الصور والفيديوهات',reviews:'التجارب الموثقة',faq:'الأسئلة الشائعة',recommendations:'المنتجات المقترحة',last:'دعوة الاختيار الأخيرة'};
+export const PRODUCT_SECTIONS={hero:'الصور والسعر والاختيارات',navigation:'التنقل بين تفاصيل المنتج',about:'عن المنتج',fit:'ملاحظات قبل الاستخدام',usage:'طريقة الاستخدام',media:'الصور والفيديوهات',reviews:'التجارب الموثقة',faq:'الأسئلة الشائعة',recommendations:'المنتجات المقترحة',last:'دعوة الاختيار الأخيرة'};
 export const SITE_IMAGE_SLOTS=[
  {id:'hero',label:'صورة الواجهة الرئيسية',note:'الصورة الكبيرة أعلى المتجر',ratio:'3:2',url:'/images/editorial/beauty-hero-v2.webp'},
  {id:'skincare',label:'بطاقة العناية بالبشرة',ratio:'4:3',url:'/images/editorial/skincare-ritual.webp'},
@@ -57,6 +57,10 @@ export function normalizeSiteSettings(raw,{productIds}={}){
 export function settingsProductCompare(settings,fallback){
  const ranks=new Map((settings?.productOrder||[]).map((id,i)=>[id,i]));
  return (a,b)=>(ranks.get(a.id)??100000)-(ranks.get(b.id)??100000)||fallback(a,b);
+}
+export function storefrontReviewsEnabled(settings,product=false){
+ const sections=product?settings.productSections:settings.homeSections;
+ return sections?.some(section=>section.id==='reviews'&&section.enabled===true)===true;
 }
 export function arrangeSections(container,rows,selectors){
  const nodes=[];for(const row of rows||[]){const node=container.querySelector(selectors[row.id]||':not(*)');if(!node)continue;node.hidden=!row.enabled;node.dataset.settingsDisabled=String(!row.enabled);node.dataset.storeSection=row.id;nodes.push(node);}

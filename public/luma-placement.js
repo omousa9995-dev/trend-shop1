@@ -1,18 +1,18 @@
 export function careEntriesAllowed(location){
  return !/^\/(?:p|product|bundle|checkout|success|order)(?:\/|$)/.test(location.pathname)&&!/^#\/(?:product|checkout|success|order)(?:[/?]|$)/.test(location.hash);
 }
-export function installCareEntries({status,loadWidget=()=>import('./luma-widget.js?v=5.23.1').then(m=>m.mountLumaWidget({status}))}){
+export function installCareEntries({status,loadWidget=()=>import('./luma-widget.js?v=5.23.3').then(m=>m.mountLumaWidget({status}))}){
  let widget,loading,version=0,stopped=false;
  const regions=[...document.querySelectorAll('[data-care-region]')];
  function update(){
   const allowed=!stopped&&status.available&&careEntriesAllowed(location),en=document.documentElement.lang==='en';
-  for(const region of regions){region.hidden=!allowed;const footer=region.dataset.careRegion==='footer';region.querySelector('[data-luma-entry-title]').textContent=footer?(en?'Talk to Luma':'احكي مع لُمى'):(en?'Luma':'لُمى');const note=region.querySelector('[data-luma-entry-note]');if(note)note.textContent=en?'Your skincare, makeup and product questions, one conversation away.':'روتينكِ، مكياجكِ واختياراتكِ… نرتّبها سوا، خطوة بخطوة.';const cta=region.querySelector('[data-luma-entry-cta]');if(cta)cta.textContent=en?'Start chatting →':'ابدئي المحادثة ←';const quiz=region.querySelector('[data-care-quiz]');if(quiz)quiz.textContent=en?'Discover your skin':'اكتشفي بشرتكِ'}
+  for(const region of regions){region.hidden=!allowed;const footer=region.dataset.careRegion==='footer';region.querySelector('[data-luma-entry-title]').textContent=footer?(en?'Talk to Luma':'احكي مع لُمى'):(en?'Luma':'لُمى');const note=region.querySelector('[data-luma-entry-note]');if(note)note.textContent=en?'Your skincare, makeup and product questions, one conversation away.':'روتينكِ، مكياجكِ واختياراتكِ… نرتّبها سوا، خطوة بخطوة.';const cta=region.querySelector('[data-luma-entry-cta]');if(cta)cta.textContent=en?'Start chatting →':'ابدئي المحادثة ←'}
   if(!allowed){version++;widget?.destroy();widget=undefined;loading=undefined}
  }
  async function click(event){
-  const entry=event.target.closest?.('[data-care-entry],[data-care-quiz]');if(!entry||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  const entry=event.target.closest?.('[data-care-entry]');if(!entry||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
   if(stopped||!careEntriesAllowed(location))return;event.preventDefault();const ticket=version;
-  try{const api=widget||await(loading||=Promise.resolve(loadWidget()));if(stopped||ticket!==version||!careEntriesAllowed(location)){api.destroy();return}widget=api;api.open({quiz:entry.hasAttribute('data-care-quiz')})}catch{loading=undefined;if(!stopped&&ticket===version&&careEntriesAllowed(location))location.href=entry.href}
+  try{const api=widget||await(loading||=Promise.resolve(loadWidget()));if(stopped||ticket!==version||!careEntriesAllowed(location)){api.destroy();return}widget=api;api.open()}catch{loading=undefined;if(!stopped&&ticket===version&&careEntriesAllowed(location))location.href=entry.href}
  }
  const observer=new MutationObserver(update);observer.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});if(document.body)observer.observe(document.body,{attributes:true,attributeFilter:['data-page-kind']});
  window.addEventListener('hashchange',update);window.addEventListener('popstate',update);document.addEventListener('click',click);update();

@@ -8,10 +8,10 @@ import {lumaLiveFaq} from './luma-faq.js';
 import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,explicitLumaBudget,quickLumaAdvice} from './luma-store-facts.js';
 import {shippingFee} from '../public/commerce.js';
 export const LUMA_TEXT_MODEL='gemini-3.8-flash';
-import {lumaText,lumaProductAllowed} from './luma-care-knowledge.js';
+import {lumaText,lumaProductAllowed,lumaBudgetPrompt,lumaBudgetNeutralText} from './luma-care-knowledge.js';
 const enc=new TextEncoder();
 const clean=(v,n=220)=>typeof v==='string'?v.trim().slice(0,n):'';
-const fields=['area','skinType','sensitive','preference','ageGroup','lifeStage','budget'];
+const fields=['area','skinType','sensitive','preference','ageGroup','lifeStage'];
 const choiceValues={area:['face','body','hands','feet','hair','makeup'],skinType:['dry','oily','combination','balanced','unknown'],sensitive:['yes','no','unknown'],ageGroup:['18-24','25-34','35-44','45+'],lifeStage:['neither','pregnant','nursing','prefer-not']};
 const profileSchema={type:'OBJECT',properties:Object.fromEntries(Object.entries(choiceValues).map(([name,values])=>[name,{type:'STRING',enum:values}]))};
 export const LUMA_TOOLS=[{functionDeclarations:[
@@ -25,8 +25,6 @@ export const LUMA_TOOLS=[{functionDeclarations:[
     dayPlan:{type:'OBJECT',properties:{morning:{type:'STRING'},evening:{type:'STRING'}}},
     productIds:{type:'ARRAY',items:{type:'STRING'}},
     area:{type:'STRING',enum:choiceValues.area},
-    budgetFils:{type:'INTEGER'},
-    budgetConfirmed:{type:'BOOLEAN',description:'True only AFTER the customer explicitly confirms the budget, explicitly stated in the current text or history. Never use this to increase an already confirmed budget.'},
     imageDisposition:{type:'STRING',enum:['not_provided','usable','unclear','unsupported']},
     profile:profileSchema,
     selections:{type:'ARRAY',items:{type:'OBJECT',properties:{productId:{type:'STRING'},reason:{type:'STRING'},optionId:{type:'STRING',description:'Optional exact canonical variant ID for a tentative makeup shade match. Never invent a shade number.'},period:{type:'STRING',enum:['am','pm','both','makeup']}},required:['productId','reason']}}
@@ -36,7 +34,7 @@ export const LUMA_TOOLS=[{functionDeclarations:[
  },
  {
   name:'ask_question',
-  description:'Display exactly ONE missing question and up to 5 choices. Required profile contains all preferences EXPLICITLY already stated in text or history, even when widget fields are unknown. Never repeat answered fields. A single optional budget question is permitted for an explicit shopping request with no known limit. Ordinary care questions receive advice immediately.',
+  description:'Display exactly ONE missing question and up to 5 choices. Required profile contains all preferences EXPLICITLY already stated in text or history, even when widget fields are unknown. Never repeat answered fields. Never ask for or request confirmation of a budget, spending limit, or price range. Ordinary care questions receive advice immediately.',
   parameters:{type:'OBJECT',properties:{field:{type:'STRING',enum:fields},text:{type:'STRING'},profile:profileSchema,choices:{type:'ARRAY',items:{type:'OBJECT',properties:{label:{type:'STRING'},value:{type:'STRING'}},required:['label','value']}}},required:['field','text','choices','profile']}
  },
  {
@@ -59,7 +57,7 @@ export const LUMA_TOOLS=[{functionDeclarations:[
 export function lumaSystem(input,products){
  const catalog=products.filter(p=>lumaProductAllowed(p,input)&&(input.area==='unknown'||p.areas.includes(input.area))&&(input.budgetFils===null||p.priceFils<=input.budgetFils)&&!input.existingIds.includes(p.id)).slice(0,8).map(lumaCatalogFacts);
  return `You are لُمى (Luma), Trend Shop's virtual assistant in Jordan. Speak as a calm, knowledgeable beauty companion in light Jordanian/Levantine Arabic. Use natural occasional phrases like تمام، يا قمر، خليني أسألك شوي، حبيبتي only where they fit; avoid repeating pet names, pressure, and long preambles. Reply in English if the customer writes in English. Be useful and concise, generally under 180 words. Never impersonate a doctor, pharmacist or human. No technical/provider prefaces or repeated disclaimers.
-CONVERSATION: Read current words, profile and history. Answer general care and store questions directly. For an explicitly requested personalized routine, learn skin type, main goal, optional age range and optional total budget. Ask one missing question at a time. The guided interface may already have gathered or skipped these fields; when CONTEXT.guided is true, proceed with what she chose. For direct personal shopping questions a budget is optional, never ask after she gave a limit or skipped the question. Confirm your understanding in one natural sentence, explain why each item fits, and offer an optional next step or an alternative when appropriate. Never ask for a name, phone, date of birth or order details in a care chat. Answer general everyday questions sensibly, not just shopping. No automatic transfer to store pharmacists for mild facial/back acne, dry skin or ordinary care. Only offer contact when requested or when an ingredient genuinely needs review. True concerning signs require appropriate clinical care, not WhatsApp in place of care.
+CONVERSATION: Read current words, profile and history. Answer general care and store questions directly. For an explicitly requested personalized routine, learn the customer's skin type and main goal, then an age range if useful. Ask one missing question at a time. The guided interface may already have gathered or skipped these fields; when CONTEXT.guided is true, proceed with what she chose. Never ask for or require a budget, spending limit, or price range. Respect a limit only if the customer volunteers one. Confirm your understanding in one natural sentence, explain why each item fits, and offer an optional next step or an alternative when appropriate. Never ask for a name, phone, date of birth or order details in a care chat. Answer general everyday questions sensibly, not just shopping. No automatic transfer to store pharmacists for mild facial/back acne, dry skin or ordinary care. Only offer contact when requested or when an ingredient genuinely needs review. True concerning signs require appropriate clinical care, not WhatsApp in place of care.
 STORE FACTS: Delivery to ALL areas of Jordan within 24 hours of order confirmation. ${lumaDeliveryText(input.message)} At 7 pm the estimate is tomorrow approximately before 3 pm; never claim that a chat message itself placed an order. A preferred delivery appointment can be written in checkout notes. Management WhatsApp: +962790025430 (0790025430), https://wa.me/962790025430. Delivery fee is 1 JOD, free only when subtotal is strictly greater than 19 JOD. Use these owner-confirmed facts; do not invent location exclusions, cutoffs, delivery days or guarantees for a specific minute. Authenticity: do not assert a universal guarantee, authorization, certification or sourcing fact not present in confirmed store data. Give a courteous clear explanation and offer the Trend team to verify the specific pack/source/batch when requested. Discounts and limited-offer expiry come only from live catalog facts; never invent a previous price or campaign timer. Mention delivery/contact only when asked or directly relevant to checkout. Never append a delivery policy or management pitch to unrelated care answers.
 CARE: Give practical advice even if no purchase is needed. For dryness: adequate balanced water intake (extra water alone is not a cure), short lukewarm showers, gentle cleansing, pat dry without rubbing, then moisturize while skin remains slightly damp. Avoid harsh soap, hot water and fragrance if sensitive. For mild face/back acne: explain gentle wash, no squeezing/scrubbing, noncomedogenic moisturizer and face sunscreen; shower/change clothes after sweat and choose loose clean clothing. For unspecified bumps give useful basic advice and, if needed, one question distinguishing superficial blemishes from deep painful lesions or itchy unusual rash. For clearly mild superficial acne, offer a suitable small routine with documented stock rather than a handoff. A verified OTC benzoyl peroxide wash can be used following exact strength/label; prefer 4% for a first user, warn of irritation/fabric bleaching and avoid multiple new actives. Never diagnose from text/photo, prescribe oral drugs/antibiotics/steroids or promise cure. Persistent acne after 6–8 weeks, deep painful/scarring lesions need dermatologist assessment. Swelling/breathing trouble, uncontrolled bleeding, deep wounds or infection need timely/urgent medical care. Pregnancy/nursing/allergies/current prescriptions: verify active ingredients, keep gentle care useful, refer the uncertain ingredient rather than refusing all care. Images are tentative visible context only; no identity/age/ethnicity inference; intimate/child/other-person images cannot receive product cards. Keep feet dry between toes; don't apply acids to open heel cracks.
 PRODUCTS: CATALOG contains a small relevant selection with full usage/ingredient facts. It is enough for a single show_products response when suitable; do not reread the same facts. If the exact requested product/type is missing, get_catalog once with exact IDs or one English brand/type keyword. Do not conclude the whole store is empty from a shortlist. Never invent IDs, ingredients, stock or benefits. Cosmetic marketing is not evidence of a cure. Use only allowed live items; show at most three different products, covering complementary steps. For a morning/evening skincare routine, include dayPlan.morning and dayPlan.evening with ordered steps; keep sunscreen in the morning. If fewer products fit the budget, explain how to fill the other steps with what she already owns. Reuse suitable items in both periods. Exact active/shade facts must be present before recommendation. Do not guess pregnancy compatibility. No automatic cart additions. Give practical carePlan BEFORE cards. Cards quote canonical prices; do not repeat IDs/prices/product lists in prose. BudgetFils is JOD×1000, optional; no invented or increased limit. An image recommendation needs imageDisposition=usable. For makeup, an adult customer's own hand/wrist/face photo for cosmetic shade matching is SUPPORTED and useful; it is not a medical diagnosis. Describe the visible shade depth and tentative warm/neutral/cool/olive undertone, accounting for lighting, without inferring ethnicity, identity or exact age. Help immediately with an approximate match and one useful missing detail only if necessary. Explain briefly that a hand may differ from the face and final checking is on the jaw in daylight. Choose an exact available optionId only from CATALOG options; never invent a manufacturer shade number or claim a guaranteed photo match. If options are broad tone families, say so plainly and suggest the nearest family. With usable hand photos, use imageDisposition=usable rather than refusing because the face is not shown. Product cards come LAST and only when useful to the customer's request; many questions need no purchase.
@@ -69,11 +67,10 @@ CONTEXT=${JSON.stringify({budgetFils:input.budgetFils,area:input.area,skinType:i
 CATALOG=${JSON.stringify(catalog)}`;
 }
 function lumaInput(body,imagesAllowed=false){
- const input=validateCareInput(body,imagesAllowed,{requireConsent:false,requirePhotoConsent:false});input.catalogScope='luma';input.budgetOptional=true;
+ const input=validateCareInput(body,imagesAllowed,{requireConsent:false,requirePhotoConsent:false});input.catalogScope='luma';
  input.guided=body.guided===true;
  input.intent=input.guided&&['routine','makeup','sunscreen','concealer'].includes(body.intent)?body.intent:
   /روتين|routine|صباح.{0,22}مسا/i.test(input.message)?'routine':'';
- input.askBudget=!input.guided&&input.budgetFils===null&&/اشتري|اشتريه|ميزاني|ضمن سعر|ارخص|budget|buy|cheaper/i.test(input.message);
  const current=input.message.replace(/[أإآ]/g,'ا');
  const bodyArea=/ظهر|جسم|صدر|\bbody\b|\bback\b/i.test(current),faceArea=/وجه|وجهي|\bface\b/i.test(current);
  if(bodyArea&&!faceArea)input.area='body';else if(faceArea&&!bodyArea)input.area='face';
@@ -83,7 +80,6 @@ function lumaInput(body,imagesAllowed=false){
  if(/بدون حساسي|مش حساس|غير حساس|مو حساس|not sensitive|no sensitivity/i.test(current))input.sensitive='no';
  else if(/بشرتي.{0,8}حساس|sensitive skin/i.test(current))input.sensitive='yes';
  const statedBudget=explicitLumaBudget(input.message);if(statedBudget!==null)input.budgetFils=statedBudget;
- if(input.budgetFils!==null)input.askBudget=false;
  input.ageGroup=choiceValues.ageGroup.includes(body.profile?.ageGroup)?body.profile.ageGroup:'unknown';
  input.lifeStage=choiceValues.lifeStage.includes(body.profile?.lifeStage)?body.profile.lifeStage:'unknown';
  return input;
@@ -93,18 +89,20 @@ function question(args){
  const seen=new Set(),choices=[];
  for(const item of Array.isArray(args.choices)?args.choices.slice(0,5):[]){const value=clean(item?.value,100),label=lumaText(item?.label,70);if(!value||!label||seen.has(value))continue;
   if(choiceValues[field]&&!choiceValues[field].includes(value))continue;
-  if(field==='budget'&&(!/^\d+$/.test(value)||Number(value)<500||Number(value)>100000))continue;
   seen.add(value);choices.push({value,label});
  }
  return {field,text,choices};
 }
 const team=(professional=false)=>({label:professional?'تواصلي مع صيدلانيات Trend Shop':'تواصلي مع فريق Trend Shop',href:'https://wa.me/962790025430?text='+encodeURIComponent('مرحبًا، أحتاج متابعة شخصية مع صيدلانيات Trend Shop.')});
 export async function runLumaTool(call,input,env){
- input.catalogScope='luma';input.budgetOptional=true;
+ input.catalogScope='luma';
  const resolved={};for(const [field,values]of Object.entries(choiceValues)){const value=call?.args?.profile?.[field];if(values.includes(value)&&value!=='unknown'&&(!input[field]||input[field]==='unknown'||input[field]===value||field==='area'&&((value==='body'&&/ظهر|جسم|صدر|body|back/i.test(input.message))||(value==='face'&&/وجه|وجهي|face/i.test(input.message)))))resolved[field]=value}
  Object.assign(input,resolved);
- if(!input.askBudget&&((call?.name==='ask_question'&&(call.args?.field==='budget'||/ميزاني|budget/i.test(call.args?.text||'')))||call?.name==='answer_customer'&&/(?:شو|كم|ايش|حددي|حدد|ما هي|what.{0,10}is|your).{0,25}(?:ميزاني|budget)|(?:ميزانيتك|budget).{0,20}[؟?]/i.test(call.args?.text||'')))return {type:'profile',profile:resolved,message:'تابعي بالبيانات الموجودة أو أجِيبي بسؤال واحد يخدم طلبها. الميزانية هنا اختيارية.'};
- if(call?.name==='answer_customer')return {type:'answer',message:lumaText(call.args?.text,2000),profile:resolved,followUp:call.args?.followUp===true,team:team()};
+ const questionCall=call?.name==='ask_question';
+ if((questionCall&&call.args?.field==='budget')||lumaBudgetPrompt(call?.args?.text,questionCall)){
+  return {type:'profile',profile:resolved,message:'تابعي بالاختيارات المناسبة من دون السؤال عن السعر أو المبلغ.'};
+ }
+ if(call?.name==='answer_customer')return {type:'answer',message:lumaBudgetNeutralText(call.args?.text,2000),profile:resolved,followUp:call.args?.followUp===true,team:team()};
  if(call?.name==='get_catalog'){
   const area=choiceValues.area.includes(call.args?.area)?call.args.area:'unknown';
   const normalize=value=>String(value||'').toLowerCase().replace(/[أإآ]/g,'ا').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
@@ -125,9 +123,9 @@ export async function runLumaTool(call,input,env){
    return detailed?{...facts,priceJod:priceFils/1000,...status}:{id:p.id,name:p.name,brand:p.brand,type:p.type,areas:p.areas,priceJod:priceFils/1000,...status};
   }),catalogReadAt:new Date().toISOString()};
  }
- if(call?.name==='ask_question'){const q=question(call.args);if(input.guided&&['skinType','ageGroup','budget'].includes(q?.field))return {type:'profile',profile:resolved,message:'استخدمي المعلومات التي اختارتها الزبونة في المسار الشخصي وتابعي بالروتين.'};if(q&&choiceValues[q.field]&&input[q.field]&&input[q.field]!=='unknown'&&(!call.args?.profile?.[q.field]||call.args.profile[q.field]===input[q.field]))return {type:'profile',profile:resolved,message:'هذه المعلومة مذكورة بالفعل. لا تكرري السؤال؛ تابعي للتفصيل الناقص أو اعرضي المنتجات.'};return q?{type:'question',question:q,profile:resolved}:{type:'notice',message:'احكيلي أكثر عن اللي محتاجتيه.'}}
+ if(call?.name==='ask_question'){const q=question(call.args);if(input.guided&&['skinType','ageGroup'].includes(q?.field))return {type:'profile',profile:resolved,message:'استخدمي المعلومات التي اختارتها الزبونة في المسار الشخصي وتابعي بالروتين.'};if(q&&choiceValues[q.field]&&input[q.field]&&input[q.field]!=='unknown'&&(!call.args?.profile?.[q.field]||call.args.profile[q.field]===input[q.field]))return {type:'profile',profile:resolved,message:'هذه المعلومة مذكورة بالفعل. لا تكرري السؤال؛ تابعي للتفصيل الناقص أو اعرضي المنتجات.'};return q?{type:'question',question:q,profile:resolved}:{type:'notice',message:'احكيلي أكثر عن اللي محتاجتيه.'}}
  if(call?.name==='handoff_to_team'&&call.args?.needsProfessional!==true&&!/(?:صيدلان|صيدلي|مختص|ادارة|إدارة|فريق|رقم|واتس|تواصل|pharmacist|contact|team)/i.test(input.message))return {type:'profile',profile:resolved,message:'أجيبي بالنصيحة والروتين المناسب للحالة البسيطة بدل التحويل للفريق. إن كان هناك خطر حقيقي وضحي الحاجة الطبية.'};
- if(call?.name==='handoff_to_team')return {type:'handoff',message:call.args?.needsProfessional===true?'هاي الحالة بتحتاج تقييم مختصة قبل تجربة منتجات جديدة. الحالات الشديدة أو الجروح تحتاج رعاية طبية مباشرة؛ وصيدلانيات Trend Shop متاحات لمتابعة اختيار العناية المناسبة.':(lumaText(call.args?.reason,300)||'من عيوني، فريق المتجر بيساعدكِ بمتابعة شخصية.'),needsProfessional:call.args?.needsProfessional===true,team:team(call.args?.needsProfessional===true)};
+ if(call?.name==='handoff_to_team')return {type:'handoff',message:call.args?.needsProfessional===true?'هاي الحالة بتحتاج تقييم مختصة قبل تجربة منتجات جديدة. الحالات الشديدة أو الجروح تحتاج رعاية طبية مباشرة؛ وصيدلانيات Trend Shop متاحات لمتابعة اختيار العناية المناسبة.':(lumaBudgetNeutralText(call.args?.reason,300)||'من عيوني، فريق المتجر بيساعدكِ بمتابعة شخصية.'),needsProfessional:call.args?.needsProfessional===true,team:team(call.args?.needsProfessional===true)};
  if(call?.name!=='show_products')return {type:'notice',message:'هذا الإجراء غير متاح.'};
  if(input.warningSigns)return {type:'handoff',...professionalResult(),team:team(true)};
  const products=await loadCareCatalog(env),args=call.args||{};
@@ -145,13 +143,13 @@ export async function runLumaTool(call,input,env){
   return {type:'catalog',validation:{code:'NO_VALID_SELECTION',requestedIds:(Array.isArray(args.productIds)?args.productIds:[]).filter(id=>typeof id==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(id)).slice(0,12),message:'لم تُعرض أي بطاقة. صححي معرفات المنتجات من البيانات الحالية واحترمي الميزانية والتوصيل، أو أجيبي بوضوح إذا لم يناسب أي منتج.'},area:result.area,budgetJod:input.budgetFils===null?null:input.budgetFils/1000,availableTypes:[...new Set(eligible.map(p=>p.type))],products:eligible.slice(0,20).map(p=>({id:p.id,name:p.name,type:p.type,priceJod:p.priceFils/1000})),profile:resolved};
  }
  const dailyPlan=input.intent==='routine'&&result.area==='face'?lumaDayPlan(args.dayPlan,result.routine,input.message):'';
- const narrative=lumaText(args.carePlan,1500).replace(/(?:المنتجات المقترحة|معرفات المنتجات|recommended products|product ids)\s*:\s*(?:TS[A-Z0-9-]{4,64}[,\s]*)+/gi,'').replace(/\s*\(?\bTS[A-Z0-9-]{4,64}\)?/g,'').trim();
+ const narrative=lumaBudgetNeutralText(args.carePlan,1500).replace(/(?:المنتجات المقترحة|معرفات المنتجات|recommended products|product ids)\s*:\s*(?:TS[A-Z0-9-]{4,64}[,\s]*)+/gi,'').replace(/\s*\(?\bTS[A-Z0-9-]{4,64}\)?/g,'').trim();
  const carePlan=dailyPlan?(narrative&&!/(?:صباح|مساء|morning|evening)/i.test(narrative)?narrative+'\n\n':'')+dailyPlan:narrative||'تمام، هاي خيارات من المتوفر حاليًا. تحت كل خيار بتلاقي سبب الترشيح وطريقة الاستخدام.';
  return {type:'products',...result,carePlan,subtotalJod:result.subtotalFils/1000,shippingFeeJod:result.shippingFeeFils/1000,totalJod:result.totalFils/1000,profile:resolved,confirmedBudgetFils:input.budgetFils,confirmedBudgetJod:input.budgetFils===null?null:input.budgetFils/1000,catalogRevision:await careCatalogRevision(products),catalogReadAt:new Date().toISOString()};
 }
 function lumaDayPlan(plan,products,message){
  const en=!/[\u0600-\u06ff]/.test(message),has=type=>products.some(product=>product.type===type);
- const trim=text=>lumaText(text,420).replace(/\bTS[A-Z0-9-]{4,64}\b/g,'').trim();
+ const trim=text=>lumaBudgetNeutralText(text,420).replace(/\bTS[A-Z0-9-]{4,64}\b/g,'').trim();
  const morning=trim(plan?.morning)||(en?'Cleanse gently, moisturize, then apply sunscreen as directed.':'تنظيف لطيف، ثم ترطيب، وبعده واقي الشمس حسب تعليمات العبوة.');
  const evening=trim(plan?.evening)||(en?'Remove sunscreen or makeup with a gentle cleanse, then moisturize.':'نظّفي من بقايا المكياج وواقي الشمس، وبعدها رطّبي بشرتكِ.');
  const note=has('cleanser')&&has('moisturizer')&&has('sunscreen')?'':en?'Use products you already tolerate for any step without a suggested item.':'للخطوات اللي ما إلها منتج مقترح، استخدمي اللي عندكِ وبتتحمله بشرتكِ.';
@@ -201,13 +199,13 @@ export async function publicLumaChat(req,env,helpers,ctx){
     let draftText='',streamed=false,selectionSignature='',selectionUsable=false;
     const replace=text=>{draftText=text;streamed=true;send('replace',{text});};
     const payload={systemInstruction:{parts:[{text:system}]},contents,tools:LUMA_TOOLS,toolConfig:{functionCallingConfig:{mode:'ANY'}},generationConfig:{maxOutputTokens:4096,thinkingConfig:{thinkingLevel:'low'}}};
-    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,preferredApi:selectedApi,payload,transport:'actions',timeoutMs:18000,signal:abort.signal,onTextDelta:async raw=>{const visible=visibleActionText(raw);if(!visible||visible.action==='ask_question')return;if(visible.action==='show_products'){if(!visible.args)return;const signature=JSON.stringify(visible.args);if(signature!==selectionSignature){selectionSignature=signature;selectionUsable=(await runLumaTool({name:'show_products',args:{...visible.args,carePlan:''}},g.input,env)).type==='products';}if(!selectionUsable)return;}const text=lumaText(visible.text.replace(/\b(?:TS[A-Z0-9-]*|PROMO[A-Z0-9-]*)\b/g,''),1800);if(text!==draftText)replace(text)},onAttempt:attempt=>{if(!attempt.ok&&streamed)replace('');send('provider',{...attempt,round:round+1,elapsedMs:Date.now()-startedAt})}});
+    const completion=await requestGemini({apiKey:await careApiKey(env,g.config),primary:g.config.settings.model,model:selectedModel,preferredApi:selectedApi,payload,transport:'actions',timeoutMs:18000,signal:abort.signal,onTextDelta:async raw=>{const visible=visibleActionText(raw);if(!visible||visible.action==='ask_question')return;if(visible.action==='show_products'){if(!visible.args)return;const signature=JSON.stringify(visible.args);if(signature!==selectionSignature){selectionSignature=signature;selectionUsable=(await runLumaTool({name:'show_products',args:{...visible.args,carePlan:''}},g.input,env)).type==='products';}if(!selectionUsable)return;}const text=lumaBudgetNeutralText(visible.text.replace(/\b(?:TS[A-Z0-9-]*|PROMO[A-Z0-9-]*)\b/g,''),1800);if(text!==draftText)replace(text)},onAttempt:attempt=>{if(!attempt.ok&&streamed)replace('');send('provider',{...attempt,round:round+1,elapsedMs:Date.now()-startedAt})}});
     selectedModel=completion.model;selectedApi=completion.api;
     const data=completion.data,candidate=data.candidates[0],parts=(candidate.content?.parts||[]).filter(p=>!p.thought),calls=parts.filter(p=>p.functionCall).slice(0,6).map(p=>p.functionCall),finish=candidate.finishReason||'',roundUsage=data.usageMetadata||{};
     let textBuffer=parts.filter(p=>typeof p.text==='string').map(p=>p.text).join('');
     for(const key of Object.keys(usage))usage[key]+=(Number.isInteger(roundUsage[key])?roundUsage[key]:0);
     if(!['STOP','TOOL_CALL','FUNCTION_CALL'].includes(finish))throw Error('FINISH_'+String(finish).replace(/[^A-Z_]/g,'').slice(0,50));
-    if(textBuffer&&!questionSent&&!handoffSent){const t=lumaText(textBuffer,1800);if(t){send('delta',{text:t});spoken+=t}}
+    if(textBuffer&&!questionSent&&!handoffSent){const t=lumaBudgetNeutralText(textBuffer,1800);if(t){send('delta',{text:t});spoken+=t}}
     if(!calls.length){if(!spoken&&!displayed&&!questionSent&&!handoffSent)throw Error('EMPTY_REPLY');break}
     const responses=[];
     for(const call of calls){let result;if(handoffSent||questionSent||displayed||answered)result={type:'notice',message:'ننتظر إجابة الزبونة عن السؤال الحالي.'};else{result=await runLumaTool(call,g.input,env);if(result.profile)send('profile',{profile:result.profile});if(result.type==='question'){if(!questionSent){send('question',result);questionSent=true}}else if(result.type==='handoff'){send('handoff',result);handoffSent=true}else if(result.type==='answer'){if(result.message){if(streamed)replace(result.message);else send('delta',{text:result.message});spoken+=result.message;answered=true;if(result.followUp&&/(?:صيدلان|صيدلي|فريق|رقم|واتس|تواصل|contact|team)/i.test(g.input.message))send('followup',{team:team()})}}else if(result.type==='products'){if(streamed)replace((result.carePlan||'')+'\n\n');else if(result.carePlan)send('delta',{text:result.carePlan+'\n\n'});send('products',result);displayed=true}else if(!['catalog','profile'].includes(result.type))send('notice',result)}responses.push({functionResponse:{id:call.id,name:call.name,response:JSON.parse(JSON.stringify(result,(key,value)=>key.endsWith('Fils')?undefined:value))}})}

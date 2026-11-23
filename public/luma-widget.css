@@ -21,23 +21,6 @@ html:has(.luma-chat[open]){scrollbar-gutter:stable;overscroll-behavior:none}
 .luma-head>.luma-new-chat{display:flex;align-items:center;justify-content:center;gap:5px;width:auto;min-width:86px;height:40px;padding:6px 9px;margin-inline-start:auto;border:1px solid #b8c8b5;border-radius:12px;background:#fff;color:#365a49;font-size:11px;line-height:1.35;font-weight:700}.luma-new-chat svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;flex:none}.luma-head>[data-luma-close]{margin-inline-start:0;flex:none}.luma-photo-button{display:grid;place-items:center;min-width:44px;min-height:40px;border:1px solid #d7c7d0;border-radius:12px;background:#f6edf2;color:#714d62;padding:8px}.luma-photo-button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round}.luma-shade-hint{padding:6px 8px;border-radius:8px;background:#fbf0e5;color:#79503b}.luma-chat .luma-actions{gap:8px}.luma-chat .luma-actions>[data-luma-stop]{margin-inline-start:auto}
 @media(max-width:600px){.luma-head{gap:7px;padding-inline:12px}.luma-head h2 span{display:none}.luma-head>.luma-new-chat{font-size:10px;min-width:74px;padding:5px 7px;max-width:89px}.luma-head .luma-avatar{width:34px;height:34px}.luma-head h2{font-size:20px}.luma-head p{font-size:9px;max-width:100px}.luma-head>[data-luma-close]{width:29px;height:29px}.luma-new-chat svg{width:14px;height:14px}}
 
-.luma-welcome-quiz {
-  display: grid;
-  grid-template-columns: minmax(0,1fr) auto;
-  align-items: center;
-  gap: 5px 12px;
-  width: 100%;
-  padding: 11px 14px;
-  margin-block: 7px;
-  color: #5c3a4f;
-  text-align: start;
-  border: 1px solid #c0d4c8;
-  background: #f1f6f3;
-  border-radius: 14px;
-}
-.luma-welcome-quiz strong { font-size: 15px; }
-.luma-welcome-quiz small { grid-row: 2; color: #58675d; font-size: 12px; }
-.luma-welcome-quiz > span { grid-column: 2; grid-row: 1 / span 2; font-size: 20px; }
 .luma-preference-tools {
   display: flex;
   flex-wrap: wrap;
@@ -65,4 +48,3 @@ html:has(.luma-chat[open]){scrollbar-gutter:stable;overscroll-behavior:none}
   font-weight: 650;
 }
 .luma-chat .luma-quick button { min-height: 34px; }
-.luma-quiz-result { color: #5c3a4f; }

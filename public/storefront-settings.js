@@ -1,14 +1,8 @@
-import {DEFAULT_SITE_SETTINGS,whatsappChannelUrl,arrangeSections,isSiteImagePath} from './site-settings.js?v=5.23.1';
+import {DEFAULT_SITE_SETTINGS,whatsappChannelUrl,arrangeSections,isSiteImagePath,storefrontReviewsEnabled} from './site-settings.js?v=5.23.3';
 export function applyAppearance(doc,settings,language){
  doc.documentElement.dataset.desktopColumns=String(settings.desktopColumns);doc.documentElement.dataset.mobileColumns=String(settings.mobileColumns);
  doc.querySelectorAll('.logo strong,.footer-logo').forEach(el=>{if(settings.storeName===DEFAULT_SITE_SETTINGS.storeName){if(!el.querySelector('.wordmark-trend'))el.innerHTML='<span class="wordmark-trend">TREND</span> <span class="wordmark-shop">SHOP</span>';}else if(el.textContent.trim()!==settings.storeName)el.textContent=settings.storeName;});
- doc.querySelectorAll('[data-review-entry-link]').forEach(el=>el.hidden=settings.reviewSubmissionsEnabled!==true);
- doc.querySelectorAll('[data-trust-en]').forEach(el=>{
-  el.dataset.trustAr??=el.textContent;
-  el.textContent=language==='en'?el.dataset.trustEn:el.dataset.trustAr;
- });
- const trust=doc.querySelector('.store-trust');
- if(trust)trust.setAttribute('aria-label',language==='en'?'Trend Shop services':'خدمات Trend Shop');
+ doc.querySelectorAll('[data-review-entry-link]').forEach(el=>el.hidden=settings.reviewSubmissionsEnabled!==true||!storefrontReviewsEnabled(settings));
  const channel=doc.querySelector('[data-whatsapp-channel]');
  if(channel){
   const url=whatsappChannelUrl(settings.whatsappChannelUrl),link=channel.querySelector('a');

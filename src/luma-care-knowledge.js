@@ -38,7 +38,7 @@ export const LUMA_CARE_KNOWLEDGE=`PRACTICAL CARE PLAYBOOK (reviewed 2026-11-12; 
 8. Pigmentation/normal texture/fine lines: respectful language, regular suitable sun protection and gradual cosmetic care. Avoid promised percentages/time guarantees. Do not identify race, age or disease from a face photo.
 9. Makeup: use stated undertone, skin type, coverage, finish and current shade reference. Ask only the missing useful detail; offer actual catalog variants. Photo lighting changes shade; recommend a jawline swatch and daylight check, never a guaranteed match.
 10. Pregnancy/nursing, current prescription treatment, known allergy or a child: give useful gentle-care information, verify exact ingredients, and have a pharmacist/clinician review an active product before recommending it. Do not assume pregnancy safety from a brand or name. Never recommend prescription treatment or oral drugs.
-OUTPUT: Explain a short ordered practical routine FIRST, then offer the suitable available product cards LAST when relevant. Do not force shopping or a budget questionnaire for a care-only question. An optional spending limit is useful only for a requested shopping shortlist. Offer store WhatsApp only when requested or for a genuinely uncertain active ingredient; do not transfer ordinary mild face/back acne or dryness. For red flags, state the needed medical action first and make WhatsApp the final supplementary option. Never delay urgent care for WhatsApp.`;
+OUTPUT: Explain a short ordered practical routine FIRST, then offer the suitable available product cards LAST when relevant. Give care guidance without requiring shopping. Never ask what the customer can spend. Use a spending limit only when the customer volunteers it. Offer store WhatsApp only when requested or for a genuinely uncertain active ingredient; do not transfer ordinary mild face/back acne or dryness. For red flags, state the needed medical action first and make WhatsApp the final supplementary option. Never delay urgent care for WhatsApp.`;
 
 export function lumaText(value,max=1800){
  if(typeof value!=='string')return '';
@@ -47,4 +47,15 @@ export function lumaText(value,max=1800){
 
 export function lumaProductAllowed(product,input){
  return product.lumaCandidate&&!(['pregnant','nursing'].includes(input.lifeStage)&&product.careClass!=='everyday');
+}
+
+const spendingLimit=/(?:ميزاني|سقف\s*(?:ال)?(?:سعر|صرف|إنفاق)|(?:نطاق|حد(?:ود)?)\s*(?:ال)?سعر|(?:المبلغ|كم|قديش).{0,35}(?:تصرف|تنفق|تدفعي|بتدفعي|إجمالي|مجموع)|\bbudget\b|spending limit|price range|how much.{0,30}(?:spend|pay)|maximum.{0,12}(?:price|spend))/i;
+
+export function lumaBudgetPrompt(value,question=false){
+ const text=String(value??'');
+ return spendingLimit.test(text)&&(question||/[؟?]|(?:شو|إيش|ايش|كم|قديش|قولي|خبريني|احكيلي|حددي|تأكدي|أكّد|تأكيد|اعطيني|أعطيني|ما\s+(?:هو|هي))\s*[^.!؟?\n]{0,55}(?:ميزاني|سقف|صرف|مبلغ|سعر)|\b(?:tell|share|confirm|set|what|how much|do you have)\b/i.test(text));
+}
+
+export function lumaBudgetNeutralText(value,max=1800){
+ return lumaText(value,max).split(/(?<=[.!؟?])(?=\s)|(?<=\n)/).filter(line=>!lumaBudgetPrompt(line)).join('').trim();
 }

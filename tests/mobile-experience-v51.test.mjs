@@ -71,6 +71,22 @@ test('Product and home review invitations follow the same owner switch in both l
  const {d}=await open(t,{reviews:[approved]});assert.equal(d.querySelector('#productReviews').hidden,false);assert.ok(d.querySelector('.review-card'));assert.equal(d.querySelector('.review-entry'),null);assert.ok(d.querySelector('.review-use-photos img'));
 });
 
+test('With both review sections paused, even existing reviews and the old storefront link are hidden',async t=>{
+ const hide=sections=>sections.map(section=>section.id==='reviews'?{...section,enabled:false}:section);
+ const settings={...DEFAULT_SITE_SETTINGS,homeSections:hide(DEFAULT_SITE_SETTINGS.homeSections),productSections:hide(DEFAULT_SITE_SETTINGS.productSections)};
+ const {d}=await open(t,{settings,reviews:[{display_name:'Example',rating:4,verifiedPurchase:true,body:'Known approved fixture',images:[]}]});
+ assert.equal(d.querySelector('#productReviews').hidden,true);
+ assert.equal(d.querySelector('#storyReviewSummary').hidden,true);
+ assert.equal(d.querySelector('[data-story-scroll="productReviews"]').hidden,true);
+ assert.equal(d.querySelector('.review-card'),null);
+ assert.equal(d.querySelector('[data-skin-quiz-entry]').hidden,true);
+ assert.doesNotMatch(d.querySelector('main').textContent,/مناسب لأي نوع بشرة/);
+ const home=await open(t,{path:'#/reviews',settings});
+ assert.ok(home.d.querySelector('.hero'));
+ assert.equal(home.d.querySelector('#homeReviews').hidden,true);
+ assert.equal(home.d.querySelector('[data-skin-quiz-entry]').hidden,false);
+});
+
 test('The owner can re-enable participation without changing product, order or media controls',async t=>{
  const {d}=await open(t,{settings:{...DEFAULT_SITE_SETTINGS,reviewSubmissionsEnabled:true}});assert.ok(d.querySelector('.review-entry'));assert.equal(d.querySelector('[data-review-entry-link]').hidden,false);assert.ok(read('public/admin.html').includes('id="reviewsTab"'));assert.equal(normalizeSiteSettings({...DEFAULT_SITE_SETTINGS,reviewSubmissionsEnabled:true}).reviewSubmissionsEnabled,true);assert.throws(()=>normalizeSiteSettings({...DEFAULT_SITE_SETTINGS,reviewSubmissionsEnabled:'true'}));
 });

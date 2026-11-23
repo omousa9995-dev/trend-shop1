@@ -107,23 +107,30 @@ test('Modern dotted Google auth keys can be saved and a newly saved owner key ta
  try{const response=await adminCare(request({revision:1,apiKey:newKey,settings:{enabled:true,billingConfirmed:true}}),f.env,helpers);assert.equal(response.status,200);const row=f.sql.prepare('SELECT * FROM care_assistant_settings').get();assert.equal(await decryptCareKey(row.encrypted_key,secret),newKey);assert.doesNotMatch(row.encrypted_key,/Synthetic/);const checked=await adminCare(request({action:'test'}),f.env,helpers);assert.equal(checked.status,200);assert.equal(used,newKey);const read=await(await adminCare(new Request('https://trend.test/api/admin/care-assistant'),f.env,helpers)).text();assert.doesNotMatch(read,/Synthetic|fake-test-key/);const bad=await adminCare(request({revision:2,apiKey:'AQ.'+'Bad\r\nInjected'.repeat(3),settings:{}}),f.env,helpers);assert.equal(bad.status,400)}finally{globalThis.fetch=old;f.close()}
 });
 
-test('Natural conversation can start without a budget; Gemini matches body products and the customer confirms its extracted budget before cards appear',async()=>{
+test('Natural conversation returns the matching body product without asking the customer to confirm a budget',async()=>{
  const f=fixture(),old=globalThis.fetch;const calls=[];
  f.sql.prepare('INSERT INTO products(id,brand,name,category,details_json,reference_price_fils,price_fils,stock,approved) VALUES(\'TSHAND1\',\'Example\',\'Hand Cream\',\'الجسم\',\'{"productType":"body-care","howToUse":"تعليمات العبوة."}\',4000,4000,4,1)').run();
  globalThis.fetch=async(url,options)=>{const body=JSON.parse(options.body);calls.push(body);return modelResponse({...proposal,message:'خلّينا نختار مرطبًا لليدين حسب تفضيلكِ.',area:'hands',budgetFils:10000,selections:[{productId:'TSHAND1',reason:'خطوة ترطيب لليدين حسب طلبكِ.'}],productIds:['TSHAND1']})};
- try{const first=await(await publicCareChat(request(input({message:'إيدي بتنشف وبدي مرطب، ميزانيتي عشرة دنانير.',budgetFils:null,profile:{area:'unknown'}})),f.env,helpers)).json();assert.equal(first.routine.length,0);assert.equal(first.area,'hands');assert.equal(first.questions[0].field,'budget');assert.equal(first.questions[0].choices[0].value,'10000');assert.match(calls[0].contents[0].parts[0].text,/إيدي بتنشف/);assert.match(calls[0].systemInstruction.parts[0].text,/TSHAND1/);assert.match(calls[0].systemInstruction.parts[0].text,/TSDEMO1/);
- const second=await(await publicCareChat(request(input({message:'نعم، عشرة دنانير.',budgetFils:10000,profile:{area:'hands'},history:[{role:'user',text:'إيدي بتنشف وبدي مرطب.'},{role:'model',text:first.message}]})),f.env,helpers)).json();assert.deepEqual(second.routine.map(p=>p.id),['TSHAND1']);assert.equal(second.totalFils,5000);assert.equal(second.routine[0].reason,'خطوة ترطيب لليدين حسب طلبكِ.');assert.equal(second.stage,'recommend');assert.doesNotMatch(calls[1].systemInstruction.parts[0].text,/TSDEMO1/);
+ try{
+  const first=await(await publicCareChat(request(input({message:'إيدي بتنشف وبدي مرطب، ميزانيتي 10 دنانير.',budgetFils:null,profile:{area:'unknown'}})),f.env,helpers)).json();
+  assert.equal(first.area,'hands');assert.deepEqual(first.questions,[]);
+  assert.deepEqual(first.routine.map(p=>p.id),['TSHAND1']);
+  assert.equal(first.totalFils,5000);assert.equal(first.routine[0].reason,'خطوة ترطيب لليدين حسب طلبكِ.');
+  const context=JSON.parse(calls[0].contents[0].parts[0].text.split('USER_INPUT=')[1]);
+  assert.equal(context.budgetFils,10000);
+  assert.match(calls[0].systemInstruction.parts[0].text,/TSHAND1/);
+  assert.match(calls[0].systemInstruction.parts[0].text,/Never ask for a budget/);
  }finally{globalThis.fetch=old;f.close()}
 });
 test('Area-specific taxonomy blocks face, hand, foot and hair cross-recommendations even when the model returns a real wrong-area SKU',()=>{
  const base={brand:'Example',approved:1,stock:3,active:1,price_fils:3000};const products=careCatalog([{...base,id:'TSFACE1',name:'Face cream',category:'البشرة',details_json:'{"productType":"moisturizer"}'},{...base,id:'TSHAND1',name:'Hand cream',category:'الجسم',details_json:'{"productType":"body-care"}'},{...base,id:'TSFOOT1',name:'Foot cream',category:'الجسم',details_json:'{"productType":"foot-care"}'},{...base,id:'TSHAIR1',name:'Hair conditioner',category:'الشعر',details_json:'{"productType":"conditioner"}'}]);
  const context=validateCareInput(input({profile:{area:'hands'}}),true);const result=normalizeCareResult({...proposal,area:'hands',productIds:['TSFACE1','TSFOOT1','TSHAIR1','TSHAND1']},products,context);assert.deepEqual(result.routine.map(x=>x.id),['TSHAND1']);
 });
-test('A model-requested change to a confirmed budget or area requires a customer choice and never silently expands the purchase budget',()=>{
- const context=validateCareInput(input({budgetFils:10000}),true);const result=normalizeCareResult({...proposal,budgetFils:25000,area:'body'},[],context);assert.equal(result.routine.length,0);assert.deepEqual(result.questions.map(x=>x.field),['budget','area']);assert.deepEqual(result.questions[0].choices.map(x=>x.value),['25000','10000']);
+test('An area change needs a choice while a model-proposed budget is ignored',()=>{
+ const context=validateCareInput(input({budgetFils:10000}),true);const result=normalizeCareResult({...proposal,budgetFils:25000,area:'body'},[],context);assert.equal(result.routine.length,0);assert.deepEqual(result.questions.map(x=>x.field),['area']);assert.equal(context.budgetFils,10000);
 });
-test('Unknown area and budget get priority over optional model follow-ups, with at most two bounded actionable questions',()=>{
- const context=validateCareInput(input({budgetFils:null,profile:{}}),true);const result=normalizeCareResult({...proposal,questions:[{field:'preference',text:'هل تفضّلين قوامًا خفيفًا؟',choices:[]}]},[],context);assert.deepEqual(result.questions.map(q=>q.field),['budget','area']);assert.equal(result.routine.length,0);
+test('Unknown area gets priority and provider budget questions are ignored',()=>{
+ const context=validateCareInput(input({budgetFils:null,profile:{}}),true);const result=normalizeCareResult({...proposal,questions:[{field:'budget',text:'كم ميزانيتكِ؟',choices:[]},{field:'preference',text:'هل تفضّلين قوامًا خفيفًا؟',choices:[]}]},[],context);assert.deepEqual(result.questions.map(q=>q.field),['area','preference']);assert.equal(result.routine.length,0);
 });
 test('Unsupported photos never produce a shopping routine or retain arbitrary image observations',()=>{
  const context=validateCareInput(input(),true);context.image={};const result=normalizeCareResult({...proposal,imageDisposition:'unsupported',observations:['visible_bumps']},[],context);assert.equal(result.needsProfessional,false);assert.equal(result.routine.length,0);assert.deepEqual(result.observations,[]);assert.match(result.message,/دون أشخاص آخرين/);
