@@ -1,0 +1,260 @@
+/* Shared by the storefront, product and collection pages, returns and Luma. */
+:root {
+  color-scheme: light;
+  --rose: #8B4B6B;
+  --blush-pink: #E8A0B0;
+  --cream: #F8F1E9;
+  --beige: #F5EDE4;
+  --plum: #5C3A4F;
+  --sage: #A8C5B5;
+  --terracotta: #D4A59A;
+  --ink: #2C2522;
+  --muted: #6B5E58;
+  --white: #FFFFFF;
+
+  --milk: var(--cream);
+  --deep: var(--plum);
+  --dust: var(--rose);
+  --blush: color-mix(in srgb, var(--blush-pink) 19%, var(--white));
+  --sage-wash: color-mix(in srgb, var(--sage) 27%, var(--white));
+  --terra-wash: color-mix(in srgb, var(--terracotta) 26%, var(--white));
+  --border: color-mix(in srgb, var(--plum) 16%, var(--cream));
+  --added-soft: var(--blush);
+  --added-line: var(--blush-pink);
+  --added-pink: var(--rose);
+  --shadow: 0 12px 32px rgb(92 58 79 / 10%);
+}
+
+body { background: var(--cream); color: var(--ink); }
+:focus-visible { outline-color: var(--rose); }
+input, select, textarea, progress { accent-color: var(--rose); }
+
+.site-header, .catalog-nav { background: var(--white); border-color: var(--border); }
+.site-header, .logo .trend-wordmark, .logo .logo-mark { color: var(--plum); }
+.logo-mark .logo-spark { fill: var(--terracotta); stroke: var(--terracotta); }
+.logo small { color: var(--muted); }
+.desktop-nav a:hover, .desktop-nav .active-link { color: var(--rose); }
+.sale-bar, .sale-bar button { background: var(--plum); color: var(--white); }
+.sale-group b { color: var(--white); }
+.sale-group i { color: var(--blush-pink); }
+.site-header .icon-btn, .header-actions #searchBtn, .language-toggle,
+.header-socials.brand-socials a, .menu-list .brand-socials a {
+  background: var(--white); color: var(--rose); border-color: var(--border);
+}
+.site-header .icon-btn svg { stroke: currentColor; }
+.header-actions #searchBtn::after { color: var(--plum); }
+.header-actions .cart-trigger, .header-actions .cart-trigger.has-items {
+  color: var(--rose); background: var(--blush); border-color: var(--blush-pink);
+}
+.cart-trigger #cartCount, .wishlist-header [data-favorite-count] {
+  color: var(--white); background: var(--rose);
+}
+.catalog-nav a, .type-pills a, .buying-related a, .brand-tile, .saved-tabs a {
+  color: var(--plum); background: var(--white); border-color: var(--border);
+}
+.catalog-nav a:hover, .type-pills a:hover, .brand-tile:hover, .buying-related a:hover,
+.header-socials.brand-socials a:hover, .site-header .icon-btn:hover {
+  background: var(--blush); border-color: var(--rose); color: var(--plum);
+}
+.type-pills a[aria-current="page"], .saved-tabs a[aria-current] {
+  background: var(--plum); color: var(--white); border-color: var(--plum);
+}
+
+/* Fade the existing photograph into the copy panel in each reading direction. */
+.hero { background: var(--cream); }
+.hero::after {
+  background: linear-gradient(270deg, var(--cream) 22%, rgb(248 241 233 / 98%) 39%, rgb(248 241 233 / 15%) 65%, transparent 83%);
+}
+@media (min-width: 761px) {
+  [dir="ltr"] .hero-photo { left: auto; right: 0; }
+  [dir="ltr"] .hero::after {
+    background: linear-gradient(90deg, var(--cream) 22%, rgb(248 241 233 / 98%) 39%, rgb(248 241 233 / 15%) 65%, transparent 83%);
+  }
+}
+@media (max-width: 760px) {
+  .hero::after {
+    background: linear-gradient(0deg, var(--cream) 0%, var(--cream) 42%, rgb(248 241 233 / 67%) 53%, transparent 67%);
+  }
+}
+.hero h1, .title-set h2, .new-products-head h2, .page-hero h1, .buying-hero h1,
+.callout h2, .section-head h2, .product-type-browse h2, .brand-discovery h3,
+.success-panel h1, .drawer-head h2, .checkout-form h2, .order-summary h3 { color: var(--plum); }
+.hero h1 i, .eyebrow, .hero .eyebrow, .title-set .overline, .benefits b,
+.hero-stats b, .text-link, .brand-line, .brand-link:hover { color: var(--rose); }
+.hero .hero-label, .hero p, .hero-stats, .benefits span, .cat-item p,
+.callout p, .breadcrumbs, .filter-group label, .shop-type-note { color: var(--muted); }
+.hero-secondary { color: var(--plum); border-color: var(--rose); }
+.text-link { border-color: var(--blush-pink); }
+.page-hero, .callout { background: var(--beige); }
+.callout::before { color: var(--blush-pink); }
+.product-card, .campaign-card, .product-type-browse, .filters, .buying-advice > div {
+  background: var(--white); border-color: var(--border);
+}
+.product-card:hover { border-color: var(--blush-pink); }
+.product-name, .cat-item h3 { color: var(--ink); }
+.product-card :is(.product-original, .product-size, .subcat), .campaign-copy :is(b, small) { color: var(--muted); }
+.product-purpose { color: var(--muted) !important; }
+.product-type-tile, .campaign-copy > span { color: var(--plum); }
+.product-type-icon { background: var(--beige); border-color: var(--border); }
+.product-type-tile:hover .product-type-icon { background: var(--blush); border-color: var(--blush-pink); }
+.product-favorite { color: var(--rose); background: var(--white); border-color: var(--border); }
+.product-favorite.is-saved { color: var(--rose); border-color: var(--rose); background: var(--blush); }
+.product-favorite.is-saved svg { fill: currentColor; }
+
+/* Purchase actions share the same hierarchy in cards, product stories and checkout. */
+.btn, .product-btn, .recommend-add, .luma-footer-cta,
+.story-purchase > .story-bag-button, .product-story .story-order,
+.quick-checkout .btn[type="submit"], .arencia-extra-add,
+.cart-control .cart-plus, .purchase-area .cart-control .cart-plus {
+  background: var(--rose); color: var(--white); border-color: var(--rose);
+}
+.btn-light, .btn-outline, .product-story .story-purchase > .story-order,
+.checkout-add-products, .suggestion-add, .limited-card .limited-open {
+  color: var(--plum); background: var(--blush); border-color: var(--blush-pink);
+}
+.btn-outline { background: transparent; border-color: var(--rose); }
+.btn:hover:where(:not(:disabled)), .product-btn:hover:where(:not(:disabled)),
+.recommend-add:hover, .luma-footer-cta:hover, .arencia-extra-add:hover,
+.story-purchase > .story-bag-button:hover:where(:not(:disabled)),
+.product-story .story-order:hover:where(:not(:disabled)),
+.quick-checkout .btn[type="submit"]:hover:where(:not(:disabled)),
+.purchase-area .cart-control .cart-plus:hover {
+  color: var(--white); background: var(--plum); border-color: var(--plum);
+}
+.btn-light:hover:where(:not(:disabled)), .btn-outline:hover:where(:not(:disabled)),
+.product-story .story-purchase > .story-order:hover:where(:not(:disabled)),
+.checkout-add-products:hover, .suggestion-add:hover, .limited-card .limited-open:hover {
+  background: var(--blush-pink); color: var(--ink); border-color: var(--rose);
+}
+.story-purchase > .story-bag-button.is-added, .arencia-extra-add.is-added {
+  color: var(--rose); background: var(--blush); border-color: var(--rose);
+}
+.product-btn:disabled, .btn:disabled, .story-purchase > .story-bag-button:disabled,
+.product-story .story-purchase > .story-order:disabled, .quick-checkout .btn[type="submit"]:disabled {
+  color: var(--muted); background: var(--beige); border-color: var(--border); opacity: 1;
+}
+.cart-control, .purchase-area .cart-control { background: var(--blush); border-color: var(--blush-pink); }
+.cart-control button, .cart-control output, .purchase-area .cart-control output { color: var(--rose); }
+.price-row strong, .cart-line .cart-final-price, .checkout-product-price, .cart-totals .total,
+.drawer-total strong, .summary-row.total, .seo-current-price strong, .seo-product-card > strong,
+.story-offer strong, .story-choice-price strong, .story-sticky b,
+.aqua-hero-price, .limited-price strong, .detail-complement strong { color: var(--rose); font-weight: 700; }
+.old-price, .story-offer del, .limited-price del { color: var(--muted); text-decoration: line-through; }
+.discount-pill, .offer-discount, .limited-saving { background: var(--terracotta); color: var(--ink); }
+.product-saving, .combo-saving, .story-saving { color: var(--plum); }
+
+/* Sage identifies the Korean collection in navigation, its gateway and its shelf. */
+.catalog-nav a.korean-nav, .category-korean .korean-card-cta {
+  background: var(--sage); color: var(--ink); border-color: var(--sage);
+}
+.catalog-nav a.korean-nav:hover, .category-korean:hover .korean-card-cta { border-color: var(--ink); }
+.category-korean, .korean-universe-hero { background: var(--sage-wash); border-color: var(--sage); }
+.category-korean :is(h3, .category-kicker), .korean-universe-hero :is(h1, h2, .universe-eyebrow) { color: var(--ink); }
+.category-korean p, .korean-universe-hero :is(p, .universe-breadcrumb) { color: var(--muted); }
+[data-store-section="korean"] .section-head {
+  border-inline-start: 4px solid var(--sage); padding-inline-start: 1rem;
+}
+[data-store-section="korean"] .brand-tile { background: var(--sage-wash); border-color: var(--sage); }
+
+/* Warm clay gives bundles and timed offers a separate visual identity. */
+.campaign-offer, .offer-card { background: var(--white); border-color: var(--terracotta); }
+.offer-art, .limited-clock, .limited-product-badge, .product-bundles { background: var(--terra-wash); border-color: var(--terracotta); color: var(--ink); }
+.offer-content h2, .offer-card h2, .offer-items a { color: var(--plum); }
+.offer-content > p, .offer-card p, .offer-notes, .offer-shipping { color: var(--muted); }
+.limited-offers { background: var(--terra-wash); color: var(--plum); }
+.limited-kicker, .limited-heading-note { color: var(--muted); }
+.limited-card { background: var(--white); color: var(--ink); border-color: var(--terracotta); }
+
+/* Product pages have their own legacy component variables. */
+.product-story {
+  --story-ink: var(--ink);
+  --story-accent: var(--rose);
+  --story-line: var(--border);
+  --story-paper: var(--beige);
+  background: var(--cream);
+}
+.product-story .story-intro h1, .product-story :is(h2, h3), .story-brand-row .detail-brand,
+.story-tagline, .aqua-fresh-pilot .story-tagline, .story-quick-benefits b,
+.story-reviews h2, .story-section-nav button { color: var(--plum); }
+.story-eyebrow, .story-reviews .overline, .story-steps li > span, .arencia-service-row svg { color: var(--rose); }
+.product-story :is(.story-breadcrumb, .story-lead, .story-facts span, .story-image-caption,
+  .story-offer small, .story-unit-price, .story-selection-note, .story-bag-note, .story-assurance,
+  .story-sticky small, .story-editorial-photo > small, .story-editorial-copy > p, .story-fit p,
+  .story-steps p, .story-small-note, .story-faq p, .media-caption, .global-rating-source,
+  .product-silent-video-card figcaption), .arencia-service-row > span { color: var(--muted); }
+.story-quick-benefits li > span:last-child, .story-faq summary { color: var(--ink); }
+.story-quick-benefits li > span:first-child { color: var(--rose); }
+.story-fit, .arencia-service-card, .story-ingredient-pills span, .story-stepper button,
+.story-gallery .touch-media-stage, .story-photo { background: var(--beige); border-color: var(--border); }
+.story-fit-note, .arencia-service-row + .arencia-service-row, .story-selection-price { border-color: var(--border); }
+.story-last-cta { background: var(--blush); }
+.story-purchase, .story-sticky { background: var(--white); border-color: var(--border); }
+.story-offer:has(input:checked), .variant-option input:checked + span, .touch-media-thumbs button[aria-pressed="true"] {
+  background: var(--blush); border-color: var(--rose); box-shadow: inset 0 0 0 1px var(--rose);
+}
+.story-offer i { background: var(--terra-wash); color: var(--plum); }
+.variant-picker, .variant-option span, .option-dialog { color: var(--ink); background: var(--white); border-color: var(--border); }
+.variant-picker legend, .variant-change { color: var(--plum); }
+.product-story :is(button, a, summary):focus-visible,
+.quick-checkout :is(button, a, input, textarea, select):focus-visible,
+.variant-option input:focus-visible + span { outline-color: var(--rose); }
+
+/* Search, bag and the order review dialog. */
+.drawer, .search-dialog, .quick-checkout, .checkout-suggestions { color: var(--ink); background: var(--cream); border-color: var(--border); }
+.drawer-head, .search-dialog h2, .quick-checkout-head h2, .suggestions-heading h2 { color: var(--plum); }
+.search-dialog::backdrop, .quick-checkout::backdrop, .checkout-suggestions::backdrop { background: rgb(44 37 34 / 56%); }
+.search-dialog .search-eyebrow, .search-dialog .search-result-price, .checkout-remove { color: var(--rose); }
+.search-input-label, .search-dialog #searchHelp, .search-dialog .search-suggestion small,
+.search-dialog .search-result-action, .search-dialog-foot, .quick-checkout-head p,
+.checkout-cart-head p, .checkout-product-info > small, .phone-hint, .field-hint,
+.quick-checkout .quick-summary-note, .cart-remove { color: var(--muted); }
+.search-input-wrap > svg { stroke: var(--rose); }
+.field, .search-dialog .field, .quick-checkout .field { color: var(--ink); background: var(--white); border-color: var(--muted); }
+.field:focus, .search-dialog .field:focus { border-color: var(--rose); box-shadow: 0 0 0 3px var(--blush); }
+.search-chips button, .quick-checkout-actions button, .checkout-quantity,
+.payment-summary, .cart-delivery-policy { color: var(--plum); background: var(--blush); border-color: var(--blush-pink); }
+.payment-summary b, .checkout-quantity button, .search-dialog-foot button { color: var(--plum); }
+.payment-summary p { color: var(--muted); }
+.search-dialog .search-suggestion, .search-dialog .search-suggestion b { color: var(--ink); }
+.search-dialog .search-suggestion.selected, .search-dialog .search-suggestion:hover {
+  background: var(--blush); box-shadow: inset 3px 0 var(--rose);
+}
+.quick-checkout-head, .suggestions-heading, .suggestions-footer { background: var(--cream); border-color: var(--border); }
+.quick-checkout .checkout-form, .quick-checkout .order-summary { background: var(--white); border-color: var(--border); }
+.delivery-goal, .quick-checkout .checkout-fallback { background: var(--beige); color: var(--ink); border-color: var(--border); }
+.delivery-goal progress::-webkit-progress-bar { background: var(--white); }
+.delivery-goal progress::-webkit-progress-value { background: var(--rose); }
+.delivery-goal progress::-moz-progress-bar { background: var(--rose); }
+.toast { background: var(--plum); color: var(--white); }
+
+/* The widget stylesheet is loaded on demand, even after the storefront has rendered. */
+.luma-header-entry, .luma-footer-entry { background: var(--blush); color: var(--plum); border-color: var(--blush-pink); }
+.luma-footer-entry p { color: var(--muted); }
+dialog.luma-chat {
+  --luma-ink: var(--ink);
+  background: var(--beige); color: var(--ink); border-color: var(--border);
+}
+dialog.luma-chat::backdrop { background: rgb(44 37 34 / 35%); }
+.luma-chat .luma-head, .luma-chat .luma-composer { background: var(--white); border-color: var(--border); }
+.luma-chat .luma-head h2, .luma-chat .luma-head h2 span, .luma-standalone h1 { color: var(--plum); }
+.luma-chat .luma-head p, .luma-chat .luma-speaker, .luma-chat .luma-brand { color: var(--muted); }
+.luma-chat .luma-head > button, .luma-chat .luma-quick button,
+.luma-chat .luma-photo-button, .luma-chat .luma-card-actions :is(a, button) {
+  color: var(--plum); background: var(--blush); border-color: var(--blush-pink);
+}
+.luma-chat .luma-model, .luma-chat .luma-product, .luma-chat .luma-input-row textarea {
+  color: var(--ink); background: var(--white); border-color: var(--border);
+}
+.luma-chat .luma-user { color: var(--ink); background: var(--cream); border-inline-start: 3px solid var(--blush-pink); }
+.luma-chat .luma-period, .luma-chat .luma-total { background: var(--beige); color: var(--plum); }
+.luma-chat .luma-send { background: var(--rose); color: var(--white); }
+.luma-chat .luma-send:hover:where(:not(:disabled)) { background: var(--plum); }
+.luma-chat :focus-visible { outline-color: var(--rose); }
+.luma-standalone a { color: var(--rose); }
+
+.footer { background: var(--beige); color: var(--plum); border-top: 1px solid var(--border); }
+.footer-logo.trend-wordmark, .footer-logo span, .footer-grid a { color: var(--plum); }
+.footer-grid a:hover { color: var(--rose); text-decoration: underline; }
+.footer-grid p, .foot-bottom { color: var(--muted); border-color: var(--border); }
+.footer .brand-socials a { color: var(--rose); background: var(--white); border-color: var(--border); }
+.footer .brand-socials a:hover { color: var(--plum); background: var(--blush); }
