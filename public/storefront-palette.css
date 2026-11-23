@@ -66,14 +66,23 @@ input, select, textarea, progress { accent-color: var(--rose); }
   background: linear-gradient(270deg, var(--cream) 22%, rgb(248 241 233 / 98%) 39%, rgb(248 241 233 / 15%) 65%, transparent 83%);
 }
 @media (min-width: 761px) {
+  .site-header .header-inner { column-gap: clamp(.5rem, 1vw, 1rem); }
+  .brand-assistant-group, .site-header .header-actions { flex: none; }
+  .desktop-nav { flex-wrap: wrap; justify-content: center; row-gap: .25rem; }
   [dir="ltr"] .hero-photo { left: auto; right: 0; }
   [dir="ltr"] .hero::after {
     background: linear-gradient(90deg, var(--cream) 22%, rgb(248 241 233 / 98%) 39%, rgb(248 241 233 / 15%) 65%, transparent 83%);
   }
 }
 @media (max-width: 760px) {
+  .hero { --hero-photo-height: 340px; }
+  .hero-photo { height: var(--hero-photo-height); }
+  .hero h1 { max-width: 100%; font-size: clamp(1.95rem, 8.8vw, 2.65rem); text-wrap: balance; }
+  /* Keep the floating contact link opposite the home copy and shopping action in both languages. */
+  body:has(.hero) .whatsapp-float { inset-inline-start: auto; inset-inline-end: 12px; }
+  .hero-content > p { max-inline-size: calc(100% - 3.5rem); }
   .hero::after {
-    background: linear-gradient(0deg, var(--cream) 0%, var(--cream) 42%, rgb(248 241 233 / 67%) 53%, transparent 67%);
+    background: linear-gradient(to bottom, transparent calc(var(--hero-photo-height) - 125px), var(--cream) var(--hero-photo-height));
   }
 }
 .hero h1, .title-set h2, .new-products-head h2, .page-hero h1, .buying-hero h1,
