@@ -49,8 +49,17 @@ async function openStore(t,{products=catalog,hash='#/product/TS0313'}={}){
  const sent=[];w.fetch=async(u,options)=>{const path=String(u).split('?')[0];if(options?.method==='POST')sent.push({path,options});return {ok:true,json:async()=>path==='/api/catalog'?{products,storeLive:false,promotions:[]}:path==='/catalog-thumbnails.json'?json('public/catalog-thumbnails.json'):path==='/product-galleries.json'?json('public/product-galleries.json'):{}}};
  w.eval(storefrontBundle);for(let i=0;i<80&&!d.querySelector('.detail-content');i++)await pause();assert.ok(d.querySelector('.detail-content'));assert.deepEqual(errors,[]);return {w,d,sent};
 }
-test('Full product content stays expanded and favorites and recent visits remain available',async t=>{
- const {w,d}=await openStore(t);for(const id of ['storyTexture','storyFit','storyHow']){const section=d.querySelector('#'+id);assert.ok(section.textContent.trim());assert.equal(section.querySelector('details'),null);}
+test('The full description stays visible, supplemental details open on demand and collections remain available',async t=>{
+ const {w,d}=await openStore(t);
+ assert.ok(d.querySelector('#storyTexture .story-lead').textContent.trim());
+ assert.equal(d.querySelector('.story-lead').closest('details'),null);
+ for(const id of ['storyFit','storyHow','storyFaq']){
+  const details=d.getElementById(id),summary=details.querySelector('summary');
+  assert.equal(details.open,false);assert.ok(details.textContent.trim());
+  d.querySelector(`[data-story-scroll="${id}"]`).click();
+  assert.equal(details.open,true);assert.equal(d.activeElement,summary);
+  summary.click();assert.equal(details.open,false);
+ }
  assert.equal(d.querySelector('[data-shade-guide],.product-description-toggle,.product-lead-short'),null);
  d.querySelector('.detail-favorite').click();assert.equal(d.querySelector('.detail-favorite').getAttribute('aria-pressed'),'true');w.location.hash='#/saved';for(let i=0;i<60&&!d.querySelector('.saved-products');i++)await pause();assert.equal(d.querySelectorAll('.saved-products .product-card').length,1);
  w.location.hash='#/saved?view=recent';for(let i=0;i<60&&!d.querySelector('[data-clear-collection="recent"]');i++)await pause();assert.equal(d.querySelectorAll('.saved-products .product-card').length,1);d.querySelector('[data-clear-collection="recent"]').click();assert.ok(d.querySelector('.saved-empty'));

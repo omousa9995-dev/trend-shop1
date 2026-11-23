@@ -15,13 +15,9 @@ export function mountAquaFreshPilot(root,{product,content={},photos=[]}={}) {
   article.querySelectorAll('.story-lead,.story-quick-benefits li>span:last-child').forEach(el=>{
     el.innerHTML=el.innerHTML.replace(/SPF50\+ PA\+\+\+\+/g,'<bdi dir="ltr">SPF50+ PA++++</bdi>');
   });
-  const price=root.ownerDocument.createElement('div');
-  price.className='aqua-hero-price';
-  price.innerHTML=`<strong>${money(productPrice(product))}</strong><span>${tx(product._bundle?'للباكيج · اختاري كميتكِ بالأسفل':'للقطعة · اختاري كميتكِ بالأسفل',product._bundle?'per bundle · choose your quantity below':'per item · choose your quantity below')}</span>`;
-  article.querySelector('.story-tagline').after(price);
   const assurance=root.ownerDocument.createElement('p');
   assurance.className='aqua-delivery-note';
-  assurance.textContent=tx('الدفع عند الاستلام · التوصيل دينار، ومجاني فوق 19 دينارًا بعد الخصم.','Pay on delivery · Delivery is 1 JOD, free above 19 JOD after discounts.');
+  assurance.textContent=tx('التوصيل دينار لكل الأردن، ومجاني فوق 19 دينارًا بعد الخصم.','Delivery across Jordan is 1 JOD, free above 19 JOD after discounts.');
   article.querySelector('.story-assurance').after(assurance);
   const ingredientCards=content.ingredientCards||[];
   if(ingredientCards.length){
@@ -31,7 +27,7 @@ export function mountAquaFreshPilot(root,{product,content={},photos=[]}={}) {
   }
   const jump=root.ownerDocument.createElement('button');jump.type='button';jump.dataset.aquaJump='';
   jump.textContent=tx('شوفيه عن قرب','See it up close');
-  jump.onclick=()=>region.scrollIntoView({block:'start',behavior:root.ownerDocument.defaultView.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  jump.onclick=()=>{const photos=region.querySelector('.aqua-photo-list');if(photos&&!region.querySelector('video'))photos.open=true;region.scrollIntoView({block:'start',behavior:root.ownerDocument.defaultView.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});(photos?.querySelector('summary')||region).focus({preventScroll:true});};
   article.querySelector('.story-section-nav').insertBefore(jump,article.querySelector('.story-section-nav').children[3]||null);
   const rail=createAquaFreshRail(region,{product,photos,onChoose:()=>{
     const purchase=article.querySelector('#storyPurchase');purchase.scrollIntoView({block:'start',behavior:'auto'});
@@ -74,9 +70,9 @@ export function createAquaFreshRail(region,{product,photos=[],onChoose}={}) {
   if(dead)return;close();players.forEach(p=>p.destroy());players=[];region.replaceChildren();
   region.hidden=(!pictures.length&&!videos.length)||region.dataset.settingsDisabled==='true';if(!pictures.length&&!videos.length)return;
   region.classList.add('aqua-showcase');
-  region.innerHTML=`<div class="aqua-showcase-heading"><div><span class="story-eyebrow">THE TREND SHOP</span><h2>${tx('شوفيه عن قرب… وعلى راحتكِ.','A closer look. At your own pace.')}</h2><p>${videos.length?tx('لحظات من العناية، على راحتكِ.','A few moments of care, at your own pace.'):tx('تعرّفي إلى العبوة ولمسة العناية. اضغطي على الصورة لتشاهدي التفاصيل.','Meet the pack and the care moment. Tap a photo to explore the details.')}</p></div></div>${videos.length?`<div class="product-silent-video-grid" aria-label="${tx('فيديوهات المنتج','Product videos')}">${videos.map((v,i)=>`<figure class="product-silent-video-card"><div class="product-silent-video-frame" data-silent-clip="${i}"></div>${v.title?`<figcaption>${safe(v.title)}</figcaption>`:''}</figure>`).join('')}</div>`:''}${pictures.length?`<div class="aqua-media-rail" aria-label="${tx('صور المنتج؛ اسحبي للتنقل','Product photos; swipe to explore')}">${pictures.map((item,index)=>`<button type="button" class="aqua-media-card ${item.kind!=='promotional'?'is-pack':''}" data-aqua-card="${index}" aria-label="${safe(tx('تكبير','Open')+' '+(item.label||tx('الصورة','photo')))}"><span class="aqua-card-media"><img src="${safe(item.url)}" alt="${safe(item.alt||product.name)}" width="270" height="480" loading="lazy" decoding="async"/><span class="aqua-video-badge">${tx('صورة · اضغطي للتكبير','Photo · tap to explore')}</span></span><span class="aqua-card-caption">${safe(item.label||tx('تفاصيل اختياركِ','Your choice, up close'))}</span></button>`).join('')}</div>`:''}${onChoose?`<div class="aqua-showcase-foot"><p>${pictures.length?tx('اسحبي بين الصور لاكتشاف التفاصيل','Swipe through the photos to explore the details'):''}</p><button type="button" data-aqua-select>${tx('أحببتِه؟ اختاري كميتكِ','Found your fit? Choose your quantity')}</button></div>`:''}`;
+  region.innerHTML=`${videos.length?`<h2>${tx('فيديو المنتج','Product videos')}</h2>`:''}${videos.length?`<div class="product-silent-video-grid" aria-label="${tx('فيديوهات المنتج','Product videos')}">${videos.map((v,i)=>`<figure class="product-silent-video-card"><div class="product-silent-video-frame" data-silent-clip="${i}"></div>${v.title?`<figcaption>${safe(v.title)}</figcaption>`:''}</figure>`).join('')}</div>`:''}
+   ${pictures.length?`<details class="aqua-photo-list"><summary><h2>${tx('صور المنتج عن قرب','A closer look at the photos')} <span>(${pictures.length})</span></h2></summary><div class="aqua-media-rail" aria-label="${tx('صور المنتج؛ اسحبي للتنقل','Product photos; swipe to explore')}">${pictures.map((item,index)=>`<button type="button" class="aqua-media-card ${item.kind!=='promotional'?'is-pack':''}" data-aqua-card="${index}" aria-label="${safe(tx('تكبير','Open')+' '+(item.label||tx('الصورة','photo')))}"><span class="aqua-card-media"><img src="${safe(item.url)}" alt="${safe(item.alt||product.name)}" width="270" height="480" loading="lazy" decoding="async"/><span class="aqua-video-badge">${tx('صورة · اضغطي للتكبير','Photo · tap to explore')}</span></span><span class="aqua-card-caption">${safe(item.label||tx('تفاصيل اختياركِ','Your choice, up close'))}</span></button>`).join('')}</div></details>`:''}`;
   region.querySelectorAll('[data-aqua-card]').forEach(button=>button.onclick=()=>open(Number(button.dataset.aquaCard),button));
-  region.querySelector('[data-aqua-select]')?.addEventListener('click',()=>onChoose?.());
   region.querySelectorAll('[data-silent-clip]').forEach(host=>{const v=videos[Number(host.dataset.silentClip)];players.push(mountSilentVideo(host,{...v,poster:validVideoPoster(v.poster)?v.poster:'',label:v.title||tx('فيديو المنتج','Product video')}));});
  }
  const controller={setVideos(rows){const next=(rows||[]).filter(v=>v.productId===product.id&&validProductVideo(v)).slice(0,3);if(JSON.stringify(next)===JSON.stringify(videos))return;videos=next;render();},destroy(){if(dead)return;close();dead=true;players.forEach(p=>p.destroy());players=[];dialog?.remove();region.aquaFreshRail=null;}};

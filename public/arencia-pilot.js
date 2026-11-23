@@ -25,5 +25,5 @@ export function mountArenciaServiceCard(root,{product}={}){
   const note=root.ownerDocument.createElement('span');note.textContent=caption;
   row.append(heading,note);card.append(row);
  });
- purchase.before(card);return card;
+ purchase.after(card);return card;
 }

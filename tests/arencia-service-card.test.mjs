@@ -15,16 +15,16 @@ function page(t,{id='TS0098',language='ar'}={}){
  t.after(()=>{root.querySelector('[data-product-videos]')?.aquaFreshRail?.destroy();dom.window.close();setLocale('ar');});
  return {root,product,content:storyContent(product,profile)};
 }
-test('Arencia restores its previous copy, gallery, benefit order and FAQ with the approved card and product video slot',t=>{
+test('Arencia keeps its full copy, gallery and FAQ below the purchase controls with the approved card and product video slot',t=>{
  const {root,product,content}=page(t);
  assert.equal(root.querySelector('.story-tagline').textContent,content.tagline);
  assert.equal(root.querySelector('.story-lead').textContent,content.description);
  assert.equal(root.querySelectorAll('.touch-media-thumbs button').length,2);
  assert.equal(root.querySelector('#storyMainImage').getAttribute('src'),product.image);
- assert.ok(root.querySelector('.story-quick-benefits').compareDocumentPosition(root.querySelector('.story-purchase'))&4);
+ assert.ok(root.querySelector('.story-purchase').compareDocumentPosition(root.querySelector('.story-quick-benefits'))&4);
  assert.equal(root.querySelector('.arencia-pilot,.arencia-quick-order,.arencia-hero-price,.arencia-step-icon,.arencia-full-intro'),null);
  assert.equal(root.querySelectorAll('#storyFaq details').length,4);
- assert.equal(root.querySelector('.story-purchase').previousElementSibling,root.querySelector('.arencia-service-card'));
+ assert.equal(root.querySelector('.story-purchase').nextElementSibling,root.querySelector('.arencia-service-card'));
  const rows=[...root.querySelectorAll('.arencia-service-row')];assert.equal(rows.length,3);
  assert.deepEqual(rows.map(row=>[row.querySelector('strong').textContent,row.querySelector('span').textContent]),[
   ['خلال 24 ساعة','لجميع مناطق المملكة'],['تفقدي طلبكِ قبل الدفع','عند الاستلام'],['منتجات أصلية 100%','تسوّقي بثقة']

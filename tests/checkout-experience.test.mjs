@@ -104,7 +104,7 @@ test('Former advertising choices do not load a banner or tracking scripts and ar
 });
 
 test('Every visible product-brand position opens the complete normalized brand collection',async t=>{
- for(const selector of ['.detail-brand.brand-link','.story-intro .story-eyebrow .brand-link','.story-breadcrumb .brand-link']){
+ for(const selector of ['.detail-brand.brand-link','.story-last-cta .brand-link','.story-breadcrumb .brand-link']){
   const {w,d,tick}=await open(t,{hash:'#/product/TS0109',cart:[{id:'TS0064',qty:1}]});const link=d.querySelector(selector);assert.ok(link,selector);assert.equal(link.textContent,'COSRX');link.click();
   for(let i=0;i<60&&!d.querySelector('#brandSelect');i++){tick(0);await pause()}
   assert.equal(d.querySelector('#brandSelect').value,'COSRX');assertCatalogResults(d,catalog.filter(p=>p.brand.toLowerCase()==='cosrx').length+' منتج');assert.equal(d.querySelector('#cartCount').textContent,'1');
