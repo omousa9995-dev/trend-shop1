@@ -1,0 +1,309 @@
+/* Storefront masthead and its category rail. */
+.site-header .header-inner {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  grid-template-areas: "menu brand social" "actions actions actions";
+  align-items: center;
+  gap: 9px 6px;
+  height: auto;
+  min-height: 0;
+  padding-block: 11px 10px;
+}
+
+.site-header .menu-btn {
+  grid-area: menu;
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  border: 1px solid var(--border);
+  background: var(--cream);
+}
+
+.site-header .brand-assistant-group {
+  grid-area: brand;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-header .brand-assistant-group .logo {
+  display: flex;
+  flex: 0 1 auto;
+  gap: 8px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.site-header .logo .logo-mark {
+  display: block;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: 0;
+}
+
+.site-header .brand-lockup { min-width: 0; }
+
+.site-header .logo-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.site-header .logo .trend-wordmark {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 5px;
+  direction: ltr;
+  font-weight: 750;
+  letter-spacing: 0;
+}
+
+.site-header .logo .wordmark-trend {
+  font: 780 24px/1 var(--store-font);
+  letter-spacing: -.045em;
+}
+
+.site-header .logo .wordmark-shop {
+  color: var(--rose);
+  font: 750 9px/1 var(--store-font);
+  letter-spacing: .13em;
+  padding: 0;
+}
+
+.site-header .logo small {
+  margin-top: 4px;
+  font-size: 10px !important;
+  line-height: 1.25;
+  text-align: start;
+}
+
+.site-header .luma-header-entry {
+  justify-content: center;
+  min-height: 44px;
+  gap: 4px;
+  border-radius: 14px;
+  padding-inline: 7px;
+}
+
+.site-header .luma-entry-avatar {
+  width: 21px;
+  height: 21px;
+}
+
+.site-header .desktop-nav {
+  grid-area: links;
+  display: none;
+}
+
+.site-header .header-socials.brand-socials {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1px;
+}
+
+.site-header .header-socials.brand-socials a {
+  width: 38px;
+  height: 44px;
+  border-color: transparent;
+  background: transparent;
+}
+
+.site-header .header-socials.brand-socials svg {
+  width: 18px;
+  height: 18px;
+}
+
+.site-header .header-actions {
+  grid-area: actions;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  margin: 0;
+}
+
+.site-header :is(.menu-btn, .wishlist-header, .language-toggle) {
+  flex: 0 0 44px;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  border-radius: 14px;
+}
+
+.site-header .header-actions #searchBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0 10px;
+  background: var(--cream);
+}
+
+.site-header .header-actions #searchBtn::after {
+  content: "ابحثي";
+  font-family: var(--store-font);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+html[lang="en"] .site-header .header-actions #searchBtn::after { content: "Search"; }
+
+.site-header .header-actions #cartBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: auto;
+  min-width: 0;
+  min-height: 44px;
+  gap: 6px;
+  padding: 0 10px;
+  border: 1px solid var(--rose);
+  border-radius: 14px;
+  background: var(--rose);
+  color: var(--white);
+}
+
+.site-header .header-actions #cartBtn:is(:hover, :focus-visible) {
+  background: var(--plum);
+  border-color: var(--plum);
+}
+
+.site-header :is(.cart-trigger, #searchBtn, .menu-btn) svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+
+.site-header .cart-trigger .cart-label {
+  display: inline;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.site-header .cart-trigger #cartCount {
+  background: var(--white);
+  color: var(--plum);
+  min-width: 19px;
+  border-radius: 20px;
+  height: 19px;
+  padding-inline: 4px;
+  font-size: 10px;
+}
+
+.site-header .wishlist-header [data-favorite-count] {
+  inset-inline-end: 1px;
+  top: -1px;
+}
+
+.site-header .language-toggle {
+  border: 1px solid var(--border);
+  background: var(--white);
+}
+
+.site-header :is(.menu-btn, #searchBtn, .language-toggle, .wishlist-header):hover {
+  background: var(--blush);
+  border-color: var(--blush-pink);
+}
+
+.site-header :is(a, button):focus-visible,
+.catalog-nav a:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 2px;
+}
+
+.catalog-nav .wrap {
+  gap: 7px;
+  padding: 6px 3px 8px;
+  scroll-padding-inline: 3px;
+}
+
+.catalog-nav .wrap a {
+  flex: none;
+  min-height: 44px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.catalog-nav .wrap a.korean-nav {
+  font: 750 13px/1.2 var(--store-font);
+  letter-spacing: 0;
+}
+
+@media (max-width: 399px) {
+  .site-header .logo .trend-wordmark {
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .site-header .logo .wordmark-shop { letter-spacing: .23em; }
+  .site-header .logo .logo-mark { width: 32px; height: 32px; }
+  .site-header .logo .wordmark-trend { font-size: 22px; }
+}
+
+@media (max-width: 360px) {
+  .site-header .header-inner {
+    width: calc(100% - 20px);
+    column-gap: 4px;
+  }
+
+  .site-header .brand-assistant-group,
+  .site-header .brand-assistant-group .logo { gap: 5px; }
+  .site-header .brand-assistant-group .logo { flex: 1 1 auto; }
+  .site-header .header-socials.brand-socials a { width: 35px; }
+  .site-header .luma-entry-avatar { display: none; }
+  .site-header .logo .wordmark-trend { font-size: 20px; }
+  .site-header .logo small {
+    font-size: 9px !important;
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 340px) {
+  .site-header .cart-trigger .cart-label { display: none; }
+}
+
+@media (min-width: 1120px) {
+  .site-header .header-inner {
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    grid-template-areas: "brand links actions social";
+    gap: 12px;
+    min-height: 76px;
+  }
+
+  .site-header .menu-btn { display: none; }
+  .site-header .logo .logo-mark { width: 44px; height: 44px; }
+  .site-header .logo .wordmark-trend { font-size: 27px; }
+  .site-header .brand-assistant-group { justify-content: start; }
+  .site-header .desktop-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 13px;
+  }
+
+  .site-header .header-actions #searchBtn { flex: 0 0 44px; justify-content: center; padding: 0; }
+  .site-header .header-actions #searchBtn::after { content: none; }
+  .site-header .header-socials.brand-socials a { width: 36px; }
+}
