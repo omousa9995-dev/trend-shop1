@@ -184,3 +184,38 @@ test('Single-item and cheaper follow-ups use the last rendered recommendations a
   assert.equal(paidCalls,0);
  }finally{globalThis.fetch=old;f.close();}
 });
+
+test('Product usage and price follow-ups still work after a text turn when the inference provider is down',async()=>{
+ const f=fixture(),old=globalThis.fetch;
+ let providerCalls=0;
+ globalThis.fetch=async()=>{providerCalls++;throw Error('provider unavailable');};
+ try{
+  const history=[
+   {role:'user',text:'بدي روتين'}, {role:'model',text:'صباحًا ومساءً.\nالمنتجات المقترحة: TSDEMO1, TSDEMO2'},
+   {role:'user',text:'طيب'}, {role:'model',text:'تمام، خدي وقتكِ'}
+  ];
+  const messages=[
+   ['طيب كيف أستعمل آخر منتج اقترحتيه؟',/moisturizer\nتعليمات العبوة/],
+   ['كيف أستخدم أول منتج؟',/cleanser\nتعليمات العبوة/],
+   ['قديش سعر آخر منتج؟',/moisturizer.*4\.00 د\.أ/s]
+  ];
+  for(const [message,expected] of messages){
+   const out=await events(await publicLumaChat(request({message,history,profile:{area:'face'}}),f.env,helpers,{}));
+   assert.equal(out.at(-1).event,'done');
+   assert.match(out.find(e=>e.event==='delta')?.data.text||'',expected);
+  }
+  assert.equal(providerCalls,0);
+ }finally{globalThis.fetch=old;f.close();}
+});
+
+test('Sunscreen follow-up falls back to a single verified sunscreen when the provider times out',async()=>{
+ const f=fixture(),old=globalThis.fetch;
+ globalThis.fetch=async()=>json({error:{message:'Unavailable'}},503,{'retry-after':'60'});
+ try{
+  const out=await events(await publicLumaChat(request({message:'بدي واقي شمس للوجه'}),f.env,helpers,{}));
+  assert.equal(out.at(-1).data.source,'backup');
+  const products=out.find(e=>e.event==='products').data;
+  assert.deepEqual(products.routine.map(product=>product.id),['TSDEMO3']);
+  assert.equal(products.routine[0].period,'am');
+ }finally{globalThis.fetch=old;f.close();}
+});
