@@ -241,6 +241,17 @@ async function catalogFollowup(kind,input,catalog,env){
  return result;
 }
 
+function basicRoutineProduct(product,input){
+ if(!product.available||!product.gentleCandidate||product.careClass!=='everyday'||!lumaProductAllowed(product,input))return false;
+ const name=product.name+' '+product.nameEn;
+ if(/whiten|snow white|bleach|depigment|lighten|dark spot|spot gel|anti[- ]?acne|وايت|تبييض|تفتيح|للبقع|للحبوب|تونر|toner|mask|ماسك|make[ -]?up remover|مزيل.{0,5}مكياج|micellar/i.test(name))return false;
+ const facts=[name,product.description,...(product.benefits||[])].join(' ');
+ if(product.type==='sunscreen')return /واقي.{0,8}شمس|SPF|sunscreen|sun protect/i.test(facts);
+ if(product.type==='moisturizer')return /ترطيب|مرطب|حاجز|moisturi[sz]|hydrat|barrier/i.test(facts);
+ return product.type==='cleanser'&&!/soap|صابونة|صابون|oil control|sebo/i.test(name)&&
+  /لطيف|ترطيب|مرطب|gentle|hydrat|cream cleanser|mild|non[- ]?stripping/i.test(facts);
+}
+
 async function recoverLumaReply(input,catalog,env){
  const english=!/[\u0600-\u06ff]/.test(input.message);
  if(input.image)return {type:'answer',message:english
@@ -254,10 +265,8 @@ async function recoverLumaReply(input,catalog,env){
  const sunscreenOnly=input.intent==='sunscreen';
  const sensitiveContext=/حامل|حمل|رضاع|أكزيما|اكزيما|إكزيما|التهاب|تورم|صديد|نزيف|حساسي.{0,8}شديد|\b(?:pregnan\w*|nursing|eczema|bleeding|swelling|infection|allergy)\b/i.test(input.message);
  const wantsAdviceOnly=/بدون منتجات|من غير منتجات|مش بدي منتجات|نصائح فقط|نصايح فقط|without products|advice only/i.test(input.message);
- // Pick everyday steps from the product's actual label, not inferred treatment claims.
- const avoid=/whiten(?:ing|er)|bleach|depigment|lightening|وايتننغ|تبييض|تفتيح|مزيل.{0,5}مكياج|make[ -]?up remover|micellar|تونر|toner|mask|ماسك/i;
- const eligible=catalog.filter(product=>product.available&&product.gentleCandidate&&product.careClass==='everyday'&&
-  !avoid.test(product.name+' '+product.nameEn)&&lumaProductAllowed(product,routineInput));
+ // An inferred catalog type alone isn't enough for an automatic recommendation.
+ const eligible=catalog.filter(product=>basicRoutineProduct(product,routineInput));
  if(!wantsAdviceOnly&&!sensitiveContext&&!['pregnant','nursing'].includes(input.lifeStage)&&eligible.length){
   const ranked=shortlistLumaCatalog(eligible,routineInput);
   const types=sunscreenOnly?['sunscreen']:['cleanser','moisturizer','sunscreen'];

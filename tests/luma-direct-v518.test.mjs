@@ -150,6 +150,8 @@ test('Luma suppresses budget questions even on explicit shopping requests and st
 test('A failed provider still completes an ordinary guided routine using only validated everyday stock',async()=>{
  const f=fixture(),old=globalThis.fetch;
  globalThis.fetch=async()=>json({error:{message:'Unavailable'}},503);
+ f.db.prepare("UPDATE products SET description='Gentle hydrating face cleanser' WHERE id='TSDEMO1'").run();
+ f.db.prepare("INSERT INTO products(id,brand,name,category,details_json,description,reference_price_fils,price_fils,stock,approved,active,image_url) VALUES('TSDEMO4','Example','Snow White Spot Gel','البشرة','{\"productType\":\"moisturizer\"}','Moisturizing cream',500,500,4,1,1,'/images/test.webp')").run();
  try{
   const out=await events(await publicLumaChat(request({
    message:'بدي روتين صباحي ومسائي لبشرتي الجافة',guided:true,intent:'routine',
