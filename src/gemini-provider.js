@@ -15,8 +15,8 @@ function problem(status,data){
  const reason=status===401||status===403?'AUTH':status===402||/billing|prepay|credit balance/i.test(message)?'BILLING':status===404?'MODEL':status===429?'RATE_LIMIT':/overload|capacity|busy/i.test(message)?'CAPACITY':status>=500?'UNAVAILABLE':'INVALID_REQUEST';
  return Object.assign(Error('PROVIDER_HTTP_'+status),{status,reason});
 }
-export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',preferredApi,onAttempt=()=>{},onTextDelta,timeoutMs=15000,alternateModel=false}){
- const candidates=model?(alternateModel?modelOrder(model):[model,model]):modelOrder(primary);let last;
+export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',preferredApi,onAttempt=()=>{},onTextDelta,timeoutMs=15000,alternateModel=false,maxAttempts=2}){
+ const candidates=(model?(alternateModel?modelOrder(model):[model,model]):modelOrder(primary)).slice(0,maxAttempts);let last;
  for(let index=0;index<candidates.length;index++){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
   const selected=candidates[index];if(!GEMINI_TEXT_MODELS.includes(selected))throw Error('INVALID_PROVIDER_MODEL');

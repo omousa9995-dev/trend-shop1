@@ -1,4 +1,5 @@
 {
+  "ai": { "binding": "LAMA_AI" },
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "trend-shop-jo",
   "main": "src/worker.js",

@@ -11,6 +11,7 @@ import {captureLamaPreferences,normalizeLamaProfile,lumaGuideQuestions} from '..
 import {lamaPolicyReply} from './lama-policies.js';
 import {productsContext,readProductSnapshot,isLamaUsageQuestion,usageMatches,usageReply,latestSuggestedIds} from './lama-catalog.js';
 import {lamaSystem} from './lama-system.js';
+import {LAMA_BACKUP_MODEL,requestLamaBackup} from './lama-backup.js';
 export const LUMA_TEXT_MODEL='gemini-3.8-flash';
 import {lumaText,lumaProductAllowed,lumaBudgetPrompt,lumaBudgetNeutralText} from './luma-care-knowledge.js';
 const enc=new TextEncoder();
@@ -75,8 +76,12 @@ function lumaInput(body,imagesAllowed=false){
  input.lama=body.contract==='lama-2';
  input.guided=body.guided===true;
  input.skippedFields=(Array.isArray(body.skippedFields)?body.skippedFields:[]).filter(field=>['skinType','ageGroup','goal'].includes(field));
- input.intent=(input.guided||input.lama)&&['routine','makeup','sunscreen','concealer'].includes(body.intent)?body.intent:
-  /روتين|routine|صباح.{0,22}مسا/i.test(input.message)?'routine':
+ const newQuestion=/[؟?]/.test(input.message)||/^(?:و?[اإ]ذا|شو|ايش|إيش|كيف|ليش|متى|what|why|how|when)(?:\s|$)/i.test(input.message);
+ const routineRequested=input.lama?
+  /^(?:روتين|routine)(?:\s|$)|(?:بدي|اريد|أريد|ابني|أبني|اعملي|اقترحي|رتبي|رتّبي).{0,22}روتين|(?:build|want|recommend|suggest).{0,20}routine/i.test(input.message):
+  /روتين|routine|صباح.{0,22}مسا/i.test(input.message);
+ input.intent=(input.guided||input.lama&&!newQuestion)&&['routine','makeup','sunscreen','concealer'].includes(body.intent)?body.intent:
+  routineRequested?'routine':
   /(?:أفضل|افضل|بدي|رشحي|اختار|أختار)\s+(?:(?:نوع|واحد)\s+)?واقي شمس|\bbest sunscreen\b/i.test(input.message)?'sunscreen':'';
  const current=input.message.replace(/[أإآ]/g,'ا');
  const bodyArea=/ظهر|جسم|صدر|\bbody\b|\bback\b/i.test(current),faceArea=/وجه|وجهي|\bface\b/i.test(current);
@@ -207,6 +212,7 @@ const CHAT_HEADERS = {
 const eventFrame = (event,data) => 'event: '+event+'\ndata: '+JSON.stringify(data)+'\n\n';
 const CHAT_TIMEOUT_MS = 13200;
 const RECOVERY_TIMEOUT_MS = 1000;
+const GEMINI_WINDOW_WITH_BACKUP_MS = 2400;
 const RETRY_MESSAGE = 'ثواني حبيبتي، صار ضغط بسيط. جرّبي ابعتيلي مرة تانية.';
 
 function lamaIntake(input){
@@ -318,6 +324,8 @@ export async function publicLumaChat(req,env,helpers,ctx){
  if(!input.message&&!input.image)return helpers.error('اكتبي سؤالكِ أو أرفقي صورة مع احتياجكِ.',400);
 
  const urgent=urgentCareReply(input.message);
+ const backupEnabled=input.lama&&!input.image&&typeof env.LAMA_AI?.run==='function';
+ const geminiReady=careReady(config);
  let factual,day;
  const directUsage=input.lama&&!input.image&&isLamaUsageQuestion(input.message);
  const policy=input.lama&&!input.image?lamaPolicyReply(input.message):null;
@@ -329,7 +337,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
    if(policy||generalOrder)factual=policy||generalOrder;
    else if(!directUsage&&!intake&&!followup&&!input.guided&&!input.image)
     factual=(!input.lama&&lumaStoreReply(input.message))||await untilAbort(()=>lumaLiveFaq(input,env),signal)||quickLumaAdvice(input);
-   if(!factual&&!directUsage&&!intake&&!followup&&careReady(config)){
+   if(!factual&&!directUsage&&!intake&&!followup&&(geminiReady||backupEnabled)){
     day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,!!input.image),signal);
     if(!day&&!input.lama)return helpers.error('وصلت لُمى لحد الاستخدام اليومي؛ تقدري تتواصلي مع المتجر.',429);
    }
@@ -410,11 +418,11 @@ export async function publicLumaChat(req,env,helpers,ctx){
       if(result){
        present(result);completed=true;done();return;
       }
-      if(careReady(config))day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,false),chatSignal);
+      if(geminiReady||backupEnabled)day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,false),chatSignal);
       if(!day&&!input.lama){send('error',{code:'DAILY_LIMIT',message:'وصلت لُمى لحد الاستخدام اليومي. تقدري تتواصلي مع المتجر.'});return;}
      }
-     if(input.lama&&!day&&careReady(config)&&directUsage)day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,false),chatSignal);
-     if(!day)throw Error('PROVIDER_UNAVAILABLE');
+     if(input.lama&&!day&&(geminiReady||backupEnabled)&&directUsage)day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,false),chatSignal);
+     if(!day||!geminiReady)throw Error('PROVIDER_UNAVAILABLE');
      const {image,...context}=input;
      const initialCatalog=/بدون منتجات|نصائح فقط|مش بدي منتجات/.test(input.message)?[]:shortlistLumaCatalog(catalog.filter(p=>lumaProductAllowed(p,input)),input);
      const references=input.lama&&!image?await untilAbort(
@@ -424,14 +432,16 @@ export async function publicLumaChat(req,env,helpers,ctx){
       profile:input.visitorProfile,catalog:productsContext(allCatalog,references),relevant:initialCatalog.map(lumaCatalogFacts)
      }):lumaSystem(input,initialCatalog);
      const contents=[{role:'user',parts:[{text:JSON.stringify(context)},...(image?[{inlineData:image}]:[])]}];
-     const apiKey=await untilAbort(()=>careApiKey(env,config),chatSignal);
+     const geminiSignal=backupEnabled?AbortSignal.any([chatSignal,AbortSignal.timeout(GEMINI_WINDOW_WITH_BACKUP_MS)]):chatSignal;
+     const apiKey=await untilAbort(()=>careApiKey(env,config),geminiSignal);
      let selectedModel,selectedApi,completeCatalog;
      const getCompleteCatalog=()=>input.lama?allCatalog:completeCatalog??=loadCareCatalog(env,{includeUnavailable:true});
      for(let round=1;round<=3;round++){
       const payload={systemInstruction:{parts:[{text:system}]},contents,tools:LUMA_TOOLS,toolConfig:{functionCallingConfig:{mode:'ANY'}},generationConfig:{maxOutputTokens:4096,thinkingConfig:{thinkingLevel:'low'}}};
       const completion=await requestGemini({
        apiKey,primary:input.lama?LUMA_TEXT_MODEL:config.settings.model,model:selectedModel,preferredApi:selectedApi,payload,
-       transport:input.lama?'stableActions':'actions',timeoutMs:input.lama?5800:6500,alternateModel:true,signal:chatSignal,
+       transport:input.lama?'stableActions':'actions',timeoutMs:backupEnabled?2100:input.lama?5800:6500,
+       alternateModel:true,maxAttempts:backupEnabled?1:2,signal:geminiSignal,
        onTextDelta:input.lama?undefined:raw=>{
         const visible=visibleActionText(raw);
         if(visible?.action!=='answer_customer')return;
@@ -467,6 +477,25 @@ export async function publicLumaChat(req,env,helpers,ctx){
     }catch(error){
      if(cancelled||req.signal.aborted)return;
      replace('');
+     if(backupEnabled&&day&&catalogLoaded&&!chatSignal.aborted){
+      const trace={model:LAMA_BACKUP_MODEL,transport:'workers-ai',api:'run',attempt:1,round:1};
+      try{
+       const relevant=shortlistLumaCatalog(catalog.filter(product=>lumaProductAllowed(product,input)),input);
+       const reply=await requestLamaBackup(env,input,relevant,day,chatSignal);
+       const result=await untilAbort(()=>runLumaTool(reply.call,input,env,{currentCatalog:catalog}),chatSignal);
+       const usable=['answer','question','products','handoff'].includes(result.type)&&
+        (result.type!=='answer'||!!result.message);
+       if(!usable)throw Error('LAMA_BACKUP_INVALID');
+       usage.promptTokenCount+=Number(reply.usage.prompt_tokens)||0;
+       usage.candidatesTokenCount+=Number(reply.usage.completion_tokens)||0;
+       send('provider',{...trace,ok:true,elapsedMs:Date.now()-startedAt});
+       if(present(result)){completed=true;done('backup-ai');return;}
+      }catch(backupError){
+       if(cancelled||req.signal.aborted)return;
+       const reason=chatSignal.aborted?'TIMEOUT':/^LAMA_BACKUP_[A-Z_]+$/.test(backupError?.message)?backupError.message:'BACKUP_UNAVAILABLE';
+       send('provider',{...trace,ok:false,reason,elapsedMs:Date.now()-startedAt});
+      }
+     }
      const recoverySignal=AbortSignal.any([req.signal,disconnected.signal,AbortSignal.timeout(RECOVERY_TIMEOUT_MS)]);
      let recovery;
      try{

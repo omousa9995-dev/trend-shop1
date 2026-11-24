@@ -319,3 +319,80 @@ test('Lama answers a general product-order question immediately even with a rout
   assert.equal(f.db.prepare('SELECT count(*) n FROM care_assistant_usage').get().n,0);
  }finally{globalThis.fetch=old;f.close();}
 });
+
+test('Lama moves to the hosted text model after one failed Gemini attempt to leave time to answer',async()=>{
+ const f=fixture(),original=globalThis.fetch;
+ const attempted=[];
+ let hostedCalls=0;
+ globalThis.fetch=async url=>{attempted.push(url);return json({error:{status:'UNAVAILABLE',message:'Private provider detail'}},503);};
+ f.env.LAMA_AI={run:async(model,body)=>{
+  hostedCalls++;
+  assert.equal(model,'@cf/google/gemma-4-26b-a4b-it');
+  assert.deepEqual(body.chat_template_kwargs,{enable_thinking:false});
+  assert.equal(body.response_format.json_schema.strict,true);
+  const context=JSON.parse(body.messages[1].content);
+  assert.match(context.question,/اجتماع/);
+  assert.match(context.history.at(-1).text,/بجفاف/);
+  assert.deepEqual(context.products,[]);
+  assert.doesNotMatch(JSON.stringify(context.history),/TSDEMO1|المنتجات المقترحة/);
+  assert.equal(context.profile.skinType,'dry');
+  assert.equal(body.messages.some(row=>row.content.includes('0790012345')),false);
+  return {choices:[{finish_reason:'stop',message:{content:JSON.stringify({action:'answer_customer',text:'تمام يا قمر. ربّتي على المناطق اللي تكتلت بمنديل نظيف. وزّعي الزايد بإسفنجة نظيفة، وحطي لمسة خفيفة بس إذا في فراغ واضح. (TSDEMO1)'})}}],usage:{prompt_tokens:900,completion_tokens:155}};
+ }};
+ try{
+  const out=await events(await publicLumaChat(request({
+   contract:'lama-2',intent:'routine',message:'مكياجي تكّتَل وعندي اجتماع قريب، كيف بصلّحه؟ للتواصل 0790012345',profile:{skinType:'dry'},
+   history:[{role:'user',text:'بشرتي فيها جفاف'},{role:'model',text:'إذا بتحسّي بجفاف خلّينا نختار خطوات لطيفة.\nالمنتجات المقترحة: TSDEMO1'}]
+  }),f.env,helpers,{}));
+  assert.equal(out.at(-1).event,'done');
+  assert.equal(out.at(-1).data.source,'backup-ai');
+  assert.equal(out.some(item=>item.event==='error'),false);
+  assert.match(out.find(item=>item.event==='delta').data.text,/ربّتي/);
+  assert.doesNotMatch(out.find(item=>item.event==='delta').data.text,/TSDEMO1/);
+  assert.equal(attempted.length,1);
+  assert.equal(hostedCalls,1);
+  assert.equal(f.db.prepare('SELECT successes FROM care_assistant_usage').get().successes,1);
+ }finally{globalThis.fetch=original;f.close();}
+});
+
+test('The text backup keeps the question and recent history within its bounded message envelope',async()=>{
+ const {lamaBackupRequest}=await import('../src/lama-backup.js');
+ const input={
+  message:'عندي طلعة ومحتاجة نصائح. '+('"\\'.repeat(660)),
+  intent:'routine',area:'makeup',skinType:'dry',sensitive:'yes',goal:'texture',preferredRoutine:'makeup',
+  history:Array.from({length:16},(_,i)=>({role:i%2?'model':'user',text:'متابعة رقم '+i+' '+('تفاصيل '.repeat(300))}))
+ };
+ const products=Array.from({length:9},(_,i)=>({id:'TSITEM'+i,name:'المنتج التجريبي '.repeat(12),type:'moisturizer',benefits:['تفاصيل '.repeat(60)]}));
+ const request=lamaBackupRequest(input,products);
+ assert.ok(request.messages.reduce((sum,msg)=>sum+Buffer.byteLength(msg.content),0)<=3750);
+ assert.ok(request.max_tokens<=480);
+ assert.match(JSON.parse(request.messages[1].content).question,/طلعة/);
+});
+
+test('A provider recommendation still rejects fabricated item IDs on the hosted fallback',async()=>{
+ const f=fixture();
+ const original=globalThis.fetch;
+ globalThis.fetch=async()=>json({error:{status:'UNAVAILABLE'}},503);
+ f.env.LAMA_AI={run:async()=>({response:{action:'show_products',text:'هذا المنتج من المتجر',area:'face',productIds:['TSMADEUP']}})};
+ try{
+  const out=await events(await publicLumaChat(request({contract:'lama-2',message:'ممكن ترشحيلي منتج من المتجر يعطي بشرتي مظهر أنعم؟',profile:{area:'face'}}),f.env,helpers,{}));
+  assert.equal(out.some(item=>item.event==='products'),false);
+  assert.doesNotMatch(JSON.stringify(out),/TSMADEUP|هذا المنتج من المتجر/);
+ }finally{globalThis.fetch=original;f.close();}
+});
+
+test('Verified shopping cards use the catalog area even if the hosted model guesses the wrong area',async()=>{
+ const f=fixture(),original=globalThis.fetch;
+ globalThis.fetch=async()=>json({error:{status:'UNAVAILABLE'}},503);
+ f.env.LAMA_AI={run:async(_model,body)=>{
+  const products=JSON.parse(body.messages[1].content).products;
+  assert.ok(products.some(product=>product.id==='TSDEMO2'&&product.type==='moisturizer'&&product.areas.includes('face')));
+  return {response:{action:'show_products',text:'حطي المرطب بعد الغسل. (TSDEMO2)',area:'body',productIds:['TSDEMO2','TSMADEUP'],selections:[{productId:'TSDEMO2',reason:'للترطيب بعد الغسل.'}]}};
+ }};
+ try{
+  const out=await events(await publicLumaChat(request({contract:'lama-2',message:'ممكن ترشحيلي مرطب من المتجر للبشرة الجافة؟',profile:{skinType:'dry'}}),f.env,helpers,{}));
+  assert.equal(out.at(-1).data.source,'backup-ai');
+  assert.deepEqual(out.find(item=>item.event==='products').data.routine.map(product=>product.id),['TSDEMO2']);
+  assert.doesNotMatch(out.find(item=>item.event==='delta').data.text,/TSDEMO2/);
+ }finally{globalThis.fetch=original;f.close();}
+});
