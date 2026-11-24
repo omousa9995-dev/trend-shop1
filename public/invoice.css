@@ -15,4 +15,4 @@
 .invoice .invoice-gift-guide{display:block;width:100%;height:auto;max-height:31mm;object-fit:contain}
 .invoice-gift p{margin:0;font:bold 15px/1.65 Tahoma,Arial,sans-serif;color:#573649;text-align:right}
 @media screen and (max-width:480px){.invoice-gift{grid-template-columns:25mm minmax(12mm,22mm) minmax(0,1fr);padding:2mm;gap:1mm}.invoice-gift p{font-size:12px}}
-@media print{.invoice-gift{background:white;border-color:#999;print-color-adjust:exact;-webkit-print-color-adjust:exact}.invoice-gift p{color:#222}}
+@media print{.invoice-gift{width:100%;max-width:none;margin:6mm 0 0;background:white;border-color:#999;print-color-adjust:exact;-webkit-print-color-adjust:exact}.invoice-gift p{color:#222}}
