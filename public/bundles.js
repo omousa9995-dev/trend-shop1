@@ -1,3 +1,4 @@
+import {INVOICE_GIFT_ID,invoiceGiftSaving} from './invoice-gift-rules.js';
 import {quoteCart,productPrice,promotionData,shippingFee} from './commerce.js?v=5.0.0';
 import {productOptions,selectedOption,cartSelectionError,aggregateCart} from './product-variants.js?v=5.9.0';
 import {isRetiredProduct} from './catalog-policy.js';
@@ -66,7 +67,7 @@ function allocate(amount,weights){
  let left=amount-rows.reduce((n,x)=>n+x.n,0);for(const row of [...rows].sort((a,b)=>b.remainder-a.remainder||a.i-b.i)){if(!left--)break;row.n++}
  return rows.map(x=>x.n);
 }
-export function quotePurchase(cart,products,promotions=[],language='ar'){
+export function quotePurchase(cart,products,promotions=[],language='ar',applyInvoiceGift=false){
  const singles=cart.filter(x=>!isBundleId(x.id)),byId=new Map(products.map(p=>[p.id,p]));
  const unavailable=id=>({id,name:language==='en'?'This selection is currently unavailable':'هذا الاختيار غير متاح حاليًا',brand:'TREND SHOP',image:'/images/TS0001.svg',stock:0,approved:false,priceFils:0});
  const bundles=cart.filter(x=>isBundleId(x.id)).map(item=>({item,offer:bundleData(item.id,promotions)})).filter(x=>bundleProduct(x.offer,products));
@@ -87,9 +88,20 @@ export function quotePurchase(cart,products,promotions=[],language='ar'){
   explicit.push({id:offer.id,title:offer.title,priceFils:offer.priceFils,items:offer.items,count:item.qty,savingFils:original-total,explicit:true});
  }
  for(const item of cart.filter(x=>isBundleId(x.id)&&!bundles.some(b=>b.item===x))){const p={...unavailable(item.id),_bundle:{items:[]}};lines.push({...item,kind:'bundle',product:p,name:p.name,image:p.image,lineTotalFils:0,originalTotalFils:0,offerSavingFils:0,unavailable:true})}
+ const beforeGift=ordinary.subtotalFils+fixed;
+ const giftDiscountFils=applyInvoiceGift?invoiceGiftSaving(beforeGift):0;
+ const applied=[...ordinary.promotions,...explicit];
+ if(giftDiscountFils){
+  const weights=lines.map(line=>line.lineTotalFils);
+  const unit=weights.every(value=>value%10===0)?10:1;
+  const shares=allocate(giftDiscountFils/unit,weights);
+  lines.forEach((line,index)=>{line.lineTotalFils-=shares[index]*unit;});
+  applied.push({id:INVOICE_GIFT_ID,title:'هدية الفاتورة 20%',en:{title:'Invoice gift 20%'},count:1,savingFils:giftDiscountFils});
+ }
  for(const line of lines)line.savingFils=Math.max(0,line.originalTotalFils-line.lineTotalFils);
- const subtotalFils=ordinary.subtotalFils+fixed,shippingFeeFils=shippingFee(subtotalFils);
- return {itemsSubtotalFils:ordinary.itemsSubtotalFils+bundleOriginal,discountFils:ordinary.discountFils+bundleSavings,subtotalFils,shippingFeeFils,totalFils:subtotalFils+shippingFeeFils,promotions:[...ordinary.promotions,...explicit],lines};
+ const subtotalFils=beforeGift-giftDiscountFils,shippingFeeFils=shippingFee(subtotalFils);
+ return {itemsSubtotalFils:ordinary.itemsSubtotalFils+bundleOriginal,discountFils:ordinary.discountFils+bundleSavings+giftDiscountFils,
+  ...(giftDiscountFils?{giftDiscountFils}:{}),subtotalFils,shippingFeeFils,totalFils:subtotalFils+shippingFeeFils,promotions:applied,lines};
 }
 export function purchaseSnapshot(quote,expanded,products){
  const byId=new Map(products.map(p=>[p.id,p]));

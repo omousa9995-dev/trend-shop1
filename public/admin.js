@@ -19,7 +19,7 @@ import {optionSummary,SKIN_TONES,usesSkinTones} from './product-variants.js?v=5.
 import {PRODUCT_TYPES} from './product-types.js?v=2.3.0';
 import {money,retailPrice,actualDiscount} from './commerce.js?v=5.0.0';
 import {createPromotionManager} from './promotions-admin.js?v=3.1.0';
-import {invoice} from './invoice.js?v=5.9.0';
+import {invoice} from './invoice.js?v=5.23.7';
 (()=>{'use strict';const $=(s,r=document)=>r.querySelector(s),safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const jordanDate=s=>{try{return new Date(String(s).replace(' ','T')+'Z').toLocaleString('ar-JO',{timeZone:'Asia/Amman',dateStyle:'medium',timeStyle:'short'})}catch{return s}};const state={products:[],orders:[],filter:'all',ordersLoading:false,ordersSaving:false,invoiceSelection:new Set(),logged:false,live:false};let currentProductDetails={},currentProductImage='',productSaving=false;let orderLoadSequence=0,preparingTodayInvoices=false;const cats=['البشرة','المكياج','الشعر','الجسم','العطور','الأدوات'];
 const invoicePrinter=createInvoicePrinter({root:$('#printRoot'),render:invoice});
 const customerReportManager=createCustomerReportManager({call});

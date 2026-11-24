@@ -1,0 +1,16 @@
+.invoice-gift-dialog{position:fixed;inset:0;width:min(24rem,calc(100vw - 2rem));max-height:calc(100dvh - 2rem);margin:auto;padding:2.4rem 1.7rem 1.5rem;box-sizing:border-box;border:1px solid #dec5cf;border-radius:1.55rem;background:#fffaf7;color:#503345;text-align:center;font-family:inherit;box-shadow:0 20px 70px #301a2d44;overflow:auto}
+.invoice-gift-dialog::backdrop{background:#34233180}
+.invoice-gift-dialog[open]{animation:invoice-gift-in .32s ease-out}
+.invoice-gift-dialog .gift-close{position:absolute;inset-block-start:.5rem;inset-inline-end:.5rem;width:2.75rem;height:2.75rem;border:0;border-radius:50%;font:1.6rem/1 system-ui;background:transparent;color:#5c3a4f;cursor:pointer}
+.invoice-gift-dialog h2{color:#5c3a4f;font-weight:700;font-family:inherit;font-size:1.85rem;line-height:1.35;margin:.7rem 0 .15rem}
+.invoice-gift-dialog p{margin:.35rem 0 1.05rem;font-size:1.03rem;line-height:1.65}
+.invoice-gift-dialog .gift-percent{display:block;font:750 clamp(3.8rem,16vw,5.7rem)/1.05 Manrope,sans-serif;letter-spacing:-.065em;color:#884866}
+.invoice-gift-dialog .gift-continue{border:0;border-radius:2rem;padding:.7rem 1.6rem;min-height:2.75rem;background:#834460;color:white;font:inherit;font-weight:700;cursor:pointer}
+.invoice-gift-dialog small{display:block;color:#6b5e58;margin:.85rem 0 0;font-size:.82rem}
+.gift-ribbon{position:relative;width:3.35rem;height:2.35rem;margin:.8rem auto .9rem;background:linear-gradient(90deg,#d997a9 44%,#8b4b6b 44% 56%,#e8b3c2 56%);border-radius:3px 3px 6px 6px;isolation:isolate}
+.gift-ribbon i{position:absolute;top:0;left:-4%;width:108%;height:22%;border-radius:3px;background:linear-gradient(90deg,#c78498 44%,#75405a 44% 56%,#d59aaa 56%);box-shadow:0 2px 0 #5c3a4f2a}
+.gift-ribbon::before,.gift-ribbon::after{content:'';position:absolute;bottom:96%;width:1.4rem;height:.8rem;border:.21rem solid #8b4b6b;box-sizing:border-box}
+.gift-ribbon::before{right:47%;border-radius:80% 80% 0 80%;transform:rotate(12deg)}.gift-ribbon::after{left:47%;border-radius:80% 80% 80% 0;transform:rotate(-12deg)}
+.cart-totals .invoice-gift-saving{background:#f5e6ed;color:#60344d;border-radius:.55rem;padding:.45rem .7rem;font-weight:700}
+@keyframes invoice-gift-in{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.invoice-gift-dialog[open]{animation:none}}

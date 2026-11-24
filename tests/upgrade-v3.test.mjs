@@ -13,10 +13,10 @@ import {productType} from '../public/product-types.js';
 import {curatedProducts} from '../public/merchandising.js';
 const read=file=>fs.readFileSync(new URL('../'+file,import.meta.url),'utf8'),catalog=JSON.parse(read('public/catalog.json'));
 const pause=()=>new Promise(resolve=>setTimeout(resolve,5));
-async function open(t,{path='/?lang=en#/shop',cart=[],live=false,onOrder,onStatus,pending=null,products=catalog,settings=DEFAULT_SITE_SETTINGS}={}){
+async function open(t,{path='/?lang=en#/shop',cart=[],live=false,onOrder,onStatus,onGift,pending=null,products=catalog,settings=DEFAULT_SITE_SETTINGS}={}){
  const dom=new JSDOM(read('public/index.html'),{url:'https://trend.test'+path,runScripts:'outside-only',pretendToBeVisual:true});t.after(()=>dom.window.close());const w=dom.window,d=w.document;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};w.localStorage.setItem('trend-shop-cart-v1',JSON.stringify(cart));
  if(pending)savePendingCheckout(w.sessionStorage,pending);
- w.fetch=async(url,options={})=>{if(String(url).startsWith('/api/catalog'))return Response.json({products,promotions:[],storeLive:live,siteSettings:settings});if(String(url).startsWith('/api/reviews'))return Response.json({reviews:[],summary:{count:0,average:null}});if(url==='/api/orders')return onOrder?onOrder(options):Response.json({orderId:'TR-TEST-SAFE',received:true,paymentMethod:'cod',shippingFeeFils:1000,totalFils:11000});if(url==='/api/order-status')return onStatus?onStatus(options):Response.json({received:false});try{return Response.json(JSON.parse(read('public'+String(url).split('?')[0])))}catch{return Response.json({}, {status:404})}};
+ w.fetch=async(url,options={})=>{if(String(url).startsWith('/api/catalog'))return Response.json({products,promotions:[],storeLive:live,siteSettings:settings});if(String(url).startsWith('/api/reviews'))return Response.json({reviews:[],summary:{count:0,average:null}});if(String(url).startsWith('/api/invoice-gift/')&&onGift)return onGift(url,options);if(url==='/api/orders')return onOrder?onOrder(options):Response.json({orderId:'TR-TEST-SAFE',received:true,paymentMethod:'cod',shippingFeeFils:1000,totalFils:11000});if(url==='/api/order-status')return onStatus?onStatus(options):Response.json({received:false});try{return Response.json(JSON.parse(read('public'+String(url).split('?')[0])))}catch{return Response.json({}, {status:404})}};
  w.eval(storefrontBundle);for(let n=0;n<100&&!(d.querySelector('.product-card')||d.querySelector('#checkoutForm')||d.querySelector('.detail-content')||d.querySelector('.product-story'));n++)await pause();await pause();return {w,d};
 }
 test('Shared checkout accepts two-letter names, one-word areas, optional email and pasted Arabic/English phones',()=>{
@@ -84,4 +84,24 @@ test('Reload with no saved server receipt retains the key and never creates an o
  const key='reload-no-server-receipt-123456789';let checks=0,posts=0;
  const {w,d}=await open(t,{path:'/?lang=en#/checkout',live:true,cart:[{id:'TS0079',qty:1}],pending:{key,at:Date.now()},onOrder:()=>{posts++;return Response.json({})},onStatus:()=>{checks++;return Response.json({received:false})}});
  assert.ok(d.querySelector('#checkoutForm'));assert.equal(checks,1);assert.equal(posts,0);assert.equal(readPendingCheckout(w.sessionStorage).key,key);assert.equal(JSON.parse(w.localStorage.getItem('trend-shop-cart-v1')).length,1);assert.doesNotMatch(w.sessionStorage.getItem('trend-shop-pending-checkout-v3'),/phone|address|name/);
+});
+
+test('A customer can scan, dismiss the mobile welcome, see the automatic gift at checkout and complete the order',async t=>{
+ const token='12'.repeat(16),requests=[],now=Date.now();let used=false,orderPayload,orderWallet;
+ const {w,d}=await open(t,{path:'/#gift='+token,cart:[{id:'TS0079',qty:1}],live:true,
+  onGift:(url,options)=>{requests.push({url,options});return Response.json({status:url.endsWith('claim')?'activated':'status',active:used?null:{expiresAt:now+864000000},serverTime:now})},
+  onOrder:options=>{used=true;orderWallet=options.headers['x-invoice-gift-wallet'];orderPayload=JSON.parse(options.body);return Response.json({orderId:'TR-GIFT',giftDiscountFils:orderPayload.expectedGiftDiscountFils,shippingFeeFils:1000,totalFils:orderPayload.expectedTotalFils})}});
+ const modal=d.querySelector('dialog.invoice-gift-welcome');assert.ok(modal.open);assert.match(modal.textContent,/خصم 20% على طلبكِ المقبل/);
+ assert.match(modal.querySelector('small').textContent,/10 أيام/);
+ assert.equal(w.location.hash,'');assert.equal(JSON.parse(requests[0].options.body).token,token);
+ const wallet=requests[0].options.headers['x-invoice-gift-wallet'];assert.match(wallet,/^[0-9a-f]{32}$/);
+ assert.equal(w.localStorage.getItem('trend_invoice_gift_wallet'),wallet);
+ modal.querySelector('.gift-continue').click();w.location.hash='#/checkout';
+ for(let i=0;i<100&&!d.querySelector('#checkoutForm');i++)await pause();
+ const savings=d.querySelector('#checkoutSummary .invoice-gift-saving');assert.ok(savings);assert.match(savings.textContent,/20%/);
+ const amount=Number(savings.parentElement.dataset.giftSaving);assert.ok(amount>0);
+ fillOrder(d).dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+ for(let i=0;i<80&&!d.querySelector('.success-panel');i++)await pause();
+ assert.equal(orderWallet,wallet);assert.equal(orderPayload.expectedGiftDiscountFils,amount);
+ assert.match(d.querySelector('.success-panel').textContent,/TR-GIFT/);
 });

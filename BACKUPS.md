@@ -60,3 +60,9 @@ A full schema/data snapshot was privately retained before edits, with321product 
 ## Before shopping experience v4.1.0 — 2026-11-05
 
 Source branch: `backup/v4.0.0-before-shopping-v41-2026-11-05`, commit `4f983568ef1e378866ae30cecefcf3093639a341`. Previous Worker: `56148ab5-fc19-4401-a734-b124b14477e3`. Customer copy is retained privately in an internal KV key; no customer or authentication records are in the source backup. The additive order-presentation column may remain during a UI rollback. Preserve all current orders, stock, later copy edits and owner video uploads.
+
+## الإصدار 5.23.6 قبل هدية الفاتورة
+
+حُفظت واجهة المتجر ولوحة الإدارة وقالب الفاتورة في الفرع [backup/v5.23.6-before-invoice-gift](https://github.com/omousa9995-dev/trend-shop1/tree/backup/v5.23.6-before-invoice-gift) عند الالتزام `956d70cfd606c2733ddbb40e41d34ff34e0cad33`.
+
+نسخة Cloudflare Worker السابقة هي `ed2e7980-062b-4ee9-85ab-bdfb5d40c222` والنشر `b97a0b4f-3522-4c12-8d68-a67fb3152f31`. تحتفظ قاعدة D1 الخاصة بالفواتير الـ16 وبنودها الـ88 في الجدولين `backup_5236_invoice_orders` و`backup_5236_invoice_items`. علامة الاستعادة قبل التعديل هي `000002a1-00000000-0000512d-ee6e5c1e5ef42dcaaebc8ad85036d2b7`. للرجوع عن الواجهة فقط يكفي إعادة نشر إصدار Worker المحفوظ مع إبقاء الطلبات اللاحقة.
