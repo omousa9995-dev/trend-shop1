@@ -3,20 +3,40 @@ const skinQuestions = [
     key: 'afterWash',
     prompt: ['بعد غسل وجهكِ بلطف، كيف بتحسّي ببشرتكِ قبل الترطيب؟', 'How does your skin feel after gentle cleansing, before moisturizing?'],
     choices: [
-      ['tight', 'مشدودة أو جافة', 'Tight or dry'],
-      ['shine', 'بتلمع بسرعة', 'Shiny soon after washing'],
-      ['mixed', 'خدودي جافة والأنف أو الجبهة بيلمعوا', 'Dry cheeks and a shiny nose or forehead'],
-      ['comfortable', 'مرتاحة', 'Comfortable']
+      ['dry', 'مشدودة أو جافة', 'Tight or dry'],
+      ['oily', 'بتلمع بسرعة', 'Shiny soon after washing'],
+      ['combination', 'خدودي جافة والأنف أو الجبهة بيلمعوا', 'Dry cheeks and a shiny nose or forehead'],
+      ['balanced', 'مرتاحة، بدون شدّ أو لمعة واضحة', 'Comfortable, without tightness or noticeable shine']
     ]
   },
   {
     key: 'midday',
     prompt: ['بنصّ اليوم، وين بتلاحظي اللمعة عادةً؟', 'Where do you usually see shine by midday?'],
     choices: [
-      ['all', 'بأغلب الوجه', 'Most of my face'],
-      ['tzone', 'على الأنف والجبهة والذقن', 'Nose, forehead, and chin'],
-      ['none', 'لمعة قليلة مع جفاف أو شدّ', 'Little shine, with dryness or tightness'],
+      ['oily', 'بأغلب الوجه', 'Most of my face'],
+      ['combination', 'على الأنف والجبهة والذقن', 'Nose, forehead, and chin'],
+      ['dry', 'لمعة قليلة مع جفاف أو شدّ', 'Little shine, with dryness or tightness'],
       ['balanced', 'لمعة خفيفة وبشرتي مرتاحة', 'A little shine, and my skin feels comfortable']
+    ]
+  },
+  {
+    key: 'texture',
+    prompt: ['بالأيام العادية، إذا ظهر تقشّر خفيف، وين بتلاحظيه؟', 'On a typical day, where do you notice any light flaking?'],
+    choices: [
+      ['dry', 'بأكثر من منطقة بوجهي', 'In several areas of my face'],
+      ['combination', 'بالخدود، وباقي الوجه بيميل للمعة', 'On the cheeks, while other areas tend to shine'],
+      ['unknown', 'نادرًا أو ما بلاحظ تقشّر', 'Rarely, or I don’t notice it']
+    ]
+  },
+  {
+    key: 'moisture',
+    prompt: ['بعد كم ساعة من مرطّبكِ المعتاد، كيف بيكون إحساس بشرتكِ؟', 'A few hours after your usual moisturizer, how does your skin feel?'],
+    choices: [
+      ['dry', 'برجع الشدّ وبحسّ إني بدي ترطيب', 'Tight again, like I need more moisture'],
+      ['oily', 'دهنية أو لامعة بأغلب وجهي', 'Greasy or shiny across most of my face'],
+      ['combination', 'خدودي مرتاحة وبترجع اللمعة بوسط الوجه', 'My cheeks feel comfortable and my T-zone gets shiny again'],
+      ['balanced', 'بتضل مرتاحة بدون شدّ أو دهنية واضحة', 'Still comfortable, without obvious tightness or oiliness'],
+      ['unknown', 'ما بستخدم مرطّب بانتظام أو مش متأكدة', 'I don’t use moisturizer regularly, or I’m not sure']
     ]
   },
   {
@@ -37,12 +57,14 @@ const types = {
   balanced: ['متوازنة', 'balanced']
 };
 
-export function quizSkinProfile({afterWash,midday,sensitive}) {
-  let skinType = 'unknown';
-  if (afterWash === 'mixed' || midday === 'tzone') skinType = 'combination';
-  else if (midday === 'all' && afterWash !== 'tight') skinType = 'oily';
-  else if (midday === 'none' && afterWash === 'tight') skinType = 'dry';
-  else if (midday === 'balanced' && afterWash === 'comfortable') skinType = 'balanced';
+export function quizSkinProfile({afterWash,midday,texture,moisture,sensitive}) {
+  const scores = {dry:0,oily:0,combination:0,balanced:0};
+  for (const [answer,weight] of [[afterWash,2],[midday,3],[texture,1],[moisture,2]]) {
+    if (Object.hasOwn(scores,answer)) scores[answer] += weight;
+  }
+  const [[type,score],[,nextScore]] = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+  // One clue, or competing patterns, isn't enough to recommend a single type.
+  const skinType = score >= 4 && score - nextScore >= 2 ? type : 'unknown';
   return {skinType,sensitive:['yes','no'].includes(sensitive)?sensitive:'unknown',area:'face'};
 }
 
@@ -51,7 +73,7 @@ export function installSkinQuiz(doc) {
   if (!entry) return () => {};
   const open = entry.querySelector('button');
   const title = ['اكتشفي بشرتكِ', 'Discover your skin type'];
-  const subtitle = ['3 أسئلة قصيرة لتتعرّفي على نوع بشرتكِ', '3 short questions about your skin'];
+  const subtitle = ['5 أسئلة قصيرة لتتعرّفي على نوع بشرتكِ', '5 short questions about your skin'];
   let language = 0;
   let dialog;
   const label = pair => pair[language];
@@ -89,15 +111,22 @@ export function installSkinQuiz(doc) {
       const current = skinQuestions[step];
       body.replaceChildren();
       if (current) {
-        body.append(element('p',label(['السؤال ','Question '])+(step+1)+' / '+skinQuestions.length,'skin-quiz-progress'));
+        const progressLabel = label(['السؤال ','Question '])+(step+1)+' / '+skinQuestions.length;
+        const progress = element('progress');
+        progress.max = skinQuestions.length;
+        progress.value = step+1;
+        progress.setAttribute('aria-label',progressLabel);
+        body.append(element('p',progressLabel,'skin-quiz-progress'),progress);
         const question = element('h3',label(current.prompt));
         const choices = element('div',null,'skin-quiz-answers');
         for (const [key,ar,en] of current.choices) {
-          choices.append(action(label([ar,en]), () => {
+          const option = action(label([ar,en]), () => {
             answers[current.key] = key;
             step++;
             render();
-          }));
+          });
+          if (answers[current.key] === key) option.classList.add('skin-quiz-selected');
+          choices.append(option);
         }
         body.append(question,choices);
         if (step>0) body.append(action(label(['السابق','Back']), () => {step--;render();}, 'skin-quiz-secondary'));
@@ -108,10 +137,10 @@ export function installSkinQuiz(doc) {
         const type = types[skinType]?.[language];
         const result = element('h3',type
           ? label(['نوع بشرتكِ على الأغلب ','Your skin is likely '])+type
-          : label(['إجاباتكِ مختلطة، وصعب نرجّح نوعًا واحدًا','Your answers point to more than one skin type']));
+          : label(['إجاباتكِ فيها أكثر من نمط، وصعب نرجّح نوعًا واحدًا','Your answers point to more than one skin type']));
         body.append(result);
         if (sensitive === 'yes') body.append(element('p',label(['وبحسب إجاباتكِ، بشرتكِ ممكن تتأثر بسهولة بالمنتجات الجديدة.','Your answers also suggest your skin may react easily to new products.'])));
-        body.append(action(label(['إعادة الاختبار','Retake quiz']), () => {step=0;render();}, 'skin-quiz-secondary'));
+        body.append(action(label(['إعادة الاختبار','Retake quiz']), () => {for (const question of skinQuestions) delete answers[question.key];step=0;render();}, 'skin-quiz-secondary'));
         result.tabIndex = -1;
         result.focus();
       }

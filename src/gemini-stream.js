@@ -1,5 +1,17 @@
 // Official step-based Interactions SSE and generateContent SSE adapters.
 // Never forward thought summaries, signatures, raw action JSON or provider errors.
+// Also bounds work that doesn't natively respect fetch's AbortSignal.
+export async function untilAbort(task, signal) {
+ if (!signal) return task();
+ signal.throwIfAborted();
+ let abort;
+ const stopped = new Promise((_,reject)=>{
+  abort = () => reject(signal.reason ?? new DOMException('Aborted','AbortError'));
+  signal.addEventListener('abort',abort,{once:true});
+ });
+ try { return await Promise.race([task(),stopped]); }
+ finally { signal.removeEventListener('abort',abort); }
+}
 export async function* providerEvents(body,{signal,maxBytes=180000}={}){
  const reader=body?.getReader();if(!reader)throw Error('EMPTY_STREAM');
  const decoder=new TextDecoder();let pending='',total=0,abort;
@@ -30,7 +42,7 @@ export async function readGeminiStream(response,{api,signal,onTextDelta}){
    if(event.usageMetadata)usage=event.usageMetadata;
    if(candidate?.finishReason){finish=candidate.finishReason;completed=finish==='STOP';if(!completed)throw Error('FINISH_'+finish);}
   }
-  if(delta){text+=delta;if(text.length>16000)throw Error('STREAM_TOO_LARGE');await onTextDelta(text);}
+  if(delta){text+=delta;if(text.length>16000)throw Error('STREAM_TOO_LARGE');await untilAbort(()=>onTextDelta(text),signal);}
   // GenerateContent's final non-empty chunk carries STOP. Do not wait for EOF.
   if(api!=='interactions'&&completed)break;
  }

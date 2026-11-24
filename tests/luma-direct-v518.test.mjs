@@ -146,3 +146,41 @@ test('Luma suppresses budget questions even on explicit shopping requests and st
  globalThis.fetch=async(url,options)=>{calls++;const sent=JSON.parse(options.body);assert.match(sent.system_instruction,/CATALOG=.*TSDEMO1/s);return stream([chunk([{functionCall:calls===1?{name:'ask_question',args:{field:'budget',text:'شو ميزانيتك؟',profile:{area:'face'}}}:{...show,args:{...show.args,carePlan:'غسل لطيف، ترطيب وحماية من الشمس. بدون فرك أو عصر للحبوب.',budgetFils:500,budgetConfirmed:true,profile:{area:'face'}}}}])])};
  try{const out=await events(await publicLumaChat(request({message:'حبوب خفيفة سطحية في وجهي بدون ألم، بدي أشتري منتجات لروتين بسيط',profile:{area:'face'}}),f.env,helpers,{}));assert.equal(out.at(-1).event,'done');assert.equal(calls,2);assert.equal(out.some(e=>e.event==='question'||e.event==='handoff'||e.event==='followup'),false);assert.equal(out.find(e=>e.event==='products').data.routine.length,2);assert.equal(out.find(e=>e.event==='products').data.confirmedBudgetFils,null)}finally{globalThis.fetch=old;f.close()}
 });
+
+test('A failed provider still completes an ordinary guided routine using only validated everyday stock',async()=>{
+ const f=fixture(),old=globalThis.fetch;
+ globalThis.fetch=async()=>json({error:{message:'Unavailable'}},503);
+ try{
+  const out=await events(await publicLumaChat(request({
+   message:'بدي روتين صباحي ومسائي لبشرتي الجافة',guided:true,intent:'routine',
+   profile:{area:'face',skinType:'dry'},budgetFils:8000
+  }),f.env,helpers,{}));
+  assert.equal(out.at(-1).event,'done');
+  assert.equal(out.at(-1).data.source,'backup');
+  assert.equal(out.some(event=>event.event==='error'),false);
+  const products=out.find(event=>event.event==='products').data;
+  assert.match(products.carePlan,/صباحًا.*مساءً/s);
+  assert.deepEqual(products.routine.map(p=>p.id),['TSDEMO1','TSDEMO2']);
+  assert.equal(products.totalFils,8000);
+  assert.equal(f.db.prepare('SELECT failures FROM care_assistant_usage').get().failures,1);
+ }finally{globalThis.fetch=old;f.close();}
+});
+
+test('Single-item and cheaper follow-ups use the last rendered recommendations and do not need another provider turn',async()=>{
+ const f=fixture(),old=globalThis.fetch;
+ let paidCalls=0;
+ globalThis.fetch=async()=>{paidCalls++;throw Error('provider unavailable');};
+ f.db.prepare('UPDATE products SET price_fils=2000 WHERE id=?').run('TSDEMO2');
+ f.db.prepare("INSERT INTO products(id,brand,name,category,details_json,reference_price_fils,price_fils,stock,approved,active,image_url) VALUES('TSDEMO4','Example','Moisturizer','البشرة','{\"productType\":\"moisturizer\"}',1500,1500,4,1,1,'/images/test.webp')").run();
+ try{
+  const history=[{role:'user',text:'بدي روتين'}, {role:'model',text:'صباحًا ومساءً.\nالمنتجات المقترحة: TSDEMO1, TSDEMO2'}];
+  for(const [message,id,total] of [['من اقتراحاتكِ، بأي منتج واحد أبدأ؟','TSDEMO2',3000],['إذا متوفر، بدّلي آخر اختيار ببديل أرخص يناسب تفضيلاتي.','TSDEMO4',2500]]){
+   const out=await events(await publicLumaChat(request({message,history,profile:{area:'face',skinType:'dry'}}),f.env,helpers,{}));
+   assert.equal(out.at(-1).event,'done');
+   const result=out.find(e=>e.event==='products').data;
+   assert.deepEqual(result.routine.map(p=>p.id),[id]);
+   assert.equal(result.totalFils,total);
+  }
+  assert.equal(paidCalls,0);
+ }finally{globalThis.fetch=old;f.close();}
+});

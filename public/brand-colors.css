@@ -2,7 +2,7 @@
 :root {
   --rose: #8B4B6B;
   --blush-pink: #E8A0B0;
-  --cream: #F8F1E9;
+  --cream: #FBF8F2;
   --beige: #F5EDE4;
   --plum: #5C3A4F;
   --sage: #A8C5B5;
@@ -61,11 +61,11 @@ input, select, textarea, progress { accent-color: var(--rose); }
 /* The original hero gradient angles and stops are preserved. */
 .hero { background-color: var(--cream); }
 .hero::after {
-  background-image: linear-gradient(270deg, var(--cream) 22%, rgb(248 241 233 / 98%) 39%, rgb(248 241 233 / 15%) 65%, transparent 83%);
+  background-image: linear-gradient(270deg, var(--cream) 22%, color-mix(in srgb, var(--cream) 98%, transparent) 39%, color-mix(in srgb, var(--cream) 15%, transparent) 65%, transparent 83%);
 }
 @media (max-width: 760px) {
   .hero::after {
-    background-image: linear-gradient(0deg, var(--cream) 0%, var(--cream) 42%, rgb(248 241 233 / 65%) 53%, transparent 67%);
+    background-image: linear-gradient(0deg, var(--cream) 0%, var(--cream) 42%, color-mix(in srgb, var(--cream) 65%, transparent) 53%, transparent 67%);
   }
 }
 .hero h1, .title-set h2, .new-products-head h2, .page-hero h1, .buying-hero h1,
@@ -146,7 +146,12 @@ input, select, textarea, progress { accent-color: var(--rose); }
 [data-store-section="korean"] .section-head {
   border-inline-start-color: var(--sage);
 }
-[data-store-section="korean"] .brand-tile { background: var(--sage-wash); border-color: var(--sage); }
+[data-store-section="korean"] .brand-tile {
+  background: #FCFEFC;
+  border-color: color-mix(in srgb, var(--sage) 62%, var(--white));
+}
+[data-store-section="korean"] .brand-tile img { mix-blend-mode: normal; }
+[data-store-section="korean"] .brand-tile:hover { border-color: var(--rose); }
 
 /* Warm clay gives bundles and timed offers a separate visual identity. */
 .campaign-offer, .offer-card { background: var(--white); border-color: var(--terracotta); }

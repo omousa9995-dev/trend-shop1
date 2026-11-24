@@ -67,3 +67,33 @@ test('Current oily-acne intent outranks earlier dryness and repeated assistant p
 test('A current acne hydration question takes precedence over earlier dry-skin context',()=>{
  const result=quickLumaAdvice({message:'هل الماء وحده يعالج الحبوب؟',history:[{role:'user',text:'عندي جفاف باليدين'},{role:'model',text:'اشربي ماء بشكل متوازن ورطبي يديك'}]});assert.match(result.text,/مش علاج للحبوب/);assert.doesNotMatch(result.text,/لعلاج جفاف البشرة/);
 });
+
+test('A partial stream reconnects once in the same turn, discards the partial bubble and preserves history and draft',async()=>{
+ const requests=[];
+ const {w,api,send}=await ui(async(url,init)=>{
+  requests.push(JSON.parse(init.body));
+  if(requests.length===1)return new Response(event('delta',{text:'الرد الأول'})+event('done'));
+  if(requests.length===2)return new Response(event('ready')+event('replace',{text:'رد ناقص'}));
+  return new Response(event('replace',{text:'رد مكتمل بعد استعادة الاتصال'})+event('done'));
+ });
+ try{
+  send('السؤال الأول');
+  await until(()=>requests.length===1&&api.dialog.getAttribute('aria-busy')==='false');
+  send('السؤال الثاني');
+  w.document.querySelector('textarea').value='مسودة السؤال الثالث';
+  await until(()=>requests.length===3&&api.dialog.getAttribute('aria-busy')==='false');
+  assert.deepEqual(requests[2],requests[1]);
+  assert.equal(requests[2].history.length,2);
+  assert.equal(api.dialog.querySelectorAll('.luma-user').length,2);
+  assert.doesNotMatch(api.dialog.textContent,/رد ناقص/);
+  assert.match(api.dialog.textContent,/رد مكتمل بعد استعادة الاتصال/);
+  assert.equal(w.document.querySelector('textarea').value,'مسودة السؤال الثالث');
+ }finally{api.destroy();w.close();}
+});
+
+test('The idle reader releases even if the upstream keeps the connection open',async()=>{
+ let cancelled=false;
+ const response=new Response(new ReadableStream({cancel(){cancelled=true;}}));
+ await assert.rejects(consumeLumaStream(response,()=>{},undefined,{idleMs:5}),/LUMA_STREAM_IDLE/);
+ assert.equal(cancelled,true);
+});

@@ -13,14 +13,17 @@ const bundle=buildSync({
  format:'iife',globalName:'LumaWidget',write:false,logLevel:'silent'
 }).outputFiles[0].text;
 
-test('Quiz uses oil distribution and tightness; sensitivity is independent',()=>{
- assert.equal(quizSkinProfile({afterWash:'tight',midday:'none'}).skinType,'dry');
- assert.equal(quizSkinProfile({afterWash:'shine',midday:'all'}).skinType,'oily');
- assert.equal(quizSkinProfile({afterWash:'tight',midday:'all'}).skinType,'unknown');
- assert.deepEqual(quizSkinProfile({afterWash:'tight',midday:'tzone',sensitive:'yes'}),{skinType:'combination',sensitive:'yes',area:'face'});
+test('Five-answer quiz weighs oil distribution, tightness, flaking and moisture separately from sensitivity',()=>{
+ assert.equal(quizSkinProfile({afterWash:'dry',midday:'dry',texture:'dry',moisture:'dry'}).skinType,'dry');
+ assert.equal(quizSkinProfile({afterWash:'oily',midday:'oily',texture:'unknown',moisture:'oily'}).skinType,'oily');
+ assert.equal(quizSkinProfile({afterWash:'balanced',midday:'balanced',texture:'unknown',moisture:'balanced'}).skinType,'balanced');
+ assert.equal(quizSkinProfile({afterWash:'dry',midday:'oily',texture:'dry',moisture:'unknown'}).skinType,'unknown');
+ assert.equal(quizSkinProfile({afterWash:'dry',midday:'combination'}).skinType,'unknown');
+ assert.deepEqual(quizSkinProfile({afterWash:'dry',midday:'combination',texture:'unknown',moisture:'combination',sensitive:'yes'}),{skinType:'combination',sensitive:'yes',area:'face'});
+ assert.equal(quizSkinProfile({sensitive:'yes'}).skinType,'unknown');
 });
 
-test('The avatar card opens its own three-question quiz and gives a result outside Luma',t=>{
+test('The skincare emoji card runs all five questions and shows the result outside Luma',t=>{
  const html=readFileSync(new URL('../public/index.html',import.meta.url),'utf8');
  const dom=new JSDOM(html,{url:'https://trend.test/'}),d=dom.window.document;
  t.after(()=>dom.window.close());
@@ -30,16 +33,32 @@ test('The avatar card opens its own three-question quiz and gives a result outsi
  update(true,'ar');
  const card=d.querySelector('[data-skin-quiz-entry]');
  assert.equal(card.hidden,false);
- assert.ok(card.querySelector('img'));
+ assert.equal(card.querySelector('.skin-quiz-emoji').textContent,'🧴');
  assert.equal(card.closest('[data-care-region]'),null);
  card.querySelector('button').click();
- for(const label of ['مشدودة أو جافة','على الأنف والجبهة والذقن','غالبًا']){
-  const answer=[...d.querySelectorAll('.skin-quiz-answers button')].find(button=>button.textContent===label);
-  assert.ok(answer);
-  answer.click();
+ const choose=text=>{
+  const button=[...d.querySelectorAll('.skin-quiz-dialog button')].find(b=>b.textContent===text);
+  assert.ok(button,'Missing choice '+text);
+  button.click();
+ };
+ const labels=['مشدودة أو جافة','على الأنف والجبهة والذقن','نادرًا أو ما بلاحظ تقشّر','خدودي مرتاحة وبترجع اللمعة بوسط الوجه','غالبًا'];
+ for(const [step,label] of labels.entries()){
+  const progress=d.querySelector('.skin-quiz-dialog progress');
+  assert.equal(progress.max,5);
+  assert.equal(progress.value,step+1);
+  if(step===2){
+   choose('السابق');
+   assert.equal(d.querySelector('.skin-quiz-selected').textContent,labels[1]);
+   choose(labels[1]);
+  }
+  choose(label);
  }
  assert.match(d.querySelector('.skin-quiz-dialog').textContent,/مختلطة/);
+ assert.match(d.querySelector('.skin-quiz-dialog').textContent,/تتأثر بسهولة/);
  assert.equal(d.querySelector('#lumaChat'),null);
+ choose('إعادة الاختبار');
+ assert.equal(d.querySelector('.skin-quiz-dialog progress').value,1);
+ assert.equal(d.querySelector('.skin-quiz-selected'),null);
  update(false,'ar');
  assert.equal(d.querySelector('.skin-quiz-dialog'),null);
  assert.equal(card.hidden,true);

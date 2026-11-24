@@ -139,3 +139,16 @@ test('Flash-Lite store actions use minimal thinking, while the 3.8 alternate kee
  const old=globalThis.fetch,seen=[];globalThis.fetch=async(url,options)=>{const body=JSON.parse(options.body);seen.push(body);return body.model?json({status:'completed',steps:[{type:'model_output',content:[{type:'text',text:'{"action":"answer_customer","text":"أهلا"}'}]}]}):json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"action":"answer_customer","text":"أهلا"}'}]}}]})};
  try{await requestGemini({apiKey:'test',primary:'gemini-3.5-flash-lite',transport:'actions',payload:{contents:[{role:'user',parts:[{text:'سؤال'}]}]}});await requestGemini({apiKey:'test',primary:'gemini-3.8-flash',transport:'actions',payload:{contents:[{role:'user',parts:[{text:'سؤال'}]}]}});assert.equal(seen[0].generation_config.thinking_level,'minimal');assert.equal(seen[1].generation_config.thinking_level,'low')}finally{globalThis.fetch=old}
 });
+
+test('A provider that sends headers and stalls while reading the response body times out and switches models',async()=>{
+ const original=globalThis.fetch;let calls=0;
+ globalThis.fetch=async()=>{
+  if(++calls===1)return new Response(new ReadableStream(),{headers:{'content-type':'application/json'}});
+  return json({candidates:[{finishReason:'STOP',content:{parts:[{text:'OK'}]}}]});
+ };
+ try{
+  const result=await requestGemini({...options,timeoutMs:15});
+  assert.equal(result.fallback,true);
+  assert.equal(calls,2);
+ }finally{globalThis.fetch=original;}
+});
