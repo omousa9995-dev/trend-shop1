@@ -93,7 +93,7 @@ async function ui({fetch:network,speech=false}={}){
 }
 test('Widget starts immediately with no consent checkboxes, provider preface or live call controls',async()=>{
  let sent;const {w,api}=await ui({fetch:async(url,options)=>{sent=JSON.parse(options.body);return new Response('event: delta\ndata: {"text":"من عيوني."}\n\nevent: done\ndata: {}\n\n')}});
- try{api.open();const dialog=w.document.querySelector('dialog');assert.equal(dialog.querySelectorAll('input[type=checkbox]:not([data-luma-remember])').length,0);assert.equal(dialog.querySelector('[data-luma-remember]').checked,false);assert.doesNotMatch(dialog.textContent,/Google|\bAI\b|قبل أول رسالة|عمري 18|مكالمة مباشرة/);w.document.querySelector('#lumaMessage').value='مرحبًا';dialog.querySelector('form').dispatchEvent(new w.Event('submit',{cancelable:true}));await new Promise(r=>setTimeout(r,30));assert.equal(sent.message,'مرحبًا');assert.equal(sent.adultConfirmed,undefined);assert.equal(sent.googleConsent,undefined);assert.equal(w.document.querySelector('.luma-record-consent'),null);assert.equal(w.document.querySelector('[data-luma-record-stop]'),null)}finally{w.close()}
+ try{api.open();const dialog=w.document.querySelector('dialog');assert.equal(dialog.querySelectorAll('input[type=checkbox]:not([data-luma-remember])').length,0);assert.equal(dialog.querySelector('[data-luma-remember]').checked,true);assert.doesNotMatch(dialog.textContent,/Google|\bAI\b|قبل أول رسالة|عمري 18|مكالمة مباشرة/);w.document.querySelector('#lumaMessage').value='مرحبًا';dialog.querySelector('form').dispatchEvent(new w.Event('submit',{cancelable:true}));await new Promise(r=>setTimeout(r,30));assert.equal(sent.message,'مرحبًا');assert.equal(sent.adultConfirmed,undefined);assert.equal(sent.googleConsent,undefined);assert.equal(w.document.querySelector('.luma-record-consent'),null);assert.equal(w.document.querySelector('[data-luma-record-stop]'),null)}finally{w.close()}
 });
 test('Page scroll/style are locked and restored; typing a next draft does not resize the frame or lose the draft',async()=>{
  let producer;const {w,api}=await ui({fetch:async()=>new Response(new ReadableStream({start(c){producer=c;c.enqueue(new TextEncoder().encode('event: delta\ndata: {"text":"لحظة."}\n\n'))}}))});
@@ -219,5 +219,88 @@ test('Sunscreen follow-up falls back to a single verified sunscreen when the pro
   const products=out.find(e=>e.event==='products').data;
   assert.deepEqual(products.routine.map(product=>product.id),['TSDEMO3']);
   assert.equal(products.routine[0].period,'am');
+ }finally{globalThis.fetch=old;f.close();}
+});
+
+test('Lama answers combined payment, authenticity and delivery questions from store configuration during a provider outage',async()=>{
+ const f=fixture({enabled:true,billingConfirmed:false,imagesEnabled:false}),old=globalThis.fetch;
+ globalThis.fetch=()=>{throw Error('Operations answers do not need Gemini');};
+ try{
+  const response=await publicLumaChat(request({contract:'lama-2',message:'شو طريقة الدفع ومتى التوصيل لإربد؟ وهل المنتجات أصلية وبقدر أفحص الختم؟'}),f.env,helpers,{});
+  assert.equal(response.status,200);
+  const out=await events(response);
+  const answer=out.find(e=>e.event==='delta').data.text;
+  assert.match(answer,/الدفع|كاش/);
+  assert.match(answer,/CliQ/);
+  assert.match(answer,/24–48/);
+  assert.match(answer,/فوق 19/);
+  assert.match(answer,/أصلية 100%/);
+  assert.match(answer,/ختم العبوة/);
+  assert.equal(out.at(-1).event,'done');
+  assert.equal(f.db.prepare('SELECT count(*) n FROM care_assistant_usage').get().n,0);
+ }finally{globalThis.fetch=old;f.close();}
+});
+
+test('Lama identifies a sold-out named product and explains documented amount, timing, pairings and cautions without guessing',async()=>{
+ const f=fixture(),old=globalThis.fetch;
+ const details={productType:'serum',nameAr:'سيروم التوت التجريبي من أرينسيا',benefits:['ترطيب'],howToUse:'ضعيه على بشرة نظيفة.\nوزعيه بلطف بعيدًا عن العين.',usage:{amount:'قطرتان',when:'مساءً',combine:'مرطب خفيف بعدها',avoid:'تجنّبي العينين'}};
+ f.db.prepare('UPDATE products SET name=?,brand=?,details_json=?,stock=0 WHERE id=?').run('Arencia Berry Serum','Arencia',JSON.stringify(details),'TSDEMO1');
+ globalThis.fetch=()=>{throw Error('Product usage does not need Gemini');};
+ try{
+  const out=await events(await publicLumaChat(request({contract:'lama-2',message:'كيف أستخدم سيروم التوت التجريبي من أرينسيا؟'}),f.env,helpers,{}));
+  const text=out.find(e=>e.event==='delta')?.data.text||'';
+  assert.match(text,/1\. ضعيه.*2\. وزعيه/s);
+  assert.match(text,/قطرتان.*مساءً.*مرطب خفيف.*تجنّبي العينين/s);
+  assert.deepEqual(out.find(e=>e.event==='reference')?.data.productIds,['TSDEMO1']);
+  assert.equal(out.at(-1).event,'done');
+ }finally{globalThis.fetch=old;f.close();}
+});
+
+test('Lama uses the complete compact catalog and the exact Arabic system instruction with stable Gemini and ten recent messages',async()=>{
+ const f=fixture(),old=globalThis.fetch;
+ const {LAMA_SYSTEM_INSTRUCTION}=await import('../src/lama-system.js');
+ const history=Array.from({length:16},(_,index)=>({role:index%2?'model':'user',text:'رسالة '+index}));
+ f.db.prepare("UPDATE products SET stock=0 WHERE id='TSDEMO3'").run();
+ let calls=0;
+ globalThis.fetch=async(url,init)=>{
+  calls++;
+  assert.match(url,/models\/gemini-3\.8-flash:generateContent$/);
+  const payload=JSON.parse(init.body),system=payload.systemInstruction.parts[0].text;
+  assert.ok(system.startsWith(LAMA_SYSTEM_INSTRUCTION));
+  assert.match(system,/STORE_CONFIG=.*freeAboveFils/s);
+  const catalog=JSON.parse(system.match(/^PRODUCTS_JSON=(.+)$/m)[1]);
+  assert.deepEqual(catalog.rows.map(row=>row[0]),['TSDEMO1','TSDEMO2','TSDEMO3']);
+  assert.equal(catalog.rows.at(-1).at(-1),0);
+  assert.equal(payload.generationConfig.responseMimeType,'application/json');
+  assert.equal(payload.generationConfig.thinkingConfig.thinkingLevel,'low');
+  const context=JSON.parse(payload.contents[0].parts[0].text);
+  assert.equal(context.history.length,10);
+  assert.equal(context.history[0].text,'رسالة 6');
+  assert.equal(context.visitorProfile.skinType,'dry');
+  assert.deepEqual(context.visitorProfile.likedProductIds,['TSDEMO2']);
+  return json(chunk([{text:JSON.stringify({action:'answer_customer',text:'أول خطوة اختاري قوامًا مناسبًا. بعد ذلك خدي خطوة واحدة بالتدريج.'})}]));
+ };
+ try{
+  const out=await events(await publicLumaChat(request({contract:'lama-2',message:'شو الفرق بين الإيسنس والتونر؟',history,profile:{skinType:'dry',ageGroup:'25-34',likedProductIds:['TSDEMO2']}}),f.env,helpers,{}));
+  assert.equal(calls,1);
+  assert.equal(out.at(-1).event,'done');
+  assert.match(out.find(e=>e.event==='delta').data.text,/أول خطوة/);
+ }finally{globalThis.fetch=old;f.close();}
+});
+
+test('Lama asks for a missing age band without repeating known skin type or concern, and can skip it',async()=>{
+ const f=fixture({enabled:true,billingConfirmed:false,imagesEnabled:false}),old=globalThis.fetch;
+ globalThis.fetch=()=>{throw Error('Intake and fallback do not need Gemini');};
+ try{
+  const saved={skinType:'dry',goal:'dryness'};
+  const input={contract:'lama-2',message:'بدي روتين لوجهي',profile:saved};
+  const first=await events(await publicLumaChat(request(input),f.env,helpers,{}));
+  assert.equal(first.find(e=>e.event==='question').data.question.field,'ageGroup');
+  assert.equal(first.some(e=>e.event==='products'),false);
+  const skipped=await events(await publicLumaChat(request({...input,message:'خلينا نكمل',intent:'routine',skippedFields:['ageGroup']}),f.env,helpers,{}));
+  assert.equal(skipped.some(e=>e.event==='question'),false);
+  assert.equal(skipped.at(-1).event,'done');
+  const answer=skipped.find(e=>e.event==='delta')?.data.text;
+  assert.match(answer,/صباحًا.*مساءً/s);
  }finally{globalThis.fetch=old;f.close();}
 });

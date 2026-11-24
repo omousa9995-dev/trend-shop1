@@ -1,6 +1,6 @@
 {
   "name": "trend-shop-jo",
-  "version": "5.23.0",
+  "version": "5.23.5",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,6 +8,8 @@
     "preview": "python -m http.server 8765 --directory public",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "predeploy": "npm run build:lama-products",
+    "build:lama-products": "node scripts/build-lama-products.mjs",
     "db:local": "wrangler d1 execute trend-shop-db --local --file=db/schema.sql",
     "db:seed-local": "wrangler d1 execute trend-shop-db --local --file=db/seed.sql",
     "catalog:curate": "python3 scripts/curate-catalog.py",

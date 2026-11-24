@@ -54,7 +54,7 @@ export function careCatalog(products,{includeUnavailable=false}={}){
   }
   const cosmeticTypes=['cleanser','moisturizer','sunscreen','toner','serum','essence','face-mask','face-oil','mist','eye-care','body-care','body-cleansing','body-oil','body-sunscreen','foot-care','shampoo','conditioner','hair-mask','hair-oil'];
   const cosmeticCandidate=!!type&&(p.category==='المكياج'||cosmeticTypes.includes(type))&&!risky.test(facts);
-  return {id:p.id,name:text(d.nameAr||p.name,160),nameEn:text(p.name,160),available:p.stock>0,brand:text(p.brand,80),type,areas,priceFils:p.price_fils,referencePriceFils:p.reference_price_fils,limitedOffer:p.limitedOffer,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,...lumaProductFacts(p,d,type,cosmeticCandidate),gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
+  return {id:p.id,name:text(d.nameAr||p.name,160),nameEn:text(p.name,160),available:p.stock>0,brand:text(p.brand,80),category:text(p.category,40),type,areas,skinTypes:(Array.isArray(d.skinTypes)?d.skinTypes:[d.skinType||d.suitableFor]).filter(value=>typeof value==='string').slice(0,6).map(value=>text(value,80)),concerns:(Array.isArray(d.concerns)?d.concerns:[]).filter(value=>typeof value==='string').slice(0,6).map(value=>text(value,80)),usage:Object.fromEntries(['amount','when','combine','avoid'].filter(key=>typeof d.usage?.[key]==='string').map(key=>[key,text(d.usage[key],240)])),howToUseEn:text(d.en?.howToUse,700),notesEn:text(d.en?.notes,350),priceFils:p.price_fils,referencePriceFils:p.reference_price_fils,limitedOffer:p.limitedOffer,size:text(d.size,80),description:text(p.description,420),benefits:(d.benefits||[]).slice(0,3).map(x=>text(x,150)),howToUse:text(d.howToUse,700),notes:text(d.notes,350),ingredients:text(Array.isArray(d.ingredients)?d.ingredients.join(', '):d.ingredients,800),options:productOptions(p),image:p.image_url,updatedAt:p.updated_at||'',cosmeticCandidate,...lumaProductFacts(p,d,type,cosmeticCandidate),gentleCandidate:['cleanser','moisturizer','sunscreen'].includes(type)&&areas.includes('face')&&cosmeticCandidate};
  });
 }
 async function loadCatalog(env,options){
@@ -151,7 +151,7 @@ async function recordOutcome(env,day,success,usage={}){
  await env.DB.prepare('UPDATE care_assistant_usage SET successes=successes+?,failures=failures+?,input_tokens=input_tokens+?,output_tokens=output_tokens+? WHERE day=?').bind(success?1:0,success?0:1,tokens(usage.promptTokenCount),tokens(usage.candidatesTokenCount)+tokens(usage.thoughtsTokenCount),day).run();
 }
 export async function publicCareStatus(req,env,{json}){
- const config=await readSettings(env);return json({available:ready(config),imagesAvailable:ready(config)&&config.settings.imagesEnabled,widgetAvailable:ready(config),liveAvailable:false,dictationAvailable:false,consentVersion,assistantName:'لُمى'});
+ const config=await readSettings(env);return json({available:ready(config),fallbackAvailable:config.settings.enabled,imagesAvailable:ready(config)&&config.settings.imagesEnabled,widgetAvailable:ready(config),liveAvailable:false,dictationAvailable:false,consentVersion,assistantName:'لُمى'});
 }
 
 // Shared server-only primitives for the embedded chat and constrained Live sessions.

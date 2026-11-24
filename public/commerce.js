@@ -1,16 +1,17 @@
 import {productType} from './product-types.js';
 import {isRetiredProduct} from './catalog-policy.js';
 import {planPromotions} from './promotion-planner.js';
+import {STORE_CONFIG} from './store-config.js?v=5.23.5';
 // Shared, deterministic rules used by the storefront and the order server.
-export const FREE_DELIVERY_ABOVE_FILS = 19000;
-export const DELIVERY_FILS = 1000;
+export const FREE_DELIVERY_ABOVE_FILS = STORE_CONFIG.shipping.freeAboveFils;
+export const DELIVERY_FILS = STORE_CONFIG.shipping.feeFils;
 export const money = value => `${(Number(value || 0) / 1000).toFixed(2)} د.أ`;
 export const productPrice = p => Number(p?.priceFils ?? p?.price_fils ?? 0);
 export function shippingFee(subtotalFils) {
   return Number.isInteger(subtotalFils) && subtotalFils > FREE_DELIVERY_ABOVE_FILS ? 0 : DELIVERY_FILS;
 }
 export function shippingMessage(subtotalFils) {
-  return shippingFee(subtotalFils) === 0 ? 'التوصيل مجاني لطلبكِ ♡' : 'التوصيل 1 دينار لكل الأردن، ومجاني للطلبات فوق 19 دينارًا بعد الخصم.';
+  return shippingFee(subtotalFils) === 0 ? 'التوصيل مجاني لطلبكِ ♡' : 'التوصيل '+DELIVERY_FILS/1000+' دينار لكل الأردن، ومجاني للطلبات فوق '+FREE_DELIVERY_ABOVE_FILS/1000+' دينارًا بعد الخصم.';
 }
 export function retailPrice(value, maximum = 20000) {
   const raw = Math.max(500, Math.min(maximum, Number(value) || 500));

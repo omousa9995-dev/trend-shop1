@@ -84,8 +84,7 @@ test('Guided Luma remembers chosen preferences without a quiz or a budget questi
   match.click();
  };
  assert.equal(w.localStorage.getItem(LUMA_PREFERENCES_KEY),null);
- const remember=api.dialog.querySelector('[data-luma-remember]');
- remember.checked=true;remember.dispatchEvent(new w.Event('change'));
+ assert.equal(api.dialog.querySelector('[data-luma-remember]').checked,true);
  choose('روتين يومي بسيط');
  choose('مختلطة');
  choose('اللمعان');
@@ -98,7 +97,7 @@ test('Guided Luma remembers chosen preferences without a quiz or a budget questi
  assert.equal(sent.profile.ageGroup,'25-34');
  assert.equal(sent.profile.goal,'shine');
  assert.deepEqual(JSON.parse(w.localStorage.getItem(LUMA_PREFERENCES_KEY)),{
-  version:1,profile:{skinType:'combination',ageGroup:'25-34',goal:'shine'},budgetFils:null
+  version:2,profile:{skinType:'combination',ageGroup:'25-34',goal:'shine',preferredRoutine:'simple',concerns:['shine']}
  });
  assert.match(api.dialog.querySelector('.luma-log').textContent,/صباحًا.+مساءً/);
  api.dialog.querySelector('[data-luma-forget]').click();
@@ -119,4 +118,45 @@ test('Channel settings accept only WhatsApp Channel URLs and drafts reflect actu
  assert.match(channelDraft('flash',[product],[offer],now),/https:\/\/trendjo\.pages\.dev\/product\/TS5432/);
  assert.equal(channelDraft('flash',[product],[offer],now+51000),'');
  assert.equal(channelDraft('recent',[{...product,stock:0}],[offer],now),'');
+});
+
+test('Lama automatically keeps explicit preferences and favorites across visits, without retaining chat text',async t=>{
+ const dom=new JSDOM('<!doctype html><body></body>',{url:'https://trend.test/',runScripts:'outside-only',pretendToBeVisual:true}),w=dom.window;
+ t.after(()=>dom.window.close());
+ w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
+ w.HTMLDialogElement.prototype.close=function(){this.open=false;};
+ w.scrollTo=()=>{};w.TextDecoder=TextDecoder;w.AbortController=AbortController;
+ let latest;
+ w.fetch=async(url,{body})=>{
+  latest=JSON.parse(body);
+  return new Response('event: delta\ndata: {"text":"تمام يا قمر."}\n\nevent: products\ndata: '+JSON.stringify({
+   routine:[{id:'TSDEMO1',name:'مرطب',priceFils:3000,href:'/product/TSDEMO1',image:'/images/de.webp'}],
+   subtotalFils:3000,shippingFeeFils:1000,totalFils:4000
+  })+'\n\nevent: done\ndata: {}\n\n');
+ };
+ w.eval(bundle);
+ let api=await w.LumaWidget.mountLumaWidget({status:{available:true,imagesAvailable:false}});
+ api.open();
+ assert.deepEqual([...api.dialog.querySelectorAll('.luma-quick button')].map(button=>button.textContent),[
+  'روتين يومي بسيط','بشرتي جافة ومشدودة','عندي حبوب وآثار','بدي مكياج يومي خفيف','شو أفضل واقي شمس؟'
+ ]);
+ async function send(text){
+  api.dialog.querySelector('textarea').value=text;
+  api.dialog.querySelector('form').dispatchEvent(new w.Event('submit',{cancelable:true}));
+  for(let i=0;i<20&&api.dialog.getAttribute('aria-busy')==='true';i++)await new Promise(resolve=>setTimeout(resolve,3));
+  assert.equal(api.dialog.getAttribute('aria-busy'),'false');
+ }
+ await send('عمري ٢٧ وبشرتي جافة وبدي روتين بسيط للجفاف');
+ api.dialog.querySelector('[data-lama-favorite]').click();
+ const stored=w.localStorage.getItem('lama_user_profile');
+ assert.doesNotMatch(stored,/عمري|يا قمر/);
+ assert.deepEqual(JSON.parse(stored).profile,{skinType:'dry',ageGroup:'25-34',goal:'dryness',preferredRoutine:'simple',concerns:['dryness'],likedProductIds:['TSDEMO1']});
+ api.destroy();
+ api=await w.LumaWidget.mountLumaWidget({status:{available:true,imagesAvailable:false}});
+ api.open();
+ await send('مع شو بدمجه؟');
+ assert.equal(latest.history.length,0);
+ assert.equal(latest.profile.skinType,'dry');
+ assert.deepEqual(Array.from(latest.profile.likedProductIds),['TSDEMO1']);
+ api.destroy();
 });

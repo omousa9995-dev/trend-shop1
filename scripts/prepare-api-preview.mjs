@@ -6,6 +6,7 @@ import {readFileSync,writeFileSync,mkdirSync,readdirSync} from 'node:fs';
 import {join,relative,extname,dirname} from 'node:path';
 import {createHash} from 'node:crypto';
 import {buildSync} from 'esbuild';
+import './build-lama-products.mjs';
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon','.woff2':'font/woff2'};
 const entries={};
 function walk(dir){for(const file of readdirSync(dir,{withFileTypes:true})){

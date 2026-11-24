@@ -10,7 +10,7 @@ test('The deployable Worker imports successfully and serves current store, admin
  const {default:worker}=await import(new URL('../deployment-private/preview-entry.js',import.meta.url));
 
  const get=path=>worker.fetch(new Request('https://trend.test'+path),{},{});
- for(const [path,script] of [['/','/app.js?v=5.23.4'],['/admin.html','/admin.js?v=5.23.1']]){const r=await get(path);assert.equal(r.status,200);assert.ok((await r.text()).includes(script));}
+ for(const [path,script] of [['/','/app.js?v=5.23.5'],['/admin.html','/admin.js?v=5.23.1']]){const r=await get(path);assert.equal(r.status,200);assert.ok((await r.text()).includes(script));}
  const storefront=await (await get('/')).text();
  assert.doesNotMatch(storefront,/store-trust|href="\/returns.html"|data-care-quiz/);
  assert.match(storefront,/data-skin-quiz-entry/);
@@ -19,6 +19,9 @@ test('The deployable Worker imports successfully and serves current store, admin
  assert.equal(returns.headers.get('location'),'/');
  for(const path of ['/shade-references.json','/shade-guide.js','/images/shades/huda-easy-bake-official-shade-guide.webp'])assert.equal((await get(path)).status,404);
  for(const name of ['tajawal-regular','tajawal-medium','tajawal-bold','manrope-variable']){const path='/fonts/'+name+'-v512.woff2',r=await get(path),actual=Buffer.from(await r.arrayBuffer()),expected=readFileSync(new URL('../public'+path,import.meta.url));assert.equal(r.status,200);assert.equal(r.headers.get('content-type'),'font/woff2');assert.equal(actual.subarray(0,4).toString(),'wOF2');assert.deepEqual(actual,expected,'The deployed font must retain its original binary bytes');}
+ const products=await (await get('/lama-products-snapshot.json')).json();
+ assert.ok(products.length>300);
+ assert.ok(products.find(p=>p.id==='TS0098')?.howToUse);
  const type=await get('/typography.css');assert.match(await type.text(),/font-display:swap/);
  const license=await get('/licenses/web-vitals-LICENSE.txt');assert.match(license.headers.get('content-type'),/^text\/plain/);assert.match(await license.text(),/Apache License/);
  const graph=JSON.parse(readFileSync(new URL('../deployment-private/modules.json',import.meta.url)));

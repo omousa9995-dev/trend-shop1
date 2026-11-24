@@ -49,7 +49,7 @@ export function lumaProductAllowed(product,input){
  return product.lumaCandidate&&!(['pregnant','nursing'].includes(input.lifeStage)&&product.careClass!=='everyday');
 }
 
-const spendingLimit=/(?:ميزاني|سقف\s*(?:ال)?(?:سعر|صرف|إنفاق)|(?:نطاق|حد(?:ود)?)\s*(?:ال)?سعر|(?:المبلغ|كم|قديش).{0,35}(?:تصرف|تنفق|تدفعي|بتدفعي|إجمالي|مجموع)|\bbudget\b|spending limit|price range|how much.{0,30}(?:spend|pay)|maximum.{0,12}(?:price|spend))/i;
+const spendingLimit=/(?:ميزاني|(?:سعر|مبلغ).{0,16}(?:مناسب|يناسب|بناسب|بتدفعي|بتدوري)|(?:اقصى|أقصى|أعلى|اعلى).{0,10}(?:مبلغ|سعر|حد)|سقف\s*(?:ال)?(?:سعر|صرف|إنفاق)|(?:نطاق|حد(?:ود)?)\s*(?:ال)?سعر|(?:المبلغ|كم|قديش).{0,35}(?:تصرف|تنفق|تدفعي|بتدفعي|إجمالي|مجموع)|\bbudget\b|spending limit|price range|how much.{0,30}(?:spend|pay)|maximum.{0,12}(?:price|spend))/i;
 
 export function lumaBudgetPrompt(value,question=false){
  const text=String(value??'');

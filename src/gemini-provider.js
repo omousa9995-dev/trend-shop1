@@ -1,4 +1,4 @@
-import {actionRequest,actionResponse} from './luma-json-actions.js';
+import {actionRequest,actionResponse,ACTION_SCHEMA} from './luma-json-actions.js';
 import {interactionRequest,interactionResponse} from './gemini-interactions.js';
 import {readGeminiStream,untilAbort} from './gemini-stream.js';
 // All credentials and inference stay server-side. No request text or raw provider
@@ -20,7 +20,7 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
  for(let index=0;index<candidates.length;index++){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
   const selected=candidates[index];if(!GEMINI_TEXT_MODELS.includes(selected))throw Error('INVALID_PROVIDER_MODEL');
-  const actions=transport==='actions',live=transport==='interactions'||actions&&(preferredApi==='generateContent'?index===1:index===0),api=live?'interactions':'generateContent';
+  const stable=transport==='stableActions',actions=transport==='actions'||stable,live=transport==='interactions'||transport==='actions'&&(preferredApi==='generateContent'?index===1:index===0),api=live?'interactions':'generateContent';
   const timeout=new AbortController(),timer=setTimeout(()=>timeout.abort(new DOMException('Attempt timed out','TimeoutError')),timeoutMs);
   let retryAfter=0;
   try{
@@ -29,6 +29,10 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
    const prepared=actions?actionRequest(payload):payload;
    // Flash-Lite supports minimal thinking for latency-sensitive store actions.
    // The alternate 3.8 model supports low, not minimal. Never send an unsupported level.
+   if(stable)prepared.generationConfig={
+    maxOutputTokens:4096,thinkingConfig:{thinkingLevel:'low'},
+    responseMimeType:'application/json',responseSchema:ACTION_SCHEMA
+   };
    if(actions&&selected==='gemini-3.5-flash-lite')prepared.generationConfig.thinkingConfig={thinkingLevel:'minimal'};
    const streaming=typeof onTextDelta==='function',body=live?{...interactionRequest(selected,prepared),...(streaming?{stream:true}:{})}:prepared;
    const combined=signal?AbortSignal.any([signal,timeout.signal]):timeout.signal;

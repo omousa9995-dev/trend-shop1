@@ -34,7 +34,7 @@ export async function consumeLumaStream(response,onEvent,signal,{idleMs=0}={}){
 }
 
 export function appendLumaHistory(history,user,answer){
- const items=[...history,{role:'user',text:user.slice(0,1500)},{role:'model',text:answer.slice(0,2400)}].slice(-16);
- while(items.length>2&&items.reduce((n,item)=>n+item.text.length,0)>12000)items.splice(0,2);
+ const items=[...history,{role:'user',text:user.slice(0,1500)},{role:'model',text:answer.slice(0,2400)}].slice(-10);
+ while(items.length>2&&items.reduce((n,item)=>n+item.text.length,0)>10000)items.splice(0,2);
  return items;
 }

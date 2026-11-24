@@ -48,3 +48,10 @@ html:has(.luma-chat[open]){scrollbar-gutter:stable;overscroll-behavior:none}
   font-weight: 650;
 }
 .luma-chat .luma-quick button { min-height: 34px; }
+
+.luma-card-actions { flex-wrap: wrap; }
+.luma-card-actions [data-lama-favorite][aria-pressed="true"] {
+  background: var(--blush, #F8EAF0);
+  color: var(--rose, #8B4B6B);
+  border-color: var(--rose, #8B4B6B);
+}

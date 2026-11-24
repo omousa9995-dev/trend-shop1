@@ -7,3 +7,6 @@ node_modules/
 *.zip
 deployment-private/
 *.deploy-payload.json
+
+# Generated public usage snapshot from the repository catalog.
+/public/lama-products-snapshot.json

@@ -1,11 +1,11 @@
 export function careEntriesAllowed(location){
  return !/^\/(?:p|product|bundle|checkout|success|order)(?:\/|$)/.test(location.pathname)&&!/^#\/(?:product|checkout|success|order)(?:[/?]|$)/.test(location.hash);
 }
-export function installCareEntries({status,loadWidget=()=>import('./luma-widget.js?v=5.23.4').then(m=>m.mountLumaWidget({status}))}){
+export function installCareEntries({status,loadWidget=()=>import('./luma-widget.js?v=5.23.5').then(m=>m.mountLumaWidget({status}))}){
  let widget,loading,version=0,stopped=false;
  const regions=[...document.querySelectorAll('[data-care-region]')];
  function update(){
-  const allowed=!stopped&&status.available&&careEntriesAllowed(location),en=document.documentElement.lang==='en';
+  const allowed=!stopped&&(status.available||status.fallbackAvailable)&&careEntriesAllowed(location),en=document.documentElement.lang==='en';
   for(const region of regions){region.hidden=!allowed;const footer=region.dataset.careRegion==='footer';region.querySelector('[data-luma-entry-title]').textContent=footer?(en?'Talk to Luma':'احكي مع لُمى'):(en?'Luma':'لُمى');const note=region.querySelector('[data-luma-entry-note]');if(note)note.textContent=en?'Your skincare, makeup and product questions, one conversation away.':'روتينكِ، مكياجكِ واختياراتكِ… نرتّبها سوا، خطوة بخطوة.';const cta=region.querySelector('[data-luma-entry-cta]');if(cta)cta.textContent=en?'Start chatting →':'ابدئي المحادثة ←'}
   if(!allowed){version++;widget?.destroy();widget=undefined;loading=undefined}
  }

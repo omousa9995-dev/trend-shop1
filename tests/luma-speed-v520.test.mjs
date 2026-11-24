@@ -27,9 +27,9 @@ test('Terminal errors ignore trailing events and malformed/incomplete streams re
 test('Twenty sequential chat turns remain usable without reload, including a network stream that never closes',async()=>{
  const requests=[];let cancels=0;const {w,api,send}=await ui(async(url,init)=>{requests.push(JSON.parse(init.body));return new Response(new ReadableStream({start(c){c.enqueue(bytes.encode(event('profile',{profile:{area:'face',skinType:'dry'}})+event('delta',{text:'نصيحة '+requests.length})+event('products',{area:'face',routine:[{id:'TSDEMO1',name:'مرطب',priceFils:3000}],subtotalFils:3000,shippingFeeFils:1000,totalFils:4000})+event('delta',{text:'متابعة النص بعد البطاقات'})+event('done')))},cancel(){cancels++;return new Promise(()=>{})}}))});
  try{for(let i=1;i<=20;i++){send('سؤال '+i);await until(()=>requests.length===i&&api.dialog.getAttribute('aria-busy')==='false');assert.equal(w.document.querySelector('.luma-send').disabled,false)}
-  assert.equal(requests.length,20);assert.equal(cancels,20);assert.equal(requests.at(-1).history.length,16);assert.equal(requests.at(-1).profile.skinType,'dry');
+  assert.equal(requests.length,20);assert.equal(cancels,20);assert.equal(requests.at(-1).history.length,10);assert.equal(requests.at(-1).profile.skinType,'dry');
   for(const data of requests)for(let i=0;i<data.history.length;i+=2){assert.equal(data.history[i].role,'user');assert.equal(data.history[i+1].role,'model');assert.match(data.history[i+1].text,/TSDEMO1/)}
-  assert.doesNotMatch(api.dialog.querySelector('.luma-log').textContent,/TSDEMO1/);assert.equal(w.localStorage.length,0);assert.equal(api.dialog.querySelectorAll('[data-luma-record],.luma-listen,input[accept*=audio]').length,0);
+  assert.doesNotMatch(api.dialog.querySelector('.luma-log').textContent,/TSDEMO1/);assert.deepEqual(JSON.parse(w.localStorage.getItem('lama_user_profile')),{version:2,profile:{skinType:'dry'}});assert.equal(api.dialog.querySelectorAll('[data-luma-record],.luma-listen,input[accept*=audio]').length,0);
  }finally{api.destroy();w.close()}
 });
 test('Cancel, reset and close isolate stale requests from a newly opened conversation and preserve typed drafts',async()=>{
@@ -49,7 +49,7 @@ test('Management contact is exact, mixed care stays with inference and voluntary
  assert.equal(lumaStoreReply('بدي رقم الإدارة واتساب').team.href,'https://wa.me/962790025430');assert.match(lumaStoreReply('رقمكم').text,/\+962790025430/);assert.equal(lumaStoreReply('حبوب بظهري والتوصيل متى؟'),null);assert.equal(explicitLumaBudget('ميزانيتي ١٥ دينار'),15000);assert.equal(explicitLumaBudget('ما يزيد عن 12.5 دينار'),12500);assert.equal(explicitLumaBudget('كم سعر الغسول؟'),null);
 });
 test('Server and client bound long histories by pairs and size',()=>{
- let history=[];for(let i=0;i<30;i++)history=appendLumaHistory(history,'س'.repeat(1500),'ج'.repeat(2400));assert.ok(history.reduce((n,x)=>n+x.text.length,0)<=12000);assert.equal(history.length%2,0);const input=validateCareInput({message:'مرحبا',history},false,{requireConsent:false});assert.ok(input.history.length<=16);assert.ok(input.history.reduce((n,x)=>n+x.text.length,0)<=12000);
+ let history=[];for(let i=0;i<30;i++)history=appendLumaHistory(history,'س'.repeat(1500),'ج'.repeat(2400));assert.ok(history.reduce((n,x)=>n+x.text.length,0)<=10000);assert.equal(history.length%2,0);const input=validateCareInput({message:'مرحبا',history},false,{requireConsent:false});assert.ok(input.history.length<=10);assert.ok(input.history.reduce((n,x)=>n+x.text.length,0)<=10000);
 });
 test('Shortlist includes complementary body acne facts without crossing into face-only items',()=>{
  const base={lumaCandidate:true,priceFils:3000,brand:'Test',careClass:'everyday'},products=[{...base,id:'TSFACE1',name:'Face cream',type:'moisturizer',areas:['face']},{...base,id:'TSBODY1',name:'Body lotion',type:'body-care',areas:['body']},{...base,id:'TSACNE4',name:'PanOxyl 4%',type:'cleanser',areas:['face','body'],careClass:'otc-acne-wash',activeStrength:'4%'}];const chosen=shortlistLumaCatalog(products,{message:'حبوب بالظهر',history:[],existingIds:[],budgetFils:null,area:'unknown'});assert.deepEqual(chosen.map(p=>p.id),['TSACNE4','TSBODY1']);
@@ -96,4 +96,31 @@ test('The idle reader releases even if the upstream keeps the connection open',a
  const response=new Response(new ReadableStream({cancel(){cancelled=true;}}));
  await assert.rejects(consumeLumaStream(response,()=>{},undefined,{idleMs:5}),/LUMA_STREAM_IDLE/);
  assert.equal(cancelled,true);
+});
+
+test('The 15-second deadline aborts an unresponsive fetch, unlocks the composer and keeps the next draft intact',async()=>{
+ let calls=0,stalledSignal,scheduledMs;
+ const {w,api,send}=await ui(async(url,{signal})=>{
+  calls++;
+  if(calls===1){stalledSignal=signal;return new Promise(()=>{});}
+  return new Response(event('delta',{text:'تم الرد'})+event('done'));
+ });
+ const set=w.setTimeout.bind(w);
+ w.setTimeout=(fn,ms,...args)=>{
+  if(ms===15000){scheduledMs=ms;return set(fn,8,...args);}
+  return set(fn,ms,...args);
+ };
+ try{
+  send('السؤال الأول');
+  w.document.querySelector('textarea').value='مسودة السؤال التالي';
+  await until(()=>api.dialog.getAttribute('aria-busy')==='false');
+  assert.equal(scheduledMs,15000);
+  assert.equal(stalledSignal.aborted,true);
+  assert.match(api.dialog.querySelector('.luma-notice').textContent,/صار ضغط بسيط/);
+  assert.equal(api.dialog.querySelector('.luma-send').disabled,false);
+  api.dialog.querySelector('[data-luma-retry]').click();
+  await until(()=>calls===2&&api.dialog.getAttribute('aria-busy')==='false');
+  assert.equal(api.dialog.querySelectorAll('.luma-user').length,1);
+  assert.equal(api.dialog.querySelector('textarea').value,'مسودة السؤال التالي');
+ }finally{api.destroy();w.close();}
 });
