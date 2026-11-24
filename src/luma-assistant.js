@@ -5,7 +5,7 @@ import {urgentCareReply} from './luma-urgent-care.js';
 import {requestGemini} from './gemini-provider.js';
 import {visibleActionText,untilAbort} from './gemini-stream.js';
 import {lumaLiveFaq} from './luma-faq.js';
-import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,explicitLumaBudget,quickLumaAdvice} from './luma-store-facts.js';
+import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,explicitLumaBudget,quickLumaAdvice,lamaRoutineOrderReply} from './luma-store-facts.js';
 import {shippingFee} from '../public/commerce.js';
 import {captureLamaPreferences,normalizeLamaProfile,lumaGuideQuestions} from '../public/luma-profile.js?v=5.23.5';
 import {lamaPolicyReply} from './lama-policies.js';
@@ -321,11 +321,12 @@ export async function publicLumaChat(req,env,helpers,ctx){
  let factual,day;
  const directUsage=input.lama&&!input.image&&isLamaUsageQuestion(input.message);
  const policy=input.lama&&!input.image?lamaPolicyReply(input.message):null;
- const intake=!directUsage&&!policy?lamaIntake(input):null;
+ const generalOrder=input.lama&&!directUsage?lamaRoutineOrderReply(input):null;
+ const intake=!directUsage&&!policy&&!generalOrder?lamaIntake(input):null;
  const followup=(!input.image&&!input.warningSigns&&latestSuggestedIds(input.history).length)?catalogFollowupKind(input.message):'';
  try{
   if(!urgent&&!input.warningSigns){
-   if(policy)factual=policy;
+   if(policy||generalOrder)factual=policy||generalOrder;
    else if(!directUsage&&!intake&&!followup&&!input.guided&&!input.image)
     factual=(!input.lama&&lumaStoreReply(input.message))||await untilAbort(()=>lumaLiveFaq(input,env),signal)||quickLumaAdvice(input);
    if(!factual&&!directUsage&&!intake&&!followup&&careReady(config)){

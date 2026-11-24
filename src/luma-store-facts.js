@@ -48,3 +48,29 @@ export function shortlistLumaCatalog(products,input){
  const ranked=available.map(p=>{const name=normalize([p.name,p.brand,p.type].join(' '));let score=words.reduce((s,w)=>s+(name.includes(w)?3:0),0);if(['cleanser','moisturizer','sunscreen'].includes(p.type))score+=2;if((input.intent==='sunscreen'||input.intent==='concealer')&&p.type===input.intent)score+=28;if(dry&&p.type==='moisturizer')score+=3;if(acne&&p.activeStrength==='4%')score+=20;const facts=normalize([p.name,p.description,p.notes].join(' '));if(oily){if(/دهنيه|دهنية|oily|خفيف|light|gel|جل/.test(facts))score+=5;if(/جافه|جافة|dry|مكثف|intens|rich/.test(facts))score-=8;}if(p.careClass==='everyday')score+=2;return {p,score}}).sort((a,b)=>b.score-a.score||a.p.priceFils-b.p.priceFils);
  const chosen=[],counts=new Map();if(input.intent==='routine'&&area==='face'){for(const type of ['cleanser','moisturizer','sunscreen']){const item=ranked.find(({p})=>p.type===type);if(item){chosen.push(item.p);counts.set(type,1);}}}for(const {p}of ranked){const count=counts.get(p.type)||0;if(count>=2||chosen.includes(p))continue;chosen.push(p);counts.set(p.type,count+1);if(chosen.length===6)break}return chosen;
 }
+
+// Straightforward order and comparisons work without inference. For named
+// items, product-specific directions take priority over these general steps.
+const routineSteps = [
+ {match:/غسول|منظف الوجه|cleanser|face wash/i,ar:'الغسول',en:'Cleanser',why:'خطوة تنظيف البشرة في البداية.',whyEn:'Starts the routine by cleansing your skin.'},
+ {match:/تونر|toner/i,ar:'التونر',en:'Toner',why:'غالبًا قوامه مائي وبيجي بعد الغسول وبحسب وظيفته المكتوبة على العبوة.',whyEn:'Usually watery and used after cleansing, depending on the product directions.'},
+ {match:/ايسنس|اسنس|اسينس|essence/i,ar:'الإيسنس',en:'Essence',why:'خطوة عناية خفيفة وإضافية، غالبًا للترطيب. إذا بتستخدميه مع التونر، حطيه بعده.',whyEn:'An optional lightweight care step, often for hydration. If you use both, apply it after toner.'},
+ {match:/سيروم|serum/i,ar:'السيروم',en:'Serum',why:'خطوة عناية بحسب مكوّناته، وعادةً تسبق المرطب إذا تعليمات العبوة بتسمح.',whyEn:'A treatment or care step that generally goes before moisturizer. Follow the product directions.'},
+ {match:/مرطب|كريم الترطيب|moisturi[sz]er/i,ar:'المرطب',en:'Moisturizer',why:'بيرطّب البشرة وبيجي عادةً بعد خطوات العناية الخفيفة.',whyEn:'Moisturizes the skin and generally follows lighter care products.'},
+ {match:/واقي (?:ال)?شمس|sunscreen|sunblock/i,ar:'واقي الشمس',en:'Sunscreen',why:'آخر خطوة من العناية الصباحية حسب تعليمات العبوة، وقبل المكياج إذا رح تحطيه.',whyEn:'Goes at the end of morning skincare, before makeup, following the pack directions.'}
+];
+
+export function lamaRoutineOrderReply(input) {
+ if(input.image||input.warningSigns)return null;
+ const query=normalize(input.message);
+ if(!/الفرق بين|شو الفرق|(?:مين|ايهم[ا]?) .{0,14}(?:اول|قبل)|ترتيب|قبل وا?لا بعد|difference between|which .{0,22}first|what order/i.test(query))return null;
+ if(/\bts[a-z0-9-]{4,64}\b|حامل|حمل|رضاع|حساس.{0,4}شديد|احمرار|اكزيما|تهيج|pregnan|allerg|eczema|irritat/i.test(query))return null;
+ const steps=routineSteps.filter(item=>item.match.test(query));
+ if(steps.length<2)return null;
+ const en=!/[\u0600-\u06ff]/.test(input.message);
+ const order=steps.map(item=>item[en?'en':'ar']).join(en?' → ':'، بعده ');
+ const details=steps.map(item=>item[en?'en':'ar']+' — '+item[en?'whyEn':'why']).join('\n');
+ const opening=en?'If you’re using these steps together: ':'إذا رح تستخدميهم سوا، الترتيب المعتاد ';
+ const guidance=en?'Use the directions on each product, and skip optional steps if your routine already suits you.':'خدي بتعليمات كل عبوة. إذا الروتين الحالي بناسبكِ، تقدري تختصري الخطوات الإضافية.';
+ return {text:opening+order+'.\n\n'+details+'\n\n'+guidance};
+}

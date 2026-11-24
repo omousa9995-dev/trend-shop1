@@ -281,7 +281,7 @@ test('Lama uses the complete compact catalog and the exact Arabic system instruc
   return json(chunk([{text:JSON.stringify({action:'answer_customer',text:'أول خطوة اختاري قوامًا مناسبًا. بعد ذلك خدي خطوة واحدة بالتدريج.'})}]));
  };
  try{
-  const out=await events(await publicLumaChat(request({contract:'lama-2',message:'شو الفرق بين الإيسنس والتونر؟',history,profile:{skinType:'dry',ageGroup:'25-34',likedProductIds:['TSDEMO2']}}),f.env,helpers,{}));
+  const out=await events(await publicLumaChat(request({contract:'lama-2',message:'كيف بجهّز شنطة عناية بسيطة لما أسافر؟',history,profile:{skinType:'dry',ageGroup:'25-34',likedProductIds:['TSDEMO2']}}),f.env,helpers,{}));
   assert.equal(calls,1);
   assert.equal(out.at(-1).event,'done');
   assert.match(out.find(e=>e.event==='delta').data.text,/أول خطوة/);
@@ -302,5 +302,20 @@ test('Lama asks for a missing age band without repeating known skin type or conc
   assert.equal(skipped.at(-1).event,'done');
   const answer=skipped.find(e=>e.event==='delta')?.data.text;
   assert.match(answer,/صباحًا.*مساءً/s);
+ }finally{globalThis.fetch=old;f.close();}
+});
+
+
+test('Lama answers a general product-order question immediately even with a routine in progress and Gemini unavailable',async()=>{
+ const f=fixture({enabled:true,billingConfirmed:false,imagesEnabled:false}),old=globalThis.fetch;
+ globalThis.fetch=()=>{throw Error('Generic product-order answers do not need Gemini');};
+ try{
+  const out=await events(await publicLumaChat(request({
+   contract:'lama-2',intent:'routine',message:'شو الفرق بين الإيسنس والتونر؟ مين بيجي أول في الروتين؟'
+  }),f.env,helpers,{}));
+  assert.equal(out.at(-1).event,'done');
+  assert.equal(out.some(e=>e.event==='question'||e.event==='provider'),false);
+  assert.match(out.find(e=>e.event==='delta').data.text,/التونر، بعده الإيسنس/);
+  assert.equal(f.db.prepare('SELECT count(*) n FROM care_assistant_usage').get().n,0);
  }finally{globalThis.fetch=old;f.close();}
 });
