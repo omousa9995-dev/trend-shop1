@@ -6,24 +6,24 @@ import {JSDOM,VirtualConsole} from 'jsdom';
 import {DEFAULT_SITE_SETTINGS} from '../public/site-settings.js';
 const html=readFileSync(new URL('../public/admin.html',import.meta.url),'utf8');
 const bundle=buildSync({entryPoints:[new URL('../public/admin.js',import.meta.url).pathname],bundle:true,format:'iife',write:false,target:'es2022',logLevel:'silent'}).outputFiles[0].text;
-const orders=['A','B','C'].map((letter,i)=>({id:'TR-SELECT-'+letter,created_at:'2026-11-07 09:00:00',name:'بيانات اختبار '+letter,phone:'0790000000',governorate:'عمّان',address:'عنوان تجريبي',notes:'ملاحظة اختبار',status:['جديد','قيد التجهيز','تم'][i],payment_method:'cod',subtotal_fils:5000+i*1000,shipping_fee_fils:1000,items:[{name_snapshot:'منتج اختبار '+letter,image_snapshot:'/images/TS0001.svg',qty:1,unit_price_fils:5000+i*1000}]}));
+const orders=['A','B','C'].map((letter,i)=>({invoice_gift_token:String(i+1).repeat(32),id:'TR-SELECT-'+letter,created_at:'2026-11-07 09:00:00',name:'بيانات اختبار '+letter,phone:'0790000000',governorate:'عمّان',address:'عنوان تجريبي',notes:'ملاحظة اختبار',status:['جديد','قيد التجهيز','تم'][i],payment_method:'cod',subtotal_fils:5000+i*1000,shipping_fee_fils:1000,items:[{name_snapshot:'منتج اختبار '+letter,image_snapshot:'/images/TS0001.svg',qty:1,unit_price_fils:5000+i*1000}]}));
 const defaults=filter=>filter==='today'?[orders[1]]:filter==='new'?[orders[0]]:orders;
 async function until(fn){for(let i=0;i<100;i++){if(fn())return;await new Promise(r=>setTimeout(r,5));}assert.ok(fn(),'expected invoice UI state');}
-async function open(t,fetchOrders=defaults){
+async function open(t,fetchOrders=defaults,giftStore={enabled:true}){
  const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
  const dom=new JSDOM(html,{url:'https://trend.test/admin.html',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});t.after(()=>dom.window.close());
  const w=dom.window,d=w.document,requests=[],printed=[],alerts=[];w.structuredClone=structuredClone;w.scrollTo=()=>{};Object.defineProperty(w.HTMLImageElement.prototype,'complete',{get:()=>true});w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLMediaElement.prototype.pause=()=>{};w.HTMLMediaElement.prototype.load=()=>{};w.alert=msg=>alerts.push(msg);w.print=()=>printed.push(d.querySelector('#printRoot').innerHTML);
- w.fetch=async(url,options={})=>{requests.push({url:String(url),method:options.method||'GET'});assert.equal(options.method||'GET','GET','selection and printing must never mutate orders');let data={};const u=new URL(url,'https://trend.test');
+ w.fetch=async(url,options={})=>{requests.push({url:String(url),method:options.method||'GET'});if(options.method==='POST'){assert.equal(String(url),'/api/admin/site-settings');const body=JSON.parse(options.body);assert.equal(body.action,'invoice-gift');if(giftStore.failSave)return {ok:false,json:async()=>({error:'انقطاع تجريبي'})};giftStore.enabled=body.enabled;return {ok:true,json:async()=>({ok:true,revision:2})};}let data={};const u=new URL(url,'https://trend.test');
   if(u.pathname.endsWith('/me'))data={authenticated:true,live:true};
   else if(u.pathname.endsWith('/orders'))data={orders:await fetchOrders(u.searchParams.get('filter'))};
   else if(u.pathname.endsWith('/products'))data={products:[]};
   else if(u.pathname.endsWith('/promotions'))data={promotions:[]};
-  else if(u.pathname.endsWith('/site-settings'))data={settings:DEFAULT_SITE_SETTINGS,history:[]};
+  else if(u.pathname.endsWith('/site-settings'))data={settings:{...DEFAULT_SITE_SETTINGS,revision:1,invoiceGiftEnabled:giftStore.enabled},history:[]};
   return {ok:true,json:async()=>structuredClone(data)};
  };
  w.eval(bundle);await until(()=>d.querySelectorAll('[data-select-invoice]').length===3&&!d.querySelector('#selectAllInvoices').disabled);d.querySelector('#ordersTab').click();assert.deepEqual(errors,[]);return {d,w,requests,printed,alerts,errors};
 }
-async function runPrint(d){await until(()=>!d.querySelector('#printInvoicesNow').disabled);d.querySelector('#printInvoicesNow').click()}
+async function runPrint(d){await until(()=>!d.querySelector('#invoicePrintToolbar').hidden&&!d.querySelector('#printInvoicesNow').disabled);d.querySelector('#printInvoicesNow').click()}
 const closePrint=d=>d.querySelector('#closeInvoicePrint').click();
 const pick=(d,letter)=>d.querySelector(`[data-select-invoice="TR-SELECT-${letter}"]`);
 const printedIds=markup=>{const doc=new JSDOM(markup);try{return [...doc.window.document.querySelectorAll('.invoice-header [dir=ltr]')].map(el=>el.textContent)}finally{doc.window.close()}};
@@ -62,4 +62,34 @@ test('Today-load failures display a recoverable error, restore the button and ne
 test('Today preparation deduplicates rapid clicks and prints only after a new explicit preview click',async t=>{
  let finish,requests=0;const gate=new Promise(resolve=>finish=resolve);const {d,printed}=await open(t,filter=>{if(filter==='today'){requests++;return gate}return defaults(filter)});
  d.querySelector('#printToday').click();d.querySelector('#printToday').click();assert.equal(requests,1);assert.equal(d.querySelector('#printToday').disabled,true);finish([orders[1]]);await until(()=>!d.querySelector('#invoicePrintToolbar').hidden);assert.equal(printed.length,0);await runPrint(d);assert.equal(printed.length,1);assert.deepEqual(printedIds(printed[0]),['TR-SELECT-B']);
+});
+
+test('The saved gift checkbox removes the entire gift from individual, selected and today invoices and is shared after reload',async t=>{
+ const saved={enabled:true},one=await open(t,defaults,saved),{d,printed}=one;
+ await until(()=>!d.querySelector('#invoiceGiftEnabled').disabled);
+ d.querySelector('[data-print-order="TR-SELECT-A"]').click();await runPrint(d);closePrint(d);
+ assert.match(printed[0],/invoice-gift-qr/);assert.match(printed[0],/invoice-gift-guide/);
+ d.querySelector('#invoiceGiftEnabled').click();await until(()=>!d.querySelector('#invoiceGiftEnabled').disabled);
+ assert.equal(saved.enabled,false);
+ for(const button of [d.querySelector('[data-print-order="TR-SELECT-A"]'),d.querySelector('#printToday')]){
+  button.click();await runPrint(d);closePrint(d);assert.doesNotMatch(printed.at(-1),/invoice-gift|افتحي الكود/);
+ }
+ d.querySelector('#selectAllInvoices').click();d.querySelector('#printSelectedInvoices').click();
+ await runPrint(d);closePrint(d);assert.equal(printedIds(printed.at(-1)).length,3);assert.doesNotMatch(printed.at(-1),/invoice-gift|افتحي الكود/);
+ const two=await open(t,defaults,saved);await until(()=>!two.d.querySelector('#invoiceGiftEnabled').disabled);
+ assert.equal(two.d.querySelector('#invoiceGiftEnabled').checked,false);
+ two.d.querySelector('#invoiceGiftEnabled').click();await until(()=>!two.d.querySelector('#invoiceGiftEnabled').disabled);
+ d.querySelector('[data-print-order="TR-SELECT-B"]').click();await runPrint(d);closePrint(d);
+ assert.match(printed.at(-1),/invoice-gift-qr/);assert.equal(d.querySelector('#invoiceGiftEnabled').checked,true);
+ assert.equal(orders[0].invoice_gift_token,'1'.repeat(32));
+});
+
+test('Failed gift saves restore the checkbox and a refresh lets the owner retry',async t=>{
+ const saved={enabled:true,failSave:true},f=await open(t,defaults,saved),d=f.d;
+ await until(()=>!d.querySelector('#invoiceGiftEnabled').disabled);d.querySelector('#invoiceGiftEnabled').click();
+ await until(()=>d.querySelector('#invoiceGiftSettingStatus').textContent.includes('تعذّر حفظ'));
+ assert.equal(d.querySelector('#invoiceGiftEnabled').checked,true);assert.equal(saved.enabled,true);
+ saved.failSave=false;d.querySelector('#refreshOrders').click();await until(()=>!d.querySelector('#invoiceGiftEnabled').disabled);
+ d.querySelector('#invoiceGiftEnabled').click();await until(()=>!d.querySelector('#invoiceGiftEnabled').disabled);
+ assert.equal(saved.enabled,false);assert.deepEqual(f.errors,[]);
 });

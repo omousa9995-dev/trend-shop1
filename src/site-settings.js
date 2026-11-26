@@ -13,6 +13,13 @@ export async function adminSiteSettings(req,env,{json,error,sameOrigin,content})
  if(!current||!Number.isInteger(body.revision)||body.revision!==current.revision)return error('هناك تعديل أحدث. أعيدي تحميل الإعدادات قبل الحفظ.',409);
  const history=JSON.parse(current.history_json||'[]');
  let input=body.settings;if(body.action==='restore'){const old=history.find(x=>x.revision===body.restoreRevision);if(!old)return error('النسخة المطلوبة غير متاحة',404);input=old.settings;}
+ const saved=JSON.parse(current.config_json);
+ if(body.action==='invoice-gift'){
+  if(typeof body.enabled!=='boolean')return error('خيار هدية الفاتورة غير صالح');
+  input={...saved,invoiceGiftEnabled:body.enabled};
+ }else if(input&&typeof input==='object'&&!Array.isArray(input)){
+  input={...input,invoiceGiftEnabled:saved.invoiceGiftEnabled??true};
+ }
  let next;try{const products=await env.DB.prepare('SELECT id FROM products').all();next=normalizeSiteSettings(input,{productIds:new Set(products.results.map(x=>x.id))})}catch(e){return error(e.message||'راجعي الإعدادات')}
  const savedHistory=[{revision:current.revision,updatedAt:current.updated_at,settings:JSON.parse(current.config_json)},...history].slice(0,5);
  const result=await env.DB.prepare("UPDATE site_settings SET config_json=?,history_json=?,revision=revision+1,updated_at=datetime('now') WHERE id='storefront' AND revision=?").bind(JSON.stringify(next),JSON.stringify(savedHistory),body.revision).run();

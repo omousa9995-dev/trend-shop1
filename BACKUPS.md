@@ -66,3 +66,7 @@ Source branch: `backup/v4.0.0-before-shopping-v41-2026-11-05`, commit `4f983568e
 حُفظت واجهة المتجر ولوحة الإدارة وقالب الفاتورة في الفرع [backup/v5.23.6-before-invoice-gift](https://github.com/omousa9995-dev/trend-shop1/tree/backup/v5.23.6-before-invoice-gift) عند الالتزام `956d70cfd606c2733ddbb40e41d34ff34e0cad33`.
 
 نسخة Cloudflare Worker السابقة هي `ed2e7980-062b-4ee9-85ab-bdfb5d40c222` والنشر `b97a0b4f-3522-4c12-8d68-a67fb3152f31`. تحتفظ قاعدة D1 الخاصة بالفواتير الـ16 وبنودها الـ88 في الجدولين `backup_5236_invoice_orders` و`backup_5236_invoice_items`. علامة الاستعادة قبل التعديل هي `000002a1-00000000-0000512d-ee6e5c1e5ef42dcaaebc8ad85036d2b7`. للرجوع عن الواجهة فقط يكفي إعادة نشر إصدار Worker المحفوظ مع إبقاء الطلبات اللاحقة.
+
+## الإصدار 5.23.7 قبل خيار إخفاء هدية الفاتورة
+
+حُفظ المصدر في الفرع [backup/v5.23.7-before-invoice-gift-toggle](https://github.com/omousa9995-dev/trend-shop1/tree/backup/v5.23.7-before-invoice-gift-toggle) عند الالتزام `130bcc68e6104119ab638251cec151aef88f4abd`. نسخة Worker المحفوظة هي `49de2036-5d85-4d22-ad22-729d566f6fbc` والنشر `ef66027a-230b-4edd-bfd4-ec9c2e2952be`.

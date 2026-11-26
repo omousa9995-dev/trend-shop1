@@ -20,7 +20,10 @@ import {PRODUCT_TYPES} from './product-types.js?v=2.3.0';
 import {money,retailPrice,actualDiscount} from './commerce.js?v=5.0.0';
 import {createPromotionManager} from './promotions-admin.js?v=3.1.0';
 import {invoice} from './invoice.js?v=5.23.7';
+import {createInvoiceGiftControl} from './invoice-gift-admin.js?v=5.23.8';
 (()=>{'use strict';const $=(s,r=document)=>r.querySelector(s),safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const jordanDate=s=>{try{return new Date(String(s).replace(' ','T')+'Z').toLocaleString('ar-JO',{timeZone:'Asia/Amman',dateStyle:'medium',timeStyle:'short'})}catch{return s}};const state={products:[],orders:[],filter:'all',ordersLoading:false,ordersSaving:false,invoiceSelection:new Set(),logged:false,live:false};let currentProductDetails={},currentProductImage='',productSaving=false;let orderLoadSequence=0,preparingTodayInvoices=false;const cats=['البشرة','المكياج','الشعر','الجسم','العطور','الأدوات'];
+const invoiceGiftControl=createInvoiceGiftControl({call});
+let preparingInvoices=false;
 const invoicePrinter=createInvoicePrinter({root:$('#printRoot'),render:invoice});
 const customerReportManager=createCustomerReportManager({call});
 const experiencePanel=createExperienceMetricsPanel({call});
@@ -33,7 +36,7 @@ const videoManager=createProductVideoManager({call});
 const featuredVideoManager=createFeaturedVideoManager({call});
 const limitedManager=createLimitedOfferManager({call,getProducts:()=>state.products,refreshProducts:()=>loadProducts()});
 const promotionManager=createPromotionManager({call,getProducts:()=>state.products,refreshProducts:()=>loadProducts()});
-async function call(path,method='GET',data){const response=await fetch('/api/admin/'+path,{method,credentials:'same-origin',headers:{...(data?{'content-type':'application/json','x-trend-admin':'1'}:{})},body:data?JSON.stringify(data):undefined});let result=await response.json().catch(()=>({}));if(!response.ok)throw Error(result.error||'تعذر تنفيذ العملية');return result}
+async function call(path,method='GET',data,options={}){const response=await fetch('/api/admin/'+path,{method,signal:options.signal,credentials:'same-origin',headers:{...(data?{'content-type':'application/json','x-trend-admin':'1'}:{})},body:data?JSON.stringify(data):undefined});let result=await response.json().catch(()=>({}));if(!response.ok)throw Error(result.error||'تعذر تنفيذ العملية');return result}
 async function start(){try{const j=await call('me');state.logged=true;state.live=!!j.live;show();experiencePanel.load();await Promise.all([loadOrders(),loadProducts()]);await promotionManager.load();if(!$('#limitedSection').hidden)await limitedManager.load();}catch{$('#loginView').hidden=false;$('#dashboardView').hidden=true}}
 function show(){if(location.hash==='#care')activeTab('care');if(location.hash==='#limited')activeTab('limited');$('#loginView').hidden=true;$('#dashboardView').hidden=false;$('#liveStatus').textContent=state.live?'المتجر يستقبل طلبات':'مرحلة الإعداد — الطلبات غير مفعّلة';$('#liveStatus').classList.toggle('live',state.live)}
 $('#loginForm').onsubmit=async e=>{e.preventDefault();const pass=$('#password').value;$('#loginError').textContent='';try{const r=await fetch('/api/admin/login',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({password:pass})});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'تعذر الدخول');$('#password').value='';await start()}catch(e){$('#loginError').textContent=e.message}};
@@ -53,7 +56,7 @@ $('#limitedTab').onclick=()=>activeTab('limited');
 $('#ordersTab').onclick=()=>activeTab('orders');$('#productsTab').onclick=()=>activeTab('products');$('#promotionsTab').onclick=()=>activeTab('promotions');
 function syncInvoiceSelection(){
  const ids=new Set(state.orders.map(order=>order.id));for(const id of state.invoiceSelection)if(!ids.has(id))state.invoiceSelection.delete(id);
- const count=state.invoiceSelection.size,total=state.orders.length,all=$('#selectAllInvoices'),busy=state.ordersLoading||state.ordersSaving;
+ const count=state.invoiceSelection.size,total=state.orders.length,all=$('#selectAllInvoices'),busy=state.ordersLoading||state.ordersSaving||preparingInvoices;
  all.checked=total>0&&count===total;all.indeterminate=count>0&&count<total;all.disabled=busy||!total;
  $('#invoiceSelectionCount').textContent='الطلبات المحددة: '+count+' من '+total;
  $('#printToday').disabled=busy||preparingTodayInvoices;
@@ -65,7 +68,7 @@ function syncInvoiceSelection(){
  document.querySelectorAll('[data-filter],#refreshOrders').forEach(button=>button.disabled=state.ordersSaving);
  document.querySelectorAll('[data-print-order]').forEach(button=>button.disabled=busy);
 }
-async function loadOrders(){const sequence=++orderLoadSequence;state.ordersLoading=true;syncInvoiceSelection();try{const j=await call('orders?filter='+state.filter);if(sequence!==orderLoadSequence)return;state.orders=j.orders||[];renderOrders()}catch(e){if(sequence!==orderLoadSequence)return;state.orders=[];state.invoiceSelection.clear();renderOrders();$('#ordersList').textContent=e.message}finally{if(sequence===orderLoadSequence){state.ordersLoading=false;syncInvoiceSelection()}}}
+async function loadOrders(){const sequence=++orderLoadSequence;state.ordersLoading=true;syncInvoiceSelection();try{invoiceGiftControl.load().catch(()=>{});const j=await call('orders?filter='+state.filter);if(sequence!==orderLoadSequence)return;state.orders=j.orders||[];renderOrders()}catch(e){if(sequence!==orderLoadSequence)return;state.orders=[];state.invoiceSelection.clear();renderOrders();$('#ordersList').textContent=e.message}finally{if(sequence===orderLoadSequence){state.ordersLoading=false;syncInvoiceSelection()}}}
 $('#selectAllInvoices').onchange=e=>{if(state.ordersLoading||state.ordersSaving)return;if(e.target.checked)state.orders.forEach(order=>state.invoiceSelection.add(order.id));else state.invoiceSelection.clear();syncInvoiceSelection()};
 $('#clearInvoiceSelection').onclick=()=>{if(state.ordersLoading||state.ordersSaving)return;state.invoiceSelection.clear();syncInvoiceSelection()};
 $('#printSelectedInvoices').onclick=()=>{if(state.ordersLoading||state.ordersSaving||!state.invoiceSelection.size)return;printInvoices(state.orders.filter(order=>state.invoiceSelection.has(order.id)))};
@@ -85,8 +88,18 @@ function renderOrders(){updateOwnerCounts();const os=state.orders;$('#metrics').
  document.querySelectorAll('[data-status-id]').forEach(el=>el.onchange=async()=>{const original=state.orders.find(order=>order.id===el.dataset.statusId)?.status;await saveStatuses([el.dataset.statusId],el.value);if(el.isConnected&&original)el.value=original;});document.querySelectorAll('[data-toggle-order]').forEach(b=>b.onclick=()=>{const el=document.getElementById('details-'+b.dataset.toggleOrder);el.hidden=!el.hidden});document.querySelectorAll('[data-print-order]').forEach(b=>b.onclick=()=>printInvoices(state.orders.filter(o=>o.id===b.dataset.printOrder)))}
  document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=async()=>{if(state.ordersSaving)return;if(state.filter!==b.dataset.filter)state.invoiceSelection.clear();state.filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('selected',x===b));await loadOrders()});
 $('#refreshOrders').onclick=loadOrders;
-function printInvoices(orders){if(invoicePrinter.show(orders))return;const message=$('#orderStatusMessage');message.textContent='لا توجد فواتير للطباعة في الاختيار الحالي.';message.classList.add('error');message.focus?.()}
-$('#printToday').onclick=async()=>{if(preparingTodayInvoices||state.ordersLoading||state.ordersSaving)return;preparingTodayInvoices=true;syncInvoiceSelection();const message=$('#orderStatusMessage');message.textContent='جارٍ تحميل فواتير اليوم…';message.classList.remove('error');try{const j=await call('orders?filter=today');message.textContent='';printInvoices(j.orders||[])}catch{message.textContent='تعذّر تحميل فواتير اليوم. تحققي من الاتصال وسجّلي الدخول مجددًا إذا انتهت الجلسة.';message.classList.add('error')}finally{preparingTodayInvoices=false;syncInvoiceSelection()}};
+async function printInvoices(orders){
+ if(preparingInvoices)return;
+ const message=$('#orderStatusMessage');
+ preparingInvoices=true;syncInvoiceSelection();
+ try{
+  const prepared=await invoiceGiftControl.prepare(orders);
+  if(!invoicePrinter.show(prepared))throw Error('لا توجد فواتير للطباعة في الاختيار الحالي.');
+  message.textContent='';message.classList.remove('error');
+ }catch(error){message.textContent=error.message;message.classList.add('error');message.focus?.()}
+ finally{preparingInvoices=false;syncInvoiceSelection()}
+}
+$('#printToday').onclick=async()=>{if(preparingTodayInvoices||state.ordersLoading||state.ordersSaving)return;preparingTodayInvoices=true;syncInvoiceSelection();const message=$('#orderStatusMessage');message.textContent='جارٍ تحميل فواتير اليوم…';message.classList.remove('error');try{const j=await call('orders?filter=today');message.textContent='';await printInvoices(j.orders||[])}catch{message.textContent='تعذّر تحميل فواتير اليوم. تحققي من الاتصال وسجّلي الدخول مجددًا إذا انتهت الجلسة.';message.classList.add('error')}finally{preparingTodayInvoices=false;syncInvoiceSelection()}};
 async function loadProducts(){try{const j=await call('products');state.products=j.products||[];renderProducts()}catch(e){$('#productsBody').innerHTML=`<tr><td colspan="6">${safe(e.message)}</td></tr>`}}
 function renderProducts(){
  updateOwnerCounts();

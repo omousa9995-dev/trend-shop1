@@ -92,7 +92,7 @@ test('Select all can change every displayed order once; pending requests lock se
   w.print=()=>printed.push(d.querySelector('#printRoot').innerHTML);
   w.fetch=async(url,options={})=>{const path=new URL(url,'https://trend.test').pathname;
     if(path.endsWith('/orders')&&options.method==='POST'){const body=JSON.parse(options.body);posts.push(body);await pending;for(const order of rows)if(body.ids.includes(order.id))order.status=body.status;return{ok:true,json:async()=>({ok:true,updated:body.ids.length})};}
-    const data=path.endsWith('/me')?{authenticated:true,live:true}:path.endsWith('/orders')?{orders:rows}:path.endsWith('/products')?{products:[]}:path.endsWith('/promotions')?{promotions:[]}:{};
+    const data=path.endsWith('/me')?{authenticated:true,live:true}:path.endsWith('/orders')?{orders:rows}:path.endsWith('/products')?{products:[]}:path.endsWith('/promotions')?{promotions:[]}:path.endsWith('/site-settings')?{settings:{revision:1,invoiceGiftEnabled:true}}:{};
     return {ok:true,json:async()=>structuredClone(data)};
   };
   const until=async predicate=>{for(let i=0;i<100;i++){if(predicate())return;await new Promise(r=>setTimeout(r,5));}assert.ok(predicate());};
@@ -101,7 +101,7 @@ test('Select all can change every displayed order once; pending requests lock se
   d.querySelector('#applyOrderStatus').click();d.querySelector('#applyOrderStatus').click();assert.equal(posts.length,1);assert.equal(d.querySelector('#selectAllInvoices').disabled,true);
   release();await until(()=>!d.querySelector('#selectAllInvoices').disabled&&d.querySelector('[data-status-id]').value==='قيد التجهيز');
   assert.deepEqual(posts[0],{ids:['TR-7K3M','TR-8N4P'],status:'قيد التجهيز'});assert.match(d.querySelector('#orderStatusMessage').textContent,/2 طلب/);
-  d.querySelector('#printSelectedInvoices').click();await until(()=>!d.querySelector('#printInvoicesNow').disabled);d.querySelector('#printInvoicesNow').click();assert.equal(printed.length,1);assert.equal((printed[0].match(/invoice-parcel-total/g)||[]).length,2);assert.deepEqual(errors,[]);
+  d.querySelector('#printSelectedInvoices').click();await until(()=>!d.querySelector('#invoicePrintToolbar').hidden&&!d.querySelector('#printInvoicesNow').disabled);d.querySelector('#printInvoicesNow').click();assert.equal(printed.length,1);assert.equal((printed[0].match(/invoice-parcel-total/g)||[]).length,2);assert.deepEqual(errors,[]);
 });
 
 test('The production compatibility switch keeps the existing email bridge valid until its matching update is published',()=>{

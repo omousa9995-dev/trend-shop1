@@ -267,3 +267,21 @@ test('Image upload stays in the owner draft, retains text, saves once and can re
  await root.querySelector('[data-site-form]').onsubmit(new dom.window.Event('submit',{cancelable:true}));assert.equal(posts.length,1);assert.equal(posts[0].settings.siteImages.koreanCard,path);assert.equal(posts[0].settings.heroTitleEn,'Keep this unsaved heading');
  root.querySelector('[data-site-image-reset=koreanCard]').click();assert.match(root.querySelector('[data-image-preview=koreanCard]').getAttribute('src'),/korean-care-brands-card-v552/);assert.equal(posts.length,1);
 });
+
+test('Invoice gift controls persist across admin sessions, reject stale writes and survive appearance restores',async t=>{
+ const f=fixture(t),admin=await adminClient(f),before=(await jsonOk(await admin())).settings;
+ assert.equal(before.invoiceGiftEnabled,true);
+ assert.equal((await admin('POST',{action:'invoice-gift',revision:before.revision,enabled:'false'})).status,400);
+ assert.equal((await admin('POST',{action:'invoice-gift',revision:before.revision,enabled:false},{'x-trend-admin':null})).status,403);
+ await jsonOk(await admin('POST',{action:'invoice-gift',revision:before.revision,enabled:false}));
+ const second=await adminClient(f),off=(await jsonOk(await second())).settings;
+ assert.equal(off.invoiceGiftEnabled,false);
+ assert.deepEqual({...off,revision:before.revision,invoiceGiftEnabled:true},before);
+ assert.equal((await admin('POST',{action:'invoice-gift',revision:before.revision,enabled:true})).status,409);
+ await jsonOk(await second('POST',{revision:off.revision,settings:{...off,storeName:'New name',invoiceGiftEnabled:true}}));
+ let current=(await jsonOk(await second())).settings;assert.equal(current.invoiceGiftEnabled,false);
+ await jsonOk(await second('POST',{action:'restore',revision:current.revision,restoreRevision:before.revision}));
+ current=(await jsonOk(await second())).settings;assert.equal(current.invoiceGiftEnabled,false);
+ await jsonOk(await second('POST',{action:'invoice-gift',revision:current.revision,enabled:true}));
+ assert.equal((await jsonOk(await admin())).settings.invoiceGiftEnabled,true);
+});

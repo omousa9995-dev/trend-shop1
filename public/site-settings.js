@@ -32,6 +32,8 @@ const strings={storeName:60,sloganAr:180,sloganEn:180,heroTitleAr:180,heroTitleE
 export function normalizeSiteSettings(raw,{productIds}={}){
  if(!raw||typeof raw!=='object'||Array.isArray(raw))throw Error('إعدادات غير صالحة');
  const value={...DEFAULT_SITE_SETTINGS,version:5,pairPricing:true};
+ if(raw.invoiceGiftEnabled!==undefined&&typeof raw.invoiceGiftEnabled!=='boolean')throw Error('خيار هدية الفاتورة غير صالح');
+ value.invoiceGiftEnabled=raw.invoiceGiftEnabled??true;
  const images=raw.siteImages===undefined?{}:raw.siteImages;if(!images||typeof images!=='object'||Array.isArray(images))throw Error('صور الموقع غير صالحة');
  value.siteImages={};for(const[id,path]of Object.entries(images)){if(!SITE_IMAGE_SLOTS.some(slot=>slot.id===id)||!isSiteImagePath(path))throw Error('رابط صورة الموقع غير صالح');value.siteImages[id]=path;}
  if(raw.reviewSubmissionsEnabled!==undefined&&typeof raw.reviewSubmissionsEnabled!=='boolean')throw Error('خيار مشاركة التجارب غير صالح');
