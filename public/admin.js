@@ -1,3 +1,4 @@
+import {createFragranceManager} from './fragrance-admin.js?v=5.23.9';
 import {createLimitedOfferManager} from './limited-offers-admin.js?v=5.21.0';
 import {filterAdminProducts,koreanCareChoice,applyKoreanCareChoice,collectionHint,publicationHint,parseCategoryChoice,categoryChoiceValue} from './admin-product-tools.js?v=5.14.1';
 import {createCareAssistantManager} from './care-assistant-admin.js?v=5.19.0';
@@ -31,6 +32,7 @@ const reviewManager=createReviewManager({call});
 const siteManager=createSiteSettingsManager({call,getProducts:()=>state.products});
 const careManager=createCareAssistantManager({call});
 const photoManager=createProductPhotoManager({call});
+createFragranceManager({call,onSaved:loadProducts});
 const mediaLibrary=createMediaLibrary({call,onChange:()=>loadProducts(),onEdit:id=>{activeTab('products');openEditor(state.products.find(p=>p.id===id))}});
 const videoManager=createProductVideoManager({call});
 const featuredVideoManager=createFeaturedVideoManager({call});
@@ -38,11 +40,18 @@ const limitedManager=createLimitedOfferManager({call,getProducts:()=>state.produ
 const promotionManager=createPromotionManager({call,getProducts:()=>state.products,refreshProducts:()=>loadProducts()});
 async function call(path,method='GET',data,options={}){const response=await fetch('/api/admin/'+path,{method,signal:options.signal,credentials:'same-origin',headers:{...(data?{'content-type':'application/json','x-trend-admin':'1'}:{})},body:data?JSON.stringify(data):undefined});let result=await response.json().catch(()=>({}));if(!response.ok)throw Error(result.error||'تعذر تنفيذ العملية');return result}
 async function start(){try{const j=await call('me');state.logged=true;state.live=!!j.live;show();experiencePanel.load();await Promise.all([loadOrders(),loadProducts()]);await promotionManager.load();if(!$('#limitedSection').hidden)await limitedManager.load();}catch{$('#loginView').hidden=false;$('#dashboardView').hidden=true}}
-function show(){if(location.hash==='#care')activeTab('care');if(location.hash==='#limited')activeTab('limited');$('#loginView').hidden=true;$('#dashboardView').hidden=false;$('#liveStatus').textContent=state.live?'المتجر يستقبل طلبات':'مرحلة الإعداد — الطلبات غير مفعّلة';$('#liveStatus').classList.toggle('live',state.live)}
+function show(){if(location.hash==='#care')activeTab('care');if(location.hash==='#limited')activeTab('limited');if(location.hash==='#fragrance')activeTab('fragrance');$('#loginView').hidden=true;$('#dashboardView').hidden=false;$('#liveStatus').textContent=state.live?'المتجر يستقبل طلبات':'مرحلة الإعداد — الطلبات غير مفعّلة';$('#liveStatus').classList.toggle('live',state.live)}
 $('#loginForm').onsubmit=async e=>{e.preventDefault();const pass=$('#password').value;$('#loginError').textContent='';try{const r=await fetch('/api/admin/login',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({password:pass})});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'تعذر الدخول');$('#password').value='';await start()}catch(e){$('#loginError').textContent=e.message}};
 $('#logoutBtn').onclick=async()=>{await call('logout','POST').catch(()=>{});location.reload()};
-function activeTab(tab){if(tab==='limited')limitedManager.load();if(tab==='care')careManager.load();if(tab==='media')mediaLibrary.load();if(tab==='overview')experiencePanel.load();customerReportManager.setActive(tab==='customers');for(const name of ['overview','orders','products','limited','promotions','reviews','site','customers','media','care']){const button=$('#'+name+'Tab');button.classList.toggle('active',tab===name);if(tab===name)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');$('#'+name+'Section').hidden=tab!==name}}
+function activeTab(tab){if(tab==='limited')limitedManager.load();if(tab==='care')careManager.load();if(tab==='media')mediaLibrary.load();if(tab==='overview')experiencePanel.load();customerReportManager.setActive(tab==='customers');for(const name of ['overview','orders','products','limited','promotions','reviews','site','customers','media','care','fragrance']){const button=$('#'+name+'Tab');button.classList.toggle('active',tab===name);if(tab===name)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');$('#'+name+'Section').hidden=tab!==name}}
 $('#careTab').onclick=()=>activeTab('care');
+$('#fragranceTab').onclick=()=>activeTab('fragrance');
+$('#manageFragrances').onclick=()=>{
+ activeTab('products');
+ for(const id of ['productSearch','productCollectionFilter','productStatusFilter'])$('#'+id).value='';
+ $('#productCategoryFilter').value='العطور';
+ renderProducts();
+};
 $('#mediaTab').onclick=()=>activeTab('media');
 $('#customersTab').onclick=()=>activeTab('customers');
 $('#overviewTab').onclick=()=>activeTab('overview');
