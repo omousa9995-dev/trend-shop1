@@ -264,13 +264,13 @@ test('Lama sends ten recent messages as ordered Gemini turns, with live facts, p
  let calls=0;
  globalThis.fetch=async(url,init)=>{
   calls++;
-  assert.match(url,/models\/gemini-3\.8-flash:streamGenerateContent\?alt=sse$/);
+  assert.match(url,/models\/gemini-3\.6-flash:streamGenerateContent\?alt=sse$/);
   const payload=JSON.parse(init.body),system=payload.systemInstruction.parts[0].text;
   assert.ok(system.startsWith(LAMA_SYSTEM_INSTRUCTION));
   assert.match(system,/STORE_CONFIG=.*freeAboveFils/s);
   const catalog=JSON.parse(system.match(/^PRODUCTS_JSON=(.+)$/m)[1]);
-  assert.deepEqual(catalog.rows.map(row=>row[0]),['TSDEMO1','TSDEMO2','TSDEMO3']);
-  assert.equal(catalog.rows.at(-1).at(-1),0);
+  assert.deepEqual(catalog.rows,[]);
+  assert.deepEqual(payload.tools[0].functionDeclarations.map(tool=>tool.name),['get_catalog']);
   assert.equal(payload.generationConfig.responseMimeType,undefined);
   assert.equal(payload.generationConfig.thinkingConfig.thinkingLevel,'medium');
   assert.equal(payload.toolConfig.functionCallingConfig.mode,'AUTO');

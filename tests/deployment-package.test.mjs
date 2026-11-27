@@ -10,7 +10,7 @@ test('The deployable Worker imports successfully and serves current store, admin
  const {default:worker}=await import(new URL('../deployment-private/preview-entry.js',import.meta.url));
 
  const get=path=>worker.fetch(new Request('https://trend.test'+path),{},{});
- for(const [path,script] of [['/','/app.js?v=5.23.11'],['/admin.html','/admin.js?v=5.23.10']]){const r=await get(path);assert.equal(r.status,200);assert.ok((await r.text()).includes(script));}
+ for(const [path,script] of [['/','/app.js?v=5.23.12'],['/admin.html','/admin.js?v=5.23.10']]){const r=await get(path);assert.equal(r.status,200);assert.ok((await r.text()).includes(script));}
  const storefront=await (await get('/')).text();
  assert.doesNotMatch(storefront,/store-trust|href="\/returns.html"|data-care-quiz/);
  assert.match(storefront,/data-skin-quiz-entry/);

@@ -2,7 +2,7 @@ import {readCareSettings,careReady,careApiKey,loadCareCatalog,careCatalogRevisio
 
 import {urgentCareReply} from './luma-urgent-care.js';
 
-import {requestGemini} from './gemini-provider.js';
+import {requestGemini,GEMINI_DIALOGUE_MODEL} from './gemini-provider.js';
 import {visibleActionText,untilAbort} from './gemini-stream.js';
 import {lumaLiveFaq} from './luma-faq.js';
 import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,explicitLumaBudget,quickLumaAdvice,lamaRoutineOrderReply} from './luma-store-facts.js';
@@ -14,7 +14,7 @@ import {catalogQuestion,fragranceRequest,fragrancePlan,avoidScentSuggestions} fr
 import {requestLamaDialogue,cleanLamaDialogueText,requestsStoreContact} from './lama-dialogue.js';
 import {normalizeSearch} from '../public/shop-tools.js';
 import {LAMA_BACKUP_MODEL,requestLamaBackup} from './lama-backup.js';
-export const LUMA_TEXT_MODEL='gemini-3.8-flash';
+export const LUMA_TEXT_MODEL=GEMINI_DIALOGUE_MODEL;
 import {lumaText,lumaProductAllowed,lumaBudgetPrompt,lumaBudgetNeutralText} from './luma-care-knowledge.js';
 const enc=new TextEncoder();
 const clean=(v,n=220)=>typeof v==='string'?v.trim().slice(0,n):'';
@@ -64,7 +64,7 @@ export const LUMA_TOOLS=[{functionDeclarations:[
   parameters:{type:'OBJECT',properties:{area:{type:'STRING',enum:catalogAreas},query:{type:'STRING'},productIds:{type:'ARRAY',items:{type:'STRING'}}}}
  }
 ]}];
-const dialogueTools=[{functionDeclarations:LUMA_TOOLS[0].functionDeclarations.filter(tool=>['show_products','get_catalog','ask_question'].includes(tool.name))}];
+const dialogueTools=[{functionDeclarations:LUMA_TOOLS[0].functionDeclarations.filter(tool=>tool.name!=='handoff_to_team')}];
 
 export function lumaSystem(input,products){
  const catalog=products.filter(p=>lumaProductAllowed(p,input)&&(input.area==='unknown'||p.areas.includes(input.area))&&(input.budgetFils===null||p.priceFils<=input.budgetFils)&&!input.existingIds.includes(p.id)).slice(0,8).map(lumaCatalogFacts);

@@ -118,7 +118,9 @@ test('The same live lookup answers a newly published non-fragrance product and s
  const original=globalThis.fetch;
  t.after(()=>{globalThis.fetch=original;});
  globalThis.fetch=async(_url,{body})=>{
-  const instruction=JSON.parse(body).systemInstruction.parts[0].text;
+  const sent=JSON.parse(body);
+  assert.equal(sent.toolConfig.functionCallingConfig.mode,'ANY');
+  const instruction=sent.systemInstruction.parts[0].text;
   const index=JSON.parse(instruction.match(/^PRODUCTS_JSON=(.+)$/m)[1]);
   const facts=JSON.parse(instruction.match(/^CATALOG=(.+)$/m)[1]);
   assert.ok(index.rows.some(row=>row[0]===newItem.id));

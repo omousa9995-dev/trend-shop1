@@ -45,7 +45,7 @@ test('An open follow-up uses earlier turns and live references, and streams regu
  let upstream,cancelled=false,attempts=0;
  stub(t,async(url,{body})=>{
   attempts++;
-  assert.match(url,/gemini-3\.8-flash:streamGenerateContent/);
+  assert.match(url,/gemini-3\.6-flash:streamGenerateContent/);
   const payload=JSON.parse(body),prompt=payload.systemInstruction.parts[0].text;
   assert.deepEqual(payload.contents.map(turn=>turn.role),['user','model','user']);
   assert.match(payload.contents[0].parts[0].text,/إيسنس الليل/);

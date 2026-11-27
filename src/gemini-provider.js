@@ -4,6 +4,7 @@ import {readGeminiStream,untilAbort} from './gemini-stream.js';
 // All credentials and inference stay server-side. No request text or raw provider
 // diagnostics are logged. A complete bounded JSON turn is validated before UI output.
 export const GEMINI_TEXT_MODELS=['gemini-3.8-flash','gemini-3.5-flash-lite'];
+export const GEMINI_DIALOGUE_MODEL='gemini-3.6-flash';
 export function modelOrder(primary){const first=GEMINI_TEXT_MODELS.includes(primary)?primary:GEMINI_TEXT_MODELS[0];return [first,...GEMINI_TEXT_MODELS.filter(m=>m!==first)]}
 async function boundedJson(response,maxBytes,signal){
  const reader=response.body?.getReader();if(!reader)throw Error('PROVIDER_RESPONSE_INVALID');
@@ -16,11 +17,13 @@ function problem(status,data){
  return Object.assign(Error('PROVIDER_HTTP_'+status),{status,reason});
 }
 export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',preferredApi,onAttempt=()=>{},onTextDelta,timeoutMs=15000,alternateModel=false,maxAttempts=2}){
- const candidates=(model?(alternateModel?modelOrder(model):[model,model]):modelOrder(primary)).slice(0,maxAttempts);let last;
+ const dialogue=transport==='dialogue';
+ const candidates=(dialogue?[...new Set([model||primary,'gemini-3.5-flash-lite'])]:model?(alternateModel?modelOrder(model):[model,model]):modelOrder(primary)).slice(0,maxAttempts);
+ let last;
  for(let index=0;index<candidates.length;index++){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
-  const selected=candidates[index];if(!GEMINI_TEXT_MODELS.includes(selected))throw Error('INVALID_PROVIDER_MODEL');
-  const dialogue=transport==='dialogue',stable=transport==='stableActions',actions=transport==='actions'||stable;
+  const selected=candidates[index];if(!GEMINI_TEXT_MODELS.includes(selected)&&!(dialogue&&selected===GEMINI_DIALOGUE_MODEL))throw Error('INVALID_PROVIDER_MODEL');
+  const stable=transport==='stableActions',actions=transport==='actions'||stable;
   const live=transport==='interactions'||transport==='actions'&&(preferredApi==='generateContent'?index===1:index===0),api=live?'interactions':'generateContent';
   const duration=Array.isArray(timeoutMs)?(timeoutMs[index]??timeoutMs[0]):timeoutMs;
   const timeout=new AbortController(),timer=setTimeout(()=>timeout.abort(new DOMException('Attempt timed out','TimeoutError')),duration);
