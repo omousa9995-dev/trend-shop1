@@ -2,11 +2,11 @@ import {loadCareCatalog} from './care-assistant.js';
 import {MANAGEMENT_WHATSAPP} from './luma-store-facts.js';
 const normalize=s=>String(s||'').normalize('NFKC').replace(/[ًٌٍَُِّْـ]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').toLowerCase();
 const money=n=>(n/1000).toFixed(2)+' دينار';
-export async function lumaLiveFaq(input,env){
+export async function lumaLiveFaq(input,env,catalog){
  const t=normalize(input.message);
  if(/(?:^|\s)(?:ال)?اصلي(?:ة|ه)?(?=$|\s|[؟?.,!])|authentic|genuine|original products/.test(t))return {text:'من حقكِ تتأكدي قبل الطلب ♡ صور العبوة ومعلومات المنتج متاحة على صفحته. تأكيد المصدر ورقم التشغيلة لأي منتج بيكون مع فريق Trend مباشرة، وما بقدر أحكم على أصالته من صورة وحدها. احكيلي أي منتج تقصدي وبساعدكِ بمعلوماته.',team:{label:'اسألي فريق Trend عن مصدر المنتج',href:MANAGEMENT_WHATSAPP}};
  if(!/خصم|عروض|عرض لفتر|السعر|سعره|سعرها|قبل.{0,15}كم|discount|limited.{0,8}offer|previous price/.test(t))return null;
- const products=await loadCareCatalog(env),offers=products.filter(p=>p.limitedOffer).sort((a,b)=>a.limitedOffer.slot-b.limitedOffer.slot);
+ const products=catalog??await loadCareCatalog(env,{scope:'luma'}),offers=products.filter(p=>p.limitedOffer).sort((a,b)=>a.limitedOffer.slot-b.limitedOffer.slot);
  const stop=new Set(['منتج','المنتج','منتجات','منتجاتكم','بدي','عندكم','السعر','السابق','خصم','فيه','على','بعد','قبل','صار','عرض','عروض','لفترة','محدودة','كم','عليها','سعره','سعرها']);
  const tokens=t.split(/[^\p{L}\p{N}]+/u).filter(x=>x.length>=3&&!stop.has(x));
  const ranked=products.map(p=>{const label=normalize(p.name+' '+p.brand);return {p,score:tokens.reduce((n,w)=>n+(label.includes(w)?1:0),0)}}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);

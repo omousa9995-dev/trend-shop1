@@ -73,7 +73,7 @@ export function createFragranceManager({call, onSaved, prepare = prepareSiteImag
    stock: Number(fields.stock.value), price_fils: priceFils, reference_price_fils: priceFils,
    discount_percent: 0, description: fields.description.value.trim(),
    details: {
-    nameAr, productType: 'fragrance', koreanCare: false,
+    nameAr, productType: 'fragrance', koreanCare: false, fragranceAudience: fields.fragranceAudience.value,
     size: Number(fields.volume.value) + ' مل', variantNote: fields.concentration.value,
     benefits: fields.scentNotes.value.split('\n').map(line => line.trim()).filter(Boolean),
     en: {name, description: fields.descriptionEn.value.trim()}

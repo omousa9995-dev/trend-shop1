@@ -6,7 +6,7 @@ export const ACTION_SCHEMA={type:'OBJECT',properties:{
  text:{type:'STRING',description:'Customer answer, one question, practical care plan or handoff reason, in Jordanian Arabic.'},
  profile,field:{type:'STRING',enum:['area','skinType','sensitive','preference','ageGroup','lifeStage','goal']},
  choices:{type:'ARRAY',items:{type:'OBJECT',properties:{label:{type:'STRING'},value:{type:'STRING'}},required:['label','value']}},
- dayPlan:{type:'OBJECT',properties:{morning:{type:'STRING'},evening:{type:'STRING'}}},productIds:{type:'ARRAY',items:{type:'STRING'}},area:profile.properties.area,followUp:{type:'BOOLEAN'},needsProfessional:{type:'BOOLEAN'},query:{type:'STRING'},
+ dayPlan:{type:'OBJECT',properties:{morning:{type:'STRING'},evening:{type:'STRING'}}},productIds:{type:'ARRAY',items:{type:'STRING'}},area:{type:'STRING',enum:[...profile.properties.area.enum,'fragrance','tools']},followUp:{type:'BOOLEAN'},needsProfessional:{type:'BOOLEAN'},query:{type:'STRING'},
  imageDisposition:{type:'STRING',enum:['not_provided','usable','unclear','unsupported']},
  selections:{type:'ARRAY',items:{type:'OBJECT',properties:{productId:{type:'STRING'},reason:{type:'STRING'},optionId:{type:'STRING'},period:{type:'STRING',enum:['am','pm','both','makeup']}},required:['productId','reason']}}
 },required:['action','text']};

@@ -7,6 +7,7 @@ const RETRY_MESSAGE = 'ثواني حبيبتي، صار ضغط بسيط. جرّ�
 const STREAM_IDLE_MS = 10000;
 const normalizeChoice=value=>value.trim().replace(/[٠-٩]/g,digit=>String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit))).replace(/[–—]/g,'-').replace(/\s+/g,'').replace(/[؟.?!]/g,'');
 const money=n=>(n/1000).toLocaleString('ar-JO',{minimumFractionDigits:2,maximumFractionDigits:2})+' د.أ';
+const catalogPrompt={price:'كم سعر ',notes:'احكيلي عن نفحات ',usage:'طريقة استخدام ',details:'احكيلي عن '};
 let instance;
 export async function mountLumaWidget({status:initial,standalone=false}={}){
  if(instance)return instance;
@@ -20,7 +21,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
  <div class="luma-quick" aria-label="اختيارات سريعة"></div>
  <form class="luma-composer">
  <div class="luma-image-preview" hidden><img alt="معاينة الصورة على جهازكِ"/><button type="button" data-luma-remove-photo>إزالة الصورة</button><p>صورة اختيارية تُرسل مع سؤالكِ لفهم ما يظهر فيها. تجنّبي أي معلومات شخصية أو مناطق خاصة.</p></div>
- <label class="luma-input-label" for="lumaMessage">احكيلي شو محتاجة</label><div class="luma-input-row"><textarea id="lumaMessage" rows="2" maxlength="1500" placeholder="سؤالكِ، روتينكِ أو اختيارات مكياجكِ…"></textarea><button class="luma-send" type="submit" aria-label="إرسال إلى لُمى">←</button></div>
+  <label class="luma-input-label" for="lumaMessage">احكيلي شو محتاجة</label><div class="luma-input-row"><textarea id="lumaMessage" rows="2" maxlength="1500" placeholder="اسألي عن منتج، روتين أو عطر…"></textarea><button class="luma-send" type="submit" aria-label="إرسال إلى لُمى">←</button></div>
  <div class="luma-preference-tools">
   <label><input type="checkbox" data-luma-remember/> حفظ تفضيلاتي على هالجهاز</label>
   <button type="button" data-luma-forget hidden>امسحي تفضيلاتي</button>
@@ -113,6 +114,10 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     send('طريقة استخدام '+choice.value,{visibleText:choice.label});
     return;
    }
+   if(question.field==='catalogProduct'){
+    send((catalogPrompt[question.mode]||catalogPrompt.details)+choice.value,{visibleText:choice.label});
+    return;
+   }
    if(profileChoices[question.field]?.includes(choice.value))profile[question.field]=choice.value;
    if($('[data-luma-remember]').checked)remember();
    send(choice.label,next);
@@ -133,12 +138,16 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     if($('[data-luma-remember]').checked)remember();
    };
    actions.append(like);card.append(actions);group.append(card)}
-  const totals=make('p',undefined,'luma-total');totals.append(document.createTextNode('المنتجات '+money(data.subtotalFils)+' · التوصيل '+money(data.shippingFeeFils)+'\n'),make('strong','الإجمالي '+money(data.totalFils)));group.append(totals);
   const next=make('div',undefined,'luma-plan-next');
-  action(next,'اشرحي طريقة الاستخدام',()=>send('كيف أستعمل آخر منتج اقترحتيه؟'));
+  if(data.alternatives){
+   action(next,'عطور ثانية',()=>send('عندك خيارات ثانية غيرهم؟'));
+  }else{
+   const totals=make('p',undefined,'luma-total');totals.append(document.createTextNode('المنتجات '+money(data.subtotalFils)+' · التوصيل '+money(data.shippingFeeFils)+'\n'),make('strong','الإجمالي '+money(data.totalFils)));group.append(totals);
+   action(next,'اشرحي طريقة الاستخدام',()=>send('كيف أستعمل آخر منتج اقترحتيه؟'));
+   action(next,'نبدأ بمنتج واحد',()=>send('من اقتراحاتكِ، بأي منتج واحد أبدأ؟'));
+  }
   action(next,'بديل أرخص',()=>send('إذا متوفر، بدّلي آخر اختيار ببديل أرخص يناسب تفضيلاتي.'));
-  action(next,'نبدأ بمنتج واحد',()=>send('من اقتراحاتكِ، بأي منتج واحد أبدأ؟'));
-  group.append(next);log.append(group);if(data.area&&data.area!=='unknown')profile.area=data.area;scroll();
+  group.append(next);log.append(group);if(profileChoices.area.includes(data.area))profile.area=data.area;scroll();
  }
  function renderTool(data){if(Number.isInteger(data.confirmedBudgetFils)&&data.confirmedBudgetFils>=500&&data.confirmedBudgetFils<=100000)budgetFils=data.confirmedBudgetFils;if(data.profile){
   const changes=normalizeLamaProfile(data.profile);
@@ -173,10 +182,11 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
    const stated=captureLamaPreferences(typedAge,profile);
    const guidedChoice=choice||(question?.choices||[]).find(item=>item.value===stated[question.field]);
    if(guide&&guidedChoice){message.value='';chooseGuide(guidedChoice.label,guidedChoice.value);return;}
-   if(question?.field==='usageProduct'){
+   if(question?.field==='usageProduct'||question?.field==='catalogProduct'&&choice){
     visibleText=text;
     message.value='';
-    text='طريقة استخدام '+(choice?.value||text);
+    const prefix=question.field==='usageProduct'?catalogPrompt.usage:(catalogPrompt[question.mode]||catalogPrompt.details);
+    text=prefix+(choice?.value||text);
    }
    if(guidedChoice&&profileChoices[question.field]?.includes(guidedChoice.value)){
     profile[question.field]=guidedChoice.value;

@@ -21,7 +21,8 @@ export function lumaProductFacts(p,d,type,cosmeticCandidate){
  const identity=[p.name,d.nameAr,p.subcategory,d.ingredients].join(' ');
  const everydayTypes=['cleanser','moisturizer','sunscreen','toner','serum','essence','face-mask','face-oil','mist','eye-care','body-care','body-cleansing','body-oil','body-sunscreen','foot-care','shampoo','conditioner','hair-mask','hair-oil','exfoliant','body-scrub'];
  const excluded=(type==='exfoliant'&&/peeling solution|(?:30|35|50)\s*%/i.test(identity))||/adapalene|spicule|reedle|ادابالين|أدابالين/i.test(identity)||(/benzoyl|بنزويل/i.test(identity)&&!knownWash);
- const allowed=cosmeticCandidate||knownWash||everydayTypes.includes(type);
+ const allowed=cosmeticCandidate||knownWash||everydayTypes.includes(type)||
+  ['fragrance','deodorant','hair-styling','oral-care'].includes(type)||p.category==='الأدوات';
  return {lumaCandidate:allowed&&!prescription.test(identity)&&!excluded,careClass:knownWash?'otc-acne-wash':active.test(identity)?'active-cosmetic':'everyday',
   ...(knownWash?{areas:['face','body'],activeIngredient:'benzoyl peroxide',activeStrength:strength+'%',verifiedLabel:CARE_REFERENCES[strength==='4'?'panoxyl4':'panoxyl10'],
    assistantHowToUse:'بللي المنطقة، دلكي الغسول بلطف لمدة دقيقة إلى دقيقتين ثم اشطفيه جيدًا وجففي بالتربيت. اتبعي تعليمات عبوتكِ؛ ابدئي مرة يوميًا وخففي الاستخدام عند الجفاف. تجنبي العينين والشفاه والجلد المجروح. قد يبهت الأقمشة والشعر. لا تجمعيه مع مقشر جديد في البداية.'}:{}),

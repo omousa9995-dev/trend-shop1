@@ -1,3 +1,5 @@
+import {namedCatalogMatches, requestedProductTypes} from './lama-catalog.js';
+
 export const MANAGEMENT_WHATSAPP='https://wa.me/962790025430';
 const normalize=value=>value.normalize('NFKC').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/[ًٌٍَُِّْ]/g,'').toLowerCase();
 export function lumaDeliveryText(message='',now=new Date()){
@@ -35,7 +37,18 @@ export function explicitLumaBudget(message){
  const amount=t.match(/(?:ميزاني(?:تي|ه|ة|تها)?|ما يزيد عن|بحدود|حد اقصي|اقل من|حدود)\s*(?:هي|حوالي|تقريبا|من|بـ|ب)?\s*(\d{1,3}(?:[.,]\d{1,2})?)\s*(?:دينار|دنانير|د\.?ا|jod)?/i)?.[1];
  const fils=amount?Math.round(Number(amount.replace(',','.'))*1000):null;return fils>=500&&fils<=100000?fils:null;
 }
-export function lumaCatalogFacts(p){return {id:p.id,name:p.name,brand:p.brand,type:p.type,areas:p.areas,priceJod:p.priceFils/1000,referencePriceJod:p.referencePriceFils/1000,...(p.limitedOffer?{limitedOffer:{originalPriceJod:p.limitedOffer.originalPriceFils/1000,endsAt:new Date(p.limitedOffer.endsAt*1000).toISOString()}}:{}),careClass:p.careClass,description:p.description,benefits:p.benefits,ingredients:p.ingredients,howToUse:p.assistantHowToUse||p.howToUse,notes:p.notes,options:p.options,...(p.verifiedLabel?{activeIngredient:p.activeIngredient,activeStrength:p.activeStrength,verifiedLabel:p.verifiedLabel}:{}),...(p.requiresIngredientReview?{reviewIngredients:true}:{})}}
+export function lumaCatalogFacts(p){
+ return {
+  id:p.id,name:p.name,nameEn:p.nameEn,brand:p.brand,type:p.type,areas:p.areas,available:p.available,
+  priceJod:p.priceFils/1000,referencePriceJod:p.referencePriceFils/1000,
+  ...(p.limitedOffer?{limitedOffer:{originalPriceJod:p.limitedOffer.originalPriceFils/1000,endsAt:new Date(p.limitedOffer.endsAt*1000).toISOString()}}:{}),
+  size:p.size,variantNote:p.variantNote,careClass:p.careClass,description:p.description,benefits:p.benefits,
+  skinTypes:p.skinTypes,concerns:p.concerns,ingredients:p.ingredients,howToUse:p.assistantHowToUse||p.howToUse,
+  usage:p.usage,notes:p.notes,options:p.options,...(p.fragrance?{fragrance:p.fragrance}:{}),
+  ...(p.verifiedLabel?{activeIngredient:p.activeIngredient,activeStrength:p.activeStrength,verifiedLabel:p.verifiedLabel}:{}),
+  ...(p.requiresIngredientReview?{reviewIngredients:true}:{})
+ };
+}
 
 // Seed a few complementary, relevant products so ordinary routines need one turn.
 // Exact IDs, ingredient/label facts and final stock validation remain authoritative.
@@ -43,9 +56,30 @@ export function shortlistLumaCatalog(products,input){
  const current=normalize(input.message),past=normalize(input.history.filter(x=>x.role==='user').slice(-2).map(x=>x.text).join(' '));
  const t=/حبوب|جفاف|نشف|دهن|جاف|acne|dry|oily/.test(current)?current:current+' '+past;
  const area=/(?:ظهر|جسم|صدر|back|body)/.test(normalize(input.message))?'body':/(?:وجه|وجهي|face)/.test(normalize(input.message))?'face':input.area;
- const available=products.filter(p=>p.lumaCandidate&&!input.existingIds.includes(p.id)&&(area==='unknown'||p.areas.includes(area))&&(input.budgetFils===null||p.priceFils<=input.budgetFils));
- const acne=input.goal==='breakouts'||/حبوب|acne|بثور/.test(t),dry=input.skinType==='dry'||/جفاف|نشف|جاف|dry/.test(t),oily=/دهنية|دهنيه|oily/.test(current)||input.skinType==='oily',words=[...new Set(t.split(/[^\p{L}\p{N}]+/u).filter(w=>w.length>2))];
- const ranked=available.map(p=>{const name=normalize([p.name,p.brand,p.type].join(' '));let score=words.reduce((s,w)=>s+(name.includes(w)?3:0),0);if(['cleanser','moisturizer','sunscreen'].includes(p.type))score+=2;if((input.intent==='sunscreen'||input.intent==='concealer')&&p.type===input.intent)score+=28;if(dry&&p.type==='moisturizer')score+=3;if(acne&&p.activeStrength==='4%')score+=20;const facts=normalize([p.name,p.description,p.notes].join(' '));if(oily){if(/دهنيه|دهنية|oily|خفيف|light|gel|جل/.test(facts))score+=5;if(/جافه|جافة|dry|مكثف|intens|rich/.test(facts))score-=8;}if(p.careClass==='everyday')score+=2;return {p,score}}).sort((a,b)=>b.score-a.score||a.p.priceFils-b.p.priceFils);
+ const types=requestedProductTypes(input.message);
+ const named=new Set(namedCatalogMatches(input.message,products).map(p=>p.id));
+ const available=products.filter(p=>p.lumaCandidate&&p.available!==false&&!input.existingIds.includes(p.id)&&
+  (area==='unknown'||p.areas.includes(area)||named.has(p.id)||types.includes(p.type))&&
+  (input.budgetFils===null||p.priceFils<=input.budgetFils));
+ const acne=input.goal==='breakouts'||/حبوب|acne|بثور/.test(t),dry=input.skinType==='dry'||/جفاف|نشف|جاف|dry/.test(t),oily=/دهنية|دهنيه|oily/.test(current)||input.skinType==='oily';
+ const words=[...new Set(current.split(/[^\p{L}\p{N}]+/u).filter(w=>w.length>2&&!/(?:^)(?:بدي|ممكن|عندكم|ترشحيلي|منتج|بديش|منتجات|مناسب|افضل|هذا|هالشي|recommend|please|from|your|want|product)$/.test(w)))];
+ const ranked=available.map(p=>{
+  const name=normalize([p.name,p.nameEn,p.brand,p.type].join(' '));
+  const facts=normalize([p.description,p.notes,...(p.benefits||[]),...(p.skinTypes||[]),...(p.concerns||[])].join(' '));
+  let score=words.reduce((s,w)=>s+(name.includes(w)?3:facts.includes(w)?1:0),0);
+  if(named.has(p.id))score+=35;
+  if(types.includes(p.type))score+=24;
+  if(['cleanser','moisturizer','sunscreen'].includes(p.type))score+=2;
+  if((input.intent==='sunscreen'||input.intent==='concealer')&&p.type===input.intent)score+=28;
+  if(dry&&p.type==='moisturizer')score+=3;
+  if(acne&&p.activeStrength==='4%')score+=20;
+  if(oily){
+   if(/دهنيه|دهنية|oily|خفيف|light|gel|جل/.test(name+' '+facts))score+=5;
+   if(/جافه|جافة|dry|مكثف|intens|rich/.test(name+' '+facts))score-=8;
+  }
+  if(p.careClass==='everyday')score+=2;
+  return {p,score};
+ }).sort((a,b)=>b.score-a.score||(b.p.createdAt||'').localeCompare(a.p.createdAt||'')||a.p.priceFils-b.p.priceFils);
  const chosen=[],counts=new Map();if(input.intent==='routine'&&area==='face'){for(const type of ['cleanser','moisturizer','sunscreen']){const item=ranked.find(({p})=>p.type===type);if(item){chosen.push(item.p);counts.set(type,1);}}}for(const {p}of ranked){const count=counts.get(p.type)||0;if(count>=2||chosen.includes(p))continue;chosen.push(p);counts.set(p.type,count+1);if(chosen.length===6)break}return chosen;
 }
 

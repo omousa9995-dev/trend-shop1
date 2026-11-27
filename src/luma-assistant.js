@@ -1,4 +1,4 @@
-import {readCareSettings,careReady,careApiKey,loadCareCatalog,careCatalogRevision,validateCareInput,normalizeCareResult,professionalResult,reserveCareRequest,recordCareOutcome} from './care-assistant.js';
+import {readCareSettings,careReady,careApiKey,loadCareCatalog,careCatalogRevision,validateCareInput,normalizeCareResult,professionalResult,reserveCareRequest,recordCareOutcome,LUMA_SHOP_AREAS} from './care-assistant.js';
 
 import {urgentCareReply} from './luma-urgent-care.js';
 
@@ -9,7 +9,8 @@ import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,ex
 import {shippingFee} from '../public/commerce.js';
 import {captureLamaPreferences,normalizeLamaProfile,lumaGuideQuestions} from '../public/luma-profile.js?v=5.23.5';
 import {lamaPolicyReply} from './lama-policies.js';
-import {productsContext,readProductSnapshot,isLamaUsageQuestion,usageMatches,usageReply,latestSuggestedIds} from './lama-catalog.js';
+import {productsContext,isLamaUsageQuestion,usageMatches,usageReply,latestSuggestedIds,lookupLamaCatalog,namedCatalogMatches} from './lama-catalog.js';
+import {catalogQuestion,fragranceRequest,fragrancePlan,avoidScentSuggestions} from './lama-shopping.js';
 import {lamaSystem} from './lama-system.js';
 import {LAMA_BACKUP_MODEL,requestLamaBackup} from './lama-backup.js';
 export const LUMA_TEXT_MODEL='gemini-3.8-flash';
@@ -18,6 +19,8 @@ const enc=new TextEncoder();
 const clean=(v,n=220)=>typeof v==='string'?v.trim().slice(0,n):'';
 const fields=['area','skinType','sensitive','preference','ageGroup','lifeStage','goal'];
 const choiceValues={goal:['basic','dryness','shine','texture','fine_lines','tone','breakouts'],area:['face','body','hands','feet','hair','makeup'],skinType:['dry','oily','combination','balanced','unknown'],sensitive:['yes','no','unknown'],ageGroup:['18-24','25-34','35-44','45+'],lifeStage:['neither','pregnant','nursing','prefer-not']};
+const catalogAreas=[...choiceValues.area,...LUMA_SHOP_AREAS];
+const liveLamaCatalog=(env,includeUnavailable=false)=>loadCareCatalog(env,{scope:'luma',includeUnavailable});
 const profileSchema={type:'OBJECT',properties:Object.fromEntries(Object.entries(choiceValues).map(([name,values])=>[name,{type:'STRING',enum:values}]))};
 export const LUMA_TOOLS=[{functionDeclarations:[
  {
@@ -29,7 +32,7 @@ export const LUMA_TOOLS=[{functionDeclarations:[
     carePlan:{type:'STRING',description:'A short ordered practical care plan BEFORE the product suggestions. No names/prices, diagnosis or guaranteed cures. State label precautions when an active wash is suggested.'},
     dayPlan:{type:'OBJECT',properties:{morning:{type:'STRING'},evening:{type:'STRING'}}},
     productIds:{type:'ARRAY',items:{type:'STRING'}},
-    area:{type:'STRING',enum:choiceValues.area},
+    area:{type:'STRING',enum:catalogAreas},
     imageDisposition:{type:'STRING',enum:['not_provided','usable','unclear','unsupported']},
     profile:profileSchema,
     selections:{type:'ARRAY',items:{type:'OBJECT',properties:{productId:{type:'STRING'},reason:{type:'STRING'},optionId:{type:'STRING',description:'Optional exact canonical variant ID for a tentative makeup shade match. Never invent a shade number.'},period:{type:'STRING',enum:['am','pm','both','makeup']}},required:['productId','reason']}}
@@ -55,7 +58,7 @@ export const LUMA_TOOLS=[{functionDeclarations:[
  {
   name:'get_catalog',
   description:'Read the latest approved catalog, including sold-out items for questions about them. Exact IDs, brand, product name or type work. Use only available and eligible products in show_products.',
-  parameters:{type:'OBJECT',properties:{area:{type:'STRING',enum:choiceValues.area},query:{type:'STRING'},productIds:{type:'ARRAY',items:{type:'STRING'}}}}
+  parameters:{type:'OBJECT',properties:{area:{type:'STRING',enum:catalogAreas},query:{type:'STRING'},productIds:{type:'ARRAY',items:{type:'STRING'}}}}
  }
 ]}];
 
@@ -78,7 +81,7 @@ function lumaInput(body,imagesAllowed=false){
  input.skippedFields=(Array.isArray(body.skippedFields)?body.skippedFields:[]).filter(field=>['skinType','ageGroup','goal'].includes(field));
  const newQuestion=/[؟?]/.test(input.message)||/^(?:و?[اإ]ذا|شو|ايش|إيش|كيف|ليش|متى|what|why|how|when)(?:\s|$)/i.test(input.message);
  const routineRequested=input.lama?
-  /^(?:روتين|routine)(?:\s|$)|(?:بدي|اريد|أريد|ابني|أبني|اعملي|اقترحي|رتبي|رتّبي).{0,22}روتين|(?:build|want|recommend|suggest).{0,20}routine/i.test(input.message):
+  /^(?:روتين|routine)(?:\s|$)|(?:بدي|اريد|أريد|ابني|أبني|اعملي|اقترحي|رتبي|رتّبي).{0,22}\sروتين(?:\s|$)|(?:build|want|recommend|suggest).{0,20}\broutine\b/i.test(input.message):
   /روتين|routine|صباح.{0,22}مسا/i.test(input.message);
  input.intent=(input.guided||input.lama&&!newQuestion)&&['routine','makeup','sunscreen','concealer'].includes(body.intent)?body.intent:
   routineRequested?'routine':
@@ -129,18 +132,13 @@ export async function runLumaTool(call,input,env,{currentCatalog,completeCatalog
  }
  if(call?.name==='answer_customer')return {type:'answer',message:lumaBudgetNeutralText(call.args?.text,2000),profile:resolved,followUp:call.args?.followUp===true,team:team()};
  if(call?.name==='get_catalog'){
-  const area=choiceValues.area.includes(call.args?.area)?call.args.area:'unknown';
-  const normalize=value=>String(value||'').toLowerCase().replace(/[أإآ]/g,'ا').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
-  const query=normalize(clean(call.args?.query,80)),parts=query.split(' ').filter(Boolean);
-  const requested=Array.isArray(call.args?.productIds)?call.args.productIds.filter(id=>typeof id==='string').slice(0,8):[];
-  const catalog=await (completeCatalog?.()??loadCareCatalog(env,{includeUnavailable:true}));
-  const available=catalog.filter(p=>p.available&&lumaProductAllowed(p,input)&&(area==='unknown'||p.areas.includes(area)));
-  const products=(query||requested.length?catalog:available).filter(p=>{
-   if(requested.length)return requested.includes(p.id);
-   if(area!=='unknown'&&!p.areas.includes(area))return false;
-   const name=normalize([p.id,p.name,p.nameEn,p.brand,p.type].join(' '));
-   return parts.every(word=>name.includes(word));
-  }).slice(0,requested.length?8:20);
+  const area=catalogAreas.includes(call.args?.area)?call.args.area:'unknown';
+  const query=clean(call.args?.query,80);
+  const requested=Array.isArray(call.args?.productIds)?call.args.productIds.filter(id=>typeof id==='string').map(id=>id.toUpperCase()).slice(0,8):[];
+  const catalog=await (completeCatalog?.()??liveLamaCatalog(env,true));
+  const scoped=catalog.filter(p=>area==='unknown'||p.areas.includes(area));
+  const available=scoped.filter(p=>p.available&&lumaProductAllowed(p,input));
+  const products=requested.length?catalog.filter(p=>requested.includes(p.id)):query?lookupLamaCatalog(scoped,query):available.slice(0,20);
   const detailed=requested.length>0||!!query&&products.length<=8;
   return {type:'catalog',availableTypes:[...new Set(available.map(p=>p.type))].slice(0,30),products:products.map(p=>{
    const {image,priceFils,...facts}=p;
@@ -153,7 +151,9 @@ export async function runLumaTool(call,input,env,{currentCatalog,completeCatalog
  if(call?.name==='handoff_to_team')return {type:'handoff',message:call.args?.needsProfessional===true?'هاي الحالة بتحتاج تقييم مختصة قبل تجربة منتجات جديدة. الحالات الشديدة أو الجروح تحتاج رعاية طبية مباشرة؛ وصيدلانيات Trend Shop متاحات لمتابعة اختيار العناية المناسبة.':(lumaBudgetNeutralText(call.args?.reason,300)||'من عيوني، فريق المتجر بيساعدكِ بمتابعة شخصية.'),needsProfessional:call.args?.needsProfessional===true,team:team(call.args?.needsProfessional===true)};
  if(call?.name!=='show_products')return {type:'notice',message:'هذا الإجراء غير متاح.'};
  if(input.warningSigns)return {type:'handoff',...professionalResult(),team:team(true)};
- const products=currentCatalog??await loadCareCatalog(env),args=call.args||{};
+ const args=call.args||{};
+ const live=currentCatalog??await liveLamaCatalog(env);
+ const products=avoidScentSuggestions(input)?live.filter(p=>p.type!=='fragrance'):live;
  // Never adopt a model-invented budget. Explicit customer limits come from input only.
  if(input.image&&args.imageDisposition!=='usable')return {type:'notice',message:'الصورة لا تكفي لاختيار منتجات مناسبة. تقدري تكمّلي دون صورة وتحكيلي عن احتياجكِ.'};
  const result=normalizeCareResult({...args,questions:[],observations:[],message:'رتّبت لكِ هذه الاختيارات من المتوفر الآن.',needsProfessional:false},products,input);
@@ -189,8 +189,8 @@ async function gate(req,env,helpers,{paid=true}={}){
  return {config,body,input};
 }
 export async function publicLumaProducts(req,env,{json}){
- const config=await readCareSettings(env);if(!careReady(config))return json({products:[]});
- const products=(await loadCareCatalog(env)).filter(p=>p.lumaCandidate);
+ const config=await readCareSettings(env);if(!config.settings.enabled)return json({products:[]});
+ const products=(await liveLamaCatalog(env)).filter(p=>p.lumaCandidate);
  return json({currency:'JOD',source:'live-store',revision:await careCatalogRevision(products),products:products.map(p=>({...p,href:'/product/'+encodeURIComponent(p.id)}))});
 }
 // Retired endpoints stay explicit for an old cached tab; they cannot mint tokens.
@@ -250,6 +250,13 @@ async function catalogFollowup(kind,input,catalog,env){
  }
  const item=kind==='cheaper'?previous.at(-1):previous.find(product=>product?.type==='moisturizer')||previous.find(Boolean);
  if(!item)return null;
+ if(item.type==='fragrance'&&kind==='cheaper'){
+  const plan=fragrancePlan(catalog.filter(product=>product.priceFils<item.priceFils),input,{
+   audience:item.fragrance?.audience,desired:item.fragrance?.styles||[],exclude:[],count:1,excludedIds:ids
+  });
+  if(plan.type==='selection')return runLumaTool({name:'show_products',args:plan.args},input,env,{currentCatalog:catalog});
+  return {type:'answer',message:'ما لقيت بديل عطري أقل سعرًا بنفس الطابع من الخيارات المتوفرة حاليًا.'};
+ }
  const area=item.areas.includes(input.area)?input.area:item.areas[0];
  if(!area)return null;
  const candidates=kind==='one'?[item]:catalog.filter(product=>
@@ -328,18 +335,19 @@ export async function publicLumaChat(req,env,helpers,ctx){
  const geminiReady=careReady(config);
  let factual,day;
  const directUsage=input.lama&&!input.image&&isLamaUsageQuestion(input.message);
- const policy=input.lama&&!input.image?lamaPolicyReply(input.message):null;
+ const fragrance=input.lama&&!directUsage?fragranceRequest(input):null;
+ const policy=input.lama&&!input.image&&!fragrance?lamaPolicyReply(input.message):null;
  const generalOrder=input.lama&&!directUsage?lamaRoutineOrderReply(input):null;
- const intake=!directUsage&&!policy&&!generalOrder?lamaIntake(input):null;
+ const intake=!directUsage&&!fragrance&&!policy&&!generalOrder?lamaIntake(input):null;
  const followup=(!input.image&&!input.warningSigns&&latestSuggestedIds(input.history).length)?catalogFollowupKind(input.message):'';
  try{
   if(!urgent&&!input.warningSigns){
    if(policy||generalOrder)factual=policy||generalOrder;
-   else if(!directUsage&&!intake&&!followup&&!input.guided&&!input.image)
-    factual=(!input.lama&&lumaStoreReply(input.message))||await untilAbort(()=>lumaLiveFaq(input,env),signal)||quickLumaAdvice(input);
-   if(!factual&&!directUsage&&!intake&&!followup&&(geminiReady||backupEnabled)){
+   else if(!input.lama&&!followup&&!input.guided&&!input.image)
+    factual=lumaStoreReply(input.message)||await untilAbort(()=>lumaLiveFaq(input,env),signal)||quickLumaAdvice(input);
+   if(!input.lama&&!factual&&!followup&&geminiReady){
     day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,!!input.image),signal);
-    if(!day&&!input.lama)return helpers.error('وصلت لُمى لحد الاستخدام اليومي؛ تقدري تتواصلي مع المتجر.',429);
+    if(!day)return helpers.error('وصلت لُمى لحد الاستخدام اليومي؛ تقدري تتواصلي مع المتجر.',429);
    }
   }
  }catch {return helpers.error('تعذّر بدء الرد. اضغطي إعادة المحاولة أو كمّلي بسؤال جديد.',503);}
@@ -370,7 +378,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
      if(result.followUp&&/(?:صيدلان|صيدلي|فريق|رقم|واتس|تواصل|contact|team)/i.test(input.message))send('followup',{team:team()});
     }else if(result.type==='question'||result.type==='handoff'){
      replace('');
-     const ask=result.type==='question'&&input.lama&&input.intent&&result.question?.field!=='usageProduct';
+     const ask=result.type==='question'&&input.lama&&input.intent&&!['usageProduct','catalogProduct'].includes(result.question?.field);
      send(result.type,ask?{...result,question:{...result.question,intent:input.intent,skippedFields:input.skippedFields}}:result);
     }else return false;
     return true;
@@ -393,11 +401,13 @@ export async function publicLumaChat(req,env,helpers,ctx){
       completed=true;done();return;
      }
      if(intake&&!followup){present(intake);completed=true;done();return;}
+     // Each turn takes its facts from current inventory, even for a chat
+     // opened before a product was published or its price/stock changed.
+     const allCatalog=await untilAbort(()=>liveLamaCatalog(env,input.lama),chatSignal);
+     catalog=allCatalog.filter(p=>p.available);
+     catalogLoaded=true;
      if(directUsage){
-      let lookup;
-      try{lookup=await untilAbort(()=>loadCareCatalog(env,{includeUnavailable:true}),AbortSignal.any([chatSignal,AbortSignal.timeout(4000)]));}
-      catch{lookup=await untilAbort(()=>readProductSnapshot(env),chatSignal);}
-      const matches=usageMatches(input.message,lookup,input.history);
+      const matches=usageMatches(input.message,allCatalog,input.history);
       const english=!/[\u0600-\u06ff]/.test(input.message);
       if(matches.length===1){
        present({type:'answer',message:usageReply(matches[0],english)});send('reference',{productIds:[matches[0].id]});completed=true;done();return;
@@ -406,36 +416,47 @@ export async function publicLumaChat(req,env,helpers,ctx){
        const actions=matches.map(product=>({label:product.name,value:product.id}));
        present({type:'question',question:{field:'usageProduct',text:english?'Which of these products did you mean?':'أي واحد من هالمنتجات تقصدي يا قمر؟',choices:actions}});completed=true;done();return;
       }
-      if(!input.intent){
+      if(!input.intent&&!followup){
        present({type:'answer',message:english?'Send the exact product name or its Trend Shop product link and I can walk you through the directions.':'من عيوني. اكتبي اسم المنتج زي ما هو على العبوة أو ابعتي رابط صفحته، وبشرحلك الخطوات بالترتيب.'});completed=true;done();return;
       }
      }
-     const allCatalog=await untilAbort(()=>loadCareCatalog(env,{includeUnavailable:input.lama}),chatSignal);
-     catalog=allCatalog.filter(p=>p.available);
-     catalogLoaded=true;
      if(followup){
-      const result=await untilAbort(()=>catalogFollowup(followup,input,catalog,env),chatSignal);
+      const result=await untilAbort(()=>catalogFollowup(followup,input,['usage','price'].includes(followup)?allCatalog:catalog,env),chatSignal);
       if(result){
        present(result);completed=true;done();return;
       }
-      if(geminiReady||backupEnabled)day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,false),chatSignal);
-      if(!day&&!input.lama){send('error',{code:'DAILY_LIMIT',message:'وصلت لُمى لحد الاستخدام اليومي. تقدري تتواصلي مع المتجر.'});return;}
      }
-     if(input.lama&&!day&&(geminiReady||backupEnabled)&&directUsage)day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,false),chatSignal);
+     if(input.lama&&!input.image){
+      const answer=catalogQuestion(input,allCatalog);
+      if(answer&&present(answer)){
+       if(answer.productId)send('reference',{productIds:[answer.productId]});
+       completed=true;done('live-catalog');return;
+      }
+      if(fragrance){
+       const plan=fragrancePlan(catalog,input,fragrance);
+       const result=plan.type==='selection'?await runLumaTool({name:'show_products',args:plan.args},input,env,{currentCatalog:catalog}):plan;
+       if(present(result)){completed=true;done('live-catalog');return;}
+      }
+      if(!input.guided){
+       const faq=await untilAbort(()=>lumaLiveFaq(input,env,catalog),chatSignal)||quickLumaAdvice(input);
+       if(faq){showText(faq.text);if(faq.team)send('followup',{team:faq.team});completed=true;done();return;}
+      }
+     }
+     if(!day&&(geminiReady||backupEnabled))day=await untilAbort(()=>reserveCareRequest(env,config.settings.dailyLimit,!!input.image),chatSignal);
+     if(!day&&!input.lama){send('error',{code:'DAILY_LIMIT',message:'وصلت لُمى لحد الاستخدام اليومي. تقدري تتواصلي مع المتجر.'});return;}
      if(!day||!geminiReady)throw Error('PROVIDER_UNAVAILABLE');
      const {image,...context}=input;
-     const initialCatalog=/بدون منتجات|نصائح فقط|مش بدي منتجات/.test(input.message)?[]:shortlistLumaCatalog(catalog.filter(p=>lumaProductAllowed(p,input)),input);
-     const references=input.lama&&!image?await untilAbort(
-      ()=>readProductSnapshot(env),AbortSignal.any([chatSignal,AbortSignal.timeout(300)])
-     ).catch(()=>[]):[];
+     const initialCatalog=/بدون منتجات|من غير منتجات|نصائ[حع] فقط|مش بدي منتجات|without products|advice only/i.test(input.message)
+      ?[]:shortlistLumaCatalog(catalog.filter(p=>lumaProductAllowed(p,input)),input);
+     const relevant=new Map([...namedCatalogMatches(input.message,allCatalog),...initialCatalog].map(p=>[p.id,p]));
      const system=input.lama?lamaSystem({
-      profile:input.visitorProfile,catalog:productsContext(allCatalog,references),relevant:initialCatalog.map(lumaCatalogFacts)
+      profile:input.visitorProfile,catalog:productsContext(allCatalog),relevant:[...relevant.values()].slice(0,8).map(lumaCatalogFacts)
      }):lumaSystem(input,initialCatalog);
      const contents=[{role:'user',parts:[{text:JSON.stringify(context)},...(image?[{inlineData:image}]:[])]}];
      const geminiSignal=backupEnabled?AbortSignal.any([chatSignal,AbortSignal.timeout(GEMINI_WINDOW_WITH_BACKUP_MS)]):chatSignal;
      const apiKey=await untilAbort(()=>careApiKey(env,config),geminiSignal);
      let selectedModel,selectedApi,completeCatalog;
-     const getCompleteCatalog=()=>input.lama?allCatalog:completeCatalog??=loadCareCatalog(env,{includeUnavailable:true});
+     const getCompleteCatalog=()=>input.lama?allCatalog:completeCatalog??=liveLamaCatalog(env,true);
      for(let round=1;round<=3;round++){
       const payload={systemInstruction:{parts:[{text:system}]},contents,tools:LUMA_TOOLS,toolConfig:{functionCallingConfig:{mode:'ANY'}},generationConfig:{maxOutputTokens:4096,thinkingConfig:{thinkingLevel:'low'}}};
       const completion=await requestGemini({
@@ -482,7 +503,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
       try{
        const relevant=shortlistLumaCatalog(catalog.filter(product=>lumaProductAllowed(product,input)),input);
        const reply=await requestLamaBackup(env,input,relevant,day,chatSignal);
-       const result=await untilAbort(()=>runLumaTool(reply.call,input,env,{currentCatalog:catalog}),chatSignal);
+       const result=await untilAbort(()=>runLumaTool(reply.call,input,env),chatSignal);
        const usable=['answer','question','products','handoff'].includes(result.type)&&
         (result.type!=='answer'||!!result.message);
        if(!usable)throw Error('LAMA_BACKUP_INVALID');

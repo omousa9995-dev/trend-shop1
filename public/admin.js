@@ -1,4 +1,4 @@
-import {createFragranceManager} from './fragrance-admin.js?v=5.23.9';
+import {createFragranceManager} from './fragrance-admin.js?v=5.23.10';
 import {createLimitedOfferManager} from './limited-offers-admin.js?v=5.21.0';
 import {filterAdminProducts,koreanCareChoice,applyKoreanCareChoice,collectionHint,publicationHint,parseCategoryChoice,categoryChoiceValue} from './admin-product-tools.js?v=5.14.1';
 import {createCareAssistantManager} from './care-assistant-admin.js?v=5.19.0';

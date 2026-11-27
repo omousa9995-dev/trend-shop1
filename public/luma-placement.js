@@ -1,7 +1,7 @@
 export function careEntriesAllowed(location){
  return !/^\/(?:p|product|bundle|checkout|success|order)(?:\/|$)/.test(location.pathname)&&!/^#\/(?:product|checkout|success|order)(?:[/?]|$)/.test(location.hash);
 }
-export function installCareEntries({status,loadWidget=()=>import('./luma-widget.js?v=5.23.5').then(m=>m.mountLumaWidget({status}))}){
+export function installCareEntries({status,loadWidget=()=>import('./luma-widget.js?v=5.23.10').then(m=>m.mountLumaWidget({status}))}){
  let widget,loading,version=0,stopped=false;
  const regions=[...document.querySelectorAll('[data-care-region]')];
  function update(){

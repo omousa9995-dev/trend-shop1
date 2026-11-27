@@ -2,6 +2,7 @@ import { actionResponse } from './luma-json-actions.js';
 import { untilAbort } from './gemini-stream.js';
 import { lumaText } from './luma-care-knowledge.js';
 import { normalizeSearch } from '../public/shop-tools.js';
+import { requestedProductTypes } from './lama-catalog.js';
 
 export const LAMA_BACKUP_MODEL = '@cf/google/gemma-4-26b-a4b-it';
 const MAX_REQUEST_BYTES = 3750;
@@ -19,7 +20,7 @@ const schema = {
   properties:{
     action:{type:'string',enum:['answer_customer','ask_question','show_products','handoff_to_team']},
     text:{type:'string'},
-    area:{type:'string',enum:['face','body','hands','feet','hair','makeup']},
+    area:{type:'string',enum:['face','body','hands','feet','hair','makeup','fragrance','tools']},
     field:{type:'string',enum:['area','skinType','sensitive','preference','ageGroup','goal']},
     productIds:{type:'array',items:{type:'string'},maxItems:3},
     selections:{type:'array',maxItems:3,items:{
@@ -63,7 +64,8 @@ function withoutItemCodes(value){
 function wantsCatalog(input){
   const message=normalizeSearch(input.message);
   if(/بدون منتجات|من غير منتجات|مش بدي منتجات|نصايح فقط|نصائح فقط|without products|no product/i.test(message))return false;
-  return !!input.intent||/(?:من عندكم|من المتجر|من موقعكم|عندكم|بتبيعوا)|(?:رشح|اقترح|ترشيح|اقتراح|بدي|اريد|افضل|انسب).{0,18}(?:منتج|واقي|كونسيلر|مرطب|غسول|سيروم|بودره|بخاخ|تونر)|\b(?:recommend|suggest|best|shop)\b.{0,24}\b(?:product|sunscreen|concealer|powder|cleanser|toner|cream)\b/i.test(message);
+  return !!input.intent||/(?:من عندكم|من المتجر|من موقعكم|عندكم|بتبيعوا)|(?:رشح|اقترح|ترشيح|اقتراح|بدي|اريد|افضل|انسب).{0,18}(?:منتج|بخاخ)|\b(?:recommend|suggest|best|shop)\b.{0,24}\bproduct\b/i.test(message)||
+    requestedProductTypes(message).length>0&&/رشح|اقترح|بدي|اريد|افضل|انسب|\b(?:recommend|suggest|best|shop|want)\b/.test(message);
 }
 
 export function lamaBackupRequest(input, products) {
