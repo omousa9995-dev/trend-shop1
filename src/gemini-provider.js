@@ -18,7 +18,8 @@ function problem(status,data){
 }
 export async function requestGemini({apiKey,primary,model,payload,signal,transport='generateContent',preferredApi,onAttempt=()=>{},onTextDelta,timeoutMs=15000,alternateModel=false,maxAttempts=2}){
  const dialogue=transport==='dialogue';
- const candidates=(dialogue?[...new Set([model||primary,'gemini-3.5-flash-lite'])]:model?(alternateModel?modelOrder(model):[model,model]):modelOrder(primary)).slice(0,maxAttempts);
+ const dialogueAlternate=primary===GEMINI_DIALOGUE_MODEL?'gemini-3.5-flash-lite':GEMINI_DIALOGUE_MODEL;
+ const candidates=(dialogue?[model||primary,dialogueAlternate]:model?(alternateModel?modelOrder(model):[model,model]):modelOrder(primary)).slice(0,maxAttempts);
  let last;
  for(let index=0;index<candidates.length;index++){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
@@ -31,7 +32,7 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
   try{
    // Use the current stateless API for actions first, then a bounded plain-text
    // generateContent alternate. Neither path enables native tools/JSON decoding.
-   const prepared=actions?actionRequest(payload):dialogue?{...payload,generationConfig:{...payload.generationConfig,thinkingConfig:{thinkingLevel:selected==='gemini-3.5-flash-lite'?'low':'medium'}}}:payload;
+   const prepared=actions?actionRequest(payload):dialogue?{...payload,generationConfig:{...payload.generationConfig,thinkingConfig:{thinkingLevel:'medium'}}}:payload;
    // Flash-Lite supports minimal thinking for latency-sensitive store actions.
    // The alternate 3.8 model supports low, not minimal. Never send an unsupported level.
    if(stable)prepared.generationConfig={

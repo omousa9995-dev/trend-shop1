@@ -21,8 +21,14 @@ export function wantsLamaRecommendations(input){
 
 export function cleanLamaDialogueText(input,text) {
  const natural=lumaBudgetNeutralText(text,textLimit).replace(catalogMarker,'').replace(codePattern,'').trim();
- if(requestsStoreContact(input.message))return natural;
- return natural.split(/(?<=[.!؟?])(?=\s)|(?<=\n)/).filter(sentence=>!referral.test(sentence)).join('').trim();
+ const contactRequested=requestsStoreContact(input.message);
+ return natural.split(/(?<=[.!؟?])(?=\s)|(?<=\n)/).filter(sentence=>{
+  if(!contactRequested&&referral.test(sentence))return false;
+  if(!/[?؟]/.test(sentence))return true;
+  const question=normalizeSearch(sentence);
+  if(input.skinType&&input.skinType!=='unknown'&&/(?:نوع بشرتك|بشرتك.{0,12}(?:جافه|جافة|دهنيه|دهنية|مختلطه|مختلطة)|skin type)/.test(question))return false;
+  return !(input.ageGroup&&input.ageGroup!=='unknown'&&/عمرك|فيه عمريه|فئه عمريه|فئة عمرية|age range|how old/.test(question));
+ }).join('').trim();
 }
 
 // The model reads the turns as conversation, while the product facts in
@@ -101,13 +107,15 @@ export async function requestLamaDialogue({
  apiKey,primary,input,allCatalog,shortlist,tools,signal,runTool,onDraft,onAttempt,onProgress,recordTokens,catalogLoaded
 }) {
  const request=buildLamaDialogue(input,allCatalog,shortlist,tools,catalogLoaded);
+ const shopping=request.toolConfig.functionCallingConfig.mode==='ANY';
+ const dialoguePrimary=shopping?primary:'gemini-3.5-flash-lite';
  const supported=new Set(request.tools[0].functionDeclarations.map(tool=>tool.name));
  let contents=request.contents,model;
  const lookups=new Set();
 
  async function ask(round, options={}){
   const result=await requestGemini({
-   apiKey,primary,model:options.repair?undefined:model,signal,transport:'dialogue',
+   apiKey,primary:dialoguePrimary,model:options.repair?undefined:model,signal,transport:'dialogue',
    payload:options.payload||{...request,contents},
    timeoutMs:options.repair?6500:model?11000:[15500,8500],
    maxAttempts:model||options.repair?1:2,

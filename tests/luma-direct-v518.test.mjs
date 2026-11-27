@@ -264,7 +264,7 @@ test('Lama sends ten recent messages as ordered Gemini turns, with live facts, p
  let calls=0;
  globalThis.fetch=async(url,init)=>{
   calls++;
-  assert.match(url,/models\/gemini-3\.6-flash:streamGenerateContent\?alt=sse$/);
+  assert.match(url,/models\/gemini-3\.5-flash-lite:streamGenerateContent\?alt=sse$/);
   const payload=JSON.parse(init.body),system=payload.systemInstruction.parts[0].text;
   assert.ok(system.startsWith(LAMA_SYSTEM_INSTRUCTION));
   assert.match(system,/STORE_CONFIG=.*freeAboveFils/s);
@@ -352,7 +352,7 @@ test('Lama enlists the hosted model after both Gemini attempts fail and still re
   assert.match(out.find(item=>item.event==='delta').data.text,/ربّتي/);
   assert.doesNotMatch(out.find(item=>item.event==='delta').data.text,/TSDEMO1/);
   assert.equal(attempted.length,2);
-  assert.match(attempted[1],/gemini-3\.5-flash-lite/);
+  assert.match(attempted[1],/gemini-3\.6-flash/);
   assert.equal(hostedCalls,1);
   assert.equal(f.db.prepare('SELECT successes FROM care_assistant_usage').get().successes,1);
  }finally{globalThis.fetch=original;f.close();}
