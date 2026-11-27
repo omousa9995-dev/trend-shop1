@@ -256,7 +256,7 @@ test('Lama identifies a sold-out named product and explains documented amount, t
  }finally{globalThis.fetch=old;f.close();}
 });
 
-test('Lama uses the complete compact catalog and the exact Arabic system instruction with stable Gemini and ten recent messages',async()=>{
+test('Lama sends ten recent messages as ordered Gemini turns, with live facts, preferences and optional tools',async()=>{
  const f=fixture(),old=globalThis.fetch;
  const {LAMA_SYSTEM_INSTRUCTION}=await import('../src/lama-system.js');
  const history=Array.from({length:16},(_,index)=>({role:index%2?'model':'user',text:'رسالة '+index}));
@@ -264,21 +264,23 @@ test('Lama uses the complete compact catalog and the exact Arabic system instruc
  let calls=0;
  globalThis.fetch=async(url,init)=>{
   calls++;
-  assert.match(url,/models\/gemini-3\.8-flash:generateContent$/);
+  assert.match(url,/models\/gemini-3\.8-flash:streamGenerateContent\?alt=sse$/);
   const payload=JSON.parse(init.body),system=payload.systemInstruction.parts[0].text;
   assert.ok(system.startsWith(LAMA_SYSTEM_INSTRUCTION));
   assert.match(system,/STORE_CONFIG=.*freeAboveFils/s);
   const catalog=JSON.parse(system.match(/^PRODUCTS_JSON=(.+)$/m)[1]);
   assert.deepEqual(catalog.rows.map(row=>row[0]),['TSDEMO1','TSDEMO2','TSDEMO3']);
   assert.equal(catalog.rows.at(-1).at(-1),0);
-  assert.equal(payload.generationConfig.responseMimeType,'application/json');
-  assert.equal(payload.generationConfig.thinkingConfig.thinkingLevel,'low');
-  const context=JSON.parse(payload.contents[0].parts[0].text);
-  assert.equal(context.history.length,10);
-  assert.equal(context.history[0].text,'رسالة 6');
-  assert.equal(context.visitorProfile.skinType,'dry');
-  assert.deepEqual(context.visitorProfile.likedProductIds,['TSDEMO2']);
-  return json(chunk([{text:JSON.stringify({action:'answer_customer',text:'أول خطوة اختاري قوامًا مناسبًا. بعد ذلك خدي خطوة واحدة بالتدريج.'})}]));
+  assert.equal(payload.generationConfig.responseMimeType,undefined);
+  assert.equal(payload.generationConfig.thinkingConfig.thinkingLevel,'medium');
+  assert.equal(payload.toolConfig.functionCallingConfig.mode,'AUTO');
+  assert.equal(payload.contents.length,11);
+  assert.deepEqual(payload.contents[0],{role:'user',parts:[{text:'رسالة 6'}]});
+  assert.deepEqual(payload.contents.at(-2),{role:'model',parts:[{text:'رسالة 15'}]});
+  const profile=JSON.parse(system.match(/^VISITOR_PROFILE=(.+)$/m)[1]);
+  assert.equal(profile.skinType,'dry');
+  assert.deepEqual(profile.likedProductIds,['TSDEMO2']);
+  return json(chunk([{text:'أول خطوة اختاري قوامًا مناسبًا. بعد ذلك خدي خطوة واحدة بالتدريج.'}]));
  };
  try{
   const out=await events(await publicLumaChat(request({contract:'lama-2',message:'كيف بجهّز شنطة عناية بسيطة لما أسافر؟',history,profile:{skinType:'dry',ageGroup:'25-34',likedProductIds:['TSDEMO2']}}),f.env,helpers,{}));
@@ -320,7 +322,7 @@ test('Lama answers a general product-order question immediately even with a rout
  }finally{globalThis.fetch=old;f.close();}
 });
 
-test('Lama moves to the hosted text model after one failed Gemini attempt to leave time to answer',async()=>{
+test('Lama enlists the hosted model after both Gemini attempts fail and still remembers the conversation',async()=>{
  const f=fixture(),original=globalThis.fetch;
  const attempted=[];
  let hostedCalls=0;
@@ -349,7 +351,8 @@ test('Lama moves to the hosted text model after one failed Gemini attempt to lea
   assert.equal(out.some(item=>item.event==='error'),false);
   assert.match(out.find(item=>item.event==='delta').data.text,/ربّتي/);
   assert.doesNotMatch(out.find(item=>item.event==='delta').data.text,/TSDEMO1/);
-  assert.equal(attempted.length,1);
+  assert.equal(attempted.length,2);
+  assert.match(attempted[1],/gemini-3\.5-flash-lite/);
   assert.equal(hostedCalls,1);
   assert.equal(f.db.prepare('SELECT successes FROM care_assistant_usage').get().successes,1);
  }finally{globalThis.fetch=original;f.close();}

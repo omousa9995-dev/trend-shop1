@@ -123,10 +123,10 @@ test('The same live lookup answers a newly published non-fragrance product and s
   const facts=JSON.parse(instruction.match(/^CATALOG=(.+)$/m)[1]);
   assert.ok(index.rows.some(row=>row[0]===newItem.id));
   assert.ok(facts.some(p=>p.id===newItem.id&&p.type==='toner'&&p.howToUse===newItem.howToUse));
-  return json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({
-   action:'show_products',area:'face',productIds:[newItem.id],text:'هاي خطوة خفيفة إذا بتحبي تضيفي تونر بعد التنظيف.',
+  return json({candidates:[{finishReason:'STOP',content:{parts:[{functionCall:{name:'show_products',args:{
+   area:'face',productIds:[newItem.id],carePlan:'هاي خطوة خفيفة إذا بتحبي تضيفي تونر بعد التنظيف.',
    selections:[{productId:newItem.id,reason:'قوام خفيف حسب وصفه.'}]
-  })}]}}]});
+  }}}]}}]});
  };
  assert.deepEqual(idsOf(await f.ask('اقترحيلي تونر خفيف لروتين المساء')), [newItem.id]);
 });

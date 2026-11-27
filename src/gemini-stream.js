@@ -27,8 +27,8 @@ export async function* providerEvents(body,{signal,maxBytes=180000}={}){
   pending+=decoder.decode();if(pending.trim()){const event=parse(pending);if(event)yield event;}
  }finally{signal?.removeEventListener('abort',abort);reader.cancel().catch(()=>{});try{reader.releaseLock()}catch{}}
 }
-export async function readGeminiStream(response,{api,signal,onTextDelta}){
- let text='',completed=false,usage={},finish='';const stepTypes=new Map();
+export async function readGeminiStream(response,{api,signal,onTextDelta,allowFunctions=false}){
+ let text='',completed=false,usage={},finish='';const stepTypes=new Map(),parts=[];
  for await(const event of providerEvents(response.body,{signal})){
   if(event.error||/failed|error/.test(event.event_type||''))throw Error('PROVIDER_STREAM_FAILED');
   let delta='';
@@ -38,16 +38,28 @@ export async function readGeminiStream(response,{api,signal,onTextDelta}){
    if(type==='step.delta'&&event.delta?.type==='text'&&(!stepTypes.has(event.index)||stepTypes.get(event.index)==='model_output'))delta=event.delta.text||'';
    if(type==='interaction.completed'){if(event.interaction?.status&&event.interaction.status!=='completed')throw Error('PROVIDER_INCOMPLETE');completed=true;usage=event.interaction?.usage||event.usage||{};break;}
   }else{
-   const candidate=event.candidates?.[0];delta=(candidate?.content?.parts||[]).filter(p=>!p.thought&&typeof p.text==='string').map(p=>p.text).join('');
+   const candidate=event.candidates?.[0],incoming=candidate?.content?.parts||[];
+   if(allowFunctions)parts.push(...incoming);
+   delta=incoming.filter(p=>!p.thought&&typeof p.text==='string').map(p=>p.text).join('');
    if(event.usageMetadata)usage=event.usageMetadata;
-   if(candidate?.finishReason){finish=candidate.finishReason;completed=finish==='STOP';if(!completed)throw Error('FINISH_'+finish);}
+   if(candidate?.finishReason){
+    finish=candidate.finishReason;
+    completed=finish==='STOP'||allowFunctions&&finish==='TOOL_CALL';
+    if(!completed)throw Error('FINISH_'+finish);
+   }
   }
-  if(delta){text+=delta;if(text.length>16000)throw Error('STREAM_TOO_LARGE');await untilAbort(()=>onTextDelta(text),signal);}
+  if(delta){
+   text+=delta;if(text.length>16000)throw Error('STREAM_TOO_LARGE');
+   if(!allowFunctions||!parts.some(p=>p.functionCall))await untilAbort(()=>onTextDelta(text),signal);
+  }
   // GenerateContent's final non-empty chunk carries STOP. Do not wait for EOF.
   if(api!=='interactions'&&completed)break;
  }
- if(!completed||!text.trim())throw Error(completed?'EMPTY_REPLY':'PROVIDER_INCOMPLETE');
- return {candidates:[{finishReason:'STOP',content:{role:'model',parts:[{text}]}}],usageMetadata:api==='interactions'?{promptTokenCount:usage.total_input_tokens||0,candidatesTokenCount:usage.total_output_tokens||0,thoughtsTokenCount:usage.total_thought_tokens||0}:usage};
+ const hasCalls=parts.some(p=>p.functionCall);
+ if(!completed||!text.trim()&&!hasCalls)throw Error(completed?'EMPTY_REPLY':'PROVIDER_INCOMPLETE');
+ // A native lookup continuation must echo the provider's original parts,
+ // including thought signatures. Those parts never reach a browser event.
+ return {candidates:[{finishReason:'STOP',content:{role:'model',parts:hasCalls?parts:[{text}]}}],usageMetadata:api==='interactions'?{promptTokenCount:usage.total_input_tokens||0,candidatesTokenCount:usage.total_output_tokens||0,thoughtsTokenCount:usage.total_thought_tokens||0}:usage};
 }
 
 // Decode only complete JSON keys and the visible text string. Partial escapes

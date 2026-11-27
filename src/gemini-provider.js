@@ -20,13 +20,15 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
  for(let index=0;index<candidates.length;index++){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
   const selected=candidates[index];if(!GEMINI_TEXT_MODELS.includes(selected))throw Error('INVALID_PROVIDER_MODEL');
-  const stable=transport==='stableActions',actions=transport==='actions'||stable,live=transport==='interactions'||transport==='actions'&&(preferredApi==='generateContent'?index===1:index===0),api=live?'interactions':'generateContent';
-  const timeout=new AbortController(),timer=setTimeout(()=>timeout.abort(new DOMException('Attempt timed out','TimeoutError')),timeoutMs);
+  const dialogue=transport==='dialogue',stable=transport==='stableActions',actions=transport==='actions'||stable;
+  const live=transport==='interactions'||transport==='actions'&&(preferredApi==='generateContent'?index===1:index===0),api=live?'interactions':'generateContent';
+  const duration=Array.isArray(timeoutMs)?(timeoutMs[index]??timeoutMs[0]):timeoutMs;
+  const timeout=new AbortController(),timer=setTimeout(()=>timeout.abort(new DOMException('Attempt timed out','TimeoutError')),duration);
   let retryAfter=0;
   try{
    // Use the current stateless API for actions first, then a bounded plain-text
    // generateContent alternate. Neither path enables native tools/JSON decoding.
-   const prepared=actions?actionRequest(payload):payload;
+   const prepared=actions?actionRequest(payload):dialogue?{...payload,generationConfig:{...payload.generationConfig,thinkingConfig:{thinkingLevel:selected==='gemini-3.5-flash-lite'?'low':'medium'}}}:payload;
    // Flash-Lite supports minimal thinking for latency-sensitive store actions.
    // The alternate 3.8 model supports low, not minimal. Never send an unsupported level.
    if(stable)prepared.generationConfig={
@@ -40,7 +42,9 @@ export async function requestGemini({apiKey,primary,model,payload,signal,transpo
    const hint=response.headers.get('retry-after');if(hint)retryAfter=/^\d+(?:\.\d+)?$/.test(hint)?Number(hint)*1000:Math.max(0,Date.parse(hint)-Date.now());
    if(!response.ok){const info=await untilAbort(()=>boundedJson(response,16000,combined),combined).catch(()=>({}));throw problem(response.status,info)}
    const sse=streaming&&/text\/event-stream/i.test(response.headers.get('content-type')||'');
-   const raw=await untilAbort(()=>sse?readGeminiStream(response,{api,signal:combined,onTextDelta}):boundedJson(response,180000,combined),combined),normalized=live&&!sse?interactionResponse(raw):raw,data=actions?actionResponse(normalized):normalized;if(!Array.isArray(data.candidates)||!data.candidates.length)throw Error('PROVIDER_RESPONSE_INVALID');
+   const raw=await untilAbort(()=>sse?readGeminiStream(response,{api,signal:combined,onTextDelta,allowFunctions:dialogue}):boundedJson(response,180000,combined),combined);
+   const normalized=live&&!sse?interactionResponse(raw):raw,data=actions?actionResponse(normalized):normalized;
+   if(!Array.isArray(data.candidates)||!data.candidates.length)throw Error('PROVIDER_RESPONSE_INVALID');
    onAttempt({model:selected,transport,api,attempt:index+1,ok:true});return {data,model:selected,api,fallback:index>0};
   }catch(error){
    if(signal?.aborted)throw signal.reason||error;

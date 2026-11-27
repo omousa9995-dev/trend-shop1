@@ -33,8 +33,10 @@ export async function consumeLumaStream(response,onEvent,signal,{idleMs=0}={}){
  }
 }
 
-export function appendLumaHistory(history,user,answer){
- const items=[...history,{role:'user',text:user.slice(0,1500)},{role:'model',text:answer.slice(0,2400)}].slice(-10);
+export function appendLumaHistory(history,user,answer,productIds=[]){
+ const ids=[...new Set(productIds)].filter(id=>typeof id==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(id)).slice(0,3);
+ const references=ids.length?'\nالمنتجات المقترحة: '+ids.join(', '):'';
+ const items=[...history,{role:'user',text:user.slice(0,1500)},{role:'model',text:answer.slice(0,2400-references.length)+references}].slice(-10);
  while(items.length>2&&items.reduce((n,item)=>n+item.text.length,0)>10000)items.splice(0,2);
  return items;
 }

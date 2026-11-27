@@ -98,7 +98,7 @@ test('The idle reader releases even if the upstream keeps the connection open',a
  assert.equal(cancelled,true);
 });
 
-test('The 15-second deadline aborts an unresponsive fetch, unlocks the composer and keeps the next draft intact',async()=>{
+test('The 39-second deadline aborts an unresponsive fetch, unlocks the composer and keeps the next draft intact',async()=>{
  let calls=0,stalledSignal,scheduledMs;
  const {w,api,send}=await ui(async(url,{signal})=>{
   calls++;
@@ -107,16 +107,16 @@ test('The 15-second deadline aborts an unresponsive fetch, unlocks the composer 
  });
  const set=w.setTimeout.bind(w);
  w.setTimeout=(fn,ms,...args)=>{
-  if(ms===15000){scheduledMs=ms;return set(fn,8,...args);}
+  if(ms===39000){scheduledMs=ms;return set(fn,8,...args);}
   return set(fn,ms,...args);
  };
  try{
   send('السؤال الأول');
   w.document.querySelector('textarea').value='مسودة السؤال التالي';
   await until(()=>api.dialog.getAttribute('aria-busy')==='false');
-  assert.equal(scheduledMs,15000);
+  assert.equal(scheduledMs,39000);
   assert.equal(stalledSignal.aborted,true);
-  assert.match(api.dialog.querySelector('.luma-notice').textContent,/صار ضغط بسيط/);
+  assert.match(api.dialog.querySelector('.luma-notice').textContent,/ما اكتمل الرد/);
   assert.equal(api.dialog.querySelector('.luma-send').disabled,false);
   api.dialog.querySelector('[data-luma-retry]').click();
   await until(()=>calls===2&&api.dialog.getAttribute('aria-busy')==='false');

@@ -1,10 +1,11 @@
 import {savedLumaProfile,saveLumaPreferences,normalizeLamaProfile,captureLamaPreferences,lumaShortcuts,lumaGuideQuestions,skinNames,concernNames,profileChoices} from './luma-profile.js?v=5.23.5';
 import {preparePhotoFile} from './prepare-photo.js?v=5.21.0';
-import {consumeLumaStream,appendLumaHistory} from './luma-stream.js?v=5.23.5';
+import {consumeLumaStream,appendLumaHistory} from './luma-stream.js?v=5.23.11';
 const make=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el};
-const TURN_TIMEOUT_MS = 15000;
-const RETRY_MESSAGE = 'ثواني حبيبتي، صار ضغط بسيط. جرّبي ابعتيلي مرة تانية.';
-const STREAM_IDLE_MS = 10000;
+const TURN_TIMEOUT_MS = 39000;
+const RETRY_MESSAGE = 'ما اكتمل الرد هالمرة. اضغطي «إعادة المحاولة» وبرجع لنفس سؤالكِ.';
+const STREAM_IDLE_MS = 13000;
+const progressText={catalog:'لُمى بتراجع تفاصيل سؤالكِ…',thinking:'لُمى بتربط التفاصيل من المحادثة…',retry:'لُمى بتعيد المحاولة…'};
 const normalizeChoice=value=>value.trim().replace(/[٠-٩]/g,digit=>String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit))).replace(/[–—]/g,'-').replace(/\s+/g,'').replace(/[؟.?!]/g,'');
 const money=n=>(n/1000).toLocaleString('ar-JO',{minimumFractionDigits:2,maximumFractionDigits:2})+' د.أ';
 const catalogPrompt={price:'كم سعر ',notes:'احكيلي عن نفحات ',usage:'طريقة استخدام ',details:'احكيلي عن '};
@@ -154,7 +155,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   for(const field of ['area','lifeStage'])if(profileChoices[field].includes(data.profile[field]))changes[field]=data.profile[field];
   Object.assign(profile,changes);
   if($('[data-luma-remember]').checked&&Object.keys(changes).length)remember();
- }if(data.type==='profile')return;if(data.type==='followup'){appendTeam(data.team);return}if(data.type==='question')renderQuestion(data.question);else if(data.type==='products')renderCards(data);else if(data.type==='handoff'){quick.replaceChildren();if(data.message)bubble(data.message);appendTeam(data.team)}else if(data.type==='answer'&&data.message)bubble(data.message);else if(data.message)bubble(data.message)}
+ }if(data.type==='profile')return;if(data.type==='followup'){appendTeam(data.team);return}if(data.type==='question')renderQuestion(data.question);else if(data.type==='products')renderCards(data);else if(data.type==='handoff'){quick.replaceChildren();if(data.message)bubble(data.message);if(data.team)appendTeam(data.team)}else if(data.type==='answer'&&data.message)bubble(data.message);else if(data.message)bubble(data.message)}
  function appendTeam(team){const link=make('a',team?.label||'تواصلي مع فريق Trend Shop','luma-team');link.href=team?.href?.startsWith('https://wa.me/962790025430')?team.href:'https://wa.me/962790025430';link.target='_blank';link.rel='noopener noreferrer';log.append(link);scroll()}
  function finishTurn(turn,{keepForRetry=false}={}){
   if(activeTurn!==turn)return;
@@ -229,6 +230,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   dialog.dataset.lumaProviderTrace='[]';
   delete dialog.dataset.lumaResponseMs;
   let failed=false,answer='',historyNotes='',committed=false,done=false;
+  const referredProducts=[];
   const renderText=text=>{
    answer=text;
    if(!text){turn.reply?.remove();turn.reply=null;return;}
@@ -246,16 +248,17 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     dialog.dataset.lumaProviderReason=data.reason||'';
     dialog.dataset.lumaTransport=data.transport||'';
     dialog.dataset.lumaProviderStatus=data.ok?'ok':String(data.status||data.reason);
+   }else if(event==='progress'){
+    if(progressText[data.phase])$('.luma-head p').textContent=progressText[data.phase];
    }else if(event==='replace')renderText(data.text||'');
    else if(event==='delta')renderText(answer+(data.text||''));
    else if(['products','question','handoff','notice','followup','profile'].includes(event)){
     renderTool({...data,type:event});
     if(event==='question'&&data.question?.text){committed=true;historyNotes+=' '+data.question.text;}
-    if(event==='products'&&data.routine?.length){committed=true;historyNotes+='\nالمنتجات المقترحة: '+data.routine.map(p=>p.id).join(', ');}
+    if(event==='products'&&data.routine?.length){committed=true;referredProducts.push(...data.routine.map(p=>p.id));}
     if(event==='handoff'&&data.message){committed=true;historyNotes+=' '+data.message;}
    }else if(event==='reference'){
-    const ids=(Array.isArray(data.productIds)?data.productIds:[]).filter(id=>typeof id==='string'&&/^TS[A-Z0-9-]{4,64}$/.test(id)).slice(0,3);
-    if(ids.length)historyNotes+='\nالمنتجات المقترحة: '+ids.join(', ');
+    if(Array.isArray(data.productIds))referredProducts.push(...data.productIds.slice(0,3));
    }else if(event==='error'){
     failed=true;
     notice.textContent=data.message||'جرّبي مرة ثانية.';
@@ -277,14 +280,14 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     try{await consumeLumaStream(response,onEvent,signal,{idleMs:STREAM_IDLE_MS});break;}
     catch(error){
      if(activeTurn!==turn||signal.aborted||attempt>0||committed||data.image||!['LUMA_STREAM_ENDED','LUMA_STREAM_IDLE'].includes(error.message))throw error;
-     renderText('');
+     renderText('');referredProducts.length=0;historyNotes='';
      $('.luma-head p').textContent='بنحاول نرجّع الاتصال…';
     }
    }
    if(activeTurn!==turn)return;
    if(!done&&!failed)throw Error('LUMA_STREAM_ENDED');
    if(!failed){
-    history=appendLumaHistory(history,text||'سؤال مع صورة اختيارية.',answer+historyNotes);
+    history=appendLumaHistory(history,text||'سؤال مع صورة اختيارية.',answer+historyNotes,referredProducts);
     clearPhoto();
    }
   }catch(error){
