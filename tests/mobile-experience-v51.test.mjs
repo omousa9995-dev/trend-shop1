@@ -10,7 +10,7 @@ import {createSiteSettingsManager} from '../public/site-settings-admin.js';
 import worker,{_test} from '../src/worker.js';
 const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8'),json=p=>JSON.parse(read(p));
 const catalog=json('public/catalog.json'),offers=json('public/campaign-offers.json'),pause=()=>new Promise(r=>setTimeout(r,5));
-async function until(fn){for(let n=0;n<120;n++){if(fn())return;await pause()}assert.ok(fn(),'state did not arrive')}
+async function until(fn,ms=600){for(const end=Date.now()+ms;Date.now()<end;){if(fn())return;await pause()}assert.ok(fn(),'state did not arrive')}
 async function open(t,{path='#/product/TS0081',cart=[],products=catalog,live=false,settings=DEFAULT_SITE_SETTINGS,onOrder,onStatus,onCatalog,beforeReady,reviews=[]}={}){
  const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));const dom=new JSDOM(read('public/index.html'),{url:'https://trendjo.pages.dev/'+path,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});t.after(()=>dom.window.close());const w=dom.window,d=w.document,sent=[];
  w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};w.loadContactPhone=loadContactPhone;w.localStorage.setItem('trend-shop-cart-v1',JSON.stringify(cart));
@@ -40,12 +40,14 @@ test('Discover menu opens the quiz below All Products and refreshes a sold-out r
  assert.equal(d.querySelector('#drawer').hidden,true);
  const modal=d.querySelector('#skinQuizDialog');
  assert.equal(modal.open,true);
- for(const answer of ['مشدودة أو جافة','لمعة قليلة مع جفاف أو شدّ','نادرًا','الترطيب وتخفيف إحساس الشدّ','خطوتين أساسيتين']){
+ for(const answer of ['بحسّ بشدّ وبدي أرطّبها فورًا','لمعة قليلة مع جفاف أو شدّ','بشرتي عادةً بتتقبّله من غير إزعاج','الترطيب وتخفيف إحساس الشدّ','خطوتين أساسيتين']){
   const button=[...modal.querySelectorAll('button')].find(button=>button.textContent===answer);
   assert.ok(button,answer);
   button.click();
  }
- await until(()=>modal.querySelector('a[href="/product/TS9001"]'));
+ assert.ok(modal.querySelector('.skin-quiz-analysis'));
+ assert.equal(modal.querySelector('.skin-quiz-summary'),null);
+ await until(()=>modal.querySelector('a[href="/product/TS9001"]'),3000);
  assert.equal(modal.querySelectorAll('.skin-quiz-product').length,2);
  assert.match(modal.textContent,/6.00/);
  first.stock=0;
@@ -136,7 +138,7 @@ test('Owner settings editor saves the participation switch through its normal ex
 });
 
 test('Korean gateway and collection use the new universe assets and customer headings omit edit',async t=>{
- const {d}=await open(t,{path:'#/'});assert.match(d.querySelector('.category-korean img').src,/korean-care-brands-card-v552/);assert.doesNotMatch(d.querySelector('#app').textContent,/\bedit\b/i);assert.ok(d.querySelector('.logo .wordmark-trend'));const page=await open(t,{path:'#/shop?collection=korean-care'});assert.match(page.d.querySelector('.korean-universe-hero img').src,/korean-care-brands-cover-v552/);assert.equal(page.d.querySelector('h1').textContent,'Korean care');
+ const {d}=await open(t,{path:'#/'});assert.match(d.querySelector('.category-korean img').src,/korean-care-sakura/);assert.doesNotMatch(d.querySelector('#app').textContent,/\bedit\b/i);assert.ok(d.querySelector('.logo .wordmark-trend'));const page=await open(t,{path:'#/shop?collection=korean-care'});assert.match(page.d.querySelector('.korean-universe-hero img').src,/korean-care-brands-cover-v552/);assert.equal(page.d.querySelector('h1').textContent,'Korean care');
 });
 
 test('Paused review endpoints reject old forms and uploads, while the admin switch and moderation remain available',async()=>{

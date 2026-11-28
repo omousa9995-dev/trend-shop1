@@ -22,13 +22,14 @@ test('Five-answer quiz uses skin signals independently of sensitivity, goal and 
  assert.equal(quizSkinProfile({sensitive:'yes'}).skinType,'unknown');
 });
 
-test('The skincare emoji card runs all five questions and shows the result outside Luma',t=>{
+test('The skincare quiz analyzes five answers before showing the result and a visible Luma handoff',async t=>{
  const html=readFileSync(new URL('../public/index.html',import.meta.url),'utf8');
  const dom=new JSDOM(html,{url:'https://trend.test/'}),d=dom.window.document;
  t.after(()=>dom.window.close());
  dom.window.HTMLDialogElement.prototype.showModal=function(){this.open=true};
  dom.window.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new dom.window.Event('close'))};
- const quiz=installSkinQuiz(d);
+ let handoff;
+ const quiz=installSkinQuiz(d,{continueWithLuma:profile=>{handoff=profile;}});
  quiz.update(true,'ar');
  const card=d.querySelector('[data-skin-quiz-entry]');
  assert.equal(card.hidden,false);
@@ -40,7 +41,7 @@ test('The skincare emoji card runs all five questions and shows the result outsi
   assert.ok(button,'Missing choice '+text);
   button.click();
  };
- const labels=['مشدودة أو جافة','على الأنف والجبهة أو الذقن','غالبًا','تخفيف مظهر اللمعة','خطوات للصباح والمساء'];
+ const labels=['بحسّ بشدّ وبدي أرطّبها فورًا','على الجبهة والأنف والذقن، والخدود أقل','بلاحظ احمرار أو لسعة بسهولة','تخفيف مظهر اللمعة','خطوات للصباح والمساء'];
  for(const [step,label] of labels.entries()){
   const progress=d.querySelector('.skin-quiz-dialog progress');
   assert.equal(progress.max,5);
@@ -52,10 +53,19 @@ test('The skincare emoji card runs all five questions and shows the result outsi
   }
   choose(label);
  }
+ assert.match(d.querySelector('.skin-quiz-analysis').textContent,/بنحلّل إجاباتكِ/);
+ assert.equal(d.querySelector('.skin-quiz-summary'),null);
+ await new Promise(resolve=>setTimeout(resolve,2010));
+ assert.equal(d.querySelector('.skin-quiz-analysis'),null);
  assert.match(d.querySelector('.skin-quiz-dialog').textContent,/مختلطة/);
  assert.match(d.querySelector('.skin-quiz-dialog').textContent,/تتأثر بسهولة/);
  assert.match(d.querySelector('.skin-quiz-dialog').textContent,/تخفيف مظهر اللمعة/);
  assert.equal(d.querySelector('#lumaChat'),null);
+ const continuation=d.querySelector('.skin-quiz-luma');
+ assert.match(continuation.textContent,/كمّلي مع لُمى/);
+ continuation.click();
+ assert.equal(handoff.skinType,'combination');
+ assert.equal(handoff.sensitive,'yes');
  choose('إعادة الاختبار');
  assert.equal(d.querySelector('.skin-quiz-dialog progress').value,1);
  assert.equal(d.querySelector('.skin-quiz-selected'),null);

@@ -265,7 +265,7 @@ test('Image upload stays in the owner draft, retains text, saves once and can re
  assert.equal(posts.length,0);assert.equal(root.querySelector('[data-image-preview=koreanCard]').getAttribute('src'),path);
  assert.equal(root.querySelector('[name=heroTitleEn]').value,'Keep this unsaved heading');
  await root.querySelector('[data-site-form]').onsubmit(new dom.window.Event('submit',{cancelable:true}));assert.equal(posts.length,1);assert.equal(posts[0].settings.siteImages.koreanCard,path);assert.equal(posts[0].settings.heroTitleEn,'Keep this unsaved heading');
- root.querySelector('[data-site-image-reset=koreanCard]').click();assert.match(root.querySelector('[data-image-preview=koreanCard]').getAttribute('src'),/korean-care-brands-card-v552/);assert.equal(posts.length,1);
+ root.querySelector('[data-site-image-reset=koreanCard]').click();assert.match(root.querySelector('[data-image-preview=koreanCard]').getAttribute('src'),/korean-care-sakura/);assert.equal(posts.length,1);
 });
 
 test('Invoice gift controls persist across admin sessions, reject stale writes and survive appearance restores',async t=>{

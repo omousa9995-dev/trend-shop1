@@ -1,6 +1,6 @@
 import {channelDraft} from './whatsapp-channel.js?v=5.23.1';
 import {uploadSiteImage} from './site-image-upload.js?v=5.6.0';
-import {DEFAULT_SITE_SETTINGS,whatsappChannelUrl,HOME_SECTIONS,PRODUCT_SECTIONS,normalizeSiteSettings,SITE_IMAGE_SLOTS,siteImageUrl,isSiteImagePath} from './site-settings.js?v=5.23.1';
+import {DEFAULT_SITE_SETTINGS,whatsappChannelUrl,HOME_SECTIONS,PRODUCT_SECTIONS,normalizeSiteSettings,SITE_IMAGE_SLOTS,siteImageUrl,isSiteImagePath} from './site-settings.js?v=5.23.15';
 import {curatedProducts} from './merchandising.js';
 const safe=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fields={storeName:'اسم المتجر',sloganAr:'الشعار بالعربية',sloganEn:'الشعار بالإنجليزية',heroTitleAr:'عنوان الواجهة بالعربية',heroTitleEn:'عنوان الواجهة بالإنجليزية',heroTextAr:'شرح الواجهة بالعربية',heroTextEn:'شرح الواجهة بالإنجليزية'};

@@ -21,7 +21,7 @@ export function productPageHtml(shell,product,language='ar',summary=null,globalR
  let html=replaceShellMetadata(shell,{...meta,type:'product',language,structuredData:jsonLd(productStructuredData(product,language,summary)),content:seoProductContent(product,language,summary,globalRating)});
  html=html.replace(/<!-- LUMA_(HEADER|FOOTER)_START -->[\s\S]*?<!-- LUMA_\1_END -->/g,'');
  html=html.replace('</head>','<link rel="alternate" hreflang="ar" href="'+escape(productUrl(product.id))+'"/><link rel="alternate" hreflang="en" href="'+escape(productUrl(product.id,'en'))+'"/></head>')
-  .replace(/<link rel="preload" as="image" href="\/images\/editorial\/beauty-hero-v2.webp"\/>/,'<link rel="preload" as="image" href="'+escape(meta.image)+'"/>');
+  .replace(/<link rel="preload" as="image" href="\/images\/editorial\/beauty-hero-(?:v2|trend-neon)\.webp"\/>/,'<link rel="preload" as="image" href="'+escape(meta.image)+'"/>');
  return html;
 }
 export async function productPage(request,env){

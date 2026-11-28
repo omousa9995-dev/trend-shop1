@@ -8,7 +8,7 @@ const STREAM_IDLE_MS = 13000;
 const progressText={catalog:'لُمى بتراجع تفاصيل سؤالكِ…',thinking:'لُمى بتربط التفاصيل من المحادثة…',retry:'لُمى بتعيد المحاولة…'};
 const normalizeChoice=value=>value.trim().replace(/[٠-٩]/g,digit=>String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit))).replace(/[–—]/g,'-').replace(/\s+/g,'').replace(/[؟.?!]/g,'');
 const money=n=>(n/1000).toLocaleString('ar-JO',{minimumFractionDigits:2,maximumFractionDigits:2})+' د.أ';
-const catalogPrompt={price:'كم سعر ',notes:'احكيلي عن نفحات ',usage:'طريقة استخدام ',details:'احكيلي عن '};
+const catalogPrompt={price:'كم سعر ',notes:'احكيلي عن نفحات ',usage:'طريقة استخدام ',details:'احكيلي عن ',display:'اعرضي '};
 let instance;
 export async function mountLumaWidget({status:initial,standalone=false}={}){
  if(instance)return instance;

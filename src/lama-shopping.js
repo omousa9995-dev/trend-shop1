@@ -1,6 +1,6 @@
 import {normalizeSearch} from '../public/shop-tools.js';
 import {shippingFee} from '../public/commerce.js';
-import {latestSuggestedIds, namedCatalogMatches, usageReply} from './lama-catalog.js';
+import {latestSuggestedIds, mentionedCatalogProducts, namedCatalogMatches, usageReply} from './lama-catalog.js';
 import {lumaProductAllowed, lumaText} from './luma-care-knowledge.js';
 
 export const FRAGRANCE_AUDIENCES = ['women','men','unisex'];
@@ -95,6 +95,45 @@ const isEnglish = message => !/[\u0600-\u06ff]/.test(message);
 const nameOf = (p,en) => en?p.nameEn||p.name:p.name;
 const money = (fils,en) => (fils/1000).toFixed(2)+(en?' JOD':' د.أ');
 const firstSentence = text => lumaText(text,440).split(/(?<=[.!؟])\s+|\n/)[0];
+
+const cardVerb = /^(?:(?:طيب|تمام|ممكن|لو سمحتي|please|okay) )*(?:(?:ارسلي(?:لي)?|ارسل لي|ابعتي(?:لي)?|ابعثي(?:لي)?|فرجيني|ورجيني|وريني|اعرضي(?:لي)?|اعطيني)(?: لي)?|(?:send|show|give) me)(?: |$)/;
+const productReference = /^(?:(?:رابط|لينك|بطاق[هة]|the link to) )?(?:المنتج|هالمنتج|هاد المنتج|هدا المنتج|هذا المنتج|هالاختيار|the product|the item|it|the link)(?: (?:الاول|الثاني|التاني|الثالث|الاخير|اللي.{1,24}|you (?:recommended|suggested)))?$/;
+const sendPronoun = /^(?:(?:طيب|تمام|ممكن) )?(?:ارسليه|ارسليها|ابعتيه|ابعتيها|ابعثيه|ورجيني اياه|send it|show it)$/;
+
+export function productCardIntent(message) {
+  const text = normalizeSearch(message);
+  if (noProducts.test(text)) return false;
+  const target = text.replace(cardVerb, '');
+  return sendPronoun.test(text) || productReference.test(text) ||
+    (target !== text && !/طريق[هة]|كيف|قبل|بعد|مكونات|سعر|رد|نص|معلومات|تفاصيل|description|directions|instructions|ingredients|price/.test(target));
+}
+
+export function resolveRequestedCard(input, catalog) {
+  const text = normalizeSearch(input.message);
+  const en = isEnglish(input.message);
+  const target = text.replace(cardVerb, '').replace(/^(?:رابط|لينك|بطاق[هة]|the link (?:to|for)) /, '');
+  const pointsBack = sendPronoun.test(text) || productReference.test(text) || productReference.test(target);
+  let products = pointsBack ? [] : namedCatalogMatches(target, catalog);
+  if (pointsBack) {
+    const latest = input.history.at(-1);
+    if (latest?.role === 'model') {
+      const ids = latestSuggestedIds([latest]);
+      products = ids.length ? ids.map(id => catalog.find(p => p.id === id)) : mentionedCatalogProducts(latest.text, catalog);
+    }
+    const index = /الاول|\bfirst\b/.test(target) ? 0 : /الثاني|التاني|\bsecond\b/.test(target) ? 1 :
+      /الثالث|\bthird\b/.test(target) ? 2 : /الاخير|\blast\b/.test(target) ? products.length-1 : null;
+    if (index !== null) products = products.slice(index < 0 ? products.length : index, index+1);
+  }
+  if (products.length === 1 && products[0]) return products[0];
+  const choices = products.filter(Boolean).map(p => ({label:nameOf(p,en),value:p.id}));
+  if (choices.length || pointsBack) return {type:'question',question:{
+    field:'catalogProduct',mode:'display',
+    text:choices.length?(en?'Which one would you like to open?':'أي واحد فيهم بدك تشوفي بطاقته؟'):
+      (en?'Which product should I look up? You can send me its name or brand.':'أي منتج قصدك؟ ابعتيلي اسمه أو ماركته وبفتحه لكِ.'),
+    choices
+  }};
+  return null;
+}
 
 function fragranceReason(p,request,en) {
   const profile=p.fragrance?.styles||[];

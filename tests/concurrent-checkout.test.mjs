@@ -53,9 +53,40 @@ function fixture(t, stock) {
   const gift=(action,wallet,token)=>request('/api/invoice-gift/'+action,{method:'POST',
     headers:{origin:'https://trend.test','content-type':'application/json','x-invoice-gift-wallet':wallet},
     body:JSON.stringify(token?{token}:{})}).then(r=>r.json());
-  const admin=async()=>{const cookie='ts_admin='+await _test.makeSession(env);return (await request('/api/admin/orders',{headers:{cookie}})).json();};
-  return {sql,send,emails,pending,request,gift,admin};
+  const session=async()=> 'ts_admin='+await _test.makeSession(env);
+  const admin=async()=> (await request('/api/admin/orders',{headers:{cookie:await session()}})).json();
+  return {sql,send,emails,pending,request,gift,admin,session};
 }
+
+test('The admin can set every SKU to one stock number and subsequent orders still deduct from it',async t=>{
+  const f=fixture(t,7);
+  const insert=f.sql.prepare('INSERT INTO products(id,name,brand,category,reference_price_fils,price_fils,stock,approved,active) VALUES(?,?,?,?,?,?,?,?,?)');
+  insert.run('TS9002','مسودة','QA','المكياج',3000,2000,4,0,1);
+  insert.run('TS9003','عطر مخفي','QA','العطور',3000,1500,0,1,0);
+  const path='/api/admin/products/stock';
+  const headers={'content-type':'application/json',origin:'https://trend.test','x-trend-admin':'1'};
+  const update=(stock,auth={})=>f.request(path,{method:'POST',headers:{...headers,...auth},body:JSON.stringify({stock})});
+  const read=()=>f.sql.prepare('SELECT stock,price_fils,active,approved FROM products ORDER BY id').all().map(row=>({...row}));
+  const original=read();
+  const auth={cookie:await f.session()};
+  assert.equal((await update(100)).status,401);
+  assert.equal((await update(100,{...auth,origin:'https://another.test'})).status,403);
+  assert.equal((await update(100,{...auth,'x-trend-admin':''})).status,403);
+  assert.equal((await f.request(path,{headers:{...headers,...auth}})).status,404);
+  for(const invalid of [null,undefined,'100',-1,1.5,100001]){
+    assert.equal((await update(invalid,auth)).status,400);
+  }
+  assert.deepEqual(read(),original);
+  const updated=await update(100,auth);
+  assert.equal(updated.status,200);
+  assert.deepEqual(await updated.json(),{stock:100,updated:3});
+  assert.deepEqual(read(),original.map(product=>({...product,stock:100})));
+  assert.equal((await f.send(0,'order-after-admin-stock-test')).status,201);
+  await Promise.all(f.pending);
+  assert.deepEqual(read().map(p=>p.stock),[99,100,100]);
+  assert.equal((await update(0,auth)).status,200);
+  assert.deepEqual(read().map(p=>p.stock),[0,0,0]);
+});
 
 test('Fifty simultaneous local customers cannot oversell the last three units or send mail for rejected orders',async t=>{
   const f=fixture(t,3);

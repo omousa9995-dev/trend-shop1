@@ -1,6 +1,6 @@
 import {requestGemini} from './gemini-provider.js';
 import {untilAbort} from './gemini-stream.js';
-import {productsContext, namedCatalogMatches, latestSuggestedIds} from './lama-catalog.js';
+import {productsContext, namedCatalogMatches, latestSuggestedIds, requestedProductTypes} from './lama-catalog.js';
 import {lumaBudgetNeutralText} from './luma-care-knowledge.js';
 import {lumaCatalogFacts} from './luma-store-facts.js';
 import {lamaSystem} from './lama-system.js';
@@ -15,7 +15,9 @@ export const requestsStoreContact = message=>/واتس|whatsapp|رقمكم|رق�
 export function wantsLamaRecommendations(input){
  const message=normalizeSearch(input.message);
  if(/بدون منتجات|من غير منتجات|مش بدي منتجات|نصايح بس|نصائح فقط|without products|advice only/.test(message))return false;
- return input.guided||['routine','sunscreen','makeup','concealer'].includes(input.intent)||
+ const askingForType=requestedProductTypes(message).length>0&&
+  /^(?:(?:طيب|تمام|ممكن) )?(?:بدي|اريد|ابغي|دوريلي على|اعطيني|i want|i m looking for) /.test(message);
+ return input.guided||askingForType||['routine','sunscreen','makeup','concealer'].includes(input.intent)||
   /عندكم|من (?:عندكم|المتجر|موقعكم|منتجاتكم)|ترشحي|رشحي|اقترحي|شو اشتري|شو افضل|اي (?:ال)?منتج|اي (?:نوع|خيار) (?:بتنصح|تنصح)|بدي بديل|اريد شراء|\b(?:recommend|suggest|can i buy|from your store)\b/.test(message);
 }
 

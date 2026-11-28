@@ -3,14 +3,14 @@ export {DEFAULT_SITE_SETTINGS};
 export const HOME_SECTIONS={hero:'الواجهة الرئيسية',benefits:'مميزات التسوق',categories:'أقسام المنتجات',offers:'العروض والباكجات',picks:'اختيارات المتجر',moments:'لحظات الجمال',korean:'العناية الكورية',callout:'رسالة المتجر',deals:'أسعار لطيفة',reviews:'تجارب الزبائن',trust:'عروض لفترة محدودة'};
 export const PRODUCT_SECTIONS={hero:'الصور والسعر والاختيارات',navigation:'التنقل بين تفاصيل المنتج',about:'عن المنتج',fit:'ملاحظات قبل الاستخدام',usage:'طريقة الاستخدام',media:'الصور والفيديوهات',reviews:'التجارب الموثقة',faq:'الأسئلة الشائعة',recommendations:'المنتجات المقترحة',last:'دعوة الاختيار الأخيرة'};
 export const SITE_IMAGE_SLOTS=[
- {id:'hero',label:'صورة الواجهة الرئيسية',note:'الصورة الكبيرة أعلى المتجر',ratio:'3:2',url:'/images/editorial/beauty-hero-v2.webp'},
+ {id:'hero',label:'صورة الواجهة الرئيسية',note:'الصورة الكبيرة أعلى المتجر',ratio:'3:2',url:'/images/editorial/beauty-hero-trend-neon.webp'},
  {id:'skincare',label:'بطاقة العناية بالبشرة',ratio:'4:3',url:'/images/editorial/skincare-ritual.webp'},
  {id:'makeup',label:'بطاقة المكياج',ratio:'4:3',url:'/images/editorial/makeup-moment.webp'},
  {id:'hair',label:'بطاقة العناية بالشعر',ratio:'4:3',url:'/images/editorial/hair-ritual.webp'},
  {id:'body',label:'بطاقة العناية بالجسم',ratio:'4:3',url:'/images/editorial/body-ritual.webp'},
  {id:'fragrance',label:'بطاقة العطور',ratio:'4:3',url:'/images/editorial/fragrance-moment.webp'},
  {id:'tools',label:'بطاقة أدوات الجمال',ratio:'4:3',url:'/images/catalog/marketing/beauty-tools-gateway-nov3-462930c88ef9.webp'},
- {id:'koreanCard',label:'بطاقة Korean care',note:'البطاقة أسفل الأقسام الستة',ratio:'3:2',url:'/images/editorial/korean-care-brands-card-v552.webp'},
+ {id:'koreanCard',label:'بطاقة Korean care',note:'البطاقة أسفل الأقسام الستة',ratio:'3:2',url:'/images/editorial/korean-care-sakura.webp'},
  {id:'koreanCover',label:'غلاف صفحة Korean care',note:'الغلاف داخل صفحة العناية الكورية',ratio:'16:9',url:'/images/editorial/korean-care-brands-cover-v552.webp'},
  {id:'callout',label:'صورة رسالة المتجر',note:'الصورة بجانب «ابتسمي، فلا جميلة إلا أنتِ»',ratio:'4:5',url:'/images/editorial/makeup-moment.webp'}
 ];

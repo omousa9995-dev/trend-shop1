@@ -12,7 +12,7 @@ import {createExperienceMetricsPanel} from './experience-metrics-admin.js?v=5.9.
 import {createCustomerReportManager} from './customer-report-admin.js?v=5.7.2';
 import {createFeaturedVideoManager} from './product-featured-video-admin.js?v=5.4.0';
 import {pairPriceFils} from './pair-pricing.js?v=5.0.0';
-import {createSiteSettingsManager} from './site-settings-admin.js?v=5.23.1';
+import {createSiteSettingsManager} from './site-settings-admin.js?v=5.23.15';
 import {orderDisplayItems,orderLineTotal} from './order-presentation.js';
 import {createProductVideoManager} from './product-videos-admin.js?v=5.4.0';
 import {createReviewManager} from './reviews-admin.js?v=3.0.0';
@@ -110,6 +110,30 @@ async function printInvoices(orders){
 }
 $('#printToday').onclick=async()=>{if(preparingTodayInvoices||state.ordersLoading||state.ordersSaving)return;preparingTodayInvoices=true;syncInvoiceSelection();const message=$('#orderStatusMessage');message.textContent='جارٍ تحميل فواتير اليوم…';message.classList.remove('error');try{const j=await call('orders?filter=today');message.textContent='';await printInvoices(j.orders||[])}catch{message.textContent='تعذّر تحميل فواتير اليوم. تحققي من الاتصال وسجّلي الدخول مجددًا إذا انتهت الجلسة.';message.classList.add('error')}finally{preparingTodayInvoices=false;syncInvoiceSelection()}};
 async function loadProducts(){try{const j=await call('products');state.products=j.products||[];renderProducts()}catch(e){$('#productsBody').innerHTML=`<tr><td colspan="6">${safe(e.message)}</td></tr>`}}
+const bulkStockForm=$('#bulkStockForm');
+bulkStockForm.onsubmit=async event=>{
+ event.preventDefault();
+ const input=bulkStockForm.elements.stock;
+ const button=bulkStockForm.querySelector('button[type="submit"]');
+ if(button.disabled||!input.reportValidity())return;
+ const stock=input.valueAsNumber;
+ if(!confirm('تأكيد تعيين مخزون كل منتج إلى '+stock+'؟ سيحلّ هذا الرقم محلّ الكميات الحالية.'))return;
+ const message=$('#bulkStockMessage');
+ button.disabled=input.disabled=true;
+ message.classList.remove('error');
+ message.textContent='جارٍ تحديث المخزون…';
+ try{
+  const result=await call('products/stock','POST',{stock});
+  message.textContent='تم تعيين مخزون '+result.updated+' منتج إلى '+result.stock+' لكل منتج.';
+  input.value='';
+  await loadProducts();
+ }catch(error){
+  message.classList.add('error');
+  message.textContent='تعذّر تأكيد الحفظ. '+error.message;
+ }finally{
+  button.disabled=input.disabled=false;
+ }
+};
 function renderProducts(){
  updateOwnerCounts();
  const list=filterAdminProducts(state.products,{query:$('#productSearch').value,collection:$('#productCollectionFilter').value,category:$('#productCategoryFilter').value,status:$('#productStatusFilter').value});

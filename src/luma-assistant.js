@@ -9,8 +9,8 @@ import {lumaStoreReply,lumaDeliveryText,shortlistLumaCatalog,lumaCatalogFacts,ex
 import {shippingFee} from '../public/commerce.js';
 import {captureLamaPreferences,normalizeLamaProfile,lumaGuideQuestions} from '../public/luma-profile.js?v=5.23.5';
 import {lamaPolicyReply} from './lama-policies.js';
-import {isLamaUsageQuestion,usageMatches,usageReply,latestSuggestedIds,lookupLamaCatalog} from './lama-catalog.js';
-import {catalogQuestion,fragranceRequest,fragrancePlan,avoidScentSuggestions} from './lama-shopping.js';
+import {isLamaUsageQuestion,usageMatches,usageReply,latestSuggestedIds,lookupLamaCatalog,requestedProductTypes} from './lama-catalog.js';
+import {catalogQuestion,fragranceRequest,fragrancePlan,avoidScentSuggestions,productCardIntent,resolveRequestedCard} from './lama-shopping.js';
 import {requestLamaDialogue,cleanLamaDialogueText,requestsStoreContact} from './lama-dialogue.js';
 import {normalizeSearch} from '../public/shop-tools.js';
 import {LAMA_BACKUP_MODEL,requestLamaBackup} from './lama-backup.js';
@@ -296,6 +296,83 @@ function basicRoutineProduct(product,input){
   /لطيف|ترطيب|مرطب|gentle|hydrat|cream cleanser|mild|non[- ]?stripping/i.test(facts);
 }
 
+const simpleProduct = /^(?:(?:طيب|تمام) )?(?:(?:بدي|اريد|ممكن|اعطيني|اقترحي(?:لي)?|رشحي(?:لي)?|شو افضل|شو احسن|i want|recommend|best) )?(?:(?:ال)?غسول(?: للوجه| وجه)?|(?:ال)?منظف الوجه|(?:ال)?مرطب(?: للوجه)?|كريم ترطيب|واقي (?:ال)?شمس|face wash|(?:face )?cleanser|moisturi[sz]er|sunscreen)(?: (?:للبشر[هة]|لبشر[هة]|لبشرتي|for) (?:ال)?(?:مختلط[هة]|دهني[هة]|جاف[هة]|عادي[هة]|متوازن[هة]|حساس[هة]|(?:combination|dry|oily|normal|sensitive) skin))?$/;
+const faceSkinFits = {
+ dry:/جاف[هة]|جفاف|\bdry\b|hydrating/,
+ oily:/دهني[هة]|الدهون الزايد[هة]|oily|oil control/,
+ combination:/مختلط[هة]|combination/,
+ balanced:/متوازن[هة]|عادي[هة]|normal skin/
+};
+const broadFaceFit = /كل انواع البشر[هة]|جميع انواع البشر[هة]|all skin types/;
+const sensitiveFit = /حساس[هة]|خالي من العطر|غير معطر|sensitive|fragrance free/;
+const skinReply = {
+ 'جافة':'dry','دهنية':'oily','مختلطة':'combination','متوازنة':'balanced','عادية':'balanced',
+ dry:'dry',oily:'oily',combination:'combination',balanced:'balanced',normal:'balanced'
+};
+const skipSkin = /^(?:مش متاكد[هة]|ما بعرف|not sure|i don t know)$/;
+const skinAsk = 'كيف بتوصفي بشرتكِ أغلب الوقت؟';
+const skinAskEn = 'How would you describe your skin most days?';
+
+function simpleProductRequest(input){
+ const message=normalizeSearch(input.message);
+ const last=input.history.at(-1),prior=input.history.at(-2);
+ const clarified=last?.role==='model'&&(last.text.includes(skinAsk)||last.text.includes(skinAskEn))&&
+  prior?.role==='user'&&simpleProduct.test(normalizeSearch(prior.text))&&
+  (skipSkin.test(message)||Object.hasOwn(skinReply,message)||/^(?:بشرتي|my skin) /.test(message));
+ const query=clarified?prior.text:input.message;
+ if(!simpleProduct.test(normalizeSearch(query)))return null;
+ const type=requestedProductTypes(query)[0];
+ if(!type)return null;
+ const text=normalizeSearch(query);
+ const explicit=Object.entries(faceSkinFits).find(([,fits])=>fits.test(text))?.[0];
+ return {type,english:!/[\u0600-\u06ff]/.test(query),skinType:explicit||skinReply[message]||input.skinType,
+  sensitive:input.sensitive==='yes'||sensitiveFit.test(text),skip:clarified&&skipSkin.test(message)};
+}
+
+async function simpleProductReply(request,input,catalog,env){
+ const {type,english,skinType,sensitive,skip}=request;
+ const scoped={...input,area:'face',intent:'',skinType,sensitive:sensitive?'yes':input.sensitive};
+ if((!skinType||skinType==='unknown')&&!sensitive&&!skip){
+  const choices=english?Object.entries(faceSkinFits).map(([value])=>({label:value[0].toUpperCase()+value.slice(1),value})):
+   lumaGuideQuestions.find(q=>q.field==='skinType').choices;
+  return {type:'question',question:{field:'skinType',text:english?skinAskEn:skinAsk,
+   choices:[...choices,{value:'skip',label:english?'Not sure':'مش متأكدة'}]}};
+ }
+ const fit=faceSkinFits[skinType];
+ const ranked=catalog.flatMap(product=>{
+  if(product.type!==type||!product.gentleCandidate||product.careClass!=='everyday'||input.existingIds.includes(product.id))return [];
+  if(input.budgetFils!==null&&product.priceFils+(input.includeDelivery?shippingFee(product.priceFils):0)>input.budgetFils)return [];
+  const name=normalizeSearch(product.name+' '+product.nameEn);
+  if(/micellar|makeup remover|cleansing oil|cleansing balm|مزيل المكياج|زيت تنظيف|بلسم تنظيف|صابونه|صابونة|\bsoap\b/.test(name))return [];
+  const label=normalizeSearch([name,product.description,product.descriptionEn,...product.skinTypes,...product.benefits].join(' '));
+  if(/ساليسيل|salicyl|benzoyl|بنزويل|exfoliat|مقشر|تقشير/.test(label+' '+normalizeSearch(product.ingredients)))return [];
+  if(sensitive&&!sensitiveFit.test(label))return [];
+  const specific=!!fit&&fit.test(label);
+  if(type==='cleanser'&&skinType==='dry'&&!specific&&/oily|دهني[هة]|oil control|سيبيوم/.test(label))return [];
+  const score=specific?3:broadFaceFit.test(label)?2:basicRoutineProduct(product,scoped)?1:0;
+  return score?[{product,score}]:[];
+ }).sort((a,b)=>b.score-a.score);
+ const mostSuitable=ranked.filter(option=>option.score===ranked[0].score).map(option=>option.product);
+ const [product]=shortlistLumaCatalog(mostSuitable,scoped);
+ if(!product)return null;
+ const selection=await runLumaTool({name:'show_products',args:{area:'face',productIds:[product.id],
+  carePlan:english?'Here’s an option for that step from the current catalog.':'هاي بطاقة خيار من المتوفّر حاليًا. بتلاقي السعر وطريقة الاستخدام هون.'}},scoped,env,{currentCatalog:catalog});
+ return selection.type==='products'?selection:null;
+}
+
+async function requestedCardReply(input,catalog,env){
+ const product=resolveRequestedCard(input,catalog);
+ if(!product||product.type==='question')return product;
+ const english=!/[\u0600-\u06ff]/.test(input.message);
+ if(!product.available)return {type:'answer',message:english?'That product is currently sold out. Would you like an alternative?':'هالمنتج نافد حاليًا. بتحبّي أشوف لكِ بديل متوفّر؟'};
+ const area=product.areas.includes(input.area)?input.area:product.areas[0];
+ if(!area||!lumaProductAllowed(product,input))return null;
+ const scoped={...input,area,intent:'',existingIds:[],budgetFils:null};
+ const result=await runLumaTool({name:'show_products',args:{area,productIds:[product.id],
+  carePlan:english?'Here’s the product you asked for.':'تفضّلي، هاي بطاقة المنتج.'}},scoped,env,{currentCatalog:catalog});
+ return result.type==='products'?result:null;
+}
+
 async function recoverLumaReply(input,catalog,env){
  const english=!/[\u0600-\u06ff]/.test(input.message);
  if(input.image)return {type:'answer',message:english
@@ -347,6 +424,8 @@ export async function publicLumaChat(req,env,helpers,ctx){
  let factual,day;
  const nuanced=input.lama&&conditionalQuestion(input.message);
  const directUsage=input.lama&&!input.image&&!nuanced&&isLamaUsageQuestion(input.message);
+ const directCards=input.lama&&!input.image&&!directUsage&&!nuanced&&productCardIntent(input.message);
+ const simple=input.lama&&!input.image&&!directUsage&&!nuanced?simpleProductRequest(input):null;
  const fragrance=input.lama&&!directUsage&&!nuanced&&!tasteTradeoff(input.message)?fragranceRequest(input):null;
  const policy=input.lama&&!input.image&&!fragrance?(lamaPolicyReply(input.message)||
   (requestsStoreContact(input.message)?{text:'أكيد، بتقدري تتواصلي مع فريق المتجر على واتساب.',team:team()}:null)):null;
@@ -421,7 +500,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
       if(factual.team)send('followup',{team:factual.team});
       completed=true;done();return;
      }
-     if(intake&&!followup){present(intake);completed=true;done();return;}
+     if(intake&&!followup&&!simple){present(intake);completed=true;done();return;}
      if(input.lama)progress('catalog');
      // Each turn takes its facts from current inventory, even for a chat
      // opened before a product was published or its price/stock changed.
@@ -454,6 +533,12 @@ export async function publicLumaChat(req,env,helpers,ctx){
       }
      }
      if(input.lama&&!input.image){
+      const card=directCards&&catalogLoaded?await requestedCardReply(input,allCatalog,env):null;
+      if(card&&present(card)){completed=true;done('live-catalog');return;}
+      if(simple&&catalogLoaded){
+       const selection=await simpleProductReply(simple,input,catalog,env);
+       if(selection&&present(selection)){completed=true;done('live-catalog');return;}
+      }
       const answer=nuanced?null:catalogQuestion(input,allCatalog);
       if(answer&&present(answer)){
        if(answer.productId)send('reference',{productIds:[answer.productId]});

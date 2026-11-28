@@ -4,21 +4,23 @@ const unsure = ['unknown', 'مش متأكدة', 'Not sure'];
 const skinQuestions = [
   {
     key: 'afterWash',
-    prompt: ['بعد غسل وجهكِ بلطف وقبل الترطيب، كيف بتحسّي ببشرتكِ؟', 'How does your skin feel after gentle cleansing, before moisturizing?'],
+    theme: ['بعد الغسيل', 'After washing'],
+    prompt: ['بعد ما تغسلي وجهكِ، وقبل أي كريم، كيف بتحسّي ببشرتكِ؟', 'After washing your face and before applying cream, how does your skin feel?'],
     choices: [
-      ['dry', 'مشدودة أو جافة', 'Tight or dry'],
-      ['oily', 'بتلمع بأغلب الوجه', 'Shiny across most of my face'],
-      ['combination', 'الخدود جافة ووسط الوجه بيلمع', 'Dry cheeks and a shiny T-zone'],
-      ['balanced', 'مرتاحة، بدون شدّ أو لمعة واضحة', 'Comfortable, without tightness or noticeable shine'],
+      ['dry', 'بحسّ بشدّ وبدي أرطّبها فورًا', 'It feels tight and I want to moisturize right away'],
+      ['oily', 'ما بحسّ بشدّ واللمعة بترجع بسرعة', 'It feels comfortable and shine returns quickly'],
+      ['combination', 'خدودي بيشدّوا بس وسط وجهي مرتاح', 'My cheeks feel tight and the center feels comfortable'],
+      ['balanced', 'بتضلّ مرتاحة وملمسها متوازن', 'It stays comfortable and feels balanced'],
       unsure
     ]
   },
   {
     key: 'midday',
-    prompt: ['بنصّ اليوم، وين بتلاحظي اللمعة عادةً؟', 'Where do you usually see shine by midday?'],
+    theme: ['خلال اليوم', 'During the day'],
+    prompt: ['لما يمرّ نصّ اليوم، وين بتظهر اللمعة على وجهكِ؟', 'By midday, where does shine usually show up on your face?'],
     choices: [
       ['oily', 'بأغلب الوجه', 'Across most of my face'],
-      ['combination', 'على الأنف والجبهة أو الذقن', 'On my nose, forehead, or chin'],
+      ['combination', 'على الجبهة والأنف والذقن، والخدود أقل', 'On my forehead, nose or chin, less on my cheeks'],
       ['dry', 'لمعة قليلة مع جفاف أو شدّ', 'Little shine, with dryness or tightness'],
       ['balanced', 'لمعة خفيفة وبشرتي مرتاحة', 'A little shine, and my skin feels comfortable'],
       unsure
@@ -26,12 +28,14 @@ const skinQuestions = [
   },
   {
     key: 'sensitive',
-    prompt: ['لما تجرّبي منتجًا جديدًا، بتلاحظي احمرار أو لسعة بسهولة؟', 'When you try a new product, does your skin get red or sting easily?'],
-    choices: [['yes', 'غالبًا', 'Often'], ['no', 'نادرًا', 'Rarely'], unsure]
+    theme: ['مع منتج جديد', 'Trying a new product'],
+    prompt: ['لما تغيّري غسولكِ أو كريمكِ المعتاد، شو بصير غالبًا؟', 'What usually happens when you switch to a new cleanser or moisturizer?'],
+    choices: [['yes', 'بلاحظ احمرار أو لسعة بسهولة', 'I notice redness or stinging easily'], ['no', 'بشرتي عادةً بتتقبّله من غير إزعاج', 'My skin usually tolerates it comfortably'], unsure]
   },
   {
     key: 'goal',
-    prompt: ['شو أكثر شي حابة تهتمي فيه هالفترة؟', 'What would you most like to focus on right now?'],
+    theme: ['هدفكِ', 'Your goal'],
+    prompt: ['لو بدكِ تركّزي على شي واحد هالفترة، شو بتختاري؟', 'If you could focus on one thing right now, what would it be?'],
     choices: [
       ['dryness', 'الترطيب وتخفيف إحساس الشدّ', 'Moisture and a more comfortable feel'],
       ['shine', 'تخفيف مظهر اللمعة', 'Less visible shine'],
@@ -42,7 +46,8 @@ const skinQuestions = [
   },
   {
     key: 'routine',
-    prompt: ['كيف بتحبّي يكون روتينكِ؟', 'How would you like to organize your routine?'],
+    theme: ['وقتكِ', 'Your routine'],
+    prompt: ['باليوم العادي، أي روتين أسهل عليكِ تلتزمي فيه؟', 'On a typical day, which routine would be easiest to stick with?'],
     choices: [
       ['simple', 'خطوتين أساسيتين', 'Two essentials'],
       ['am-pm', 'خطوات للصباح والمساء', 'Morning and evening steps'],
@@ -65,6 +70,7 @@ const goalLabels = {
 };
 const title = ['اكتشفي بشرتكِ', 'Discover your skin'];
 const intro = ['5 أسئلة قصيرة، وبعدها اختيارات تناسب روتينكِ', '5 short questions, then picks for your routine'];
+const analysisTimeMs = 2000;
 
 export function quizSkinProfile({afterWash, midday, sensitive, goal, routine}) {
   const agreed = afterWash === midday && Object.hasOwn(skinTypes, afterWash);
@@ -134,6 +140,7 @@ export function installSkinQuiz(doc, {
     const answers = {};
     let step = 0;
     let request;
+    let analysisTimer;
     let restoreFocus = true;
     const modal = element('dialog', null, 'skin-quiz-dialog');
     dialog = modal;
@@ -149,6 +156,7 @@ export function installSkinQuiz(doc, {
     const body = element('div', null, 'skin-quiz-body');
     modal.append(header, body);
     modal.addEventListener('close', () => {
+      clearTimeout(analysisTimer);
       request?.abort();
       modal.remove();
       if (dialog === modal) dialog = undefined;
@@ -221,23 +229,41 @@ export function installSkinQuiz(doc, {
       panel.append(add);
     }
 
-    async function loadSelection(profile, panel) {
-      const controller = startRequest();
+    function readCatalog(controller) {
+      return Promise.resolve().then(() => loadCatalog(deadline(controller))).catch(() => null);
+    }
+
+    async function loadSelection(profile, panel, controller = startRequest(), catalog = readCatalog(controller)) {
       const progress = element('p', label(['بنشوف شو متوفر لروتينكِ…', 'Checking what is available for your routine…']), 'skin-quiz-status');
       progress.setAttribute('role', 'status');
       panel.replaceChildren(progress);
-      try {
-        const catalog = await loadCatalog(deadline(controller));
-        if (current(controller)) selection(profile, panel, catalog);
-      } catch {
-        if (!current(controller)) return;
-        progress.textContent = label(['ما قدرنا نقرأ التوفّر هالمرة. نتيجتكِ جاهزة فوق.', 'We could not check availability this time. Your result is above.']);
-        panel.append(action(label(['أعيدي المحاولة', 'Try again']), () => loadSelection(profile, panel), 'skin-quiz-secondary'));
+      const snapshot = await catalog;
+      if (!current(controller)) return;
+      if (snapshot) {
+        selection(profile, panel, snapshot);
+        return;
       }
+      progress.textContent = label(['ما قدرنا نقرأ التوفّر هالمرة. نتيجتكِ جاهزة فوق.', 'We could not check availability this time. Your result is above.']);
+      panel.append(action(label(['أعيدي المحاولة', 'Try again']), () => loadSelection(profile, panel), 'skin-quiz-secondary'));
     }
 
-    function result() {
+    function analyze() {
       const profile = quizSkinProfile(answers);
+      const controller = startRequest();
+      const catalog = readCatalog(controller);
+      const panel = element('div', null, 'skin-quiz-analysis');
+      const icon = element('span', '✦', 'skin-quiz-analysis-icon');
+      icon.setAttribute('aria-hidden', 'true');
+      const caption = element('h3', label(['بنحلّل إجاباتكِ…', 'Analyzing your answers…']));
+      panel.append(icon, caption);
+      body.append(panel);
+      focusTitle(caption);
+      analysisTimer = setTimeout(() => {
+        if (current(controller)) result(profile, controller, catalog);
+      }, analysisTimeMs);
+    }
+
+    function result(profile, controller, catalog) {
       const type = skinTypes[profile.skinType];
       const summary = element('h3', type
         ? label(['بشرتكِ على الأغلب ', 'Your skin most likely ']) + label(type)
@@ -262,25 +288,40 @@ export function installSkinQuiz(doc, {
           step = 0;
           render();
         }, 'skin-quiz-secondary'));
-      if (continueWithLuma) actions.append(action(label(['كمّلي مع لُمى', 'Continue with Luma']),
-        () => continueWithLuma(profile), 'skin-quiz-secondary'));
-      body.append(overview, plan, choices, actions);
+      body.replaceChildren(overview, plan);
+      if (continueWithLuma) {
+        const luma = action(null, () => continueWithLuma(profile), 'skin-quiz-luma');
+        const avatar = element('img');
+        avatar.src = '/images/editorial/beauty-hero-v2.webp';
+        avatar.alt = '';
+        avatar.width = avatar.height = 42;
+        const copy = element('span');
+        copy.append(element('strong', label(['كمّلي مع لُمى', 'Continue with Luma'])),
+          element('small', label(['اسأليها عن روتينكِ بناءً على إجاباتكِ', 'Ask about your routine using your quiz answers'])));
+        const arrow = element('span', label(['←', '→']), 'skin-quiz-luma-arrow');
+        arrow.setAttribute('aria-hidden', 'true');
+        luma.append(avatar, copy, arrow);
+        body.append(luma);
+      }
+      body.append(choices, actions);
       focusTitle(summary);
-      void loadSelection(profile, choices);
+      void loadSelection(profile, choices, controller, catalog);
     }
 
     function render() {
+      clearTimeout(analysisTimer);
       request?.abort();
       body.replaceChildren();
       const question = skinQuestions[step];
-      if (!question) { result(); return; }
-      if (step === 0) body.append(element('p', label(intro), 'skin-quiz-intro'));
-      const progressText = label(['السؤال ', 'Question ']) + (step + 1) + ' / ' + skinQuestions.length;
+      if (!question) { analyze(); return; }
+      const meter = element('div', null, 'skin-quiz-meter');
+      const progressText = label(['السؤال ', 'Question ']) + (step + 1) + label([' من ', ' of ']) + skinQuestions.length;
+      meter.append(element('span', label(question.theme)), element('span', progressText));
       const progress = element('progress');
       progress.max = skinQuestions.length;
       progress.value = step + 1;
       progress.setAttribute('aria-label', progressText);
-      body.append(element('p', progressText, 'skin-quiz-progress'), progress);
+      body.append(meter, progress);
       const prompt = element('h3', label(question.prompt));
       const choices = element('div', null, 'skin-quiz-answers');
       choices.setAttribute('role', 'group');

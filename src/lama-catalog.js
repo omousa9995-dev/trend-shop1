@@ -110,6 +110,14 @@ export function latestSuggestedIds(history) {
   return [];
 }
 
+export function mentionedCatalogProducts(text, catalog) {
+  const passage = ' '+matchable(text)+' ';
+  return catalog.filter(product => [product.name, product.nameEn].some(name => {
+    const title = matchable(String(name || '').split(/[·—]/)[0]);
+    return title.split(' ').length > 1 && passage.includes(' '+title+' ');
+  })).slice(0, 4);
+}
+
 export function usageMatches(message, catalog, history = []) {
   const normalized = normalizeSearch(message);
   const matches=namedCatalogMatches(message,catalog);

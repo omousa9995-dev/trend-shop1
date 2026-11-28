@@ -40,6 +40,44 @@ const textOf=events=>events.reduce((text,{name,data})=>name==='delta'?text+data.
 const spin=async fn=>{for(let i=0;i<160&&!fn();i++)await new Promise(resolve=>setTimeout(resolve,5));assert.ok(fn());};
 function stub(t,f){const old=globalThis.fetch;t.after(()=>{globalThis.fetch=old;});globalThis.fetch=f;}
 
+test('A clear cleanser request and an explicit product-card follow-up use live stock without a model round trip',async t=>{
+ const f=fixture(t);
+ const insert=f.db.prepare(`INSERT INTO products(id,brand,name,category,description,details_json,stock,price_fils,reference_price_fils,approved,active)
+ VALUES(?,?,?,'البشرة',?,?,3,4490,4490,1,1)`);
+ const name='غسول سيبيوم جل موسان من بيوديرما';
+ insert.run('TSCTX002','Bioderma','Sebium Gel Moussant','غسول يومي للبشرة المختلطة والدهنية',JSON.stringify({
+  nameAr:name,productType:'cleanser',howToUse:'دلّكيه على وجه مبلل واشطفيه.',benefits:['تنظيف الشوائب اليومية']
+ }));
+ let calls=0;
+ stub(t,async()=>{calls++;throw Error('Clear product requests use the local catalog');});
+ const simple=await collect(await f.ask('غسول',{profile:{skinType:'combination'}}));
+ const card=simple.find(e=>e.name==='products')?.data.routine[0];
+ assert.equal(card?.id,'TSCTX002');
+ assert.equal(card.href,'/product/TSCTX002');
+ assert.equal(card.priceFils,4490);
+ assert.match(card.howToUse,/واشطفيه/);
+ assert.equal(simple.at(-1).data.source,'live-catalog');
+ const intake=await collect(await f.ask('غسول'));
+ const question=intake.find(e=>e.name==='question')?.data.question;
+ assert.equal(question?.field,'skinType');
+ const reply=await collect(await f.ask('مختلطة',{history:appendLumaHistory([],'غسول',question.text)}));
+ assert.equal(reply.find(e=>e.name==='products')?.data.routine[0].id,'TSCTX002');
+ const history=appendLumaHistory([],'غسول',name+' خيار للبشرة المختلطة. اغسلي وجهكِ بلطف واشطفيه.');
+ const requested=await collect(await f.ask('ارسلي المنتج',{history,existingIds:['TSCTX002']}));
+ assert.equal(requested.find(e=>e.name==='products')?.data.routine[0].id,'TSCTX002');
+ const two=appendLumaHistory([],'شو عندكم؟','هاي الخيارات',['TSCTX001','TSCTX002']);
+ const ambiguous=await collect(await f.ask('ارسلي المنتج',{history:two}));
+ assert.equal(ambiguous.some(e=>e.name==='products'),false);
+ assert.deepEqual(ambiguous.find(e=>e.name==='question')?.data.question.choices.map(c=>c.value),['TSCTX001','TSCTX002']);
+ const second=await collect(await f.ask('رابط المنتج الثاني',{history:two}));
+ assert.equal(second.find(e=>e.name==='products')?.data.routine[0].id,'TSCTX002');
+ f.db.prepare("UPDATE products SET stock=0 WHERE id='TSCTX002'").run();
+ const soldOut=await collect(await f.ask('ارسلي المنتج',{history}));
+ assert.equal(soldOut.some(e=>e.name==='products'),false);
+ assert.match(textOf(soldOut),/نافد/);
+ assert.equal(calls,0);
+});
+
 test('An open follow-up uses earlier turns and live references, and streams regular text while Gemini is still working',async t=>{
  const f=fixture(t);
  let upstream,cancelled=false,attempts=0;
