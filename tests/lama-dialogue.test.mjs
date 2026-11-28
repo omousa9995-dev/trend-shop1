@@ -82,6 +82,39 @@ test('وينهم shows both named sunscreens as alternatives and respects a late
  assert.equal(calls,0);
 });
 
+test('Product photos and an earlier shade discussion resolve to the real packshot and selected option',async t=>{
+ const f=fixture(t);
+ const name='كريم أساس دبل وير من إستيه لودر';
+ const image='/images/foundation.webp';
+ f.db.prepare(`INSERT INTO products(id,brand,name,category,details_json,image_url,stock,price_fils,reference_price_fils,approved,active)
+ VALUES('TSFOUND1','Estée Lauder','Double Wear Foundation','المكياج',?,?,5,8500,8500,1,1)`).run(JSON.stringify({
+  nameAr:name,productType:'foundation'
+ }),image);
+ let calls=0;
+ stub(t,async()=>{calls++;throw Error('Photo and shade resolve from the current catalog');});
+ const history=appendLumaHistory([],'بدي أشوف '+name,'متوفر عنا '+name+'.');
+ const photo=await collect(await f.ask('ممكن تبعتيلي صورة المنتج؟',{history}));
+ const productEvent=events=>events.find(e=>e.name==='products')?.data;
+ assert.equal(productEvent(photo)?.photoRequested,true);
+ assert.equal(productEvent(photo).routine[0].image,image);
+ assert.equal(productEvent(photo).routine[0].options.length,4);
+ const withShades=appendLumaHistory(appendLumaHistory(history,'عندك صورة؟','درجة بشرتك عادةً قريبة لأي مستوى؟'),'نعم',
+  'اختاري الدرجة من الخيارات الأربعة: 1 فاتح، 2 وسط فاتح، 3 وسط عادي أو 4 حنطي.');
+ for(const query of ['1','١','فاتح','صورة المنتج بدرجة ١','صورة TSFOUND1 بدرجة ١']){
+  const reply=await collect(await f.ask(query,{history:withShades}));
+  const result=productEvent(reply);
+  assert.equal(result?.photoRequested,true,query);
+  assert.equal(result.routine[0].image,image,query);
+  assert.deepEqual(result.routine[0].selectedOption,{id:'tone-1',label:'1 — فاتح'},query);
+  assert.equal(result.routine[0].href,'/product/TSFOUND1?variant=tone-1',query);
+  assert.equal(textOf(reply),'تفضّلي، هاد المنتج.',query);
+ }
+ const unknown=await collect(await f.ask('صورة منتج افتراضي غير معروف بدرجة ١',{history:withShades}));
+ assert.equal(productEvent(unknown),undefined);
+ assert.equal(unknown.find(e=>e.name==='question')?.data.question.mode,'photo');
+ assert.equal(calls,0);
+});
+
 test('Internal actions appended to normal text are withheld even across provider chunks',async t=>{
  const f=fixture(t);
  stub(t,async()=>sse([

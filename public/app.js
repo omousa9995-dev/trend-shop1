@@ -6,7 +6,7 @@ import {productMetaDescription} from './product-copy.js?v=5.22.0';
 import {mountGlobalRating} from './global-product-ratings.js?v=5.23.0';
 import {applyLimitedOffers,limitedOffersHtml,updateLimitedClocks} from './limited-offers.js?v=5.23.3';
 import {createBrowsePosition} from './browse-position.js?v=5.23.1';
-import './care-entry.js?v=5.23.17';
+import './care-entry.js?v=5.23.18';
 import {installSkinQuiz} from './skin-quiz.js?v=5.23.15';
 import {shareQuizProfile} from './luma-profile.js?v=5.23.14';
 import {createCheckoutSuggestions} from './checkout-suggestions.js?v=5.10.0';
@@ -205,9 +205,15 @@ async function addQuizProducts(items, signal) {
 document.addEventListener('trend:luma-add',event=>{
  const id=event.detail?.id;if(typeof id!=='string'||!/^TS[A-Z0-9-]{4,64}$/.test(id))return;event.preventDefault();
  const p=find(id);if(!p){event.detail.respond?.({added:false,message:'تعذر قراءة المنتج؛ حدّثي المتجر.'});return}
- const needsOptions=productOptions(p).length>0&&!selectedOption(p,activeVariant(p));
+ const requested=event.detail.variant;
+ if(requested!==undefined&&!selectedOption(p,requested)){
+  event.detail.respond?.({added:false,message:'راجعي الدرجات المتاحة في صفحة المنتج.'});
+  return;
+ }
+ const variant=requested??activeVariant(p);
+ const needsOptions=productOptions(p).length>0&&!selectedOption(p,variant);
  if(needsOptions)event.detail.respond?.({needsOptions:true});
- const before=state.cart.filter(x=>x.id===id).reduce((n,x)=>n+x.qty,0);add(id);const after=state.cart.filter(x=>x.id===id).reduce((n,x)=>n+x.qty,0);
+ const before=totalQty(id);add(id,1,variant);const after=totalQty(id);
  if(!needsOptions)event.detail.respond?.({added:after>before,message:after>before?'أضيفت لسلتكِ.':'تعذرت الإضافة؛ راجعي المخزون أو خيارات المنتج.'});
 });
 function qty(id,step,variant=''){
@@ -417,7 +423,15 @@ function updatePageMetadata(path){
  document.querySelector('meta[name="description"]').content=metaDescription;
 }
 function buyingPage(g){app.innerHTML=buyingGuideHtml(g,state.products,{language:locale(),renderCard:card});}
-function route(navigation={}){const targetRoute=parseRoute(),browseSaved=browsePosition.enter(targetRoute.path,targetRoute.query,navigation);checkoutSuggestions.close({restoreFocus:false});applySiteAppearance();app.querySelector('[data-featured-video]')?.featuredVideo?.destroy();app.querySelector('.aqua-fresh-pilot')?.aquaFreshPilot?.destroy();document.querySelectorAll('.touch-media-host').forEach(el=>el.mediaGallery?.destroy());storyRequest++;rememberCheckout();closeQuickCheckout(true);document.body.classList.remove('is-product-story');dismissAssist();imageZoom.close();productShare.close();closeOptions();$('#cartAssist').hidden=true;clearTimeout(shop.searchTimer);closeSearch();closeDrawer();state.displayCount=browseSaved.count;state.filterShown=browseSaved.filters;const {path}=parseRoute();skinQuiz.update(path==='/'||path==='',locale(),path+targetRoute.query.toString());document.body.dataset.pageKind=path.startsWith('/product/')||path.startsWith('/bundle/')?'product':path==='/shop'?'catalog':path==='/checkout'?'checkout':path==='/'||path===''?'home':'other';document.body.classList.toggle('is-checkout',path==='/checkout');updatePageMetadata(path);if(path==='/'||path==='')home();else if(path==='/shop')shop();else if(buyingGuide(path))buyingPage(buyingGuide(path));else if(path.startsWith('/product/')){let id;try{id=decodeURIComponent(path.slice(9))}catch{id=''}detail(id)}else if(path.startsWith('/bundle/'))bundleDetail(decodeURIComponent(path.slice(8)));else if(path==='/checkout'){checkout();experienceMetrics.measure('checkout_start');}else if(path==='/saved')savedProducts();else if(path==='/offers')offers();else if(path==='/privacy'){privacy();app.insertAdjacentHTML('beforeend','<section class="wrap experience-privacy"><h2>'+tx('قياس تجربة المتجر','Store experience measurement')+'</h2><p>'+tx('نستخدم مؤشرات مجمعة داخل المتجر لقياس سرعة الصفحات ومراحل الشراء، دون إرسال الاسم أو الهاتف أو البحث المكتوب أو العنوان إلى هذا القياس. تفضيلات المتصفح التي تمنع القياس تُحترم.','We use aggregate first-party counts for page speed and shopping steps, without names, phones, typed searches or addresses. Browser privacy preferences are respected.')+'</p><button class="btn btn-light" type="button" data-experience-optout>'+tx(experienceMetrics.optedOut?'السماح بقياس التجربة':'إيقاف قياس التجربة على هذا المتصفح',experienceMetrics.optedOut?'Allow experience measurement':'Stop experience measurement on this browser')+'</button></section>');}else if(path==='/reviews'){
+let linkedOptionKey='';
+function applyLinkedOption({path,query},navigation){
+ const p=path.startsWith('/product/')?find(path.slice('/product/'.length)):null;
+ const option=p&&selectedOption(p,query.get('variant'));
+ const key=option?p.id+'~'+option.id:'';
+ if(option&&(key!==linkedOptionKey||navigation.history))state.selectedOptions[p.id]=option.id;
+ linkedOptionKey=key;
+}
+function route(navigation={}){const targetRoute=parseRoute(),browseSaved=browsePosition.enter(targetRoute.path,targetRoute.query,navigation);applyLinkedOption(targetRoute,navigation);checkoutSuggestions.close({restoreFocus:false});applySiteAppearance();app.querySelector('[data-featured-video]')?.featuredVideo?.destroy();app.querySelector('.aqua-fresh-pilot')?.aquaFreshPilot?.destroy();document.querySelectorAll('.touch-media-host').forEach(el=>el.mediaGallery?.destroy());storyRequest++;rememberCheckout();closeQuickCheckout(true);document.body.classList.remove('is-product-story');dismissAssist();imageZoom.close();productShare.close();closeOptions();$('#cartAssist').hidden=true;clearTimeout(shop.searchTimer);closeSearch();closeDrawer();state.displayCount=browseSaved.count;state.filterShown=browseSaved.filters;const {path}=parseRoute();skinQuiz.update(path==='/'||path==='',locale(),path+targetRoute.query.toString());document.body.dataset.pageKind=path.startsWith('/product/')||path.startsWith('/bundle/')?'product':path==='/shop'?'catalog':path==='/checkout'?'checkout':path==='/'||path===''?'home':'other';document.body.classList.toggle('is-checkout',path==='/checkout');updatePageMetadata(path);if(path==='/'||path==='')home();else if(path==='/shop')shop();else if(buyingGuide(path))buyingPage(buyingGuide(path));else if(path.startsWith('/product/')){let id;try{id=decodeURIComponent(path.slice(9))}catch{id=''}detail(id)}else if(path.startsWith('/bundle/'))bundleDetail(decodeURIComponent(path.slice(8)));else if(path==='/checkout'){checkout();experienceMetrics.measure('checkout_start');}else if(path==='/saved')savedProducts();else if(path==='/offers')offers();else if(path==='/privacy'){privacy();app.insertAdjacentHTML('beforeend','<section class="wrap experience-privacy"><h2>'+tx('قياس تجربة المتجر','Store experience measurement')+'</h2><p>'+tx('نستخدم مؤشرات مجمعة داخل المتجر لقياس سرعة الصفحات ومراحل الشراء، دون إرسال الاسم أو الهاتف أو البحث المكتوب أو العنوان إلى هذا القياس. تفضيلات المتصفح التي تمنع القياس تُحترم.','We use aggregate first-party counts for page speed and shopping steps, without names, phones, typed searches or addresses. Browser privacy preferences are respected.')+'</p><button class="btn btn-light" type="button" data-experience-optout>'+tx(experienceMetrics.optedOut?'السماح بقياس التجربة':'إيقاف قياس التجربة على هذا المتصفح',experienceMetrics.optedOut?'Allow experience measurement':'Stop experience measurement on this browser')+'</button></section>');}else if(path==='/reviews'){
   if(reviewsAreVisible())reviewPage();
   else{const url=new URL(location.href);url.hash='#/';history.replaceState(history.state,'',url);route();return;}
  }else home();applySiteImages(app,state.siteSettings);refreshDetailRecommendations();const videoRegion=$('[data-product-videos]',app);if(videoRegion){const id=parseRoute().path.split('/product/')[1];if(id)mountProductVideos(videoRegion,{productId:id})}syncWhatsAppLinks();if(path==='/'||path==='')app.insertAdjacentHTML('beforeend',recentShelf()+productTypeBrowse());syncCollectionButtons();if(path.startsWith('/product/')||path.startsWith('/bundle/'))browseBackLink();browsePosition.restore(browseSaved)}

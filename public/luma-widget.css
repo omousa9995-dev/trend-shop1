@@ -55,3 +55,26 @@ html:has(.luma-chat[open]){scrollbar-gutter:stable;overscroll-behavior:none}
   color: var(--rose, #8B4B6B);
   border-color: var(--rose, #8B4B6B);
 }
+
+.luma-log { scroll-behavior: auto; }
+.luma-product.luma-product-text,
+.luma-product.luma-product-photo { grid-template-columns: minmax(0, 1fr); }
+.luma-product.luma-product-photo > img {
+  width: 100%;
+  height: clamp(132px, 37vw, 182px);
+  object-fit: contain;
+  background: #faf7f6;
+}
+.luma-photo-caption { display: block; margin-block-start: 5px; color: #6e5b65; }
+.luma-photo-shades { display: flex; flex-wrap: wrap; gap: 6px; }
+.luma-photo-shades button {
+  min-height: 38px;
+  padding: 6px 9px;
+  border: 1px solid #dcc9d3;
+  border-radius: 9px;
+  background: #fbf1f5;
+  color: #5c3a4f;
+  font: inherit;
+  font-size: .78rem;
+  cursor: pointer;
+}

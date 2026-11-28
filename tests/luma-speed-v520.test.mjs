@@ -51,6 +51,62 @@ test('The widget filters technical fragments across app events and renders compa
   assert.doesNotMatch(api.dialog.querySelector('.luma-log').textContent,/iktib|show_products|productIds|عطور ثانية/);
  }finally{api.destroy();w.close()}
 });
+test('A growing reply starts at its first bubble and later cards respect manual reading position',async()=>{
+ let stream;
+ const {w,api,send}=await ui(async()=>new Response(new ReadableStream({start(controller){stream=controller;}})));
+ const log=api.dialog.querySelector('.luma-log');
+ const positions=[];
+ let top=0;
+ Object.defineProperty(log,'scrollTop',{get:()=>top,set:value=>{top=value;positions.push(value);}});
+ log.getBoundingClientRect=()=>({top:100});
+ w.HTMLElement.prototype.getBoundingClientRect=function(){
+  return {top:100+Array.from(log.children).indexOf(this)*180-top};
+ };
+ const push=(name,data)=>stream.enqueue(bytes.encode(event(name,data)));
+ try{
+  send('رتّبيلي روتينين للصباح والمساء');
+  await until(()=>stream&&positions.length===1);
+  push('delta',{text:'هاي بداية الجواب. '});
+  await until(()=>positions.length===2);
+  const first=log.lastElementChild;
+  assert.ok(first.classList.contains('luma-model'));
+  assert.equal(first.getBoundingClientRect().top,log.getBoundingClientRect().top+8);
+  push('delta',{text:'تابعي بالترطيب بعد الغسول. '.repeat(24)});
+  await until(()=>first.textContent.includes('تابعي بالترطيب'));
+  assert.equal(positions.length,2);
+  log.dispatchEvent(new w.WheelEvent('wheel',{deltaY:140}));
+  const readingPosition=log.scrollTop+140;
+  log.scrollTop=readingPosition;
+  push('products',{area:'face',routine:[{id:'TSFACE1',name:'مرطب',priceFils:3000}]});
+  push('done');
+  await until(()=>api.dialog.getAttribute('aria-busy')==='false');
+  await new Promise(resolve=>w.requestAnimationFrame(resolve));
+  assert.equal(log.scrollTop,readingPosition);
+  assert.equal(positions.length,3);
+  assert.equal(log.querySelector('.luma-products').previousElementSibling,first);
+ }finally{api.destroy();w.close()}
+});
+test('The photo card displays the packshot and sends the selected shade to the store cart',async()=>{
+ const {w,api,send}=await ui(async()=>new Response(event('delta',{text:'تفضّلي، هاد المنتج.'})+
+  event('products',{area:'makeup',photoRequested:true,routine:[{
+   id:'TSFOUND1',name:'كريم أساس',priceFils:8500,image:'/images/foundation.webp',href:'/product/TSFOUND1?variant=tone-1',
+   options:[{id:'tone-1',label:'1 — فاتح'},{id:'tone-2',label:'2 — وسط فاتح'}],selectedOption:{id:'tone-1',label:'1 — فاتح'}
+  }]})+event('done')));
+ try{
+  send('١');
+  await until(()=>api.dialog.getAttribute('aria-busy')==='false');
+  const card=api.dialog.querySelector('.luma-product-photo');
+  assert.equal(card.querySelector('img').src,'https://trend.test/images/foundation.webp');
+  assert.equal(card.querySelector('.luma-photo-caption').textContent,'صورة العبوة');
+  assert.match(card.querySelector('.luma-shade-hint').textContent,/1 — فاتح/);
+  assert.equal(card.querySelector('a').search,'?variant=tone-1');
+  let detail;
+  w.document.addEventListener('trend:luma-add',event=>{event.preventDefault();detail=event.detail;},{once:true});
+  card.querySelector('.luma-card-actions button').click();
+  assert.equal(detail?.id,'TSFOUND1');
+  assert.equal(detail.variant,'tone-1');
+ }finally{api.destroy();w.close()}
+});
 test('Cancel, reset and close isolate stale requests from a newly opened conversation and preserve typed drafts',async()=>{
  let first,second,calls=0;const {w,api,send}=await ui(async()=>{calls++;return new Response(new ReadableStream({start(c){if(calls===1)first=c;else second=c},cancel(){return new Promise(()=>{})}}))});
  try{send('أول سؤال');await until(()=>!!first);w.document.querySelector('textarea').value='مسودة';api.close();api.open();assert.equal(w.document.querySelector('.luma-send').disabled,false);assert.equal(w.document.querySelector('textarea').value,'مسودة');send('ثاني سؤال');await until(()=>!!second);first.enqueue(bytes.encode(event('done')));await pause();assert.equal(api.dialog.getAttribute('aria-busy'),'true');second.enqueue(bytes.encode(event('delta',{text:'الرد الثاني'})+event('done')));await until(()=>api.dialog.getAttribute('aria-busy')==='false');assert.match(api.dialog.textContent,/الرد الثاني/);

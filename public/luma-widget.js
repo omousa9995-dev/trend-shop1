@@ -9,13 +9,16 @@ const STREAM_IDLE_MS = 13000;
 const progressText={catalog:'لُمى بتراجع تفاصيل سؤالكِ…',thinking:'لُمى بتربط التفاصيل من المحادثة…',retry:'لُمى بتعيد المحاولة…'};
 const normalizeChoice=value=>value.trim().replace(/[٠-٩]/g,digit=>String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit))).replace(/[–—]/g,'-').replace(/\s+/g,'').replace(/[؟.?!]/g,'');
 const money=n=>(n/1000).toLocaleString('ar-JO',{minimumFractionDigits:2,maximumFractionDigits:2})+' د.أ';
-const catalogPrompt={price:'كم سعر ',notes:'احكيلي عن نفحات ',usage:'طريقة استخدام ',details:'احكيلي عن ',display:'اعرضي '};
+const catalogPrompt={price:'كم سعر ',notes:'احكيلي عن نفحات ',usage:'طريقة استخدام ',details:'احكيلي عن ',display:'اعرضي ',photo:'صورة '};
+const shadeNumber=id=>/^tone-[1-4]$/.test(id||'')?id.at(-1):'';
+const catalogChoiceText=(question,value)=>(catalogPrompt[question.mode]||catalogPrompt.details)+value+
+ (shadeNumber(question.shade)?' بدرجة '+shadeNumber(question.shade):'');
 let instance;
 export async function mountLumaWidget({status:initial,standalone=false}={}){
  if(instance)return instance;
  const status=initial||await fetch('/api/care/status',{cache:'no-store',signal:AbortSignal.timeout(6000)}).then(r=>r.json());
  if(!status.available&&!status.fallbackAvailable)throw Error('لُمى غير متاحة حاليًا. تقدري تتواصلي مع المتجر.');
- if(!document.querySelector('[data-luma-styles]')){const css=make('link');css.rel='stylesheet';css.href='/luma-widget.css?v=5.23.5';css.dataset.lumaStyles='1';document.head.append(css)}
+ if(!document.querySelector('[data-luma-styles]')){const css=make('link');css.rel='stylesheet';css.href='/luma-widget.css?v=5.23.18';css.dataset.lumaStyles='1';document.head.append(css)}
  const dialog=make('dialog',undefined,'luma-chat');dialog.id='lumaChat';dialog.dir='rtl';dialog.lang='ar';dialog.setAttribute('aria-labelledby','lumaChatTitle');
  dialog.innerHTML=`<header class="luma-head"><span class="luma-avatar" aria-hidden="true"><img src="/images/editorial/beauty-hero-v2.webp" alt=""/></span><div><h2 id="lumaChatTitle">لُمى <span lang="en">Luma</span></h2><p>معكِ للعناية والجمال</p></div><button type="button" class="luma-new-chat" data-luma-reset title="بدء محادثة جديدة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5H5v14h14v-7M10 14l1-4L19 2l3 3-8 8-4 1Z"/></svg><span>محادثة جديدة</span></button><button type="button" data-luma-close aria-label="إغلاق محادثة لُمى">×</button></header>
  <div class="luma-log" role="log" aria-live="polite" aria-relevant="additions" aria-label="محادثتكِ مع لُمى" tabindex="0"></div>
@@ -40,13 +43,43 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   try{quizProfile=takeQuizProfile(sessionStorage)}catch{}
  }
  let guide=null,pendingQuestion=null,skipped=new Set();
- let activeTurn,failedTurn,history=[],profile={...baseProfile(),...quizProfile},budgetFils=remembered.budgetFils,image=null,photoBusy=false,photoSequence=0,returnFocus,scrollFrame=0,pinned=true,locked=null;
- function scroll(force=false){if(!force&&!pinned)return;cancelAnimationFrame(scrollFrame);scrollFrame=requestAnimationFrame(()=>{log.scrollTop=log.scrollHeight})}
- log.addEventListener('scroll',()=>{pinned=log.scrollHeight-log.scrollTop-log.clientHeight<65},{passive:true});
- function bubble(text,side='model'){const item=make('article',undefined,'luma-bubble luma-'+side);item.append(make('span',side==='user'?'أنتِ':'لُمى','luma-speaker'),make('p',text));log.append(item);while(log.children.length>48)log.firstElementChild.remove();scroll();return item}
+ let activeTurn,failedTurn,history=[],profile={...baseProfile(),...quizProfile},budgetFils=remembered.budgetFils,image=null,photoBusy=false,photoSequence=0,returnFocus,scrollFrame=0,locked=null;
+ function revealStart(item){
+  cancelAnimationFrame(scrollFrame);
+  scrollFrame=requestAnimationFrame(()=>{
+   if(!dialog.open||item?.parentElement!==log)return;
+   const gap=item.getBoundingClientRect().top-log.getBoundingClientRect().top;
+   log.scrollTop=Math.max(0,log.scrollTop+gap-log.clientTop-8);
+  });
+ }
+ function keepReading(){
+  if(!activeTurn)return;
+  activeTurn.reading=true;
+  cancelAnimationFrame(scrollFrame);
+ }
+ log.addEventListener('wheel',keepReading,{passive:true});
+ log.addEventListener('touchmove',keepReading,{passive:true});
+ log.addEventListener('keydown',event=>{
+  if(['PageUp','PageDown','Home','End','ArrowUp','ArrowDown'].includes(event.key))keepReading();
+ });
+ function appendLog(item,reply){
+  log.append(item);
+  while(log.children.length>48)log.firstElementChild.remove();
+  if(reply&&!activeTurn)revealStart(item);
+  if(reply&&activeTurn&&!activeTurn.firstReply?.isConnected){
+   activeTurn.firstReply=item;
+   if(!activeTurn.reading)revealStart(item);
+  }
+  return item;
+ }
+ function bubble(text,side='model'){
+  const item=make('article',undefined,'luma-bubble luma-'+side);
+  item.append(make('span',side==='user'?'أنتِ':'لُمى','luma-speaker'),make('p',text));
+  return appendLog(item,side==='model');
+ }
  function refresh(){
   const busy=!!activeTurn;
-  $('.luma-send').disabled=busy||photoBusy;for(const b of dialog.querySelectorAll('.luma-quick button,.luma-plan-next button'))b.disabled=busy||photoBusy;
+  $('.luma-send').disabled=busy||photoBusy;for(const b of dialog.querySelectorAll('.luma-quick button,.luma-plan-next button,.luma-photo-shades button'))b.disabled=busy||photoBusy;
   $('[data-luma-photo]').disabled=busy;$('.luma-photo-button').hidden=!status.imagesAvailable;
   $('[data-luma-stop]').hidden=!busy;$('[data-luma-retry]').hidden=busy||!failedTurn;
   $('.luma-head p').textContent=busy?'لُمى بتحضّر إجابتكِ…':'معكِ للعناية والجمال';dialog.setAttribute('aria-busy',String(busy));
@@ -97,9 +130,9 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   const selection=guide;guide=null;
   if($('[data-luma-remember]').checked)remember();
   const understood=[skinNames[profile.skinType]&&('بشرتكِ '+skinNames[profile.skinType]),profile.sensitive==='yes'&&'بتتحسس بسهولة',concernNames[profile.goal]].filter(Boolean);
-  if(understood.length)bubble('تمام، فهمت عليكِ. رح أبني اختياري على '+understood.join('، ')+'.');
+  const recap=understood.length?bubble('تمام، فهمت عليكِ. رح أبني اختياري على '+understood.join('، ')+'.'):null;
   const request=selection.intent==='routine'?'رتّبي لي روتين صباحي ومسائي حسب تفضيلاتي: '+selection.text:'ساعديني أختار حسب تفضيلاتي: '+selection.text;
-  send(request,{guided:true,intent:selection.intent,skippedFields:[...skipped]});
+  send(request,{guided:true,intent:selection.intent,skippedFields:[...skipped],recap});
  }
  function clearPhoto(){photoSequence++;image=null;photoBusy=false;const preview=$('.luma-image-preview');preview.hidden=true;preview.querySelector('img').removeAttribute('src');$('[data-luma-photo]').value='';refresh()}
  async function preparePhoto(file){
@@ -121,7 +154,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     return;
    }
    if(question.field==='catalogProduct'){
-    send((catalogPrompt[question.mode]||catalogPrompt.details)+choice.value,{visibleText:choice.label});
+    send(catalogChoiceText(question,choice.value),{visibleText:choice.label});
     return;
    }
    if(profileChoices[question.field]?.includes(choice.value))profile[question.field]=choice.value;
@@ -132,8 +165,66 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
    send('خلّينا نكمّل',{...next,skippedFields:[...(next.skippedFields||[]),question.field]});
   });
  }
- function renderCards(data){if(!Array.isArray(data.routine)||!data.routine.length){if(data.message)bubble(data.message);return}quick.replaceChildren();const group=make('section',undefined,'luma-products');group.setAttribute('aria-label','منتجات لُمى المقترحة');
-  for(const p of data.routine.slice(0,3)){if(!/^TS[A-Z0-9-]{4,64}$/.test(p.id)||!Number.isInteger(p.priceFils))continue;const card=make('article',undefined,'luma-product'),photo=make('img');photo.src=p.image;photo.alt=p.name;photo.loading='lazy';const body=make('div'),title=make('h3',p.name),price=make('strong',money(p.priceFils),'luma-price');body.append(title,make('span',p.brand,'luma-brand'),price);if(p.recommendedOption?.label)body.append(make('p','الدرجة الأقرب مبدئيًا: '+p.recommendedOption.label,'luma-shade-hint'));if(p.period)body.append(make('span',({am:'صباحًا',pm:'مساءً',both:'صباحًا ومساءً',makeup:'خطوة مكياج'})[p.period],'luma-period'));if(p.reason)body.append(make('p',p.reason));card.append(photo,body);if(p.howToUse){const guide=make('details');guide.append(make('summary','طريقة الاستخدام'),make('p',p.howToUse));card.append(guide)}const actions=make('div',undefined,'luma-card-actions'),link=make('a','عرض المنتج');link.href=p.href;link.onclick=()=>close();actions.append(link);const add=make('button',p.options?.length?'اختاري الدرجة أو النسخة':'أضيفي للسلة');add.type='button';add.onclick=()=>{const event=new CustomEvent('trend:luma-add',{cancelable:true,detail:{id:p.id,respond:result=>{if(result.needsOptions)close();else if(result.added){add.textContent='أضيفت لسلتكِ ✓';notice.textContent='أضفنا '+p.name+' لسلتكِ.'}else notice.textContent=result.message||'راجعي المنتج قبل الإضافة.'}}});document.dispatchEvent(event);if(!event.defaultPrevented)location.href=p.href};actions.append(add);
+ function renderCards(data){
+  if(!Array.isArray(data.routine)||!data.routine.length){if(data.message)bubble(data.message);return}
+  quick.replaceChildren();
+  const group=make('section',undefined,'luma-products');
+  group.setAttribute('aria-label','منتجات لُمى المقترحة');
+  for(const p of data.routine.slice(0,3)){
+   if(!/^TS[A-Z0-9-]{4,64}$/.test(p.id)||!Number.isInteger(p.priceFils))continue;
+   const options=Array.isArray(p.options)?p.options:[];
+   const selected=options.find(option=>option.id===p.selectedOption?.id);
+   const photoMode=data.photoRequested===true;
+   const card=make('article',undefined,photoMode?'luma-product luma-product-photo':'luma-product');
+   if(p.image){
+    const photo=make('img');
+    photo.src=p.image;
+    photo.alt=p.name;
+    photo.loading=photoMode?'eager':'lazy';
+    card.append(photo);
+   }else card.classList.add('luma-product-text');
+   const body=make('div');
+   body.append(make('h3',p.name),make('span',p.brand,'luma-brand'),make('strong',money(p.priceFils),'luma-price'));
+   if(selected)body.append(make('p','درجتكِ المختارة · '+selected.label,'luma-shade-hint'));
+   else if(p.recommendedOption?.label)body.append(make('p','الدرجة الأقرب مبدئيًا: '+p.recommendedOption.label,'luma-shade-hint'));
+   if(p.period)body.append(make('span',({am:'صباحًا',pm:'مساءً',both:'صباحًا ومساءً',makeup:'خطوة مكياج'})[p.period],'luma-period'));
+   if(p.reason)body.append(make('p',p.reason));
+   if(photoMode&&p.image&&options.some(option=>shadeNumber(option.id)))
+    body.append(make('small','صورة العبوة','luma-photo-caption'));
+   card.append(body);
+   if(p.howToUse){
+    const guide=make('details');
+    guide.append(make('summary','طريقة الاستخدام'),make('p',p.howToUse));
+    card.append(guide);
+   }
+   const shades=photoMode&&!selected?options.filter(option=>shadeNumber(option.id)):[];
+   if(shades.length){
+    const picker=make('div',undefined,'luma-photo-shades');
+    picker.setAttribute('role','group');
+    picker.setAttribute('aria-label','اختاري الدرجة');
+    for(const option of shades){
+     action(picker,option.label,()=>send('صورة '+p.id+' بدرجة '+shadeNumber(option.id),{visibleText:option.label}));
+    }
+    card.append(picker);
+   }
+   const actions=make('div',undefined,'luma-card-actions'),link=make('a','عرض المنتج');
+   link.href=p.href;
+   link.onclick=()=>close();
+   actions.append(link);
+   const add=make('button',options.length&&!selected?'اختاري الدرجة أو النسخة':'أضيفي للسلة');
+   add.type='button';
+   add.onclick=()=>{
+    const event=new CustomEvent('trend:luma-add',{cancelable:true,detail:{
+     id:p.id,variant:selected?.id,respond:result=>{
+      if(result.needsOptions)close();
+      else if(result.added){add.textContent='أضيفت لسلتكِ ✓';notice.textContent='أضفنا '+p.name+' لسلتكِ.';}
+      else notice.textContent=result.message||'راجعي المنتج قبل الإضافة.';
+     }
+    }});
+    document.dispatchEvent(event);
+    if(!event.defaultPrevented)location.href=p.href;
+   };
+   actions.append(add);
    const like=make('button','أعجبني');like.type='button';like.dataset.lamaFavorite=p.id;
    like.setAttribute('aria-pressed',String((profile.likedProductIds||[]).includes(p.id)));
    like.onclick=()=>{
@@ -143,7 +234,8 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     for(const button of dialog.querySelectorAll('[data-lama-favorite="'+p.id+'"]'))button.setAttribute('aria-pressed',String(ids.has(p.id)));
     if($('[data-luma-remember]').checked)remember();
    };
-   actions.append(like);card.append(actions);group.append(card)}
+   actions.append(like);card.append(actions);group.append(card);
+  }
   const next=make('div',undefined,'luma-plan-next');
   if(data.area==='fragrance'&&data.alternatives){
    action(next,'عطور ثانية',()=>send('عندك خيارات ثانية غيرهم؟'));
@@ -153,7 +245,9 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
    action(next,'نبدأ بمنتج واحد',()=>send('من اقتراحاتكِ، بأي منتج واحد أبدأ؟'));
   }
   action(next,'بديل أرخص',()=>send('إذا متوفر، بدّلي آخر اختيار ببديل أرخص يناسب تفضيلاتي.'));
-  group.append(next);log.append(group);if(profileChoices.area.includes(data.area))profile.area=data.area;scroll();
+  group.append(next);
+  appendLog(group,true);
+  if(profileChoices.area.includes(data.area))profile.area=data.area;
  }
  function renderTool(data){if(Number.isInteger(data.confirmedBudgetFils)&&data.confirmedBudgetFils>=500&&data.confirmedBudgetFils<=100000)budgetFils=data.confirmedBudgetFils;if(data.profile){
   const changes=normalizeLamaProfile(data.profile);
@@ -161,7 +255,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   Object.assign(profile,changes);
   if($('[data-luma-remember]').checked&&Object.keys(changes).length)remember();
  }if(data.type==='profile')return;if(data.type==='followup'){appendTeam(data.team);return}if(data.type==='question')renderQuestion(data.question);else if(data.type==='products')renderCards(data);else if(data.type==='handoff'){quick.replaceChildren();if(data.message)bubble(data.message);if(data.team)appendTeam(data.team)}else if(data.type==='answer'&&data.message)bubble(data.message);else if(data.message)bubble(data.message)}
- function appendTeam(team){const link=make('a',team?.label||'تواصلي مع فريق Trend Shop','luma-team');link.href=team?.href?.startsWith('https://wa.me/962790025430')?team.href:'https://wa.me/962790025430';link.target='_blank';link.rel='noopener noreferrer';log.append(link);scroll()}
+ function appendTeam(team){const link=make('a',team?.label||'تواصلي مع فريق Trend Shop','luma-team');link.href=team?.href?.startsWith('https://wa.me/962790025430')?team.href:'https://wa.me/962790025430';link.target='_blank';link.rel='noopener noreferrer';appendLog(link,true)}
  function finishTurn(turn,{keepForRetry=false}={}){
   if(activeTurn!==turn)return;
   activeTurn=undefined;
@@ -177,7 +271,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   }
   if(!keepForRetry){failedTurn=undefined;refresh();}
  }
- async function send(value,{retry=false,guided=false,intent,skippedFields,visibleText}={}){
+ async function send(value,{retry=false,guided=false,intent,skippedFields,visibleText,recap}={}){
   if(destroyed||activeTurn||photoBusy)return;
   let text=retry&&failedTurn?failedTurn.text:typeof value==='string'?value:message.value.trim();
   if(!retry&&!text&&!image){message.focus();return;}
@@ -191,8 +285,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
    if(question?.field==='usageProduct'||question?.field==='catalogProduct'&&choice){
     visibleText=text;
     message.value='';
-    const prefix=question.field==='usageProduct'?catalogPrompt.usage:(catalogPrompt[question.mode]||catalogPrompt.details);
-    text=prefix+(choice?.value||text);
+    text=question.field==='usageProduct'?catalogPrompt.usage+(choice?.value||text):catalogChoiceText(question,choice.value);
    }
    if(guidedChoice&&profileChoices[question.field]?.includes(guidedChoice.value)){
     profile[question.field]=guidedChoice.value;
@@ -212,7 +305,6 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   }
   pendingQuestion=null;
   notice.textContent='';delete notice.dataset.lumaErrorCode;
-  pinned=true;
   guide=null;
   const data=retry&&failedTurn?failedTurn.data:{...payload(),message:text,...(guided?{guided:true}:{}),...(intent?{intent}:{}),...(skippedFields?{skippedFields}:{})};
   const anchor=retry&&failedTurn?.anchor?.isConnected?failedTurn.anchor:guided?log.lastElementChild:bubble(visibleText||text||'أرفقت صورة مع سؤالي.','user');
@@ -220,9 +312,11 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   else if(data.image)anchor.append(make('small','صورة مرفقة لهذه الرسالة فقط'));
   quick.replaceChildren();
   if(!retry&&message.value.trim()===text)message.value='';
-  const turn={text,data,anchor,controller:new AbortController(),reply:null};
+  const firstReply=recap||(retry&&failedTurn?.firstReply===anchor?anchor:null);
+  const turn={text,data,anchor,firstReply,controller:new AbortController(),reply:null};
   activeTurn=turn;
   failedTurn=undefined;
+  revealStart(anchor);
   refresh();
   const signal=turn.controller.signal;
   const timeout=setTimeout(()=>{
@@ -244,7 +338,6 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
    turn.reply??=bubble('');
    turn.reply.querySelector('p').textContent=answer;
    $('.luma-head p').textContent='لُمى تكتب الآن…';
-   scroll();
   };
   const onEvent=(event,data)=>{
    if(activeTurn!==turn)return;
@@ -313,11 +406,11 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
  }
  function lockPage(){if(locked)return;locked={x:window.scrollX,y:window.scrollY,body:document.body.getAttribute('style'),html:document.documentElement.getAttribute('style')};Object.assign(document.body.style,{position:'fixed',top:-locked.y+'px',left:-locked.x+'px',width:'100%',overflow:'hidden'});document.documentElement.style.overflow='hidden';document.documentElement.style.overscrollBehavior='none'}
  function unlockPage(){if(!locked)return;const saved=locked;locked=null;for(const [el,value]of [[document.body,saved.body],[document.documentElement,saved.html]]){if(value===null)el.removeAttribute('style');else el.setAttribute('style',value)}const behavior=document.documentElement.style.scrollBehavior;document.documentElement.style.scrollBehavior='auto';window.scrollTo({left:saved.x,top:saved.y,behavior:'instant'});document.documentElement.style.scrollBehavior=behavior}
- function close(){if(photoBusy)clearPhoto();if(activeTurn){stopRequest({keepForRetry:true});notice.textContent='بتقدري تكمّلي أو تعيدي إرسال آخر سؤال.';}if(dialog.open)dialog.close();unlockPage();returnFocus?.focus?.({preventScroll:true})}
+ function close(){cancelAnimationFrame(scrollFrame);if(photoBusy)clearPhoto();if(activeTurn){stopRequest({keepForRetry:true});notice.textContent='بتقدري تكمّلي أو تعيدي إرسال آخر سؤال.';}if(dialog.open)dialog.close();unlockPage();returnFocus?.focus?.({preventScroll:true})}
  function fitViewport(){if(!dialog.open)return;const v=window.visualViewport;const height=v?.height||window.innerHeight,top=v?.offsetTop||0;const next=Math.max(180,Math.min(750,height-16));dialog.style.height=next+'px';dialog.style.maxHeight=next+'px';dialog.style.top=(top+Math.max(8,height-next-8))+'px';dialog.style.bottom='auto'}
  let viewportFrame=0;const scheduleFit=()=>{cancelAnimationFrame(viewportFrame);viewportFrame=requestAnimationFrame(fitViewport)};
  listen(window.visualViewport,'resize',scheduleFit);listen(window.visualViewport,'scroll',scheduleFit);listen(window,'resize',scheduleFit);
- function open(){if(destroyed)return;returnFocus=document.activeElement;if(!dialog.open){lockPage();dialog.showModal()}fitViewport();$('[data-luma-close]').focus({preventScroll:true});refresh();scroll()}
+ function open(){if(destroyed)return;returnFocus=document.activeElement;if(!dialog.open){lockPage();dialog.showModal()}fitViewport();$('[data-luma-close]').focus({preventScroll:true});refresh()}
  $('[data-luma-close]').onclick=close;dialog.addEventListener('cancel',event=>{event.preventDefault();close()});dialog.addEventListener('close',()=>{if(!dialog.open){if(activeTurn)stopRequest({keepForRetry:true});unlockPage();}});
  form.onsubmit=event=>{event.preventDefault();send()};message.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){event.preventDefault();send()}});
  $('[data-luma-photo]').onchange=()=>{const file=$('[data-luma-photo]').files[0];if(file)preparePhoto(file)};$('[data-luma-remove-photo]').onclick=clearPhoto;

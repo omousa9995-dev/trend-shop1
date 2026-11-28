@@ -10,7 +10,7 @@ import {shippingFee} from '../public/commerce.js';
 import {captureLamaPreferences,normalizeLamaProfile,lumaGuideQuestions} from '../public/luma-profile.js?v=5.23.5';
 import {lamaPolicyReply} from './lama-policies.js';
 import {isLamaUsageQuestion,usageMatches,usageReply,latestSuggestedIds,lookupLamaCatalog,requestedProductTypes} from './lama-catalog.js';
-import {catalogQuestion,fragranceRequest,fragrancePlan,avoidScentSuggestions,productCardIntent,resolveRequestedCard} from './lama-shopping.js';
+import {catalogQuestion,fragranceRequest,fragrancePlan,avoidScentSuggestions,productCardIntent,resolveRequestedCard,productPhotoRequest,requestedLamaShade} from './lama-shopping.js';
 import {requestLamaDialogue,cleanLamaDialogueText,requestsStoreContact,wantsLamaRecommendations} from './lama-dialogue.js';
 import {normalizeSearch} from '../public/shop-tools.js';
 import {lumaReplyText} from '../public/luma-reply-text.js?v=5.23.17';
@@ -389,10 +389,11 @@ async function simpleProductReply(request,input,catalog,env){
  return selection.type==='products'?selection:null;
 }
 
-async function requestedCardReply(input,catalog,env){
- const match=resolveRequestedCard(input,catalog);
+async function requestedCardReply(input,catalog,env,{photo,shade}={}){
+ const match=resolveRequestedCard(input,catalog,{photo,shade});
  if(!Array.isArray(match))return match;
- const english=!/[\u0600-\u06ff]/.test(input.message);
+ const message=/\p{L}/u.test(input.message)?input.message:input.history.at(-1)?.text||input.message;
+ const english=!/[\u0600-\u06ff]/.test(message);
  const available=match.filter(product=>product.available);
  if(!available.length)return {type:'answer',message:match.length===1
   ?(english?'That product is currently sold out. Would you like an alternative?':'هالمنتج نافد حاليًا. بتحبّي أشوف لكِ بديل متوفّر؟')
@@ -401,10 +402,24 @@ async function requestedCardReply(input,catalog,env){
  if(!product)return null;
  const area=product.areas.includes(input.area)?input.area:product.areas[0];
  const selections=available.filter(item=>item.areas.includes(area));
- const scoped={...input,area,intent:'',existingIds:[],budgetFils:null};
+ const scoped={...input,message,area,intent:'',existingIds:[],budgetFils:null};
  const result=await runLumaTool({name:'show_products',args:{area,productIds:selections.map(item=>item.id)}},
   scoped,env,{currentCatalog:catalog,alternatives:new Set(selections.map(item=>item.type)).size<selections.length});
- return result.type==='products'?result:null;
+ if(result.type!=='products')return null;
+ if(photo||shade){
+  result.photoRequested=true;
+  for(const item of result.routine){
+   const option=item.options.find(candidate=>candidate.id===shade);
+   if(option){
+    item.selectedOption={id:option.id,label:option.label};
+    item.href+='?variant='+encodeURIComponent(option.id);
+   }
+  }
+  if(!shade&&result.routine.length===1&&result.routine[0].options.some(option=>/^tone-[1-4]$/.test(option.id))){
+   result.carePlan+=english?' Select a shade below or type its number.':' اختاري الدرجة من الخيارات أو اكتبي رقمها.';
+  }
+ }
+ return result;
 }
 
 const pores=/مسام|\bpore\w*\b/i;
@@ -480,7 +495,10 @@ export async function publicLumaChat(req,env,helpers,ctx){
  let factual,day;
  const nuanced=input.lama&&conditionalQuestion(input.message);
  const directUsage=input.lama&&!input.image&&!nuanced&&isLamaUsageQuestion(input.message);
- const directCards=input.lama&&!input.image&&!directUsage&&!nuanced&&productCardIntent(input.message);
+ const catalogMedia=input.lama&&!input.image&&!directUsage&&!nuanced;
+ const photo=catalogMedia?productPhotoRequest(input.message):null;
+ const shade=catalogMedia?requestedLamaShade(input.message,input.history,photo):'';
+ const directCards=catalogMedia&&(photo||shade||productCardIntent(input.message));
  const simple=input.lama&&!input.image&&!directUsage&&!nuanced?simpleProductRequest(input):null;
  const fragrance=input.lama&&!directUsage&&!nuanced&&!tasteTradeoff(input.message)?fragranceRequest(input):null;
  const policy=input.lama&&!input.image&&!fragrance?(lamaPolicyReply(input.message)||
@@ -558,7 +576,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
       if(factual.team)send('followup',{team:factual.team});
       completed=true;done();return;
      }
-     if(intake&&!followup&&!simple){present(intake);completed=true;done();return;}
+     if(intake&&!followup&&!simple&&!photo&&!shade){present(intake);completed=true;done();return;}
      if(input.lama)progress('catalog');
      // Each turn takes its facts from current inventory, even for a chat
      // opened before a product was published or its price/stock changed.
@@ -591,7 +609,7 @@ export async function publicLumaChat(req,env,helpers,ctx){
       }
      }
      if(input.lama&&!input.image){
-      const card=directCards&&catalogLoaded?await requestedCardReply(input,allCatalog,env):null;
+      const card=directCards&&catalogLoaded?await requestedCardReply(input,allCatalog,env,{photo,shade}):null;
       if(card&&present(card)){completed=true;done('live-catalog');return;}
       if(simple&&catalogLoaded){
        const selection=await simpleProductReply(simple,input,catalog,env);

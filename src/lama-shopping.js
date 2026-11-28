@@ -1,5 +1,6 @@
 import {normalizeSearch} from '../public/shop-tools.js';
 import {shippingFee} from '../public/commerce.js';
+import {SKIN_TONES} from '../public/product-variants.js';
 import {latestSuggestedIds, mentionedCatalogProducts, namedCatalogMatches, usageReply} from './lama-catalog.js';
 import {lumaProductAllowed, lumaText} from './luma-care-knowledge.js';
 import {lumaReplyText} from '../public/luma-reply-text.js?v=5.23.17';
@@ -102,6 +103,42 @@ const wantProduct = /^(?:(?:طيب|تمام) )?(?:بدي|اريد|ابغي|i wan
 const productReference = /^(?:(?:رابط|روابط|لينك|بطاق[هة]|بطاقات|the link to) )?(?:المنتج(?:ات)?|هالمنتج(?:ات)?|هاد المنتج|هدا المنتج|هذا المنتج|هالاختيار|the products?|the items?|them|it|the link)(?: (?:الاول|الثاني|التاني|الثالث|الاخير|اللي.{1,24}|you (?:recommended|suggested)))?$/;
 const sendPronoun = /^(?:(?:طيب|تمام|ممكن) )?(?:ارسليه|ارسليها|ابعتيه|ابعتيها|ابعثيه|ورجيني اياه|send it|show it)$/;
 const pluralReference = /^(?:(?:طيب|تمام|ممكن|و)\s*)?(?:وينهم|وينهن|وين (?:هم|هن|المنتجات|هالمنتجات|الخيارات)|ارسليهم|ارسليهن|ابعتيهم|ابعتيهن|ابعثيهم|ورجيني اياهم|روابط المنتجات|(?:ال|هال)منتجات(?: اللي.{1,24})?|them|where are they|send them|show them)$/;
+const normalizeDigits = text => text.replace(/[٠-٩۰-۹]/g,digit=>String(digit.charCodeAt(0)-(digit<='٩'?0x660:0x6f0)));
+const numberedShade = /(?:^| )(?:بدرج[هة]|(?:ال)?درج[هة]|shade|tone) (?:رقم )?([1-4])(?: فاتح| وسط فاتح| وسط عادي| حنطي)?$/;
+
+export function productPhotoRequest(message) {
+  const text=normalizeDigits(normalizeSearch(message))
+    .replace(/^(?:ممكن|لو سمحتي|can i see|عندك|في) /,'')
+    .replace(cardVerb,'').replace(wantProduct,'')
+    .replace(/^(?:اشوف|تورجيني|تفرجيني|تبعتي(?:لي)?|ترسلي(?:لي)?|a|the) /,'');
+  const photo=text.match(/^(صور[هة]|الصور[هة]|صور|الصور|صورت[هة]|صورتها|صورهم|صورهن|photos?|pictures?|images?)(?: |$)/);
+  if (!photo) return null;
+  const subject=text.slice(photo[0].length).replace(/^(?:of |for |ل(?=هالمنتج))/,'')
+    .replace(/^لل(منتج(?:ات)?)(?= |$)/,'ال$1');
+  const choice=subject.match(numberedShade);
+  const target=choice?subject.slice(0,choice.index):subject;
+  if (/^(?:ل?(?:وجهي|ايدي|بشرتي)|my (?:face|hand|skin))(?: |$)/.test(target)) return null;
+  const plural=/^(?:صورهم|صورهن)$/.test(photo[1])||pluralReference.test(target)||
+    !target&&/^(?:الصور|صور|photos|pictures|images)$/.test(photo[1]);
+  return {target,plural,shade:choice?'tone-'+choice[1]:''};
+}
+
+const discussesShade = text => /درج[هةات]|فاتح.{0,65}حنطي|\b(?:shade|tone)\b/i.test(text);
+export function requestedLamaShade(message, history, photo) {
+  if (photo) return photo.shade;
+  const text=normalizeDigits(normalizeSearch(message));
+  const explicit=text.replace(/^(?:بدي|اريد|اختار) /,'').match(numberedShade);
+  if (explicit?.index===0) return 'tone-'+explicit[1];
+  const last=history.at(-1);
+  const shadeContext=last?.role==='model'&&discussesShade(last.text);
+  const choice=text.replace(/^(?:رقم|بدي|اختار) /,'');
+  if (!shadeContext) return '';
+  if (/^[1-4]$/.test(choice)) return 'tone-'+choice;
+  return SKIN_TONES.find(tone=>{
+    const label=normalizeSearch(tone.label);
+    return choice===label||choice===label.slice(2);
+  })?.id||'';
+}
 
 export const asksForLamaOptions = text => /^(?:(?:طيب|تمام|هلا) )?(?:(?:شو|ايش|اي|ما|في|بدي|اريد|ممكن) (?:هي |في |عندك |عندكم )?(?:ال)?(?:منتج(?:ات)?|خيارات|اشي)(?: |$)|(?:عندك(?:م)?) (?:اشي|خيارات|منتجات)(?: |$)|(?:what|which|any|show me) (?:your |the )?(?:products|options)(?: |$))/.test(text);
 
@@ -113,27 +150,43 @@ export function productCardIntent(message) {
     (target !== text && !/طريق[هة]|كيف|قبل|بعد|مكونات|سعر|رد|نص|معلومات|تفاصيل|اعرف|description|directions|instructions|ingredients|price|to know/.test(target));
 }
 
-export function resolveRequestedCard(input, catalog) {
+function contextProducts(history,catalog,searchRecent) {
+  const turns=searchRecent?history.slice(-7).reverse():history.slice(-1);
+  for (const turn of turns) {
+    if (turn.role==='model') {
+      const ids=latestSuggestedIds([turn]);
+      if (ids.length) return ids.map(id=>catalog.find(p=>p.id===id));
+    }
+    const cleaned=turn.role==='model'?lumaReplyText(turn.text):turn.text;
+    const named=mentionedCatalogProducts(cleaned,catalog);
+    if (named.length) return named;
+    if (searchRecent&&turn.role==='user') {
+      const matched=namedCatalogMatches(cleaned,catalog);
+      if (matched.length===1) return matched;
+    }
+  }
+  return [];
+}
+
+export function resolveRequestedCard(input, catalog, {photo,shade}={}) {
   const text = normalizeSearch(input.message);
   const en = isEnglish(input.message);
-  const target = text.replace(cardVerb, '').replace(wantProduct, '').replace(/^(?:رابط|روابط|لينك|بطاق[هة]|بطاقات|the link (?:to|for)) /, '');
-  const plural = pluralReference.test(text) || pluralReference.test(target) || /^(?:the products|the items)(?: |$)/.test(target);
-  const pointsBack = plural || sendPronoun.test(text) || productReference.test(text) || productReference.test(target);
-  let products = pointsBack ? [] : asksForLamaOptions(text) ? mentionedCatalogProducts(target, catalog) : namedCatalogMatches(target, catalog);
+  const target = photo?.target??text.replace(cardVerb, '').replace(wantProduct, '').replace(/^(?:رابط|روابط|لينك|بطاق[هة]|بطاقات|the link (?:to|for)) /, '');
+  const plural = !shade&&(photo?.plural||pluralReference.test(text)||pluralReference.test(target)||/^(?:the products|the items)(?: |$)/.test(target));
+  const pointsBack=plural||sendPronoun.test(text)||productReference.test(text)||productReference.test(target)||
+    !!photo&&!target||!!shade&&!photo;
+  let products;
   if (pointsBack) {
-    const latest = input.history.at(-1);
-    if (latest?.role === 'model') {
-      const ids = latestSuggestedIds([latest]);
-      products = ids.length ? ids.map(id => catalog.find(p => p.id === id)) : mentionedCatalogProducts(lumaReplyText(latest.text), catalog);
-    }
+    products=contextProducts(input.history,catalog,!!(photo||shade));
     const index = /الاول|\bfirst\b/.test(target) ? 0 : /الثاني|التاني|\bsecond\b/.test(target) ? 1 :
       /الثالث|\bthird\b/.test(target) ? 2 : /الاخير|\blast\b/.test(target) ? products.length-1 : null;
     if (index !== null) products = products.slice(index < 0 ? products.length : index, index+1);
-  }
+  } else products=asksForLamaOptions(text)?mentionedCatalogProducts(target,catalog):namedCatalogMatches(target,catalog);
+  if (shade) products=products.filter(item=>item?.options?.some(option=>option.id===shade));
   if (products.some(Boolean) && (products.length === 1 || plural)) return products.filter(Boolean);
   const choices = products.filter(Boolean).map(p => ({label:nameOf(p,en),value:p.id}));
-  if (choices.length || pointsBack) return {type:'question',question:{
-    field:'catalogProduct',mode:'display',
+  if (choices.length || pointsBack || photo || shade) return {type:'question',question:{
+    field:'catalogProduct',mode:photo||shade?'photo':'display',...(shade?{shade}:{}),
     text:choices.length?(en?'Which one would you like to see?':'أي واحد فيهم بدك تشوفي؟'):
       (en?'Which product should I look up? You can send me its name or brand.':'أي منتج قصدك؟ ابعتيلي اسمه أو ماركته وبفتحه لكِ.'),
     choices
