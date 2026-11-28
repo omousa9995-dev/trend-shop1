@@ -1,4 +1,4 @@
-import {savedLumaProfile,saveLumaPreferences,normalizeLamaProfile,captureLamaPreferences,lumaShortcuts,lumaGuideQuestions,skinNames,concernNames,profileChoices} from './luma-profile.js?v=5.23.5';
+import {savedLumaProfile,saveLumaPreferences,normalizeLamaProfile,captureLamaPreferences,lumaShortcuts,lumaGuideQuestions,skinNames,concernNames,profileChoices,takeQuizProfile} from './luma-profile.js?v=5.23.14';
 import {preparePhotoFile} from './prepare-photo.js?v=5.21.0';
 import {consumeLumaStream,appendLumaHistory} from './luma-stream.js?v=5.23.11';
 const make=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el};
@@ -34,8 +34,12 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
  let storage;try{storage=localStorage}catch{}
  const remembered=savedLumaProfile(storage);
  const baseProfile=()=>({area:'unknown',skinType:'unknown',sensitive:'unknown',...savedLumaProfile(storage).profile});
+ let quizProfile;
+ if(standalone&&new URL(location.href).searchParams.get('from')==='skin-quiz'){
+  try{quizProfile=takeQuizProfile(sessionStorage)}catch{}
+ }
  let guide=null,pendingQuestion=null,skipped=new Set();
- let activeTurn,failedTurn,history=[],profile=baseProfile(),budgetFils=remembered.budgetFils,image=null,photoBusy=false,photoSequence=0,returnFocus,scrollFrame=0,pinned=true,locked=null;
+ let activeTurn,failedTurn,history=[],profile={...baseProfile(),...quizProfile},budgetFils=remembered.budgetFils,image=null,photoBusy=false,photoSequence=0,returnFocus,scrollFrame=0,pinned=true,locked=null;
  function scroll(force=false){if(!force&&!pinned)return;cancelAnimationFrame(scrollFrame);scrollFrame=requestAnimationFrame(()=>{log.scrollTop=log.scrollHeight})}
  log.addEventListener('scroll',()=>{pinned=log.scrollHeight-log.scrollTop-log.clientHeight<65},{passive:true});
  function bubble(text,side='model'){const item=make('article',undefined,'luma-bubble luma-'+side);item.append(make('span',side==='user'?'أنتِ':'لُمى','luma-speaker'),make('p',text));log.append(item);while(log.children.length>48)log.firstElementChild.remove();scroll();return item}
@@ -321,6 +325,6 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
  $('[data-luma-reset]').onclick=()=>{stopRequest();history=[];guide=null;pendingQuestion=null;profile=baseProfile();budgetFils=savedLumaProfile(storage).budgetFils;clearPhoto();message.value='';notice.textContent='';log.replaceChildren();welcome();refresh()};
  const cleanup=()=>{close();stopRequest();history=[];photoSequence++;image=null;message.value='';$('.luma-image-preview img').removeAttribute('src');log.replaceChildren()};listen(window,'pagehide',cleanup);listen(window,'pageshow',event=>{if(event.persisted&&!log.children.length){welcome();refresh()}});
  function destroy(){if(destroyed)return;destroyed=true;cleanup();for(const remove of removers)remove();cancelAnimationFrame(viewportFrame);cancelAnimationFrame(scrollFrame);dialog.remove();if(instance?.dialog===dialog)instance=undefined}
- welcome();refresh();instance={open,close,destroy,dialog};if(standalone)open();return instance;
+ welcome();if(quizProfile)notice.textContent='وصلتني نتيجة الكويز. اسأليني عن روتينكِ وبنكمل سوا.';refresh();instance={open,close,destroy,dialog};if(standalone)open();return instance;
 }
 if(document.querySelector('[data-luma-standalone]'))mountLumaWidget({standalone:true}).catch(error=>{const el=document.querySelector('[data-luma-standalone]');el.textContent=error.message});

@@ -3,6 +3,7 @@ import {normalizeSearch} from './shop-tools.js';
 // Conversation messages and photos stay in memory; only these preferences are saved.
 export const LUMA_PREFERENCES_KEY = 'lama_user_profile';
 const LEGACY_KEY = 'trend-shop-luma-preferences-v1';
+const QUIZ_PROFILE_KEY = 'trend-shop-luma-quiz-v1';
 export const profileChoices = {
   area: ['face','body','hands','feet','hair','makeup'],
   skinType: ['dry','oily','combination','balanced'],
@@ -22,6 +23,28 @@ export function normalizeLamaProfile(profile = {}) {
   if(concerns.length)clean.concerns=concerns;
   if(likedProductIds.length)clean.likedProductIds=likedProductIds;
   return clean;
+}
+
+export function shareQuizProfile(storage, profile) {
+  try {
+    const {skinType, sensitive, goal, preferredRoutine} = normalizeLamaProfile(profile);
+    storage.setItem(QUIZ_PROFILE_KEY, JSON.stringify({skinType, sensitive, goal, preferredRoutine}));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function takeQuizProfile(storage) {
+  try {
+    const saved = storage.getItem(QUIZ_PROFILE_KEY);
+    storage.removeItem(QUIZ_PROFILE_KEY);
+    if (!saved) return undefined;
+    const {skinType, sensitive, goal, preferredRoutine} = normalizeLamaProfile(JSON.parse(saved));
+    return {area: 'face', skinType: skinType || 'unknown', sensitive: sensitive || 'unknown', goal, preferredRoutine};
+  } catch {
+    return undefined;
+  }
 }
 
 export function captureLamaPreferences(message, profile = {}) {

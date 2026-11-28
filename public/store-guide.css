@@ -53,10 +53,27 @@
 .skin-quiz-arrow { margin-inline-start: 8px; font-size: 1.55rem; }
 html[dir=ltr] .skin-quiz-arrow { transform: rotate(180deg); }
 .skin-quiz-card:hover { border-color: var(--rose); }
-.skin-quiz-card:focus-visible, .skin-quiz-dialog button:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
+.menu-list .skin-quiz-menu {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 13px;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  color: var(--plum);
+  font: inherit;
+  font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+.skin-quiz-menu:hover { background: var(--cream); }
+.skin-quiz-menu:focus-visible, .skin-quiz-card:focus-visible,
+.skin-quiz-dialog :is(button, a):focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
 
 .skin-quiz-dialog {
-  width: min(440px,calc(100% - 28px));
+  width: min(480px,calc(100% - 28px));
+  max-height: calc(100vh - 28px);
   max-height: calc(100dvh - 28px);
   margin: auto;
   padding: 0;
@@ -68,6 +85,9 @@ html[dir=ltr] .skin-quiz-arrow { transform: rotate(180deg); }
 }
 .skin-quiz-dialog::backdrop { background: #32232b71; }
 .skin-quiz-dialog header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,8 +100,9 @@ html[dir=ltr] .skin-quiz-arrow { transform: rotate(180deg); }
 .skin-quiz-dialog h2 { font-size: 1.2rem; }
 .skin-quiz-dialog h3 { line-height: 1.55; }
 .skin-quiz-body { padding: 18px; }
+.skin-quiz-intro { margin: 0 0 12px; color: var(--ink); font-size: .92rem; }
 .skin-quiz-progress { margin: 0; color: var(--plum); font-size: .88rem; }
-.skin-quiz-dialog progress { display: block; width: 100%; height: 6px; margin-block: 6px 13px; }
+.skin-quiz-dialog progress { display: block; width: 100%; height: 6px; margin-block: 6px 13px; accent-color: var(--rose); }
 .skin-quiz-answers { display: grid; gap: 8px; margin-top: 12px; }
 .skin-quiz-dialog button {
   min-height: 44px;
@@ -96,3 +117,55 @@ html[dir=ltr] .skin-quiz-arrow { transform: rotate(180deg); }
 .skin-quiz-dialog button:hover { border-color: var(--rose); }
 .skin-quiz-dialog .skin-quiz-selected { background: var(--blush); border-color: var(--rose); }
 .skin-quiz-dialog .skin-quiz-secondary { margin-top: 12px; background: var(--white); }
+.skin-quiz-summary, .skin-quiz-plan {
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: var(--cream);
+}
+.skin-quiz-summary p, .skin-quiz-plan p { margin: 4px 0; }
+.skin-quiz-summary small { color: var(--plum); }
+.skin-quiz-plan {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: baseline;
+  column-gap: 12px;
+  margin-top: 10px;
+  background: var(--sage-wash);
+}
+.skin-quiz-dialog h4 { margin: 0; color: var(--plum); font-size: .97rem; }
+.skin-quiz-routine { margin-block: 14px 5px; }
+.skin-quiz-status { margin-block: 0 6px; font-size: .9rem; }
+.skin-quiz-status:empty { margin: 0; }
+.skin-quiz-products { display: grid; gap: 8px; margin-block: 9px 12px; }
+.skin-quiz-product {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 9px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+}
+.skin-quiz-product img {
+  width: 100%;
+  height: 66px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.skin-quiz-product-text { grid-template-columns: 1fr; }
+.skin-quiz-product-name, .skin-quiz-product strong { display: block; color: var(--plum); }
+.skin-quiz-product-name { font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
+.skin-quiz-product p { margin: 3px 0; font-size: .87rem; }
+.skin-quiz-step-label { color: var(--rose); font-weight: 700; font-size: .83rem; }
+.skin-quiz-dialog .skin-quiz-primary {
+  width: 100%;
+  color: var(--white);
+  background: var(--rose);
+  border-color: var(--rose);
+  font-weight: 750;
+  text-align: center;
+}
+.skin-quiz-dialog .skin-quiz-primary:hover { background: var(--plum); }
+.skin-quiz-dialog button:disabled { opacity: .64; cursor: wait; }
+.skin-quiz-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }

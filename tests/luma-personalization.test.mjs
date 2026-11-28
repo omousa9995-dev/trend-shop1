@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {buildSync} from 'esbuild';
 import {JSDOM} from 'jsdom';
 import {readFileSync} from 'node:fs';
-import {LUMA_PREFERENCES_KEY} from '../public/luma-profile.js';
+import {LUMA_PREFERENCES_KEY,shareQuizProfile} from '../public/luma-profile.js';
 import {quizSkinProfile,installSkinQuiz} from '../public/skin-quiz.js';
 import {whatsappChannelUrl,normalizeSiteSettings,DEFAULT_SITE_SETTINGS} from '../public/site-settings.js';
 import {channelDraft} from '../public/whatsapp-channel.js';
@@ -13,13 +13,12 @@ const bundle=buildSync({
  format:'iife',globalName:'LumaWidget',write:false,logLevel:'silent'
 }).outputFiles[0].text;
 
-test('Five-answer quiz weighs oil distribution, tightness, flaking and moisture separately from sensitivity',()=>{
- assert.equal(quizSkinProfile({afterWash:'dry',midday:'dry',texture:'dry',moisture:'dry'}).skinType,'dry');
- assert.equal(quizSkinProfile({afterWash:'oily',midday:'oily',texture:'unknown',moisture:'oily'}).skinType,'oily');
- assert.equal(quizSkinProfile({afterWash:'balanced',midday:'balanced',texture:'unknown',moisture:'balanced'}).skinType,'balanced');
- assert.equal(quizSkinProfile({afterWash:'dry',midday:'oily',texture:'dry',moisture:'unknown'}).skinType,'unknown');
- assert.equal(quizSkinProfile({afterWash:'dry',midday:'combination'}).skinType,'unknown');
- assert.deepEqual(quizSkinProfile({afterWash:'dry',midday:'combination',texture:'unknown',moisture:'combination',sensitive:'yes'}),{skinType:'combination',sensitive:'yes',area:'face'});
+test('Five-answer quiz uses skin signals independently of sensitivity, goal and routine length',()=>{
+ for(const skinType of ['dry','oily','balanced','combination'])assert.equal(quizSkinProfile({afterWash:skinType,midday:skinType}).skinType,skinType);
+ assert.equal(quizSkinProfile({afterWash:'dry',midday:'oily',goal:'dryness'}).skinType,'unknown');
+ assert.equal(quizSkinProfile({afterWash:'unknown',midday:'oily'}).skinType,'unknown');
+ assert.deepEqual(quizSkinProfile({afterWash:'dry',midday:'combination',sensitive:'yes',goal:'shine',routine:'am-pm'}),
+  {skinType:'combination',sensitive:'yes',area:'face',goal:'shine',preferredRoutine:'am-pm'});
  assert.equal(quizSkinProfile({sensitive:'yes'}).skinType,'unknown');
 });
 
@@ -29,8 +28,8 @@ test('The skincare emoji card runs all five questions and shows the result outsi
  t.after(()=>dom.window.close());
  dom.window.HTMLDialogElement.prototype.showModal=function(){this.open=true};
  dom.window.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new dom.window.Event('close'))};
- const update=installSkinQuiz(d);
- update(true,'ar');
+ const quiz=installSkinQuiz(d);
+ quiz.update(true,'ar');
  const card=d.querySelector('[data-skin-quiz-entry]');
  assert.equal(card.hidden,false);
  assert.equal(card.querySelector('.skin-quiz-emoji').textContent,'🧴');
@@ -41,7 +40,7 @@ test('The skincare emoji card runs all five questions and shows the result outsi
   assert.ok(button,'Missing choice '+text);
   button.click();
  };
- const labels=['مشدودة أو جافة','على الأنف والجبهة والذقن','نادرًا أو ما بلاحظ تقشّر','خدودي مرتاحة وبترجع اللمعة بوسط الوجه','غالبًا'];
+ const labels=['مشدودة أو جافة','على الأنف والجبهة أو الذقن','غالبًا','تخفيف مظهر اللمعة','خطوات للصباح والمساء'];
  for(const [step,label] of labels.entries()){
   const progress=d.querySelector('.skin-quiz-dialog progress');
   assert.equal(progress.max,5);
@@ -55,13 +54,43 @@ test('The skincare emoji card runs all five questions and shows the result outsi
  }
  assert.match(d.querySelector('.skin-quiz-dialog').textContent,/مختلطة/);
  assert.match(d.querySelector('.skin-quiz-dialog').textContent,/تتأثر بسهولة/);
+ assert.match(d.querySelector('.skin-quiz-dialog').textContent,/تخفيف مظهر اللمعة/);
  assert.equal(d.querySelector('#lumaChat'),null);
  choose('إعادة الاختبار');
  assert.equal(d.querySelector('.skin-quiz-dialog progress').value,1);
  assert.equal(d.querySelector('.skin-quiz-selected'),null);
- update(false,'ar');
+ quiz.update(false,'ar');
  assert.equal(d.querySelector('.skin-quiz-dialog'),null);
  assert.equal(card.hidden,true);
+});
+
+test('A quiz handoff opens Luma with a one-use profile and waits for the visitor to send a message',async t=>{
+ const dom=new JSDOM('<!doctype html><body></body>',{url:'https://trend.test/care-assistant.html?from=skin-quiz',runScripts:'outside-only',pretendToBeVisual:true});
+ const w=dom.window;t.after(()=>w.close());
+ w.HTMLDialogElement.prototype.showModal=function(){this.open=true};
+ w.HTMLDialogElement.prototype.close=function(){this.open=false};
+ w.scrollTo=()=>{};w.TextDecoder=TextDecoder;w.AbortController=AbortController;
+ let sent;
+ w.fetch=async(_url,{body})=>{
+  sent=JSON.parse(body);
+  return new Response('event: delta\ndata: {"text":"تمام، نبلش بخطوات بسيطة."}\n\nevent: done\ndata: {}\n\n');
+ };
+ assert.equal(shareQuizProfile(w.sessionStorage,{skinType:'dry',sensitive:'yes',goal:'dryness',preferredRoutine:'am-pm',ageGroup:'25-34'}),true);
+ w.eval(bundle);
+ const api=await w.LumaWidget.mountLumaWidget({standalone:true,status:{available:true,imagesAvailable:false}});
+ assert.match(api.dialog.textContent,/وصلتني نتيجة الكويز/);
+ assert.equal(w.sessionStorage.length,0);
+ assert.equal(w.localStorage.getItem(LUMA_PREFERENCES_KEY),null);
+ assert.equal(sent,undefined);
+ api.dialog.querySelector('textarea').value='احكيلي عن نتيجة الكويز';
+ api.dialog.querySelector('form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+ assert.equal(sent.profile.skinType,'dry');
+ assert.equal(sent.profile.sensitive,'yes');
+ assert.equal(sent.profile.goal,'dryness');
+ assert.equal(sent.profile.preferredRoutine,'am-pm');
+ assert.equal(sent.profile.ageGroup,undefined);
+ await new Promise(resolve=>setTimeout(resolve,20));
+ api.destroy();
 });
 
 test('Guided Luma remembers chosen preferences without a quiz or a budget question',async t=>{

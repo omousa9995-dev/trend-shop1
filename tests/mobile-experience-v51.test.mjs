@@ -22,6 +22,46 @@ function fill(d){const f=d.querySelector('#checkoutForm');for(const[k,v]of Objec
 function input(w,field,value){field.value=value;field.dispatchEvent(new w.Event('input',{bubbles:true}))}
 const cart=(w)=>JSON.parse(w.localStorage.getItem('trend-shop-cart-v1'));
 
+test('Discover menu opens the quiz below All Products and refreshes a sold-out routine before adding', async t=>{
+ const source=catalog.find(product=>product.id==='TS0081');
+ const item=(id,name,type,benefits)=>({
+  id,name,category:'البشرة',price_fils:6000,approved:1,stock:5,
+  image_url:source.image_url||source.image,details:{nameAr:name,productType:type,benefits}
+ });
+ const first=item('TS9001','مرطب حاجز البشرة الجافة','moisturizer',['ترطيب غني','دعم حاجز البشرة']);
+ const alternate=item('TS9002','لوشن الترطيب اليومي','moisturizer',['ترطيب يومي']);
+ const sun=item('TS9003','واقي شمس مرطب','sunscreen',['حماية نهارية','ترطيب']);
+ const {w,d,sent}=await open(t,{live:true,products:[source,first,alternate,sun]});
+ d.querySelector('#menuBtn').click();
+ const menu=d.querySelector('[data-skin-quiz-menu]');
+ assert.equal(menu.previousElementSibling.textContent,'جميع المنتجات');
+ assert.equal(menu.closest('#drawer').getAttribute('aria-label'),'اكتشفي Trend Shop');
+ menu.click();
+ assert.equal(d.querySelector('#drawer').hidden,true);
+ const modal=d.querySelector('#skinQuizDialog');
+ assert.equal(modal.open,true);
+ for(const answer of ['مشدودة أو جافة','لمعة قليلة مع جفاف أو شدّ','نادرًا','الترطيب وتخفيف إحساس الشدّ','خطوتين أساسيتين']){
+  const button=[...modal.querySelectorAll('button')].find(button=>button.textContent===answer);
+  assert.ok(button,answer);
+  button.click();
+ }
+ await until(()=>modal.querySelector('a[href="/product/TS9001"]'));
+ assert.equal(modal.querySelectorAll('.skin-quiz-product').length,2);
+ assert.match(modal.textContent,/6.00/);
+ first.stock=0;
+ modal.querySelector('.skin-quiz-primary').click();
+ await until(()=>modal.querySelector('a[href="/product/TS9002"]'));
+ assert.equal(modal.querySelector('a[href="/product/TS9001"]'),null);
+ assert.match(modal.textContent,/حدّثنا الترشيحات/);
+ assert.deepEqual(cart(w),[]);
+ const expected=[...modal.querySelectorAll('.skin-quiz-product-name')].map(link=>link.href.split('/').pop()).sort();
+ modal.querySelector('.skin-quiz-primary').click();
+ await until(()=>cart(w).length===2);
+ assert.deepEqual(cart(w).map(line=>line.id).sort(),expected);
+ assert.ok(cart(w).every(line=>line.qty===1));
+ assert.equal(sent.length,0);
+});
+
 test('Search is a modal, follows the visible keyboard viewport, and releases sizing listeners on close',async t=>{
  const {w,d,viewport}=await open(t);d.querySelector('#searchBtn').click();const panel=d.querySelector('#searchPanel');assert.equal(panel.tagName,'DIALOG');assert.equal(panel.open,true);assert.equal(d.activeElement.id,'globalSearch');assert.equal(d.body.style.overflow,'hidden');viewport.height=360;viewport.offsetTop=18;viewport.dispatchEvent(new w.Event('resize'));assert.equal(panel.style.getPropertyValue('--search-height'),'360px');assert.equal(panel.style.getPropertyValue('--search-top'),'18px');assert.equal(panel.dataset.compact,'true');input(w,d.querySelector('#globalSearch'),'تونر');assert.ok(d.querySelectorAll('#globalSuggestions [role=option]').length>1);assert.ok(d.querySelector('.search-result-price'));d.querySelector('#clearSearch').click();assert.equal(d.querySelector('#globalSearch').value,'');assert.equal(d.querySelector('#globalSuggestions').hidden,true);d.querySelector('#closeSearch').click();assert.equal(panel.hidden,true);assert.equal(panel.open,false);assert.equal(d.body.style.overflow,'');viewport.height=999;viewport.dispatchEvent(new w.Event('resize'));assert.equal(panel.style.getPropertyValue('--search-height'),'360px');
 });
