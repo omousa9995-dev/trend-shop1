@@ -1,6 +1,7 @@
 import {savedLumaProfile,saveLumaPreferences,normalizeLamaProfile,captureLamaPreferences,lumaShortcuts,lumaGuideQuestions,skinNames,concernNames,profileChoices,takeQuizProfile} from './luma-profile.js?v=5.23.14';
 import {preparePhotoFile} from './prepare-photo.js?v=5.21.0';
 import {consumeLumaStream,appendLumaHistory} from './luma-stream.js?v=5.23.11';
+import {lumaReplyText} from './luma-reply-text.js?v=5.23.17';
 const make=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el};
 const TURN_TIMEOUT_MS = 39000;
 const RETRY_MESSAGE = 'ما اكتمل الرد هالمرة. اضغطي «إعادة المحاولة» وبرجع لنفس سؤالكِ.';
@@ -144,10 +145,10 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
    };
    actions.append(like);card.append(actions);group.append(card)}
   const next=make('div',undefined,'luma-plan-next');
-  if(data.alternatives){
+  if(data.area==='fragrance'&&data.alternatives){
    action(next,'عطور ثانية',()=>send('عندك خيارات ثانية غيرهم؟'));
   }else{
-   const totals=make('p',undefined,'luma-total');totals.append(document.createTextNode('المنتجات '+money(data.subtotalFils)+' · التوصيل '+money(data.shippingFeeFils)+'\n'),make('strong','الإجمالي '+money(data.totalFils)));group.append(totals);
+   if(!data.alternatives){const totals=make('p',undefined,'luma-total');totals.append(document.createTextNode('المنتجات '+money(data.subtotalFils)+' · التوصيل '+money(data.shippingFeeFils)+'\n'),make('strong','الإجمالي '+money(data.totalFils)));group.append(totals);}
    action(next,'اشرحي طريقة الاستخدام',()=>send('كيف أستعمل آخر منتج اقترحتيه؟'));
    action(next,'نبدأ بمنتج واحد',()=>send('من اقتراحاتكِ، بأي منتج واحد أبدأ؟'));
   }
@@ -233,9 +234,11 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
   const attempts=[];
   dialog.dataset.lumaProviderTrace='[]';
   delete dialog.dataset.lumaResponseMs;
-  let failed=false,answer='',historyNotes='',committed=false,done=false;
+  let failed=false,answer='',receivedText='',historyNotes='',committed=false,done=false;
   const referredProducts=[];
-  const renderText=text=>{
+  const renderText=(value,{partial=false}={})=>{
+   receivedText=value;
+   const text=lumaReplyText(value,{partial});
    answer=text;
    if(!text){turn.reply?.remove();turn.reply=null;return;}
    turn.reply??=bubble('');
@@ -254,9 +257,10 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     dialog.dataset.lumaProviderStatus=data.ok?'ok':String(data.status||data.reason);
    }else if(event==='progress'){
     if(progressText[data.phase])$('.luma-head p').textContent=progressText[data.phase];
-   }else if(event==='replace')renderText(data.text||'');
-   else if(event==='delta')renderText(answer+(data.text||''));
+   }else if(event==='replace')renderText(data.text||'',{partial:true});
+   else if(event==='delta')renderText(receivedText+(data.text||''),{partial:true});
    else if(['products','question','handoff','notice','followup','profile'].includes(event)){
+    if(event==='products')renderText(receivedText);
     renderTool({...data,type:event});
     if(event==='question'&&data.question?.text){committed=true;historyNotes+=' '+data.question.text;}
     if(event==='products'&&data.routine?.length){committed=true;referredProducts.push(...data.routine.map(p=>p.id));}
@@ -268,6 +272,7 @@ export async function mountLumaWidget({status:initial,standalone=false}={}){
     notice.textContent=data.message||'جرّبي مرة ثانية.';
     notice.dataset.lumaErrorCode=String(data.code||'UNKNOWN');
    }else if(event==='done'){
+    renderText(receivedText);
     done=true;
     if(Number.isFinite(data.durationMs))dialog.dataset.lumaResponseMs=String(data.durationMs);
    }

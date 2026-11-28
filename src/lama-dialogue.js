@@ -1,29 +1,29 @@
 import {requestGemini} from './gemini-provider.js';
 import {untilAbort} from './gemini-stream.js';
-import {productsContext, namedCatalogMatches, latestSuggestedIds, requestedProductTypes} from './lama-catalog.js';
-import {lumaBudgetNeutralText} from './luma-care-knowledge.js';
+import {productsContext, namedCatalogMatches, mentionedCatalogProducts, latestSuggestedIds, requestedProductTypes} from './lama-catalog.js';
+import {lumaBudgetNeutralText, lumaProductAllowed} from './luma-care-knowledge.js';
 import {lumaCatalogFacts} from './luma-store-facts.js';
 import {lamaSystem} from './lama-system.js';
+import {asksForLamaOptions} from './lama-shopping.js';
 import {normalizeSearch} from '../public/shop-tools.js';
+import {lumaReplyText} from '../public/luma-reply-text.js?v=5.23.17';
 
 const textLimit=4000;
-const catalogMarker=/^المنتجات المقترحة:.*$/gm;
-const codePattern=/\b(?:TS|PROMO)[A-Z0-9-]{4,64}\b/g;
 const referral=/واتساب|wa\.me|whatsapp|(?:تواصلي|تواصل|اتصلي|راسلينا|راسلي|تحكي مع|ارجعي ل|reach out|contact).{0,45}(?:فريق|متجر|Trend Shop|الدعم)/i;
 export const requestsStoreContact = message=>/واتس|whatsapp|رقمكم|رقم.{0,16}(?:الادارة|الإدارة|الدعم|الفريق|المتجر)|(?:تواصل|اتواصل|أحكي مع|احكي مع|contact|reach).{0,32}(?:فريق|ادار|إدار|متجر|الدعم|support|trend shop)/i.test(message);
 
 export function wantsLamaRecommendations(input){
  const message=normalizeSearch(input.message);
- if(/بدون منتجات|من غير منتجات|مش بدي منتجات|نصايح بس|نصائح فقط|without products|advice only/.test(message))return false;
+ if(/بدون منتجات|من دون منتجات|من غير منتجات|مش بدي منتجات|نصايح بس|نصائح فقط|without products|advice only/.test(message))return false;
  const askingForType=requestedProductTypes(message).length>0&&
   (/^(?:(?:طيب|تمام|ممكن) )?(?:بدي|اريد|ابغي|دوريلي على|اعطيني|i want|i m looking for) /.test(message)||
    /^(?:ال)?غسول$|^(?:face wash|cleanser)$/.test(message));
- return input.guided||askingForType||['routine','sunscreen','makeup','concealer'].includes(input.intent)||
+ return input.guided||asksForLamaOptions(message)||askingForType||['routine','sunscreen','makeup','concealer'].includes(input.intent)||
   /عندكم|من (?:عندكم|المتجر|موقعكم|منتجاتكم)|ترشحي|رشحي|اقترحي|شو اشتري|شو افضل|اي (?:ال)?منتج|اي (?:نوع|خيار) (?:بتنصح|تنصح)|بدي بديل|اريد شراء|\b(?:recommend|suggest|can i buy|from your store)\b/.test(message);
 }
 
 export function cleanLamaDialogueText(input,text) {
- const natural=lumaBudgetNeutralText(text,textLimit).replace(catalogMarker,'').replace(codePattern,'').trim();
+ const natural=lumaBudgetNeutralText(lumaReplyText(text),textLimit);
  const contactRequested=requestsStoreContact(input.message);
  return natural.split(/(?<=[.!؟?])(?=\s)|(?<=\n)/).filter(sentence=>{
   if(!contactRequested&&referral.test(sentence))return false;
@@ -39,7 +39,7 @@ export function cleanLamaDialogueText(input,text) {
 function conversationTurns(history,current) {
  const contents=[];
  for(const {role,text} of history){
-  const line=text.replace(catalogMarker,'').trim();
+  const line=role==='model'?lumaReplyText(text):text;
   if(!line||(!contents.length&&role==='model'))continue;
   if(contents.at(-1)?.role===role)contents.at(-1).parts.push({text:line});
   else contents.push({role,parts:[{text:line}]});
@@ -90,17 +90,13 @@ export function buildLamaDialogue(input,allCatalog,shortlist,tools,catalogLoaded
  };
 }
 
-function displayable(input,text,{final=false}={}) {
- // Hide provider envelopes and internal markers even if an upstream response
- // disregards the request for natural prose.
- if(/^\s*(?:[`]{3}|\{|\[\s*\{|<\/?(?:tool|function))|\b(?:PRODUCTS_JSON|VISITOR_PROFILE|STORE_CONFIG|ACTION CONTRACT|thoughtSignature|functionCall)\b/i.test(text))return '';
- let clean=cleanLamaDialogueText(input,text);
+function displayable(input,text,{partial=false}={}) {
+ let clean=cleanLamaDialogueText(input,lumaReplyText(text,{partial}));
  // A stray store pitch in prose is not an approved product recommendation.
  // Keep the actual advice instead of leaving a dangling promise of cards.
  const paragraphs=clean.split(/\n{2,}/);
  const pitch=paragraphs.findIndex(part=>/(?:متوفر\S* عنا|عنا بمتجر|منتجات.{0,28}من المتجر|خيار.{0,18}من المتجر|خيارات.{0,18}من المتجر|بضيف.{0,16}لسلت|اضيف.{0,16}لسلت|in stock at trend)/i.test(normalizeSearch(part)));
  if(pitch>=0)clean=paragraphs.slice(0,pitch).join('\n\n').trim();
- if(final)clean=clean.replace(/(?:^|\n)[^\n]+[:：]\s*$/,'').trim();
  return clean;
 }
 const completes=result=>['products','question','handoff'].includes(result.type)||result.type==='answer'&&result.message;
@@ -116,13 +112,40 @@ export async function requestLamaDialogue({
  let contents=request.contents,model;
  const lookups=new Set();
 
+ async function finishText(text){
+  // Some providers return prose for a store request despite the tool schema.
+  // Exact mentions can be converted to selections using current inventory.
+  if(shopping&&catalogLoaded&&!input.image&&!input.warningSigns){
+   const natural=lumaReplyText(text);
+   const positive=natural.split(/(?<=[.!؟?؛])\s+|\n+/).filter(line=>
+    !/تجنب[ي]?|ابعدي عن|مش مناسب|غير مناسب|ما بنصح|لا (?:تحطي|تستعمل|تستخدم|تنصح)|(?:not suitable|avoid|do not use|don.t use)/i.test(normalizeSearch(line))
+   ).join('\n');
+   const products=mentionedCatalogProducts(positive,allCatalog).filter(
+    product=>product.available&&product.careClass==='everyday'&&lumaProductAllowed(product,input)
+   );
+   const first=products.find(product=>input.area==='unknown'||product.areas.includes(input.area));
+   const area=input.area==='unknown'?first?.areas[0]:input.area;
+   const selected=products.filter(product=>product.areas.includes(area)).slice(0,3);
+   if(selected.length){
+    const result=await untilAbort(()=>runTool({name:'show_products',args:{area,productIds:selected.map(product=>product.id)}},
+     {alternatives:input.intent!=='routine'&&new Set(selected.map(product=>product.type)).size<selected.length}),signal);
+    if(result.type==='products')return result;
+   }
+   // Do not quote an unconfirmed offer or promise a product which has no card.
+   if(mentionedCatalogProducts(natural,allCatalog).length||
+      /(?:تفضلي|لقيتلك|عنا|متوفر|بطاق[هة]|بطاقات).{0,45}(?:منتج|خيار|واقي|غسول|عطر|سيروم|مرطب)|(?:here are|here is|in stock).{0,40}(?:picks|products?|serums?|options?)/i.test(normalizeSearch(natural)))return null;
+  }
+  const message=displayable(input,text);
+  return message?{type:'answer',message}:null;
+ }
+
  async function ask(round, options={}){
   const result=await requestGemini({
    apiKey,primary:dialoguePrimary,model:options.repair?undefined:model,signal,transport:'dialogue',
    payload:options.payload||{...request,contents},
    timeoutMs:options.repair?6500:model?11000:[15500,8500],
    maxAttempts:model||options.repair?1:2,
-   onTextDelta:raw=>onDraft(displayable(input,raw)),
+   onTextDelta:raw=>{if(!shopping)onDraft(displayable(input,raw,{partial:true}));},
    onAttempt:attempt=>onAttempt(attempt,round)
   });
   recordTokens(result.data.usageMetadata);
@@ -138,8 +161,8 @@ export async function requestLamaDialogue({
    if(!['STOP','TOOL_CALL'].includes(candidate.finishReason))throw Error('FINISH_'+String(candidate.finishReason||'UNSPECIFIED').slice(0,48));
    const calls=parts.filter(p=>p.functionCall).map(p=>p.functionCall);
    if(!calls.length){
-    const message=displayable(input,finishMessage(parts),{final:true});
-    if(message)return {type:'answer',message};
+    const reply=await finishText(finishMessage(parts));
+    if(reply)return reply;
     throw Error('EMPTY_REPLY');
    }
    if(calls.length>6)throw Error('LAMA_TOOL_LOOP');
@@ -153,7 +176,11 @@ export async function requestLamaDialogue({
      ? {type:'catalog',message:'نتيجة هذا البحث موجودة في الدور السابق. استخدميها للإجابة أو اسألي عن اسم ناقص.'}
      : await untilAbort(()=>runTool(call),signal);
     if(key)lookups.add(key);
-    if(result.type==='answer')result.message=displayable(input,result.message,{final:true});
+    if(result.type==='answer'){
+     const reply=await finishText(result.message);
+     if(reply?.type==='products')return reply;
+     result.message=reply?.message||'';
+    }
     if(completes(result))return result;
     // If a product selection is rejected, Gemini can answer with the
     // validation facts or choose a current product in the next round.
@@ -174,8 +201,8 @@ export async function requestLamaDialogue({
    contents:request.contents,systemInstruction:{parts:[{text:prompt}]},generationConfig:request.generationConfig
   }});
   const candidate=completion.data.candidates[0];
-  const message=displayable(input,finishMessage(candidate.content?.parts||[]),{final:true});
-  if(candidate.finishReason!=='STOP'||!message)throw Error('EMPTY_REPLY');
-  return {type:'answer',message};
+  const reply=await finishText(finishMessage(candidate.content?.parts||[]));
+  if(candidate.finishReason!=='STOP'||!reply)throw Error('EMPTY_REPLY');
+  return reply;
  }
 }

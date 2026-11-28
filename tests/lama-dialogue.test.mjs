@@ -39,6 +39,95 @@ const collect=async response=>{
 const textOf=events=>events.reduce((text,{name,data})=>name==='delta'?text+data.text:name==='replace'?data.text:text,'');
 const spin=async fn=>{for(let i=0;i<160&&!fn();i++)await new Promise(resolve=>setTimeout(resolve,5));assert.ok(fn());};
 function stub(t,f){const old=globalThis.fetch;t.after(()=>{globalThis.fetch=old;});globalThis.fetch=f;}
+function addProduct(db,{id,name,type,benefit,stock=3}){
+ db.prepare(`INSERT INTO products(id,brand,name,category,description,details_json,price_fils,reference_price_fils,stock,approved,active)
+ VALUES(?,'Example',?,'البشرة',?,?,6490,6490,?,1,1)`).run(id,name,benefit,
+  JSON.stringify({nameAr:name,productType:type,benefits:[benefit],howToUse:'اتبعي الإرشادات على العبوة.'}),stock);
+}
+
+test('The screenshot’s pore-product question directly returns documented live recommendations',async t=>{
+ const f=fixture(t);
+ addProduct(f.db,{id:'TSPORE01',name:'جل الترطيب الخفيف',type:'moisturizer',benefit:'ترطيب وعناية بمظهر المسام'});
+ addProduct(f.db,{id:'TSPORE02',name:'غسول بور كلير',type:'cleanser',benefit:'تنظيف لطيف للبشرة المختلطة والعناية بمظهر المسام'});
+ addProduct(f.db,{id:'TSPORE03',name:'سيروم خفيف للمسام',type:'serum',benefit:'مظهر أنعم للمسام',stock:0});
+ addProduct(f.db,{id:'TSPORE04',name:'سيروم سبكيول مكثف',type:'serum',benefit:'العناية بمظهر المسام'});
+ let calls=0;
+ stub(t,async()=>{calls++;throw Error('Known concern can use the current catalog');});
+ const events=await collect(await f.ask('شو منتجات المسامات؟',{profile:{skinType:'combination'}}));
+ const products=events.find(e=>e.name==='products')?.data.routine;
+ assert.deepEqual(products?.map(p=>p.id).sort(),['TSPORE01','TSPORE02']);
+ assert.ok(products.every(p=>p.reason.includes('المسام')&&p.href.startsWith('/product/')));
+ assert.equal(textOf(events),'تفضّلي، هاي المنتجات.');
+ assert.equal(events.at(-1).data.source,'live-catalog');
+ assert.equal(calls,0);
+});
+
+test('وينهم shows both named sunscreens as alternatives and respects a later stock change',async t=>{
+ const f=fixture(t);
+ const first='واقي الشمس المرطّب بعصارة البتولا من راوند لاب',second='واقي الشمس ريليف صن من بيوتي أوف جوسون';
+ addProduct(f.db,{id:'TSSUN001',name:first,type:'sunscreen',benefit:'واقي شمس بلمسة مرطبة'});
+ addProduct(f.db,{id:'TSSUN002',name:second,type:'sunscreen',benefit:'حماية شمسية بحسب العبوة'});
+ const history=appendLumaHistory([],'شو عندكم واقيات؟','عنا كمان '+first+'، بالإضافة ل'+second+'.');
+ let calls=0;
+ stub(t,async()=>{calls++;throw Error('The previous product names are present');});
+ const events=await collect(await f.ask('وينهم؟',{history,profile:{skinType:'dry'}}));
+ const choices=events.find(e=>e.name==='products')?.data;
+ assert.deepEqual(choices?.routine.map(p=>p.id),['TSSUN001','TSSUN002']);
+ assert.equal(choices.alternatives,true);
+ assert.equal(textOf(events),'تفضّلي، هاي المنتجات.');
+ f.db.prepare("UPDATE products SET stock=0 WHERE id='TSSUN001'").run();
+ const remaining=await collect(await f.ask('ارسليهم',{history}));
+ assert.deepEqual(remaining.find(e=>e.name==='products')?.data.routine.map(p=>p.id),['TSSUN002']);
+ assert.equal(textOf(remaining),'تفضّلي، هاد المنتج.');
+ assert.equal(calls,0);
+});
+
+test('Internal actions appended to normal text are withheld even across provider chunks',async t=>{
+ const f=fixture(t);
+ stub(t,async()=>sse([
+  frame([{text:'ابدئي بترطيب خفيف (TSCTX001) بعد التنظيف.'}]),
+  frame([{text:'\n\nعشان تكملي العناية، هي الخِيار المناسب:\n\n:ik'}]),
+  frame([{text:'tib/show_products:\n\u0060\u0060\u0060json\n{ "carePlan": [{ "productId": "", "reason": "نص داخلي" }]}'}]),
+  frame([{text:'\n\u0060\u0060\u0060'}],'STOP')
+ ].join('')));
+ const events=await collect(await f.ask('كيف أرتّب الترطيب لو وجهي بيشد بنص اليوم؟'));
+ assert.equal(textOf(events),'ابدئي بترطيب خفيف بعد التنظيف.');
+ assert.doesNotMatch(JSON.stringify(events),/iktib|show_products|carePlan|productId|نص داخلي|:\\s?ik|TSCTX001|\(\)/i);
+ assert.equal(events.some(e=>e.name==='products'),false);
+});
+
+test('A shopping reply in prose with a stray tool wrapper displays the confirmed product in the first response',async t=>{
+ const f=fixture(t);
+ let calls=0;
+ const name='جل الترطيب اليومي الخفيف';
+ addProduct(f.db,{id:'TSCREAM01',name,type:'moisturizer',benefit:'ترطيب بقوام خفيف'});
+ stub(t,async(_url,{body})=>{
+  calls++;
+  assert.equal(JSON.parse(body).toolConfig.functionCallingConfig.mode,'ANY');
+  return sse(frame([{text:'بنصحكِ ب'+name+' (TSCREAM01).\n\n<show_products>{"productIds":[""],"reason":"نص داخلي"}</show_products>'}],'STOP'));
+ });
+ const events=await collect(await f.ask('شو منتجات الترطيب المتوفرة عندكم؟',{profile:{skinType:'combination'}}));
+ assert.deepEqual(events.find(e=>e.name==='products')?.data.routine.map(p=>p.id),['TSCREAM01']);
+ assert.equal(textOf(events),'تفضّلي، هاد المنتج.');
+ assert.doesNotMatch(textOf(events),/بطاق|show_products|productIds|نص داخلي|TSCREAM01/);
+ assert.equal(calls,1);
+});
+
+test('A real product tool call can show same-type choices and strips the tool markup from visible fields',async t=>{
+ const f=fixture(t);
+ addProduct(f.db,{id:'TSSUN011',name:'واقي شمس يومي خفيف',type:'sunscreen',benefit:'حماية شمسية بحسب العبوة'});
+ addProduct(f.db,{id:'TSSUN012',name:'واقي شمس يومي مرطّب',type:'sunscreen',benefit:'قوام مرطّب'});
+ stub(t,async()=>sse(frame([{functionCall:{name:'show_products',args:{
+  area:'face',productIds:['TSSUN011','TSSUN012'],carePlan:'تفضّلي، هاي بطاقات المنتجات.\n<show_products>{"foo":123}</show_products>',
+  selections:[{productId:'TSSUN011',reason:'خيار خفيف.\n:iktib/show_products: []'},{productId:'TSSUN012',reason:'{"foo":"internal"}'}]
+ }}}],'STOP')));
+ const events=await collect(await f.ask('شو خيارات واقي الشمس من عندكم؟',{profile:{skinType:'dry'}}));
+ const result=events.find(e=>e.name==='products')?.data;
+ assert.deepEqual(result?.routine.map(p=>p.reason),['خيار خفيف.','قوام مرطّب']);
+ assert.equal(result.alternatives,true);
+ assert.equal(textOf(events),'تفضّلي، هاي المنتجات.');
+ assert.doesNotMatch(JSON.stringify(events),/show_products|iktib|internal|بطاق/);
+});
 
 test('A clear cleanser request and an explicit product-card follow-up use live stock without a model round trip',async t=>{
  const f=fixture(t);

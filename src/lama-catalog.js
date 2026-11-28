@@ -113,9 +113,12 @@ export function latestSuggestedIds(history) {
 export function mentionedCatalogProducts(text, catalog) {
   const passage = ' '+matchable(text)+' ';
   return catalog.flatMap(product => {
-    const positions = [product.name, product.nameEn].map(name => {
+    const positions = [product.name, product.nameEn].flatMap(name => {
       const title = matchable(String(name || '').split(/[·—]/)[0]);
-      return title.includes(' ') ? passage.indexOf(' '+title+' ') : -1;
+      if (!title.includes(' ')) return [];
+      // Arabic conjunctions and prepositions attach to the first word.
+      const prefixes = /^[\u0621-\u064a]/.test(title) ? ['', 'ب', 'ل', 'و'] : [''];
+      return prefixes.map(prefix => passage.indexOf(' '+prefix+title+' '));
     }).filter(index => index >= 0);
     return positions.length ? [{product, index: Math.min(...positions)}] : [];
   }).sort((a, b) => a.index-b.index).slice(0, 4).map(match => match.product);

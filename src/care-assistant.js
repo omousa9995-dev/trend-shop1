@@ -137,14 +137,15 @@ function normalizeQuestions(raw){
  }).filter(Boolean);
 }
 const areaQuestion=()=>({field:'area',text:'أي منطقة تحبّين نختار لها المنتجات؟',choices:questionChoices('area',Object.keys(areaLabels).map(value=>({value})))});
-export function normalizeCareResult(raw,products,input){
+export function normalizeCareResult(raw,products,input,{alternatives:requestedAlternatives=false}={}){
  if(raw?.needsProfessional===true)return professionalResult();
  if(input.image&&raw?.imageDisposition==='unsupported')return {...professionalResult(),needsProfessional:false,message:'الصورة المناسبة تكون لكِ وحدكِ، للوجه أو اليدين أو القدمين أو الشعر أو منطقة جلد غير حميمة، ودون أشخاص آخرين. يمكنكِ إزالة الصورة ومتابعة الحديث دونها.'};
  const shop=input.catalogScope==='luma';
  const areas=shop?[...CARE_AREAS,...LUMA_SHOP_AREAS]:CARE_AREAS;
  const proposedArea=enumValue(raw?.area,areas,'unknown');
  const area=shop&&LUMA_SHOP_AREAS.includes(proposedArea)?proposedArea:input.area!=='unknown'?input.area:proposedArea;
- const alternatives=area==='fragrance';
+ const alternatives=area==='fragrance'||shop&&requestedAlternatives;
+ const selectionLimit=area==='fragrance'?2:3;
  const required=[];
  if(area==='unknown')required.push(areaQuestion());
  else if(input.area!=='unknown'&&proposedArea!=='unknown'&&proposedArea!==area)required.push({field:'area',text:'ننتقل للعناية بمنطقة ثانية؟',choices:questionChoices('area',[{value:proposedArea},{value:input.area}])});
@@ -154,7 +155,7 @@ export function normalizeCareResult(raw,products,input){
  const resultText=input.catalogScope==='luma'?lumaText:safeModelText;
  const reasons=new Map((Array.isArray(raw?.selections)?raw.selections:[]).slice(0,8).map(x=>[x?.productId,resultText(x?.reason,260)]));
  if(!questions.length)for(const id of Array.isArray(raw?.productIds)?raw.productIds.slice(0,12):[]){
-  const p=available.get(id);if(!p||seen.has(id)||(!alternatives&&types.has(p.type))||input.existingIds.includes(id)||routine.length>=(alternatives?2:3))continue;
+  const p=available.get(id);if(!p||seen.has(id)||(!alternatives&&types.has(p.type))||input.existingIds.includes(id)||routine.length>=selectionLimit)continue;
   const next=alternatives?p.priceFils:subtotal+p.priceFils;if(input.budgetFils!==null&&next+(input.includeDelivery?shippingFee(next):0)>input.budgetFils)continue;
   routine.push({id:p.id,name:p.name,brand:p.brand,type:p.type,priceFils:p.priceFils,size:p.size,image:p.image,href:'/product/'+encodeURIComponent(p.id),benefits:p.benefits,howToUse:shop?(p.assistantHowToUse||p.howToUse):p.howToUse,options:p.options||[],reason:reasons.get(id)||'',step:routine.length+1});
   subtotal+=p.priceFils;

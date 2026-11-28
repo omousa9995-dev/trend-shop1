@@ -32,6 +32,25 @@ test('Twenty sequential chat turns remain usable without reload, including a net
   assert.doesNotMatch(api.dialog.querySelector('.luma-log').textContent,/TSDEMO1/);assert.deepEqual(JSON.parse(w.localStorage.getItem('lama_user_profile')),{version:2,profile:{skinType:'dry'}});assert.equal(api.dialog.querySelectorAll('[data-luma-record],.luma-listen,input[accept*=audio]').length,0);
  }finally{api.destroy();w.close()}
 });
+test('The widget filters technical fragments across app events and renders comparison choices in the same turn',async()=>{
+ const {w,api,send}=await ui(async()=>new Response(
+  event('delta',{text:'تفضّلي، هاي المنتجات.\n:ik'})+
+  event('delta',{text:'tib/show_products:\n{"productIds":[""]}'})+
+  event('products',{area:'face',alternatives:true,routine:[
+   {id:'TSSUN001',name:'واقي شمس خفيف',priceFils:5000,href:'/product/TSSUN001'},
+   {id:'TSSUN002',name:'واقي شمس مرطّب',priceFils:6400,href:'/product/TSSUN002'}
+  ]})+event('done')
+ ));
+ try{
+  send('وينهم؟');
+  await until(()=>api.dialog.getAttribute('aria-busy')==='false');
+  const group=api.dialog.querySelector('.luma-products');
+  assert.equal(group.previousElementSibling.querySelector('p').textContent,'تفضّلي، هاي المنتجات.');
+  assert.equal(group.querySelectorAll('.luma-product').length,2);
+  assert.equal(group.querySelector('.luma-total'),null);
+  assert.doesNotMatch(api.dialog.querySelector('.luma-log').textContent,/iktib|show_products|productIds|عطور ثانية/);
+ }finally{api.destroy();w.close()}
+});
 test('Cancel, reset and close isolate stale requests from a newly opened conversation and preserve typed drafts',async()=>{
  let first,second,calls=0;const {w,api,send}=await ui(async()=>{calls++;return new Response(new ReadableStream({start(c){if(calls===1)first=c;else second=c},cancel(){return new Promise(()=>{})}}))});
  try{send('أول سؤال');await until(()=>!!first);w.document.querySelector('textarea').value='مسودة';api.close();api.open();assert.equal(w.document.querySelector('.luma-send').disabled,false);assert.equal(w.document.querySelector('textarea').value,'مسودة');send('ثاني سؤال');await until(()=>!!second);first.enqueue(bytes.encode(event('done')));await pause();assert.equal(api.dialog.getAttribute('aria-busy'),'true');second.enqueue(bytes.encode(event('delta',{text:'الرد الثاني'})+event('done')));await until(()=>api.dialog.getAttribute('aria-busy')==='false');assert.match(api.dialog.textContent,/الرد الثاني/);
