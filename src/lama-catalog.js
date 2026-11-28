@@ -112,10 +112,13 @@ export function latestSuggestedIds(history) {
 
 export function mentionedCatalogProducts(text, catalog) {
   const passage = ' '+matchable(text)+' ';
-  return catalog.filter(product => [product.name, product.nameEn].some(name => {
-    const title = matchable(String(name || '').split(/[·—]/)[0]);
-    return title.split(' ').length > 1 && passage.includes(' '+title+' ');
-  })).slice(0, 4);
+  return catalog.flatMap(product => {
+    const positions = [product.name, product.nameEn].map(name => {
+      const title = matchable(String(name || '').split(/[·—]/)[0]);
+      return title.includes(' ') ? passage.indexOf(' '+title+' ') : -1;
+    }).filter(index => index >= 0);
+    return positions.length ? [{product, index: Math.min(...positions)}] : [];
+  }).sort((a, b) => a.index-b.index).slice(0, 4).map(match => match.product);
 }
 
 export function usageMatches(message, catalog, history = []) {

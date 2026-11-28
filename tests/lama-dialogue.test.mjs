@@ -57,6 +57,8 @@ test('A clear cleanser request and an explicit product-card follow-up use live s
  assert.equal(card.priceFils,4490);
  assert.match(card.howToUse,/واشطفيه/);
  assert.equal(simple.at(-1).data.source,'live-catalog');
+ const fromHistory=await collect(await f.ask('غسول',{history:appendLumaHistory([],'بشرتي مختلطة.','أي خطوة بتحبّي تبدئي فيها؟')}));
+ assert.equal(fromHistory.find(e=>e.name==='products')?.data.routine[0].id,'TSCTX002');
  const intake=await collect(await f.ask('غسول'));
  const question=intake.find(e=>e.name==='question')?.data.question;
  assert.equal(question?.field,'skinType');
@@ -71,11 +73,29 @@ test('A clear cleanser request and an explicit product-card follow-up use live s
  assert.deepEqual(ambiguous.find(e=>e.name==='question')?.data.question.choices.map(c=>c.value),['TSCTX001','TSCTX002']);
  const second=await collect(await f.ask('رابط المنتج الثاني',{history:two}));
  assert.equal(second.find(e=>e.name==='products')?.data.routine[0].id,'TSCTX002');
+ const prose=appendLumaHistory([],'شو عندكم؟',name+' خيار للتنظيف، وبعده إيسنس الليل التجريبي.');
+ const requestedFirst=await collect(await f.ask('رابط المنتج الأول',{history:prose}));
+ assert.equal(requestedFirst.find(e=>e.name==='products')?.data.routine[0].id,'TSCTX002');
  f.db.prepare("UPDATE products SET stock=0 WHERE id='TSCTX002'").run();
  const soldOut=await collect(await f.ask('ارسلي المنتج',{history}));
  assert.equal(soldOut.some(e=>e.name==='products'),false);
  assert.match(textOf(soldOut),/نافد/);
  assert.equal(calls,0);
+});
+
+test('A short cleanser follow-up about the body retains the conversation area',async t=>{
+ const f=fixture(t);
+ let request;
+ stub(t,async(_url,{body})=>{
+  request=JSON.parse(body);
+  return json([{functionCall:{name:'answer_customer',args:{text:'للجسم، اختاري غسولًا مناسبًا لطبيعة بشرتكِ.'}}}]);
+ });
+ const history=appendLumaHistory([],'بدي عناية للجسم','أي خطوة بتهمكِ أكتر؟');
+ const events=await collect(await f.ask('غسول',{history,profile:{area:'body',skinType:'combination'}}));
+ assert.equal(request.toolConfig.functionCallingConfig.mode,'ANY');
+ assert.match(request.systemInstruction.parts[0].text,/"area":"body"/);
+ assert.match(textOf(events),/للجسم/);
+ assert.equal(events.some(e=>e.name==='products'),false);
 });
 
 test('An open follow-up uses earlier turns and live references, and streams regular text while Gemini is still working',async t=>{

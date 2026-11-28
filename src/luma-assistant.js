@@ -314,6 +314,7 @@ const skinAsk = 'كيف بتوصفي بشرتكِ أغلب الوقت؟';
 const skinAskEn = 'How would you describe your skin most days?';
 
 function simpleProductRequest(input){
+ if(!['face','unknown'].includes(input.area))return null;
  const message=normalizeSearch(input.message);
  const last=input.history.at(-1),prior=input.history.at(-2);
  const clarified=last?.role==='model'&&(last.text.includes(skinAsk)||last.text.includes(skinAskEn))&&
@@ -325,8 +326,11 @@ function simpleProductRequest(input){
  if(!type)return null;
  const text=normalizeSearch(query);
  const explicit=Object.entries(faceSkinFits).find(([,fits])=>fits.test(text))?.[0];
- return {type,english:!/[\u0600-\u06ff]/.test(query),skinType:explicit||skinReply[message]||input.skinType,
-  sensitive:input.sensitive==='yes'||sensitiveFit.test(text),skip:clarified&&skipSkin.test(message)};
+ const skip=clarified&&skipSkin.test(message);
+ const earlier=input.history.slice(-6).reverse().filter(turn=>turn.role==='user')
+  .map(turn=>captureLamaPreferences(turn.text).skinType).find(Boolean);
+ const skinType=skip?'unknown':explicit||skinReply[message]||(input.skinType==='unknown'?earlier||'unknown':input.skinType);
+ return {type,english:!/[\u0600-\u06ff]/.test(query),skinType,sensitive:input.sensitive==='yes'||sensitiveFit.test(text),skip};
 }
 
 async function simpleProductReply(request,input,catalog,env){
@@ -340,7 +344,7 @@ async function simpleProductReply(request,input,catalog,env){
  }
  const fit=faceSkinFits[skinType];
  const ranked=catalog.flatMap(product=>{
-  if(product.type!==type||!product.gentleCandidate||product.careClass!=='everyday'||input.existingIds.includes(product.id))return [];
+  if(product.type!==type||!product.gentleCandidate||product.careClass!=='everyday'||!lumaProductAllowed(product,input)||input.existingIds.includes(product.id))return [];
   if(input.budgetFils!==null&&product.priceFils+(input.includeDelivery?shippingFee(product.priceFils):0)>input.budgetFils)return [];
   const name=normalizeSearch(product.name+' '+product.nameEn);
   if(/micellar|makeup remover|cleansing oil|cleansing balm|مزيل المكياج|زيت تنظيف|بلسم تنظيف|صابونه|صابونة|\bsoap\b/.test(name))return [];

@@ -16,7 +16,8 @@ export function wantsLamaRecommendations(input){
  const message=normalizeSearch(input.message);
  if(/بدون منتجات|من غير منتجات|مش بدي منتجات|نصايح بس|نصائح فقط|without products|advice only/.test(message))return false;
  const askingForType=requestedProductTypes(message).length>0&&
-  /^(?:(?:طيب|تمام|ممكن) )?(?:بدي|اريد|ابغي|دوريلي على|اعطيني|i want|i m looking for) /.test(message);
+  (/^(?:(?:طيب|تمام|ممكن) )?(?:بدي|اريد|ابغي|دوريلي على|اعطيني|i want|i m looking for) /.test(message)||
+   /^(?:ال)?غسول$|^(?:face wash|cleanser)$/.test(message));
  return input.guided||askingForType||['routine','sunscreen','makeup','concealer'].includes(input.intent)||
   /عندكم|من (?:عندكم|المتجر|موقعكم|منتجاتكم)|ترشحي|رشحي|اقترحي|شو اشتري|شو افضل|اي (?:ال)?منتج|اي (?:نوع|خيار) (?:بتنصح|تنصح)|بدي بديل|اريد شراء|\b(?:recommend|suggest|can i buy|from your store)\b/.test(message);
 }
